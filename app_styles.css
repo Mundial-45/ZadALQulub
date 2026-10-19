@@ -1,0 +1,288 @@
+/* App Styles for Zad Al-Qulub (100% Fail-Safe Local CSS) */
+
+body {
+  font-family: 'Tajawal', 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+.dark body {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+.custom-text-size {
+  font-size: var(--app-font-size, 1.125rem);
+  font-family: 'Amiri Quran', 'Amiri', serif;
+}
+
+.quran-font {
+  font-family: 'Amiri Quran', 'Amiri', serif;
+}
+
+/* Header Fail-Safe Styles */
+header, .bg-emerald-700 {
+  background-color: #047857 !important;
+  color: #ffffff !important;
+}
+
+.dark header, .dark .bg-emerald-900 {
+  background-color: #064e3b !important;
+  color: #ffffff !important;
+}
+
+/* Explicit SVG Icon Constraints */
+svg {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  fill: currentColor;
+}
+
+svg.w-10, svg.h-10 {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  max-width: 2.5rem !important;
+  max-height: 2.5rem !important;
+}
+
+svg.w-8, svg.h-8 {
+  width: 2rem !important;
+  height: 2rem !important;
+  max-width: 2rem !important;
+  max-height: 2rem !important;
+}
+
+svg.w-6, svg.h-6 {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  max-width: 1.5rem !important;
+  max-height: 1.5rem !important;
+}
+
+svg.w-5, svg.h-5 {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+  max-width: 1.25rem !important;
+  max-height: 1.25rem !important;
+}
+
+/* Home Screen Category Buttons Background Gradients & Colors */
+button[onclick*="showSection('azkar')"] {
+  background: linear-gradient(135deg, #059669 0%, #065f46 100%) !important;
+  color: #ffffff !important;
+}
+
+button[onclick*="showSection('adya')"] {
+  background: linear-gradient(135deg, #0d9488 0%, #115e59 100%) !important;
+  color: #ffffff !important;
+}
+
+button[onclick*="showSection('munajat')"] {
+  background: linear-gradient(135deg, #0284c7 0%, #1e40af 100%) !important;
+  color: #ffffff !important;
+}
+
+button[onclick*="showTasbeeh()"] {
+  background: linear-gradient(135deg, #0891b2 0%, #0f766e 100%) !important;
+  color: #ffffff !important;
+}
+
+button[onclick*="showFavorites()"] {
+  background: linear-gradient(135deg, #e11d48 0%, #991b1b 100%) !important;
+  color: #ffffff !important;
+}
+
+button[onclick*="showQuranView()"] {
+  background: linear-gradient(135deg, #d97706 0%, #78350f 100%) !important;
+  color: #ffffff !important;
+}
+
+/* Layout Utilities Fail-Safe */
+.grid { display: grid !important; }
+.grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)) !important; }
+.grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .sm\:col-span-2 { grid-column: span 2 / span 2 !important; }
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+}
+
+.flex { display: flex !important; }
+.flex-col { flex-direction: column !important; }
+.items-center { align-items: center !important; }
+.justify-center { justify-content: center !important; }
+.justify-between { justify-content: space-between !important; }
+
+.block { display: block !important; }
+.hidden { display: none !important; }
+
+/* Custom Paper Texture / Framework Background for Cards (Lighter for max legibility) */
+.card-paper-bg {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url('card_bg.avif'), url('card_bg.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-color: #ffffff !important;
+  border: 1px solid #fcd34d !important;
+  box-shadow: 0 10px 25px -5px rgba(180, 83, 9, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04) !important;
+  border-radius: 1.5rem !important;
+}
+
+.dark .card-paper-bg {
+  background-image: linear-gradient(rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.92)), url('card_bg.avif'), url('card_bg.jpg') !important;
+  background-color: #1e293b !important;
+  border: 1px solid #334155 !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* High Contrast Counter Circle Buttons */
+.dhikr-counter-btn, button[onclick*="decrementCounter"] {
+  width: 8.5rem !important;
+  height: 8.5rem !important;
+  min-width: 8.5rem !important;
+  min-height: 8.5rem !important;
+  border-radius: 9999px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: linear-gradient(135deg, #059669 0%, #0d9488 100%) !important;
+  color: #ffffff !important;
+  border: 4px solid #6ee7b7 !important;
+  box-shadow: 0 10px 20px -5px rgba(5, 150, 105, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.1) !important;
+  cursor: pointer !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  user-select: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  outline: none !important;
+  margin: 0 auto !important;
+}
+
+.dhikr-counter-btn:active, button[onclick*="decrementCounter"]:active {
+  transform: scale(0.92) !important;
+  box-shadow: 0 4px 10px -2px rgba(5, 150, 105, 0.3) !important;
+}
+
+.dhikr-counter-btn.is-done, button[onclick*="decrementCounter"].is-done {
+  background: linear-gradient(135deg, #10b981 0%, #047857 100%) !important;
+  border-color: #a7f3d0 !important;
+}
+
+.dhikr-counter-btn *, button[onclick*="decrementCounter"] * {
+  color: #ffffff !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Tasbeeh Counter Button */
+.tasbeeh-counter-btn, button[onclick*="incrementTasbeeh"] {
+  width: 7.5rem !important;
+  height: 7.5rem !important;
+  min-width: 7.5rem !important;
+  min-height: 7.5rem !important;
+  border-radius: 9999px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: linear-gradient(135deg, #d97706 0%, #b45309 100%) !important;
+  color: #ffffff !important;
+  border: 4px solid #fcd34d !important;
+  box-shadow: 0 10px 20px -5px rgba(217, 119, 6, 0.4) !important;
+  cursor: pointer !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  user-select: none !important;
+  outline: none !important;
+  margin: 0 auto !important;
+}
+
+.tasbeeh-counter-btn:active, button[onclick*="incrementTasbeeh"]:active {
+  transform: scale(0.92) !important;
+}
+
+.tasbeeh-counter-btn *, button[onclick*="incrementTasbeeh"] * {
+  color: #ffffff !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Progress Bar Container */
+#progressBarContainer {
+  background-color: #ffffff !important;
+  border: 1px solid #f1f5f9 !important;
+  border-radius: 1rem !important;
+  padding: 1rem 1.25rem !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+}
+
+.dark #progressBarContainer {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+}
+
+#progressBarFill {
+  background: linear-gradient(90deg, #10b981 0%, #059669 100%) !important;
+  height: 100% !important;
+  border-radius: 9999px !important;
+  transition: width 0.3s ease-in-out !important;
+}
+
+#progressPercent {
+  color: #047857 !important;
+  font-weight: 800 !important;
+  font-size: 0.9rem !important;
+}
+
+.dark #progressPercent {
+  color: #34d399 !important;
+}
+
+/* Action Icon Buttons */
+.action-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0.625rem !important;
+  border-radius: 0.75rem !important;
+  background-color: #f1f5f9 !important;
+  color: #334155 !important;
+  border: 1px solid #e2e8f0 !important;
+  transition: all 0.2s ease !important;
+  cursor: pointer !important;
+}
+
+.dark .action-btn {
+  background-color: #334155 !important;
+  color: #f8fafc !important;
+  border-color: #475569 !important;
+}
+
+.action-btn:hover, .action-btn:active {
+  background-color: #d1fae5 !important;
+  color: #047857 !important;
+  border-color: #a7f3d0 !important;
+}
+
+.dark .action-btn:hover, .dark .action-btn:active {
+  background-color: #064e3b !important;
+  color: #a7f3d0 !important;
+}
+
+/* Rounded corners & shadows */
+.rounded-3xl { border-radius: 1.5rem !important; }
+.rounded-2xl { border-radius: 1rem !important; }
+.rounded-xl { border-radius: 0.75rem !important; }
+.shadow-xl { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important; }
+.shadow-md { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important; }
+
+/* Text Color Classes */
+.text-white { color: #ffffff !important; }
+.text-emerald-100 { color: #d1fae5 !important; }
+.text-teal-100 { color: #ccfbf1 !important; }
+.text-sky-100 { color: #e0f2fe !important; }
+.text-cyan-100 { color: #cffaff !important; }
+.text-rose-100 { color: #ffe4e6 !important; }
