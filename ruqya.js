@@ -8,7 +8,7 @@ const ruqyahData = [
           {
             text: "آدَابُ وَنَصَائِحُ الرُّقْيَةِ الشَّرْعِيَّةِ:\n• الاعتقاد الجزم بأن الشفاء بيد الله وحده، وأن الرقية وسيلة وأسباب مشروعة.\n• الإخلاص والتوكل على الله تعالى.\n• النفث (التففل مع قليل من الريق) على النفس أو على المريض أو في الكفين ثم مسح جسد المريض بهما.",
             latin: "Ādābu wa Naṣā'iḥur-Ruqyah ash-Shar‘iyyah: Al-i‘tiqādul-jazmu bi-annash-shifā'a bi-yadillāhi waḥdah, wa annar-ruqyata wasīlatun wa asbābun mashrū‘ah. Al-ikhlāṣu wat-tawakkulu ‘alāllāhi ta‘ālā. An-nafthu (at-taffulu ma‘a qalīlin minar-rīq) ‘alān-nafsi aw ‘alāl-marīḍi aw fīl-kaffayni thumma masḥu jasadil-marīḍi bihimā.",
-            explanationEs: "Etiquetas y consejos de la Ruqyah Shariyah: Creencia firme de que la curación está únicamente en manos de Dios y que la Ruqyah es un medio y una causa legítima. Sinceridad y plena confianza en Dios Altísimo. Soplido leve (con un poco de saliva) sobre uno mismo, sobre el enfermo o en las palmas de las manos para luego pasar las manos por el cuerpo del enfermo.",
+            explanationEs: "Modales y consejos de la Ruqyah Shariyah: Creencia firme de que la curación está únicamente en manos de Dios y que la Ruqyah es un medio y una causa legítima. Sinceridad y plena confianza en Dios Altísimo. Soplido leve (con un poco de saliva) sobre uno mismo, sobre el enfermo o en las palmas de las manos para luego pasar las manos por el cuerpo del enfermo.",
             count: 1,
             maxCount: 1
           },
