@@ -551,20 +551,78 @@ const EDITOR_REPO = 'Mundial-45/ZadALQulub';
 const EDITOR_BRANCH = 'main';
 const EDITOR_FILES = { azkar: 'azkar.js', adya: 'adya.js', ruqyah: 'ruqya.js', munajat: 'munajat.js' };
 let itemEditorState = null;
-let githubEditToken = '';
+let pendingItemEdits = loadPendingItemEdits();
+const PENDING_EDITS_KEY = 'zadAlQulubPendingEdits_v1';
+
+function loadPendingItemEdits() {
+  try {
+    const value = JSON.parse(localStorage.getItem('zadAlQulubPendingEdits_v1') || '[]');
+    return Array.isArray(value) ? value : [];
+  } catch (error) { return []; }
+}
+
+function persistPendingItemEdits() {
+  try {
+    localStorage.setItem(PENDING_EDITS_KEY, JSON.stringify(pendingItemEdits));
+    updatePendingEditsDock();
+  } catch (error) {
+    showToast(currentLang === 'es' ? 'No se pudieron guardar los cambios temporales en este dispositivo.' : 'تعذر حفظ التعديلات المؤقتة على هذا الجهاز.');
+  }
+}
+
+function getPendingEdit(section, groupId, index) {
+  return pendingItemEdits.find(function (entry) {
+    return entry.section === section && entry.groupId === groupId && entry.index === index;
+  }) || null;
+}
+
+function getBaselineItem(section, groupId, index, currentItem) {
+  const pending = getPendingEdit(section, groupId, index);
+  return pending ? pending.originalItem : currentItem;
+}
+
+function getBaselineOccurrence(section, groupId, index, items) {
+  const baseline = getBaselineItem(section, groupId, index, items[index]);
+  let occurrence = 0;
+  for (let i = 0; i < index; i++) {
+    const prior = getBaselineItem(section, groupId, i, items[i]);
+    if (prior && baseline && prior.text === baseline.text) occurrence++;
+  }
+  return occurrence;
+}
+
+function updatePendingEditsDock() {
+  const dock = document.getElementById('pendingEditsDock');
+  const count = document.getElementById('pendingEditsCount');
+  const list = document.getElementById('pendingEditsSummary');
+  if (!dock || !count) return;
+  const total = pendingItemEdits.length;
+  dock.classList.toggle('hidden', total === 0);
+  count.textContent = String(total);
+  if (list) list.textContent = currentLang === 'es'
+    ? total + (total === 1 ? ' cambio pendiente' : ' cambios pendientes') + '. Se guardan primero en este dispositivo.'
+    : total + ' تعديلات مؤقتة محفوظة على هذا الجهاز.';
+}
 
 function openItemEditor(index) {
   if (!currentGroup || !currentGroup.items || !currentGroup.items[index]) return;
   const filePath = EDITOR_FILES[currentSection];
   if (!filePath) return showToast(currentLang === 'es' ? 'Esta sección no admite edición.' : 'لا يمكن تعديل هذا القسم.');
-  itemEditorState = { index: index, groupId: currentGroup.id, section: currentSection, filePath: filePath, originalItem: JSON.parse(JSON.stringify(currentGroup.items[index])) };
+  const existing = getPendingEdit(currentSection, currentGroup.id, index);
+  const baseline = existing ? existing.originalItem : JSON.parse(JSON.stringify(currentGroup.items[index]));
+  const draft = existing ? existing.updatedItem : JSON.parse(JSON.stringify(currentGroup.items[index]));
+  itemEditorState = {
+    index: index, groupId: currentGroup.id, section: currentSection, filePath: filePath,
+    originalItem: JSON.parse(JSON.stringify(baseline)), draftItem: JSON.parse(JSON.stringify(draft)),
+    occurrence: existing ? existing.occurrence : getBaselineOccurrence(currentSection, currentGroup.id, index, currentGroup.items)
+  };
   const modal = document.getElementById('itemEditorModal'), fields = document.getElementById('itemEditorFields');
   if (!modal || !fields) return;
   document.getElementById('itemEditorTitle').textContent = (currentLang === 'es' ? 'Editar elemento ' : 'تعديل العنصر ') + (index + 1);
-  setItemEditorStatus(currentLang === 'es' ? 'Los cambios se guardarán en ' + filePath + ' de la rama main.' : 'سيُحفَظ التعديل في الملف ' + filePath + ' على الفرع main.', false);
+  setItemEditorStatus(currentLang === 'es' ? 'Los cambios se guardarán temporalmente en este dispositivo. Puedes publicar varios juntos después.' : 'ستُحفظ التعديلات مؤقتًا على هذا الجهاز ويمكن نشرها جميعًا لاحقًا.', false);
   fields.replaceChildren();
-  Object.keys(itemEditorState.originalItem).forEach(function (key) {
-    const value = itemEditorState.originalItem[key], wrap = document.createElement('div'), label = document.createElement('label');
+  Object.keys(itemEditorState.draftItem).forEach(function (key) {
+    const value = itemEditorState.draftItem[key], wrap = document.createElement('div'), label = document.createElement('label');
     wrap.className = 'space-y-1.5'; label.className = 'block text-sm font-bold text-slate-700 dark:text-slate-200'; label.textContent = key;
     const kind = value === null ? 'json' : Array.isArray(value) || typeof value === 'object' ? 'json' : typeof value;
     let control;
@@ -587,7 +645,6 @@ function openItemEditor(index) {
     }
     fields.appendChild(wrap);
   });
-  const tokenField = document.getElementById('githubEditToken'); if (tokenField) tokenField.value = githubEditToken;
   modal.classList.remove('hidden'); document.body.classList.add('overflow-hidden');
 }
 
@@ -604,7 +661,7 @@ function setItemEditorStatus(message, isError) {
 
 function buildEditedItem() {
   if (!itemEditorState) throw new Error('No hay ningún elemento seleccionado.');
-  const updated = JSON.parse(JSON.stringify(itemEditorState.originalItem));
+  const updated = JSON.parse(JSON.stringify(itemEditorState.draftItem));
   document.querySelectorAll('#itemEditorFields [data-editor-key]').forEach(function (control) {
     const key = control.dataset.editorKey, kind = control.dataset.editorKind;
     if (kind === 'string') updated[key] = control.value;
@@ -617,6 +674,29 @@ function buildEditedItem() {
     }
   });
   return updated;
+}
+
+function stageItemChanges() {
+  if (!itemEditorState) return;
+  try {
+    const updatedItem = buildEditedItem(), state = itemEditorState;
+    const entry = {
+      section: state.section, groupId: state.groupId, index: state.index, filePath: state.filePath,
+      originalItem: state.originalItem, updatedItem: updatedItem, occurrence: state.occurrence
+    };
+    const existingIndex = pendingItemEdits.findIndex(function (pending) {
+      return pending.section === entry.section && pending.groupId === entry.groupId && pending.index === entry.index;
+    });
+    if (existingIndex >= 0) pendingItemEdits[existingIndex] = entry;
+    else pendingItemEdits.push(entry);
+    if (currentGroup && currentGroup.id === state.groupId && currentSection === state.section) currentGroup.items[state.index] = updatedItem;
+    persistPendingItemEdits();
+    closeItemEditor();
+    if (typeof renderGroupItems === 'function') renderGroupItems();
+    showToast(currentLang === 'es' ? 'Cambio guardado temporalmente. Aún no se ha enviado a GitHub.' : 'تم حفظ التعديل مؤقتًا ولم يُرسل إلى GitHub بعد.');
+  } catch (error) {
+    setItemEditorStatus(error.message || String(error), true);
+  }
 }
 
 function scanEditorObjectRanges(source) {
@@ -653,14 +733,14 @@ function getEditorObjectText(objectSource) {
   return match ? readEditorSourceString(match[1]) : null;
 }
 
-function replaceEditorItemSource(source, groupId, itemIndex, originalItem, updatedItem) {
+function locateEditorItemRange(source, groupId, originalItem, occurrence) {
   const ranges = scanEditorObjectRanges(source);
   const groupCandidates = ranges.filter(function (range) {
     const snippet = source.slice(range.start, range.end);
     const idMatch = snippet.match(/["']?id["']?\s*:\s*("(?:\\\\.|[^"\\\\])*"|'(?:\\\\.|[^'\\\\])*')/s);
     return !!(idMatch && readEditorSourceString(idMatch[1]) === groupId && /["']?items["']?\s*:/.test(snippet));
   }).sort(function (a, b) { return (a.end - a.start) - (b.end - b.start); });
-  if (!groupCandidates.length) throw new Error('No se encontró la lista de elementos del grupo.');
+  if (!groupCandidates.length) throw new Error('No se encontró el grupo ' + groupId + ' en el archivo.');
   const groupRange = groupCandidates[0];
   const matching = ranges.filter(function (range) {
     return range.start >= groupRange.start && range.end <= groupRange.end && getEditorObjectText(source.slice(range.start, range.end)) === originalItem.text;
@@ -668,9 +748,14 @@ function replaceEditorItemSource(source, groupId, itemIndex, originalItem, updat
   const minimal = matching.filter(function (range) {
     return !matching.some(function (other) { return other.start > range.start && other.end < range.end; });
   }).sort(function (a, b) { return a.start - b.start; });
-  const occurrence = currentGroup.items.slice(0, itemIndex).filter(function (item) { return item && item.text === originalItem.text; }).length;
   const target = minimal[occurrence];
-  if (!target) throw new Error('No se pudo localizar con seguridad el elemento original. No se guardó ningún cambio.');
+  if (!target) throw new Error('No se pudo localizar con seguridad el elemento original en el grupo ' + groupId + '. No se publicó ningún cambio.');
+  return target;
+}
+
+function replaceEditorItemSource(source, groupId, itemIndex, originalItem, updatedItem, occurrenceOverride) {
+  const occurrence = typeof occurrenceOverride === 'number' ? occurrenceOverride : getBaselineOccurrence(currentSection, groupId, itemIndex, currentGroup.items);
+  const target = locateEditorItemRange(source, groupId, originalItem, occurrence);
   const indentStart = source.lastIndexOf('\n', target.start - 1) + 1, indent = source.slice(indentStart, target.start).match(/^\s*/)[0];
   const replacement = JSON.stringify(updatedItem, null, 2).split('\n').map(function (line, index) { return index === 0 ? line : indent + line; }).join('\n');
   return source.slice(0, target.start) + replacement + source.slice(target.end);
@@ -688,37 +773,95 @@ function encodeEditorBase64(value) {
   return btoa(binary);
 }
 
-async function saveItemToGitHub(event) {
+function openPendingPublishModal() {
+  if (!pendingItemEdits.length) return;
+  const modal = document.getElementById('pendingPublishModal'), list = document.getElementById('pendingPublishList');
+  if (!modal || !list) return;
+  list.replaceChildren();
+  pendingItemEdits.forEach(function (entry) {
+    const row = document.createElement('div'); row.className = 'rounded-lg bg-slate-100 p-3 text-sm dark:bg-slate-800';
+    row.textContent = entry.section + ' / ' + entry.groupId + ' / elemento ' + (entry.index + 1);
+    list.appendChild(row);
+  });
+  const token = document.getElementById('githubEditToken'); if (token) token.value = '';
+  setPendingPublishStatus(currentLang === 'es' ? 'Se publicarán todos los cambios pendientes en un solo commit de GitHub.' : 'سيتم نشر جميع التعديلات المعلقة في عملية حفظ واحدة على GitHub.', false);
+  modal.classList.remove('hidden'); document.body.classList.add('overflow-hidden');
+}
+
+function closePendingPublishModal() {
+  const modal = document.getElementById('pendingPublishModal'); if (modal) modal.classList.add('hidden');
+  document.body.classList.remove('overflow-hidden');
+}
+
+function setPendingPublishStatus(message, isError) {
+  const status = document.getElementById('pendingPublishStatus'); if (!status) return;
+  status.textContent = message;
+  status.className = 'text-sm rounded-xl p-3 ' + (isError ? 'bg-rose-50 text-rose-800 dark:bg-rose-950 dark:text-rose-200' : 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200');
+}
+
+async function publishPendingChanges(event) {
   if (event) event.preventDefault();
-  if (!itemEditorState) return;
+  if (!pendingItemEdits.length) return;
   const tokenInput = document.getElementById('githubEditToken'), token = tokenInput ? tokenInput.value.trim() : '';
-  if (!token) {
-    setItemEditorStatus(currentLang === 'es' ? 'Introduce un token fine-grained de GitHub con permiso Contents: Read and write para este repositorio.' : 'أدخل رمز GitHub محدود الصلاحيات مع Contents: Read and write لهذا المستودع.', true);
-    return;
+  if (!token) return setPendingPublishStatus(currentLang === 'es' ? 'Introduce tu token fine-grained de GitHub.' : 'أدخل رمز GitHub المحدود الصلاحيات.', true);
+  const button = document.getElementById('publishPendingButton');
+  if (button) { button.disabled = true; button.textContent = currentLang === 'es' ? 'Publicando…' : 'جارٍ النشر…'; }
+  const headers = { 'Accept': 'application/vnd.github+json', 'Authorization': 'Bearer ' + token, 'X-GitHub-Api-Version': '2022-11-28', 'Content-Type': 'application/json' };
+  async function api(path, options) {
+    const response = await fetch('https://api.github.com/repos/' + EDITOR_REPO + path, Object.assign({ headers: headers }, options || {}));
+    const data = await response.json();
+    if (!response.ok) throw new Error(data.message || ('Error HTTP ' + response.status));
+    return data;
   }
-  const button = document.getElementById('itemEditorSaveButton');
-  if (button) { button.disabled = true; button.textContent = currentLang === 'es' ? 'Guardando…' : 'جارٍ الحفظ…'; }
   try {
-    const updatedItem = buildEditedItem(), apiUrl = 'https://api.github.com/repos/' + EDITOR_REPO + '/contents/' + itemEditorState.filePath;
-    const headers = { 'Accept': 'application/vnd.github+json', 'Authorization': 'Bearer ' + token, 'X-GitHub-Api-Version': '2022-11-28' };
-    setItemEditorStatus(currentLang === 'es' ? 'Leyendo el archivo original de GitHub…' : 'جارٍ قراءة الملف original de GitHub…', false);
-    const readResponse = await fetch(apiUrl + '?ref=' + encodeURIComponent(EDITOR_BRANCH), { headers: headers }), readData = await readResponse.json();
-    if (!readResponse.ok) throw new Error(readData.message || ('Error HTTP ' + readResponse.status + ' al leer el archivo.'));
-    const updatedSource = replaceEditorItemSource(decodeEditorBase64(readData.content || ''), itemEditorState.groupId, itemEditorState.index, itemEditorState.originalItem, updatedItem);
-    setItemEditorStatus(currentLang === 'es' ? 'Guardando el cambio en la rama main…' : 'جارٍ حفظ التعديل في الفرع main…', false);
-    const writeResponse = await fetch(apiUrl, {
-      method: 'PUT', headers: Object.assign({ 'Content-Type': 'application/json' }, headers),
-      body: JSON.stringify({ message: 'Editar elemento ' + itemEditorState.groupId + ' #' + (itemEditorState.index + 1), content: encodeEditorBase64(updatedSource), sha: readData.sha, branch: EDITOR_BRANCH })
+    setPendingPublishStatus(currentLang === 'es' ? 'Leyendo el estado actual de GitHub…' : 'جارٍ قراءة حالة GitHub الحالية…', false);
+    const ref = await api('/git/ref/heads/' + encodeURIComponent(EDITOR_BRANCH));
+    const headSha = ref.object.sha;
+    const commit = await api('/git/commits/' + headSha);
+    const grouped = {};
+    pendingItemEdits.forEach(function (entry) {
+      if (!grouped[entry.filePath]) grouped[entry.filePath] = [];
+      grouped[entry.filePath].push(entry);
     });
-    const writeData = await writeResponse.json();
-    if (!writeResponse.ok) throw new Error(writeData.message || ('Error HTTP ' + writeResponse.status + ' al guardar.'));
-    githubEditToken = token; currentGroup.items[itemEditorState.index] = updatedItem;
-    closeItemEditor(); renderGroupItems();
-    showToast(currentLang === 'es' ? 'Guardado en GitHub. Pages puede tardar en actualizarse.' : 'تم الحفظ في GitHub. قد يستغرق تحديث الموقع بعض الوقت.');
+    const newContents = {};
+    for (const path of Object.keys(grouped)) {
+      const file = await api('/contents/' + path + '?ref=' + headSha);
+      let source = decodeEditorBase64(file.content || '');
+      const edits = grouped[path].map(function (entry) {
+        const target = locateEditorItemRange(source, entry.groupId, entry.originalItem, entry.occurrence);
+        const indentStart = source.lastIndexOf('\n', target.start - 1), lineStart = indentStart < 0 ? 0 : indentStart + 1;
+        const indent = source.slice(lineStart, target.start).match(/^\s*/)[0];
+        return { start: target.start, end: target.end, replacement: JSON.stringify(entry.updatedItem, null, 2).split('\n').map(function (line, i) { return i === 0 ? line : indent + line; }).join('\n') };
+      }).sort(function (a, b) { return b.start - a.start; });
+      edits.forEach(function (edit) { source = source.slice(0, edit.start) + edit.replacement + source.slice(edit.end); });
+      newContents[path] = source;
+    }
+    setPendingPublishStatus(currentLang === 'es' ? 'Preparando un único commit con todos los archivos…' : 'جارٍ تجهيز حفظ واحد لجميع الملفات…', false);
+    const treeEntries = [];
+    for (const path of Object.keys(newContents)) {
+      const blob = await api('/git/blobs', { method: 'POST', body: JSON.stringify({ content: newContents[path], encoding: 'utf-8' }) });
+      treeEntries.push({ path: path, mode: '100644', type: 'blob', sha: blob.sha });
+    }
+    const tree = await api('/git/trees', { method: 'POST', body: JSON.stringify({ base_tree: commit.tree.sha, tree: treeEntries }) });
+    const newCommit = await api('/git/commits', { method: 'POST', body: JSON.stringify({ message: 'Actualizar contenido: ' + pendingItemEdits.length + ' elemento(s)', tree: tree.sha, parents: [headSha] }) });
+    setPendingPublishStatus(currentLang === 'es' ? 'Publicando el commit en main…' : 'جارٍ نشر التعديلات في main…', false);
+    await api('/git/refs/heads/' + encodeURIComponent(EDITOR_BRANCH), { method: 'PATCH', body: JSON.stringify({ sha: newCommit.sha, force: false }) });
+    pendingItemEdits = [];
+    persistPendingItemEdits();
+    if (currentGroup && currentGroup.items) {
+      const section = currentSection, groupId = currentGroup.id;
+      currentGroup.items.forEach(function (item, index) {
+        const entry = getPendingEdit(section, groupId, index);
+        if (entry) currentGroup.items[index] = entry.updatedItem;
+      });
+    }
+    closePendingPublishModal();
+    if (typeof renderGroupItems === 'function' && currentGroup) renderGroupItems();
+    showToast(currentLang === 'es' ? 'Todos los cambios se han guardado en un solo commit de GitHub.' : 'تم حفظ جميع التعديلات في عملية واحدة على GitHub.');
   } catch (error) {
-    setItemEditorStatus((currentLang === 'es' ? 'No se pudo guardar: ' : 'تعذر الحفظ: ') + (error.message || String(error)), true);
+    setPendingPublishStatus((currentLang === 'es' ? 'No se pudieron publicar los cambios: ' : 'تعذر نشر التعديلات: ') + (error.message || String(error)), true);
   } finally {
-    if (button) { button.disabled = false; button.textContent = currentLang === 'es' ? 'Guardar en GitHub' : 'حفظ في GitHub'; }
+    if (button) { button.disabled = false; button.textContent = currentLang === 'es' ? 'Publicar todos en GitHub' : 'نشر الكل على GitHub'; }
   }
 }
 
