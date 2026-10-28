@@ -433,18 +433,48 @@
         <h2 id="itemEditorTitle" class="text-lg font-extrabold text-emerald-800 dark:text-emerald-300">Editar elemento</h2>
         <button type="button" onclick="closeItemEditor()" class="rounded-xl px-3 py-2 text-xl hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Cerrar">✕</button>
       </div>
-      <form onsubmit="saveItemToGitHub(event)" class="space-y-4 p-4 sm:p-6">
+      <form onsubmit="stageItemChanges(); return false;" class="space-y-4 p-4 sm:p-6">
         <div id="itemEditorFields" class="grid grid-cols-1 gap-4 md:grid-cols-2"></div>
-        <div class="space-y-2 rounded-xl border border-amber-300 bg-amber-50 p-3 dark:border-amber-800 dark:bg-amber-950/40">
-          <label for="githubEditToken" class="block text-sm font-bold text-slate-800 dark:text-slate-100">GitHub fine-grained personal access token</label>
-          <input id="githubEditToken" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="github_pat_…" class="w-full rounded-xl border border-slate-300 bg-white p-3 text-sm dark:border-slate-600 dark:bg-slate-800">
-          <p class="text-xs leading-relaxed text-slate-700 dark:text-slate-300">Se utiliza únicamente para llamar a la API de GitHub desde este navegador y no se guarda en localStorage. Autoriza solo el repositorio <strong>Mundial-45/ZadALQulub</strong> y el permiso <strong>Contents: Read and write</strong>. No compartas este token.</p>
-          <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer" class="inline-block text-sm font-bold text-emerald-700 underline dark:text-emerald-300">Crear token en GitHub</a>
-        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300">Los cambios quedan guardados temporalmente en este dispositivo. Puedes seguir editando otros elementos y publicarlos juntos cuando quieras.</p>
         <p id="itemEditorStatus" class="text-sm rounded-xl bg-slate-100 p-3 text-slate-700 dark:bg-slate-800 dark:text-slate-200" role="status" aria-live="polite"></p>
         <div class="flex flex-wrap justify-end gap-2 border-t border-slate-200 pt-4 dark:border-slate-700">
           <button type="button" onclick="closeItemEditor()" class="rounded-xl border border-slate-300 px-4 py-2.5 font-bold hover:bg-slate-100 dark:border-slate-600 dark:hover:bg-slate-800">Cancelar</button>
-          <button id="itemEditorSaveButton" type="submit" class="rounded-xl bg-emerald-700 px-5 py-2.5 font-bold text-white hover:bg-emerald-800 disabled:opacity-50">Guardar en GitHub</button>
+          <button id="itemEditorSaveButton" type="submit" class="rounded-xl bg-emerald-700 px-5 py-2.5 font-bold text-white hover:bg-emerald-800 disabled:opacity-50">Guardar temporalmente</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <div id="pendingEditsDock" class="hidden fixed bottom-3 left-3 right-3 z-[80] mx-auto max-w-3xl rounded-2xl border border-emerald-300 bg-white/95 p-3 shadow-xl backdrop-blur dark:border-emerald-800 dark:bg-slate-900/95">
+    <div class="flex items-center gap-3">
+      <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-100 font-extrabold text-emerald-800 dark:bg-emerald-950 dark:text-emerald-200" id="pendingEditsCount">0</div>
+      <div class="min-w-0 flex-1">
+        <p class="font-bold text-slate-900 dark:text-white">Cambios temporales</p>
+        <p id="pendingEditsSummary" class="text-xs text-slate-600 dark:text-slate-300"></p>
+      </div>
+      <button type="button" onclick="openPendingPublishModal()" class="shrink-0 rounded-xl bg-emerald-700 px-4 py-2.5 text-sm font-bold text-white hover:bg-emerald-800">Publicar todos</button>
+    </div>
+  </div>
+  <div id="pendingPublishModal" class="hidden fixed inset-0 z-[110] overflow-y-auto bg-slate-950/70 p-3 sm:p-6" role="dialog" aria-modal="true" aria-labelledby="pendingPublishTitle">
+    <div class="mx-auto my-4 max-w-2xl overflow-hidden rounded-2xl border border-emerald-200 bg-white shadow-2xl dark:border-slate-700 dark:bg-slate-900">
+      <div class="flex items-center justify-between gap-3 border-b border-slate-200 p-4 dark:border-slate-700">
+        <h2 id="pendingPublishTitle" class="text-lg font-extrabold text-emerald-800 dark:text-emerald-300">Publicar cambios pendientes</h2>
+        <button type="button" onclick="closePendingPublishModal()" class="rounded-xl px-3 py-2 text-xl hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Cerrar">✕</button>
+      </div>
+      <form onsubmit="publishPendingChanges(event)" class="space-y-4 p-4 sm:p-6">
+        <p class="text-sm text-slate-600 dark:text-slate-300">Revisa la lista y publica todos los cambios en un único commit de GitHub.</p>
+        <div id="pendingPublishList" class="max-h-56 space-y-2 overflow-y-auto"></div>
+        <div class="space-y-2 rounded-xl border border-amber-300 bg-amber-50 p-3 dark:border-amber-800 dark:bg-amber-950/40">
+          <label for="githubEditToken" class="block text-sm font-bold text-slate-800 dark:text-slate-100">Token personal de GitHub (fine-grained)</label>
+          <input id="githubEditToken" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="github_pat_…" class="w-full rounded-xl border border-slate-300 bg-white p-3 text-sm dark:border-slate-600 dark:bg-slate-800" required>
+          <p class="text-xs leading-relaxed text-slate-700 dark:text-slate-300">Autoriza solo el repositorio <strong>Mundial-45/ZadALQulub</strong> y el permiso <strong>Contents: Read and write</strong>. No compartas el token. No se guarda en localStorage.</p>
+          <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer" class="inline-block text-sm font-bold text-emerald-700 underline dark:text-emerald-300">Crear token en GitHub</a>
+        </div>
+        <p id="pendingPublishStatus" class="text-sm rounded-xl bg-slate-100 p-3 text-slate-700 dark:bg-slate-800 dark:text-slate-200" role="status" aria-live="polite"></p>
+        <div class="flex flex-wrap justify-end gap-2 border-t border-slate-200 pt-4 dark:border-slate-700">
+          <button type="button" onclick="closePendingPublishModal()" class="rounded-xl border border-slate-300 px-4 py-2.5 font-bold hover:bg-slate-100 dark:border-slate-600 dark:hover:bg-slate-800">Seguir editando</button>
+          <button id="publishPendingButton" type="submit" class="rounded-xl bg-emerald-700 px-5 py-2.5 font-bold text-white hover:bg-emerald-800 disabled:opacity-50">Publicar todos en GitHub</button>
         </div>
       </form>
     </div>
