@@ -654,11 +654,11 @@ function getEditorObjectText(objectSource) {
 }
 
 function replaceEditorItemSource(source, groupId, itemIndex, originalItem, updatedItem) {
-  const ranges = scanEditorObjectRanges(source), idNeedle = '"id": ' + JSON.stringify(groupId), legacyIdNeedle = 'id: ' + JSON.stringify(groupId), idIndex = Math.max(source.indexOf(idNeedle), source.indexOf(legacyIdNeedle));
-  if (idIndex < 0) throw new Error('No se encontró el grupo ' + groupId + ' en el archivo.');
+  const ranges = scanEditorObjectRanges(source);
   const groupCandidates = ranges.filter(function (range) {
-    if (!(range.start <= idIndex && range.end >= idIndex)) return false;
-    return /["']?items["']?\s*:/.test(source.slice(range.start, range.end));
+    const snippet = source.slice(range.start, range.end);
+    const idMatch = snippet.match(/["']?id["']?\s*:\s*("(?:\\\\.|[^"\\\\])*"|'(?:\\\\.|[^'\\\\])*')/s);
+    return !!(idMatch && readEditorSourceString(idMatch[1]) === groupId && /["']?items["']?\s*:/.test(snippet));
   }).sort(function (a, b) { return (a.end - a.start) - (b.end - b.start); });
   if (!groupCandidates.length) throw new Error('No se encontró la lista de elementos del grupo.');
   const groupRange = groupCandidates[0];
