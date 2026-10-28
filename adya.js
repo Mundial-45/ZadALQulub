@@ -7,42 +7,42 @@ const adyaData = [
   items: [
     {
       text: "﴿وَمِنۡهُم مَّن يَقُولُ رَبَّنَآ ءَاتِنَا فِي ٱلدُّنۡيَا حَسَنَةٗ وَفِي ٱلۡأٓخِرَةِ حَسَنَةٗ وَقِنَا عَذَابَ ٱلنَّارِ۝﴾",
-      latin: 'Rabbanā ātinā fid-dunyā ḥasanatan wa fil-ākhirati ḥasanatan wa qinā ‘adhāban-nār.',
+      latin: 'Wa minhum man yaqūlu rabbanā ātinā fid-dunyā ḥasanatan wa fil-ākhirati ḥasanatan wa qinā ‘adhāban-nār.',
       explanationEs: 'Pero entre ellos hay quienes dicen: “¡Señor nuestro! Danos bienestar en esta vida y en la otra, y presérvanos del tormento del Fuego”. \n(Al-Baqarah: 201)',
       note: 'سورة البقرة - الآية 201',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/002201.mp3"]
         },
     {
       text: "﴿وَلَمَّا بَرَزُواْ لِجَالُوتَ وَجُنُودِهِۦ قَالُواْ رَبَّنَآ أَفۡرِغۡ عَلَيۡنَا صَبۡرٗا وَثَبِّتۡ أَقۡدَامَنَا وَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ۝﴾",
-      latin: 'Rabbanā afrigh ‘alaynā ṣabran wa thabbit aqdāmanā wan-ṣurnā ‘alal-qawmil-kāfirīn.',
+      latin: 'Wa lammā barazū li-Jālūta wa junūdihī qālū rabbanā afrigh ‘alaynā ṣabran wa thabbit aqdāmanā wanṣurnā ‘alal-qawmil-kāfirīn.',
       explanationEs: 'Al enfrentarse a Goliat y sus soldados suplicaban: “¡Señor nuestro! Danos paciencia, mantennos firmes y concédenos la victoria sobre los que niegan la verdad”. \n(Al-Baqarah: 250)',
       note: 'سورة البقرة - الآية 250',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/002250.mp3"]
         },
     {
-      text: "﴿ءَامَنَ ٱلرَّسُولُ بِمَآ أُنزِلَ إِلَيۡهِ مِن رَّبِّهِۦ وَٱلۡمُؤۡمِنُونَۚ كُلٌّ ءَامَنَ بِٱللَّهِ وَمَلَٰٓئِكَتِهِۦ وَكُتُبِهِۦ وَرُسُلِهِۦ لَا نُفَرِّقُ بَيۡنَ أَحَدٖ مِّن رُّسُلِهِۦۚ وَقَالُواْ سَمِعۡنَا وَأَطَعۡنَاۖ غُفۡرَانَكَ رَبَّنَا وَإِلَيۡكَ ٱلۡمَصِيرُ۝ لَا يُكَلِّفُ ٱللَّهُ نَفۡسًا إِلَّا وُسۡعَهَاۚ لَهَا مَا كَسَبَتۡ وَعَلَيۡهَا مَا ٱكۡتَسَبَتۡۗ رَبَّنَا لَا تُؤَاخِذۡنَآ إِن نَّسِينَآ أَوۡ أَخۡطَأۡنَاۚ رَبَّنَا وَلَا تَحۡمِلۡ عَلَيۡنَآ إِصۡرٗا كَمَا حَمَلۡتَهُۥ عَلَى ٱلَّذِينَ مِن قَبۡلِنَاۚ رَبَّنَا وَلَا تُحَمِّلۡنَا مَا لَا طَاقَةَ لَنَا بِهِۦۖ وَٱعۡفُ عَنَّا وَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَآۚ أَنتَ مَوۡلَىٰنَا فَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ۝﴾",
-      latin: 'Rabbanā lā tu’ākhidhnā in nasīnā aw akhṭa’nā, Rabbanā wa lā taḥmil ‘alaynā iṣran kamā ḥamaltahū ‘alal-ladhīna min qablinā, \nRabbanā wa lā tuḥammilnā mā lā ṭāqata lanā bih, wa‘fu ‘annā wagh-fir lanā war-ḥamnā Anta Mawlānā fan-ṣurnā ‘alal-qawmil-kāfirīn.',
-      explanationEs: 'El Mensajero cree en lo que le ha sido revelado por su Señor, y lo mismo hacen los creyentes. Todos creen en Dios, en Sus ángeles, en Sus Libros y en Sus Mensajeros. No hacemos diferencia entre ninguno de Sus Mensajeros. Y dicen: “Oímos y obedecemos. Perdónanos, Señor nuestro, pues ante Ti retornaremos”. Dios no exige a nadie por encima de sus posibilidades; a su favor tendrá el bien que haga, y en su contra tendrá el mal que haga. “¡Señor nuestro! No nos castigues si olvidamos o cometemos un error. ¡Señor nuestro! No nos impongas una carga como la que impusiste a quienes nos precedieron. ¡Señor nuestro! No nos impongas algo superior a lo que podamos soportar. Perdónanos, absuélvenos y ten misericordia de nosotros. Tú eres nuestro Protector, concédenos el triunfo sobre los que niegan la verdad”. (Al-Baqarah 2:285-286; traducción de Isa García)',
+      text: "﴿لَا يُكَلِّفُ ٱللَّهُ نَفۡسًا إِلَّا وُسۡعَهَاۚ لَهَا مَا كَسَبَتۡ وَعَلَيۡهَا مَا ٱكۡتَسَبَتۡۗ رَبَّنَا لَا تُؤَاخِذۡنَآ إِن نَّسِينَآ أَوۡ أَخۡطَأۡنَاۚ رَبَّنَا وَلَا تَحۡمِلۡ عَلَيۡنَآ إِصۡرٗا كَمَا حَمَلۡتَهُۥ عَلَى ٱلَّذِينَ مِن قَبۡلِنَاۚ رَبَّنَا وَلَا تُحَمِّلۡنَا مَا لَا طَاقَةَ لَنَا بِهِۦۖ وَٱعۡفُ عَنَّا وَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَآۚ أَنتَ مَوۡلَىٰنَا فَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ۝﴾",
+      latin: 'Lā yukallifullāhu nafsan illā wus‘ahā, lahā mā kasabat wa ‘alayhā maktasabat. Rabbanā lā tu’ākhidhnā in nasīnā aw akhṭa’nā. Rabbanā wa lā taḥmil ‘alaynā iṣran kamā ḥamaltahū ‘alal-ladhīna min qablinā. Rabbanā wa lā tuḥammilnā mā lā ṭāqata lanā bih, wa‘fu ‘annā waghfir lanā warḥamnā. Anta Mawlānā fanṣurnā ‘alal-qawmil-kāfirīn.',
+      explanationEs: 'Dios no exige a nadie por encima de sus posibilidades. A su favor tendrá el bien que haga, y en su contra tendrá el mal que haga. «¡Señor nuestro! No nos castigues si olvidamos o cometemos un error. ¡Señor nuestro! No nos impongas una carga como la que impusiste a quienes nos precedieron. ¡Señor nuestro! No nos impongas algo superior a lo que podamos soportar. Perdónanos, absuélvenos y ten misericordia de nosotros. Tú eres nuestro Protector, concédenos el triunfo sobre los que niegan la verdad». (Al-Baqarah 2:286)',
       note: 'سورة البقرة - الآية 286',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/002286.mp3"]
         },
     {
       text: "﴿رَبَّنَا لَا تُزِغۡ قُلُوبَنَا بَعۡدَ إِذۡ هَدَيۡتَنَا وَهَبۡ لَنَا مِن لَّدُنكَ رَحۡمَةًۚ إِنَّكَ أَنتَ ٱلۡوَهَّابُ۝﴾",
       latin: 'Rabbanā lā tuzigh qulūbanā ba‘da idh hadaytanā wa hab lanā min ladunka raḥmah, innaka Antal-Wahhāb.',
-      explanationEs: '¡Creyentes! Arrepiéntanse sinceramente ante Allah, puede que así su Señor borre sus faltas y los introduzca en jardines del Paraíso por donde corren ríos. \nEse día Allah no avergonzará al Profeta ni a los que creyeron junto a él. Una luz se extenderá delante de ellos y a su derecha, \ny ellos dirán: “¡Señor nuestro! Auméntanos nuestra luz y perdónanos. Tú eres sobre toda cosa poderoso”. (At-Tahrim: \n8)',
+      explanationEs: '¡Señor nuestro! No permitas que nuestros corazones se desvíen después de habernos guiado y concédenos una misericordia de Tu parte. Tú eres el Dadivoso. (Ali ‘Imran 3:8)',
       note: 'سورة آل عمران - الآية 8',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003008.mp3"]
         },
     {
       text: "﴿ٱلَّذِينَ يَقُولُونَ رَبَّنَآ إِنَّنَآ ءَامَنَّا فَٱغۡفِرۡ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ ٱلنَّارِ۝﴾",
-      latin: 'Rabbanā innanā āmannā fagh-fir lanā dhunūbanā wa qinā ‘adhāban-nār.',
+      latin: 'Alladhīna yaqūlūna rabbanā innanā āmannā faghfir lanā dhunūbanā wa qinā ‘adhāban-nār.',
       explanationEs: 'quienes dicen: “¡Señor nuestro! Creemos en Ti. Perdónanos nuestros pecados y líbranos del castigo del Fuego”. (Ali \'Imran: 16)',
       note: 'سورة آل عمران - الآية 16',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003016.mp3"]
         },
     {
       text: "﴿هُنَالِكَ دَعَا زَكَرِيَّا رَبَّهُۥۖ قَالَ رَبِّ هَبۡ لِي مِن لَّدُنكَ ذُرِّيَّةٗ طَيِّبَةًۖ إِنَّكَ سَمِيعُ ٱلدُّعَآءِ۝﴾",
-      latin: 'Rabbi hab lī min ladunka dhurriyyatan ṭayyibah, innaka Samī‘ud-du‘ā’.',
+      latin: 'Hunālika da‘ā Zakariyyā rabbahū, qāla rabbi hab lī min ladunka dhurriyyatan ṭayyibah, innaka Samī‘ud-du‘ā’. ',
       explanationEs: 'En el templo, Zacarías invocó a su Señor diciendo: “¡Señor mío! Concédeme una descendencia piadosa, Tú escuchas los ruegos”. (Ali \'Imran: 38)',
       note: 'سورة آل عمران - الآية 38',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003038.mp3"]
@@ -56,57 +56,57 @@ const adyaData = [
         },
     {
       text: "﴿وَمَا كَانَ قَوۡلَهُمۡ إِلَّآ أَن قَالُواْ رَبَّنَا ٱغۡفِرۡ لَنَا ذُنُوبَنَا وَإِسۡرَافَنَا فِيٓ أَمۡرِنَا وَثَبِّتۡ أَقۡدَامَنَا وَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ۝﴾",
-      latin: 'Rabbanāgh-fir lanā dhunūbanā wa isrāfanā fī amrinā wa thabbit aqdāmanā wan-ṣurnā ‘alal-qawmil-kāfirīn.',
+      latin: 'Wa mā kāna qawlahum illā an qālū rabbanāghfir lanā dhunūbanā wa isrāfanā fī amrinā wa thabbit aqdāmanā wanṣurnā ‘alal-qawmil-kāfirīn.',
       explanationEs: 'No pronunciaban otras palabras más que: “¡Señor nuestro! Perdona nuestros pecados y nuestros excesos. Afirma nuestros pasos y concédenos el triunfo sobre los que rechazan la verdad”. \n(Ali \'Imran: 147)',
       note: 'سورة آل عمران - الآية 147',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003147.mp3"]
         },
     {
       text: "﴿ٱلَّذِينَ يَذۡكُرُونَ ٱللَّهَ قِيَٰمٗا وَقُعُودٗا وَعَلَىٰ جُنُوبِهِمۡ وَيَتَفَكَّرُونَ فِي خَلۡقِ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ رَبَّنَا مَا خَلَقۡتَ هَٰذَا بَٰطِلٗا سُبۡحَٰنَكَ فَقِنَا عَذَابَ ٱلنَّارِ۝ رَبَّنَآ إِنَّكَ مَن تُدۡخِلِ ٱلنَّارَ فَقَدۡ أَخۡزَيۡتَهُۥۖ وَمَا لِلظَّٰلِمِينَ مِنۡ أَنصَارٖ۝ رَّبَّنَآ إِنَّنَا سَمِعۡنَا مُنَادِيٗا يُنَادِي لِلۡإِيمَٰنِ أَنۡ ءَامِنُواْ بِرَبِّكُمۡ فَـَٔامَنَّاۚ رَبَّنَا فَٱغۡفِرۡ لَنَا ذُنُوبَنَا وَكَفِّرۡ عَنَّا سَيِّـَٔاتِنَا وَتَوَفَّنَا مَعَ ٱلۡأَبۡرَارِ۝ رَبَّنَا وَءَاتِنَا مَا وَعَدتَّنَا عَلَىٰ رُسُلِكَ وَلَا تُخۡزِنَا يَوۡمَ ٱلۡقِيَٰمَةِۖ إِنَّكَ لَا تُخۡلِفُ ٱلۡمِيعَادَ۝﴾",
-      latin: "Rabbanā mā khalaqta hādhā bāṭilan, subḥānaka fa-qinā ʿadhāban-nār. Rabbanā innaka man tudkhilin-nāra faqad akhzaytahū wa mā liẓ-ẓālimīna min anṣār. Rabbanā innanā samiʿnā munādiyan yunādī lil-īmāni an āminū bi-rabbikum fa-āmannā. Rabbanā faghfir lanā dhunūbanā wa kaffir ʿannā sayyi'ātinā wa tawaffanā maʿal-abrār. Rabbanā wa ātinā mā waʿadtanā ʿalā rusulika wa lā tukhzinā yawmal-qiyāmah, innaka lā tukhliful-mīʿād.",
+      latin: 'Alladhīna yadhkurūna Allāha qiyāman wa qu‘ūdan wa ‘alā junūbihim wa yatafakkarūna fī khalqis-samāwāti wal-arḍ. Rabbanā mā khalaqta hādhā bāṭilan, subḥānaka fa-qinā ‘adhāban-nār. Rabbanā innaka man tudkhilin-nāra faqad akhzaytahū wa mā liẓ-ẓālimīna min anṣār. Rabbanā innanā sami‘nā munādiyan yunādī lil-īmāni an āminū bi-rabbikum fa-āmannā. Rabbanā faghfir lanā dhunūbanā wa kaffir ‘annā sayyi’ātinā wa tawaffanā ma‘al-abrār. Rabbanā wa ātinā mā wa‘adtanā ‘alā rusulika wa lā tukhzinā yawmal-qiyāmah, innaka lā tukhliful-mī‘ād.',
       explanationEs: 'que invocan a Allah de pie, sentados o recostados, que meditan en la creación de los cielos y la Tierra, y dicen: “¡Señor nuestro! No has creado todo esto sin un sentido. \n¡Glorificado seas! Presérvanos del castigo del Fuego. ¡Señor nuestro! A quien condenes al Fuego lo habrás deshonrado, \nporque los opresores no tendrán quién los auxilie. ¡Señor nuestro! Hemos oído a quien convocaba a la fe, diciendo: \n‘Crean en su Señor’, y creímos. ¡Señor nuestro! Perdona nuestros pecados, borra nuestras malas acciones y, al morir, \nreúnenos con los piadosos. ¡Señor nuestro! Concédenos lo que has prometido a través de Tus Mensajeros y no nos humilles el Día de la Resurrección. \nTú no faltas a Tu promesa”. (Ali \'Imran: 191-194)',
       note: 'سورة آل عمران - الآيات 191-194',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003191.mp3", "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003192.mp3", "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003193.mp3", "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003194.mp3"]
         },
     {
       text: "﴿قَالَا رَبَّنَا ظَلَمۡنَآ أَنفُسَنَا وَإِن لَّمۡ تَغۡفِرۡ لَنَا وَتَرۡحَمۡنَا لَنَكُونَنَّ مِنَ ٱلۡخَٰسِرِينَ۝﴾",
-      latin: 'Rabbanā ẓalamnā anfuranā wa il-lam taghfir lanā wa tarḥamnā lanakūnanna minal-khāsirīn.',
+      latin: 'Qālā rabbanā ẓalamnā anfusanā wa illam taghfir lanā wa tarḥamnā lanakūnanna minal-khāsirīn.',
       explanationEs: 'Ellos dijeron (arrepentidos): “¡Señor nuestro! Hemos sido injustos con nosotros mismos; si no nos perdonas y no nos tienes misericordia, \nseremos de los perdidos”. (Al-A\'raf: 23)',
       note: 'سورة الأعراف - الآية 23',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/007023.mp3"]
         },
     {
-      text: "﴿۞ وَإِذَا صُرِفَتۡ أَبۡصَٰرُهُمۡ تِلۡقَآءَ أَصۡحَٰبِ ٱلنَّارِ قَالُواْ رَبَّنَا لَا تَجۡعَلۡنَا مَعَ ٱلۡقَوۡمِ ٱلظَّٰلِمِينَ۝﴾",
-      latin: 'Rabbanā lā taj‘alnā ma‘al-qawmiẓ-ẓālimīn.',
+      text: "﴿وَإِذَا صُرِفَتۡ أَبۡصَٰرُهُمۡ تِلۡقَآءَ أَصۡحَٰبِ ٱلنَّارِ قَالُواْ رَبَّنَا لَا تَجۡعَلۡنَا مَعَ ٱلۡقَوۡمِ ٱلظَّٰلِمِينَ۝﴾",
+      latin: 'Wa idhā ṣurifat abṣāruhum tilqā’a aṣḥābin-nāri qālū rabbanā lā taj‘alnā ma‘al-qawmiẓ-ẓālimīn.',
       explanationEs: 'Cuando dirijan sus miradas hacia los habitantes del Fuego dirán: “¡Señor nuestro! No nos juntes con la gente que cometió injusticias”. \n(Al-A\'raf: 47)',
       note: 'سورة الأعراف - الآية 47',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/007047.mp3"]
         },
     {
       text: "﴿وَمَا تَنقِمُ مِنَّآ إِلَّآ أَنۡ ءَامَنَّا بِـَٔايَٰتِ رَبِّنَا لَمَّا جَآءَتۡنَاۚ رَبَّنَآ أَفۡرِغۡ عَلَيۡنَا صَبۡرٗا وَتَوَفَّنَا مُسۡلِمِينَ۝﴾",
-      latin: 'Rabbanā afrigh ‘alaynā ṣabran wa tawaffanā muslimīn.',
+      latin: 'Wa mā tanqimu minnā illā an āmannā bi-āyāti rabbinā lammā jā’atnā. Rabbanā afrigh ‘alaynā ṣabran wa tawaffanā muslimīn.',
       explanationEs: 'Solo te vengas de nosotros porque hemos creído cuando llegaron los milagros de nuestro Señor. ¡Señor nuestro! Danos paciencia y haznos morir musulmanes, \nsometidos a Ti”. (Al-A\'raf: 126)',
       note: 'سورة الأعراف - الآية 126',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/007126.mp3"]
         },
     {
       text: "﴿فَإِن تَوَلَّوۡاْ فَقُلۡ حَسۡبِيَ ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَۖ عَلَيۡهِ تَوَكَّلۡتُۖ وَهُوَ رَبُّ ٱلۡعَرۡشِ ٱلۡعَظِيمِ۝﴾",
-      latin: 'Ḥasbiyallāhu lā ilāha illā Hū, ‘alayhi tawakkaltu wa Huwa Rabbul-‘Arshil-‘Aẓīm.',
+      latin: 'Fa-in tawallaw faqul ḥasbiyallāhu lā ilāha illā Hū, ‘alayhi tawakkaltu wa Huwa Rabbul-‘Arshil-‘Aẓīm.',
       explanationEs: '(¡Oh, Mujámmad!) Si rechazan (el Mensaje) diles: “Me es suficiente con Allah, no hay otra divinidad salvo Él, a Él me encomiendo y Él es el Señor del Trono grandioso”. \n(At-Tawbah: 129)',
       note: 'سورة التوبة - الآية 129',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/009129.mp3"]
         },
     {
       text: "﴿فَقَالُواْ عَلَى ٱللَّهِ تَوَكَّلۡنَا رَبَّنَا لَا تَجۡعَلۡنَا فِتۡنَةٗ لِّلۡقَوۡمِ ٱلظَّٰلِمِينَ۝ وَنَجِّنَا بِرَحۡمَتِكَ مِنَ ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ۝﴾",
-      latin: 'Rabbanā lā taj‘alnā fitnatal-lil-qawmiẓ-ẓālimīn, wa najjinā bi-raḥmatika minal-qawmil-kāfirīn.',
-      explanationEs: '¡Creyentes! Arrepiéntanse sinceramente ante Allah, puede que así su Señor borre sus faltas y los introduzca en jardines del Paraíso por donde corren ríos. \nEse día Allah no avergonzará al Profeta ni a los que creyeron junto a él. Una luz se extenderá delante de ellos y a su derecha, \ny ellos dirán: “¡Señor nuestro! Auméntanos nuestra luz y perdónanos. Tú eres sobre toda cosa poderoso”. (At-Tahrim: \n8)',
+      latin: 'Fa-qālū ‘alallāhi tawakkalnā. Rabbanā lā taj‘alnā fitnatan lil-qawmiẓ-ẓālimīn, wa najjinā bi-raḥmatika minal-qawmil-kāfirīn.',
+      explanationEs: 'Dijeron: «En Dios nos encomendamos. ¡Señor nuestro! No permitas que los opresores nos sometan a una prueba y sálvanos, por Tu misericordia, de la gente que se niega a creer». (Yunus 10:85-86)',
       note: 'سورة يونس - الآيات 85-86',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/010085.mp3", "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/010086.mp3"]
         },
     {
       text: "﴿قَالَ رَبِّ إِنِّيٓ أَعُوذُ بِكَ أَنۡ أَسۡـَٔلَكَ مَا لَيۡسَ لِي بِهِۦ عِلۡمٞۖ وَإِلَّا تَغۡفِرۡ لِي وَتَرۡحَمۡنِيٓ أَكُن مِّنَ ٱلۡخَٰسِرِينَ۝﴾",
-      latin: 'Rabbi innī a‘ūdhu bika an as’alaka mā laysa lī bihī ‘ilm, wa illā taghfir lī wa tarḥamnī akum-minal-khāsirīn.',
-      explanationEs: 'Cuando dirijan sus miradas hacia los habitantes del Fuego dirán: “¡Señor nuestro! No nos juntes con la gente que cometió injusticias”. \n(Al-A\'raf: 47)',
+      latin: 'Rabbi innī a‘ūdhu bika an as’alaka mā laysa lī bihī ‘ilm, wa illā taghfir lī wa tarḥamnī akun minal-khāsirīn.',
+      explanationEs: 'Dijo: «¡Señor mío! Me refugio en Ti de pedirte algo de lo que no tengo conocimiento. Si no me perdonas y tienes misericordia de mí, seré de los perdedores». (Hud 11:47)',
       note: 'سورة هود - الآية 47',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/011047.mp3"]
         },
@@ -126,14 +126,14 @@ const adyaData = [
         },
     {
       text: "﴿وَقُل رَّبِّ أَدۡخِلۡنِي مُدۡخَلَ صِدۡقٖ وَأَخۡرِجۡنِي مُخۡرَجَ صِدۡقٖ وَٱجۡعَل لِّي مِن لَّدُنكَ سُلۡطَٰنٗا نَّصِيرٗا۝﴾",
-      latin: 'Rabbi adkhilnī mudkhala ṣidqiw-wa akhrijnī mukhraja ṣidqiw-waj-‘al lī min ladunka sulṭānan-naṣīrā.',
-      explanationEs: '¡Creyentes! Arrepiéntanse sinceramente ante Allah, puede que así su Señor borre sus faltas y los introduzca en jardines del Paraíso por donde corren ríos. \nEse día Allah no avergonzará al Profeta ni a los que creyeron junto a él. Una luz se extenderá delante de ellos y a su derecha, \ny ellos dirán: “¡Señor nuestro! Auméntanos nuestra luz y perdónanos. Tú eres sobre toda cosa poderoso”. (At-Tahrim: \n8)',
+      latin: 'Wa qul rabbi adkhilnī mudkhala ṣidqin wa akhrijnī mukhraja ṣidqin waj‘al lī min ladunka sulṭānan-naṣīrā.',
+      explanationEs: 'Di: «¡Señor mío! Haz que mi entrada y mi salida sean sinceras, y concédeme una autoridad que me auxilie». (Al-Isra 17:80)',
       note: 'سورة الإسراء - الآية 80',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/017080.mp3"]
         },
     {
       text: "﴿إِذۡ أَوَى ٱلۡفِتۡيَةُ إِلَى ٱلۡكَهۡفِ فَقَالُواْ رَبَّنَآ ءَاتِنَا مِن لَّدُنكَ رَحۡمَةٗ وَهَيِّئۡ لَنَا مِنۡ أَمۡرِنَا رَشَدٗا۝﴾",
-      latin: 'Rabbanā ātinā min ladunka raḥmataw-wa hayyi’ lanā min amrinā rashadā.',
+      latin: 'Idh awā al-fityatu ilal-kahfi faqālū rabbanā ātinā min ladunka raḥmatan wa hayyi’ lanā min amrinā rashadā.',
       explanationEs: 'Cuando los jóvenes se refugiaron en la caverna dijeron: “¡Señor nuestro! Acógenos en Tu misericordia y concédenos que nuestra situación se solucione correctamente”. \n(Al-Kahf: 10)',
       note: 'سورة الكهف - الآية 10',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/018010.mp3"]
@@ -141,49 +141,49 @@ const adyaData = [
     {
       text: "﴿قَالَ رَبِّ ٱشۡرَحۡ لِي صَدۡرِي۝وَيَسِّرۡ لِيٓ أَمۡرِي۝ وَٱحۡلُلۡ عُقۡدَةٗ مِّن لِّسَانِي۝يَفۡقَهُواْ قَوۡلِي۝﴾",
       latin: 'Rabbish-raḥ lī ṣadrī, wa yassir lī amrī, waḥ-lul ‘uqdatam-min-lisānī, yafqahū qawlī.',
-      explanationEs: '¡Creyentes! Arrepiéntanse sinceramente ante Allah, puede que así su Señor borre sus faltas y los introduzca en jardines del Paraíso por donde corren ríos. \nEse día Allah no avergonzará al Profeta ni a los que creyeron junto a él. Una luz se extenderá delante de ellos y a su derecha, \ny ellos dirán: “¡Señor nuestro! Auméntanos nuestra luz y perdónanos. Tú eres sobre toda cosa poderoso”. (At-Tahrim: \n8)',
+      explanationEs: 'Dijo: «¡Señor mío! Abre mi corazón, facilítame mi misión, desata el nudo de mi lengua para que comprendan mis palabras». (Ta-Ha 20:25-28)',
       note: 'سورة طه - الآيات 25-28',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/020025.mp3", "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/020026.mp3", "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/020027.mp3", "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/020028.mp3"]
         },
     {
       text: "﴿فَتَعَٰلَى ٱللَّهُ ٱلۡمَلِكُ ٱلۡحَقُّۗ وَلَا تَعۡجَلۡ بِٱلۡقُرۡءَانِ مِن قَبۡلِ أَن يُقۡضَىٰٓ إِلَيۡكَ وَحۡيُهُۥۖ وَقُل رَّبِّ زِدۡنِي عِلۡمٗا۝﴾",
-      latin: 'Rabbi zidnī ‘ilmā.',
+      latin: 'Fa-ta‘ālā Allāhul-Malikul-Ḥaqq. Wa lā ta‘jal bil-qur’āni min qabli an yuqḍā ilayka waḥyuhū wa qul rabbi zidnī ‘ilmā.',
       explanationEs: '¡Exaltado sea Allah! El único Soberano real. No te adelantes (¡Oh, Mujámmad!) a repetir lo que te es revelado del Corán hasta que (el ángel Gabriel) concluya (de recitarlo), \ny di: “¡Señor mío! Acrecienta mi conocimiento”. (Ta-Ha: 114)',
       note: 'سورة طه - الآية 114',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/020114.mp3"]
         },
     {
       text: "﴿وَذَا ٱلنُّونِ إِذ ذَّهَبَ مُغَٰضِبٗا فَظَنَّ أَن لَّن نَّقۡدِرَ عَلَيۡهِ فَنَادَىٰ فِي ٱلظُّلُمَٰتِ أَن لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبۡحَٰنَكَ إِنِّي كُنتُ مِنَ ٱلظَّٰلِمِينَ۝﴾",
-      latin: 'Lā ilāha illā Anta Subḥānaka innī kuntu minaẓ-ẓālimīn.',
-      explanationEs: '¡Creyentes! Arrepiéntanse sinceramente ante Allah, puede que así su Señor borre sus faltas y los introduzca en jardines del Paraíso por donde corren ríos. \nEse día Allah no avergonzará al Profeta ni a los que creyeron junto a él. Una luz se extenderá delante de ellos y a su derecha, \ny ellos dirán: “¡Señor nuestro! Auméntanos nuestra luz y perdónanos. Tú eres sobre toda cosa poderoso”. (At-Tahrim: \n8)',
+      latin: 'Wa dhān-nūni idh dhahaba mughāḍiban faẓanna an lan naqdira ‘alayhi fanādā fiẓ-ẓulumāti an lā ilāha illā Anta subḥānaka innī kuntu minaẓ-ẓālimīn.',
+      explanationEs: 'Y [recuerda a] Dhul Nun, cuando se marchó enojado y creyó que no lo pondríamos en aprietos. Entonces clamó en las tinieblas: «No hay otra divinidad excepto Tú. ¡Glorificado seas! En verdad, he sido de los injustos». (Al-Anbiya 21:87)',
       note: 'سورة الأنبياء - الآية 87',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/021087.mp3"]
         },
     {
       text: "﴿وَزَكَرِيَّآ إِذۡ نَادَىٰ رَبَّهُۥ رَبِّ لَا تَذَرۡنِي فَرۡدٗا وَأَنتَ خَيۡرُ ٱلۡوَٰرِثِينَ۝﴾",
-      latin: 'Rabbi lā tadharnī fardan wa Anta khayrul-wārithīn.',
-      explanationEs: '¡Creyentes! Arrepiéntanse sinceramente ante Allah, puede que así su Señor borre sus faltas y los introduzca en jardines del Paraíso por donde corren ríos. \nEse día Allah no avergonzará al Profeta ni a los que creyeron junto a él. Una luz se extenderá delante de ellos y a su derecha, \ny ellos dirán: “¡Señor nuestro! Auméntanos nuestra luz y perdónanos. Tú eres sobre toda cosa poderoso”. (At-Tahrim: \n8)',
+      latin: 'Wa Zakariyyā idh nādā rabbahū, rabbi lā tadharnī fardan wa Anta khayrul-wārithīn.',
+      explanationEs: 'Y [recuerda a] Zacarías, cuando imploró a su Señor: «¡Señor mío! No me dejes solo [sin descendencia], aunque Tú eres el mejor de los herederos». (Al-Anbiya 21:89)',
       note: 'سورة الأنبياء - الآية 89',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/021089.mp3"]
         },
     {
       text: "﴿وَقُل رَّبِّ أَعُوذُ بِكَ مِنۡ هَمَزَٰتِ ٱلشَّيَٰطِينِ۝وَأَعُوذُ بِكَ رَبِّ أَن يَحۡضُرُونِ۝﴾",
-      latin: 'Rabbi a‘ūdhu bika min hamazātish-shayāṭīn, wa a‘ūdhu bika Rabbi an yaḥḍurūn.',
-      explanationEs: '¡Creyentes! Arrepiéntanse sinceramente ante Allah, puede que así su Señor borre sus faltas y los introduzca en jardines del Paraíso por donde corren ríos. \nEse día Allah no avergonzará al Profeta ni a los que creyeron junto a él. Una luz se extenderá delante de ellos y a su derecha, \ny ellos dirán: “¡Señor nuestro! Auméntanos nuestra luz y perdónanos. Tú eres sobre toda cosa poderoso”. (At-Tahrim: \n8)',
+      latin: 'Wa qul rabbi a‘ūdhu bika min hamazātish-shayāṭīn, wa a‘ūdhu bika rabbi an yaḥḍurūn.',
+      explanationEs: 'Di: «¡Señor mío! Me refugio en Ti de las sugestiones de los demonios y me refugio en Ti, Señor mío, de que se presenten ante mí». (Al-Mu’minun 23:97-98)',
       note: 'سورة المؤمنون - الآيات 97-98',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/023097.mp3", "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/023098.mp3"]
         },
     {
       text: "﴿إِنَّهُۥ كَانَ فَرِيقٞ مِّنۡ عِبَادِي يَقُولُونَ رَبَّنَآ ءَامَنَّا فَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَا وَأَنتَ خَيۡرُ ٱلرَّٰحِمِينَ۝﴾",
-      latin: 'Rabbanā āmannā fagh-fir lanā war-ḥamnā wa Anta khayrur-rāḥimīn.',
-      explanationEs: 'Cuando los jóvenes se refugiaron en la caverna dijeron: “¡Señor nuestro! Acógenos en Tu misericordia y concédenos que nuestra situación se solucione correctamente”. \n(Al-Kahf: 10)',
+      latin: 'Innahū kāna farīqum min ‘ibādī yaqūlūna rabbanā āmannā faghfir lanā warḥamnā wa Anta khayrur-rāḥimīn.',
+      explanationEs: 'Había un grupo de Mis siervos que decía: «¡Señor nuestro! Creemos; perdónanos y ten misericordia de nosotros, pues Tú eres el mejor de los misericordiosos». (Al-Mu’minun 23:109)',
       note: 'سورة المؤمنون - الآية 109',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/023109.mp3"]
         },
     {
       text: "﴿وَقُل رَّبِّ ٱغۡفِرۡ وَٱرۡحَمۡ وَأَنتَ خَيۡرُ ٱلرَّٰحِمِينَ۝﴾",
       latin: 'Rabbigh-fir war-ḥam wa Anta khayrur-rāḥimīn.',
-      explanationEs: '¡Creyentes! Arrepiéntanse sinceramente ante Allah, puede que así su Señor borre sus faltas y los introduzca en jardines del Paraíso por donde corren ríos. \nEse día Allah no avergonzará al Profeta ni a los que creyeron junto a él. Una luz se extenderá delante de ellos y a su derecha, \ny ellos dirán: “¡Señor nuestro! Auméntanos nuestra luz y perdónanos. Tú eres sobre toda cosa poderoso”. (At-Tahrim: \n8)',
+      explanationEs: 'Di: «¡Señor mío! Perdona y ten misericordia, pues Tú eres el mejor de los misericordiosos». (Al-Mu’minun 23:118)',
       note: 'سورة المؤمنون - الآية 118',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/023118.mp3"]
         }
@@ -436,8 +436,8 @@ const adyaData = [
       note: 'صحيح مسلم'
     },
     {
-      text: 'فَقُلْتُ اسْتَغْفِرُوا رَبَّكُمْ إِنَّهُ كَانَ غَفَّارًا ۞ يُرْسِلِ السَّمَاءَ عَلَيْكُم مِّدْرَارًا ۞ وَيُمْدِدْكُم بِأَمْوَالٍ وَبَنِينَ وَيَجْعَل لَّكُمْ جَنَّاتٍ وَيَجْعَل لَّكُمْ أَنْهَارًا.',
-      latin: 'Fa-qultus-taghfirū Rabbakum innahū kāna ghaffārā (10). Yursilis-samā’a ‘alaykum midrārā (11). Wa yumdidkum bi-amwālin wa banīna wa yaj‘al lakum jannātin wa yaj‘al lakum anhārā (12).',
+      text: '﴿فَقُلْتُ اسْتَغْفِرُوا رَبَّكُمْ إِنَّهُ كَانَ غَفَّارًا۝ يُرْسِلِ السَّمَاءَ عَلَيْكُم مِّدْرَارًا۝ وَيُمْدِدْكُم بِأَمْوَالٍ وَبَنِينَ وَيَجْعَل لَّكُمْ جَنَّاتٍ وَيَجْعَل لَّكُمْ أَنْهَارًا۝﴾',
+      latin: 'Fa-qultus-taghfirū Rabbakum innahū kāna ghaffārā. Yursilis-samā’a ‘alaykum midrārā. Wa yumdidkum bi-amwālin wa banīna wa yaj‘al lakum jannātin wa yaj‘al lakum anhārā.',
       explanationEs: '“Les dije: Imploren el perdón de su Señor, porque Él es Indulgente. Así les enviará del cielo lluvias abundantes, les concederá abundantes bienes e hijos, y les otorgará jardines y ríos.” (Nuh 71:10-12)',
       note: 'سورة نوح - الآيات 10-12 (كثرة الاستغفار)'
     },
@@ -461,7 +461,7 @@ const adyaData = [
     },
     {
       text: 'يَا كَرِيمُ، اللَّهُمَّ يَا ذَا الرَّحْمَةِ الوَاسِعَةِ، يَا مُطَّلِعًا عَلَى السَّرَائِرِ وَالضَّمَائِرِ وَالهَوَاجِسِ وَالخَوَاطِرِ، لَا يَعْزُبُ عَنْكَ شَيْءٌ، أَسْأَلُكَ فَيْضَةً مِنْ فَيَضَانِ فَضْلِكَ، وَأُنْسًا وَفَرَجًا مِنْ بَحْرِ كَرَمِكَ، أَنْتَ بِيَدِكَ الأَمْرُ كُلُّهُ وَمَقَالِيدُ كُلِّ شَيْءٍ، فَهَبْ لَنَا مَا تَقَرُّ بِهِ أَعْيُنُنَا، وَتُغْنِينَا عَنْ سُؤَالِ غَيْرِكَ، فَإِنَّكَ وَاسِعُ الكَرَمِ يَا كَرِيمُ يَا رَحِيمُ.',
-      latin: 'Yā Karīm, Allāhumma yā Dhar-raḥmatil-wāsi‘ah, yā Muṭṭali‘an ‘alās-sarā’iri waḍ-ḍamā’iri wal-hawājisi wal-khawāṭir, lā ya‘zubu ‘anka shay\', as\'aluka fayḍatan min fayāḍāni faḍlik, wa unsan wa farajan min baḥri karamik.',
+      latin: 'Yā Karīm, Allāhumma yā Dhal-raḥmatil-wāsi‘ah, yā Muṭṭali‘an ‘alas-sarā’iri waḍ-ḍamā’iri wal-hawājisi wal-khawāṭir, lā ya‘zubu ‘anka shay’un. As’aluka fayḍatan min fayāḍāni faḍlik, wa qabḍatan min nūri sulṭānik, wa unsan wa farajan min baḥri karamik. Anta biyadika al-amru kulluhū wa maqālīdu kulli shay’in, fa-hab lanā mā taqarru bihī a‘yununā wa tughnīnā ‘an su’āli ghayrik. Fa-innaka wāsi‘ul-karam, kathīrul-jūd, ḥasanush-shiyam. Fa-bi-bābika wāqifūn wa li-jūdikal-wāsi‘il-ma‘rūfi muntaẓirūn, yā Karīmu yā Raḥīm.',
       explanationEs: 'Oh Generoso, Oh Señor de la amplia misericordia, Oh Conmovedor de los secretos y pensamientos; nada se Te oculta. Te pido una efusión de Tu gracia y un alivio de Tu océano de generosidad.',
       note: 'دعاء الفضل والفرج'
     },
@@ -485,7 +485,7 @@ const adyaData = [
     },
     {
       text: 'يَا كَرِيمُ، اللَّهُمَّ يَا ذَا الرَّحْمَةِ الوَاسِعَةِ، يَا مُطَّلِعًا عَلَى السَّرَائِرِ وَالضَّمَائِرِ وَالهَوَاجِسِ وَالخَوَاطِرِ، لَا يَعْزُبُ عَنْكَ شَيْءٌ، أَسْأَلُكَ فَيْضَةً مِنْ فَيَضَانِ فَضْلِكَ، وَقَبْضَةً مِنْ نُورِ سُلْطَانِكَ، وَأُنْسًا وَفَرَجًا مِنْ بَحْرِ كَرَمِكَ، أَنْتَ بِيَدِكَ الأَمْرُ كُلُّهُ وَمَقَالِيدُ كُلِّ شَيْءٍ، فَهَبْ لَنَا مَا تَقَرُّ بِهِ أَعْيُنُنَا وَتُغْنِينَا عَنْ سُؤَالِ غَيْرِكَ، فَإِنَّكَ وَاسِعُ الكَرَمِ، كَثِيرُ الجُودِ، حَسَنُ الشِّيَمِ، فَبِبَابِكَ وَاقِفُونَ وَلِجُودِكَ الوَاسِعِ المَعْرُوفِ مُنْتَظِرُونَ يَا كَرِيمُ يَا رَحِيمُ.',
-      latin: 'Yā Karīm, Allāhumma yā Dhar-raḥmatil-wāsi‘ah, yā Muṭṭali‘an ‘alās-sarā’iri waḍ-ḍamā’iri wal-hawājisi wal-khawāṭir, lā ya‘zubu ‘anka shay\', as\'aluka fayḍatan min fayāḍāni faḍlik, wa qabḍatan min nūri sulṭānik, wa unsan wa farajan min baḥri karamik.',
+      latin: 'Yā Karīm, Allāhumma yā Dhal-raḥmatil-wāsi‘ah, yā Muṭṭali‘an ‘alas-sarā’iri waḍ-ḍamā’iri wal-hawājisi wal-khawāṭir, lā ya‘zubu ‘anka shay’un. As’aluka fayḍatan min fayāḍāni faḍlik, wa qabḍatan min nūri sulṭānik, wa unsan wa farajan min baḥri karamik. Anta biyadika al-amru kulluhū wa maqālīdu kulli shay’in, fa-hab lanā mā taqarru bihī a‘yununā wa tughnīnā ‘an su’āli ghayrik. Fa-innaka wāsi‘ul-karam, kathīrul-jūd, ḥasanush-shiyam. Fa-bi-bābika wāqifūn wa li-jūdikal-wāsi‘il-ma‘rūfi muntaẓirūn, yā Karīmu yā Raḥīm.',
       explanationEs: 'Oh Generoso, Oh Señor de la amplia misericordia, Oh Conocedor de los secretos y conciencias. Te pedimos una efusión de Tu gracia, un puño de la luz de Tu autoridad y un alivio de Tu océano de generosidad.',
       note: 'دعاء فيض الفضل والرجاء'
     },
@@ -515,7 +515,7 @@ const adyaData = [
   titleEs: 'Súplicas para la Familia y los Hijos',
   items: [
     {
-      text: 'رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا.',
+      text: '﴿رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا۝﴾',
       latin: 'Rabbanā hab lanā min azwājinā wa dhurriyyātinā qurrata a‘yunin waj-‘alnā lil-muttaqīna imāmā.',
       explanationEs: 'Aquellos que piden: “¡Señor nuestro! Agrácianos con cónyuges y descendientes que sean un motivo de alegría y tranquilidad para nosotros, y haz que seamos un ejemplo para los que tienen temor (de Allah)”. (Al-Furqan: 74)',
       note: 'سورة الفرقان - الآية 74'
@@ -569,7 +569,7 @@ const adyaData = [
       note: 'دعاء التوفيق والنجاة يوم الحساب'
     },
     {
-      text: 'رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَى وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَصْلِحْ لِي فِي ذُرِّيَّتِي يَا أَرْحَمَ الرَّاحِمِينَ، وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ.',
+      text: '﴿رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَى وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَصْلِحْ لِي فِي ذُرِّيَّتِي يَا أَرْحَمَ الرَّاحِمِينَ، وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ۝﴾',
       latin: 'Rabbi awzi‘nī an ashkura ni‘matakal-latī an‘amta ‘alayya wa ‘alā wālidayya wa an a‘mala ṣāliḥan tarḍāhu wa aṣliḥ lī fī dhurriyyatī yā Arḥamar-rāḥimīn, wa adkhilnī bi-raḥmatika fī ‘ibādikaṣ-ṣāliḥīn.',
       explanationEs: '(Salomón) al oír lo que ella decía, sonrió y exclamó: “¡Señor mío! Haz que te agradezca los favores que nos has concedido, tanto a mí como a mis padres, que haga obras de bien que Te complazcan, y cuéntame, por Tu misericordia, entre Tus siervos justos”. (An-Naml: 19)',
       note: 'سورة الأحقاف - الآية 15 / سورة النمل - الآية 19'
@@ -588,67 +588,67 @@ const adyaData = [
   titleEs: 'Súplicas para el Arrepentimiento y el Perdón',
   items: [
     {
-      text: 'رَبَّنَا ظَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الخَاسِرِينَ.',
+      text: '﴿رَبَّنَا ظَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الخَاسِرِينَ۝﴾',
       latin: 'Rabbanā ẓalamnā anfusanā wa in lam taghfir lanā wa tarḥamnā lanakūnanna minal-khāsirīn.',
       explanationEs: 'Ellos dijeron (arrepentidos): “¡Señor nuestro! Hemos sido injustos con nosotros mismos; si no nos perdonas y no nos tienes misericordia, seremos de los perdidos”. (Al-A\'raf: 23)',
       note: 'سورة الأعراف - الآية 23'
     },
     {
-      text: 'رَبِّ إِنِّي ظَلَمْتُ نَفْسِي فَاغْفِرْ لِي.',
+      text: '﴿رَبِّ إِنِّي ظَلَمْتُ نَفْسِي فَاغْفِرْ لِي۝﴾',
       latin: 'Rabbi innī ẓalamtu nafsī fagh-fir lī.',
       explanationEs: 'Dijo: “¡Señor mío! He sido injusto conmigo mismo, perdóname.” Y Él lo perdonó, porque Él es el Indulgente, el Misericordioso. (Al-Qasas: 16)',
       note: 'سورة القصص - الآية 16'
     },
     {
-      text: 'رَبَّنَا وَاجْعَلْنَا مُسْلِمَيْنِ لَكَ وَمِنْ ذُرِّيَّتِنَا أُمَّةً مُسْلِمَةً لَكَ وَأَرِنَا مَنَاسِكَنَا وَتُبْ عَلَيْنَا إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ.',
+      text: '﴿رَبَّنَا وَاجْعَلْنَا مُسْلِمَيْنِ لَكَ وَمِنْ ذُرِّيَّتِنَا أُمَّةً مُسْلِمَةً لَكَ وَأَرِنَا مَنَاسِكَنَا وَتُبْ عَلَيْنَا إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ۝﴾',
       latin: 'Rabbanā waj-‘alnā muslimayni laka wa min dhurriyyatinā ummatan muslimatan laka wa arinā manāsikanā wa tub ‘alaynā innaka Antat-Tawwābur-Raḥīm.',
       explanationEs: '“¡Señor nuestro! Haz que nosotros nos entreguemos a Tu voluntad, y que nuestra descendencia también lo haga (como una nación de musulmanes). Enséñanos nuestros ritos para la peregrinación y acepta nuestro arrepentimiento; Tú eres el Indulgente, el Misericordioso”. (Al-Baqarah: 128)',
       note: 'سورة البقرة - الآية 128'
     },
     {
-      text: 'رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الحِسَابُ.',
+      text: '﴿رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الحِسَابُ۝﴾',
       latin: 'Rabbanāgh-fir lī wa li-wālidayya wa lil-mu’minīna yawma yaqūmul-ḥisāb.',
       explanationEs: '¡Señor nuestro! Perdóname a mí, a mis padres y a los creyentes el Día en que se tome cuenta. (Ibrahim: 41)',
       note: 'سورة إبراهيم - الآية 41'
     },
     {
-      text: 'رَبَّنَا إِنَّنَا آمَنَّا فَاغْفِرْ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ النَّارِ.',
+      text: '﴿رَبَّنَا إِنَّنَا آمَنَّا فَاغْفِرْ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ النَّارِ۝﴾',
       latin: 'Rabbanā innanā āmannā fagh-fir lanā dhunūbanā wa qinā ‘adhāban-nār.',
       explanationEs: 'quienes dicen: “¡Señor nuestro! Creemos en Ti. Perdónanos nuestros pecados y líbranos del castigo del Fuego”. (Ali \'Imran: 16)',
       note: 'سورة آل عمران - الآية 16'
     },
     {
-      text: 'رَبَّنَا فَاغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّئَاتِنَا وَتَوَفَّنَا مَعَ الأَبْرَارِ.',
+      text: '﴿رَبَّنَا فَاغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّئَاتِنَا وَتَوَفَّنَا مَعَ الأَبْرَارِ۝﴾',
       latin: 'Rabbanā fagh-fir lanā dhunūbanā wa kaffir ‘annā sayyi’ātinā wa tawaffanā ma‘al-abrār.',
       explanationEs: '¡Señor nuestro! Hemos oído a quien convocaba a la fe, diciendo: ‘Crean en su Señor’, y creímos. ¡Señor nuestro! Perdona nuestros pecados, borra nuestras malas acciones y, al morir, reúnenos con los piadosos. (Ali \'Imran: 193)',
       note: 'سورة آل عمران - الآية 193'
     },
     {
-      text: 'رَبَّنَا آمَنَّا فَاغْفِرْ لَنَا وَارْحَمْنَا وَأَنْتَ خَيْرُ الرَّاحِمِينَ.',
+      text: '﴿رَبَّنَا آمَنَّا فَاغْفِرْ لَنَا وَارْحَمْنَا وَأَنْتَ خَيْرُ الرَّاحِمِينَ۝﴾',
       latin: 'Rabbanā āmannā fagh-fir lanā war-ḥamnā wa Anta khayrur-rāḥimīn.',
       explanationEs: '“¡Señor nuestro! Creemos en Ti; perdónanos y ten misericordia de nosotros. Tú eres el mejor de los misericordiosos.” (Al-Mu\'minun: 109)',
       note: 'سورة المؤمنون - الآية 109'
     },
     {
-      text: 'رَبَّنَا أَتْمِمْ لَنَا نُورَنَا وَاغْفِرْ لَنَا إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.',
+      text: '﴿رَبَّنَا أَتْمِمْ لَنَا نُورَنَا وَاغْفِرْ لَنَا إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ۝﴾',
       latin: 'Rabbanā atmim lanā nūranā wagh-fir lanā innaka ‘alā kulli shay\'in qadīr.',
       explanationEs: '¡Creyentes! Arrepiéntanse sinceramente ante Allah, puede que así su Señor borre sus faltas y los introduzca en jardines del Paraíso por donde corren ríos. Ese día Allah no avergonzará al Profeta ni a los que creyeron junto a él. Una luz se extenderá delante de ellos y a su derecha, y ellos dirán: “¡Señor nuestro! Auméntanos nuestra luz y perdónanos. Tú eres sobre toda cosa poderoso”. (At-Tahrim: 8)',
       note: 'سورة التحريم - الآية 8'
     },
     {
-      text: 'رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِمَنْ دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَالمُؤْمِنَاتِ.',
+      text: '﴿رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِمَنْ دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَالمُؤْمِنَاتِ۝﴾',
       latin: 'Rabbigh-fir lī wa li-wālidayya wa liman dakhala baytiya mu’minan wa lil-mu’minīna wal-mu’mināt.',
       explanationEs: '“¡Señor mío! Perdóname a mí, a mis padres, a quien ingrese creyente a mi casa, y a todos los creyentes y creyentes.” (Nuh: 28)',
       note: 'سورة نوح - الآية 28'
     },
     {
-      text: 'لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ.',
+      text: '﴿لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ۝﴾',
       latin: 'Lā ilāha illā Anta subḥānaka innī kuntu minaż-ẓālimīn.',
       explanationEs: '“No hay otra divinidad excepto Tú; ¡glorificado seas! Ciertamente he sido de los injustos.” (Al-Anbiya: 87)',
       note: 'سورة الأنبياء - الآية 87'
     },
     {
-      text: 'رَبِّ اغْفِرْ لِي وَلِأَخِي وَأَدْخِلْنَا فِي رَحْمَتِكَ وَأَنْتَ أَرْحَمُ الرَّاحِمِينَ.',
+      text: '﴿رَبِّ اغْفِرْ لِي وَلِأَخِي وَأَدْخِلْنَا فِي رَحْمَتِكَ وَأَنْتَ أَرْحَمُ الرَّاحِمِينَ۝﴾',
       latin: 'Rabbigh-fir lī wa li-akhī wa adkhilnā fī raḥmatika wa Anta arḥamar-rāḥimīn.',
       explanationEs: 'Dijo Moisés: “¡Señor mío! Perdona a mi hermano y a mí, y ten misericordia de nosotros. Tú eres el más Misericordioso”. (Al-A\'raf: 151)',
       note: 'سورة الأعراف - الآية 151'
@@ -835,19 +835,19 @@ const adyaData = [
   titleEs: 'Súplicas para los Padres Vivos',
   items: [
     {
-      text: 'رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الحِسَابُ.',
+      text: '﴿رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الحِسَابُ۝﴾',
       latin: 'Rabbanāgh-fir lī wa li-wālidayya wa lil-mu’minīna yawma yaqūmul-ḥisāb.',
       explanationEs: '¡Señor nuestro! Perdóname a mí, a mis padres y a los creyentes el Día en que se tome cuenta. (Ibrahim: 41)',
       note: 'سورة إبراهيم - الآية 41'
     },
     {
-      text: 'رَبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا.',
+      text: '﴿رَبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا۝﴾',
       latin: 'Rabbir-ḥamhumā kamā rabbayānī ṣaghīrā.',
       explanationEs: 'Trátenlos con humildad y compasión, y rueguen (por ellos diciendo): “¡Señor mío! Ten misericordia de ellos como ellos la tuvieron conmigo cuando me criaron siendo niño”. (Al-Isra: 24)',
       note: 'سورة الإسراء - الآية 24'
     },
     {
-      text: 'رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِمَنْ دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَالمُؤْمِنَاتِ وَلَا تَزِدِ الظَّالِمِينَ إِلَّا تَبَارًا.',
+      text: '﴿رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِمَنْ دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَالمُؤْمِنَاتِ وَلَا تَزِدِ الظَّالِمِينَ إِلَّا تَبَارًا۝﴾',
       latin: 'Rabbigh-fir lī wa li-wālidayya wa liman dakhala baytiya mu’minan wa lil-mu’minīna wal-mu’mināti wa lā tazidiẓ-ẓālimīna illā tabārā.',
       explanationEs: '“¡Señor mío! Perdóname a mí, a mis padres, a quien ingrese creyente a mi casa, y a todos los creyentes y creyentes, y no aumentes a los injustos sino en perdición.” (Nuh: 28)',
       note: 'سورة نوح - الآية 28'
@@ -1046,31 +1046,31 @@ const adyaData = [
   titleEs: 'Súplicas para los Padres Fallecidos',
   items: [
     {
-      text: 'رَبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا.',
+      text: '﴿رَبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا۝﴾',
       latin: 'Rabbir-ḥamhumā kamā rabbayānī ṣaghīrā.',
       explanationEs: 'Trátenlos con humildad y compasión, y rueguen (por ellos diciendo): “¡Señor mío! Ten misericordia de ellos como ellos la tuvieron conmigo cuando me criaron siendo niño”. (Al-Isra: 24)',
       note: 'سورة الإسراء - الآية 24'
     },
     {
-      text: 'رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِنْ ذُرِّيَّتِي رَبَّنَا وَتَقَبَّلْ دُعَاءِ * رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الحِسَابُ.',
+      text: '﴿رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِنْ ذُرِّيَّتِي رَبَّنَا وَتَقَبَّلْ دُعَاءِ * رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الحِسَابُ۝﴾',
       latin: 'Rabbij-‘alnī muqīmaṣ-ṣalāti wa min dhurriyyatī Rabbanā wa taqabbal du‘ā’. Rabbanāgh-fir lī wa li-wālidayya wa lil-mu’minīna yawma yaqūmul-ḥisāb.',
       explanationEs: '¡Señor mío! Haz que mantenga la oración y también mis descendientes. ¡Señor nuestro! Acepta mi súplica. ¡Señor nuestro! Perdóname a mí, a mis padres y a los creyentes el Día en que se tome cuenta. (Ibrahim: 40-41)',
       note: 'سورة إبراهيم - الآيات 40-41'
     },
     {
-      text: 'رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَى وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ.',
+      text: '﴿رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَى وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ۝﴾',
       latin: 'Rabbi awzi‘nī an ashkura ni‘matakal-latī an‘amta ‘alayya wa ‘alā wālidayya wa an a‘mala ṣāliḥan tarḍāhu wa adkhilnī bi-raḥmatika fī ‘ibādikaṣ-ṣāliḥīn.',
       explanationEs: '(Salomón) al oír lo que ella decía, sonrió y exclamó: “¡Señor mío! Haz que te agradezca los favores que nos has concedido, tanto a mí como a mis padres, que haga obras de bien que Te complazcan, y cuéntame, por Tu misericordia, entre Tus siervos justos”. (An-Naml: 19)',
       note: 'سورة النمل - الآية 19'
     },
     {
-      text: 'رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ.',
+      text: '﴿رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ۝﴾',
       latin: 'Rabbanā ātinā fid-dunyā ḥasanatan wa fil-ākhirati ḥasanatan wa qinā ‘adhāban-nār.',
       explanationEs: 'Pero entre ellos hay quienes dicen: “¡Señor nuestro! Danos bienestar en esta vida y en la otra, y presérvanos del tormento del Fuego”. (Al-Baqarah: 201)',
       note: 'سورة البقرة - الآية 201'
     },
     {
-      text: 'رَبَّنَا لَا تُؤَاخِذْنَا إِنْ نَسِينَا أَوْ أَخْطَأْنَا رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِنْ قَبْلِنَا رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا أَنْتَ مَوْلَانَا فَانْصُرْنَا عَلَى القَوْمِ الكَافِرِينَ.',
+      text: '﴿رَبَّنَا لَا تُؤَاخِذْنَا إِنْ نَسِينَا أَوْ أَخْطَأْنَا رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِنْ قَبْلِنَا رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا أَنْتَ مَوْلَانَا فَانْصُرْنَا عَلَى القَوْمِ الكَافِرِينَ۝﴾',
       latin: 'Rabbanā lā tu’ākhidhnā in nasīnā aw akhṭa’nā, Rabbanā wa lā taḥmil ‘alaynā iṣran kamā ḥamaltahū ‘alal-ladhīna min qablinā, Rabbanā wa lā tuḥammilnā mā lā ṭāqata lanā bih, wa‘fu ‘annā wagh-fir lanā war-ḥamnā Anta Mowlānā fan-ṣurnā ‘alal-qawmil-kāfirīn.',
       explanationEs: 'Allah no exige a nadie por encima de sus posibilidades, a su favor tendrá el bien que haga, y en su contra tendrá el mal que haga. “¡Señor nuestro! No nos castigues si olvidamos o cometemos un error. ¡Señor nuestro! No nos impongas una carga como la que impusiste a quienes nos precedieron. ¡Señor nuestro! No nos impongas algo superior a lo que podamos soportar. Perdónanos, absuélvenos y ten misericordia de nosotros. Tú eres nuestro Protector, concédenos el triunfo sobre los que niegan la verdad”. (Al-Baqarah: 286)',
       note: 'سورة البقرة - الآية 286'
@@ -1445,7 +1445,7 @@ const adyaData = [
     },
     {
       text: 'اللَّهُ اللَّهُ رَبِّي، لَا أُشْرِكُ بِهِ شَيْئًا.',
-      latin: 'Allāhul-Allāhu Rabbī, lā ushriku bihī shay’ā.',
+      latin: 'Allāhu Allāhu Rabbī, lā ushriku bihī shay’an.',
       explanationEs: 'Allah, Allah es mi Señor, no le asocio nada en absoluto.',
       note: 'كلمات الكرب (رواه أحمد وأبو داود وابن ماجه)'
     },
