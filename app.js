@@ -465,6 +465,7 @@ function openGroup(groupId, skipPushState = false) {
   if (!match) return;
   currentGroup = match.group;
   currentSection = match.section;
+  applyPendingEditsToGroup(currentGroup, currentSection);
 
   hideAllViews();
   document.getElementById('detailView')?.classList.remove('hidden');
@@ -591,6 +592,15 @@ function getBaselineOccurrence(section, groupId, index, items) {
   return occurrence;
 }
 
+function applyPendingEditsToGroup(group, section) {
+  if (!group || !Array.isArray(group.items)) return;
+  pendingItemEdits.forEach(function (entry) {
+    if (entry.section === section && entry.groupId === group.id && group.items[entry.index]) {
+      group.items[entry.index] = JSON.parse(JSON.stringify(entry.updatedItem));
+    }
+  });
+}
+
 function updatePendingEditsDock() {
   const dock = document.getElementById('pendingEditsDock');
   const count = document.getElementById('pendingEditsCount');
@@ -603,6 +613,8 @@ function updatePendingEditsDock() {
     ? total + (total === 1 ? ' cambio pendiente' : ' cambios pendientes') + '. Se guardan primero en este dispositivo.'
     : total + ' تعديلات مؤقتة محفوظة على هذا الجهاز.';
 }
+
+window.addEventListener('DOMContentLoaded', updatePendingEditsDock);
 
 function openItemEditor(index) {
   if (!currentGroup || !currentGroup.items || !currentGroup.items[index]) return;
