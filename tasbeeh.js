@@ -69,8 +69,8 @@ function renderTasbeehGrid() {
       <div class="text-center w-full">
         ${isEs ? `
           <div class="space-y-2">
-            ${item.latin ? `<p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 italic font-medium bg-slate-50 dark:bg-slate-900/60 p-2.5 rounded-xl border border-slate-100 dark:border-slate-800 whitespace-pre-line">${formatTextWithNewlines(item.latin)}</p>` : ''}
-            <p class="text-sm sm:text-base font-semibold text-slate-800 dark:text-slate-100 whitespace-pre-line">${formatTextWithNewlines(item.es)}</p>
+            ${item.latin ? `<p class="text-sm sm:text-base text-slate-700 dark:text-slate-300 latin-text-style italic font-semibold bg-slate-50 dark:bg-slate-900/60 p-3 rounded-xl border border-slate-200 dark:border-slate-800 whitespace-pre-line">${formatTextWithNewlines(item.latin)}</p>` : ''}
+            <p class="text-base sm:text-lg font-bold es-text-style text-slate-900 dark:text-slate-100 whitespace-pre-line">${formatTextWithNewlines(item.es)}</p>
             <div class="text-lg sm:text-xl font-bold text-emerald-800 dark:text-emerald-300 pt-2 border-t border-slate-100 dark:border-slate-700/60 dir-rtl whitespace-pre-line">${formatTextWithNewlines(item.ar)}</div>
           </div>
         ` : `

@@ -42,7 +42,7 @@ const adyaData = [
         },
     {
       text: "﴿هُنَالِكَ دَعَا زَكَرِيَّا رَبَّهُۥۖ قَالَ رَبِّ هَبۡ لِي مِن لَّدُنكَ ذُرِّيَّةٗ طَيِّبَةًۖ إِنَّكَ سَمِيعُ ٱلدُّعَآءِ۝﴾",
-      latin: 'Hunālika da‘ā Zakariyyā rabbahū, qāla rabbi hab lī min ladunka dhurriyyatan ṭayyibah, innaka Samī‘ud-du‘ā’. ',
+      latin: 'Hunālika da‘ā Zakariyyā rabbahū, qāla rabbi hab lī min ladunka dhurriyyatan ṭayyibah, innaka Samī‘ud-du‘ā’.',
       explanationEs: 'En el templo, Zacarías invocó a su Señor diciendo: “¡Señor mío! Concédeme una descendencia piadosa, Tú escuchas los ruegos”. (Ali \'Imran: 38)',
       note: 'سورة آل عمران - الآية 38',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003038.mp3"]
@@ -196,14 +196,14 @@ const adyaData = [
   items: [
     {
       text: 'اللَّهُمَّ أنَْتَ رَبيِّ لَا إلِهََ إلَِّا أنَتَ، خَلَقْتنَيِ وَأنََا عَبدُْكَ، وَأنََا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ.',
-      latin: 'Allāhumma anta Rabbī lā ilāha illā ant, khalaqtanī wa anā ‘abduk, wa anā ‘alā ‘ahdika wa wa‘dika mas-taṭa‘tu, a‘ūdhu bika min sharri mā ṣana‘tu, abūʾu laka bi-ni‘matika ‘alayya, wa abū’u bi-dhanbī faghfir lī fa-innahū lā yaghfirudh-dhunūba illā ant.',
+      latin: 'Allāhumma anta Rabbī lā ilāha illā ant, khalaqtanī wa anā ‘abduk, wa anā ‘alā ‘ahdika wa wa‘dika mā staṭa‘tu, a‘ūdhu bika min sharri mā ṣana‘tu, abūʾu laka bi-ni‘matika ‘alayya, wa abū’u bi-dhanbī faghfir lī fa-innahū lā yaghfirudh-dhunūba illā ant.',
       explanationEs: '¡Oh Allah! Tú eres mi Señor, no hay más divinidad que Tú. Me creaste y soy Tu siervo. Mantengo Tu pacto y Tu promesa en la medida de mis posibilidades. Me refugio en Ti del mal que he cometido. Reconozco ante Ti Tus bendiciones sobre mí y confieso mi pecado; perdóname, pues nadie perdona los pecados excepto Tú. (Sayyid al-Istighfar - Bujari)',
       note: 'رواه البخاري (6306) - سيد الاستغفار'
     },
     {
       text: 'اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْمًا كَثِيرًا، وَلَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ، فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ وَارْحَمْنِي إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ.',
       latin: 'Allāhumma innī ẓalamtu nafsī ẓulman kathīran, wa lā yaghfirudh-dhunūba illā ant, faghfir lī maghfiratan min ‘indika war-ḥamnī innaka antal-Ghafūrur-Raḥīm.',
-      explanationEs: '¡Oh Allah! Ciertamente me he oprimido a mí mismo en gran manera y nadie perdona los pecados excepto Tú. Concedeme un perdón de Tu parte y ten misericordia de mí; ciertamente Tú eres el Absolvedor, el Misericordioso. (Bujari y Muslim)',
+      explanationEs: '¡Oh Allah! Ciertamente me he oprimido a mí mismo en gran manera y nadie perdona los pecados excepto Tú. Concédeme un perdón de Tu parte y ten misericordia de mí; ciertamente Tú eres el Absolvedor, el Misericordioso. (Bujari y Muslim)',
       note: 'رواه البخاري ومسلم'
     },
     {
@@ -238,7 +238,7 @@ const adyaData = [
     },
     {
       text: 'اللَّهُمَّ رَبَّ السَّمَوَاتِ وَرَبَّ الْأَرْضِ وَرَبَّ الْعَرْشِ الْعَظِيمِ، رَبَّنَا وَرَبَّ كُلِّ شَيْءٍ، فَالِقَ الْحَبِّ وَالنَّوَى وَمُنْزِلَ التَّوْرَاةِ وَالْإِنْجِيلِ وَالْفُرْقَانِ، أَعُوذُ بِكَ مِنْ شَرِّ كُلِّ شَيْءٍ أَنْتَ آخِذٌ بِنَاصِيَتهِِ، اللَّهُمَّ أَنْتَ الْأوََّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ الْآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ، وَأَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، وَأَنْتَ الْبَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، اقْضِ عَنَّا الدَّيْنَ وَأَغْنِنَا مِنَ الْفَقْرِ.',
-      latin: 'Allāhumma Rabbas-samāwāti wa Rabbal-arḍi wa Rabbal-‘arshil-‘aẓīm, Rabbanā wa Rabba kulli shay\', Fāliqal-ḥabbi wan-nawā wa Munzilat-Tawrāti wal-Injīli wal-Furqān, a‘ūdhu bika min sharri kulli shay\'in Anta ākhidhum bi-nāṣiyatih. Allāhumma Antal-Awwalu fa-laysa qablaka shay\', wa Antal-Ākhiru fa-laysa ba‘daka shay\', wa Antaẓ-Ẓāhiru fa-laysa fawqaka shay\', wa Antal-Bāṭinu fa-laysa dūnaka shay\', iqḍi ‘annad-dayna wa aghninā minal-faqr.',
+      latin: 'Allāhumma Rabbas-samāwāti wa Rabbal-arḍi wa Rabbal-‘arshil-‘aẓīm, Rabbanā wa Rabba kulli shay\', Fāliqal-ḥabbi wan-nawā wa Munzilat-Tawrāti wal-Injīli wal-Furqān, a‘ūdhu bika min sharri kulli shay\'in Anta ākhidhun bi-nāṣiyatih. Allāhumma Antal-Awwalu fa-laysa qablaka shay\', wa Antal-Ākhiru fa-laysa ba‘daka shay\', wa Antaẓ-Ẓāhiru fa-laysa fawqaka shay\', wa Antal-Bāṭinu fa-laysa dūnaka shay\', iqḍi ‘annad-dayna wa aghninā minal-faqr.',
       explanationEs: '¡Oh Allah! Señor de los cielos, de la tierra y del Grandioso Trono. Creador del grano y del hueso, Revelador de la Torá, del Evangelio y del Corán. Me refugio en Ti del mal de toda criatura bajo Tu dominio. Tú eres el Primero, el Último, el Evidente y el Oculto. Salda nuestras deudas y líbranos de la pobreza. (Muslim)',
       note: 'رواه مسلم'
     },
@@ -328,7 +328,7 @@ const adyaData = [
     },
     {
       text: 'اللَّهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ، فَاطِرَ السَّمَوَاتِ وَالْأَرْضِ، رَبَّ كُلِّ شَيْءٍ وَمَلِيكَهُ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا أَنْتَ، أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي وَشَرِّ الشَّيْطَانِ وَشِرْكِهِ.',
-      latin: 'Allāhumma ‘ālimal-ghaybi wash-shahādati, Fāṭiras-samāwāti wal-arḍ, Rabba kulli shayʾin wa malīkah, ash-hadu an lā ilāha illā Ant, a‘ūdhu bika min sharri nafsī wa sharrish-shayṭāni wa shikrih.',
+      latin: 'Allāhumma ‘ālimal-ghaybi wash-shahādati, Fāṭiras-samāwāti wal-arḍ, Rabba kulli shayʾin wa malīkah, ash-hadu an lā ilāha illā Ant, a‘ūdhu bika min sharri nafsī wa sharrish-shayṭāni wa shirkih.',
       explanationEs: '¡Oh Allah! Conocedor de lo oculto y de lo manifiesto, Creador de los cielos y de la tierra, Señor y Poseedor de todas las cosas. Testifico que no hay más divinidad que Tú; me refugio en Ti del mal de mi alma y del mal del Satán. (Tirmidhi)',
       note: 'رواه الترمذي (إسناد صحيح)'
     },
@@ -389,7 +389,7 @@ const adyaData = [
     },
     {
       text: 'اللَّهُمَّ رَبَّ السَّمَاوَاتِ السَّبْعِ وَرَبَّ العَرْشِ العَظِيمِ، رَبَّنَا وَرَبَّ كُلِّ شَيْءٍ، أَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، وَأَنْتَ البَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، مُنْزِلَ التَّوْرَاةِ وَالإِنْجِيلِ وَالفُرْقَانِ، فَالِقَ الحَبِّ وَالنَّوَى، أَعُوذُ بِكَ مِنْ شَرِّ كُلِّ شَيْءٍ أَنْتَ آخِذٌ بِنَاصِيَتِهِ، أَنْتَ الأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ الآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ، اقْضِ عَنَّا الدَّيْنَ وَأَغْنِنَا مِنَ الفَقْرِ.',
-      latin: 'Allāhumma Rabbas-samāwātis-sab‘i wa Rabbal-‘arshil-‘aẓīm, Rabbanā wa Rabba kulli shay\', Antaẓ-Ẓāhiru falaysa fawqaka shay\', wa Antal-Bāṭinu falaysa dūnaka shay\', Munzilat-Tawrāti wal-Injīli wal-Furqān, Fāliqal-ḥabbi wan-nawā, a‘ūdhu bika min sharri kulli shay\'in Anta ākhidhum bi-nāṣiyatih, Antal-Awwalu falaysa qablaka shay\', wa Antal-Ākhiru falaysa ba‘daka shay\', iqḍi ‘annad-dayna wa aghninā minal-faqr.',
+      latin: 'Allāhumma Rabbas-samāwātis-sab‘i wa Rabbal-‘arshil-‘aẓīm, Rabbanā wa Rabba kulli shay\', Antaẓ-Ẓāhiru falaysa fawqaka shay\', wa Antal-Bāṭinu falaysa dūnaka shay\', Munzilat-Tawrāti wal-Injīli wal-Furqān, Fāliqal-ḥabbi wan-nawā, a‘ūdhu bika min sharri kulli shay\'in Anta ākhidhun bi-nāṣiyatih, Antal-Awwalu falaysa qablaka shay\', wa Antal-Ākhiru falaysa ba‘daka shay\', iqḍi ‘annad-dayna wa aghninā minal-faqr.',
       explanationEs: "¡Oh Allah, Señor de los siete cielos y Señor del Trono inmenso, Señor nuestro y Señor de todas las cosas! Tú eres el Manifiesto, nada está por encima de Ti; y Tú eres el Oculto, nada está más allá de Ti. Revelador de la Torá, el Evangelio y el Criterio (el Corán), Quien hace germinar el grano y el hueso, me refugio en Ti del mal de toda cosa cuya frente está bajo Tu dominio. Tú eres el Primero, nada hubo antes de Ti, y Tú eres el Último, nada habrá después de Ti. Paga nuestras deudas y líbranos de la pobreza.",
       note: 'دعاء قضاء الدين والفقر'
     },
@@ -408,7 +408,7 @@ const adyaData = [
     {
       text: 'اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ، وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ.',
       latin: 'Allāhummak-finī bi-ḥalālika ‘an ḥarāmik, wa aghninī bi-faḍlika ‘amman siwāk.',
-      explanationEs: 'Oh Allah, hazteme suficiente con lo que has permitido frente a lo prohibido, y enriquéceme con Tu gracia para no necesitar de nadie más.',
+      explanationEs: 'Oh Allah, haz que me baste con lo lícito frente a lo prohibido, y enriquéceme con Tu gracia para no necesitar de nadie más.',
       note: 'سنن الترمذي'
     },
     {
@@ -425,7 +425,7 @@ const adyaData = [
     },
     {
       text: 'اللَّهُمَّ رَبَّ السَّمَاوَاتِ وَرَبَّ الأَرْضِ، وَرَبَّ كُلِّ شَيْءٍ، فَالِقَ الحَبِّ وَالنَّوَى، مُنْزِلَ التَّوْرَاةِ وَالإِنْجِيلِ، أَعِذْنِي مِنْ شَرِّ كُلِّ ذِي شَرٍّ، أَنْتَ آخِذٌ بِنَاصِيَتِهِ، أَنْتَ الأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ البَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، وَأَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، اقْضِ عَنِّي الدَّيْنَ وَأَغْنِنِي مِنَ الفَقْرِ.',
-      latin: 'Allāhumma Rabba-samāwāti wa Rabbal-arḍ, wa Rabba kulli shay\', Fāliqal-ḥabbi wan-nawā, Munzilat-Tawrāti wal-Injīl, a‘idh-nī min sharri kulli dī sharr, Anta ākhidhum bi-nāṣiyatih, Antal-Awwalu falaysa qablaka shay\', wa Antal-Ākhiru falaysa ba‘daka shay\', iqḍi ‘annad-dayna wa aghninā minal-faqr.',
+      latin: 'Allāhumma Rabba-samāwāti wa Rabbal-arḍ, wa Rabba kulli shay\', Fāliqal-ḥabbi wan-nawā, Munzilat-Tawrāti wal-Injīl, a‘idhnī min sharri kulli dhī sharr, Anta ākhidhun bi-nāṣiyatih, Antal-Awwalu falaysa qablaka shay\', wa Antal-Bāṭinu falaysa dūnaka shay\', wa Antaẓ-Ẓāhiru falaysa fawqaka shay\', iqḍi ‘annad-dayna wa aghninā minal-faqr.',
       explanationEs: 'Oh Allah, Señor de los cielos y de la tierra, y de todas las cosas, Creador del grano y del hueso, Revelador de la Torá y del Evangelio, me refugio en Ti del mal de todo ser con maldad. Paga mi deuda y enriquéceme de la pobreza.',
       note: 'دعاء قضاء الدين'
     },
@@ -443,7 +443,7 @@ const adyaData = [
     },
     {
       text: 'يَا ذَا الجَلَالِ وَالإِكْرَامِ، يَا قَاضِيَ الحَاجَاتِ، يَا أَرْحَمَ الرَّاحِمِينَ، يَا حَيُّ يَا قَيُّومُ، لَا إِلَهَ إِلَّا أَنْتَ المَلِكُ الحَقُّ المُبِينُ. اللَّهُمَّ إِنِّي أَحْمَدُكَ حَمْدًا كَثِيرًا وَأَشْكُرُكَ شُكْرًا كَثِيرًا يَلِيقُ بِجَلَالِ وَجْهِكَ وَعَظِيمِ سُلْطَانِكَ. اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ. يَا اللهُ، يَا رَبُّ، يَا حَيُّ يَا قَيُّومُ، يَا ذَا الجَلَالِ وَالإِكْرَامِ، أَسْأَلُكَ بِاسْمِكَ العَظِيمِ الأَعْظَمِ أَنْ تَرْزُقَنِي رِزْقًا وَاسِعًا حَلَالًا طَيِّبًا، بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ.',
-      latin: 'Yā Dhal-Jalāli wal-Ikrām, yā Qāḍiyal-ḥājāt, yā Arḥamar-rāḥimīn, yā Ḥayyu yā Qayyūm, lā ilāha illā Antal-Malikul-Ḥaqqul-Mubīn. Allāhumma innī aḥmaduka ḥamdan kathīrā, wa ashkuruka shukran kathīrā, yalīqu bi-jalāli wajhika wa ‘aẓīmi sulṭānik. Allāhummak-finī bi-ḥalālika ‘an ḥarāmika wa aghninī bi-faḍlika ‘amman siwāk.',
+      latin: 'Yā Dhal-Jalāli wal-Ikrām, yā Qāḍiyal-ḥājāt, yā Arḥamar-rāḥimīn, yā Ḥayyu yā Qayyūm, lā ilāha illā Antal-Malikul-Ḥaqqul-Mubīn. Allāhumma innī aḥmaduka ḥamdan kathīrā, wa ashkuruka shukran kathīrā, yalīqu bi-jalāli wajhika wa ‘aẓīmi sulṭānik. Allāhummak-finī bi-ḥalālika ‘an ḥarāmika wa aghninī bi-faḍlika ‘amman siwāk. Yā Allāh, yā Rabb, yā Ḥayyu yā Qayyūm, yā Dhal-Jalāli wal-Ikrām, as’aluka bis-mikal-‘aẓīmil-a‘ẓam an tarzuqanī rizqan wāsi‘an ḥalālan ṭayyiban, bi-raḥmatika yā Arḥamar-rāḥimīn.',
       explanationEs: '¡Oh Poseedor de la Majestad y el Honor! Oh Juez de las necesidades, Oh el Más Misericordioso de los misericordiosos, Oh Viviente, Oh Sustentador. Te pido por Tu Gran Nombre que me concedas un sustento amplio, lícito y puro.',
       note: 'دعاء قضاء الحاجات والرزق'
     },
@@ -455,7 +455,7 @@ const adyaData = [
     },
     {
       text: 'الحَمْدُ للهِ الَّذِي لَا يَنْسَى مَنْ ذَكَرَهُ، الحَمْدُ للهِ الَّذِي لَا يَخِيبُ مَنْ رَجَاهُ، الحَمْدُ للهِ الَّذِي مَنْ تَوَكَّلَ عَلَيْهِ كَفَاهُ، الحَمْدُ للهِ الَّذِي مَنْ وَثِقَ بِهِ لَمْ يَكِلْهُ إِلَى غَيْرِهِ، الحَمْدُ للهِ الَّذِي هُوَ ثِقَتُنَا حِينَ تَسُوءُ ظُنُونُنَا بِأَعْمَالِنَا، الحَمْدُ للهِ الَّذِي هُوَ رَجَاؤُنَا حِينَ يَنْقَطِعُ الحِيلُ وَالحَبْلُ مِنَّا.',
-      latin: 'Al-ḥamdu lillāhil-ladhī lā yansā man dhakarah, al-ḥamdu lillāhil-ladhī lā yakhību man rajāh, al-ḥamdu lillāhil-ladhī man tawakkala ‘alayhi kafāh, al-ḥamdu lillāhil-ladhī man wathiqa bihī lam yakilhu ilā ghayrih.',
+      latin: 'Al-ḥamdu lillāhil-ladhī lā yansā man dhakarah, al-ḥamdu lillāhil-ladhī lā yakhību man rajāh, al-ḥamdu lillāhil-ladhī man tawakkala ‘alayhi kafāh, al-ḥamdu lillāhil-ladhī man wathiqa bihī lam yakilhu ilā ghayrih. Al-ḥamdu lillāhil-ladhī huwa thiqatunā ḥīna tasū’u ẓunūnunā bi-a‘mālinā, al-ḥamdu lillāhil-ladhī huwa rajā’unā ḥīna yanqaṭi‘ul-ḥiylu wal-ḥablu minnā.',
       explanationEs: 'Alabado sea Allah, Quien no olvida a quien Lo recuerda, no defrauda a quien en Él espera, y es suficiente para quien en Él confía.',
       note: 'حمد الله والتوكل عليه'
     },
@@ -467,8 +467,8 @@ const adyaData = [
     },
     {
       text: 'اللَّهُمَّ ارْزُقْنِي عِلْمًا نَافِعًا، وَرِزْقًا وَاسِعًا، وَشِفَاءً مِنْ كُلِّ دَاءٍ وَسَقَمٍ، يَا مَنْ تَرْزُقُ مَنْ تَشَاءُ بِغَيْرِ حِسَابٍ. رَحْمَنَ الدُّنْيَا وَالآخِرَةِ وَرَحِيمَهُمَا، اللَّهُمَّ ارْحَمْنِي رَحْمَةً تُغْنِينِي بِهَا عَمَّنْ سِوَاكَ.',
-      latin: 'Allāhummar-zuqnī ‘ilman nāfi‘an, wa rizqan wāsi‘an, wa shifā’an min kulli dā’in wa saqam, yā man tarzuqu man tashā’u bi-ghayri ḥisāb.',
-      explanationEs: 'Oh Allah, concédeme conocimiento útil, un sustento amplio y curación de toda enfermedad, Oh Quien sustenta a quien quiere sin medida.',
+      latin: 'Allāhummar-zuqnī ‘ilman nāfi‘an, wa rizqan wāsi‘an, wa shifā’an min kulli dā’in wa saqam, yā man tarzuqu man tashā’u bi-ghayri ḥisāb. Raḥmānad-dunyā wal-ākhirati wa raḥīmahumā, Allāhumma irḥamnī raḥmatan tughnīnī bihā ‘amman siwāk.',
+      explanationEs: 'Oh Allah, concédeme conocimiento útil, un sustento amplio y curación de toda enfermedad, Oh, Quien sustenta a quien quiere sin medida.',
       note: 'دعاء العلم والرزق والشفاء'
     },
     {
@@ -655,7 +655,7 @@ const adyaData = [
     },
     {
       text: 'اللَّهُمَّ أَنْتَ رَبِّي، لَا إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي، فَاغْفِرْ لِي، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ.',
-      latin: 'Allāhumma Anta Rabbī, lā ilāha illā Ant, khalaqtanī wa anā ‘abduk, wa anā ‘alā ‘ahdika wa wa‘dika mā staṭa‘t, a‘ūdhu bika min sharri mā ṣana‘t, abūʾu laka bi-ni‘matika ‘alayya, wa abū’u bi-dhanbī, fagh-fir lī, fa-innahū lā yaghfiru adh-dhunūba illā Ant.',
+      latin: 'Allāhumma Anta Rabbī, lā ilāha illā Ant, khalaqtanī wa anā ‘abduk, wa anā ‘alā ‘ahdika wa wa‘dika mā staṭa‘tu, a‘ūdhu bika min sharri mā ṣana‘t, abūʾu laka bi-ni‘matika ‘alayya, wa abū’u bi-dhanbī, fagh-fir lī, fa-innahū lā yaghfiru adh-dhunūba illā Ant.',
       explanationEs: "¡Oh Allah! Tú eres mi Señor; no hay divinidad digna de adoración excepto Tú. Me creaste y soy Tu siervo; me mantengo en Tu pacto y promesa tanto como puedo. Me refugio en Ti del mal que he cometido. Reconozco ante Ti Tus favores sobre mí y reconozco mi pecado. Perdóname, pues nadie perdona los pecados sino Tú. (Súplica del perdón supremo; Sahih al-Bujari)",
       note: 'سيد الاستغفار (صحيح البخاري)'
     },
@@ -721,7 +721,7 @@ const adyaData = [
     },
     {
       text: 'اللَّهُمَّ أَعِنِّي عَلَى تَرْكِ المَعَاصِي، وَحَبِّبْ إِلَيَّ الإِيمَانَ وَالطَّاعَةَ، وَكَرِّهْ إِلَيَّ الكُفْرَ وَالفُسُوقَ وَالعِصْيَانَ.',
-      latin: 'Allāhumma a‘innī ‘alā tarkil-ma‘āṣī, wa ḥabbib iliyl-īmāna waṭ-ṭā‘ah, wa karrih iliyL-kufra wal-fusūqa wal-‘iṣyān.',
+      latin: 'Allāhumma a‘innī ‘alā tarkil-ma‘āṣī, wa ḥabbib ilayya al-īmāna waṭ-ṭā‘ah, wa karrih ilayya al-kufra wal-fusūqa wal-‘iṣyān.',
       explanationEs: 'Oh Allah, ayúdame a abandonar los pecados, haz que ame la fe y la obediencia, y haz que deteste la incredulidad, la inmoralidad y la desobediencia.',
       note: 'صيغة عامة مقترحة'
     },
@@ -890,7 +890,7 @@ const adyaData = [
     },
     {
       text: 'اللَّهُمَّ زِدْهُمْ عُمُرًا وَعَافِيَةً، وَأَبْعِدْ عَنْهُمْ مَتَاعِبَ الدُّنْيَا وَلَا تُذِقْهُمَا دُمُوعَ الضِّيقِ، اللَّهُمَّ بِحَجْمِ سَمَائِكَ أَرِحْ قَلْبَهُمَا وَأَسْعِدْهُمَا سَعَادَةً لَا تَفْنَى وَلَا تَزُولُ.',
-      latin: 'Allāhumma zid-hum ‘umran wa ‘āfiyah, wa ab‘id ‘anhum matā‘ibad-dunyā wa lā tuḏiqhumumā dumū‘aḍ-ḍīq, Allāhumma bi-ḥajmi samā’ika ariḥ qalbahumā wa as‘id-humā sa‘ādatan lā tafnā wa lā tazūl.',
+      latin: 'Allāhumma zid-hum ‘umran wa ‘āfiyah, wa ab‘id ‘anhum matā‘ibad-dunyā wa lā tudhīqhumā dumū‘aḍ-ḍīq, Allāhumma bi-ḥajmi samā’ika ariḥ qalbahumā wa as‘id-humā sa‘ādatan lā tafnā wa lā tazūl.',
       explanationEs: 'Oh Allah, auméntales vida y salud, aléjalos de las fatigas del mundo, y del suplicio de las lágrimas de angustia. Por la magnitud de Tu cielo, descansa sus corazones y concédeles felicidad eterna.',
       note: 'دعاء السعادة وراحة القلب'
     },
@@ -987,7 +987,7 @@ const adyaData = [
     {
       text: 'يَا حَيُّ يَا قَيُّومُ، يَا نُورُ يَا قَدُّوسُ، يَا حَيُّ يَا اللهُ، يَا رَحْمَنُ اغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تَحُلُّ النِّقَمَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تُورِثُ النَّدَمَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تَحْبِسُ القِسْمَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تَهْتِكُ العِصَمَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تَقْطَعُ الرَّجَاءَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تُعَجِّلُ الفَنَاءَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تَرُدُّ الدُّعَاءَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تُمْسِكُ غَيْثَ السَّمَاءِ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تُظْلِمُ الهَوَاءَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تَكْشِفُ الغِطَاءَ، اللَّهُمَّ إِنِّي أَسْأَلُكَ، يَا فَارِجَ الهَمِّ، يَا كَاشِفَ الغَمِّ، مُجِيبَ دَعْوَةِ المُضْطَرِّ، رَحْمَنَ الدُّنْيَا وَالآخِرَةِ وَرَحِيمَهُمَا، أَسْأَلُكَ أَنْ تَرْحَمَهُمَا بِرَحْمَةٍ مِنْ عِنْدِكَ تُغْنِيهِمَا بِهَا عَنْ رَحْمَةِ مَنْ سِوَاكَ.',
       latin: "Yā Ḥayyu yā Qayyūm, yā Nūru yā Quddūs, yā Ḥayyu yā Allāh, yā Raḥmān, ighfir lahumā adh-dhunūbal-latī taḥullun-niqam, wa ighfir lahumā adh-dhunūbal-latī tūriṯun-nadam, wa ighfir lahumā adh-dhunūbal-latī taḥbisul-qism, wa ighfir lahumā adh-dhunūbal-latī tahtikul-ʿiṣam, wa ighfir lahumā adh-dhunūbal-latī taqṭaʿur-rajāʾ, wa ighfir lahumā adh-dhunūbal-latī tuʿajjilul-fanāʾ, wa ighfir lahumā adh-dhunūbal-latī taruddu ad-duʿāʾ, wa ighfir lahumā adh-dhunūbal-latī tumsiku ghaytha as-samāʾ, wa ighfir lahumā adh-dhunūbal-latī tuẓlimul-hawāʾ, wa ighfir lahumā adh-dhunūbal-latī takshiful-ghiṭāʾ. Allāhumma innī asʾaluka, yā fārijal-hamm, yā kāshifal-ghamm, mujība daʿwatil-muḍṭarr, raḥmānad-dunyā wal-ākhirati wa raḥīmahumā. Asʾaluka an tarḥamahumā bi-raḥmatin min ʿindika tughnīhimā bihā ʿan raḥmati man siwāk.",
-      explanationEs: "¡Oh Viviente, Oh Sustentador, Oh Luz, Oh Santísimo, Oh Viviente, Oh Allah, Oh Misericordioso! Perdona a ambos los pecados que atraen calamidades, los que causan remordimiento, los que impiden el sustento, los que quebrantan las protecciones, los que cortan la esperanza, los que apresuran el fin, los que impiden que la súplica sea respondida, los que retienen la lluvia del cielo, los que oscurecen el aire y los que descubren lo que estaba cubierto. ¡Oh Allah! Te pido, Oh Quien disipa la preocupación, Oh Quien elimina la angustia, Quien responde a la súplica del necesitado, Misericordioso en esta vida y en la otra, que tengas misericordia de ambos con una misericordia procedente de Ti que les haga prescindir de la misericordia de cualquiera fuera de Ti.",
+      explanationEs: "¡Oh Viviente, Oh Sustentador, Oh Luz, Oh Santísimo, Oh Viviente, Oh Allah, Oh Misericordioso! Perdona a ambos los pecados que atraen calamidades, los que causan remordimiento, los que impiden el sustento, los que quebrantan las protecciones, los que cortan la esperanza, los que apresuran el fin, los que impiden que la súplica sea respondida, los que retienen la lluvia del cielo, los que oscurecen el aire y los que descubren lo que estaba cubierto. ¡Oh Allah! Te pido, Oh, Quien disipa la preocupación, Oh, Quien elimina la angustia, Quien responde a la súplica del necesitado, Misericordioso en esta vida y en la otra, que tengas misericordia de ambos con una misericordia procedente de Ti que les haga prescindir de la misericordia de cualquiera fuera de Ti.",
       note: 'دعاء الكرب والمغفرة الواسعة'
     },
     {
@@ -999,7 +999,7 @@ const adyaData = [
     {
       text: 'يَا فَارِجَ الهَمِّ، وَيَا كَاشِفَ الغَمِّ، فَرِّجْ هَمَّهُمَا وَيَسِّرْ أَمْرَهُمَا، وَارْحَمْ ضَعْفَهُمَا، وَقِلَّةَ حِيلَتِهِمَا، وَارْزُقْهُمَا يَا رَبَّ العَالَمِينَ، يَا وَدُودُ يَا كَرِيمُ، يَا جَبَّارَ السَّمَاوَاتِ وَالأَرْضِ، يَا هَادِيَ القُلُوبِ اهْدِ قَلْبَيْهِمَا، يَا مُغِيثُ أَغِثْهُمَا (ثلاثاً)، اللَّهُمَّ أَعِنَّا عَلَى بِرِّهِمَا حَتَّى يَرْضَيَا عَنَّا فَتَرْضَى، اللَّهُمَّ أَعِنَّا عَلَى الإِحْسَانِ إِلَيْهِمَا فِي كِبَرِهِمَا.',
       latin: "Yā fārijal-hamm, wa yā kāshifal-ghamm, farrij hammahumā wa yassir amrahumā, warḥam ḍaʿfahumā wa qillata ḥīlatihimā, warzuqhumā yā Rabbal-ʿālamīn. Yā Wadūd, yā Karīm, yā Jabbāras-samāwāti wal-arḍ, yā Hādiyal-qulūbi ihdi qalbayhimā, yā Mughīth aghithhumā (thalāthan). Allāhumma aʿinnā ʿalā birrihimā ḥattā yarḍayā ʿannā fa-tarḍā. Allāhumma aʿinnā ʿalā al-iḥsāni ilayhimā fī kibarihimā.",
-      explanationEs: "¡Oh Quien disipa la preocupación y elimina la angustia! Alivia sus preocupaciones, facilita sus asuntos, ten piedad de su debilidad y de sus pocos recursos, y provéeles, Señor de los mundos. ¡Oh Afectuoso, Oh Generoso, Oh Poderoso de los cielos y de la Tierra, Oh Guía de los corazones, guía sus corazones! ¡Oh Quien socorre, socórrelos! (tres veces). ¡Oh Allah! Ayúdanos a tratarlos con bondad hasta que estén complacidos con nosotros y Tú estés complacido. ¡Oh Allah! Ayúdanos a ser benevolentes con ellos durante su vejez.",
+      explanationEs: "¡Oh, Quien disipa la preocupación y elimina la angustia! Alivia sus preocupaciones, facilita sus asuntos, ten piedad de su debilidad y de sus pocos recursos, y provéeles, Señor de los mundos. ¡Oh Afectuoso, Oh Generoso, Oh Poderoso de los cielos y de la Tierra, Oh Guía de los corazones, guía sus corazones! ¡Oh, Quien socorre, socórrelos! (tres veces). ¡Oh Allah! Ayúdanos a tratarlos con bondad hasta que estén complacidos con nosotros y Tú estés complacido. ¡Oh Allah! Ayúdanos a ser benevolentes con ellos durante su vejez.",
       note: 'دعاء تفريج الهم والإعانة على البر'
     },
     {
@@ -1318,13 +1318,13 @@ const adyaData = [
     },
     {
       text: 'اللهُ؛ اللهُ رَبِّي، لَا أُشْرِكُ بِهِ شَيْئًا.',
-      latin: 'Allāhu; Allāhu Rabbī, lā ushriku bihī shay’ā.',
-      explanationEs: 'Allah; Allah es mi Señor, no le asocio nada en absoluto.',
+      latin: 'Allāhu, Allāhu Rabbī, lā ushriku bihī shay’ā.',
+      explanationEs: 'Allah, Allah es mi Señor; no Le asocio nada en absoluto.',
       note: 'دعاء لتفريج الضيق'
     },
     {
       text: 'اللَّهُمَّ رَبَّ السَّمَاوَاتِ السَّبْعِ، وَرَبَّ العَرْشِ العَظِيمِ، رَبَّنَا وَرَبَّ كُلِّ شَيْءٍ، أَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، وَأَنْتَ البَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، مُنْزِلَ التَّوْرَاةِ وَالإِنْجِيلِ وَالفُرْقَانِ، فَالِقَ الحَبِّ وَالنَّوَى، أَعُوذُ بِكَ مِنْ شَرِّ كُلِّ شَيْءٍ أَنْتَ آخِذٌ بِنَاصِيَتِهِ، أَنْتَ الأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ الآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ، اقْضِ عَنَّا الدَّيْنَ وَأَغْنِنَا مِنَ الفَقْرِ.',
-      latin: 'Allāhumma Rabbas-samāwātis-sab‘i, wa Rabbal-‘arshil-‘aẓīm, Rabbanā wa Rabba kulli shay\', Antaẓ-Ẓāhiru falaysa fawqaka shay\', wa Antal-Bāṭinu falaysa dūnaka shay\', Munzilat-Tawrāti wal-Injīli wal-Furqān, Fāliqal-ḥabbi wan-nawā, a‘ūdhu bika min sharri kulli shay\'in Anta ākhidhum bi-nāṣiyatih, Antal-Awwalu falaysa qablaka shay\', wa Antal-Ākhiru falaysa ba‘daka shay\', iqḍi ‘annad-dayna wa aghninā minal-faqr.',
+      latin: 'Allāhumma Rabbas-samāwātis-sab‘i, wa Rabbal-‘arshil-‘aẓīm, Rabbanā wa Rabba kulli shay\', Antaẓ-Ẓāhiru falaysa fawqaka shay\', wa Antal-Bāṭinu falaysa dūnaka shay\', Munzilat-Tawrāti wal-Injīli wal-Furqān, Fāliqal-ḥabbi wan-nawā, a‘ūdhu bika min sharri kulli shay\'in Anta ākhidhun bi-nāṣiyatih, Antal-Awwalu falaysa qablaka shay\', wa Antal-Ākhiru falaysa ba‘daka shay\', iqḍi ‘annad-dayna wa aghninā minal-faqr.',
       explanationEs: 'Oh Allah, Señor de los siete cielos y del Gran Trono, Señor nuestro y de todas las cosas. Paga nuestras deudas y líbranos de la pobreza.',
       note: 'صحيح مسلم'
     },
@@ -1337,7 +1337,7 @@ const adyaData = [
     {
       text: 'اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ، وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ.',
       latin: 'Allāhummak-finī bi-ḥalālika ‘an ḥarāmik, wa aghninī bi-faḍlika ‘amman siwāk.',
-      explanationEs: 'Oh Allah, hazteme suficiente con lo que has permitido frente a lo prohibido, y enriquéceme con Tu gracia para no necesitar de nadie más.',
+      explanationEs: 'Oh Allah, haz que me baste con lo lícito frente a lo prohibido, y enriquéceme con Tu gracia para no necesitar de nadie más.',
       note: 'سنن الترمذي'
     },
     {
@@ -1355,13 +1355,13 @@ const adyaData = [
     {
       text: 'اللَّهُمَّ إِنَّ ضَرُورَتَنَا قَدْ حَفَّتْ، وَلَيْسَ لَهَا إِلَّا أَنْتَ، فَاكْشِفْهَا، يَا مُفَرِّجَ الهُمُومِ، لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ، إِنِّي كُنْتُ مِنَ الظَّالِمِينَ، اللَّهُمَّ اكْفِنِي مَا أَهَمَّنِي، اللَّهُمَّ يَا حَابِسَ يَدِ إِبْرَاهِيمَ عَنْ ذَبْحِ ابْنِهِ، يَا رَافِعَ شَأْنِ يُوسُفَ عَلَى إِخْوَتِهِ وَأَهْلِهِ.',
       latin: "Allāhumma inna ḍarūratanā qad ḥaffat, wa laysa lahā illā Anta, fakshifhā, yā Mufarrijal-humūm. Lā ilāha illā Anta, subḥānaka, innī kuntu minaẓ-ẓālimīn. Allāhummakfinī mā ahammanī. Allāhumma yā ḥābisa yada Ibrāhīma ʿan dhabḥi ibnih, yā rāfiʿa shaʾni Yūsufa ʿalā ikhwatihi wa ahlih.",
-      explanationEs: "¡Oh Allah! Nuestra necesidad nos ha abrumado y no hay nadie salvo Tú que pueda resolverla; alívi ala, ¡oh Quien disipa las preocupaciones! No hay divinidad salvo Tú. ¡Glorificado seas! En verdad, fui de los injustos. ¡Oh Allah!, sé suficiente para mí en aquello que me preocupa. ¡Oh Allah, Quien contuvo la mano de Abraham para que no sacrificara a su hijo! ¡Oh Quien elevó la posición de José por encima de sus hermanos y de su familia!",
+      explanationEs: "¡Oh Allah! Nuestra necesidad nos ha abrumado y no hay nadie salvo Tú que pueda resolverla; alíviala, ¡oh Quien disipa las preocupaciones! No hay divinidad salvo Tú. ¡Glorificado seas! En verdad, fui de los injustos. ¡Oh Allah!, sé suficiente para mí en aquello que me preocupa. ¡Oh Allah, Quien contuvo la mano de Abraham para que no sacrificara a su hijo! ¡Oh, Quien elevó la posición de José por encima de sus hermanos y de su familia!",
       note: 'دعاء الكرب والضرورة'
     },
     {
       text: 'اللَّهُمَّ إِنِّي ضَعِيفٌ فَقَوِّنِي، وَإِنِّي ذَلِيلٌ فَأَعِزِّنِي، وَإِنِّي فَقِيرٌ فَارْزُقْنِي، وَأَسْأَلُكَ خَيْرَ الأُمُورِ كُلِّهَا وَخَوَاتِمَ الخَيْرِ وَجَوَامِعَهُ.',
       latin: "Allāhumma innī ḍaʿīfun fa-qawwinī, wa innī dhalīlun fa-aʿizzinī, wa innī faqīrun farzuqnī, wa asʾaluka khayral-umūri kullihā wa khawātimal-khayri wa jawāmiʿah.",
-      explanationEs: 'Oh Allah, soy débil, así que fortaléceme; soy humilde, así que enalteceme; soy pobre, así que susténtame. Te pido lo mejor de todos los asuntos y sus buenos finales.',
+      explanationEs: 'Oh Allah, soy débil, así que fortaléceme; soy humilde, así que enaltéceme; soy pobre, así que susténtame. Te pido lo mejor de todos los asuntos y sus buenos finales.',
       note: 'دعاء طلب القوة والرزق وخير الأمور'
     },
     {
@@ -1379,7 +1379,7 @@ const adyaData = [
     {
       text: 'يَا عَزِيزُ أَعِزِّنِي، وَيَا كَافِي اكْفِنِي، وَيَا قَوِيُّ قَوِّنِي، وَيَا لَطِيفُ الْطُفْ بِي فِي أُمُورِي كُلِّهَا وَالْطُفْ بِي فِيمَا نَزَلَ.',
       latin: 'Yā ‘Azīzu a‘izzinī, wa yā Kāfi akfinī, wa yā Qawiyyu qawwinī, wa yā Laṭīfu l-ṭuf bī fī umūrī kullahā wal-ṭuf bī fīmā nazal.',
-      explanationEs: 'Oh Poderoso, enalteceme; Oh Suficiente, sé suficiente para mí; Oh Fuerte, fortaléceme; Oh Amable, sé clemente conmigo en todos mis asuntos y en lo que acontezca.',
+      explanationEs: 'Oh Poderoso, enaltéceme; Oh Suficiente, sé suficiente para mí; Oh Fuerte, fortaléceme; Oh Amable, sé clemente conmigo en todos mis asuntos y en lo que acontezca.',
       note: 'دعاء اللطف والتأييد'
     },
     {
@@ -1397,7 +1397,7 @@ const adyaData = [
     {
       text: 'يَا مَنْ رَاحَ عَبْرَةَ دَاوُدَ، وَكَاشِفَ ضُرِّ أَيُّوبَ، يَا مُجِيبَ دَعْوَةِ المُضْطَرِّينَ، وَكَاشِفَ غَمِّ المَغْمُومِينَ، أَسْأَلُكَ أَنْ تُفَرِّجَ هَمِّي، يَا فَارِجَ الغَمِّ، اجْعَلْ لِي مِنْ أَمْرِي فَرَجًا وَمَخْرَجًا، يَا سَامِعَ كُلِّ شَكْوَى، وَكَاشِفَ كُلِّ كَرْبٍ.',
       latin: 'Yā man rāḥa ‘abrata Dāwūd, wa kāshifa ḍurri Ayyūb, yā Mujība da‘watil-muḍṭarrīn, wa kāshifa ghammil-maghmūmīn, as’aluka an tufarrija hammī, yā Fārijal-ghamm, aj‘al lī min amrī farajan wa makhrajā, yā Sāmi‘a kulli shakwā, wa kāshifa kulli karb.',
-      explanationEs: 'Oh Quien quitó el llanto de David, Aliviador del mal de Job, Contestador de la súplica de los atribulados, te pido que alivies mi preocupación y me des una salida.',
+      explanationEs: 'Oh, Quien quitó el llanto de David, Aliviador del mal de Job, Contestador de la súplica de los atribulados, te pido que alivies mi preocupación y me des una salida.',
       note: 'دعاء كشف الغم وتفريج الكرب'
     },
     {
@@ -1415,7 +1415,7 @@ const adyaData = [
     {
       text: 'أُجْبُرْنِي يَا اللهُ فَإِنَّ بِي كُسُورًا لَا يَرَاهَا أَحَدٌ، مُتَعَمِّقَةً فِي رُوحِي تَخْطَفُ مِنِّي ضَحَكَاتِي وَهَنَاءَ أَيَّامِي، لَا أَحَدَ يَصِلُ إِلَيْهَا سِوَاكَ يَا اللهُ.',
       latin: 'Ujburnī yā Allāhu fa-inna bī kusūran lā yarāhā aḥad, muta‘ammiqatan fī rūḥī takhṭafu minnī ḍaḥakātī wa hanā’a ayyāmī, lā aḥada yaṣilu ilayhā siwāka yā Allāh.',
-      explanationEs: 'Sáname y reconfortame Oh Allah, pues tengo fracturas profundas en mi alma que nadie ve, y que arrebatan mis sonrisas. Nadie llega a ellas excepto Tú, Oh Allah.',
+      explanationEs: 'Sáname y reconfórtame Oh Allah, pues tengo fracturas profundas en mi alma que nadie ve, y que arrebatan mis sonrisas. Nadie llega a ellas excepto Tú, Oh Allah.',
       note: 'دعاء جبر القلوب والكسور'
     }
   ]

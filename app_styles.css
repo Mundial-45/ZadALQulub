@@ -316,3 +316,18 @@ button[onclick*="showFavorites"] {
 .text-sky-100 { color: #e0f2fe !important; }
 .text-cyan-100 { color: #cffaff !important; }
 .text-rose-100 { color: #ffe4e6 !important; }
+
+/* Typography & Larger Sizing for Latin Transliteration and Spanish Translation */
+.latin-text-style {
+  font-family: 'Lora', 'Georgia', 'Inter', serif !important;
+  font-size: max(1rem, calc(var(--app-font-size, 1.125rem) * 0.95)) !important;
+  line-height: 1.75 !important;
+  letter-spacing: 0.015em !important;
+}
+
+.es-text-style {
+  font-family: 'Inter', 'Tajawal', system-ui, -apple-system, sans-serif !important;
+  font-size: max(1.1rem, calc(var(--app-font-size, 1.125rem) * 1.08)) !important;
+  line-height: 1.8 !important;
+  letter-spacing: 0.01em !important;
+}

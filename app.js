@@ -606,8 +606,8 @@ function renderGroupItems() {
 
       ${isEs ? `
         <div class="space-y-4">
-          ${item.latin ? `<div class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 italic text-center font-semibold bg-amber-100/40 dark:bg-slate-900/60 p-3 rounded-2xl border border-amber-200/50 dark:border-slate-800 whitespace-pre-line">${formatTextWithNewlines(item.latin)}</div>` : ''}
-          ${item.explanationEs ? `<div class="text-sm sm:text-base text-slate-900 dark:text-slate-100 bg-emerald-50/70 dark:bg-emerald-950/40 p-4 rounded-2xl border border-emerald-200/50 dark:border-emerald-900/40 leading-relaxed text-center font-medium whitespace-pre-line">${formatTextWithNewlines(item.explanationEs)}</div>` : ''}
+          ${item.latin ? `<div class="text-sm sm:text-base md:text-lg text-slate-800 dark:text-slate-200 latin-text-style italic text-center font-semibold bg-amber-100/50 dark:bg-slate-900/70 p-4 rounded-2xl border border-amber-300/60 dark:border-slate-700 shadow-sm whitespace-pre-line">${formatTextWithNewlines(item.latin)}</div>` : ''}
+          ${item.explanationEs ? `<div class="text-base sm:text-lg md:text-xl text-slate-900 dark:text-slate-50 es-text-style text-center font-bold bg-emerald-50/90 dark:bg-emerald-950/60 p-4 sm:p-5 rounded-2xl border border-emerald-300/60 dark:border-emerald-800/80 leading-relaxed shadow-sm whitespace-pre-line">${formatTextWithNewlines(item.explanationEs)}</div>` : ''}
           <div class="leading-relaxed custom-text-size${quranFontClass} font-bold text-emerald-950 dark:text-emerald-300 text-center tracking-wide pt-3 border-t border-amber-200/60 dark:border-slate-700/60 dir-rtl whitespace-pre-line">
             ${formatTextWithNewlines(item.text)}
           </div>
