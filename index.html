@@ -1169,11 +1169,14 @@
 
           <!-- أدوات التفاعل -->
           <div class="flex items-center justify-center space-x-2 space-x-reverse pt-2 border-t border-slate-100 dark:border-slate-700">
-            ${item.audioUrl ? `
-              <button type="button" onclick="playAudio('${item.audioUrl}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="استماع">
-                🔊
-              </button>
-            ` : ''}
+${(() => {
+  const audioSrc = item.audioUrl || (item.audioUrls && item.audioUrls.length > 0 ? item.audioUrls[0] : null);
+  return audioSrc ? `
+    <button type="button" onclick="playAudio('${audioSrc}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="استماع">
+      🔊
+    </button>
+  ` : '';
+})()}
             <button type="button" onclick="openEditModal(${index})" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-indigo-100 dark:hover:bg-indigo-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="تعديل النص والترجمة">
               ✏️
             </button>
