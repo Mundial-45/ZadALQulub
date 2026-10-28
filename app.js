@@ -649,16 +649,16 @@ function readEditorSourceString(literal) {
 }
 
 function getEditorObjectText(objectSource) {
-  const match = objectSource.match(/\btext\s*:\s*("(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*')/s);
+  const match = objectSource.match(/["']?text["']?\s*:\s*("(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*')/s);
   return match ? readEditorSourceString(match[1]) : null;
 }
 
 function replaceEditorItemSource(source, groupId, itemIndex, originalItem, updatedItem) {
-  const ranges = scanEditorObjectRanges(source), idNeedle = 'id: ' + JSON.stringify(groupId), idIndex = source.indexOf(idNeedle);
+  const ranges = scanEditorObjectRanges(source), idNeedle = '"id": ' + JSON.stringify(groupId), legacyIdNeedle = 'id: ' + JSON.stringify(groupId), idIndex = Math.max(source.indexOf(idNeedle), source.indexOf(legacyIdNeedle));
   if (idIndex < 0) throw new Error('No se encontró el grupo ' + groupId + ' en el archivo.');
   const groupCandidates = ranges.filter(function (range) {
     if (!(range.start <= idIndex && range.end >= idIndex)) return false;
-    return /\bitems\s*:/.test(source.slice(range.start, range.end));
+    return /["']?items["']?\s*:/.test(source.slice(range.start, range.end));
   }).sort(function (a, b) { return (a.end - a.start) - (b.end - b.start); });
   if (!groupCandidates.length) throw new Error('No se encontró la lista de elementos del grupo.');
   const groupRange = groupCandidates[0];
