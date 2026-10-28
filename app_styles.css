@@ -69,33 +69,63 @@ svg.w-5, svg.h-5 {
 }
 
 /* Home Screen Category Buttons Background Gradients & Colors */
-button[onclick*="showSection('azkar')"] {
+button[onclick*="showQuranView"] {
+  background: linear-gradient(135deg, #d97706 0%, #78350f 100%) !important;
+  color: #ffffff !important;
+}
+
+button[onclick*="openAzkarSection"], button[onclick*="showSection('azkar')"] {
   background: linear-gradient(135deg, #059669 0%, #065f46 100%) !important;
   color: #ffffff !important;
 }
 
-button[onclick*="showSection('adya')"] {
+button[onclick*="openAdyaSection"], button[onclick*="showSection('adya')"] {
   background: linear-gradient(135deg, #0d9488 0%, #115e59 100%) !important;
   color: #ffffff !important;
 }
 
-button[onclick*="showSection('munajat')"] {
+button[onclick*="openMunajatSection"], button[onclick*="showSection('munajat')"] {
   background: linear-gradient(135deg, #0284c7 0%, #1e40af 100%) !important;
   color: #ffffff !important;
 }
 
-button[onclick*="showTasbeeh()"] {
+button[onclick*="showTasbeeh"] {
   background: linear-gradient(135deg, #0891b2 0%, #0f766e 100%) !important;
   color: #ffffff !important;
 }
 
-button[onclick*="showFavorites()"] {
+button[onclick*="openRuqyaSection"], button[onclick*="showSection('ruqyah')"] {
+  background: linear-gradient(135deg, #4f46e5 0%, #312e81 100%) !important;
+  color: #ffffff !important;
+}
+
+button[onclick*="showFavorites"] {
   background: linear-gradient(135deg, #e11d48 0%, #991b1b 100%) !important;
   color: #ffffff !important;
 }
 
-button[onclick*="showQuranView()"] {
+/* Force high contrast text on home category buttons */
+#homeView button, #homeView button * {
+  color: #ffffff !important;
+}
+
+/* Quran View Sub-Category Buttons Colors & Contrast */
+#cardSurahsBtn, button[onclick*="showQuranSurahsView"] {
+  background: linear-gradient(135deg, #059669 0%, #065f46 100%) !important;
+  color: #ffffff !important;
+}
+
+#cardAhzabBtn, button[onclick*="showQuranAhzabView"] {
+  background: linear-gradient(135deg, #0d9488 0%, #115e59 100%) !important;
+  color: #ffffff !important;
+}
+
+#cardContinueBtn, button[onclick*="continueLastReading"] {
   background: linear-gradient(135deg, #d97706 0%, #78350f 100%) !important;
+  color: #ffffff !important;
+}
+
+#quranView button, #quranView button * {
   color: #ffffff !important;
 }
 
