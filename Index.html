@@ -1,0 +1,1974 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>زاد القلوب - Zad Al-Qulub</title>
+  <link rel="stylesheet" href="app_styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Amiri+Quran&family=Tajawal:wght@400;500;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Tajawal', 'Inter', sans-serif; }
+    .custom-text-size { font-size: var(--app-font-size, 1.125rem); font-family: 'Amiri Quran', 'Amiri', serif; }
+    .quran-font { font-family: 'Amiri Quran', serif !important; font-weight: 400 !important; line-height: 2.8 !important; padding-top: 0.18em; padding-bottom: 0.28em; overflow: visible; font-kerning: normal; }
+    /* Extra vertical room for Quranic diacritics and waqf marks so they do not collide with the previous line. */
+    .quran-font, .quran-font * { line-height: 2.8 !important; }
+  </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-screen flex flex-col justify-between transition-colors duration-300">
+
+  <!-- Header -->
+  <header class="bg-emerald-700 dark:bg-emerald-900 text-white py-4 shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4 flex items-center justify-between">
+      <div>
+        <h1 class="text-xl md:text-2xl font-extrabold tracking-wide cursor-pointer" id="headerTitle" onclick="goHome()">زَادُ الْقُلُوبِ</h1>
+        <p class="text-emerald-100 text-xs hidden sm:block" id="headerSubtitle">جامع الأذكار والأدعية والمناجاة</p>
+      </div>
+      
+      <div class="flex items-center space-x-2 space-x-reverse">
+        <!-- زر دليل Pronunciación / Transliteración (i) (يظهر فقط في اللغة الإسبانية) -->
+        <button type="button" onclick="openTransliterationGuide()" id="transliterationInfoBtn" style="display: none;" class="p-2 bg-emerald-800 dark:bg-emerald-950 hover:bg-emerald-600 rounded-xl transition text-xs font-bold flex items-center justify-center cursor-pointer w-9 h-9" title="Guía de pronunciación latina / Transliteración">
+          ℹ️
+        </button>
+
+        <!-- زر تغيير اللغة -->
+        <button type="button" onclick="toggleLanguage()" class="p-2 bg-emerald-800 dark:bg-emerald-950 hover:bg-emerald-600 rounded-xl transition text-xs font-bold flex items-center gap-1 cursor-pointer" title="تغيير اللغة / Cambiar idioma">
+          🌐 <span id="langBtnText">ES</span>
+        </button>
+
+        <button type="button" onclick="changeFontSize(1)" class="p-1.5 bg-emerald-800 dark:bg-emerald-950 hover:bg-emerald-600 rounded-lg text-xs font-bold transition">A+</button>
+        <button type="button" onclick="changeFontSize(-1)" class="p-1.5 bg-emerald-800 dark:bg-emerald-950 hover:bg-emerald-600 rounded-lg text-xs font-bold transition">A-</button>
+        
+        <button type="button" onclick="toggleDarkMode()" class="p-2 bg-emerald-800 dark:bg-emerald-950 hover:bg-emerald-600 rounded-xl transition" title="تبديل الوضع">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="container mx-auto px-4 py-6 max-w-3xl flex-grow">
+
+    <!-- VIEW 1: الرئيسية -->
+    <div id="homeView" class="space-y-6 my-auto pt-4">
+      <h2 id="homeWelcome" class="text-center text-xl font-bold text-slate-700 dark:text-slate-300 mb-6">اختر القسم للبدء:</h2>
+      
+      <div class="grid grid-cols-2 gap-3.5 sm:gap-5">
+        <!-- زر القرآن الكريم -->
+        <button type="button" onclick="showQuranView()" class="bg-gradient-to-br from-amber-600 to-amber-800 hover:from-amber-700 text-white p-4 sm:p-5 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center space-y-2 cursor-pointer col-span-2 border border-amber-300/30">
+          <span class="block p-2.5 bg-white/20 rounded-xl">
+            <svg class="w-9 h-9 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+          </span>
+          <span class="block">
+            <span class="block text-lg sm:text-xl font-extrabold" id="btnQuranTitle">القرآن الكريم (برواية ورش)</span>
+            <span class="block text-amber-100 text-xs mt-0.5 line-clamp-1" id="btnQuranSub">المصحف الشريف كاملًا برواية ورش عن نافع</span>
+          </span>
+        </button>
+
+        <button type="button" onclick="openAzkarSection()" class="bg-gradient-to-br from-emerald-600 to-emerald-800 hover:from-emerald-700 text-white p-4 sm:p-5 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center space-y-2 cursor-pointer border border-white/10">
+          <span class="block p-2.5 bg-white/20 rounded-xl">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+          </span>
+          <span class="block">
+            <span class="block text-base sm:text-lg font-bold" id="btnAzkarTitle">الأذكار اليومية</span>
+            <span class="block text-emerald-100 text-[10px] sm:text-xs mt-0.5 line-clamp-1" id="btnAzkarSub">الصباح، المساء، النوم، أذكار الصلاة</span>
+          </span>
+        </button>
+
+        <button type="button" onclick="openAdyaSection()" class="bg-gradient-to-br from-teal-600 to-teal-800 hover:from-teal-700 text-white p-4 sm:p-5 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center space-y-2 cursor-pointer border border-white/10">
+          <span class="block p-2.5 bg-white/20 rounded-xl">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 001.95-1.57l1.65-7.43A2 2 0 0019.93 9H14zM7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"></path></svg>
+          </span>
+          <span class="block">
+            <span class="block text-base sm:text-lg font-bold" id="btnAdyaTitle">الأدعية المأثورة</span>
+            <span class="block text-teal-100 text-[10px] sm:text-xs mt-0.5 line-clamp-1" id="btnAdyaSub">الرزق، الشفاء، الفرج، الحفظ</span>
+          </span>
+        </button>
+
+        <button type="button" onclick="openMunajatSection()" class="bg-gradient-to-br from-sky-600 to-blue-700 hover:from-sky-700 text-white p-4 sm:p-5 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center space-y-2 cursor-pointer border border-white/10">
+          <span class="block p-2.5 bg-white/20 rounded-xl">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+          </span>
+          <span class="block">
+            <span class="block text-base sm:text-lg font-bold" id="btnMunajatTitle">مناجاة وتضرعات</span>
+            <span class="block text-sky-100 text-[10px] sm:text-xs mt-0.5 line-clamp-1" id="btnMunajatSub">Invocaciones y Súplicas Íntimas</span>
+          </span>
+        </button>
+
+        <button type="button" onclick="showTasbeeh()" class="bg-gradient-to-br from-cyan-600 to-teal-800 hover:from-cyan-700 text-white p-4 sm:p-5 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center space-y-2 cursor-pointer border border-white/10">
+          <span class="block p-2.5 bg-white/20 rounded-xl">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </span>
+          <span class="block">
+            <span class="block text-base sm:text-lg font-bold" id="btnTasbeehTitle">المسبحة الإلكترونية</span>
+            <span class="block text-cyan-100 text-[10px] sm:text-xs mt-0.5 line-clamp-1" id="btnTasbeehSub">عداد إلكتروني للتسبيح والاستغفار</span>
+          </span>
+        </button>
+
+        <!-- زر الرقية الشرعية -->
+        <button type="button" onclick="openRuqyaSection()" class="bg-gradient-to-br from-indigo-600 to-indigo-900 hover:from-indigo-700 text-white p-4 sm:p-5 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center space-y-2 cursor-pointer col-span-2 border border-indigo-300/30">
+          <span class="block p-2.5 bg-white/20 rounded-xl">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+          </span>
+          <span class="block">
+            <span class="block text-lg sm:text-xl font-bold" id="btnRuqyahTitle">الرقية الشرعية</span>
+            <span class="block text-indigo-100 text-[10px] sm:text-xs mt-0.5 line-clamp-1" id="btnRuqyahSub">رقية الشفاء، العين، الحسد والمس</span>
+          </span>
+        </button>
+
+        <button type="button" onclick="showFavorites()" class="bg-gradient-to-br from-rose-600 to-rose-800 hover:from-rose-700 text-white p-4 sm:p-5 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center space-y-2 cursor-pointer col-span-2 border border-white/10">
+          <span class="block p-2.5 bg-white/20 rounded-xl">
+            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          </span>
+          <span class="block">
+            <span class="block text-base sm:text-lg font-bold" id="btnFavTitle">المفضلة</span>
+            <span class="block text-rose-100 text-[10px] sm:text-xs mt-0.5 line-clamp-1" id="btnFavSub">الأذكار والأدعية المحفوظة لديك</span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- VIEW 2: القوائم -->
+    <div id="categoryListView" class="hidden space-y-6">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
+        <button type="button" onclick="goHome()" class="flex items-center text-sm font-semibold text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 px-3 py-1.5 rounded-xl border border-emerald-200 dark:border-emerald-800">
+          <span class="btn-back-label">الرئيسية</span>
+        </button>
+        <h2 id="sectionTitle" class="text-xl font-bold text-slate-800 dark:text-slate-100"></h2>
+        <div class="w-16"></div>
+      </div>
+
+      <div class="relative">
+        <input type="text" id="searchInput" aria-label="ابحث عن ذكر أو دعاء..." onkeyup="filterButtons()" placeholder="ابحث عن ذكر أو دعاء..." class="w-full p-3.5 pr-10 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white dark:bg-slate-800 text-sm">
+      </div>
+
+      <div id="buttonsGrid" class="grid grid-cols-1 gap-3.5 sm:gap-4"></div>
+    </div>
+
+    <!-- VIEW 3: تفاصيل القراءة (قائمة جميع أذكار المجموعة) -->
+    <div id="detailView" class="hidden space-y-6">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800 sticky top-16 bg-slate-50 dark:bg-slate-900 py-2 z-40">
+        <button type="button" onclick="goBackToSection()" class="flex items-center text-sm font-semibold text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 px-3 py-1.5 rounded-xl border border-emerald-200 dark:border-emerald-800">
+          <span class="btn-back-label">رجوع</span>
+        </button>
+        <h2 id="itemGroupTitle" class="text-lg md:text-xl font-bold text-slate-800 dark:text-slate-100 text-center px-2"></h2>
+        
+        <button type="button" onclick="resetAllInGroup()" id="resetAllBtn" class="text-xs font-medium text-slate-600 dark:text-slate-400 hover:text-red-600 bg-slate-100 dark:bg-slate-800 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700">
+          إعادة الكل
+        </button>
+      </div>
+
+      <!-- شريط إنجاز المجموعة -->
+      <div id="progressBarContainer" class="bg-white dark:bg-slate-800 p-4 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-2">
+        <div class="flex justify-between items-center text-xs font-bold text-slate-600 dark:text-slate-300">
+          <span id="progressTextLabel">نسبة الإنجاز الكلية</span>
+          <span id="progressPercent">0%</span>
+        </div>
+        <div class="w-full bg-slate-100 dark:bg-slate-700 h-2.5 rounded-full overflow-hidden">
+          <div id="progressBarFill" class="bg-emerald-500 h-full w-0 transition-all duration-300"></div>
+        </div>
+      </div>
+
+      <!-- حاوية قائمة الأذكار -->
+      <div id="itemsContainer" class="space-y-6"></div>
+    </div>
+
+    <!-- VIEW 4: المسبحة -->
+    <div id="tasbeehView" class="hidden space-y-6 pt-4">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
+        <button type="button" onclick="goHome()" class="flex items-center text-sm font-semibold text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 px-3 py-1.5 rounded-xl border border-emerald-200 dark:border-emerald-800">
+          <span class="btn-back-label">الرئيسية</span>
+        </button>
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-100" id="tasbeehHeaderTitle">المسبحة الإلكترونية الشاملة</h2>
+        <button type="button" onclick="resetAllTasbeehs()" id="resetTasbeehBtn" class="text-xs font-bold text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/50 px-3 py-1.5 rounded-xl border border-rose-200 dark:border-rose-800">
+          تصفير الكل
+        </button>
+      </div>
+
+      <div id="tasbeehGrid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+    </div>
+
+    <!-- VIEW 5: المفضلة -->
+    <div id="favoritesView" class="hidden space-y-6">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
+        <button type="button" onclick="goHome()" class="flex items-center text-sm font-semibold text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 px-3 py-1.5 rounded-xl border border-emerald-200 dark:border-emerald-800">
+          <span class="btn-back-label">الرئيسية</span>
+        </button>
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-100" id="favHeaderTitle">المفضلة</h2>
+        <div class="w-16"></div>
+      </div>
+      <div id="favoritesContainer" class="space-y-4"></div>
+    </div>
+
+    <!-- VIEW 6: قسم القرآن الكريم الرئيسي (الصفحة الرئيسية للقرآن بـ 3 بطاقات) -->
+    <div id="quranView" class="hidden space-y-6">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
+        <button type="button" onclick="goHome()" class="flex items-center text-sm font-semibold text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 px-3 py-1.5 rounded-xl border border-emerald-200 dark:border-emerald-800">
+          <span class="btn-back-label">الرئيسية</span>
+        </button>
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-100" id="quranIndexTitle">القرآن الكريم (برواية ورش)</h2>
+        <div class="w-16"></div>
+      </div>
+
+      <!-- البطاقات الثلاث الرئيسية (3 Secciones) -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <!-- 1. قائمة السور (Lista de Suras) -->
+        <button type="button" onclick="showQuranSurahsView()" id="cardSurahsBtn" class="bg-gradient-to-br from-emerald-600 to-emerald-800 hover:from-emerald-700 text-white p-5 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center space-y-2 cursor-pointer border border-white/10">
+          <span class="block p-3 bg-white/20 rounded-2xl text-3xl">📜</span>
+          <span class="block">
+            <span class="block text-lg font-bold" id="tabSurahsText">1. فهرس السور</span>
+            <span class="block text-emerald-100 text-xs mt-0.5" id="tabSurahsSub">114 سورة</span>
+          </span>
+        </button>
+
+        <!-- 2. قائمة الأحزاب (Lista de Ahzab) -->
+        <button type="button" onclick="showQuranAhzabView()" id="cardAhzabBtn" class="bg-gradient-to-br from-teal-600 to-teal-800 hover:from-teal-700 text-white p-5 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center space-y-2 cursor-pointer border border-white/10">
+          <span class="block p-3 bg-white/20 rounded-2xl text-3xl">🕌</span>
+          <span class="block">
+            <span class="block text-lg font-bold" id="tabAhzabText">2. فهرس الأحزاب</span>
+            <span class="block text-teal-100 text-xs mt-0.5" id="tabAhzabSub">60 حزب</span>
+          </span>
+        </button>
+
+        <!-- 3. متابعة القراءة (Continuar Leyendo) -->
+        <button type="button" onclick="continueLastReading()" id="cardContinueBtn" class="bg-gradient-to-br from-amber-600 to-amber-800 hover:from-amber-700 text-white p-5 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center space-y-2 cursor-pointer border border-white/10 sm:col-span-1">
+          <span class="block p-3 bg-white/20 rounded-2xl text-3xl">🔖</span>
+          <span class="block">
+            <span class="block text-lg font-bold" id="tabContinueText">3. متابعة القراءة</span>
+            <span class="block text-amber-100 text-xs mt-0.5 line-clamp-1" id="tabContinueSub">صفحة 1</span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- VIEW 6B: صفحة قائمة السور (114 سورة) -->
+    <div id="quranSurahsView" class="hidden space-y-5">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
+        <button type="button" onclick="showQuranView()" class="flex items-center text-sm font-semibold text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 px-3 py-1.5 rounded-xl border border-emerald-200 dark:border-emerald-800">
+          <span id="quranMenuBtnLabel">فهرس القرآن 📖</span>
+        </button>
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-100" id="surahsPageTitle">فهرس السور</h2>
+        <div class="w-16"></div>
+      </div>
+
+      <!-- محرك البحث السريع للسور -->
+      <div class="relative">
+        <label for="quranSearchInput" class="sr-only">ابحث عن سورة بالاسم أو الرقم</label>
+        <input type="text" id="quranSearchInput" aria-label="ابحث عن سورة بالاسم أو الرقم" oninput="filterSurahs()" placeholder="ابحث عن سورة بالاسم أو الرقم..." class="w-full p-3 pr-10 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500">
+        <span class="absolute left-3 top-3 text-slate-400">🔍</span>
+      </div>
+
+      <div id="surahsListContainer" class="grid gap-3 sm:grid-cols-2"></div>
+    </div>
+
+    <!-- VIEW 6C: صفحة قائمة الأحزاب (60 حزب - 3 في كل صف) -->
+    <div id="quranAhzabView" class="hidden space-y-5">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
+        <button type="button" onclick="showQuranView()" class="flex items-center text-sm font-semibold text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 px-3 py-1.5 rounded-xl border border-emerald-200 dark:border-emerald-800">
+          <span id="quranMenuBtnLabel2">فهرس القرآن 📖</span>
+        </button>
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-100" id="ahzabPageTitle">فهرس الأحزاب</h2>
+        <div class="w-16"></div>
+      </div>
+
+      <div id="ahzabListContainer" class="grid grid-cols-3 gap-2.5 sm:gap-4"></div>
+    </div>
+
+    <!-- VIEW 7: قارئ صفحات القرآن الكريم (صفحة واحدة مفرداة مع دعم الإيماءات والسحب) -->
+    <div id="quranReaderView" class="hidden space-y-4">
+      <!-- شريط التحكم العلوي -->
+      <div class="sticky top-16 z-40 flex items-center justify-between bg-slate-900/90 text-white p-3 rounded-2xl backdrop-blur-md border border-slate-700/80 shadow-xl">
+        <button type="button" onclick="showQuranView()" class="flex items-center text-xs font-bold bg-amber-600 hover:bg-amber-700 text-white px-3 py-1.5 rounded-xl transition cursor-pointer">
+          <span id="indexBtnText">فهرس السور 📖</span>
+        </button>
+
+        <div class="flex items-center space-x-1.5 space-x-reverse">
+          <label for="jumpPageInput" class="sr-only">رقم الصفحة</label>
+          <input type="number" id="jumpPageInput" aria-label="رقم الصفحة" min="1" max="638" placeholder="1..638" class="w-16 p-1.5 text-center text-xs font-bold rounded-lg bg-slate-800 border border-slate-600 text-white focus:outline-none focus:ring-2 focus:ring-amber-500">
+          <button type="button" onclick="jumpToInputPage()" class="text-xs bg-emerald-600 hover:bg-emerald-700 px-2.5 py-1.5 rounded-lg font-bold transition cursor-pointer">
+            <span id="jumpBtnText">انتقال</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- بطاقة الصفحة المفرداة مع دعم الإيماءات والسحب -->
+      <div id="singleQuranPageCard" class="w-full max-w-2xl mx-auto bg-white dark:bg-slate-800 p-3 sm:p-4 rounded-3xl shadow-xl border border-amber-200/80 dark:border-slate-700 text-center relative select-none">
+
+        <!-- الشريط العلوية داخل الصفحة -->
+        <div class="flex items-center justify-between text-xs sm:text-sm font-extrabold text-amber-800 dark:text-amber-300 pb-2 mb-2 border-b border-amber-200/60 dark:border-slate-700 px-2">
+          <span><span id="pageLabelText">صفحة</span> <span id="quranPageNumDisplay">1</span> <span id="pageOfText">من 638</span></span>
+          <span id="quranHizbDisplay" class="bg-amber-100 dark:bg-amber-950/80 text-amber-900 dark:text-amber-200 px-2.5 py-0.5 rounded-md border border-amber-300/60 text-xs">الحزب 1</span>
+          <span id="quranSurahDisplay" class="font-bold">سورة الفاتحة</span>
+        </div>
+
+        <!-- صورة الصفحة مع دعم السحب والتمرير Touch Swipe -->
+        <div id="quranImageWrapper" class="relative overflow-hidden cursor-grab active:cursor-grabbing my-2 rounded-2xl bg-amber-50/50 dark:bg-slate-900/50 min-h-[400px] flex items-center justify-center">
+          <img id="quranPageImg" src="quran_pages/page1.png" class="w-full h-auto rounded-2xl shadow-md transition-opacity duration-150" alt="المصحف الشريف">
+        </div>
+
+        <!-- شريط التنقل السفلية بين الصفحات (dir-ltr يضمن أن الصفحة التالية دائماً على اليسار) -->
+        <div class="flex items-center justify-between pt-3 mt-2 border-t border-amber-200/60 dark:border-slate-700 dir-ltr">
+          <!-- Button ON LEFT: NEXT Page -->
+          <button type="button" onclick="nextQuranPage()" class="flex items-center gap-1 px-3.5 py-2 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs shadow-md transition transform active:scale-95 cursor-pointer">
+            <span id="nextBtnText">الصفحة التالية ➔</span>
+          </button>
+
+          <span class="text-[11px] font-semibold text-slate-500 dark:text-slate-400 hidden sm:inline">
+            <span id="swipeHint">اسحب لليمين للصفحة التالية ➔</span>
+          </span>
+
+          <!-- Button ON RIGHT: PREVIOUS Page -->
+          <button type="button" onclick="prevQuranPage()" class="flex items-center gap-1 px-3.5 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs shadow-md transition transform active:scale-95 cursor-pointer">
+            <span id="prevBtnText">⬅ الصفحة السابقة</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 py-4 text-center text-xs text-slate-500 dark:text-slate-400">
+    <span id="footerText">زَادُ الْقُلُوبِ - جامع الأذكار والأدعية والمناجاة © 2026</span>
+  </footer>
+
+  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-slate-800 text-white text-xs px-4 py-2.5 rounded-full shadow-2xl opacity-0 pointer-events-none transition duration-300 z-50"></div>
+
+  <!-- نافذة تعديل الذكر / الدعاء Modal -->
+  <div id="editItemModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-md overflow-y-auto">
+    <div class="bg-white dark:bg-slate-800 rounded-3xl max-w-xl w-full p-5 sm:p-6 shadow-2xl border border-amber-200 dark:border-slate-700 space-y-4 my-auto">
+      <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-3">
+        <h3 id="editModalTitle" class="text-base sm:text-lg font-bold text-emerald-800 dark:text-emerald-300">تعديل النص والترجمة</h3>
+        <button type="button" onclick="closeEditModal()" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-xl font-bold p-1">&times;</button>
+      </div>
+
+      <div class="space-y-3 text-right">
+        <div>
+          <label for="editArabicText" id="lblEditArabic" class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">النص العربي الأصلي:</label>
+          <textarea id="editArabicText" dir="rtl" rows="4" class="w-full p-3 text-sm font-semibold rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-emerald-500 leading-relaxed"></textarea>
+        </div>
+
+        <div>
+          <label for="editLatinText" id="lblEditLatin" class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">النطق اللاتيني (Transliteración Latina):</label>
+          <textarea id="editLatinText" dir="ltr" rows="3" class="w-full p-3 text-xs sm:text-sm italic font-medium rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-amber-500 leading-relaxed"></textarea>
+        </div>
+
+        <div>
+          <label for="editExplanationEs" id="lblEditEs" class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">الترجمة الإسبانية (Traducción en Español):</label>
+          <textarea id="editExplanationEs" dir="ltr" rows="4" class="w-full p-3 text-sm font-medium rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-emerald-500 leading-relaxed"></textarea>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between pt-3 border-t border-slate-200 dark:border-slate-700 gap-2 flex-wrap">
+        <div class="flex items-center gap-2">
+          <button type="button" onclick="restoreOriginalItem()" id="btnRestoreOriginal" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-rose-100 dark:bg-rose-950 hover:bg-rose-200 text-rose-800 dark:text-rose-300 transition cursor-pointer">
+            إعادة للأصلي
+          </button>
+          <button type="button" onclick="exportEditsJson()" id="btnExportEdits" class="px-3 py-2 text-xs font-bold rounded-xl bg-amber-500 hover:bg-amber-600 text-white transition cursor-pointer" title="Copiar JSON con todos los cambios para pegarlo en index.html">
+            📤 Copiar Cambios JSON
+          </button>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <button type="button" onclick="closeEditModal()" id="btnCancelEdit" class="px-4 py-2 text-xs font-bold rounded-xl bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 text-slate-700 dark:text-slate-200 transition cursor-pointer">
+            إلغاء
+          </button>
+          <button type="button" onclick="saveItemEdit()" id="btnSaveEdit" class="px-5 py-2 text-xs font-bold rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white shadow-md transition cursor-pointer">
+            حفظ التغييرات
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cada sección carga sus datos y funciones antes del controlador común. -->
+  <script src="azkar.js"></script>
+  <script src="adya.js"></script>
+  <script src="munajat.js"></script>
+  <script src="ruqya.js"></script>
+  <script>
+    let currentLang = safeGetStorage('app_lang') || 'ar';
+
+    const uiTexts = {
+      ar: {
+        headerTitle: 'زَادُ الْقُلُوبِ',
+        headerSubtitle: 'جامع الأذكار والأدعية والمناجاة',
+        homeWelcome: 'اختر القسم للبدء:',
+        btnAzkarTitle: 'الأذكار اليومية',
+        btnAzkarSub: 'الصباح، المساء، النوم، الاستيقاظ، أذكار الصلاة',
+        btnAdyaTitle: 'الأدعية المأثورة',
+        btnAdyaSub: 'أدعية الرزق، الشفاء، الفرج، الحفظ، وقضاء الحوائج',
+        btnTasbeehTitle: 'المسبحة الإلكترونية',
+        btnTasbeehSub: 'عداد إلكتروني للتسبيح والاستغفار',
+        btnFavTitle: 'المفضلة',
+        btnFavSub: 'الأذكار والأدعية المحفوظة لديك',
+        back: 'رجوع',
+        home: 'الرئيسية',
+        resetAll: 'إعادة الكل',
+        reset: 'إعادة ضبط',
+        searchPlaceholder: 'ابحث عن ذكر أو دعاء...',
+        countLabel: 'التكرار',
+        doneLabel: 'تم المتبقي',
+        progressLabel: 'نسبة الإنجاز الكلية',
+        arabicOriginal: 'النص الأصلي باللغة العربية:',
+        azkarSectionTitle: 'الأذكار اليومية',
+        adyaSectionTitle: 'الأدعية المأثورة',
+        noFavs: 'لا توجد أذكار مضافة للمفضلة حالياً.',
+        removeFav: 'إزالة من المفضلة',
+        prevBtn: 'السابق',
+        nextBtn: 'التالي',
+        itemProgress: 'الذكر {current} من {total}',
+        completedGroup: '🎉 تم إكمال جميع أذكار هذا القسم',
+        pressToCount: 'اضغط للتكرار',
+        completedItem: 'تم الإكمال ✓',
+        btnMunajatTitle: 'مناجاة وتضرعات',
+        btnMunajatSub: 'مُناجاة، ثَناء، اسْتِغْفار وشَوْقٌ لِلَّه',
+        munajatSectionTitle: 'مناجاة وتضرعات',
+        btnQuranTitle: 'القرآن الكريم (برواية ورش)',
+        btnQuranSub: 'المصحف الشريف كاملًا برواية ورش عن نافع',
+        quranHeaderTitle: 'القرآن الكريم (برواية ورش)',
+        startReadingBtn: 'بدء القراءة',
+        indexBtnText: 'فهرس القرآن (ورش) 📖',
+        jumpBtnText: 'انتقال',
+        nextPageBtn: 'الصفحة التالية ➔',
+        prevPageBtn: '⬅ الصفحة السابقة',
+        pageLabelText: 'صفحة',
+        pageOfText: 'من 638',
+        hizbLabelText: 'الحزب',
+        swipeHintText: 'اسحب لليمين للصفحة التالية ➔',
+        surahSearchPlaceholder: 'ابحث عن سورة بالاسم أو الرقم...',
+        tabSurahsText: '1. السور',
+        tabSurahsSub: '114 سورة',
+        tabAhzabText: '2. الأحزاب',
+        tabAhzabSub: '60 حزب',
+        tabContinueText: '3. متابعة القراءة',
+        btnRuqyahTitle: 'الرقية الشرعية',
+        btnRuqyahSub: 'رقية الشفاء، العين، الحسد والمس',
+        ruqyahSectionTitle: 'الرقية الشرعية'
+      },
+      es: {
+        headerTitle: 'Zad Al-Qulub',
+        headerSubtitle: 'Provisión de los Corazones - Invocaciones y Súplicas',
+        homeWelcome: 'Seleccione una categoría:',
+        btnAzkarTitle: 'Azkar Diarios',
+        btnAzkarSub: 'Mañana, tarde, dormir, despertar y oración',
+        btnAdyaTitle: 'Súplicas (Du\'as)',
+        btnAdyaSub: 'Sustento, curación, alivio y protección',
+        btnTasbeehTitle: 'Rosario Electrónico (Tasbeeh)',
+        btnTasbeehSub: 'Contador digital para el recuerdo de Allah',
+        btnFavTitle: 'Favoritos',
+        btnFavSub: 'Invocaciones guardadas',
+        back: 'Volver',
+        home: 'Inicio',
+        resetAll: 'Reiniciar todo',
+        reset: 'Reiniciar',
+        searchPlaceholder: 'Buscar suplicación o dhikr...',
+        countLabel: 'Repetición',
+        doneLabel: 'Completado',
+        progressLabel: 'Progreso total',
+        arabicOriginal: 'Texto original en árabe:',
+        azkarSectionTitle: 'Azkar Diarios',
+        adyaSectionTitle: 'Súplicas Seleccionadas',
+        noFavs: 'No hay invocaciones guardadas en favoritos.',
+        removeFav: 'Eliminar de favoritos',
+        prevBtn: 'Anterior',
+        nextBtn: 'Siguiente',
+        itemProgress: 'Invocación {current} de {total}',
+        completedGroup: '¡Has completado todas las invocaciones! 🎉',
+        pressToCount: 'Toca para contar',
+        completedItem: 'Completado ✓',
+        btnMunajatTitle: 'Invocaciones y Súplicas',
+        btnMunajatSub: 'Alabanza, arrepentimiento y anhelo intimo de Allah',
+        munajatSectionTitle: 'Invocaciones y Súplicas Íntimas',
+        btnQuranTitle: 'El Sagrado Corán (Lectura Warsh)',
+        btnQuranSub: 'Lectura completa del Corán según la recitación Warsh',
+        quranHeaderTitle: 'El Sagrado Corán (Warsh)',
+        startReadingBtn: 'Empezar lectura',
+        indexBtnText: 'Índice del Corán 📖',
+        jumpBtnText: 'Ir',
+        nextPageBtn: 'Página siguiente ➔',
+        prevPageBtn: '⬅ Página anterior',
+        pageLabelText: 'Página',
+        pageOfText: 'de 638',
+        hizbLabelText: 'Hizb',
+        swipeHintText: 'Desliza a la derecha para página siguiente ➔',
+        surahSearchPlaceholder: 'Buscar sura por nombre o número...',
+        tabSurahsText: '1. Suras',
+        tabSurahsSub: '114 suras',
+        tabAhzabText: '2. Ahzab',
+        tabAhzabSub: '60 hizb',
+        tabContinueText: '3. Continuar leyendo',
+        btnRuqyahTitle: 'Ruqyah Shariyah',
+        btnRuqyahSub: 'Curación, protección contra envidia, ojo y mal',
+        ruqyahSectionTitle: 'Ruqyah Shariyah'
+      }
+    };
+
+    /* section data moved to its own JS file */
+
+    /* section data moved to its own JS file */
+
+    /* section data moved to its own JS file */
+
+    /* section data moved to its own JS file */
+
+    let currentSection = null;
+    let currentGroup = null;
+    let favorites = [];
+    let fontSize = 18;
+    let currentAudio = null;
+
+    const STORAGE_KEY = 'azkar_adya_progress_v5';
+    const FAV_KEY = 'azkar_favorites_v5';
+    const THEME_KEY = 'azkar_theme_v5';
+
+
+    // Datos de la rosario electrónica (Tasbeeh).
+    const tasbeehItems = [
+      { id: 'subhanallah', ar: 'سُبْحَانَ اللَّهِ', latin: 'Subḥānallāh', es: 'Glorificado sea Allah' },
+      { id: 'alhamdulillah', ar: 'الْحَمْدُ لِلَّهِ', latin: 'Al-ḥamdu lillāh', es: 'Alabado sea Allah' },
+      { id: 'allahuakbar', ar: 'اللَّهُ أَكْبَرُ', latin: 'Allāhu akbar', es: 'Allah es el Más Grande' },
+      { id: 'lailahaillallah', ar: 'لَا إِلَهَ إِلَّا اللَّهُ', latin: 'Lā ilāha illā Allāh', es: 'No hay más divinidad que Allah' },
+      { id: 'astaghfirullah', ar: 'أَسْتَغْفِرُ اللَّهَ', latin: 'Astaghfirullāh', es: 'Pido perdón a Allah' },
+      { id: 'salawat', ar: 'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ', latin: 'Allāhumma ṣalli ʿalā Muḥammad', es: 'Oh Allah, bendice a Muhammad' },
+      { id: 'tahlil', ar: 'لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ', latin: 'Lā ḥawla wa lā quwwata illā billāh', es: 'No hay fuerza ni poder sino en Allah' },
+      { id: 'subhanallahi_wa_bihamdihi', ar: 'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ', latin: 'Subḥānallāhi wa bi-ḥamdih', es: 'Glorificado sea Allah y alabado sea' },
+      { id: 'subhanallahil_azim', ar: 'سُبْحَانَ اللَّهِ الْعَظِيمِ', latin: 'Subḥānallāhil-ʿaẓīm', es: 'Glorificado sea Allah el Grandioso' }
+    ];
+
+    function safeGetStorage(key) {
+      try { return localStorage.getItem(key); } catch (e) { return null; }
+    }
+    function safeSetStorage(key, val) {
+      try { localStorage.setItem(key, val); } catch (e) {}
+    }
+
+    function toggleLanguage() {
+      currentLang = currentLang === 'ar' ? 'es' : 'ar';
+      safeSetStorage('app_lang', currentLang);
+      applyLanguageUI();
+    }
+
+    function applyLanguageUI() {
+      const isEs = currentLang === 'es';
+      const t = uiTexts[currentLang];
+
+      document.documentElement.dir = isEs ? 'ltr' : 'rtl';
+      document.documentElement.lang = currentLang;
+
+      const infoBtn = document.getElementById('transliterationInfoBtn');
+      if (infoBtn) {
+        infoBtn.style.setProperty('display', isEs ? 'inline-flex' : 'none', 'important');
+        if (isEs) infoBtn.classList.remove('hidden');
+        else infoBtn.classList.add('hidden');
+      }
+
+      document.getElementById('langBtnText').innerText = isEs ? 'AR' : 'ES';
+      document.getElementById('headerTitle').innerText = t.headerTitle;
+      document.getElementById('headerSubtitle').innerText = t.headerSubtitle;
+      document.getElementById('homeWelcome').innerText = t.homeWelcome;
+      
+      document.getElementById('btnAzkarTitle').innerText = t.btnAzkarTitle;
+      document.getElementById('btnAzkarSub').innerText = t.btnAzkarSub;
+      document.getElementById('btnAdyaTitle').innerText = t.btnAdyaTitle;
+      document.getElementById('btnAdyaSub').innerText = t.btnAdyaSub;
+      document.getElementById('btnTasbeehTitle').innerText = t.btnTasbeehTitle;
+      document.getElementById('btnTasbeehSub').innerText = t.btnTasbeehSub;
+      document.getElementById('btnFavTitle').innerText = t.btnFavTitle;
+      document.getElementById('btnFavSub').innerText = t.btnFavSub;
+      
+      const quranTitleEl = document.getElementById('btnQuranTitle');
+      if (quranTitleEl && t.btnQuranTitle) quranTitleEl.innerText = t.btnQuranTitle;
+      const quranSubEl = document.getElementById('btnQuranSub');
+      if (quranSubEl && t.btnQuranSub) quranSubEl.innerText = t.btnQuranSub;
+      const quranHeaderEl = document.getElementById('quranIndexTitle');
+      if (quranHeaderEl && t.quranHeaderTitle) quranHeaderEl.innerText = t.quranHeaderTitle;
+
+      const startReadingBtn = document.getElementById('startReadingBtn');
+      if (startReadingBtn && t.startReadingBtn) startReadingBtn.innerText = t.startReadingBtn;
+      const indexBtnText = document.getElementById('indexBtnText');
+      if (indexBtnText && t.indexBtnText) indexBtnText.innerText = t.indexBtnText;
+      const jumpBtnText = document.getElementById('jumpBtnText');
+      if (jumpBtnText && t.jumpBtnText) jumpBtnText.innerText = t.jumpBtnText;
+      const nextPageBtn = document.getElementById('nextBtnText');
+      if (nextPageBtn && t.nextPageBtn) nextPageBtn.innerText = t.nextPageBtn;
+      const prevPageBtn = document.getElementById('prevBtnText');
+      if (prevPageBtn && t.prevPageBtn) prevPageBtn.innerText = t.prevPageBtn;
+      const swipeHint = document.getElementById('swipeHint');
+      if (swipeHint && t.swipeHintText) swipeHint.innerText = t.swipeHintText;
+      const quranSearchInput = document.getElementById('quranSearchInput');
+      if (quranSearchInput && t.surahSearchPlaceholder) quranSearchInput.placeholder = t.surahSearchPlaceholder;
+      const pageLabelText = document.getElementById('pageLabelText');
+      if (pageLabelText && t.pageLabelText) pageLabelText.innerText = t.pageLabelText;
+      const pageOfText = document.getElementById('pageOfText');
+      if (pageOfText && t.pageOfText) pageOfText.innerText = t.pageOfText;
+
+      const tabSurahsText = document.getElementById('tabSurahsText');
+      if (tabSurahsText && t.tabSurahsText) tabSurahsText.innerText = t.tabSurahsText;
+      const tabSurahsSub = document.getElementById('tabSurahsSub');
+      if (tabSurahsSub && t.tabSurahsSub) tabSurahsSub.innerText = t.tabSurahsSub;
+      const tabAhzabText = document.getElementById('tabAhzabText');
+      if (tabAhzabText && t.tabAhzabText) tabAhzabText.innerText = t.tabAhzabText;
+      const tabAhzabSub = document.getElementById('tabAhzabSub');
+      if (tabAhzabSub && t.tabAhzabSub) tabAhzabSub.innerText = t.tabAhzabSub;
+      const tabContinueText = document.getElementById('tabContinueText');
+      if (tabContinueText && t.tabContinueText) tabContinueText.innerText = t.tabContinueText;
+
+      updateContinueReadingCard();
+
+      const munajatTitleEl = document.getElementById('btnMunajatTitle');
+      if (munajatTitleEl) munajatTitleEl.innerText = t.btnMunajatTitle;
+      const munajatSubEl = document.getElementById('btnMunajatSub');
+      if (munajatSubEl) munajatSubEl.innerText = t.btnMunajatSub;
+
+      document.getElementById('searchInput').placeholder = t.searchPlaceholder;
+      document.getElementById('resetAllBtn').innerText = t.resetAll;
+      document.getElementById('progressTextLabel').innerText = t.progressLabel;
+      document.getElementById('tasbeehHeaderTitle').innerText = t.btnTasbeehTitle;
+      document.getElementById('resetTasbeehBtn').innerText = t.resetAll;
+      document.getElementById('favHeaderTitle').innerText = t.btnFavTitle;
+      document.getElementById('footerText').innerText = isEs ? 'Zad Al-Qulub © 2026' : 'زَادُ الْقُلُوبِ - جامع الأذكار والأدعية والمناجاة © 2026';
+
+      document.querySelectorAll('.btn-back-label').forEach(el => el.innerText = t.back);
+
+      if (currentGroup) {
+        document.getElementById('itemGroupTitle').innerText = isEs ? currentGroup.titleEs : currentGroup.titleAr;
+        renderGroupItems();
+      }
+      if (!document.getElementById('categoryListView').classList.contains('hidden')) {
+        document.getElementById('sectionTitle').innerText = currentSection === 'azkar' ? t.azkarSectionTitle : t.adyaSectionTitle;
+        renderButtonsGrid();
+      }
+      if (!document.getElementById('tasbeehView').classList.contains('hidden')) renderTasbeehGrid();
+      if (!document.getElementById('favoritesView').classList.contains('hidden')) showFavorites();
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      if (!toast) return;
+      toast.innerText = msg;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      setTimeout(() => { toast.classList.add('opacity-0', 'pointer-events-none'); }, 2000);
+    }
+
+    function toggleDarkMode() {
+      const html = document.documentElement;
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        safeSetStorage(THEME_KEY, 'light');
+      } else {
+        html.classList.add('dark');
+        safeSetStorage(THEME_KEY, 'dark');
+      }
+    }
+
+    function loadSavedTheme() {
+      const savedTheme = safeGetStorage(THEME_KEY);
+      if (savedTheme === 'dark' || (!savedTheme && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      }
+    }
+
+    function changeFontSize(delta) {
+      fontSize = Math.min(Math.max(14, fontSize + delta * 2), 28);
+      document.documentElement.style.setProperty('--app-font-size', `${fontSize}px`);
+    }
+
+    function playAudio(audioUrl) {
+      if (!audioUrl) return;
+      if (currentAudio) { 
+        currentAudio.pause(); 
+        currentAudio = null; 
+      }
+      showToast(currentLang === 'es' ? 'Reproduciendo audio...' : 'جاري تشغيل التلاوة...');
+      currentAudio = new Audio(audioUrl);
+      currentAudio.play().catch(err => {
+        showToast(currentLang === 'es' ? 'Error al reproducir audio' : 'تعذر تشغيل الصوت');
+      });
+    }
+
+    function escapeJsStr(str) {
+      if (!str) return '';
+      return str.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/"/g, '&quot;').replace(/\r?\n/g, '\\n');
+    }
+
+    function formatTextWithNewlines(str) {
+      if (!str) return '';
+      return str.replace(/\\n/g, '\n');
+    }
+
+    function copyText(text) {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(text).then(() => showToast(currentLang === 'es' ? 'Copiado al portapapeles' : 'تم نسخ النص بنجاح'));
+      }
+    }
+
+    function shareText(text) {
+      if (navigator.share) navigator.share({ title: 'Misbaha', text: text }).catch(() => {});
+      else copyText(text);
+    }
+
+    function loadFavorites() {
+      const saved = safeGetStorage(FAV_KEY);
+      favorites = saved ? JSON.parse(saved) : [];
+    }
+
+    function toggleFavorite(text) {
+      const index = favorites.indexOf(text);
+      if (index > -1) {
+        favorites.splice(index, 1);
+        showToast(currentLang === 'es' ? 'Eliminado de favoritos' : 'تم الإزالة من المفضلة');
+      } else {
+        favorites.push(text);
+        showToast(currentLang === 'es' ? 'Añadido a favoritos' : 'تم الإضافة إلى المفضلة');
+      }
+      safeSetStorage(FAV_KEY, JSON.stringify(favorites));
+      if (currentGroup) renderGroupItems();
+    }
+
+    function hideAllViews() {
+      ['homeView', 'categoryListView', 'detailView', 'tasbeehView', 'favoritesView', 'quranView', 'quranSurahsView', 'quranAhzabView', 'quranReaderView'].forEach(id => {
+        document.getElementById(id)?.classList.add('hidden');
+      });
+    }
+
+    function goHome(skipPushState = false) {
+      hideAllViews();
+      document.getElementById('homeView')?.classList.remove('hidden');
+      currentSection = null;
+      currentGroup = null;
+      if (!skipPushState && window.history && window.history.pushState) {
+        try {
+          window.history.pushState({ view: 'home' }, '', '#home');
+        } catch (e) {}
+      }
+    }
+
+    // Registro compartido: cada archivo .js aporta los datos y la API de su sección.
+    function getSectionModule(sec) {
+      return (window.ZadSectionModules && window.ZadSectionModules[sec]) || null;
+    }
+
+    function findSectionGroup(groupId) {
+      const modules = Object.values(window.ZadSectionModules || {});
+      for (const module of modules) {
+        const group = module.findGroup(groupId);
+        if (group) return { group: group, section: module.id, module: module };
+      }
+      return null;
+    }
+
+    function showSection(sec, skipPushState = false) {
+      if (!sec) sec = 'azkar';
+      currentSection = sec;
+      hideAllViews();
+      document.getElementById('categoryListView')?.classList.remove('hidden');
+      const t = uiTexts[currentLang];
+      const titleEl = document.getElementById('sectionTitle');
+      if (titleEl) {
+        const sectionModule = getSectionModule(sec);
+        titleEl.innerText = sectionModule ? sectionModule.getTitle(t) : (t.azkarSectionTitle || '');
+      }
+      const searchEl = document.getElementById('searchInput');
+      if (searchEl) searchEl.value = '';
+      renderButtonsGrid();
+      if (!skipPushState && window.history && window.history.pushState) {
+        try {
+          window.history.pushState({ view: 'section', sec: sec }, '', '#section-' + sec);
+        } catch (e) {}
+      }
+    }
+
+    function goBackToSection() {
+      if (window.history && window.history.length > 1) {
+        window.history.back();
+      } else {
+        hideAllViews();
+        if (currentSection) {
+          showSection(currentSection, true);
+        } else {
+          goHome(true);
+        }
+      }
+    }
+
+    function filterButtons() {
+      const query = document.getElementById('searchInput').value.toLowerCase().trim();
+      const grid = document.getElementById('buttonsGrid');
+      if (!grid) return;
+      const buttons = grid.querySelectorAll('button');
+      buttons.forEach(btn => {
+        const text = btn.innerText.toLowerCase();
+        btn.style.display = text.includes(query) ? 'flex' : 'none';
+      });
+    }
+
+    function renderButtonsGrid() {
+      const grid = document.getElementById('buttonsGrid');
+      if (!grid) return;
+      grid.innerHTML = '';
+      const sectionModule = getSectionModule(currentSection);
+      const data = sectionModule ? sectionModule.getGroups() : [];
+      const isEs = currentLang === 'es';
+
+      const categoryGradients = [
+        { bg: 'bg-gradient-to-br from-emerald-600 to-teal-800 text-white', iconBg: 'bg-white/20 text-white', textSec: 'text-emerald-100', arrow: 'text-emerald-200' },
+        { bg: 'bg-gradient-to-br from-sky-500 to-teal-700 text-white', iconBg: 'bg-white/20 text-white', textSec: 'text-sky-100', arrow: 'text-sky-200' },
+        { bg: 'bg-gradient-to-br from-teal-600 to-emerald-800 text-white', iconBg: 'bg-white/20 text-white', textSec: 'text-teal-100', arrow: 'text-teal-200' },
+        { bg: 'bg-gradient-to-br from-cyan-600 to-sky-800 text-white', iconBg: 'bg-white/20 text-white', textSec: 'text-cyan-100', arrow: 'text-cyan-200' },
+        { bg: 'bg-gradient-to-br from-emerald-700 to-cyan-900 text-white', iconBg: 'bg-white/20 text-white', textSec: 'text-emerald-100', arrow: 'text-emerald-200' },
+        { bg: 'bg-gradient-to-br from-teal-500 to-sky-700 text-white', iconBg: 'bg-white/20 text-white', textSec: 'text-teal-100', arrow: 'text-teal-200' }
+      ];
+
+      const specialGradients = {
+        sabah: { bg: 'bg-gradient-to-br from-emerald-600 to-teal-800 text-white', iconBg: 'bg-white/20 text-white', textSec: 'text-emerald-100', arrow: 'text-emerald-200' },
+        masaa: { bg: 'bg-gradient-to-br from-sky-600 to-teal-800 text-white', iconBg: 'bg-white/20 text-white', textSec: 'text-sky-100', arrow: 'text-sky-200' },
+        nawm: { bg: 'bg-gradient-to-br from-teal-700 to-cyan-900 text-white', iconBg: 'bg-white/20 text-white', textSec: 'text-teal-100', arrow: 'text-teal-200' },
+        istiyqadh: { bg: 'bg-gradient-to-br from-cyan-600 to-emerald-700 text-white', iconBg: 'bg-white/20 text-white', textSec: 'text-cyan-100', arrow: 'text-cyan-200' }
+      };
+
+      const catInlineStyles = [
+        'background: linear-gradient(135deg, #059669, #115e59) !important; color: #ffffff !important;',
+        'background: linear-gradient(135deg, #0284c7, #0f766e) !important; color: #ffffff !important;',
+        'background: linear-gradient(135deg, #0d9488, #065f46) !important; color: #ffffff !important;',
+        'background: linear-gradient(135deg, #0891b2, #0369a1) !important; color: #ffffff !important;',
+        'background: linear-gradient(135deg, #047857, #164e63) !important; color: #ffffff !important;',
+        'background: linear-gradient(135deg, #14b8a6, #0369a1) !important; color: #ffffff !important;'
+      ];
+
+      data.forEach((group, index) => {
+        const title = isEs ? (group.titleEs || group.titleAr) : (group.titleAr || group.titleEs);
+        if (!title) return;
+        const count = group.items ? group.items.length : 0;
+        const style = specialGradients[group.id] || categoryGradients[index % categoryGradients.length];
+        const inlineStyle = catInlineStyles[index % catInlineStyles.length];
+
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.onclick = () => openGroup(group.id);
+        btn.className = `p-3.5 sm:p-5 ${style.bg} rounded-2xl shadow-md hover:shadow-xl transition transform active:scale-95 flex justify-between items-center cursor-pointer text-right min-w-0 border border-white/10`;
+        btn.style.cssText = inlineStyle;
+        btn.innerHTML = `
+          <div class="flex items-center space-x-2.5 sm:space-x-3 space-x-reverse pointer-events-none min-w-0 flex-1">
+            <div class="p-2.5 sm:p-3 ${style.iconBg} rounded-xl flex-shrink-0">
+              <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+            </div>
+            <div class="min-w-0 flex-1">
+              <h3 class="font-bold text-white text-sm sm:text-base leading-snug">${title}</h3>
+              <p class="text-xs ${style.textSec} mt-1">${count} ${isEs ? 'invocaciones' : 'أذكار/أدعية'}</p>
+            </div>
+          </div>
+          <span class="${style.arrow} font-bold text-sm sm:text-lg pointer-events-none mr-1 flex-shrink-0">${isEs ? '→' : '←'}</span>
+        `;
+        grid.appendChild(btn);
+      });
+    }
+
+    let currentEditingIndex = -1;
+
+    function getCustomEdits() {
+      const saved = safeGetStorage('azkar_custom_edits_v1');
+      return saved ? JSON.parse(saved) : {};
+    }
+
+    function saveCustomEdits(edits) {
+      safeSetStorage('azkar_custom_edits_v1', JSON.stringify(edits));
+    }
+
+    function exportEditsJson() {
+      const edits = getCustomEdits();
+      if (!edits || !Object.keys(edits).length) {
+        showToast(currentLang === 'es' ? 'No hay modificaciones guardadas aún.' : 'لا توجد تعديلات محفوظة للتصدير.');
+        return;
+      }
+      const jsonStr = JSON.stringify(edits, null, 2);
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(jsonStr).then(() => {
+          showToast(currentLang === 'es' ? '¡JSON de cambios copiado! Pásamelo para insertarlo en index.html' : 'تم نسخ التعديلات كـ JSON!');
+        });
+      } else {
+        prompt(currentLang === 'es' ? 'JSON de cambios (copia este texto):' : 'تعديلات JSON:', jsonStr);
+      }
+    }
+
+    function applyCustomEditsToGroup(group) {
+      if (!group || !group.id || !group.items) return;
+      const edits = getCustomEdits();
+      const groupEdits = edits[group.id];
+      if (!groupEdits) return;
+      group.items.forEach((item, index) => {
+        if (groupEdits[index]) {
+          if (groupEdits[index].text !== undefined) item.text = groupEdits[index].text;
+          if (groupEdits[index].latin !== undefined) item.latin = groupEdits[index].latin;
+          if (groupEdits[index].explanationEs !== undefined) item.explanationEs = groupEdits[index].explanationEs;
+        }
+      });
+    }
+
+    function openEditModal(index) {
+      if (!currentGroup || !currentGroup.items[index]) return;
+      currentEditingIndex = index;
+      const item = currentGroup.items[index];
+
+      const modal = document.getElementById('editItemModal');
+      const textEl = document.getElementById('editArabicText');
+      const latinEl = document.getElementById('editLatinText');
+      const esEl = document.getElementById('editExplanationEs');
+
+      if (textEl) textEl.value = item.text || '';
+      if (latinEl) latinEl.value = item.latin || '';
+      if (esEl) esEl.value = item.explanationEs || '';
+
+      const isEs = currentLang === 'es';
+      const titleEl = document.getElementById('editModalTitle');
+      if (titleEl) titleEl.innerText = isEs ? 'Editar Texto y Traducción' : 'تعديل الذكر والترجمة';
+
+      const btnSave = document.getElementById('btnSaveEdit');
+      if (btnSave) btnSave.innerText = isEs ? 'Guardar Cambios' : 'حفظ التغييرات';
+
+      const btnCancel = document.getElementById('btnCancelEdit');
+      if (btnCancel) btnCancel.innerText = isEs ? 'Cancelar' : 'إلغاء';
+
+      const btnRestore = document.getElementById('btnRestoreOriginal');
+      if (btnRestore) btnRestore.innerText = isEs ? 'Restaurar Original' : 'إعادة للأصلي';
+
+      if (modal) modal.classList.remove('hidden');
+    }
+
+    function closeEditModal() {
+      const modal = document.getElementById('editItemModal');
+      if (modal) modal.classList.add('hidden');
+      currentEditingIndex = -1;
+    }
+
+    function saveItemEdit() {
+      if (!currentGroup || currentEditingIndex < 0 || !currentGroup.items[currentEditingIndex]) return;
+
+      const newText = document.getElementById('editArabicText')?.value || '';
+      const newLatin = document.getElementById('editLatinText')?.value || '';
+      const newEs = document.getElementById('editExplanationEs')?.value || '';
+
+      currentGroup.items[currentEditingIndex].text = newText;
+      currentGroup.items[currentEditingIndex].latin = newLatin;
+      currentGroup.items[currentEditingIndex].explanationEs = newEs;
+
+      const edits = getCustomEdits();
+      if (!edits[currentGroup.id]) edits[currentGroup.id] = {};
+      edits[currentGroup.id][currentEditingIndex] = {
+        text: newText,
+        latin: newLatin,
+        explanationEs: newEs
+      };
+      saveCustomEdits(edits);
+
+      renderGroupItems();
+      closeEditModal();
+      showToast(currentLang === 'es' ? 'Cambios guardados correctamente' : 'تم حفظ التعديلات بنجاح');
+    }
+
+    function restoreOriginalItem() {
+      if (!currentGroup || currentEditingIndex < 0 || !currentGroup.items[currentEditingIndex]) return;
+
+      const edits = getCustomEdits();
+      if (edits[currentGroup.id] && edits[currentGroup.id][currentEditingIndex]) {
+        delete edits[currentGroup.id][currentEditingIndex];
+        saveCustomEdits(edits);
+      }
+
+      // Reload initial data
+      const originalMatch = findSectionGroup(currentGroup.id);
+      const origGroup = originalMatch ? originalMatch.group : null;
+
+      if (origGroup && origGroup.items[currentEditingIndex]) {
+        currentGroup.items[currentEditingIndex] = JSON.parse(JSON.stringify(origGroup.items[currentEditingIndex]));
+      }
+
+      renderGroupItems();
+      closeEditModal();
+      showToast(currentLang === 'es' ? 'Restaurado al texto original' : 'تمت إعادة النص الأصلي');
+    }
+
+    function openGroup(groupId, skipPushState = false) {
+      if (!groupId) return;
+      const match = findSectionGroup(groupId);
+      if (!match) return;
+      currentGroup = match.group;
+      currentSection = match.section;
+
+      applyCustomEditsToGroup(currentGroup);
+
+      hideAllViews();
+      document.getElementById('detailView')?.classList.remove('hidden');
+
+      const isEs = currentLang === 'es';
+      const groupTitle = isEs ? (currentGroup.titleEs || currentGroup.titleAr) : (currentGroup.titleAr || currentGroup.titleEs);
+      const titleEl = document.getElementById('itemGroupTitle');
+      if (titleEl) titleEl.innerText = groupTitle || '';
+
+      renderGroupItems();
+
+      if (!skipPushState && window.history && window.history.pushState) {
+        try {
+          window.history.pushState({ view: 'detail', sec: currentSection, groupId: groupId }, '', '#group-' + groupId);
+        } catch (e) {}
+      }
+    }
+
+    function getSavedCount(groupId, itemIndex, defaultCount) {
+      const progress = JSON.parse(safeGetStorage(STORAGE_KEY) || '{}');
+      if (progress[groupId] && progress[groupId][itemIndex] !== undefined) {
+        return progress[groupId][itemIndex];
+      }
+      return defaultCount;
+    }
+
+    function setSavedCount(groupId, itemIndex, count) {
+      const progress = JSON.parse(safeGetStorage(STORAGE_KEY) || '{}');
+      if (!progress[groupId]) progress[groupId] = {};
+      progress[groupId][itemIndex] = count;
+      safeSetStorage(STORAGE_KEY, JSON.stringify(progress));
+    }
+
+    function resetGroupProgress(groupId) {
+      const progress = JSON.parse(safeGetStorage(STORAGE_KEY) || '{}');
+      delete progress[groupId];
+      safeSetStorage(STORAGE_KEY, JSON.stringify(progress));
+    }
+
+    function decrementCounter(index) {
+      if (!currentGroup || !currentGroup.items[index]) return;
+      const item = currentGroup.items[index];
+      let currentCount = getSavedCount(currentGroup.id, index, item.count);
+
+      if (currentCount > 0) {
+        currentCount--;
+        setSavedCount(currentGroup.id, index, currentCount);
+        renderGroupItems();
+
+        if (currentCount === 0) {
+          const nextIndex = index + 1;
+          if (nextIndex < currentGroup.items.length) {
+            setTimeout(() => {
+              const nextElem = document.getElementById(`zikr-card-${nextIndex}`);
+              if (nextElem) {
+                nextElem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              }
+            }, 250);
+          } else {
+            showToast(uiTexts[currentLang].completedGroup);
+          }
+        }
+      }
+    }
+
+    function resetSingleItem(index) {
+      if (currentGroup && currentGroup.items[index]) {
+        setSavedCount(currentGroup.id, index, currentGroup.items[index].count);
+        renderGroupItems();
+        showToast(currentLang === 'es' ? 'Contador reiniciado' : 'تم إعادة ضبط الذكر الحالي');
+      }
+    }
+
+    function resetAllInGroup() {
+      if (currentGroup) {
+        resetGroupProgress(currentGroup.id);
+        renderGroupItems();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        showToast(currentLang === 'es' ? 'Se han reiniciado todos los contadores' : 'تم إعادة تصفير كافة أذكار المجموعة');
+      }
+    }
+
+    // عرض جميع الأذكار كقائمة واحدة متتالية
+    function renderGroupItems() {
+      const container = document.getElementById('itemsContainer');
+      if (!container || !currentGroup || !currentGroup.items.length) return;
+
+      const totalItems = currentGroup.items.length;
+      const isEs = currentLang === 'es';
+      const activeSectionModule = getSectionModule(currentSection);
+      const isAdya = !!(activeSectionModule && activeSectionModule.isDevotional);
+      const t = uiTexts[currentLang];
+
+      const progressBarContainer = document.getElementById('progressBarContainer');
+      const resetAllBtn = document.getElementById('resetAllBtn');
+
+      if (isAdya) {
+        if (progressBarContainer) progressBarContainer.style.display = 'none';
+        if (resetAllBtn) resetAllBtn.style.display = 'none';
+      } else {
+        if (progressBarContainer) progressBarContainer.style.display = 'block';
+        if (resetAllBtn) resetAllBtn.style.display = 'inline-block';
+
+        let totalCompletedInGroup = 0;
+        currentGroup.items.forEach((it, idx) => {
+          const cnt = getSavedCount(currentGroup.id, idx, it.count);
+          if (cnt === 0) totalCompletedInGroup++;
+        });
+        const overallPercent = Math.round((totalCompletedInGroup / totalItems) * 100);
+
+        const progressPercentEl = document.getElementById('progressPercent');
+        const progressBarFillEl = document.getElementById('progressBarFill');
+        if (progressPercentEl) progressPercentEl.innerText = `${overallPercent}%`;
+        if (progressBarFillEl) progressBarFillEl.style.width = `${overallPercent}%`;
+      }
+
+      container.innerHTML = '';
+
+      currentGroup.items.forEach((item, index) => {
+        const currentCount = getSavedCount(currentGroup.id, index, item.count);
+        const initialMax = item.maxCount || item.count;
+        const itemSectionModule = getSectionModule(currentSection);
+        const isQuranItem = !!(itemSectionModule && itemSectionModule.isQuranItem(item));
+        const quranFontClass = isQuranItem ? ' quran-font' : '';
+        const isFav = favorites.includes(item.text);
+        const isDone = currentCount === 0;
+        const itemProgressStr = t.itemProgress.replace('{current}', index + 1).replace('{total}', totalItems);
+
+        const card = document.createElement('div');
+        card.id = `zikr-card-${index}`;
+        card.className = 'card-paper-bg rounded-3xl p-6 shadow-lg border border-amber-200/80 dark:border-slate-700 space-y-5 transition-all duration-300';
+
+        card.innerHTML = `
+          <!-- شريط المعرف والمؤشر -->
+          <div class="flex items-center justify-between text-xs font-bold border-b border-amber-200/60 dark:border-slate-700/60 pb-3">
+            <span class="text-emerald-800 dark:text-emerald-400 bg-emerald-100/80 dark:bg-emerald-950/60 px-3 py-1 rounded-full border border-emerald-300 dark:border-emerald-800">
+              ${itemProgressStr}
+            </span>
+            ${item.note ? `<span class="bg-amber-100/80 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 px-3 py-1 rounded-full border border-amber-300 dark:border-amber-800">${item.note}</span>` : ''}
+          </div>
+
+          <!-- محتوى الذكر أو الدعاء (لاتيني، ترجمة، ثم عربي) -->
+          ${isEs ? `
+            <div class="space-y-4">
+              ${item.latin ? `<div class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 italic text-center font-semibold bg-amber-100/40 dark:bg-slate-900/60 p-3 rounded-2xl border border-amber-200/50 dark:border-slate-800 whitespace-pre-line">${formatTextWithNewlines(item.latin)}</div>` : ''}
+              ${item.explanationEs ? `<div class="text-sm sm:text-base text-slate-900 dark:text-slate-100 bg-emerald-50/70 dark:bg-emerald-950/40 p-4 rounded-2xl border border-emerald-200/50 dark:border-emerald-900/40 leading-relaxed text-center font-medium whitespace-pre-line">${formatTextWithNewlines(item.explanationEs)}</div>` : ''}
+              <div class="leading-relaxed custom-text-size${quranFontClass} font-bold text-emerald-950 dark:text-emerald-300 text-center tracking-wide pt-3 border-t border-amber-200/60 dark:border-slate-700/60 dir-rtl whitespace-pre-line">
+                ${formatTextWithNewlines(item.text)}
+              </div>
+            </div>
+          ` : `
+            <div class="leading-relaxed custom-text-size${quranFontClass} font-bold text-slate-950 dark:text-slate-50 text-center tracking-wide py-2 whitespace-pre-line">
+              ${formatTextWithNewlines(item.text)}
+            </div>
+          `}
+
+          <!-- العداد التفاعلي (يظهر فقط للأذكار وليس للأدعية) -->
+          ${!isAdya ? `
+            <div class="flex flex-col items-center justify-center pt-2">
+              <button type="button" onclick="decrementCounter(${index})" class="dhikr-counter-btn ${isDone ? 'is-done' : ''} w-32 h-32 rounded-full flex flex-col items-center justify-center transition transform active:scale-90 cursor-pointer shadow-xl border-4 ${isDone ? 'bg-emerald-600 text-white border-emerald-400 hover:bg-emerald-700' : 'bg-gradient-to-br from-emerald-500 to-teal-700 text-white border-emerald-300 hover:from-emerald-600 hover:to-teal-800'}">
+                <span class="text-3xl font-extrabold text-white">${isDone ? '✓' : currentCount}</span>
+                <span class="text-[11px] font-semibold mt-1 opacity-90 text-white">${isDone ? t.completedItem : t.pressToCount}</span>
+                ${!isDone ? `<span class="text-[10px] opacity-75 mt-0.5 text-white">${currentCount} /${initialMax}</span>` : ''}
+              </button>
+            </div>
+          ` : ''}
+
+          <!-- أدوات التفاعل -->
+          <div class="flex items-center justify-center space-x-2 space-x-reverse pt-2 border-t border-slate-100 dark:border-slate-700">
+            ${item.audioUrl ? `
+              <button type="button" onclick="playAudio('${item.audioUrl}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="استماع">
+                🔊
+              </button>
+            ` : ''}
+            <button type="button" onclick="openEditModal(${index})" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-indigo-100 dark:hover:bg-indigo-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="تعديل النص والترجمة">
+              ✏️
+            </button>
+            <button type="button" onclick="copyText('${escapeJsStr(isEs ? (item.explanationEs || item.text) : item.text)}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="نسخ">
+              📋
+            </button>
+            <button type="button" onclick="shareText('${escapeJsStr(isEs ? (item.explanationEs || item.text) : item.text)}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="مشاركة">
+              🔗
+            </button>
+            <button type="button" onclick="toggleFavorite('${escapeJsStr(item.text)}')" class="p-2.5 rounded-xl ${isFav ? 'bg-amber-100 dark:bg-amber-950 text-amber-600' : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'} hover:bg-amber-100 dark:hover:bg-amber-900 transition cursor-pointer" title="المفضلة">
+              ${isFav ? '★' : '☆'}
+            </button>
+            ${!isAdya ? `
+              <button type="button" onclick="resetSingleItem(${index})" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-rose-100 dark:hover:bg-rose-950 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="إعادة ضبط الذكر">
+                🔄
+              </button>
+            ` : ''}
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    // المسبحة الإلكترونية
+    function showTasbeeh(skipPushState = false) {
+      hideAllViews();
+      document.getElementById('tasbeehView')?.classList.remove('hidden');
+      renderTasbeehGrid();
+      if (!skipPushState && window.history && window.history.pushState) {
+        try {
+          window.history.pushState({ view: 'tasbeeh' }, '', '#tasbeeh');
+        } catch (e) {}
+      }
+    }
+
+    function getTasbeehCount(id) {
+      const saved = safeGetStorage('tasbeeh_counts_v5');
+      const counts = saved ? JSON.parse(saved) : {};
+      return counts[id] || 0;
+    }
+
+    function setTasbeehCount(id, val) {
+      const saved = safeGetStorage('tasbeeh_counts_v5');
+      const counts = saved ? JSON.parse(saved) : {};
+      counts[id] = val;
+      safeSetStorage('tasbeeh_counts_v5', JSON.stringify(counts));
+    }
+
+    function incrementTasbeeh(id) {
+      const val = getTasbeehCount(id) + 1;
+      setTasbeehCount(id, val);
+      renderTasbeehGrid();
+    }
+
+    function resetSingleTasbeeh(id) {
+      setTasbeehCount(id, 0);
+      renderTasbeehGrid();
+      showToast(currentLang === 'es' ? 'Contador reiniciado' : 'تم تصفير العداد');
+    }
+
+    function resetAllTasbeehs() {
+      safeSetStorage('tasbeeh_counts_v5', JSON.stringify({}));
+      renderTasbeehGrid();
+      showToast(currentLang === 'es' ? 'Todos los contadores reiniciados' : 'تم تصفير جميع العدادات');
+    }
+
+    function renderTasbeehGrid() {
+      const grid = document.getElementById('tasbeehGrid');
+      if (!grid) return;
+      grid.innerHTML = '';
+      const isEs = currentLang === 'es';
+
+      tasbeehItems.forEach(item => {
+        const val = getTasbeehCount(item.id);
+        const card = document.createElement('div');
+        card.className = 'bg-white dark:bg-slate-800 p-6 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm flex flex-col items-center justify-between space-y-4';
+        card.innerHTML = `
+          <div class="text-center w-full">
+            ${isEs ? `
+              <div class="space-y-2">
+                ${item.latin ? `<p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 italic font-medium bg-slate-50 dark:bg-slate-900/60 p-2.5 rounded-xl border border-slate-100 dark:border-slate-800 whitespace-pre-line">${formatTextWithNewlines(item.latin)}</p>` : ''}
+                <p class="text-sm sm:text-base font-semibold text-slate-800 dark:text-slate-100 whitespace-pre-line">${formatTextWithNewlines(item.es)}</p>
+                <div class="text-lg sm:text-xl font-bold text-emerald-800 dark:text-emerald-300 pt-2 border-t border-slate-100 dark:border-slate-700/60 dir-rtl whitespace-pre-line">${formatTextWithNewlines(item.ar)}</div>
+              </div>
+            ` : `
+              <h3 class="text-xl sm:text-2xl font-bold text-slate-800 dark:text-slate-100 whitespace-pre-line">${formatTextWithNewlines(item.ar)}</h3>
+            `}
+          </div>
+
+          <button type="button" onclick="incrementTasbeeh('${item.id}')" class="w-28 h-28 rounded-full bg-gradient-to-br from-amber-500 to-amber-700 hover:from-amber-600 hover:to-amber-800 text-white shadow-lg flex flex-col items-center justify-center transition transform active:scale-95 cursor-pointer border-4 border-amber-300">
+            <span class="text-2xl font-extrabold">${val}</span>
+            <span class="text-[10px] opacity-80 mt-0.5">${isEs ? 'Toca' : 'تسبيح'}</span>
+          </button>
+
+          <button type="button" onclick="resetSingleTasbeeh('${item.id}')" class="text-xs font-semibold text-slate-500 hover:text-rose-600 dark:text-slate-400 dark:hover:text-rose-400 transition cursor-pointer">
+            ${isEs ? 'Reiniciar' : 'تصفير'}
+          </button>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    // شاشة المفضلة
+    function showFavorites(skipPushState = false) {
+      hideAllViews();
+      document.getElementById('favoritesView')?.classList.remove('hidden');
+      loadFavorites();
+      const container = document.getElementById('favoritesContainer');
+      if (!container) return;
+      container.innerHTML = '';
+      const isEs = currentLang === 'es';
+      const t = uiTexts[currentLang];
+
+      if (!favorites.length) {
+        container.innerHTML = `
+          <div class="p-8 text-center text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-800 rounded-3xl border border-slate-200 dark:border-slate-700">
+            <p class="text-base font-medium">${t.noFavs}</p>
+          </div>
+        `;
+      } else {
+        favorites.forEach(text => {
+          const card = document.createElement('div');
+          card.className = 'bg-white dark:bg-slate-800 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-3';
+          card.innerHTML = `
+            <p class="text-base font-medium leading-relaxed text-slate-800 dark:text-slate-100 whitespace-pre-line">${formatTextWithNewlines(text)}</p>
+            <div class="flex items-center justify-between pt-2 border-t border-slate-100 dark:border-slate-700/50">
+              <div class="flex items-center space-x-2 space-x-reverse">
+                <button type="button" onclick="copyText('${escapeJsStr(text)}')" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-700 text-xs font-bold text-slate-700 dark:text-slate-200">
+                  📋 ${isEs ? 'Copiar' : 'نسخ'}
+                </button>
+                <button type="button" onclick="shareText('${escapeJsStr(text)}')" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-700 text-xs font-bold text-slate-700 dark:text-slate-200">
+                  🔗 ${isEs ? 'Compartir' : 'مشاركة'}
+                </button>
+              </div>
+              <button type="button" onclick="toggleFavorite('${escapeJsStr(text)}')" class="text-xs font-bold text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/50 px-3 py-1.5 rounded-lg border border-rose-200 dark:border-rose-800">
+                ${t.removeFav}
+              </button>
+            </div>
+          `;
+          container.appendChild(card);
+        });
+      }
+
+      if (!skipPushState && window.history && window.history.pushState) {
+        try {
+          window.history.pushState({ view: 'favorites' }, '', '#favorites');
+        } catch (e) {}
+      }
+    }
+
+    // إدارة إعادة ضبط العدادات تلقائياً عند منتصف الليل
+    const LAST_RESET_DATE_KEY = 'misbaha_last_reset_date_v1';
+
+    function checkDailyReset() {
+      try {
+        const now = new Date();
+        const todayStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+        const lastReset = safeGetStorage(LAST_RESET_DATE_KEY);
+
+        if (lastReset !== todayStr) {
+          safeSetStorage(STORAGE_KEY, JSON.stringify({}));
+          safeSetStorage('tasbeeh_counts_v5', JSON.stringify({}));
+          safeSetStorage(LAST_RESET_DATE_KEY, todayStr);
+        }
+      } catch (e) {}
+    }
+
+    // إدارة التنقل للخلف عبر الأزرار
+    window.onpopstate = function(event) {
+      if (!event.state) return;
+      const state = event.state;
+      if (state.view === 'home') {
+        goHome(true);
+      } else if (state.view === 'section') {
+        showSection(state.sec, true);
+      } else if (state.view === 'detail') {
+        currentSection = state.sec;
+        openGroup(state.groupId, true);
+      } else if (state.view === 'tasbeeh') {
+        showTasbeeh(true);
+      } else if (state.view === 'favorites') {
+        showFavorites(true);
+      } else if (state.view === 'quran') {
+        showQuranView(true);
+      } else if (state.view === 'quranSurahs') {
+        showQuranSurahsView(true);
+      } else if (state.view === 'quranAhzab') {
+        showQuranAhzabView(true);
+      } else if (state.view === 'quranReader') {
+        openQuranPage(state.page || 1, true);
+      }
+    };
+
+    // التحقق من اليوم عند العودة للتطبيق
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') {
+        checkDailyReset();
+        if (currentGroup) renderGroupItems();
+        if (!document.getElementById('tasbeehView')?.classList.contains('hidden')) renderTasbeehGrid();
+      }
+    });
+
+    // ==========================================
+    // قسم القرآن الكريم (فهرس السور والقارئ العمودي)
+    // ==========================================
+    const quranSurahs = [
+      { id: 1, nameAr: 'الفاتحة', nameEs: 'Al-Fātiḥah', type: 'مكية', ayahs: 7, page: 1, hizb: 1 },
+      { id: 2, nameAr: 'البقرة', nameEs: 'Al-Baqarah', type: 'مدنية', ayahs: 286, page: 2, hizb: 1 },
+      { id: 3, nameAr: 'آل عمران', nameEs: 'Āli ‘Imrān', type: 'مدنية', ayahs: 200, page: 48, hizb: 5 },
+      { id: 4, nameAr: 'النساء', nameEs: 'An-Nisā’', type: 'مدنية', ayahs: 176, page: 74, hizb: 8 },
+      { id: 5, nameAr: 'المائدة', nameEs: 'Al-Mā’idah', type: 'مدنية', ayahs: 120, page: 104, hizb: 11 },
+      { id: 6, nameAr: 'الأنعام', nameEs: 'Al-An‘ām', type: 'مكية', ayahs: 165, page: 126, hizb: 13 },
+      { id: 7, nameAr: 'الأعراف', nameEs: 'Al-A‘rāf', type: 'مكية', ayahs: 206, page: 150, hizb: 16 },
+      { id: 8, nameAr: 'الأنفال', nameEs: 'Al-Anfāl', type: 'مدنية', ayahs: 75, page: 176, hizb: 18 },
+      { id: 9, nameAr: 'التوبة', nameEs: 'At-Tawbah', type: 'مدنية', ayahs: 129, page: 187, hizb: 19 },
+      { id: 10, nameAr: 'يونس', nameEs: 'Yūnus', type: 'مكية', ayahs: 109, page: 207, hizb: 21 },
+      { id: 11, nameAr: 'هود', nameEs: 'Hūd', type: 'مكية', ayahs: 123, page: 221, hizb: 22 },
+      { id: 12, nameAr: 'يوسف', nameEs: 'Yūsuf', type: 'مكية', ayahs: 111, page: 236, hizb: 24 },
+      { id: 13, nameAr: 'الرعد', nameEs: 'Ar-Ra‘d', type: 'مدنية', ayahs: 43, page: 250, hizb: 25 },
+      { id: 14, nameAr: 'إبراهيم', nameEs: 'Ibrāhīm', type: 'مكية', ayahs: 52, page: 256, hizb: 26 },
+      { id: 15, nameAr: 'الحجر', nameEs: 'Al-Ḥijr', type: 'مكية', ayahs: 99, page: 263, hizb: 27 },
+      { id: 16, nameAr: 'النحل', nameEs: 'An-Naḥl', type: 'مكية', ayahs: 128, page: 269, hizb: 27 },
+      { id: 17, nameAr: 'الإسراء', nameEs: 'Al-Isrā’', type: 'مكية', ayahs: 111, page: 284, hizb: 29 },
+      { id: 18, nameAr: 'الكهف', nameEs: 'Al-Kahf', type: 'مكية', ayahs: 110, page: 297, hizb: 30 },
+      { id: 19, nameAr: 'مريم', nameEs: 'Maryam', type: 'مكية', ayahs: 98, page: 309, hizb: 31 },
+      { id: 20, nameAr: 'طه', nameEs: 'Ṭāhā', type: 'مكية', ayahs: 135, page: 317, hizb: 32 },
+      { id: 21, nameAr: 'الأنبياء', nameEs: 'Al-Anbiya’', type: 'مكية', ayahs: 112, page: 327, hizb: 33 },
+      { id: 22, nameAr: 'الحج', nameEs: 'Al-Ḥajj', type: 'مدنية', ayahs: 78, page: 337, hizb: 34 },
+      { id: 23, nameAr: 'المؤمنون', nameEs: 'Al-Mu’minūn', type: 'مكية', ayahs: 118, page: 347, hizb: 35 },
+      { id: 24, nameAr: 'النور', nameEs: 'An-Nūr', type: 'مدنية', ayahs: 64, page: 356, hizb: 35 },
+      { id: 25, nameAr: 'الفرقان', nameEs: 'Al-Furqān', type: 'مكية', ayahs: 77, page: 366, hizb: 36 },
+      { id: 26, nameAr: 'الشعراء', nameEs: 'Ash-Shu‘arā’', type: 'مكية', ayahs: 227, page: 374, hizb: 37 },
+      { id: 27, nameAr: 'النمل', nameEs: 'An-Naml', type: 'مكية', ayahs: 93, page: 385, hizb: 38 },
+      { id: 28, nameAr: 'القصص', nameEs: 'Al-Qaṣaṣ', type: 'مكية', ayahs: 88, page: 394, hizb: 39 },
+      { id: 29, nameAr: 'العنكبوت', nameEs: 'Al-‘Ankabūt', type: 'مكية', ayahs: 69, page: 405, hizb: 40 },
+      { id: 30, nameAr: 'الروم', nameEs: 'Ar-Rūm', type: 'مكية', ayahs: 60, page: 413, hizb: 41 },
+      { id: 31, nameAr: 'لقمان', nameEs: 'Luqmān', type: 'مكية', ayahs: 34, page: 420, hizb: 41 },
+      { id: 32, nameAr: 'السجدة', nameEs: 'As-Sajdah', type: 'مكية', ayahs: 30, page: 424, hizb: 42 },
+      { id: 33, nameAr: 'الأحزاب', nameEs: 'Al-Aḥzāb', type: 'مدنية', ayahs: 73, page: 427, hizb: 42 },
+      { id: 34, nameAr: 'سبأ', nameEs: 'Saba’', type: 'مكية', ayahs: 54, page: 438, hizb: 43 },
+      { id: 35, nameAr: 'فاطر', nameEs: 'Fāṭir', type: 'مكية', ayahs: 45, page: 445, hizb: 44 },
+      { id: 36, nameAr: 'يس', nameEs: 'Yāsīn', type: 'مكية', ayahs: 83, page: 451, hizb: 44 },
+      { id: 37, nameAr: 'الصافات', nameEs: 'Aṣ-Ṣāffāt', type: 'مكية', ayahs: 182, page: 457, hizb: 45 },
+      { id: 38, nameAr: 'ص', nameEs: 'Ṣād', type: 'مكية', ayahs: 88, page: 465, hizb: 46 },
+      { id: 39, nameAr: 'الزمر', nameEs: 'Az-Zumar', type: 'مكية', ayahs: 75, page: 471, hizb: 46 },
+      { id: 40, nameAr: 'غافر', nameEs: 'Ghāfir', type: 'مكية', ayahs: 85, page: 480, hizb: 47 },
+      { id: 41, nameAr: 'فصلت', nameEs: 'Fuṣṣilat', type: 'مكية', ayahs: 54, page: 490, hizb: 48 },
+      { id: 42, nameAr: 'الشورى', nameEs: 'Ash-Shūrā', type: 'مكية', ayahs: 53, page: 496, hizb: 49 },
+      { id: 43, nameAr: 'الزخرف', nameEs: 'Az-Zukhruf', type: 'مكية', ayahs: 89, page: 503, hizb: 49 },
+      { id: 44, nameAr: 'الدخان', nameEs: 'Ad-Dukhān', type: 'مكية', ayahs: 59, page: 510, hizb: 50 },
+      { id: 45, nameAr: 'الجاثية', nameEs: 'Al-Jāthiyah', type: 'مكية', ayahs: 37, page: 513, hizb: 50 },
+      { id: 46, nameAr: 'الأحقاف', nameEs: 'Al-Aḥqāf', type: 'مكية', ayahs: 35, page: 517, hizb: 51 },
+      { id: 47, nameAr: 'محمد', nameEs: 'Muḥammad', type: 'مدنية', ayahs: 38, page: 522, hizb: 51 },
+      { id: 48, nameAr: 'الفتح', nameEs: 'Al-Fatḥ', type: 'مدنية', ayahs: 29, page: 527, hizb: 51 },
+      { id: 49, nameAr: 'الحجرات', nameEs: 'Al-Ḥujurāt', type: 'مدنية', ayahs: 18, page: 532, hizb: 52 },
+      { id: 50, nameAr: 'ق', nameEs: 'Qāf', type: 'مكية', ayahs: 45, page: 535, hizb: 52 },
+      { id: 51, nameAr: 'الذاريات', nameEs: 'Adh-Dhāriyāt', type: 'مكية', ayahs: 60, page: 538, hizb: 52 },
+      { id: 52, nameAr: 'الطور', nameEs: 'Aṭ-Ṭūr', type: 'مكية', ayahs: 49, page: 541, hizb: 53 },
+      { id: 53, nameAr: 'النجم', nameEs: 'An-Najm', type: 'مكية', ayahs: 62, page: 543, hizb: 53 },
+      { id: 54, nameAr: 'القمر', nameEs: 'Al-Qamar', type: 'مكية', ayahs: 55, page: 546, hizb: 53 },
+      { id: 55, nameAr: 'الرحمن', nameEs: 'Ar-Raḥmān', type: 'مدنية', ayahs: 78, page: 550, hizb: 54 },
+      { id: 56, nameAr: 'الواقعة', nameEs: 'Al-Wāqi‘ah', type: 'مكية', ayahs: 96, page: 553, hizb: 54 },
+      { id: 57, nameAr: 'الحديد', nameEs: 'Al-Ḥadīd', type: 'مدنية', ayahs: 29, page: 557, hizb: 54 },
+      { id: 58, nameAr: 'المجادلة', nameEs: 'Al-Mujādilah', type: 'مدنية', ayahs: 22, page: 562, hizb: 55 },
+      { id: 59, nameAr: 'الحشر', nameEs: 'Al-Ḥashr', type: 'مدنية', ayahs: 24, page: 566, hizb: 55 },
+      { id: 60, nameAr: 'الممتحنة', nameEs: 'Al-Mumtaḥanah', type: 'مدنية', ayahs: 13, page: 569, hizb: 55 },
+      { id: 61, nameAr: 'الصف', nameEs: 'Aṣ-Ṣaff', type: 'مدنية', ayahs: 14, page: 572, hizb: 55 },
+      { id: 62, nameAr: 'الجمعة', nameEs: 'Al-Jumu‘ah', type: 'مدنية', ayahs: 11, page: 574, hizb: 56 },
+      { id: 63, nameAr: 'المنافقون', nameEs: 'Al-Munāfiqūn', type: 'مدنية', ayahs: 11, page: 576, hizb: 56 },
+      { id: 64, nameAr: 'التغابن', nameEs: 'At-Taghābun', type: 'مدنية', ayahs: 18, page: 577, hizb: 56 },
+      { id: 65, nameAr: 'الطلاق', nameEs: 'Aṭ-Ṭalāq', type: 'مدنية', ayahs: 12, page: 580, hizb: 56 },
+      { id: 66, nameAr: 'التحريم', nameEs: 'At-Taḥrīm', type: 'مدنية', ayahs: 12, page: 582, hizb: 56 },
+      { id: 67, nameAr: 'الملك', nameEs: 'Al-Mulk', type: 'مكية', ayahs: 30, page: 584, hizb: 57 },
+      { id: 68, nameAr: 'القلم', nameEs: 'Al-Qalam', type: 'مكية', ayahs: 52, page: 587, hizb: 57 },
+      { id: 69, nameAr: 'الحاقة', nameEs: 'Al-Ḥāqqah', type: 'مكية', ayahs: 52, page: 590, hizb: 57 },
+      { id: 70, nameAr: 'المعارج', nameEs: 'Al-Ma‘ārij', type: 'مكية', ayahs: 44, page: 593, hizb: 57 },
+      { id: 71, nameAr: 'نوح', nameEs: 'Nūḥ', type: 'مكية', ayahs: 28, page: 595, hizb: 57 },
+      { id: 72, nameAr: 'الجن', nameEs: 'Al-Jinn', type: 'مكية', ayahs: 28, page: 597, hizb: 58 },
+      { id: 73, nameAr: 'المزمل', nameEs: 'Al-Muzzammil', type: 'مكية', ayahs: 20, page: 599, hizb: 58 },
+      { id: 74, nameAr: 'المدثر', nameEs: 'Al-Muddaththir', type: 'مكية', ayahs: 56, page: 601, hizb: 58 },
+      { id: 75, nameAr: 'القيامة', nameEs: 'Al-Qiyāmah', type: 'مكية', ayahs: 40, page: 604, hizb: 58 },
+      { id: 76, nameAr: 'الإنسان', nameEs: 'Al-Insān', type: 'مدنية', ayahs: 31, page: 605, hizb: 58 },
+      { id: 77, nameAr: 'المرسلات', nameEs: 'Al-Mursalāt', type: 'مكية', ayahs: 50, page: 607, hizb: 58 },
+      { id: 78, nameAr: 'النبأ', nameEs: 'An-Naba’', type: 'مكية', ayahs: 40, page: 609, hizb: 59 },
+      { id: 79, nameAr: 'النازعات', nameEs: 'An-Nāzi‘āt', type: 'مكية', ayahs: 46, page: 611, hizb: 59 },
+      { id: 80, nameAr: 'عبس', nameEs: '‘Abasa', type: 'مكية', ayahs: 42, page: 613, hizb: 59 },
+      { id: 81, nameAr: 'التكوير', nameEs: 'At-Takwīr', type: 'مكية', ayahs: 29, page: 615, hizb: 59 },
+      { id: 82, nameAr: 'الإنفطار', nameEs: 'Al-Infiṭār', type: 'مكية', ayahs: 19, page: 616, hizb: 59 },
+      { id: 83, nameAr: 'المطففين', nameEs: 'Al-Muṭaffifīn', type: 'مكية', ayahs: 36, page: 617, hizb: 59 },
+      { id: 84, nameAr: 'الإنشقاق', nameEs: 'Al-Inshiqāq', type: 'مكية', ayahs: 25, page: 618, hizb: 59 },
+      { id: 85, nameAr: 'البروج', nameEs: 'Al-Burūj', type: 'مكية', ayahs: 22, page: 620, hizb: 59 },
+      { id: 86, nameAr: 'الطارق', nameEs: 'Aṭ-Ṭāriq', type: 'مكية', ayahs: 17, page: 621, hizb: 59 },
+      { id: 87, nameAr: 'الأعلى', nameEs: 'Al-A‘lā', type: 'مكية', ayahs: 19, page: 622, hizb: 60 },
+      { id: 88, nameAr: 'الغاشية', nameEs: 'Al-Ghāshiyah', type: 'مكية', ayahs: 26, page: 623, hizb: 60 },
+      { id: 89, nameAr: 'الفجر', nameEs: 'Al-Fajr', type: 'مكية', ayahs: 30, page: 624, hizb: 60 },
+      { id: 90, nameAr: 'البلد', nameEs: 'Al-Balad', type: 'مكية', ayahs: 20, page: 625, hizb: 60 },
+      { id: 91, nameAr: 'الشمس', nameEs: 'Ash-Shams', type: 'مكية', ayahs: 15, page: 626, hizb: 60 },
+      { id: 92, nameAr: 'الليل', nameEs: 'Al-Layl', type: 'مكية', ayahs: 21, page: 627, hizb: 60 },
+      { id: 93, nameAr: 'الضحى', nameEs: 'Aḍ-Ḍuḥā', type: 'مكية', ayahs: 11, page: 628, hizb: 60 },
+      { id: 94, nameAr: 'الشرح', nameEs: 'Ash-Sharḥ', type: 'مكية', ayahs: 8, page: 628, hizb: 60 },
+      { id: 95, nameAr: 'التين', nameEs: 'At-Tīn', type: 'مكية', ayahs: 8, page: 629, hizb: 60 },
+      { id: 96, nameAr: 'العلق', nameEs: 'Al-‘Alaq', type: 'مكية', ayahs: 19, page: 629, hizb: 60 },
+      { id: 97, nameAr: 'القدر', nameEs: 'Al-Qadr', type: 'مكية', ayahs: 5, page: 630, hizb: 60 },
+      { id: 98, nameAr: 'البينة', nameEs: 'Al-Bayyinah', type: 'مدنية', ayahs: 8, page: 630, hizb: 60 },
+      { id: 99, nameAr: 'الزلزلة', nameEs: 'Az-Zalzalah', type: 'مدنية', ayahs: 8, page: 632, hizb: 60 },
+      { id: 100, nameAr: 'العاديات', nameEs: 'Al-‘Ādiyāt', type: 'مكية', ayahs: 11, page: 632, hizb: 60 },
+      { id: 101, nameAr: 'القارعة', nameEs: 'Al-Qāri‘ah', type: 'مكية', ayahs: 11, page: 633, hizb: 60 },
+      { id: 102, nameAr: 'التكاثر', nameEs: 'At-Takāthur', type: 'مكية', ayahs: 8, page: 633, hizb: 60 },
+      { id: 103, nameAr: 'العصر', nameEs: 'Al-‘Aṣr', type: 'مكية', ayahs: 3, page: 634, hizb: 60 },
+      { id: 104, nameAr: 'الهمزة', nameEs: 'Al-Humazah', type: 'مكية', ayahs: 9, page: 634, hizb: 60 },
+      { id: 105, nameAr: 'الفيل', nameEs: 'Al-Fīl', type: 'مكية', ayahs: 5, page: 635, hizb: 60 },
+      { id: 106, nameAr: 'قريش', nameEs: 'Quraysh', type: 'مكية', ayahs: 4, page: 635, hizb: 60 },
+      { id: 107, nameAr: 'الماعون', nameEs: 'Al-Mā‘ūn', type: 'مكية', ayahs: 7, page: 636, hizb: 60 },
+      { id: 108, nameAr: 'الكوثر', nameEs: 'Al-Kawthar', type: 'مكية', ayahs: 3, page: 636, hizb: 60 },
+      { id: 109, nameAr: 'الكافرون', nameEs: 'Al-Kāfirūn', type: 'مكية', ayahs: 6, page: 637, hizb: 60 },
+      { id: 110, nameAr: 'النصر', nameEs: 'An-Naṣr', type: 'مدنية', ayahs: 3, page: 637, hizb: 60 },
+      { id: 111, nameAr: 'المسد', nameEs: 'Al-Masad', type: 'مكية', ayahs: 5, page: 637, hizb: 60 },
+      { id: 112, nameAr: 'الإخلاص', nameEs: 'Al-Ikhlāṣ', type: 'مكية', ayahs: 4, page: 638, hizb: 60 },
+      { id: 113, nameAr: 'الفلق', nameEs: 'Al-Falaq', type: 'مكية', ayahs: 5, page: 638, hizb: 60 },
+      { id: 114, nameAr: 'الناس', nameEs: 'An-Nās', type: 'مكية', ayahs: 6, page: 638, hizb: 60 }
+    ];
+
+    const quranAhzab = [
+      { id: 1, nameAr: 'الحزب 1', nameEs: 'Hizb 1', page: 1, surahAr: 'الفاتحة', surahEs: 'Al-Fātiḥah' },
+      { id: 2, nameAr: 'الحزب 2', nameEs: 'Hizb 2', page: 12, surahAr: 'البقرة', surahEs: 'Al-Baqarah' },
+      { id: 3, nameAr: 'الحزب 3', nameEs: 'Hizb 3', page: 21, surahAr: 'البقرة', surahEs: 'Al-Baqarah' },
+      { id: 4, nameAr: 'الحزب 4', nameEs: 'Hizb 4', page: 31, surahAr: 'البقرة', surahEs: 'Al-Baqarah' },
+      { id: 5, nameAr: 'الحزب 5', nameEs: 'Hizb 5', page: 40, surahAr: 'البقرة / آل عمران', surahEs: 'Al-Baqarah / Āli ‘Imrān' },
+      { id: 6, nameAr: 'الحزب 6', nameEs: 'Hizb 6', page: 50, surahAr: 'آل عمران', surahEs: 'Āli ‘Imrān' },
+      { id: 7, nameAr: 'الحزب 7', nameEs: 'Hizb 7', page: 60, surahAr: 'آل عمران', surahEs: 'Āli ‘Imrān' },
+      { id: 8, nameAr: 'الحزب 8', nameEs: 'Hizb 8', page: 70, surahAr: 'النساء', surahEs: 'An-Nisā’' },
+      { id: 9, nameAr: 'الحزب 9', nameEs: 'Hizb 9', page: 79, surahAr: 'النساء', surahEs: 'An-Nisā’' },
+      { id: 10, nameAr: 'الحزب 10', nameEs: 'Hizb 10', page: 89, surahAr: 'النساء', surahEs: 'An-Nisā’' },
+      { id: 11, nameAr: 'الحزب 11', nameEs: 'Hizb 11', page: 99, surahAr: 'المائدة', surahEs: 'Al-Mā’idah' },
+      { id: 12, nameAr: 'الحزب 12', nameEs: 'Hizb 12', page: 109, surahAr: 'المائدة', surahEs: 'Al-Mā’idah' },
+      { id: 13, nameAr: 'الحزب 13', nameEs: 'Hizb 13', page: 119, surahAr: 'الأنعام', surahEs: 'Al-An‘ām' },
+      { id: 14, nameAr: 'الحزب 14', nameEs: 'Hizb 14', page: 130, surahAr: 'الأنعام', surahEs: 'Al-An‘ām' },
+      { id: 15, nameAr: 'الحزب 15', nameEs: 'Hizb 15', page: 141, surahAr: 'الأعراف', surahEs: 'Al-A‘rāf' },
+      { id: 16, nameAr: 'الحزب 16', nameEs: 'Hizb 16', page: 150, surahAr: 'الأعراف', surahEs: 'Al-A‘rāf' },
+      { id: 17, nameAr: 'الحزب 17', nameEs: 'Hizb 17', page: 161, surahAr: 'الأعراف', surahEs: 'Al-A‘rāf' },
+      { id: 18, nameAr: 'الحزب 18', nameEs: 'Hizb 18', page: 172, surahAr: 'الأنفال', surahEs: 'Al-Anfāl' },
+      { id: 19, nameAr: 'الحزب 19', nameEs: 'Hizb 19', page: 181, surahAr: 'التوبة', surahEs: 'At-Tawbah' },
+      { id: 20, nameAr: 'الحزب 20', nameEs: 'Hizb 20', page: 192, surahAr: 'التوبة', surahEs: 'At-Tawbah' },
+      { id: 21, nameAr: 'الحزب 21', nameEs: 'Hizb 21', page: 201, surahAr: 'يونس', surahEs: 'Yūnus' },
+      { id: 22, nameAr: 'الحزب 22', nameEs: 'Hizb 22', page: 211, surahAr: 'هود', surahEs: 'Hūd' },
+      { id: 23, nameAr: 'الحزب 23', nameEs: 'Hizb 23', page: 222, surahAr: 'هود', surahEs: 'Hūd' },
+      { id: 24, nameAr: 'الحزب 24', nameEs: 'Hizb 24', page: 231, surahAr: 'يوسف', surahEs: 'Yūsuf' },
+      { id: 25, nameAr: 'الحزب 25', nameEs: 'Hizb 25', page: 242, surahAr: 'الرعد', surahEs: 'Ar-Ra‘d' },
+      { id: 26, nameAr: 'الحزب 26', nameEs: 'Hizb 26', page: 253, surahAr: 'إبراهيم', surahEs: 'Ibrāhīm' },
+      { id: 27, nameAr: 'الحزب 27', nameEs: 'Hizb 27', page: 263, surahAr: 'الحجر', surahEs: 'Al-Ḥijr' },
+      { id: 28, nameAr: 'الحزب 28', nameEs: 'Hizb 28', page: 274, surahAr: 'النحل', surahEs: 'An-Naḥl' },
+      { id: 29, nameAr: 'الحزب 29', nameEs: 'Hizb 29', page: 284, surahAr: 'الإسراء', surahEs: 'Al-Isrā’' },
+      { id: 30, nameAr: 'الحزب 30', nameEs: 'Hizb 30', page: 295, surahAr: 'الكهف', surahEs: 'Al-Kahf' },
+      { id: 31, nameAr: 'الحزب 31', nameEs: 'Hizb 31', page: 305, surahAr: 'مريم', surahEs: 'Maryam' },
+      { id: 32, nameAr: 'الحزب 32', nameEs: 'Hizb 32', page: 317, surahAr: 'طه', surahEs: 'Ṭāhā' },
+      { id: 33, nameAr: 'الحزب 33', nameEs: 'Hizb 33', page: 327, surahAr: 'الأنبياء', surahEs: 'Al-Anbiya’' },
+      { id: 34, nameAr: 'الحزب 34', nameEs: 'Hizb 34', page: 337, surahAr: 'الحج', surahEs: 'Al-Ḥajj' },
+      { id: 35, nameAr: 'الحزب 35', nameEs: 'Hizb 35', page: 347, surahAr: 'المؤمنون', surahEs: 'Al-Mu’minūn' },
+      { id: 36, nameAr: 'الحزب 36', nameEs: 'Hizb 36', page: 358, surahAr: 'النور / الفرقان', surahEs: 'An-Nūr / Al-Furqān' },
+      { id: 37, nameAr: 'الحزب 37', nameEs: 'Hizb 37', page: 369, surahAr: 'الفرقان / الشعراء', surahEs: 'Al-Furqān / Ash-Shu‘arā’' },
+      { id: 38, nameAr: 'الحزب 38', nameEs: 'Hizb 38', page: 379, surahAr: 'النمل', surahEs: 'An-Naml' },
+      { id: 39, nameAr: 'الحزب 39', nameEs: 'Hizb 39', page: 390, surahAr: 'القصص', surahEs: 'Al-Qaṣaṣ' },
+      { id: 40, nameAr: 'الحزب 40', nameEs: 'Hizb 40', page: 400, surahAr: 'العنكبوت', surahEs: 'Al-‘Ankabūt' },
+      { id: 41, nameAr: 'الحزب 41', nameEs: 'Hizb 41', page: 410, surahAr: 'الروم', surahEs: 'Ar-Rūm' },
+      { id: 42, nameAr: 'الحزب 42', nameEs: 'Hizb 42', page: 422, surahAr: 'السجدة', surahEs: 'As-Sajdah' },
+      { id: 43, nameAr: 'الحزب 43', nameEs: 'Hizb 43', page: 432, surahAr: 'سبأ', surahEs: 'Saba’' },
+      { id: 44, nameAr: 'الحزب 44', nameEs: 'Hizb 44', page: 441, surahAr: 'فاطر / يس', surahEs: 'Fāṭir / Yāsīn' },
+      { id: 45, nameAr: 'الحزب 45', nameEs: 'Hizb 45', page: 453, surahAr: 'الصافات', surahEs: 'Aṣ-Ṣāffāt' },
+      { id: 46, nameAr: 'الحزب 46', nameEs: 'Hizb 46', page: 463, surahAr: 'ص / الزمر', surahEs: 'Ṣād / Az-Zumar' },
+      { id: 47, nameAr: 'الحزب 47', nameEs: 'Hizb 47', page: 475, surahAr: 'غافر', surahEs: 'Ghāfir' },
+      { id: 48, nameAr: 'الحزب 48', nameEs: 'Hizb 48', page: 485, surahAr: 'فصلت', surahEs: 'Fuṣṣilat' },
+      { id: 49, nameAr: 'الحزب 49', nameEs: 'Hizb 49', page: 495, surahAr: 'الشورى', surahEs: 'Ash-Shūrā' },
+      { id: 50, nameAr: 'الحزب 50', nameEs: 'Hizb 50', page: 505, surahAr: 'الزخرف / الدخان', surahEs: 'Az-Zukhruf / Ad-Dukhān' },
+      { id: 51, nameAr: 'الحزب 51', nameEs: 'Hizb 51', page: 517, surahAr: 'الأحقاف / محمد', surahEs: 'Al-Aḥqāf / Muḥammad' },
+      { id: 52, nameAr: 'الحزب 52', nameEs: 'Hizb 52', page: 529, surahAr: 'الفتح / ق', surahEs: 'Al-Fatḥ / Qāf' },
+      { id: 53, nameAr: 'الحزب 53', nameEs: 'Hizb 53', page: 539, surahAr: 'الذاريات / الطور', surahEs: 'Adh-Dhāriyāt / Aṭ-Ṭūr' },
+      { id: 54, nameAr: 'الحزب 54', nameEs: 'Hizb 54', page: 550, surahAr: 'الرحمن / الواقعة', surahEs: 'Ar-Raḥmān / Al-Wāqi‘ah' },
+      { id: 55, nameAr: 'الحزب 55', nameEs: 'Hizb 55', page: 562, surahAr: 'المجادلة', surahEs: 'Al-Mujādilah' },
+      { id: 56, nameAr: 'الحزب 56', nameEs: 'Hizb 56', page: 574, surahAr: 'الجمعة', surahEs: 'Al-Jumu‘ah' },
+      { id: 57, nameAr: 'الحزب 57', nameEs: 'Hizb 57', page: 584, surahAr: 'الملك', surahEs: 'Al-Mulk' },
+      { id: 58, nameAr: 'الحزب 58', nameEs: 'Hizb 58', page: 597, surahAr: 'الجن', surahEs: 'Al-Jinn' },
+      { id: 59, nameAr: 'الحزب 59', nameEs: 'Hizb 59', page: 609, surahAr: 'النبأ', surahEs: 'An-Naba’' },
+      { id: 60, nameAr: 'الحزب 60', nameEs: 'Hizb 60', page: 622, surahAr: 'الأعلى', surahEs: 'Al-A‘lā' }
+    ];
+
+    function showQuranView(skipPushState = false) {
+      hideAllViews();
+      document.getElementById('quranView')?.classList.remove('hidden');
+      updateContinueReadingCard();
+      if (!skipPushState && window.history && window.history.pushState) {
+        try {
+          window.history.pushState({ view: 'quran' }, '', '#quran');
+        } catch (e) {}
+      }
+    }
+
+    function showQuranSurahsView(skipPushState = false) {
+      hideAllViews();
+      document.getElementById('quranSurahsView')?.classList.remove('hidden');
+      renderSurahsList();
+      if (!skipPushState && window.history && window.history.pushState) {
+        try {
+          window.history.pushState({ view: 'quranSurahs' }, '', '#quranSurahs');
+        } catch (e) {}
+      }
+    }
+
+    function showQuranAhzabView(skipPushState = false) {
+      hideAllViews();
+      document.getElementById('quranAhzabView')?.classList.remove('hidden');
+      renderAhzabList();
+      if (!skipPushState && window.history && window.history.pushState) {
+        try {
+          window.history.pushState({ view: 'quranAhzab' }, '', '#quranAhzab');
+        } catch (e) {}
+      }
+    }
+
+    function renderAhzabList() {
+      const container = document.getElementById('ahzabListContainer');
+      if (!container) return;
+      container.innerHTML = '';
+      const isEs = currentLang === 'es';
+
+      quranAhzab.forEach(h => {
+        const card = document.createElement('button');
+        card.type = 'button';
+        card.className = 'bg-white dark:bg-slate-800 p-3 sm:p-4 rounded-2xl border border-amber-200 dark:border-slate-700 hover:border-amber-500 shadow-sm hover:shadow-md transition text-center flex flex-col items-center justify-center space-y-1 cursor-pointer active:scale-95';
+        card.onclick = () => openQuranPage(h.page);
+
+        const hizbTitle = isEs ? `Hizb ${h.id}` : `الحزب ${h.id}`;
+        const surahText = isEs ? h.surahEs : h.surahAr;
+        const pageText = isEs ? `Pág. ${h.page}` : `صفحة ${h.page}`;
+
+        card.innerHTML = `
+          <span class="w-8 h-8 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 font-extrabold flex items-center justify-center text-xs border border-amber-300 dark:border-amber-800 shadow-sm">
+            ${h.id}
+          </span>
+          <span class="font-bold text-slate-800 dark:text-slate-100 text-xs sm:text-sm mt-1">${hizbTitle}</span>
+          <span class="text-[10px] text-slate-500 dark:text-slate-400 line-clamp-1">${surahText}</span>
+          <span class="text-[10px] font-semibold text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/60 px-2 py-0.5 rounded-md border border-emerald-200 dark:border-emerald-800 mt-1">
+            ${pageText}
+          </span>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function updateContinueReadingCard() {
+      const lastPage = parseInt(safeGetStorage('quran_last_page_v1')) || 1;
+      const info = getSurahInfoForPage(lastPage);
+      const isEs = currentLang === 'es';
+
+      const subEl = document.getElementById('tabContinueSub');
+      if (subEl) {
+        subEl.innerText = isEs ? `Pág. ${lastPage} - ${info.title}` : `صفحة ${lastPage} - ${info.title}`;
+      }
+    }
+
+    function continueLastReading() {
+      const lastPage = parseInt(safeGetStorage('quran_last_page_v1')) || 1;
+      openQuranPage(lastPage);
+    }
+
+    function renderSurahsList(query = '') {
+      const container = document.getElementById('surahsListContainer');
+      if (!container) return;
+      container.innerHTML = '';
+      const isEs = currentLang === 'es';
+
+      const q = query.trim().toLowerCase();
+      const filtered = quranSurahs.filter(s => {
+        if (!q) return true;
+        return s.id.toString() === q ||
+               s.nameAr.includes(q) ||
+               s.nameEs.toLowerCase().includes(q) ||
+               s.page.toString() === q;
+      });
+
+      filtered.forEach(s => {
+        const card = document.createElement('div');
+        card.className = 'bg-white dark:bg-slate-800 p-4 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition flex items-center justify-between cursor-pointer';
+        card.onclick = () => openQuranPage(s.page);
+
+        const titleText = isEs ? `Sura ${s.nameEs}` : `سورة ${s.nameAr}`;
+        const subTitleText = isEs ? `(${s.nameAr})` : `(${s.nameEs})`;
+        const pageText = isEs ? `Pág. ${s.page}` : `صفحة ${s.page}`;
+        const typeText = isEs ? (s.type === 'مكية' ? 'Mequí' : 'Mediní') : s.type;
+        const hizbText = isEs ? `Hizb ${s.hizb}` : `الحزب ${s.hizb}`;
+        const ayahsText = isEs ? `${s.ayahs} Ayyāt` : `${s.ayahs} آية`;
+
+        card.innerHTML = `
+          <div class="flex items-center space-x-3 space-x-reverse">
+            <div class="w-10 h-10 rounded-xl bg-amber-100 dark:bg-amber-950/70 border border-amber-300 dark:border-amber-800 text-amber-800 dark:text-amber-300 font-extrabold flex items-center justify-center text-sm shadow-sm">
+              ${s.id}
+            </div>
+            <div>
+              <div class="font-bold text-slate-800 dark:text-slate-100 text-base flex items-center gap-2">
+                <span>${titleText}</span>
+                <span class="text-xs font-normal text-slate-500">${subTitleText}</span>
+              </div>
+              <div class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 flex items-center gap-2">
+                <span class="bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded-md">${typeText}</span>
+                <span>• ${ayahsText}</span>
+                <span class="text-amber-700 dark:text-amber-400 font-medium">• ${hizbText}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-xs font-bold text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/60 px-3 py-1.5 rounded-xl border border-emerald-200 dark:border-emerald-800">
+            ${pageText}
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function filterSurahs() {
+      const input = document.getElementById('quranSearchInput');
+      renderSurahsList(input ? input.value : '');
+    }
+
+    function getHizbForPage(page) {
+      let hizbNum = 1;
+      for (let i = 0; i < quranAhzab.length; i++) {
+        if (quranAhzab[i].page <= page) {
+          hizbNum = quranAhzab[i].id;
+        } else {
+          break;
+        }
+      }
+      return hizbNum;
+    }
+
+    function getSurahInfoForPage(page) {
+      let current = quranSurahs[0];
+      for (let i = 0; i < quranSurahs.length; i++) {
+        if (quranSurahs[i].page <= page) {
+          current = quranSurahs[i];
+        } else {
+          break;
+        }
+      }
+      const isEs = currentLang === 'es';
+      return {
+        title: isEs ? `Sura ${current.nameEs} (${current.nameAr})` : `سورة ${current.nameAr} (${current.nameEs})`,
+        hizb: getHizbForPage(page)
+      };
+    }
+
+    let currentQuranPage = 1;
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let touchEndX = 0;
+    let touchEndY = 0;
+
+    function openQuranPage(pageNumber, skipPushState = false) {
+      hideAllViews();
+      document.getElementById('quranReaderView')?.classList.remove('hidden');
+
+      const pageNum = Math.min(Math.max(1, parseInt(pageNumber) || 1), 638);
+      displayQuranPage(pageNum);
+
+      if (!skipPushState && window.history && window.history.pushState) {
+        try {
+          window.history.pushState({ view: 'quranReader', page: pageNum }, '', `#quran-page-${pageNum}`);
+        } catch (e) {}
+      }
+    }
+
+    function displayQuranPage(pageNum, animDir = null) {
+      currentQuranPage = Math.min(Math.max(1, parseInt(pageNum) || 1), 638);
+      safeSetStorage('quran_last_page_v1', currentQuranPage);
+
+      const isEs = currentLang === 'es';
+      const t = uiTexts[currentLang];
+
+      const imgEl = document.getElementById('quranPageImg');
+      if (imgEl) {
+        imgEl.style.transition = 'none';
+        if (animDir === 'next') {
+          imgEl.style.transform = 'translateX(25px)';
+        } else if (animDir === 'prev') {
+          imgEl.style.transform = 'translateX(-25px)';
+        }
+        imgEl.style.opacity = '0.2';
+        imgEl.src = `quran_pages/page${currentQuranPage}.png`;
+
+        imgEl.onload = () => {
+          imgEl.style.transition = 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)';
+          imgEl.style.opacity = '1';
+          imgEl.style.transform = 'translateX(0)';
+        };
+        imgEl.onerror = () => {
+          imgEl.style.transition = 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)';
+          imgEl.style.opacity = '1';
+          imgEl.style.transform = 'translateX(0)';
+        };
+      }
+
+      const pageLabel = document.getElementById('pageLabelText');
+      if (pageLabel) pageLabel.innerText = t.pageLabelText || (isEs ? 'Página' : 'صفحة');
+
+      const pageOf = document.getElementById('pageOfText');
+      if (pageOf) pageOf.innerText = t.pageOfText || (isEs ? 'de 638' : 'من 638');
+
+      const numDisplay = document.getElementById('quranPageNumDisplay');
+      if (numDisplay) numDisplay.innerText = currentQuranPage;
+
+      const info = getSurahInfoForPage(currentQuranPage);
+
+      const hizbDisplay = document.getElementById('quranHizbDisplay');
+      if (hizbDisplay) hizbDisplay.innerText = isEs ? `Hizb ${info.hizb}` : `الحزب ${info.hizb}`;
+
+      const surahDisplay = document.getElementById('quranSurahDisplay');
+      if (surahDisplay) surahDisplay.innerText = info.title;
+
+      const input = document.getElementById('jumpPageInput');
+      if (input) input.value = currentQuranPage;
+
+      const nextBtnText = document.getElementById('nextBtnText');
+      if (nextBtnText) nextBtnText.innerText = t.nextPageBtn || (isEs ? 'Página siguiente ➔' : 'الصفحة التالية ➔');
+
+      const prevBtnText = document.getElementById('prevBtnText');
+      if (prevBtnText) prevBtnText.innerText = t.prevPageBtn || (isEs ? '⬅ Página anterior' : '⬅ الصفحة السابقة');
+
+      const swipeHint = document.getElementById('swipeHint');
+      if (swipeHint) swipeHint.innerText = t.swipeHintText || (isEs ? 'Desliza a la derecha para página siguiente ➔' : 'اسحب لليمين للصفحة التالية ➔');
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setupQuranTouchSwipe();
+    }
+
+    function nextQuranPage() {
+      if (currentQuranPage < 638) {
+        displayQuranPage(currentQuranPage + 1, 'next');
+      } else {
+        showToast(currentLang === 'es' ? 'Has llegado a la última página' : 'وصلت إلى نهاية المصحف الشريف');
+      }
+    }
+
+    function prevQuranPage() {
+      if (currentQuranPage > 1) {
+        displayQuranPage(currentQuranPage - 1, 'prev');
+      } else {
+        showToast(currentLang === 'es' ? 'Esta es la primera página' : 'هذه هي الصفحة الأولى');
+      }
+    }
+
+    function jumpToInputPage() {
+      const input = document.getElementById('jumpPageInput');
+      if (input && input.value) {
+        displayQuranPage(input.value);
+      }
+    }
+
+    function setupQuranTouchSwipe() {
+      const wrapper = document.getElementById('quranImageWrapper');
+      if (!wrapper || wrapper.dataset.swipeSetup) return;
+
+      wrapper.dataset.swipeSetup = 'true';
+
+      wrapper.addEventListener('touchstart', (e) => {
+        if (e.touches && e.touches.length === 1) {
+          touchStartX = e.touches[0].clientX;
+          touchStartY = e.touches[0].clientY;
+        }
+      }, { passive: true });
+
+      wrapper.addEventListener('touchend', (e) => {
+        if (e.changedTouches && e.changedTouches.length === 1) {
+          touchEndX = e.changedTouches[0].clientX;
+          touchEndY = e.changedTouches[0].clientY;
+          handleQuranSwipeGesture();
+        }
+      }, { passive: true });
+    }
+
+    function handleQuranSwipeGesture() {
+      const deltaX = touchEndX - touchStartX;
+      const deltaY = touchEndY - touchStartY;
+
+      if (Math.abs(deltaX) > 35 && Math.abs(deltaY) < 80) {
+        if (deltaX > 0) {
+          // Arrastrar hacia la derecha (Swipe Right ➔) -> Ir a la Página Siguiente (Libro Árabe)
+          nextQuranPage();
+        } else {
+          // Arrastrar hacia la izquierda (Swipe Left ⬅) -> Ir a la Página Anterior
+          prevQuranPage();
+        }
+      }
+    }
+
+    function openTransliterationGuide() {
+      const modal = document.getElementById('transliterationModal');
+      if (modal) modal.classList.remove('hidden');
+    }
+
+    function closeTransliterationGuide() {
+      const modal = document.getElementById('transliterationModal');
+      if (modal) modal.classList.add('hidden');
+    }
+
+    // تشغيل الإعدادات المبدئية عند التحميل
+    window.addEventListener('DOMContentLoaded', () => {
+      checkDailyReset();
+      loadSavedTheme();
+      loadFavorites();
+      applyLanguageUI();
+      if (window.history && window.history.replaceState) {
+        try {
+          window.history.replaceState({ view: 'home' }, '', '#home');
+        } catch (e) {}
+      }
+    });
+  </script>
+
+  <!-- Modal: Guía de Transliteración (i) -->
+  <div id="transliterationModal" class="fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden transition-opacity duration-300">
+    <div class="bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 rounded-3xl max-w-xl w-full max-h-[85vh] flex flex-col shadow-2xl border border-slate-200 dark:border-slate-700 overflow-hidden">
+
+      <!-- Modal Header -->
+      <div class="p-5 border-b border-slate-200 dark:border-slate-700 flex items-center justify-between bg-emerald-700 dark:bg-emerald-900 text-white">
+        <div class="flex items-center space-x-2 space-x-reverse">
+          <span class="text-xl">ℹ️</span>
+          <div>
+            <h3 class="font-extrabold text-base md:text-lg">Guía de Transliteración y Pronunciación</h3>
+            <p class="text-emerald-100 text-xs">Equivalencia de letras árabes en caracteres latinos</p>
+          </div>
+        </div>
+        <button type="button" onclick="closeTransliterationGuide()" class="p-2 rounded-xl hover:bg-white/20 text-white transition text-lg font-bold">
+          ✕
+        </button>
+      </div>
+
+      <!-- Modal Body (Scrollable) -->
+      <div class="p-5 overflow-y-auto space-y-4 text-xs sm:text-sm dir-ltr">
+        <p class="text-slate-600 dark:text-slate-300 leading-relaxed bg-emerald-50 dark:bg-emerald-950/40 p-3 rounded-2xl border border-emerald-100 dark:border-emerald-900">
+          Esta guía te ayuda a pronunciar correctamente los Azkar en árabe leyendo el texto en caracteres latinos:
+        </p>
+
+        <div class="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-700">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="bg-slate-100 dark:bg-slate-700/80 text-slate-700 dark:text-slate-200 font-bold border-b border-slate-200 dark:border-slate-700">
+                <th class="p-3 text-center">Árabe</th>
+                <th class="p-3">Latino</th>
+                <th class="p-3">Pronunciación en Español</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 dark:divide-slate-700/50">
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">أ / إ / ء</td><td class="p-2.5 font-bold">a, i, u</td><td class="p-2.5">Vocal corta inicial o corte suave (Hamzah)</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ب</td><td class="p-2.5 font-bold">b</td><td class="p-2.5">Como la 'b' en español</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ت</td><td class="p-2.5 font-bold">t</td><td class="p-2.5">Como la 't' en español</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ث</td><td class="p-2.5 font-bold">th</td><td class="p-2.5">Como la 'z' en 'zapato' (o 'th' en 'think')</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ج</td><td class="p-2.5 font-bold">j</td><td class="p-2.5">Como la 'j' en inglés o 'y' fuerte</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ح</td><td class="p-2.5 font-bold">ḥ</td><td class="p-2.5">'H' aspirada profunda desde la garganta</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">خ</td><td class="p-2.5 font-bold">kh</td><td class="p-2.5">Como la 'j' en español (ej. 'juan')</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">د</td><td class="p-2.5 font-bold">d</td><td class="p-2.5">Como la 'd' en español</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ذ</td><td class="p-2.5 font-bold">dh</td><td class="p-2.5">Como la 'd' suave en 'cada' (o 'th' en 'this')</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ر</td><td class="p-2.5 font-bold">r</td><td class="p-2.5">Como la 'r' suave en español</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ز</td><td class="p-2.5 font-bold">z</td><td class="p-2.5">Como la 'z' en inglés (sonido zumbado)</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">س</td><td class="p-2.5 font-bold">s</td><td class="p-2.5">Como la 's' en español</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ش</td><td class="p-2.5 font-bold">sh</td><td class="p-2.5">Como la 'sh' en inglés (ej. 'show')</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ص</td><td class="p-2.5 font-bold">ṣ</td><td class="p-2.5">'S' enfática y profunda (Ṣād)</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ض</td><td class="p-2.5 font-bold">ḍ</td><td class="p-2.5">'D' enfática y profunda (Ḍād)</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ط</td><td class="p-2.5 font-bold">ṭ</td><td class="p-2.5">'T' enfática y profunda (Ṭā)</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ظ</td><td class="p-2.5 font-bold">ẓ</td><td class="p-2.5">'Z / Dh' enfática y profunda (Ẓā)</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ع</td><td class="p-2.5 font-bold">‘ / ʿ</td><td class="p-2.5">Sonido gutural profundo ('Ayn)</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">غ</td><td class="p-2.5 font-bold">gh</td><td class="p-2.5">Como la 'r' en francés o 'g' suave (Ghayn)</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ف</td><td class="p-2.5 font-bold">f</td><td class="p-2.5">Como la 'f' en español</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ق</td><td class="p-2.5 font-bold">q</td><td class="p-2.5">'K' profunda desde la parte posterior de la garganta</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ك</td><td class="p-2.5 font-bold">k</td><td class="p-2.5">Como la 'k' o 'c' en español</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ل</td><td class="p-2.5 font-bold">l</td><td class="p-2.5">Como la 'l' en español</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">م</td><td class="p-2.5 font-bold">m</td><td class="p-2.5">Como la 'm' en español</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ن</td><td class="p-2.5 font-bold">n</td><td class="p-2.5">Como la 'n' en español</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">هـ</td><td class="p-2.5 font-bold">h</td><td class="p-2.5">'H' aspirada suave (ej. 'hello' en inglés)</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">و</td><td class="p-2.5 font-bold">w / ū</td><td class="p-2.5">'W' consonante (ej. 'water') o 'Ū' vocal larga</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ي</td><td class="p-2.5 font-bold">y / ī</td><td class="p-2.5">'Y' consonante (ej. 'yo') o 'Ī' vocal larga</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">آ / ــَـا</td><td class="p-2.5 font-bold">ā</td><td class="p-2.5">'A' larga (se sostiene el doble de tiempo)</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ــِـي</td><td class="p-2.5 font-bold">ī</td><td class="p-2.5">'I' larga (se sostiene el doble de tiempo)</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ــُـو</td><td class="p-2.5 font-bold">ū</td><td class="p-2.5">'U' larga (se sostiene el doble de tiempo)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-4 border-t border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/50 flex justify-end">
+        <button type="button" onclick="closeTransliterationGuide()" class="px-5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-bold text-xs transition">
+          Entendido
+        </button>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
