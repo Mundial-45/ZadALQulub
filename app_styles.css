@@ -386,3 +386,133 @@ button[onclick="prevQuranPage()"] {
 }
 button[onclick="nextQuranPage()"]:hover { background-color: #065f46 !important; }
 button[onclick="prevQuranPage()"]:hover { background-color: #92400e !important; }
+
+/* Dark-mode visibility audit: native controls, Quran navigation, indexes and tasbeeh. */
+html.light { color-scheme: light; }
+html.dark { color-scheme: dark; }
+
+input, select, textarea, option, button {
+  -webkit-tap-highlight-color: transparent;
+}
+input, select, textarea {
+  max-width: 100%;
+}
+html.dark input,
+html.dark select,
+html.dark textarea {
+  background-color: #1e293b;
+  color: #f1f5f9;
+  border-color: #64748b;
+  color-scheme: dark;
+}
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: #cbd5e1 !important;
+  opacity: 1;
+}
+html.dark select option {
+  background-color: #0f172a !important;
+  color: #f1f5f9 !important;
+}
+html.dark input:focus,
+html.dark select:focus,
+html.dark textarea:focus,
+html.dark button:focus-visible {
+  outline: 2px solid #34d399 !important;
+  outline-offset: 2px;
+}
+html.dark input:disabled,
+html.dark select:disabled,
+html.dark textarea:disabled,
+html.dark button:disabled {
+  color: #cbd5e1 !important;
+  opacity: 0.8 !important;
+}
+
+/* Quran page jump: keep the label readable on both themes. */
+button[onclick="jumpToInputPage()"] {
+  background: #059669 !important;
+  color: #ffffff !important;
+  border: 1px solid #34d399 !important;
+  min-height: 2.25rem;
+}
+button[onclick="jumpToInputPage()"] *,
+#jumpBtnText {
+  color: #ffffff !important;
+}
+button[onclick="jumpToInputPage()"]:hover {
+  background: #047857 !important;
+}
+
+/* Quran Surah and Hizb indexes: force high contrast for every generated label. */
+#surahsListContainer > div,
+#ahzabListContainer > button {
+  color: #1e293b !important;
+}
+#surahsListContainer .text-slate-500 {
+  color: #64748b !important;
+}
+.dark #surahsListContainer > div,
+.dark #ahzabListContainer > button {
+  background-color: #1e293b !important;
+  color: #f1f5f9 !important;
+  border-color: #475569 !important;
+}
+.dark #surahsListContainer .text-slate-800,
+.dark #surahsListContainer .text-slate-700,
+.dark #surahsListContainer .text-slate-600,
+.dark #surahsListContainer .text-slate-500,
+.dark #ahzabListContainer .text-slate-800,
+.dark #ahzabListContainer .text-slate-700,
+.dark #ahzabListContainer .text-slate-600,
+.dark #ahzabListContainer .text-slate-500 {
+  color: #e2e8f0 !important;
+}
+.dark #surahsListContainer .bg-slate-100 {
+  background-color: #334155 !important;
+}
+
+/* Tasbeeh text contrast, including Spanish and transliteration cards. */
+#tasbeehView .latin-text-style,
+#tasbeehView .es-text-style {
+  display: block;
+  width: 100%;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+}
+#tasbeehView .latin-text-style {
+  background-color: #fffbeb !important;
+  color: #334155 !important;
+  border: 1px solid #fcd34d !important;
+  direction: ltr !important;
+  text-align: left !important;
+}
+#tasbeehView .es-text-style {
+  background-color: #eff6ff !important;
+  color: #1e3a8a !important;
+  direction: ltr !important;
+  text-align: left !important;
+}
+.dark #tasbeehView .latin-text-style {
+  background-color: #1e293b !important;
+  color: #f1f5f9 !important;
+  border-color: #64748b !important;
+}
+.dark #tasbeehView .es-text-style {
+  background-color: #172554 !important;
+  color: #dbeafe !important;
+  border: 1px solid #1d4ed8 !important;
+}
+.dark #tasbeehView h3,
+.dark #tasbeehView .dir-rtl {
+  color: #f1f5f9 !important;
+}
+.dark #tasbeehView button:not([onclick*="incrementTasbeeh"]) {
+  color: #e2e8f0 !important;
+}
+.dark #tasbeehView button[onclick*="resetSingleTasbeeh"] {
+  background-color: #334155 !important;
+  border: 1px solid #64748b !important;
+  border-radius: 0.75rem !important;
+  padding: 0.5rem 0.75rem !important;
+}
