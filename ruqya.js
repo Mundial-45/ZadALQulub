@@ -36,6 +36,10 @@ const ruqyahData = [
             explanationEs: "¡Dios! No existe nada ni nadie con derecho a ser adorado excepto Él, el Viviente [Eterno], el Sustentador [y Gobernador de toda la creación]. No Lo afectan somnolencia ni sueño. Suyo es cuanto hay en los cielos y la Tierra. ¿Quién podrá interceder ante Él si no es con Su permiso? Conoce el pasado y el futuro [lo manifiesto y lo oculto] y nadie abarca de Su conocimiento salvo lo que Él quiere. El escabel de Su Trono abarca los cielos y la Tierra, y la custodia [y mantenimiento] de ambos no Lo agobia. Y Él es el Sublime, el Grandioso. (Ayat al-Kursi; traducción de Isa García)",
             count: 1,
             maxCount: 1
+            audioUrls: [
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002255.mp3"
+            ],
+            note: "سورة البقرة الآية 255",
           },
           {
             text: "﴿ءَامَنَ ٱلرَّسُولُ بِمَآ أُنزِلَ إِلَيۡهِ مِن رَّبِّهِۦ وَٱلۡمُؤۡمِنُونَۚ كُلٌّ ءَامَنَ بِٱللَّهِ وَمَلَٰٓئِكَتِهِۦ وَكُتُبِهِۦ وَرُسُلِهِۦ لَا نُفَرِّقُ بَيۡنَ أَحَدٖ مِّن رُّسُلِهِۦۚ وَقَالُواْ سَمِعۡنَا وَأَطَعۡنَاۖ غُفۡرَانَكَ رَبَّنَا وَإِلَيۡكَ ٱلۡمَصِيرُ۝ لَا يُكَلِّفُ ٱللَّهُ نَفۡسًا إِلَّا وُسۡعَهَاۚ لَهَا مَا كَسَبَتۡ وَعَلَيۡهَا مَا ٱكۡتَسَبَتۡۗ رَبَّنَا لَا تُؤَاخِذۡنَآ إِن نَّسِينَآ أَوۡ أَخۡطَأۡنَاۚ رَبَّنَا وَلَا تَحۡمِلۡ عَلَيۡنَآ إِصۡرٗا كَمَا حَمَلۡتَهُۥ عَلَى ٱلَّذِينَ مِن قَبۡلِنَاۚ رَبَّنَا وَلَا تُحَمِّلۡنَا مَا لَا طَاقَةَ لَنَا بِهِۦۖ وَٱعۡفُ عَنَّا وَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَآۚ أَنتَ مَوۡلَىٰنَا فَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ۝﴾",
@@ -43,32 +47,57 @@ const ruqyahData = [
             explanationEs: "El Mensajero cree en lo que le ha sido revelado por su Señor, y lo mismo hacen los creyentes. Todos creen en Dios, en Sus ángeles, en Sus Libros y en Sus Mensajeros. No hacemos diferencia entre ninguno de Sus Mensajeros. Y dicen: “Oímos y obedecemos. Perdónanos, Señor nuestro, pues ante Ti retornaremos”. Dios no exige a nadie por encima de sus posibilidades; a su favor tendrá el bien que haga, y en su contra tendrá el mal que haga. “¡Señor nuestro! No nos castigues si olvidamos o cometemos un error. ¡Señor nuestro! No nos impongas una carga como la que impusiste a quienes nos precedieron. ¡Señor nuestro! No nos impongas algo superior a lo que podamos soportar. Perdónanos, absuélvenos y ten misericordia de nosotros. Tú eres nuestro Protector, concédenos el triunfo sobre los que niegan la verdad”. (Al-Baqarah 2:285-286; traducción de Isa García)",
             count: 1,
             maxCount: 1,
-            audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/002285.mp3", "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/002286.mp3"]
-          },
+            audioUrls: [
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002285.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002286.mp3"
+            ],
+            note: "سورة البقرة الآيات 285-286",
+            },
           {
             text: "﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ قُلۡ هُوَ ٱللَّهُ أَحَدٌ۝ ٱللَّهُ ٱلصَّمَدُ۝لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ۝ وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ۝﴾",
             latin: "Bismillāhir-Raḥmānir-Raḥīm. Qul Huwallāhu Aḥad. Allāhuṣ-Ṣamad. Lam yalid wa lam yūlad. Wa lam yakun lahū kufuwan aḥad.",
             explanationEs: "En el nombre de Dios, el Compasivo, el Misericordioso. Di: “Él es Dios, Uno. Dios, el Absoluto. No ha engendrado ni ha sido engendrado. Y no hay nada ni nadie que sea semejante a Él”. (Sura Al-Ijlas; traducción de Isa García)",
             count: 3,
             maxCount: 3,
-            audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/112001.mp3", "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/112002.mp3", "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/112003.mp3", "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/112004.mp3"]
-          },
+            audioUrls: [
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112001.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112002.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112003.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112004.mp3"
+            ],
+            note: "سورة الإخلاص الآيات 1-4",
+            },
           {
             text: "﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ۝مِن شَرِّ مَا خَلَقَ۝وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ۝ وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِي ٱلۡعُقَدِ۝وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ۝﴾",
             latin: "Bismillāhir-Raḥmānir-Raḥīm. Qul a‘ūdhu bi-Rabbil-falaq. Min sharri mā khalaq. Wa min sharri ghāsiqin idhā waqab. Wa min sharrin-naffāthāti fīl-‘uqad. Wa min sharri ḥāsidin idhā ḥasad.",
             explanationEs: "En el nombre de Dios, el Compasivo, el Misericordioso. Di: “Me refugio en el Señor del amanecer, de todo el mal que existe en lo que Él creó, del mal de la oscuridad de la noche cuando se extiende, del mal de las [hechiceras] sopladoras de nudos, y del mal del envidioso cuando envidia”. (Sura Al-Falaq; traducción de Isa García)",
             count: 3,
             maxCount: 3,
-            audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/113001.mp3", "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/113002.mp3", "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/113003.mp3", "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/113004.mp3", "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/113005.mp3"]
-          },
+            audioUrls: [
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113001.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113002.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113003.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113004.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113005.mp3"
+            ],
+            note: "سورة الفلق الآيات 1-5",
+            },
           {
             text: "﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ۝ مَلِكِ ٱلنَّاسِ۝ إِلَٰهِ ٱلنَّاسِ۝ مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ۝ ٱلَّذِي يُوَسۡوِسُ فِي صُدُورِ ٱلنَّاسِ۝ مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ۝﴾",
             latin: "Bismillāhir-Raḥmānir-Raḥīm. Qul a‘ūdhu bi-Rabbin-nās. Malikin-nās. Ilāhin-nās. Min sharril-waswāsil-khannās. Alladhī yuwaswisu fī ṣudūrin-nās. Minal-jinnati wan-nās.",
             explanationEs: "En el nombre de Dios, el Compasivo, el Misericordioso. Di: “Me refugio en el Señor de los seres humanos, el Soberano de los seres humanos, el Dios de los seres humanos, del mal del susurrador que huye [cada vez que Dios es mencionado], que susurra en los corazones de los seres humanos, y existe entre los yinnes y entre los seres humanos”. (Sura An-Nas; traducción de Isa García)",
             count: 3,
             maxCount: 3,
-            audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/114001.mp3", "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/114002.mp3", "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/114003.mp3", "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/114004.mp3", "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/114005.mp3", "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/114006.mp3"]
-          },
+            audioUrls: [
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114001.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114002.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114003.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114004.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114005.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114006.mp3"
+            ],
+            note: "سورة الناس الآيات 1-6",
+            },
           {
             text: "اللَّهُمَّ رَبَّ النَّاسِ، أَذْهِبِ الْبَاسَ، اشْفِ وَأَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ، شِفَاءً لَا يُغَادِرُ سَقَمًا",
             latin: "Allāhumma Rabban-nās, adhhibil-bās, ishfi wa Antash-Shāfī, lā shifā'a illā shifā'uk, shifā'an lā yughādiru saqamā.",
@@ -272,9 +301,11 @@ const ruqyahData = [
             count: 1,
             maxCount: 1,
             audioUrls: [
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/017045.mp3"
-            ]
-          },
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/017045.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/017046.mp3"
+            ],
+            note: "سورة الإسراء الآيات 45-46",
+            },
           {
             text: "﴿وَأَلۡقِ مَا فِي يَمِينِكَ تَلۡقَفۡ مَا صَنَعُوٓاْۖ إِنَّمَا صَنَعُواْ كَيۡدُ سَٰحِرٖۖ وَلَا يُفۡلِحُ ٱلسَّاحِرُ حَيۡثُ أَتَىٰ۝﴾",
             latin: "Innamā ṣana‘ū kaydu sāḥirin wa lā yufliḥus-sāḥiru ḥaythu atā.",
@@ -282,9 +313,10 @@ const ruqyahData = [
             count: 1,
             maxCount: 1,
             audioUrls: [
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/020069.mp3"
-            ]
-          },
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/020069.mp3"
+            ],
+            note: "سورة طه الآية 69",
+            },
           {
             text: "﴿وَٱلصَّٰٓفَّٰتِ صَفّٗا۝ فَٱلزَّٰجِرَٰتِ زَجۡرٗا۝ فَٱلتَّٰلِيَٰتِ ذِكۡرًا۝ إِنَّ إِلَٰهَكُمۡ لَوَٰحِدٞ۝ رَّبُّ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ وَمَا بَيۡنَهُمَا وَرَبُّ ٱلۡمَشَٰرِقِ۝ إِنَّا زَيَّنَّا ٱلسَّمَآءَ ٱلدُّنۡيَا بِزِينَةٍ ٱلۡكَوَاكِبِ۝ وَحِفۡظٗا مِّن كُلِّ شَيۡطَٰنٖ مَّارِدٖ۝ لَّا يَسَّمَّعُونَ إِلَى ٱلۡمَلَإِ ٱلۡأَعۡلَىٰ وَيُقۡذَفُونَ مِن كُلِّ جَانِبٖ۝دُحُورٗاۖ وَلَهُمۡ عَذَابٞ وَاصِبٌ۝ إِلَّا مَنۡ خَطِفَ ٱلۡخَطۡفَةَ فَأَتۡبَعَهُۥ شِهَابٞ ثَاقِبٞ۝﴾",
             latin: "Was-ṣāffāti ṣaffā (1), fal-zājirāti zajrā (2), fal-tāliyāti dhikrā (3), inna ilāhakum lawāḥid (4), rabbus-samāwāti wal-arḍi wa mā baynahumā wa rabbul-mashāriq (5), innā zayyannas-samā'ad-dun-yā bi-zīnatil-kawākib (6), wa ḥifẓan min kulli shayṭānin mārid (7), lā yassamma‘ūna ilal-malail-a‘lā wa yuq-dhafūna min kulli jānib (8), duḥūran wa lahum ‘adhābun wāṣib (9), illā man khaṭifal-khaṭfata fa-atba‘ahu shihābun thāqib (10).",
@@ -292,18 +324,19 @@ const ruqyahData = [
             count: 1,
             maxCount: 1,
             audioUrls: [
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/037001.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/037002.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/037003.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/037004.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/037005.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/037006.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/037007.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/037008.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/037009.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/037010.mp3"
-            ]
-          },
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037001.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037002.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037003.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037004.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037005.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037006.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037007.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037008.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037009.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037010.mp3"
+            ],
+            note: "سورة الصافات الآيات 1-10",
+            },
           {
             text: "﴿لَوۡ أَنزَلۡنَا هَٰذَا ٱلۡقُرۡءَانَ عَلَىٰ جَبَلٖ لَّرَأَيۡتَهُۥ خَٰشِعٗا مُّتَصَدِّعٗا مِّنۡ خَشۡيَةِ ٱللَّهِۚ وَتِلۡكَ ٱلۡأَمۡثَٰلُ نَضۡرِبُهَا لِلنَّاسِ لَعَلَّهُمۡ يَتَفَكَّرُونَ۝ هُوَ ٱللَّهُ ٱلَّذِي لَآ إِلَٰهَ إِلَّا هُوَۖ عَٰلِمُ ٱلۡغَيۡبِ وَٱلشَّهَٰدَةِۖ هُوَ ٱلرَّحۡمَٰنُ ٱلرَّحِيمُ۝ هُوَ ٱللَّهُ ٱلَّذِي لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡمَلِكُ ٱلۡقُدُّوسُ ٱلسَّلَٰمُ ٱلۡمُؤۡمِنُ ٱلۡمُهَيۡمِنُ ٱلۡعَزِيزُ ٱلۡجَبَّارُ ٱلۡمُتَكَبِّرُۚ سُبۡحَٰنَ ٱللَّهِ عَمَّا يُشۡرِكُونَ۝ هُوَ ٱللَّهُ ٱلۡخَٰلِقُ ٱلۡبَارِئُ ٱلۡمُصَوِّرُۖ لَهُ ٱلۡأَسۡمَآءُ ٱلۡحُسۡنَىٰۚ يُسَبِّحُ لَهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِۖ وَهُوَ ٱلۡعَزِيزُ ٱلۡحَكِيمُ۝﴾",
             latin: "Law ananzalnā hādhā-l-qur'āna ‘alā jabalin la-ra'aytahu khāshi‘an mutaṣaddi‘an min khashyati-llāhi, wa til-kal-amthālu naḍribuhā lil-nāsi la‘allahum yatafakkarūna (21). Huwa-llāhu-lladhī lā ilāha illā huwa, ‘ālimu-l-ghaybi wa-sh-shahādati, huwa-r-raḥmānu-r-raḥīmu (22). Huwa-llāhu-lladhī lā ilāha illā huwa-l-maliku-l-quddūsu-s-salāmu-l-mu'minu-l-muhayminu-l-‘azīzu-l-jabbāru-l-mutakabbiru, subḥāna-llāhi ‘ammā yushrikūn (23). Huwa-llāhu-l-khāliku-l-bāri'u-l-muṣawwiru, lahu-l-asmāu-l-ḥusnā, yusabbiḥu lahu mā fī-s-samāwāti wa-l-arḍi, wa huwa-l-‘azīzu-l-ḥakīm (24).",
@@ -311,12 +344,13 @@ const ruqyahData = [
             count: 1,
             maxCount: 1,
             audioUrls: [
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/059021.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/059022.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/059023.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/059024.mp3"
-            ]
-          },
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/059021.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/059022.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/059023.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/059024.mp3"
+            ],
+            note: "سورة الحشر الآيات 21-24",
+            },
           {
             text: "﴿تَبَٰرَكَ ٱلَّذِي بِيَدِهِ ٱلۡمُلۡكُ وَهُوَ عَلَىٰ كُلِّ شَيۡءٖ قَدِيرٌ۝ ٱلَّذِي خَلَقَ ٱلۡمَوۡتَ وَٱلۡحَيَوٰةَ لِيَبۡلُوَكُمۡ أَيُّكُمۡ أَحۡسَنُ عَمَلٗاۚ وَهُوَ ٱلۡعَزِيزُ ٱلۡغَفُورُ۝ ٱلَّذِي خَلَقَ سَبۡعَ سَمَٰوَٰتٖ طِبَاقٗاۖ مَّا تَرَىٰ فِي خَلۡقِ ٱلرَّحۡمَٰنِ مِن تَفَٰوُتٖۖ فَٱرۡجِعِ ٱلۡبَصَرَ هَلۡ تَرَىٰ مِن فُطُورٖ۝ ثُمَّ ٱرۡجِعِ ٱلۡبَصَرَ كَرَّتَيۡنِ يَنقَلِبۡ إِلَيۡكَ ٱلۡبَصَرُ خَاسِئٗا وَهُوَ حَسِيرٞ۝﴾",
             latin: "Tabārakal-ladhī biyadihil-mulku wa huwa ‘alā kulli shayʾin qadīr (1). Al-ladhī khalaqal-mawta wal-ḥayāta li-yabluwakum ayyukum aḥsanu ‘amalā, wa huwal-‘azīzul-ghafūr (2). Al-ladhī khalaqa sab‘a samāwātin ṭibāqā, mā tarā fī khalqir-raḥmāni min tafāwut, farji‘il-baṣara hal tarā min fuṭūr (3). Thummar-ji‘il-baṣara karratayni yanqalib ilaykal-baṣaru khāsi'an wa huwa ḥasīr (4).",
@@ -324,13 +358,14 @@ const ruqyahData = [
             count: 1,
             maxCount: 1,
             audioUrls: [
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/067001.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/067002.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/067003.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/067004.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/067005.mp3"
-            ]
-          },
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/067001.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/067002.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/067003.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/067004.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/067005.mp3"
+            ],
+            note: "سورة الملك الآيات 1-5",
+            },
           {
             text: "﴿وَإِن يَكَادُ ٱلَّذِينَ كَفَرُواْ لَيُزۡلِقُونَكَ بِأَبۡصَٰرِهِمۡ لَمَّا سَمِعُواْ ٱلذِّكۡرَ وَيَقُولُونَ إِنَّهُۥ لَمَجۡنُونٞ۝ وَمَا هُوَ إِلَّا ذِكۡرٞ لِّلۡعَٰلَمِينَ۝﴾",
             latin: "Wa in yakādul-ladhīna kafarū layuzliqūnaka bi-abṣārihim lammā sami‘u-dh-dhikra wa yaqūlūna innahu lamajnūn (51). Wa mā huwa illā dhikrun lil-‘ālamīn (52).",
@@ -338,10 +373,11 @@ const ruqyahData = [
             count: 1,
             maxCount: 1,
             audioUrls: [
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/068051.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/068052.mp3"
-            ]
-          },
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/068051.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/068052.mp3"
+            ],
+            note: "سورة القلم الآيات 51-52",
+            },
           {
             text: "﴿قُلۡ أُوحِيَ إِلَيَّ أَنَّهُ ٱسۡتَمَعَ نَفَرٞ مِّنَ ٱلۡجِنِّ فَقَالُوٓاْ إِنَّا سَمِعۡنَا قُرۡءَانًا عَجَبٗا۝ يَهۡدِيٓ إِلَى ٱلرُّشۡدِ فَـَٔامَنَّا بِهِۦۖ وَلَن نُّشۡرِكَ بِرَبِّنَآ أَحَدٗا۝﴾",
             latin: "Qul ūḥiya ilayya annahū istama‘a nafarun minal-jinni faqālū innā sami‘nā qur'ānan ‘ajabā (1). Yahdī ilar-rushdi fa-āmannā bihi wa lan nushrika bi-rabbină aḥadā (2).",
@@ -349,11 +385,12 @@ const ruqyahData = [
             count: 1,
             maxCount: 1,
             audioUrls: [
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/072001.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/072002.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/072003.mp3"
-            ]
-          },
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/072001.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/072002.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/072003.mp3"
+            ],
+            note: "سورة الجن الآيات 1-3",
+            },
           {
             text: "﴿وَقُل رَّبِّ أَعُوذُ بِكَ مِنۡ هَمَزَٰتِ ٱلشَّيَٰطِينِ۝وَأَعُوذُ بِكَ رَبِّ أَن يَحۡضُرُونِ۝﴾",
             latin: "Wa qul Rabbi a‘ūdhu bika min hamazātish-shayāṭīn (97). Wa a‘ūdhu bika Rabbi an yaḥḍurūn (98).",
@@ -361,10 +398,11 @@ const ruqyahData = [
             count: 1,
             maxCount: 1,
             audioUrls: [
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/023097.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/023098.mp3"
-            ]
-          },
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023097.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023098.mp3"
+            ],
+            note: "سورة المؤمنون الآيات 97-98",
+            },
           {
             text: "﴿وَإِذۡ صَرَفۡنَآ إِلَيۡكَ نَفَرٗا مِّنَ ٱلۡجِنِّ يَسۡتَمِعُونَ ٱلۡقُرۡءَانَ فَلَمَّا حَضَرُوهُ قَالُوٓاْ أَنصِتُواْۖ فَلَمَّا قُضِيَ وَلَّوۡاْ إِلَىٰ قَوۡمِهِم مُّنذِرِينَ۝ قَالُواْ يَٰقَوۡمَنَآ إِنَّا سَمِعۡنَا كِتَٰبًا أُنزِلَ مِنۢ بَعۡدِ مُوسَىٰ مُصَدِّقٗا لِّمَا بَيۡنَ يَدَيۡهِ يَهۡدِيٓ إِلَى ٱلۡحَقِّ وَإِلَىٰ طَرِيقٖ مُّسۡتَقِيمٖ۝ يَٰقَوۡمَنَآ أَجِيبُواْ دَاعِيَ ٱللَّهِ وَءَامِنُواْ بِهِۦ يَغۡفِرۡ لَكُم مِّن ذُنُوبِكُمۡ وَيُجِرۡكُم مِّنۡ عَذَابٍ أَلِيمٖ۝ وَمَن لَّا يُجِبۡ دَاعِيَ ٱللَّهِ فَلَيۡسَ بِمُعۡجِزٖ فِي ٱلۡأَرۡضِ وَلَيۡسَ لَهُۥ مِن دُونِهِۦٓ أَوۡلِيَآءُۚ أُوْلَٰٓئِكَ فِي ضَلَٰلٖ مُّبِينٍ۝﴾",
             latin: "Wa idh ṣarafnā ilayka nafarin minal-jinni yastami‘ūnal-qur'āna lammā ḥaḍarūhu qālū anṣitū lammā quḍiya wallaw ilā qawmihim mundhirīn.",
@@ -372,12 +410,13 @@ const ruqyahData = [
             count: 1,
             maxCount: 1,
             audioUrls: [
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/046029.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/046030.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/046031.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/046032.mp3"
-            ]
-          },
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/046029.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/046030.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/046031.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/046032.mp3"
+            ],
+            note: "سورة الأحقاف الآيات 29-32",
+            },
           {
             text: "﴿يسٓ۝ وَٱلۡقُرۡءَانِ ٱلۡحَكِيمِ۝ إِنَّكَ لَمِنَ ٱلۡمُرۡسَلِينَ۝ عَلَىٰ صِرَٰطٖ مُّسۡتَقِيمٖ۝ تَنزِيلَ ٱلۡعَزِيزِ ٱلرَّحِيمِ۝ لِتُنذِرَ قَوۡمٗا مَّآ أُنذِرَ ءَابَآؤُهُمۡ فَهُمۡ غَٰفِلُونَ۝ لَقَدۡ حَقَّ ٱلۡقَوۡلُ عَلَىٰٓ أَكۡثَرِهِمۡ فَهُمۡ لَا يُؤۡمِنُونَ۝ إِنَّا جَعَلۡنَا فِيٓ أَعۡنَٰقِهِمۡ أَغۡلَٰلٗا فَهِيَ إِلَى ٱلۡأَذۡقَانِ فَهُم مُّقۡمَحُونَ۝ وَجَعَلۡنَا مِنۢ بَيۡنِ أَيۡدِيهِمۡ سَدّٗا وَمِنۡ خَلۡفِهِمۡ سَدّٗا فَأَغۡشَيۡنَٰهُمۡ فَهُمۡ لَا يُبۡصِرُونَ۝ وَسَوَآءٌ عَلَيۡهِمۡ ءَأَنذَرۡتَهُمۡ أَمۡ لَمۡ تُنذِرۡهُمۡ لَا يُؤۡمِنُونَ۝﴾",
             latin: "Yāsīn (1). Wal-Qur'ānil-ḥakīm (2). Innaka laminal-mursalin (3). ‘Alā ṣirāṭin mustaqīm (4). Tanzīlal-‘azīzir-raḥīm (5). Litundira qawman mā undira ābā'uhum fahum ghāfilūn (6). Laqad ḥaqqal-qawlu ‘alā aktharihim fahum lā yu'minūn (7). Innā ja‘alnā fī a‘nāqihim aghlālan fahiya ilal-adhqāni fahum muqmaḥūn (8). Wa ja‘alnā min bayni aydīhim saddan wa min khalfihim saddan fa-aghshaynāhum fahum lā yubṣirūn (9).",
@@ -385,16 +424,30 @@ const ruqyahData = [
             count: 1,
             maxCount: 1,
             audioUrls: [
-              "https://server9.mp3quran.net/omar_warsh/036.mp3"
-            ]
-          },
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036001.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036002.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036003.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036004.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036005.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036006.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036007.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036008.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036009.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036010.mp3"
+            ],
+            note: "سورة يس الآيات 1-10",
+            },
           {
             text: "﴿وَإِمَّا يَنزَغَنَّكَ مِنَ ٱلشَّيۡطَٰنِ نَزۡغٞ فَٱسۡتَعِذۡ بِٱللَّهِۖ إِنَّهُۥ هُوَ ٱلسَّمِيعُ ٱلۡعَلِيمُ۝﴾",
             latin: "Wa immā yanzaghannaka minash-shayṭāni nazghun fasta‘idh billāh, innahū Huwas-Samī‘ul-‘Alīm.",
             explanationEs: "Y si una instigación del demonio te incita, busca refugio en Dios; pues Él es el Omnieyente, el Omnisciente.",
-            audioUrl: "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/007200.mp3",
+            
             count: 1,
             maxCount: 1
+            audioUrls: [
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007200.mp3"
+            ],
+            note: "سورة الأعراف الآية 200",
           },
           {
             text: "﴿فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ۝ فِيهِنَّ قَٰصِرَٰتُ ٱلطَّرۡفِ لَمۡ يَطۡمِثۡهُنَّ إِنسٞ قَبۡلَهُمۡ وَلَا جَآنّٞ۝ فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ۝﴾",
@@ -403,47 +456,76 @@ const ruqyahData = [
             count: 1,
             maxCount: 1,
             audioUrls: [
-              "https://server9.mp3quran.net/omar_warsh/055.mp3"
-            ]
-          },
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/055046.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/055047.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/055048.mp3"
+            ],
+            note: "سورة الرحمن الآيات 46-48",
+            },
           {
             text: "﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ قُلۡ يَٰٓأَيُّهَا ٱلۡكَٰفِرُونَ۝لَآ أَعۡبُدُ مَا تَعۡبُدُونَ۝ وَلَآ أَنتُمۡ عَٰبِدُونَ مَآ أَعۡبُدُ۝وَلَآ أَنَا۠ عَابِدٞ مَّا عَبَدتُّمۡ۝ وَلَآ أَنتُمۡ عَٰبِدُونَ مَآ أَعۡبُدُ۝لَكُمۡ دِينُكُمۡ وَلِيَ دِينِ۝﴾",
             latin: "Bismillāhir-Raḥmānir-Raḥīm. Qul yā ayyuhal-kāfirūn (1). Lā aʿbudu mā taʿbudūn (2). Wa lā antum ʿābidūna mā aʿbud (3). Wa lā anā ʿābidun mā ʿabadtum (4). Wa lā antum ʿābidūna mā aʿbud (5). Lakum dīnukum wa liya dīn (6).",
             explanationEs: "En el nombre de Dios, el Compasivo, el Misericordioso. Di: «¡Oh, ustedes que rechazan la verdad! No adoro lo que ustedes adoran, ni ustedes adoran lo que yo adoro. Yo no adoraré lo que ustedes adoran, ni ustedes adorarán lo que yo adoro. Ustedes tienen su religión y yo tengo la mía».",
-            audioUrls: [
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/109001.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/109002.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/109003.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/109004.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/109005.mp3",
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/109006.mp3"
-            ],
+            
             count: 1,
             maxCount: 1
+            audioUrls: [
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/109001.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/109002.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/109003.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/109004.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/109005.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/109006.mp3"
+            ],
+            note: "سورة الكافرون الآيات 1-6",
           },
           {
             text: "﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ قُلۡ هُوَ ٱللَّهُ أَحَدٌ۝ ٱللَّهُ ٱلصَّمَدُ۝لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ۝ وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ۝﴾",
             latin: "Bismillāhir-Raḥmānir-Raḥīm. Qul Huwallāhu Aḥad (1). Allāhuṣ-Ṣamad (2). Lam yalid wa lam yūlad (3). Wa lam yakun lahū kufuwan aḥad (4).",
             explanationEs: "En el nombre de Dios, el Compasivo, el Misericordioso. Di: «Él es Dios, Uno. Dios, el Absoluto [de Quien todos necesitan y Él no necesita de nadie]. No engendró ni fue engendrado. Y no hay nada ni nadie que sea semejante a Él».",
-            audioUrl: "https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/112.mp3",
+            
             count: 3,
             maxCount: 3
+            audioUrls: [
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112001.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112002.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112003.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112004.mp3"
+            ],
+            note: "سورة الإخلاص الآيات 1-4",
           },
           {
             text: "﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ۝مِن شَرِّ مَا خَلَقَ۝وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ۝ وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِي ٱلۡعُقَدِ۝وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ۝﴾",
             latin: "Bismillāhir-Raḥmānir-Raḥīm. Qul a‘ūdhu bi-Rabbil-falaq (1). Min sharri mā khalaq (2). Wa min sharri ghāsiqin idhā waqab (3). Wa min sharri-n-naffāthāti fil-‘uqud (4). Wa min sharri ḥāsidin idhā ḥasad (5).",
             explanationEs: "En el nombre de Dios, el Compasivo, el Misericordioso. Di: «Me refugio en el Señor del alba, del mal de lo que ha creado, del mal de la oscuridad cuando se extiende, del mal de quienes soplan sobre los nudos [practicando hechicería] y del mal del envidioso cuando envidia».",
-            audioUrl: "https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/113.mp3",
+            
             count: 3,
             maxCount: 3
+            audioUrls: [
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113001.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113002.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113003.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113004.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113005.mp3"
+            ],
+            note: "سورة الفلق الآيات 1-5",
           },
           {
             text: "﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ۝ مَلِكِ ٱلنَّاسِ۝ إِلَٰهِ ٱلنَّاسِ۝ مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ۝ ٱلَّذِي يُوَسۡوِسُ فِي صُدُورِ ٱلنَّاسِ۝ مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ۝﴾",
             latin: "Bismillāhir-Raḥmānir-Raḥīm. Qul a‘ūdhu bi-Rabbin-nās (1). Malikin-nās (2). Ilāhin-nās (3). Min sharril-waswāsil-khannās (4). Alladhī yuwaswisu fī ṣudūrin-nās (5). Minal-jinnati wan-nās (6).",
             explanationEs: "En el nombre de Dios, el Compasivo, el Misericordioso. Di: «Me refugio en el Señor de los seres humanos, el Rey de los seres humanos, el Dios de los seres humanos, del mal del susurrador que se oculta, que susurra en los corazones de los seres humanos, sea [el susurrador] de entre los yinn o de entre los seres humanos».",
-            audioUrl: "https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/114.mp3",
+            
             count: 3,
             maxCount: 3
+            audioUrls: [
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114001.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114002.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114003.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114004.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114005.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114006.mp3"
+            ],
+            note: "سورة الناس الآيات 1-6",
           },
           {
             text: "أَذْهِبِ الْبَاسَ رَبَّ النَّاسِ، اشْفِ وَأَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ، شِفَاءً لَا يُغَادِرُ سَقَمًا",
