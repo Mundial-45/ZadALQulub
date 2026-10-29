@@ -671,3 +671,32 @@ button[onclick="jumpToInputPage()"]:hover {
   #homeView .home-category-card.home-category-wide { min-height:86px !important; padding:0.5rem !important; }
   #homeView .home-category-card [id$="Sub"] { font-size:0.6rem !important; }
 }
+
+
+
+/* Final home layout: full-width Quran, two paired rows, full-width Tasbeeh/Favorites. */
+#homeView .home-category-grid {
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;
+  grid-auto-flow:row !important;
+  gap:0.7rem !important;
+}
+#homeView .home-category-grid > button { grid-column:auto !important; min-width:0 !important; }
+#homeView .home-category-grid > button:nth-child(1),
+#homeView .home-category-grid > button:nth-child(6),
+#homeView .home-category-grid > button:nth-child(7) {
+  grid-column:1 / -1 !important;
+}
+#homeView .home-category-card {
+  border-radius:1rem !important;
+  overflow:hidden;
+}
+#homeView .home-category-grid > button:nth-child(1),
+#homeView .home-category-grid > button:nth-child(6),
+#homeView .home-category-grid > button:nth-child(7) {
+  flex-direction:row !important;
+  justify-content:center !important;
+}
+@media (min-width:700px) {
+  #homeView .home-category-grid { grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important; gap:0.9rem !important; }
+}
