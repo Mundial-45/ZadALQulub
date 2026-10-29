@@ -700,3 +700,37 @@ button[onclick="jumpToInputPage()"]:hover {
 @media (min-width:700px) {
   #homeView .home-category-grid { grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important; gap:0.9rem !important; }
 }
+
+
+/* Compact audio player: reduce vertical footprint on phones and tablets. */
+.audio-player-compact {
+  padding: .35rem .55rem !important;
+  margin-top: .4rem !important;
+  margin-bottom: .4rem !important;
+}
+.audio-player-compact input[type="range"] {
+  min-width: 0;
+  height: 1rem;
+  margin: 0;
+}
+.audio-player-compact .audio-control-button {
+  min-width: 1.8rem;
+  min-height: 1.8rem;
+  padding: .15rem .35rem;
+  line-height: 1;
+}
+.audio-player-compact .audio-control-play {
+  width: 2rem !important;
+  height: 2rem !important;
+  min-width: 2rem;
+  min-height: 2rem;
+  line-height: 1;
+}
+.audio-player-compact .audio-time {
+  white-space: nowrap;
+  min-width: 2rem;
+}
+.audio-player-compact .flex.items-center.justify-center {
+  margin-top: .15rem !important;
+  gap: .55rem !important;
+}
