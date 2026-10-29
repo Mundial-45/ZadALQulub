@@ -1096,10 +1096,13 @@ function renderGroupItems() {
     const isFav = favorites.includes(item.text);
     const isDone = currentCount === 0;
     const isRuqyahSection = currentSection === 'ruqyah';
+    const isMunajatSection = currentSection === 'munajat';
     const displayedItemNumber = Number(item.itemNumber) || (index + 1);
     const itemProgressStr = isRuqyahSection
       ? (isEs ? `Ruqyah n.º ${displayedItemNumber}` : `رقية رقم ${displayedItemNumber}`)
-      : t.itemProgress.replace('{current}', displayedItemNumber).replace('{total}', totalItems);
+      : isMunajatSection
+        ? (isEs ? `Munajat n.º ${displayedItemNumber}` : `مناجاة رقم ${displayedItemNumber}`)
+        : t.itemProgress.replace('{current}', displayedItemNumber).replace('{total}', totalItems);
 
     const card = document.createElement('div');
     card.id = `zikr-card-${index}`;
