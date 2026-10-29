@@ -751,7 +751,10 @@ function openItemEditor(index) {
   const existing = getPendingEdit(currentSection, currentGroup.id, index);
   const baseline = existing ? existing.originalItem : JSON.parse(JSON.stringify(currentGroup.items[index]));
   const draft = existing ? existing.updatedItem : JSON.parse(JSON.stringify(currentGroup.items[index]));
-  if (!Object.prototype.hasOwnProperty.call(draft, 'notes')) draft.notes = '';
+  // El nombre correcto del campo es "note", no "notes".
+  if (!Object.prototype.hasOwnProperty.call(draft, 'note')) draft.note = typeof draft.notes === 'string' ? draft.notes : '';
+  delete draft.notes;
+  // Mostrar estos campos en el editor sin obligar a guardarlos vacíos en los datos.
   if (!Object.prototype.hasOwnProperty.call(draft, 'audioUrl')) draft.audioUrl = '';
   if (!Object.prototype.hasOwnProperty.call(draft, 'audioUrls')) draft.audioUrls = [];
   itemEditorState = {
@@ -842,6 +845,14 @@ function buildEditedItem() {
       try { updated[key] = JSON.parse(control.value); } catch (error) { throw new Error('JSON inválido en la propiedad ' + key); }
     }
   });
+  // Los campos opcionales vacíos se muestran en el editor, pero no se guardan en el JS.
+  if (typeof updated.note === 'string' && !updated.note.trim()) delete updated.note;
+  if (typeof updated.audioUrl === 'string' && !updated.audioUrl.trim()) delete updated.audioUrl;
+  if (Array.isArray(updated.audioUrls)) {
+    updated.audioUrls = updated.audioUrls.map(url => typeof url === 'string' ? url.trim() : url).filter(Boolean);
+    if (!updated.audioUrls.length) delete updated.audioUrls;
+  }
+  delete updated.notes;
   return updated;
 }
 
