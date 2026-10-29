@@ -9,239 +9,183 @@ const adyaData = [
       "text": "﴿رَبَّنَآ ءَاتِنَا فِي ٱلدُّنۡيَا حَسَنَةٗ وَفِي ٱلۡأٓخِرَةِ حَسَنَةٗ وَقِنَا عَذَابَ ٱلنَّارِ۝﴾",
       "latin": "Rabbanā ātinā fid-dunyā ḥasanatan wa fil-ākhirati ḥasanatan wa qinā ‘adhāban-nār.",
       "explanationEs": "“¡Señor nuestro! Danos bienestar en esta vida y en la otra, y presérvanos del tormento del Fuego”.",
-      "note": "سورة البقرة - من الآية 201",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/002201.mp3"
-      ]
+      "note": "سورة البقرة الآية 201",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002201.mp3"]
     },
     {
       "text": "﴿قَالُواْ رَبَّنَآ أَفۡرِغۡ عَلَيۡنَا صَبۡرٗا وَثَبِّتۡ أَقۡدَامَنَا وَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ۝﴾",
       "latin": "Rabbanā afrigh ‘alaynā ṣabran wa thabbit aqdāmanā wanṣurnā ‘alal-qawmil-kāfirīn.",
       "explanationEs": "“¡Señor nuestro! Danos paciencia, mantennos firmes y concédenos la victoria sobre los que niegan la verdad”. ",
-      "note": "سورة البقرة - من الآية 250",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/002250.mp3"
-      ]
+      "note": "سورة البقرة الآية 250",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002250.mp3"]
     },
     {
       "text": "﴿رَبَّنَا لَا تُؤَاخِذۡنَآ إِن نَّسِينَآ أَوۡ أَخۡطَأۡنَاۚ رَبَّنَا وَلَا تَحۡمِلۡ عَلَيۡنَآ إِصۡرٗا كَمَا حَمَلۡتَهُۥ عَلَى ٱلَّذِينَ مِن قَبۡلِنَاۚ رَبَّنَا وَلَا تُحَمِّلۡنَا مَا لَا طَاقَةَ لَنَا بِهِۦۖ وَٱعۡفُ عَنَّا وَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَآۚ أَنتَ مَوۡلَىٰنَا فَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ۝﴾",
       "latin": "Rabbanā lā tu’ākhidhnā in nasīnā aw akhṭa’nā. Rabbanā wa lā taḥmil ‘alaynā iṣran kamā ḥamaltahū ‘alal-ladhīna min qablinā. Rabbanā wa lā tuḥammilnā mā lā ṭāqata lanā bih, wa‘fu ‘annā waghfir lanā warḥamnā. Anta Mawlānā fanṣurnā ‘alal-qawmil-kāfirīn.",
       "explanationEs": "«¡Señor nuestro! No nos castigues si olvidamos o cometemos un error. ¡Señor nuestro! No nos impongas una carga como la que impusiste a quienes nos precedieron. ¡Señor nuestro! No nos impongas algo superior a lo que podamos soportar. Perdónanos, absuélvenos y ten misericordia de nosotros. Tú eres nuestro Protector, concédenos el triunfo sobre los que niegan la verdad».",
-      "note": "سورة البقرة - من الآية 286",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/002286.mp3"
-      ]
+      "note": "سورة البقرة الآية 286",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002286.mp3"]
     },
     {
       text: "﴿رَبَّنَا لَا تُزِغۡ قُلُوبَنَا بَعۡدَ إِذۡ هَدَيۡتَنَا وَهَبۡ لَنَا مِن لَّدُنكَ رَحۡمَةًۚ إِنَّكَ أَنتَ ٱلۡوَهَّابُ۝﴾",
       latin: 'Rabbanā lā tuzigh qulūbanā ba‘da idh hadaytanā wa hab lanā min ladunka raḥmah, innaka Antal-Wahhāb.',
       explanationEs: '¡Señor nuestro! No permitas que nuestros corazones se desvíen después de habernos guiado y concédenos una misericordia de Tu parte. Tú eres el Dadivoso.',
-      note: 'سورة آل عمران - من الآية 8',
-            audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003008.mp3"]
-        },
+      "note": "سورة آل عمران الآية 8",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003008.mp3"]
+    },
     {
       "text": "﴿رَبَّنَآ إِنَّنَآ ءَامَنَّا فَٱغۡفِرۡ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ ٱلنَّارِ۝﴾",
       "latin": "Rabbanā innanā āmannā faghfir lanā dhunūbanā wa qinā ‘adhāban-nār.",
       "explanationEs": "“¡Señor nuestro! Creemos en Ti. Perdónanos nuestros pecados y líbranos del castigo del Fuego”.",
-      "note": "سورة آل عمران - من الآية 16",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003016.mp3"
-      ]
+      "note": "سورة آل عمران الآية 16",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003016.mp3"]
     },
     {
       "text": "﴿قَالَ رَبِّ هَبۡ لِي مِن لَّدُنكَ ذُرِّيَّةٗ طَيِّبَةًۖ إِنَّكَ سَمِيعُ ٱلدُّعَآءِ۝﴾",
       "latin": "Rabbi hab lī min ladunka dhurriyyatan ṭayyibah, innaka Samī‘ud-du‘ā’.",
       "explanationEs": "“¡Señor mío! Concédeme una descendencia piadosa, Tú escuchas los ruegos”.",
-      "note": "سورة آل عمران - من الآية 38",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003038.mp3"
-      ]
+      "note": "سورة آل عمران الآية 38",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003038.mp3"]
     },
     {
       text: "﴿رَبَّنَآ ءَامَنَّا بِمَآ أَنزَلۡتَ وَٱتَّبَعۡنَا ٱلرَّسُولَ فَٱكۡتُبۡنَا مَعَ ٱلشَّٰهِدِينَ۝﴾",
       latin: 'Rabbanā āmannā bimā anzalta wat-taba‘nar-Rasūla fak-tubnā ma‘ash-shāhidīn.',
       explanationEs: '¡Señor nuestro! Creemos en lo que has revelado y seguimos a Tu Profeta. Cuéntanos entre los que dan testimonio de fe”.',
-      note: 'سورة آل عمران - من الآية 53',
-            audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003053.mp3"]
-        },
+      "note": "سورة آل عمران الآية 53",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003053.mp3"]
+    },
     {
       "text": "﴿رَبَّنَا ٱغۡفِرۡ لَنَا ذُنُوبَنَا وَإِسۡرَافَنَا فِيٓ أَمۡرِنَا وَثَبِّتۡ أَقۡدَامَنَا وَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ۝﴾",
       "latin": "Rabbanā ghfir lanā dhunūbanā wa isrāfanā fī amrinā wa thabbit aqdāmanā wanṣurnā ‘alal-qawmil-kāfirīn.",
       "explanationEs": "“¡Señor nuestro! Perdona nuestros pecados y nuestros excesos. Afirma nuestros pasos y concédenos el triunfo sobre los que rechazan la verdad”.",
-      "note": "سورة آل عمران - من الآية 147",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003147.mp3"
-      ]
+      "note": "سورة آل عمران الآية 147",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003147.mp3"]
     },
     {
       "text": "﴿رَبَّنَا مَا خَلَقۡتَ هَٰذَا بَٰطِلٗا سُبۡحَٰنَكَ فَقِنَا عَذَابَ ٱلنَّارِ۝ رَبَّنَآ إِنَّكَ مَن تُدۡخِلِ ٱلنَّارَ فَقَدۡ أَخۡزَيۡتَهُۥۖ وَمَا لِلظَّٰلِمِينَ مِنۡ أَنصَارٖ۝ رَّبَّنَآ إِنَّنَا سَمِعۡنَا مُنَادِيٗا يُنَادِي لِلۡإِيمَٰنِ أَنۡ ءَامِنُواْ بِرَبِّكُمۡ فَـَٔامَنَّاۚ رَبَّنَا فَٱغۡفِرۡ لَنَا ذُنُوبَنَا وَكَفِّرۡ عَنَّا سَيِّـَٔاتِنَا وَتَوَفَّنَا مَعَ ٱلۡأَبۡرَارِ۝ رَبَّنَا وَءَاتِنَا مَا وَعَدتَّنَا عَلَىٰ رُسُلِكَ وَلَا تُخۡزِنَا يَوۡمَ ٱلۡقِيَٰمَةِۖ إِنَّكَ لَا تُخۡلِفُ ٱلۡمِيعَادَ۝﴾",
       "latin": "Rabbanā mā khalaqta hādhā bāṭilan, subḥānaka fa-qinā ‘adhāban-nār. Rabbanā innaka man tudkhilin-nāra faqad akhzaytahū wa mā liẓ-ẓālimīna min anṣār. Rabbanā innanā sami‘nā munādiyan yunādī lil-īmāni an āminū bi-rabbikum fa-āmannā. Rabbanā faghfir lanā dhunūbanā wa kaffir ‘annā sayyi’ātinā wa tawaffanā ma‘al-abrār. Rabbanā wa ātinā mā wa‘adtanā ‘alā rusulika wa lā tukhzinā yawmal-qiyāmah, innaka lā tukhliful-mī‘ād.",
       "explanationEs": "“¡Señor nuestro! No has creado todo esto sin un sentido. \n¡Glorificado seas! Presérvanos del castigo del Fuego. ¡Señor nuestro! A quien condenes al Fuego lo habrás deshonrado, \nporque los opresores no tendrán quién los auxilie. ¡Señor nuestro! Hemos oído a quien convocaba a la fe, diciendo: \n‘Crean en su Señor’, y creímos. ¡Señor nuestro! Perdona nuestros pecados, borra nuestras malas acciones y, al morir, \nreúnenos con los piadosos. ¡Señor nuestro! Concédenos lo que has prometido a través de Tus Mensajeros y no nos humilles el Día de la Resurrección. \nTú no faltas a Tu promesa”.",
-      "note": "سورة آل عمران - من الآيات 191-194",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003191.mp3",
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003192.mp3",
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003193.mp3",
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003194.mp3"
-      ]
+      "note": "سورة آل عمران الآيات 191-194",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003191.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003192.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003193.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003194.mp3"]
     },
     {
       "text": "﴿رَبَّنَا ظَلَمۡنَآ أَنفُسَنَا وَإِن لَّمۡ تَغۡفِرۡ لَنَا وَتَرۡحَمۡنَا لَنَكُونَنَّ مِنَ ٱلۡخَٰسِرِينَ۝﴾",
       "latin": "rabbanā ẓalamnā anfusanā wa illam taghfir lanā wa tarḥamnā lanakūnanna minal-khāsirīn.",
       "explanationEs": "“¡Señor nuestro! Hemos sido injustos con nosotros mismos; si no nos perdonas y no nos tienes misericordia, seremos de los perdidos”.",
-      "note": "سورة الأعراف - من الآية 23",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/007023.mp3"
-      ]
+      "note": "سورة الأعراف الآية 23",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007023.mp3"]
     },
     {
       "text": "﴿قَالُواْ رَبَّنَا لَا تَجۡعَلۡنَا مَعَ ٱلۡقَوۡمِ ٱلظَّٰلِمِينَ۝﴾",
       "latin": "Rabbanā lā taj‘alnā ma‘al-qawmiẓ-ẓālimīn.",
       "explanationEs": "“¡Señor nuestro! No nos juntes con la gente que cometió injusticias”.",
-      "note": "سورة الأعراف - من الآية 47",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/007047.mp3"
-      ]
+      "note": "سورة الأعراف الآية 47",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007047.mp3"]
     },
     {
       "text": "﴿رَبَّنَآ أَفۡرِغۡ عَلَيۡنَا صَبۡرٗا وَتَوَفَّنَا مُسۡلِمِينَ۝﴾",
       "latin": "Rabbanā afrigh ‘alaynā ṣabran wa tawaffanā muslimīn.",
       "explanationEs": "¡Señor nuestro! Danos paciencia y haznos morir musulmanes, sometidos a Ti”.",
-      "note": "سورة الأعراف - من الآية 126",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/007126.mp3"
-      ]
+      "note": "سورة الأعراف الآية 126",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007126.mp3"]
     },
     {
       "text": "﴿حَسۡبِيَ ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَۖ عَلَيۡهِ تَوَكَّلۡتُۖ وَهُوَ رَبُّ ٱلۡعَرۡشِ ٱلۡعَظِيمِ۝﴾",
       "latin": "ḥasbiyallāhu lā ilāha illā Hū, ‘alayhi tawakkaltu wa Huwa Rabbul-‘Arshil-‘Aẓīm.",
       "explanationEs": "“Me es suficiente con Allah, no hay otra divinidad salvo Él, a Él me encomiendo y Él es el Señor del Trono grandioso”.",
-      "note": "سورة التوبة - من الآية 129",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/009129.mp3"
-      ]
+      "note": "سورة التوبة الآية 129",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/009129.mp3"]
     },
     {
       "text": "﴿عَلَى ٱللَّهِ تَوَكَّلۡنَا رَبَّنَا لَا تَجۡعَلۡنَا فِتۡنَةٗ لِّلۡقَوۡمِ ٱلظَّٰلِمِينَ۝ وَنَجِّنَا بِرَحۡمَتِكَ مِنَ ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ۝﴾",
       "latin": "‘alallāhi tawakkalnā. Rabbanā lā taj‘alnā fitnatan lil-qawmiẓ-ẓālimīn, wa najjinā bi-raḥmatika minal-qawmil-kāfirīn.",
       "explanationEs": "«En Dios nos encomendamos. ¡Señor nuestro! No permitas que los opresores nos sometan a una prueba y sálvanos, por Tu misericordia, de la gente que se niega a creer».",
-      "note": "سورة يونس - من الآيات 85-86",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/010085.mp3",
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/010086.mp3"
-      ]
+      "note": "سورة يونس الآيات 85-86",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/010085.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/010086.mp3"]
     },
     {
       "text": "﴿رَبِّ إِنِّيٓ أَعُوذُ بِكَ أَنۡ أَسۡـَٔلَكَ مَا لَيۡسَ لِي بِهِۦ عِلۡمٞۖ وَإِلَّا تَغۡفِرۡ لِي وَتَرۡحَمۡنِيٓ أَكُن مِّنَ ٱلۡخَٰسِرِينَ۝﴾",
       "latin": "Rabbi innī a‘ūdhu bika an as’alaka mā laysa lī bihī ‘ilm, wa illā taghfir lī wa tarḥamnī akun minal-khāsirīn.",
       "explanationEs": "«¡Señor mío! Me refugio en Ti de pedirte algo de lo que no tengo conocimiento. Si no me perdonas y tienes misericordia de mí, seré de los perdedores».",
-      "note": "سورة هود - من الآية 47",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/011047.mp3"
-      ]
+      "note": "سورة هود الآية 47",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/011047.mp3"]
     },
     {
       "text": "﴿رَبِّ ٱجۡعَلۡنِي مُقِيمَ ٱلصَّلَوٰةِ وَمِن ذُرِّيَّتِيۚ رَبَّنَا وَتَقَبَّلۡ دُعَآءِ۝﴾",
       "latin": "Rabbij-‘alnī muqīmaṣ-ṣalāti wa min dhurriyyatī, Rabbanā wa taqabbal du‘ā’.",
       "explanationEs": "¡Señor mío! Haz que yo mantenga la oración y también parte de mi descendencia. ¡Señor nuestro! Acepta mi súplica.",
-      "note": "سورة إبراهيم - من الآية 40",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/014040.mp3"
-      ]
+      "note": "سورة إبراهيم الآية 40",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/014040.mp3"]
     },
     {
       "text": "﴿رَبَّنَا ٱغۡفِرۡ لِي وَلِوَٰلِدَيَّ وَلِلۡمُؤۡمِنِينَ يَوۡمَ يَقُومُ ٱلۡحِسَابُ۝﴾",
       "latin": "Rabbanāgh-fir lī wa li-wālidayya wa lil-mu’minīna yawma yaqūmul-ḥisāb.",
       "explanationEs": "¡Señor nuestro! Perdóname a mí, a mis padres y a los creyentes el Día en que se establezca el Juicio.",
-      "note": "سورة إبراهيم - من الآية 41",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/014041.mp3"
-      ]
+      "note": "سورة إبراهيم الآية 41",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/014041.mp3"]
     },
     {
       "text": "﴿رَّبِّ أَدۡخِلۡنِي مُدۡخَلَ صِدۡقٖ وَأَخۡرِجۡنِي مُخۡرَجَ صِدۡقٖ وَٱجۡعَل لِّي مِن لَّدُنكَ سُلۡطَٰنٗا نَّصِيرٗا۝﴾",
       "latin": "Rabbi adkhilnī mudkhala ṣidqin wa akhrijnī mukhraja ṣidqin waj‘al lī min ladunka sulṭānan-naṣīrā.",
       "explanationEs": "«¡Señor mío! Haz que mi entrada y mi salida sean sinceras, y concédeme una autoridad que me auxilie».",
-      "note": "سورة الإسراء - من الآية 80",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/017080.mp3"
-      ]
+      "note": "سورة الإسراء الآية 80",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/017080.mp3"]
     },
     {
       "text": "﴿رَبَّنَآ ءَاتِنَا مِن لَّدُنكَ رَحۡمَةٗ وَهَيِّئۡ لَنَا مِنۡ أَمۡرِنَا رَشَدٗا۝﴾",
       "latin": "Rabbanā ātinā min ladunka raḥmatan wa hayyi’ lanā min amrinā rashadā.",
       "explanationEs": "“¡Señor nuestro! Acógenos en Tu misericordia y concédenos que nuestra situación se solucione correctamente”.",
-      "note": "سورة الكهف - من الآية 10",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/018010.mp3"
-      ]
+      "note": "سورة الكهف الآية 10",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/018010.mp3"]
     },
     {
       "text": "﴿رَبِّ ٱشۡرَحۡ لِي صَدۡرِي۝وَيَسِّرۡ لِيٓ أَمۡرِي۝ وَٱحۡلُلۡ عُقۡدَةٗ مِّن لِّسَانِي۝يَفۡقَهُواْ قَوۡلِي۝﴾",
       "latin": "Rabbish-raḥ lī ṣadrī, wa yassir lī amrī, waḥ-lul ‘uqdatam-min-lisānī, yafqahū qawlī.",
       "explanationEs": "«¡Señor mío! Abre mi corazón, facilítame mi misión, desata el nudo de mi lengua para que comprendan mis palabras».",
-      "note": "سورة طه -من الآيات 25-28",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/020025.mp3",
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/020026.mp3",
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/020027.mp3",
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/020028.mp3"
-      ]
+      "note": "سورة طه الآيات 25-28",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/020025.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/020026.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/020027.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/020028.mp3"]
     },
     {
       "text": "﴿فَتَعَٰلَى ٱللَّهُ ٱلۡمَلِكُ ٱلۡحَقُّۗ وَلَا تَعۡجَلۡ بِٱلۡقُرۡءَانِ مِن قَبۡلِ أَن يُقۡضَىٰٓ إِلَيۡكَ وَحۡيُهُۥۖ وَقُل رَّبِّ زِدۡنِي عِلۡمٗا۝﴾",
       "latin": "Rabbi zidnī ‘ilmā.",
       "explanationEs": "“¡Señor mío! Acrecienta mi conocimiento”. ",
-      "note": "سورة طه - من الآية 114",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/020114.mp3"
-      ]
+      "note": "سورة طه الآية 114",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/020114.mp3"]
     },
     {
       "text": "﴿لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبۡحَٰنَكَ إِنِّي كُنتُ مِنَ ٱلظَّٰلِمِينَ۝﴾",
       "latin": "lā ilāha illā Anta subḥānaka innī kuntu minaẓ-ẓālimīn.",
       "explanationEs": "«No hay otra divinidad excepto Tú. ¡Glorificado seas! En verdad, he sido de los injustos».",
-      "note": "سورة الأنبياء - من الآية 87",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/021087.mp3"
-      ]
+      "note": "سورة الأنبياء الآية 87",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/021087.mp3"]
     },
     {
       "text": "﴿رَبِّ لَا تَذَرۡنِي فَرۡدٗا وَأَنتَ خَيۡرُ ٱلۡوَٰرِثِينَ۝﴾",
       "latin": "Rabbi lā tadharnī fardan wa Anta khayrul-wārithīn.",
       "explanationEs": "«¡Señor mío! No me dejes solo [sin descendencia], aunque Tú eres el mejor de los herederos».",
-      "note": "سورة الأنبياء - من الآية 89",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/021089.mp3"
-      ]
+      "note": "سورة الأنبياء الآية 89",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/021089.mp3"]
     },
     {
       "text": "﴿رَّبِّ أَعُوذُ بِكَ مِنۡ هَمَزَٰتِ ٱلشَّيَٰطِينِ۝وَأَعُوذُ بِكَ رَبِّ أَن يَحۡضُرُونِ۝﴾",
       "latin": "Rabbi a‘ūdhu bika min hamazātish-shayāṭīn, wa a‘ūdhu bika rabbi an yaḥḍurūn.",
       "explanationEs": "«¡Señor mío! Me refugio en Ti de las sugestiones de los demonios y me refugio en Ti, Señor mío, de que se presenten ante mí».",
-      "note": "سورة المؤمنون - من الآيات 97-98",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/023097.mp3",
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/023098.mp3"
-      ]
+      "note": "سورة المؤمنون الآيات 97-98",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023097.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023098.mp3"]
     },
     {
       "text": "﴿رَبَّنَآ ءَامَنَّا فَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَا وَأَنتَ خَيۡرُ ٱلرَّٰحِمِينَ۝﴾",
       "latin": "Rabbanā āmannā faghfir lanā warḥamnā wa Anta khayrur-rāḥimīn.",
       "explanationEs": "«¡Señor nuestro! Creemos; perdónanos y ten misericordia de nosotros, pues Tú eres el mejor de los misericordiosos».",
-      "note": "سورة المؤمنون - من الآية 109",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/023109.mp3"
-      ]
+      "note": "سورة المؤمنون الآية 109",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023109.mp3"]
     },
     {
       "text": "﴿رَّبِّ ٱغۡفِرۡ وَٱرۡحَمۡ وَأَنتَ خَيۡرُ ٱلرَّٰحِمِينَ۝﴾",
       "latin": "Rabbi ghfir warḥam wa Anta khayrur-rāḥimīn.",
       "explanationEs": "«¡Señor mío! Perdona y ten misericordia, pues Tú eres el mejor de los misericordiosos».",
-      "note": "سورة المؤمنون - من الآية 118",
-      "audioUrls": [
-        "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/023118.mp3"
-      ]
+      "note": "سورة المؤمنون الآية 118",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023118.mp3"]
     }
      ]
     },
@@ -495,7 +439,8 @@ const adyaData = [
       text: '﴿فَقُلْتُ اسْتَغْفِرُوا رَبَّكُمْ إِنَّهُ كَانَ غَفَّارًا۝ يُرْسِلِ السَّمَاءَ عَلَيْكُم مِّدْرَارًا۝ وَيُمْدِدْكُم بِأَمْوَالٍ وَبَنِينَ وَيَجْعَل لَّكُمْ جَنَّاتٍ وَيَجْعَل لَّكُمْ أَنْهَارًا۝﴾',
       latin: 'Fa-qultus-taghfirū Rabbakum innahū kāna ghaffārā. Yursilis-samā’a ‘alaykum midrārā. Wa yumdidkum bi-amwālin wa banīna wa yaj‘al lakum jannātin wa yaj‘al lakum anhārā.',
       explanationEs: '“Les dije: Imploren el perdón de su Señor, porque Él es Indulgente. Así les enviará del cielo lluvias abundantes, les concederá abundantes bienes e hijos, y les otorgará jardines y ríos.” (Nuh 71:10-12)',
-      note: 'سورة نوح - الآيات 10-12 (كثرة الاستغفار)'
+      "note": "سورة نوح الآيات 10-12",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/071010.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/071011.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/071012.mp3"]
     },
     {
       text: 'يَا ذَا الجَلَالِ وَالإِكْرَامِ، يَا قَاضِيَ الحَاجَاتِ، يَا أَرْحَمَ الرَّاحِمِينَ، يَا حَيُّ يَا قَيُّومُ، لَا إِلَهَ إِلَّا أَنْتَ المَلِكُ الحَقُّ المُبِينُ. اللَّهُمَّ إِنِّي أَحْمَدُكَ حَمْدًا كَثِيرًا وَأَشْكُرُكَ شُكْرًا كَثِيرًا يَلِيقُ بِجَلَالِ وَجْهِكَ وَعَظِيمِ سُلْطَانِكَ. اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ. يَا اللهُ، يَا رَبُّ، يَا حَيُّ يَا قَيُّومُ، يَا ذَا الجَلَالِ وَالإِكْرَامِ، أَسْأَلُكَ بِاسْمِكَ العَظِيمِ الأَعْظَمِ أَنْ تَرْزُقَنِي رِزْقًا وَاسِعًا حَلَالًا طَيِّبًا، بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ.',
@@ -574,7 +519,8 @@ const adyaData = [
       "text": "﴿رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا۝﴾",
       "latin": "Rabbanā hab lanā min azwājinā wa dhurriyyātinā qurrata a‘yunin waj-‘alnā lil-muttaqīna imāmā.",
       "explanationEs": "“¡Señor nuestro! Agrácianos con cónyuges y descendientes que sean un motivo de alegría y tranquilidad para nosotros, y haz que seamos un ejemplo para los que tienen temor (de Allah)”.",
-      "note": "سورة الفرقان - من الآية 74"
+      "note": "سورة الفرقان الآية 74",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/025074.mp3"]
     },
     {
       text: 'اللَّهُمَّ إِنِّي أَدْعُوكَ بِاسْمِكَ الوَاحِدِ الأَحَدِ الفَرْدِ الصَّمَدِ، وَأَدْعُوكَ بِاسْمِكَ الأَعْظَمِ الَّذِي إِذَا دُعِيتَ بِهِ أَجَبْتَ، وَإِذَا سُئِلْتَ بِهِ أَعْطَيْتَ، أَنْ تَمُنَّ عَلَيَّ بِصَلَاحِ أَحْوَالِ أَهْلِي وَذُرِّيَّتِي.',
@@ -628,7 +574,8 @@ const adyaData = [
       text: '﴿رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَى وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَصْلِحْ لِي فِي ذُرِّيَّتِي يَا أَرْحَمَ الرَّاحِمِينَ، وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ۝﴾',
       latin: 'Rabbi awzi‘nī an ashkura ni‘matakal-latī an‘amta ‘alayya wa ‘alā wālidayya wa an a‘mala ṣāliḥan tarḍāhu wa aṣliḥ lī fī dhurriyyatī yā Arḥamar-rāḥimīn, wa adkhilnī bi-raḥmatika fī ‘ibādikaṣ-ṣāliḥīn.',
       explanationEs: '(Salomón) al oír lo que ella decía, sonrió y exclamó: “¡Señor mío! Haz que te agradezca los favores que nos has concedido, tanto a mí como a mis padres, que haga obras de bien que Te complazcan, y cuéntame, por Tu misericordia, entre Tus siervos justos”. (An-Naml: 19)',
-      note: 'سورة الأحقاف - الآية 15 / سورة النمل - الآية 19'
+      "note": "سورة الأحقاف الآية 15 / سورة النمل الآية 19",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/046015.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/027019.mp3"]
     },
     {
       text: 'اللَّهُمَّ إِنَّا نَسْأَلُكَ بِاسْمِكَ العَظِيمِ الأَعْظَمِ، الَّذِي إِذَا دُعِيتَ بِهِ أَجَبْتَ، وَإِذَا سُئِلْتَ بِهِ أَعْطَيْتَ، وَبِأَسْمَائِكَ الحُسْنَى كُلِّهَا، مَا عَلِمْنَا مِنْهَا وَمَا لَمْ نَعْلَمْ، أَنْ تَسْتَجِيبَ لَنَا دَعَوَاتِنَا، وَتُحَقِّقَ رَغَبَاتِنَا، وَتَقْضِيَ حَوَائِجَنَا، وَتُفَرِّجَ كُرُوبَنَا، وَتَغْفِرَ ذُنُوبَنَا، وَتَسْتُرَ عُيُوبَنَا، وَتَتُوبَ عَلَيْنَا، وَتُعَافِيَنَا وَتَعْفُوَ عَنَّا، وَتُصْلِحَ أَهْلِينَا وَذُرِّيَّتَنَا، وَتَرْحَمَنَا بِرَحْمَتِكَ الوَاسِعَةِ، رَحْمَةً تُغْنِينَا بِهَا عَنْ رَحْمَةِ مَنْ سِوَاكَ.',
@@ -647,67 +594,78 @@ const adyaData = [
       text: '﴿رَبَّنَا ظَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الخَاسِرِينَ۝﴾',
       latin: 'Rabbanā ẓalamnā anfusanā wa in lam taghfir lanā wa tarḥamnā lanakūnanna minal-khāsirīn.',
       explanationEs: 'Ellos dijeron (arrepentidos): “¡Señor nuestro! Hemos sido injustos con nosotros mismos; si no nos perdonas y no nos tienes misericordia, seremos de los perdidos”. (Al-A\'raf: 23)',
-      note: 'سورة الأعراف - الآية 23'
+      "note": "سورة الأعراف الآية 23",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007023.mp3"]
     },
     {
       text: '﴿رَبِّ إِنِّي ظَلَمْتُ نَفْسِي فَاغْفِرْ لِي۝﴾',
       latin: 'Rabbi innī ẓalamtu nafsī fagh-fir lī.',
       explanationEs: 'Dijo: “¡Señor mío! He sido injusto conmigo mismo, perdóname.” Y Él lo perdonó, porque Él es el Indulgente, el Misericordioso. (Al-Qasas: 16)',
-      note: 'سورة القصص - الآية 16'
+      "note": "سورة القصص الآية 16",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/028016.mp3"]
     },
     {
       text: '﴿رَبَّنَا وَاجْعَلْنَا مُسْلِمَيْنِ لَكَ وَمِنْ ذُرِّيَّتِنَا أُمَّةً مُسْلِمَةً لَكَ وَأَرِنَا مَنَاسِكَنَا وَتُبْ عَلَيْنَا إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ۝﴾',
       latin: 'Rabbanā waj-‘alnā muslimayni laka wa min dhurriyyatinā ummatan muslimatan laka wa arinā manāsikanā wa tub ‘alaynā innaka Antat-Tawwābur-Raḥīm.',
       explanationEs: '“¡Señor nuestro! Haz que nosotros nos entreguemos a Tu voluntad, y que nuestra descendencia también lo haga (como una nación de musulmanes). Enséñanos nuestros ritos para la peregrinación y acepta nuestro arrepentimiento; Tú eres el Indulgente, el Misericordioso”. (Al-Baqarah: 128)',
-      note: 'سورة البقرة - الآية 128'
+      "note": "سورة البقرة الآية 128",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002128.mp3"]
     },
     {
       text: '﴿رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الحِسَابُ۝﴾',
       latin: 'Rabbanāgh-fir lī wa li-wālidayya wa lil-mu’minīna yawma yaqūmul-ḥisāb.',
       explanationEs: '¡Señor nuestro! Perdóname a mí, a mis padres y a los creyentes el Día en que se tome cuenta. (Ibrahim: 41)',
-      note: 'سورة إبراهيم - الآية 41'
+      "note": "سورة إبراهيم الآية 41",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/014041.mp3"]
     },
     {
       text: '﴿رَبَّنَا إِنَّنَا آمَنَّا فَاغْفِرْ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ النَّارِ۝﴾',
       latin: 'Rabbanā innanā āmannā fagh-fir lanā dhunūbanā wa qinā ‘adhāban-nār.',
       explanationEs: 'quienes dicen: “¡Señor nuestro! Creemos en Ti. Perdónanos nuestros pecados y líbranos del castigo del Fuego”. (Ali \'Imran: 16)',
-      note: 'سورة آل عمران - الآية 16'
+      "note": "سورة آل عمران الآية 16",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003016.mp3"]
     },
     {
       text: '﴿رَبَّنَا فَاغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّئَاتِنَا وَتَوَفَّنَا مَعَ الأَبْرَارِ۝﴾',
       latin: 'Rabbanā fagh-fir lanā dhunūbanā wa kaffir ‘annā sayyi’ātinā wa tawaffanā ma‘al-abrār.',
       explanationEs: '¡Señor nuestro! Hemos oído a quien convocaba a la fe, diciendo: ‘Crean en su Señor’, y creímos. ¡Señor nuestro! Perdona nuestros pecados, borra nuestras malas acciones y, al morir, reúnenos con los piadosos. (Ali \'Imran: 193)',
-      note: 'سورة آل عمران - الآية 193'
+      "note": "سورة آل عمران الآية 193",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003193.mp3"]
     },
     {
       text: '﴿رَبَّنَا آمَنَّا فَاغْفِرْ لَنَا وَارْحَمْنَا وَأَنْتَ خَيْرُ الرَّاحِمِينَ۝﴾',
       latin: 'Rabbanā āmannā fagh-fir lanā war-ḥamnā wa Anta khayrur-rāḥimīn.',
       explanationEs: '“¡Señor nuestro! Creemos en Ti; perdónanos y ten misericordia de nosotros. Tú eres el mejor de los misericordiosos.” (Al-Mu\'minun: 109)',
-      note: 'سورة المؤمنون - الآية 109'
+      "note": "سورة المؤمنون الآية 109",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023109.mp3"]
     },
     {
       text: '﴿رَبَّنَا أَتْمِمْ لَنَا نُورَنَا وَاغْفِرْ لَنَا إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ۝﴾',
       latin: 'Rabbanā atmim lanā nūranā wagh-fir lanā innaka ‘alā kulli shay\'in qadīr.',
       explanationEs: '¡Creyentes! Arrepiéntanse sinceramente ante Allah, puede que así su Señor borre sus faltas y los introduzca en jardines del Paraíso por donde corren ríos. Ese día Allah no avergonzará al Profeta ni a los que creyeron junto a él. Una luz se extenderá delante de ellos y a su derecha, y ellos dirán: “¡Señor nuestro! Auméntanos nuestra luz y perdónanos. Tú eres sobre toda cosa poderoso”. (At-Tahrim: 8)',
-      note: 'سورة التحريم - الآية 8'
+      "note": "سورة التحريم الآية 8",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/066008.mp3"]
     },
     {
       text: '﴿رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِمَنْ دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَالمُؤْمِنَاتِ۝﴾',
       latin: 'Rabbigh-fir lī wa li-wālidayya wa liman dakhala baytiya mu’minan wa lil-mu’minīna wal-mu’mināt.',
       explanationEs: '“¡Señor mío! Perdóname a mí, a mis padres, a quien ingrese creyente a mi casa, y a todos los creyentes y creyentes.” (Nuh: 28)',
-      note: 'سورة نوح - الآية 28'
+      "note": "سورة نوح الآية 28",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/071028.mp3"]
     },
     {
       text: '﴿لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ۝﴾',
       latin: 'Lā ilāha illā Anta subḥānaka innī kuntu minaż-ẓālimīn.',
       explanationEs: '“No hay otra divinidad excepto Tú; ¡glorificado seas! Ciertamente he sido de los injustos.” (Al-Anbiya: 87)',
-      note: 'سورة الأنبياء - الآية 87'
+      "note": "سورة الأنبياء الآية 87",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/021087.mp3"]
     },
     {
       text: '﴿رَبِّ اغْفِرْ لِي وَلِأَخِي وَأَدْخِلْنَا فِي رَحْمَتِكَ وَأَنْتَ أَرْحَمُ الرَّاحِمِينَ۝﴾',
       latin: 'Rabbigh-fir lī wa li-akhī wa adkhilnā fī raḥmatika wa Anta arḥamar-rāḥimīn.',
       explanationEs: 'Dijo Moisés: “¡Señor mío! Perdona a mi hermano y a mí, y ten misericordia de nosotros. Tú eres el más Misericordioso”. (Al-A\'raf: 151)',
-      note: 'سورة الأعراف - الآية 151'
+      "note": "سورة الأعراف الآية 151",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007151.mp3"]
     },
     {
       text: 'اللَّهُمَّ أَنْتَ رَبِّي، لَا إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي، فَاغْفِرْ لِي، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ.',
@@ -894,19 +852,22 @@ const adyaData = [
       text: '﴿رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الحِسَابُ۝﴾',
       latin: 'Rabbanāgh-fir lī wa li-wālidayya wa lil-mu’minīna yawma yaqūmul-ḥisāb.',
       explanationEs: '¡Señor nuestro! Perdóname a mí, a mis padres y a los creyentes el Día en que se tome cuenta. (Ibrahim: 41)',
-      note: 'سورة إبراهيم - الآية 41'
+      "note": "سورة إبراهيم الآية 41",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/014041.mp3"]
     },
     {
       text: '﴿رَبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا۝﴾',
       latin: 'Rabbir-ḥamhumā kamā rabbayānī ṣaghīrā.',
       explanationEs: 'Trátenlos con humildad y compasión, y rueguen (por ellos diciendo): “¡Señor mío! Ten misericordia de ellos como ellos la tuvieron conmigo cuando me criaron siendo niño”. (Al-Isra: 24)',
-      note: 'سورة الإسراء - الآية 24'
+      "note": "سورة الإسراء الآية 24",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/017024.mp3"]
     },
     {
       text: '﴿رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِمَنْ دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَالمُؤْمِنَاتِ وَلَا تَزِدِ الظَّالِمِينَ إِلَّا تَبَارًا۝﴾',
       latin: 'Rabbigh-fir lī wa li-wālidayya wa liman dakhala baytiya mu’minan wa lil-mu’minīna wal-mu’mināti wa lā tazidiẓ-ẓālimīna illā tabārā.',
       explanationEs: '“¡Señor mío! Perdóname a mí, a mis padres, a quien ingrese creyente a mi casa, y a todos los creyentes y creyentes, y no aumentes a los injustos sino en perdición.” (Nuh: 28)',
-      note: 'سورة نوح - الآية 28'
+      "note": "سورة نوح الآية 28",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/071028.mp3"]
     },
     {
       text: 'اللَّهُمَّ اغْفِرْ لِوَالِدَيَّ وَارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا، اللَّهُمَّ يَا بَاسِطَ اليَدَيْنِ بِالعَطَايَا ابْسُطْ عَلَى وَالِدَيَّ مِنْ فَضْلِكَ العَظِيمِ وَجُودِكَ الْوَاسِعِ مَا تَشْرَحُ بِهِ صَدْرَهُمَا لِعِبَادَتِكَ وَطَاعَتِكَ، وَالأُنْسِ بِكَ وَالْعَمَلِ بِمَا يُرْضِيكَ، وَبَارِكْ لَهُمَا فِي عُمُرِهِمَا، وَأَغْنِهِمَا مِنْ فَضْلِكَ، وَأَعِنهُمَا فِي حِلِّهِمَا وَتَرْحَالِهِمَا وَذَهَابِهِمَا وَإِيَابِهِمَا، وَأَطِلْ فِي عُمُرِهِمَا مَعَ الْعَافِيَةِ فِي صِحَّتِهِمَا وَدِينِهِمَا، وَاجْعَلْ آخِرَ كَلَامِهِمَا مِنَ الدُّنْيَا لَا إِلَهَ إِلَّا اللَّهُ مُحَمَّدٌ رَسُولُ اللَّهِ.',
@@ -1105,31 +1066,36 @@ const adyaData = [
       text: '﴿رَبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا۝﴾',
       latin: 'Rabbir-ḥamhumā kamā rabbayānī ṣaghīrā.',
       explanationEs: 'Trátenlos con humildad y compasión, y rueguen (por ellos diciendo): “¡Señor mío! Ten misericordia de ellos como ellos la tuvieron conmigo cuando me criaron siendo niño”. (Al-Isra: 24)',
-      note: 'سورة الإسراء - الآية 24'
+      "note": "سورة الإسراء الآية 24",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/017024.mp3"]
     },
     {
       text: '﴿رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِنْ ذُرِّيَّتِي رَبَّنَا وَتَقَبَّلْ دُعَاءِ * رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الحِسَابُ۝﴾',
       latin: 'Rabbij-‘alnī muqīmaṣ-ṣalāti wa min dhurriyyatī Rabbanā wa taqabbal du‘ā’. Rabbanāgh-fir lī wa li-wālidayya wa lil-mu’minīna yawma yaqūmul-ḥisāb.',
       explanationEs: '¡Señor mío! Haz que mantenga la oración y también mis descendientes. ¡Señor nuestro! Acepta mi súplica. ¡Señor nuestro! Perdóname a mí, a mis padres y a los creyentes el Día en que se tome cuenta. (Ibrahim: 40-41)',
-      note: 'سورة إبراهيم - الآيات 40-41'
+      "note": "سورة إبراهيم الآيات 40-41",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/014040.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/014041.mp3"]
     },
     {
       text: '﴿رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَى وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ۝﴾',
       latin: 'Rabbi awzi‘nī an ashkura ni‘matakal-latī an‘amta ‘alayya wa ‘alā wālidayya wa an a‘mala ṣāliḥan tarḍāhu wa adkhilnī bi-raḥmatika fī ‘ibādikaṣ-ṣāliḥīn.',
       explanationEs: '(Salomón) al oír lo que ella decía, sonrió y exclamó: “¡Señor mío! Haz que te agradezca los favores que nos has concedido, tanto a mí como a mis padres, que haga obras de bien que Te complazcan, y cuéntame, por Tu misericordia, entre Tus siervos justos”. (An-Naml: 19)',
-      note: 'سورة النمل - الآية 19'
+      "note": "سورة النمل الآية 19",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/027019.mp3"]
     },
     {
       text: '﴿رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ۝﴾',
       latin: 'Rabbanā ātinā fid-dunyā ḥasanatan wa fil-ākhirati ḥasanatan wa qinā ‘adhāban-nār.',
       explanationEs: 'Pero entre ellos hay quienes dicen: “¡Señor nuestro! Danos bienestar en esta vida y en la otra, y presérvanos del tormento del Fuego”. (Al-Baqarah: 201)',
-      note: 'سورة البقرة - الآية 201'
+      "note": "سورة البقرة الآية 201",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002201.mp3"]
     },
     {
       text: '﴿رَبَّنَا لَا تُؤَاخِذْنَا إِنْ نَسِينَا أَوْ أَخْطَأْنَا رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِنْ قَبْلِنَا رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا أَنْتَ مَوْلَانَا فَانْصُرْنَا عَلَى القَوْمِ الكَافِرِينَ۝﴾',
       latin: 'Rabbanā lā tu’ākhidhnā in nasīnā aw akhṭa’nā, Rabbanā wa lā taḥmil ‘alaynā iṣran kamā ḥamaltahū ‘alal-ladhīna min qablinā, Rabbanā wa lā tuḥammilnā mā lā ṭāqata lanā bih, wa‘fu ‘annā wagh-fir lanā war-ḥamnā Anta Mowlānā fan-ṣurnā ‘alal-qawmil-kāfirīn.',
       explanationEs: 'Allah no exige a nadie por encima de sus posibilidades, a su favor tendrá el bien que haga, y en su contra tendrá el mal que haga. “¡Señor nuestro! No nos castigues si olvidamos o cometemos un error. ¡Señor nuestro! No nos impongas una carga como la que impusiste a quienes nos precedieron. ¡Señor nuestro! No nos impongas algo superior a lo que podamos soportar. Perdónanos, absuélvenos y ten misericordia de nosotros. Tú eres nuestro Protector, concédenos el triunfo sobre los que niegan la verdad”. (Al-Baqarah: 286)',
-      note: 'سورة البقرة - الآية 286'
+      "note": "سورة البقرة الآية 286",
+      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002286.mp3"]
     },
     {
       text: 'اللَّهُمَّ اجْعَلْ نَسَائِمَ الجَنَّةِ تَهُبُّ عَلَيْهِمْ يَا أَرْحَمَ الرَّاحِمِينَ.',
