@@ -338,7 +338,9 @@ function stopCurrentAudioPlayback() {
 function playNextAudioInSequence(token) {
   if (token !== audioPlaybackToken || activeAudioCardIndex === null) return;
   if (activeAudioListIndex >= activeAudioList.length) {
-    currentAudio = null;
+    if (audioRepeatEnabled && activeAudioList.length) activeAudioListIndex = 0;
+    else {
+      currentAudio = null;
     const playBtn = document.getElementById('audioPlay-' + activeAudioCardIndex);
     if (playBtn) playBtn.textContent = '▶';
     const seek = document.getElementById('audioSeek-' + activeAudioCardIndex);
@@ -347,7 +349,8 @@ function playNextAudioInSequence(token) {
     const durationEl = document.getElementById('audioDuration-' + activeAudioCardIndex);
     if (nowEl && durationEl) nowEl.textContent = durationEl.textContent;
     showToast(currentLang === 'es' ? 'Todos los audios de este zikr han terminado' : 'اكتملت جميع المقاطع الصوتية لهذا الذكر');
-    return;
+      return;
+    }
   }
   const url = activeAudioList[activeAudioListIndex];
   const audio = new Audio(url);
@@ -1101,7 +1104,7 @@ function renderGroupItems() {
       ` : ''}
 
       ${(() => {
-        const audioList = normaliseAudioList([...(Array.isArray(item.audioUrls) ? item.audioUrls : []), item.audioUrl]);
+        const audioList = normaliseAudioList(Array.isArray(item.audioUrls) && item.audioUrls.length ? item.audioUrls : item.audioUrl);
         return audioList.length ? `
           <div id="audioPlayer-${index}" class="audio-player-compact mt-2 mb-2 p-2 rounded-xl bg-slate-50 dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700">
             <div class="flex items-center gap-2" dir="ltr">
