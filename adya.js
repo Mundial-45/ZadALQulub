@@ -37,14 +37,14 @@ const adyaData = [
       "text": "﴿رَبَّنَآ إِنَّنَآ ءَامَنَّا فَٱغۡفِرۡ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ ٱلنَّارِ۝﴾",
       "latin": "Rabbanā innanā āmannā faghfir lanā dhunūbanā wa qinā ‘adhāban-nār.",
       "explanationEs": "“¡Señor nuestro! Creemos en Ti. Perdónanos nuestros pecados y líbranos del castigo del Fuego”.",
-      "note": "سورة آل عمران من الآية 16",
+      "note": "سورة آل عمران الآية 16",
       "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003016.mp3"]
     },
     {
       "text": "﴿قَالَ رَبِّ هَبۡ لِي مِن لَّدُنكَ ذُرِّيَّةٗ طَيِّبَةًۖ إِنَّكَ سَمِيعُ ٱلدُّعَآءِ۝﴾",
       "latin": "Rabbi hab lī min ladunka dhurriyyatan ṭayyibah, innaka Samī‘ud-du‘ā’.",
       "explanationEs": "“¡Señor mío! Concédeme una descendencia piadosa, Tú escuchas los ruegos”.",
-      "note": "سورة آل عمران من الآية 38",
+      "note": "سورة آل عمران الآية 38",
       "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003038.mp3"]
     },
     {
@@ -72,28 +72,28 @@ const adyaData = [
       "text": "﴿رَبَّنَا ظَلَمۡنَآ أَنفُسَنَا وَإِن لَّمۡ تَغۡفِرۡ لَنَا وَتَرۡحَمۡنَا لَنَكُونَنَّ مِنَ ٱلۡخَٰسِرِينَ۝﴾",
       "latin": "rabbanā ẓalamnā anfusanā wa illam taghfir lanā wa tarḥamnā lanakūnanna minal-khāsirīn.",
       "explanationEs": "“¡Señor nuestro! Hemos sido injustos con nosotros mismos; si no nos perdonas y no nos tienes misericordia, seremos de los perdidos”.",
-      "note": "سورة الأعراف من الآية 23",
+      "note": "سورة الأعراف الآية 23",
       "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007023.mp3"]
     },
     {
       "text": "﴿قَالُواْ رَبَّنَا لَا تَجۡعَلۡنَا مَعَ ٱلۡقَوۡمِ ٱلظَّٰلِمِينَ۝﴾",
       "latin": "Rabbanā lā taj‘alnā ma‘al-qawmiẓ-ẓālimīn.",
       "explanationEs": "“¡Señor nuestro! No nos juntes con la gente que cometió injusticias”.",
-      "note": "سورة الأعراف من الآية 47",
+      "note": "سورة الأعراف الآية 47",
       "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007047.mp3"]
     },
     {
       "text": "﴿رَبَّنَآ أَفۡرِغۡ عَلَيۡنَا صَبۡرٗا وَتَوَفَّنَا مُسۡلِمِينَ۝﴾",
       "latin": "Rabbanā afrigh ‘alaynā ṣabran wa tawaffanā muslimīn.",
       "explanationEs": "¡Señor nuestro! Danos paciencia y haznos morir musulmanes, sometidos a Ti”.",
-      "note": "سورة الأعراف من الآية 126",
+      "note": "سورة الأعراف الآية 126",
       "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007126.mp3"]
     },
     {
       "text": "﴿حَسۡبِيَ ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَۖ عَلَيۡهِ تَوَكَّلۡتُۖ وَهُوَ رَبُّ ٱلۡعَرۡشِ ٱلۡعَظِيمِ۝﴾",
       "latin": "ḥasbiyallāhu lā ilāha illā Hū, ‘alayhi tawakkaltu wa Huwa Rabbul-‘Arshil-‘Aẓīm.",
       "explanationEs": "“Me es suficiente con Allah, no hay otra divinidad salvo Él, a Él me encomiendo y Él es el Señor del Trono grandioso”.",
-      "note": "سورة التوبة من الآية 129",
+      "note": "سورة التوبة الآية 129",
       "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/009129.mp3"]
     },
     {
@@ -156,14 +156,14 @@ const adyaData = [
       "text": "﴿لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبۡحَٰنَكَ إِنِّي كُنتُ مِنَ ٱلظَّٰلِمِينَ۝﴾",
       "latin": "lā ilāha illā Anta subḥānaka innī kuntu minaẓ-ẓālimīn.",
       "explanationEs": "«No hay otra divinidad excepto Tú. ¡Glorificado seas! En verdad, he sido de los injustos».",
-      "note": "سورة الأنبياء من الآية 87",
+      "note": "سورة الأنبياء الآية 87",
       "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/021087.mp3"]
     },
     {
       "text": "﴿رَبِّ لَا تَذَرۡنِي فَرۡدٗا وَأَنتَ خَيۡرُ ٱلۡوَٰرِثِينَ۝﴾",
       "latin": "Rabbi lā tadharnī fardan wa Anta khayrul-wārithīn.",
       "explanationEs": "«¡Señor mío! No me dejes solo [sin descendencia], aunque Tú eres el mejor de los herederos».",
-      "note": "سورة الأنبياء من الآية 89",
+      "note": "سورة الأنبياء الآية 89",
       "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/021089.mp3"]
     },
     {
@@ -177,14 +177,14 @@ const adyaData = [
       "text": "﴿رَبَّنَآ ءَامَنَّا فَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَا وَأَنتَ خَيۡرُ ٱلرَّٰحِمِينَ۝﴾",
       "latin": "Rabbanā āmannā faghfir lanā warḥamnā wa Anta khayrur-rāḥimīn.",
       "explanationEs": "«¡Señor nuestro! Creemos; perdónanos y ten misericordia de nosotros, pues Tú eres el mejor de los misericordiosos».",
-      "note": "سورة المؤمنون من الآية 109",
+      "note": "سورة المؤمنون الآية 109",
       "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023109.mp3"]
     },
     {
       "text": "﴿رَّبِّ ٱغۡفِرۡ وَٱرۡحَمۡ وَأَنتَ خَيۡرُ ٱلرَّٰحِمِينَ۝﴾",
       "latin": "Rabbi ghfir warḥam wa Anta khayrur-rāḥimīn.",
       "explanationEs": "«¡Señor mío! Perdona y ten misericordia, pues Tú eres el mejor de los misericordiosos».",
-      "note": "سورة المؤمنون من الآية 118",
+      "note": "سورة المؤمنون الآية 118",
       "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023118.mp3"]
     }
      ]
@@ -594,7 +594,7 @@ const adyaData = [
       text: '﴿رَبَّنَا ظَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الخَاسِرِينَ۝﴾',
       latin: 'Rabbanā ẓalamnā anfusanā wa in lam taghfir lanā wa tarḥamnā lanakūnanna minal-khāsirīn.',
       explanationEs: 'Ellos dijeron (arrepentidos): “¡Señor nuestro! Hemos sido injustos con nosotros mismos; si no nos perdonas y no nos tienes misericordia, seremos de los perdidos”. (Al-A\'raf: 23)',
-      "note": "سورة الأعراف من الآية 23",
+      "note": "سورة الأعراف الآية 23",
       "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007023.mp3"]
     },
     {
@@ -622,7 +622,7 @@ const adyaData = [
       text: '﴿رَبَّنَا إِنَّنَا آمَنَّا فَاغْفِرْ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ النَّارِ۝﴾',
       latin: 'Rabbanā innanā āmannā fagh-fir lanā dhunūbanā wa qinā ‘adhāban-nār.',
       explanationEs: 'quienes dicen: “¡Señor nuestro! Creemos en Ti. Perdónanos nuestros pecados y líbranos del castigo del Fuego”. (Ali \'Imran: 16)',
-      "note": "سورة آل عمران من الآية 16",
+      "note": "سورة آل عمران الآية 16",
       "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003016.mp3"]
     },
     {
@@ -636,7 +636,7 @@ const adyaData = [
       text: '﴿رَبَّنَا آمَنَّا فَاغْفِرْ لَنَا وَارْحَمْنَا وَأَنْتَ خَيْرُ الرَّاحِمِينَ۝﴾',
       latin: 'Rabbanā āmannā fagh-fir lanā war-ḥamnā wa Anta khayrur-rāḥimīn.',
       explanationEs: '“¡Señor nuestro! Creemos en Ti; perdónanos y ten misericordia de nosotros. Tú eres el mejor de los misericordiosos.” (Al-Mu\'minun: 109)',
-      "note": "سورة المؤمنون من الآية 109",
+      "note": "سورة المؤمنون الآية 109",
       "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023109.mp3"]
     },
     {
@@ -657,7 +657,7 @@ const adyaData = [
       text: '﴿لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ۝﴾',
       latin: 'Lā ilāha illā Anta subḥānaka innī kuntu minaż-ẓālimīn.',
       explanationEs: '“No hay otra divinidad excepto Tú; ¡glorificado seas! Ciertamente he sido de los injustos.” (Al-Anbiya: 87)',
-      "note": "سورة الأنبياء من الآية 87",
+      "note": "سورة الأنبياء الآية 87",
       "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/021087.mp3"]
     },
     {
