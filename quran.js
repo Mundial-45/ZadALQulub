@@ -294,7 +294,7 @@ function renderSurahsList(query = '') {
         <div>
           <div class="font-bold text-slate-800 dark:text-slate-100 text-base flex items-center gap-2">
             <span>${titleText}</span>
-            <span class="text-xs font-normal text-slate-500">${subTitleText}</span>
+            <span class="text-xs font-normal text-slate-500 dark:text-slate-300">${subTitleText}</span>
           </div>
           <div class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 flex items-center gap-2">
             <span class="bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded-md">${typeText}</span>
