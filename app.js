@@ -272,6 +272,9 @@ function changeFontSize(delta) {
 
 let activeAudioCardIndex = null;
 let audioRepeatEnabled = false;
+let activeAudioList = [];
+let activeAudioListIndex = 0;
+let audioPlaybackToken = 0;
 function formatAudioTime(seconds) {
   if (!Number.isFinite(seconds) || seconds < 0) return '0:00';
   return Math.floor(seconds / 60) + ':' + String(Math.floor(seconds % 60)).padStart(2, '0');
@@ -291,35 +294,113 @@ function updateAudioProgress() {
   if (playBtn) playBtn.textContent = currentAudio.paused ? '▶' : 'Ⅱ';
   const repeatBtn = document.getElementById('audioRepeat-' + i);
   if (repeatBtn) { repeatBtn.style.opacity = audioRepeatEnabled ? '1' : '0.55'; repeatBtn.setAttribute('aria-pressed', String(audioRepeatEnabled)); }
+  const sequenceEl = document.getElementById('audioSequence-' + i);
+  if (sequenceEl) sequenceEl.textContent = activeAudioList.length > 1 ? ((activeAudioListIndex + 1) + '/' + activeAudioList.length) : '';
 }
-function playAudio(audioUrl, index) {
-  if (!audioUrl) return;
+function normaliseAudioList(audioValue) {
+  const values = Array.isArray(audioValue) ? audioValue : [audioValue];
+  return values.flatMap(value => {
+    if (typeof value !== 'string' || !value.trim()) return [];
+    return value.split(/\\s*[,\\n]\\s*/).map(url => url.trim()).filter(Boolean);
+  });
+}
+function playAudio(audioValue, index) {
+  const urls = normaliseAudioList(audioValue);
+  if (!urls.length) return;
   if (currentAudio && activeAudioCardIndex === index) {
-    if (currentAudio.paused) currentAudio.play().then(updateAudioProgress).catch(() => showToast(currentLang === 'es' ? 'No se pudo reproducir el audio' : 'تعذر تشغيل الصوت'));
-    else currentAudio.pause();
-    updateAudioProgress(); return;
+    if (currentAudio.paused) {
+      currentAudio.play().then(updateAudioProgress).catch(() => showToast(currentLang === 'es' ? 'No se pudo reproducir el audio' : 'تعذر تشغيل الصوت'));
+    } else {
+      currentAudio.pause();
+    }
+    updateAudioProgress();
+    return;
   }
-  if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+  stopCurrentAudioPlayback();
   activeAudioCardIndex = index;
+  activeAudioList = urls;
+  activeAudioListIndex = 0;
   const player = document.getElementById('audioPlayer-' + index);
   if (player) player.classList.remove('hidden');
-  currentAudio = new Audio(audioUrl);
-  currentAudio.preload = 'metadata';
-  currentAudio.loop = audioRepeatEnabled;
-  ['loadedmetadata','durationchange','timeupdate','play','pause','ended'].forEach(ev => currentAudio.addEventListener(ev, updateAudioProgress));
-  currentAudio.play().then(updateAudioProgress).catch(() => showToast(currentLang === 'es' ? 'No se pudo reproducir el audio' : 'تعذر تشغيل الصوت'));
+  playNextAudioInSequence(audioPlaybackToken);
+}
+function stopCurrentAudioPlayback() {
+  audioPlaybackToken++;
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.onended = null;
+    currentAudio.onerror = null;
+    currentAudio.removeAttribute('src');
+    currentAudio.load();
+    currentAudio = null;
+  }
+}
+function playNextAudioInSequence(token) {
+  if (token !== audioPlaybackToken || activeAudioCardIndex === null) return;
+  if (activeAudioListIndex >= activeAudioList.length) {
+    currentAudio = null;
+    const playBtn = document.getElementById('audioPlay-' + activeAudioCardIndex);
+    if (playBtn) playBtn.textContent = '▶';
+    const seek = document.getElementById('audioSeek-' + activeAudioCardIndex);
+    if (seek) seek.value = '1000';
+    const nowEl = document.getElementById('audioCurrent-' + activeAudioCardIndex);
+    const durationEl = document.getElementById('audioDuration-' + activeAudioCardIndex);
+    if (nowEl && durationEl) nowEl.textContent = durationEl.textContent;
+    showToast(currentLang === 'es' ? 'Todos los audios de este zikr han terminado' : 'اكتملت جميع المقاطع الصوتية لهذا الذكر');
+    return;
+  }
+  const url = activeAudioList[activeAudioListIndex];
+  const audio = new Audio(url);
+  currentAudio = audio;
+  audio.preload = 'metadata';
+  audio.loop = false;
+  ['loadedmetadata','durationchange','timeupdate','play','pause'].forEach(ev => audio.addEventListener(ev, updateAudioProgress));
+  audio.onended = () => {
+    if (token !== audioPlaybackToken || currentAudio !== audio) return;
+    activeAudioListIndex++;
+    playNextAudioInSequence(token);
+  };
+  audio.onerror = () => {
+    if (token !== audioPlaybackToken || currentAudio !== audio) return;
+    activeAudioListIndex++;
+    showToast(currentLang === 'es' ? 'Un audio no se pudo cargar; continuando con el siguiente' : 'تعذر تحميل مقطع، تتم متابعة المقطع التالي');
+    playNextAudioInSequence(token);
+  };
+  audio.play().then(updateAudioProgress).catch(() => {
+    if (token !== audioPlaybackToken || currentAudio !== audio) return;
+    activeAudioListIndex++;
+    showToast(currentLang === 'es' ? 'No se pudo reproducir un audio; continuando con el siguiente' : 'تعذر تشغيل مقطع، تتم متابعة المقطع التالي');
+    playNextAudioInSequence(token);
+  });
 }
 function stopAudio(index) {
-  if (currentAudio && activeAudioCardIndex === index) { currentAudio.pause(); currentAudio.currentTime = 0; updateAudioProgress(); }
+  if (currentAudio && activeAudioCardIndex === index) {
+    stopCurrentAudioPlayback();
+    activeAudioList = [];
+    activeAudioListIndex = 0;
+    activeAudioCardIndex = null;
+    const playBtn = document.getElementById('audioPlay-' + index);
+    if (playBtn) playBtn.textContent = '▶';
+    const seek = document.getElementById('audioSeek-' + index);
+    if (seek) seek.value = '0';
+    const now = document.getElementById('audioCurrent-' + index);
+    if (now) now.textContent = '0:00';
+  }
 }
 function seekAudio(index, value) {
   if (currentAudio && activeAudioCardIndex === index && Number.isFinite(currentAudio.duration) && currentAudio.duration > 0) {
-    currentAudio.currentTime = Number(value) / 1000 * currentAudio.duration; updateAudioProgress();
+    currentAudio.currentTime = Number(value) / 1000 * currentAudio.duration;
+    updateAudioProgress();
   }
 }
 function toggleAudioRepeat(index) {
   audioRepeatEnabled = !audioRepeatEnabled;
-  if (currentAudio) currentAudio.loop = audioRepeatEnabled;
+  // Repetir reinicia la lista completa, no solo el clip actual.
+  if (audioRepeatEnabled && currentAudio && activeAudioCardIndex !== null) {
+    activeAudioListIndex = 0;
+    stopCurrentAudioPlayback();
+    playNextAudioInSequence(audioPlaybackToken);
+  }
   updateAudioProgress();
 }
 function escapeJsStr(str) {
@@ -1020,17 +1101,20 @@ function renderGroupItems() {
       ` : ''}
 
       ${(() => {
-        const audioSrc = item.audioUrl || (item.audioUrls && item.audioUrls.length > 0 ? item.audioUrls[0] : null);
-        return audioSrc ? `
-          <div id="audioPlayer-${index}" class="mt-3 mb-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700">
-            <input id="audioSeek-${index}" type="range" min="0" max="1000" value="0" step="1" oninput="seekAudio(${index}, this.value)" class="w-full accent-slate-800 dark:accent-slate-200 cursor-pointer" aria-label="${isEs ? 'Progreso del audio' : 'تقدم الصوت'}">
-            <div class="flex justify-end text-xs text-slate-500 dark:text-slate-300 mb-2" dir="ltr"><span id="audioDuration-${index}">0:00</span></div>
-            <div class="flex items-center justify-center gap-7">
-              <button type="button" onclick="stopAudio(${index})" class="text-2xl text-slate-700 dark:text-slate-100" aria-label="${isEs ? 'Detener' : 'إيقاف'}">■</button>
-              <button id="audioPlay-${index}" type="button" onclick="playAudio('${audioSrc}', ${index})" class="w-14 h-14 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-2xl font-bold" aria-label="${isEs ? 'Reproducir o pausar' : 'تشغيل أو إيقاف مؤقت'}">▶</button>
-              <button id="audioRepeat-${index}" type="button" onclick="toggleAudioRepeat(${index})" class="text-2xl text-slate-700 dark:text-slate-100" aria-label="${isEs ? 'Repetir audio' : 'تكرار الصوت'}" title="${isEs ? 'Repetir' : 'تكرار'}">⇄</button>
+        const audioList = normaliseAudioList([...(Array.isArray(item.audioUrls) ? item.audioUrls : []), item.audioUrl]);
+        return audioList.length ? `
+          <div id="audioPlayer-${index}" class="audio-player-compact mt-2 mb-2 p-2 rounded-xl bg-slate-50 dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700">
+            <div class="flex items-center gap-2" dir="ltr">
+              <span id="audioCurrent-${index}" class="audio-time text-[10px] tabular-nums text-slate-500 dark:text-slate-300">0:00</span>
+              <input id="audioSeek-${index}" type="range" min="0" max="1000" value="0" step="1" oninput="seekAudio(${index}, this.value)" class="flex-1 min-w-0 accent-slate-800 dark:accent-slate-200 cursor-pointer" aria-label="${isEs ? 'Progreso del audio' : 'تقدم الصوت'}">
+              <span id="audioDuration-${index}" class="audio-time text-[10px] tabular-nums text-slate-500 dark:text-slate-300">0:00</span>
             </div>
-            <div class="flex justify-between text-xs tabular-nums text-slate-500 dark:text-slate-300 mt-2" dir="ltr"><span id="audioCurrent-${index}">0:00</span><span></span></div>
+            <div class="flex items-center justify-center gap-4 mt-1">
+              <button type="button" onclick="stopAudio(${index})" class="audio-control-button text-base text-slate-700 dark:text-slate-100" aria-label="${isEs ? 'Detener' : 'إيقاف'}">■</button>
+              <button id="audioPlay-${index}" type="button" onclick='playAudio(${JSON.stringify(audioList)}, ${index})' class="audio-control-play w-9 h-9 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-lg font-bold" aria-label="${isEs ? 'Reproducir o pausar' : 'تشغيل أو إيقاف مؤقت'}">▶</button>
+              <button id="audioRepeat-${index}" type="button" onclick="toggleAudioRepeat(${index})" class="audio-control-button text-base text-slate-700 dark:text-slate-100" aria-label="${isEs ? 'Repetir lista' : 'تكرار القائمة'}" title="${isEs ? 'Repetir lista' : 'تكرار القائمة'}">⇄</button>
+              <span id="audioSequence-${index}" class="text-[10px] tabular-nums text-slate-500 dark:text-slate-300" aria-live="polite"></span>
+            </div>
           </div>
         ` : '';
       })()}
