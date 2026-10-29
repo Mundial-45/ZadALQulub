@@ -11,7 +11,7 @@ const azkarData = [
                         "explanationEs": "¡Allah! No existe nada ni nadie con derecho a ser adorado excepto Él, el Viviente (Eterno), el Sustentador (y Gobernador de toda la creación). No Lo afectan somnolencia ni sueño. Suyo es cuanto hay en los cielos y la Tierra. ¿Quién podrá interceder ante Él si no es con Su permiso? Conoce el pasado y el futuro (lo manifiesto y lo oculto) y nadie abarca de Su conocimiento salvo lo que Él quiere. El escabel de Su Trono abarca los cielos y la Tierra, y la custodia (y mantenimiento) de ambos no Lo agobia. Y Él es el Sublime, el Grandioso. [Al-Baqarah: 255]",
                         "count": 1,
                         "maxCount": 1,
-            "note": "سورة البقرة الآية 255",
+            "note": "آية الكرسي",
             "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002255.mp3"]
       },
                   {
@@ -201,7 +201,7 @@ const azkarData = [
                         "explanationEs": "¡Allah! No existe nada ni nadie con derecho a ser adorado excepto Él, el Viviente (Eterno), el Sustentador (y Gobernador de toda la creación). No Lo afectan somnolencia ni sueño. Suyo es cuanto hay en los cielos y la Tierra. ¿Quién podrá interceder ante Él si no es con Su permiso? Conoce el pasado y el futuro (lo manifiesto y lo oculto) y nadie abarca de Su conocimiento salvo lo que Él quiere. El escabel de Su Trono abarca los cielos y la Tierra, y la custodia (y mantenimiento) de ambos no Lo agobia. Y Él es el Sublime, el Grandioso. [Al-Baqarah: 255]",
                         "count": 1,
                         "maxCount": 1,
-            "note": "سورة البقرة الآية 255",
+            "note": "آية الكرسي",
             "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002255.mp3"]
       },
                   {
@@ -400,7 +400,7 @@ const azkarData = [
                         "explanationEs": "¡Allah! No hay más divinidad que Él, el Viviente, el Sustentador de toda la creación. Ni la somnolencia ni el sueño le vencen. Suyo es cuanto hay en los cielos y en la tierra. ¿Quién podrá interceder ante Él sin Su permiso? Conoce lo que les depara el futuro y lo que dejaron atrás, mientras que ellos no abarcan nada de Su conocimiento, excepto lo que Él quiere. Su Trono se extiende sobre los cielos y la tierra, y no Le fatiga la preservación de ambos. Él es el Altísimo, el Grandioso.",
                         "count": 1,
                         "maxCount": 1,
-            "note": "سورة البقرة الآية 255",
+            "note": "آية الكرسي",
             "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002255.mp3"]
       },
                   {
