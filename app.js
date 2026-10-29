@@ -207,6 +207,11 @@ function applyLanguageUI() {
 
   if (typeof updateContinueReadingCard === 'function') updateContinueReadingCard();
 
+  const ruqyahTitleEl = document.getElementById('btnRuqyahTitle');
+  if (ruqyahTitleEl && t.btnRuqyahTitle) ruqyahTitleEl.innerText = t.btnRuqyahTitle;
+  const ruqyahSubEl = document.getElementById('btnRuqyahSub');
+  if (ruqyahSubEl && t.btnRuqyahSub) ruqyahSubEl.innerText = t.btnRuqyahSub;
+
   const munajatTitleEl = document.getElementById('btnMunajatTitle');
   if (munajatTitleEl) munajatTitleEl.innerText = t.btnMunajatTitle;
   const munajatSubEl = document.getElementById('btnMunajatSub');
