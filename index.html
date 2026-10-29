@@ -13,6 +13,8 @@
     .quran-font { font-family: 'Amiri Quran', serif !important; font-weight: 400 !important; line-height: 2.8 !important; padding-top: 0.18em; padding-bottom: 0.28em; overflow: visible; font-kerning: normal; }
     /* Extra vertical room for Quranic diacritics and waqf marks so they do not collide with the previous line. */
     .quran-font, .quran-font * { line-height: 2.8 !important; }
+  .quran-nav-arrow { direction:ltr !important; unicode-bidi:isolate !important; display:inline-block; min-width:1.1em; text-align:center; }
+  #audioSeekBar { accent-color:#059669; }
   </style>
 </head>
 <body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-screen flex flex-col justify-between transition-colors duration-300">
@@ -294,7 +296,7 @@
         <div class="flex items-center justify-between pt-3 mt-2 border-t border-amber-200/60 dark:border-slate-700 dir-ltr">
           <!-- Button ON LEFT: NEXT Page -->
           <button type="button" onclick="nextQuranPage()" class="flex items-center gap-1 px-3.5 py-2 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs shadow-md transition transform active:scale-95 cursor-pointer">
-            <span id="nextBtnText">← الصفحة التالية</span>
+            <span id="nextBtnText">الصفحة التالية</span><span class="quran-nav-arrow" dir="ltr" aria-hidden="true">←</span>
           </button>
 
           <span class="text-[11px] font-semibold text-slate-500 dark:text-slate-400 hidden sm:inline">
@@ -303,7 +305,7 @@
 
           <!-- Button ON RIGHT: PREVIOUS Page -->
           <button type="button" onclick="prevQuranPage()" class="flex items-center gap-1 px-3.5 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs shadow-md transition transform active:scale-95 cursor-pointer">
-            <span id="prevBtnText">الصفحة السابقة →</span>
+            <span id="prevBtnText">الصفحة السابقة</span><span class="quran-nav-arrow" dir="ltr" aria-hidden="true">→</span>
           </button>
         </div>
 
@@ -311,6 +313,18 @@
     </div>
 
   </main>
+
+  <!-- Audio playback progress -->
+  <section id="audioProgressPanel" class="hidden mx-auto max-w-3xl px-4 py-3 mb-3 bg-white dark:bg-slate-800 rounded-2xl border border-emerald-200 dark:border-slate-700 shadow-md" aria-label="Audio playback">
+    <div class="flex items-center justify-between gap-3 mb-2">
+      <span id="audioProgressTitle" class="text-sm font-bold text-slate-700 dark:text-slate-100">تقدم التلاوة</span>
+      <button type="button" id="audioCloseBtn" class="px-2 py-1 rounded-lg bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-100 text-xs" aria-label="إغلاق مشغل الصوت">✕</button>
+    </div>
+    <input id="audioSeekBar" type="range" min="0" max="1000" value="0" step="1" class="w-full accent-emerald-600 cursor-pointer" aria-label="Audio progress">
+    <div class="flex justify-between gap-3 text-xs tabular-nums text-slate-500 dark:text-slate-300" dir="ltr">
+      <span id="audioCurrentTime">0:00</span><span id="audioDuration">0:00</span>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 py-4 text-center text-xs text-slate-500 dark:text-slate-400">
