@@ -43,12 +43,12 @@ const uiTexts = {
     startReadingBtn: 'بدء القراءة',
     indexBtnText: 'فهرس القرآن (ورش) 📖',
     jumpBtnText: 'انتقال',
-    nextPageBtn: 'الصفحة التالية ➔',
-    prevPageBtn: '⬅ الصفحة السابقة',
+    nextPageBtn: 'الصفحة التالية',
+    prevPageBtn: 'الصفحة السابقة',
     pageLabelText: 'صفحة',
     pageOfText: 'من 638',
     hizbLabelText: 'الحزب',
-    swipeHintText: 'اسحب لليسار للصفحة التالية ←',
+    swipeHintText: 'اسحب لليمين للصفحة التالية',
     surahSearchPlaceholder: 'ابحث عن سورة بالاسم أو الرقم...',
     tabSurahsText: '1. السور',
     tabSurahsSub: '114 سورة',
@@ -99,12 +99,12 @@ const uiTexts = {
     startReadingBtn: 'Empezar lectura',
     indexBtnText: 'Índice del Corán 📖',
     jumpBtnText: 'Ir',
-    nextPageBtn: '← Página siguiente',
-    prevPageBtn: 'Página anterior →',
+    nextPageBtn: 'Página siguiente',
+    prevPageBtn: 'Página anterior',
     pageLabelText: 'Página',
     pageOfText: 'de 638',
     hizbLabelText: 'Hizb',
-    swipeHintText: 'Desliza a la izquierda para página siguiente ←',
+    swipeHintText: 'Desliza a la derecha para ir a la página siguiente',
     surahSearchPlaceholder: 'Buscar sura por nombre o número...',
     tabSurahsText: '1. Suras',
     tabSurahsSub: '114 suras',
@@ -270,18 +270,74 @@ function changeFontSize(delta) {
   document.documentElement.style.setProperty('--app-font-size', `${fontSize}px`);
 }
 
+function formatAudioTime(seconds) {
+  if (!Number.isFinite(seconds) || seconds < 0) return '0:00';
+  const mins = Math.floor(seconds / 60);
+  const secs = Math.floor(seconds % 60).toString().padStart(2, '0');
+  return `${mins}:${secs}`;
+}
+
+function updateAudioProgress() {
+  const panel = document.getElementById('audioProgressPanel');
+  const seek = document.getElementById('audioSeekBar');
+  const current = document.getElementById('audioCurrentTime');
+  const duration = document.getElementById('audioDuration');
+  if (!currentAudio) return;
+  const total = Number.isFinite(currentAudio.duration) ? currentAudio.duration : 0;
+  const now = Number.isFinite(currentAudio.currentTime) ? currentAudio.currentTime : 0;
+  if (seek && !seek.matches(':active')) seek.value = total > 0 ? String(Math.round((now / total) * 1000)) : '0';
+  if (current) current.textContent = formatAudioTime(now);
+  if (duration) duration.textContent = formatAudioTime(total);
+  if (panel && !panel.classList.contains('hidden')) {
+    const title = document.getElementById('audioProgressTitle');
+    if (title) title.textContent = currentLang === 'es' ? 'Progreso del audio' : 'تقدم التلاوة';
+  }
+}
+
+function closeAudioProgress() {
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio = null;
+  }
+  const panel = document.getElementById('audioProgressPanel');
+  if (panel) panel.classList.add('hidden');
+}
+
 function playAudio(audioUrl) {
   if (!audioUrl) return;
   if (currentAudio) {
     currentAudio.pause();
     currentAudio = null;
   }
-  showToast(currentLang === 'es' ? 'Reproduciendo audio...' : 'جاري تشغيل التلاوة...');
+  const panel = document.getElementById('audioProgressPanel');
+  if (panel) panel.classList.remove('hidden');
+  const title = document.getElementById('audioProgressTitle');
+  if (title) title.textContent = currentLang === 'es' ? 'Progreso del audio' : 'تقدم التلاوة';
   currentAudio = new Audio(audioUrl);
-  currentAudio.play().catch(err => {
+  currentAudio.preload = 'metadata';
+  currentAudio.addEventListener('loadedmetadata', updateAudioProgress);
+  currentAudio.addEventListener('durationchange', updateAudioProgress);
+  currentAudio.addEventListener('timeupdate', updateAudioProgress);
+  currentAudio.addEventListener('play', updateAudioProgress);
+  currentAudio.addEventListener('ended', updateAudioProgress);
+  currentAudio.play().then(updateAudioProgress).catch(() => {
     showToast(currentLang === 'es' ? 'Error al reproducir audio' : 'تعذر تشغيل الصوت');
   });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const seek = document.getElementById('audioSeekBar');
+  if (seek) {
+    seek.addEventListener('input', () => {
+      if (currentAudio && Number.isFinite(currentAudio.duration) && currentAudio.duration > 0) {
+        currentAudio.currentTime = (Number(seek.value) / 1000) * currentAudio.duration;
+        updateAudioProgress();
+      }
+    });
+  }
+  const close = document.getElementById('audioCloseBtn');
+  if (close) close.addEventListener('click', closeAudioProgress);
+});
 
 function escapeJsStr(str) {
   if (!str) return '';
