@@ -409,7 +409,7 @@ const azkarData = [
                         "explanationEs": "El Mensajero cree en lo que le ha sido revelado por su Señor, y los creyentes también. Todos creen en Allah, en Sus ángeles, en Sus Libros y en Sus mensajeros: 'No hacemos distinción entre ninguno de Sus mensajeros'. Y dicen: 'Escuchamos y obedecemos. Pedimos Tu perdón, Señor nuestro, y a Ti es el retorno'. Allah no exige a ninguna alma más allá de sus posibilidades. Obtendrá el bien que haya ganado y sufrirá el mal que haya merecido. '¡Señor nuestro! No nos castigues si olvidamos o cometemos un error. ¡Señor nuestro! No impongas sobre nosotros una carga como la que impusiste sobre los que nos precedieron. ¡Señor nuestro! No nos impongas una carga superior a nuestras fuerzas. Perdónanos, absuélvenos y ten misericordia de nosotros. Tú eres nuestro Protector, concédenos la victoria sobre el pueblo incrédulo'.",
                         "count": 1,
                         "maxCount": 1,
-            "note": "سورة البقرة من الآية 285",
+            "note": "سورة البقرة الآيات 285-286",
             "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002285.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002286.mp3"]
       },
                   {
@@ -544,7 +544,7 @@ const azkarData = [
                         "explanationEs": "En la creación de los cielos y de la Tierra, y en la sucesión de la noche y el día, hay señales para los dotados de razón, los que invocan a Dios de pie, sentados o recostados, y meditan en la creación de los cielos y de la Tierra, y dicen: “¡Señor nuestro! No has creado todo esto en vano. ¡Glorificado seas! Presérvanos del castigo del Fuego. ¡Señor nuestro! A quien introduzcas en el Fuego lo habrás degradado. Los opresores no tendrán quién los auxilie. ¡Señor nuestro! Hemos oído a un pregonero que llamaba a la fe diciendo: Creo en su Señor, y creímos. ¡Señor nuestro! Perdónanos nuestros pecados, borra nuestras faltas y consagra nuestra muerte junto a los virtuosos. ¡Señor nuestro! Concédenos lo que nos has prometido por medio de Tus Mensajeros y no nos degrades el Día del Juicio. Tú no faltas a Tu promesa.” Su Señor les respondió: “No dejaré de recompensar ninguna de sus obras, sean hombres o mujeres, unos proceden de otros. A quienes emigraron, fueron expulsados de sus hogares, persiguieron por Mi causa, combatieron y cayeron luchando, les borraré sus faltas y los introduciré en jardines por donde corren ríos, como recompensa de Dios. Dios tiene junto a Sí la mejor recompensa.” Que no te engañe el libre andar por la tierra de los que se niegan a creer, es un disfrute temporal. Luego su morada será el Infierno, ¡qué pesada morada! Pero los que tienen temor de su Señor tendrán jardines por donde corren ríos, donde morarán por toda la eternidad, como hospitalidad de Dios. Lo que hay junto a Dios es mejor para los virtuosos. Entre la gente del Libro hay quienes creen en Dios, en lo que les ha sido revelado a ustedes y en lo que les fue revelado a ellos; son humildes ante Dios y no malvenden los versículos de Dios. Ellos tendrán su recompensa junto a su Señor. Dios es rápido en tomar cuenta. ¡Creyentes! Tengan paciencia, sean perseverantes, manténganse firmes y tengan temor de Dios, para que puedan triunfar. (Sura Ali 'Imran 3:190-200; traducción de Isa García)",
                         "count": 1,
                         "maxCount": 1,
-            "note": "سورة آل عمران من الآية 190",
+            "note": "سورة آل عمران الآيات 190-200",
             "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003190.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003191.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003192.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003193.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003194.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003195.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003196.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003197.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003198.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003199.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003200.mp3"]
       }
             ]
@@ -2362,7 +2362,7 @@ const azkarData = [
                         "explanationEs": "En el nombre de Al-lah, y alabado sea Al-lah. Glorificado sea Aquel que ha sometido esto para nosotros cuando no éramos capaces de hacerlo, y ciertamente a nuestro Señor hemos de retornar. Alabado sea Al-lah (x3), Al-lah es el más Grande (x3). Glorificado seas, ¡oh Al-lah! Ciertamente me he oprimido a mí mismo, perdóname pues nadie perdona los pecados excepto Tú.",
                         "count": 1,
                         "maxCount": 1,
-            "note": "سورة الزخرف من الآية 13",
+            "note": "سورة الزخرف الآيات 13-14",
             "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/043013.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/043014.mp3"]
       }
             ]
@@ -2378,7 +2378,7 @@ const azkarData = [
                         "explanationEs": "Allah es el Más Grande (tres veces). Glorificado sea Aquel que ha sometido esto para nosotros, cuando nosotros no habríamos podido hacerlo por nuestros propios medios; y, ciertamente, a nuestro Señor hemos de regresar. ¡Oh Allah! Te pedimos en este viaje la piedad, el temor de Ti y las obras que Te complacen. ¡Oh Allah! Haznos fácil este viaje y acorta su distancia. ¡Oh Allah! Tú eres el Compañero en el viaje y el Protector de la familia. ¡Oh Allah! Me refugio en Ti de las dificultades del viaje, de la tristeza de las vistas y de un mal regreso en mis bienes y mi familia. Al regresar, repite lo mismo y añade: «Regresamos arrepentidos, adorando y alabando a nuestro Señor».",
                         "count": 1,
                         "maxCount": 1,
-            "note": "سورة الزخرف من الآية 13",
+            "note": "سورة الزخرف الآيات 13-14",
             "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/043013.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/043014.mp3"]
       }
             ]
