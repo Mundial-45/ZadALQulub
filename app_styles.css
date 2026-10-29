@@ -331,3 +331,58 @@ button[onclick*="showFavorites"] {
   line-height: 1.8 !important;
   letter-spacing: 0.01em !important;
 }
+
+
+/* Stable writing direction: Arabic remains RTL and Latin/Spanish remain LTR in every UI language. */
+.dir-rtl { direction: rtl !important; unicode-bidi: plaintext; }
+.dir-ltr { direction: ltr !important; unicode-bidi: plaintext; }
+.latin-text-style {
+  direction: ltr !important;
+  text-align: left !important;
+  font-size: max(0.9rem, calc(var(--app-font-size, 1.125rem) * 0.88)) !important;
+  line-height: 1.7 !important;
+  background-color: #fffbeb !important;
+  color: #334155 !important;
+}
+.dark .latin-text-style {
+  background-color: #1e293b !important;
+  color: #e2e8f0 !important;
+}
+.es-text-style {
+  direction: ltr !important;
+  text-align: left !important;
+  font-size: max(0.98rem, calc(var(--app-font-size, 1.125rem) * 0.94)) !important;
+  line-height: 1.7 !important;
+  background-color: #eff6ff !important;
+  color: #1e3a8a !important;
+}
+.dark .es-text-style {
+  background-color: #172554 !important;
+  color: #dbeafe !important;
+}
+/* Make navigation buttons visibly colored in both Arabic and Spanish. */
+button[onclick="goBackToSection()"],
+button[onclick="goHome()"] {
+  background-color: #d1fae5 !important;
+  color: #065f46 !important;
+  border: 1px solid #6ee7b7 !important;
+  box-shadow: 0 2px 5px rgba(6, 95, 70, 0.12) !important;
+}
+.dark button[onclick="goBackToSection()"],
+.dark button[onclick="goHome()"] {
+  background-color: #064e3b !important;
+  color: #d1fae5 !important;
+  border-color: #047857 !important;
+}
+button[onclick="nextQuranPage()"] {
+  background-color: #047857 !important;
+  color: #ffffff !important;
+  border: 1px solid #065f46 !important;
+}
+button[onclick="prevQuranPage()"] {
+  background-color: #b45309 !important;
+  color: #ffffff !important;
+  border: 1px solid #92400e !important;
+}
+button[onclick="nextQuranPage()"]:hover { background-color: #065f46 !important; }
+button[onclick="prevQuranPage()"]:hover { background-color: #92400e !important; }
