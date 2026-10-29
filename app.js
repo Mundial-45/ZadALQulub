@@ -270,75 +270,58 @@ function changeFontSize(delta) {
   document.documentElement.style.setProperty('--app-font-size', `${fontSize}px`);
 }
 
+let activeAudioCardIndex = null;
+let audioRepeatEnabled = false;
 function formatAudioTime(seconds) {
   if (!Number.isFinite(seconds) || seconds < 0) return '0:00';
-  const mins = Math.floor(seconds / 60);
-  const secs = Math.floor(seconds % 60).toString().padStart(2, '0');
-  return `${mins}:${secs}`;
+  return Math.floor(seconds / 60) + ':' + String(Math.floor(seconds % 60)).padStart(2, '0');
 }
-
 function updateAudioProgress() {
-  const panel = document.getElementById('audioProgressPanel');
-  const seek = document.getElementById('audioSeekBar');
-  const current = document.getElementById('audioCurrentTime');
-  const duration = document.getElementById('audioDuration');
-  if (!currentAudio) return;
+  if (!currentAudio || activeAudioCardIndex === null) return;
+  const i = activeAudioCardIndex;
+  const seek = document.getElementById('audioSeek-' + i);
+  const nowEl = document.getElementById('audioCurrent-' + i);
+  const durationEl = document.getElementById('audioDuration-' + i);
   const total = Number.isFinite(currentAudio.duration) ? currentAudio.duration : 0;
   const now = Number.isFinite(currentAudio.currentTime) ? currentAudio.currentTime : 0;
-  if (seek && !seek.matches(':active')) seek.value = total > 0 ? String(Math.round((now / total) * 1000)) : '0';
-  if (current) current.textContent = formatAudioTime(now);
-  if (duration) duration.textContent = formatAudioTime(total);
-  if (panel && !panel.classList.contains('hidden')) {
-    const title = document.getElementById('audioProgressTitle');
-    if (title) title.textContent = currentLang === 'es' ? 'Progreso del audio' : 'تقدم التلاوة';
-  }
+  if (seek && !seek.matches(':active')) seek.value = total > 0 ? String(Math.round(now / total * 1000)) : '0';
+  if (nowEl) nowEl.textContent = formatAudioTime(now);
+  if (durationEl) durationEl.textContent = formatAudioTime(total);
+  const playBtn = document.getElementById('audioPlay-' + i);
+  if (playBtn) playBtn.textContent = currentAudio.paused ? '▶' : 'Ⅱ';
+  const repeatBtn = document.getElementById('audioRepeat-' + i);
+  if (repeatBtn) { repeatBtn.style.opacity = audioRepeatEnabled ? '1' : '0.55'; repeatBtn.setAttribute('aria-pressed', String(audioRepeatEnabled)); }
 }
-
-function closeAudioProgress() {
-  if (currentAudio) {
-    currentAudio.pause();
-    currentAudio = null;
-  }
-  const panel = document.getElementById('audioProgressPanel');
-  if (panel) panel.classList.add('hidden');
-}
-
-function playAudio(audioUrl) {
+function playAudio(audioUrl, index) {
   if (!audioUrl) return;
-  if (currentAudio) {
-    currentAudio.pause();
-    currentAudio = null;
+  if (currentAudio && activeAudioCardIndex === index) {
+    if (currentAudio.paused) currentAudio.play().then(updateAudioProgress).catch(() => showToast(currentLang === 'es' ? 'No se pudo reproducir el audio' : 'تعذر تشغيل الصوت'));
+    else currentAudio.pause();
+    updateAudioProgress(); return;
   }
-  const panel = document.getElementById('audioProgressPanel');
-  if (panel) panel.classList.remove('hidden');
-  const title = document.getElementById('audioProgressTitle');
-  if (title) title.textContent = currentLang === 'es' ? 'Progreso del audio' : 'تقدم التلاوة';
+  if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+  activeAudioCardIndex = index;
+  const player = document.getElementById('audioPlayer-' + index);
+  if (player) player.classList.remove('hidden');
   currentAudio = new Audio(audioUrl);
   currentAudio.preload = 'metadata';
-  currentAudio.addEventListener('loadedmetadata', updateAudioProgress);
-  currentAudio.addEventListener('durationchange', updateAudioProgress);
-  currentAudio.addEventListener('timeupdate', updateAudioProgress);
-  currentAudio.addEventListener('play', updateAudioProgress);
-  currentAudio.addEventListener('ended', updateAudioProgress);
-  currentAudio.play().then(updateAudioProgress).catch(() => {
-    showToast(currentLang === 'es' ? 'Error al reproducir audio' : 'تعذر تشغيل الصوت');
-  });
+  currentAudio.loop = audioRepeatEnabled;
+  ['loadedmetadata','durationchange','timeupdate','play','pause','ended'].forEach(ev => currentAudio.addEventListener(ev, updateAudioProgress));
+  currentAudio.play().then(updateAudioProgress).catch(() => showToast(currentLang === 'es' ? 'No se pudo reproducir el audio' : 'تعذر تشغيل الصوت'));
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-  const seek = document.getElementById('audioSeekBar');
-  if (seek) {
-    seek.addEventListener('input', () => {
-      if (currentAudio && Number.isFinite(currentAudio.duration) && currentAudio.duration > 0) {
-        currentAudio.currentTime = (Number(seek.value) / 1000) * currentAudio.duration;
-        updateAudioProgress();
-      }
-    });
+function stopAudio(index) {
+  if (currentAudio && activeAudioCardIndex === index) { currentAudio.pause(); currentAudio.currentTime = 0; updateAudioProgress(); }
+}
+function seekAudio(index, value) {
+  if (currentAudio && activeAudioCardIndex === index && Number.isFinite(currentAudio.duration) && currentAudio.duration > 0) {
+    currentAudio.currentTime = Number(value) / 1000 * currentAudio.duration; updateAudioProgress();
   }
-  const close = document.getElementById('audioCloseBtn');
-  if (close) close.addEventListener('click', closeAudioProgress);
-});
-
+}
+function toggleAudioRepeat(index) {
+  audioRepeatEnabled = !audioRepeatEnabled;
+  if (currentAudio) currentAudio.loop = audioRepeatEnabled;
+  updateAudioProgress();
+}
 function escapeJsStr(str) {
   if (!str) return '';
   return str.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/"/g, '&quot;').replace(/\r?\n/g, '\\n');
@@ -1036,15 +1019,23 @@ function renderGroupItems() {
         </div>
       ` : ''}
 
+      ${(() => {
+        const audioSrc = item.audioUrl || (item.audioUrls && item.audioUrls.length > 0 ? item.audioUrls[0] : null);
+        return audioSrc ? `
+          <div id="audioPlayer-${index}" class="mt-3 mb-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700">
+            <input id="audioSeek-${index}" type="range" min="0" max="1000" value="0" step="1" oninput="seekAudio(${index}, this.value)" class="w-full accent-slate-800 dark:accent-slate-200 cursor-pointer" aria-label="${isEs ? 'Progreso del audio' : 'تقدم الصوت'}">
+            <div class="flex justify-end text-xs text-slate-500 dark:text-slate-300 mb-2" dir="ltr"><span id="audioDuration-${index}">0:00</span></div>
+            <div class="flex items-center justify-center gap-7">
+              <button type="button" onclick="stopAudio(${index})" class="text-2xl text-slate-700 dark:text-slate-100" aria-label="${isEs ? 'Detener' : 'إيقاف'}">■</button>
+              <button id="audioPlay-${index}" type="button" onclick="playAudio('${audioSrc}', ${index})" class="w-14 h-14 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-2xl font-bold" aria-label="${isEs ? 'Reproducir o pausar' : 'تشغيل أو إيقاف مؤقت'}">▶</button>
+              <button id="audioRepeat-${index}" type="button" onclick="toggleAudioRepeat(${index})" class="text-2xl text-slate-700 dark:text-slate-100" aria-label="${isEs ? 'Repetir audio' : 'تكرار الصوت'}" title="${isEs ? 'Repetir' : 'تكرار'}">⇄</button>
+            </div>
+            <div class="flex justify-between text-xs tabular-nums text-slate-500 dark:text-slate-300 mt-2" dir="ltr"><span id="audioCurrent-${index}">0:00</span><span></span></div>
+          </div>
+        ` : '';
+      })()}
       <div class="flex items-center justify-center space-x-2 space-x-reverse pt-2 border-t border-slate-100 dark:border-slate-700">
-${(() => {
-  const audioSrc = item.audioUrl || (item.audioUrls && item.audioUrls.length > 0 ? item.audioUrls[0] : null);
-  return audioSrc ? `
-    <button type="button" onclick="playAudio('${audioSrc}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="استماع">
-      🔊
-    </button>
-  ` : '';
-})()}
+
 
         <button type="button" onclick="copyText('${escapeJsStr(isEs ? (item.explanationEs || item.text) : item.text)}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="نسخ">
           📋
