@@ -27,7 +27,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/001006.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/001007.mp3"
             ],
-            "notes": "سورة الفاتحة",
+            "note": "سورة الفاتحة",
             "audioUrl": ""
           },
           {
@@ -125,7 +125,7 @@ const ruqyahData = [
             "audioUrl": "",
             "count": 7,
             "maxCount": 7,
-            "notes": "سورة الفاتحة",
+            "note": "سورة الفاتحة",
             "audioUrls": [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/001001.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/001002.mp3",
@@ -148,7 +148,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002003.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002004.mp3"
             ],
-            "notes": "سورة البقرة الايات 1-4",
+            "note": "سورة البقرة الايات 1-4",
             "audioUrl": ""
           },
           {
@@ -158,7 +158,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [],
-            "notes": "سورة البقرة الاية 102",
+            "note": "سورة البقرة الاية 102",
             "audioUrl": "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002102.mp3"
           },
           {
@@ -168,7 +168,7 @@ const ruqyahData = [
             "audioUrl": "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002255.mp3",
             "count": 1,
             "maxCount": 1,
-            "notes": "أية الكرسي",
+            "note": "أية الكرسي",
             "audioUrls": []
           },
           {
@@ -178,7 +178,7 @@ const ruqyahData = [
             "audioUrl": "",
             "count": 1,
             "maxCount": 1,
-            "notes": "سورة البقرة الايات 285-286",
+            "note": "سورة البقرة الايات 285-286",
             "audioUrls": [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002285.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002286.mp3"
@@ -208,7 +208,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003018.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003019.mp3"
             ],
-            "notes": "سورة آل عمران الايات 18-19",
+            "note": "سورة آل عمران الايات 18-19",
             "audioUrl": ""
           },
           {
@@ -221,7 +221,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003026.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003027.mp3"
             ],
-            "notes": "سورة آل عمران الآيات 26-27",
+            "note": "سورة آل عمران الآيات 26-27",
             "audioUrl": ""
           },
           {
@@ -238,7 +238,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007121.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007122.mp3"
             ],
-            "notes": "سورة الاعراف الايات 117-122",
+            "note": "سورة الاعراف الايات 117-122",
             "audioUrl": ""
           },
           {
@@ -253,7 +253,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/010081.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/010082.mp3"
             ],
-            "notes": "سورة يونس الآيات 79-82",
+            "note": "سورة يونس الآيات 79-82",
             "audioUrl": ""
           },
           {
