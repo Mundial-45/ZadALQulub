@@ -257,14 +257,13 @@ const ruqyahData = [
             "audioUrl": ""
           },
           {
-            text: "﴿وَإِن يَمۡسَسۡكَ ٱللَّهُ بِضُرّٖ فَلَا كَاشِفَ لَهُۥٓ إِلَّا هُوَۖ وَإِن يُرِدۡكَ بِخَيۡرٖ فَلَا رَآدَّ لِفَضۡلِهِۦۚ يُصِيبُ بِهِۦ مَن يَشَآءُ مِنۡ عِبَادِهِۦۚ وَهُوَ ٱلۡغَفُورُ ٱلرَّحِيمُ۝﴾",
-            latin: "Wa in yamsaskal-lāhu bi-ḍurrin falā kāshifa lahū illā huw, wa in yuridka bi-khayrin falā rādda li-faḍlihi, yuṣību bihi man yashā'u min ‘ibādihi, wa huwal-ghafūrur-raḥīm.",
-            explanationEs: "Si Dios te aflige con una desgracia, nadie excepto Él podrá librarte de ella. Y si Él desea para ti un bien, nadie podrá impedir Su favor. Él concede Su favor a quien quiere de Sus siervos. Él es el Perdonador, el Misericordioso.",
-            count: 1,
-            maxCount: 1,
-            audioUrls: [
-              "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/010107.mp3"
-            ]
+            "text": "﴿وَإِن يَمۡسَسۡكَ ٱللَّهُ بِضُرّٖ فَلَا كَاشِفَ لَهُۥٓ إِلَّا هُوَۖ وَإِن يُرِدۡكَ بِخَيۡرٖ فَلَا رَآدَّ لِفَضۡلِهِۦۚ يُصِيبُ بِهِۦ مَن يَشَآءُ مِنۡ عِبَادِهِۦۚ وَهُوَ ٱلۡغَفُورُ ٱلرَّحِيمُ۝﴾",
+            "latin": "Wa in yamsaskal-lāhu bi-ḍurrin falā kāshifa lahū illā huw, wa in yuridka bi-khayrin falā rādda li-faḍlihi, yuṣību bihi man yashā'u min ‘ibādihi, wa huwal-ghafūrur-raḥīm.",
+            "explanationEs": "Si Dios te aflige con una desgracia, nadie excepto Él podrá librarte de ella. Y si Él desea para ti un bien, nadie podrá impedir Su favor. Él concede Su favor a quien quiere de Sus siervos. Él es el Perdonador, el Misericordioso.",
+            "count": 1,
+            "maxCount": 1,
+            "note": "سورة يونس الآية 107",
+            "audioUrl": "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/010107.mp3"
           },
           {
             text: "﴿وَإِذَا قَرَأۡتَ ٱلۡقُرۡءَانَ جَعَلۡنَا بَيۡنَكَ وَبَيۡنَ ٱلَّذِينَ لَا يُؤۡمِنُونَ بِٱلۡأٓخِرَةِ حِجَابٗا مَّسۡتُورٗا۝ وَجَعَلۡنَا عَلَىٰ قُلُوبِهِمۡ أَكِنَّةً أَن يَفۡقَهُوهُ وَفِيٓ ءَاذَانِهِمۡ وَقۡرٗاۚ وَإِذَا ذَكَرۡتَ رَبَّكَ فِي ٱلۡقُرۡءَانِ وَحۡدَهُۥ وَلَّوۡاْ عَلَىٰٓ أَدۡبَٰرِهِمۡ نُفُورٗا۝﴾",
