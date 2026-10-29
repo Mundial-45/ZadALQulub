@@ -301,7 +301,7 @@ function normaliseAudioList(audioValue) {
   const values = Array.isArray(audioValue) ? audioValue : [audioValue];
   return values.flatMap(value => {
     if (typeof value !== 'string' || !value.trim()) return [];
-    return value.split(/\\s*[,\\n]\\s*/).map(url => url.trim()).filter(Boolean);
+    return value.split(/[\s,]+/).map(url => url.trim()).filter(Boolean);
   });
 }
 function playAudio(audioValue, index) {
