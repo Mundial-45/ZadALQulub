@@ -1097,12 +1097,18 @@ function renderGroupItems() {
     const isDone = currentCount === 0;
     const isRuqyahSection = currentSection === 'ruqyah';
     const isMunajatSection = currentSection === 'munajat';
+    const isAzkarSection = currentSection === 'azkar';
+    const isAdyaSection = currentSection === 'adya';
     const displayedItemNumber = Number(item.itemNumber) || (index + 1);
     const itemProgressStr = isRuqyahSection
       ? (isEs ? `Ruqyah n.º ${displayedItemNumber}` : `رقية رقم ${displayedItemNumber}`)
       : isMunajatSection
         ? (isEs ? `Munajat n.º ${displayedItemNumber}` : `مناجاة رقم ${displayedItemNumber}`)
-        : t.itemProgress.replace('{current}', displayedItemNumber).replace('{total}', totalItems);
+        : isAzkarSection
+          ? (isEs ? `Zikr n.º ${displayedItemNumber}` : `ذكر رقم ${displayedItemNumber}`)
+          : isAdyaSection
+            ? (isEs ? `Dua n.º ${displayedItemNumber}` : `دعاء رقم ${displayedItemNumber}`)
+            : t.itemProgress.replace('{current}', displayedItemNumber).replace('{total}', totalItems);
 
     const card = document.createElement('div');
     card.id = `zikr-card-${index}`;
