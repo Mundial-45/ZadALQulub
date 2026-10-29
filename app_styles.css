@@ -387,6 +387,27 @@ button[onclick="prevQuranPage()"] {
 button[onclick="nextQuranPage()"]:hover { background-color: #065f46 !important; }
 button[onclick="prevQuranPage()"]:hover { background-color: #92400e !important; }
 
+
+/* Tasbeeh cards reuse the exact paper image/overlay used by Azkar and Dua cards. */
+#tasbeehView .card-paper-bg {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url('card_bg.avif'), url('card_bg.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+}
+.dark #tasbeehView .card-paper-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.92)), url('card_bg.avif'), url('card_bg.jpg') !important;
+  background-color: #000000 !important;
+  color: #f8fafc !important;
+  border-color: #334155 !important;
+}
+.dark #tasbeehView .card-paper-bg h3,
+.dark #tasbeehView .card-paper-bg .dir-rtl {
+  color: #f8fafc !important;
+}
+
 /* Dark-mode visibility audit: native controls, Quran navigation, indexes and tasbeeh. */
 html.light { color-scheme: light; }
 html.dark { color-scheme: dark; }
