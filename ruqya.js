@@ -37,7 +37,7 @@ const ruqyahData = [
             latin: "Allāhu lā ilāha illā Huwal-Ḥayyul-Qayyūm, lā ta'khudhuhū sinatun wa lā nawm, lahū mā fīs-samāwāti wa mā fīl-arḍ, man dhal-ladhī yashfa‘u ‘indahū illā bi-idhnih, ya‘lamu mā bayna aydīhim wa mā khalfahum, wa lā yuḥīṭūna bi-shayʾin min ‘ilmihī illā bi-mā shā', wasi‘a kursiyyuhus-samāwāti wal-arḍ, wa lā ya'ūduhū ḥifẓuhumā, wa Huwal-‘Aliyyul-‘Aẓīm.",
             explanationEs: "¡Dios! No existe nada ni nadie con derecho a ser adorado excepto Él, el Viviente [Eterno], el Sustentador [y Gobernador de toda la creación]. No Lo afectan somnolencia ni sueño. Suyo es cuanto hay en los cielos y la Tierra. ¿Quién podrá interceder ante Él si no es con Su permiso? Conoce el pasado y el futuro [lo manifiesto y lo oculto] y nadie abarca de Su conocimiento salvo lo que Él quiere. El escabel de Su Trono abarca los cielos y la Tierra, y la custodia [y mantenimiento] de ambos no Lo agobia. Y Él es el Sublime, el Grandioso. (Ayat al-Kursi; traducción de Isa García)",
             count: 1,
-            maxCount: 1
+            maxCount: 1,
             audioUrls: [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002255.mp3"
             ],
@@ -54,7 +54,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002286.mp3"
             ],
             note: "سورة البقرة الآيات 285-286",
-            },
+          },
           {
             text: "﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ قُلۡ هُوَ ٱللَّهُ أَحَدٌ۝ ٱللَّهُ ٱلصَّمَدُ۝لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ۝ وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ۝﴾",
             latin: "Bismillāhir-Raḥmānir-Raḥīm. Qul Huwallāhu Aḥad. Allāhuṣ-Ṣamad. Lam yalid wa lam yūlad. Wa lam yakun lahū kufuwan aḥad.",
@@ -68,7 +68,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112004.mp3"
             ],
             note: "سورة الإخلاص الآيات 1-4",
-            },
+          },
           {
             text: "﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ۝مِن شَرِّ مَا خَلَقَ۝وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ۝ وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِي ٱلۡعُقَدِ۝وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ۝﴾",
             latin: "Bismillāhir-Raḥmānir-Raḥīm. Qul a‘ūdhu bi-Rabbil-falaq. Min sharri mā khalaq. Wa min sharri ghāsiqin idhā waqab. Wa min sharrin-naffāthāti fīl-‘uqad. Wa min sharri ḥāsidin idhā ḥasad.",
@@ -83,7 +83,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113005.mp3"
             ],
             note: "سورة الفلق الآيات 1-5",
-            },
+          },
           {
             text: "﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ۝ مَلِكِ ٱلنَّاسِ۝ إِلَٰهِ ٱلنَّاسِ۝ مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ۝ ٱلَّذِي يُوَسۡوِسُ فِي صُدُورِ ٱلنَّاسِ۝ مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ۝﴾",
             latin: "Bismillāhir-Raḥmānir-Raḥīm. Qul a‘ūdhu bi-Rabbin-nās. Malikin-nās. Ilāhin-nās. Min sharril-waswāsil-khannās. Alladhī yuwaswisu fī ṣudūrin-nās. Minal-jinnati wan-nās.",
@@ -99,7 +99,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114006.mp3"
             ],
             note: "سورة الناس الآيات 1-6",
-            },
+          },
           {
             text: "اللَّهُمَّ رَبَّ النَّاسِ، أَذْهِبِ الْبَاسَ، اشْفِ وَأَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ، شِفَاءً لَا يُغَادِرُ سَقَمًا",
             latin: "Allāhumma Rabban-nās, adhhibil-bās, ishfi wa Antash-Shāfī, lā shifā'a illā shifā'uk, shifā'an lā yughādiru saqamā.",
@@ -318,7 +318,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/017046.mp3"
             ],
             note: "سورة الإسراء الآيات 45-46",
-            },
+          },
           {
             text: "﴿وَأَلۡقِ مَا فِي يَمِينِكَ تَلۡقَفۡ مَا صَنَعُوٓاْۖ إِنَّمَا صَنَعُواْ كَيۡدُ سَٰحِرٖۖ وَلَا يُفۡلِحُ ٱلسَّاحِرُ حَيۡثُ أَتَىٰ۝﴾",
             latin: "Innamā ṣana‘ū kaydu sāḥirin wa lā yufliḥus-sāḥiru ḥaythu atā.",
@@ -329,7 +329,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/020069.mp3"
             ],
             note: "سورة طه الآية 69",
-            },
+          },
           {
             text: "﴿وَٱلصَّٰٓفَّٰتِ صَفّٗا۝ فَٱلزَّٰجِرَٰتِ زَجۡرٗا۝ فَٱلتَّٰلِيَٰتِ ذِكۡرًا۝ إِنَّ إِلَٰهَكُمۡ لَوَٰحِدٞ۝ رَّبُّ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ وَمَا بَيۡنَهُمَا وَرَبُّ ٱلۡمَشَٰرِقِ۝ إِنَّا زَيَّنَّا ٱلسَّمَآءَ ٱلدُّنۡيَا بِزِينَةٍ ٱلۡكَوَاكِبِ۝ وَحِفۡظٗا مِّن كُلِّ شَيۡطَٰنٖ مَّارِدٖ۝ لَّا يَسَّمَّعُونَ إِلَى ٱلۡمَلَإِ ٱلۡأَعۡلَىٰ وَيُقۡذَفُونَ مِن كُلِّ جَانِبٖ۝دُحُورٗاۖ وَلَهُمۡ عَذَابٞ وَاصِبٌ۝ إِلَّا مَنۡ خَطِفَ ٱلۡخَطۡفَةَ فَأَتۡبَعَهُۥ شِهَابٞ ثَاقِبٞ۝﴾",
             latin: "Was-ṣāffāti ṣaffā (1), fal-zājirāti zajrā (2), fal-tāliyāti dhikrā (3), inna ilāhakum lawāḥid (4), rabbus-samāwāti wal-arḍi wa mā baynahumā wa rabbul-mashāriq (5), innā zayyannas-samā'ad-dun-yā bi-zīnatil-kawākib (6), wa ḥifẓan min kulli shayṭānin mārid (7), lā yassamma‘ūna ilal-malail-a‘lā wa yuq-dhafūna min kulli jānib (8), duḥūran wa lahum ‘adhābun wāṣib (9), illā man khaṭifal-khaṭfata fa-atba‘ahu shihābun thāqib (10).",
@@ -349,7 +349,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037010.mp3"
             ],
             note: "سورة الصافات الآيات 1-10",
-            },
+          },
           {
             text: "﴿لَوۡ أَنزَلۡنَا هَٰذَا ٱلۡقُرۡءَانَ عَلَىٰ جَبَلٖ لَّرَأَيۡتَهُۥ خَٰشِعٗا مُّتَصَدِّعٗا مِّنۡ خَشۡيَةِ ٱللَّهِۚ وَتِلۡكَ ٱلۡأَمۡثَٰلُ نَضۡرِبُهَا لِلنَّاسِ لَعَلَّهُمۡ يَتَفَكَّرُونَ۝ هُوَ ٱللَّهُ ٱلَّذِي لَآ إِلَٰهَ إِلَّا هُوَۖ عَٰلِمُ ٱلۡغَيۡبِ وَٱلشَّهَٰدَةِۖ هُوَ ٱلرَّحۡمَٰنُ ٱلرَّحِيمُ۝ هُوَ ٱللَّهُ ٱلَّذِي لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡمَلِكُ ٱلۡقُدُّوسُ ٱلسَّلَٰمُ ٱلۡمُؤۡمِنُ ٱلۡمُهَيۡمِنُ ٱلۡعَزِيزُ ٱلۡجَبَّارُ ٱلۡمُتَكَبِّرُۚ سُبۡحَٰنَ ٱللَّهِ عَمَّا يُشۡرِكُونَ۝ هُوَ ٱللَّهُ ٱلۡخَٰلِقُ ٱلۡبَارِئُ ٱلۡمُصَوِّرُۖ لَهُ ٱلۡأَسۡمَآءُ ٱلۡحُسۡنَىٰۚ يُسَبِّحُ لَهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِۖ وَهُوَ ٱلۡعَزِيزُ ٱلۡحَكِيمُ۝﴾",
             latin: "Law ananzalnā hādhā-l-qur'āna ‘alā jabalin la-ra'aytahu khāshi‘an mutaṣaddi‘an min khashyati-llāhi, wa til-kal-amthālu naḍribuhā lil-nāsi la‘allahum yatafakkarūna (21). Huwa-llāhu-lladhī lā ilāha illā huwa, ‘ālimu-l-ghaybi wa-sh-shahādati, huwa-r-raḥmānu-r-raḥīmu (22). Huwa-llāhu-lladhī lā ilāha illā huwa-l-maliku-l-quddūsu-s-salāmu-l-mu'minu-l-muhayminu-l-‘azīzu-l-jabbāru-l-mutakabbiru, subḥāna-llāhi ‘ammā yushrikūn (23). Huwa-llāhu-l-khāliku-l-bāri'u-l-muṣawwiru, lahu-l-asmāu-l-ḥusnā, yusabbiḥu lahu mā fī-s-samāwāti wa-l-arḍi, wa huwa-l-‘azīzu-l-ḥakīm (24).",
@@ -363,7 +363,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/059024.mp3"
             ],
             note: "سورة الحشر الآيات 21-24",
-            },
+          },
           {
             text: "﴿تَبَٰرَكَ ٱلَّذِي بِيَدِهِ ٱلۡمُلۡكُ وَهُوَ عَلَىٰ كُلِّ شَيۡءٖ قَدِيرٌ۝ ٱلَّذِي خَلَقَ ٱلۡمَوۡتَ وَٱلۡحَيَوٰةَ لِيَبۡلُوَكُمۡ أَيُّكُمۡ أَحۡسَنُ عَمَلٗاۚ وَهُوَ ٱلۡعَزِيزُ ٱلۡغَفُورُ۝ ٱلَّذِي خَلَقَ سَبۡعَ سَمَٰوَٰتٖ طِبَاقٗاۖ مَّا تَرَىٰ فِي خَلۡقِ ٱلرَّحۡمَٰنِ مِن تَفَٰوُتٖۖ فَٱرۡجِعِ ٱلۡبَصَرَ هَلۡ تَرَىٰ مِن فُطُورٖ۝ ثُمَّ ٱرۡجِعِ ٱلۡبَصَرَ كَرَّتَيۡنِ يَنقَلِبۡ إِلَيۡكَ ٱلۡبَصَرُ خَاسِئٗا وَهُوَ حَسِيرٞ۝﴾",
             latin: "Tabārakal-ladhī biyadihil-mulku wa huwa ‘alā kulli shayʾin qadīr (1). Al-ladhī khalaqal-mawta wal-ḥayāta li-yabluwakum ayyukum aḥsanu ‘amalā, wa huwal-‘azīzul-ghafūr (2). Al-ladhī khalaqa sab‘a samāwātin ṭibāqā, mā tarā fī khalqir-raḥmāni min tafāwut, farji‘il-baṣara hal tarā min fuṭūr (3). Thummar-ji‘il-baṣara karratayni yanqalib ilaykal-baṣaru khāsi'an wa huwa ḥasīr (4).",
@@ -378,7 +378,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/067005.mp3"
             ],
             note: "سورة الملك الآيات 1-5",
-            },
+          },
           {
             text: "﴿وَإِن يَكَادُ ٱلَّذِينَ كَفَرُواْ لَيُزۡلِقُونَكَ بِأَبۡصَٰرِهِمۡ لَمَّا سَمِعُواْ ٱلذِّكۡرَ وَيَقُولُونَ إِنَّهُۥ لَمَجۡنُونٞ۝ وَمَا هُوَ إِلَّا ذِكۡرٞ لِّلۡعَٰلَمِينَ۝﴾",
             latin: "Wa in yakādul-ladhīna kafarū layuzliqūnaka bi-abṣārihim lammā sami‘u-dh-dhikra wa yaqūlūna innahu lamajnūn (51). Wa mā huwa illā dhikrun lil-‘ālamīn (52).",
@@ -390,7 +390,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/068052.mp3"
             ],
             note: "سورة القلم الآيات 51-52",
-            },
+          },
           {
             text: "﴿قُلۡ أُوحِيَ إِلَيَّ أَنَّهُ ٱسۡتَمَعَ نَفَرٞ مِّنَ ٱلۡجِنِّ فَقَالُوٓاْ إِنَّا سَمِعۡنَا قُرۡءَانًا عَجَبٗا۝ يَهۡدِيٓ إِلَى ٱلرُّشۡدِ فَـَٔامَنَّا بِهِۦۖ وَلَن نُّشۡرِكَ بِرَبِّنَآ أَحَدٗا۝﴾",
             latin: "Qul ūḥiya ilayya annahū istama‘a nafarun minal-jinni faqālū innā sami‘nā qur'ānan ‘ajabā (1). Yahdī ilar-rushdi fa-āmannā bihi wa lan nushrika bi-rabbină aḥadā (2).",
@@ -403,7 +403,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/072003.mp3"
             ],
             note: "سورة الجن الآيات 1-3",
-            },
+          },
           {
             text: "﴿وَقُل رَّبِّ أَعُوذُ بِكَ مِنۡ هَمَزَٰتِ ٱلشَّيَٰطِينِ۝وَأَعُوذُ بِكَ رَبِّ أَن يَحۡضُرُونِ۝﴾",
             latin: "Wa qul Rabbi a‘ūdhu bika min hamazātish-shayāṭīn (97). Wa a‘ūdhu bika Rabbi an yaḥḍurūn (98).",
@@ -415,7 +415,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023098.mp3"
             ],
             note: "سورة المؤمنون الآيات 97-98",
-            },
+          },
           {
             text: "﴿وَإِذۡ صَرَفۡنَآ إِلَيۡكَ نَفَرٗا مِّنَ ٱلۡجِنِّ يَسۡتَمِعُونَ ٱلۡقُرۡءَانَ فَلَمَّا حَضَرُوهُ قَالُوٓاْ أَنصِتُواْۖ فَلَمَّا قُضِيَ وَلَّوۡاْ إِلَىٰ قَوۡمِهِم مُّنذِرِينَ۝ قَالُواْ يَٰقَوۡمَنَآ إِنَّا سَمِعۡنَا كِتَٰبًا أُنزِلَ مِنۢ بَعۡدِ مُوسَىٰ مُصَدِّقٗا لِّمَا بَيۡنَ يَدَيۡهِ يَهۡدِيٓ إِلَى ٱلۡحَقِّ وَإِلَىٰ طَرِيقٖ مُّسۡتَقِيمٖ۝ يَٰقَوۡمَنَآ أَجِيبُواْ دَاعِيَ ٱللَّهِ وَءَامِنُواْ بِهِۦ يَغۡفِرۡ لَكُم مِّن ذُنُوبِكُمۡ وَيُجِرۡكُم مِّنۡ عَذَابٍ أَلِيمٖ۝ وَمَن لَّا يُجِبۡ دَاعِيَ ٱللَّهِ فَلَيۡسَ بِمُعۡجِزٖ فِي ٱلۡأَرۡضِ وَلَيۡسَ لَهُۥ مِن دُونِهِۦٓ أَوۡلِيَآءُۚ أُوْلَٰٓئِكَ فِي ضَلَٰلٖ مُّبِينٍ۝﴾",
             latin: "Wa idh ṣarafnā ilayka nafarin minal-jinni yastami‘ūnal-qur'āna lammā ḥaḍarūhu qālū anṣitū lammā quḍiya wallaw ilā qawmihim mundhirīn.",
@@ -429,7 +429,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/046032.mp3"
             ],
             note: "سورة الأحقاف الآيات 29-32",
-            },
+          },
           {
             text: "﴿يسٓ۝ وَٱلۡقُرۡءَانِ ٱلۡحَكِيمِ۝ إِنَّكَ لَمِنَ ٱلۡمُرۡسَلِينَ۝ عَلَىٰ صِرَٰطٖ مُّسۡتَقِيمٖ۝ تَنزِيلَ ٱلۡعَزِيزِ ٱلرَّحِيمِ۝ لِتُنذِرَ قَوۡمٗا مَّآ أُنذِرَ ءَابَآؤُهُمۡ فَهُمۡ غَٰفِلُونَ۝ لَقَدۡ حَقَّ ٱلۡقَوۡلُ عَلَىٰٓ أَكۡثَرِهِمۡ فَهُمۡ لَا يُؤۡمِنُونَ۝ إِنَّا جَعَلۡنَا فِيٓ أَعۡنَٰقِهِمۡ أَغۡلَٰلٗا فَهِيَ إِلَى ٱلۡأَذۡقَانِ فَهُم مُّقۡمَحُونَ۝ وَجَعَلۡنَا مِنۢ بَيۡنِ أَيۡدِيهِمۡ سَدّٗا وَمِنۡ خَلۡفِهِمۡ سَدّٗا فَأَغۡشَيۡنَٰهُمۡ فَهُمۡ لَا يُبۡصِرُونَ۝ وَسَوَآءٌ عَلَيۡهِمۡ ءَأَنذَرۡتَهُمۡ أَمۡ لَمۡ تُنذِرۡهُمۡ لَا يُؤۡمِنُونَ۝﴾",
             latin: "Yāsīn (1). Wal-Qur'ānil-ḥakīm (2). Innaka laminal-mursalin (3). ‘Alā ṣirāṭin mustaqīm (4). Tanzīlal-‘azīzir-raḥīm (5). Litundira qawman mā undira ābā'uhum fahum ghāfilūn (6). Laqad ḥaqqal-qawlu ‘alā aktharihim fahum lā yu'minūn (7). Innā ja‘alnā fī a‘nāqihim aghlālan fahiya ilal-adhqāni fahum muqmaḥūn (8). Wa ja‘alnā min bayni aydīhim saddan wa min khalfihim saddan fa-aghshaynāhum fahum lā yubṣirūn (9).",
@@ -449,14 +449,13 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036010.mp3"
             ],
             note: "سورة يس الآيات 1-10",
-            },
+          },
           {
             text: "﴿وَإِمَّا يَنزَغَنَّكَ مِنَ ٱلشَّيۡطَٰنِ نَزۡغٞ فَٱسۡتَعِذۡ بِٱللَّهِۖ إِنَّهُۥ هُوَ ٱلسَّمِيعُ ٱلۡعَلِيمُ۝﴾",
             latin: "Wa immā yanzaghannaka minash-shayṭāni nazghun fasta‘idh billāh, innahū Huwas-Samī‘ul-‘Alīm.",
             explanationEs: "Y si una instigación del demonio te incita, busca refugio en Dios; pues Él es el Omnieyente, el Omnisciente.",
-            
             count: 1,
-            maxCount: 1
+            maxCount: 1,
             audioUrls: [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007200.mp3"
             ],
@@ -474,14 +473,14 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/055048.mp3"
             ],
             note: "سورة الرحمن الآيات 46-48",
-            },
+          },
           {
             text: "﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ قُلۡ يَٰٓأَيُّهَا ٱلۡكَٰفِرُونَ۝لَآ أَعۡبُدُ مَا تَعۡبُدُونَ۝ وَلَآ أَنتُمۡ عَٰبِدُونَ مَآ أَعۡبُدُ۝وَلَآ أَنَا۠ عَابِدٞ مَّا عَبَدتُّمۡ۝ وَلَآ أَنتُمۡ عَٰبِدُونَ مَآ أَعۡبُدُ۝لَكُمۡ دِينُكُمۡ وَلِيَ دِينِ۝﴾",
             latin: "Bismillāhir-Raḥmānir-Raḥīm. Qul yā ayyuhal-kāfirūn (1). Lā aʿbudu mā taʿbudūn (2). Wa lā antum ʿābidūna mā aʿbud (3). Wa lā anā ʿābidun mā ʿabadtum (4). Wa lā antum ʿābidūna mā aʿbud (5). Lakum dīnukum wa liya dīn (6).",
             explanationEs: "En el nombre de Dios, el Compasivo, el Misericordioso. Di: «¡Oh, ustedes que rechazan la verdad! No adoro lo que ustedes adoran, ni ustedes adoran lo que yo adoro. Yo no adoraré lo que ustedes adoran, ni ustedes adorarán lo que yo adoro. Ustedes tienen su religión y yo tengo la mía».",
             
             count: 1,
-            maxCount: 1
+            maxCount: 1,
             audioUrls: [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/109001.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/109002.mp3",
@@ -498,7 +497,7 @@ const ruqyahData = [
             explanationEs: "En el nombre de Dios, el Compasivo, el Misericordioso. Di: «Él es Dios, Uno. Dios, el Absoluto [de Quien todos necesitan y Él no necesita de nadie]. No engendró ni fue engendrado. Y no hay nada ni nadie que sea semejante a Él».",
             
             count: 3,
-            maxCount: 3
+            maxCount: 3,
             audioUrls: [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112001.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112002.mp3",
@@ -513,7 +512,7 @@ const ruqyahData = [
             explanationEs: "En el nombre de Dios, el Compasivo, el Misericordioso. Di: «Me refugio en el Señor del alba, del mal de lo que ha creado, del mal de la oscuridad cuando se extiende, del mal de quienes soplan sobre los nudos [practicando hechicería] y del mal del envidioso cuando envidia».",
             
             count: 3,
-            maxCount: 3
+            maxCount: 3,
             audioUrls: [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113001.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113002.mp3",
@@ -529,7 +528,7 @@ const ruqyahData = [
             explanationEs: "En el nombre de Dios, el Compasivo, el Misericordioso. Di: «Me refugio en el Señor de los seres humanos, el Rey de los seres humanos, el Dios de los seres humanos, del mal del susurrador que se oculta, que susurra en los corazones de los seres humanos, sea [el susurrador] de entre los yinn o de entre los seres humanos».",
             
             count: 3,
-            maxCount: 3
+            maxCount: 3,
             audioUrls: [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114001.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114002.mp3",
