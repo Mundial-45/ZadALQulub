@@ -1088,7 +1088,11 @@ function renderGroupItems() {
     const quranFontClass = isQuranItem ? ' quran-font' : '';
     const isFav = favorites.includes(item.text);
     const isDone = currentCount === 0;
-    const itemProgressStr = t.itemProgress.replace('{current}', index + 1).replace('{total}', totalItems);
+    const isRuqyahSection = currentSection === 'ruqyah';
+    const displayedItemNumber = Number(item.itemNumber) || (index + 1);
+    const itemProgressStr = isRuqyahSection
+      ? (isEs ? `Ruqyah n.º ${displayedItemNumber}` : `رقية رقم ${displayedItemNumber}`)
+      : t.itemProgress.replace('{current}', displayedItemNumber).replace('{total}', totalItems);
 
     const card = document.createElement('div');
     card.id = `zikr-card-${index}`;
