@@ -751,6 +751,9 @@ function openItemEditor(index) {
   const existing = getPendingEdit(currentSection, currentGroup.id, index);
   const baseline = existing ? existing.originalItem : JSON.parse(JSON.stringify(currentGroup.items[index]));
   const draft = existing ? existing.updatedItem : JSON.parse(JSON.stringify(currentGroup.items[index]));
+  if (!Object.prototype.hasOwnProperty.call(draft, 'notes')) draft.notes = '';
+  if (!Object.prototype.hasOwnProperty.call(draft, 'audioUrl')) draft.audioUrl = '';
+  if (!Object.prototype.hasOwnProperty.call(draft, 'audioUrls')) draft.audioUrls = [];
   itemEditorState = {
     index: index, groupId: currentGroup.id, section: currentSection, filePath: filePath,
     originalItem: JSON.parse(JSON.stringify(baseline)), draftItem: JSON.parse(JSON.stringify(draft)),
@@ -764,9 +767,17 @@ function openItemEditor(index) {
   Object.keys(itemEditorState.draftItem).forEach(function (key) {
     const value = itemEditorState.draftItem[key], wrap = document.createElement('div'), label = document.createElement('label');
     wrap.className = 'space-y-1.5'; label.className = 'block text-sm font-bold text-slate-700 dark:text-slate-200'; label.textContent = key;
-    const kind = value === null ? 'json' : Array.isArray(value) || typeof value === 'object' ? 'json' : typeof value;
+    const isAudioListField = key === 'audioUrls';
+    const kind = isAudioListField ? 'audio-list' : value === null ? 'json' : Array.isArray(value) || typeof value === 'object' ? 'json' : typeof value;
     let control;
-    if (kind === 'boolean') {
+    if (kind === 'audio-list') {
+      control = document.createElement('textarea');
+      control.rows = 4;
+      control.value = (Array.isArray(value) ? value : []).join('\\n');
+      control.placeholder = 'https://.../audio1.mp3\\nhttps://.../audio2.mp3';
+      control.className = 'w-full rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 p-3 text-sm';
+      control.spellcheck = false;
+    } else if (kind === 'boolean') {
       control = document.createElement('input'); control.type = 'checkbox'; control.checked = value; control.className = 'h-5 w-5 accent-emerald-600';
     } else if (kind === 'number') {
       control = document.createElement('input'); control.type = 'number'; control.step = 'any'; control.value = String(value);
@@ -822,6 +833,7 @@ function buildEditedItem() {
   document.querySelectorAll('#itemEditorFields [data-editor-key]').forEach(function (control) {
     const key = control.dataset.editorKey, kind = control.dataset.editorKind;
     if (kind === 'string') updated[key] = control.value;
+    else if (kind === 'audio-list') updated[key] = control.value.split(/\\r?\\n/).map(url => url.trim()).filter(Boolean);
     else if (kind === 'number') {
       if (control.value.trim() === '' || !Number.isFinite(Number(control.value))) throw new Error('Valor numérico inválido en ' + key);
       updated[key] = Number(control.value);
