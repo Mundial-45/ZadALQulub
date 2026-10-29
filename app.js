@@ -589,8 +589,15 @@ function renderButtonsGrid() {
 
 function openGroup(groupId, skipPushState = false) {
   if (!groupId) return;
-  const match = findSectionGroup(groupId);
-  if (!match) return;
+  // Resolve from the active section first, then fall back to all registered modules.
+  const activeModule = getSectionModule(currentSection);
+  const activeGroup = activeModule && typeof activeModule.findGroup === 'function'
+    ? activeModule.findGroup(groupId)
+    : null;
+  const match = activeGroup
+    ? { group: activeGroup, section: activeModule.id }
+    : findSectionGroup(groupId);
+  if (!match || !match.group || !Array.isArray(match.group.items)) return;
   currentGroup = match.group;
   currentSection = match.section;
   applyPendingEditsToGroup(currentGroup, currentSection);
