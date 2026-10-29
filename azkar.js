@@ -11,32 +11,36 @@ const azkarData = [
                         "explanationEs": "¡Allah! No existe nada ni nadie con derecho a ser adorado excepto Él, el Viviente (Eterno), el Sustentador (y Gobernador de toda la creación). No Lo afectan somnolencia ni sueño. Suyo es cuanto hay en los cielos y la Tierra. ¿Quién podrá interceder ante Él si no es con Su permiso? Conoce el pasado y el futuro (lo manifiesto y lo oculto) y nadie abarca de Su conocimiento salvo lo que Él quiere. El escabel de Su Trono abarca los cielos y la Tierra, y la custodia (y mantenimiento) de ambos no Lo agobia. Y Él es el Sublime, el Grandioso. [Al-Baqarah: 255]",
                         "count": 1,
                         "maxCount": 1,
-                        "audioUrl": "https://everyayah.com/data/Alafasy_128kbps/002255.mp3"
-                  },
+            "note": "سورة البقرة الآية 255",
+            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002255.mp3"]
+      },
                   {
                         "text": "﴿بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ قُلۡ هُوَ ٱللَّهُ أَحَدٌ۝ ٱللَّهُ ٱلصَّمَدُ۝ لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ۝ وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ۝﴾",
                         "latin": "Bismillāhir-raḥmānir-raḥīm. Qul huwal-lāhu aḥad. Allāhuṣ-ṣamad. Lam yalid wa lam yūlad. Wa lam yakul-lahū kufuwan aḥad.",
                         "explanationEs": "Di: “Él es Allah, Uno. Allah es el Absoluto. No engendró ni fue engendrado. Y no hay nada ni nadie que sea semejante a Él”. (Surah Al-Ikhlas)",
                         "count": 3,
                         "maxCount": 3,
-                        "audioUrl": "https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/112.mp3"
-                  },
+            "note": "سورة الإخلاص",
+            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112001.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112002.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112003.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112004.mp3"]
+      },
                   {
                         "text": "﴿بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ۝ مِن شَرِّ مَا خَلَقَ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ۝ وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِي ٱلۡعُقَدِ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ۝﴾",
                         "latin": "Bismillāhir-raḥmānir-raḥīm. Qul a‘ūdhu bi-rabbil-falaq. Min sharri mā khalaq. Wa min sharri ghāsiqin idhā waqab. Wa min sharrin-naffāthāti fil-‘uqad. Wa min sharri ḥāsidin idhā ḥasad.",
                         "explanationEs": "Di: “Me refugio en el Señor del amanecer, de todo el mal que existe en lo que Él creó, del mal de la oscuridad de la noche cuando se extiende, del mal de las (hechiceras) sopladoras de nudos, y del mal del envidioso cuando envidia”. (Surah Al-Falaq)",
                         "count": 3,
                         "maxCount": 3,
-                        "audioUrl": "https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/113.mp3"
-                  },
+            "note": "سورة الفلق",
+            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113001.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113002.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113003.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113004.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113005.mp3"]
+      },
                   {
                         "text": "﴿بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ۝ مَلِكِ ٱلنَّاسِ۝ إِلَٰهِ ٱلنَّاسِ۝ مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ۝ ٱلَّذِي يُوَسۡوِسُ فِي صُدُورِ ٱلنَّاسِ۝ مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ۝﴾",
                         "latin": "Bismillāhir-raḥmānir-raḥīm. Qul a‘ūdhu bi-rabbin-nās. Malikin-nās. Ilāhin-nās. Min sharril-waswāsil-khannās. Alladhī yuwaswisu fī ṣudūrin-nās. Minal-jinnati wan-nās.",
                         "explanationEs": "Di: “Me refugio en el Señor de los seres humanos, en el Rey Soberano de los seres humanos, en el (único) Allah de los seres humanos, de la maldad del (demonio) susurrador que huye (cuando el nombre de Allah es mencionado), que susurra en los corazones de los seres humanos, y existe entre los yinn y entre los seres humanos”. (Surah An-Nas)",
                         "count": 3,
                         "maxCount": 3,
-                        "audioUrl": "https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/114.mp3"
-                  },
+            "note": "سورة الناس",
+            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114001.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114002.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114003.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114004.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114005.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114006.mp3"]
+      },
                   {
                         "text": "أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَذَا الْيَوْمِ وَخَيْرَ مَا بَعْدَهُ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَذَا الْيَوْمِ وَشَرِّ مَا بَعْدَهُ، رَبِّ أَعُوذُ بِكَ مِنَ الْكَسَلِ، وَسُوءِ الْكِبَرِ، رَبِّ أَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ.",
                         "latin": "Aṣbaḥnā wa aṣbaḥal-mulku lillāh, wal-ḥamdu lillāh, lā ilāha ill-Allāhu waḥdahū lā sharīka lah, lahul-mulku wa lahul-ḥamdu wa huwa ‘alā kulli shayʾin qadīr. Rabbi as’aluka khayra mā fī hādhā l-yawmi wa khayra mā ba‘dah, wa a‘ūdhu bika min sharri mā fī hādhā l-yawmi wa sharri mā ba‘dah, Rabbi a‘ūdhu bika minal-kasali wa sūʾil-kibar, Rabbi a‘ūdhu bika min ‘adhābin fin-nāri wa ‘adhābin fil-qabr.",
@@ -197,32 +201,36 @@ const azkarData = [
                         "explanationEs": "¡Allah! No existe nada ni nadie con derecho a ser adorado excepto Él, el Viviente (Eterno), el Sustentador (y Gobernador de toda la creación). No Lo afectan somnolencia ni sueño. Suyo es cuanto hay en los cielos y la Tierra. ¿Quién podrá interceder ante Él si no es con Su permiso? Conoce el pasado y el futuro (lo manifiesto y lo oculto) y nadie abarca de Su conocimiento salvo lo que Él quiere. El escabel de Su Trono abarca los cielos y la Tierra, y la custodia (y mantenimiento) de ambos no Lo agobia. Y Él es el Sublime, el Grandioso. [Al-Baqarah: 255]",
                         "count": 1,
                         "maxCount": 1,
-                        "audioUrl": "https://everyayah.com/data/Alafasy_128kbps/002255.mp3"
-                  },
+            "note": "سورة البقرة الآية 255",
+            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002255.mp3"]
+      },
                   {
                         "text": "﴿بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ قُلۡ هُوَ ٱللَّهُ أَحَدٌ۝ ٱللَّهُ ٱلصَّمَدُ۝ لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ۝ وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ۝﴾",
                         "latin": "Bismillāhir-raḥmānir-raḥīm. Qul huwal-lāhu aḥad. Allāhuṣ-ṣamad. Lam yalid wa lam yūlad. Wa lam yakul-lahū kufuwan aḥad.",
                         "explanationEs": "Di: “Él es Allah, Uno. Allah es el Absoluto. No engendró ni fue engendrado. Y no hay nada ni nadie que sea semejante a Él”. (Surah Al-Ikhlas)",
                         "count": 3,
                         "maxCount": 3,
-                        "audioUrl": "https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/112.mp3"
-                  },
+            "note": "سورة الإخلاص",
+            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112001.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112002.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112003.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112004.mp3"]
+      },
                   {
                         "text": "﴿بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ۝ مِن شَرِّ مَا خَلَقَ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ۝ وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِي ٱلۡعُقَدِ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ۝﴾",
                         "latin": "Bismillāhir-raḥmānir-raḥīm. Qul a‘ūdhu bi-rabbil-falaq. Min sharri mā khalaq. Wa min sharri ghāsiqin idhā waqab. Wa min sharrin-naffāthāti fil-‘uqad. Wa min sharri ḥāsidin idhā ḥasad.",
                         "explanationEs": "Di: “Me refugio en el Señor del amanecer, de todo el mal que existe en lo que Él creó, del mal de la oscuridad de la noche cuando se extiende, del mal de las (hechiceras) sopladoras de nudos, y del mal del envidioso cuando envidia”. (Surah Al-Falaq)",
                         "count": 3,
                         "maxCount": 3,
-                        "audioUrl": "https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/113.mp3"
-                  },
+            "note": "سورة الفلق",
+            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113001.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113002.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113003.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113004.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113005.mp3"]
+      },
                   {
                         "text": "﴿بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ۝ مَلِكِ ٱلنَّاسِ۝ إِلَٰهِ ٱلنَّاسِ۝ مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ۝ ٱلَّذِي يُوَسۡوِسُ فِي صُدُورِ ٱلنَّاسِ۝ مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ۝﴾",
                         "latin": "Bismillāhir-raḥmānir-raḥīm. Qul a‘ūdhu bi-rabbin-nās. Malikin-nās. Ilāhin-nās. Min sharril-waswāsil-khannās. Alladhī yuwaswisu fī ṣudūrin-nās. Minal-jinnati wan-nās.",
                         "explanationEs": "Di: “Me refugio en el Señor de los seres humanos, en el Rey Soberano de los seres humanos, en el (único) Allah de los seres humanos, de la maldad del (demonio) susurrador que huye (cuando el nombre de Allah es mencionado), que susurra en los corazones de los seres humanos, y existe entre los yinn y entre los seres humanos”. (Surah An-Nas)",
                         "count": 3,
                         "maxCount": 3,
-                        "audioUrl": "https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/114.mp3"
-                  },
+            "note": "سورة الناس",
+            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114001.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114002.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114003.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114004.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114005.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114006.mp3"]
+      },
                   {
                         "text": "أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَذِهِ اللَّيْلَةِ وَخَيْرَ مَا بَعْدَهَا، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَذِهِ اللَّيْلَةِ وَشَرِّ مَا بَعْدَهَا، رَبِّ أَعُوذُ بِكَ مِنَ الْكَسَلِ، وَسُوءِ الْكِبَرِ، رَبِّ أَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ.",
                         "latin": "Amsaynā wa amsal-mulku lillāh, wal-ḥamdu lillāh, lā ilāha ill-Allāhu waḥdahū lā sharīka lah, lahul-mulku wa lahul-ḥamdu wa huwa ‘alā kulli shayʾin qadīr. Rabbi as’aluka khayra mā fī hādhihi l-laylati wa khayra mā ba‘dahā, wa a‘ūdhu bika min sharri mā fī hādhihi l-laylati wa sharri mā ba‘dahā, Rabbi a‘ūdhu bika minal-kasali wa sūʾil-kibar, Rabbi a‘ūdhu bika min ‘adhābin fin-nāri wa ‘adhābin fil-qabr.",
@@ -383,24 +391,27 @@ const azkarData = [
                     "explanationEs": "Junta las palmas de sus manos, sopla suavemente en ellas y recita en ellas:\nEn el nombre de Allah, el Compasivo, el Misericordioso. «Di: Él es Allah, Uno. Allah es el Absoluto. No engendró ni fue engendrado, y no hay nada ni nadie semejante a Él».\n\nEn el nombre de Allah, el Compasivo, el Misericordioso. «Di: Me refugio en el Señor del amanecer, del mal de lo que ha creado, del mal de la oscuridad cuando se extiende, del mal de quienes soplan sobre los nudos y del mal del envidioso cuando envidia».\n\nEn el nombre de Allah, el Compasivo, el Misericordioso. «Di: Me refugio en el Señor de los seres humanos, el Rey de los seres humanos, el Dios de los seres humanos, del mal del susurrador furtivo, que susurra en los pechos de los seres humanos, de entre los yinn y los seres humanos».\nLuego pasa las palmas de sus manos por el cuerpo hasta donde le sea posible alcanzar, comenzando por la cabeza, el rostro y la parte delantera del cuerpo.",
                     "count": 3,
                     "maxCount": 3,
-                    "note": "يفعل ذلك ثلاث مرات"
-                  },
+            "note": "سورة الإخلاص، سورة الفلق، سورة الناس",
+            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112001.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112002.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112003.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112004.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113001.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113002.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113003.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113004.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113005.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114001.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114002.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114003.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114004.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114005.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114006.mp3"]
+      },
                   {
                         "text": "﴿ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡحَيُّ ٱلۡقَيُّومُۚ لَا تَأۡخُذُهُۥ سِنَةٞ وَلَا نَوۡمٞۚ لَّهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَمَا فِي ٱلۡأَرۡضِۗ مَن ذَا ٱلَّذِي يَشۡفَعُ عِندَهُۥٓ إِلَّا بِإِذۡنِهِۦۚ يَعۡلَمُ مَا بَيۡنَ أَيۡدِيهِمۡ وَمَا خَلۡفَهُمۡۖ وَلَا يُحِيطُونَ بِشَيۡءٖ مِّنۡ عِلۡمِهِۦٓ إِلَّا بِمَا شَآءَۚ وَسِعَ كُرۡسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَۖ وَلَا يَـُٔودُهُۥ حِفۡظُهُمَاۚ وَهُوَ ٱلۡعَلِيُّ ٱلۡعَظِيمُ۝﴾",
                         "latin": "Allāhu lā ilāha illā huwa al-ḥayyu al-qayyūm, lā taʾkhudhuhu sinatun wa-lā nawm, lahu mā fīs-samāwāti wa-mā fīl-arḍ, man dhāl-ladhī yashfa'u 'indahu illā bi-idhnih, ya'lamu mā bayna aydīhim wa-mā khalfahum, wa-lā yuḥīṭūna bi-shayʾin min 'ilmihi illā bimā shā', wasi'a kursiyyuhu as-samāwāti wal-arḍ, wa-lā ya'ūduhu ḥifẓuhumā, wa-huwa al-'aliyyu al-'aẓīm.",
                         "explanationEs": "¡Allah! No hay más divinidad que Él, el Viviente, el Sustentador de toda la creación. Ni la somnolencia ni el sueño le vencen. Suyo es cuanto hay en los cielos y en la tierra. ¿Quién podrá interceder ante Él sin Su permiso? Conoce lo que les depara el futuro y lo que dejaron atrás, mientras que ellos no abarcan nada de Su conocimiento, excepto lo que Él quiere. Su Trono se extiende sobre los cielos y la tierra, y no Le fatiga la preservación de ambos. Él es el Altísimo, el Grandioso.",
                         "count": 1,
                         "maxCount": 1,
-                        "note": "آية الكرسي"
-                  },
+            "note": "سورة البقرة الآية 255",
+            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002255.mp3"]
+      },
                   {
                         "text": "﴿ءَامَنَ ٱلرَّسُولُ بِمَآ أُنزِلَ إِلَيۡهِ مِن رَّبِّهِۦ وَٱلۡمُؤۡمِنُونَۚ كُلٌّ ءَامَنَ بِٱللَّهِ وَمَلَٰٓئِكَتِهِۦ وَكُتُبِهِۦ وَرُسُلِهِۦ لَا نُفَرِّقُ بَيۡنَ أَحَدٖ مِّن رُّسُلِهِۦۚ وَقَالُواْ سَمِعۡنَا وَأَطَعۡنَاۖ غُفۡرَانَكَ رَبَّنَا وَإِلَيۡكَ ٱلۡمَصِيرُ۝ لَا يُكَلِّفُ ٱللَّهُ نَفۡسًا إِلَّا وُسۡعَهَاۚ لَهَا مَا كَسَبَتۡ وَعَلَيۡهَا مَا ٱكۡتَسَبَتۡۗ رَبَّنَا لَا تُؤَاخِذۡنَآ إِن نَّسِينَآ أَوۡ أَخۡطَأۡنَاۚ رَبَّنَا وَلَا تَحۡمِلۡ عَلَيۡنَآ إِصۡرٗا كَمَا حَمَلۡتَهُۥ عَلَى ٱلَّذِينَ مِن قَبۡلِنَاۚ رَبَّنَا وَلَا تُحَمِّلۡنَا مَا لَا طَاقَةَ لَنَا بِهِۦۖ وَٱعۡفُ عَنَّا وَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَآۚ أَنتَ مَوۡلَىٰنَا فَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ۝﴾",
                         "latin": "Āmana ar-rasūlu bimā unzila ilayhi min rabbihi wal-mu'minūn, kullun āmana billāhi wa-malā'ikatihi wa-kutubihi wa-rusulih, lā nufarriqu bayna aḥadin min rusulih, wa-qālū sami'nā wa-aṭa'nā ghufrānaka rabbanā wa-ilayka al-maṣīr. Lā yukallifullāhu nafsan illā wus'ahā, lahā mā kasabat wa-'alayhā mak-tasabat, rabbanā lā tu'ākhidhnā in nasīnā aw akhṭaʾnā, rabbanā wa-lā taḥmil 'alaynā iṣran kamā ḥamaltahu 'alāl-ladhīna min qablinā, rabbanā wa-lā tuḥammilnā mā lā ṭāqata lanā bih, wa'fu 'annā waghfir lanā war-ḥamnā, anta mawlānā fanṣurnā 'alāl-qawmil-kāfirīn.",
                         "explanationEs": "El Mensajero cree en lo que le ha sido revelado por su Señor, y los creyentes también. Todos creen en Allah, en Sus ángeles, en Sus Libros y en Sus mensajeros: 'No hacemos distinción entre ninguno de Sus mensajeros'. Y dicen: 'Escuchamos y obedecemos. Pedimos Tu perdón, Señor nuestro, y a Ti es el retorno'. Allah no exige a ninguna alma más allá de sus posibilidades. Obtendrá el bien que haya ganado y sufrirá el mal que haya merecido. '¡Señor nuestro! No nos castigues si olvidamos o cometemos un error. ¡Señor nuestro! No impongas sobre nosotros una carga como la que impusiste sobre los que nos precedieron. ¡Señor nuestro! No nos impongas una carga superior a nuestras fuerzas. Perdónanos, absuélvenos y ten misericordia de nosotros. Tú eres nuestro Protector, concédenos la victoria sobre el pueblo incrédulo'.",
                         "count": 1,
                         "maxCount": 1,
-                        "note": "خواتيم سورة البقرة"
-                  },
+            "note": "سورة البقرة من الآية 285",
+            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002285.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002286.mp3"]
+      },
                   {
                         "text": "بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي، وَبِكَ أَرْفَعُهُ، فَإِن أَمْسَكْتَ نَفْسِي فارْحَمْهَا، وَإِنْ أَرْسَلْتَهَا فَاحْفَظْهَا، بِمَا تَحْفَظُ بِهِ عِبَادَكَ الصَّالِحِينَ.",
                         "latin": "Bismika rabbī waḍa'tu janbī wa-bika arfa'uh, fa-in amsakta nafsī far-ḥamhā, wa-in arsaltahā faḥ-faẓhā bimā taḥfaẓu bihi 'ibādaka aṣ-ṣāliḥīn.",
@@ -532,8 +543,10 @@ const azkarData = [
                         "latin": "Inna fī khalqis-samāwāti wal-arḍi wakhtilāfil-layli wan-nahāri la-āyātin li-ulil-albāb (190). Alladhīna yadhkurūnallāha qiyāman wa qu‘ūdan wa ‘alā junūbihim wa yatafakkarūna fī khalqis-samāwāti wal-arḍ, Rabbanā mā khalaqta hādhā bāṭilan subḥānaka fa-qinā ‘adhāban-nār (191). Rabbanā innaka man tudkhilin-nāra faqad akhzaytah, wa mā liẓ-ẓālimīna min anṣār (192). Rabbanā innanā sami‘nā munādiyan yunādī lil-īmāni an āminū bi-Rabbikum fa-āmannā, Rabbanā faghfir lanā dhunūbanā wa kaffir ‘annā sayyi’ātinā wa tawaffanā ma‘al-abrār (193). Rabbanā wa ātinā mā wa‘adtanā ‘alā rusulika wa lā tukhzinā yawmal-qiyāmah, innaka lā tukhliful-mī‘ād (194). Fastajāba lahum Rabbuhum annī lā uḍī‘u ‘amala ‘āmilin minkum min dhakarin aw unthā ba‘ḍukum min ba‘ḍ, fal-ladhīna hājarū wa ukhrijū min diyārihim wa ūdhū fī sabīlī wa qātalū wa qutilū la-ukaffiranna ‘anhum sayyi’ātihim wa la-udkhilannahum jannātin tajrī min taḥtihal-anhār, thawāban min ‘indillāh, wallāhu ‘indahū ḥusnuth-thawāb (195). Lā yaghurrannaka taqallubul-ladhīna kafarū fil-bilād (196). Matā‘un qalīlun thumma ma'wāhum jahannamu wa bi’sal-mihād (197). Lākinil-ladhīnat-taqaw Rabbahum lahum jannātun tajrī min taḥtihal-anhāru khālidīna fīhā nuzulan min ‘indillāh, wa mā ‘indillāhi khayrun lil-abrār (198). Wa inna min ahlil-kitābi laman yu’minu billāhi wa mā unzila ilaykum wa mā unzila ilayhim khāshi‘īna lillāhi lā yashtarūna bi-āyātillāhi thamanan qalīlā, ulā’ika lahum ajruhum ‘inda Rabbihim, innallāha sarī‘ul-ḥisāb (199). Yā ayyuhal-ladhīna āmanūṣ-birū wa ṣābirū wa rābiṭū wat-taqullāha la‘allakum tufliḥūn (200).",
                         "explanationEs": "En la creación de los cielos y de la Tierra, y en la sucesión de la noche y el día, hay señales para los dotados de razón, los que invocan a Dios de pie, sentados o recostados, y meditan en la creación de los cielos y de la Tierra, y dicen: “¡Señor nuestro! No has creado todo esto en vano. ¡Glorificado seas! Presérvanos del castigo del Fuego. ¡Señor nuestro! A quien introduzcas en el Fuego lo habrás degradado. Los opresores no tendrán quién los auxilie. ¡Señor nuestro! Hemos oído a un pregonero que llamaba a la fe diciendo: Creo en su Señor, y creímos. ¡Señor nuestro! Perdónanos nuestros pecados, borra nuestras faltas y consagra nuestra muerte junto a los virtuosos. ¡Señor nuestro! Concédenos lo que nos has prometido por medio de Tus Mensajeros y no nos degrades el Día del Juicio. Tú no faltas a Tu promesa.” Su Señor les respondió: “No dejaré de recompensar ninguna de sus obras, sean hombres o mujeres, unos proceden de otros. A quienes emigraron, fueron expulsados de sus hogares, persiguieron por Mi causa, combatieron y cayeron luchando, les borraré sus faltas y los introduciré en jardines por donde corren ríos, como recompensa de Dios. Dios tiene junto a Sí la mejor recompensa.” Que no te engañe el libre andar por la tierra de los que se niegan a creer, es un disfrute temporal. Luego su morada será el Infierno, ¡qué pesada morada! Pero los que tienen temor de su Señor tendrán jardines por donde corren ríos, donde morarán por toda la eternidad, como hospitalidad de Dios. Lo que hay junto a Dios es mejor para los virtuosos. Entre la gente del Libro hay quienes creen en Dios, en lo que les ha sido revelado a ustedes y en lo que les fue revelado a ellos; son humildes ante Dios y no malvenden los versículos de Dios. Ellos tendrán su recompensa junto a su Señor. Dios es rápido en tomar cuenta. ¡Creyentes! Tengan paciencia, sean perseverantes, manténganse firmes y tengan temor de Dios, para que puedan triunfar. (Sura Ali 'Imran 3:190-200; traducción de Isa García)",
                         "count": 1,
-                        "maxCount": 1
-                  }
+                        "maxCount": 1,
+            "note": "سورة آل عمران من الآية 190",
+            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003190.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003191.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003192.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003193.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003194.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003195.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003196.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003197.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003198.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003199.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003200.mp3"]
+      }
             ]
       },
       {
@@ -996,8 +1009,10 @@ const azkarData = [
                         "latin": "Sajada wajhiya lilladhī khalaqahu, wa shaqqa samʿahu wa baṣarahu bi-ḥawlihi wa quwwatih, fa-tabāraka Allāhu aḥsanu al-khāliqīn.",
                         "explanationEs": "Se ha prosternado mi rostro ante Aquel que lo creó y le dio oído y vista con Su poder y fuerza. Bendito sea Al-lah, el mejor de los creadores.",
                         "count": 1,
-                        "maxCount": 1
-                  },
+                        "maxCount": 1,
+            "note": "سورة المؤمنون الآية 14",
+            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023014.mp3"]
+      },
                   {
                         "text": "اللَّهُمَّ اكْتُبْ لِي بِهَا عِنْدَكَ أَجْراً، وَضَعْ عَنِّي بِهَا وِزْراً، وَاجْعَلْهَا لِي عِنْدَكَ ذُخْراً، وَتَقَبَّلْهَا مِنِّي كَمَا تَقَبَّلْتَهَا مِنْ عَبْدِكَ دَاوُدَ.",
                         "latin": "Allāhumma iktub lī bihā ʿindaka ajran, wa ḍaʿ ʿannī bihā wizran, wa ijʿalhā lī ʿindaka dhukhran, wa taqabbalhā minnī kamā taqabbaltahā min ʿabdika Dāwūd.",
@@ -1171,15 +1186,19 @@ const azkarData = [
                         "latin": "Bismillāhir-raḥmānir-raḥīm: Qul Huwallāhu aḥad, Allāhuṣ-ṣamad, lam yalid wa lam yūlad, wa lam yakun lahū kufuwan aḥad. Wa Qul a‘ūdhu bi-rabbil-falaq, min sharri mā khalaq, wa min sharri ghāsiqin idhā waqab, wa min sharrin-naffāthāti fil-‘uqad, wa min sharri ḥāsidin idhā ḥasad. Wa Qul a‘ūdhu bi-rabbin-nās, Malikin-nās, Ilāhin-nās, min sharril-waswāsil-khannās, alladhī yuwaswisu fī ṣudūrin-nās, minal-jinnati wan-nās.",
                         "explanationEs": "Lectura de las suras Al-Ijlás, Al-Falaq y An-Nas tras cada oración (se repiten tres veces tras la oración del Fajr y del Maghrib).",
                         "count": 1,
-                        "maxCount": 1
-                  },
+                        "maxCount": 1,
+            "note": "سورة الإخلاص، سورة الفلق، سورة الناس",
+            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112001.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112002.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112003.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112004.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113001.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113002.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113003.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113004.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113005.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114001.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114002.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114003.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114004.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114005.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114006.mp3"]
+      },
                   {
                         "text": "﴿ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡحَيُّ ٱلۡقَيُّومُۚ لَا تَأۡخُذُهُۥ سِنَةٞ وَلَا نَوۡمٞۚ لَّهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَمَا فِي ٱلۡأَرۡضِۗ مَن ذَا ٱلَّذِي يَشۡفَعُ عِندَهُۥٓ إِلَّا بِإِذۡنِهِۦۚ يَعۡلَمُ مَا بَيۡنَ أَيۡدِيهِمۡ وَمَا خَلۡفَهُمۡۖ وَلَا يُحِيطُونَ بِشَيۡءٖ مِّنۡ عِلۡمِهِۦٓ إِلَّا بِمَا شَآءَۚ وَسِعَ كُرۡسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَۖ وَلَا يَـُٔودُهُۥ حِفۡظُهُمَاۚ وَهُوَ ٱلۡعَلِيُّ ٱلۡعَظِيمُ۝﴾",
                         "latin": "Allāhu lā ilāha illā huwa al-ḥayyu al-qayyūm, lā ta'khudhuhu sinatun wa lā nawm, lahu mā fī as-samāwāti wa mā fī al-arḍ, man dhā alladhī Yashfaʿu ʿindahu illā bi-idhnih, yaʿlamu mā bayna aydīhim wa mā khalfahum, wa lā yuḥīṭūna bi-shayʾin min ʿilmihi illā bi-mā shā', wasiʿa kursiyyuhu as-samāwāti wal-arḍ, wa lā ya'ūduhu ḥifẓuhumā wa huwa al-ʿaliyyu al-ʿaẓīm.",
                         "explanationEs": "¡Allah! No existe nada ni nadie con derecho a ser adorado excepto Él, el Viviente (Eterno), el Sustentador (y Gobernador de toda la creación). No Lo afectan somnolencia ni sueño. Suyo es cuanto hay en los cielos y la Tierra. ¿Quién podrá interceder ante Él si no es con Su permiso? Conoce el pasado y el futuro (lo manifiesto y lo oculto) y nadie abarca de Su conocimiento salvo lo que Él quiere. El escabel de Su Trono abarca los cielos y la Tierra, y la custodia (y mantenimiento) de ambos no Lo agobia. Y Él es el Sublime, el Grandioso. [Al-Baqarah: 255]",
                         "count": 1,
-                        "maxCount": 1
-                  },
+                        "maxCount": 1,
+            "note": "سورة البقرة الآية 255",
+            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002255.mp3"]
+      },
                   {
                         "text": "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
                         "latin": "Lā ilāha illā Allāhu waḥdahu lā sharīka lah, lahu al-mulku wa lahu al-ḥamdu yuḥyī wa yumītu wa huwa ʿalā kulli shayʾin qadīr.",
@@ -1458,8 +1477,10 @@ const azkarData = [
                         "latin": "Huwa al-awwalu wal-ākhiru waẓ-ẓāhiru wal-bāṭinu wa huwa bi-kulli shayʾin ʿalīm.",
                         "explanationEs": "Lee las palabras del Altísimo: Él es el Primero y el Último, el Evidente y el Oculto, y Él es Conocedor de todas las cosas.",
                         "count": 1,
-                        "maxCount": 1
-                  }
+                        "maxCount": 1,
+            "note": "سورة الحديد الآية 3",
+            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/057003.mp3"]
+      }
             ]
       },
       {
@@ -2340,8 +2361,10 @@ const azkarData = [
                         "latin": "Bismillāh, wal-ḥamdu lillāh Subḥāna alladhī sakhkhara lanā hādhā wa mā kunnā lahu muqrinīn, wa innā ilā rabbinā la-munqalibūn, Al-ḥamdu lillāh, Al-ḥamdu lillāh, Al-ḥamdu lillāh, Allāhu akbar, Allāhu akbar, Allāhu akbar, Subḥānaka Allāhumma innī ẓalamtu nafsī faghfir lī; fa-innahu lā yaghfiru adhdhunūba illā ant.",
                         "explanationEs": "En el nombre de Al-lah, y alabado sea Al-lah. Glorificado sea Aquel que ha sometido esto para nosotros cuando no éramos capaces de hacerlo, y ciertamente a nuestro Señor hemos de retornar. Alabado sea Al-lah (x3), Al-lah es el más Grande (x3). Glorificado seas, ¡oh Al-lah! Ciertamente me he oprimido a mí mismo, perdóname pues nadie perdona los pecados excepto Tú.",
                         "count": 1,
-                        "maxCount": 1
-                  }
+                        "maxCount": 1,
+            "note": "سورة الزخرف من الآية 13",
+            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/043013.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/043014.mp3"]
+      }
             ]
       },
       {
@@ -2354,8 +2377,10 @@ const azkarData = [
                         "latin": "Allāhu akbar, Allāhu akbar, Allāhu akbar, Subḥāna alladhī sakhkhara lanā hādhā wa mā kunnā lahu muqrinīn, wa innā ilā rabbinā la-munqalibūn. Allāhumma innā nas'aluka fī safarinā hādhā al-birra wat-taqwā, wa mina al-ʿamali mā tarḍā, Allāhumma hawwin ʿalaynā safaranā hādhā waṭwi ʿannā buʿdah, Allāhumma anta aṣ-ṣāḥibu fī as-safar, wal-khalīfatu fī al-ahl, Allāhumma innī aʿūdhu bika min waʿthā'i as-safar, wa ka'ābati al-manẓar, wa sū'i al-munqalabi fī al-māli wal-ahl. (Wa idhā rajaʿa qālahunna wa zāda fīhinna: Āyibūna, tā'ibūna, ʿābidūna, li-rabbinā ḥāmidūn).",
                         "explanationEs": "Allah es el Más Grande (tres veces). Glorificado sea Aquel que ha sometido esto para nosotros, cuando nosotros no habríamos podido hacerlo por nuestros propios medios; y, ciertamente, a nuestro Señor hemos de regresar. ¡Oh Allah! Te pedimos en este viaje la piedad, el temor de Ti y las obras que Te complacen. ¡Oh Allah! Haznos fácil este viaje y acorta su distancia. ¡Oh Allah! Tú eres el Compañero en el viaje y el Protector de la familia. ¡Oh Allah! Me refugio en Ti de las dificultades del viaje, de la tristeza de las vistas y de un mal regreso en mis bienes y mi familia. Al regresar, repite lo mismo y añade: «Regresamos arrepentidos, adorando y alabando a nuestro Señor».",
                         "count": 1,
-                        "maxCount": 1
-                  }
+                        "maxCount": 1,
+            "note": "سورة الزخرف من الآية 13",
+            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/043013.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/043014.mp3"]
+      }
             ]
       },
       {
@@ -2697,8 +2722,10 @@ const azkarData = [
                         "latin": "Rabbanā ātinā fī ad-dunyā ḥasanatan wa fī al-ākhirati ḥasanatan wa qinā ʿadhāba an-nār.",
                         "explanationEs": "Señor nuestro, concédenos lo bueno en este mundo y lo bueno en la otra vida, y líbranos del castigo del Fuego.",
                         "count": 1,
-                        "maxCount": 1
-                  }
+                        "maxCount": 1,
+            "note": "سورة البقرة الآية 201",
+            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002201.mp3"]
+      }
             ]
       },
       {
