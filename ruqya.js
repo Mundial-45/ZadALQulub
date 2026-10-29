@@ -6,6 +6,7 @@ const ruqyahData = [
         titleEs: "Ruqyah Shariyah para la Curación",
         items: [
           {
+            "itemNumber": 1,
             "text": "آدَابُ وَنَصَائِحُ الرُّقْيَةِ الشَّرْعِيَّةِ:\n• الاعتقاد الجزم بأن الشفاء بيد الله وحده، وأن الرقية وسيلة وأسباب مشروعة.\n• الإخلاص والتوكل على الله تعالى.\n• النفث (التففل مع قليل من الريق) على النفس أو على المريض أو في الكفين ثم مسح جسد المريض بهما.",
             "latin": "Ādābu wa Naṣā'iḥur-Ruqyah ash-Shar‘iyyah: Al-i‘tiqādul-jazmu bi-annash-shifā'a bi-yadillāhi waḥdah, wa annar-ruqyata wasīlatun wa asbābun mashrū‘ah. Al-ikhlāṣu wat-tawakkulu ‘alāllāhi ta‘ālā. An-nafthu (at-taffulu ma‘a qalīlin minar-rīq) ‘alān-nafsi aw ‘alāl-marīḍi aw fīl-kaffayni thumma masḥu jasadil-marīḍi bihimā.",
             "explanationEs": "Modales y consejos de la Ruqyah Shariyah: Creencia firme de que la curación está únicamente en manos de Dios y que la Ruqyah es un medio y una causa legítima. Sinceridad y plena confianza en Dios Altísimo. Soplido leve (con un poco de saliva) sobre uno mismo, sobre el enfermo o en las palmas de las manos para luego pasar las manos por el cuerpo del enfermo.",
@@ -13,6 +14,7 @@ const ruqyahData = [
             "maxCount": 1
           },
           {
+            "itemNumber": 2,
             "text": "﴿بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ۝ ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ۝ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ۝ مَٰلِكِ يَوۡمِ ٱلدِّينِ۝إِيَّاكَ نَعۡبُدُ وَإِيَّاكَ نَسۡتَعِينُ۝ ٱهۡدِنَا ٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ۝ صِرَٰطَ ٱلَّذِينَ أَنۡعَمۡتَ عَلَيۡهِمۡ غَيۡرِ ٱلۡمَغۡضُوبِ عَلَيۡهِمۡ وَلَا ٱلضَّآلِّينَ۝﴾",
             "latin": "Bismillāhir-Raḥmānir-Raḥīm. Al-ḥamdu lillāhi Rabbil-‘ālamīn. Ar-Raḥmānir-Raḥīm. Māliki yawmid-dīn. Iyyāka na‘budu wa iyyāka nasta‘īn. Ihdinaṣ-ṣirāṭal-mustaqīm. Ṣirāṭal-ladhīna an‘amta ‘alayhim ghayril-maghḍūbi ‘alayhim wa lāḍ-ḍāllīn.",
             "explanationEs": "En el nombre de Dios, el Compasivo, el Misericordioso. Alabado sea Dios, Señor del universo, el Compasivo, el Misericordioso, Soberano absoluto del Día del Juicio Final. Solo a Ti te adoramos y solo de Ti imploramos ayuda. ¡Guíanos por el camino recto!, el camino de los que has agraciado, no el de los que han incurrido en Tu ira, ni el de los extraviados. (Sura Al-Fátihah; traducción de Isa García)",
@@ -148,6 +150,7 @@ const ruqyahData = [
             maxCount: 1
           },
           {
+            "itemNumber": 3,
             "text": "﴿بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ۝ ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ۝ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ۝ مَٰلِكِ يَوۡمِ ٱلدِّينِ۝إِيَّاكَ نَعۡبُدُ وَإِيَّاكَ نَسۡتَعِينُ۝ ٱهۡدِنَا ٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ۝ صِرَٰطَ ٱلَّذِينَ أَنۡعَمۡتَ عَلَيۡهِمۡ غَيۡرِ ٱلۡمَغۡضُوبِ عَلَيۡهِمۡ وَلَا ٱلضَّآلِّينَ۝﴾",
             "latin": "Bismillāhir-Raḥmānir-Raḥīm. Al-ḥamdu lillāhi Rabbil-‘ālamīn (1). Ar-Raḥmānir-Raḥīm (2). Māliki yawmid-dīn (3). Iyyāka na‘budu wa iyyāka nasta‘īn (4). Ihdinaṣ-ṣirāṭal-mustaqīm (5). Ṣirāṭal-ladhīna an‘amta ‘alayhim (6). Ghayril-maghḍūbi ‘alayhim wa lāḍ-ḍāllīn (7).",
             "explanationEs": "En el nombre de Dios, el Compasivo, el Misericordioso. Alabado sea Dios, Señor de los mundos, el Compasivo, el Misericordioso, Soberano absoluto del Día del Juicio. Solo a Ti adoramos y solo de Ti imploramos ayuda. Guíanos por el camino recto, el camino de los que has colmado de favores, no el de los que cayeron en Tu ira, ni el de los que se extraviaron.",
@@ -166,6 +169,7 @@ const ruqyahData = [
             ]
           },
           {
+            "itemNumber": 4,
             "text": "﴿الٓمٓ۝ ذَٰلِكَ ٱلۡكِتَٰبُ لَا رَيۡبَۛ فِيهِۛ هُدٗى لِّلۡمُتَّقِينَ۝ ٱلَّذِينَ يُؤۡمِنُونَ بِٱلۡغَيۡبِ وَيُقِيمُونَ ٱلصَّلَوٰةَ وَمِمَّا رَزَقۡنَٰهُمۡ يُنفِقُونَ۝ وَٱلَّذِينَ يُؤۡمِنُونَ بِمَآ أُنزِلَ إِلَيۡكَ وَمَآ أُنزِلَ مِن قَبۡلِكَ وَبِٱلۡأٓخِرَةِ هُمۡ يُوقِنُونَ۝﴾",
             "latin": "Alif-Lām-Mīm (1). Dhālikal-kitābu lā rayba fīhi, hudan lil-muttaqīn (2). Alladhīna yu'minūna bil-ghaybi wa yuqīmūnas-salāta wa mimmā razaqnāhum yunfiqūn (3). Wal-ladhīna yu'minūna bi-mā unzila ilayka wa mā unzila min qablika wa bil-ākhirati hum yūqinūn (4).",
             "explanationEs": "Alif, Lam, Mim. Este es el Libro sobre el cual no hay duda, guía para los que tienen temor de Dios: los que creen en lo oculto, practican la oración y dan en caridad de lo que les he concedido; y los que creen en lo que te ha sido revelado [¡oh, Muhámmad!] y en lo que fue revelado antes de ti, y tienen certeza de la existencia de la otra vida.",
@@ -181,6 +185,7 @@ const ruqyahData = [
             "audioUrl": ""
           },
           {
+            "itemNumber": 5,
             "text": "﴿وَٱتَّبَعُواْ مَا تَتۡلُواْ ٱلشَّيَٰطِينُ عَلَىٰ مُلۡكِ سُلَيۡمَٰنَۖ وَمَا كَفَرَ سُلَيۡمَٰنُ وَلَٰكِنَّ ٱلشَّيَٰطِينَ كَفَرُواْ يُعَلِّمُونَ ٱلنَّاسَ ٱلسِّحۡرَ وَمَآ أُنزِلَ عَلَى ٱلۡمَلَكَيۡنِ بِبَابِلَ هَٰرُوتَ وَمَٰرُوتَۚ وَمَا يُعَلِّمَانِ مِنۡ أَحَدٍ حَتَّىٰ يَقُولَآ إِنَّمَا نَحۡنُ فِتۡنَةٞ فَلَا تَكۡفُرۡۖ فَيَتَعَلَّمُونَ مِنۡهُمَا مَا يُفَرِّقُونَ بِهِۦ بَيۡنَ ٱلۡمَرۡءِ وَزَوۡجِهِۦۚ وَمَا هُم بِضَآرِّينَ بِهِۦ مِنۡ أَحَدٍ إِلَّا بِإِذۡنِ ٱللَّهِۚ وَيَتَعَلَّمُونَ مَا يَضُرُّهُمۡ وَلَا يَنفَعُهُمۡۚ وَلَقَدۡ عَلِمُواْ لَمَنِ ٱشۡتَرَىٰهُ مَا لَهُۥ فِي ٱلۡأٓخِرَةِ مِنۡ خَلَٰقٖۚ وَلَبِئۡسَ مَا شَرَوۡاْ بِهِۦٓ أَنفُسَهُمۡۚ لَوۡ كَانُواْ يَعۡلَمُونَ۝﴾",
             "latin": "Watta-ba‘ū mā tatluwsh-shayātīnu ‘alā mulki Sulaymāna, wa mā kafara Sulaymāna wa lākinna-shshayātīna kafaru yu‘allimūna-nnāsa-ssihra wa mā unzila ‘alal-malakayni bi-Bābila Hārūta wa Mārūta, wa mā yu‘allimāni min ahadin hattā yaqūlā innamā nahnu fitnatun falā takfur, fayata‘allamūna minhumā mā yufarriqūna bihi bayna-l-mar'i wa zawjihi, wa mā hum bi-ḍārrīna bihi min ahadin illā bi-idhni-llāhi, wa yata‘allamūna mā yaḍurruhum wa lā yanfa‘uhum, wa laqad ‘alimū laman-shtarāhu mā lahu fil-ākhirati min khalāqin, wa laba'sa mā sharaw bihi anfusahum, law kānū ya‘lamūna (102). Wa law annahum āmanū wattaqaw lamathūbatun min ‘indi-llāhi khayrun, law kānū ya‘lamūna (103).",
             "explanationEs": "Pero sí seguían lo que recitaban los demonios durante el reinado de Salomón. Sepan que Salomón no cayó en la incredulidad, sino que fueron los demonios quienes enseñaron a la gente la hechicería y la magia que transmitieron los ángeles Harút y Marút en Babilonia. Ellos no le enseñaban a nadie sin antes advertirle: «Nosotros somos una prueba, no caigan en la incredulidad». A pesar de la advertencia, aprendieron de ellos cómo separar a una persona de su pareja, aunque no podían perjudicar a nadie sin el permiso de Dios. Lo que aprendían los perjudicaba y no los beneficiaba. Pero sabían que quien practicara la hechicería no tendría éxito en la otra vida. ¡Qué mal vendieron sus almas! Si supieran. Si hubieran creído y tenido temor de Dios, la recompensa de Dios habría sido mucho mejor. ¡Si supieran!",
@@ -191,6 +196,7 @@ const ruqyahData = [
             "audioUrl": "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002102.mp3"
           },
           {
+            "itemNumber": 6,
             "text": "﴿ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡحَيُّ ٱلۡقَيُّومُۚ لَا تَأۡخُذُهُۥ سِنَةٞ وَلَا نَوۡمٞۚ لَّهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَمَا فِي ٱلۡأَرۡضِۗ مَن ذَا ٱلَّذِي يَشۡفَعُ عِندَهُۥٓ إِلَّا بِإِذۡنِهِۦۚ يَعۡلَمُ مَا بَيۡنَ أَيۡدِيهِمۡ وَمَا خَلۡفَهُمۡۖ وَلَا يُحِيطُونَ بِشَيۡءٖ مِّنۡ عِلۡمِهِۦٓ إِلَّا بِمَا شَآءَۚ وَسِعَ كُرۡسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَۖ وَلَا يَـُٔودُهُۥ حِفۡظُهُمَاۚ وَهُوَ ٱلۡعَلِيُّ ٱلۡعَظِيمُ۝﴾",
             "latin": "Allāhu lā ilāha illā huwal-ḥayyul-qayyūm, lā ta'khudhuhu sinatun wa lā nawm, lahū mā fis-samāwāti wa mā fil-arḍ, man dhal-ladhī yashfa‘u ‘indahū illā bi-idhnihi, ya‘lamu mā bayna aydīhim wa mā khalfahum, wa lā yuḥīṭūna bi-shayʾin min ‘ilmihi illā bimā shā', wasi‘a kursiyyuhus-samāwāti wal-arḍ, wa lā ya'ūduhu ḥifẓuhumā, wa huwal-‘aliyyul-‘aẓīm.",
             "explanationEs": "Dios, no existe divinidad alguna excepto Él, el Viviente, el Sustentador de toda la creación. No Lo afectan somnolencia ni sueño. Suyo es cuanto hay en los cielos y la Tierra. ¿Quién podrá interceder ante Él si no es con Su permiso? Él conoce lo que hay delante de ellos y lo que hay detrás de ellos, y nadie abarca de Su conocimiento salvo lo que Él quiere. Su Trono se extiende sobre los cielos y la Tierra, y la custodia de ambos no Lo agobia. Él es el Sublime, el Grandioso.",
@@ -201,6 +207,7 @@ const ruqyahData = [
             "audioUrls": []
           },
           {
+            "itemNumber": 7,
             "text": "﴿ءَامَنَ ٱلرَّسُولُ بِمَآ أُنزِلَ إِلَيۡهِ مِن رَّبِّهِۦ وَٱلۡمُؤۡمِنُونَۚ كُلٌّ ءَامَنَ بِٱللَّهِ وَمَلَٰٓئِكَتِهِۦ وَكُتُبِهِۦ وَرُسُلِهِۦ لَا نُفَرِّقُ بَيۡنَ أَحَدٖ مِّن رُّسُلِهِۦۚ وَقَالُواْ سَمِعۡنَا وَأَطَعۡنَاۖ غُفۡرَانَكَ رَبَّنَا وَإِلَيۡكَ ٱلۡمَصِيرُ۝ لَا يُكَلِّفُ ٱللَّهُ نَفۡسًا إِلَّا وُسۡعَهَاۚ لَهَا مَا كَسَبَتۡ وَعَلَيۡهَا مَا ٱكۡتَسَبَتۡۗ رَبَّنَا لَا تُؤَاخِذۡنَآ إِن نَّسِينَآ أَوۡ أَخۡطَأۡنَاۚ رَبَّنَا وَلَا تَحۡمِلۡ عَلَيۡنَآ إِصۡرٗا كَمَا حَمَلۡتَهُۥ عَلَى ٱلَّذِينَ مِن قَبۡلِنَاۚ رَبَّنَا وَلَا تُحَمِّلۡنَا مَا لَا طَاقَةَ لَنَا بِهِۦۖ وَٱعۡفُ عَنَّا وَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَآۚ أَنتَ مَوۡلَىٰنَا فَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ۝﴾",
             "latin": "Āmana ar-rasūlu bimā unzila ilayhi min rabbihi wal-mu'minūn, kullun āmana billāhi wa malā'ikatihi wa kutubihi wa rusulihi, lā nufarriqu bayna ahadin min rusulihi, wa qālū sami‘nā wa aṭ‘anā, ghufrānaka rabbanā wa ilaykal-maṣīr (285). Lā yukallifu-llāhu nafsan illā wus‘ahā, lahā mā kasabat wa ‘alayhā mā iktasabat, rabbanā lā tu'ākhidhnā in nasīnā aw akhṭanā, rabbanā wa lā taḥmil ‘alaynā iṣran kamā ḥamaltahu ‘alal-ladhīna min qablinā, rabbanā wa lā tuḥammilnā mā lā ṭāqata lanā bihi, wa‘fu ‘annā waghfir lanā warḥamnā, anta mawlānā fanṣurnā ‘alal-qawmil-kāfirīn (286).",
             "explanationEs": "El Mensajero cree en lo que le ha sido revelado por su Señor, y así también los creyentes. Todos creen en Dios, en Sus ángeles, en Sus Libros y en Sus mensajeros. No hacemos diferencia entre ninguno de Sus mensajeros. Y dicen: «Oímos y obedecemos. Te pedimos perdón, Señor nuestro, y ante Ti es el retorno». Dios no exige a nadie por encima de sus posibilidades. Cada persona será recompensada según lo que haya hecho y será responsable de lo que haya cometido. «¡Señor nuestro! No nos castigues si nos olvidamos o nos equivocamos. ¡Señor nuestro! No nos impongas una carga como la que impusiste a quienes nos precedieron. ¡Señor nuestro! No nos impongas algo que no podamos soportar. Perdónanos, absuélvenos y ten misericordia de nosotros. Tú eres nuestro Protector, auxílianos contra la gente que rechaza la verdad».",
@@ -214,6 +221,7 @@ const ruqyahData = [
             ]
           },
           {
+            "itemNumber": 8,
             "text": "﴿وَإِلَٰهُكُمۡ إِلَٰهٞ وَٰحِدٞۖ لَّآ إِلَٰهَ إِلَّا هُوَ ٱلرَّحۡمَٰنُ ٱلرَّحِيمُ۝ إِنَّ فِي خَلۡقِ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ وَٱخۡتِلَٰفِ ٱلَّيۡلِ وَٱلنَّهَارِ وَٱلۡفُلۡكِ ٱلَّتِي تَجۡرِي فِي ٱلۡبَحۡرِ بِمَا يَنفَعُ ٱلنَّاسَ وَمَآ أَنزَلَ ٱللَّهُ مِنَ ٱلسَّمَآءِ مِن مَّآءٖ فَأَحۡيَا بِهِ ٱلۡأَرۡضَ بَعۡدَ مَوۡتِهَا وَبَثَّ فِيهَا مِن كُلِّ دَآبَّةٖ وَتَصۡرِيفِ ٱلرِّيَٰحِ وَٱلسَّحَابِ ٱلۡمُسَخَّرِ بَيۡنَ ٱلسَّمَآءِ وَٱلۡأَرۡضِ لَأٓيَٰتٖ لِّقَوۡمٖ يَعۡقِلُونَ۝﴾",
             "latin": "Wa ilāhukum ilāhun wāḥidun lā ilāha illā huwar-raḥmānur-raḥīm (163). Inna fī khalqis-samāwāti wal-arḍi wakhtilāfil-layli wan-nahāri wal-fulkil-latī tajrī fil-baḥri bimā yanfa‘un-nāsa wa mā anzalallāhu minas-samā'i min mā'in fa-aḥyā bihil-arḍa ba‘da mawtihā wa baththa fīhā min kulli dābbatin wa taṣrīfir-riyāḥi was-saḥābil-musakhkhari baynas-samā'i wal-arḍi la-āyātin li-qawmin ya‘qilūn (164).",
             "explanationEs": "Su Dios es un Dios Único, no hay divinidad [con derecho a ser adorada] salvo Él, el Compasivo, el Misericordioso. En la creación de los cielos y de la Tierra, en la sucesión de la noche y el día, en las naves que surcan el mar para beneficio de la gente, en el agua que Dios hace descender del cielo para revivir con ella la tierra árida, en la dispersión de toda clase de criaturas sobre la Tierra, en la dirección de los vientos y en las nubes que están entre el cielo y la Tierra, hay señales para quienes razonan.",
@@ -228,6 +236,7 @@ const ruqyahData = [
             "audioUrl": ""
           },
           {
+            "itemNumber": 9,
             "text": "﴿شَهِدَ ٱللَّهُ أَنَّهُۥ لَآ إِلَٰهَ إِلَّا هُوَ وَٱلۡمَلَٰٓئِكَةُ وَأُوْلُواْ ٱلۡعِلۡمِ قَآئِمَۢا بِٱلۡقِسۡطِۚ لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡعَزِيزُ ٱلۡحَكِيمُ۝ إِنَّ ٱلدِّينَ عِندَ ٱللَّهِ ٱلۡإِسۡلَٰمُۗ وَمَا ٱخۡتَلَفَ ٱلَّذِينَ أُوتُواْ ٱلۡكِتَٰبَ إِلَّا مِنۢ بَعۡدِ مَا جَآءَهُمُ ٱلۡعِلۡمُ بَغۡيَۢا بَيۡنَهُمۡۗ وَمَن يَكۡفُرۡ بِـَٔايَٰتِ ٱللَّهِ فَإِنَّ ٱللَّهَ سَرِيعُ ٱلۡحِسَابِ۝﴾",
             "latin": "Shahidal-lāhu annahu lā ilāha illā huwa wal-malā'ikatu wa ulul-‘ilmi qā'imam bil-qisṭ, lā ilāha illā huwal-‘azīzul-ḥakīm (18). Inna-d-dīna ‘indal-lāhil-islām, wa mā ikhtalafal-ladhīna ūtul-kitāba illā min ba‘di mā jā'ahumul-‘ilmu baghyan baynahum, wa man yakfur bi-āyāti-llāhi fa-inna-llāha sarī‘ul-ḥisāb (19).",
             "explanationEs": "Dios atestigua, y con Él los ángeles y los dotados de conocimiento, que no existe más divinidad que Él, y que Él vela por la justicia. No hay otra divinidad salvo Él, el Poderoso, el Sabio. Para Dios la verdadera religión es el Islam. Los que habían recibido el Libro anteriormente discreparon por envidia y soberbia, a pesar de haberles llegado el conocimiento. Quienes rechacen los signos de Dios, sepan que Dios es rápido en ajustar cuentas.",
@@ -241,6 +250,7 @@ const ruqyahData = [
             "audioUrl": ""
           },
           {
+            "itemNumber": 10,
             "text": "﴿قُلِ ٱللَّهُمَّ مَٰلِكَ ٱلۡمُلۡكِ تُؤۡتِي ٱلۡمُلۡكَ مَن تَشَآءُ وَتَنزِعُ ٱلۡمُلۡكَ مِمَّن تَشَآءُ وَتُعِزُّ مَن تَشَآءُ وَتُذِلُّ مَن تَشَآءُۖ بِيَدِكَ ٱلۡخَيۡرُۖ إِنَّكَ عَلَىٰ كُلِّ شَيۡءٖ قَدِيرٞ۝ تُولِجُ ٱلَّيۡلَ فِي ٱلنَّهَارِ وَتُولِجُ ٱلنَّهَارَ فِي ٱلَّيۡلِۖ وَتُخۡرِجُ ٱلۡحَيَّ مِنَ ٱلۡمَيِّتِ وَتُخۡرِجُ ٱلۡمَيِّتَ مِنَ ٱلۡحَيِّۖ وَتَرۡزُقُ مَن تَشَآءُ بِغَيۡرِ حِسَابٖ۝﴾",
             "latin": "Quli-llāhumma mālikal-mulki tu'til-mulka man tashā'u wa tanzi‘ul-mulka mimman tashā'u wa tu‘izzu man tashā'u wa tudhillu man tashā'u, bi-yadikal-khayru, innaka ‘alā kulli shayʾin qadīr (26). Tūlijul-layla fin-nahāri wa tūlijun-nahāra fil-layli, wa tukhrijul-ḥayya minal-mayyiti wa tukhrijul-mayyita minal-ḥayyi, wa tarzuqu man tashā'u bi-ghayri ḥisāb (27).",
             "explanationEs": "Di: «¡Oh, Dios, Soberano de todo dominio! Tú concedes el poder a quien quieres y se lo quitas a quien quieres; honras a quien quieres y humillas a quien quieres. Todo bien está en Tus manos. Tú tienes poder sobre todas las cosas. Haces que la noche entre en el día y el día en la noche; haces surgir lo vivo de lo muerto y lo muerto de lo vivo, y sustentas sin medida a quien quieres».",
@@ -254,6 +264,7 @@ const ruqyahData = [
             "audioUrl": ""
           },
           {
+            "itemNumber": 11,
             "text": "﴿۞ وَأَوۡحَيۡنَآ إِلَىٰ مُوسَىٰٓ أَنۡ أَلۡقِ عَصَاكَۖ فَإِذَا هِيَ تَلۡقَفُ مَا يَأۡفِكُونَ۝ فَوَقَعَ ٱلۡحَقُّ وَبَطَلَ مَا كَانُواْ يَعۡمَلُونَ۝ فَغُلِبُواْ هُنَالِكَ وَٱنقَلَبُواْ صَٰغِرِينَ۝ وَأُلۡقِيَ ٱلسَّحَرَةُ سَٰجِدِينَ۝ قَالُوٓاْ ءَامَنَّا بِرَبِّ ٱلۡعَٰلَمِينَ۝ رَبِّ مُوسَىٰ وَهَٰرُونَ۝﴾",
             "latin": "Wa awḥaynā ilā Mūsā an al-qi ‘aṣāka, fa-idhā hiya talqafu mā ya'fikūn (117). Fa-waqa‘al-ḥaqqu wa baṭala mā kānū ya‘malūn (118). Fa-ghulibū hunālika wan-qalabū ṣāghirīn (119).",
             "explanationEs": "Le revelé a Moisés: «Arroja tu vara», y esta se tragó lo que los hechiceros habían inventado. Entonces quedó en evidencia la verdad y la falsedad de lo que habían hecho. Fueron vencidos allí mismo y quedaron humillados.",
@@ -271,6 +282,7 @@ const ruqyahData = [
             "audioUrl": ""
           },
           {
+            "itemNumber": 12,
             "text": "﴿وَقَالَ فِرۡعَوۡنُ ٱئۡتُونِي بِكُلِّ سَٰحِرٍ عَلِيمٖ۝ فَلَمَّا جَآءَ ٱلسَّحَرَةُ قَالَ لَهُم مُّوسَىٰٓ أَلۡقُواْ مَآ أَنتُم مُّلۡقُونَ۝ فَلَمَّآ أَلۡقَوۡاْ قَالَ مُوسَىٰ مَا جِئۡتُم بِهِ ٱلسِّحۡرُۖ إِنَّ ٱللَّهَ سَيُبۡطِلُهُۥٓ إِنَّ ٱللَّهَ لَا يُصۡلِحُ عَمَلَ ٱلۡمُفۡسِدِينَ۝ وَيُحِقُّ ٱللَّهُ ٱلۡحَقَّ بِكَلِمَٰتِهِۦ وَلَوۡ كَرِهَ ٱلۡمُجۡرِمُونَ۝﴾",
             "latin": "Wa qāla fir‘awnu i'tūnī bi-kulli sāḥirin ‘alīm (79). Fa-lammā jā'as-saḥaratu qāla lahum Mūsā alqū mā antum mulqūn (80). Fa-lammā alqaw qāla Mūsā mā ji'tum bihis-siḥru, inna-llāha sayubṭiluhu, inna-llāha lā yuṣliḥu ‘amalal-mufsidin (81). Wa yuḥiqqul-lāhul-ḥaqqa bi-kalimātihi wa law karihal-mujrimūn (82).",
             "explanationEs": "Dijo el Faraón: «Que me traigan a todo hechicero experto». Cuando llegaron los hechiceros, Moisés les dijo: «Arrojen lo que tengan que arrojar». Cuando arrojaron, Moisés dijo: «Lo que han presentado es hechicería, y Dios la destruirá. Dios no permite que prosperen las obras de quienes siembran la corrupción. Dios confirma la verdad con Sus palabras, aunque ello disguste a los pecadores».",
@@ -286,6 +298,7 @@ const ruqyahData = [
             "audioUrl": ""
           },
           {
+            "itemNumber": 13,
             "text": "﴿وَإِن يَمۡسَسۡكَ ٱللَّهُ بِضُرّٖ فَلَا كَاشِفَ لَهُۥٓ إِلَّا هُوَۖ وَإِن يُرِدۡكَ بِخَيۡرٖ فَلَا رَآدَّ لِفَضۡلِهِۦۚ يُصِيبُ بِهِۦ مَن يَشَآءُ مِنۡ عِبَادِهِۦۚ وَهُوَ ٱلۡغَفُورُ ٱلرَّحِيمُ۝﴾",
             "latin": "Wa in yamsaskal-lāhu bi-ḍurrin falā kāshifa lahū illā huw, wa in yuridka bi-khayrin falā rādda li-faḍlihi, yuṣību bihi man yashā'u min ‘ibādihi, wa huwal-ghafūrur-raḥīm.",
             "explanationEs": "Si Dios te aflige con una desgracia, nadie excepto Él podrá librarte de ella. Y si Él desea para ti un bien, nadie podrá impedir Su favor. Él concede Su favor a quien quiere de Sus siervos. Él es el Perdonador, el Misericordioso.",
