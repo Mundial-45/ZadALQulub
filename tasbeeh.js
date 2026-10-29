@@ -64,7 +64,7 @@ function renderTasbeehGrid() {
   tasbeehItems.forEach(item => {
     const val = getTasbeehCount(item.id);
     const card = document.createElement('div');
-    card.className = 'bg-white dark:bg-slate-800 p-6 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm flex flex-col items-center justify-between space-y-4';
+    card.className = 'card-paper-bg rounded-3xl p-6 shadow-lg border border-amber-200/80 dark:border-slate-700 flex flex-col items-center justify-between space-y-4 transition-all duration-300';
     card.innerHTML = `
       <div class="text-center w-full">
         ${isEs ? `
