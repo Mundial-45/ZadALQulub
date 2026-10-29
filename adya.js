@@ -1482,16 +1482,16 @@ const adyaData = [
   titleEs: 'Súplicas para la Angustia y la Dificultad',
   items: [
     {
-      text: 'اللَّهُمَّ إِنِّي عَبْدُكَ، وَابْنُ عَبْدِكَ، وَابْنُ أَمَتِكَ، نَاصِيَتِي بِيَدِكَ، مَاضٍ فِيَّ حُكْمُكَ، عَدْلٌ فِيَّ قَضَاؤُكَ، أَسْأَلُكَ بِكُلِّ اسْمٍ هُوَ لَكَ سَمَّيْتَ بِهِ نَفْسَكَ، أَوْ عَلَّمْتَهُ أَحَدًا مِنْ خَلْقِكَ، أَوْ أَنْزَلْتَهُ فِي كِتَابِكَ، أَوْ اسْتَأْثَرْتَ بِهِ فِي عِلْمِ الغَيْبِ عِنْدَكَ، أَنْ تَجْعَلَ القُرْآنَ رَبِيعَ قَلْبِي، وَنُورَ صَدْرِي، وَجَلَاءَ حُزْنِي، وَذَهَابَ هَمِّي.',
-      latin: 'Allāhumma innī ‘abduk, wabnu ‘abdik, wabnu amatik, nāṣiyatī biyadik, māḍin fiyya ḥukmuk, ‘adlun fiyya qaḍā’uk, as’aluka bikulli ismin huwa laka sammayta bihī nafsak, aw ‘allamtahū aḥadan min khalqik, aw anzaltahū fī kitābik, aw ista’tharta bihī fī ‘ilmil-ghaybi ‘indak, an taj‘alal-Qur’āna rabī‘a qalbī, wa nūra ṣadrī, wa jalā’a ḥuznī, wa dhahāba hammī.',
-      explanationEs: "¡Oh Allah! Soy Tu siervo, hijo de Tu siervo y de Tu sierva. Mi destino está en Tu mano; Tu decreto sobre mí se cumple y Tu juicio sobre mí es justo. Te pido por cada Nombre que Te pertenece, con el que Te has nombrado, que has enseñado a alguna de Tus criaturas, que has revelado en Tu Libro o que has reservado en el conocimiento de lo oculto junto a Ti, que hagas del Corán la primavera de mi corazón, la luz de mi pecho, el alivio de mi tristeza y la desaparición de mis preocupaciones.",
-      note: 'رواه أحمد وصححه الألباني'
+      "text": "اللَّهُمَّ إِنِّي عَبْدُكَ، وَابْنُ عَبْدِكَ، وَابْنُ أَمَتِكَ، نَاصِيَتِي بِيَدِكَ، مَاضٍ فِيَّ حُكْمُكَ، عَدْلٌ فِيَّ قَضَاؤُكَ، أَسْأَلُكَ بِكُلِّ اسْمٍ هُوَ لَكَ سَمَّيْتَ بِهِ نَفْسَكَ، أَوْ عَلَّمْتَهُ أَحَدًا مِنْ خَلْقِكَ، أَوْ أَنْزَلْتَهُ فِي كِتَابِكَ، أَوْ اسْتَأْثَرْتَ بِهِ فِي عِلْمِ الغَيْبِ عِنْدَكَ، أَنْ تَجْعَلَ القُرْآنَ رَبِيعَ قَلْبِي، وَنُورَ صَدْرِي، وَجَلَاءَ حُزْنِي، وَذَهَابَ هَمِّي.",
+      "latin": "Allāhumma innī ‘abduka, wabnu ‘abdika, wabnu amatika, nāṣiyatī biyadika, māḍin fiyya ḥukmuka, ‘adlun fiyya qaḍā’uka, as’aluka bikulli ismin huwa laka sammayta bihī nafsaka, aw ‘allamtahū aḥadan min khalqika, aw anzaltahū fī kitābika, aw ista’tharta bihī fī ‘ilmil-ghaybi ‘indaka, an taj‘alal-Qur’āna rabī‘a qalbī, wa nūra ṣadrī, wa jalā’a ḥuznī, wa dhahāba hammī.",
+      "explanationEs": "¡Oh Allah! Soy Tu siervo, hijo de Tu siervo y de Tu sierva. Mi destino está en Tu mano; Tu decreto sobre mí se cumple y Tu juicio sobre mí es justo. Te pido por cada Nombre que Te pertenece, con el que Te has nombrado, que has enseñado a alguna de Tus criaturas, que has revelado en Tu Libro o que has reservado en el conocimiento de lo oculto junto a Ti, que hagas del Corán la primavera de mi corazón, la luz de mi pecho, el alivio de mi tristeza y la desaparición de mis preocupaciones.",
+      "note": "رواه أحمد وصححه الألباني"
     },
     {
-      text: 'اللَّهُمَّ رَحْمَتَكَ أَرْجُو، فَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ، وَأَصْلِحْ لي شَأْنِي كُلَّهُ، لَا إِلَهَ إِلَّا أَنْتَ.',
-      latin: 'Allāhumma raḥmataka arjū, falā takilnī ilā nafsī ṭarfata ‘ayn, wa aṣliḥ lī sha’nī kullah, lā ilāha illā Ant.',
-      explanationEs: 'Oh Allah, Tu misericordia espero, así que no me encomiendes a mí mismo ni por un parpadeo, y rectifica todos mis asuntos. No hay más divinidad que Tú.',
-      note: 'دعوات المكروب (رواه أحمد وأبو داود)'
+      "text": "اللَّهُمَّ رَحْمَتَكَ أَرْجُو، فَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ، وَأَصْلِحْ لي شَأْنِي كُلَّهُ\nلَا إِلَهَ إِلَّا أَنْتَ.",
+      "latin": "Allāhumma raḥmataka arjū, falā takilnī ilā nafsī ṭarfata ‘ayn, wa aṣliḥ lī sha’nī kullah, lā ilāha illā Ant.",
+      "explanationEs": "Oh Allah, Tu misericordia espero, así que no me encomiendes a mí mismo ni por un parpadeo, y rectifica todos mis asuntos. No hay más divinidad que Tú.",
+      "note": "دعوات المكروب (رواه أحمد وأبو داود)"
     },
     {
       text: 'لَا إِلَهَ إِلَّا اللهُ العَظِيمُ الحَلِيمُ، لَا إِلَهَ إِلَّا اللهُ رَبُّ السَّمَاوَاتِ وَالأَرْضِ وَرَبُّ العَرْشِ العَظِيمِ.',
