@@ -9,7 +9,7 @@ const adyaData = [
       "text": "﴿رَبَّنَآ ءَاتِنَا فِي ٱلدُّنۡيَا حَسَنَةٗ وَفِي ٱلۡأٓخِرَةِ حَسَنَةٗ وَقِنَا عَذَابَ ٱلنَّارِ۝﴾",
       "latin": "Rabbanā ātinā fid-dunyā ḥasanatan wa fil-ākhirati ḥasanatan wa qinā ‘adhāban-nār.",
       "explanationEs": "“¡Señor nuestro! Danos bienestar en esta vida y en la otra, y presérvanos del tormento del Fuego”.",
-      "note": "سورة البقرة - الآية 201",
+      "note": "سورة البقرة - من الآية 201",
       "audioUrls": [
         "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/002201.mp3"
       ]
@@ -18,7 +18,7 @@ const adyaData = [
       "text": "﴿قَالُواْ رَبَّنَآ أَفۡرِغۡ عَلَيۡنَا صَبۡرٗا وَثَبِّتۡ أَقۡدَامَنَا وَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ۝﴾",
       "latin": "Rabbanā afrigh ‘alaynā ṣabran wa thabbit aqdāmanā wanṣurnā ‘alal-qawmil-kāfirīn.",
       "explanationEs": "“¡Señor nuestro! Danos paciencia, mantennos firmes y concédenos la victoria sobre los que niegan la verdad”. ",
-      "note": "سورة البقرة - الآية 250",
+      "note": "سورة البقرة - من الآية 250",
       "audioUrls": [
         "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/002250.mp3"
       ]
@@ -26,8 +26,8 @@ const adyaData = [
     {
       "text": "﴿رَبَّنَا لَا تُؤَاخِذۡنَآ إِن نَّسِينَآ أَوۡ أَخۡطَأۡنَاۚ رَبَّنَا وَلَا تَحۡمِلۡ عَلَيۡنَآ إِصۡرٗا كَمَا حَمَلۡتَهُۥ عَلَى ٱلَّذِينَ مِن قَبۡلِنَاۚ رَبَّنَا وَلَا تُحَمِّلۡنَا مَا لَا طَاقَةَ لَنَا بِهِۦۖ وَٱعۡفُ عَنَّا وَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَآۚ أَنتَ مَوۡلَىٰنَا فَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ۝﴾",
       "latin": "Rabbanā lā tu’ākhidhnā in nasīnā aw akhṭa’nā. Rabbanā wa lā taḥmil ‘alaynā iṣran kamā ḥamaltahū ‘alal-ladhīna min qablinā. Rabbanā wa lā tuḥammilnā mā lā ṭāqata lanā bih, wa‘fu ‘annā waghfir lanā warḥamnā. Anta Mawlānā fanṣurnā ‘alal-qawmil-kāfirīn.",
-      "explanationEs": "«¡Señor nuestro! No nos castigues si olvidamos o cometemos un error. ¡Señor nuestro! No nos impongas una carga como la que impusiste a quienes nos precedieron. ¡Señor nuestro! No nos impongas algo superior a lo que podamos soportar. Perdónanos, absuélvenos y ten misericordia de nosotros. Tú eres nuestro Protector, concédenos el triunfo sobre los que niegan la verdad». (Al-Baqarah 2:286)",
-      "note": "سورة البقرة - الآية 286",
+      "explanationEs": "«¡Señor nuestro! No nos castigues si olvidamos o cometemos un error. ¡Señor nuestro! No nos impongas una carga como la que impusiste a quienes nos precedieron. ¡Señor nuestro! No nos impongas algo superior a lo que podamos soportar. Perdónanos, absuélvenos y ten misericordia de nosotros. Tú eres nuestro Protector, concédenos el triunfo sobre los que niegan la verdad».",
+      "note": "سورة البقرة - من الآية 286",
       "audioUrls": [
         "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/002286.mp3"
       ]
@@ -35,15 +35,15 @@ const adyaData = [
     {
       text: "﴿رَبَّنَا لَا تُزِغۡ قُلُوبَنَا بَعۡدَ إِذۡ هَدَيۡتَنَا وَهَبۡ لَنَا مِن لَّدُنكَ رَحۡمَةًۚ إِنَّكَ أَنتَ ٱلۡوَهَّابُ۝﴾",
       latin: 'Rabbanā lā tuzigh qulūbanā ba‘da idh hadaytanā wa hab lanā min ladunka raḥmah, innaka Antal-Wahhāb.',
-      explanationEs: '¡Señor nuestro! No permitas que nuestros corazones se desvíen después de habernos guiado y concédenos una misericordia de Tu parte. Tú eres el Dadivoso. (Ali ‘Imran 3:8)',
-      note: 'سورة آل عمران - الآية 8',
+      explanationEs: '¡Señor nuestro! No permitas que nuestros corazones se desvíen después de habernos guiado y concédenos una misericordia de Tu parte. Tú eres el Dadivoso.',
+      note: 'سورة آل عمران - من الآية 8',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003008.mp3"]
         },
     {
       "text": "﴿رَبَّنَآ إِنَّنَآ ءَامَنَّا فَٱغۡفِرۡ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ ٱلنَّارِ۝﴾",
       "latin": "Rabbanā innanā āmannā faghfir lanā dhunūbanā wa qinā ‘adhāban-nār.",
-      "explanationEs": "“¡Señor nuestro! Creemos en Ti. Perdónanos nuestros pecados y líbranos del castigo del Fuego”. (Ali 'Imran: 16)",
-      "note": "سورة آل عمران - الآية 16",
+      "explanationEs": "“¡Señor nuestro! Creemos en Ti. Perdónanos nuestros pecados y líbranos del castigo del Fuego”.",
+      "note": "سورة آل عمران - من الآية 16",
       "audioUrls": [
         "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003016.mp3"
       ]
@@ -51,8 +51,8 @@ const adyaData = [
     {
       "text": "﴿قَالَ رَبِّ هَبۡ لِي مِن لَّدُنكَ ذُرِّيَّةٗ طَيِّبَةًۖ إِنَّكَ سَمِيعُ ٱلدُّعَآءِ۝﴾",
       "latin": "Rabbi hab lī min ladunka dhurriyyatan ṭayyibah, innaka Samī‘ud-du‘ā’.",
-      "explanationEs": "“¡Señor mío! Concédeme una descendencia piadosa, Tú escuchas los ruegos”. (Ali 'Imran: 38)",
-      "note": "سورة آل عمران - الآية 38",
+      "explanationEs": "“¡Señor mío! Concédeme una descendencia piadosa, Tú escuchas los ruegos”.",
+      "note": "سورة آل عمران - من الآية 38",
       "audioUrls": [
         "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003038.mp3"
       ]
@@ -60,15 +60,15 @@ const adyaData = [
     {
       text: "﴿رَبَّنَآ ءَامَنَّا بِمَآ أَنزَلۡتَ وَٱتَّبَعۡنَا ٱلرَّسُولَ فَٱكۡتُبۡنَا مَعَ ٱلشَّٰهِدِينَ۝﴾",
       latin: 'Rabbanā āmannā bimā anzalta wat-taba‘nar-Rasūla fak-tubnā ma‘ash-shāhidīn.',
-      explanationEs: '¡Señor nuestro! Creemos en lo que has revelado y seguimos a Tu Profeta. Cuéntanos entre los que dan testimonio de fe”. (Ali \'Imran: 53)',
-      note: 'سورة آل عمران - الآية 53',
+      explanationEs: '¡Señor nuestro! Creemos en lo que has revelado y seguimos a Tu Profeta. Cuéntanos entre los que dan testimonio de fe”.',
+      note: 'سورة آل عمران - من الآية 53',
             audioUrls: ["https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003053.mp3"]
         },
     {
       "text": "﴿رَبَّنَا ٱغۡفِرۡ لَنَا ذُنُوبَنَا وَإِسۡرَافَنَا فِيٓ أَمۡرِنَا وَثَبِّتۡ أَقۡدَامَنَا وَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ۝﴾",
       "latin": "Rabbanā ghfir lanā dhunūbanā wa isrāfanā fī amrinā wa thabbit aqdāmanā wanṣurnā ‘alal-qawmil-kāfirīn.",
-      "explanationEs": "“¡Señor nuestro! Perdona nuestros pecados y nuestros excesos. Afirma nuestros pasos y concédenos el triunfo sobre los que rechazan la verdad”. \n(Ali 'Imran: 147)",
-      "note": "سورة آل عمران - الآية 147",
+      "explanationEs": "“¡Señor nuestro! Perdona nuestros pecados y nuestros excesos. Afirma nuestros pasos y concédenos el triunfo sobre los que rechazan la verdad”.",
+      "note": "سورة آل عمران - من الآية 147",
       "audioUrls": [
         "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003147.mp3"
       ]
@@ -76,8 +76,8 @@ const adyaData = [
     {
       "text": "﴿رَبَّنَا مَا خَلَقۡتَ هَٰذَا بَٰطِلٗا سُبۡحَٰنَكَ فَقِنَا عَذَابَ ٱلنَّارِ۝ رَبَّنَآ إِنَّكَ مَن تُدۡخِلِ ٱلنَّارَ فَقَدۡ أَخۡزَيۡتَهُۥۖ وَمَا لِلظَّٰلِمِينَ مِنۡ أَنصَارٖ۝ رَّبَّنَآ إِنَّنَا سَمِعۡنَا مُنَادِيٗا يُنَادِي لِلۡإِيمَٰنِ أَنۡ ءَامِنُواْ بِرَبِّكُمۡ فَـَٔامَنَّاۚ رَبَّنَا فَٱغۡفِرۡ لَنَا ذُنُوبَنَا وَكَفِّرۡ عَنَّا سَيِّـَٔاتِنَا وَتَوَفَّنَا مَعَ ٱلۡأَبۡرَارِ۝ رَبَّنَا وَءَاتِنَا مَا وَعَدتَّنَا عَلَىٰ رُسُلِكَ وَلَا تُخۡزِنَا يَوۡمَ ٱلۡقِيَٰمَةِۖ إِنَّكَ لَا تُخۡلِفُ ٱلۡمِيعَادَ۝﴾",
       "latin": "Rabbanā mā khalaqta hādhā bāṭilan, subḥānaka fa-qinā ‘adhāban-nār. Rabbanā innaka man tudkhilin-nāra faqad akhzaytahū wa mā liẓ-ẓālimīna min anṣār. Rabbanā innanā sami‘nā munādiyan yunādī lil-īmāni an āminū bi-rabbikum fa-āmannā. Rabbanā faghfir lanā dhunūbanā wa kaffir ‘annā sayyi’ātinā wa tawaffanā ma‘al-abrār. Rabbanā wa ātinā mā wa‘adtanā ‘alā rusulika wa lā tukhzinā yawmal-qiyāmah, innaka lā tukhliful-mī‘ād.",
-      "explanationEs": "“¡Señor nuestro! No has creado todo esto sin un sentido. \n¡Glorificado seas! Presérvanos del castigo del Fuego. ¡Señor nuestro! A quien condenes al Fuego lo habrás deshonrado, \nporque los opresores no tendrán quién los auxilie. ¡Señor nuestro! Hemos oído a quien convocaba a la fe, diciendo: \n‘Crean en su Señor’, y creímos. ¡Señor nuestro! Perdona nuestros pecados, borra nuestras malas acciones y, al morir, \nreúnenos con los piadosos. ¡Señor nuestro! Concédenos lo que has prometido a través de Tus Mensajeros y no nos humilles el Día de la Resurrección. \nTú no faltas a Tu promesa”. (Ali 'Imran: 191-194)",
-      "note": "سورة آل عمران - الآيات 191-194",
+      "explanationEs": "“¡Señor nuestro! No has creado todo esto sin un sentido. \n¡Glorificado seas! Presérvanos del castigo del Fuego. ¡Señor nuestro! A quien condenes al Fuego lo habrás deshonrado, \nporque los opresores no tendrán quién los auxilie. ¡Señor nuestro! Hemos oído a quien convocaba a la fe, diciendo: \n‘Crean en su Señor’, y creímos. ¡Señor nuestro! Perdona nuestros pecados, borra nuestras malas acciones y, al morir, \nreúnenos con los piadosos. ¡Señor nuestro! Concédenos lo que has prometido a través de Tus Mensajeros y no nos humilles el Día de la Resurrección. \nTú no faltas a Tu promesa”.",
+      "note": "سورة آل عمران - من الآيات 191-194",
       "audioUrls": [
         "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003191.mp3",
         "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/003192.mp3",
@@ -88,8 +88,8 @@ const adyaData = [
     {
       "text": "﴿رَبَّنَا ظَلَمۡنَآ أَنفُسَنَا وَإِن لَّمۡ تَغۡفِرۡ لَنَا وَتَرۡحَمۡنَا لَنَكُونَنَّ مِنَ ٱلۡخَٰسِرِينَ۝﴾",
       "latin": "rabbanā ẓalamnā anfusanā wa illam taghfir lanā wa tarḥamnā lanakūnanna minal-khāsirīn.",
-      "explanationEs": "“¡Señor nuestro! Hemos sido injustos con nosotros mismos; si no nos perdonas y no nos tienes misericordia, \nseremos de los perdidos”. (Al-A'raf: 23)",
-      "note": "سورة الأعراف - الآية 23",
+      "explanationEs": "“¡Señor nuestro! Hemos sido injustos con nosotros mismos; si no nos perdonas y no nos tienes misericordia, seremos de los perdidos”.",
+      "note": "سورة الأعراف - من الآية 23",
       "audioUrls": [
         "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/007023.mp3"
       ]
@@ -97,8 +97,8 @@ const adyaData = [
     {
       "text": "﴿قَالُواْ رَبَّنَا لَا تَجۡعَلۡنَا مَعَ ٱلۡقَوۡمِ ٱلظَّٰلِمِينَ۝﴾",
       "latin": "Rabbanā lā taj‘alnā ma‘al-qawmiẓ-ẓālimīn.",
-      "explanationEs": "“¡Señor nuestro! No nos juntes con la gente que cometió injusticias”. ",
-      "note": "سورة الأعراف - الآية 47",
+      "explanationEs": "“¡Señor nuestro! No nos juntes con la gente que cometió injusticias”.",
+      "note": "سورة الأعراف - من الآية 47",
       "audioUrls": [
         "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/007047.mp3"
       ]
@@ -106,8 +106,8 @@ const adyaData = [
     {
       "text": "﴿رَبَّنَآ أَفۡرِغۡ عَلَيۡنَا صَبۡرٗا وَتَوَفَّنَا مُسۡلِمِينَ۝﴾",
       "latin": "Rabbanā afrigh ‘alaynā ṣabran wa tawaffanā muslimīn.",
-      "explanationEs": "¡Señor nuestro! Danos paciencia y haznos morir musulmanes, \nsometidos a Ti”.",
-      "note": "سورة الأعراف - الآية 126",
+      "explanationEs": "¡Señor nuestro! Danos paciencia y haznos morir musulmanes, sometidos a Ti”.",
+      "note": "سورة الأعراف - من الآية 126",
       "audioUrls": [
         "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/007126.mp3"
       ]
@@ -116,7 +116,7 @@ const adyaData = [
       "text": "﴿حَسۡبِيَ ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَۖ عَلَيۡهِ تَوَكَّلۡتُۖ وَهُوَ رَبُّ ٱلۡعَرۡشِ ٱلۡعَظِيمِ۝﴾",
       "latin": "ḥasbiyallāhu lā ilāha illā Hū, ‘alayhi tawakkaltu wa Huwa Rabbul-‘Arshil-‘Aẓīm.",
       "explanationEs": "“Me es suficiente con Allah, no hay otra divinidad salvo Él, a Él me encomiendo y Él es el Señor del Trono grandioso”.",
-      "note": "سورة التوبة - الآية 129",
+      "note": "سورة التوبة - من الآية 129",
       "audioUrls": [
         "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/009129.mp3"
       ]
@@ -125,7 +125,7 @@ const adyaData = [
       "text": "﴿عَلَى ٱللَّهِ تَوَكَّلۡنَا رَبَّنَا لَا تَجۡعَلۡنَا فِتۡنَةٗ لِّلۡقَوۡمِ ٱلظَّٰلِمِينَ۝ وَنَجِّنَا بِرَحۡمَتِكَ مِنَ ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ۝﴾",
       "latin": "‘alallāhi tawakkalnā. Rabbanā lā taj‘alnā fitnatan lil-qawmiẓ-ẓālimīn, wa najjinā bi-raḥmatika minal-qawmil-kāfirīn.",
       "explanationEs": "«En Dios nos encomendamos. ¡Señor nuestro! No permitas que los opresores nos sometan a una prueba y sálvanos, por Tu misericordia, de la gente que se niega a creer».",
-      "note": "سورة يونس - الآيات 85-86",
+      "note": "سورة يونس - من الآيات 85-86",
       "audioUrls": [
         "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/010085.mp3",
         "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/010086.mp3"
@@ -134,8 +134,8 @@ const adyaData = [
     {
       "text": "﴿رَبِّ إِنِّيٓ أَعُوذُ بِكَ أَنۡ أَسۡـَٔلَكَ مَا لَيۡسَ لِي بِهِۦ عِلۡمٞۖ وَإِلَّا تَغۡفِرۡ لِي وَتَرۡحَمۡنِيٓ أَكُن مِّنَ ٱلۡخَٰسِرِينَ۝﴾",
       "latin": "Rabbi innī a‘ūdhu bika an as’alaka mā laysa lī bihī ‘ilm, wa illā taghfir lī wa tarḥamnī akun minal-khāsirīn.",
-      "explanationEs": "«¡Señor mío! Me refugio en Ti de pedirte algo de lo que no tengo conocimiento. Si no me perdonas y tienes misericordia de mí, seré de los perdedores». (Hud 11:47)",
-      "note": "سورة هود - الآية 47",
+      "explanationEs": "«¡Señor mío! Me refugio en Ti de pedirte algo de lo que no tengo conocimiento. Si no me perdonas y tienes misericordia de mí, seré de los perdedores».",
+      "note": "سورة هود - من الآية 47",
       "audioUrls": [
         "https://huggingface.co/datasets/maqra-project/warsh-ibrahim-al-dosari-128kbps/resolve/main/011047.mp3"
       ]
