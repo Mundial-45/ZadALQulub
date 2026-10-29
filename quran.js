@@ -446,11 +446,20 @@ function prevQuranPage() {
 
 function jumpToInputPage() {
   const input = document.getElementById('jumpPageInput');
-  if (input && input.value) {
-    displayQuranPage(input.value);
+  if (!input || input.value.trim() === '') {
+    showToast(currentLang === 'es' ? 'Introduce un número de página entre 1 y 638.' : 'أدخل رقم صفحة من 1 إلى 638.');
+    if (input) input.focus();
+    return;
   }
+  const page = Number(input.value);
+  if (!Number.isInteger(page) || page < 1 || page > 638) {
+    showToast(currentLang === 'es' ? 'El número de página debe estar entre 1 y 638.' : 'يجب أن يكون رقم الصفحة بين 1 و638.');
+    input.focus();
+    input.select();
+    return;
+  }
+  openQuranPage(page);
 }
-
 function setupQuranTouchSwipe() {
   const wrapper = document.getElementById('quranImageWrapper');
   if (!wrapper || wrapper.dataset.swipeSetup) return;
