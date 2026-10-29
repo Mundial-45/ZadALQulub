@@ -53,59 +53,57 @@
     <div id="homeView" class="space-y-3 sm:space-y-4 my-auto pt-2 sm:pt-3">
       <h2 id="homeWelcome" class="text-center text-lg sm:text-xl font-bold text-slate-700 dark:text-slate-300 mb-3 sm:mb-4">اختر القسم للبدء:</h2>
       
-      <div class="home-category-grid grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-        <!-- زر القرآن الكريم -->
-        <button type="button" onclick="showQuranView()" class="home-category-card bg-gradient-to-br from-amber-600 to-amber-800 hover:from-amber-700 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-amber-300/30">
-          <span class="home-icon-wrap"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNZpsjZFzXyDE6DpZvIc4HTSkOtaK3B5S0xJoYJcBi9w&s=10" alt="القرآن الكريم" class="home-category-icon" loading="lazy" decoding="async"></span>
+      <div class="home-category-grid grid grid-cols-2 gap-2.5 sm:gap-3">
+<button type="button" onclick="showQuranView()" class="home-category-card home-category-wide bg-gradient-to-br from-amber-600 to-amber-800 hover:from-amber-700 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-amber-300/30">
+          <span class="home-icon-wrap"><img src="Iconos/Quran.png" alt="القرآن الكريم" class="home-category-icon" loading="lazy" decoding="async"></span>
           <span class="block">
             <span class="block text-lg sm:text-xl font-extrabold" id="btnQuranTitle">القرآن الكريم (برواية ورش)</span>
             <span class="block text-amber-100 text-xs mt-0.5 line-clamp-1" id="btnQuranSub">المصحف الشريف كاملًا برواية ورش عن نافع</span>
           </span>
         </button>
 
-        <button type="button" onclick="openAzkarSection()" class="home-category-card bg-gradient-to-br from-emerald-600 to-emerald-800 hover:from-emerald-700 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-white/10">
-          <span class="home-icon-wrap"><img src="data:image/webp;base64,UklGRg4EAABXRUJQVlA4WAoAAAAQAAAAXwAAXwAAQUxQSHgCAAABTyEkIP6PRvIhIrLweDwekiRJUiTJhpqHmRnW/v/DjIzMguMeIvo/Af5/f5+Zg5nDuQ+YtfJzlj5XcK8/gDO8Ii4+Hf31YGuSihNkmDfyqj+M73mANdWjf/oVMboVdKO6MuYh+hjZWa8XqiYxYmT2OSU+M4vTuW1aEb+bZpU4Gx0NS2Ib9zDByK4b1sS2nuJ0TK0JF7ZjfQ9YTeWOcGdHTG5AJkJ4Yk+eM1fg2KNDyo19MfsyFcqFVchh+m8Ce7xJaRK4y3zmnMAR4ZdJyutE6wRWgel14XycAL+2wm5GbuDK9j1n5BnYtQ05gV/KxZj+jc0AyP28DnE3kdVv7g7e+u0mcA8szT8DPPU6moAC5O4L6MQkzgBSFhu7rifiOcAy8w7Q52IqPlL+1fwH0OVpMlpAzROAZYefCRlwV3FF+dPklHwqoOK6gK8Z0YBN5H0AT1Mz/VlApBE8T0o/CN8sA1aRJxF8ZP6N7Zr6RaEFRLqI2CbexvVNOnJRXFT0MCBx0+2hC40VBUjoXkHtpNteD+Ltjy5yAmQ0t+j1a0dCqzl3LX5l6EUHSrM5n1p0ApQqf5XWbotu2AxwrZ5h34Nu29EAvKs+8ZVaVqDllsp1t/0WgD/LT45T2wj4zgHH0WuvAxsBfo0hFQOYBrDaiwaAV7tQHAGYpTSxNwKABzMk1CXla4bSzPlwAKfmqD0QmyQ09TsYwKHZSzpaf6dcm3MoSvNtG+uENnY7r1DaeN5ifUto41uvRx6KE0qbV5lD69+ET7ZuPjtJ1p43xfLZLLHt2D3hsLvgjfjZMX9HC4cF2Kfu2M/hyqGLurOcOXOmK4fO9wFw7X/jAVZQOCBwAQAAEA0AnQEqYABgAD7VWKVMqCUjojK567kAGoliAFVt8sjAbYDzAecZ6H/8/6f/UAegB0oP+MwQD+AfgB9fvf4paL+p3TNt+JJZd0uggcHwi2IrmErb+cEiNSvWvGz3x+Tq2AsbJZefNQ94cK/6YBAAcYAA/vh5Bo72mdYL0uT8f/bv//hvAAAF8c7Ytxw9KxAQA1zMmqa9t71nbKTJFhruc3ygeIt8LZOD27TauWzowT2CaMFkaP04J7qnsIbu2qp9MDK6KZTQBAIMQVf+Vn/gX7yf/8i885vblRb5iwhpmaf+LiI9LVeWqbw+PyzPTTuSsJcmGNo0uKhh/NEW2L4wmr9UO+wIJQW+Y+VhmjIIhQVqfkewr8/g2Htgm3lOHBMu3N9F43ukqRAljYikMrvswKJTT7W6ITWS++NxNgyGL2CXQHA2m00VVjj57E52vWKjX7CqLL7lEllvQ7CXsZ9k2if7ygmjn/Crts/qfgAAAA=" alt="الأذكار اليومية" class="home-category-icon" loading="eager" decoding="async"></span>
+<button type="button" onclick="openAzkarSection()" class="home-category-card bg-gradient-to-br from-emerald-600 to-emerald-800 hover:from-emerald-700 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-white/10">
+          <span class="home-icon-wrap"><img src="Iconos/Azkar.png" alt="الأذكار اليومية" class="home-category-icon" loading="lazy" decoding="async"></span>
           <span class="block">
             <span class="block text-base sm:text-lg font-bold" id="btnAzkarTitle">الأذكار اليومية</span>
             <span class="block text-emerald-100 text-[10px] sm:text-xs mt-0.5 line-clamp-1" id="btnAzkarSub">الصباح، المساء، النوم، أذكار الصلاة</span>
           </span>
         </button>
 
-        <button type="button" onclick="openAdyaSection()" class="home-category-card bg-gradient-to-br from-teal-600 to-teal-800 hover:from-teal-700 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-white/10">
-          <span class="home-icon-wrap"><img src="data:image/webp;base64,UklGRq4BAABXRUJQVlA4WAoAAAAQAAAAXwAAXwAAQUxQSKQAAAABgOS2kSRJ//+0erbMLIc759RAREwAn0dVaynYTLWayw3UHTc7+IhrjnHJZwSb+esMF9zmgL38e5QZdrGdWsUUkwzgTxv4iO2sYJA5LnmYN+EUl2znaWrY7sHfvBUDeRPenu1sZzvPUsR2x/9NjOEeGMJNMILwC6Ed7bg98g2nHQPNZqDZDDSbfLMZGcXQHAaHMDuAhs/QVAUo9vcanVfo3e8DI1ZQOCDkAAAAEAgAnQEqYABgAD7dXKdNP6UkIjAYCjvwG4ljANRxUYUxbsJxrcPxJGniIhnbdPJjOdZE8VhVU0FuTssVC2mvpo4giDn7i1SJAAD+9YMANn8mNH9RKaeIZ96KEv/iQNdIyRXmhI1373Awv8j25hloDAxHS/9iuwyu7lwsM4JoDdneVJcChsvoK60IDqzrcIjC6ETZ39RYLcL44k3Q++vHYb+B5VTjA5So+8BrijGuX+EIV/4MlopxqwnwAEcWTN01KAKlaPxO2v9Exmn/0N//9oJ/9m9//3K5008aDZSh8OAN6gAA" alt="الأدعية المأثورة" class="home-category-icon" loading="eager" decoding="async"></span>
+<button type="button" onclick="openAdyaSection()" class="home-category-card bg-gradient-to-br from-teal-600 to-teal-800 hover:from-teal-700 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-white/10">
+          <span class="home-icon-wrap"><img src="Iconos/Dua.png" alt="الأدعية المأثورة" class="home-category-icon" loading="lazy" decoding="async"></span>
           <span class="block">
             <span class="block text-base sm:text-lg font-bold" id="btnAdyaTitle">الأدعية المأثورة</span>
             <span class="block text-teal-100 text-[10px] sm:text-xs mt-0.5 line-clamp-1" id="btnAdyaSub">الرزق، الشفاء، الفرج، الحفظ</span>
           </span>
         </button>
 
-        <button type="button" onclick="openMunajatSection()" class="home-category-card bg-gradient-to-br from-sky-600 to-blue-700 hover:from-sky-700 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-white/10">
-          <span class="home-icon-wrap"><img src="data:image/webp;base64,UklGRk4FAABXRUJQVlA4WAoAAAAQAAAAXwAAXwAAQUxQSMoEAAABl8OwbduwqYlOFxHxzetC3iP6u4gxu64LEe+ZPLsQEWFiF52YeGIXXYDtbfvft02eShkqlpph46IiQoZQMz1xsMleBoNrmr2nafZ8/v+z7/h9fz//jnoU0f8J4HfkS2aut5GVhy1j/PLo++9HqxFtFdVnZK+r9ttDlcrP1NZQV4gudqYOuz0MGKktQqhvGatG2ND97bCohM8VUGdjqO2gzgZGYGmqhQx6xreI2yr2ACJ94raMTpFvvFXUrYPB3jUz22JlFCvZFr9Cm6m/AHwqYwt01TsBMNgI7o12r2bc3Hlj1UTmRoY7bxDcq7SW8X7nEWiV2xnj1vC3vHEGLfg82FZ98IdY/7qtQgAWXm0RuFyEFpwzlZzO88kOWzc5dDUFeeqXzk6ZM9nVM6opqqg3d8ILo/8FUDHcAHqblm3atuFD4n9Ujgc1N+mw4UEydYNefT5ojCH5b5VksU3DhqgOqKrrifeFAFQb8UKl+msF/ixslSGq2oCOCoOpKqjwWFgoMgC6E1Dv16cCRzcr/ajHQRmWeA9w+DWgNuEx8Dcroe5ff2RZwgcCHd2s66YCHCiA5XsRA9S6DLrguWqoDy6VuEvWuSb8Gx50UNhfBQsDh+BPLrI1AD1XzxEFNOJqFW4XAbCDMpbAeozMBLvQSlAAYMrZwAahE1+XIm+O8KjH0P/ZbcbdYF61hrOJReLnnBxSJfaXOrp6ADprlJnZTy8Cf6VD7msnqowmkad1rCnAJylhHKP7snQcHLbLSLUOYxj+UsHkJGZGBz2tfnQNrjWlE6gzqcMPdc4LRqf1rC7FroneNARsRB+mJ7G1yJzhIwtuAQZRRo3YoCM8WP1X5LfgjeHz3Z5877UISqBZ2E9Ml+vqNDgLbkYMjKKYnnF4vlJf4VRktdxxBZTOonkouImzr9Wtj6LoK/0xQ5nBeLnnKckZaMeQO2KIzBm/hn4XG/78qD4T068k47KPlXXDVDgIRMcx3PO+IV1FSRky63iiJ/zqI+d0qJC4G0GxIejagh5NTFRQZs1lyrVUFEWVuraCkaLDoA+kFP3sTcVfUVCOx8Yf/HRcZVjX4QAV3aMuAoeUkd3YFUeB3Iw9iU0rKoyD6VJ97URQbxveBVCYAjfwiF5cidBnUTF9VgVWgpVSp5SkaWDFEE7RFb2N7F4G1W85KoDh01I3c8gweeO90Ee3mAK37wYVybCUWSSaTNN4l9hYlXJPllLniN5u0BejY1CGxYRhbLsXsSnHjS9BhJka4HCgnmbJ2h5EeiaJBlAHxLLLnQueGqLkMawDJTb6UNNhwCjfHSJjO7AWTkFEqWc3rChK9qYClr2SChVVynUVUBRwf+q43sDCw9RYQFF9roMyPwRjUUBJ99Q3pchUQDH6U5mfguXd28GCp2NugjXCJ1O7g3PnIsfLdHQJUEBJWGgmZQIFlMhUGVQwMHU4h7x/UOJ1cCtC4f/HRoy1D0sexoxrFR5wPvWZdWfh79pn2eiXUujqMQWVRZXY64Cf8wR1kVkV1B9QIUYNISZhST3DUH2JlW4rvFZ7DEzWNgk+/ydxCwxBpQCBIaT+GZkvR7BtkgonqliBhE8Dalw399wj4w9Bz1h5S8Hk1VR4uw6ydjD1tgF1n95pc/zuGlZQOCBeAAAA8AYAnQEqYABgAD7dZKxRKKUkIqqxWgEQG4lpCHACTAAALdh3sp31y5Nl7z98aNN3SoJvlq9PqwsCVbDipfvJAAD+SlRZZ3QHM7VUs19B4S3jzyMAAAACFvmTgAAAAA==" alt="مناجاة وتضرعات" class="home-category-icon" loading="eager" decoding="async"></span>
+<button type="button" onclick="openMunajatSection()" class="home-category-card bg-gradient-to-br from-sky-600 to-blue-700 hover:from-sky-700 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-white/10">
+          <span class="home-icon-wrap"><img src="Iconos/Munajat.png" alt="مناجاة وتضرعات" class="home-category-icon" loading="lazy" decoding="async"></span>
           <span class="block">
             <span class="block text-base sm:text-lg font-bold" id="btnMunajatTitle">مناجاة وتضرعات</span>
             <span class="block text-sky-100 text-[10px] sm:text-xs mt-0.5 line-clamp-1" id="btnMunajatSub">Invocaciones y Súplicas Íntimas</span>
           </span>
         </button>
 
-        <button type="button" onclick="showTasbeeh()" class="home-category-card bg-gradient-to-br from-cyan-600 to-teal-800 hover:from-cyan-700 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-white/10">
-          <span class="home-icon-wrap"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzOki_aqLjT_-0SUy8RhC4hojIEwaE7NTTWV2GFQPaBw&s=10" alt="المسبحة الإلكترونية" class="home-category-icon" loading="lazy" decoding="async"></span>
-          <span class="block">
-            <span class="block text-base sm:text-lg font-bold" id="btnTasbeehTitle">المسبحة الإلكترونية</span>
-            <span class="block text-cyan-100 text-[10px] sm:text-xs mt-0.5 line-clamp-1" id="btnTasbeehSub">عداد إلكتروني للتسبيح والاستغفار</span>
-          </span>
-        </button>
-
-        <!-- زر الرقية الشرعية -->
-        <button type="button" onclick="openRuqyaSection()" class="home-category-card bg-gradient-to-br from-indigo-600 to-indigo-900 hover:from-indigo-700 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-indigo-300/30">
-          <span class="home-icon-wrap"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSolxX234pWK7AqboVXx7-2sTQ_drrdgNqS0hWrq89eCDaNL8facRyKK0g&s" alt="الرقية الشرعية" class="home-category-icon" loading="lazy" decoding="async"></span>
+<button type="button" onclick="openRuqyaSection()" class="home-category-card bg-gradient-to-br from-indigo-600 to-indigo-900 hover:from-indigo-700 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-indigo-300/30">
+          <span class="home-icon-wrap"><img src="Iconos/Ruqya.png" alt="الرقية الشرعية" class="home-category-icon" loading="lazy" decoding="async"></span>
           <span class="block">
             <span class="block text-lg sm:text-xl font-bold" id="btnRuqyahTitle">الرقية الشرعية</span>
             <span class="block text-indigo-100 text-[10px] sm:text-xs mt-0.5 line-clamp-1" id="btnRuqyahSub">رقية الشفاء، العين، الحسد والمس</span>
           </span>
         </button>
 
-        <button type="button" onclick="showFavorites()" class="home-category-card bg-gradient-to-br from-rose-600 to-rose-800 hover:from-rose-700 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-white/10">
-          <span class="home-icon-wrap"><svg class="home-category-icon home-favorite-icon" fill="currentColor" viewBox="0 0 24 24" aria-label="المفضلة"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span>
+<button type="button" onclick="showTasbeeh()" class="home-category-card home-category-wide bg-gradient-to-br from-cyan-600 to-teal-800 hover:from-cyan-700 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-white/10">
+          <span class="home-icon-wrap"><img src="Iconos/Rosario.png" alt="المسبحة الإلكترونية" class="home-category-icon" loading="lazy" decoding="async"></span>
+          <span class="block">
+            <span class="block text-base sm:text-lg font-bold" id="btnTasbeehTitle">المسبحة الإلكترونية</span>
+            <span class="block text-cyan-100 text-[10px] sm:text-xs mt-0.5 line-clamp-1" id="btnTasbeehSub">عداد إلكتروني للتسبيح والاستغفار</span>
+          </span>
+        </button>
+
+<button type="button" onclick="showFavorites()" class="home-category-card home-category-wide bg-gradient-to-br from-rose-600 to-rose-800 hover:from-rose-700 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-white/10">
+          <span class="home-icon-wrap"><img src="Iconos/Favoritos.png" alt="المفضلة" class="home-category-icon" loading="lazy" decoding="async"></span>
           <span class="block">
             <span class="block text-base sm:text-lg font-bold" id="btnFavTitle">المفضلة</span>
             <span class="block text-rose-100 text-[10px] sm:text-xs mt-0.5 line-clamp-1" id="btnFavSub">الأذكار والأدعية المحفوظة لديك</span>
