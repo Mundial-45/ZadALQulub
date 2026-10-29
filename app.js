@@ -773,8 +773,8 @@ function openItemEditor(index) {
     if (kind === 'audio-list') {
       control = document.createElement('textarea');
       control.rows = 4;
-      control.value = (Array.isArray(value) ? value : []).join('\\n');
-      control.placeholder = 'https://.../audio1.mp3\\nhttps://.../audio2.mp3';
+      control.value = (Array.isArray(value) ? value : []).join('\n');
+      control.placeholder = 'https://.../audio1.mp3\nhttps://.../audio2.mp3';
       control.className = 'w-full rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 p-3 text-sm';
       control.spellcheck = false;
     } else if (kind === 'boolean') {
@@ -833,7 +833,7 @@ function buildEditedItem() {
   document.querySelectorAll('#itemEditorFields [data-editor-key]').forEach(function (control) {
     const key = control.dataset.editorKey, kind = control.dataset.editorKind;
     if (kind === 'string') updated[key] = control.value;
-    else if (kind === 'audio-list') updated[key] = control.value.split(/\\r?\\n/).map(url => url.trim()).filter(Boolean);
+    else if (kind === 'audio-list') updated[key] = control.value.split(/\r?\n/).map(url => url.trim()).filter(Boolean);
     else if (kind === 'number') {
       if (control.value.trim() === '' || !Number.isFinite(Number(control.value))) throw new Error('Valor numérico inválido en ' + key);
       updated[key] = Number(control.value);
