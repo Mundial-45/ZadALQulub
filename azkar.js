@@ -11,7 +11,7 @@ const azkarData = [
                         "explanationEs": "¡Allah! No existe nada ni nadie con derecho a ser adorado excepto Él, el Viviente (Eterno), el Sustentador (y Gobernador de toda la creación). No Lo afectan somnolencia ni sueño. Suyo es cuanto hay en los cielos y la Tierra. ¿Quién podrá interceder ante Él si no es con Su permiso? Conoce el pasado y el futuro (lo manifiesto y lo oculto) y nadie abarca de Su conocimiento salvo lo que Él quiere. El escabel de Su Trono abarca los cielos y la Tierra, y la custodia (y mantenimiento) de ambos no Lo agobia. Y Él es el Sublime, el Grandioso. [Al-Baqarah: 255]",
                         "count": 1,
                         "maxCount": 1,
-            "note": "آية الكرسي",
+            "note": " آية الكرسي",
             "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002255.mp3"]
       },
                   {
