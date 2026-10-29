@@ -571,10 +571,10 @@ const adyaData = [
   titleEs: 'Súplicas para la Familia y los Hijos',
   items: [
     {
-      text: '﴿رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا۝﴾',
-      latin: 'Rabbanā hab lanā min azwājinā wa dhurriyyātinā qurrata a‘yunin waj-‘alnā lil-muttaqīna imāmā.',
-      explanationEs: 'Aquellos que piden: “¡Señor nuestro! Agrácianos con cónyuges y descendientes que sean un motivo de alegría y tranquilidad para nosotros, y haz que seamos un ejemplo para los que tienen temor (de Allah)”. (Al-Furqan: 74)',
-      note: 'سورة الفرقان - الآية 74'
+      "text": "﴿رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا۝﴾",
+      "latin": "Rabbanā hab lanā min azwājinā wa dhurriyyātinā qurrata a‘yunin waj-‘alnā lil-muttaqīna imāmā.",
+      "explanationEs": "“¡Señor nuestro! Agrácianos con cónyuges y descendientes que sean un motivo de alegría y tranquilidad para nosotros, y haz que seamos un ejemplo para los que tienen temor (de Allah)”.",
+      "note": "سورة الفرقان - من الآية 74"
     },
     {
       text: 'اللَّهُمَّ إِنِّي أَدْعُوكَ بِاسْمِكَ الوَاحِدِ الأَحَدِ الفَرْدِ الصَّمَدِ، وَأَدْعُوكَ بِاسْمِكَ الأَعْظَمِ الَّذِي إِذَا دُعِيتَ بِهِ أَجَبْتَ، وَإِذَا سُئِلْتَ بِهِ أَعْطَيْتَ، أَنْ تَمُنَّ عَلَيَّ بِصَلَاحِ أَحْوَالِ أَهْلِي وَذُرِّيَّتِي.',
