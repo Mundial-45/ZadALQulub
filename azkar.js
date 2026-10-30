@@ -118,12 +118,12 @@ const azkarData = [
                         "maxCount": 1
                   },
                   {
-                        "itemNumber": 14,
-                        "text": "بِسْمِ اللَّهِ الَّذِي لاَ يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الأَرْضِ وَلاَ فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ.",
-                        "latin": "Bismillāhil-ladhī lā yaḍurru maʿasmihī shayʾun fil-arḍi wa lā fis-samā’i wa huwas-samī‘ul-‘alīm.",
-                        "explanationEs": "En el nombre de Allah, con Cuyo nombre nada daña en la tierra ni en el cielo, y Él es el TodoOidor, el AllSabelotodo.",
-                        "count": 3,
-                        "maxCount": 3
+                    "itemNumber": 14,
+                    "text": "بِسْمِ اللَّهِ الَّذِي لاَ يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الأَرْضِ وَلاَ فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ.",
+                    "latin": "Bismillāhil-ladhī lā yaḍurru maʿasmihī shayʾun fil-arḍi wa lā fis-samā’i wa huwas-samī‘ul-‘alīm.",
+                    "explanationEs": "En el nombre de Allah, con Cuyo nombre nada daña en la tierra ni en el cielo, y Él es el Omnioyente, el Omnisciente.",
+                    "count": 3,
+                    "maxCount": 3
                   },
                   {
                         "itemNumber": 15,
@@ -600,12 +600,12 @@ const azkarData = [
                         "maxCount": 1
                   },
                   {
-                        "itemNumber": 69,
-                        "text": "لْحَمْدُ لِلَّهِ الَّذِي عَافَانِي فِي جَسَدِي، وَرَدَّ عَلَيَّ رُوحِي، وَأَذِنَ لي بِذِكْرِهِ",
-                        "latin": "Alhamdu lillāhi-lladhī ʿāfānī fī jasadī, wa-radda ʿalayya rūḥī, wa-adhina lī bi-dhikrih.",
-                        "explanationEs": "Alabado sea Alá, Quien sanó mi cuerpo, me devolvió mi alma y me permitió recordarle.",
-                        "count": 1,
-                        "maxCount": 1
+                    "itemNumber": 69,
+                    "text": "الْحَمْدُ لِلَّهِ الَّذِي عَافَانِي فِي جَسَدِي، وَرَدَّ عَلَيَّ رُوحِي، وَأَذِنَ لي بِذِكْرِهِ",
+                    "latin": "Alhamdu lillāhi-lladhī ʿāfānī fī jasadī, wa-radda ʿalayya rūḥī, wa-adhina lī bi-dhikrih.",
+                    "explanationEs": "Alabado sea Allah, Quien sanó mi cuerpo, me devolvió mi alma y me permitió recordarle.",
+                    "count": 1,
+                    "maxCount": 1
                   },
                   {
                         "itemNumber": 70,
