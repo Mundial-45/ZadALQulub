@@ -1723,35 +1723,35 @@ const adyaData = [
       "itemNumber": 226,
       text: 'لَا إِلَهَ إِلَّا اللهُ العَظِيمُ الحَلِيمُ، لَا إِلَهَ إِلَّا اللهُ رَبُّ السَّمَاوَاتِ وَالأَرْضِ وَرَبُّ العَرْشِ العَظِيمِ.',
       latin: 'Lā ilāha illallāhul-‘Aẓīmul-Ḥalīm, lā ilāha illallāhu Rabbus-samāwāti wal-arḍi wa Rabbul-ʿarshil-ʿaẓīm.',
-      explanationEs: 'No hay más divinidad que Allah, el Grandioso, el Tolerante. No hay más divinidad que Allah, Señor de los cielos y de la tierra, y Señor del Gran Trono.',
+      explanationEs: "No hay divinidad digna de adoración excepto Allah, el Grandioso, el Clemente. No hay divinidad digna de adoración excepto Allah, Señor de los cielos y de la tierra y Señor del Trono grandioso.",
       note: 'دعاء الكرب (رواه البخاري ومسلم)'
     },
     {
       "itemNumber": 227,
       text: 'اللَّهُ اللَّهُ رَبِّي، لَا أُشْرِكُ بِهِ شَيْئًا.',
       latin: 'Allāhu Allāhu Rabbī, lā ushriku bihī shay’an.',
-      explanationEs: 'Allah, Allah es mi Señor, no le asocio nada en absoluto.',
+      explanationEs: "Allah, Allah es mi Señor; no Le asocio nada.",
       note: 'كلمات الكرب (رواه أحمد وأبو داود وابن ماجه)'
     },
     {
       "itemNumber": 228,
       text: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الهَمِّ وَالحَزَنِ، وَالعَجْزِ وَالكَسَلِ، وَالبُخْلِ وَالجُبْنِ.',
       latin: 'Allāhumma innī a‘ūdhu bika minal-hammi wal-ḥazan, wal-‘ajzi wal-kasal, wal-bukhli wal-jubn.',
-      explanationEs: 'Oh Allah, me refugio en Ti de la ansiedad y la tristeza, de la incapacidad y la pereza, y de la tacañería y la cobardía.',
+      explanationEs: "¡Oh Allah! Me refugio en Ti de la preocupación y la tristeza, de la incapacidad y la pereza, de la tacañería y la cobardía.",
       note: 'صحيح البخاري'
     },
     {
       "itemNumber": 229,
       text: 'لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ.',
       latin: 'Lā ilāha illā Anta subḥānaka innī kuntu minaż-ẓālimīn.',
-      explanationEs: 'No hay más divinidad que Tú, ¡Glorificado seas! Ciertamente he sido de los injustos.',
+      explanationEs: "No hay divinidad digna de adoración excepto Tú. ¡Glorificado seas! En verdad, he sido de los injustos.",
       note: 'دعوة ذي النون في بطن الحوت (رواه الترمذي)'
     },
     {
       "itemNumber": 230,
       text: 'لَا إِلَهَ إِلَّا اللهُ الكَرِيمُ الحَلِيمُ، سُبْحَانَهُ وَتَبَارَكَ اللهُ رَبُّ العَرْشِ العَظِيمِ، وَالحَمْدُ للهِ رَبِّ العَالَمِينَ.',
       latin: 'Lā ilāha illallāhul-Karīmul-Ḥalīm, subḥānahū wa tabārakallāhu Rabbul-ʿarshil-ʿaẓīm, wal-ḥamdu lillāhi Rabbil-‘ālamīn.',
-      explanationEs: 'No hay más divinidad que Allah, el Generoso, el Tolerante. Glorificado y Bendito sea Allah, Señor del Gran Trono, y alabado sea Allah, Señor de los mundos.',
+      explanationEs: "No hay divinidad digna de adoración excepto Allah, el Generoso, el Clemente. ¡Glorificado y bendito sea Allah, Señor del Trono grandioso! Y toda alabanza pertenece a Allah, Señor de los mundos.",
       note: 'أدعية الكرب والشدة عن علي بن أبي طالب (مسند أحمد والنسائي)'
     }
     ]
