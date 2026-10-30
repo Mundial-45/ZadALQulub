@@ -1665,7 +1665,7 @@ const adyaData = [
     },
     {
       "itemNumber": 219,
-      "text": "اللَّهُمَّ بِكَ أَسْتَعِينُ وَعَلَيْكَ أَتَوَكَّلُ، اللَّهُمَّ ذَلِّلْ لِي صُعُوبَةَ أَمْرِي، وَسَهِّلْ لِي مَشَقَّتَهُ، وَارْزُقْنِي الخَيْرَ كُلَّهُ أَكْثَرَ مِمَّا أَطْلُبُ، وَاصْرِفْ عَنِّي كُلَّ شَرٍّ، ﴿رَبِّ اشْرَحْ لِي صَدْرِي ۝وَيَسِّرۡ لِيٓ أَمۡرِي۝﴾ يَا كَرِيمُ.",
+      "text": "اللَّهُمَّ بِكَ أَسْتَعِينُ وَعَلَيْكَ أَتَوَكَّلُ، اللَّهُمَّ ذَلِّلْ لِي صُعُوبَةَ أَمْرِي، وَسَهِّلْ لِي مَشَقَّتَهُ، وَارْزُقْنِي الخَيْرَ كُلَّهُ أَكْثَرَ مِمَّا أَطْلُبُ، وَاصْرِفْ عَنِّي كُلَّ شَرٍّ، رَبِّ اشْرَحْ لِي صَدْرِي، وَيَسِّرۡ لِيٓ أَمۡرِي، يَا كَرِيمُ.",
       "latin": "Allāhumma bika astaʿīnu wa ʿalayka atawakkal. Allāhumma dhallil lī ṣuʿūbata amrī, wa sahhil lī mashaqqatah, warzuqnī al-khayra kullahū akthara mimmā aṭlub, waṣrif ʿannī kulla sharr. Rabbi-shraḥ lī ṣadrī wa yassir lī amrī, yā Karīm.",
       "explanationEs": "«Oh Allah, en Ti busco ayuda y en Ti confío. Oh Allah, facilita para mí las dificultades de mi asunto, suaviza sus penurias, provéeme de todo el bien más allá de lo que pido y aparta de mí todo mal. \"¡Señor mío! Abre mi pecho y facilita mi asunto\", ¡Oh Generoso!».\n",
       "note": "دعاء التسهيل وانشراح الصدر"
