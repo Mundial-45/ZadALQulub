@@ -59,43 +59,43 @@ const ruqyahData = [
           },
           {
             "itemNumber": 5,
-            text: "﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ قُلۡ هُوَ ٱللَّهُ أَحَدٌ۝ ٱللَّهُ ٱلصَّمَدُ۝لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ۝ وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ۝﴾",
-            latin: "Bismillāhir-Raḥmānir-Raḥīm. Qul Huwallāhu Aḥad. Allāhuṣ-Ṣamad. Lam yalid wa lam yūlad. Wa lam yakun lahū kufuwan aḥad.",
-            explanationEs: "En el nombre de Dios, el Compasivo, el Misericordioso. Di: “Él es Dios, Uno. Dios, el Absoluto. No ha engendrado ni ha sido engendrado. Y no hay nada ni nadie que sea semejante a Él”. (Sura Al-Ijlas; traducción de Isa García)",
-            count: 3,
-            maxCount: 3,
-            audioUrls: [
+            "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\n﴿قُلۡ هُوَ ٱللَّهُ أَحَدٌ۝ ٱللَّهُ ٱلصَّمَدُ۝لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ۝ وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ۝﴾",
+            "latin": "Bismillāhir-Raḥmānir-Raḥīm. Qul Huwallāhu Aḥad. Allāhuṣ-Ṣamad. Lam yalid wa lam yūlad. Wa lam yakun lahū kufuwan aḥad.",
+            "explanationEs": "En el nombre de Dios, el Compasivo, el Misericordioso. Di: “Él es Dios, Uno. Dios, el Absoluto. No ha engendrado ni ha sido engendrado. Y no hay nada ni nadie que sea semejante a Él”.",
+            "count": 3,
+            "maxCount": 3,
+            "audioUrls": [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112001.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112002.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112003.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112004.mp3"
             ],
-            note: "سورة الإخلاص الآيات 1-4",
+            "note": "سورة الإخلاص"
           },
           {
             "itemNumber": 6,
-            text: "﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ۝مِن شَرِّ مَا خَلَقَ۝وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ۝ وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِي ٱلۡعُقَدِ۝وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ۝﴾",
-            latin: "Bismillāhir-Raḥmānir-Raḥīm. Qul a‘ūdhu bi-Rabbil-falaq. Min sharri mā khalaq. Wa min sharri ghāsiqin idhā waqab. Wa min sharrin-naffāthāti fīl-‘uqad. Wa min sharri ḥāsidin idhā ḥasad.",
-            explanationEs: "En el nombre de Dios, el Compasivo, el Misericordioso. Di: “Me refugio en el Señor del amanecer, de todo el mal que existe en lo que Él creó, del mal de la oscuridad de la noche cuando se extiende, del mal de las [hechiceras] sopladoras de nudos, y del mal del envidioso cuando envidia”. (Sura Al-Falaq; traducción de Isa García)",
-            count: 3,
-            maxCount: 3,
-            audioUrls: [
+            "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\n﴿قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ۝مِن شَرِّ مَا خَلَقَ۝وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ۝ وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِي ٱلۡعُقَدِ۝وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ۝﴾",
+            "latin": "Bismillāhir-Raḥmānir-Raḥīm. Qul a‘ūdhu bi-Rabbil-falaq. Min sharri mā khalaq. Wa min sharri ghāsiqin idhā waqab. Wa min sharrin-naffāthāti fīl-‘uqad. Wa min sharri ḥāsidin idhā ḥasad.",
+            "explanationEs": "En el nombre de Dios, el Compasivo, el Misericordioso. Di: “Me refugio en el Señor del amanecer, de todo el mal que existe en lo que Él creó, del mal de la oscuridad de la noche cuando se extiende, del mal de las [hechiceras] sopladoras de nudos, y del mal del envidioso cuando envidia”. ",
+            "count": 3,
+            "maxCount": 3,
+            "audioUrls": [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113001.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113002.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113003.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113004.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113005.mp3"
             ],
-            note: "سورة الفلق الآيات 1-5",
+            "note": "سورة الفلق"
           },
           {
             "itemNumber": 7,
-            text: "﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ۝ مَلِكِ ٱلنَّاسِ۝ إِلَٰهِ ٱلنَّاسِ۝ مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ۝ ٱلَّذِي يُوَسۡوِسُ فِي صُدُورِ ٱلنَّاسِ۝ مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ۝﴾",
-            latin: "Bismillāhir-Raḥmānir-Raḥīm. Qul a‘ūdhu bi-Rabbin-nās. Malikin-nās. Ilāhin-nās. Min sharril-waswāsil-khannās. Alladhī yuwaswisu fī ṣudūrin-nās. Minal-jinnati wan-nās.",
-            explanationEs: "En el nombre de Dios, el Compasivo, el Misericordioso. Di: “Me refugio en el Señor de los seres humanos, el Soberano de los seres humanos, el Dios de los seres humanos, del mal del susurrador que huye [cada vez que Dios es mencionado], que susurra en los corazones de los seres humanos, y existe entre los yinnes y entre los seres humanos”. (Sura An-Nas; traducción de Isa García)",
-            count: 3,
-            maxCount: 3,
-            audioUrls: [
+            "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\n﴿قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ۝ مَلِكِ ٱلنَّاسِ۝ إِلَٰهِ ٱلنَّاسِ۝ مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ۝ ٱلَّذِي يُوَسۡوِسُ فِي صُدُورِ ٱلنَّاسِ۝ مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ۝﴾",
+            "latin": "Bismillāhir-Raḥmānir-Raḥīm. Qul a‘ūdhu bi-Rabbin-nās. Malikin-nās. Ilāhin-nās. Min sharril-waswāsil-khannās. Alladhī yuwaswisu fī ṣudūrin-nās. Minal-jinnati wan-nās.",
+            "explanationEs": "En el nombre de Dios, el Compasivo, el Misericordioso. Di: “Me refugio en el Señor de los seres humanos, el Soberano de los seres humanos, el Dios de los seres humanos, del mal del susurrador que huye [cada vez que Dios es mencionado], que susurra en los corazones de los seres humanos, y existe entre los yinnes y entre los seres humanos”.",
+            "count": 3,
+            "maxCount": 3,
+            "audioUrls": [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114001.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114002.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114003.mp3",
@@ -103,7 +103,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114005.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114006.mp3"
             ],
-            note: "سورة الناس الآيات 1-6",
+            "note": "سورة الناس"
           },
           {
             "itemNumber": 8,
@@ -277,8 +277,8 @@ const ruqyahData = [
           {
             "itemNumber": 22,
             "text": "﴿۞ وَأَوۡحَيۡنَآ إِلَىٰ مُوسَىٰٓ أَنۡ أَلۡقِ عَصَاكَۖ فَإِذَا هِيَ تَلۡقَفُ مَا يَأۡفِكُونَ۝ فَوَقَعَ ٱلۡحَقُّ وَبَطَلَ مَا كَانُواْ يَعۡمَلُونَ۝ فَغُلِبُواْ هُنَالِكَ وَٱنقَلَبُواْ صَٰغِرِينَ۝ وَأُلۡقِيَ ٱلسَّحَرَةُ سَٰجِدِينَ۝ قَالُوٓاْ ءَامَنَّا بِرَبِّ ٱلۡعَٰلَمِينَ۝ رَبِّ مُوسَىٰ وَهَٰرُونَ۝﴾",
-            "latin": "Wa awḥaynā ilā Mūsā an al-qi ‘aṣāka, fa-idhā hiya talqafu mā ya'fikūn (117). Fa-waqa‘al-ḥaqqu wa baṭala mā kānū ya‘malūn (118). Fa-ghulibū hunālika wan-qalabū ṣāghirīn (119).",
-            "explanationEs": "Le revelé a Moisés: «Arroja tu vara», y esta se tragó lo que los hechiceros habían inventado. Entonces quedó en evidencia la verdad y la falsedad de lo que habían hecho. Fueron vencidos allí mismo y quedaron humillados.",
+            "latin": "Wa awḥaynā ilā Mūsā an alqi ʿaṣāka, fa-idhā hiya talqafu mā yaʾfikūn.\n\nFa-waqaʿa al-ḥaqqu wa baṭala mā kānū yaʿmalūn.\n\nFa-ghulibū hunālika wanqalabū ṣāghirīn.\n\nWa-ulqiya al-saḥaratu sājidīn.\n\nQālū āmannā bi-Rabbi al-ʿālamīn.\n\nRabbi Mūsā wa Hārūn.",
+            "explanationEs": "«Y le revelamos a Moisés: “Arroja tu vara”. Y, de pronto, esta comenzó a devorar todo lo que ellos habían falseado.\n\nAsí se impuso la verdad y quedó anulado todo lo que habían hecho.\n\nY fueron derrotados allí mismo y quedaron humillados.\n\nEntonces, los hechiceros cayeron prosternados.\n\nDijeron: “Creemos en el Señor de todos los mundos, el Señor de Moisés y de Aarón”».",
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
@@ -289,8 +289,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007121.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007122.mp3"
             ],
-            "note": "سورة الاعراف الايات 117-122",
-            "audioUrl": ""
+            "note": "سورة الاعراف الايات 117-122"
           },
           {
             "itemNumber": 23,
@@ -452,12 +451,12 @@ const ruqyahData = [
           },
           {
             "itemNumber": 34,
-            text: "﴿يسٓ۝ وَٱلۡقُرۡءَانِ ٱلۡحَكِيمِ۝ إِنَّكَ لَمِنَ ٱلۡمُرۡسَلِينَ۝ عَلَىٰ صِرَٰطٖ مُّسۡتَقِيمٖ۝ تَنزِيلَ ٱلۡعَزِيزِ ٱلرَّحِيمِ۝ لِتُنذِرَ قَوۡمٗا مَّآ أُنذِرَ ءَابَآؤُهُمۡ فَهُمۡ غَٰفِلُونَ۝ لَقَدۡ حَقَّ ٱلۡقَوۡلُ عَلَىٰٓ أَكۡثَرِهِمۡ فَهُمۡ لَا يُؤۡمِنُونَ۝ إِنَّا جَعَلۡنَا فِيٓ أَعۡنَٰقِهِمۡ أَغۡلَٰلٗا فَهِيَ إِلَى ٱلۡأَذۡقَانِ فَهُم مُّقۡمَحُونَ۝ وَجَعَلۡنَا مِنۢ بَيۡنِ أَيۡدِيهِمۡ سَدّٗا وَمِنۡ خَلۡفِهِمۡ سَدّٗا فَأَغۡشَيۡنَٰهُمۡ فَهُمۡ لَا يُبۡصِرُونَ۝ وَسَوَآءٌ عَلَيۡهِمۡ ءَأَنذَرۡتَهُمۡ أَمۡ لَمۡ تُنذِرۡهُمۡ لَا يُؤۡمِنُونَ۝﴾",
-            latin: "Yāsīn (1). Wal-Qur'ānil-ḥakīm (2). Innaka laminal-mursalin (3). ‘Alā ṣirāṭin mustaqīm (4). Tanzīlal-‘azīzir-raḥīm (5). Litundira qawman mā undira ābā'uhum fahum ghāfilūn (6). Laqad ḥaqqal-qawlu ‘alā aktharihim fahum lā yu'minūn (7). Innā ja‘alnā fī a‘nāqihim aghlālan fahiya ilal-adhqāni fahum muqmaḥūn (8). Wa ja‘alnā min bayni aydīhim saddan wa min khalfihim saddan fa-aghshaynāhum fahum lā yubṣirūn (9).",
-            explanationEs: "Ya-Sin. Juro por el Corán sabio que tú eres uno de los mensajeros, que siguen un camino recto. Esta es una revelación del Poderoso, el Misericordioso, para que adviertas a un pueblo cuyos antepasados no fueron advertidos y que por eso vive distraído. La sentencia se ha cumplido para la mayoría de ellos, por lo que no creen. Hemos puesto grilletes en sus cuellos hasta el mentón, y sus cabezas quedan erguidas. Hemos puesto una barrera delante de ellos y otra detrás, y los hemos cubierto, de modo que no pueden ver.",
-            count: 1,
-            maxCount: 1,
-            audioUrls: [
+            "text": "﴿يسٓ۝ وَٱلۡقُرۡءَانِ ٱلۡحَكِيمِ۝ إِنَّكَ لَمِنَ ٱلۡمُرۡسَلِينَ۝ عَلَىٰ صِرَٰطٖ مُّسۡتَقِيمٖ۝ تَنزِيلَ ٱلۡعَزِيزِ ٱلرَّحِيمِ۝ لِتُنذِرَ قَوۡمٗا مَّآ أُنذِرَ ءَابَآؤُهُمۡ فَهُمۡ غَٰفِلُونَ۝ لَقَدۡ حَقَّ ٱلۡقَوۡلُ عَلَىٰٓ أَكۡثَرِهِمۡ فَهُمۡ لَا يُؤۡمِنُونَ۝ إِنَّا جَعَلۡنَا فِيٓ أَعۡنَٰقِهِمۡ أَغۡلَٰلٗا فَهِيَ إِلَى ٱلۡأَذۡقَانِ فَهُم مُّقۡمَحُونَ۝ وَجَعَلۡنَا مِنۢ بَيۡنِ أَيۡدِيهِمۡ سَدّٗا وَمِنۡ خَلۡفِهِمۡ سَدّٗا فَأَغۡشَيۡنَٰهُمۡ فَهُمۡ لَا يُبۡصِرُونَ۝ وَسَوَآءٌ عَلَيۡهِمۡ ءَأَنذَرۡتَهُمۡ أَمۡ لَمۡ تُنذِرۡهُمۡ لَا يُؤۡمِنُونَ۝﴾",
+            "latin": "Yā Sīn.\n\nWal-Qurʾāni al-ḥakīm.\n\nInnaka lamina al-mursalīn.\n\nʿAlā ṣirāṭin mustaqīm.\n\nTanzīla al-ʿAzīzi al-Raḥīm.\n\nLitundhira qawman mā undhira ābāʾuhum fahum ghāfilūn.\n\nLaqad ḥaqqa al-qawlu ʿalā aktharihim fahum lā yuʾminūn.\n\nInnā jaʿalnā fī aʿnāqihim aghlālan fahiya ilā al-adhqāni fahum muqmaḥūn.\n\nWa jaʿalnā min bayni aydīhim saddan wa min khalfihim saddan fa-aghshaynāhum fahum lā yubṣirūn.\n\nWa sawāʾun ʿalayhim a-andhartahum am lam tundhirhum lā yuʾminūn.",
+            "explanationEs": "«Yā Sīn.\n\n¡Por el Corán lleno de sabiduría!\n\nCiertamente, tú eres uno de los mensajeros, que siguen un camino recto.\n\nEsta es una revelación del Todopoderoso, el Misericordioso,\n\npara que adviertas a un pueblo cuyos antepasados no fueron advertidos y que, por ello, vive en la ignorancia.\n\nCiertamente, la sentencia se ha hecho realidad sobre la mayoría de ellos, y por eso no creen.\n\nHemos puesto grilletes alrededor de sus cuellos, que les llegan hasta las barbillas, de modo que tienen las cabezas levantadas.\n\nY hemos puesto una barrera delante de ellos y otra detrás de ellos, y los hemos cubierto, de modo que no pueden ver.\n\nEs igual para ellos que los adviertas o que no los adviertas: no creerán».",
+            "count": 1,
+            "maxCount": 1,
+            "audioUrls": [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036001.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036002.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036003.mp3",
@@ -469,7 +468,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036009.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036010.mp3"
             ],
-            note: "سورة يس الآيات 1-10",
+            "note": "سورة يس الآيات 1-10"
           },
           {
             "itemNumber": 35,
