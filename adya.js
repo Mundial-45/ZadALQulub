@@ -1009,26 +1009,30 @@ const adyaData = [
     },
     {
       "itemNumber": 130,
-      text: '﴿رَبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا۝﴾',
-      latin: 'Rabbir-ḥamhumā kamā rabbayānī ṣaghīrā.',
-      explanationEs: 'Trátenlos con humildad y compasión, y rueguen (por ellos diciendo): “¡Señor mío! Ten misericordia de ellos como ellos la tuvieron conmigo cuando me criaron siendo niño”. (Al-Isra: 24)',
+      "text": "﴿رَبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا۝﴾",
+      "latin": "Rabbir-ḥamhumā kamā rabbayānī ṣaghīrā.",
+      "explanationEs": "“¡Señor mío! Ten misericordia de ellos como ellos la tuvieron conmigo cuando me criaron siendo niño”. (Al-Isra: 24)",
       "note": "سورة الإسراء من الآية 24",
-      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/017024.mp3"]
+      "audioUrls": [
+        "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/017024.mp3"
+      ]
     },
     {
       "itemNumber": 131,
-      text: '﴿رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِمَنْ دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَالمُؤْمِنَاتِ وَلَا تَزِدِ الظَّالِمِينَ إِلَّا تَبَارًا۝﴾',
-      latin: 'Rabbigh-fir lī wa li-wālidayya wa liman dakhala baytiya mu’minan wa lil-mu’minīna wal-mu’mināti wa lā tazidiẓ-ẓālimīna illā tabārā.',
-      explanationEs: '“¡Señor mío! Perdóname a mí, a mis padres, a quien ingrese creyente a mi casa, y a todos los creyentes y creyentes, y no aumentes a los injustos sino en perdición.” (Nuh: 28)',
+      "text": "﴿رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِمَنْ دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَالمُؤْمِنَاتِ وَلَا تَزِدِ الظَّالِمِينَ إِلَّا تَبَارًا۝﴾",
+      "latin": "Rabbigh-fir lī wa li-wālidayya wa liman dakhala baytiya mu’minan wa lil-mu’minīna wal-mu’mināti wa lā tazidiẓ-ẓālimīna illā tabārā.",
+      "explanationEs": "“¡Señor mío! Perdóname a mí, a mis padres, a quien ingrese creyente a mi casa, y a todos los creyentes y creyentes, y no aumentes a los injustos sino en perdición.” (Nuh: 28)",
       "note": "سورة نوح من الآية 28",
-      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/071028.mp3"]
+      "audioUrls": [
+        "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/071028.mp3"
+      ]
     },
     {
       "itemNumber": 132,
-      text: 'اللَّهُمَّ اغْفِرْ لِوَالِدَيَّ وَارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا، اللَّهُمَّ يَا بَاسِطَ اليَدَيْنِ بِالعَطَايَا ابْسُطْ عَلَى وَالِدَيَّ مِنْ فَضْلِكَ العَظِيمِ وَجُودِكَ الْوَاسِعِ مَا تَشْرَحُ بِهِ صَدْرَهُمَا لِعِبَادَتِكَ وَطَاعَتِكَ، وَالأُنْسِ بِكَ وَالْعَمَلِ بِمَا يُرْضِيكَ، وَبَارِكْ لَهُمَا فِي عُمُرِهِمَا، وَأَغْنِهِمَا مِنْ فَضْلِكَ، وَأَعِنهُمَا فِي حِلِّهِمَا وَتَرْحَالِهِمَا وَذَهَابِهِمَا وَإِيَابِهِمَا، وَأَطِلْ فِي عُمُرِهِمَا مَعَ الْعَافِيَةِ فِي صِحَّتِهِمَا وَدِينِهِمَا، وَاجْعَلْ آخِرَ كَلَامِهِمَا مِنَ الدُّنْيَا لَا إِلَهَ إِلَّا اللَّهُ مُحَمَّدٌ رَسُولُ اللَّهِ.',
-      latin: 'Allāhummagh-fir li-wālidayya war-ḥamhumā kamā rabbayānī ṣaghīrā, Allāhumma yā Bāsiṭal-yadayni bil-‘aṭāyāb-suṭ ‘alā wālidayya min faḍlikal-‘aẓīmi wa jūdikal-wāsi‘ mā tashraḥu bihī ṣadrahumā li-‘ibādatika wa ṭā‘atik, wal-unsi bika wal-‘amali bimā yurḍīk, wa bārik lahumā fī ‘umurihimā, wa aghnihimā min faḍlik, wa a‘inhumā fī ḥillihimā wa tarḥālihimā wa dhahābihimā wa iyābihimā, wa aṭil fī ‘umurihimā ma‘al-‘āfiyati fī ṣiḥḥatihimā wa dīnihimā, waj-‘al ākhira kalāmihimā minad-dunyā lā ilāha illallāhu Muḥammadun Rasūlullāh.',
-      explanationEs: 'Oh Allah, perdona a mis padres y ten misericordia de ellos como me criaron de niño. Extiende sobre ellos Tu gran favor, ensancha sus pechos para Tu adoración, bendice sus vidas, concédeles salud y fe, y haz que sus últimas palabras sean la Shahada.',
-      note: 'دعاء بالصحة وطول العمر والبركة'
+      "text": "اللَّهُمَّ اغْفِرْ لِوَالِدَيَّ وَارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا، اللَّهُمَّ يَا بَاسِطَ اليَدَيْنِ بِالعَطَايَا ابْسُطْ عَلَى وَالِدَيَّ مِنْ فَضْلِكَ العَظِيمِ وَجُودِكَ الْوَاسِعِ مَا تَشْرَحُ بِهِ صَدْرَهُمَا لِعِبَادَتِكَ وَطَاعَتِكَ، وَالأُنْسِ بِكَ وَالْعَمَلِ بِمَا يُرْضِيكَ، وَبَارِكْ لَهُمَا فِي عُمُرِهِمَا، وَأَغْنِهِمَا مِنْ فَضْلِكَ، وَأَعِنْهُمَا فِي حِلِّهِمَا وَتَرْحَالِهِمَا وَذَهَابِهِمَا وَإِيَابِهِمَا، وَأَطِلْ فِي عُمُرِهِمَا مَعَ الْعَافِيَةِ فِي صِحَّتِهِمَا وَدِينِهِمَا، وَاجْعَلْ آخِرَ كَلَامِهِمَا مِنَ الدُّنْيَا لَا إِلَهَ إِلَّا اللَّهُ مُحَمَّدٌ رَسُولُ اللَّهِ.",
+      "latin": "Allāhummagh-fir li-wālidayya war-ḥamhumā kamā rabbayānī ṣaghīrā, Allāhumma yā Bāsiṭal-yadayni bil-‘aṭāyāb-suṭ ‘alā wālidayya min faḍlikal-‘aẓīmi wa jūdikal-wāsi‘ mā tashraḥu bihī ṣadrahumā li-‘ibādatika wa ṭā‘atik, wal-unsi bika wal-‘amali bimā yurḍīk, wa bārik lahumā fī ‘umurihimā, wa aghnihimā min faḍlik, wa a‘inhumā fī ḥillihimā wa tarḥālihimā wa dhahābihimā wa iyābihimā, wa aṭil fī ‘umurihimā ma‘al-‘āfiyati fī ṣiḥḥatihimā wa dīnihimā, waj-‘al ākhira kalāmihimā minad-dunyā lā ilāha illallāhu Muḥammadun Rasūlullāh.",
+      "explanationEs": "¡Oh Allah! Perdona a mis padres y ten misericordia de ellos, como me criaron cuando era pequeño. ¡Oh Allah, Tú que extiendes Tus manos concediendo dádivas! Derrama sobre mis padres Tu inmenso favor y Tu generosa abundancia, aquello que ensanche sus corazones para Tu adoración y obediencia, para encontrar consuelo en Ti y realizar aquello que Te complace. Bendice sus vidas, enriquécelos con Tu favor y ayúdalos en sus desplazamientos, viajes, partidas y regresos. Concédeles una vida larga, con salud y firmeza en su religión, y haz que sus últimas palabras en este mundo sean: «No hay divinidad digna de adoración excepto Allah; Muhammad es el Mensajero de Allah».",
+      "note": "دعاء بالصحة وطول العمر والبركة"
     },
     {
       "itemNumber": 133,
@@ -1039,10 +1043,10 @@ const adyaData = [
     },
     {
       "itemNumber": 134,
-      text: 'اللَّهُمَّ ارْزُقْ وَالِدَيَّ عَيْشًا قَارًّا، وَرِزْقًا دَارًّا، وَعَمَلًا بَارًّا، اللَّهُمَّ ارْزُقْهُمَا الجَنَّةَ وَمَا يُقَرِّبُهُمَا إِلَيْهَا مِنْ قَوْلٍ أَوْ عَمَلٍ، وَبَاعِدْ بَيْنَهُمَا وَبَيْنَ النَّارِ وَبَيْنَ مَا يُقَرِّبُهُمَا إِلَيْهَا مِنْ قَوْلٍ أَوْ عَمَلٍ.',
-      latin: 'Allāhummar-zuq wālidayya ‘ayshan qārrā, wa rizqan dārrā, wa ‘amalan bārrā, Allāhummar-zuq-humāl-jannata wa mā yuqarribuhumā ilayhā min qawlin aw ‘amal, wa bā‘id baynahumā wa baynan-nāra wa mā yuqarribuhumā ilayhā.',
-      explanationEs: 'Oh Allah, concédeles a mis padres una vida pacífica, un sustento constante y obras piadosas. Concédeles el Paraíso y acércalos a sus obras, y aléjalos del Fuego.',
-      note: 'دعاء للرزق والجنة'
+      "text": "اللَّهُمَّ ارْزُقْ وَالِدَيَّ عَيْشًا قَارًّا، وَرِزْقًا دَارًّا، وَعَمَلًا بَارًّا، اللَّهُمَّ ارْزُقْهُمَا الجَنَّةَ وَمَا يُقَرِّبُهُمَا إِلَيْهَا مِنْ قَوْلٍ أَوْ عَمَلٍ، وَبَاعِدْ بَيْنَهُمَا وَبَيْنَ النَّارِ وَبَيْنَ مَا يُقَرِّبُهُمَا إِلَيْهَا مِنْ قَوْلٍ أَوْ عَمَلٍ.",
+      "latin": "Allāhummar-zuq wālidayya ‘ayshan qārran, wa rizqan dārran, wa ‘amalan bārran. Allāhummar-zuqhumal-jannata wa mā yuqarribuhumā ilayhā min qawlin aw ‘amal, wa bā‘id baynahumā wa baynan-nāri wa bayna mā yuqarribuhumā ilayhā min qawlin aw ‘amal.",
+      "explanationEs": "¡Oh Allah! Concédeles a mis padres una vida tranquila, un sustento abundante y obras piadosas. Concédeles el Paraíso y todo aquello que los acerque a él, ya sean palabras o acciones. Aléjalos del Fuego y de todo aquello que los acerque a él, ya sean palabras o acciones.",
+      "note": "دعاء للرزق والجنة"
     },
     {
       "itemNumber": 135,
@@ -1053,10 +1057,10 @@ const adyaData = [
     },
     {
       "itemNumber": 136,
-      text: 'اللَّهُمَّ اجْعَلْ أَوْقَاتَهُمَا بِذِكْرِكَ مَعْمُورَةً، اللَّهُمَّ تَقَبَّلْ تَوْبَتَهُمَا، وَأَجِبْ دَعْوَتَهُمَا، اللَّهُمَّ إِنَّا نَعُوذُ بِكَ أَنْ تَرُدَّهُمَا إِلَى أَرْذَلِ العُمُرِ، اللَّهُمَّ اخْتِمْ بِالحَسَنَاتِ أَعْمَالَهُمَا، وَاجْعَلْ أُمِّي وَأَبِي مِنَ السَّبْعِينَ أَلْفًا الَّذِينَ يَدْخُلُونَ الجَنَّةَ بِلَا حِسَابٍ وَلَا عَذَابٍ.',
-      latin: 'Allāhummaj-‘al awqātahumā bi-dhikrika ma‘mūrah, Allāhumma taqabbal tawbatahumā, wa ajib da‘watahumā, Allāhumma innā na‘ūdhu bika an taruddahumā ilā arḏalil-‘umr, Allāhumma ikhtim biṣ-ṣāliḥāti a‘mālahumā, waj-‘al ummī wa abī minas-sab‘īna alfan alladhīna yadkhulūnal-jannata bilā ḥisābin wa lā ‘adhāb.',
-      explanationEs: 'Oh Allah, llena sus momentos con Tu recuerdo, acepta su arrepentimiento, respóndeles. Nos refugiamy en Ti de llegar a la vejez extrema, sella sus obras con el bien y hazlos entrar al Paraíso sin juicio.',
-      note: 'دعاء بحسن الخاتمة والقبول'
+      "text": "اللَّهُمَّ اجْعَلْ أَوْقَاتَهُمَا بِذِكْرِكَ مَعْمُورَةً، اللَّهُمَّ تَقَبَّلْ تَوْبَتَهُمَا، وَأَجِبْ دَعْوَتَهُمَا، اللَّهُمَّ إِنَّا نَعُوذُ بِكَ أَنْ تَرُدَّهُمَا إِلَى أَرْذَلِ العُمُرِ، اللَّهُمَّ اخْتِمْ بِالحَسَنَاتِ أَعْمَالَهُمَا، وَاجْعَلْ أُمِّي وَأَبِي مِنَ السَّبْعِينَ أَلْفًا الَّذِينَ يَدْخُلُونَ الجَنَّةَ بِلَا حِسَابٍ وَلَا عَذَابٍ.",
+      "latin": "Allāhummaj-‘al awqātahumā bi-dhikrika ma‘mūrah, Allāhumma taqabbal tawbatahumā, wa ajib da‘watahumā, Allāhumma innā na‘ūdhu bika an taruddahumā ilā arḏalil-‘umr, Allāhumma ikhtim biṣ-ṣāliḥāti a‘mālahumā, waj-‘al ummī wa abī minas-sab‘īna alfan alladhīna yadkhulūnal-jannata bilā ḥisābin wa lā ‘adhāb.",
+      "explanationEs": "¡Oh Allah! Llena sus momentos con Tu recuerdo, acepta su arrepentimiento y responde a sus súplicas. ¡Oh Allah! Nos refugiamos en Ti de que lleguen a la vejez más extrema. Haz que sus obras concluyan con buenas acciones y haz que mi madre y mi padre formen parte de los setenta mil que entrarán en el Paraíso sin rendir cuentas ni recibir castigo.",
+      "note": "دعاء بحسن الخاتمة والقبول"
     },
     {
       "itemNumber": 137,
@@ -1067,17 +1071,17 @@ const adyaData = [
     },
     {
       "itemNumber": 138,
-      text: 'اللَّهُمَّ زِدْهُمْ عُمُرًا وَعَافِيَةً، وَأَبْعِدْ عَنْهُمْ مَتَاعِبَ الدُّنْيَا وَلَا تُذِقْهُمَا دُمُوعَ الضِّيقِ، اللَّهُمَّ بِحَجْمِ سَمَائِكَ أَرِحْ قَلْبَهُمَا وَأَسْعِدْهُمَا سَعَادَةً لَا تَفْنَى وَلَا تَزُولُ.',
-      latin: 'Allāhumma zid-hum ‘umran wa ‘āfiyah, wa ab‘id ‘anhum matā‘ibad-dunyā wa lā tudhīqhumā dumū‘aḍ-ḍīq, Allāhumma bi-ḥajmi samā’ika ariḥ qalbahumā wa as‘id-humā sa‘ādatan lā tafnā wa lā tazūl.',
-      explanationEs: 'Oh Allah, auméntales vida y salud, aléjalos de las fatigas del mundo, y del suplicio de las lágrimas de angustia. Por la magnitud de Tu cielo, descansa sus corazones y concédeles felicidad eterna.',
-      note: 'دعاء السعادة وراحة القلب'
+      "text": "اللَّهُمَّ زِدْهُمْ عُمُرًا وَعَافِيَةً، وَأَبْعِدْ عَنْهُمْ مَتَاعِبَ الدُّنْيَا وَلَا تُذِقْهُمَا دُمُوعَ الضِّيقِ، اللَّهُمَّ بِحَجْمِ سَمَائِكَ أَرِحْ قَلْبَهُمَا وَأَسْعِدْهُمَا سَعَادَةً لَا تَفْنَى وَلَا تَزُولُ.",
+      "latin": "Allāhumma zid-humā ‘umran wa ‘āfiyah, wa ab‘id ‘anhumā matā‘ibad-dunyā wa lā tudhiqhumā dumū‘aḍ-ḍīq, Allāhumma bi-ḥajmi samā’ika ariḥ qalbahumā wa as‘id-humā sa‘ādatan lā tafnā wa lā tazūl.",
+      "explanationEs": "Oh Allah, auméntales vida y salud, aléjalos de las fatigas del mundo, y del suplicio de las lágrimas de angustia. Por la magnitud de Tu cielo, descansa sus corazones y concédeles felicidad eterna.",
+      "note": "دعاء السعادة وراحة القلب"
     },
     {
       "itemNumber": 139,
-      text: 'اللَّهُمَّ إِنِّي أَسْتَوْدِعُكَ مَبْسَمَ أَبِي وَقَلْبَ أُمِّي وَفَرْحَتَهُمَا، اللَّهُمَّ إِنِّي اسْتَوْدَعْتُكَ أَغْلَى مَا أَمْلَكُ فَاحْفَظْهُمْ بِعَيْنِكَ الَّتِي لَا تَنَامُ، وَأَبْعِدْ عَنْ وَالِدَايَ ثِقْلَ الحَيَاةِ وَمُرَّهَا، اللَّهُمَّ أُمِّي وَأَبِي وَمَا دُونَ ذَلِكَ هَيِّنٌ.',
-      latin: 'Allāhumma innī astawdi‘uka mabsama abī wa qalba ummī wa farḥatahumā, Allāhumma innī istawda‘tuka aghlā mā amliku faḥ-faẓhum bi-‘aynikal-latī lā tanām, wa ab‘id ‘an wālidayya thiqlal-ḥayāti wa murrahā, Allāhumma ummī wa abī wa mā dūna dhālik hayyin.',
-      explanationEs: 'Oh Allah, te encomiendo la sonrisa de mi padre, el corazón de mi madre y su alegría. Te encomiendo lo más preciado que tengo, protégelos con Tu ojo que no duerme, y aparta de ellos la pesadez y amargura de la vida.',
-      note: 'دعاء الاستيداع والحفظ الشامل'
+      "text": "اللَّهُمَّ إِنِّي أَسْتَوْدِعُكَ مَبْسَمَ أَبِي وَقَلْبَ أُمِّي وَفَرْحَتَهُمَا، اللَّهُمَّ إِنِّي اسْتَوْدَعْتُكَ أَغْلَى مَا أَمْلَكُ فَاحْفَظْهُمَا بِعَيْنِكَ الَّتِي لَا تَنَامُ، وَأَبْعِدْ عَنْ وَالِدَيَّ ثِقْلَ الحَيَاةِ وَمُرَّهَا، اللَّهُمَّ أُمِّي وَأَبِي وَمَا دُونَ ذَلِكَ هَيِّنٌ.",
+      "latin": "Allāhumma innī astawdi‘uka mabsama abī wa qalba ummī wa farḥatahumā, Allāhumma innī istawda‘tuka aghlā mā amliku faḥfaẓhumā bi-‘aynikal-latī lā tanām, wa ab‘id ‘an wālidayya thiqlal-ḥayāti wa murrahā, Allāhumma ummī wa abī wa mā dūna dhālik hayyin.",
+      "explanationEs": "¡Oh Allah! Te encomiendo la sonrisa de mi padre, el corazón de mi madre y la felicidad de ambos. Te encomiendo lo más preciado que poseo. Protégelos bajo Tu mirada, que nunca duerme, y aparta de mis padres el peso y la amargura de la vida. ¡Oh Allah! Mi madre y mi padre son lo más importante; todo lo demás es insignificante.",
+      "note": "دعاء الاستيداع والحفظ الشامل"
     },
     {
       "itemNumber": 140,
@@ -1088,10 +1092,10 @@ const adyaData = [
     },
     {
       "itemNumber": 141,
-      text: 'اللَّهُمَّ زِدْ أُمِّي وَأَبِي مَكَانَةً حِينَ يَرْكَعُونَ، وَزِدْهُمْ مَحَبَّةً حِينَ يَرْفَعُونَ، وَزِدْهُمْ إِخْلَاصًا حِينَ يَسْجُدُونَ، وَزِدْهُمْ تَوْفِيقًا وَتَيْسِيرًا وَلَا تُحَرِّمْهُمَا جَنَّتَكَ.',
-      latin: 'Allāhumma zid ummī wa abī makānatan ḥīna yarka‘ūn, wa zid-hum maḥabbatan ḥīna yarfa‘ūn, wa zid-hum ikhlāṣan ḥīna yasjudūn, wa zid-hum tawfīqan wa taysīran wa lā tuḥarrimhumā jannatak.',
-      explanationEs: 'Oh Allah, aumenta el estatus de mi madre y padre cuando se inclinan, su amor cuando se levantan, su sinceridad cuando se postran, y concédeles éxito y Tu Paraíso.',
-      note: 'دعاء العبادة والقبول'
+      "text": "اللَّهُمَّ زِدْ أُمِّي وَأَبِي مَكَانَةً حِينَ يَرْكَعُونَ، وَزِدْهُمْ مَحَبَّةً حِينَ يَرْفَعُونَ، وَزِدْهُمْ إِخْلَاصًا حِينَ يَسْجُدُونَ، وَزِدْهُمْ تَوْفِيقًا وَتَيْسِيرًا وَلَا تُحَرِّمْهُمَا جَنَّتَكَ.",
+      "latin": "Allāhumma zid ummī wa abī makānatan ḥīna yarka‘ūn, wa zid-hum maḥabbatan ḥīna yarfa‘ūn, wa zid-hum ikhlāṣan ḥīna yasjudūn, wa zid-hum tawfīqan wa taysīran wa lā tuḥarrimhumā jannatak.",
+      "explanationEs": "¡Oh Allah! Aumenta la posición de mi madre y de mi padre cuando se inclinen en la oración, aumenta su amor cuando se incorporen de la inclinación, aumenta su sinceridad cuando se postren y concédeles éxito y facilidad. No los prives de Tu Paraíso.",
+      "note": "دعاء العبادة والقبول"
     },
     {
       "itemNumber": 142,
@@ -1102,10 +1106,10 @@ const adyaData = [
     },
     {
       "itemNumber": 143,
-      text: 'اللَّهُمَّ إِنِّي اسْتَوْدَعْتُكَ مَنْ هُمْ أَعَزُّ عَلَيَّ مِنْ نَفْسِي، اللَّهُمَّ احْفَظْ لِي أُمِّي وَأَبِي وَارْزُقْهُمَا فَوْقَ عُمُرِهِمْ عُمُرًا وَفَوْقَ عَافِيَتِهِمْ عَافِيَةً.',
-      latin: 'Allāhumma innī istawda‘tuka man hum a‘azzu ‘alayya min nafsī, Allāhummaḥ-faẓ lī ummī wa abī war-zuq-humā fawqa ‘umrihim ‘umran wa fawqa ‘āfiyatihim ‘āfiyah.',
-      explanationEs: 'Oh Allah, te he confiado a quienes son más caros para mí que mi propia vida. Protégelos y concédeles más vida sobre su vida y más salud sobre su salud.',
-      note: 'دعاء الاستيداع والمحبة'
+      "text": "اللَّهُمَّ إِنِّي اسْتَوْدَعْتُكَ مَنْ هُمْ أَعَزُّ عَلَيَّ مِنْ نَفْسِي، اللَّهُمَّ احْفَظْ لِي أُمِّي وَأَبِي وَارْزُقْهُمَا فَوْقَ عُمُرِهِمَا عُمُرًا وَفَوْقَ عَافِيَتِهِمَا عَافِيَةً.",
+      "latin": "Allāhumma innī istawda‘tuka man hum a‘azzu ‘alayya min nafsī, Allāhummaḥfaẓ lī ummī wa abī warzuqhumā fawqa ‘umrihimā ‘umran wa fawqa ‘āfiyatihimā ‘āfiyah.",
+      "explanationEs": "Oh Allah, te he confiado a quienes son más caros para mí que mi propia vida. Protégelos y concédeles más vida sobre su vida y más salud sobre su salud.",
+      "note": "دعاء الاستيداع والمحبة"
     },
     {
       "itemNumber": 144,
@@ -1130,10 +1134,10 @@ const adyaData = [
     },
     {
       "itemNumber": 147,
-      text: 'اللَّهُمَّ اغْفِرْ لِوَالِدَيَّ جَمِيعَ مَا مَضَى مِنْ ذُنُوبِهِمْ، وَاعْصِمْهُمَا فِيمَا بَقِيَ مِنْ عُمُرِهِمَا، وَارْزُقْهُمَا عَمَلًا زَكِيًّا تَرْضَى بِهِ عَنْهُمَا.',
-      latin: 'Allāhummagh-fir li-wālidayya jamī‘a mā maḍā min dhunūbihim, wa‘-ṣimhumā fīmā baqiya min ‘umurihimā, war-zuq-humā ‘amalan zakiyyan tarḍā bihī ‘anhumā.',
-      explanationEs: 'Oh Allah, perdona a mis padres todos sus pecados pasados, protégelos en lo que queda de sus vidas y concédeles una obra pura con la que estés complacido.',
-      note: 'دعاء المغفرة والعمل الزكي'
+      "text": "اللَّهُمَّ اغْفِرْ لِوَالِدَيَّ جَمِيعَ مَا مَضَى مِنْ ذُنُوبِهِمَا، وَاعْصِمْهُمَا فِيمَا بَقِيَ مِنْ عُمُرِهِمَا، وَارْزُقْهُمَا عَمَلًا زَكِيًّا تَرْضَى بِهِ عَنْهُمَا.",
+      "latin": "Allāhummagh-fir li-wālidayya jamī‘a mā maḍā min dhunūbihimā, wa‘ṣimhumā fīmā baqiya min ‘umurihimā, warzuqhumā ‘amalan zakiyyan tarḍā bihī ‘anhumā.",
+      "explanationEs": "Oh Allah, perdona a mis padres todos sus pecados pasados, protégelos en lo que queda de sus vidas y concédeles una obra pura con la que estés complacido.",
+      "note": "دعاء المغفرة والعمل الزكي"
     },
     {
       "itemNumber": 148,
@@ -1172,10 +1176,10 @@ const adyaData = [
     },
     {
       "itemNumber": 153,
-      text: 'اللَّهُمَّ أْجِزْهُمْ عَنِ الإِحْسَانِ إِحْسَانًا، وَعَنِ الإِسَاءَةِ عَفْوًا وَغُفْرَانًا.',
-      latin: 'Allāhummaj-zihim ‘anil-iḥsāni iḥsānā, wa ‘anil-isā’ati ‘afwan wa ghufrānā.',
-      explanationEs: 'Oh Allah, recompensa su bondad con más bondad, y sus faltas con perdón y absolución.',
-      note: 'دعاء الجزاء بالإحسان'
+      "text": "اللَّهُمَّ أَجْزِهِمْ عَنِ الإِحْسَانِ إِحْسَانًا، وَعَنِ الإِسَاءَةِ عَفْوًا وَغُفْرَانًا.",
+      "latin": "Allāhumma ajzihim ‘anil-iḥsāni iḥsānan, wa ‘anil-isā’ati ‘afwan wa ghufrānā.",
+      "explanationEs": "Oh Allah, recompensa su bondad con más bondad, y sus faltas con perdón y absolución.",
+      "note": "دعاء الجزاء بالإحسان"
     },
     {
       "itemNumber": 154,
@@ -1200,10 +1204,10 @@ const adyaData = [
     },
     {
       "itemNumber": 157,
-      text: 'اللَّهُمَّ مَنْ كَانَ مِنْ وَالِدَيَّ مَهْمُومًا فَفَرِّجْ هَمَّهُ وَمَنْ كَانَ مَدْيُونًا فَفُكَّ دَيْنَهُ وَمَنْ كَانَ مَرِيضًا فَرُدَّ عَلَيْهِ عَافِيَتَهُ، اللَّهُمَّ اجْعَلْ وَالِدَيَّ مِنْ أَسْعَدِ السُّعَدَاءِ.',
-      latin: 'Allāhumma man kāna min wālidayya mahmūman fa-farrij hammah, wa man kāna madyūnan fa-fukka daynah, wa man kāna marīḍan fa-rudda ‘alayhi ‘āfiyatah, Allāhummaj-‘al wālidayya min as‘adis-su‘adā’.',
-      explanationEs: 'Oh Allah, alivia a quien de mis padres esté preocupado, salda la deuda del endeudado y devuelve la salud al enfermo. Haz que mis padres sean de los más felices.',
-      note: 'دعاء تفريج الهم والدين والشفاء'
+      "text": "اللَّهُمَّ مَنْ كَانَ مِنْ وَالِدَيَّ مَهْمُومًا فَفَرِّجْ هَمَّهُ وَمَنْ كَانَ مَدْيُونًا فَفُكَّ دَيْنَهُ وَمَنْ كَانَ مَرِيضًا فَرُدَّ عَلَيْهِ عَافِيَتَهُ، اللَّهُمَّ اجْعَلْ وَالِدَيَّ مِنْ أَسْعَدِ السُّعَدَاءِ.",
+      "latin": "Allāhumma man kāna min wālidayya mahmūman fa-farrij hammah, wa man kāna madyūnan fa-fukka daynah, wa man kāna marīḍan fa-rudda ‘alayhi ‘āfiyatah, Allāhummaj-‘al wālidayya min as‘adis-su‘adā’.",
+      "explanationEs": "¡Oh Allah! Alivia la preocupación de aquel de mis padres que esté angustiado, libera de su deuda a quien esté endeudado y devuelve la salud a quien esté enfermo. ¡Oh Allah! Haz que mis padres estén entre los más felices.",
+      "note": "دعاء تفريج الهم والدين والشفاء"
     },
     {
       "itemNumber": 158,
@@ -1216,7 +1220,7 @@ const adyaData = [
       "itemNumber": 159,
       "text": "اللَّهُمَّ اكْفِهِمَا مَا أَهَمَّهُمَا، اللَّهُمَّ زَوِّدْهُمَا بِالتَّقْوَى، وَاغْفِرْ لَهُمَا ذُنُوبَهُمَا، وَوَجِّهْهُمَا لِلْخَيْرِ أَيْنَمَا تَوَجَّهَا، اللَّهُمَّ يَسِّرْهُمَا لِلْيُسْرَى، وَجَنِّبْهُمَا العُسْرَى، اللَّهُمَّ اجْعَلْ لَهُمَا مِنْ كُلِّ مَا أَهَمَّهُمَا وَكَرَّبَهُمَا مِنْ أُمُورِ الدُّنْيَا وَالآخِرَةِ فَرَجًا وَمَخْرَجًا، وَارْزُقْهُمَا وَاغْفِرْ لَهُمَا ذُنُوبَهُمَا.",
       "latin": "Allāhummak-fihimā mā ahammahumā, Allāhumma zawwid-humā bit-taqwā, wagh-fir lahumā dhunūbahumā, wa wajjih-humā lil-khayri aynamā tawajjahā, Allāhumma yassir-humā lil-yusrā, wa jannib-humal-‘usrā, Allāhumma aj‘al lahumā min kulli mā ahammahumā wa karrabahumā farajan wa makhrajā, war-zuq-humā wagh-fir lahumā dhunūbahumā.",
-      "explanationEs": "«Oh Allah, sálvalos de aquello que les aflige y les preocupa. Oh Allah, provéelos de piedad (Taqwa), perdónales sus pecados y guíalos hacia el bien dondequiera que se dirijan. Oh Allah, facilítales el camino hacia la facilidad y aléjalos de las dificultades. Oh Allah, concédeles para cada una de sus preocupaciones y adlicciones en los asuntos de este mundo y del Más Allá un alivio y una salida, provéelos de sustento y perdónales sus pecados».\n",
+      "explanationEs": "¡Oh Allah! Sé suficiente para mis padres frente a todo aquello que les preocupa. ¡Oh Allah! Provéelos de piedad, perdona sus pecados y guíalos hacia el bien adondequiera que se dirijan. Facilítales el camino de la facilidad y apártalos de las dificultades. Concédeles alivio y una salida ante cada preocupación y angustia de esta vida y de la otra. Provéeles de sustento y perdona sus pecados.",
       "note": "دعاء الكفاية والتيسير"
     },
     {
