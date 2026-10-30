@@ -1255,13 +1255,57 @@ function checkDailyReset() {
   } catch (e) {}
 }
 
+let transliterationSavedScrollY = 0;
+let transliterationSavedBodyStyles = null;
+
+function lockPageBehindTransliteration() {
+  transliterationSavedScrollY = window.scrollY || window.pageYOffset || 0;
+  const body = document.body;
+  transliterationSavedBodyStyles = {
+    position: body.style.position,
+    top: body.style.top,
+    left: body.style.left,
+    right: body.style.right,
+    width: body.style.width,
+    overflow: body.style.overflow
+  };
+  body.style.position = 'fixed';
+  body.style.top = '-' + transliterationSavedScrollY + 'px';
+  body.style.left = '0';
+  body.style.right = '0';
+  body.style.width = '100%';
+  body.style.overflow = 'hidden';
+}
+
+function unlockPageBehindTransliteration() {
+  const body = document.body;
+  if (transliterationSavedBodyStyles) {
+    body.style.position = transliterationSavedBodyStyles.position;
+    body.style.top = transliterationSavedBodyStyles.top;
+    body.style.left = transliterationSavedBodyStyles.left;
+    body.style.right = transliterationSavedBodyStyles.right;
+    body.style.width = transliterationSavedBodyStyles.width;
+    body.style.overflow = transliterationSavedBodyStyles.overflow;
+    transliterationSavedBodyStyles = null;
+  }
+  window.scrollTo(0, transliterationSavedScrollY);
+}
+
+function hideTransliterationGuide() {
+  const modal = document.getElementById('transliterationModal');
+  if (!modal || modal.classList.contains('hidden')) return;
+  modal.classList.add('hidden');
+  unlockPageBehindTransliteration();
+}
+
 function openTransliterationGuide() {
   const modal = document.getElementById('transliterationModal');
   if (!modal || !modal.classList.contains('hidden')) return;
+  lockPageBehindTransliteration();
   modal.classList.remove('hidden');
   if (window.history && window.history.pushState) {
     try {
-      window.history.pushState({ view: 'transliterationGuide' }, '', '#transliteration');
+      window.history.pushState({ ...(window.history.state || {}), view: 'transliterationGuide' }, '', '#transliteration');
     } catch (e) {}
   }
 }
@@ -1272,14 +1316,18 @@ function closeTransliterationGuide() {
   if (window.history && window.history.state && window.history.state.view === 'transliterationGuide') {
     window.history.back();
   } else {
-    modal.classList.add('hidden');
+    hideTransliterationGuide();
   }
 }
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeTransliterationGuide();
+});
 
 window.addEventListener('popstate', (e) => {
   const transliterationModal = document.getElementById('transliterationModal');
   if (transliterationModal && !transliterationModal.classList.contains('hidden')) {
-    transliterationModal.classList.add('hidden');
+    hideTransliterationGuide();
     return;
   }
   if (e.state && e.state.view) {
