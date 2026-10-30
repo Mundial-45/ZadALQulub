@@ -1457,7 +1457,7 @@ const adyaData = [
       "itemNumber": 190,
       text: 'اللَّهُمَّ فِي هَذَا اليَوْمِ الفَضِيلِ أَسْأَلُكَ أَنْ تُحْسِنَ إِلَى وَالِدَيَّ إِنْ كَانَا مُحْسِنَيْنِ، وَإِنْ كَانَا مُسِيئَيْنِ فَتَجَاوَزْ عَنْهُمَا، وَأَدْخِلْهُمَا الجَنَّةَ مِنْ غَيْرِ حِسَابٍ وَلَا سَابِقَةِ عَذَابٍ.',
       latin: 'Allāhumma fī hādhāl-yawmil-faḍīli as’aluka an tuḥsina ilā wālidayya in kānā muḥsinayn, wa in kānā musī’ayni fa-tajāwaz ‘anhumā, wa adkhil-humāl-jannata min ghayri ḥisābin wa lā sābiqati ‘adhāb.',
-      explanationEs: 'Oh Allah, en este noble día Te pido que recompenses con el bien a mis padres si fueron bienhechores, y si cometieron faltas, perdónalos e introdúcelos al Paraíso sin juicio.',
+      explanationEs: "¡Oh Allah! En este día virtuoso, te pido que colmes de bien a mis padres si fueron de los bienhechores y que pases por alto sus faltas si obraron mal. Hazlos entrar en el Paraíso sin rendir cuentas y sin que hayan sufrido un castigo previo.",
       note: 'دعاء الإحسان والتجاوز'
     },
     {
@@ -1478,56 +1478,56 @@ const adyaData = [
       "itemNumber": 193,
       text: 'اللَّهُمَّ ارْزُقْهُمَا الجَنَّةَ وَبَاعِدْ بَيْنَهُمَا وَبَيْنَ النَّارِ، وَشَفِّعْ فِيهِمَا نَبِيَّنَا وَمُصْطَفَاكَ، وَاحْشُرْهُمَا تَحْتَ لِوَائِهِ، وَاسْقِهِمَا مِنْ يَدِهِ الشَّرِيفَةِ شَرْبَةً هَنِيئَةً لَا يَظْمَئَانِ بَعْدَهَا أَبَدًا.',
       latin: 'Allāhummar-zuq-humāl-jannata wa bā‘id baynahumā wa baynan-nār, wa shaffi‘ fīhimā Nabiyyanā wa Muṣṭafāk, waḥ-shur-humā taḥta liwā’ih, was-qihimā min yadihiş-sharīfati sharbatan hanī’atan lā yaẓma’āni ba‘dahā abadā.',
-      explanationEs: 'Oh Allah, concédeles el Paraíso, aléjalos del Fuego, permite que nuestro Profeta interceda por ellos, reúnelos bajo su estandarte y dales de beber de su noble mano un sorbo con el que nunca más volverán a tener sed.',
+      explanationEs: "¡Oh Allah! Concédeles el Paraíso y aléjalos del Fuego. Haz que nuestro Profeta, Tu elegido, interceda por ellos; reúnelos bajo su estandarte y dales de beber de su noble mano un sorbo delicioso tras el cual nunca volverán a sentir sed.",
       note: 'دعاء الشفاعة والشرب من الحوض'
     },
     {
       "itemNumber": 194,
       text: 'اللَّهُمَّ مَدَّ لَهُمَا فِي قَبْرِهِمَا مَدَّ بَصَرِهِمَا، وَأَنْزِلْ عَلَى قَبْرِهِمَا الضِّيَاءَ وَالنُّورَ وَالفُسْحَةَ وَالسُّرُورَ، وَافْسَحْ لَهُمَا فِيهِ وَنَوِّرْ لَهُمَا فِيهِ بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ.',
       latin: 'Allāhumma madda lahumā fī qabrihimā madda baṣarihimā, wa anzil ‘alā qabrihimāḍ-ḍiyā’a wan-nūra wal-fusḥata was-surūr, waf-saḥ lahumā fīhi wa nawwir lahumā fīhi bi-raḥmatika yā Arḥamar-rāḥimīn.',
-      explanationEs: 'Oh Allah, amplía sus tumbas hasta donde alcance su vista y haz descender sobre ellas resplandor, luz, amplitud y alegría por Tu misericordia.',
+      explanationEs: "¡Oh Allah! Amplía sus tumbas hasta donde alcance su vista y haz descender sobre ellas claridad, luz, amplitud y alegría. Dales espacio en ellas e ilumínalas para ellos con Tu misericordia, ¡oh el Más Misericordioso de quienes tienen misericordia!",
       note: 'دعاء ضياء القبر وسعته'
     },
     {
       "itemNumber": 195,
       text: 'اللَّهُمَّ أَنْزِلْهُمْ مَنَازِلَ الصِّدِّيقِينَ وَالشُّهَدَاءِ وَالصَّالِحِينَ وَحَسُنَ أُولَئِكَ رَفِيقًا، اللَّهُمَّ أَنْزِلْ أَبِي مَنْزِلًا مُبَارَكًا وَأَنْتَ خَيْرُ المُنْزِلِينَ.',
       latin: 'Allāhumma anzil-hum manāzilaṣ-ṣiddīqīna wash-shuhadā’i waṣ-ṣāliḥīna wa ḥasuna ulā’ika rafīqā, Allāhumma anzil abī manzilan mubārakan wa Anta khayrul-munzilīn.',
-      explanationEs: 'Oh Allah, colócalos en las moradas de los veraces, mártires y virtuosos. Dale a mi padre un alojamiento bendito, pues Tú eres el mejor en albergar.',
+      explanationEs: "¡Oh Allah! Haz que ocupen las moradas de los veraces, los mártires y los virtuosos; ¡qué excelentes compañeros son estos! ¡Oh Allah! Concede a mi padre una morada bendita; Tú eres el mejor de quienes dan alojamiento.",
       note: 'دعاء المنازل المباركة والمرافقة الصالحة'
     },
     {
       "itemNumber": 196,
       text: 'يَا رَبِّ تَمِّمْ لَنَا فَرْحَتَنَا فِي هَذَا اليَوْمِ الفَضِيلِ بِالمَغْفِرَةِ وَالرِّضْوَانِ لِوَالِدَيْنَا يَا رَبَّ العَالَمِينَ.',
       latin: 'Yā Rabbi tammim lanā farḥatanā fī hādhāl-yawmil-faḍīli bil-maghfirati war-riḍwāni li-wālidaynā yā Rabbal-‘ālamīn.',
-      explanationEs: 'Señor mío, completa nuestra alegría en este virtuoso día concediendo el perdón y la complacencia a nuestros padres.',
+      explanationEs: "¡Señor mío! Completa nuestra alegría en este día virtuoso concediendo perdón y beneplácito a nuestros padres, ¡Señor de los mundos!",
       note: 'دعاء الفرح بالمغفرة في العيد'
     },
     {
       "itemNumber": 197,
       text: 'اللَّهُمَّ قَدْ جَاءَنَا العِيدُ وَنَحْنُ فَاقِدُونَ لِآبَائِنَا، فَعَوِّضْنَا وَاجْبُرْ كَسْرَنَا وَاغْفِرْ لَهُمَا، وَارْزُقْنَا رُؤْيَتَهُمَا فِي المَنَامِ فِي أَحْسَنِ حُلَّةٍ وَعَلَى أَحْسَنِ هَيْئَةٍ.',
       latin: 'Allāhumma qad jā’anāl-‘īdu wa naḥnu fāqidūna li-ābā’inā, fa-‘awwiḍnā waj-bur kasranā wagh-fir lahumā, war-zuqnā ru’yatahumā fil-manāmi fī aḥsani ḥullatin wa ‘alā aḥsani hay’ah.',
-      explanationEs: 'Oh Allah, ha llegado la festividad y extrañamos a nuestros padres; compénsanos, reconforta nuestra pena, perdónalos y concédenos verlos en sueños con la mejor apariencia.',
+      explanationEs: "¡Oh Allah! Ha llegado la festividad y sentimos la ausencia de nuestros padres. Compénsanos por su pérdida, reconforta nuestro dolor, perdónalos y concédenos verlos en sueños con el aspecto más hermoso y en la mejor apariencia.",
       note: 'دعاء العيد للآباء ورؤيتهم في المنام'
     },
     {
       "itemNumber": 198,
       text: 'اللَّهُمَّ أَدْخِلْ وَالِدِينَا جَنَّاتِ الفِرْدَوْسِ الأَعْلَى وَاجْعَلْ عِيدَهُمْ هُنَاكَ يَا أَكْرَمَ الأَكْرَمِينَ.',
       latin: 'Allāhumma adkhil wālidinā jannātil-firdawsil-a‘lā waj-‘al ‘īdahum hunāka yā Akramal-akramīn.',
-      explanationEs: 'Oh Allah, haz entrar a nuestros padres en los Jardines del Firdaws Superior y haz que su festividad sea allí, Oh el Más Generoso.',
+      explanationEs: "¡Oh Allah! Haz entrar a nuestros padres en los Jardines del Firdaws más elevado y haz que celebren allí su festividad, ¡oh el más Generoso de los generosos!",
       note: 'دعاء الفردوس الأعلى في العيد'
     },
     {
       "itemNumber": 199,
       text: 'اللَّهُمَّ آنِسْ أُمِّي فِي وَحْدَتِهَا، وَفِي وَحْشَتِهَا، وَفِي غُرْبَتِهَا، وَانْقُلْ أَبِي مِنْ مَوَاطِنِ الدُّودِ وَضِيقِ اللُّحُودِ إِلَى جَنَّاتِ الخُلُودِ.',
       latin: 'Allāhumma ānis ummī fī waḥdatihā, wa fī waḥshatihā, wa fī ghurbatihā, wan-qul abī min mawāṭinid-dūdi wa ḍīqil-luḥūdi ilā jannātil-khulūd.',
-      explanationEs: 'Oh Allah, acompaña a mi madre en su soledad y lejanía, y traslada a mi padre del angosto sepulcro a los Jardines de la Eternidad.',
+      explanationEs: "¡Oh Allah! Acompaña a mi madre en su soledad, en su desamparo y en su lejanía; y traslada a mi padre de la morada de los gusanos y la estrechez de la tumba a los Jardines de la Eternidad.",
       note: 'دعاء الأنس في القبر والنقل للخلود'
     },
     {
       "itemNumber": 200,
       text: 'اللَّهُمَّ اجْعَلْ قَبْرَهُمَا رَوْضَةً مِنْ رِيَاضِ الجَنَّةِ وَلَا تَجْعَلْهُ حُفْرَةً مِنْ حُفَرِ النَّارِ، وَعَامِلْهُمَا بِمَا أَنْتَ أَهْلُهُ وَلَا تُعَامِلْهُمَا بِمَا هُمْ أَهْلُهُ يَا كَرِيمُ يَا رَحِيمُ.',
       latin: 'Allāhummaj-‘al qabrahumā rawḍatan min riyāḍil-jannati wa lā taj‘alhu ḥufratan min ḥufarin-nār, wa ‘āmil-humā bimā Anta ahluh wa lā tu‘āmil-humā bimā hum ahluh yā Karīmu yā Raḥīm.',
-      explanationEs: 'Oh Allah, haz de su tumba un jardín del Paraíso y no un foso del Fuego, y trátalos según Tu generosidad y misericordia.',
+      explanationEs: "¡Oh Allah! Haz que sus tumbas sean jardines de los jardines del Paraíso y no fosas de las fosas del Fuego. Trátalos como corresponde a Tu generosidad y misericordia, y no según lo que ellos merecerían por sus obras. ¡Oh Generoso, oh Misericordioso!",
       note: 'دعاء الروضة والرحمة'
     }
 	]
