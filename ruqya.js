@@ -17,7 +17,7 @@ const ruqyahData = [
             "itemNumber": 2,
             "text": "﴿بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ۝ ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ۝ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ۝ مَٰلِكِ يَوۡمِ ٱلدِّينِ۝إِيَّاكَ نَعۡبُدُ وَإِيَّاكَ نَسۡتَعِينُ۝ ٱهۡدِنَا ٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ۝ صِرَٰطَ ٱلَّذِينَ أَنۡعَمۡتَ عَلَيۡهِمۡ غَيۡرِ ٱلۡمَغۡضُوبِ عَلَيۡهِمۡ وَلَا ٱلضَّآلِّينَ۝﴾",
             "latin": "Bismillāhir-Raḥmānir-Raḥīm. Al-ḥamdu lillāhi Rabbil-‘ālamīn. Ar-Raḥmānir-Raḥīm. Māliki yawmid-dīn. Iyyāka na‘budu wa iyyāka nasta‘īn. Ihdinaṣ-ṣirāṭal-mustaqīm. Ṣirāṭal-ladhīna an‘amta ‘alayhim ghayril-maghḍūbi ‘alayhim wa lāḍ-ḍāllīn.",
-            "explanationEs": "En el nombre de Dios, el Compasivo, el Misericordioso. Alabado sea Dios, Señor del universo, el Compasivo, el Misericordioso, Soberano absoluto del Día del Juicio Final. Solo a Ti te adoramos y solo de Ti imploramos ayuda. ¡Guíanos por el camino recto!, el camino de los que has agraciado, no el de los que han incurrido en Tu ira, ni el de los extraviados. (Sura Al-Fátihah; traducción de Isa García)",
+            "explanationEs": "En el nombre de Dios, el Compasivo, el Misericordioso. Alabado sea Dios, Señor del universo, el Compasivo, el Misericordioso, Soberano absoluto del Día del Juicio Final. Solo a Ti te adoramos y solo de Ti imploramos ayuda. ¡Guíanos por el camino recto!, el camino de los que has agraciado, no el de los que han incurrido en Tu ira, ni el de los extraviados.",
             "count": 7,
             "maxCount": 7,
             "audioUrls": [
@@ -29,8 +29,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/001006.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/001007.mp3"
             ],
-            "note": "سورة الفاتحة",
-            "audioUrl": ""
+            "note": "سورة الفاتحة"
           },
           {
             "itemNumber": 3,
@@ -163,9 +162,8 @@ const ruqyahData = [
           {
             "itemNumber": 14,
             "text": "﴿بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ۝ ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ۝ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ۝ مَٰلِكِ يَوۡمِ ٱلدِّينِ۝إِيَّاكَ نَعۡبُدُ وَإِيَّاكَ نَسۡتَعِينُ۝ ٱهۡدِنَا ٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ۝ صِرَٰطَ ٱلَّذِينَ أَنۡعَمۡتَ عَلَيۡهِمۡ غَيۡرِ ٱلۡمَغۡضُوبِ عَلَيۡهِمۡ وَلَا ٱلضَّآلِّينَ۝﴾",
-            "latin": "Bismillāhir-Raḥmānir-Raḥīm. Al-ḥamdu lillāhi Rabbil-‘ālamīn (1). Ar-Raḥmānir-Raḥīm (2). Māliki yawmid-dīn (3). Iyyāka na‘budu wa iyyāka nasta‘īn (4). Ihdinaṣ-ṣirāṭal-mustaqīm (5). Ṣirāṭal-ladhīna an‘amta ‘alayhim (6). Ghayril-maghḍūbi ‘alayhim wa lāḍ-ḍāllīn (7).",
-            "explanationEs": "En el nombre de Dios, el Compasivo, el Misericordioso. Alabado sea Dios, Señor de los mundos, el Compasivo, el Misericordioso, Soberano absoluto del Día del Juicio. Solo a Ti adoramos y solo de Ti imploramos ayuda. Guíanos por el camino recto, el camino de los que has colmado de favores, no el de los que cayeron en Tu ira, ni el de los que se extraviaron.",
-            "audioUrl": "",
+            "latin": "Bismillāhir-Raḥmānir-Raḥīm. Al-ḥamdu lillāhi Rabbil-‘ālamīn. Ar-Raḥmānir-Raḥīm. Māliki yawmid-dīn. Iyyāka na‘budu wa iyyāka nasta‘īn. Ihdinaṣ-ṣirāṭal-mustaqīm. Ṣirāṭal-ladhīna an‘amta ‘alayhim ghayril-maghḍūbi ‘alayhim wa lāḍ-ḍāllīn.",
+            "explanationEs": "En el nombre de Dios, el Compasivo, el Misericordioso. Alabado sea Dios, Señor del universo, el Compasivo, el Misericordioso, Soberano absoluto del Día del Juicio Final. Solo a Ti te adoramos y solo de Ti imploramos ayuda. ¡Guíanos por el camino recto!, el camino de los que has agraciado, no el de los que han incurrido en Tu ira, ni el de los extraviados.",
             "count": 7,
             "maxCount": 7,
             "note": "سورة الفاتحة",
@@ -198,11 +196,10 @@ const ruqyahData = [
           {
             "itemNumber": 16,
             "text": "﴿وَٱتَّبَعُواْ مَا تَتۡلُواْ ٱلشَّيَٰطِينُ عَلَىٰ مُلۡكِ سُلَيۡمَٰنَۖ وَمَا كَفَرَ سُلَيۡمَٰنُ وَلَٰكِنَّ ٱلشَّيَٰطِينَ كَفَرُواْ يُعَلِّمُونَ ٱلنَّاسَ ٱلسِّحۡرَ وَمَآ أُنزِلَ عَلَى ٱلۡمَلَكَيۡنِ بِبَابِلَ هَٰرُوتَ وَمَٰرُوتَۚ وَمَا يُعَلِّمَانِ مِنۡ أَحَدٍ حَتَّىٰ يَقُولَآ إِنَّمَا نَحۡنُ فِتۡنَةٞ فَلَا تَكۡفُرۡۖ فَيَتَعَلَّمُونَ مِنۡهُمَا مَا يُفَرِّقُونَ بِهِۦ بَيۡنَ ٱلۡمَرۡءِ وَزَوۡجِهِۦۚ وَمَا هُم بِضَآرِّينَ بِهِۦ مِنۡ أَحَدٍ إِلَّا بِإِذۡنِ ٱللَّهِۚ وَيَتَعَلَّمُونَ مَا يَضُرُّهُمۡ وَلَا يَنفَعُهُمۡۚ وَلَقَدۡ عَلِمُواْ لَمَنِ ٱشۡتَرَىٰهُ مَا لَهُۥ فِي ٱلۡأٓخِرَةِ مِنۡ خَلَٰقٖۚ وَلَبِئۡسَ مَا شَرَوۡاْ بِهِۦٓ أَنفُسَهُمۡۚ لَوۡ كَانُواْ يَعۡلَمُونَ۝﴾",
-            "latin": "Watta-ba‘ū mā tatluwsh-shayātīnu ‘alā mulki Sulaymāna, wa mā kafara Sulaymāna wa lākinna-shshayātīna kafaru yu‘allimūna-nnāsa-ssihra wa mā unzila ‘alal-malakayni bi-Bābila Hārūta wa Mārūta, wa mā yu‘allimāni min ahadin hattā yaqūlā innamā nahnu fitnatun falā takfur, fayata‘allamūna minhumā mā yufarriqūna bihi bayna-l-mar'i wa zawjihi, wa mā hum bi-ḍārrīna bihi min ahadin illā bi-idhni-llāhi, wa yata‘allamūna mā yaḍurruhum wa lā yanfa‘uhum, wa laqad ‘alimū laman-shtarāhu mā lahu fil-ākhirati min khalāqin, wa laba'sa mā sharaw bihi anfusahum, law kānū ya‘lamūna (102). Wa law annahum āmanū wattaqaw lamathūbatun min ‘indi-llāhi khayrun, law kānū ya‘lamūna (103).",
-            "explanationEs": "Pero sí seguían lo que recitaban los demonios durante el reinado de Salomón. Sepan que Salomón no cayó en la incredulidad, sino que fueron los demonios quienes enseñaron a la gente la hechicería y la magia que transmitieron los ángeles Harút y Marút en Babilonia. Ellos no le enseñaban a nadie sin antes advertirle: «Nosotros somos una prueba, no caigan en la incredulidad». A pesar de la advertencia, aprendieron de ellos cómo separar a una persona de su pareja, aunque no podían perjudicar a nadie sin el permiso de Dios. Lo que aprendían los perjudicaba y no los beneficiaba. Pero sabían que quien practicara la hechicería no tendría éxito en la otra vida. ¡Qué mal vendieron sus almas! Si supieran. Si hubieran creído y tenido temor de Dios, la recompensa de Dios habría sido mucho mejor. ¡Si supieran!",
+            "latin": "Watta-ba‘ū mā tatluwsh-shayātīnu ‘alā mulki Sulaymāna, wa mā kafara Sulaymāna wa lākinna-shshayātīna kafaru yu‘allimūna-nnāsa-ssihra wa mā unzila ‘alal-malakayni bi-Bābila Hārūta wa Mārūta, wa mā yu‘allimāni min ahadin hattā yaqūlā innamā nahnu fitnatun falā takfur, fayata‘allamūna minhumā mā yufarriqūna bihi bayna-l-mar'i wa zawjihi, wa mā hum bi-ḍārrīna bihi min ahadin illā bi-idhni-llāhi, wa yata‘allamūna mā yaḍurruhum wa lā yanfa‘uhum, wa laqad ‘alimū laman-shtarāhu mā lahu fil-ākhirati min khalāqin, wa laba'sa mā sharaw bihi anfusahum, law kānū ya‘lamūna (102).",
+            "explanationEs": "Pero sí seguían lo que recitaban los demonios durante el reinado de Salomón. Sepan que Salomón no cayó en la incredulidad, sino que fueron los demonios quienes enseñaron a la gente la hechicería y la magia que transmitieron los ángeles Harút y Marút en Babilonia. Ellos no le enseñaban a nadie sin antes advertirle: «Nosotros somos una prueba, no caigan en la incredulidad». A pesar de la advertencia, aprendieron de ellos cómo separar a una persona de su pareja, aunque no podían perjudicar a nadie sin el permiso de Dios. Lo que aprendían los perjudicaba y no los beneficiaba. Pero sabían que quien practicara la hechicería no tendría éxito en la otra vida. ¡Qué mal vendieron sus almas! Si supieran.",
             "count": 1,
             "maxCount": 1,
-            "audioUrls": [],
             "note": "سورة البقرة الاية 102",
             "audioUrl": "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002102.mp3"
           },
@@ -220,9 +217,8 @@ const ruqyahData = [
           {
             "itemNumber": 18,
             "text": "﴿ءَامَنَ ٱلرَّسُولُ بِمَآ أُنزِلَ إِلَيۡهِ مِن رَّبِّهِۦ وَٱلۡمُؤۡمِنُونَۚ كُلٌّ ءَامَنَ بِٱللَّهِ وَمَلَٰٓئِكَتِهِۦ وَكُتُبِهِۦ وَرُسُلِهِۦ لَا نُفَرِّقُ بَيۡنَ أَحَدٖ مِّن رُّسُلِهِۦۚ وَقَالُواْ سَمِعۡنَا وَأَطَعۡنَاۖ غُفۡرَانَكَ رَبَّنَا وَإِلَيۡكَ ٱلۡمَصِيرُ۝ لَا يُكَلِّفُ ٱللَّهُ نَفۡسًا إِلَّا وُسۡعَهَاۚ لَهَا مَا كَسَبَتۡ وَعَلَيۡهَا مَا ٱكۡتَسَبَتۡۗ رَبَّنَا لَا تُؤَاخِذۡنَآ إِن نَّسِينَآ أَوۡ أَخۡطَأۡنَاۚ رَبَّنَا وَلَا تَحۡمِلۡ عَلَيۡنَآ إِصۡرٗا كَمَا حَمَلۡتَهُۥ عَلَى ٱلَّذِينَ مِن قَبۡلِنَاۚ رَبَّنَا وَلَا تُحَمِّلۡنَا مَا لَا طَاقَةَ لَنَا بِهِۦۖ وَٱعۡفُ عَنَّا وَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَآۚ أَنتَ مَوۡلَىٰنَا فَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ۝﴾",
-            "latin": "Āmana ar-rasūlu bimā unzila ilayhi min rabbihi wal-mu'minūn, kullun āmana billāhi wa malā'ikatihi wa kutubihi wa rusulihi, lā nufarriqu bayna ahadin min rusulihi, wa qālū sami‘nā wa aṭ‘anā, ghufrānaka rabbanā wa ilaykal-maṣīr (285). Lā yukallifu-llāhu nafsan illā wus‘ahā, lahā mā kasabat wa ‘alayhā mā iktasabat, rabbanā lā tu'ākhidhnā in nasīnā aw akhṭanā, rabbanā wa lā taḥmil ‘alaynā iṣran kamā ḥamaltahu ‘alal-ladhīna min qablinā, rabbanā wa lā tuḥammilnā mā lā ṭāqata lanā bihi, wa‘fu ‘annā waghfir lanā warḥamnā, anta mawlānā fanṣurnā ‘alal-qawmil-kāfirīn (286).",
-            "explanationEs": "El Mensajero cree en lo que le ha sido revelado por su Señor, y así también los creyentes. Todos creen en Dios, en Sus ángeles, en Sus Libros y en Sus mensajeros. No hacemos diferencia entre ninguno de Sus mensajeros. Y dicen: «Oímos y obedecemos. Te pedimos perdón, Señor nuestro, y ante Ti es el retorno». Dios no exige a nadie por encima de sus posibilidades. Cada persona será recompensada según lo que haya hecho y será responsable de lo que haya cometido. «¡Señor nuestro! No nos castigues si nos olvidamos o nos equivocamos. ¡Señor nuestro! No nos impongas una carga como la que impusiste a quienes nos precedieron. ¡Señor nuestro! No nos impongas algo que no podamos soportar. Perdónanos, absuélvenos y ten misericordia de nosotros. Tú eres nuestro Protector, auxílianos contra la gente que rechaza la verdad».",
-            "audioUrl": "",
+            "latin": "Āmana ar-rasūlu bimā unzila ilayhi min rabbihi wal-mu'minūn, kullun āmana billāhi wa malā'ikatihi wa kutubihi wa rusulihi, lā nufarriqu bayna ahadin min rusulihi, wa qālū sami‘nā wa aṭa‘nā, ghufrānaka rabbanā wa ilaykal-maṣīr (285). Lā yukallifu-llāhu nafsan illā wus‘ahā, lahā mā kasabat wa ‘alayhā mā iktasabat, rabbanā lā tu'ākhidhnā in nasīnā aw akhṭanā, rabbanā wa lā taḥmil ‘alaynā iṣran kamā ḥamaltahu ‘alal-ladhīna min qablinā, rabbanā wa lā tuḥammilnā mā lā ṭāqata lanā bihi, wa‘fu ‘annā waghfir lanā warḥamnā, anta mawlānā fanṣurnā ‘alal-qawmil-kāfirīn (286).",
+            "explanationEs": "El Mensajero cree en lo que le ha sido revelado por su Señor, y así también los creyentes. Todos creen en Dios, en Sus ángeles, en Sus Libros y en Sus mensajeros. No hacemos diferencia entre ninguno de Sus mensajeros. Y dicen: «Oímos y obedecemos. Te pedimos perdón, Señor nuestro, y ante Ti retornaremos». Dios no exige a nadie por encima de sus posibilidades. Cada persona será recompensada según lo que haya hecho y será responsable de lo que haya cometido. «¡Señor nuestro! No nos castigues si nos olvidamos o nos equivocamos. ¡Señor nuestro! No nos impongas una carga como la que impusiste a quienes nos precedieron. ¡Señor nuestro! No nos impongas algo que no podamos soportar. Perdónanos, absuélvenos y ten misericordia de nosotros. Tú eres nuestro Protector, auxílianos contra la gente que rechaza la verdad».",
             "count": 1,
             "maxCount": 1,
             "note": "سورة البقرة الايات 285-286",
@@ -332,15 +328,15 @@ const ruqyahData = [
           },
           {
             "itemNumber": 26,
-            text: "﴿وَأَلۡقِ مَا فِي يَمِينِكَ تَلۡقَفۡ مَا صَنَعُوٓاْۖ إِنَّمَا صَنَعُواْ كَيۡدُ سَٰحِرٖۖ وَلَا يُفۡلِحُ ٱلسَّاحِرُ حَيۡثُ أَتَىٰ۝﴾",
-            latin: "Innamā ṣana‘ū kaydu sāḥirin wa lā yufliḥus-sāḥiru ḥaythu atā.",
-            explanationEs: "Ciertamente lo que han hecho es artimaña de un mago, y el mago no triunfará por dondequiera que vaya.",
-            count: 1,
-            maxCount: 1,
-            audioUrls: [
+            "text": "﴿إِنَّمَا صَنَعُواْ كَيۡدُ سَٰحِرٖۖ وَلَا يُفۡلِحُ ٱلسَّاحِرُ حَيۡثُ أَتَىٰ۝﴾",
+            "latin": "Innamā ṣana‘ū kaydu sāḥirin wa lā yufliḥus-sāḥiru ḥaythu atā.",
+            "explanationEs": "Ciertamente lo que han hecho es artimaña de un mago, y el mago no triunfará por dondequiera que vaya.",
+            "count": 1,
+            "maxCount": 1,
+            "audioUrls": [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/020069.mp3"
             ],
-            note: "سورة طه الآية 69",
+            "note": "سورة طه من الآية 69"
           },
           {
             "itemNumber": 27,
@@ -498,13 +494,12 @@ const ruqyahData = [
           },
           {
             "itemNumber": 37,
-            text: "﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ قُلۡ يَٰٓأَيُّهَا ٱلۡكَٰفِرُونَ۝لَآ أَعۡبُدُ مَا تَعۡبُدُونَ۝ وَلَآ أَنتُمۡ عَٰبِدُونَ مَآ أَعۡبُدُ۝وَلَآ أَنَا۠ عَابِدٞ مَّا عَبَدتُّمۡ۝ وَلَآ أَنتُمۡ عَٰبِدُونَ مَآ أَعۡبُدُ۝لَكُمۡ دِينُكُمۡ وَلِيَ دِينِ۝﴾",
-            latin: "Bismillāhir-Raḥmānir-Raḥīm. Qul yā ayyuhal-kāfirūn (1). Lā aʿbudu mā taʿbudūn (2). Wa lā antum ʿābidūna mā aʿbud (3). Wa lā anā ʿābidun mā ʿabadtum (4). Wa lā antum ʿābidūna mā aʿbud (5). Lakum dīnukum wa liya dīn (6).",
-            explanationEs: "En el nombre de Dios, el Compasivo, el Misericordioso. Di: «¡Oh, ustedes que rechazan la verdad! No adoro lo que ustedes adoran, ni ustedes adoran lo que yo adoro. Yo no adoraré lo que ustedes adoran, ni ustedes adorarán lo que yo adoro. Ustedes tienen su religión y yo tengo la mía».",
-            
-            count: 1,
-            maxCount: 1,
-            audioUrls: [
+            "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\n﴿قُلۡ يَٰٓأَيُّهَا ٱلۡكَٰفِرُونَ۝لَآ أَعۡبُدُ مَا تَعۡبُدُونَ۝ وَلَآ أَنتُمۡ عَٰبِدُونَ مَآ أَعۡبُدُ۝وَلَآ أَنَا۠ عَابِدٞ مَّا عَبَدتُّمۡ۝ وَلَآ أَنتُمۡ عَٰبِدُونَ مَآ أَعۡبُدُ۝لَكُمۡ دِينُكُمۡ وَلِيَ دِينِ۝﴾",
+            "latin": "Bismillāhir-Raḥmānir-Raḥīm. Qul yā ayyuhal-kāfirūn (1). Lā aʿbudu mā taʿbudūn (2). Wa lā antum ʿābidūna mā aʿbud (3). Wa lā anā ʿābidun mā ʿabadtum (4). Wa lā antum ʿābidūna mā aʿbud (5). Lakum dīnukum wa liya dīn (6).",
+            "explanationEs": "En el nombre de Dios, el Compasivo, el Misericordioso. Di: «¡Oh, ustedes que rechazan la verdad! No adoro lo que ustedes adoran, ni ustedes adoran lo que yo adoro. Yo no adoraré lo que ustedes adoran, ni ustedes adorarán lo que yo adoro. Ustedes tienen su religión y yo tengo la mía».",
+            "count": 1,
+            "maxCount": 1,
+            "audioUrls": [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/109001.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/109002.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/109003.mp3",
@@ -512,7 +507,7 @@ const ruqyahData = [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/109005.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/109006.mp3"
             ],
-            note: "سورة الكافرون الآيات 1-6",
+            "note": "سورة الكافرون"
           },
           {
             "itemNumber": 38,
