@@ -1257,15 +1257,31 @@ function checkDailyReset() {
 
 function openTransliterationGuide() {
   const modal = document.getElementById('transliterationModal');
-  if (modal) modal.classList.remove('hidden');
+  if (!modal || !modal.classList.contains('hidden')) return;
+  modal.classList.remove('hidden');
+  if (window.history && window.history.pushState) {
+    try {
+      window.history.pushState({ view: 'transliterationGuide' }, '', '#transliteration');
+    } catch (e) {}
+  }
 }
 
 function closeTransliterationGuide() {
   const modal = document.getElementById('transliterationModal');
-  if (modal) modal.classList.add('hidden');
+  if (!modal || modal.classList.contains('hidden')) return;
+  if (window.history && window.history.state && window.history.state.view === 'transliterationGuide') {
+    window.history.back();
+  } else {
+    modal.classList.add('hidden');
+  }
 }
 
 window.addEventListener('popstate', (e) => {
+  const transliterationModal = document.getElementById('transliterationModal');
+  if (transliterationModal && !transliterationModal.classList.contains('hidden')) {
+    transliterationModal.classList.add('hidden');
+    return;
+  }
   if (e.state && e.state.view) {
     switch (e.state.view) {
       case 'home': goHome(true); break;
