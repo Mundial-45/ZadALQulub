@@ -252,7 +252,7 @@ const adyaData = [
       "itemNumber": 31,
       "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ وَالْعَجْزِ وَالْكَسَلِ وَالْجُبْنِ وَالْبُخْلِ وَضَلَعِ الدَّيْنِ وَغَلَبَةِ الرِّجَالِ.",
       "latin": "Allāhumma innī a‘ūdhu bika minal-hammi wal-ḥazani wal-‘ajzi wal-kasali wal-jubni wal-bukhli wa ḍala‘id-dayni wa ghalabatir-rijāl.",
-      "explanationEs": "¡Oh, Allah! Me refugio en Ti de la preocupación y la tristeza, de la incapacidad y la pereza, de la cobardía y la avaricia, del peso de las deudas y de ser dominado por los demás.",
+      "explanationEs": "¡Oh Allah! Me refugio en Ti de la preocupación y la tristeza, de la incapacidad y la pereza, de la cobardía y la avaricia, del peso de las deudas y de que los hombres me dominen.",
       "note": "رواه البخاري"
     },
     {
@@ -273,7 +273,7 @@ const adyaData = [
       "itemNumber": 34,
       "text": "اللَّهُمَّ رَبَّ السَّمَوَاتِ وَرَبَّ الْأَرْضِ وَرَبَّ الْعَرْشِ الْعَظِيمِ، رَبَّنَا وَرَبَّ كُلِّ شَيْءٍ، فَالِقَ الْحَبِّ وَالنَّوَى وَمُنْزِلَ التَّوْرَاةِ وَالْإِنْجِيلِ وَالْفُرْقَانِ، أَعُوذُ بِكَ مِنْ شَرِّ كُلِّ شَيْءٍ أَنْتَ آخِذٌ بِنَاصِيَتهِِ، اللَّهُمَّ أَنْتَ الْأوََّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ الْآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ، وَأَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، وَأَنْتَ الْبَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، اقْضِ عَنَّا الدَّيْنَ وَأَغْنِنَا مِنَ الْفَقْرِ.",
       "latin": "Allāhumma Rabbas-samāwāti wa Rabbal-arḍi wa Rabbal-‘arshil-‘aẓīm, Rabbanā wa Rabba kulli shay', Fāliqal-ḥabbi wan-nawā wa Munzilat-Tawrāti wal-Injīli wal-Furqān, a‘ūdhu bika min sharri kulli shay'in Anta ākhidhun bi-nāṣiyatih. Allāhumma Antal-Awwalu fa-laysa qablaka shay', wa Antal-Ākhiru fa-laysa ba‘daka shay', wa Antaẓ-Ẓāhiru fa-laysa fawqaka shay', wa Antal-Bāṭinu fa-laysa dūnaka shay', iqḍi ‘annad-dayna wa aghninā minal-faqr.",
-      "explanationEs": "¡Oh, Allah, Señor de los cielos y de la tierra, Señor del Trono grandioso, Señor nuestro y Señor de todas las cosas! Tú eres Quien hace germinar los granos y los huesos de los frutos, y Quien ha revelado la Torá, el Evangelio y el Furqán (el Criterio que distingue la verdad de la falsedad).\n\nMe refugio en Ti del mal de todas las cosas, pues Tú tienes pleno dominio sobre ellas.\n\n¡Oh, Allah! Tú eres el Primero y nada existe antes de Ti; Tú eres el Último y nada existe después de Ti; Tú eres el Manifiesto y nada está por encima de Ti; y Tú eres el Oculto y nada está más allá de Ti.\n\nLibéranos de nuestras deudas y enriquécenos para que no padezcamos pobreza.",
+      "explanationEs": "¡Oh Allah, Señor de los cielos, de la tierra y del Trono grandioso; Señor nuestro y Señor de todas las cosas! Tú haces germinar el grano y la semilla, y revelaste la Torá, el Evangelio y el Furqán (el Criterio). Me refugio en Ti del mal de todas las cosas, pues Tú tienes pleno dominio sobre ellas. ¡Oh Allah! Tú eres el Primero y nada existe antes de Ti; Tú eres el Último y nada existe después de Ti; Tú eres el Manifiesto y nada está por encima de Ti; y Tú eres el Oculto y nada está más allá de Ti. Satisface nuestras deudas y líbranos de la pobreza.",
       "note": "رواه مسلم"
     },
     {
@@ -336,7 +336,7 @@ const adyaData = [
       "itemNumber": 43,
       "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِرِضَاكَ مِنْ سَخَطِكَ، وَبِمُعَافَاتِكَ مِنْ عُقُوبَتِكَ، وَأَعُوذُ بِكَ مِنْكَ، لَا أُحْصِي ثَنَاءً عَلَيْكَ، أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ.",
       "latin": "Allāhumma innī a‘ūdhu bi-riḍāka min sakhaṭika, wa bi-mu‘āfātika min ‘uqūbatika, wa a‘ūdhu bika minka, lā uḥṣī thanā’an ‘alayka, Anta kamā athnayta ‘alā nafsik.",
-      "explanationEs": "«Oh Allah, me refugio en Tu complacencia de Tu ira, y en Tu perdón de Tu castigo, y me refugio en Ti de Ti. No puedo enumerar los elogios debidos a Ti; Tú eres tal como Te has elogiado a Ti mismo».\n",
+      "explanationEs": "¡Oh Allah! Me refugio en Tu complacencia de Tu ira, en Tu protección frente a Tu castigo y me refugio en Ti de Ti. No puedo enumerar todos los elogios que Te corresponden; Tú eres tal como Te has elogiado a Ti mismo.",
       "note": "رواه مسلم"
     },
     {
@@ -364,28 +364,28 @@ const adyaData = [
       "itemNumber": 47,
       text: 'اللَّهُمَّ بِعِلْمِكَ الْغَيْبَ وَقُدْرَتِكَ عَلَى الْخَلْقِ أَحْيِنِي مَا عَلِمْتَ الْحَيَاةَ خَيْرًا لِي، وَتَوَفَّنِي إِذَا عَلِمْتَ الْوَفَاةَ خَيْرًا لِي، اللَّهُمَّ وَأَسْأَلُكَ خَشْيَتَكَ فِي الْغَيْبِ وَالشَّهَادَةِ، وَأَسْأَلُكَ كَلِمَةَ الْحَقِّ فِي الرِّضَا وَالْغَضَبِ، وَأَسْأَلُكَ الْقَصْدَ فِي الْفَقْرِ وَالْغِنَى، وَأَسْأَلُكَ نَعِيمًا لَا يَنْفَدُ، وَأَسْأَلُكَ قُرَّةَ عَيْنٍ لَا تَنْقَطِعُ، وَأَسْأَلُكَ الرِّضَاءَ بَعْدَ الْقَضَاءِ، وَأَسْأَلُكَ بَرْدَ الْعَيْشِ بَعْدَ الْمَوْتِ، وَأَسْأَلُكَ لَذَّةَ النَّظَرِ إِلَى وَجْهِكَ وَالشَّوْقَ إِلَى لِقَائِكَ فِي غَيْرِ ضَرَّاءَ مُضِرَّةٍ وَلَا فِتْنَةٍ مُضِلَّةٍ، اللَّهُمَّ زَيِّنَّا بِزِينَةِ الْإِيمَانِ، وَاجْعَلْنَا هُدَاةً مُهْتَدِينَ.',
       latin: 'Allāhumma bi-‘ilmikal-ghayba wa qudratika ‘alal-khalqi aḥyinī mā ‘alimtal-ḥayāta khayran lī, wa tawaffanī idhā ‘alimtal-wafāta khayran lī. Allāhumma wa as’aluka khashyataka fil-ghaybi wash-shahādah, wa as’aluka kalimatil-ḥaqqi fir-riḍā wal-ghaḍab, wa as’alukal-qaṣda fil-faqri wal-ghinā, wa as’aluka na‘īman lā yanfad, wa as’aluka qurrata ‘aynin lā tanqaṭi‘, wa as’alukar-riḍā’a ba‘dal-qaḍā’, wa as’aluka bardal-‘ayshi ba‘dal-mawt, wa as’aluka ladhdhatan-naẓari ilā wajhika wash-shawqa ilā liqā’ik fī ghayri ḍarrā’a muḍirrah, wa lā fitnatin muḍillatin. Allāhumma zayyinnā bi-zīnatil-īmāni waj-‘alnā hudātan muhtadīn.',
-      explanationEs: '¡Oh Allah! Con Tu conocimiento de lo oculto y Tu poder sobre la creación, mantenme con vida mientras la vida sea buena para mí y hazme morir cuando la muerte sea mejor. Te pido Tu temor en lo oculto y lo manifiesto, la palabra de verdad en la complacencia y la ira, la moderación en la pobreza y la riqueza, un deleite inagotable, el consuelo de los ojos ininterrumpido, la complacencia tras el decreto, la frescura de vida tras la muerte, el deleite de contemplar Tu Rostro y el anhelo de encontrarte sin sufrimiento perjudicial ni prueba extraviada. ¡Oh Allah! Adórnanos con el adorno de la fe y haz de nosotros guías bien guiados. (An-Nasa\'i)',
+      explanationEs: '¡Oh Allah! Por Tu conocimiento de lo oculto y Tu poder sobre la creación, mantenme con vida mientras sepas que la vida es mejor para mí, y hazme morir cuando sepas que la muerte es mejor para mí. Te pido que Te tema en privado y en público, que diga la verdad tanto en la satisfacción como en la ira, y que mantenga la moderación tanto en la pobreza como en la riqueza. Te pido un deleite que no se agote, un consuelo que no cese, estar complacido después del decreto, una vida apacible después de la muerte, el placer de contemplar Tu Rostro y el anhelo de encontrarte, sin adversidad perjudicial ni prueba que me haga extraviarme. ¡Oh Allah! Adórnanos con la belleza de la fe y haz que seamos guías bien guiados.',
       note: 'رواه النسائي (إسناد حسن)'
     },
     {
       "itemNumber": 48,
       text: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ العَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي دِينِي وَدُنْيَايَ وَأَهْلِي وَمَالِي، اللَّهُمَّ اسْتُرْ عَوْرَاتِي وَآمِنْ رَوْعَاتِي، وَاحْفَظنْيِ مِنْ بيَنِْ يَدَيَّ وَمِنْ خَلْفِي وَعَنْ يَمِينيِ وَعَنْ شِمَالِي وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي.',
       latin: 'Allāhumma innī as’alukal-‘afwa wal-‘āfiyata fid-dunyā wal-ākhirah. Allāhumma innī as’alukal-‘afwa wal-‘āfiyata fī dīnī wa dunyāya wa ahlī wa mālī. Allāhummas-tur ‘awrātī wa āmin raw‘ātī, waḥ-faẓnī min bayni yadayya wa min khalfī wa ‘an yamīnī wa ‘an shimālī wa min fawqī, wa a‘ūdhu bi-‘aẓamatika an ughtāla min taḥtī.',
-      explanationEs: '¡Oh Allah! Te pido el perdón y la salud en esta vida y en la otra. ¡Oh Allah! Te pido el perdón y la salud en mi religión, mis asuntos terrenales, mi familia y mis bienes. Cubre mis faltas, calma mis temores y protégeme por delante, por detrás, a mi derecha, a mi izquierda y por encima de mí; y me refugio en Tu grandeza de ser tragado por la tierra. (Abu Dawood)',
+      explanationEs: '¡Oh Allah! Te pido indulgencia y bienestar en esta vida y en la otra; en mi religión, en mis asuntos mundanos, en mi familia y en mis bienes. Cubre mis defectos y aquello que debe permanecer oculto, y calma mis temores. Protégeme por delante, por detrás, a mi derecha, a mi izquierda y por encima de mí; y me refugio en Tu grandeza de ser sorprendido y tragado por la tierra desde abajo.',
       note: 'رواه أبو داود (إسناد صحيح)'
     },
     {
       "itemNumber": 49,
       "text": "اللَّهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ، فَاطِرَ السَّمَوَاتِ وَالْأَرْضِ، رَبَّ كُلِّ شَيْءٍ وَمَلِيكَهُ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا أَنْتَ، أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي وَشَرِّ الشَّيْطَانِ وَشِرْكِهِ.",
       "latin": "Allāhumma ‘ālimal-ghaybi wash-shahādati, Fāṭiras-samāwāti wal-arḍ, Rabba kulli shayʾin wa malīkah, ash-hadu an lā ilāha illā Ant, a‘ūdhu bika min sharri nafsī wa sharrish-shayṭāni wa shirkih.",
-      "explanationEs": "«Oh Allah, Conocedor de lo oculto y de lo manifiesto, Creador de los cielos y de la tierra, Señor y Soberano de todo: testifico que no hay divinidad sino Tú. Me refugio en Ti del mal de mi alma, del mal del Demonio y de su asociación [de socios junto a Allah]».\n",
+      "explanationEs": "¡Oh Allah, Conocedor de lo oculto y de lo manifiesto, Creador de los cielos y de la tierra, Señor y Soberano de todas las cosas! Doy testimonio de que no hay divinidad digna de adoración excepto Tú. Me refugio en Ti del mal de mi propia alma, del mal de Satanás y de que me incite a asociar copartícipes Contigo.",
       "note": "رواه الترمذي (إسناد صحيح)"
     },
     {
       "itemNumber": 50,
       "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الثَّبَاتَ فِي الأَمْرِ، وَالْعَزِيمَةَ عَلَى الرُّشْدِ، وَأَسْأَلُكَ مُوجِبَاتِ رَحْمَتكَِ، وَعَزَائمَِ مَغْفِرَتكَِ، وَأسَْألَكَُ شُكْرَ نعِْمَتكَِ، وَحُسْنَ عِباَدَتكَِ، وَأسَْألَكَُ قَلْبًا سَلِيمًا، وَلِسَانًا صَادِقًا، وَأَسْأَلُكَ مِنْ خَيْرِ مَا تَعْلَمُ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا تَعْلَمُ، وَأَسْتَغْفِرُكَ لِمَا تَعْلَمُ، إِنَّكَ أَنْتَ عَلَّامُ الْغُيُوبِ.",
       "latin": "Allāhumma innī as’alukat-thabāta fil-amri wal-‘azīmata ‘alar-rushd, wa as’aluka mūjibāti raḥmatika wa ‘azā’ima maghfiratik, wa as’aluka shukra ni‘matik, wa ḥusna ‘ibādatik, wa as’aluka qalban salīmā wa lisānan ṣādiqā, wa as’aluka min khayri mā ta‘lam, wa a‘ūdhu bika min sharri mā ta‘lam, wa astaghfiruka limā ta‘lam, innaka Anta ‘Allāmul-ghuyūb.",
-      "explanationEs": "«Oh Allah, te pido firmeza en el asunto, determinación en la guía, te pido las causas que atraen Tu misericordia, las resoluciones de Tu perdón, te pido la gratitud por Tu gracia y la excelencia en Tu adoración. Te pido un corazón sano y una lengua veraz. Te pido del bien que sabes y me refugio en Ti del mal que sabes, y te busco el perdón por lo que sabes; ciertamente, Tú eres el Conocedor de lo oculto».\n",
+      "explanationEs": "¡Oh Allah! Te pido firmeza en todos mis asuntos y determinación para seguir la rectitud. Te pido aquello que atrae Tu misericordia y aquello que conduce a Tu perdón. Te pido que me inspires gratitud por Tus bendiciones y excelencia en Tu adoración. Te pido un corazón sano y una lengua veraz. Te pido todo el bien que Tú conoces, me refugio en Ti de todo el mal que Tú conoces y Te pido perdón por aquello que Tú conoces. Ciertamente, Tú eres el Conocedor de lo oculto.",
       "note": "رواه الطبراني في الكبير"
     },
     {
@@ -420,7 +420,7 @@ const adyaData = [
       "itemNumber": 55,
       text: 'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ، اللّٰهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ.',
       latin: 'Allāhumma ṣalli ‘alā Muḥammadin wa ‘alā āli Muḥammad, kamā ṣallayta ‘alā Ibrāhīma wa ‘alā āli Ibrāhīm, innaka Ḥamīdun Majīd. Allāhumma bārik ‘alā Muḥammadin wa ‘alā āli Muḥammad, kamā bārakta ‘alā Ibrāhīma wa ‘alā āli Ibrāhīm, innaka Ḥamīdun Majīd.',
-      explanationEs: '¡Oh Allah! Bendice a Muhammad y a la familia de Muhammad como bendijiste a Abraham y a la familia de Abraham; ciertamente Tú eres Loable, Glorioso. ¡Oh Allah! Otorga prosperidad a Muhammad y a la familia de Muhammad como otorgaste prosperidad a Abraham y a la familia de Abraham; ciertamente Tú eres Loable, Glorioso. (Oración Abrahamica)',
+      explanationEs: '¡Oh Allah! Concede Tus bendiciones a Muhammad y a la familia de Muhammad, como las concediste a Abraham y a la familia de Abraham. Ciertamente, Tú eres Loable y Glorioso. ¡Oh Allah! Colma de bendiciones a Muhammad y a la familia de Muhammad, como colmaste de bendiciones a Abraham y a la familia de Abraham. Ciertamente, Tú eres Loable y Glorioso.',
       note: 'الصلاة الإبراهيمية'
     }
   ]
