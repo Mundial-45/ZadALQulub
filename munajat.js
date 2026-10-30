@@ -98,7 +98,7 @@ const munajatData = [
       {
         itemNumber: 16,
         text: "فَالْحَمْدُ لِلَّهِ الَّذِي بِتَحْمِيدِهِ يُصَدَّرُ كُلُّ خِطَابٍ، وَبِحَمْدِهِ يَتَنَعَّمُ أَهْلُ النَّعِيمِ فِي دَارِ الْجَزَاءِ وَالثَّوَابِ. وَبِاسْمِهِ يُشْفَى كُلُّ دَاءٍ، وَبِهِ يُكْشَفُ كُلُّ غَمٍّ وَبَلَاءٍ، وَإِلَيْهِ تُرْفَعُ الْأَيْدِي بِالتَّضَرُّعِ وَالدُّعَاءِ، فِي الشِّدَّةِ وَالرَّخَاءِ، وَالسَّرَّاءِ وَالضَّرَّاءِ. وَهُوَ سَامِعٌ لِجَمِيعِ الْأَصْوَاتِ، بِفُنُونِ الْخِطَابِ عَلَى اخْتِلَافِ اللُّغَاتِ، وَمُجِيبُ الدُّعَاءِ لِلْمُضْطَرِّ. فَلَهُ الْحَمْدُ عَلَى كُلِّ مَا أَوْلَى وَأَسْدَى، وَلَهُ الشُّكْرُ عَلَى كُلِّ مَا أَنْعَمَ وَأَعْطَى.",
-        latin: "Fa-al-ḥamdu lillāhil-ladhī bi-taḥmīdihi yuṣaddaru kullu khiṭāb, wa bi-ḥamdihi yatanag͟hghamu ahlun-na‘īmi fī dāril-jazā'i wath-thawāb. Wa bi-ismihi yushfā kullu dā', wa bihi yukshafu kullu ghammin wa balā', wa ilayhi turfa‘ul-aydī bit-taḍarru‘i wad-du‘ā'i fīsh-shiddati war-rakhā'i was-sarrā'i waḍ-ḍarrā'. Wa huwa sāmi‘ul-li-jamī‘il-aṣwāt, bi-funūnil-khiṭābi ‘alā-khtilāfil-lughāt, wa mujībud-du‘ā'i lil-muḍṭarr. Fa-lahul-ḥamdu ‘alā kulli mā awlā wa asdā, wa lahash-shukru ‘alā kulli mā an‘ama wa a‘ṭā.",
+        latin: "Fa-al-ḥamdu lillāhil-ladhī bi-taḥmīdihi yuṣaddaru kullu khiṭāb, wa bi-ḥamdihi yatana‘‘amu ahlun-na‘īmi fī dāril-jazā'i wath-thawāb. Wa bi-ismihi yushfā kullu dā', wa bihi yukshafu kullu ghammin wa balā', wa ilayhi turfa‘ul-aydī bit-taḍarru‘i wad-du‘ā'i fīsh-shiddati war-rakhā'i was-sarrā'i waḍ-ḍarrā'. Wa huwa sāmi‘ul-li-jamī‘il-aṣwāt, bi-funūnil-khiṭābi ‘alā-khtilāfil-lughāt, wa mujībud-du‘ā'i lil-muḍṭarr. Fa-lahul-ḥamdu ‘alā kulli mā awlā wa asdā, wa lahash-shukru ‘alā kulli mā an‘ama wa a‘ṭā.",
         explanationEs: "¡Alabanza a Allah, con cuya alabanza se encabeza todo discurso, y con cuya alabanza se deleitan los habitantes de la delicia en la morada de la recompensa y el premio! Con Su nombre se cura toda enfermedad, con Él se remueve toda pena y aflicción, y a Él se elevan las manos en súplica y ruego, tanto en la dificultad como en la prosperidad, en la alegría como en la adversidad. Él escucha todas las voces, en todos los modos de discurso y a través de los diferentes idiomas, y responde a la súplica del necesitado. A Él sea la alabanza por todo lo que ha otorgado y concedido, y a Él el agradecimiento por todo lo que ha bendecido y dado."
       },
       {
@@ -766,7 +766,7 @@ const munajatData = [
       {
         itemNumber: 118,
         text: "إِلَهِي، إِنْ ضَاقَتْ بِيَ الدُّنْيَا فَأَنْتَ رَبُّهَا، وَإِنْ أَغْلَقَتِ الْأَبْوَابُ فَبَابُكَ مَفْتُوحٌ، وَإِنْ خَذَلَنِي النَّاسُ فَأَنْتَ حَسْبِي، وَإِنْ أَظْلَمَتِ الطُّرُقُ فَنُورُكَ يَهْدِينِي، وَإِنْ ضَعُفَتْ قُوَّتِي فَحَوْلُكَ وَقُوَّتُكَ لَا يَنْفَدَانِ.",
-        latin: "Ilāhī, in ḍāqat biya-d-dunyā fa-Anta Rabbuhā, wa in aghlaqati al-abwābu fa-bābuka maftūḥ, wa in khaḏalanī an-nāsu fa-Anta ḫasbī, wa in aẓlamati aṭ-ṭuruqu fa-nūruka yahdīnī, wa in ḍa‘ufat quwwatī fa-ḥawluka wa quwwatuka lā yanfadān.",
+        latin: "Ilāhī, in ḍāqat biya-d-dunyā fa-Anta Rabbuhā, wa in aghlaqati al-abwābu fa-bābuka maftūḥ, wa in khaḏalanī an-nāsu fa-Anta ḥasbī, wa in aẓlamati aṭ-ṭuruqu fa-nūruka yahdīnī, wa in ḍa‘ufat quwwatī fa-ḥawluka wa quwwatuka lā yanfadān.",
         explanationEs: "¡Oh Allah mío! Si el mundo se estrecha ante mí, Tú eres su Señor; si las puertas se cierran, Tu puerta está abierta; si la gente me abandona, Tú me bastas; si los caminos se oscurecen, Tu luz me guía; y si mi fuerza se debilita, Tu poder y Tu fuerza jamás se agotan."
       },
       {
