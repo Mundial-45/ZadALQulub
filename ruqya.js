@@ -437,18 +437,18 @@ const ruqyahData = [
           },
           {
             "itemNumber": 33,
-            text: "﴿وَإِذۡ صَرَفۡنَآ إِلَيۡكَ نَفَرٗا مِّنَ ٱلۡجِنِّ يَسۡتَمِعُونَ ٱلۡقُرۡءَانَ فَلَمَّا حَضَرُوهُ قَالُوٓاْ أَنصِتُواْۖ فَلَمَّا قُضِيَ وَلَّوۡاْ إِلَىٰ قَوۡمِهِم مُّنذِرِينَ۝ قَالُواْ يَٰقَوۡمَنَآ إِنَّا سَمِعۡنَا كِتَٰبًا أُنزِلَ مِنۢ بَعۡدِ مُوسَىٰ مُصَدِّقٗا لِّمَا بَيۡنَ يَدَيۡهِ يَهۡدِيٓ إِلَى ٱلۡحَقِّ وَإِلَىٰ طَرِيقٖ مُّسۡتَقِيمٖ۝ يَٰقَوۡمَنَآ أَجِيبُواْ دَاعِيَ ٱللَّهِ وَءَامِنُواْ بِهِۦ يَغۡفِرۡ لَكُم مِّن ذُنُوبِكُمۡ وَيُجِرۡكُم مِّنۡ عَذَابٍ أَلِيمٖ۝ وَمَن لَّا يُجِبۡ دَاعِيَ ٱللَّهِ فَلَيۡسَ بِمُعۡجِزٖ فِي ٱلۡأَرۡضِ وَلَيۡسَ لَهُۥ مِن دُونِهِۦٓ أَوۡلِيَآءُۚ أُوْلَٰٓئِكَ فِي ضَلَٰلٖ مُّبِينٍ۝﴾",
-            latin: "Wa idh ṣarafnā ilayka nafarin minal-jinni yastami‘ūnal-qur'āna lammā ḥaḍarūhu qālū anṣitū lammā quḍiya wallaw ilā qawmihim mundhirīn.",
-            explanationEs: "Y cuando dirigí hacia ti a un grupo de genios para que escucharan el Corán, se presentaron y dijeron: «¡Guarden silencio!». Cuando terminó la recitación, regresarón a su pueblo para advertirles.",
-            count: 1,
-            maxCount: 1,
-            audioUrls: [
+            "text": "﴿وَإِذۡ صَرَفۡنَآ إِلَيۡكَ نَفَرٗا مِّنَ ٱلۡجِنِّ يَسۡتَمِعُونَ ٱلۡقُرۡءَانَ فَلَمَّا حَضَرُوهُ قَالُوٓاْ أَنصِتُواْۖ فَلَمَّا قُضِيَ وَلَّوۡاْ إِلَىٰ قَوۡمِهِم مُّنذِرِينَ۝ قَالُواْ يَٰقَوۡمَنَآ إِنَّا سَمِعۡنَا كِتَٰبًا أُنزِلَ مِنۢ بَعۡدِ مُوسَىٰ مُصَدِّقٗا لِّمَا بَيۡنَ يَدَيۡهِ يَهۡدِيٓ إِلَى ٱلۡحَقِّ وَإِلَىٰ طَرِيقٖ مُّسۡتَقِيمٖ۝ يَٰقَوۡمَنَآ أَجِيبُواْ دَاعِيَ ٱللَّهِ وَءَامِنُواْ بِهِۦ يَغۡفِرۡ لَكُم مِّن ذُنُوبِكُمۡ وَيُجِرۡكُم مِّنۡ عَذَابٍ أَلِيمٖ۝ وَمَن لَّا يُجِبۡ دَاعِيَ ٱللَّهِ فَلَيۡسَ بِمُعۡجِزٖ فِي ٱلۡأَرۡضِ وَلَيۡسَ لَهُۥ مِن دُونِهِۦٓ أَوۡلِيَآءُۚ أُوْلَٰٓئِكَ فِي ضَلَٰلٖ مُّبِينٍ۝﴾",
+            "latin": "Wa idh ṣarafnā ilayka nafaran mina al-jinni yastamiʿūna al-Qurʾāna, falammā ḥaḍarūhu qālū anṣitū, falammā quḍiya wallaw ilā qawmihim mundhirīn.\n\nQālū yā qawmanā innā samiʿnā kitāban unzila min baʿdi Mūsā, muṣaddiqan limā bayna yadayhi, yahdī ilā al-ḥaqqi wa ilā ṭarīqin mustaqīm.\n\nYā qawmanā ajībū dāʿiya Allāhi wa āminū bihi, yaghfir lakum min dhunūbikum wa yujirkum min ʿadhābin alīm.\n\nWa man lā yujib dāʿiya Allāhi falaysa bimuʿjizin fī al-arḍi wa laysa lahu min dūnihi awliyāʾ. Ulāʾika fī ḍalālin mubīn.",
+            "explanationEs": "«Y cuando hicimos que un grupo de genios se dirigiera hacia ti para escuchar el Corán, al encontrarse ante él, dijeron: “¡Guardad silencio y escuchad!”. Y cuando terminó su recitación, regresaron a su pueblo para advertirles.\n\nDijeron: “¡Pueblo nuestro! Hemos escuchado un Libro que ha sido revelado después de Moisés, que confirma lo que había antes de él y guía hacia la verdad y hacia un camino recto.\n\n¡Pueblo nuestro! Responded a quien os llama hacia Allah y creed en él. Así, Allah os perdonará parte de vuestros pecados y os protegerá de un castigo doloroso.\n\nY quien no responda a quien llama hacia Allah no podrá escapar de Él en la tierra, ni tendrá, fuera de Él, protectores. Esos estarán en un extravío evidente”».",
+            "count": 1,
+            "maxCount": 1,
+            "audioUrls": [
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/046029.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/046030.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/046031.mp3",
               "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/046032.mp3"
             ],
-            note: "سورة الأحقاف الآيات 29-32",
+            "note": "سورة الأحقاف الآيات 29-32"
           },
           {
             "itemNumber": 34,
@@ -485,17 +485,17 @@ const ruqyahData = [
           },
           {
             "itemNumber": 36,
-            text: "﴿فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ۝ فِيهِنَّ قَٰصِرَٰتُ ٱلطَّرۡفِ لَمۡ يَطۡمِثۡهُنَّ إِنسٞ قَبۡلَهُمۡ وَلَا جَآنّٞ۝ فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ۝﴾",
-            latin: "Fa-bi-ayyi ālā'i Rabbikumā tukadhdhibān (55). Yas'aluhu man fis-samāwāti wal-arḍi, kulla yawmin huwa fī sha'n (56). Fa-bi-ayyi ālā'i Rabbikumā tukadhdhibān (57).",
-            explanationEs: "¿Cuál de los favores de vuestro Señor negaréis? Todos los que están en los cielos y en la Tierra Le imploran; cada día Él está ocupado en un asunto. ¿Cuál de los favores de vuestro Señor negaréis?",
-            count: 1,
-            maxCount: 1,
-            audioUrls: [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/055046.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/055047.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/055048.mp3"
+            "text": "﴿فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ۝ فِيهِنَّ قَٰصِرَٰتُ ٱلطَّرۡفِ لَمۡ يَطۡمِثۡهُنَّ إِنسٞ قَبۡلَهُمۡ وَلَا جَآنّٞ۝ فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ۝﴾",
+            "latin": "Fa-bi-ayyi ālāʾi Rabbikumā tukadhdhibān.\n\nFīhinna qāṣirātu aṭ-ṭarfi lam yaṭmiṯhunna insun qablahum wa lā jānn.\n\nFa-bi-ayyi ālāʾi Rabbikumā tukadhdhibān.",
+            "explanationEs": "«¿Cuál, pues, de los favores de vuestro Señor negaréis?\n\nEn ellos habrá mujeres de mirada recatada, a las que ningún hombre ni genio habrá tocado antes que ellos.\n\n¿Cuál, pues, de los favores de vuestro Señor negaréis?»",
+            "count": 1,
+            "maxCount": 1,
+            "audioUrls": [
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/055055.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/055056.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/055057.mp3"
             ],
-            note: "سورة الرحمن الآيات 46-48",
+            "note": "سورة الرحمن الآيات 55-57"
           },
           {
             "itemNumber": 37,
