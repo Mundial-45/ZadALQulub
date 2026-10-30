@@ -685,11 +685,13 @@ const adyaData = [
   items: [
     {
       "itemNumber": 89,
-      text: '﴿رَبَّنَا ظَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الخَاسِرِينَ۝﴾',
-      latin: 'Rabbanā ẓalamnā anfusanā wa in lam taghfir lanā wa tarḥamnā lanakūnanna minal-khāsirīn.',
-      explanationEs: 'Ellos dijeron (arrepentidos): “¡Señor nuestro! Hemos sido injustos con nosotros mismos; si no nos perdonas y no nos tienes misericordia, seremos de los perdidos”. (Al-A\'raf: 23)',
+      "text": "﴿رَبَّنَا ظَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الخَاسِرِينَ۝﴾",
+      "latin": "Rabbanā ẓalamnā anfusanā wa in lam taghfir lanā wa tarḥamnā lanakūnanna minal-khāsirīn.",
+      "explanationEs": "“¡Señor nuestro! Hemos sido injustos con nosotros mismos; si no nos perdonas y no nos tienes misericordia, seremos de los perdidos”. (Al-A'raf: 23)",
       "note": "سورة الأعراف الآية 23",
-      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007023.mp3"]
+      "audioUrls": [
+        "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007023.mp3"
+      ]
     },
     {
       "itemNumber": 90,
@@ -701,59 +703,73 @@ const adyaData = [
     },
     {
       "itemNumber": 91,
-      text: '﴿رَبَّنَا وَاجْعَلْنَا مُسْلِمَيْنِ لَكَ وَمِنْ ذُرِّيَّتِنَا أُمَّةً مُسْلِمَةً لَكَ وَأَرِنَا مَنَاسِكَنَا وَتُبْ عَلَيْنَا إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ۝﴾',
-      latin: 'Rabbanā waj-‘alnā muslimayni laka wa min dhurriyyatinā ummatan muslimatan laka wa arinā manāsikanā wa tub ‘alaynā innaka Antat-Tawwābur-Raḥīm.',
-      explanationEs: '“¡Señor nuestro! Haz que nosotros nos entreguemos a Tu voluntad, y que nuestra descendencia también lo haga (como una nación de musulmanes). Enséñanos nuestros ritos para la peregrinación y acepta nuestro arrepentimiento; Tú eres el Indulgente, el Misericordioso”. (Al-Baqarah: 128)',
+      "text": "﴿رَبَّنَا وَاجْعَلْنَا مُسْلِمَيْنِ لَكَ وَمِنْ ذُرِّيَّتِنَا أُمَّةً مُسْلِمَةً لَكَ وَأَرِنَا مَنَاسِكَنَا وَتُبْ عَلَيْنَا إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ۝﴾",
+      "latin": "Rabbanā waj-‘alnā muslimayni laka wa min dhurriyyatinā ummatan muslimatan laka wa arinā manāsikanā wa tub ‘alaynā innaka Antat-Tawwābur-Raḥīm.",
+      "explanationEs": "“¡Señor nuestro! Haz que nosotros nos entreguemos a Tu voluntad, y que nuestra descendencia también lo haga (como una nación de musulmanes). Enséñanos nuestros ritos para la peregrinación y acepta nuestro arrepentimiento; Tú eres el Indulgente, el Misericordioso”. (Al-Baqarah: 128)",
       "note": "سورة البقرة الآية 128",
-      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002128.mp3"]
+      "audioUrls": [
+        "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002128.mp3"
+      ]
     },
     {
       "itemNumber": 92,
-      text: '﴿رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الحِسَابُ۝﴾',
-      latin: 'Rabbanāgh-fir lī wa li-wālidayya wa lil-mu’minīna yawma yaqūmul-ḥisāb.',
-      explanationEs: '¡Señor nuestro! Perdóname a mí, a mis padres y a los creyentes el Día en que se tome cuenta. (Ibrahim: 41)',
+      "text": "﴿رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الحِسَابُ۝﴾",
+      "latin": "Rabbanāgh-fir lī wa li-wālidayya wa lil-mu’minīna yawma yaqūmul-ḥisāb.",
+      "explanationEs": "¡Señor nuestro! Perdóname a mí, a mis padres y a los creyentes el Día en que se tome cuenta. (Ibrahim: 41)",
       "note": "سورة إبراهيم الآية 41",
-      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/014041.mp3"]
+      "audioUrls": [
+        "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/014041.mp3"
+      ]
     },
     {
       "itemNumber": 93,
-      text: '﴿رَبَّنَا إِنَّنَا آمَنَّا فَاغْفِرْ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ النَّارِ۝﴾',
-      latin: 'Rabbanā innanā āmannā fagh-fir lanā dhunūbanā wa qinā ‘adhāban-nār.',
-      explanationEs: 'quienes dicen: “¡Señor nuestro! Creemos en Ti. Perdónanos nuestros pecados y líbranos del castigo del Fuego”. (Ali \'Imran: 16)',
+      "text": "﴿رَبَّنَا إِنَّنَا آمَنَّا فَاغْفِرْ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ النَّارِ۝﴾",
+      "latin": "Rabbanā innanā āmannā fagh-fir lanā dhunūbanā wa qinā ‘adhāban-nār.",
+      "explanationEs": "“¡Señor nuestro! Creemos en Ti. Perdónanos nuestros pecados y líbranos del castigo del Fuego”. (Ali 'Imran: 16)",
       "note": "سورة آل عمران الآية 16",
-      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003016.mp3"]
+      "audioUrls": [
+        "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003016.mp3"
+      ]
     },
     {
       "itemNumber": 94,
-      text: '﴿رَبَّنَا فَاغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّئَاتِنَا وَتَوَفَّنَا مَعَ الأَبْرَارِ۝﴾',
-      latin: 'Rabbanā fagh-fir lanā dhunūbanā wa kaffir ‘annā sayyi’ātinā wa tawaffanā ma‘al-abrār.',
-      explanationEs: '¡Señor nuestro! Hemos oído a quien convocaba a la fe, diciendo: ‘Crean en su Señor’, y creímos. ¡Señor nuestro! Perdona nuestros pecados, borra nuestras malas acciones y, al morir, reúnenos con los piadosos. (Ali \'Imran: 193)',
-      "note": "سورة آل عمران الآية 193",
-      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003193.mp3"]
+      "text": "﴿رَبَّنَا فَاغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّئَاتِنَا وَتَوَفَّنَا مَعَ الأَبْرَارِ۝﴾",
+      "latin": "Rabbanā fagh-fir lanā dhunūbanā wa kaffir ‘annā sayyi’ātinā wa tawaffanā ma‘al-abrār.",
+      "explanationEs": " ¡Señor nuestro! Perdona nuestros pecados, borra nuestras malas acciones y, al morir, reúnenos con los piadosos. (Ali 'Imran: 193)",
+      "note": "سورة آل عمران من الآية 193",
+      "audioUrls": [
+        "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003193.mp3"
+      ]
     },
     {
       "itemNumber": 95,
-      text: '﴿رَبَّنَا آمَنَّا فَاغْفِرْ لَنَا وَارْحَمْنَا وَأَنْتَ خَيْرُ الرَّاحِمِينَ۝﴾',
-      latin: 'Rabbanā āmannā fagh-fir lanā war-ḥamnā wa Anta khayrur-rāḥimīn.',
-      explanationEs: '“¡Señor nuestro! Creemos en Ti; perdónanos y ten misericordia de nosotros. Tú eres el mejor de los misericordiosos.” (Al-Mu\'minun: 109)',
+      "text": "﴿رَبَّنَا آمَنَّا فَاغْفِرْ لَنَا وَارْحَمْنَا وَأَنْتَ خَيْرُ الرَّاحِمِينَ۝﴾",
+      "latin": "Rabbanā āmannā fagh-fir lanā war-ḥamnā wa Anta khayrur-rāḥimīn.",
+      "explanationEs": "“¡Señor nuestro! Creemos en Ti; perdónanos y ten misericordia de nosotros. Tú eres el mejor de los misericordiosos.” (Al-Mu'minun: 109)",
       "note": "سورة المؤمنون الآية 109",
-      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023109.mp3"]
+      "audioUrls": [
+        "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023109.mp3"
+      ]
     },
     {
       "itemNumber": 96,
-      text: '﴿رَبَّنَا أَتْمِمْ لَنَا نُورَنَا وَاغْفِرْ لَنَا إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ۝﴾',
-      latin: 'Rabbanā atmim lanā nūranā wagh-fir lanā innaka ‘alā kulli shay\'in qadīr.',
-      explanationEs: '¡Creyentes! Arrepiéntanse sinceramente ante Allah, puede que así su Señor borre sus faltas y los introduzca en jardines del Paraíso por donde corren ríos. Ese día Allah no avergonzará al Profeta ni a los que creyeron junto a él. Una luz se extenderá delante de ellos y a su derecha, y ellos dirán: “¡Señor nuestro! Auméntanos nuestra luz y perdónanos. Tú eres sobre toda cosa poderoso”. (At-Tahrim: 8)',
+      "text": "﴿رَبَّنَا أَتْمِمْ لَنَا نُورَنَا وَاغْفِرْ لَنَا إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ۝﴾",
+      "latin": "Rabbanā atmim lanā nūranā wagh-fir lanā innaka ‘alā kulli shay'in qadīr.",
+      "explanationEs": "“¡Señor nuestro! Auméntanos nuestra luz y perdónanos. Tú eres sobre toda cosa poderoso”. (At-Tahrim: 8)",
       "note": "سورة التحريم من الآية 8",
-      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/066008.mp3"]
+      "audioUrls": [
+        "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/066008.mp3"
+      ]
     },
     {
       "itemNumber": 97,
-      text: '﴿رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِمَنْ دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَالمُؤْمِنَاتِ۝﴾',
-      latin: 'Rabbigh-fir lī wa li-wālidayya wa liman dakhala baytiya mu’minan wa lil-mu’minīna wal-mu’mināt.',
-      explanationEs: '“¡Señor mío! Perdóname a mí, a mis padres, a quien ingrese creyente a mi casa, y a todos los creyentes y creyentes.” (Nuh: 28)',
+      "text": "﴿رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِمَنْ دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَالمُؤْمِنَاتِ۝﴾",
+      "latin": "Rabbigh-fir lī wa li-wālidayya wa liman dakhala baytiya mu’minan wa lil-mu’minīna wal-mu’mināt.",
+      "explanationEs": "“¡Señor mío! Perdóname a mí, a mis padres, a quien ingrese creyente a mi casa, y a todos los creyentes y creyentes.” (Nuh: 28)",
       "note": "سورة نوح من الآية 28",
-      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/071028.mp3"]
+      "audioUrls": [
+        "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/071028.mp3"
+      ]
     },
     {
       "itemNumber": 98,
@@ -765,25 +781,27 @@ const adyaData = [
     },
     {
       "itemNumber": 99,
-      text: '﴿رَبِّ اغْفِرْ لِي وَلِأَخِي وَأَدْخِلْنَا فِي رَحْمَتِكَ وَأَنْتَ أَرْحَمُ الرَّاحِمِينَ۝﴾',
-      latin: 'Rabbigh-fir lī wa li-akhī wa adkhilnā fī raḥmatika wa Anta arḥamar-rāḥimīn.',
-      explanationEs: 'Dijo Moisés: “¡Señor mío! Perdona a mi hermano y a mí, y ten misericordia de nosotros. Tú eres el más Misericordioso”. (Al-A\'raf: 151)',
+      "text": "﴿رَبِّ اغْفِرْ لِي وَلِأَخِي وَأَدْخِلْنَا فِي رَحْمَتِكَ وَأَنْتَ أَرْحَمُ الرَّاحِمِينَ۝﴾",
+      "latin": "Rabbigh-fir lī wa li-akhī wa adkhilnā fī raḥmatika wa Anta arḥamar-rāḥimīn.",
+      "explanationEs": "“¡Señor mío! Perdona a mi hermano y a mí, y ten misericordia de nosotros. Tú eres el más Misericordioso”. (Al-A'raf: 151)",
       "note": "سورة الأعراف الآية 151",
-      "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007151.mp3"]
+      "audioUrls": [
+        "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007151.mp3"
+      ]
     },
     {
       "itemNumber": 100,
-      text: 'اللَّهُمَّ أَنْتَ رَبِّي، لَا إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي، فَاغْفِرْ لِي، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ.',
-      latin: 'Allāhumma Anta Rabbī, lā ilāha illā Ant, khalaqtanī wa anā ‘abduk, wa anā ‘alā ‘ahdika wa wa‘dika mā staṭa‘tu, a‘ūdhu bika min sharri mā ṣana‘t, abūʾu laka bi-ni‘matika ‘alayya, wa abū’u bi-dhanbī, fagh-fir lī, fa-innahū lā yaghfiru adh-dhunūba illā Ant.',
-      explanationEs: "¡Oh Allah! Tú eres mi Señor; no hay divinidad digna de adoración excepto Tú. Me creaste y soy Tu siervo; me mantengo en Tu pacto y promesa tanto como puedo. Me refugio en Ti del mal que he cometido. Reconozco ante Ti Tus favores sobre mí y reconozco mi pecado. Perdóname, pues nadie perdona los pecados sino Tú. (Súplica del perdón supremo; Sahih al-Bujari)",
-      note: 'سيد الاستغفار (صحيح البخاري)'
+      "text": "اللَّهُمَّ أَنْتَ رَبِّي، لَا إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي، فَاغْفِرْ لِي، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ.",
+      "latin": "Allāhumma Anta Rabbī, lā ilāha illā Anta, khalaqtanī wa anā ‘abduka, wa anā ‘alā ‘ahdika wa wa‘dika mā staṭa‘tu, a‘ūdhu bika min sharri mā ṣana‘tu, abūʾu laka bi-ni‘matika ‘alayya, wa abū’u bi-dhanbī, fagh-fir lī, fa-innahū lā yaghfiru adh-dhunūba illā Anta.",
+      "explanationEs": "¡Oh Allah! Tú eres mi Señor; no hay divinidad digna de adoración excepto Tú. Me creaste y soy Tu siervo; me mantengo en Tu pacto y promesa tanto como puedo. Me refugio en Ti del mal que he cometido. Reconozco ante Ti Tus favores sobre mí y reconozco mi pecado. Perdóname, pues nadie perdona los pecados sino Tú. (Súplica del perdón supremo; Sahih al-Bujari)",
+      "note": "سيد الاستغفار (صحيح البخاري)"
     },
     {
       "itemNumber": 101,
-      text: 'اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْمًا كَثِيرًا، وَلَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ، فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ، وَارْحَمْنِي، إِنَّكَ أَنْتَ الغَفُورُ الرَّحِيمُ.',
-      latin: 'Allāhumma innī ẓalamtu nafsī ẓulman kathīrā, wa lā yaghfiru adh-dhunūba illā Ant, fagh-fir lī maghfiratan min ‘indik, war-ḥamnī, innaka Antal-Ghafūrur-Raḥīm.',
-      explanationEs: 'Oh Allah, he sido muy injusto conmigo mismo, y nadie perdona los pecados sino Tú, así que perdóname con un perdón de Tu parte y ten misericordia de mí, pues Tú eres el Indulgente, el Misericordioso.',
-      note: 'صحيح البخاري ومسلم (دعاء أبي بكر الصديق)'
+      "text": "اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْمًا كَثِيرًا، وَلَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ، فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ، وَارْحَمْنِي، إِنَّكَ أَنْتَ الغَفُورُ الرَّحِيمُ.",
+      "latin": "Allāhumma innī ẓalamtu nafsī ẓulman kathīrā, wa lā yaghfiru adh-dhunūba illā Anta, fagh-fir lī maghfiratan min ‘indik, war-ḥamnī, innaka Antal-Ghafūrur-Raḥīm.",
+      "explanationEs": "Oh Allah, he sido muy injusto conmigo mismo, y nadie perdona los pecados sino Tú, así que perdóname con un perdón de Tu parte y ten misericordia de mí, pues Tú eres el Indulgente, el Misericordioso.",
+      "note": "صحيح البخاري ومسلم (دعاء أبي بكر الصديق)"
     },
     {
       "itemNumber": 102,
@@ -801,10 +819,10 @@ const adyaData = [
     },
     {
       "itemNumber": 104,
-      text: 'رَبِّ اغْفِرْ لِي وَتُبْ عَلَيَّ، إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ.',
-      latin: 'Rabbigh-fir lī wa tub ‘alay, innaka Antat-Tawwābur-Raḥīm.',
-      explanationEs: '¡Señor mío! Perdóname y acepta mi arrepentimiento, pues Ciertamente Tú eres el Indulgente, el Misericordioso.',
-      note: 'سنن أبي داود'
+      "text": "رَبِّ اغْفِرْ لِي وَتُبْ عَلَيَّ، إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ.",
+      "latin": "Rabbigh-fir lī wa tub ‘alay, innaka Antat-Tawwābur-Raḥīm.",
+      "explanationEs": "¡Señor mío! Perdóname y acepta mi arrepentimiento, pues ciertamente Tú eres Quien acepta el arrepentimiento, el Misericordioso.",
+      "note": "سنن أبي داود"
     },
     {
       "itemNumber": 105,
@@ -815,10 +833,10 @@ const adyaData = [
     },
     {
       "itemNumber": 106,
-      text: 'اللَّهُمَّ إِنِّي أَسْتَغْفِرُكَ مِنْ كُلِّ ذَنْبٍ أَذَنْبْتُهُ، وَأَتُوبُ إِلَيْكَ تَوْبَةً صَادِقَةً نَصُوحًا.',
-      latin: 'Allāhumma innī astaghfiruka min kulli dhanbin adhanabtuh, wa atūbu ilayka tawbatan ṣādiqatan naṣūḥā.',
-      explanationEs: 'Oh Allah, te pido perdón por cada pecado que cometí, y me arrepiento ante Ti con un arrepentimiento sincero y recto.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ إِنِّي أَسْتَغْفِرُكَ مِنْ كُلِّ ذَنْبٍ أَذْنَبْتُهُ، وَأَتُوبُ إِلَيْكَ تَوْبَةً صَادِقَةً نَصُوحًا.",
+      "latin": "Allāhumma innī astaghfiruka min kulli dhanbin adhanabtuhu, wa atūbu ilayka tawbatan ṣādiqatan naṣūḥā.",
+      "explanationEs": "Oh Allah, te pido perdón por cada pecado que cometí, y me arrepiento ante Ti con un arrepentimiento sincero y recto.",
+      "note": "صيغة عامة مقترحة"
     },
     {
       "itemNumber": 107,
@@ -885,10 +903,10 @@ const adyaData = [
     },
     {
       "itemNumber": 116,
-      text: 'اللَّهُمَّ اغْفِرْ لِي مَا كَانَ مِنَّي مِنْ تَقْصِيرٍ فِي حَقِّكَ وَحَقِّ عِبَادِكَ، وَأَعِنِّي عَلَى رَدِّ الحُقُوقِ إِلَى أَهْلِهَا.',
-      latin: 'Allāhummagh-fir lī mā kāna minnī min taqṣīrin fī ḥaqqika wa ḥaqqi ‘ibādik, wa a‘innī ‘alā raddil-ḥuqūqi ilā ahlihā.',
-      explanationEs: 'Oh Allah, perdona lo que haya cometido de negligencia en Tu derecho y el de Tus siervos, y ayúdame a devolver los derechos a sus dueños.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ اغْفِرْ لِي مَا كَانَ مِنَّي مِنْ تَقْصِيرٍ فِي حَقِّكَ وَحَقِّ عِبَادِكَ، وَأَعِنِّي عَلَى رَدِّ الحُقُوقِ إِلَى أَهْلِهَا.",
+      "latin": "Allāhummagh-fir lī mā kāna minnī min taqṣīrin fī ḥaqqika wa ḥaqqi ‘ibādik, wa a‘innī ‘alā raddil-ḥuqūqi ilā ahlihā.",
+      "explanationEs": "¡Oh Allah! Perdona cualquier negligencia en la que haya incurrido respecto a los derechos que Te corresponden y a los derechos de Tus siervos, y ayúdame a devolver a cada uno lo que le corresponde.",
+      "note": "صيغة عامة مقترحة"
     },
     {
       "itemNumber": 117,
@@ -906,10 +924,10 @@ const adyaData = [
     },
     {
       "itemNumber": 119,
-      text: 'اللَّهُمَّ ارْزُقْنِي النَّدَمَ الصَّادِقَ عَلَى الذُّنُوبِ، وَالعَزْمَ عَلَى عَدَمِ العَوْدَةِ إِلَيْهَا، وَالثَّبَاتَ عَلَى طَاعَتِكَ.',
-      latin: 'Allāhummar-zuqnin-nadamas-ṣādiqa ‘alad-dhunūb, wal-‘azma ‘alā ‘adamil-‘awdati ilayhā, wash-thabāta ‘alā ṭā‘atik.',
-      explanationEs: 'Oh Allah, concédeme un arrepentimiento sincero por los pecados, la firmeza de no volver a ellos y la constancia en Tu obediencia.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ ارْزُقْنِي النَّدَمَ الصَّادِقَ عَلَى الذُّنُوبِ، وَالعَزْمَ عَلَى عَدَمِ العَوْدَةِ إِلَيْهَا، وَالثَّبَاتَ عَلَى طَاعَتِكَ.",
+      "latin": "Allāhummar-zuqnin-nadamas-ṣādiqa ‘alad-dhunūb, wal-‘azma ‘alā ‘adamil-‘awdati ilayhā, wash-thabāta ‘alā ṭā‘atik.",
+      "explanationEs": "¡Oh Allah! Concédeme un remordimiento sincero por mis pecados, la firme resolución de no volver a cometerlos y la constancia en Tu obediencia.",
+      "note": "صيغة عامة مقترحة"
     },
     {
       "itemNumber": 120,
@@ -920,10 +938,10 @@ const adyaData = [
     },
     {
       "itemNumber": 121,
-      text: 'اللَّهُمَّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِأَهْلِي وَلِلْمُؤْمِنِينَ وَالمُؤْمِنَاتِ، الأَحْيَاءِ مِنْهُمْ وَالأَمْوَاتِ.',
-      latin: 'Allāhummagh-fir lī wa li-wālidayya wa li-ahlī wa lil-mu’minīna wal-mu’mināt, al-aḥyā’i minhum wal-amwāt.',
-      explanationEs: 'Oh Allah, perdona a mí, a mis padres, a mi familia, a los creyentes y a las creyentes, tanto a los vivos como a los muertos.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِأَهْلِي وَلِلْمُؤْمِنِينَ وَالمُؤْمِنَاتِ، الأَحْيَاءِ مِنْهُمْ وَالأَمْوَاتِ.",
+      "latin": "Allāhummagh-fir lī wa li-wālidayya wa li-ahlī wa lil-mu’minīna wal-mu’mināt, al-aḥyā’i minhum wal-amwāt.",
+      "explanationEs": "¡Oh Allah! Perdóname a mí, a mis padres, a mi familia, a los creyentes y a las creyentes, tanto a los vivos como a los fallecidos.",
+      "note": "صيغة عامة مقترحة"
     },
     {
       "itemNumber": 122,
@@ -955,10 +973,10 @@ const adyaData = [
     },
     {
       "itemNumber": 126,
-      text: 'اللَّهُمَّ اغْفِرْ لِي وَارْحَمْنِي وَتُبْ عَلَيَّ، إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ.',
-      latin: 'Allāhummagh-fir lī war-ḥamnī wa tub ‘alayya, innaka Antat-Tawwābur-Raḥīm.',
-      explanationEs: 'Oh Allah, perdóname, ten misericordia de mí y acoge mi arrepentimiento, pues Ciertamente Tú eres el Indulgente, el Misericordioso.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ اغْفِرْ لِي وَارْحَمْنِي وَتُبْ عَلَيَّ، إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ.",
+      "latin": "Allāhummagh-fir lī war-ḥamnī wa tub ‘alayya, innaka Antat-Tawwābur-Raḥīm.",
+      "explanationEs": "¡Oh Allah! Perdóname, ten misericordia de mí y acepta mi arrepentimiento. Ciertamente, Tú eres Quien acepta el arrepentimiento, el Misericordioso.",
+      "note": "صيغة عامة مقترحة"
     },
     {
       "itemNumber": 127,
@@ -969,10 +987,10 @@ const adyaData = [
     },
     {
       "itemNumber": 128,
-      text: 'اللَّهُمَّ ارْزُقْنِي تَوْبَةً لَا أَرْجِعُ بَعْدَهَا إِلَى المَعْصِيَةِ، وَثَبِّتْنِي عَلَى طَاعَتِكَ مَا حَيِيتُ.',
-      latin: 'Allāhummar-zuq-nī tawbatan lā arji‘u ba‘dahā ilal-ma‘āṣiyah, wa thabbitnī ‘alā ṭā‘atika mā ḥayīt.',
-      explanationEs: 'Oh Allah, concédeme un arrepentimiento tras el cual no vuelva al pecado, y manténme firme en Tu obediencia mientras viva.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ ارْزُقْنِي تَوْبَةً لَا أَرْجِعُ بَعْدَهَا إِلَى المَعْصِيَةِ، وَثَبِّتْنِي عَلَى طَاعَتِكَ مَا حَيِيتُ.",
+      "latin": "Allāhummar-zuq-nī tawbatan lā arji‘u ba‘dahā ilal-ma‘āṣiyah, wa thabbitnī ‘alā ṭā‘atika mā ḥayīt.",
+      "explanationEs": "¡Oh Allah! Concédeme un arrepentimiento tras el cual no vuelva a cometer pecados, y mantenme firme en Tu obediencia mientras viva.",
+      "note": "صيغة عامة مقترحة"
     }
 	]
 	},
