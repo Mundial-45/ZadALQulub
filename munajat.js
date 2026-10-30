@@ -250,7 +250,7 @@ const munajatData = [
       {
         itemNumber: 39,
         text: "يَا إِلَهِي، كَيْفَ يُحِيطُ بِكَ عَقْلٌ أَنْتَ خَلَقْتَهُ؟ أَمْ كَيْفَ يُدْرِكُكَ بَصَرٌ أَنْتَ شَقَقْتَهُ؟ أَمْ كَيْفَ يَدْنُو مِنْكَ فِكْرٌ أَنْتَ وَفَّقْتَهُ؟ أَمْ كَيْفَ يُحْصِي الثَّنَاءَ عَلَيْكَ لِسَانٌ أَنْتَ خَلَقْتَهُ وَأَنْطَقْتَهُ؟ إِلَهِي، كَيْفَ يُنَاجِيكَ فِي الصَّلَوَاتِ مَنْ يَعْصِيكَ فِي الْخَلَوَاتِ؟ أَمْ كَيْفَ يَدْعُوكَ فِي الْحَاجَاتِ وَالْكُرُبَاتِ مَنْ يَنْسَاكَ عِنْدَ النَّعْمَاءِ، لَوْلَا فَضْلُكَ؟",
-        latin: "Yā ilāhī, kayfa yuḥīṭu bika ‘aqlun Anta khalaqtah? Am kayfa yudrikuka baṣarun Anta shahaqtah? Am kayfa yadnū minka fikrun Anta waffaqtah? Am kayfa yuḥṣīs-thanā'a ‘alayka lisānun Anta khalaqtahu wa anṭaqtah? Ilāhī, kayfa yunājīka fīṣ-ṣalawāti man ya‘ṣīka fīl-khalawāt? Am kayfa yad‘ūka fīl-ḥājāti wal-kurubāti man yansāka ‘indan-na‘mā', lowlā faḍluk?",
+        latin: "Yā ilāhī, kayfa yuḥīṭu bika ‘aqlun Anta khalaqtah? Am kayfa yudrikuka baṣarun Anta shaqaqtah? Am kayfa yadnū minka fikrun Anta waffaqtah? Am kayfa yuḥṣīs-thanā'a ‘alayka lisānun Anta khalaqtahu wa anṭaqtah? Ilāhī, kayfa yunājīka fīṣ-ṣalawāti man ya‘ṣīka fīl-khalawāt? Am kayfa yad‘ūka fīl-ḥājāti wal-kurubāti man yansāka ‘indan-na‘mā', lowlā faḍluk?",
         explanationEs: "¡Oh Allah mío! ¿Cómo va a abarcarte una mente que Tú creaste? ¿O cómo va a percibirte una mirada que Tú abriste? ¿O cómo va a acercarse a Ti un pensamiento que Tú guiaste? ¿O cómo va a enumerar las alabanzas hacia Ti una lengua que Tú creaste y dotaste del habla? ¡Oh Allah mío!, ¿cómo va a invocarte en las oraciones quien te desobedece en la intimidad? ¿O cómo va a llamarte en las necesidades y las tribulaciones quien te olvida en los momentos de bonanza, si no fuera por Tu favor?"
       },
       {
