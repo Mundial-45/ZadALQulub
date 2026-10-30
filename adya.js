@@ -236,10 +236,10 @@ const adyaData = [
     },
     {
       "itemNumber": 29,
-      text: 'رَبِّ اغْفِرْ لِي خَطِيئَتِي وَجَهْلِي وَإِسْرَافِي فِي أَمْرِي كُلِّهِ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي، اللَّهُمَّ اغْفِرْ لِي خَطَايَايَ وَعَمْدِي وَجَهْلِي وَهَزْلِي، وَكُلُّ ذَلِكَ عِنْدِي، اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ وَأَنْتَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.',
-      latin: 'Rabbigh-fir lī khaṭī’atī wa jahlī wa isrāfī fī amrī kullihī wa mā Anta a‘lamu bihī minnī, Allāhummagh-fir lī khaṭāyāya wa ‘amdī wa jahlī wa hazlī, wa kullu dhālika ‘indī, Allāhummagh-fir lī mā qaddamtu wa mā akhkhartu wa mā asrartu wa mā a‘lantu, Antal-Muqaddimu wa Antal-Mu’akhkhiru wa Anta ‘alā kulli shayʾin qadīr.',
-      explanationEs: 'Señor mío, perdona mis faltas, mi ignorancia y mis excesos en todos mis asuntos. ¡Oh Allah! Perdona mis errores, mis actos deliberados, mi ignorancia y mis bromas. Perdona lo que he hecho en el pasado y lo que haga en el futuro, lo oculto y lo manifiesto. Tú eres Quien adelanta y Quien retrasa, y sobre toda cosa eres Todopoderoso. (Bujari y Muslim)',
-      note: 'رواه البخاري ومسلم'
+      "text": "رَبِّ اغْفِرْ لِي خَطِيئَتِي وَجَهْلِي وَإِسْرَافِي فِي أَمْرِي كُلِّهِ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي، اللَّهُمَّ اغْفِرْ لِي خَطَايَايَ وَعَمْدِي وَجَهْلِي وَهَزْلِي، وَكُلُّ ذَلِكَ عِنْدِي، اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ وَأَنْتَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
+      "latin": "Rabbigh-fir lī khaṭī’atī wa jahlī wa isrāfī fī amrī kullihī wa mā Anta a‘lamu bihī minnī, Allāhummagh-fir lī khaṭāyāya wa ‘amdī wa jahlī wa hazlī, wa kullu dhālika ‘indī, Allāhummagh-fir lī mā qaddamtu wa mā akhkhartu wa mā asrartu wa mā a‘lantu, Antal-Muqaddimu wa Antal-Mu’akhkhiru wa Anta ‘alā kulli shayʾin qadīr.",
+      "explanationEs": "«Señor mío, perdona mi falta, mi ignorancia, mi exceso en todos mis asuntos y todo aquello que Tú conoces mejor que yo. Oh Allah, perdona mis errores, mis actos deliberados, mi ignorancia y mis bromas, pues todo ello está en mí. Oh Allah, perdona lo que he adelantado y lo que he retrasado, lo que he ocultado y lo que he manifestado; Tú eres Quien adelanta y Tú eres Quien retrasa, y Tú eres sobre toda cosa Omnipotente».\n(Bujari y Muslim)",
+      "note": "رواه البخاري ومسلم"
     },
     {
       "itemNumber": 30,
@@ -264,17 +264,17 @@ const adyaData = [
     },
     {
       "itemNumber": 33,
-      text: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكَسَلِ وَالْهَرَمِ وَالْمَأْثَمِ وَالْمَغْرَمِ، وَمِنْ فِتْنَةِ الْقَبْرِ وَعَذَابِ الْقَبْرِ، وَمِنْ فِتْنَةِ النَّارِ وَعَذَابِ النَّارِ، وَمِنْ شَرِّ فِتْنَةِ الْغِنَى، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْفَقْرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ، اللَّهُمَّ اغْسِلْ عَنِّي خَطَايَايَ بِمَاءِ الثَّلْجِ وَالْبَرَدِ، وَنَقِّ قَلْبِي مِنَ الْخَطَايَا كَمَا نَقَّيْتَ الثَّوْبَ الْأَبْيَضَ مِنَ الدَّنَسِ، وَبَاعِدْ بَيْنِي وَبَيْنَ خَطَايَايَ كَمَا بَاعَدْتَ بَيْنَ الْمَشْرِقِ وَالْمَغْرِبِ.',
-      latin: 'Allāhumma innī a‘ūdhu bika minal-kasali wal-harami wal-ma’thami wal-maghram, wa min fitnatil-qabri wa ‘adhābil-qabr, wa min fitnatin-nāri wa ‘adhābin-nār, wa min sharri fitnatil-ghinā, wa a‘ūdhu bika min fitnatil-faqr, wa a‘ūdhu bika min fitnatil-masīḥid-dajjāl. Allāhummag-sil ‘annī khaṭāyāya bi-mā’ith-thalji wal-barad, wa naqqi qalbī minal-khaṭāyā kamā naqqaytat-thawbal-abyaḍa minad-danas, wa bā‘id baynī wa bayna khaṭāyāya kamā bā‘adta baynal-mashriqi wal-maghrib.',
-      explanationEs: '¡Oh Allah! Me refugio en Ti de la pereza, la vejez extrema, el pecado, las deudas agobiantes, la prueba y castigo de la tumba, la prueba y castigo del Fuego, y el mal de las pruebas de la riqueza, la pobreza y del Falso Mesías. Lava mis pecados con agua, nieve y granizo, y purifica mi corazón. (Bujari y Muslim)',
-      note: 'رواه البخاري ومسلم'
+      "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكَسَلِ وَالْهَرَمِ وَالْمَأْثَمِ وَالْمَغْرَمِ، وَمِنْ فِتْنَةِ الْقَبْرِ وَعَذَابِ الْقَبْرِ، وَمِنْ فِتْنَةِ النَّارِ وَعَذَابِ النَّارِ، وَمِنْ شَرِّ فِتْنَةِ الْغِنَى، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْفَقْرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ، اللَّهُمَّ اغْسِلْ عَنِّي خَطَايَايَ بِمَاءِ الثَّلْجِ وَالْبَرَدِ، وَنَقِّ قَلْبِي مِنَ الْخَطَايَا كَمَا نَقَّيْتَ الثَّوْبَ الْأَبْيَضَ مِنَ الدَّنَسِ، وَبَاعِدْ بَيْنِي وَبَيْنَ خَطَايَايَ كَمَا بَاعَدْتَ بَيْنَ الْمَشْرِقِ وَالْمَغْرِبِ.",
+      "latin": "Allāhumma innī a‘ūdhu bika minal-kasali wal-harami wal-ma’thami wal-maghram, wa min fitnatil-qabri wa ‘adhābil-qabr, wa min fitnatin-nāri wa ‘adhābin-nār, wa min sharri fitnatil-ghinā, wa a‘ūdhu bika min fitnatil-faqr, wa a‘ūdhu bika min fitnatil-masīḥid-dajjāl. Allāhummag-sil ‘annī khaṭāyāya bi-mā’ith-thalji wal-barad, wa naqqi qalbī minal-khaṭāyā kamā naqqaytat-thawbal-abyaḍa minad-danas, wa bā‘id baynī wa bayna khaṭāyāya kamā bā‘adta baynal-mashriqi wal-maghrib.",
+      "explanationEs": "«Oh Allah, me refugio en Ti de la pereza, la vejez extrema, el pecado, las deudas, la prueba de la tumba, el castigo de la tumba, la prueba del Fuego, el castigo del Fuego, y del mal de la prueba de la riqueza; me refugio en Ti de la prueba de la pobreza, y me refugio en Ti de la prueba del Falso Mesías. Oh Allah, lava mis faltas con agua de nieve y granizo, limpia mi corazón de los pecados así como limpias la vestidura blanca de la impureza, y aleja entre mí y mis faltas así como has alejado entre el Oriente y el Occidente».\n",
+      "note": "رواه البخاري ومسلم"
     },
     {
       "itemNumber": 34,
-      text: 'اللَّهُمَّ رَبَّ السَّمَوَاتِ وَرَبَّ الْأَرْضِ وَرَبَّ الْعَرْشِ الْعَظِيمِ، رَبَّنَا وَرَبَّ كُلِّ شَيْءٍ، فَالِقَ الْحَبِّ وَالنَّوَى وَمُنْزِلَ التَّوْرَاةِ وَالْإِنْجِيلِ وَالْفُرْقَانِ، أَعُوذُ بِكَ مِنْ شَرِّ كُلِّ شَيْءٍ أَنْتَ آخِذٌ بِنَاصِيَتهِِ، اللَّهُمَّ أَنْتَ الْأوََّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ الْآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ، وَأَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، وَأَنْتَ الْبَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، اقْضِ عَنَّا الدَّيْنَ وَأَغْنِنَا مِنَ الْفَقْرِ.',
-      latin: 'Allāhumma Rabbas-samāwāti wa Rabbal-arḍi wa Rabbal-‘arshil-‘aẓīm, Rabbanā wa Rabba kulli shay\', Fāliqal-ḥabbi wan-nawā wa Munzilat-Tawrāti wal-Injīli wal-Furqān, a‘ūdhu bika min sharri kulli shay\'in Anta ākhidhun bi-nāṣiyatih. Allāhumma Antal-Awwalu fa-laysa qablaka shay\', wa Antal-Ākhiru fa-laysa ba‘daka shay\', wa Antaẓ-Ẓāhiru fa-laysa fawqaka shay\', wa Antal-Bāṭinu fa-laysa dūnaka shay\', iqḍi ‘annad-dayna wa aghninā minal-faqr.',
-      explanationEs: '¡Oh Allah! Señor de los cielos, de la tierra y del Grandioso Trono. Creador del grano y del hueso, Revelador de la Torá, del Evangelio y del Corán. Me refugio en Ti del mal de toda criatura bajo Tu dominio. Tú eres el Primero, el Último, el Evidente y el Oculto. Salda nuestras deudas y líbranos de la pobreza. (Muslim)',
-      note: 'رواه مسلم'
+      "text": "اللَّهُمَّ رَبَّ السَّمَوَاتِ وَرَبَّ الْأَرْضِ وَرَبَّ الْعَرْشِ الْعَظِيمِ، رَبَّنَا وَرَبَّ كُلِّ شَيْءٍ، فَالِقَ الْحَبِّ وَالنَّوَى وَمُنْزِلَ التَّوْرَاةِ وَالْإِنْجِيلِ وَالْفُرْقَانِ، أَعُوذُ بِكَ مِنْ شَرِّ كُلِّ شَيْءٍ أَنْتَ آخِذٌ بِنَاصِيَتهِِ، اللَّهُمَّ أَنْتَ الْأوََّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ الْآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ، وَأَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، وَأَنْتَ الْبَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، اقْضِ عَنَّا الدَّيْنَ وَأَغْنِنَا مِنَ الْفَقْرِ.",
+      "latin": "Allāhumma Rabbas-samāwāti wa Rabbal-arḍi wa Rabbal-‘arshil-‘aẓīm, Rabbanā wa Rabba kulli shay', Fāliqal-ḥabbi wan-nawā wa Munzilat-Tawrāti wal-Injīli wal-Furqān, a‘ūdhu bika min sharri kulli shay'in Anta ākhidhun bi-nāṣiyatih. Allāhumma Antal-Awwalu fa-laysa qablaka shay', wa Antal-Ākhiru fa-laysa ba‘daka shay', wa Antaẓ-Ẓāhiru fa-laysa fawqaka shay', wa Antal-Bāṭinu fa-laysa dūnaka shay', iqḍi ‘annad-dayna wa aghninā minal-faqr.",
+      "explanationEs": "«Oh Allah, me refugio en Ti de la pereza, la vejez extrema, el pecado, las deudas, la prueba de la tumba, el castigo de la tumba, la prueba del Fuego, el castigo del Fuego, y del mal de la prueba de la riqueza; me refugio en Ti de la prueba de la pobreza, y me refugio en Ti de la prueba del Falso Mesías. Oh Allah, lava mis faltas con agua de nieve y granizo, limpia mi corazón de los pecados así como limpias la vestidura blanca de la impureza, y aleja entre mí y mis faltas así como has alejado entre el Oriente y el Occidente».\n(Muslim)",
+      "note": "رواه مسلم"
     },
     {
       "itemNumber": 35,
@@ -306,10 +306,10 @@ const adyaData = [
     },
     {
       "itemNumber": 39,
-      text: 'اللَّهُمَّ لَكَ أَسْلَمْتُ وَبِكَ آمَنْتُ، وَعَلَيْكَ تَوَكَّلْتُ وَإِلَيْكَ أَنَبْتُ وَبِكَ خَاصَمْتُ، اللَّهُمَّ إِنِّي أَعُوذُ بِعِزَّتِكَ لَا إِلَهَ إِلَّا أَنْتَ أَنْ تُضِلَّنيِ، أَنْتَ الْحَيُّ الَّذِي لَا يَمُوتُ وَالْجِنُّ وَالْإِنْسُ يَمُوتُونَ.',
-      latin: 'Allāhumma laka aslamtu wa bika āmantu, wa ‘alayka tawakkaltu wa ilayka anabtu wa bika khāṣamtu. Allāhumma innī a‘ūdhu bi-‘izzatika lā ilāha illā Anta an tuḍillanī, Antal-Ḥayyulladhī lā yamūtu wal-jinnu wal-insu yamūtūn.',
-      explanationEs: '¡Oh Allah! A Ti me he sometido, en Ti he creído, en Ti he confiado y a Ti retorno. Me refugio en Tu poderío de que me extravíes, no hay más divinidad que Tú. Tú eres el Viviente que nunca muere, mientras que los genios y los humanos mueren. (Bujari y Muslim)',
-      note: 'رواه البخاري ومسلم'
+      "text": "اللَّهُمَّ لَكَ أَسْلَمْتُ وَبِكَ آمَنْتُ، وَعَلَيْكَ تَوَكَّلْتُ وَإِلَيْكَ أَنَبْتُ وَبِكَ خَاصَمْتُ، اللَّهُمَّ إِنِّي أَعُوذُ بِعِزَّتِكَ لَا إِلَهَ إِلَّا أَنْتَ أَنْ تُضِلَّنيِ، أَنْتَ الْحَيُّ الَّذِي لَا يَمُوتُ وَالْجِنُّ وَالْإِنْسُ يَمُوتُونَ.",
+      "latin": "Allāhumma laka aslamtu wa bika āmantu, wa ‘alayka tawakkaltu wa ilayka anabtu wa bika khāṣamtu. Allāhumma innī a‘ūdhu bi-‘izzatika lā ilāha illā Anta an tuḍillanī, Antal-Ḥayyulladhī lā yamūtu wal-jinnu wal-insu yamūtūn.",
+      "explanationEs": "«Oh Allah, a Ti me he sometido, en Ti he creído, en Ti confío, hacia Ti me vuelvo y por Ti discuto [en Tu causa]. Oh Allah, me refugio en Tu poder —no hay divinidad sino Tú— de que me extravíes. Tú eres el Viviente que no muere, mientras que los genios y los hombres mueren».\n",
+      "note": "رواه البخاري ومسلم"
     },
     {
       "itemNumber": 40,
@@ -334,10 +334,10 @@ const adyaData = [
     },
     {
       "itemNumber": 43,
-      text: 'اللَّهُمَّ إِنِّي أَعُوذُ بِرِضَاكَ مِنْ سَخَطِكَ، وَبِمُعَافَاتِكَ مِنْ عُقُوبَتِكَ، وَأَعُوذُ بِكَ مِنْكَ، لَا أُحْصِي ثَنَاءً عَلَيْكَ، أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ.',
-      latin: 'Allāhumma innī a‘ūdhu bi-riḍāka min sakhaṭika, wa bi-mu‘āfātika min ‘uqūbatika, wa a‘ūdhu bika minka, lā uḥṣī thanā’an ‘alayka, Anta kamā athnayta ‘alā nafsik.',
-      explanationEs: '¡Oh Allah! Me refugio en Tu complacencia de Tu enojo, en Tu perdón de Tu castigo, y me refugio en Ti de Ti. No puedo enumerar Tus alabanzas; Tú eres tal como Te has alabado a Ti mismo. (Muslim)',
-      note: 'رواه مسلم'
+      "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِرِضَاكَ مِنْ سَخَطِكَ، وَبِمُعَافَاتِكَ مِنْ عُقُوبَتِكَ، وَأَعُوذُ بِكَ مِنْكَ، لَا أُحْصِي ثَنَاءً عَلَيْكَ، أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ.",
+      "latin": "Allāhumma innī a‘ūdhu bi-riḍāka min sakhaṭika, wa bi-mu‘āfātika min ‘uqūbatika, wa a‘ūdhu bika minka, lā uḥṣī thanā’an ‘alayka, Anta kamā athnayta ‘alā nafsik.",
+      "explanationEs": "«Oh Allah, me refugio en Tu complacencia de Tu ira, y en Tu perdón de Tu castigo, y me refugio en Ti de Ti. No puedo enumerar los elogios debidos a Ti; Tú eres tal como Te has elogiado a Ti mismo».\n",
+      "note": "رواه مسلم"
     },
     {
       "itemNumber": 44,
@@ -376,17 +376,17 @@ const adyaData = [
     },
     {
       "itemNumber": 49,
-      text: 'اللَّهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ، فَاطِرَ السَّمَوَاتِ وَالْأَرْضِ، رَبَّ كُلِّ شَيْءٍ وَمَلِيكَهُ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا أَنْتَ، أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي وَشَرِّ الشَّيْطَانِ وَشِرْكِهِ.',
-      latin: 'Allāhumma ‘ālimal-ghaybi wash-shahādati, Fāṭiras-samāwāti wal-arḍ, Rabba kulli shayʾin wa malīkah, ash-hadu an lā ilāha illā Ant, a‘ūdhu bika min sharri nafsī wa sharrish-shayṭāni wa shirkih.',
-      explanationEs: '¡Oh Allah! Conocedor de lo oculto y de lo manifiesto, Creador de los cielos y de la tierra, Señor y Poseedor de todas las cosas. Testifico que no hay más divinidad que Tú; me refugio en Ti del mal de mi alma y del mal del Satán. (Tirmidhi)',
-      note: 'رواه الترمذي (إسناد صحيح)'
+      "text": "اللَّهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ، فَاطِرَ السَّمَوَاتِ وَالْأَرْضِ، رَبَّ كُلِّ شَيْءٍ وَمَلِيكَهُ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا أَنْتَ، أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي وَشَرِّ الشَّيْطَانِ وَشِرْكِهِ.",
+      "latin": "Allāhumma ‘ālimal-ghaybi wash-shahādati, Fāṭiras-samāwāti wal-arḍ, Rabba kulli shayʾin wa malīkah, ash-hadu an lā ilāha illā Ant, a‘ūdhu bika min sharri nafsī wa sharrish-shayṭāni wa shirkih.",
+      "explanationEs": "«Oh Allah, Conocedor de lo oculto y de lo manifiesto, Creador de los cielos y de la tierra, Señor y Soberano de todo: testifico que no hay divinidad sino Tú. Me refugio en Ti del mal de mi alma, del mal del Demonio y de su asociación [de socios junto a Allah]».\n",
+      "note": "رواه الترمذي (إسناد صحيح)"
     },
     {
       "itemNumber": 50,
-      text: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ الثَّبَاتَ فِي الأَمْرِ، وَالْعَزِيمَةَ عَلَى الرُّشْدِ، وَأَسْأَلُكَ مُوجِبَاتِ رَحْمَتكَِ، وَعَزَائمَِ مَغْفِرَتكَِ، وَأسَْألَكَُ شُكْرَ نعِْمَتكَِ، وَحُسْنَ عِباَدَتكَِ، وَأسَْألَكَُ قَلْبًا سَلِيمًا، وَلِسَانًا صَادِقًا، وَأَسْأَلُكَ مِنْ خَيْرِ مَا تَعْلَمُ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا تَعْلَمُ، وَأَسْتَغْفِرُكَ لِمَا تَعْلَمُ، إِنَّكَ أَنْتَ عَلَّامُ الْغُيُوبِ.',
-      latin: 'Allāhumma innī as’alukat-thabāta fil-amri wal-‘azīmata ‘alar-rushd, wa as’aluka mūjibāti raḥmatika wa ‘azā’ima maghfiratik, wa as’aluka shukra ni‘matik, wa ḥusna ‘ibādatik, wa as’aluka qalban salīmā wa lisānan ṣādiqā, wa as’aluka min khayri mā ta‘lam, wa a‘ūdhu bika min sharri mā ta‘lam, wa astaghfiruka limā ta‘lam, innaka Anta ‘Allāmul-ghuyūb.',
-      explanationEs: '¡Oh Allah! Te pido la firmeza en los asuntos y la determinación hacia la rectitud. Te pido lo que atraiga Tu misericordia y las decisiones de Tu perdón, el agradecimiento por Tus favores, la excelencia en Tu adoración, un corazón puro, una lengua sincera, lo mejor de lo que conoces, me refugio en Ti del mal que conoces y pido Tu perdón por lo que conoces. Ciertamente Tú eres el Omnisciente de lo oculto. (Tabarani)',
-      note: 'رواه الطبراني في الكبير'
+      "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الثَّبَاتَ فِي الأَمْرِ، وَالْعَزِيمَةَ عَلَى الرُّشْدِ، وَأَسْأَلُكَ مُوجِبَاتِ رَحْمَتكَِ، وَعَزَائمَِ مَغْفِرَتكَِ، وَأسَْألَكَُ شُكْرَ نعِْمَتكَِ، وَحُسْنَ عِباَدَتكَِ، وَأسَْألَكَُ قَلْبًا سَلِيمًا، وَلِسَانًا صَادِقًا، وَأَسْأَلُكَ مِنْ خَيْرِ مَا تَعْلَمُ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا تَعْلَمُ، وَأَسْتَغْفِرُكَ لِمَا تَعْلَمُ، إِنَّكَ أَنْتَ عَلَّامُ الْغُيُوبِ.",
+      "latin": "Allāhumma innī as’alukat-thabāta fil-amri wal-‘azīmata ‘alar-rushd, wa as’aluka mūjibāti raḥmatika wa ‘azā’ima maghfiratik, wa as’aluka shukra ni‘matik, wa ḥusna ‘ibādatik, wa as’aluka qalban salīmā wa lisānan ṣādiqā, wa as’aluka min khayri mā ta‘lam, wa a‘ūdhu bika min sharri mā ta‘lam, wa astaghfiruka limā ta‘lam, innaka Anta ‘Allāmul-ghuyūb.",
+      "explanationEs": "«Oh Allah, te pido firmeza en el asunto, determinación en la guía, te pido las causas que atraen Tu misericordia, las resoluciones de Tu perdón, te pido la gratitud por Tu gracia y la excelencia en Tu adoración. Te pido un corazón sano y una lengua veraz. Te pido del bien que sabes y me refugio en Ti del mal que sabes, y te busco el perdón por lo que sabes; ciertamente, Tú eres el Conocedor de lo oculto».\n",
+      "note": "رواه الطبراني في الكبير"
     },
     {
       "itemNumber": 51,
@@ -404,10 +404,10 @@ const adyaData = [
     },
     {
       "itemNumber": 53,
-      text: 'رَبِّ أَعِنِّي وَلَا تُعِنْ عَلَيَّ، وَانْصُرْنِي وَلَا تَنْصُرْ عَلَيَّ، وَامْكُرْ لِي وَلَا تَمْكُرْ عَلَيَّ، وَاهْدِنيِ وَيَسِّرِ الْهُدَى لِي، وَانْصُرْنِي عَلَى مَنْ بَغَى عَلَيَّ، رَبِّ اجْعَلْنِي لَكَ شَكَّارًا، لَكَ ذَكَّارًا، لَكَ رَهَّابًا، لَكَ مِطْوَاعًا، لَكَ مُخْبِتًا إِلَيْكَ أَوَّاهًا مُنِيبًا، رَبِّ تَقَبَّلْ تَوْبَتِي وَاغْسِلْ حَوْبَتِي وَأَجِبْ دَعْوَتِي وَثَبِّتْ حُجَّتِي وَسَدِّدْ لِسَانِي وَاهْدِ قَلْبِي وَاسْلُلْ سَخِيمَةَ صَدْرِي.',
-      latin: 'Rabbi a‘innī wa lā tu‘in ‘alayy, wan-ṣurnī wa lā tanṣur ‘alayy, wam-kur lī wa lā tamkur ‘alayy, wah-dinī wa yassiril-hudā lī, wan-ṣurnī ‘alā man baghā ‘alayy. Rabbi ij-‘alnī laka shakkārā, laka dhakkārā, laka rahhābā, laka miṭwā‘ā, laka mukhbitan ilayka awwāhan munībā. Rabbi taqabbal tawbatī wagh-sil ḥawbatī wa ajib da‘watī wa thabbit ḥujjatī wa saddid lisānī wah-di qalbī was-lul sakhīmata ṣadrī.',
-      explanationEs: 'Señor mío, ayúdame y no prestes ayuda contra mí; concédeme la victoria y no la concedas en mi contra; guíame y facilítame la guía; ayúdame contra quien me oprime. Señor mío, hazme muy agradecido a Ti, muy recordador de Ti, temeroso de Ti, obediente a Ti, humilde y arrepentido ante Ti. Acepta mi arrepentimiento, lava mi pecado, responde a mi súplica, afirma mi prueba, guía mi lengua, orienta mi corazón y quita la rencor de mi pecho. (Tirmidhi)',
-      note: 'رواه الترمذي (إسناد صحيح)'
+      "text": "رَبِّ أَعِنِّي وَلَا تُعِنْ عَلَيَّ، وَانْصُرْنِي وَلَا تَنْصُرْ عَلَيَّ، وَامْكُرْ لِي وَلَا تَمْكُرْ عَلَيَّ، وَاهْدِنيِ وَيَسِّرِ الْهُدَى لِي، وَانْصُرْنِي عَلَى مَنْ بَغَى عَلَيَّ، رَبِّ اجْعَلْنِي لَكَ شَكَّارًا، لَكَ ذَكَّارًا، لَكَ رَهَّابًا، لَكَ مِطْوَاعًا، لَكَ مُخْبِتًا إِلَيْكَ أَوَّاهًا مُنِيبًا، رَبِّ تَقَبَّلْ تَوْبَتِي وَاغْسِلْ حَوْبَتِي وَأَجِبْ دَعْوَتِي وَثَبِّتْ حُجَّتِي وَسَدِّدْ لِسَانِي وَاهْدِ قَلْبِي وَاسْلُلْ سَخِيمَةَ صَدْرِي.",
+      "latin": "Rabbi a‘innī wa lā tu‘in ‘alayy, wan-ṣurnī wa lā tanṣur ‘alayy, wam-kur lī wa lā tamkur ‘alayy, wah-dinī wa yassiril-hudā lī, wan-ṣurnī ‘alā man baghā ‘alayy. Rabbi ij-‘alnī laka shakkārā, laka dhakkārā, laka rahhābā, laka miṭwā‘ā, laka mukhbitan ilayka awwāhan munībā. Rabbi taqabbal tawbatī wagh-sil ḥawbatī wa ajib da‘watī wa thabbit ḥujjatī wa saddid lisānī wah-di qalbī was-lul sakhīmata ṣadrī.",
+      "explanationEs": "«Señor mío, ayúdame y no ayudéis en mi contra, socórreme y no socorras en mi contra, planifica a mi favor y no en mi contra, guíame y facilítame la guía, y concédeme la victoria sobre quien sea injusto conmigo. Señor mío, hazme agradecido contigo, recordador constante de Ti, temeroso de Ti, obediente a Ti, humilde y sumiso ante Ti, suplicante y arrepentido. Señor mío, acepta mi arrepentimiento, lava mi pecado, responde a mi súplica, haz firme mi argumento, endereza mi lengua, guía mi corazón y extrae el rencor de mi pecho».\n",
+      "note": "رواه الترمذي (إسناد صحيح)"
     },
     {
       "itemNumber": 54,
