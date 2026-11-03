@@ -1211,7 +1211,7 @@ function renderGroupItems() {
       ` : ''}
 
       ${(() => {
-        const audioList = normaliseAudioList(Array.isArray(item.audioUrls) && item.audioUrls.length ? item.audioUrls : item.audioUrl);
+        const audioList = normaliseAudioList(Array.isArray(item.audioUrls) && item.audioUrls.length ? item.audioUrls : item.audioUrl, item.count || item.maxCount);
         return audioList.length ? `
           <div id="audioPlayer-${index}" class="audio-player-compact mt-2 mb-2 p-2 rounded-xl bg-slate-50 dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700">
             <div class="flex items-center gap-2" dir="ltr">
