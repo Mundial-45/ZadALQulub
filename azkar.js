@@ -74,7 +74,12 @@ const azkarData = [
                         "latin": "Aṣbaḥnā wa aṣbaḥal-mulku lillāh, wal-ḥamdu lillāh, lā ilāha ill-Allāhu waḥdahū lā sharīka lah, lahul-mulku wa lahul-ḥamdu wa huwa ‘alā kulli shayʾin qadīr. Rabbi as’aluka khayra mā fī hādhā l-yawmi wa khayra mā ba‘dah, wa a‘ūdhu bika min sharri mā fī hādhā l-yawmi wa sharri mā ba‘dah, Rabbi a‘ūdhu bika minal-kasali wa sūʾil-kibar, Rabbi a‘ūdhu bika min ‘adhābin fin-nāri wa ‘adhābin fil-qabr.",
                         "explanationEs": "Hemos llegado a la mañana y el dominio pertenece a Allah, y alabado sea Allah. No hay más divinidad que Allah, Único, sin socios. Suyo es el dominio y Suya es la alabanza, y Él es sobre toda cosa Todopoderoso. Señor mío, Te pido el bien de este día y el bien de lo que le sigue, y me refugio en Ti del mal de este día y del mal de lo que le sigue. Señor mío, me refugio en Ti de la pereza y del mal de la vejez. Señor mío, me refugio en Ti del castigo en el Fuego y del castigo en la tumba.",
                         "count": 1,
-                        "maxCount": 1
+                        "maxCount": 1,
+                        "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%205.mp3",
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%205.mp3",
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%205.mp3"
+                    ]
                   },
                   {
                         "itemNumber": 6,
