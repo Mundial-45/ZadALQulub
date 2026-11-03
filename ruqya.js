@@ -168,13 +168,7 @@ const ruqyahData = [
             "maxCount": 7,
             "note": "سورة الفاتحة",
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/001001.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/001002.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/001003.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/001004.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/001005.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/001006.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/001007.mp3"
+              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q001.mp3"
             ]
           },
           {
@@ -185,13 +179,9 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002001.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002002.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002003.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002004.mp3"
+              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q002-1-4.mp3"
             ],
-            "note": "سورة البقرة الايات 1-4",
-            "audioUrl": ""
+            "note": "سورة البقرة الايات 1-4"
           },
           {
             "itemNumber": 16,
@@ -223,8 +213,7 @@ const ruqyahData = [
             "maxCount": 1,
             "note": "سورة البقرة الايات 285-286",
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002285.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002286.mp3"
+              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q002-285-586.mp3"
             ]
           },
           {
@@ -500,73 +489,53 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/109001.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/109002.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/109003.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/109004.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/109005.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/109006.mp3"
+              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q009.mp3"
             ],
             "note": "سورة الكافرون"
           },
           {
             "itemNumber": 38,
-            text: "﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ قُلۡ هُوَ ٱللَّهُ أَحَدٌ۝ ٱللَّهُ ٱلصَّمَدُ۝لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ۝ وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ۝﴾",
-            latin: "Bismillāhir-Raḥmānir-Raḥīm. Qul Huwallāhu Aḥad (1). Allāhuṣ-Ṣamad (2). Lam yalid wa lam yūlad (3). Wa lam yakun lahū kufuwan aḥad (4).",
-            explanationEs: "En el nombre de Dios, el Compasivo, el Misericordioso. Di: «Él es Dios, Uno. Dios, el Absoluto [de Quien todos necesitan y Él no necesita de nadie]. No engendró ni fue engendrado. Y no hay nada ni nadie que sea semejante a Él».",
-            
-            count: 3,
-            maxCount: 3,
-            audioUrls: [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112001.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112002.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112003.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112004.mp3"
+            "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\n﴿قُلۡ هُوَ ٱللَّهُ أَحَدٌ۝ ٱللَّهُ ٱلصَّمَدُ۝لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ۝ وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ۝﴾",
+            "latin": "Bismillāhir-Raḥmānir-Raḥīm\nQul Huwallāhu Aḥad (1). Allāhuṣ-Ṣamad (2). Lam yalid wa lam yūlad (3). Wa lam yakun lahū kufuwan aḥad (4).",
+            "explanationEs": "En el nombre de Dios, el Compasivo, el Misericordioso\nDi: «Él es Dios, Uno. Dios, el Absoluto [de Quien todos necesitan y Él no necesita de nadie]. No engendró ni fue engendrado. Y no hay nada ni nadie que sea semejante a Él».",
+            "count": 3,
+            "maxCount": 3,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q112.mp3"
             ],
-            note: "سورة الإخلاص الآيات 1-4",
+            "note": "سورة الإخلاص"
           },
           {
             "itemNumber": 39,
-            text: "﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ۝مِن شَرِّ مَا خَلَقَ۝وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ۝ وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِي ٱلۡعُقَدِ۝وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ۝﴾",
-            latin: "Bismillāhir-Raḥmānir-Raḥīm. Qul a‘ūdhu bi-Rabbil-falaq (1). Min sharri mā khalaq (2). Wa min sharri ghāsiqin idhā waqab (3). Wa min sharri-n-naffāthāti fil-‘uqud (4). Wa min sharri ḥāsidin idhā ḥasad (5).",
-            explanationEs: "En el nombre de Dios, el Compasivo, el Misericordioso. Di: «Me refugio en el Señor del alba, del mal de lo que ha creado, del mal de la oscuridad cuando se extiende, del mal de quienes soplan sobre los nudos [practicando hechicería] y del mal del envidioso cuando envidia».",
-            
-            count: 3,
-            maxCount: 3,
-            audioUrls: [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113001.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113002.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113003.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113004.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113005.mp3"
+            "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيم\n﴿قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ۝مِن شَرِّ مَا خَلَقَ۝وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ۝ وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِي ٱلۡعُقَدِ۝وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ۝﴾",
+            "latin": "Bismillāhir-Raḥmānir-Raḥīm\nQul a‘ūdhu bi-Rabbil-falaq (1). Min sharri mā khalaq (2). Wa min sharri ghāsiqin idhā waqab (3). Wa min sharri-n-naffāthāti fil-‘uqud (4). Wa min sharri ḥāsidin idhā ḥasad (5).",
+            "explanationEs": "En el nombre de Dios, el Compasivo, el Misericordioso\nDi: «Me refugio en el Señor del alba, del mal de lo que ha creado, del mal de la oscuridad cuando se extiende, del mal de quienes soplan sobre los nudos [practicando hechicería] y del mal del envidioso cuando envidia».",
+            "count": 3,
+            "maxCount": 3,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q113.mp3"
             ],
-            note: "سورة الفلق الآيات 1-5",
+            "note": "سورة الفلق"
           },
           {
             "itemNumber": 40,
-            text: "﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ۝ مَلِكِ ٱلنَّاسِ۝ إِلَٰهِ ٱلنَّاسِ۝ مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ۝ ٱلَّذِي يُوَسۡوِسُ فِي صُدُورِ ٱلنَّاسِ۝ مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ۝﴾",
-            latin: "Bismillāhir-Raḥmānir-Raḥīm. Qul a‘ūdhu bi-Rabbin-nās (1). Malikin-nās (2). Ilāhin-nās (3). Min sharril-waswāsil-khannās (4). Alladhī yuwaswisu fī ṣudūrin-nās (5). Minal-jinnati wan-nās (6).",
-            explanationEs: "En el nombre de Dios, el Compasivo, el Misericordioso. Di: «Me refugio en el Señor de los seres humanos, el Rey de los seres humanos, el Dios de los seres humanos, del mal del susurrador que se oculta, que susurra en los corazones de los seres humanos, sea [el susurrador] de entre los yinn o de entre los seres humanos».",
-            
-            count: 3,
-            maxCount: 3,
-            audioUrls: [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114001.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114002.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114003.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114004.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114005.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114006.mp3"
+            "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\n﴿قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ۝ مَلِكِ ٱلنَّاسِ۝ إِلَٰهِ ٱلنَّاسِ۝ مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ۝ ٱلَّذِي يُوَسۡوِسُ فِي صُدُورِ ٱلنَّاسِ۝ مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ۝﴾",
+            "latin": "Bismillāhir-Raḥmānir-Raḥīm\nQul a‘ūdhu bi-Rabbin-nās (1). Malikin-nās (2). Ilāhin-nās (3). Min sharril-waswāsil-khannās (4). Alladhī yuwaswisu fī ṣudūrin-nās (5). Minal-jinnati wan-nās (6).",
+            "explanationEs": "En el nombre de Dios, el Compasivo, el Misericordioso\nDi: «Me refugio en el Señor de los seres humanos, el Rey de los seres humanos, el Dios de los seres humanos, del mal del susurrador que se oculta, que susurra en los corazones de los seres humanos, sea [el susurrador] de entre los yinn o de entre los seres humanos».",
+            "count": 3,
+            "maxCount": 3,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q114.mp3"
             ],
-            note: "سورة الناس الآيات 1-6",
+            "note": "سورة الناس"
           },
           {
             "itemNumber": 41,
-            text: "أَذْهِبِ الْبَاسَ رَبَّ النَّاسِ، اشْفِ وَأَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ، شِفَاءً لَا يُغَادِرُ سَقَمًا",
-            latin: "Adhhibil-bāsa Rabban-nās, ishfi wa Antash-Shāfī, lā shifā'a illā shifā'uk, shifā'an lā yughādiru saqamā.",
-            explanationEs: "¡Aleja el mal, oh Señor de los hombres! Cura, pues Tú eres el Curador; no hay curación sino la Tuya, una curación que no deja ninguna enfermedad.",
-            count: 1,
-            maxCount: 1
+            "text": "اللَّهُمَّ رَبَّ النَّاسِ، أَذْهِبِ الْبَاسَ، اشْفِ وَأَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ، شِفَاءً لَا يُغَادِرُ سَقَمًا",
+            "latin": "Allāhumma Rabban-nās, adhhibil-bās, ishfi wa Antash-Shāfī, lā shifā'a illā shifā'uk, shifā'an lā yughādiru saqamā.",
+            "explanationEs": "¡Oh Dios, Señor de los hombres! Haz desaparecer la enfermedad, sana pues Tú eres el Sanador; no hay sanación sino Tu sanación, una sanación que no deja dolencia alguna.",
+            "count": 1,
+            "maxCount": 1
           },
           {
             "itemNumber": 42,
