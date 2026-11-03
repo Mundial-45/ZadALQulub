@@ -106,43 +106,58 @@ const ruqyahData = [
           },
           {
             "itemNumber": 8,
-            text: "اللَّهُمَّ رَبَّ النَّاسِ، أَذْهِبِ الْبَاسَ، اشْفِ وَأَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ، شِفَاءً لَا يُغَادِرُ سَقَمًا",
-            latin: "Allāhumma Rabban-nās, adhhibil-bās, ishfi wa Antash-Shāfī, lā shifā'a illā shifā'uk, shifā'an lā yughādiru saqamā.",
-            explanationEs: "¡Oh Dios, Señor de los hombres! Haz desaparecer la enfermedad, sana pues Tú eres el Sanador; no hay sanación sino Tu sanación, una sanación que no deja dolencia alguna.",
-            count: 1,
-            maxCount: 1
+            "text": "اللَّهُمَّ رَبَّ النَّاسِ، أَذْهِبِ الْبَاسَ، اشْفِ وَأَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ، شِفَاءً لَا يُغَادِرُ سَقَمًا",
+            "latin": "Allāhumma Rabban-nās, adhhibil-bās, ishfi wa Antash-Shāfī, lā shifā'a illā shifā'uk, shifā'an lā yughādiru saqamā.",
+            "explanationEs": "¡Oh Dios, Señor de los hombres! Haz desaparecer la enfermedad, sana pues Tú eres el Sanador; no hay sanación sino Tu sanación, una sanación que no deja dolencia alguna.",
+            "count": 1,
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/ROQYA8-41.mp3"
+            ]
           },
           {
             "itemNumber": 9,
-            text: "بِسْمِ اللَّهِ أَرْقِيكَ، مِنْ كُلِّ شَيْءٍ يُؤْذِيكَ، مِنْ شَرِّ كُلِّ نَفْسٍ أَوْ عَيْنِ حَاسِدٍ، اللَّهُ يَشْفِيكَ، بِسْمِ اللَّهِ أَرْقِيكَ",
-            latin: "Bismillāhi arqīk, min kulli shayʾin yu'dhīk, min sharri kulli nafsin aw ‘ayni ḥāsid, Allāhu yashfīk, bismillāhi arqīk.",
-            explanationEs: "En el nombre de Dios te hago la ruqyah, contra todo lo que te perjudique, del mal de toda alma o del ojo de un envidioso, Dios te curará; en el nombre de Dios te hago la ruqyah.",
-            count: 3,
-            maxCount: 3
+            "text": "بِسْمِ اللَّهِ أَرْقِيكَ، مِنْ كُلِّ شَيْءٍ يُؤْذِيكَ، مِنْ شَرِّ كُلِّ نَفْسٍ أَوْ عَيْنِ حَاسِدٍ، اللَّهُ يَشْفِيكَ، بِسْمِ اللَّهِ أَرْقِيكَ",
+            "latin": "Bismillāhi arqīk, min kulli shayʾin yu'dhīk, min sharri kulli nafsin aw ‘ayni ḥāsid, Allāhu yashfīk, bismillāhi arqīk.",
+            "explanationEs": "En el nombre de Dios te hago la ruqyah, contra todo lo que te perjudique, del mal de toda alma o del ojo de un envidioso, Dios te curará; en el nombre de Dios te hago la ruqyah.",
+            "count": 3,
+            "maxCount": 3,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/ROQYA9-45.mp3"
+            ]
           },
           {
             "itemNumber": 10,
-            text: "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّةِ، مِنْ كُلِّ شَيْطَانٍ وَهَامَّةٍ، وَمِنْ كُلِّ عَيْنٍ لَامَّةٍ",
-            latin: "A‘ūdhu bi-kalimātillāhit-tāmmati, min kulli shayṭānin wa hāmmah, wa min kulli ‘aynin lāmmah.",
-            explanationEs: "Me refugio en las palabras perfectas de Dios contra todo demonio y criatura venenosa, y contra todo mal de ojo o reproche.",
-            count: 1,
-            maxCount: 1
+            "text": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّةِ، مِنْ كُلِّ شَيْطَانٍ وَهَامَّةٍ، وَمِنْ كُلِّ عَيْنٍ لَامَّةٍ",
+            "latin": "A‘ūdhu bi-kalimātillāhit-tāmmati, min kulli shayṭānin wa hāmmah, wa min kulli ‘aynin lāmmah.",
+            "explanationEs": "Me refugio en las palabras perfectas de Dios contra todo demonio y criatura venenosa, y contra todo mal de ojo o reproche.",
+            "count": 1,
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/ROQYA10-42.mp3"
+            ]
           },
           {
             "itemNumber": 11,
-            text: "أَعُوذُ بِاللَّهِ السَّمِيعِ الْعَلِيمِ مِنَ الشَّيْطَانِ الرَّجِيمِ، مِنْ هَمْزِهِ وَنَفْخِهِ وَنَفْثِهِ",
-            latin: "A‘ūdhu billāhis-Samī‘il-‘Alīmi minash-Shayṭānir-rajīm, min hamzihi wa nafkhihī wa nafthih.",
-            explanationEs: "Me refugio en Dios, el Omnieyente, el Omnisciente, contra el demonio maldito, de sus incitaciones, de su arrogancia y de sus susurros o hechizos.",
-            count: 1,
-            maxCount: 1
+            "text": "أَعُوذُ بِاللَّهِ السَّمِيعِ الْعَلِيمِ مِنَ الشَّيْطَانِ الرَّجِيمِ، مِنْ هَمْزِهِ وَنَفْخِهِ وَنَفْثِهِ",
+            "latin": "A‘ūdhu billāhis-Samī‘il-‘Alīmi minash-Shayṭānir-rajīm, min hamzihi wa nafkhihī wa nafthih.",
+            "explanationEs": "Me refugio en Dios, el Omnieyente, el Omnisciente, contra el demonio maldito, de sus incitaciones, de su arrogancia y de sus susurros o hechizos.",
+            "count": 1,
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/ROQYA11.mp3"
+            ]
           },
           {
             "itemNumber": 12,
-            text: "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ غَضَبِهِ وَعِقَابِهِ، وَشَرِّ عِبَادِهِ، وَمِنْ هَمَزَاتِ الشَّيَاطِينِ وَأَنْ يَحْضُرُونِ",
-            latin: "A‘ūdhu bi-kalimātillāhit-tāmmāti min ghaḍabihī wa ‘iqābih, wa sharri ‘ibādih, wa min hamazātish-shayāṭīni wa an yaḥḍurūn.",
-            explanationEs: "Me refugio en las palabras perfectas de Dios de Su ira y Su castigo, del mal de Sus siervos, de los susurros de los demonios y de que se presenten ante mí.",
-            count: 1,
-            maxCount: 1
+            "text": "بِسْمِ اللَّهِ، أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّه، مِنْ غَضَبِهِ وَعِقَابِهِ، وَشَرِّ عِبَادِهِ، وَمِنْ هَمَزَاتِ الشَّيَاطِينِ وَأَنْ يَحْضُرُونِ",
+            "latin": "Bismillāhi, A‘ūdhu bi-kalimātillāhit-tāmma min ghaḍabihī wa ‘iqābih, wa sharri ‘ibādih, wa min hamazātish-shayāṭīni wa an yaḥḍurūn.",
+            "explanationEs": "En el nombre de Dios, Me refugio en las palabras perfectas de Dios de Su ira y Su castigo, del mal de Sus siervos, de los susurros de los demonios y de que se presenten ante mí.",
+            "count": 1,
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/ROQYA12.mp3"
+            ]
           }
         ]
       },
@@ -442,16 +457,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036001.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036002.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036003.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036004.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036005.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036006.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036007.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036008.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036009.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/036010.mp3"
+              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q036-1-10.mp3"
             ],
             "note": "سورة يس الآيات 1-10"
           },
