@@ -541,55 +541,76 @@ const ruqyahData = [
             "latin": "Allāhumma Rabban-nās, adhhibil-bās, ishfi wa Antash-Shāfī, lā shifā'a illā shifā'uk, shifā'an lā yughādiru saqamā.",
             "explanationEs": "¡Oh Dios, Señor de los hombres! Haz desaparecer la enfermedad, sana pues Tú eres el Sanador; no hay sanación sino Tu sanación, una sanación que no deja dolencia alguna.",
             "count": 1,
-            "maxCount": 1
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/ROQYA8-41.mp3"
+            ]
           },
           {
             "itemNumber": 42,
-            text: "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّةِ، مِنْ كُلِّ شَيْطَانٍ وَهَامَّةٍ، وَمِنْ كُلِّ عَيْنٍ لَامَّةٍ",
-            latin: "A‘ūdhu bi-kalimātillāhit-tāmmati, min kulli shayṭānin wa hāmmah, wa min kulli ‘aynin lāmmah.",
-            explanationEs: "Me refugio en las palabras perfectas de Dios contra todo demonio, criatura venenosa y contra todo mal de ojo pernicioso.",
-            count: 1,
-            maxCount: 1
+            "text": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّةِ، مِنْ كُلِّ شَيْطَانٍ وَهَامَّةٍ، وَمِنْ كُلِّ عَيْنٍ لَامَّةٍ",
+            "latin": "A‘ūdhu bi-kalimātillāhit-tāmmati, min kulli shayṭānin wa hāmmah, wa min kulli ‘aynin lāmmah.",
+            "explanationEs": "Me refugio en las palabras perfectas de Dios contra todo demonio, criatura venenosa y contra todo mal de ojo pernicioso.",
+            "count": 1,
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/ROQYA10-42.mp3"
+            ]
           },
           {
             "itemNumber": 43,
-            text: "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ",
-            latin: "A‘ūdhu bi-kalimātillāhit-tāmmāti min sharri mā khalaq.",
-            explanationEs: "Me refugio en las palabras perfectas de Dios del mal de todo lo que ha creado.",
-            count: 1,
-            maxCount: 1
+            "text": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ",
+            "latin": "A‘ūdhu bi-kalimātillāhit-tāmmāti min sharri mā khalaq.",
+            "explanationEs": "Me refugio en las palabras perfectas de Dios del mal de todo lo que ha creado.",
+            "count": 1,
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2020.mp3"
+            ]
           },
           {
             "itemNumber": 44,
-            text: "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
-            latin: "Bismillāhil-ladhī lā yaḍurru ma‘a ismihi shay'un fīl-arḍi wa lā fīs-samā'i wa Huwas-Samī‘ul-‘Alīm.",
-            explanationEs: "En el nombre de Dios, con cuyo nombre nada en la tierra ni en el cielo puede causar daño, y Él es el Omnieyente, el Omnisciente.",
-            count: 3,
-            maxCount: 3
+            "text": "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
+            "latin": "Bismillāhil-ladhī lā yaḍurru ma‘a ismihi shay'un fīl-arḍi wa lā fīs-samā'i wa Huwas-Samī‘ul-‘Alīm.",
+            "explanationEs": "En el nombre de Dios, con cuyo nombre nada en la tierra ni en el cielo puede causar daño, y Él es el Omnieyente, el Omnisciente.",
+            "count": 3,
+            "maxCount": 3,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2014.mp3"
+            ]
           },
           {
             "itemNumber": 45,
-            text: "بِسْمِ اللَّهِ أَرْقِيكَ، مِنْ كُلِّ شَيْءٍ يُؤْذِيكَ، مِنْ شَرِّ كُلِّ نَفْسٍ، أَوْ عَيْنِ حَاسِدٍ، اللَّهُ يَشْفِيكَ بِسْمِ اللَّهِ أَرْقِيكَ",
-            latin: "Bismillāhi arqīk, min kulli shayʾin yu'dhīk, min sharri kulli nafsin, aw ‘ayni ḥāsid, Allāhu yashfīk bismillāhi arqīk.",
-            explanationEs: "En el nombre de Dios te hago la ruqyah, contra todo lo que te perjudica, del mal de cada alma o de los ojos del envidioso. Que Dios te cure; en el nombre de Dios te hago la ruqyah.",
-            count: 3,
-            maxCount: 3
+            "text": "بِسْمِ اللَّهِ أَرْقِيكَ، مِنْ كُلِّ شَيْءٍ يُؤْذِيكَ، مِنْ شَرِّ كُلِّ نَفْسٍ، أَوْ عَيْنِ حَاسِدٍ، اللَّهُ يَشْفِيكَ بِسْمِ اللَّهِ أَرْقِيكَ",
+            "latin": "Bismillāhi arqīk, min kulli shayʾin yu'dhīk, min sharri kulli nafsin, aw ‘ayni ḥāsid, Allāhu yashfīk bismillāhi arqīk.",
+            "explanationEs": "En el nombre de Dios te hago la ruqyah, contra todo lo que te perjudica, del mal de cada alma o de los ojos del envidioso. Que Dios te cure; en el nombre de Dios te hago la ruqyah.",
+            "count": 3,
+            "maxCount": 3,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/ROQYA9-45.mp3"
+            ]
           },
           {
             "itemNumber": 46,
-            text: "بِسْمِ اللَّهِ يُبْرِيكَ، وَمِنْ كُلِّ دَاءٍ يَشْفِيكَ، وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ، وَشَرِّ كُلِّ ذِي عَيْنٍ",
-            latin: "Bismillāhi yubrīk, wa min kulli dā'in yashfīk, wa min sharri ḥāsidin idhā ḥasad, wa sharri kulli dhi ‘ayn.",
-            explanationEs: "En el nombre de Dios te sana, de toda enfermedad te cura, del mal del envidioso cuando envidia y del mal de todo poseedor de mal de ojo.",
-            count: 1,
-            maxCount: 1
+            "text": "بِسْمِ اللَّهِ يُبْرِيكَ، وَمِنْ كُلِّ دَاءٍ يَشْفِيكَ، وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ، وَشَرِّ كُلِّ ذِي عَيْنٍ",
+            "latin": "Bismillāhi yubrīk, wa min kulli dā'in yashfīk, wa min sharri ḥāsidin idhā ḥasad, wa sharri kulli dhi ‘ayn.",
+            "explanationEs": "En el nombre de Dios te sana, de toda enfermedad te cura, del mal del envidioso cuando envidia y del mal de todo poseedor de mal de ojo.",
+            "count": 1,
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/ROQYA46.mp3"
+            ]
           },
           {
             "itemNumber": 47,
-            text: "بِسْمِ اللَّهِ أَعُوذُ بِعِزَّةِ اللَّهِ، وَقُدْرَتِهِ مِنْ شَرِّ مَا أَجِدُ، وَأُحَاذِرُ",
-            latin: "Bismillāhi a‘ūdhu bi-‘izzatil-lāhi, wa qudratihi min sharri mā ajidu, wa uḥādhir.",
-            explanationEs: "En el nombre de Dios, me refugio en la gloria y el poder de Dios del mal de lo que siento y de lo que temo.",
-            count: 1,
-            maxCount: 1
+            "text": "بِسْمِ اللَّهِ، أَعُوذُ بِاللَّهِ وَقُدْرَتِهِ مِنْ شَرِّ مَا أَجِدُ، وَأُحَاذِرُ",
+            "latin": "Bismillāhi, a‘ūdhu bil-lāhi wa qudratihi min sharri mā ajidu, wa uḥādhir.",
+            "explanationEs": "En el nombre de Dios, me refugio en Dios del mal de lo que siento y de lo que temo.",
+            "count": 1,
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/ROQYA47.mp3"
+            ]
           }
         ]
       }
