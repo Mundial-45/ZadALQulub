@@ -69,17 +69,17 @@ const azkarData = [
                     ]
                   },
                   {
-                        "itemNumber": 5,
-                        "text": "أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَذَا الْيَوْمِ وَخَيْرَ مَا بَعْدَهُ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَذَا الْيَوْمِ وَشَرِّ مَا بَعْدَهُ، رَبِّ أَعُوذُ بِكَ مِنَ الْكَسَلِ، وَسُوءِ الْكِبَرِ، رَبِّ أَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ.",
-                        "latin": "Aṣbaḥnā wa aṣbaḥal-mulku lillāh, wal-ḥamdu lillāh, lā ilāha ill-Allāhu waḥdahū lā sharīka lah, lahul-mulku wa lahul-ḥamdu wa huwa ‘alā kulli shayʾin qadīr. Rabbi as’aluka khayra mā fī hādhā l-yawmi wa khayra mā ba‘dah, wa a‘ūdhu bika min sharri mā fī hādhā l-yawmi wa sharri mā ba‘dah, Rabbi a‘ūdhu bika minal-kasali wa sūʾil-kibar, Rabbi a‘ūdhu bika min ‘adhābin fin-nāri wa ‘adhābin fil-qabr.",
-                        "explanationEs": "Hemos llegado a la mañana y el dominio pertenece a Allah, y alabado sea Allah. No hay más divinidad que Allah, Único, sin socios. Suyo es el dominio y Suya es la alabanza, y Él es sobre toda cosa Todopoderoso. Señor mío, Te pido el bien de este día y el bien de lo que le sigue, y me refugio en Ti del mal de este día y del mal de lo que le sigue. Señor mío, me refugio en Ti de la pereza y del mal de la vejez. Señor mío, me refugio en Ti del castigo en el Fuego y del castigo en la tumba.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%205.mp3",
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%205.mp3",
+                    "itemNumber": 5,
+                    "text": "أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَذَا الْيَوْمِ وَخَيْرَ مَا بَعْدَهُ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَذَا الْيَوْمِ وَشَرِّ مَا بَعْدَهُ، رَبِّ أَعُوذُ بِكَ مِنَ الْكَسَلِ، وَسُوءِ الْكِبَرِ، رَبِّ أَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ.",
+                    "latin": "Aṣbaḥnā wa aṣbaḥal-mulku lillāh, wal-ḥamdu lillāh, lā ilāha ill-Allāhu waḥdahū lā sharīka lah, lahul-mulku wa lahul-ḥamdu wa huwa ‘alā kulli shayʾin qadīr. Rabbi as’aluka khayra mā fī hādhā l-yawmi wa khayra mā ba‘dah, wa a‘ūdhu bika min sharri mā fī hādhā l-yawmi wa sharri mā ba‘dah, Rabbi a‘ūdhu bika minal-kasali wa sūʾil-kibar, Rabbi a‘ūdhu bika min ‘adhābin fin-nāri wa ‘adhābin fil-qabr.",
+                    "explanationEs": "Hemos llegado a la mañana y el dominio pertenece a Allah, y alabado sea Allah. No hay más divinidad que Allah, Único, sin socios. Suyo es el dominio y Suya es la alabanza, y Él es sobre toda cosa Todopoderoso. Señor mío, Te pido el bien de este día y el bien de lo que le sigue, y me refugio en Ti del mal de este día y del mal de lo que le sigue. Señor mío, me refugio en Ti de la pereza y del mal de la vejez. Señor mío, me refugio en Ti del castigo en el Fuego y del castigo en la tumba.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
                       "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%205.mp3"
-                    ]
+                    ],
+                    "note": "",
+                    "audioUrl": ""
                   },
                   {
                     "itemNumber": 6,
@@ -148,20 +148,26 @@ const azkarData = [
                     ]
                   },
                   {
-                        "itemNumber": 12,
-                        "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالآخِرَةِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي دِينِي وَدُنْيَايَ وَأَهْلِي وَمَالِي، اللَّهُمَّ اسْتُرْ عَوْرَاتِي وَآمِنْ رَوْعَاتِي، اللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ وَمِنْ خَلْفِي وَعَنْ يَمِينِي وَعَنْ شِمَالِي وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي.",
-                        "latin": "Allāhumma innī as’alukal-‘afwa wal-‘āfiyata fid-dunyā wal-ākhirah. Allāhumma innī as’alukal-‘afwa wal-‘āfiyata fī dīnī wa dunyāya wa ahlī wa mālī. Allāhummas-tur ‘awrātī wa āmin raw‘ātī. Allāhummaḥ-faẓnī min bayni yadayya wa min khalfī wa ‘an yamīnī wa ‘an shimālī wa min fawqī, wa a‘ūdhu bi-‘aẓamatika an ughtāla min taḥtī.",
-                        "explanationEs": "¡Oh Allah! Te pido el perdón y la salud en esta vida y en la otra. ¡Oh Allah! Te pido el perdón y la salud en mi religión, mis asuntos mundanales, mi familia y mis bienes. ¡Oh Allah! Cubre mis faltas y calma mis temores. ¡Oh Allah! Protégeme por delante, por detrás, a mi derecha, a mi izquierda y por encima de mí; y me refugio en Tu grandeza de ser tragado por la tierra.",
-                        "count": 1,
-                        "maxCount": 1
+                    "itemNumber": 12,
+                    "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالآخِرَةِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي دِينِي وَدُنْيَايَ وَأَهْلِي وَمَالِي، اللَّهُمَّ اسْتُرْ عَوْرَاتِي وَآمِنْ رَوْعَاتِي، اللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ وَمِنْ خَلْفِي وَعَنْ يَمِينِي وَعَنْ شِمَالِي وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي.",
+                    "latin": "Allāhumma innī as’alukal-‘afwa wal-‘āfiyata fid-dunyā wal-ākhirah. Allāhumma innī as’alukal-‘afwa wal-‘āfiyata fī dīnī wa dunyāya wa ahlī wa mālī. Allāhummas-tur ‘awrātī wa āmin raw‘ātī. Allāhummaḥ-faẓnī min bayni yadayya wa min khalfī wa ‘an yamīnī wa ‘an shimālī wa min fawqī, wa a‘ūdhu bi-‘aẓamatika an ughtāla min taḥtī.",
+                    "explanationEs": "¡Oh Allah! Te pido el perdón y la salud en esta vida y en la otra. ¡Oh Allah! Te pido el perdón y la salud en mi religión, mis asuntos mundanales, mi familia y mis bienes. ¡Oh Allah! Cubre mis faltas y calma mis temores. ¡Oh Allah! Protégeme por delante, por detrás, a mi derecha, a mi izquierda y por encima de mí; y me refugio en Tu grandeza de ser tragado por la tierra.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2012.mp3"
+                    ]
                   },
                   {
-                        "itemNumber": 13,
-                        "text": "اللَّهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ فَاطِرَ السَّمَاوَاتِ وَالأَرْضِ، رَبَّ كُلِّ شَيْءٍ وَمَلِيكَهُ، أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ أَنْتَ، أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي، وَمِنْ شَرِّ الشَّيْطَانِ وَشِرْكِهِ، وَأَنْ أَقْتَرِفَ عَلَى نَفْسِي سُوءًا أَوْ أَجُرَّهُ إِلَى مُسْلِمٍ.",
-                        "latin": "Allāhumma ‘ālimal-ghaybi wash-shahādati fāṭiras-samāwāti wal-arḍ, Rabba kulli shayʾin wa malīkah, ash-hadu an lā ilāha illā ant, a‘ūdhu bika min sharri nafsī, wa min sharrish-shayṭāni wa shirkihi, wa an aqtarifa ‘alā nafsī sūʾan aw ajurrahū ilā muslim.",
-                        "explanationEs": "¡Oh Allah! Conocedor de lo oculto y de lo manifiesto, Creador de los cielos y de la tierra, Señor de todas las cosas y su Soberano. Testifico que no hay más divinidad que Tú. Me refugio en Ti del mal de mi alma, del mal del Satán y de su idolatría, y de cometer un mal contra mí mismo o infligírselo a un musulmán.",
-                        "count": 1,
-                        "maxCount": 1
+                    "itemNumber": 13,
+                    "text": "اللَّهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ فَاطِرَ السَّمَاوَاتِ وَالأَرْضِ، رَبَّ كُلِّ شَيْءٍ وَمَلِيكَهُ، أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ أَنْتَ، أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي، وَمِنْ شَرِّ الشَّيْطَانِ وَشِرْكِهِ، وَأَنْ أَقْتَرِفَ عَلَى نَفْسِي سُوءًا أَوْ أَجُرَّهُ إِلَى مُسْلِمٍ.",
+                    "latin": "Allāhumma ‘ālimal-ghaybi wash-shahādati fāṭiras-samāwāti wal-arḍ, Rabba kulli shayʾin wa malīkah, ash-hadu an lā ilāha illā ant, a‘ūdhu bika min sharri nafsī, wa min sharrish-shayṭāni wa shirkihi, wa an aqtarifa ‘alā nafsī sūʾan aw ajurrahū ilā muslim.",
+                    "explanationEs": "¡Oh Allah! Conocedor de lo oculto y de lo manifiesto, Creador de los cielos y de la tierra, Señor de todas las cosas y su Soberano. Testifico que no hay más divinidad que Tú. Me refugio en Ti del mal de mi alma, del mal del Satán y de su idolatría, y de cometer un mal contra mí mismo o infligírselo a un musulmán.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2013.mp3"
+                    ]
                   },
                   {
                     "itemNumber": 14,
@@ -169,87 +175,120 @@ const azkarData = [
                     "latin": "Bismillāhil-ladhī lā yaḍurru maʿasmihī shayʾun fil-arḍi wa lā fis-samā’i wa huwas-samī‘ul-‘alīm.",
                     "explanationEs": "En el nombre de Allah, con Cuyo nombre nada daña en la tierra ni en el cielo, y Él es el Omnioyente, el Omnisciente.",
                     "count": 3,
-                    "maxCount": 3
+                    "maxCount": 3,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2014.mp3"
+                    ]
                   },
                   {
-                        "itemNumber": 15,
-                        "text": "رَضِيتُ بِاللَّهِ رَبًّا، وَبِالإِسْلاَمِ دِينًا، وَبِمُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ نَبِيًّا.",
-                        "latin": "Raḍītu billāhi Rabban, wa bil-Islāmi dīnan, wa bi-Muḥammadin ṣall-Allāhu ‘alayhi wa sallama nabiyyā.",
-                        "explanationEs": "Estoy complacido con Allah como Señor, con el Islam como religión y con Muhammad (que la paz y las bendiciones de Allah sean con él) como Profeta.",
-                        "count": 3,
-                        "maxCount": 3
+                    "itemNumber": 15,
+                    "text": "رَضِيتُ بِاللَّهِ رَبًّا، وَبِالإِسْلاَمِ دِينًا، وَبِمُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ نَبِيًّا.",
+                    "latin": "Raḍītu billāhi Rabban, wa bil-Islāmi dīnan, wa bi-Muḥammadin ṣall-Allāhu ‘alayhi wa sallama nabiyyā.",
+                    "explanationEs": "Estoy complacido con Allah como Señor, con el Islam como religión y con Muhammad (que la paz y las bendiciones de Allah sean con él) como Profeta.",
+                    "count": 3,
+                    "maxCount": 3,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2015.mp3"
+                    ]
                   },
                   {
-                        "itemNumber": 16,
-                        "text": "يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ أَصْلِحْ لِي شَأْنِي كُلَّهُ وَلاَ تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ.",
-                        "latin": "Yā Ḥayyu yā Qayyūmu bi-raḥmatika astaghīthu aṣliḥ lī sha’nī kullahu wa lā takilnī ilā nafsī ṭarfata ‘ayn.",
-                        "explanationEs": "¡Oh Viviente! ¡Oh Subsistente! En Tu misericordia busco auxilio; rectifica todos mis asuntos y no me encomiendes a mí mismo ni por el parpadeo de un ojo.",
-                        "count": 1,
-                        "maxCount": 1
+                    "itemNumber": 16,
+                    "text": "يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ أَصْلِحْ لِي شَأْنِي كُلَّهُ وَلاَ تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ.",
+                    "latin": "Yā Ḥayyu yā Qayyūmu bi-raḥmatika astaghīthu aṣliḥ lī sha’nī kullahu wa lā takilnī ilā nafsī ṭarfata ‘ayn.",
+                    "explanationEs": "¡Oh Viviente! ¡Oh Subsistente! En Tu misericordia busco auxilio; rectifica todos mis asuntos y no me encomiendes a mí mismo ni por el parpadeo de un ojo.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2016.mp3"
+                    ]
                   },
                   {
-                        "itemNumber": 17,
-                        "text": "أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ رَبِّ الْعَالَمِينَ، اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ هَذَا الْيَوْمِ: فَتْحَهُ، وَنَصْرَهُ، وَنُورَهُ، وَبَرَكَتَهُ، وَهُدَاهُ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِيهِ وَشَرِّ مَا بَعْدَهُ.",
-                        "latin": "Aṣbaḥnā wa aṣbaḥal-mulku lillāhi Rabbil-‘ālamīn, Allāhumma innī as’aluka khayra hādhā l-yawmi: fatḥahū, wa naṣrahū, wa nūrahū, wa barakatahū, wa hudāh, wa a‘ūdhu bika min sharri mā fīhi wa sharri mā ba‘dah.",
-                        "explanationEs": "Hemos llegado a la mañana y el dominio pertenece a Allah, Señor de los mundos. ¡Oh Allah! Te pido el bien de este día: su conquista, su victoria, su luz, su bendición y su guía; y me refugio en Ti del mal que hay en él y del mal de lo que le sigue.",
-                        "count": 1,
-                        "maxCount": 1
+                    "itemNumber": 17,
+                    "text": "أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ رَبِّ الْعَالَمِينَ، اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ هَذَا الْيَوْمِ: فَتْحَهُ، وَنَصْرَهُ، وَنُورَهُ، وَبَرَكَتَهُ، وَهُدَاهُ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِيهِ وَشَرِّ مَا بَعْدَهُ.",
+                    "latin": "Aṣbaḥnā wa aṣbaḥal-mulku lillāhi Rabbil-‘ālamīn, Allāhumma innī as’aluka khayra hādhā l-yawmi: fatḥahū, wa naṣrahū, wa nūrahū, wa barakatahū, wa hudāh, wa a‘ūdhu bika min sharri mā fīhi wa sharri mā ba‘dah.",
+                    "explanationEs": "Hemos llegado a la mañana y el dominio pertenece a Allah, Señor de los mundos. ¡Oh Allah! Te pido el bien de este día: su conquista, su victoria, su luz, su bendición y su guía; y me refugio en Ti del mal que hay en él y del mal de lo que le sigue.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2017.mp3"
+                    ]
                   },
                   {
-                        "itemNumber": 18,
-                        "text": "أَصْبَحْنَا عَلَى فِطْرَةِ الإِسْلاَمِ، وَعَلَى كَلِمَةِ الإِخْلاَصِ، وَعَلَى دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ، وَعَلَى مِلَّةِ أَبِينَا إِبْرَاهِيمَ حَنِيفًا مُسْلِمًا وَمَا كَانَ مِنَ الْمُشْرِكِينَ.",
-                        "latin": "Aṣbaḥnā ‘alā fiṭratil-Islām, wa ‘alā kalimatil-ikhlāṣ, wa ‘alā dīni nabiyyinā Muḥammadin ṣall-Allāhu ‘alayhi wa sallam, wa ‘alā millati abīnā Ibrāhīma ḥanīfan musliman wa mā kāna minal-mushrikīn.",
-                        "explanationEs": "Amanecemos en la naturaleza pura del Islam, en la palabra de la devoción sincera, en la religión de nuestro Profeta Muhammad (que la paz y las bendiciones de Allah sean con él) y en la fe de nuestro padre Abraham, monoteísta puro y musulmán, quien no fue de los asociadores.",
-                        "count": 1,
-                        "maxCount": 1
+                    "itemNumber": 18,
+                    "text": "أَصْبَحْنَا عَلَى فِطْرَةِ الإِسْلاَمِ، وَعَلَى كَلِمَةِ الإِخْلاَصِ، وَعَلَى دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ، وَعَلَى مِلَّةِ أَبِينَا إِبْرَاهِيمَ حَنِيفًا مُسْلِمًا وَمَا كَانَ مِنَ الْمُشْرِكِينَ.",
+                    "latin": "Aṣbaḥnā ‘alā fiṭratil-Islām, wa ‘alā kalimatil-ikhlāṣ, wa ‘alā dīni nabiyyinā Muḥammadin ṣall-Allāhu ‘alayhi wa sallam, wa ‘alā millati abīnā Ibrāhīma ḥanīfan musliman wa mā kāna minal-mushrikīn.",
+                    "explanationEs": "Amanecemos en la naturaleza pura del Islam, en la palabra de la devoción sincera, en la religión de nuestro Profeta Muhammad (que la paz y las bendiciones de Allah sean con él) y en la fe de nuestro padre Abraham, monoteísta puro y musulmán, quien no fue de los asociadores.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2018.mp3"
+                    ]
                   },
                   {
-                        "itemNumber": 19,
-                        "text": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ: عَدَدَ خَلْقِهِ، وَرِضَا نَفْسِهِ، وَزِنَةَ عَرْشِهِ، وَمِدَادَ كَلِمَاتِهِ.",
-                        "latin": "Subḥān-Allāhi wa bi-ḥamdihi: ‘adada khalqihi, wa riḍā nafsihi, wa zinata ‘arshihi, wa midāda kalimātih.",
-                        "explanationEs": "Glorificado sea Allah y alabado sea, tantas veces como el número de Su creación, según Su complacencia, el peso de Su Trono y la tinta de Sus palabras.",
-                        "count": 3,
-                        "maxCount": 3
+                    "itemNumber": 19,
+                    "text": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ: عَدَدَ خَلْقِهِ، وَرِضَا نَفْسِهِ، وَزِنَةَ عَرْشِهِ، وَمِدَادَ كَلِمَاتِهِ.",
+                    "latin": "Subḥān-Allāhi wa bi-ḥamdihi: ‘adada khalqihi, wa riḍā nafsihi, wa zinata ‘arshihi, wa midāda kalimātih.",
+                    "explanationEs": "Glorificado sea Allah y alabado sea, tantas veces como el número de Su creación, según Su complacencia, el peso de Su Trono y la tinta de Sus palabras.",
+                    "count": 3,
+                    "maxCount": 3,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2019.mp3"
+                    ]
                   },
                   {
-                        "itemNumber": 20,
-                        "text": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ.",
-                        "latin": "A‘ūdhu bi-kalimātil-lāhit-tāmmāti min sharri mā khalaq.",
-                        "explanationEs": "Me refugio en las palabras perfectas de Allah del mal de lo que ha creado.",
-                        "count": 3,
-                        "maxCount": 3
+                    "itemNumber": 20,
+                    "text": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ.",
+                    "latin": "A‘ūdhu bi-kalimātil-lāhit-tāmmāti min sharri mā khalaq.",
+                    "explanationEs": "Me refugio en las palabras perfectas de Allah del mal de lo que ha creado.",
+                    "count": 3,
+                    "maxCount": 3,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2020.mp3"
+                    ]
                   },
                   {
-                        "itemNumber": 21,
-                        "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلاً مُتَقَبَّلاً.",
-                        "latin": "Allāhumma innī as’aluka ‘ilman nāfi‘an, wa rizqan ṭayyiban, wa ‘amalan mutaqabbalā.",
-                        "explanationEs": "¡Oh Allah! Te pido un conocimiento beneficioso, un sustento puro y una obra aceptada.",
-                        "count": 1,
-                        "maxCount": 1
+                    "itemNumber": 21,
+                    "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلاً مُتَقَبَّلاً.",
+                    "latin": "Allāhumma innī as’aluka ‘ilman nāfi‘an, wa rizqan ṭayyiban, wa ‘amalan mutaqabbalā.",
+                    "explanationEs": "¡Oh Allah! Te pido un conocimiento beneficioso, un sustento puro y una obra aceptada.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2021.mp3"
+                    ]
                   },
                   {
-                        "itemNumber": 22,
-                        "text": "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
-                        "latin": "Lā ilāha ill-Allāhu waḥdahū lā sharīka lah, lahul-mulku wa lahul-ḥamdu, wa huwa ‘alā kulli shayʾin qadīr.",
-                        "explanationEs": "No hay más divinidad que Allah, Único, sin socios. Suyo es el dominio y Suya es la alabanza, y Él es sobre toda cosa Todopoderoso.",
-                        "count": 10,
-                        "maxCount": 10
+                    "itemNumber": 22,
+                    "text": "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
+                    "latin": "Lā ilāha ill-Allāhu waḥdahū lā sharīka lah, lahul-mulku wa lahul-ḥamdu, wa huwa ‘alā kulli shayʾin qadīr.",
+                    "explanationEs": "No hay más divinidad que Allah, Único, sin socios. Suyo es el dominio y Suya es la alabanza, y Él es sobre toda cosa Todopoderoso.",
+                    "count": 10,
+                    "maxCount": 10,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2022.mp3"
+                    ]
                   },
                   {
-                        "itemNumber": 23,
-                        "text": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ.",
-                        "latin": "Subḥān-Allāhi wa bi-ḥamdih.",
-                        "explanationEs": "Glorificado sea Allah y alabado sea.",
-                        "count": 100,
-                        "maxCount": 100
+                    "itemNumber": 23,
+                    "text": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ.",
+                    "latin": "Subḥān-Allāhi wa bi-ḥamdih.",
+                    "explanationEs": "Glorificado sea Allah y alabado sea.",
+                    "count": 100,
+                    "maxCount": 100,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2023.mp3"
+                    ]
                   },
                   {
-                        "itemNumber": 24,
-                        "text": "أَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ.",
-                        "latin": "Astaghfirullāha wa atūbu ilayh.",
-                        "explanationEs": "Pido perdón a Allah y me arrepiento ante Él.",
-                        "count": 100,
-                        "maxCount": 100
+                    "itemNumber": 24,
+                    "text": "أَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ.",
+                    "latin": "Astaghfirullāha wa atūbu ilayh.",
+                    "explanationEs": "Pido perdón a Allah y me arrepiento ante Él.",
+                    "count": 100,
+                    "maxCount": 100,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2024.mp3"
+                    ]
                   },
                   {
                     "itemNumber": 25,
