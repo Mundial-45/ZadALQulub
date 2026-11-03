@@ -82,52 +82,70 @@ const azkarData = [
                     ]
                   },
                   {
-                        "itemNumber": 6,
-                        "text": "اللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ وَإِلَيْكَ النُّشُورُ.",
-                        "latin": "Allāhumma bika aṣbaḥnā, wa bika amsaynā, wa bika naḥyā, wa bika namūtu wa ilaykan-nushūr.",
-                        "explanationEs": "¡Oh Allah! Por Ti amanecemos, por Ti anochecemos, por Ti vivimos, por Ti morimos y hacia Ti es la resurrección.",
-                        "count": 1,
-                        "maxCount": 1
+                    "itemNumber": 6,
+                    "text": "اللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ وَإِلَيْكَ النُّشُورُ.",
+                    "latin": "Allāhumma bika aṣbaḥnā, wa bika amsaynā, wa bika naḥyā, wa bika namūtu wa ilaykan-nushūr.",
+                    "explanationEs": "¡Oh Allah! Por Ti amanecemos, por Ti anochecemos, por Ti vivimos, por Ti morimos y hacia Ti es la resurrección.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%206.mp3"
+                    ]
                   },
                   {
-                        "itemNumber": 7,
-                        "text": "اللَّهُمَّ أَنْتَ رَبِّي لاَ إِلَهَ إِلاَّ أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ.",
-                        "latin": "Allāhumma anta Rabbī lā ilāha illā ant, khalaqtanī wa anā ‘abduk, wa anā ‘alā ‘ahdika wa wa‘dika mas-taṭa‘tu, a‘ūdhu bika min sharri mā ṣana‘tu, abūʾu laka bi-ni‘matika ‘alayya, wa abū’u bi-dhanbī faghfir lī fa-innahū lā yaghfirudh-dhunūba illā ant.",
-                        "explanationEs": "¡Oh Allah! Tú eres mi Señor, no hay más divinidad que Tú. Me creaste y yo soy Tu siervo, y mantengo Tu pacto y Tu promesa en la medida de mis posibilidades. Me refugio en Ti del mal que he cometido. Reconozco ante Ti Tus favores sobre mí y te confieso mis pecados, así que perdóname, pues nadie perdona los pecados excepto Tú.",
-                        "count": 1,
-                        "maxCount": 1
+                    "itemNumber": 7,
+                    "text": "اللَّهُمَّ أَنْتَ رَبِّي لاَ إِلَهَ إِلاَّ أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ.",
+                    "latin": "Allāhumma anta Rabbī lā ilāha illā ant, khalaqtanī wa anā ‘abduk, wa anā ‘alā ‘ahdika wa wa‘dika mas-taṭa‘tu, a‘ūdhu bika min sharri mā ṣana‘tu, abūʾu laka bi-ni‘matika ‘alayya, wa abū’u bi-dhanbī faghfir lī fa-innahū lā yaghfirudh-dhunūba illā ant.",
+                    "explanationEs": "¡Oh Allah! Tú eres mi Señor, no hay más divinidad que Tú. Me creaste y yo soy Tu siervo, y mantengo Tu pacto y Tu promesa en la medida de mis posibilidades. Me refugio en Ti del mal que he cometido. Reconozco ante Ti Tus favores sobre mí y te confieso mis pecados, así que perdóname, pues nadie perdona los pecados excepto Tú.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%207.mp3"
+                    ]
                   },
                   {
-                        "itemNumber": 8,
-                        "text": "اللَّهُمَّ إِنِّي أَصْبَحْتُ أُشْهِدُكَ، وَأُشْهِدُ حَمَلَةَ عَرْشِكَ، وَمَلاَئِكَتَكَ، وَجَمِيعَ خَلْقِكَ، أَنَّكَ أَنْتَ اللَّهُ لاَ إِلَهَ إِلاَّ أَنْتَ وَحْدَكَ لاَ شَرِيكَ لَكَ، وَأَنَّ مُحَمَّدًا عَبْدُكَ وَرَسُولُكَ.",
-                        "latin": "Allāhumma innī aṣbaḥtu ushhiduka, wa ushhidu ḥamalata ‘arshika, wa malāʾikataka, wa jamī‘a khalqika, annaka ant-Allāhu lā ilāha illā anta waḥdaka lā sharīka laka, wa anna Muḥammadan ‘abduka wa rasūluk.",
-                        "explanationEs": "¡Oh Allah! He amanecido tomándote como testigo, y tomando como testigos a los portadores de Tu Trono, a Tus ángeles y a toda Tu creación, de que Tú eres Allah, no hay más divinidad que Tú, Único, sin socios, y que Muhammad es Tu siervo y Tu Mensajero.",
-                        "count": 4,
-                        "maxCount": 4
+                    "itemNumber": 8,
+                    "text": "اللَّهُمَّ إِنِّي أَصْبَحْتُ أُشْهِدُكَ، وَأُشْهِدُ حَمَلَةَ عَرْشِكَ، وَمَلاَئِكَتَكَ، وَجَمِيعَ خَلْقِكَ، أَنَّكَ أَنْتَ اللَّهُ لاَ إِلَهَ إِلاَّ أَنْتَ وَحْدَكَ لاَ شَرِيكَ لَكَ، وَأَنَّ مُحَمَّدًا عَبْدُكَ وَرَسُولُكَ.",
+                    "latin": "Allāhumma innī aṣbaḥtu ushhiduka, wa ushhidu ḥamalata ‘arshika, wa malāʾikataka, wa jamī‘a khalqika, annaka ant-Allāhu lā ilāha illā anta waḥdaka lā sharīka laka, wa anna Muḥammadan ‘abduka wa rasūluk.",
+                    "explanationEs": "¡Oh Allah! He amanecido tomándote como testigo, y tomando como testigos a los portadores de Tu Trono, a Tus ángeles y a toda Tu creación, de que Tú eres Allah, no hay más divinidad que Tú, Único, sin socios, y que Muhammad es Tu siervo y Tu Mensajero.",
+                    "count": 4,
+                    "maxCount": 4,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%208.mp3"
+                    ]
                   },
                   {
-                        "itemNumber": 9,
-                        "text": "اللَّهُمَّ مَا أَصْبَحَ بِي مِنْ نِعْمَةٍ أَوْ بِأَحَدٍ مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَ لاَ شَرِيكَ لَكَ، فَلَكَ الْحَمْدُ وَلَكَ الشُّكْرُ.",
-                        "latin": "Allāhumma mā aṣbaḥa bī min niʿmatin aw bi-aḥadin min khalqika fa-minka waḥdaka lā sharīka laka, fa-lakal-ḥamdu wa lakash-shukr.",
-                        "explanationEs": "¡Oh Allah! Cualquier bendición que amaneciera en mí o en cualquiera de Tus criaturas proviene únicamente de Ti, sin socios. A Ti pertenece la alabanza y a Ti el agradecimiento.",
-                        "count": 1,
-                        "maxCount": 1
+                    "itemNumber": 9,
+                    "text": "اللَّهُمَّ مَا أَصْبَحَ بِي مِنْ نِعْمَةٍ أَوْ بِأَحَدٍ مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَ لاَ شَرِيكَ لَكَ، فَلَكَ الْحَمْدُ وَلَكَ الشُّكْرُ.",
+                    "latin": "Allāhumma mā aṣbaḥa bī min niʿmatin aw bi-aḥadin min khalqika fa-minka waḥdaka lā sharīka laka, fa-lakal-ḥamdu wa lakash-shukr.",
+                    "explanationEs": "¡Oh Allah! Cualquier bendición que amaneciera en mí o en cualquiera de Tus criaturas proviene únicamente de Ti, sin socios. A Ti pertenece la alabanza y a Ti el agradecimiento.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%209.mp3"
+                    ]
                   },
                   {
-                        "itemNumber": 10,
-                        "text": "اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لاَ إِلَهَ إِلاَّ أَنْتَ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ، وَالْفَقْرِ، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لاَ إِلَهَ إِلاَّ أَنْتَ.",
-                        "latin": "Allāhumma ‘āfinī fī badanī, Allāhumma ‘āfinī fī samʿī, Allāhumma ‘āfinī fī baṣarī, lā ilāha illā ant. Allāhumma innī a‘ūdhu bika minal-kufri wal-faqr, wa a‘ūdhu bika min ‘adhābil-qabr, lā ilāha illā ant.",
-                        "explanationEs": "¡Oh Allah! Concedeme salud en mi cuerpo. ¡Oh Allah! Concedeme salud en mi oído. ¡Oh Allah! Concedeme salud en mi vista. No hay más divinidad que Tú. ¡Oh Allah! Me refugio en Ti de la incredulidad y de la pobreza, y me refugio en Ti del castigo de la tumba. No hay más divinidad que Tú.",
-                        "count": 3,
-                        "maxCount": 3
+                    "itemNumber": 10,
+                    "text": "اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لاَ إِلَهَ إِلاَّ أَنْتَ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ، وَالْفَقْرِ، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لاَ إِلَهَ إِلاَّ أَنْتَ.",
+                    "latin": "Allāhumma ‘āfinī fī badanī, Allāhumma ‘āfinī fī samʿī, Allāhumma ‘āfinī fī baṣarī, lā ilāha illā ant. Allāhumma innī a‘ūdhu bika minal-kufri wal-faqr, wa a‘ūdhu bika min ‘adhābil-qabr, lā ilāha illā ant.",
+                    "explanationEs": "¡Oh Allah! Concedeme salud en mi cuerpo. ¡Oh Allah! Concedeme salud en mi oído. ¡Oh Allah! Concedeme salud en mi vista. No hay más divinidad que Tú. ¡Oh Allah! Me refugio en Ti de la incredulidad y de la pobreza, y me refugio en Ti del castigo de la tumba. No hay más divinidad que Tú.",
+                    "count": 3,
+                    "maxCount": 3,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2010.mp3"
+                    ]
                   },
                   {
-                        "itemNumber": 11,
-                        "text": "حَسْبِيَ اللَّهُ لاَ إِلَهَ إِلاَّ هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ.",
-                        "latin": "Ḥasbiy-Allāhu lā ilāha illā huwa ‘alayhi tawakkaltu wa huwa Rabbul-ʿarshil-ʿaẓīm.",
-                        "explanationEs": "Allah me basta; no hay más divinidad que Él. En Él he depositado mi confianza y Él es el Señor del Trono Grandioso.",
-                        "count": 7,
-                        "maxCount": 7
+                    "itemNumber": 11,
+                    "text": "حَسْبِيَ اللَّهُ لاَ إِلَهَ إِلاَّ هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ.",
+                    "latin": "Ḥasbiy-Allāhu lā ilāha illā huwa ‘alayhi tawakkaltu wa huwa Rabbul-ʿarshil-ʿaẓīm.",
+                    "explanationEs": "Allah me basta; no hay más divinidad que Él. En Él he depositado mi confianza y Él es el Señor del Trono Grandioso.",
+                    "count": 7,
+                    "maxCount": 7,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2011.mp3"
+                    ]
                   },
                   {
                         "itemNumber": 12,
@@ -234,12 +252,15 @@ const azkarData = [
                         "maxCount": 100
                   },
                   {
-                        "itemNumber": 25,
-                        "text": "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى نَبِيِّنَا مُحَمَّدٍ.",
-                        "latin": "Allāhumma ṣalli wa sallim ‘alā nabiyyinā Muḥammad.",
-                        "explanationEs": "¡Oh Allah! Bendice y otorga la paz a nuestro Profeta Muhammad.",
-                        "count": 10,
-                        "maxCount": 10
+                    "itemNumber": 25,
+                    "text": "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى نَبِيِّنَا مُحَمَّدٍ.",
+                    "latin": "Allāhumma ṣalli wa sallim ‘alā nabiyyinā Muḥammad.",
+                    "explanationEs": "¡Oh Allah! Bendice y otorga la paz a nuestro Profeta Muhammad.",
+                    "count": 10,
+                    "maxCount": 10,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2025.mp3"
+                    ]
                   }
             ]
       },
