@@ -297,15 +297,47 @@ function updateAudioProgress() {
   const sequenceEl = document.getElementById('audioSequence-' + i);
   if (sequenceEl) sequenceEl.textContent = activeAudioList.length > 1 ? ((activeAudioListIndex + 1) + '/' + activeAudioList.length) : '';
 }
-function normaliseAudioList(audioValue) {
+function normaliseAudioList(audioValue, countMultiplier) {
   const values = Array.isArray(audioValue) ? audioValue : [audioValue];
-  return values.flatMap(value => {
+  let explicitMultiplier = null;
+
+  const baseCycle = values.flatMap(value => {
     if (typeof value !== 'string' || !value.trim()) return [];
-    return value.split(/[\s,]+/).map(url => url.trim()).filter(Boolean);
-  });
+    const tokens = value.split(/[\s,]+/).map(url => url.trim()).filter(Boolean);
+    return tokens.map(token => {
+      let cleanUrl = token;
+      const match = token.match(/^(.*?)(?:[|*xX])(\d+)$/);
+      if (match) {
+        cleanUrl = match[1];
+        if (explicitMultiplier === null) {
+          explicitMultiplier = parseInt(match[2], 10) || 1;
+        }
+      }
+      return cleanUrl;
+    });
+  }).filter(Boolean);
+
+  if (!baseCycle.length) return [];
+
+  let R = 1;
+  if (explicitMultiplier !== null && explicitMultiplier > 0) {
+    R = explicitMultiplier;
+  } else if (typeof countMultiplier === 'number' && countMultiplier > 1) {
+    R = countMultiplier;
+  }
+
+  const fullPlaylist = [];
+  for (let r = 0; r < R; r++) {
+    for (let u = 0; u < baseCycle.length; u++) {
+      fullPlaylist.push(baseCycle[u]);
+    }
+  }
+
+  return fullPlaylist;
 }
-function playAudio(audioValue, index) {
-  const urls = normaliseAudioList(audioValue);
+
+function playAudio(audioValue, index, countMultiplier) {
+  const urls = normaliseAudioList(audioValue, countMultiplier);
   if (!urls.length) return;
   if (currentAudio && activeAudioCardIndex === index) {
     if (currentAudio.paused) {
@@ -324,57 +356,89 @@ function playAudio(audioValue, index) {
   if (player) player.classList.remove('hidden');
   playNextAudioInSequence(audioPlaybackToken);
 }
+let globalAudioElement = null;
+
+function getGlobalAudioElement() {
+  if (!globalAudioElement) {
+    globalAudioElement = document.getElementById('globalAppAudioPlayer');
+    if (!globalAudioElement) {
+      globalAudioElement = document.createElement('audio');
+      globalAudioElement.id = 'globalAppAudioPlayer';
+      globalAudioElement.preload = 'auto';
+      document.body.appendChild(globalAudioElement);
+    }
+  }
+  return globalAudioElement;
+}
+
 function stopCurrentAudioPlayback() {
   audioPlaybackToken++;
-  if (currentAudio) {
-    currentAudio.pause();
-    currentAudio.onended = null;
-    currentAudio.onerror = null;
-    currentAudio.removeAttribute('src');
-    currentAudio.load();
-    currentAudio = null;
+  const audio = getGlobalAudioElement();
+  if (audio) {
+    audio.pause();
+    audio.onended = null;
+    audio.onerror = null;
+    try { audio.currentTime = 0; } catch (e) {}
   }
+  currentAudio = null;
 }
+
 function playNextAudioInSequence(token) {
   if (token !== audioPlaybackToken || activeAudioCardIndex === null) return;
   if (activeAudioListIndex >= activeAudioList.length) {
-    if (audioRepeatEnabled && activeAudioList.length) activeAudioListIndex = 0;
-    else {
-      currentAudio = null;
-    const playBtn = document.getElementById('audioPlay-' + activeAudioCardIndex);
-    if (playBtn) playBtn.textContent = '▶';
-    const seek = document.getElementById('audioSeek-' + activeAudioCardIndex);
-    if (seek) seek.value = '1000';
-    const nowEl = document.getElementById('audioCurrent-' + activeAudioCardIndex);
-    const durationEl = document.getElementById('audioDuration-' + activeAudioCardIndex);
-    if (nowEl && durationEl) nowEl.textContent = durationEl.textContent;
-    showToast(currentLang === 'es' ? 'Todos los audios de este zikr han terminado' : 'اكتملت جميع المقاطع الصوتية لهذا الذكر');
+    if (audioRepeatEnabled && activeAudioList.length) {
+      activeAudioListIndex = 0;
+    } else {
+      const cardIdx = activeAudioCardIndex;
+      stopCurrentAudioPlayback();
+      const playBtn = document.getElementById('audioPlay-' + cardIdx);
+      if (playBtn) playBtn.textContent = '▶';
+      const seek = document.getElementById('audioSeek-' + cardIdx);
+      if (seek) seek.value = '1000';
+      const nowEl = document.getElementById('audioCurrent-' + cardIdx);
+      const durationEl = document.getElementById('audioDuration-' + cardIdx);
+      if (nowEl && durationEl) nowEl.textContent = durationEl.textContent;
+      showToast(currentLang === 'es' ? 'Todos los audios de este zikr han terminado' : 'اكتملت جميع المقاطع الصوتية لهذا الذكر');
       return;
     }
   }
+
   const url = activeAudioList[activeAudioListIndex];
-  const audio = new Audio(url);
+  const audio = getGlobalAudioElement();
   currentAudio = audio;
-  audio.preload = 'metadata';
-  audio.loop = false;
-  ['loadedmetadata','durationchange','timeupdate','play','pause'].forEach(ev => audio.addEventListener(ev, updateAudioProgress));
-  audio.onended = () => {
-    if (token !== audioPlaybackToken || currentAudio !== audio) return;
-    activeAudioListIndex++;
-    playNextAudioInSequence(token);
-  };
-  audio.onerror = () => {
-    if (token !== audioPlaybackToken || currentAudio !== audio) return;
-    activeAudioListIndex++;
-    showToast(currentLang === 'es' ? 'Un audio no se pudo cargar; continuando con el siguiente' : 'تعذر تحميل مقطع، تتم متابعة المقطع التالي');
-    playNextAudioInSequence(token);
-  };
-  audio.play().then(updateAudioProgress).catch(() => {
-    if (token !== audioPlaybackToken || currentAudio !== audio) return;
-    activeAudioListIndex++;
-    showToast(currentLang === 'es' ? 'No se pudo reproducir un audio; continuando con el siguiente' : 'تعذر تشغيل مقطع، تتم متابعة المقطع التالي');
-    playNextAudioInSequence(token);
+
+  audio.onended = null;
+  audio.onerror = null;
+
+  audio.src = url;
+  audio.load();
+
+  ['loadedmetadata','durationchange','timeupdate','play','pause'].forEach(ev => {
+    audio.removeEventListener(ev, updateAudioProgress);
+    audio.addEventListener(ev, updateAudioProgress);
   });
+
+  audio.onended = () => {
+    if (token !== audioPlaybackToken) return;
+    activeAudioListIndex++;
+    playNextAudioInSequence(token);
+  };
+
+  audio.onerror = () => {
+    if (token !== audioPlaybackToken) return;
+    activeAudioListIndex++;
+    showToast(currentLang === 'es' ? 'Un audio no se pudo cargar; continuando...' : 'تعذر تحميل مقطع، تتم متابعة المقطع التالي');
+    playNextAudioInSequence(token);
+  };
+
+  const playPromise = audio.play();
+  if (playPromise !== undefined) {
+    playPromise.then(updateAudioProgress).catch(() => {
+      if (token !== audioPlaybackToken) return;
+      activeAudioListIndex++;
+      playNextAudioInSequence(token);
+    });
+  }
 }
 function stopAudio(index) {
   if (currentAudio && activeAudioCardIndex === index) {
