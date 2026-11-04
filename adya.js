@@ -225,7 +225,10 @@ const adyaData = [
       "text": "اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ لَكَ بِذَنْبِي فَاغْفِرْ لِي، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ",
       "latin": "Allāhumma anta Rabbī lā ilāha illā ant, khalaqtanī wa anā ‘abduk, wa anā ‘alā ‘ahdika wa wa‘dika mā staṭa‘tu, a‘ūdhu bika min sharri mā ṣana‘tu, abūʾu laka bi-ni‘matika ‘alayya, wa abū’u bi-dhanbī faghfir lī fa-innahū lā yaghfirudh-dhunūba illā ant.",
       "explanationEs": "¡Oh, Allah! Tú eres mi Señor, no hay divinidad digna de adoración excepto Tú. Tú me has creado y yo soy Tu siervo. Me mantengo fiel a Tu pacto y a Tu promesa tanto como puedo.\n\nMe refugio en Ti del mal de lo que he hecho. Reconozco ante Ti Tus bendiciones sobre mí y reconozco mis pecados. Así que perdóname, pues nadie puede perdonar los pecados excepto Tú.",
-      "note": "رواه البخاري (6306) - سيد الاستغفار"
+      "note": "رواه البخاري (6306) - سيد الاستغفار",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%207.mp3"
+      ]
     },
     {
       "itemNumber": 28,
@@ -236,9 +239,9 @@ const adyaData = [
     },
     {
       "itemNumber": 29,
-      "text": "اللهمَّ اغفِرْ لي خطيئَتي وجَهلي ، وإسرافي في أمري ، وما أنت أعلمُ به مني ، اللهمَّ اغفرْ لي خطَئي وعَمْدي ، وهَزْلي وجِدِّي ، وكلُّ ذلك عندي ، اللهمَّ اغفرْ لي ما قدَّمتُ وما أخَّرتُ ، وما أسررتُ وما أعلنتُ ، أنت المقدِّمُ وأنت المؤخِّرُ ، وأنت على كلِّ شيء قديرٌ",
-      "latin": "Allahumma ighfir li khati'ati wa jahli, wa israfi fi amri, wa ma anta a'lamu bihi minni. Allahumma ighfir li khata'i wa 'amdi, wa hazli wa jiddi, wa kullu dhalika 'indi. Allahumma ighfir li ma qaddamtu wa ma akhgartu, wa ma asrartu wa ma a'lantu, anta al-muqaddimu wa anta al-mu'akhkhiru, wa anta 'ala kulli shay'in qadir.\n",
-      "explanationEs": "¡Oh, Allah! Perdona mis faltas, mi ignorancia, mis excesos en mis asuntos y todo aquello que Tú conoces mejor que yo.\n\n¡Oh, Allah! Perdona mis errores y mis actos deliberados, lo que hago en broma y lo que hago en serio, pues todo ello forma parte de mí.\n\n¡Oh, Allah! Perdona lo que he hecho anteriormente y lo que haga después, lo que he ocultado y lo que he manifestado.\n\nTú eres Quien adelanta y Quien retrasa, y Tú tienes poder sobre todas las cosas.",
+      "text": "اللَّهُمَّ اغْفِرْ لِي خَطِيئَتِي وَجَهْلِي، وَإِسْرَافِي فِي أَمْرِي، وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي، اللَّهُمَّ اغْفِرْ لِي جِدِّي وَهَزْلِي، وَخَطَئِي وَعَمْدِي، وَكُلُّ ذَلِكَ عِنْدِي، اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ، وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي، أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ، وَأَنْتَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
+      "latin": "Allāhumma-ghfir lī khaṭī’atī wa-jahlī, wa-isrāfī fī amrī, wa-mā anta a‘lamu bihi minnī. Allāhumma-ghfir lī jiddī wa-hazlī, wa-khaṭa’ī wa-‘amdī, wa-kullu dhālika ‘indī. Allāhumma-ghfir lī mā qaddamtu wa-mā akhkhartu, wa-mā asrartu wa-mā a‘lantu, wa-mā anta a‘lamu bihi minnī. Anta-l-muqaddimu wa-anta-l-mu’akhkhiru, wa-anta ‘alā kulli shay’in qadīr.",
+      "explanationEs": "¡Oh, Allah! Perdona mis errores y mi ignorancia, mis excesos en mis asuntos y aquello que Tú sabes mejor que yo.\n¡Oh, Allah! Perdona lo que hago en serio y en broma, mis equivocaciones y mis acciones intencionadas, pues todo ello forma parte de mí.\n¡Oh, Allah! Perdona lo que he hecho anteriormente y lo que haga después, lo que he ocultado y lo que he manifestado, y aquello que Tú sabes mejor que yo.\nTú eres Quien adelanta y Quien retrasa, y Tú tienes poder sobre todas las cosas.",
       "note": "رواه البخاري ومسلم"
     },
     {
