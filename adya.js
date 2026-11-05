@@ -474,10 +474,13 @@ const adyaData = [
     },
     {
       "itemNumber": 53,
-      "text": "رَبِّ أَعِنِّي وَلَا تُعِنْ عَلَيَّ، وَانْصُرْنِي وَلَا تَنْصُرْ عَلَيَّ، وَامْكُرْ لِي وَلَا تَمْكُرْ عَلَيَّ، وَاهْدِنِي وَيَسِّرِ الْهُدَى إِلَيَّ، وَانْصُرْنِي عَلَى مَنْ بَغَى عَلَيَّ، اللَّهُمَّ اجْعَلْنِي لَكَ شَاكِرًا، لَكَ ذَاكِرًا، لَكَ رَاهِبًا، لَكَ مِطْوَاعًا، إِلَيْكَ مُخْبِتًا أَوْ مُنِيبًا، رَبِّ تَقَبَّلْ تَوْبَتِي، وَاغْسِلْ حَوْبَتِي، وَأَجِبْ دَعْوَتِي، وَثَبِّتْ حُجَّتِي، وَاهْدِ قَلْبِي، وَسَدِّدْ لِسَانِي، وَاسْلُلْ سَخِيمَةَ قَلْبِي",
-      "latin": "Rabbi a‘innī wa-lā tu‘in ‘alayya, wanṣurnī wa-lā tanṣur ‘alayya, wamkur lī wa-lā tamkur ‘alayya, wahdinī wa-yassir il-hudā ilayya, wanṣurnī ‘alā man baghā ‘alayya.\nAllāhumma-j‘alnī laka shākiran, laka dhākiran, laka rāhiban, laka miṭwā‘an, ilayka mukhbitan aw munīban.\nRabbi taqabbal tawbatī, waghsil ḥawbatī, wa-ajib da‘watī, wa-thabbit ḥujjatī, wahdi qalbī, wa-saddid lisānī, waslul sakhīmata qalbī.\n",
-      "explanationEs": "¡Señor mío! Ayúdame y no ayudes contra mí; concédeme la victoria y no concedas la victoria contra mí. Haz que Tus planes sean a mi favor y no en mi contra. Guíame y facilita mi guía hacia Ti. Concédeme la victoria sobre quien me oprima.\n\n¡Oh, Allah! Haz que sea agradecido Contigo, que Te recuerde constantemente, que Te tema con reverencia, que Te obedezca plenamente y que me someta humildemente a Ti y vuelva arrepentido a Ti.\n\nSeñor mío, acepta mi arrepentimiento, borra mis pecados, responde a mis súplicas, afirma mis argumentos, guía mi corazón, corrige mi lengua y arranca de mi corazón todo rencor, resentimiento y maldad.",
-      "note": "رواه الترمذي (إسناد صحيح)"
+      "text": "رَبِّ أَعِنِّي وَلَا تُعِنْ عَلَيَّ، وَانْصُرْنِي وَلَا تَنْصُرْ عَلَيَّ، وَامْكُرْ لِي وَلَا تَمْكُرْ عَلَيَّ، وَاهْدِنِي وَيَسِّرِ الْهُدَى لِي، وَانْصُرْنِي عَلَى مَنْ بَغَى عَلَيَّ. رَبِّ اجْعَلْنِي لَكَ شَكَّارًا، لَكَ ذَكَّارًا، لَكَ رَهَّابًا، لَكَ مِطْوَاعًا، لَكَ مُخْبِتًا، إِلَيْكَ أَوَّاهًا مُنِيبًا. رَبِّ تَقَبَّلْ تَوْبَتِي، وَاغْسِلْ حَوْبَتِي، وَأَجِبْ دَعْوَتِي، وَثَبِّتْ حُجَّتِي، وَسَدِّدْ لِسَانِي، وَاهْدِ قَلْبِي، وَاسْلُلْ سَخِيمَةَ صَدْرِي.",
+      "latin": "Rabbi a‘innī wa-lā tu‘in ‘alayya, wa-nṣurnī wa-lā tanṣur ‘alayya, wa-mkur lī wa-lā tamkur ‘alayya, wa-hdinī wa-yassiri-l-hudā lī, wa-nṣurnī ‘alā man baghā ‘alayya.\n\nRabbi-j‘alnī laka shakkāran, laka dhakkāran, laka rahhāban, laka miṭwā‘an, laka mukhbitan, ilayka awwāhan munīban.\nRabbi taqabbal tawbatī, wa-ghsil hawbatī, wa-ajib da‘watī, wa-thabbit ḥujjatī, wa-saddid lisānī, wa-hdi qalbī, wa-s-lul sakhīmata ṣadrī.",
+      "explanationEs": "¡Señor mío! Ayúdame y no ayudes contra mí. Concédeme la victoria y no concedas la victoria contra mí. Trama a mi favor y no contra mí. Guíame y facilita para mí el camino de la guía. Concédeme la victoria sobre quien me oprima.\n\n¡Señor mío! Haz que sea muy agradecido contigo, que Te recuerde constantemente, que Te tema profundamente, que Te obedezca plenamente, que sea humilde ante Ti, que vuelva a Ti con devoción y arrepentimiento.\n\n¡Señor mío! Acepta mi arrepentimiento, purifica mis faltas, responde a mi súplica, fortalece mis argumentos, endereza mi lengua, guía mi corazón y arranca de mi pecho todo rencor y resentimiento.",
+      "note": "رواه الترمذي (إسناد صحيح)",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2053.mp3"
+      ]
     },
     {
       "itemNumber": 54,
