@@ -453,14 +453,20 @@ const adyaData = [
       "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الثَّبَاتَ فِي الأَمْرِ، وَالْعَزِيمَةَ عَلَى الرُّشْدِ، وَأَسْأَلُكَ مُوجِبَاتِ رَحْمَتكَِ، وَعَزَائمَِ مَغْفِرَتكَِ، وَأسَْألَكَُ شُكْرَ نعِْمَتكَِ، وَحُسْنَ عِباَدَتكَِ، وَأسَْألَكَُ قَلْبًا سَلِيمًا، وَلِسَانًا صَادِقًا، وَأَسْأَلُكَ مِنْ خَيْرِ مَا تَعْلَمُ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا تَعْلَمُ، وَأَسْتَغْفِرُكَ لِمَا تَعْلَمُ، إِنَّكَ أَنْتَ عَلَّامُ الْغُيُوبِ.",
       "latin": "Allāhumma innī as’alukat-thabāta fil-amri wal-‘azīmata ‘alar-rushd, wa as’aluka mūjibāti raḥmatika wa ‘azā’ima maghfiratik, wa as’aluka shukra ni‘matik, wa ḥusna ‘ibādatik, wa as’aluka qalban salīmā wa lisānan ṣādiqā, wa as’aluka min khayri mā ta‘lam, wa a‘ūdhu bika min sharri mā ta‘lam, wa astaghfiruka limā ta‘lam, innaka Anta ‘Allāmul-ghuyūb.",
       "explanationEs": "¡Oh Allah! Te pido firmeza en todos mis asuntos y determinación para seguir la rectitud. Te pido aquello que atrae Tu misericordia y aquello que conduce a Tu perdón. Te pido que me inspires gratitud por Tus bendiciones y excelencia en Tu adoración. Te pido un corazón sano y una lengua veraz. Te pido todo el bien que Tú conoces, me refugio en Ti de todo el mal que Tú conoces y Te pido perdón por aquello que Tú conoces. Ciertamente, Tú eres el Conocedor de lo oculto.",
-      "note": "رواه الطبراني في الكبير"
+      "note": "رواه الطبراني في الكبير",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2050.mp3"
+      ]
     },
     {
       "itemNumber": 51,
-      text: 'اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ.',
-      latin: 'Allāhummak-finī bi-ḥalālika ‘an ḥarāmika wa aghninī bi-faḍlika ‘amman siwāk.',
-      explanationEs: '¡Oh Allah! Haz que Tu sustento lícito me sea suficiente frente a lo ilícito, y enriquéceme con Tu favor prescindiendo de cualquier otro fuera de Ti. (Tirmidhi)',
-      note: 'رواه الترمذي (إسناد حسن)'
+      "text": "اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ.",
+      "latin": "Allāhummak-finī bi-ḥalālika ‘an ḥarāmika wa aghninī bi-faḍlika ‘amman siwāk.",
+      "explanationEs": "¡Oh Allah! Haz que Tu sustento lícito me sea suficiente frente a lo ilícito, y enriquéceme con Tu favor prescindiendo de cualquier otro fuera de Ti. (Tirmidhi)",
+      "note": "رواه الترمذي (إسناد حسن)",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2051.mp3"
+      ]
     },
     {
       "itemNumber": 52,
@@ -494,10 +500,13 @@ const adyaData = [
     },
     {
       "itemNumber": 55,
-      text: 'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ، اللّٰهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ.',
-      latin: 'Allāhumma ṣalli ‘alā Muḥammadin wa ‘alā āli Muḥammad, kamā ṣallayta ‘alā Ibrāhīma wa ‘alā āli Ibrāhīm, innaka Ḥamīdun Majīd. Allāhumma bārik ‘alā Muḥammadin wa ‘alā āli Muḥammad, kamā bārakta ‘alā Ibrāhīma wa ‘alā āli Ibrāhīm, innaka Ḥamīdun Majīd.',
-      explanationEs: '¡Oh Allah! Concede Tus bendiciones a Muhammad y a la familia de Muhammad, como las concediste a Abraham y a la familia de Abraham. Ciertamente, Tú eres Loable y Glorioso. ¡Oh Allah! Bendice a Muhammad y a la familia de Muhammad, como bendijiste a Abraham y a la familia de Abraham. Ciertamente, Tú eres Loable y Glorioso.',
-      note: 'الصلاة الإبراهيمية'
+      "text": "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ، اللّٰهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ.",
+      "latin": "Allāhumma ṣalli ‘alā Muḥammadin wa ‘alā āli Muḥammad, kamā ṣallayta ‘alā Ibrāhīma wa ‘alā āli Ibrāhīm, innaka Ḥamīdun Majīd. Allāhumma bārik ‘alā Muḥammadin wa ‘alā āli Muḥammad, kamā bārakta ‘alā Ibrāhīma wa ‘alā āli Ibrāhīm, innaka Ḥamīdun Majīd.",
+      "explanationEs": "¡Oh Allah! Concede Tus bendiciones a Muhammad y a la familia de Muhammad, como las concediste a Abraham y a la familia de Abraham. Ciertamente, Tú eres Loable y Glorioso. ¡Oh Allah! Bendice a Muhammad y a la familia de Muhammad, como bendijiste a Abraham y a la familia de Abraham. Ciertamente, Tú eres Loable y Glorioso.",
+      "note": "الصلاة الإبراهيمية",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2055.mp3"
+      ]
     }
   ]
   },
