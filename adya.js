@@ -233,7 +233,10 @@ const adyaData = [
       "text": "اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْمًا كَثِيرًا، وَلَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ، فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ وَارْحَمْنِي إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ.",
       "latin": "Allāhumma innī ẓalamtu nafsī ẓulman kathīran, wa lā yaghfirudh-dhunūba illā ant, faghfir lī maghfiratan min ‘indika war-ḥamnī innaka antal-Ghafūrur-Raḥīm",
       "explanationEs": "¡Oh, Allah! Ciertamente, he sido muy injusto conmigo mismo, y nadie puede perdonar los pecados excepto Tú. Así que concédeme un perdón que provenga de Ti y ten misericordia de mí. En verdad, Tú eres el Indulgente, el Misericordioso.",
-      "note": "رواه البخاري ومسلم"
+      "note": "رواه البخاري ومسلم",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2028.mp3"
+      ]
     },
     {
       "itemNumber": 29,
