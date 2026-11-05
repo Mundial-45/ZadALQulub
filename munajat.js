@@ -1051,9 +1051,13 @@ const munajatData = [
       },
       {
         itemNumber: 161,
-        text: "اللَّهُمَّ أَصْلِحْ لِي دِينِيَ الَّذِي هُوَ عِصْمَةُ أَمْرِي، وَأَصْلِحْ لِي دُنْيَايَ الَّتِي فِيهَا مَعَاشِي، وَأَصْلِحْ لِي آخِرَتِيَ الَّتِي إِلَيْهَا مَعَادِي. اللَّهُمَّ اجْعَلِ الْحَيَاةَ زِيَادَةً لِي فِي كُلِّ خَيْرٍ، وَاجْعَلِ الْمَوْتَ رَاحَةً لِي مِنْ كُلِّ شَرٍّ.",
-        latin: "Allāhumma aṣliḥ lī dīniyalladhī huwa ‘iṣmatu amrī, wa aṣliḥ lī dunyāyallatī fīhā ma‘āshī, wa aṣliḥ lī ākhiratiyallatī ilayhā ma‘ādī. Allāhumma ij‘alil-ḥayāta ziyādatan lī fī kulli khayr, waj‘alil-mawta rāḥatan lī min kulli sharr.",
-        explanationEs: "¡Oh Allah! Rectifica para mí mi religión, que es el resguardo de mi asunto; rectifica para mí mi vida terrenal, en la que está mi sustento; y rectifica para mí mi Vida Futura, a la cual es mi retorno. ¡Oh Allah! Haz que la vida sea para mí un incremento en todo bien, y haz que la muerte sea para mí un descanso de todo mal."
+        text": "اللَّهُمَّ أَصْلِحْ لِي دِينِي الَّذِي هُوَ عِصْمَةُ أَمْرِي، وَأَصْلِحْ لِي دُنْيَايَ الَّتِي فِيهَا مَعَاشِي، وَأَصْلِحْ لِي آخِرَتِي الَّتِي فِيهَا مَعَادِي وَاجْعَلِ الْحَيَاةَ زِيَادَةً لِي فِي كُلِّ خَيْرٍ، وَاجْعَلِ الْمَوْتَ رَاحَةً لِي مِنْ كُلِّ شَرٍّ.",
+        latin": "Allāhumma aṣliḥ lī dīnilladhī huwa ‘iṣmatu amrī, wa aṣliḥ lī dunyāyal-latī fīhā ma‘āshī, wa aṣliḥ lī ākhiratil-latī fīhā ma‘ādī, waj‘alil-ḥayāta ziyādatan lī fī kulli khayr, waj‘alil-mawta rāḥatan lī min kulli sharr.",
+        explanationEs": "¡Oh, Allah! Corrige y mejora mi religión, que es la protección de todos mis asuntos. Corrige y mejora mi vida mundanal, en la que transcurre mi existencia. Corrige y mejora mi vida en el Más Allá, hacia la que será mi regreso.\n\nHaz que la vida sea para mí un incremento en todo bien, y haz que la muerte sea un descanso para mí de todo mal.",
+        note": "رواه مسلم",
+        audioUrls": [
+          "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2036.mp3"
+        ]
       },
       {
         itemNumber: 162,
@@ -1084,19 +1088,20 @@ const munajatData = [
         itemNumber: 165,
         text: "اللَّهُمَّ، أَعُوذُ بِرِضَاكَ مِنْ سَخَطِكَ، وَبِمُعَافَاتِكَ مِنْ عُقُوبَتِكَ، وَأَعُوذُ بِكَ مِنْكَ، لَا أُحْصِي ثَنَاءً عَلَيْكَ، أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ.",
         latin: "Allāhumma a‘ūdhu bi-riḍāka min sakhaṭik, wa bi-mu‘āfātika min ‘uqūbatik, wa a‘ūdhu bika mink, lā uḥṣī thanā'an ‘alayk, Anta kamā athnayta ‘alā nafsik.",
-        explanationEs: "¡Oh Allah! Busco refugio en Tu complacencia contra Tu ira, en Tu protección contra Tu castigo, y busco refugio en Ti de Ti mismo. No puedo enumerar las alabanzas hacia Ti; Tú eres tal como Te has alabado a Ti mismo."
+        explanationEs: "¡Oh Allah! Busco refugio en Tu complacencia contra Tu ira, en Tu protección contra Tu castigo, y busco refugio en Ti de Ti mismo. No puedo enumerar las alabanzas hacia Ti; Tú eres tal como Te has alabado a Ti mismo.",
+        audioUrls": [
+           "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2043.mp3"
+        ]
       },
       {
         itemNumber: 166,
-        text: "اللَّهُمَّ، أَعُوذُ بِرِضَاكَ مِنْ سَخَطِكَ، وَبِمُعَافَاتِكَ مِنْ عُقُوبَتِكَ، وَأَعُوذُ بِكَ مِنْكَ، لَا أُحْصِي ثَنَاءً عَلَيْكَ، أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ.",
-        latin: "Allāhumma a‘ūdhu bi-riḍāka min sakhaṭik, wa bi-mu‘āfātika min ‘uqūbatik, wa a‘ūdhu bika mink, lā uḥṣī thanā'an ‘alayk, Anta kamā athnayta ‘alā nafsik.",
-        explanationEs: "¡Oh Allah! Busco refugio en Tu complacencia contra Tu ira, en Tu protección contra Tu castigo, y busco refugio en Ti de Ti mismo. No puedo enumerar las alabanzas hacia Ti; Tú eres tal como Te has alabado a Ti mismo."
-      },
-      {
-        itemNumber: 167,
-        text: "اللَّهُمَّ رَبَّ السَّمَاوَاتِ السَّبْعِ، وَرَبَّ الْأَرْضِ، وَرَبَّ الْعَرْشِ الْعَظِيمِ، رَبَّنَا وَرَبَّ كُلِّ شَيْءٍ، فَالِقَ الْحَبِّ وَالنَّوَى، وَمُنْزِلَ التَّوْرَاةِ وَالْإِجِيلِ وَالْفُرْقَانِ، أَعُوذُ بِكَ مِنْ شَرِّ كُلِّ شَيْءٍ أَنْتَ آخِذٌ بِنَاصِيَتِهِ. اللَّهُمَّ أَنْتَ الْأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، اقْضِ عَنَّا الدَّيْنَ، وَأَغْنِنَا مِنَ الْفَقْرِ.",
-        latin: "Allāhumma Rabba as-samāwātis-sab‘i, wa Rabbal-arḍi, wa Rabbal-‘Arshil-‘aẓīm, Rabbanā wa Rabba kulli shay', fāliqal-ḥabbi wan-nawā, wa munzilat-Towrāti wal-Injīli wal-Furqān, a‘ūdhu bika min sharri kulli shayʾin Anta ākhidhun bi-nāṣiyatih. Allāhumma Antal-Awwalu fa-laysa qablaka shay', iqḍi ‘annād-dayna, wa aghninā minal-faqr.",
-        explanationEs: "¡Oh Allah! Señor de los siete cielos, Señor de la tierra y Señor del Trono Inmenso, Señor nuestro y Señor de todas las cosas, hendedor del grano y del hueso de los frutos, revelador de la Tora, del Evangelio y del Corán: me refugio en Ti del mal de toda cosa de la cual Tú posees el belfo (sobre la que tienes absoluto dominio). ¡Oh Allah! Tú eres el Primero, de modo que no hay nada antes que Tú; salda nuestra deuda y enriquécenos frente a la pobreza."
+        text": "اللَّهُمَّ رَبَّ السَّمَوَاتِ وَرَبَّ الْأَرْضِ وَرَبَّ الْعَرْشِ الْعَظِيمِ، رَبَّنَا وَرَبَّ كُلِّ شَيْءٍ، فَالِقَ الْحَبِّ وَالنَّوَى وَمُنْزِلَ التَّوْرَاةِ وَالْإِنْجِيلِ وَالْفُرْقَانِ، أَعُوذُ بِكَ مِنْ شَرِّ كُلِّ شَيْءٍ أَنْتَ آخِذٌ بِنَاصِيَتهِِ، اللَّهُمَّ أَنْتَ الْأوََّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ الْآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ، وَأَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، وَأَنْتَ الْبَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، اقْضِ عَنَّا الدَّيْنَ وَأَغْنِنَا مِنَ الْفَقْرِ.",
+        latin": "Allāhumma Rabbas-samāwāti wa Rabbal-arḍi wa Rabbal-‘arshil-‘aẓīm, Rabbanā wa Rabba kulli shay', Fāliqal-ḥabbi wan-nawā wa Munzilat-Tawrāti wal-Injīli wal-Furqān, a‘ūdhu bika min sharri kulli shay'in Anta ākhidhun bi-nāṣiyatih. Allāhumma Antal-Awwalu fa-laysa qablaka shay', wa Antal-Ākhiru fa-laysa ba‘daka shay', wa Antaẓ-Ẓāhiru fa-laysa fawqaka shay', wa Antal-Bāṭinu fa-laysa dūnaka shay', iqḍi ‘annad-dayna wa aghninā minal-faqr.",
+        explanationEs": "¡Oh Allah, Señor de los cielos, de la tierra y del Trono grandioso; Señor nuestro y Señor de todas las cosas! Tú haces brotar el grano y el hueso de los frutos, y revelaste la Torá, el Evangelio y el Furqán (el Criterio). Me refugio en Ti del mal de todas las cosas, pues Tú tienes pleno dominio sobre ellas. ¡Oh Allah! Tú eres el Primero y nada existe antes de Ti; Tú eres el Último y nada existe después de Ti; Tú eres el Manifiesto y nada está por encima de Ti; y Tú eres el Oculto y nada está más allá de Ti. Satisface nuestras deudas y líbranos de la pobreza.",
+        note": "رواه مسلم",
+        audioUrls": [
+          "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2034.mp3"
+        ]
       },
       {
         itemNumber: 168,
