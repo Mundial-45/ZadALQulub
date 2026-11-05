@@ -373,10 +373,13 @@ const adyaData = [
     },
     {
       "itemNumber": 48,
-      text: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ العَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي دِينِي وَدُنْيَايَ وَأَهْلِي وَمَالِي، اللَّهُمَّ اسْتُرْ عَوْرَاتِي وَآمِنْ رَوْعَاتِي، وَاحْفَظنْيِ مِنْ بيَنِْ يَدَيَّ وَمِنْ خَلْفِي وَعَنْ يَمِينيِ وَعَنْ شِمَالِي وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي.',
-      latin: 'Allāhumma innī as’alukal-‘afwa wal-‘āfiyata fid-dunyā wal-ākhirah. Allāhumma innī as’alukal-‘afwa wal-‘āfiyata fī dīnī wa dunyāya wa ahlī wa mālī. Allāhummas-tur ‘awrātī wa āmin raw‘ātī, waḥ-faẓnī min bayni yadayya wa min khalfī wa ‘an yamīnī wa ‘an shimālī wa min fawqī, wa a‘ūdhu bi-‘aẓamatika an ughtāla min taḥtī.',
-      explanationEs: '¡Oh Allah! Te pido perdón y bienestar en esta vida y en la otra; en mi religión, en mis asuntos mundanos, en mi familia y en mis bienes. Cubre mis defectos y aquello que debe permanecer oculto, y calma mis temores. Protégeme por delante, por detrás, a mi derecha, a mi izquierda y por encima de mí; y me refugio en Tu grandeza de ser sorprendido y tragado por la tierra desde abajo.',
-      note: 'رواه أبو داود (إسناد صحيح)'
+      "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالآخِرَةِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي دِينِي وَدُنْيَايَ وَأَهْلِي وَمَالِي، اللَّهُمَّ اسْتُرْ عَوْرَاتِي وَآمِنْ رَوْعَاتِي، اللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ وَمِنْ خَلْفِي وَعَنْ يَمِينِي وَعَنْ شِمَالِي وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي.",
+      "latin": "Allāhumma innī as’alukal-‘afwa wal-‘āfiyata fid-dunyā wal-ākhirah. Allāhumma innī as’alukal-‘afwa wal-‘āfiyata fī dīnī wa dunyāya wa ahlī wa mālī. Allāhummas-tur ‘awrātī wa āmin raw‘ātī. Allāhummaḥ-faẓnī min bayni yadayya wa min khalfī wa ‘an yamīnī wa ‘an shimālī wa min fawqī, wa a‘ūdhu bi-‘aẓamatika an ughtāla min taḥtī.",
+      "explanationEs": "¡Oh Allah! Te pido el perdón y la salud en esta vida y en la otra. ¡Oh Allah! Te pido el perdón y la salud en mi religión, mis asuntos mundanales, mi familia y mis bienes. ¡Oh Allah! Cubre mis faltas y calma mis temores. ¡Oh Allah! Protégeme por delante, por detrás, a mi derecha, a mi izquierda y por encima de mí; y me refugio en Tu grandeza de ser tragado por la tierra.",
+      "note": "رواه أبو داود (إسناد صحيح)",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2012.mp3"
+      ]
     },
     {
       "itemNumber": 49,
