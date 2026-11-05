@@ -580,14 +580,20 @@ const adyaData = [
       "text": "اللَّهُمَّ مَالِكَ المُلْكِ تُؤْتِي المُلْكَ مَنْ تَشَاءُ، وَتَنْزِعُ المُلْكَ مِمَّنْ تَشَاءُ، وَتُعِزُّ مَنْ تَشَاءُ، وَتُذِلُّ مَنْ تَشَاءُ، بِيَدِكَ الخَيْرُ إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ. رَحْمَنُ الدُّنْيَا وَالآخِرَةِ وَرَحِيمُهُمَا، تُعْطِيهِمَا مَنْ تَشَاءُ، وَتَمْنَعُ مِنْهُمَا مَنْ تَشَاءُ، ارْحَمْنِي رَحْمَةً تُغْنِينِي بِهَا عَنْ رَحْمَةِ مَنْ سِوَاكَ.",
       "latin": "Allāhumma Mālikal-mulki tu'til-mulka man tashā', wa tanzi‘ul-mulka mimman tashā', wa tu‘izzu man tashā', wa tudhillu man tashā', biyadikal-khayru innaka ‘alā kulli shay'in qadīr. Raḥmānud-dunyā wal-ākhirati wa raḥīmahumā, tu‘ṭīhimā man tashā', wa tamna‘u minhumā man tashā', irḥamnī raḥmatan tughnīnī bihā ‘an raḥmati man siwāk.",
       "explanationEs": "¡Oh Allah, Dueño de todo el dominio! Concedes el dominio a quien quieres y se lo retiras a quien quieres; honras a quien quieres y humillas a quien quieres. En Tu mano está todo bien. Ciertamente, Tú tienes poder sobre todas las cosas.\n\n¡Oh Misericordioso de este mundo y del Más Allá, y Compasivo con ambos! Concedes Sus bienes a quien quieres y se los niegas a quien quieres. Ten misericordia de mí con una misericordia que me haga prescindir de la misericordia de cualquiera fuera de Ti.",
-      "note": "دعاء توسيع الرزق (تكرار)"
+      "note": "دعاء توسيع الرزق (تكرار)",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2062.mp3"
+      ]
     },
     {
       "itemNumber": 63,
-      text: 'اللَّهُمَّ لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ، وَلَا يَنْفَعُ ذَا الجَدِّ مِنْكَ الجَدُّ.',
-      latin: 'Allāhumma lā māni‘a limā a‘ṭayt, wa lā mu‘ṭiya limā mana‘t, wa lā yanfa‘u dhal-jaddi minkal-jadd.',
-      explanationEs: 'Oh Allah, nadie puede impedir lo que Tú das, ni nadie puede dar lo que Tú impides, y la riqueza no beneficia a su dueño frente a Ti.',
-      note: 'صحيح البخاري'
+      "text": "اللَّهُمَّ لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ، وَلَا يَنْفَعُ ذَا الجَدِّ مِنْكَ الجَدُّ.",
+      "latin": "Allāhumma lā māni‘a limā a‘ṭayt, wa lā mu‘ṭiya limā mana‘t, wa lā yanfa‘u dhal-jaddi minkal-jadd.",
+      "explanationEs": "Oh Allah, nadie puede impedir lo que Tú das, ni nadie puede dar lo que Tú impides, y la riqueza no beneficia a su dueño frente a Ti.",
+      "note": "صحيح البخاري",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2063.mp3"
+      ]
     },
     {
       "itemNumber": 64,
@@ -601,10 +607,13 @@ const adyaData = [
     },
     {
       "itemNumber": 65,
-      text: 'اللَّهُمَّ اغْفِرْ لِي، وَارْحَمْنِي، وَاهْدِنيِ، وَعَافِنِي، وَارْزُقْنِي.',
-      latin: 'Allāhummagh-fir lī, war-ḥamnī, wah-dinī, wa ‘āfinī, war-zuqnī.',
-      explanationEs: 'Oh Allah, perdóname, ten misericordia de mí, guíame, dame salud y concédeme sustento.',
-      note: 'صحيح مسلم'
+      "text": "اللَّهُمَّ اغْفِرْ لِي، وَارْحَمْنِي، وَاهْدِنيِ، وَعَافِنِي، وَارْزُقْنِي.",
+      "latin": "Allāhummagh-fir lī, war-ḥamnī, wah-dinī, wa ‘āfinī, war-zuqnī.",
+      "explanationEs": "Oh Allah, perdóname, ten misericordia de mí, guíame, dame salud y concédeme sustento.",
+      "note": "صحيح مسلم",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2065.mp3"
+      ]
     },
     {
       "itemNumber": 66,
