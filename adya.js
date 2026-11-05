@@ -591,10 +591,13 @@ const adyaData = [
     },
     {
       "itemNumber": 64,
-      "text": "اللَّهُمَّ رَبَّ السَّمَاوَاتِ وَرَبَّ الأَرْضِ، وَرَبَّ كُلِّ شَيْءٍ، فَالِقَ الحَبِّ وَالنَّوَى، مُنْزِلَ التَّوْرَاةِ وَالإِنْجِيلِ، أَعِذْنِي مِنْ شَرِّ كُلِّ ذِي شَرٍّ، أَنْتَ آخِذٌ بِنَاصِيَتِهِ، أَنْتَ الأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ البَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، وَأَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، اقْضِ عَنِّي الدَّيْنَ وَأَغْنِنِي مِنَ الفَقْرِ.",
-      "latin": "Allāhumma Rabba-samāwāti wa Rabbal-arḍ, wa Rabba kulli shay', Fāliqal-ḥabbi wan-nawā, Munzilat-Tawrāti wal-Injīl, a‘idhnī min sharri kulli dhī sharr, Anta ākhidhun bi-nāṣiyatih, Antal-Awwalu falaysa qablaka shay', wa Antal-Bāṭinu falaysa dūnaka shay', wa Antaẓ-Ẓāhiru falaysa fawqaka shay', iqḍi ‘annad-dayna wa aghninā minal-faqr.",
-      "explanationEs": "¡Oh Allah, Señor de los cielos, Señor de la tierra y Señor de todas las cosas! Quien hiende el grano y los huesos de los frutos, Revelador de la Torá y del Evangelio, protégeme del mal de todo ser que posea maldad, pues Tú tienes bajo Tu dominio su frente.\n\nTú eres el Primero: nada existe antes de Ti. Tú eres el Oculto: nada queda fuera de Tu alcance. Y Tú eres el Manifiesto: nada está por encima de Ti.\n\nSatisface mi deuda y líbrame de la pobreza.",
-      "note": "دعاء قضاء الدين"
+      "text": "اللَّهُمَّ رَبَّ السَّمَوَاتِ السَّبْعِ وَرَبَّ الأَرْضِ، وَرَبَّ الْعَرْشِ الْعَظِيمِ، رَبَّنَا وَرَبَّ كُلِّ شَيْءٍ، فَالِقَ الْحَبِّ وَالنَّوَى، وَمُنْزِلَ التَّوْرَاةِ وَالْإِنْجِيلِ، وَالْفُرْقَانِ، أَعُوذُ بِكَ مِنْ شَرِّ كُلِّ شَيْءٍ أَنْتَ آخِذٌ بِنَاصِيَتِهِ. اللَّهُمَّ أَنْتَ الأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ الآخِرُ فَلَيسَ بَعْدَكَ شَيْءٌ، وَأَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، وَأَنْتَ الْبَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، اقْضِ عَنَّا الدَّيْنَ وَأَغْنِنَا مِنَ الْفَقْرِ.",
+      "latin": "Allāhumma rabba as-samāwāti as-sab'i wa-rabba al-'arshi al-'aẓīm, rabbanā wa-rabba kulli shay', fāliqal-ḥabbi wan-nawā, wa-munzila at-tawrāti wal-injīli wal-furqān, a'ūdhu bika min sharri kulli shayʾin anta ākhidhun bi-nāṣiyatih. Allāhumma anta al-awwalu fa-laysa qablaka shay', wa-anta al-ākhiru fa-laysa ba'daka shay', wa-anta aẓ-ẓāhiru fa-laysa fawqaka shay', wa-anta al-bāṭinu fa-laysa dūnaka shay', iqḍi 'annā ad-dayna wa-aghninā mina al-faqr.",
+      "explanationEs": "¡Oh Allah! Señor de los siete cielos, Señor de la Tierra y Señor del Grandioso Trono, Señor nuestro y Señor de todas las cosas, que haces germinar el grano y el hueso, revelador de la Torá, del Evangelio y del Criterio (el Corán). Me refugio en Ti del mal de toda cosa que esté bajo Tu dominio. ¡Oh Allah! Tú eres el Primero y no hay nada antes de Ti; Tú eres el Último y no hay nada después de Ti; Tú eres el Manifiesto y no hay nada por encima de Ti; Tú eres el Oculto y no hay nada más allá de Ti. Salda nuestras deudas y líbranos de la pobreza.",
+      "note": "دعاء قضاء الدين",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2034.mp3"
+      ]
     },
     {
       "itemNumber": 65,
