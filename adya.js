@@ -527,24 +527,33 @@ const adyaData = [
     },
     {
       "itemNumber": 57,
-      text: 'اللَّهُمَّ مَالِكَ المُلْكِ تُؤْتِي المُلْكَ مَنْ تَشَاءُ وَتَنْزِعُ المُلْكَ مِمَّنْ تَشَاءُ وَتُعِزُّ مَنْ تَشَاءُ وَتُذِلُّ مَنْ تَشَاءُ بِيَدِكَ الخَيْرُ إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، رَحْمَنَ الدُّنْيَا وَالآخِرَةِ تُعْطِيهِمَا مَنْ تَشَاءُ وَتَمْنَعُ مِنْهُمَا مَنْ تَشَاءُ، ارْحَمْنِي رَحْمَةً تُغْنِينِي بِهَا عَنْ رَحْمَةِ مَنْ سِوَاكَ.',
-      latin: 'Allāhumma Mālikal-mulki tu\'til-mulka man tashā\'u wa tanzi‘ul-mulka mimman tashā\'u wa tu‘izzu man tashā\'u wa tudhillu man tashā\'u biyadikal-khayru innaka ‘alā kulli shay\'in qadīr. Raḥmānad-dunyā wal-ākhirati tu‘ṭīhimā man tashā\'u wa tamna‘u minhumā man tashā\'u, irḥamnī raḥmatan tughnīnī bihā ‘an raḥmati man siwāk.',
-      explanationEs: "¡Oh Allah, Soberano del dominio! Concedes el dominio a quien quieres y se lo quitas a quien quieres; honras a quien quieres y humillas a quien quieres. En Tu mano está todo bien. Ciertamente, Tú tienes poder sobre todas las cosas. ¡Misericordioso de esta vida y de la otra! Concedes ambas a quien quieres y se las niegas a quien quieres. Ten misericordia de mí con una misericordia que me haga prescindir de la misericordia de cualquiera fuera de Ti.",
-      note: 'دعاء قضاء الدين وتوسيع الرزق'
+      "text": "اللَّهُمَّ مَالِكَ المُلْكِ تُؤْتِي المُلْكَ مَنْ تَشَاءُ وَتَنْزِعُ المُلْكَ مِمَّنْ تَشَاءُ وَتُعِزُّ مَنْ تَشَاءُ وَتُذِلُّ مَنْ تَشَاءُ بِيَدِكَ الخَيْرُ إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، رَحْمَنَ الدُّنْيَا وَالآخِرَةِ تُعْطِيهِمَا مَنْ تَشَاءُ وَتَمْنَعُ مِنْهُمَا مَنْ تَشَاءُ، ارْحَمْنِي رَحْمَةً تُغْنِينِي بِهَا عَنْ رَحْمَةِ مَنْ سِوَاكَ.",
+      "latin": "Allāhumma Mālikal-mulki tu'til-mulka man tashā'u wa tanzi‘ul-mulka mimman tashā'u wa tu‘izzu man tashā'u wa tudhillu man tashā'u biyadikal-khayru innaka ‘alā kulli shay'in qadīr. Raḥmānad-dunyā wal-ākhirati tu‘ṭīhimā man tashā'u wa tamna‘u minhumā man tashā'u, irḥamnī raḥmatan tughnīnī bihā ‘an raḥmati man siwāk.",
+      "explanationEs": "¡Oh Allah, Soberano del dominio! Concedes el dominio a quien quieres y se lo quitas a quien quieres; honras a quien quieres y humillas a quien quieres. En Tu mano está todo bien. Ciertamente, Tú tienes poder sobre todas las cosas. ¡Misericordioso de esta vida y de la otra! Concedes ambas a quien quieres y se las niegas a quien quieres. Ten misericordia de mí con una misericordia que me haga prescindir de la misericordia de cualquiera fuera de Ti.",
+      "note": "دعاء قضاء الدين وتوسيع الرزق",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2057.mp3"
+      ]
     },
     {
       "itemNumber": 58,
-      text: 'اللَّهُمَّ رَبَّ السَّمَاوَاتِ السَّبْعِ وَرَبَّ العَرْشِ العَظِيمِ، رَبَّنَا وَرَبَّ كُلِّ شَيْءٍ، أَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، وَأَنْتَ البَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، مُنْزِلَ التَّوْرَاةِ وَالإِنْجِيلِ وَالفُرْقَانِ، فَالِقَ الحَبِّ وَالنَّوَى، أَعُوذُ بِكَ مِنْ شَرِّ كُلِّ شَيْءٍ أَنْتَ آخِذٌ بِنَاصِيَتِهِ، أَنْتَ الأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ الآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ، اقْضِ عَنَّا الدَّيْنَ وَأَغْنِنَا مِنَ الفَقْرِ.',
-      latin: 'Allāhumma Rabbas-samāwātis-sab‘i wa Rabbal-‘arshil-‘aẓīm, Rabbanā wa Rabba kulli shay\', Antaẓ-Ẓāhiru falaysa fawqaka shay\', wa Antal-Bāṭinu falaysa dūnaka shay\', Munzilat-Tawrāti wal-Injīli wal-Furqān, Fāliqal-ḥabbi wan-nawā, a‘ūdhu bika min sharri kulli shay\'in Anta ākhidhun bi-nāṣiyatih, Antal-Awwalu falaysa qablaka shay\', wa Antal-Ākhiru falaysa ba‘daka shay\', iqḍi ‘annad-dayna wa aghninā minal-faqr.',
-      explanationEs: "¡Oh Allah, Señor de los siete cielos y Señor del Trono inmenso, Señor nuestro y Señor de todas las cosas! Tú eres el Manifiesto, nada está por encima de Ti; y Tú eres el Oculto, nada está más allá de Ti. Revelador de la Torá, el Evangelio y el Criterio (el Corán), Quien hiende el grano y las semillas, me refugio en Ti del mal de toda cosa cuya frente está bajo Tu dominio. Tú eres el Primero, nada hubo antes de Ti, y Tú eres el Último, nada habrá después de Ti. Paga nuestras deudas y líbranos de la pobreza.",
-      note: 'دعاء قضاء الدين والفقر'
+      "text": "اللَّهُمَّ رَبَّ السَّمَاوَاتِ السَّبْعِ وَرَبَّ العَرْشِ العَظِيمِ، رَبَّنَا وَرَبَّ كُلِّ شَيْءٍ، أَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، وَأَنْتَ البَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، مُنْزِلَ التَّوْرَاةِ وَالإِنْجِيلِ وَالفُرْقَانِ، فَالِقَ الحَبِّ وَالنَّوَى، أَعُوذُ بِكَ مِنْ شَرِّ كُلِّ شَيْءٍ أَنْتَ آخِذٌ بِنَاصِيَتِهِ، أَنْتَ الأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ الآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ، اقْضِ عَنَّا الدَّيْنَ وَأَغْنِنَا مِنَ الفَقْرِ.",
+      "latin": "Allāhumma Rabbas-samāwātis-sab‘i wa Rabbal-‘arshil-‘aẓīm, Rabbanā wa Rabba kulli shay', Antaẓ-Ẓāhiru falaysa fawqaka shay', wa Antal-Bāṭinu falaysa dūnaka shay', Munzilat-Tawrāti wal-Injīli wal-Furqān, Fāliqal-ḥabbi wan-nawā, a‘ūdhu bika min sharri kulli shay'in Anta ākhidhun bi-nāṣiyatih, Antal-Awwalu falaysa qablaka shay', wa Antal-Ākhiru falaysa ba‘daka shay', iqḍi ‘annad-dayna wa aghninā minal-faqr.",
+      "explanationEs": "¡Oh Allah, Señor de los siete cielos y Señor del Trono inmenso, Señor nuestro y Señor de todas las cosas! Tú eres el Manifiesto, nada está por encima de Ti; y Tú eres el Oculto, nada está más allá de Ti. Revelador de la Torá, el Evangelio y el Criterio (el Corán), Quien hiende el grano y las semillas, me refugio en Ti del mal de toda cosa cuya frente está bajo Tu dominio. Tú eres el Primero, nada hubo antes de Ti, y Tú eres el Último, nada habrá después de Ti. Paga nuestras deudas y líbranos de la pobreza.",
+      "note": "دعاء قضاء الدين والفقر",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2058.mp3"
+      ]
     },
     {
       "itemNumber": 59,
-      text: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الهَمِّ وَالحَزَنِ، وَأَعُوذُ بِكَ مِنَ العَجْزِ وَالكَسَلِ، وَأَعُوذُ بِكَ مِنَ الجُبْنِ وَالبُخْلِ، وَأَعُوذُ بِكَ مِنْ غَلَبَةِ الدَّيْنِ وَقَهْرِ الرِّجَالِ.',
-      latin: 'Allāhumma innī a‘ūdhu bika minal-hammi wal-ḥazan, wa a‘ūdhu bika minal-‘ajzi wal-kasal, wa a‘ūdhu bika minal-jubni wal-bukhl, wa a‘ūdhu bika min ghalabatid-dayni wa qahrir-rijāl.',
-      explanationEs: 'Oh Allah, me refugio en Ti de la ansiedad y la tristeza, de la incapacidad y la pereza, de la cobardía y la tacañería, y del peso de las deudas y la opresión de los hombres.',
-      note: 'صحيح البخاري'
+      "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الهَمِّ وَالحَزَنِ، وَأَعُوذُ بِكَ مِنَ العَجْزِ وَالكَسَلِ، وَأَعُوذُ بِكَ مِنَ الجُبْنِ وَالبُخْلِ، وَأَعُوذُ بِكَ مِنْ غَلَبَةِ الدَّيْنِ وَقَهْرِ الرِّجَالِ.",
+      "latin": "Allāhumma innī a‘ūdhu bika minal-hammi wal-ḥazan, wa a‘ūdhu bika minal-‘ajzi wal-kasal, wa a‘ūdhu bika minal-jubni wal-bukhl, wa a‘ūdhu bika min ghalabatid-dayni wa qahrir-rijāl.",
+      "explanationEs": "Oh Allah, me refugio en Ti de la ansiedad y la tristeza, de la incapacidad y la pereza, de la cobardía y la tacañería, y del peso de las deudas y la opresión de los hombres.",
+      "note": "صحيح البخاري",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2059.mp3"
+      ]
     },
     {
       "itemNumber": 60,
