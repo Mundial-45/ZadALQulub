@@ -464,10 +464,13 @@ const adyaData = [
     },
     {
       "itemNumber": 52,
-      text: 'اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لَا إلَِهَ إلَِّا أَنْتَ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ وَالْفَقْرِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لَا إِلَهَ إِلَّا أَنْتَ.',
-      latin: 'Allāhumma ‘āfinī fī badanī, Allāhumma ‘āfinī fī samʿī, Allāhumma ‘āfinī fī baṣarī, lā ilāha illā Ant. Allāhumma innī a‘ūdhu bika minal-kufri wal-faqr, Allāhumma innī a‘ūdhu bika min ‘adhābil-qabr, lā ilāha illā Ant.',
-      explanationEs: '¡Oh Allah! Concédeme salud en mi cuerpo, en mi oído y en mi vista. No hay más divinidad que Tú. Me refugio en Ti de la incredulidad, la pobreza y del castigo de la tumba. No hay más divinidad que Tú. (Abu Dawood)',
-      note: 'رواه أبو داود (إسناد حسن)'
+      "text": "اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لاَ إِلَهَ إِلاَّ أَنْتَ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ، وَالْفَقْرِ، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لاَ إِلَهَ إِلاَّ أَنْتَ.",
+      "latin": "Allāhumma ‘āfinī fī badanī, Allāhumma ‘āfinī fī samʿī, Allāhumma ‘āfinī fī baṣarī, lā ilāha illā ant. Allāhumma innī a‘ūdhu bika minal-kufri wal-faqr, wa a‘ūdhu bika min ‘adhābil-qabr, lā ilāha illā ant.",
+      "explanationEs": "¡Oh Allah! Concedeme salud en mi cuerpo. ¡Oh Allah! Concedeme salud en mi oído. ¡Oh Allah! Concedeme salud en mi vista. No hay más divinidad que Tú. ¡Oh Allah! Me refugio en Ti de la incredulidad y de la pobreza, y me refugio en Ti del castigo de la tumba. No hay más divinidad que Tú.",
+      "note": "رواه أبو داود (إسناد حسن)",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2010.mp3"
+      ]
     },
     {
       "itemNumber": 53,
