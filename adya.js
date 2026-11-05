@@ -861,7 +861,10 @@ const adyaData = [
       "text": "اللَّهُمَّ أَنْتَ رَبِّي، لَا إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي، فَاغْفِرْ لِي، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ.",
       "latin": "Allāhumma Anta Rabbī, lā ilāha illā Anta, khalaqtanī wa anā ‘abduka, wa anā ‘alā ‘ahdika wa wa‘dika mā staṭa‘tu, a‘ūdhu bika min sharri mā ṣana‘tu, abūʾu laka bi-ni‘matika ‘alayya, wa abū’u bi-dhanbī, fagh-fir lī, fa-innahū lā yaghfiru adh-dhunūba illā Anta.",
       "explanationEs": "¡Oh Allah! Tú eres mi Señor; no hay divinidad digna de adoración excepto Tú. Me creaste y soy Tu siervo; me mantengo en Tu pacto y promesa tanto como puedo. Me refugio en Ti del mal que he cometido. Reconozco ante Ti Tus favores sobre mí y reconozco mi pecado. Perdóname, pues nadie perdona los pecados sino Tú. (Súplica del perdón supremo; Sahih al-Bujari)",
-      "note": "سيد الاستغفار (صحيح البخاري)"
+      "note": "سيد الاستغفار (صحيح البخاري)",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%207.mp3"
+      ]
     },
     {
       "itemNumber": 101,
