@@ -226,9 +226,7 @@ const adyaData = [
       "latin": "Allāhumma anta Rabbī lā ilāha illā ant, khalaqtanī wa anā ‘abduk, wa anā ‘alā ‘ahdika wa wa‘dika mā staṭa‘tu, a‘ūdhu bika min sharri mā ṣana‘tu, abūʾu laka bi-ni‘matika ‘alayya, wa abū’u bi-dhanbī faghfir lī fa-innahū lā yaghfirudh-dhunūba illā ant.",
       "explanationEs": "¡Oh, Allah! Tú eres mi Señor, no hay divinidad digna de adoración excepto Tú. Tú me has creado y yo soy Tu siervo. Me mantengo fiel a Tu pacto y a Tu promesa tanto como puedo.\n\nMe refugio en Ti del mal de lo que he hecho. Reconozco ante Ti Tus bendiciones sobre mí y reconozco mis pecados. Así que perdóname, pues nadie puede perdonar los pecados excepto Tú.",
       "note": "رواه البخاري (6306) - سيد الاستغفار",
-      "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%207.mp3"
-      ]
+      "audioUrls": ["https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%207.mp3"]
     },
     {
       "itemNumber": 28,
