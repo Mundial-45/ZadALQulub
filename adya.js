@@ -551,14 +551,20 @@ const adyaData = [
       "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الكَسَلِ وَالهَرَمِ، وَالمَأْثَمِ وَالمَغْرَمِ، وَمِنْ فِتْنَةِ القَبْرِ وَعَذَابِ القَبْرِ، وَمِنْ فِتْنَةِ النَّارِ وَعَذَابِ النَّارِ، وَمِنْ شَرِّ فِتْنَةِ الغِنَى، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الفَقْرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ المَسِيحِ الدَّجَّالِ، اللَّهُمَّ اغْسِلْ عَنِّي خَطَايَايَ بِمَاءِ الثَّلْجِ وَالبَرَدِ، وَنَقِّ قَلْبِي مِنَ الخَطَايَا كَمَا نَقَّيْتَ الثَّوْبَ الأَبْيَضَ مِنَ الدَّنَسِ، وَبَاعِدْ بَيْنِي وَبَيْنَ خَطَايَايَ كَمَا بَاعَدْتَ بَيْنَ المَشْرِقِ وَالمَغْرِبِ.",
       "latin": "Allāhumma innī a‘ūdhu bika minal-kasali wal-haram, wal-ma’thami wal-maghram, wa min fitnatil-qabri wa ‘adhābil-qabr, wa min fitnatin-nāri wa ‘adhābin-nār, wa min sharri fitnatil-ghinā, wa a‘ūdhu bika min fitnatil-faqr, wa a‘ūdhu bika min fitnatil-masīḥid-dajjāl, Allāhummag-sil ‘annī khaṭāyāya bi-mā’ith-thalji wal-barad, wa naqqi qalbī minal-khaṭāyā kamā naqqaytat-thawbal-abyaḍa minad-danas, wa bā‘id baynī wa bayna khaṭāyāya kamā bā‘adta baynal-mashriqi wal-maghrib.",
       "explanationEs": "¡Oh Allah! Me refugio en Ti de la pereza, de la vejez extrema, del pecado y de las deudas; de las pruebas y del castigo de la tumba; de las pruebas y del castigo del Fuego; y del mal de la prueba de la riqueza. Me refugio en Ti de la prueba de la pobreza y de la prueba del Falso Mesías.\n\n¡Oh Allah! Lava mis pecados con agua de nieve y granizo, purifica mi corazón de los pecados como limpias la vestidura blanca de la suciedad, y establece una gran distancia entre mí y mis pecados, como la que hay entre el Oriente y el Occidente.",
-      "note": "صحيح البخاري"
+      "note": "صحيح البخاري",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2033.mp3"
+      ]
     },
     {
       "itemNumber": 61,
-      text: 'اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ، وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ.',
-      latin: 'Allāhummak-finī bi-ḥalālika ‘an ḥarāmik, wa aghninī bi-faḍlika ‘amman siwāk.',
-      explanationEs: 'Oh Allah, haz que me baste con lo lícito frente a lo prohibido, y enriquéceme con Tu gracia para no necesitar de nadie más.',
-      note: 'سنن الترمذي'
+      "text": "اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ، وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ.",
+      "latin": "Allāhummak-finī bi-ḥalālika ‘an ḥarāmik, wa aghninī bi-faḍlika ‘amman siwāk.",
+      "explanationEs": "Oh Allah, haz que me baste con lo lícito frente a lo prohibido, y enriquéceme con Tu gracia para no necesitar de nadie más.",
+      "note": "سنن الترمذي",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2051.mp3"
+      ]
     },
     {
       "itemNumber": 62,
