@@ -688,7 +688,10 @@ const azkarData = [
                         "latin": "Allāhumma rabba as-samāwāti as-sab'i wa-rabba al-'arshi al-'aẓīm, rabbanā wa-rabba kulli shay', fāliqal-ḥabbi wan-nawā, wa-munzila at-tawrāti wal-injīli wal-furqān, a'ūdhu bika min sharri kulli shayʾin anta ākhidhun bi-nāṣiyatih. Allāhumma anta al-awwalu fa-laysa qablaka shay', wa-anta al-ākhiru fa-laysa ba'daka shay', wa-anta aẓ-ẓāhiru fa-laysa fawqaka shay', wa-anta al-bāṭinu fa-laysa dūnaka shay', iqḍi 'annā ad-dayna wa-aghninā mina al-faqr.",
                         "explanationEs": "¡Oh Allah! Señor de los siete cielos, Señor de la Tierra y Señor del Grandioso Trono, Señor nuestro y Señor de todas las cosas, que haces germinar el grano y el hueso, revelador de la Torá, del Evangelio y del Criterio (el Corán). Me refugio en Ti del mal de toda cosa que esté bajo Tu dominio. ¡Oh Allah! Tú eres el Primero y no hay nada antes de Ti; Tú eres el Último y no hay nada después de Ti; Tú eres el Manifiesto y no hay nada por encima de Ti; Tú eres el Oculto y no hay nada más allá de Ti. Salda nuestras deudas y líbranos de la pobreza.",
                         "count": 1,
-                        "maxCount": 1
+                        "maxCount": 1,
+                        "audioUrls": [
+                            "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2034.mp3"
+                        ]
                   },
                   {
                         "itemNumber": 62,
@@ -1092,11 +1095,15 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 96,
-                        "text": "اللَّهُمَّ رَبَّ جِبْرَائِيلَ، وَمِيْكَائِيلَ، وَإِسْرَافِيلَ، فَاطِرَ السَّمَوَاتِ وَالأَرْضِ، عَالِمَ الغَيْبِ وَالشَّهَادَةِ أَنْتَ تَحْكُمُ بَيْنَ عِبَادِكَ فِيمَا كَانُوا فِيهِ يَخْتَلِفُونَ. اهْدِنِي لِمَا اخْتُلِفَ فِيهِ مِنَ الْحَقِّ بِإِذْنِكَ إِنَّكَ تَهْدِي مَنْ تَشَاءُ إِلَى صِرَاطٍ مُسْتَقيمٍ.",
-                        "latin": "Allāhumma rabba Jibrā'īla, wa Mīkā'īla, wa Isrāfīl, fāṭira as-samāwāti wal-arḍ, ʿālima al-ghaybi wash-shahādah, anta taḥkumu bayna ʿibādika fīmā kānū fīhi yakhtalifūn. Ihdinī limākhtulifa fīhi mina al-ḥaqqi bi-idhnik, innaka tahdī man tashā'u ilā ṣirāṭin mustaqīm.",
-                        "explanationEs": "¡Oh Al-lah! Señor de Gabriel, Miguel e Israfil, Creador de los cielos y de la tierra, Conocedor de lo oculto y de lo manifiesto. Tú juzgas entre Tus siervos sobre aquello en lo que diferían. Guíame, con Tu permiso, hacia la verdad en aquello en lo que discrepan, pues Tú guías a quien quieres hacia el camino recto.",
+                        "text": "اللَّهُمَّ رَبَّ جَبْرَائِيلَ وَمِيكَائِيلَ وَإِسْرَافِيلَ، فَاطِرَ السَّمَوَاتِ وَالأَرْضِ، عَالِمَ الْغَيْبِ وَالشَّهَادَةِ، أَنْتَ تَحْكُمُ بَيْنَ عِبَادِكَ فِيمَا كَانُوا فِيهِ يَخْتَلِفُونَ، اهْدِنِي لِمَا اخْتُلِفَ فِيهِ مِنَ الْحَقِّ بِإِذْنِكَ، إِنَّكَ تَهْدِي مَنْ تَشَاءُ إِلَى صِرَاطٍ مُسْتَقِيمٍ.",
+                        "latin": "Allāhumma Rabba Jabrā’īla wa Mīkā’īla wa Isrāfīl, Fāṭiras-samāwāti wal-arḍ, ‘Ālimal-ghaybi wash-shahādah, Anta taḥkumu bayna ‘ibādika fīmā kānū fīhi yakhtalifūn, ihdinī limākh-tulifa fīhi minal-ḥaqqi bi-idhnik, innaka tahdī man tashā’u ilā ṣirāṭim-mustaqīm.",
+                        "explanationEs": "¡Oh Allah! Señor de Gabriel, Miguel e Israfil. Creador de los cielos y de la tierra, Conocedor de lo oculto y de lo manifiesto. Tú juzgas entre Tus siervos en aquello en lo que diferían. Guíame con Tu permiso hacia la verdad en aquello en lo que se discrepa. (Muslim)",
+                        "note": "رواه مسلم",
                         "count": 1,
-                        "maxCount": 1
+                        "maxCount": 1,
+                        "audioUrls": [
+                          "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2042.mp3"
+                        ]
                   },
                   {
                         "itemNumber": 97,
@@ -1253,7 +1260,10 @@ const azkarData = [
                         "latin": "Allāhumma innī aʿūdhu bi-riḍāka min sakhaṭika, wa bi-muʿāfātika min ʿuqūbatika, wa aʿūdhu bika minka, lā uḥṣī thanā'an ʿalayka, anta kamā athnayta ʿalā nafsik.",
                         "explanationEs": "¡Oh Al-lah! Me refugio en Tu complacencia de Tu enojo, en Tu perdón de Tu castigo, y me refugio en Ti de Ti. No puedo enumerar Tus alabanzas; Tú eres tal como Te has alabado a Ti mismo.",
                         "count": 1,
-                        "maxCount": 1
+                        "maxCount": 1,
+                        "audioUrls": [
+                          "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2043.mp3"
+                        ]
                   }
             ]
       },
@@ -1394,7 +1404,10 @@ const azkarData = [
                         "latin": "Allāhumma innī aʿūdhu bika mina al-bukhl, wa aʿūdhu bika mina al-jubn, wa aʿūdhu bika min an uradda ilā ardhali al-ʿumur, wa aʿūdhu bika min fitnati ad-dunyā wa ʿadhābi al-qabr.",
                         "explanationEs": "¡Oh Al-lah! Me refugio en Ti de la tacañería, la cobardía, la decrepitud en la vejez, las pruebas de este mundo y el castigo de la tumba.",
                         "count": 1,
-                        "maxCount": 1
+                        "maxCount": 1,
+                        "audioUrls": [
+                          "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2032.mp3"
+                        ]
                   },
                   {
                         "itemNumber": 127,
@@ -1406,11 +1419,15 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 128,
-                        "text": "اللَّهُمَّ بِعِلْمِكَ الْغَيْبَ وَقُدْرَتِكَ عَلَى الْخَلْقِ أَحْيِنِي مَا عَلِمْتَ الْحَيَاةَ خَيْراً لِي، وَتَوَفَّنِي إِذَا عَلِمْتَ الْوَفَاةَ خَيْراً لِي، اللَّهُمَّ إِنِّي أَسْأَلُكَ خَشْيَتَكَ فِي الْغَيْبِ وَالشَّهَادَةِ، وَأَسْأَلُكَ كَلِمَةَ الْحَقِّ فِي الرِّضَا وَالْغَضَبِ، وَأَسْأَلُكَ الْقَصْدَ فِي الْغِنَى وَالْفَقْرِ، وَأَسْأَلُكَ نَعِيماً لاَ يَنْفَدُ، وَأَسْأَلُكَ قُرَّةَ عَيْنٍ لاَ تَنْقَطِعُ، وَأَسْأَلُكَ الرِّضَا بَعْدَ الْقَضَاءِ، وَأَسْأَلُكَ بَرْدَ الْعَيْشِ بَعْدَ الْمَوْتِ، وَأَسْأَلُكَ لَذَّةَ النَّظَرِ إِلَى وَجْهِكَ، وَالشَّوْقَ إِلَى لِقَائِكَ فِي غَيْرِ ضَرَّاءَ مُضِرَّةٍ، وَلاَ فِتْنَةٍ مُضِلَّةٍ، اللَّهُمَّ زَيِّنَّا بِزِينَةِ الإِيمَانِ، وَاجْعَلْنَا هُدَاةً مُهْتَدِينَ.",
-                        "latin": "Allāhumma bi-ʿilmika al-ghayba wa qudratika ʿalā al-khalqi aḥyinī mā ʿalimta al-ḥayāta khayran lī, wa tawaffanī idhā ʿalimta al-wafāta khayran lī. Allāhumma innī as'aluka khashyataka fī al-ghaybi wash-shahādah, wa as'aluka kalimata al-ḥaqqi fī ar-riḍā wal-ghaḍab, wa as'aluka al-qaṣda fī al-ghinā wal-faqr, wa as'aluka naʿīman lā yanfad, wa as'aluka qurrata ʿaynin lā tanqaṭiʿ, wa as'aluka ar-riḍā baʿda al-qaḍā', wa as'aluka barda al-ʿayshi baʿda al-mawt, wa as'aluka ladhdhata an-naẓari ilā wajhika, wash-shawqa ilā liqā'ika fī ghayri ḍarrā'a muḍirrah, wa lā fitnatin muḍillatın, Allāhumma zayyinnā bi-zīnati al-īmān, wa ijʿalnā hudātan muhtadīn.",
-                        "explanationEs": "¡Oh Al-lah! Con Tu conocimiento de lo oculto y Tu poder sobre la creación, manténme con vida mientras sepas que la vida es buena para mí, y hazme morir cuando sepas que la muerte es buena para mí. ¡Oh Al-lah! Te pido Tu temor en lo oculto y en lo manifiesto, la palabra de verdad en la complacencia y en la ira, la moderación en la riqueza y en la pobreza, una gracia inagotable, una alegría constante, la aceptación tras Tu decreto, el consuelo de la vida tras la muerte, el deleite de contemplar Tu Rostro y el anhelo de encontrarte sin sufrir un perjuicio dañino ni una prueba extraviadora. ¡Oh Al-lah! Adórnanos con el adorno de la fe y haznos guías bien guiados.",
+                        "text": "اللَّهُمَّ بِعِلْمِكَ الْغَيْبَ وَقُدْرَتِكَ عَلَى الْخَلْقِ أَحْيِنِي مَا عَلِمْتَ الْحَيَاةَ خَيْرًا لِي، وَتَوَفَّنِي إِذَا عَلِمْتَ الْوَفَاةَ خَيْرًا لِي، اللَّهُمَّ وَأَسْأَلُكَ خَشْيَتَكَ فِي الْغَيْبِ وَالشَّهَادَةِ، وَأَسْأَلُكَ كَلِمَةَ الْحَقِّ فِي الرِّضَا وَالْغَضَبِ، وَأَسْأَلُكَ الْقَصْدَ فِي الْفَقْرِ وَالْغِنَى، وَأَسْأَلُكَ نَعِيمًا لَا يَنْفَدُ، وَأَسْأَلُكَ قُرَّةَ عَيْنٍ لَا تَنْقَطِعُ، وَأَسْأَلُكَ الرِّضَاءَ بَعْدَ الْقَضَاءِ، وَأَسْأَلُكَ بَرْدَ الْعَيْشِ بَعْدَ الْمَوْتِ، وَأَسْأَلُكَ لَذَّةَ النَّظَرِ إِلَى وَجْهِكَ وَالشَّوْقَ إِلَى لِقَائِكَ فِي غَيْرِ ضَرَّاءَ مُضِرَّةٍ وَلَا فِتْنَةٍ مُضِلَّةٍ، اللَّهُمَّ زَيِّنَّا بِزِينَةِ الْإِيمَانِ، وَاجْعَلْنَا هُدَاةً مُهْتَدِينَ.",
+                        "latin": "Allāhumma bi-‘ilmikal-ghayba wa qudratika ‘alal-khalqi aḥyinī mā ‘alimtal-ḥayāta khayran lī, wa tawaffanī idhā ‘alimtal-wafāta khayran lī. Allāhumma wa as’aluka khashyataka fil-ghaybi wash-shahādah, wa as’aluka kalimatil-ḥaqqi fir-riḍā wal-ghaḍab, wa as’alukal-qaṣda fil-faqri wal-ghinā, wa as’aluka na‘īman lā yanfad, wa as’aluka qurrata ‘aynin lā tanqaṭi‘, wa as’alukar-riḍā’a ba‘dal-qaḍā’, wa as’aluka bardal-‘ayshi ba‘dal-mawt, wa as’aluka ladhdhatan-naẓari ilā wajhika wash-shawqa ilā liqā’ik fī ghayri ḍarrā’a muḍirrah, wa lā fitnatin muḍillatin. Allāhumma zayyinnā bi-zīnatil-īmāni waj-‘alnā hudātan muhtadīn.",
+                        "explanationEs": "¡Oh Allah! Por Tu conocimiento de lo oculto y Tu poder sobre la creación, mantenme con vida mientras sepas que la vida es mejor para mí, y hazme morir cuando sepas que la muerte es mejor para mí. Te pido que Te tema en privado y en público, que diga la verdad tanto en la satisfacción como en la ira, y que mantenga la moderación tanto en la pobreza como en la riqueza. Te pido un deleite que no se agote, una alegría que nunca se extinga, estar complacido después del decreto, una vida apacible después de la muerte, el placer de contemplar Tu Rostro y el anhelo de encontrarte, sin adversidad perjudicial ni prueba que me haga extraviarme. ¡Oh Allah! Adórnanos con la belleza de la fe y haz que seamos guías bien guiados.",
+                        "note": "رواه النسائي (إسناد حسن)",
                         "count": 1,
-                        "maxCount": 1
+                        "maxCount": 1,
+                        "audioUrls": [
+                          "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2047.mp3"
+                        ]
                   },
                   {
                         "itemNumber": 129,
@@ -1608,7 +1625,10 @@ const azkarData = [
                         "latin": "Allāhumma innī aʿūdhu bi-riḍāka min sakhaṭika, wa bi-muʿāfātika min ʿuqūbatika, wa aʿūdhu bika minka, lā uḥṣī thanā'an ʿalayka, anta kamā athnayta ʿalā nafsik.",
                         "explanationEs": "¡Oh Al-lah! Me refugio en Tu complacencia de Tu enojo, en Tu perdón de Tu castigo, y me refugio en Ti de Ti. No puedo enumerar Tus alabanzas; Tú eres tal como Te has alabado a Ti mismo.",
                         "count": 1,
-                        "maxCount": 1
+                        "maxCount": 1,
+                        "audioUrls": [
+                          "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2043.mp3"
+                        ]
                   },
                   {
                         "itemNumber": 148,
@@ -1654,7 +1674,10 @@ const azkarData = [
                         "latin": "Allāhumma innī aʿūdhu bika mina al-hammi wal-ḥazan, wal-ʿajzi wal-kasal, wal-bukhli wal-jubn, wa ḍalaʿi ad-dayni wa ghalabati ar-rijāl.",
                         "explanationEs": "¡Oh Al-lah! Me refugio en Ti de la ansiedad y de la tristeza, de la incapacidad y de la pereza, de la tacañería y de la cobardía, del peso de las deudas y de la opresión de los hombres.",
                         "count": 1,
-                        "maxCount": 1
+                        "maxCount": 1,
+                        "audioUrls": [
+                          "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2031.mp3"
+                        ]
                   }
             ]
       },
@@ -1833,7 +1856,10 @@ const azkarData = [
                         "latin": "Allāhumma innī aʿūdhu bika mina al-hammi wal-ḥazan, wal-ʿajzi wal-kasal, wal-bukhli wal-jubn, wa ḍalaʿi ad-dayni wa ghalabati ar-rijāl.",
                         "explanationEs": "¡Oh Al-lah! Me refugio en Ti de la ansiedad y de la tristeza, de la incapacidad y de la pereza, de la tacañería y de la cobardía, del peso de las deudas y de la opresión de los hombres.",
                         "count": 1,
-                        "maxCount": 1
+                        "maxCount": 1,
+                        "audioUrls": [
+                          "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2031.mp3"
+                        ]
                   }
             ]
       },
