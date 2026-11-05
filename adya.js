@@ -440,10 +440,13 @@ const adyaData = [
     },
     {
       "itemNumber": 49,
-      "text": "اللَّهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ، فَاطِرَ السَّمَوَاتِ وَالْأَرْضِ، رَبَّ كُلِّ شَيْءٍ وَمَلِيكَهُ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا أَنْتَ، أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي وَشَرِّ الشَّيْطَانِ وَشِرْكِهِ.",
-      "latin": "Allāhumma ‘ālimal-ghaybi wash-shahādati, Fāṭiras-samāwāti wal-arḍ, Rabba kulli shayʾin wa malīkah, ash-hadu an lā ilāha illā Ant, a‘ūdhu bika min sharri nafsī wa sharrish-shayṭāni wa shirkih.",
-      "explanationEs": "¡Oh Allah, Conocedor de lo oculto y de lo manifiesto, Creador de los cielos y de la tierra, Señor y Soberano de todas las cosas! Doy testimonio de que no hay divinidad digna de adoración excepto Tú. Me refugio en Ti del mal de mi propia alma, del mal de Satanás y de que me incite a asociar copartícipes Contigo.",
-      "note": "رواه الترمذي (إسناد صحيح)"
+      "text": "اللَّهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ فَاطِرَ السَّمَاوَاتِ وَالأَرْضِ، رَبَّ كُلِّ شَيْءٍ وَمَلِيكَهُ، أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ أَنْتَ، أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي، وَمِنْ شَرِّ الشَّيْطَانِ وَشِرْكِهِ، وَأَنْ أَقْتَرِفَ عَلَى نَفْسِي سُوءًا أَوْ أَجُرَّهُ إِلَى مُسْلِمٍ.",
+      "latin": "Allāhumma ‘ālimal-ghaybi wash-shahādati fāṭiras-samāwāti wal-arḍ, Rabba kulli shayʾin wa malīkah, ash-hadu an lā ilāha illā ant, a‘ūdhu bika min sharri nafsī, wa min sharrish-shayṭāni wa shirkihi, wa an aqtarifa ‘alā nafsī sūʾan aw ajurrahū ilā muslim.",
+      "explanationEs": "¡Oh Allah! Conocedor de lo oculto y de lo manifiesto, Creador de los cielos y de la tierra, Señor de todas las cosas y su Soberano. Testifico que no hay más divinidad que Tú. Me refugio en Ti del mal de mi alma, del mal del Satán y de su idolatría, y de cometer un mal contra mí mismo o infligírselo a un musulmán.",
+      "note": "رواه الترمذي (إسناد صحيح)",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2013.mp3"
+      ]
     },
     {
       "itemNumber": 50,
