@@ -750,20 +750,26 @@ const azkarData = [
             "titleEs": "Azkar al Despertar",
             "items": [
                   {
-                        "itemNumber": 67,
-                        "text": "الْحَمْدُ للَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا، وَإِلَيْهِ النُّشُورُ",
-                        "latin": "Alhamdu lillāhi-lladhī aḥyānā baʿda mā amātanā wa-ilayhi-n-nushūr.",
-                        "explanationEs": "Alabado sea Alá, Quien nos devolvió la vida tras habernos hecho morir (dormir), y hacia Él es el retorno.",
-                        "count": 1,
-                        "maxCount": 1
+                    "itemNumber": 67,
+                    "text": "الْحَمْدُ للَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا، وَإِلَيْهِ النُّشُورُ",
+                    "latin": "Alhamdu lillāhi-lladhī aḥyānā baʿda mā amātanā wa-ilayhi-n-nushūr.",
+                    "explanationEs": "Alabado sea Alá, Quien nos devolvió la vida tras habernos hecho morir (dormir), y hacia Él es el retorno.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2067.mp3"
+                    ]
                   },
                   {
-                        "itemNumber": 68,
-                        "text": "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَريكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، سُبْحَانَ اللَّهِ، وَالْحَمْدُ للَّهِ، وَلاَ إِلَهَ إِلاَّ اللَّهُ، وَاللَّهُ أَكبَرُ، وَلاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللَّهِ الْعَلِيِّ الْعَظِيمِ، رَبِّ اغْفرْ لِي ",
-                        "latin": "Lā ilāha illa-llāhu waḥdahu lā sharīka lah, lahu-l-mulku wa-lahu-l-ḥamd, wa-huwa ʿalā kulli shayʾin qadīr. Subḥāna-llāhi, wa-l-ḥamdu lillāhi, wa-lā ilāha illa-llāhu, wa-llāhu akbar, wa-lā ḥawla wa-lā quwwata illā billāhi-l-ʿaliyyi-l-ʿaẓīm. Rabbi-ghfir lī.",
-                        "explanationEs": "No hay más divinidad digna de adoración excepto Alá, Único, sin asociados. Suyo es el reino y Suya es la alabanza, y Él es Todopoderoso. Glorificado sea Alá, alabado sea Alá, no hay más divinidad que Alá, Alá es el Más Grande, y no hay fuerza ni poder excepto en Alá, el Altísimo, el Supremo. ¡Señor mío, perdóname!",
-                        "count": 1,
-                        "maxCount": 1
+                    "itemNumber": 68,
+                    "text": "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَريكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، سُبْحَانَ اللَّهِ، وَالْحَمْدُ للَّهِ، وَلاَ إِلَهَ إِلاَّ اللَّهُ، وَاللَّهُ أَكبَرُ، وَلاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللَّهِ الْعَلِيِّ الْعَظِيمِ، رَبِّ اغْفرْ لِي ",
+                    "latin": "Lā ilāha illa-llāhu waḥdahu lā sharīka lah, lahu-l-mulku wa-lahu-l-ḥamd, wa-huwa ʿalā kulli shayʾin qadīr. Subḥāna-llāhi, wa-l-ḥamdu lillāhi, wa-lā ilāha illa-llāhu, wa-llāhu akbar, wa-lā ḥawla wa-lā quwwata illā billāhi-l-ʿaliyyi-l-ʿaẓīm. Rabbi-ghfir lī.",
+                    "explanationEs": "No hay más divinidad digna de adoración excepto Alá, Único, sin asociados. Suyo es el reino y Suya es la alabanza, y Él es Todopoderoso. Glorificado sea Alá, alabado sea Alá, no hay más divinidad que Alá, Alá es el Más Grande, y no hay fuerza ni poder excepto en Alá, el Altísimo, el Supremo. ¡Señor mío, perdóname!",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2068.mp3"
+                    ]
                   },
                   {
                     "itemNumber": 69,
@@ -771,7 +777,10 @@ const azkarData = [
                     "latin": "Alhamdu lillāhi-lladhī ʿāfānī fī jasadī, wa-radda ʿalayya rūḥī, wa-adhina lī bi-dhikrih.",
                     "explanationEs": "Alabado sea Allah, Quien sanó mi cuerpo, me devolvió mi alma y me permitió recordarle.",
                     "count": 1,
-                    "maxCount": 1
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2069.mp3"
+                    ]
                   },
                   {
                     "itemNumber": 70,
@@ -794,12 +803,15 @@ const azkarData = [
             "titleEs": "Súplica al vestirse",
             "items": [
                   {
-                        "itemNumber": 71,
-                        "text": "الْحَمْدُ لِلَّهِ الَّذِي كَسَانِي هَذَا (الثَّوْبَ) وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلاَ قُوَّةٍ.",
-                        "latin": "Al-ḥamdu lillāhi alladhī kasānī hādhā (ath-thawba) wa razaqanīhi min ghayri ḥawlin minnī wa lā quwwah.",
-                        "explanationEs": "Alabado sea Al-lah, Quien me ha vestido con esta (prenda) y me la ha concedido sin que de mi parte haya habido fuerza ni poder.",
-                        "count": 1,
-                        "maxCount": 1
+                    "itemNumber": 71,
+                    "text": "الْحَمْدُ لِلَّهِ الَّذِي كَسَانِي هَذَا (الثَّوْبَ) وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلاَ قُوَّةٍ.",
+                    "latin": "Al-ḥamdu lillāhi alladhī kasānī hādhā (ath-thawba) wa razaqanīhi min ghayri ḥawlin minnī wa lā quwwah.",
+                    "explanationEs": "Alabado sea Al-lah, Quien me ha vestido con esta (prenda) y me la ha concedido sin que de mi parte haya habido fuerza ni poder.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2071.mp3"
+                    ]
                   }
             ]
       },
@@ -809,12 +821,15 @@ const azkarData = [
             "titleEs": "Súplica al vestirse con ropa nueva",
             "items": [
                   {
-                        "itemNumber": 72,
-                        "text": "اللَّهُمَّ لَكَ الْحَمْدُ أَنْتَ كَسَوْتَنِيهِ، أَسْأَلُكَ مِنْ خَيْرِهِ وَخَيْرِ مَا صُنِعَ لَهُ، وَأَعُوذُ بِكَ مِنْ شَرِّهِ وَشَرِّ مَا صُنِعَ لَهُ.",
-                        "latin": "Allāhumma laka al-ḥamdu anta kasawtanīh, as'aluka min khayrihi wa khayri mā ṣuniʿa lah, wa aʿūdhu bika min sharrihi wa sharri mā ṣuniʿa lah.",
-                        "explanationEs": "¡Oh Al-lah! A Ti pertenecen las alabanzas. Tú me has vestido con ella. Te pido de su bien y del bien para el que fue hecha, y me refugio en Ti de su mal y del mal para el que fue hecha.",
-                        "count": 1,
-                        "maxCount": 1
+                    "itemNumber": 72,
+                    "text": "اللَّهُمَّ لَكَ الْحَمْدُ أَنْتَ كَسَوْتَنِيهِ، أَسْأَلُكَ مِنْ خَيْرِهِ وَخَيْرِ مَا صُنِعَ لَهُ، وَأَعُوذُ بِكَ مِنْ شَرِّهِ وَشَرِّ مَا صُنِعَ لَهُ.",
+                    "latin": "Allāhumma laka al-ḥamdu anta kasawtanīh, as'aluka min khayrihi wa khayri mā ṣuniʿa lah, wa aʿūdhu bika min sharrihi wa sharri mā ṣuniʿa lah.",
+                    "explanationEs": "¡Oh Al-lah! A Ti pertenecen las alabanzas. Tú me has vestido con ella. Te pido de su bien y del bien para el que fue hecha, y me refugio en Ti de su mal y del mal para el que fue hecha.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2072.mp3"
+                    ]
                   }
             ]
       },
@@ -824,20 +839,26 @@ const azkarData = [
             "titleEs": "Súplica por alguien que estrena ropa nueva",
             "items": [
                   {
-                        "itemNumber": 73,
-                        "text": "تُبْلِي وَيُخْلِفُ اللَّهُ تَعَالَى.",
-                        "latin": "Tublī wa yukhlifu Allāhu taʿālā.",
-                        "explanationEs": "Que la desgastes (con larga vida) y que Al-lah Altísimo te la reemplace.",
-                        "count": 1,
-                        "maxCount": 1
+                    "itemNumber": 73,
+                    "text": "تُبْلِي وَيُخْلِفُ اللَّهُ تَعَالَى.",
+                    "latin": "Tublī wa yukhlifu Allāhu taʿālā.",
+                    "explanationEs": "Que la desgastes (con larga vida) y que Al-lah Altísimo te la reemplace.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2073.mp3"
+                    ]
                   },
                   {
-                        "itemNumber": 74,
-                        "text": "اِلْبَسْ جَدِيداً وَعِشْ حَمِيداً وَمُتْ شَهِيداً.",
-                        "latin": "Ilbas jadīdan, wa ʿish ḥamīdan, wa mut shahīdā.",
-                        "explanationEs": "Vístete de nuevo, vive de manera elogiable y muere como mártir.",
-                        "count": 1,
-                        "maxCount": 1
+                    "itemNumber": 74,
+                    "text": "اِلْبَسْ جَدِيداً وَعِشْ حَمِيداً وَمُتْ شَهِيداً.",
+                    "latin": "Ilbas jadīdan, wa ʿish ḥamīdan, wa mut shahīdā.",
+                    "explanationEs": "Vístete de nuevo, vive de manera elogiable y muere como mártir.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2074.mp3"
+                    ]
                   }
             ]
       },
