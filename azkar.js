@@ -716,12 +716,17 @@ const azkarData = [
                     ]
                   },
                   {
-                        "itemNumber": 63,
-                        "text": "اللَّهُمَّ عَالِمَ الغَيْبِ وَالشَّهَادَةِ فَاطِرَ السَّمَوَاتِ وَالْأَرْضِ، رَبَّ كُلِّ شَيْءٍ وَمَلِيكَهُ، أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ أَنْتَ، أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي، وَمِنْ شَرِّ الشَّيْطانِ وَشِرْكِهِ، وَأَنْ أَقْتَرِفَ عَلَى نَفْسِي سُوءاً، أَوْ أَجُرَّهُ إِلَى مُسْلِمٍ.",
-                        "latin": "Allāhumma 'ālima al-ghaybi wash-shahādah, fāṭira as-samāwāti wal-arḍ, rabba kulli shayʾin wa-malīkah, ash-hadu an lā ilāha illā ant, a'ūdhu bika min sharri nafsī, wa-min sharri ash-shayṭāni wa-shirkih, wa-an aqtarifa 'alā nafsī sūʾan aw ajurrahū ilā muslim.",
-                        "explanationEs": "¡Oh Allah! Conocedor de lo oculto y de lo manifiesto, Creador de los cielos y de la tierra, Señor y Poseedor de todas las cosas. Testifico que no hay más divinidad que Tú. Me refugio en Ti del mal de mi propia alma, del mal del Satán y de su idolatría, y de cometer cualquier mal contra mí mismo o causárselo a otro musulmán.",
-                        "count": 1,
-                        "maxCount": 1
+                    "itemNumber": 63,
+                    "text": "اللَّهُمَّ عَالِمَ الغَيْبِ وَالشَّهَادَةِ فَاطِرَ السَّمَوَاتِ وَالْأَرْضِ، رَبَّ كُلِّ شَيْءٍ وَمَلِيكَهُ، أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ أَنْتَ، أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي، وَمِنْ شَرِّ الشَّيْطانِ وَشِرْكِهِ، وَأَنْ أَقْتَرِفَ عَلَى نَفْسِي سُوءاً، أَوْ أَجُرَّهُ إِلَى مُسْلِمٍ.",
+                    "latin": "Allāhumma 'ālima al-ghaybi wash-shahādah, fāṭira as-samāwāti wal-arḍ, rabba kulli shayʾin wa-malīkah, ash-hadu an lā ilāha illā ant, a'ūdhu bika min sharri nafsī, wa-min sharri ash-shayṭāni wa-shirkih, wa-an aqtarifa 'alā nafsī sūʾan aw ajurrahū ilā muslim.",
+                    "explanationEs": "¡Oh Allah! Conocedor de lo oculto y de lo manifiesto, Creador de los cielos y de la tierra, Señor y Poseedor de todas las cosas. Testifico que no hay más divinidad que Tú. Me refugio en Ti del mal de mi propia alma, del mal del Satán y de su idolatría, y de cometer cualquier mal contra mí mismo o causárselo a otro musulmán.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2013.mp3"
+                    ],
+                    "note": "",
+                    "audioUrl": ""
                   },
                   {
                     "itemNumber": 64,
@@ -748,13 +753,16 @@ const azkarData = [
                     ]
                   },
                   {
-                        "itemNumber": 66,
-                        "text": "اللَّهُمَّ أَسْلَمْتُ نَفْسِي إِلَيْكَ، وَفَوَّضْتُ أَمْرِي إِلَيْكَ، وَوَجَّهْتُ وَجْهِي إِلَيْكَ، وَأَلْجَأْتُ ظَهْرِي إِلَيْكَ، رَغْبَةً وَرَهْبَةً إِلَيْكَ، لاَ مَلْجَأَ وَلاَ مَنْجَا مِنْكَ إِلاَّ إِلَيْكَ، آمَنْتُ بِكِتَابِكَ الَّذِي أَنْزَلْتَ، وَبِنَبِيِّكَ الَّذِي أَرْسَلْتَ.",
-                        "latin": "Allāhumma aslamtu nafsī ilayk, wa-fawwaḍtu amrī ilayk, wa-wajjahtu wajhī ilayk, wa-aljaʾtu ẓahrī ilayk, raghbatan wa-rahbatan ilayk, lā malja'a wa-lā manjā minka illā ilayk, āmantu bi-kitābika alladhī anzalt, wa-bi-nabiyyika alladhī arsalt.",
-                        "explanationEs": "¡Oh Allah! Me entrego a Ti, encomiendo mi asunto a Ti, vuelvo mi rostro hacia Ti y me apoyo en Ti, por deseo y temor hacia Ti. No hay refugio ni salvación de Ti sino en Ti. Creo en Tu Libro que has revelado y en Tu Profeta que has enviado.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "note": "يُجعل آخر ما يقول قبل النوم"
+                    "itemNumber": 66,
+                    "text": "اللَّهُمَّ أَسْلَمْتُ نَفْسِي إِلَيْكَ، وَفَوَّضْتُ أَمْرِي إِلَيْكَ، وَوَجَّهْتُ وَجْهِي إِلَيْكَ، وَأَلْجَأْتُ ظَهْرِي إِلَيْكَ، رَغْبَةً وَرَهْبَةً إِلَيْكَ، لاَ مَلْجَأَ وَلاَ مَنْجَا مِنْكَ إِلاَّ إِلَيْكَ، آمَنْتُ بِكِتَابِكَ الَّذِي أَنْزَلْتَ، وَبِنَبِيِّكَ الَّذِي أَرْسَلْتَ.",
+                    "latin": "Allāhumma aslamtu nafsī ilayk, wa-fawwaḍtu amrī ilayk, wa-wajjahtu wajhī ilayk, wa-aljaʾtu ẓahrī ilayk, raghbatan wa-rahbatan ilayk, lā malja'a wa-lā manjā minka illā ilayk, āmantu bi-kitābika alladhī anzalt, wa-bi-nabiyyika alladhī arsalt.",
+                    "explanationEs": "¡Oh Allah! Me entrego a Ti, encomiendo mi asunto a Ti, vuelvo mi rostro hacia Ti y me apoyo en Ti, por deseo y temor hacia Ti. No hay refugio ni salvación de Ti sino en Ti. Creo en Tu Libro que has revelado y en Tu Profeta que has enviado.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "note": "يُجعل آخر ما يقول قبل النوم",
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2066.mp3"
+                    ]
                   }
             ]
       },
