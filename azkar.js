@@ -659,12 +659,15 @@ const azkarData = [
                     ]
                   },
                   {
-                        "itemNumber": 57,
-                        "text": "بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا.",
-                        "latin": "Bismika allāhumma amūtu wa-aḥyā.",
-                        "explanationEs": "En Tu nombre, ¡oh Allah!, muero y vivo.",
-                        "count": 1,
-                        "maxCount": 1
+                    "itemNumber": 57,
+                    "text": "بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا.",
+                    "latin": "Bismika allāhumma amūtu wa-aḥyā.",
+                    "explanationEs": "En Tu nombre, ¡oh Allah!, muero y vivo.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2057.m4a"
+                    ]
                   },
                   {
                         "itemNumber": 58,
@@ -761,7 +764,7 @@ const azkarData = [
                     "maxCount": 1,
                     "note": "يُجعل آخر ما يقول قبل النوم",
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2066.mp3"
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2066.m4a"
                     ]
                   }
             ]
@@ -779,7 +782,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2067.mp3"
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2067.m4a"
                     ]
                   },
                   {
