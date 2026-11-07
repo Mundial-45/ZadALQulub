@@ -623,29 +623,40 @@ const azkarData = [
                     ]
                   },
                   {
-                        "itemNumber": 54,
-                        "text": "بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي، وَبِكَ أَرْفَعُهُ، فَإِن أَمْسَكْتَ نَفْسِي فارْحَمْهَا، وَإِنْ أَرْسَلْتَهَا فَاحْفَظْهَا، بِمَا تَحْفَظُ بِهِ عِبَادَكَ الصَّالِحِينَ.",
-                        "latin": "Bismika rabbī waḍa'tu janbī wa-bika arfa'uh, fa-in amsakta nafsī far-ḥamhā, wa-in arsaltahā faḥ-faẓhā bimā taḥfaẓu bihi 'ibādaka aṣ-ṣāliḥīn.",
-                        "explanationEs": "En Tu nombre, Señor mío, me acuesto y en Tu nombre me levanto. Si tomas mi alma, ten misericordia de ella; y si la devuelves, protégela como proteges a Tus siervos virtuosos.",
-                        "count": 1,
-                        "maxCount": 1
+                    "itemNumber": 54,
+                    "text": "بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي، وَبِكَ أَرْفَعُهُ، فَإِن أَمْسَكْتَ نَفْسِي فارْحَمْهَا، وَإِنْ أَرْسَلْتَهَا فَاحْفَظْهَا، بِمَا تَحْفَظُ بِهِ عِبَادَكَ الصَّالِحِينَ.",
+                    "latin": "Bismika rabbī waḍa'tu janbī wa-bika arfa'uh, fa-in amsakta nafsī far-ḥamhā, wa-in arsaltahā faḥ-faẓhā bimā taḥfaẓu bihi 'ibādaka aṣ-ṣāliḥīn.",
+                    "explanationEs": "En Tu nombre, Señor mío, me acuesto y en Tu nombre me levanto. Si tomas mi alma, ten misericordia de ella; y si la devuelves, protégela como proteges a Tus siervos virtuosos.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2054.m4a"
+                    ],
+                    "note": "",
+                    "audioUrl": ""
                   },
                   {
-                        "itemNumber": 55,
-                        "text": "اللَّهُمَّ إِنَّكَ خَلَقْتَ نَفْسِي وَأَنْتَ تَوَفَّاهَا، لَكَ مَمَاتُهَا وَمَحْياهَا، إِنْ أَحْيَيْتَهَا فَاحْفَظْهَا، وَإِنْ أَمَتَّهَا فَاغْفِرْ لَهَا. اللَّهُمَّ إِنِّي أَسْأَلُكَ العَافِيَةَ.",
-                        "latin": "Allāhumma innaka khalaqta nafsī wa-anta tawaffāhā, laka mamātuhā wa-maḥyāhā, in aḥyaytahā faḥ-faẓhā, wa-in amattahā fagh-fir lahā. Allāhumma innī as'aluka al-'āfiyah.",
-                        "explanationEs": "¡Oh Allah! Tú has creado mi alma y Tú te la llevas. A Ti pertenece su muerte y su vida. Si la mantienes con vida, protégela; y si la haces morir, perdónala. ¡Oh Allah! Te pido bienestar.",
-                        "count": 1,
-                        "maxCount": 1
+                    "itemNumber": 55,
+                    "text": "اللَّهُمَّ إِنَّكَ خَلَقْتَ نَفْسِي وَأَنْتَ تَوَفَّاهَا، لَكَ مَمَاتُهَا وَمَحْياهَا، إِنْ أَحْيَيْتَهَا فَاحْفَظْهَا، وَإِنْ أَمَتَّهَا فَاغْفِرْ لَهَا. اللَّهُمَّ إِنِّي أَسْأَلُكَ العَافِيَةَ.",
+                    "latin": "Allāhumma innaka khalaqta nafsī wa-anta tawaffāhā, laka mamātuhā wa-maḥyāhā, in aḥyaytahā faḥ-faẓhā, wa-in amattahā fagh-fir lahā. Allāhumma innī as'aluka al-'āfiyah.",
+                    "explanationEs": "¡Oh Allah! Tú has creado mi alma y Tú te la llevas. A Ti pertenece su muerte y su vida. Si la mantienes con vida, protégela; y si la haces morir, perdónala. ¡Oh Allah! Te pido bienestar.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2055.m4a"
+                    ]
                   },
                   {
-                        "itemNumber": 56,
-                        "text": "اللَّهُمَّ قِنِي عَذَابَكَ يَوْمَ تَبْعَثُ عِبَادَكَ.",
-                        "latin": "Allāhumma qinī 'adhābaka yawma tab'athu 'ibādak.",
-                        "explanationEs": "¡Oh Allah! Protégeme de Tu castigo el Día en que resucites a Tus siervos.",
-                        "count": 3,
-                        "maxCount": 3,
-                        "note": "ثلاث مرات"
+                    "itemNumber": 56,
+                    "text": "اللَّهُمَّ قِنِي عَذَابَكَ يَوْمَ تَبْعَثُ عِبَادَكَ.",
+                    "latin": "Allāhumma qinī 'adhābaka yawma tab'athu 'ibādak.",
+                    "explanationEs": "¡Oh Allah! Protégeme de Tu castigo el Día en que resucites a Tus siervos.",
+                    "count": 3,
+                    "maxCount": 3,
+                    "note": "ثلاث مرات",
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2056.m4a"
+                    ]
                   },
                   {
                         "itemNumber": 57,
@@ -694,12 +705,15 @@ const azkarData = [
                         ]
                   },
                   {
-                        "itemNumber": 62,
-                        "text": "الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا، وَكَفَانَا، وَآوَانَا، فَكَمْ مِمَّنْ لاَ كَافِيَ لَهُ وَلاَ مُؤْوِيَ.",
-                        "latin": "Al-ḥamdu lillāhi alladhī aṭ'amanā wa-saqānā, wa-kafānā wa-āwānā, fa-kam mimman lā kāfiya lahu wa-lā mu'wī.",
-                        "explanationEs": "Alabado sea Allah, Quien nos ha alimentado, nos ha dado de beber, nos ha provisto de lo suficiente y nos ha dado refugio; ¡cuántos hay que no tienen quien les provea ni les dé refugio!",
-                        "count": 1,
-                        "maxCount": 1
+                    "itemNumber": 62,
+                    "text": "الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا، وَكَفَانَا، وَآوَانَا، فَكَمْ مِمَّنْ لاَ كَافِيَ لَهُ وَلاَ مُؤْوِيَ.",
+                    "latin": "Al-ḥamdu lillāhi alladhī aṭ'amanā wa-saqānā, wa-kafānā wa-āwānā, fa-kam mimman lā kāfiya lahu wa-lā mu'wī.",
+                    "explanationEs": "Alabado sea Allah, Quien nos ha alimentado, nos ha dado de beber, nos ha provisto de lo suficiente y nos ha dado refugio; ¡cuántos hay que no tienen quien les provea ni les dé refugio!",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2062.m4a"
+                    ]
                   },
                   {
                         "itemNumber": 63,
