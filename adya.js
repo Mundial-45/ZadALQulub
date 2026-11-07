@@ -632,77 +632,110 @@ const adyaData = [
       "text": "يَا ذَا الجَلَالِ وَالإِكْرَامِ، يَا قَاضِيَ الحَاجَاتِ، يَا أَرْحَمَ الرَّاحِمِينَ، يَا حَيُّ يَا قَيُّومُ، لَا إِلَهَ إِلَّا أَنْتَ المَلِكُ الحَقُّ المُبِينُ. اللَّهُمَّ إِنِّي أَحْمَدُكَ حَمْدًا كَثِيرًا وَأَشْكُرُكَ شُكْرًا كَثِيرًا يَلِيقُ بِجَلَالِ وَجْهِكَ وَعَظِيمِ سُلْطَانِكَ. اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ. يَا اللهُ، يَا رَبُّ، يَا حَيُّ يَا قَيُّومُ، يَا ذَا الجَلَالِ وَالإِكْرَامِ، أَسْأَلُكَ بِاسْمِكَ العَظِيمِ الأَعْظَمِ أَنْ تَرْزُقَنِي رِزْقًا وَاسِعًا حَلَالًا طَيِّبًا، بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ.",
       "latin": "Yā Dhal-Jalāli wal-Ikrām, yā Qāḍiyal-ḥājāt, yā Arḥamar-rāḥimīn, yā Ḥayyu yā Qayyūm, lā ilāha illā Antal-Malikul-Ḥaqqul-Mubīn. Allāhumma innī aḥmaduka ḥamdan kathīrā, wa ashkuruka shukran kathīrā, yalīqu bi-jalāli wajhika wa ‘aẓīmi sulṭānik. Allāhummak-finī bi-ḥalālika ‘an ḥarāmika wa aghninī bi-faḍlika ‘amman siwāk. Yā Allāh, yā Rabb, yā Ḥayyu yā Qayyūm, yā Dhal-Jalāli wal-Ikrām, as’aluka bis-mikal-‘aẓīmil-a‘ẓam an tarzuqanī rizqan wāsi‘an ḥalālan ṭayyiban, bi-raḥmatika yā Arḥamar-rāḥimīn.",
       "explanationEs": "«¡Oh Poseedor de la Majestad y la Generosidad!, ¡Oh Cumplidor de las necesidades!, ¡Oh el más Misericordioso de los misericordiosos!, ¡Oh Viviente, Oh Sustentador!, no hay divinidad excepto Tú, el Rey, la Verdad Evidente. \n\nOh Allah, Te alabo con abundante alabanza y Te agradezco con abundante agradecimiento, como corresponde a la majestad de Tu Rostro y a la grandeza de Tu soberanía. \n\nOh Allah, haz que me baste lo lícito que Tú me concedes para no recurrir a lo ilícito, y enriquéceme con Tu favor para no necesitar de nadie más que de Ti. \n\n¡Oh Allah, Oh Rabb, Oh Viviente, Oh Sustentador!, ¡Oh Poseedor de la Majestad y la Generosidad!, Te pido por Tu Nombre Grandioso, el más Grande, que me concedas un sustento amplio, lícito y puro, por Tu misericordia, ¡Oh el más Misericordioso de los misericordiosos!».\n",
-      "note": "دعاء قضاء الحاجات والرزق"
+      "note": "دعاء قضاء الحاجات والرزق",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2067.mp3"
+      ]
     },
     {
       "itemNumber": 68,
       "text": "اللَّهُمَّ ارْزُقْنَا رِزْقًا حَلَالًا طَيِّبًا مُبَارَكًا فِيهِ كَمَا تُحِبُّ وَتَرْضَى يَا رَبَّ العَالَمِينَ. حَسْبُنَا اللهُ سَيُؤْتِينَا اللهُ مِنْ فَضْلِهِ إِنَّا إِلَى اللهِ رَاغِبُونَ.",
       "latin": "Allāhummar-zuqnā rizqan ḥalālan ṭayyiban mubārakan fīhi kamā tuḥibbu wa tarḍā yā Rabbal-‘ālamīn. Ḥasbunallāhu sayu’tin-Allāhu min faḍlih, innā ilallāhi rāghibūn.",
       "explanationEs": "​«Oh Allah, concédenos un sustento lícito, puro y bendito, tal como Amas y Te agrada, ¡Oh Señor de los mundos! Allah nos basta; Allah nos dará de Su favor, y ciertamente hacia Allah dirigimos nuestros deseos».",
-      "note": "دعاء الرزق والتوكل"
+      "note": "دعاء الرزق والتوكل",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2068.mp3"
+      ]
     },
     {
       "itemNumber": 69,
-      "text": "الحَمْدُ للهِ الَّذِي لَا يَنْسَى مَنْ ذَكَرَهُ، الحَمْدُ للهِ الَّذِي لَا يَخِيبُ مَنْ رَجَاهُ، الحَمْدُ للهِ الَّذِي مَنْ تَوَكَّلَ عَلَيْهِ كَفَاهُ، الحَمْدُ للهِ الَّذِي مَنْ وَثِقَ بِهِ لَمْ يَكِلْهُ إِلَى غَيْرِهِ، الحَمْدُ للهِ الَّذِي هُوَ ثِقَتُنَا حِينَ تَسُوءُ ظُنُونُنَا بِأَعْمَالِنَا، الحَمْدُ للهِ الَّذِي هُوَ رَجَاؤُنَا حِينَ يَنْقَطِعُ الحِيلُ وَالحَبْلُ مِنَّا.",
+      "text": "الحَمْدُ للهِ الَّذِي لَا يَنْسَى مَنْ ذَكَرَهُ.\n الحَمْدُ للهِ الَّذِي لَا يَخِيبُ مَنْ رَجَاهُ.\n الحَمْدُ للهِ الَّذِي مَنْ تَوَكَّلَ عَلَيْهِ كَفَاهُ\n الحَمْدُ للهِ الَّذِي مَنْ وَثِقَ بِهِ لَمْ يَكِلْهُ إِلَى غَيْرِهِ.\n الحَمْدُ للهِ الَّذِي هُوَ ثِقَتُنَا حِينَ تَسُوءُ ظُنُونُنَا بِأَعْمَالِنَا.\n الحَمْدُ للهِ الَّذِي هُوَ رَجَاؤُنَا حِينَ يَنْقَطِعُ الحِيلُ وَالحَبْلُ مِنَّا.",
       "latin": "Al-ḥamdu lillāhil-ladhī lā yansā man dhakarah, al-ḥamdu lillāhil-ladhī lā yakhību man rajāh, al-ḥamdu lillāhil-ladhī man tawakkala ‘alayhi kafāh, al-ḥamdu lillāhil-ladhī man wathiqa bihī lam yakilhu ilā ghayrih. Al-ḥamdu lillāhil-ladhī huwa thiqatunā ḥīna tasū’u ẓunūnunā bi-a‘mālinā, al-ḥamdu lillāhil-ladhī huwa rajā’unā ḥīna yanqaṭi‘ul-ḥiylu wal-ḥablu minnā.",
       "explanationEs": "Alabado sea Allah, Quien no olvida a quien Le recuerda. Alabado sea Allah, Quien no decepciona a quien deposita en Él su esperanza. Alabado sea Allah, Quien basta a quien confía en Él. Alabado sea Allah, Quien no abandona a quien confía en Él en manos de nadie más.\n\nAlabado sea Allah, Quien es nuestro apoyo cuando tenemos una mala opinión de nuestras propias obras. Alabado sea Allah, Quien es nuestra esperanza cuando se agotan nuestros recursos y se rompen todos nuestros vínculos.",
-      "note": "حمد الله والتوكل عليه"
+      "note": "حمد الله والتوكل عليه",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2069.mp3"
+      ]
     },
     {
       "itemNumber": 70,
       "text": "اللَّهُمَّ يَا ذَا الرَّحْمَةِ الْوَاسِعَةِ، يَا مُطَّلِعاً عَلَى السَّرَائِرِ وَالضَّمَائِرِ وَالْهَوَاجِسِ وَالْخَوَاطِرِ، لَا يَعْزُبُ عَنْكَ شَيْءٌ، نَسْأَلُكَ فَيْضَةً مِنْ فَيْضِ فَضْلِكَ، وَقَبْضَةً مِنْ نُورِ سُلْطَانِكَ، وَأُنْساً وَفَرَجاً مِنْ بَحْرِ كَرَمِكَ، أَنْتَ بِيَدِكَ الْأَمْرُ كُلُّهُ وَمَقَالِيدُ كُلِّ شَيْءٍ، فَهَبْ لَنَا مَا تَقَرُّ بِهِ أَعْيُنُنَا وَتُغْنِينَا عَنْ سُؤَالِ غَيْرِكَ، فَإِنَّكَ وَاسِعُ الْكَرَمِ، كَثِيرُ الْجُودِ، فَبِبابِكَ وَاقِفُونَ وَلِجُودِكَ الْوَاسِعِ الْمَعْرُوفِ مُنْتَظِرُونَ يَا كَرِيمُ يَا رَحِيمُ.",
       "latin": "Allāhumma yā dhal-raḥmati al-wāsiʿati, yā muṭṭaliʿan ʿalā al-sarāʾiri waḍ-ḍamāʾiri wal-hawājisi wal-khawāṭiri, lā yaʿzubu ʿanka shayʾun, nasʾaluka fayḍatan min fayḍi faḍlika, wa qabḍatan min nūri sulṭānika, wa unsan wa farajan min baḥri karamika, anta biyadika al-amru kulluhu wa maqālīdu kulli shayʾin, fahab lanā mā taqarru bihi aʿyununā wa tughnīnā ʿan suʾāli ghayrika, fa-innaka wāsiʿu al-karami, kathīru al-jūdi, fa-bibābika wāqifūna wa lijūdika al-wāsiʿi al-maʿrūfi muntaẓirūna, yā Karīmu yā Raḥīm.",
       "explanationEs": "¡Oh, Allah! ¡Oh, Dueño de la inmensa misericordia! ¡Oh, Quien conoce todos los secretos, las intenciones ocultas, los pensamientos y las inquietudes del corazón! Nada se oculta a Ti.\nTe pedimos una abundante porción del desbordamiento de Tu generosidad, un puñado de la luz de Tu poder, consuelo y alivio procedentes del océano de Tu bondad.\nTú tienes en Tus manos todos los asuntos y las llaves de todas las cosas. Concédenos aquello que alegre nuestros ojos y nos haga innecesario pedir a nadie más que a Ti.\nCiertamente, Tú eres inmenso en generosidad y abundante en dádivas.\nEstamos de pie ante Tu puerta, esperando Tu inmensa y conocida generosidad.\n¡Oh, Generosísimo! ¡Oh, Misericordiosísimo!",
-      "note": "دعاء الفضل والفرج"
+      "note": "دعاء الفضل والفرج",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2070.mp3"
+      ]
     },
     {
       "itemNumber": 71,
       "text": "اللَّهُمَّ ارْزُقْنِي عِلْمًا نَافِعًا، وَرِزْقًا وَاسِعًا، وَشِفَاءً مِنْ كُلِّ دَاءٍ وَسَقَمٍ، يَا مَنْ تَرْزُقُ مَنْ تَشَاءُ بِغَيْرِ حِسَابٍ. رَحْمَنَ الدُّنْيَا وَالآخِرَةِ وَرَحِيمَهُمَا، اللَّهُمَّ ارْحَمْنِي رَحْمَةً تُغْنِينِي بِهَا عَمَّنْ سِوَاكَ.",
       "latin": "Allāhummar-zuqnī ‘ilman nāfi‘an, wa rizqan wāsi‘an, wa shifā’an min kulli dā’in wa saqam, yā man tarzuqu man tashā’u bi-ghayri ḥisāb. Raḥmānad-dunyā wal-ākhirati wa raḥīmahumā, Allāhumma irḥamnī raḥmatan tughnīnī bihā ‘amman siwāk.",
       "explanationEs": "«Oh Allah, concédeme un conocimiento beneficioso, un sustento abundante y la curación de toda enfermedad y dolencia, ¡Oh Quien sustentas a quien quieres sin medida! Oh Compasivo de este mundo y del Más Allá, y Misericordioso de ambos, Oh Allah, ten misericordia de mí con una misericordia que me dispense de la de cualquier otro que no seas Tú».\n",
-      "note": "دعاء العلم والرزق والشفاء"
+      "note": "دعاء العلم والرزق والشفاء",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2071.mp3"
+      ]
     },
     {
       "itemNumber": 72,
-      "text": "إِلَهِي أَدْعُوكَ دُعَاءَ مَنِ اشْتَدَّتْ فَاقَتُهُ، وَضَعُفَتْ قُوَّتُهُ، وَقَلَّتْ حِيلَتُهُ، دُعَاءَ الغَرِيقِ المُضْطَرِّ البَائِسِ الفقيرِ الَّذِي لَا يَجِدُ لِكَشْفِ مَا هُوَ فِيهِ مِنَ الذُّنُوبِ إِلَّا أَنْتَ، يَا غِيَاثُ أَغِثْنِي، يَا غِيَاثُ أَغِثْنِي، يَا غِيَاثُ أَغِثْنِي.",
+      "text": "إِلَهِي أَدْعُوكَ دُعَاءَ مَنِ اشْتَدَّتْ فَاقَتُهُ، وَضَعُفَتْ قُوَّتُهُ، وَقَلَّتْ حِيلَتُهُ.\nدُعَاءَ الغَرِيقِ, المُضْطَرِّ, البَائِسِ, الفقيرِ, الَّذِي لَا يَجِدُ لِكَشْفِ مَا هُوَ فِيهِ مِنَ الذُّنُوبِ إِلَّا أَنْتَ.\nيَا غِيَاثُ أَغِثْنِي.\nيَا غِيَاثُ أَغِثْنِي.\nيَا غِيَاثُ أَغِثْنِي.",
       "latin": "Ilāhī ad‘ūka du‘ā’a mani ishtaddat fāqatuh, wa ḍa‘ufat quwwatuh, wa qallat ḥīlatuh, du‘ā’al-gharīqi al-muḍṭarri al-bā’isi al-faqīri alladhī lā yajidu li-kashfi mā huwa fīhi minadh-dhunūbi illā Ant, yā Ghiyāthu aghithnī.",
       "explanationEs": "¡Dios mío! Te suplico con la súplica de quien se encuentra en una necesidad extrema, cuya fuerza se ha debilitado y cuyos recursos son escasos; con la súplica de quien se ahoga, desesperado, afligido y pobre, y no encuentra a nadie salvo a Ti que lo libre de la situación en la que se encuentra.\n\n¡Oh Socorredor, socórreme! ¡Oh Socorredor, socórreme! ¡Oh Socorredor, socórreme!",
-      "note": "دعاء المضطر والغريق"
+      "note": "دعاء المضطر والغريق",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2072.mp3"
+      ]
     },
     {
       "itemNumber": 73,
-      text: 'اللَّهُمَّ أَغْنِنَا بِحَلَالِكَ عَنْ حَرَامِكَ، وَتَوَلَّنَا فَأَنْتَ أَرْحَمُ الرَّاحِمِينَ.',
-      latin: 'Allāhumma aghninā bi-ḥalālika ‘an ḥarāmik, wa tawallanā fa-Anta Arḥamar-rāḥimīn.',
-      explanationEs: 'Oh Allah, haz que nos baste lo lícito que Tú nos concedes para no recurrir a lo prohibido, y cuida de nosotros, pues Tú eres el más misericordioso de los misericordiosos.',
-      note: 'دعاء الاستغناء بالحلال'
+      "text": "اللَّهُمَّ أَغْنِنَا بِحَلَالِكَ عَنْ حَرَامِكَ، وَتَوَلَّنَا فَأَنْتَ أَرْحَمُ الرَّاحِمِينَ.",
+      "latin": "Allāhumma aghninā bi-ḥalālika ‘an ḥarāmik, wa tawallanā fa-Anta Arḥamar-rāḥimīn.",
+      "explanationEs": "Oh Allah, haz que nos baste lo lícito que Tú nos concedes para no recurrir a lo prohibido, y cuida de nosotros, pues Tú eres el más misericordioso de los misericordiosos.",
+      "note": "دعاء الاستغناء بالحلال",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2073.mp3"
+      ]
     },
     {
       "itemNumber": 74,
       "text": "يَا كَرِيمُ، اللَّهُمَّ يَا ذَا الرَّحْمَةِ الوَاسِعَةِ، يَا مُطَّلِعًا عَلَى السَّرَائِرِ وَالضَّمَائِرِ وَالهَوَاجِسِ وَالخَوَاطِرِ، لَا يَعْزُبُ عَنْكَ شَيْءٌ، أَسْأَلُكَ فَيْضَةً مِنْ فَيَضَانِ فَضْلِكَ، وَقَبْضَةً مِنْ نُورِ سُلْطَانِكَ، وَأُنْسًا وَفَرَجًا مِنْ بَحْرِ كَرَمِكَ، أَنْتَ بِيَدِكَ الأَمْرُ كُلُّهُ وَمَقَالِيدُ كُلِّ شَيْءٍ، فَهَبْ لَنَا مَا تَقَرُّ بِهِ أَعْيُنُنَا وَتُغْنِينَا عَنْ سُؤَالِ غَيْرِكَ، فَإِنَّكَ وَاسِعُ الكَرَمِ، كَثِيرُ الجُودِ، حَسَنُ الشِّيَمِ، فَبِبَابِكَ وَاقِفُونَ وَلِجُودِكَ الوَاسِعِ المَعْرُوفِ مُنْتَظِرُونَ يَا كَرِيمُ يَا رَحِيمُ.",
       "latin": "Yā Karīm, Allāhumma yā Dhal-raḥmatil-wāsi‘ah, yā Muṭṭali‘an ‘alas-sarā’iri waḍ-ḍamā’iri wal-hawājisi wal-khawāṭir, lā ya‘zubu ‘anka shay’un. As’aluka fayḍatan min fayāḍāni faḍlik, wa qabḍatan min nūri sulṭānik, wa unsan wa farajan min baḥri karamik. Anta biyadika al-amru kulluhū wa maqālīdu kulli shay’in, fa-hab lanā mā taqarru bihī a‘yununā wa tughnīnā ‘an su’āli ghayrik. Fa-innaka wāsi‘ul-karam, kathīrul-jūd, ḥasanush-shiyam. Fa-bi-bābika wāqifūn wa li-jūdikal-wāsi‘il-ma‘rūfi muntaẓirūn, yā Karīmu yā Raḥīm.",
       "explanationEs": "«¡Oh Generoso!, Oh Allah, Oh Poseedor de la amplia misericordia, Oh Conocedor de los secretos, de las conciencias, de las intuiciones y de los pensamientos, nada se Te oculta. Te pido una efusión de la abundancia de Tu favor, un puñado de la luz de Tu soberanía, y consuelo y alivio del océano de Tu generosidad. En Tu Mano está todo el asunto y las llaves de todas las cosas; concédenos, pues, aquello que alegre nuestros ojos y nos dispense de pedir a cualquier otro que no seas Tú, pues Ciertamente Eres de Infinita Generosidad, de Abundante Bondad y de Hermosas Cualidades; por lo tanto, a Tu puerta estamos parados y aguardando Tu conocido y amplio favor, ¡Oh Generoso, Oh Misericordioso!».\n",
-      "note": "دعاء فيض الفضل والرجاء"
+      "note": "دعاء فيض الفضل والرجاء",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2074.mp3"
+      ]
     },
     {
       "itemNumber": 75,
       "text": "اللَّهُمَّ يَا رَازِقَ السَّائِلِينَ، يَا رَاحِمَ المَسَاكِينِ، وَيَا ذَا القُوَّةِ المَتِينِ، وَيَا خَيْرَ النَّاصِرِينَ، يَا وَلِيَّ المُؤْمِنِينَ، يَا غِيَاثَ المُسْتَغِيثِينَ، إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ، اللَّهُمَّ إِنِّي أَسْأَلُكَ رِزْقًا وَاسِعًا طَيِّبًا مِنْ رِزْقِكَ.",
       "latin": "Allāhumma yā Rāziqas-sā’ilīn, yā Rāḥimal-masākīn, wa yā Dhal-quwwatil-matīn, wa yā Khayran-nāṣirīn, yā Waliyyal-mu’minīn, yā Ghiyāthal-mustaghīthīn, iyyāka na‘budu wa iyyāka nasta‘īn, Allāhumma innī as’aluka rizqan wāsi‘an ṭayyiban min rizqik.",
       "explanationEs": "«Oh Allah, Oh Proveedor de quienes Le piden, Oh Misericordioso con los necesitados, Oh Poseedor de la fuerza inquebrantable, Oh el Mejor de los socorredores, Oh Protector de los creyentes, Oh Auxiliador de quienes buscan auxilio, Solo a Ti adoramos y solo a Ti pedimos ayuda. Oh Allah, Te pido un sustento amplio y puro de Tu provisión».\n",
-      "note": "دعاء الرزق الواسع"
+      "note": "دعاء الرزق الواسع",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2075.mp3"
+      ]
     },
     {
       "itemNumber": 76,
-      text: 'يَا مُقِيلَ العَثَرَاتِ، يَا قَاضِيَ الحَاجَاتِ، اقْضِ حَاجَتِي، وَفَرِّجْ كُرْبَتِي، وَارْزُقْنِي مِنْ حَيْثُ لَا أَحْتَسِبُ.',
-      latin: 'Yā Muqīlal-‘atharāt, yā Qāḍiyal-ḥājāt, iqḍi ḥājatī, wa farrij kurbatī, war-zuqnī min ḥaythu lā aḥtasib.',
-      explanationEs: 'Oh Quien pasa por alto los tropiezos, Oh Quien satisface las necesidades, satisface mi necesidad, alivia mi angustia y susténtame de donde no lo espero.',
-      note: 'دعاء قضاء الحاجة والرزق غير المحتسب'
+      "text": "يَا مُقِيلَ العَثَرَاتِ، يَا قَاضِيَ الحَاجَاتِ، اقْضِ حَاجَتِي، وَفَرِّجْ كُرْبَتِي، وَارْزُقْنِي مِنْ حَيْثُ لَا أَحْتَسِبُ.",
+      "latin": "Yā Muqīlal-‘atharāt, yā Qāḍiyal-ḥājāt, iqḍi ḥājatī, wa farrij kurbatī, war-zuqnī min ḥaythu lā aḥtasib.",
+      "explanationEs": "Oh Quien pasa por alto los tropiezos, Oh Quien satisface las necesidades, satisface mi necesidad, alivia mi angustia y susténtame de donde no lo espero.",
+      "note": "دعاء قضاء الحاجة والرزق غير المحتسب",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2076.mp3"
+      ]
     },
     {
       "itemNumber": 77,
-      text: 'اللَّهُمَّ ارْزُقْنِي رِزْقًا وَاسِعًا حَلَالًا طَيِّبًا مِنْ غَيْرِ كَدٍّ، وَاسْتَجِبْ دُعَائِي مِنْ غَيْرِ رَدٍّ، وَأَعُوذُ بِكَ مِنَ الفَقْرِ وَالدَّيْنِ.',
-      latin: 'Allāhummar-zuqnī rizqan wāsi‘an ḥalālan ṭayyiban min ghayri kadd, was-tajib du‘ā’ī min ghayri radd, wa a‘ūdhu bika minal-faqri wad-dayn.',
-      explanationEs: 'Oh Allah, concédeme un sustento amplio, lícito y puro sin fatiga, acepta mi súplica sin rechazo, y me refugio en Ti de la pobreza y de la deuda.',
-      note: 'دعاء الرزق الميسر والوقاية من الفقر'
+      "text": "اللَّهُمَّ ارْزُقْنِي رِزْقًا وَاسِعًا حَلَالًا طَيِّبًا مِنْ غَيْرِ كَدٍّ، وَاسْتَجِبْ دُعَائِي مِنْ غَيْرِ رَدٍّ، وَأَعُوذُ بِكَ مِنَ الفَقْرِ وَالدَّيْنِ.",
+      "latin": "Allāhummar-zuqnī rizqan wāsi‘an ḥalālan ṭayyiban min ghayri kadd, was-tajib du‘ā’ī min ghayri radd, wa a‘ūdhu bika minal-faqri wad-dayn.",
+      "explanationEs": "Oh Allah, concédeme un sustento amplio, lícito y puro sin fatiga, acepta mi súplica sin rechazo, y me refugio en Ti de la pobreza y de la deuda.",
+      "note": "دعاء الرزق الميسر والوقاية من الفقر",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2077.mp3"
+      ]
     }
   ]
 	},
