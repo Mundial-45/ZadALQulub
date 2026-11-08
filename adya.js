@@ -1858,17 +1858,23 @@ const adyaData = [
     },
     {
       "itemNumber": 206,
-      text: 'اللَّهُمَّ رَحْمَتَكَ أَرْجُو، فَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ، وَأَصْلِحْ لِي شَأْنِي كُلَّهُ، لَا إِلَهَ إِلَّا أَنْتَ.',
-      latin: 'Allāhumma raḥmataka arjū, falā takilnī ilā nafsī ṭarfata ‘ayn, aṣliḥ lī sha’nī kullah, lā ilāha illā Ant.',
-      explanationEs: 'Oh Allah, Tu misericordia espero, así que no me encomiendes a mí mismo ni por un parpadeo, y rectifica todos mis asuntos. No hay más divinidad que Tú.',
-      note: 'من دعوات المكروب'
+      "text": "اللَّهُمَّ رَحْمَتَكَ أَرْجُو، فَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ، وَأَصْلِحْ لِي شَأْنِي كُلَّهُ، لَا إِلَهَ إِلَّا أَنْتَ.",
+      "latin": "Allāhumma raḥmataka arjū, falā takilnī ilā nafsī ṭarfata ‘ayn, aṣliḥ lī sha’nī kullah, lā ilāha illā Ant.",
+      "explanationEs": "Oh Allah, Tu misericordia espero, así que no me encomiendes a mí mismo ni por un parpadeo, y rectifica todos mis asuntos. No hay más divinidad que Tú.",
+      "note": "من دعوات المكروب",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20206.mp3"
+      ]
     },
     {
       "itemNumber": 207,
-      text: 'اللهُ؛ اللهُ رَبِّي، لَا أُشْرِكُ بِهِ شَيْئًا.',
-      latin: 'Allāhu, Allāhu Rabbī, lā ushriku bihī shay’ā.',
-      explanationEs: 'Allah, Allah es mi Señor; no Le asocio nada en absoluto.',
-      note: 'دعاء لتفريج الضيق'
+      "text": "اللهُ؛ اللهُ رَبِّي، لَا أُشْرِكُ بِهِ شَيْئًا.",
+      "latin": "Allāhu, Allāhu Rabbī, lā ushriku bihī shay’ā.",
+      "explanationEs": "Allah, Allah es mi Señor; no Le asocio nada en absoluto.",
+      "note": "دعاء لتفريج الضيق",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20207.mp3"
+      ]
     },
     {
       "itemNumber": 208,
