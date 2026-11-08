@@ -1891,28 +1891,40 @@ const adyaData = [
       "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنَّ لَكَ الحَمْدَ لَا إِلَهَ إِلَّا أَنْتَ المَنَّانُ بَدِيعُ السَّمَاوَاتِ وَالأَرْضِ، ذَا الجَلَالِ وَالإِكْرَامِ، يَا حَيُّ يَا قَيُّومُ، إِنِّي أَسْأَلُكَ...\n\n(ثُمَّ تَطْلُبُ مَا تُرِيدُ.)",
       "latin": "Allāhumma innī as’aluka bi-anna lakal-ḥamda lā ilāha illā Antal-Mannānu Badī‘us-samāwāti wal-arḍ, Dhāl-Jalāli wal-Ikrām, yā Ḥayyu yā Qayyūmu innī as’aluk...\n\n(Thumma taṭlubu mā turīd.)",
       "explanationEs": "¡Oh Allah! Te pido porque a Ti pertenece toda alabanza; no hay divinidad digna de adoración excepto Tú, el Dadivoso, Originador de los cielos y de la tierra, Dueño de la Majestad y el Honor. ¡Oh Viviente, oh Sustentador! En verdad, Te suplico...\n\n(Después, pide lo que desees.)",
-      "note": "الدعاء باسم الله الأعظم"
+      "note": "الدعاء باسم الله الأعظم",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20209.mp3"
+      ]
     },
     {
       "itemNumber": 210,
-      text: 'اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ، وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ.',
-      latin: 'Allāhummak-finī bi-ḥalālika ‘an ḥarāmik, wa aghninī bi-faḍlika ‘amman siwāk.',
-      explanationEs: "¡Oh Allah! Haz que lo que es lícito me sea suficiente frente a lo ilícito, y enriquéceme con Tu favor para que no tenga necesidad de nadie más que de Ti.",
-      note: 'سنن الترمذي'
+      "text": "اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ، وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ.",
+      "latin": "Allāhummak-finī bi-ḥalālika ‘an ḥarāmik, wa aghninī bi-faḍlika ‘amman siwāk.",
+      "explanationEs": "¡Oh Allah! Haz que lo que es lícito me sea suficiente frente a lo ilícito, y enriquéceme con Tu favor para que no tenga necesidad de nadie más que de Ti.",
+      "note": "سنن الترمذي",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20210.mp3"
+      ]
     },
     {
       "itemNumber": 211,
-      text: 'اللَّهُمَّ مَالِكَ المُلْكِ تُؤْتِي المُلْكَ مَنْ تَشَاءُ، وَتَنْزِعُ المُلْكَ مِمَّنْ تَشَاءُ، وَتُعِزُّ مَنْ تَشَاءُ، وَتُذِلُّ مَنْ تَشَاءُ، بِيَدِكَ الخَيْرُ إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، رَحْمَنَ الدُّنْيَا وَالآخِرَةِ وَرَحِيمَهُمَا، تُعْطِيهِمَا مَنْ تَشَاءُ، وَتَمْنَعُ مِنْهُمَا مَنْ تَشَاءُ، ارْحَمْنِي رَحْمَةً تُغْنِينِي بِهَا عَنْ رَحْمَةِ مَنْ سِوَاكَ.',
-      latin: 'Allāhumma Mālikal-mulki tu\'til-mulka man tashā\', wa tanzi‘ul-mulka mimman tashā\', wa tu‘izzu man tashā\', wa tudhillu man tashā\', biyadikal-khayru innaka ‘alā kulli shay\'in qadīr. Raḥmānad-dunyā wal-ākhirati wa raḥīmahumā, tu‘ṭīhimā man tashā\', wa tamna‘u minhumā man tashā\', irḥamnī raḥmatan tughnīnī bihā ‘an raḥmati man siwāk.',
-      explanationEs: "¡Oh Allah, Soberano de toda autoridad! Concedes el poder a quien quieres y se lo retiras a quien quieres; honras a quien quieres y humillas a quien quieres. En Tu mano está todo bien y Tú tienes poder sobre todas las cosas. ¡Misericordioso de esta vida y de la otra, y Compasivo en ambas! Las concedes a quien quieres y se las niegas a quien quieres. Ten misericordia de mí con una misericordia que me haga no necesitar la misericordia de nadie más que la Tuya.",
-      note: 'دعاء قضاء الدين والهم'
+      "text": "اللَّهُمَّ مَالِكَ المُلْكِ تُؤْتِي المُلْكَ مَنْ تَشَاءُ، وَتَنْزِعُ المُلْكَ مِمَّنْ تَشَاءُ، وَتُعِزُّ مَنْ تَشَاءُ، وَتُذِلُّ مَنْ تَشَاءُ، بِيَدِكَ الخَيْرُ إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، رَحْمَنَ الدُّنْيَا وَالآخِرَةِ وَرَحِيمَهُمَا، تُعْطِيهِمَا مَنْ تَشَاءُ، وَتَمْنَعُ مِنْهُمَا مَنْ تَشَاءُ، ارْحَمْنِي رَحْمَةً تُغْنِينِي بِهَا عَنْ رَحْمَةِ مَنْ سِوَاكَ.",
+      "latin": "Allāhumma Mālikal-mulki tu'til-mulka man tashā', wa tanzi‘ul-mulka mimman tashā', wa tu‘izzu man tashā', wa tudhillu man tashā', biyadikal-khayru innaka ‘alā kulli shay'in qadīr. Raḥmānad-dunyā wal-ākhirati wa raḥīmahumā, tu‘ṭīhimā man tashā', wa tamna‘u minhumā man tashā', irḥamnī raḥmatan tughnīnī bihā ‘an raḥmati man siwāk.",
+      "explanationEs": "¡Oh Allah, Soberano de toda autoridad! Concedes el poder a quien quieres y se lo retiras a quien quieres; honras a quien quieres y humillas a quien quieres. En Tu mano está todo bien y Tú tienes poder sobre todas las cosas. ¡Misericordioso de esta vida y de la otra, y Compasivo en ambas! Las concedes a quien quieres y se las niegas a quien quieres. Ten misericordia de mí con una misericordia que me haga no necesitar la misericordia de nadie más que la Tuya.",
+      "note": "دعاء قضاء الدين والهم",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20211.mp3"
+      ]
     },
     {
       "itemNumber": 212,
-      text: 'أَغِثْنِي، أَغِثْنِي، يَا عَزِيزُ يَا حَمِيدُ، يَا ذَا العَرْشِ المَجِيدِ، اصْرِفْ عَنِّي شَرَّ كُلِّ جَبَّارٍ عَنِيدٍ، اللَّهُمَّ إِنَّكَ تَعْلَمُ أَنَّنِي عَلَى إِسَاءَتِي وَظُلْمِي وَإِسْرَافِي لَمْ أَجْعَلْ لَكَ وَلَدًا وَلَا نِدًا، وَلَا صَاحِبَةً وَلَا كُفُوًا أَحَدٌ، فَإِنْ تُعَذِّبْ فَأَنَا عَبْدُكَ، وَإِنْ تَغْفِرْ فَإِنَّكَ العَزِيزُ الحَكِيمُ.',
-      latin: 'Aghithnī, aghithnī, yā ‘Azīzu yā Ḥamīd, yā Dhal-‘arshil-majīd, iṣrif ‘annī sharra kulli jabbārin ‘anīd, Allāhumma innaka ta‘lamu annanī ‘alā isā’atī wa ẓulmī wa isrāfī lam aj‘al laka waladan wa lā nidan, wa lā ṣāhibatan wa lā kufuwān aḥad, fa-in tu‘adhhib fa-anā ‘abduk, wa in taghfir fa-Innaka al-‘Azīzul-Ḥakīm.',
-      explanationEs: "¡Socórreme, socórreme, oh Poderoso, oh Digno de alabanza, oh Dueño del Trono glorioso! Aparta de mí el mal de todo tirano obstinado. ¡Oh Allah! Tú sabes que, pese a mis malas acciones, mi injusticia y mis excesos, no Te he atribuido hijo, asociado, compañera ni semejante alguno. Si me castigas, soy Tu siervo; y si me perdonas, Tú eres el Poderoso, el Sabio.",
-      note: 'دعاء وتضرع لرفع البلاء'
+      "text": "أَغِثْنِي، أَغِثْنِي، يَا عَزِيزُ يَا حَمِيدُ، يَا ذَا العَرْشِ المَجِيدِ، اصْرِفْ عَنِّي شَرَّ كُلِّ جَبَّارٍ عَنِيدٍ، اللَّهُمَّ إِنَّكَ تَعْلَمُ أَنَّنِي عَلَى إِسَاءَتِي وَظُلْمِي وَإِسْرَافِي لَمْ أَجْعَلْ لَكَ وَلَدًا وَلَا نِدًا، وَلَا صَاحِبَةً وَلَا كُفُوًا أَحَدٌ، فَإِنْ تُعَذِّبْ فَأَنَا عَبْدُكَ، وَإِنْ تَغْفِرْ فَإِنَّكَ العَزِيزُ الحَكِيمُ.",
+      "latin": "Aghithnī, aghithnī, yā ‘Azīzu yā Ḥamīd, yā Dhal-‘arshil-majīd, iṣrif ‘annī sharra kulli jabbārin ‘anīd, Allāhumma innaka ta‘lamu annanī ‘alā isā’atī wa ẓulmī wa isrāfī lam aj‘al laka waladan wa lā nidan, wa lā ṣāhibatan wa lā kufuwān aḥad, fa-in tu‘adhhib fa-anā ‘abduk, wa in taghfir fa-Innaka al-‘Azīzul-Ḥakīm.",
+      "explanationEs": "¡Socórreme, socórreme, oh Poderoso, oh Digno de alabanza, oh Dueño del Trono glorioso! Aparta de mí el mal de todo tirano obstinado. ¡Oh Allah! Tú sabes que, pese a mis malas acciones, mi injusticia y mis excesos, no Te he atribuido hijo, asociado, compañera ni semejante alguno. Si me castigas, soy Tu siervo; y si me perdonas, Tú eres el Poderoso, el Sabio.",
+      "note": "دعاء وتضرع لرفع البلاء",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20212.mp3"
+      ]
     },
     {
       "itemNumber": 213,
