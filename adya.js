@@ -495,7 +495,7 @@ const adyaData = [
       "explanationEs": "¡Oh, Allah! Tuya es toda alabanza.\n\n¡Oh, Allah! Nadie puede retener aquello que Tú has concedido, ni conceder aquello que Tú has retenido. Nadie puede guiar a quien Tú has extraviado, ni extraviar a quien Tú has guiado. Nadie puede dar aquello que Tú has negado, ni impedir aquello que Tú has concedido. Nadie puede acercar aquello que Tú has alejado, ni alejar aquello que Tú has acercado.\n\n¡Oh, Allah! Derrama sobre nosotros Tus bendiciones, Tu misericordia, Tu favor y Tu provisión.\n\n¡Oh, Allah! Te pido la dicha permanente, que nunca cambia ni desaparece.\n\n¡Oh, Allah! Te pido bienestar en tiempos de necesidad y seguridad en tiempos de temor.\n\n¡Oh, Allah! Me refugio en Ti del mal de aquello que nos has concedido y del mal de aquello que nos has negado.\n\n¡Oh, Allah! Haz que amemos la fe y embellece nuestros corazones con ella. Haz que detestemos la incredulidad, la perversidad y la desobediencia, y cuéntanos entre los bien encaminados.\n\n¡Oh, Allah! Haz que muramos siendo musulmanes, concédenos vivir como musulmanes y reúnenos con los justos, sin deshonra ni tribulación.\n\n¡Oh, Allah! Combate a los incrédulos que desmienten a Tus mensajeros y apartan a la gente de Tu camino. Haz que caigan sobre ellos Tu castigo y Tu tormento.\n¡Oh, Allah! Combate a los incrédulos de entre quienes recibieron el Libro. ¡Oh, Dios de la Verdad!",
       "note": "رواه الإمام أحمد (إسناد صحيح)",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2054.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2054.mp3"
       ]
     },
     {
