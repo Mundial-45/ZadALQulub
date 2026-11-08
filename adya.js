@@ -982,196 +982,281 @@ const adyaData = [
       "text": "اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْمًا كَثِيرًا، وَلَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ، فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ، وَارْحَمْنِي، إِنَّكَ أَنْتَ الغَفُورُ الرَّحِيمُ.",
       "latin": "Allāhumma innī ẓalamtu nafsī ẓulman kathīrā, wa lā yaghfiru adh-dhunūba illā Anta, fagh-fir lī maghfiratan min ‘indik, war-ḥamnī, innaka Antal-Ghafūrur-Raḥīm.",
       "explanationEs": "Oh Allah, he sido muy injusto conmigo mismo, y nadie perdona los pecados sino Tú, así que perdóname con un perdón de Tu parte y ten misericordia de mí, pues Tú eres el Indulgente, el Misericordioso.",
-      "note": "صحيح البخاري ومسلم (دعاء أبي بكر الصديق)"
+      "note": "صحيح البخاري ومسلم (دعاء أبي بكر الصديق)",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2028.mp3"
+      ],
+      "audioUrl": ""
     },
     {
       "itemNumber": 102,
-      text: 'اللَّهُمَّ اغْفِرْ لِي خَطِيئَتِي وَجَهْلِي، وَإِسْرَافِي فِي أَمْرِي، وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي، اللَّهُمَّ اغْفِرْ لِي جِدِّي وَهَزْلِي، وَخَطَئِي وَعَمْدِي، وَكُلُّ ذَلِكَ عِنْدِي، اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ، وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي، أَنْتَ المُقَدِّمُ وَأَنْتَ المُؤَخِّرُ، وَأَنْتَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.',
-      latin: "Allāhummaghfir lī khaṭīʾatī wa jahlī, wa isrāfī fī amrī, wa mā Anta aʿlamu bihī minnī. Allāhumma-ghfir lī jiddī wa hazlī, wa khaṭaʾī wa ʿamdī, wa kullu dhālika ʿindī. Allāhumma-ghfir lī mā qaddamtu wa mā akhkhartu, wa mā asrartu wa mā aʿlantu, wa mā Anta aʿlamu bihī minnī. Antal-Muqaddimu wa Antal-Muʾakhkhiru, wa Anta ʿalā kulli shayʾin qadīr.",
-      explanationEs: "¡Oh Allah! Perdona mi error y mi ignorancia, mis excesos en mis asuntos y aquello que Tú conoces mejor que yo. ¡Oh Allah! Perdona lo que hago en serio y en broma, mis errores y lo que hago deliberadamente; todo eso está en mí. ¡Oh Allah! Perdona lo que hice antes y lo que haga después, lo que oculté y lo que manifesté, y aquello que Tú conoces mejor que yo. Tú eres Quien adelanta y Quien retrasa, y Tú tienes poder sobre todas las cosas.",
-      note: 'صحيح البخاري ومسلم'
+      "text": "اللَّهُمَّ اغْفِرْ لِي خَطِيئَتِي وَجَهْلِي، وَإِسْرَافِي فِي أَمْرِي، وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي، اللَّهُمَّ اغْفِرْ لِي جِدِّي وَهَزْلِي، وَخَطَئِي وَعَمْدِي، وَكُلُّ ذَلِكَ عِنْدِي، اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ، وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي، أَنْتَ المُقَدِّمُ وَأَنْتَ المُؤَخِّرُ، وَأَنْتَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
+      "latin": "Allāhummaghfir lī khaṭīʾatī wa jahlī, wa isrāfī fī amrī, wa mā Anta aʿlamu bihī minnī. Allāhumma-ghfir lī jiddī wa hazlī, wa khaṭaʾī wa ʿamdī, wa kullu dhālika ʿindī. Allāhumma-ghfir lī mā qaddamtu wa mā akhkhartu, wa mā asrartu wa mā aʿlantu, wa mā Anta aʿlamu bihī minnī. Antal-Muqaddimu wa Antal-Muʾakhkhiru, wa Anta ʿalā kulli shayʾin qadīr.",
+      "explanationEs": "¡Oh Allah! Perdona mi error y mi ignorancia, mis excesos en mis asuntos y aquello que Tú conoces mejor que yo. ¡Oh Allah! Perdona lo que hago en serio y en broma, mis errores y lo que hago deliberadamente; todo eso está en mí. ¡Oh Allah! Perdona lo que hice antes y lo que haga después, lo que oculté y lo que manifesté, y aquello que Tú conoces mejor que yo. Tú eres Quien adelanta y Quien retrasa, y Tú tienes poder sobre todas las cosas.",
+      "note": "صحيح البخاري ومسلم",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2029.mp3"
+      ]
     },
     {
       "itemNumber": 103,
-      text: 'اللَّهُمَّ اغْفِرْ لِي، وَارْحَمْنِي، وَعَافِنِي، وَاهْدِنِي، وَارْزُقْنِي.',
-      latin: 'Allāhummagh-fir lī, war-ḥamnī, wa ‘āfinī, wah-dinī, war-zuqnī.',
-      explanationEs: 'Oh Allah, perdóname, ten misericordia de mí, dame salud, guíame y concédeme sustento.',
-      note: 'أحاديث الدعاء في كتب السنة'
+      "text": "اللَّهُمَّ اغْفِرْ لِي، وَارْحَمْنِي، وَعَافِنِي، وَاهْدِنِي، وَارْزُقْنِي.",
+      "latin": "Allāhummagh-fir lī, war-ḥamnī, wa ‘āfinī, wah-dinī, war-zuqnī.",
+      "explanationEs": "Oh Allah, perdóname, ten misericordia de mí, dame salud, guíame y concédeme sustento.",
+      "note": "أحاديث الدعاء في كتب السنة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2065.mp3"
+      ]
     },
     {
       "itemNumber": 104,
       "text": "رَبِّ اغْفِرْ لِي وَتُبْ عَلَيَّ، إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ.",
       "latin": "Rabbigh-fir lī wa tub ‘alay, innaka Antat-Tawwābur-Raḥīm.",
       "explanationEs": "¡Señor mío! Perdóname y acepta mi arrepentimiento, pues ciertamente Tú eres Quien acepta el arrepentimiento, el Misericordioso.",
-      "note": "سنن أبي داود"
+      "note": "سنن أبي داود",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20104.mp3"
+      ]
     },
     {
       "itemNumber": 105,
-      text: 'أَسْتَغْفِرُ اللهَ وَأَتُوبُ إِلَيْهِ.',
-      latin: 'Astaghfirullāha wa atūbu ilayh.',
-      explanationEs: 'Pido perdón a Allah y me arrepiento ante Él.',
-      note: 'ثابت بالإكثار عنه ﷺ'
+      "text": "أَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ.",
+      "latin": "Astaghfirullāha wa atūbu ilayh.",
+      "explanationEs": "Pido perdón a Allah y me arrepiento ante Él.",
+      "note": "ثابت بالإكثار عنه ﷺ",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20105.mp3"
+      ]
     },
     {
       "itemNumber": 106,
       "text": "اللَّهُمَّ إِنِّي أَسْتَغْفِرُكَ مِنْ كُلِّ ذَنْبٍ أَذْنَبْتُهُ، وَأَتُوبُ إِلَيْكَ تَوْبَةً صَادِقَةً نَصُوحًا.",
       "latin": "Allāhumma innī astaghfiruka min kulli dhanbin adhanabtuhu, wa atūbu ilayka tawbatan ṣādiqatan naṣūḥā.",
       "explanationEs": "Oh Allah, te pido perdón por cada pecado que cometí, y me arrepiento ante Ti con un arrepentimiento sincero y recto.",
-      "note": "صيغة عامة مقترحة"
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20106.mp3"
+      ]
     },
     {
       "itemNumber": 107,
-      text: 'اللَّهُمَّ اغْفِرْ لِي ذُنُوبِي كُلَّهَا، صَغِيرَهَا وَكَبِيرَهَا، أَوَّلَهَا وَآخِرَهَا، سِرَّهَا وَعَلَانِيَتَهَا.',
-      latin: 'Allāhummagh-fir lī dhunūbī kullahā, ṣaghīrahā wa kabīrahā, awwalahā wa ākhirahā, sirrahā wa ‘alāniyatahā.',
-      explanationEs: 'Oh Allah, perdona todos mis pecados, los pequeños y los grandes, los primeros y los últimos, los secretos y los públicos.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ اغْفِرْ لِي ذُنُوبِي كُلَّهَا، صَغِيرَهَا وَكَبِيرَهَا، أَوَّلَهَا وَآخِرَهَا، سِرَّهَا وَعَلَانِيَتَهَا.",
+      "latin": "Allāhummagh-fir lī dhunūbī kullahā, ṣaghīrahā wa kabīrahā, awwalahā wa ākhirahā, sirrahā wa ‘alāniyatahā.",
+      "explanationEs": "Oh Allah, perdona todos mis pecados, los pequeños y los grandes, los primeros y los últimos, los secretos y los públicos.",
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20107.mp3"
+      ]
     },
     {
       "itemNumber": 108,
-      text: 'اللَّهُمَّ اقْبَلْ تَوْبَتِي، وَاغْسِلْ حَوْبَتِي، وَاغْفِرْ زَلَّتِي، وَارْحَمْ ضَعْفِي.',
-      latin: 'Allāhummaq-bal tawbatī, wagh-sil ḥawbatī, wagh-fir zallatī, war-ḥam ḍa‘fī.',
-      explanationEs: 'Oh Allah, acepta mi arrepentimiento, lava mi pecado, perdona mi tropiezo y ten piedad de mi debilidad.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ اقْبَلْ تَوْبَتِي، وَاغْسِلْ حَوْبَتِي، وَاغْفِرْ زَلَّتِي، وَارْحَمْ ضَعْفِي.",
+      "latin": "Allāhummaq-bal tawbatī, wagh-sil ḥawbatī, wagh-fir zallatī, war-ḥam ḍa‘fī.",
+      "explanationEs": "Oh Allah, acepta mi arrepentimiento, lava mi pecado, perdona mi tropiezo y ten piedad de mi debilidad.",
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20108.mp3"
+      ]
     },
     {
       "itemNumber": 109,
-      text: 'اللَّهُمَّ لَا تَجْعَلْ ذُنُوبِي حِجَابًا بَيْنِي وَبَيْنَ رَحْمَتِكَ، وَافْتَحْ لِي أَبْوَابَ التَّوْبَةِ وَالمَغْفِرَةِ.',
-      latin: 'Allāhumma lā taj‘al dhunūbī ḥijāban baynī wa bayna raḥmatik, waf-taḥ lī abwābat-tawbati wal-maghfirah.',
-      explanationEs: 'Oh Allah, no hagas de mis pecados una barrera entre mí y Tu misericordia, y ábreme las puertas del arrepentimiento y el perdón.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ لَا تَجْعَلْ ذُنُوبِي حِجَابًا بَيْنِي وَبَيْنَ رَحْمَتِكَ، وَافْتَحْ لِي أَبْوَابَ التَّوْبَةِ وَالمَغْفِرَةِ.",
+      "latin": "Allāhumma lā taj‘al dhunūbī ḥijāban baynī wa bayna raḥmatik, waf-taḥ lī abwābat-tawbati wal-maghfirah.",
+      "explanationEs": "Oh Allah, no hagas de mis pecados una barrera entre mí y Tu misericordia, y ábreme las puertas del arrepentimiento y el perdón.",
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20109.mp3"
+      ]
     },
     {
       "itemNumber": 110,
-      text: 'اللَّهُمَّ ارْزُقْنِي قَلْبًا تَائِبًا، وَلِسَانًا ذَاكِرًا، وَعَمَلًا صَالِحًا مُتَقَبَّلًا.',
-      latin: 'Allāhummar-zuqnī qalban tāʾiban, wa lisānan dhākiran, wa ‘amalan ṣāliḥan mutaqabbalā.',
-      explanationEs: 'Oh Allah, concédeme un corazón arrepentido, una lengua que Te recuerde y una obra justa y aceptada.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ ارْزُقْنِي قَلْبًا تَائِبًا، وَلِسَانًا ذَاكِرًا، وَعَمَلًا صَالِحًا مُتَقَبَّلًا.",
+      "latin": "Allāhummar-zuqnī qalban tāʾiban, wa lisānan dhākiran, wa ‘amalan ṣāliḥan mutaqabbalā.",
+      "explanationEs": "Oh Allah, concédeme un corazón arrepentido, una lengua que Te recuerde y una obra justa y aceptada.",
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20110.mp3"
+      ]
     },
     {
       "itemNumber": 111,
-      text: 'اللَّهُمَّ أَعِنِّي عَلَى تَرْكِ المَعَاصِي، وَحَبِّبْ إِلَيَّ الإِيمَانَ وَالطَّاعَةَ، وَكَرِّهْ إِلَيَّ الكُفْرَ وَالفُسُوقَ وَالعِصْيَانَ.',
-      latin: 'Allāhumma a‘innī ‘alā tarkil-ma‘āṣī, wa ḥabbib ilayya al-īmāna waṭ-ṭā‘ah, wa karrih ilayya al-kufra wal-fusūqa wal-‘iṣyān.',
-      explanationEs: 'Oh Allah, ayúdame a abandonar los pecados, haz que ame la fe y la obediencia, y haz que deteste la incredulidad, la inmoralidad y la desobediencia.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ أَعِنِّي عَلَى تَرْكِ المَعَاصِي، وَحَبِّبْ إِلَيَّ الإِيمَانَ وَالطَّاعَةَ، وَكَرِّهْ إِلَيَّ الكُفْرَ وَالفُسُوقَ وَالعِصْيَانَ.",
+      "latin": "Allāhumma a‘innī ‘alā tarkil-ma‘āṣī, wa ḥabbib ilayya al-īmāna waṭ-ṭā‘ah, wa karrih ilayya al-kufra wal-fusūqa wal-‘iṣyān.",
+      "explanationEs": "Oh Allah, ayúdame a abandonar los pecados, haz que ame la fe y la obediencia, y haz que deteste la incredulidad, la inmoralidad y la desobediencia.",
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20111.mp3"
+      ]
     },
     {
       "itemNumber": 112,
-      text: 'اللَّهُمَّ إِنَّكَ تَعْلَمُ سِرِّي وَعَلَانِيَتِي، فَاغْفِرْ لِي مَا عَلِمْتُ وَمَا لَمْ أَعْلَمْ.',
-      latin: 'Allāhumma innaka ta‘lamu sirrī wa ‘alāniyatī, fagh-fir lī mā ‘alimtu wa mā lam a‘lam.',
-      explanationEs: 'Oh Allah, Ciertamente sabes lo oculto y lo manifiesto de mí, así que perdona lo que sé y lo que no sé.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ إِنَّكَ تَعْلَمُ سِرِّي وَعَلَانِيَتِي، فَاغْفِرْ لِي مَا عَلِمْتُ وَمَا لَمْ أَعْلَمْ.",
+      "latin": "Allāhumma innaka ta‘lamu sirrī wa ‘alāniyatī, fagh-fir lī mā ‘alimtu wa mā lam a‘lam.",
+      "explanationEs": "Oh Allah, Ciertamente sabes lo oculto y lo manifiesto de mí, así que perdona lo que sé y lo que no sé.",
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20112.mp3"
+      ]
     },
     {
       "itemNumber": 113,
-      text: 'اللَّهُمَّ لَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ، وَأَصْلِحْ لِي شَأْنِي كُلَّهُ، وَاغْفِرْ لِي مَا مَضَى مِنْ ذَنْبِي.',
-      latin: 'Allāhumma lā takilnī ilā nafsī ṭarfata ‘ayn, wa aṣliḥ lī sha’nī kullah, wagh-fir lī mā maḍā min dhanbī.',
-      explanationEs: 'Oh Allah, no me encomiendes a mí mismo ni por un parpadeo, rectifica todos mis asuntos y perdona lo pasado de mis pecados.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ لَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ، وَأَصْلِحْ لِي شَأْنِي كُلَّهُ، وَاغْفِرْ لِي مَا مَضَى مِنْ ذَنْبِي.",
+      "latin": "Allāhumma lā takilnī ilā nafsī ṭarfata ‘ayn, wa aṣliḥ lī sha’nī kullah, wagh-fir lī mā maḍā min dhanbī.",
+      "explanationEs": "Oh Allah, no me encomiendes a mí mismo ni por un parpadeo, rectifica todos mis asuntos y perdona lo pasado de mis pecados.",
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20113.mp3"
+      ]
     },
     {
       "itemNumber": 114,
-      text: 'اللَّهُمَّ اجْعَلْنِي مِنَ التَّوَّابِينَ، وَاجْعَلْنِي مِنَ المُتَطَهِّرِينَ.',
-      latin: 'Allāhummaj-‘alnī minat-tawwābīn, waj-‘alnī minal-muṭahharīn.',
-      explanationEs: 'Oh Allah, hazme de los que se arrepienten con frecuencia y hazme de los purificados.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ اجْعَلْنِي مِنَ التَّوَّابِينَ، وَاجْعَلْنِي مِنَ المُتَطَهِّرِينَ.",
+      "latin": "Allāhummaj-‘alnī minat-tawwābīn, waj-‘alnī minal-muṭahharīn.",
+      "explanationEs": "Oh Allah, hazme de los que se arrepienten con frecuencia y hazme de los purificados.",
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20114.mp3"
+      ]
     },
     {
       "itemNumber": 115,
-      text: 'اللَّهُمَّ اخْتِمْ لِي بِالتَّوْبَةِ النَّصُوحِ، وَالمَغْفِرَةِ الوَاسِعَةِ، وَالرَّحْمَةِ، وَحُسْنِ الخَاتِمَةِ.',
-      latin: 'Allāhumma ikhtim lī bit-tawbatin-naṣūḥ, wal-maghfiratil-wāsi‘ah, war-raḥmah, wa ḥusnil-khātimah.',
-      explanationEs: 'Oh Allah, sella mi vida con el arrepentimiento sincero, el perdón amplio, la misericordia y un buen final.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ اخْتِمْ لِي بِالتَّوْبَةِ النَّصُوحِ، وَالمَغْفِرَةِ الوَاسِعَةِ، وَالرَّحْمَةِ، وَحُسْنِ الخَاتِمَةِ.",
+      "latin": "Allāhumma ikhtim lī bit-tawbatin-naṣūḥ, wal-maghfiratil-wāsi‘ah, war-raḥmah, wa ḥusnil-khātimah.",
+      "explanationEs": "Oh Allah, sella mi vida con el arrepentimiento sincero, el perdón amplio, la misericordia y un buen final.",
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20115.mp3"
+      ]
     },
     {
       "itemNumber": 116,
       "text": "اللَّهُمَّ اغْفِرْ لِي مَا كَانَ مِنَّي مِنْ تَقْصِيرٍ فِي حَقِّكَ وَحَقِّ عِبَادِكَ، وَأَعِنِّي عَلَى رَدِّ الحُقُوقِ إِلَى أَهْلِهَا.",
       "latin": "Allāhummagh-fir lī mā kāna minnī min taqṣīrin fī ḥaqqika wa ḥaqqi ‘ibādik, wa a‘innī ‘alā raddil-ḥuqūqi ilā ahlihā.",
       "explanationEs": "¡Oh Allah! Perdona cualquier negligencia en la que haya incurrido respecto a los derechos que Te corresponden y a los derechos de Tus siervos, y ayúdame a devolver a cada uno lo que le corresponde.",
-      "note": "صيغة عامة مقترحة"
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20116.mp3"
+      ]
     },
     {
       "itemNumber": 117,
-      text: 'اللَّهُمَّ بَدِّلْ سَيِّئَاتِي حَسَنَاتٍ، وَأَصْلِحْ قَلْبِي وَعَمَلِي، وَاهْدِنِي إِلَى صِرَاطِكَ المُسْتَقِيمِ.',
-      latin: 'Allāhumma baddil sayyi’ātī ḥasanāt, wa aṣliḥ qalbī wa ‘amalī, wah-dinī ilā ṣirāṭikal-mustaqīm.',
-      explanationEs: 'Oh Allah, cambia mis malas acciones por buenas obras, rectifica mi corazón y mi obra, y guíame hacia Tu camino recto.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ بَدِّلْ سَيِّئَاتِي حَسَنَاتٍ، وَأَصْلِحْ قَلْبِي وَعَمَلِي، وَاهْدِنِي إِلَى صِرَاطِكَ المُسْتَقِيمِ.",
+      "latin": "Allāhumma baddil sayyi’ātī ḥasanāt, wa aṣliḥ qalbī wa ‘amalī, wah-dinī ilā ṣirāṭikal-mustaqīm.",
+      "explanationEs": "Oh Allah, cambia mis malas acciones por buenas obras, rectifica mi corazón y mi obra, y guíame hacia Tu camino recto.",
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20117.mp3"
+      ]
     },
     {
       "itemNumber": 118,
-      text: 'اللَّهُمَّ إِنِّي أَرْجُو رَحْمَتَكَ، فَلَا تَحْرُمْنِي مَغْفِرَتَكَ، وَتَجَاوَزْ عَنِي بِعَفْوِكَ وَكَرَمِكَ.',
-      latin: 'Allāhumma innī arjū raḥmatak, falā taḥrimnī maghfiratak, wa tajāwaz ‘annī bi-‘afwika wa karamik.',
-      explanationEs: 'Oh Allah, espero Tu misericordia, así que no me prives de Tu perdón y pasa por alto mis faltas con Tu indulgencia y generosidad.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ إِنِّي أَرْجُو رَحْمَتَكَ، فَلَا تَحْرُمْنِي مَغْفِرَتَكَ، وَتَجَاوَزْ عَنِي بِعَفْوِكَ وَكَرَمِكَ.",
+      "latin": "Allāhumma innī arjū raḥmatak, falā taḥrimnī maghfiratak, wa tajāwaz ‘annī bi-‘afwika wa karamik.",
+      "explanationEs": "Oh Allah, espero Tu misericordia, así que no me prives de Tu perdón y pasa por alto mis faltas con Tu indulgencia y generosidad.",
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20118.mp3"
+      ]
     },
     {
       "itemNumber": 119,
       "text": "اللَّهُمَّ ارْزُقْنِي النَّدَمَ الصَّادِقَ عَلَى الذُّنُوبِ، وَالعَزْمَ عَلَى عَدَمِ العَوْدَةِ إِلَيْهَا، وَالثَّبَاتَ عَلَى طَاعَتِكَ.",
       "latin": "Allāhummar-zuqnin-nadamas-ṣādiqa ‘alad-dhunūb, wal-‘azma ‘alā ‘adamil-‘awdati ilayhā, wash-thabāta ‘alā ṭā‘atik.",
       "explanationEs": "¡Oh Allah! Concédeme un remordimiento sincero por mis pecados, la firme resolución de no volver a cometerlos y la constancia en Tu obediencia.",
-      "note": "صيغة عامة مقترحة"
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20119.mp3"
+      ]
     },
     {
       "itemNumber": 120,
-      text: 'اللَّهُمَّ اجْعَلْ تَوْبَتِي خَالِصَةً لِوَجْهِكَ الكَرِيمِ، وَأَبْعِدْنِي عَنْ أَسْبَابِ المَعْصِيَةِ وَطُرُقِهَا.',
-      latin: 'Allāhummaj-‘al tawbatī khāliṣatan li-wajhikal-karīm, wa ab‘idnī ‘an asbābil-ma‘āṣi wa ṭuruqihā.',
-      explanationEs: 'Oh Allah, haz que mi arrepentimiento sea sincero por Tu Rostro Noble, y aléjame de las causas y caminos del pecado.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ اجْعَلْ تَوْبَتِي خَالِصَةً لِوَجْهِكَ الكَرِيمِ، وَأَبْعِدْنِي عَنْ أَسْبَابِ المَعْصِيَةِ وَطُرُقِهَا.",
+      "latin": "Allāhummaj-‘al tawbatī khāliṣatan li-wajhikal-karīm, wa ab‘idnī ‘an asbābil-ma‘āṣi wa ṭuruqihā.",
+      "explanationEs": "Oh Allah, haz que mi arrepentimiento sea sincero por Tu Rostro Noble, y aléjame de las causas y caminos del pecado.",
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20120.mp3"
+      ]
     },
     {
       "itemNumber": 121,
       "text": "اللَّهُمَّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِأَهْلِي وَلِلْمُؤْمِنِينَ وَالمُؤْمِنَاتِ، الأَحْيَاءِ مِنْهُمْ وَالأَمْوَاتِ.",
       "latin": "Allāhummagh-fir lī wa li-wālidayya wa li-ahlī wa lil-mu’minīna wal-mu’mināt, al-aḥyā’i minhum wal-amwāt.",
       "explanationEs": "¡Oh Allah! Perdóname a mí, a mis padres, a mi familia, a los creyentes y a las creyentes, tanto a los vivos como a los fallecidos.",
-      "note": "صيغة عامة مقترحة"
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20121.mp3"
+      ]
     },
     {
       "itemNumber": 122,
-      text: 'اللَّهُمَّ اُسْتُرْ عُيُوبِي، وَآمِنْ رَوْعَاتِي، وَاغْفِرْ خَطِيئَاتِي، وَارْحَمْ ضَعْفِي.',
-      latin: 'Allāhummas-tur ‘uyūbī, wa āmin raw‘ātī, wagh-fir khaṭī’ātī, war-ḥam ḍa‘fī.',
-      explanationEs: 'Oh Allah, oculta mis defectos, da paz a mis temores, perdona mis faltas y ten piedad de mi debilidad.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ اُسْتُرْ عُيُوبِي، وَآمِنْ رَوْعَاتِي، وَاغْفِرْ خَطِيئَاتِي، وَارْحَمْ ضَعْفِي.",
+      "latin": "Allāhummas-tur ‘uyūbī, wa āmin raw‘ātī, wagh-fir khaṭī’ātī, war-ḥam ḍa‘fī.",
+      "explanationEs": "Oh Allah, oculta mis defectos, da paz a mis temores, perdona mis faltas y ten piedad de mi debilidad.",
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20122.mp3"
+      ]
     },
     {
       "itemNumber": 123,
-      text: 'اللَّهُمَّ ارْزُقْنِي حُسْنَ الظَّنِّ بِكَ، وَالرَّجَاءَ فِي رَحْمَتِكَ، وَالخَوْفَ مِنْ مَعْصِيَتِكَ.',
-      latin: 'Allāhummar-zuq-nī ḥusnaẓ-ẓanni bik, war-rajā’a fī raḥmatik, wal-khawfa min ma‘ṣiyatik.',
-      explanationEs: 'Oh Allah, concédeme tener una buena opinión de Ti, la esperanza en Tu misericordia y el temor a desobedecerte.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ ارْزُقْنِي حُسْنَ الظَّنِّ بِكَ، وَالرَّجَاءَ فِي رَحْمَتِكَ، وَالخَوْفَ مِنْ مَعْصِيَتِكَ.",
+      "latin": "Allāhummar-zuq-nī ḥusnaẓ-ẓanni bik, war-rajā’a fī raḥmatik, wal-khawfa min ma‘ṣiyatik.",
+      "explanationEs": "Oh Allah, concédeme tener una buena opinión de Ti, la esperanza en Tu misericordia y el temor a desobedecerte.",
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20123.mp3"
+      ]
     },
     {
       "itemNumber": 124,
-      text: 'اللَّهُمَّ إِنْ كَثُرَتْ ذُنُوبِي فَعَفْوُكَ أَعْظَمُ، وَإِنْ عَظُمَ تَقْصِيرِي فَرَحْمَتُكَ أَوْسَعُ، فَاغْفِرْ لِي وَارْحَمْنِي.',
-      latin: 'Allāhumma in kathurat dhunūbī fa-‘afwuka a‘ẓam, wa in ‘aẓuma taqṣīrī fa-raḥmatuka awsa‘, fagh-fir lī war-ḥamnī.',
-      explanationEs: 'Oh Allah, si mis pecados son muchos, Tu perdón es más grandioso; y si mi negligencia es grande, Tu misericordia es más amplia, así que perdóname y ten piedad de mí.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ إِنْ كَثُرَتْ ذُنُوبِي فَعَفْوُكَ أَعْظَمُ، وَإِنْ عَظُمَ تَقْصِيرِي فَرَحْمَتُكَ أَوْسَعُ، فَاغْفِرْ لِي وَارْحَمْنِي.",
+      "latin": "Allāhumma in kathurat dhunūbī fa-‘afwuka a‘ẓam, wa in ‘aẓuma taqṣīrī fa-raḥmatuka awsa‘, fagh-fir lī war-ḥamnī.",
+      "explanationEs": "Oh Allah, si mis pecados son muchos, Tu perdón es más grandioso; y si mi negligencia es grande, Tu misericordia es más amplia, así que perdóname y ten piedad de mí.",
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20124.mp3"
+      ]
     },
     {
       "itemNumber": 125,
-      text: 'اللَّهُمَّ اجْعَلْنِي مِمَّنْ إِذَا أَذْنَبَ اسْتَغْفَرَ، وَإِذَا تَابَ ثَبَتَ، وَإِذَا أُنْعِمَ عَلَيْهِ شَكَرَ.',
-      latin: 'Allāhummaj-‘alnī mimman idhā adhanaba istaghfar, wa idhā tāba thabat, wa idhā un‘ima ‘alayhi shakarah.',
-      explanationEs: 'Oh Allah, hazme de aquellos que cuando pecan piden perdón, cuando se arrepienten se mantienen firmes y cuando se les bendice dan las gracias.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ اجْعَلْنِي مِمَّنْ إِذَا أَذْنَبَ اسْتَغْفَرَ، وَإِذَا تَابَ ثَبَتَ، وَإِذَا أُنْعِمَ عَلَيْهِ شَكَرَ.",
+      "latin": "Allāhummaj-‘alnī mimman idhā adhanaba istaghfar, wa idhā tāba thabat, wa idhā un‘ima ‘alayhi shakarah.",
+      "explanationEs": "Oh Allah, hazme de aquellos que cuando pecan piden perdón, cuando se arrepienten se mantienen firmes y cuando se les bendice dan las gracias.",
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20125.mp3"
+      ]
     },
     {
       "itemNumber": 126,
       "text": "اللَّهُمَّ اغْفِرْ لِي وَارْحَمْنِي وَتُبْ عَلَيَّ، إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ.",
       "latin": "Allāhummagh-fir lī war-ḥamnī wa tub ‘alayya, innaka Antat-Tawwābur-Raḥīm.",
       "explanationEs": "¡Oh Allah! Perdóname, ten misericordia de mí y acepta mi arrepentimiento. Ciertamente, Tú eres Quien acepta el arrepentimiento, el Misericordioso.",
-      "note": "صيغة عامة مقترحة"
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20126.mp3"
+      ]
     },
     {
       "itemNumber": 127,
-      text: 'اللَّهُمَّ طَهِّرْ قَلْبِي مِنَ الذُّنُوبِ، وَاغْفِرْ لِي تَقْصِيرِي، وَأَصْلِحْ نِيَّتِي وَعَمَلِي.',
-      latin: 'Allāhumma ṭahhir qalbī minadh-dhunūb, wagh-fir lī taqṣīrī, wa aṣliḥ niyyatī wa ‘amalī.',
-      explanationEs: 'Oh Allah, purifica mi corazón de los pecados, perdona mi negligencia y rectifica mi intención y mis obras.',
-      note: 'صيغة عامة مقترحة'
+      "text": "اللَّهُمَّ طَهِّرْ قَلْبِي مِنَ الذُّنُوبِ، وَاغْفِرْ لِي تَقْصِيرِي، وَأَصْلِحْ نِيَّتِي وَعَمَلِي.",
+      "latin": "Allāhumma ṭahhir qalbī minadh-dhunūb, wagh-fir lī taqṣīrī, wa aṣliḥ niyyatī wa ‘amalī.",
+      "explanationEs": "Oh Allah, purifica mi corazón de los pecados, perdona mi negligencia y rectifica mi intención y mis obras.",
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20127.mp3"
+      ]
     },
     {
       "itemNumber": 128,
       "text": "اللَّهُمَّ ارْزُقْنِي تَوْبَةً لَا أَرْجِعُ بَعْدَهَا إِلَى المَعْصِيَةِ، وَثَبِّتْنِي عَلَى طَاعَتِكَ مَا حَيِيتُ.",
       "latin": "Allāhummar-zuq-nī tawbatan lā arji‘u ba‘dahā ilal-ma‘āṣiyah, wa thabbitnī ‘alā ṭā‘atika mā ḥayīt.",
       "explanationEs": "¡Oh Allah! Concédeme un arrepentimiento tras el cual no vuelva a cometer pecados, y mantenme firme en Tu obediencia mientras viva.",
-      "note": "صيغة عامة مقترحة"
+      "note": "صيغة عامة مقترحة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20128.mp3"
+      ]
     }
 	]
 	},
