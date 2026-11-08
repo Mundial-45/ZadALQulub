@@ -757,9 +757,9 @@ const azkarData = [
                   },
                   {
                     "itemNumber": 66,
-                    "text": "اللَّهُمَّ أَسْلَمْتُ نَفْسِي إِلَيْكَ، وَفَوَّضْتُ أَمْرِي إِلَيْكَ، وَوَجَّهْتُ وَجْهِي إِلَيْكَ، وَأَلْجَأْتُ ظَهْرِي إِلَيْكَ، رَغْبَةً وَرَهْبَةً إِلَيْكَ، لاَ مَلْجَأَ وَلاَ مَنْجَا مِنْكَ إِلاَّ إِلَيْكَ، آمَنْتُ بِكِتَابِكَ الَّذِي أَنْزَلْتَ، وَبِنَبِيِّكَ الَّذِي أَرْسَلْتَ.",
-                    "latin": "Allāhumma aslamtu nafsī ilayk, wa-fawwaḍtu amrī ilayk, wa-wajjahtu wajhī ilayk, wa-aljaʾtu ẓahrī ilayk, raghbatan wa-rahbatan ilayk, lā malja'a wa-lā manjā minka illā ilayk, āmantu bi-kitābika alladhī anzalt, wa-bi-nabiyyika alladhī arsalt.",
-                    "explanationEs": "¡Oh Allah! Me entrego a Ti, encomiendo mi asunto a Ti, vuelvo mi rostro hacia Ti y me apoyo en Ti, por deseo y temor hacia Ti. No hay refugio ni salvación de Ti sino en Ti. Creo en Tu Libro que has revelado y en Tu Profeta que has enviado.",
+                    "text": "اللَّهُمَّ أَسْلَمْتُ نَفْسِي إِلَيْكَ، وَوَجَّهْتُ وَجْهِي إِلَيْكَ، وَفَوَّضْتُ أَمْرِي إِلَيْكَ، وَأَلْجَأْتُ ظَهْرِي إِلَيْكَ، رَغْبَةً وَرَهْبَةً إِلَيْكَ، لَا مَلْجَأَ وَلَا مَنْجَا مِنْكَ إِلَّا إِلَيْكَ، آمَنْتُ بِكِتَابِكَ الَّذِي أَنْزَلْتَ، وَبِنَبِيِّكَ الَّذِي أَرْسَلْتَ",
+                    "latin": "Allāhumma aslamtu nafsī ilayka, wa wajjahtu wajhī ilayka, wa fawwaḍtu amrī ilayka, wa alja’tu ẓahrī ilayka, raghbatan wa rahbatan ilayka, lā malja’a wa lā manjā minka illā ilayka, āmantu bikitābika alladhī anzalta, wa binabiyyika alladhī arsalta.",
+                    "explanationEs": "¡Oh, Allah! Me entrego a Ti, encomiendo a Ti todos mis asuntos, vuelvo mi rostro hacia Ti y me apoyo en Ti, anhelando Tu recompensa y temiendo Tu castigo. No hay refugio ni salvación de Ti sino en Ti. Creo en el Libro que has revelado y en el Profeta que has enviado",
                     "count": 1,
                     "maxCount": 1,
                     "note": "يُجعل آخر ما يقول قبل النوم",
