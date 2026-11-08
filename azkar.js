@@ -670,31 +670,40 @@ const azkarData = [
                     ]
                   },
                   {
-                        "itemNumber": 58,
-                        "text": "سُبْحَانَ اللَّهِ",
-                        "latin": "Subḥān-Allāh.",
-                        "explanationEs": "Glorificado sea Allah.",
-                        "count": 33,
-                        "maxCount": 33,
-                        "note": "تسبيح النوم"
+                    "itemNumber": 58,
+                    "text": "سُبْحَانَ اللَّهِ",
+                    "latin": "Subḥān-Allāh.",
+                    "explanationEs": "Glorificado sea Allah.",
+                    "count": 33,
+                    "maxCount": 33,
+                    "note": "تسبيح النوم",
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2058.mp3"
+                    ]
                   },
                   {
-                        "itemNumber": 59,
-                        "text": "الْحَمْدُ لِلَّهِ",
-                        "latin": "Al-ḥamdu lillāh.",
-                        "explanationEs": "Alabado sea Allah.",
-                        "count": 33,
-                        "maxCount": 33,
-                        "note": "تسبيح النوم"
+                    "itemNumber": 59,
+                    "text": "الْحَمْدُ لِلَّهِ",
+                    "latin": "Al-ḥamdu lillāh.",
+                    "explanationEs": "Alabado sea Allah.",
+                    "count": 33,
+                    "maxCount": 33,
+                    "note": "تسبيح النوم",
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2059.mp3"
+                    ]
                   },
                   {
-                        "itemNumber": 60,
-                        "text": "اللَّهُ أَكْبَرُ",
-                        "latin": "Allāhu akbar.",
-                        "explanationEs": "Allah es el Más Grande.",
-                        "count": 34,
-                        "maxCount": 34,
-                        "note": "تسبيح النوم"
+                    "itemNumber": 60,
+                    "text": "اللَّهُ أَكْبَرُ",
+                    "latin": "Allāhu akbar.",
+                    "explanationEs": "Allah es el Más Grande.",
+                    "count": 34,
+                    "maxCount": 34,
+                    "note": "تسبيح النوم",
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2060.mp3"
+                    ]
                   },
                   {
                         "itemNumber": 61,
