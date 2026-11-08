@@ -1805,38 +1805,54 @@ const adyaData = [
   items: [
     {
       "itemNumber": 201,
-      text: 'اللَّهُمَّ إِنَّكَ تَعْلَمُ وَهُمْ لَا يَعْلَمُونَ، اللَّهُمَّ أَرِحْ قَلْبِي وَهَوِّنْ عَلَيَّ وَاسْقِنِي صَبْرًا، وَأَعُوذُ بِكَ مِنْ غَصَّةِ القَلْبِ وَضِيقِ النَّفَسِ، اللَّهُمَّ امْسَحْ عَلَى قَلْبِي بِرَحْمَةٍ مِنْكَ وَلَا تَجْعَلْ لِي حُزْنًا يُقْلِقُنِي.',
-      latin: 'Allāhumma innaka ta‘lamu wa hum lā ya‘lamūn, Allāhumma ariḥ qalbī wa hawwin ‘alayya wasqinī ṣabrā, wa a‘ūdhu bika min ghaṣṣatil-qalbi wa ḍīqin-nafas, Allāhummath-saḥ ‘alā qalbī bi-raḥmatin minka wa lā taj‘al lī ḥuznan yuqliqunī.',
-      explanationEs: 'Oh Allah, Tú sabes y ellos no saben. Oh Allah, da descanso a mi corazón, facilítame las cosas y dame paciencia. Me refugio en Ti de la angustia del corazón y la falta de aire. Oh Allah, limpia mi corazón con Tu misericordia y no dejes en mí una tristeza que me perturbe.',
-      note: 'دعاء لراحة القلب والسكن'
+      "text": "اللَّهُمَّ إِنَّكَ تَعْلَمُ وَهُمْ لَا يَعْلَمُونَ، اللَّهُمَّ أَرِحْ قَلْبِي وَهَوِّنْ عَلَيَّ وَاسْقِنِي صَبْرًا، وَأَعُوذُ بِكَ مِنْ غَصَّةِ القَلْبِ وَضِيقِ النَّفَسِ، اللَّهُمَّ امْسَحْ عَلَى قَلْبِي بِرَحْمَةٍ مِنْكَ وَلَا تَجْعَلْ لِي حُزْنًا يُقْلِقُنِي.",
+      "latin": "Allāhumma innaka ta‘lamu wa hum lā ya‘lamūn, Allāhumma ariḥ qalbī wa hawwin ‘alayya wasqinī ṣabrā, wa a‘ūdhu bika min ghaṣṣatil-qalbi wa ḍīqin-nafas, Allāhummath-saḥ ‘alā qalbī bi-raḥmatin minka wa lā taj‘al lī ḥuznan yuqliqunī.",
+      "explanationEs": "Oh Allah, Tú sabes y ellos no saben. Oh Allah, da descanso a mi corazón, facilítame las cosas y dame paciencia. Me refugio en Ti de la angustia del corazón y la falta de aire. Oh Allah, limpia mi corazón con Tu misericordia y no dejes en mí una tristeza que me perturbe.",
+      "note": "دعاء لراحة القلب والسكن",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20201.mp3"
+      ]
     },
     {
       "itemNumber": 202,
-      text: 'اللَّهُمَّ إِنِّي عَبْدُكَ، ابْنُ عَبْدِكَ، ابْنُ أَمَتِكَ، نَاصِيَتِي بِيَدِكَ، مَاضٍ فِيَّ حُكْمُكَ، عَدْلٌ فِيَّ قَضَاؤُكَ، أَسْأَلُكَ بِكُلِّ اسْمٍ هُوَ لَكَ سَمَّيْتَ بِهِ نَفْسَكَ، أَوْ أَنْزَلْتَهُ فِي كِتَابِكَ، أَوْ عَلَّمْتَهُ أَحَدًا مِنْ خَلْقِكَ، أَوْ اسْتَأْثَرْتَ بِهِ فِي عِلْمِ الغَيْبِ عِنْدَكَ، أَنْ تَجْعَلَ القُرْآنَ رَبِيعَ قَلْبِي، وَنُورَ صَدْرِي، وَجَلَاءَ حُزْنِي، وَذَهَابَ هَمِّي وَغَمِّي.',
-      latin: 'Allāhumma innī ‘abduk, ibnu ‘abdik, ibnu amatik, nāṣiyatī biyadik, māḍin fiyya ḥukmuk, ‘adlun fiyya qaḍā’uk, as’aluka bikulli ismin huwa laka sammayta bihī nafsak, aw anzaltahū fī kitābik, aw ‘allamtahū aḥadan min khalqik, aw ista’tharta bihī fī ‘ilmil-ghaybi ‘indak, an taj‘alal-Qur’āna rabī‘a qalbī, wa nūra ṣadrī, wa jalā’a ḥuznī, wa dhahāba hammī wa ghammī.',
-      explanationEs: 'Oh Allah, soy Tu siervo, hijo de Tu siervo e hijo de Tu sierva. Mi frente está en Tu mano, Tu juicio sobre mí es imperante y Tu decreto para mí es justo. Te pido por cada Nombre que Te pertenece que hagas del Corán la primavera de mi corazón, la luz de mi pecho, el alivio de mi tristeza y la partida de mi preocupación y angustia.',
-      note: 'دعاء تفريج الهم والحزن من السنة'
+      "text": "اللَّهُمَّ إِنِّي عَبْدُكَ، ابْنُ عَبْدِكَ، ابْنُ أَمَتِكَ، نَاصِيَتِي بِيَدِكَ، مَاضٍ فِيَّ حُكْمُكَ، عَدْلٌ فِيَّ قَضَاؤُكَ، أَسْأَلُكَ بِكُلِّ اسْمٍ هُوَ لَكَ، سَمَّيْتَ بِهِ نَفْسَكَ، أَوْ أَنْزَلْتَهُ فِي كِتَابِكَ، أَوْ عَلَّمْتَهُ أَحَدًا مِنْ خَلْقِكَ، أَوِ اسْتَأْثَرْتَ بِهِ فِي عِلْمِ الْغَيْبِ عِنْدَكَ، أَنْ تَجْعَلَ الْقُرْآنَ الْعَظِيمَ رَبِيعَ قَلْبِي، وَنُورَ صَدْرِي، وَجِلَاءَ حُزْنِي، وَذَهَابَ هَمِّي.\n",
+      "latin": "Allāhumma innī ʿabduka, ibnu ʿabdika, ibnu amatika. Nāṣiyatī biyadika, māḍin fiyya ḥukmuka, ʿadlun fiyya qaḍāʾuka. Asʾaluka bikulli ismin huwa laka, sammayta bihi nafsaka, aw anzaltahu fī kitābika, aw ʿallamtahu aḥadan min khalqika, aw istaʾtharta bihi fī ʿilmi al-ghaybi ʿindaka, an tajʿala al-Qurʾāna al-ʿaẓīma rabīʿa qalbī, wa nūra ṣadrī, wa jalāʾa ḥuznī, wa dhahāba hammī.",
+      "explanationEs": "¡Oh, Allah! Ciertamente, soy Tu siervo, hijo de Tu siervo y de Tu sierva. Mi frente está en Tu mano; Tu decreto se cumple sobre mí y Tu juicio sobre mí es justo. Te suplico por cada uno de los nombres que Te pertenecen, con los que Te has nombrado a Ti mismo, que has revelado en Tu Libro, que has enseñado a alguna de Tus criaturas o que has reservado en el conocimiento de lo oculto que solo Tú posees, que hagas del Noble Corán la primavera de mi corazón, la luz de mi pecho, el alivio de mi tristeza y la desaparición de mis preocupaciones.",
+      "note": "دعاء تفريج الهم والحزن من السنة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20202.mp3"
+      ]
     },
     {
       "itemNumber": 203,
-      text: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الهَمِّ وَالحَزَنِ، وَالعَجْزِ وَالكَسَلِ، وَالبُخْلِ وَالجُبْنِ، وَضَلَعِ الدَّيْنِ، وَغَلَبَةِ الرِّجَالِ.',
-      latin: 'Allāhumma innī a‘ūdhu bika minal-hammi wal-ḥazan, wal-‘ajzi wal-kasal, wal-bukhli wal-jubn, wa ḍala‘id-dayn, wa ghalabatir-rijāl.',
-      explanationEs: 'Oh Allah, me refugio en Ti de la ansiedad y la tristeza, de la incapacidad y la pereza, de la tacañería y la cobardía, del peso de la deuda y de ser dominado por los hombres.',
-      note: 'صحيح البخاري'
+      "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ وَالْعَجْزِ وَالْكَسَلِ وَالْجُبْنِ وَالْبُخْلِ وَضَلَعِ الدَّيْنِ وَغَلَبَةِ الرِّجَالِ.",
+      "latin": "Allāhumma innī a‘ūdhu bika minal-hammi wal-ḥazani wal-‘ajzi wal-kasali wal-jubni wal-bukhli wa ḍala‘id-dayni wa ghalabatir-rijāl.",
+      "explanationEs": "¡Oh Allah! Me refugio en Ti de la preocupación y la tristeza, de la incapacidad y la pereza, de la cobardía y la avaricia, del peso de las deudas y de que los hombres me dominen.",
+      "note": "صحيح البخاري",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2031.mp3"
+      ],
+      "audioUrl": ""
     },
     {
       "itemNumber": 204,
-      text: 'لَا إِلَهَ إِلَّا اللهُ العَظِيمُ الحَلِيمُ، لَا إِلَهَ إِلَّا اللهُ رَبُّ السَّمَاوَاتِ وَالأَرْضِ، وَرَبُّ العَرْشِ العَظِيمِ.',
-      latin: 'Lā ilāha illallāhul-‘Aẓīmul-Ḥalīm, lā ilāha illallāhu Rabbus-samāwāti wal-arḍ, wa Rabbul-ʿarshil-ʿaẓīm.',
-      explanationEs: 'No hay más divinidad que Allah, el Grandioso, el Tolerante. No hay más divinidad que Allah, Señor de los cielos y de la tierra, y Señor del Gran Trono.',
-      note: 'دعاء الكرب (صحيح البخاري ومسلم)'
+      "text": "لَا إِلَهَ إِلَّا اللهُ العَظِيمُ الحَلِيمُ، لَا إِلَهَ إِلَّا اللهُ رَبُّ السَّمَاوَاتِ وَالأَرْضِ، وَرَبُّ العَرْشِ العَظِيمِ.",
+      "latin": "Lā ilāha illallāhul-‘Aẓīmul-Ḥalīm, lā ilāha illallāhu Rabbus-samāwāti wal-arḍ, wa Rabbul-ʿarshil-ʿaẓīm.",
+      "explanationEs": "No hay más divinidad que Allah, el Grandioso, el Tolerante. No hay más divinidad que Allah, Señor de los cielos y de la tierra, y Señor del Gran Trono.",
+      "note": "دعاء الكرب (صحيح البخاري ومسلم)",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20204.mp3"
+      ]
     },
     {
       "itemNumber": 205,
-      text: 'لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ.',
-      latin: 'Lā ilāha illā Anta subḥānaka innī kuntu minaż-ẓālimīn.',
-      explanationEs: 'No hay más divinidad que Tú, ¡Glorificado seas! Ciertamente he sido de los injustos.',
-      note: 'دعوة ذي النون (يونس عليه السلام)'
+      "text": "﴿لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبۡحَٰنَكَ إِنِّي كُنتُ مِنَ ٱلظَّٰلِمِينَ۝﴾",
+      "latin": "Lā ilāha illā Anta subḥānaka innī kuntu minaż-ẓālimīn.",
+      "explanationEs": "No hay más divinidad que Tú, ¡Glorificado seas! Ciertamente he sido de los injustos.",
+      "note": "دعوة ذي النون (يونس عليه السلام)",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q021-087.mp3"
+      ]
     },
     {
       "itemNumber": 206,
