@@ -112,7 +112,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/ROQYA8-41.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA8-41.mp3"
             ]
           },
           {
@@ -123,7 +123,7 @@ const ruqyahData = [
             "count": 3,
             "maxCount": 3,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/ROQYA9-45.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA9-45.mp3"
             ]
           },
           {
@@ -134,7 +134,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/ROQYA10-42.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA10-42.mp3"
             ]
           },
           {
@@ -145,7 +145,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/ROQYA11.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA11.mp3"
             ]
           },
           {
@@ -156,7 +156,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/ROQYA12.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA12.mp3"
             ]
           }
         ]
@@ -183,7 +183,7 @@ const ruqyahData = [
             "maxCount": 7,
             "note": "سورة الفاتحة",
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q001.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q001.mp3"
             ]
           },
           {
@@ -194,7 +194,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q002-1-4.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-1-4.mp3"
             ],
             "note": "سورة البقرة الايات 1-4"
           },
@@ -228,7 +228,7 @@ const ruqyahData = [
             "maxCount": 1,
             "note": "سورة البقرة الايات 285-286",
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q002-285-586.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-285-586.mp3"
             ]
           },
           {
@@ -457,7 +457,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q036-1-10.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q036-1-10.mp3"
             ],
             "note": "سورة يس الآيات 1-10"
           },
@@ -495,7 +495,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q009.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q009.mp3"
             ],
             "note": "سورة الكافرون"
           },
@@ -507,7 +507,7 @@ const ruqyahData = [
             "count": 3,
             "maxCount": 3,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q112.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q112.mp3"
             ],
             "note": "سورة الإخلاص"
           },
@@ -519,7 +519,7 @@ const ruqyahData = [
             "count": 3,
             "maxCount": 3,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q113.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q113.mp3"
             ],
             "note": "سورة الفلق"
           },
@@ -531,7 +531,7 @@ const ruqyahData = [
             "count": 3,
             "maxCount": 3,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q114.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q114.mp3"
             ],
             "note": "سورة الناس"
           },
@@ -543,7 +543,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/ROQYA8-41.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA8-41.mp3"
             ]
           },
           {
@@ -554,7 +554,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/ROQYA10-42.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA10-42.mp3"
             ]
           },
           {
@@ -565,7 +565,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2020.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2020.mp3"
             ]
           },
           {
@@ -576,7 +576,7 @@ const ruqyahData = [
             "count": 3,
             "maxCount": 3,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2014.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2014.mp3"
             ]
           },
           {
@@ -587,7 +587,7 @@ const ruqyahData = [
             "count": 3,
             "maxCount": 3,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/ROQYA9-45.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA9-45.mp3"
             ]
           },
           {
@@ -598,7 +598,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/ROQYA46.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA46.mp3"
             ]
           },
           {
@@ -609,7 +609,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/ROQYA47.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA47.mp3"
             ]
           }
         ]

@@ -26,7 +26,7 @@ const azkarData = [
                     "maxCount": 3,
                     "note": "سورة الإخلاص",
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q112.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q112.mp3"
                     ],
                     "audioUrl": ""
                   },
@@ -39,7 +39,7 @@ const azkarData = [
                     "maxCount": 3,
                     "note": "سورة الفلق",
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q113.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q113.mp3"
                     ]
                   },
                   {
@@ -51,7 +51,7 @@ const azkarData = [
                     "maxCount": 3,
                     "note": "سورة الناس",
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q112.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q112.mp3"
                     ]
                   },
                   {
@@ -62,7 +62,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%205.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%205.mp3"
                     ],
                     "note": "",
                     "audioUrl": ""
@@ -75,7 +75,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%206.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%206.mp3"
                     ]
                   },
                   {
@@ -86,7 +86,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%207.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%207.mp3"
                     ]
                   },
                   {
@@ -97,7 +97,7 @@ const azkarData = [
                     "count": 4,
                     "maxCount": 4,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%208.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%208.mp3"
                     ]
                   },
                   {
@@ -108,7 +108,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%209.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%209.mp3"
                     ]
                   },
                   {
@@ -119,7 +119,7 @@ const azkarData = [
                     "count": 3,
                     "maxCount": 3,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2010.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2010.mp3"
                     ]
                   },
                   {
@@ -130,7 +130,7 @@ const azkarData = [
                     "count": 7,
                     "maxCount": 7,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2011.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2011.mp3"
                     ]
                   },
                   {
@@ -141,7 +141,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2012.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2012.mp3"
                     ]
                   },
                   {
@@ -152,7 +152,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2013.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2013.mp3"
                     ]
                   },
                   {
@@ -163,7 +163,7 @@ const azkarData = [
                     "count": 3,
                     "maxCount": 3,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2014.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2014.mp3"
                     ]
                   },
                   {
@@ -174,7 +174,7 @@ const azkarData = [
                     "count": 3,
                     "maxCount": 3,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2015.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2015.mp3"
                     ]
                   },
                   {
@@ -185,7 +185,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2016.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2016.mp3"
                     ]
                   },
                   {
@@ -196,7 +196,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2017.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2017.mp3"
                     ]
                   },
                   {
@@ -207,7 +207,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2018.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2018.mp3"
                     ]
                   },
                   {
@@ -218,7 +218,7 @@ const azkarData = [
                     "count": 3,
                     "maxCount": 3,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2019.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2019.mp3"
                     ]
                   },
                   {
@@ -229,7 +229,7 @@ const azkarData = [
                     "count": 3,
                     "maxCount": 3,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2020.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2020.mp3"
                     ]
                   },
                   {
@@ -240,7 +240,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2021.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2021.mp3"
                     ]
                   },
                   {
@@ -251,7 +251,7 @@ const azkarData = [
                     "count": 10,
                     "maxCount": 10,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2022.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2022.mp3"
                     ]
                   },
                   {
@@ -262,7 +262,7 @@ const azkarData = [
                     "count": 100,
                     "maxCount": 100,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2023.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2023.mp3"
                     ]
                   },
                   {
@@ -273,7 +273,7 @@ const azkarData = [
                     "count": 100,
                     "maxCount": 100,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2024.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2024.mp3"
                     ]
                   },
                   {
@@ -284,7 +284,7 @@ const azkarData = [
                     "count": 10,
                     "maxCount": 10,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2025.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2025.mp3"
                     ]
                   }
             ]
@@ -314,7 +314,7 @@ const azkarData = [
                     "maxCount": 3,
                     "note": "سورة الإخلاص",
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q112.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q112.mp3"
                     ]
                   },
                   {
@@ -326,7 +326,7 @@ const azkarData = [
                     "maxCount": 3,
                     "note": "سورة الفلق",
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q113.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q113.mp3"
                     ]
                   },
                   {
@@ -338,7 +338,7 @@ const azkarData = [
                     "maxCount": 3,
                     "note": "سورة الناس",
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q114.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q114.mp3"
                     ],
                     "audioUrl": ""
                   },
@@ -350,7 +350,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%205m.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%205m.mp3"
                     ]
                   },
                   {
@@ -361,7 +361,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%206m.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%206m.mp3"
                     ]
                   },
                   {
@@ -372,7 +372,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%207.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%207.mp3"
                     ]
                   },
                   {
@@ -383,7 +383,7 @@ const azkarData = [
                     "count": 4,
                     "maxCount": 4,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%208m.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%208m.mp3"
                     ]
                   },
                   {
@@ -394,7 +394,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%209m.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%209m.mp3"
                     ]
                   },
                   {
@@ -405,7 +405,7 @@ const azkarData = [
                     "count": 3,
                     "maxCount": 3,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2010.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2010.mp3"
                     ]
                   },
                   {
@@ -416,7 +416,7 @@ const azkarData = [
                     "count": 7,
                     "maxCount": 7,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2011.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2011.mp3"
                     ]
                   },
                   {
@@ -427,7 +427,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2012.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2012.mp3"
                     ]
                   },
                   {
@@ -438,7 +438,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2013.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2013.mp3"
                     ],
                     "note": "",
                     "audioUrl": ""
@@ -451,7 +451,7 @@ const azkarData = [
                     "count": 3,
                     "maxCount": 3,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2014.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2014.mp3"
                     ]
                   },
                   {
@@ -462,7 +462,7 @@ const azkarData = [
                     "count": 3,
                     "maxCount": 3,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2015.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2015.mp3"
                     ]
                   },
                   {
@@ -473,7 +473,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2016.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2016.mp3"
                     ],
                     "note": "",
                     "audioUrl": ""
@@ -486,7 +486,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2017m.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2017m.mp3"
                     ],
                     "note": "",
                     "audioUrl": ""
@@ -499,7 +499,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2018m.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2018m.mp3"
                     ]
                   },
                   {
@@ -510,7 +510,7 @@ const azkarData = [
                     "count": 3,
                     "maxCount": 3,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2019.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2019.mp3"
                     ]
                   },
                   {
@@ -521,7 +521,7 @@ const azkarData = [
                     "count": 3,
                     "maxCount": 3,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2020.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2020.mp3"
                     ]
                   },
                   {
@@ -532,7 +532,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2021.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2021.mp3"
                     ]
                   },
                   {
@@ -543,7 +543,7 @@ const azkarData = [
                     "count": 10,
                     "maxCount": 10,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2022.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2022.mp3"
                     ]
                   },
                   {
@@ -554,7 +554,7 @@ const azkarData = [
                     "count": 100,
                     "maxCount": 100,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2023.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2023.mp3"
                     ]
                   },
                   {
@@ -565,7 +565,7 @@ const azkarData = [
                     "count": 100,
                     "maxCount": 100,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2024.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2024.mp3"
                     ]
                   },
                   {
@@ -576,7 +576,7 @@ const azkarData = [
                     "count": 10,
                     "maxCount": 10,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2025.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2025.mp3"
                     ]
                   }
             ]
@@ -595,9 +595,9 @@ const azkarData = [
                     "maxCount": 3,
                     "note": "سورة الإخلاص، سورة الفلق، سورة الناس",
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q112.mp3",
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q113.mp3",
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q114.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q112.mp3",
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q113.mp3",
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q114.mp3"
                     ]
                   },
                   {
@@ -619,7 +619,7 @@ const azkarData = [
                     "maxCount": 1,
                     "note": "سورة البقرة الآيات 285-286",
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q002-285-286.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-285-286.mp3"
                     ]
                   },
                   {
@@ -630,7 +630,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2054.m4a"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2054.m4a"
                     ],
                     "note": "",
                     "audioUrl": ""
@@ -643,7 +643,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2055.m4a"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2055.m4a"
                     ]
                   },
                   {
@@ -655,7 +655,7 @@ const azkarData = [
                     "maxCount": 3,
                     "note": "ثلاث مرات",
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2056.m4a"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2056.m4a"
                     ]
                   },
                   {
@@ -666,7 +666,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2057.m4a"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2057.m4a"
                     ]
                   },
                   {
@@ -713,7 +713,7 @@ const azkarData = [
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                            "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2034.mp3"
+                            "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2034.mp3"
                         ]
                   },
                   {
@@ -724,7 +724,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2062.m4a"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2062.m4a"
                     ]
                   },
                   {
@@ -735,7 +735,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2013.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2013.mp3"
                     ],
                     "note": "",
                     "audioUrl": ""
@@ -749,7 +749,7 @@ const azkarData = [
                     "maxCount": 1,
                     "note": "سُورَةَ الْمُلْكِ",
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q067.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q067.mp3"
                     ]
                   },
                   {
@@ -761,7 +761,7 @@ const azkarData = [
                     "maxCount": 1,
                     "note": "سُورَةَ السَّجْدَةِ",
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q032.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q032.mp3"
                     ]
                   },
                   {
@@ -773,7 +773,7 @@ const azkarData = [
                     "maxCount": 1,
                     "note": "يُجعل آخر ما يقول قبل النوم",
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2066.m4a"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2066.m4a"
                     ]
                   }
             ]
@@ -791,7 +791,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2067.m4a"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2067.m4a"
                     ]
                   },
                   {
@@ -802,7 +802,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2068.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2068.mp3"
                     ]
                   },
                   {
@@ -813,7 +813,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2069.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2069.mp3"
                     ]
                   },
                   {
@@ -825,7 +825,7 @@ const azkarData = [
                     "maxCount": 1,
                     "note": "سورة آل عمران الآيات 190-200",
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/Q003-190-200.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q003-190-200.mp3"
                     ],
                     "audioUrl": ""
                   }
@@ -844,7 +844,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2071.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2071.mp3"
                     ]
                   }
             ]
@@ -862,7 +862,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2072.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2072.mp3"
                     ]
                   }
             ]
@@ -880,7 +880,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2073.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2073.mp3"
                     ]
                   },
                   {
@@ -891,7 +891,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2074.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2074.mp3"
                     ]
                   }
             ]
@@ -1157,7 +1157,7 @@ const azkarData = [
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2042.mp3"
+                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2042.mp3"
                         ]
                   },
                   {
@@ -1317,7 +1317,7 @@ const azkarData = [
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2043.mp3"
+                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2043.mp3"
                         ]
                   }
             ]
@@ -1461,7 +1461,7 @@ const azkarData = [
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2032.mp3"
+                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2032.mp3"
                         ]
                   },
                   {
@@ -1481,7 +1481,7 @@ const azkarData = [
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2047.mp3"
+                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2047.mp3"
                         ]
                   },
                   {
@@ -1682,7 +1682,7 @@ const azkarData = [
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2043.mp3"
+                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2043.mp3"
                         ]
                   },
                   {
@@ -1731,7 +1731,7 @@ const azkarData = [
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2031.mp3"
+                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2031.mp3"
                         ]
                   }
             ]
@@ -1913,7 +1913,7 @@ const azkarData = [
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2031.mp3"
+                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2031.mp3"
                         ]
                   }
             ]

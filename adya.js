@@ -226,7 +226,7 @@ const adyaData = [
       "latin": "Allāhumma anta Rabbī lā ilāha illā ant, khalaqtanī wa anā ‘abduk, wa anā ‘alā ‘ahdika wa wa‘dika mā staṭa‘tu, a‘ūdhu bika min sharri mā ṣana‘tu, abūʾu laka bi-ni‘matika ‘alayya, wa abū’u bi-dhanbī faghfir lī fa-innahū lā yaghfirudh-dhunūba illā ant.",
       "explanationEs": "¡Oh, Allah! Tú eres mi Señor, no hay divinidad digna de adoración excepto Tú. Tú me has creado y yo soy Tu siervo. Me mantengo fiel a Tu pacto y a Tu promesa tanto como puedo.\n\nMe refugio en Ti del mal de lo que he hecho. Reconozco ante Ti Tus bendiciones sobre mí y reconozco mis pecados. Así que perdóname, pues nadie puede perdonar los pecados excepto Tú.",
       "note": "رواه البخاري (6306) - سيد الاستغفار",
-      "audioUrls": ["https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%207.mp3"]
+      "audioUrls": ["https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%207.mp3"]
     },
     {
       "itemNumber": 28,
@@ -235,7 +235,7 @@ const adyaData = [
       "explanationEs": "¡Oh, Allah! Ciertamente, he sido muy injusto conmigo mismo, y nadie puede perdonar los pecados excepto Tú. Así que concédeme un perdón que provenga de Ti y ten misericordia de mí. En verdad, Tú eres el Indulgente, el Misericordioso.",
       "note": "رواه البخاري ومسلم",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2028.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2028.mp3"
       ]
     },
     {
@@ -245,7 +245,7 @@ const adyaData = [
       "explanationEs": "¡Oh, Allah! Perdona mis errores y mi ignorancia, mis excesos en mis asuntos y aquello que Tú sabes mejor que yo.\n¡Oh, Allah! Perdona lo que hago en serio y en broma, mis equivocaciones y mis acciones intencionadas, pues todo ello forma parte de mí.\n¡Oh, Allah! Perdona lo que he hecho anteriormente y lo que haga después, lo que he ocultado y lo que he manifestado, y aquello que Tú sabes mejor que yo.\nTú eres Quien adelanta y Quien retrasa, y Tú tienes poder sobre todas las cosas.",
       "note": "رواه البخاري ومسلم",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2029.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2029.mp3"
       ]
     },
     {
@@ -255,7 +255,7 @@ const adyaData = [
       "explanationEs": "¡Oh, Allah! Perdona todos mis pecados: los pequeños y los grandes, los primeros y los últimos, los cometidos públicamente y los cometidos en secreto.",
       "note": "رواه مسلم",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2030.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2030.mp3"
       ]
     },
     {
@@ -265,7 +265,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Me refugio en Ti de la preocupación y la tristeza, de la incapacidad y la pereza, de la cobardía y la avaricia, del peso de las deudas y de que los hombres me dominen.",
       "note": "رواه البخاري",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2031.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2031.mp3"
       ]
     },
     {
@@ -275,7 +275,7 @@ const adyaData = [
       "explanationEs": "¡Oh, Allah! Me refugio en Ti de la avaricia y de la cobardía. Me refugio en Ti de llegar a la etapa más débil y degradante de la vejez. Me refugio en Ti de las pruebas y tentaciones de esta vida mundanal, y me refugio en Ti del castigo de la tumba.",
       "note": "رواه البخاري",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2032.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2032.mp3"
       ]
     },
     {
@@ -285,7 +285,7 @@ const adyaData = [
       "explanationEs": "¡Oh, Allah! Me refugio en Ti de la pereza, de la decrepitud de la vejez, de los pecados y de las deudas; me refugio en Ti de las pruebas de la tumba y de su castigo, de las pruebas del Fuego y de su castigo, del mal de las tentaciones de la riqueza y de las pruebas de la pobreza, y me refugio en Ti de la prueba del Falso Mesías (Al-Masih Ad-Dajjal).\n\n¡Oh, Allah! Lava mis pecados con agua de nieve y granizo, purifica mi corazón de las faltas como se purifica la ropa blanca de la suciedad, y aleja entre mí y mis pecados tanto como has alejado el Oriente del Occidente.",
       "note": "رواه البخاري ومسلم",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2033.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2033.mp3"
       ]
     },
     {
@@ -295,7 +295,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah, Señor de los cielos, de la tierra y del Trono grandioso; Señor nuestro y Señor de todas las cosas! Tú haces brotar el grano y el hueso de los frutos, y revelaste la Torá, el Evangelio y el Furqán (el Criterio). Me refugio en Ti del mal de todas las cosas, pues Tú tienes pleno dominio sobre ellas. ¡Oh Allah! Tú eres el Primero y nada existe antes de Ti; Tú eres el Último y nada existe después de Ti; Tú eres el Manifiesto y nada está por encima de Ti; y Tú eres el Oculto y nada está más allá de Ti. Satisface nuestras deudas y líbranos de la pobreza.",
       "note": "رواه مسلم",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2034.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2034.mp3"
       ]
     },
     {
@@ -305,7 +305,7 @@ const adyaData = [
       "explanationEs": "¡Oh, Allah! Me refugio en Ti del mal de lo que he hecho y del mal de lo que aún no he hecho.",
       "note": "رواه مسلم",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2035.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2035.mp3"
       ]
     },
     {
@@ -315,7 +315,7 @@ const adyaData = [
       "explanationEs": "¡Oh, Allah! Corrige y mejora mi religión, que es la protección de todos mis asuntos. Corrige y mejora mi vida mundanal, en la que transcurre mi existencia. Corrige y mejora mi vida en el Más Allá, hacia la que será mi regreso.\n\nHaz que la vida sea para mí un incremento en todo bien, y haz que la muerte sea un descanso para mí de todo mal.",
       "note": "رواه مسلم",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2036.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2036.mp3"
       ]
     },
     {
@@ -325,7 +325,7 @@ const adyaData = [
       "explanationEs": "¡Oh, Allah! Te pido la guía, la piedad, la castidad y la autosuficiencia que me permita prescindir de los demás.",
       "note": "رواه مسلم",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2037.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2037.mp3"
       ]
     },
     {
@@ -335,7 +335,7 @@ const adyaData = [
       "explanationEs": "¡Oh, Allah! Me refugio en Ti de la incapacidad y la pereza, de la cobardía y la avaricia, de la decrepitud de la vejez y del castigo de la tumba.\n\n¡Oh, Allah! Concede a mi alma su piedad y purifícala, pues Tú eres el Mejor de quienes pueden purificarla. Tú eres su Protector y su Señor.\n\n¡Oh, Allah! Me refugio en Ti del conocimiento que no beneficia, de un corazón que no siente humildad ante Ti, de un alma que nunca se sacia y de una súplica que no es respondida.",
       "note": "رواه مسلم",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2038.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2038.mp3"
       ]
     },
     {
@@ -345,7 +345,7 @@ const adyaData = [
       "explanationEs": "¡Oh, Allah! A Ti me someto, en Ti creo, en Ti deposito mi confianza, hacia Ti me vuelvo arrepentido y por Ti contiendo.\n\n¡Oh, Allah! Me refugio en Tu poder y majestad para que no me desvíes del camino recto. No hay divinidad digna de adoración excepto Tú. Tú eres el Viviente que nunca muere, mientras que los genios y los seres humanos sí mueren.",
       "note": "رواه البخاري ومسلم",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2039.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2039.mp3"
       ]
     },
     {
@@ -355,7 +355,7 @@ const adyaData = [
       "explanationEs": "¡Oh, Allah! Me refugio en Ti de que desaparezcan Tus bendiciones, de que cambie el bienestar con el que me has favorecido, de que Tu castigo me sobrevenga repentinamente y de todas las causas que puedan provocar Tu ira.",
       "note": "رواه مسلم",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2040.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2040.mp3"
       ]
     },
     {
@@ -365,7 +365,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Orientador de los corazones, orienta nuestros corazones hacia Tu obediencia. (Muslim)",
       "note": "رواه مسلم",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2041.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2041.mp3"
       ]
     },
     {
@@ -375,7 +375,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Señor de Gabriel, Miguel e Israfil. Creador de los cielos y de la tierra, Conocedor de lo oculto y de lo manifiesto. Tú juzgas entre Tus siervos en aquello en lo que diferían. Guíame con Tu permiso hacia la verdad en aquello en lo que se discrepa. (Muslim)",
       "note": "رواه مسلم",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2042.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2042.mp3"
       ]
     },
     {
@@ -385,7 +385,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Me refugio en Tu complacencia de Tu ira, en Tu indulgencia frente a Tu castigo y me refugio en Ti de Ti. No puedo enumerar todos los elogios que Te corresponden; Tú eres tal como Te has elogiado a Ti mismo.",
       "note": "رواه مسلم",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2043.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2043.mp3"
       ]
     },
     {
@@ -395,7 +395,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Me refugio en Ti de las pruebas severas, de caer en la miseria, de un mal decreto y de la maliciosa alegría de los enemigos. (Bujari y Muslim)",
       "note": "رواه البخاري ومسلم",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2044.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2044.mp3"
       ]
     },
     {
@@ -405,7 +405,7 @@ const adyaData = [
       "explanationEs": "«Oh Allah, pon en mi corazón luz, en mi lengua luz, en mi oído luz, en mi vista luz, por encima de mí luz, por debajo de mí luz, a mi derecha luz, a mi izquierda luz, delante de mí luz, detrás de mí luz, pon en mi alma luz, y aumenta mi luz».\n",
       "note": "رواه البخاري ومسلم",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2045.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2045.mp3"
       ]
     },
     {
@@ -415,7 +415,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Te pido todo el bien, el presente y el futuro, lo que conozco y lo que ignoro. Me refugio en Ti de todo el mal, el presente y el futuro, lo que conozco y lo que ignoro. Te pido lo mejor de lo que Te pidió Tu siervo y Profeta, y me refugio en Ti del mal del que se refugió Tu siervo y Profeta. Te pido el Paraíso y lo que acerque a él de palabras o acciones, y me refugio en Ti del Fuego y lo que acerque a él. Y Te pido que hagas que cada decreto que hayas decretado para mí sea un bien. (Ibn Mayah)",
       "note": "رواه ابن ماجه (إسناد صحيح)",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2046.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2046.mp3"
       ]
     },
     {
@@ -425,7 +425,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Por Tu conocimiento de lo oculto y Tu poder sobre la creación, mantenme con vida mientras sepas que la vida es mejor para mí, y hazme morir cuando sepas que la muerte es mejor para mí. Te pido que Te tema en privado y en público, que diga la verdad tanto en la satisfacción como en la ira, y que mantenga la moderación tanto en la pobreza como en la riqueza. Te pido un deleite que no se agote, una alegría que nunca se extinga, estar complacido después del decreto, una vida apacible después de la muerte, el placer de contemplar Tu Rostro y el anhelo de encontrarte, sin adversidad perjudicial ni prueba que me haga extraviarme. ¡Oh Allah! Adórnanos con la belleza de la fe y haz que seamos guías bien guiados.",
       "note": "رواه النسائي (إسناد حسن)",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2047.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2047.mp3"
       ]
     },
     {
@@ -435,7 +435,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Te pido el perdón y la salud en esta vida y en la otra. ¡Oh Allah! Te pido el perdón y la salud en mi religión, mis asuntos mundanales, mi familia y mis bienes. ¡Oh Allah! Cubre mis faltas y calma mis temores. ¡Oh Allah! Protégeme por delante, por detrás, a mi derecha, a mi izquierda y por encima de mí; y me refugio en Tu grandeza de ser tragado por la tierra.",
       "note": "رواه أبو داود (إسناد صحيح)",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2012.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2012.mp3"
       ]
     },
     {
@@ -445,7 +445,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Conocedor de lo oculto y de lo manifiesto, Creador de los cielos y de la tierra, Señor de todas las cosas y su Soberano. Testifico que no hay más divinidad que Tú. Me refugio en Ti del mal de mi alma, del mal del Satán y de su idolatría, y de cometer un mal contra mí mismo o infligírselo a un musulmán.",
       "note": "رواه الترمذي (إسناد صحيح)",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2013.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2013.mp3"
       ]
     },
     {
@@ -455,7 +455,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Te pido firmeza en todos mis asuntos y determinación para seguir la rectitud. Te pido aquello que atrae Tu misericordia y aquello que conduce a Tu perdón. Te pido que me inspires gratitud por Tus bendiciones y excelencia en Tu adoración. Te pido un corazón sano y una lengua veraz. Te pido todo el bien que Tú conoces, me refugio en Ti de todo el mal que Tú conoces y Te pido perdón por aquello que Tú conoces. Ciertamente, Tú eres el Conocedor de lo oculto.",
       "note": "رواه الطبراني في الكبير",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2050.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2050.mp3"
       ]
     },
     {
@@ -465,7 +465,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Haz que Tu sustento lícito me sea suficiente frente a lo ilícito, y enriquéceme con Tu favor prescindiendo de cualquier otro fuera de Ti. (Tirmidhi)",
       "note": "رواه الترمذي (إسناد حسن)",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2051.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2051.mp3"
       ]
     },
     {
@@ -475,7 +475,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Concedeme salud en mi cuerpo. ¡Oh Allah! Concedeme salud en mi oído. ¡Oh Allah! Concedeme salud en mi vista. No hay más divinidad que Tú. ¡Oh Allah! Me refugio en Ti de la incredulidad y de la pobreza, y me refugio en Ti del castigo de la tumba. No hay más divinidad que Tú.",
       "note": "رواه أبو داود (إسناد حسن)",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%2010.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2010.mp3"
       ]
     },
     {
@@ -485,7 +485,7 @@ const adyaData = [
       "explanationEs": "¡Señor mío! Ayúdame y no ayudes contra mí. Concédeme la victoria y no concedas la victoria contra mí. Trama a mi favor y no contra mí. Guíame y facilita para mí el camino de la guía. Concédeme la victoria sobre quien me oprima.\n\n¡Señor mío! Haz que sea muy agradecido contigo, que Te recuerde constantemente, que Te tema profundamente, que Te obedezca plenamente, que sea humilde ante Ti, que vuelva a Ti con devoción y arrepentimiento.\n\n¡Señor mío! Acepta mi arrepentimiento, purifica mis faltas, responde a mi súplica, fortalece mis argumentos, endereza mi lengua, guía mi corazón y arranca de mi pecho todo rencor y resentimiento.",
       "note": "رواه الترمذي (إسناد صحيح)",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2053.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2053.mp3"
       ]
     },
     {
@@ -505,7 +505,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Concede Tus bendiciones a Muhammad y a la familia de Muhammad, como las concediste a Abraham y a la familia de Abraham. Ciertamente, Tú eres Loable y Glorioso. ¡Oh Allah! Bendice a Muhammad y a la familia de Muhammad, como bendijiste a Abraham y a la familia de Abraham. Ciertamente, Tú eres Loable y Glorioso.",
       "note": "الصلاة الإبراهيمية",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2055.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2055.mp3"
       ]
     }
   ]
@@ -522,7 +522,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, si mi sustento está en el cielo, hazlo bajar; si está en la tierra, hazlo salir; si está lejos, acércalo; si está cerca, facilítalo; si es poco, multiplícalo; y si es mucho, bendícelo para mí.",
       "note": "دعاء جلب الرزق والبركة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2056.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2056.mp3"
       ]
     },
     {
@@ -532,7 +532,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah, Soberano del dominio! Concedes el dominio a quien quieres y se lo quitas a quien quieres; honras a quien quieres y humillas a quien quieres. En Tu mano está todo bien. Ciertamente, Tú tienes poder sobre todas las cosas. ¡Misericordioso de esta vida y de la otra! Concedes ambas a quien quieres y se las niegas a quien quieres. Ten misericordia de mí con una misericordia que me haga prescindir de la misericordia de cualquiera fuera de Ti.",
       "note": "دعاء قضاء الدين وتوسيع الرزق",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2057.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2057.mp3"
       ]
     },
     {
@@ -542,7 +542,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah, Señor de los siete cielos y Señor del Trono inmenso, Señor nuestro y Señor de todas las cosas! Tú eres el Manifiesto, nada está por encima de Ti; y Tú eres el Oculto, nada está más allá de Ti. Revelador de la Torá, el Evangelio y el Criterio (el Corán), Quien hiende el grano y las semillas, me refugio en Ti del mal de toda cosa cuya frente está bajo Tu dominio. Tú eres el Primero, nada hubo antes de Ti, y Tú eres el Último, nada habrá después de Ti. Paga nuestras deudas y líbranos de la pobreza.",
       "note": "دعاء قضاء الدين والفقر",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2058.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2058.mp3"
       ]
     },
     {
@@ -552,7 +552,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, me refugio en Ti de la ansiedad y la tristeza, de la incapacidad y la pereza, de la cobardía y la tacañería, y del peso de las deudas y la opresión de los hombres.",
       "note": "صحيح البخاري",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2059.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2059.mp3"
       ]
     },
     {
@@ -562,7 +562,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Me refugio en Ti de la pereza, de la vejez extrema, del pecado y de las deudas; de las pruebas y del castigo de la tumba; de las pruebas y del castigo del Fuego; y del mal de la prueba de la riqueza. Me refugio en Ti de la prueba de la pobreza y de la prueba del Falso Mesías.\n\n¡Oh Allah! Lava mis pecados con agua de nieve y granizo, purifica mi corazón de los pecados como limpias la vestidura blanca de la suciedad, y establece una gran distancia entre mí y mis pecados, como la que hay entre el Oriente y el Occidente.",
       "note": "صحيح البخاري",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2033.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2033.mp3"
       ]
     },
     {
@@ -572,7 +572,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, haz que me baste con lo lícito frente a lo prohibido, y enriquéceme con Tu gracia para no necesitar de nadie más.",
       "note": "سنن الترمذي",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2051.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2051.mp3"
       ]
     },
     {
@@ -582,7 +582,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah, Dueño de todo el dominio! Concedes el dominio a quien quieres y se lo retiras a quien quieres; honras a quien quieres y humillas a quien quieres. En Tu mano está todo bien. Ciertamente, Tú tienes poder sobre todas las cosas.\n\n¡Oh Misericordioso de este mundo y del Más Allá, y Compasivo con ambos! Concedes Sus bienes a quien quieres y se los niegas a quien quieres. Ten misericordia de mí con una misericordia que me haga prescindir de la misericordia de cualquiera fuera de Ti.",
       "note": "دعاء توسيع الرزق (تكرار)",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2062.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2062.mp3"
       ]
     },
     {
@@ -592,7 +592,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, nadie puede impedir lo que Tú das, ni nadie puede dar lo que Tú impides, y la riqueza no beneficia a su dueño frente a Ti.",
       "note": "صحيح البخاري",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2063.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2063.mp3"
       ]
     },
     {
@@ -602,7 +602,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Señor de los siete cielos, Señor de la Tierra y Señor del Grandioso Trono, Señor nuestro y Señor de todas las cosas, que haces germinar el grano y el hueso, revelador de la Torá, del Evangelio y del Criterio (el Corán). Me refugio en Ti del mal de toda cosa que esté bajo Tu dominio. ¡Oh Allah! Tú eres el Primero y no hay nada antes de Ti; Tú eres el Último y no hay nada después de Ti; Tú eres el Manifiesto y no hay nada por encima de Ti; Tú eres el Oculto y no hay nada más allá de Ti. Salda nuestras deudas y líbranos de la pobreza.",
       "note": "دعاء قضاء الدين",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2034.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2034.mp3"
       ]
     },
     {
@@ -612,7 +612,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, perdóname, ten misericordia de mí, guíame, dame salud y concédeme sustento.",
       "note": "صحيح مسلم",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2065.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2065.mp3"
       ]
     },
     {
@@ -634,7 +634,7 @@ const adyaData = [
       "explanationEs": "«¡Oh Poseedor de la Majestad y la Generosidad!, ¡Oh Cumplidor de las necesidades!, ¡Oh el más Misericordioso de los misericordiosos!, ¡Oh Viviente, Oh Sustentador!, no hay divinidad excepto Tú, el Rey, la Verdad Evidente. \n\nOh Allah, Te alabo con abundante alabanza y Te agradezco con abundante agradecimiento, como corresponde a la majestad de Tu Rostro y a la grandeza de Tu soberanía. \n\nOh Allah, haz que me baste lo lícito que Tú me concedes para no recurrir a lo ilícito, y enriquéceme con Tu favor para no necesitar de nadie más que de Ti. \n\n¡Oh Allah, Oh Rabb, Oh Viviente, Oh Sustentador!, ¡Oh Poseedor de la Majestad y la Generosidad!, Te pido por Tu Nombre Grandioso, el más Grande, que me concedas un sustento amplio, lícito y puro, por Tu misericordia, ¡Oh el más Misericordioso de los misericordiosos!».\n",
       "note": "دعاء قضاء الحاجات والرزق",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2067.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2067.mp3"
       ]
     },
     {
@@ -644,7 +644,7 @@ const adyaData = [
       "explanationEs": "​«Oh Allah, concédenos un sustento lícito, puro y bendito, tal como Amas y Te agrada, ¡Oh Señor de los mundos! Allah nos basta; Allah nos dará de Su favor, y ciertamente hacia Allah dirigimos nuestros deseos».",
       "note": "دعاء الرزق والتوكل",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2068.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2068.mp3"
       ]
     },
     {
@@ -654,7 +654,7 @@ const adyaData = [
       "explanationEs": "Alabado sea Allah, Quien no olvida a quien Le recuerda. Alabado sea Allah, Quien no decepciona a quien deposita en Él su esperanza. Alabado sea Allah, Quien basta a quien confía en Él. Alabado sea Allah, Quien no abandona a quien confía en Él en manos de nadie más.\n\nAlabado sea Allah, Quien es nuestro apoyo cuando tenemos una mala opinión de nuestras propias obras. Alabado sea Allah, Quien es nuestra esperanza cuando se agotan nuestros recursos y se rompen todos nuestros vínculos.",
       "note": "حمد الله والتوكل عليه",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2069.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2069.mp3"
       ]
     },
     {
@@ -664,7 +664,7 @@ const adyaData = [
       "explanationEs": "¡Oh, Allah! ¡Oh, Dueño de la inmensa misericordia! ¡Oh, Quien conoce todos los secretos, las intenciones ocultas, los pensamientos y las inquietudes del corazón! Nada se oculta a Ti.\nTe pedimos una abundante porción del desbordamiento de Tu generosidad, un puñado de la luz de Tu poder, consuelo y alivio procedentes del océano de Tu bondad.\nTú tienes en Tus manos todos los asuntos y las llaves de todas las cosas. Concédenos aquello que alegre nuestros ojos y nos haga innecesario pedir a nadie más que a Ti.\nCiertamente, Tú eres inmenso en generosidad y abundante en dádivas.\nEstamos de pie ante Tu puerta, esperando Tu inmensa y conocida generosidad.\n¡Oh, Generosísimo! ¡Oh, Misericordiosísimo!",
       "note": "دعاء الفضل والفرج",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2070.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2070.mp3"
       ]
     },
     {
@@ -674,7 +674,7 @@ const adyaData = [
       "explanationEs": "«Oh Allah, concédeme un conocimiento beneficioso, un sustento abundante y la curación de toda enfermedad y dolencia, ¡Oh Quien sustentas a quien quieres sin medida! Oh Compasivo de este mundo y del Más Allá, y Misericordioso de ambos, Oh Allah, ten misericordia de mí con una misericordia que me dispense de la de cualquier otro que no seas Tú».\n",
       "note": "دعاء العلم والرزق والشفاء",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2071.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2071.mp3"
       ]
     },
     {
@@ -684,7 +684,7 @@ const adyaData = [
       "explanationEs": "¡Dios mío! Te suplico con la súplica de quien se encuentra en una necesidad extrema, cuya fuerza se ha debilitado y cuyos recursos son escasos; con la súplica de quien se ahoga, desesperado, afligido y pobre, y no encuentra a nadie salvo a Ti que lo libre de la situación en la que se encuentra.\n\n¡Oh Socorredor, socórreme! ¡Oh Socorredor, socórreme! ¡Oh Socorredor, socórreme!",
       "note": "دعاء المضطر والغريق",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2072.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2072.mp3"
       ]
     },
     {
@@ -694,7 +694,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, haz que nos baste lo lícito que Tú nos concedes para no recurrir a lo prohibido, y cuida de nosotros, pues Tú eres el más misericordioso de los misericordiosos.",
       "note": "دعاء الاستغناء بالحلال",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2073.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2073.mp3"
       ]
     },
     {
@@ -704,7 +704,7 @@ const adyaData = [
       "explanationEs": "«¡Oh Generoso!, Oh Allah, Oh Poseedor de la amplia misericordia, Oh Conocedor de los secretos, de las conciencias, de las intuiciones y de los pensamientos, nada se Te oculta. Te pido una efusión de la abundancia de Tu favor, un puñado de la luz de Tu soberanía, y consuelo y alivio del océano de Tu generosidad. En Tu Mano está todo el asunto y las llaves de todas las cosas; concédenos, pues, aquello que alegre nuestros ojos y nos dispense de pedir a cualquier otro que no seas Tú, pues Ciertamente Eres de Infinita Generosidad, de Abundante Bondad y de Hermosas Cualidades; por lo tanto, a Tu puerta estamos parados y aguardando Tu conocido y amplio favor, ¡Oh Generoso, Oh Misericordioso!».\n",
       "note": "دعاء فيض الفضل والرجاء",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2074.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2074.mp3"
       ]
     },
     {
@@ -714,7 +714,7 @@ const adyaData = [
       "explanationEs": "«Oh Allah, Oh Proveedor de quienes Le piden, Oh Misericordioso con los necesitados, Oh Poseedor de la fuerza inquebrantable, Oh el Mejor de los socorredores, Oh Protector de los creyentes, Oh Auxiliador de quienes buscan auxilio, Solo a Ti adoramos y solo a Ti pedimos ayuda. Oh Allah, Te pido un sustento amplio y puro de Tu provisión».\n",
       "note": "دعاء الرزق الواسع",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2075.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2075.mp3"
       ]
     },
     {
@@ -724,7 +724,7 @@ const adyaData = [
       "explanationEs": "Oh Quien pasa por alto los tropiezos, Oh Quien satisface las necesidades, satisface mi necesidad, alivia mi angustia y susténtame de donde no lo espero.",
       "note": "دعاء قضاء الحاجة والرزق غير المحتسب",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2076.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2076.mp3"
       ]
     },
     {
@@ -734,7 +734,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, concédeme un sustento amplio, lícito y puro sin fatiga, acepta mi súplica sin rechazo, y me refugio en Ti de la pobreza y de la deuda.",
       "note": "دعاء الرزق الميسر والوقاية من الفقر",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2077.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2077.mp3"
       ]
     }
   ]
@@ -761,7 +761,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Te invoco por Tus nombres: el Uno, el Único, el Singular y el Autosuficiente, y Te invoco por Tu Nombre Supremo, por el cual, cuando se Te invoca, respondes y, cuando se Te pide, concedes. Te pido que me favorezcas concediendo rectitud y bienestar a mi familia y a mi descendencia.",
       "note": "دعاء الصلاح للأسرة باسم الله الأعظم",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2079.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2079.mp3"
       ]
     },
     {
@@ -771,7 +771,7 @@ const adyaData = [
       "explanationEs": "«Oh Allah, prolonga sus vidas con salud y bienestar en Tu obediencia y complacencia. Oh Allah, concédeles salud en sus cuerpos, en su oído, en su vista, en sus almas y en sus miembros, y haz que estén entre los preservados de las aflicciones por Tu misericordia, ¡Oh el más Misericordioso de los misericordiosos!».\n",
       "note": "دعاء العافية والصحة للأبناء",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2080.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2080.mp3"
       ]
     },
     {
@@ -781,7 +781,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Haz que sean felices, piadosos, puros, ricos, generosos, indulgentes, misericordiosos, sabios y sanos. Pon el temor de Ti en sus corazones y haz que tengan siempre presente que Tú los oyes y los ves, en sus palabras, acciones, movimientos y reposo. Señor mío, concede a cada uno de ellos aquello que desea y anhela, siempre que sea de lo que amas y Te complace.",
       "note": "دعاء الصلاح والسعادة والتقوى",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2081.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2081.mp3"
       ]
     },
     {
@@ -791,7 +791,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Haz que amen la fe y embellecela en sus corazones; haz que detesten la incredulidad, la inmoralidad y la desobediencia, y haz que se encuentren entre los bien guiados. Todo ello como favor y bendición de Tu parte, pues Tú eres el mejor de los proveedores.",
       "note": "دعاء الهداية والإيمان",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2082.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2082.mp3"
       ]
     },
     {
@@ -801,7 +801,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, haznos de quienes confían en Ti y les eres suficiente, te piden guía y los guías, te piden perdón y los perdonas, te piden auxilio y los auxilías, y te invocan y les respondes.",
       "note": "دعاء التوكل والإجابة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2083.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2083.mp3"
       ]
     },
     {
@@ -811,7 +811,7 @@ const adyaData = [
       "explanationEs": "Señor mío, aleja de ellos el mal y la inmoralidad, y hazlos de Tus siervos sinceros.",
       "note": "دعاء الحفظ من الفواحش",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2084.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2084.mp3"
       ]
     },
     {
@@ -821,7 +821,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Te encomiendo a mi descendencia y a mi familia, ¡oh Aquel junto a Quien nunca se pierden los depósitos confiados! Protégelos y concédeles bienestar frente a toda calamidad y dolencia, frente a las enfermedades y sus males, frente a los peligros que sobrevienen durante la noche y el día, frente al mal de ojo de todo envidioso, al rencor de todo resentido y a las malas compañías. ¡Oh Allah! Protégelos por delante y por detrás, por la derecha y por la izquierda, por encima y por debajo.",
       "note": "دعاء الاستيداع والحفظ الشامل للأسرة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2085.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2085.mp3"
       ]
     },
     {
@@ -831,7 +831,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Inspíranos lo correcto en nuestros asuntos, facilítanos encontrar una respuesta en cada cuestión, sálvanos de todas las formas de castigo, ilumina nuestros rostros el día en que el Juicio sea difícil, adorna nuestras reuniones con los mejores compañeros y haz que nuestras súplicas sean respondidas.",
       "note": "دعاء التوفيق والنجاة يوم الحساب",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2086.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2086.mp3"
       ]
     },
     {
@@ -841,7 +841,7 @@ const adyaData = [
       "explanationEs": "¡Oh, Señor mío! Haz que sepa agradecerte los favores que nos has concedido, tanto a mí como a mis padres, y que pueda realizar obras buenas que Te complazcan. Concédeme una descendencia piadosa. Me arrepiento a Ti [de mis pecados] y soy de los musulmanes",
       "note": "سورة الأحقاف من الآية 15",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2087.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2087.mp3"
       ]
     },
     {
@@ -851,7 +851,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Te suplicamos por Tu Nombre grandioso, el más grandioso, por el cual, cuando se Te invoca, respondes y, cuando se Te pide, concedes; y por todos Tus bellos nombres, los que conocemos y los que desconocemos: responde a nuestras súplicas, cumple nuestros deseos, satisface nuestras necesidades, alivia nuestras aflicciones, perdona nuestros pecados, cubre nuestros defectos, acepta nuestro arrepentimiento, concédenos bienestar y perdónanos, mejora la situación de nuestras familias y de nuestra descendencia, y ten misericordia de nosotros con Tu inmensa misericordia, una misericordia que nos haga prescindir de la misericordia de cualquiera fuera de Ti.",
       "note": "دعاء الشمول والرحمة الواسعة للأسرة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2088.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2088.mp3"
       ]
     }
   ]
@@ -974,7 +974,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Tú eres mi Señor; no hay divinidad digna de adoración excepto Tú. Me creaste y soy Tu siervo; me mantengo en Tu pacto y promesa tanto como puedo. Me refugio en Ti del mal que he cometido. Reconozco ante Ti Tus favores sobre mí y reconozco mi pecado. Perdóname, pues nadie perdona los pecados sino Tú. (Súplica del perdón supremo; Sahih al-Bujari)",
       "note": "سيد الاستغفار (صحيح البخاري)",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/zikr%207.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%207.mp3"
       ]
     },
     {
@@ -984,7 +984,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, he sido muy injusto conmigo mismo, y nadie perdona los pecados sino Tú, así que perdóname con un perdón de Tu parte y ten misericordia de mí, pues Tú eres el Indulgente, el Misericordioso.",
       "note": "صحيح البخاري ومسلم (دعاء أبي بكر الصديق)",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2028.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2028.mp3"
       ],
       "audioUrl": ""
     },
@@ -995,7 +995,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Perdona mi error y mi ignorancia, mis excesos en mis asuntos y aquello que Tú conoces mejor que yo. ¡Oh Allah! Perdona lo que hago en serio y en broma, mis errores y lo que hago deliberadamente; todo eso está en mí. ¡Oh Allah! Perdona lo que hice antes y lo que haga después, lo que oculté y lo que manifesté, y aquello que Tú conoces mejor que yo. Tú eres Quien adelanta y Quien retrasa, y Tú tienes poder sobre todas las cosas.",
       "note": "صحيح البخاري ومسلم",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2029.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2029.mp3"
       ]
     },
     {
@@ -1005,7 +1005,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, perdóname, ten misericordia de mí, dame salud, guíame y concédeme sustento.",
       "note": "أحاديث الدعاء في كتب السنة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%2065.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2065.mp3"
       ]
     },
     {
@@ -1015,7 +1015,7 @@ const adyaData = [
       "explanationEs": "¡Señor mío! Perdóname y acepta mi arrepentimiento, pues ciertamente Tú eres Quien acepta el arrepentimiento, el Misericordioso.",
       "note": "سنن أبي داود",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20104.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20104.mp3"
       ]
     },
     {
@@ -1025,7 +1025,7 @@ const adyaData = [
       "explanationEs": "Pido perdón a Allah y me arrepiento ante Él.",
       "note": "ثابت بالإكثار عنه ﷺ",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20105.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20105.mp3"
       ]
     },
     {
@@ -1035,7 +1035,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, te pido perdón por cada pecado que cometí, y me arrepiento ante Ti con un arrepentimiento sincero y recto.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20106.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20106.mp3"
       ]
     },
     {
@@ -1045,7 +1045,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, perdona todos mis pecados, los pequeños y los grandes, los primeros y los últimos, los secretos y los públicos.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20107.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20107.mp3"
       ]
     },
     {
@@ -1055,7 +1055,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, acepta mi arrepentimiento, lava mi pecado, perdona mi tropiezo y ten piedad de mi debilidad.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20108.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20108.mp3"
       ]
     },
     {
@@ -1065,7 +1065,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, no hagas de mis pecados una barrera entre mí y Tu misericordia, y ábreme las puertas del arrepentimiento y el perdón.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20109.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20109.mp3"
       ]
     },
     {
@@ -1075,7 +1075,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, concédeme un corazón arrepentido, una lengua que Te recuerde y una obra justa y aceptada.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20110.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20110.mp3"
       ]
     },
     {
@@ -1085,7 +1085,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, ayúdame a abandonar los pecados, haz que ame la fe y la obediencia, y haz que deteste la incredulidad, la inmoralidad y la desobediencia.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20111.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20111.mp3"
       ]
     },
     {
@@ -1095,7 +1095,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, Ciertamente sabes lo oculto y lo manifiesto de mí, así que perdona lo que sé y lo que no sé.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20112.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20112.mp3"
       ]
     },
     {
@@ -1105,7 +1105,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, no me encomiendes a mí mismo ni por un parpadeo, rectifica todos mis asuntos y perdona lo pasado de mis pecados.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20113.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20113.mp3"
       ]
     },
     {
@@ -1115,7 +1115,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, hazme de los que se arrepienten con frecuencia y hazme de los purificados.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20114.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20114.mp3"
       ]
     },
     {
@@ -1125,7 +1125,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, sella mi vida con el arrepentimiento sincero, el perdón amplio, la misericordia y un buen final.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20115.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20115.mp3"
       ]
     },
     {
@@ -1135,7 +1135,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Perdona cualquier negligencia en la que haya incurrido respecto a los derechos que Te corresponden y a los derechos de Tus siervos, y ayúdame a devolver a cada uno lo que le corresponde.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20116.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20116.mp3"
       ]
     },
     {
@@ -1145,7 +1145,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, cambia mis malas acciones por buenas obras, rectifica mi corazón y mi obra, y guíame hacia Tu camino recto.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20117.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20117.mp3"
       ]
     },
     {
@@ -1155,7 +1155,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, espero Tu misericordia, así que no me prives de Tu perdón y pasa por alto mis faltas con Tu indulgencia y generosidad.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20118.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20118.mp3"
       ]
     },
     {
@@ -1165,7 +1165,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Concédeme un remordimiento sincero por mis pecados, la firme resolución de no volver a cometerlos y la constancia en Tu obediencia.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20119.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20119.mp3"
       ]
     },
     {
@@ -1175,7 +1175,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, haz que mi arrepentimiento sea sincero por Tu Rostro Noble, y aléjame de las causas y caminos del pecado.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20120.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20120.mp3"
       ]
     },
     {
@@ -1185,7 +1185,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Perdóname a mí, a mis padres, a mi familia, a los creyentes y a las creyentes, tanto a los vivos como a los fallecidos.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20121.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20121.mp3"
       ]
     },
     {
@@ -1195,7 +1195,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, oculta mis defectos, da paz a mis temores, perdona mis faltas y ten piedad de mi debilidad.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20122.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20122.mp3"
       ]
     },
     {
@@ -1205,7 +1205,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, concédeme tener una buena opinión de Ti, la esperanza en Tu misericordia y el temor a desobedecerte.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20123.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20123.mp3"
       ]
     },
     {
@@ -1215,7 +1215,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, si mis pecados son muchos, Tu perdón es más grandioso; y si mi negligencia es grande, Tu misericordia es más amplia, así que perdóname y ten piedad de mí.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20124.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20124.mp3"
       ]
     },
     {
@@ -1225,7 +1225,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, hazme de aquellos que cuando pecan piden perdón, cuando se arrepienten se mantienen firmes y cuando se les bendice dan las gracias.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20125.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20125.mp3"
       ]
     },
     {
@@ -1235,7 +1235,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Perdóname, ten misericordia de mí y acepta mi arrepentimiento. Ciertamente, Tú eres Quien acepta el arrepentimiento, el Misericordioso.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20126.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20126.mp3"
       ]
     },
     {
@@ -1245,7 +1245,7 @@ const adyaData = [
       "explanationEs": "Oh Allah, purifica mi corazón de los pecados, perdona mi negligencia y rectifica mi intención y mis obras.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20127.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20127.mp3"
       ]
     },
     {
@@ -1255,7 +1255,7 @@ const adyaData = [
       "explanationEs": "¡Oh Allah! Concédeme un arrepentimiento tras el cual no vuelva a cometer pecados, y mantenme firme en Tu obediencia mientras viva.",
       "note": "صيغة عامة مقترحة",
       "audioUrls": [
-        "https://github.com/Mundial-45/ZadALQulub/raw/refs/heads/main/audio/dua%20128.mp3"
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20128.mp3"
       ]
     }
 	]
