@@ -1878,17 +1878,20 @@ const adyaData = [
     },
     {
       "itemNumber": 208,
-      text: 'اللَّهُمَّ رَبَّ السَّمَاوَاتِ السَّبْعِ، وَرَبَّ العَرْشِ العَظِيمِ، رَبَّنَا وَرَبَّ كُلِّ شَيْءٍ، أَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، وَأَنْتَ البَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، مُنْزِلَ التَّوْرَاةِ وَالإِنْجِيلِ وَالفُرْقَانِ، فَالِقَ الحَبِّ وَالنَّوَى، أَعُوذُ بِكَ مِنْ شَرِّ كُلِّ شَيْءٍ أَنْتَ آخِذٌ بِنَاصِيَتِهِ، أَنْتَ الأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ الآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ، اقْضِ عَنَّا الدَّيْنَ وَأَغْنِنَا مِنَ الفَقْرِ.',
-      latin: 'Allāhumma Rabbas-samāwātis-sab‘i, wa Rabbal-‘arshil-‘aẓīm, Rabbanā wa Rabba kulli shay\', Antaẓ-Ẓāhiru falaysa fawqaka shay\', wa Antal-Bāṭinu falaysa dūnaka shay\', Munzilat-Tawrāti wal-Injīli wal-Furqān, Fāliqal-ḥabbi wan-nawā, a‘ūdhu bika min sharri kulli shay\'in Anta ākhidhun bi-nāṣiyatih, Antal-Awwalu falaysa qablaka shay\', wa Antal-Ākhiru falaysa ba‘daka shay\', iqḍi ‘annad-dayna wa aghninā minal-faqr.',
-      explanationEs: "¡Oh Allah, Señor de los siete cielos y Señor del Trono grandioso, Señor nuestro y Señor de todas las cosas! Tú eres el Manifiesto, y nada está por encima de Ti; y Tú eres el Oculto, y nada está más allá de Ti. Revelador de la Torá, el Evangelio y el Criterio. Haces germinar el grano y el hueso del dátil. Me refugio en Ti del mal de todas las cosas, pues Tú tienes sujetas sus riendas. Tú eres el Primero, y nada hubo antes de Ti; y Tú eres el Último, y nada habrá después de Ti. Paga nuestras deudas y líbranos de la pobreza.",
-      note: 'صحيح مسلم'
+      "text": "اللَّهُمَّ رَبَّ السَّمَاوَاتِ السَّبْعِ، وَرَبَّ العَرْشِ العَظِيمِ، رَبَّنَا وَرَبَّ كُلِّ شَيْءٍ، أَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، وَأَنْتَ البَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، مُنْزِلَ التَّوْرَاةِ وَالإِنْجِيلِ وَالفُرْقَانِ، فَالِقَ الحَبِّ وَالنَّوَى، أَعُوذُ بِكَ مِنْ شَرِّ كُلِّ شَيْءٍ أَنْتَ آخِذٌ بِنَاصِيَتِهِ، أَنْتَ الأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ الآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ، اقْضِ عَنَّا الدَّيْنَ وَأَغْنِنَا مِنَ الفَقْرِ.",
+      "latin": "Allāhumma Rabbas-samāwātis-sab‘i, wa Rabbal-‘arshil-‘aẓīm, Rabbanā wa Rabba kulli shay', Antaẓ-Ẓāhiru falaysa fawqaka shay', wa Antal-Bāṭinu falaysa dūnaka shay', Munzilat-Tawrāti wal-Injīli wal-Furqān, Fāliqal-ḥabbi wan-nawā, a‘ūdhu bika min sharri kulli shay'in Anta ākhidhun bi-nāṣiyatih, Antal-Awwalu falaysa qablaka shay', wa Antal-Ākhiru falaysa ba‘daka shay', iqḍi ‘annad-dayna wa aghninā minal-faqr.",
+      "explanationEs": "¡Oh Allah, Señor de los siete cielos y Señor del Trono grandioso, Señor nuestro y Señor de todas las cosas! Tú eres el Manifiesto, y nada está por encima de Ti; y Tú eres el Oculto, y nada está más allá de Ti. Revelador de la Torá, el Evangelio y el Criterio. Haces germinar el grano y el hueso del dátil. Me refugio en Ti del mal de todas las cosas, pues Tú tienes sujetas sus riendas. Tú eres el Primero, y nada hubo antes de Ti; y Tú eres el Último, y nada habrá después de Ti. Paga nuestras deudas y líbranos de la pobreza.",
+      "note": "صحيح مسلم",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20208.mp3"
+      ]
     },
     {
       "itemNumber": 209,
-      text: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنَّ لَكَ الحَمْدَ لَا إِلَهَ إِلَّا أَنْتَ المَنَّانُ بَدِيعُ السَّمَاوَاتِ وَالأَرْضِ، ذَا الجَلَالِ وَالإِكْرَامِ، يَا حَيُّ يَا قَيُّومُ، إِنِّي أَسْأَلُكَ.',
-      latin: 'Allāhumma innī as’aluka bi-anna lakal-ḥamda lā ilāha illā Antal-Mannānu Badī‘us-samāwāti wal-arḍ, Dhāl-Jalāli wal-Ikrām, yā Ḥayyu yā Qayyūmu innī as’aluk.',
-      explanationEs: "¡Oh Allah! Te pido porque a Ti pertenece toda alabanza; no hay divinidad digna de adoración excepto Tú, el Dadivoso, Originador de los cielos y de la tierra, Dueño de la Majestad y el Honor. ¡Oh Viviente, oh Sustentador! En verdad, Te suplico.",
-      note: 'الدعاء باسم الله الأعظم'
+      "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنَّ لَكَ الحَمْدَ لَا إِلَهَ إِلَّا أَنْتَ المَنَّانُ بَدِيعُ السَّمَاوَاتِ وَالأَرْضِ، ذَا الجَلَالِ وَالإِكْرَامِ، يَا حَيُّ يَا قَيُّومُ، إِنِّي أَسْأَلُكَ...\n\n(ثُمَّ تَطْلُبُ مَا تُرِيدُ.)",
+      "latin": "Allāhumma innī as’aluka bi-anna lakal-ḥamda lā ilāha illā Antal-Mannānu Badī‘us-samāwāti wal-arḍ, Dhāl-Jalāli wal-Ikrām, yā Ḥayyu yā Qayyūmu innī as’aluk...\n\n(Thumma taṭlubu mā turīd.)",
+      "explanationEs": "¡Oh Allah! Te pido porque a Ti pertenece toda alabanza; no hay divinidad digna de adoración excepto Tú, el Dadivoso, Originador de los cielos y de la tierra, Dueño de la Majestad y el Honor. ¡Oh Viviente, oh Sustentador! En verdad, Te suplico...\n\n(Después, pide lo que desees.)",
+      "note": "الدعاء باسم الله الأعظم"
     },
     {
       "itemNumber": 210,
