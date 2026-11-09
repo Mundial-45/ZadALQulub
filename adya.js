@@ -1660,237 +1660,110 @@ const adyaData = [
         "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002286.mp3"
       ]
     },
-    {
-      "itemNumber": 168,
-      text: 'اللَّهُمَّ اجْعَلْ نَسَائِمَ الجَنَّةِ تَهُبُّ عَلَيْهِمْ يَا أَرْحَمَ الرَّاحِمِينَ.',
-      latin: 'Allāhummaj-‘al nasā’imal-jannati tahubbu ‘alayhim yā Arḥamar-rāḥimīn.',
-      explanationEs: 'Oh Allah, haz que las brisas del Paraíso soplen sobre ellos, Oh el Más Misericordioso.',
-      note: 'دعاء بالرحمة والنسيم في القبر'
-    },
-    {
-      "itemNumber": 169,
-      text: 'اللَّهُمَّ كَمَا أَمْطَرْتَ عَلَيْنَا مِنْ خَيْرِكَ، أَمْطِرْ عَلَى قُبُورِ مَنْ رَحَلُوا مِنْ سَحَائِبِ رَحْمَتِكَ، وَاجْعَلْ لَهُمْ فِي كُلِّ قَطْرَةِ مَطَرٍ رَاحَةً وَمَغْفِرَةً يَا رَبَّ العَالَمِينَ.',
-      latin: 'Allāhumma kamā amṭarta ‘alaynā min khayrik, amṭir ‘alā qubūri man raḥalū min saḥā’ibi raḥmatik, waj-‘al lahum fī kulli qaṭrati maṭarin rāḥatan wa maghfiratan yā Rabbal-‘ālamīn.',
-      explanationEs: 'Oh Allah, así como nos has enviado Tu lluvia de bien, envía sobre las tumbas de quienes partieron las nubes de Tu misericordia, y concédeles con cada gota descanso y perdón.',
-      note: 'دعاء عند نزول المطر للمتوفين'
-    },
-    {
-      "itemNumber": 170,
-      "text": "رَبِّ بَلِّلْ تُرْبَةَ مَنْ فَارَقُونَا بِقَطَرَاتٍ مِنْ خَيْرِكَ، وَبَلِّلْ قَبْرَ وَالِدَيَّ مِنْ أَنْهَارِ جَنَّتِكَ، وَاجْعَلْ لَهُمَا فِي كُلِّ قَطْرَةِ مَطَرٍ رَاحَةً وَمَغْفِرَةً يَا رَبَّ العَالَمِينَ.",
-      "latin": "Rabbi ballil turbata man fāraqūnā bi-qaṭarātin min khayrik, wa ballil qabra wālidayya min anhāri jannatik, waj-‘al lahumā fī kulli qaṭrati maṭarin rāḥatan wa maghfirah.",
-      "explanationEs": "¡Señor mío! Riega la tierra de quienes nos han dejado con gotas de Tu bondad. Riega las tumbas de mis padres con los ríos de Tu Paraíso y concede a ambos, con cada gota de lluvia, descanso y perdón, ¡oh, Señor de los mundos!",
-      "note": "دعاء سقيا القبر والرحمة"
-    },
-    {
-      "itemNumber": 171,
-      "text": "اللَّهُمَّ أَرْوِ قُبُورَ مَنْ انْقَطَعَتْ حِيلَتُهُمْ مِنَ الدُّنْيَا، وَاجْعَلْهُمْ مِنَ المُكَرَّمِينَ المُنَعَّمِينَ.",
-      "latin": "Allāhummar-wi qubūra man inqaṭa‘at ḥīlatuhum minad-dunyā, waj-‘alhum minal-mukarramīnal-muna‘‘amīn.",
-      "explanationEs": "Oh Allah, sacia las tumbas de aquellos cuyos recursos en este mundo se han terminado y hazlos de los honrados y colmados de bendiciones.",
-      "note": "دعاء للمتوفين بالكرامة والنعيم"
-    },
-    {
-      "itemNumber": 172,
-      text: 'اللَّهُمَّ ارْحَمْ مَنْ عَجَزَتْ عُقُولُنَا عَنْ اسْتِيعَابِ فِرَاقِهِمْ، وَاجْعَلْ قُبُورَهُمْ نُورًا وَضِيَاءً إِلَى يَوْمِ يُبْعَثُونَ.',
-      latin: 'Allāhummar-ḥam man ‘ajazat ‘uqūlunā ‘an istī‘ābi firāqihim, waj-‘al qubūrahum nūran wa ḍiyā’an ilā yawmi yub‘athūn.',
-      explanationEs: 'Oh Allah, ten misericordia de aquellos cuya partida nuestras mentes no pueden asimilar, y haz que sus tumbas sean luz y resplandor hasta el Día de la Resurrección.',
-      note: 'دعاء للنور والضياء في القبر'
-    },
-    {
-      "itemNumber": 173,
-      text: 'اللَّهُمَّ ارْحَمْ أَبِي وَأُمِّي وَعَوِّضْهُمَا عَنْ كُلِّ أَلَمٍ أَصَابَهُمَا بِجَنَّةٍ عَرْضُهَا السَّمَاوَاتُ وَالأَرْضُ.',
-      latin: 'Allāhummar-ḥam abī wa ummī wa ‘awwiḍ-humā ‘an kulli alamin aṣābahumā bi-jannatin ‘arḍuhās-samāwātu wal-arḍ.',
-      explanationEs: 'Oh Allah, ten misericordia de mi padre y de mi madre y recompénsalos por cada dolor con un Paraíso tan vasto como los cielos y la tierra.',
-      note: 'دعاء التعويض بالجنة'
-    },
-    {
-      "itemNumber": 174,
-      "text": "اللَّهُمَّ اجْعَلْ قَبْرَ أُمِّي وَأَبِي رَوْضَةً وَبُسْتَانًا فِي نَعِيمٍ دَائِمٍ وَدَارِ خُلْدٍ تَحْتَ ظِلِّ الرَّحْمَنِ.",
-      "latin": "Allāhummaj-‘al qabra ummī wa abī rawḍatan wa bustānan fī na‘īmin dā’imin wa dāri khuldin taḥta ẓillir-Raḥmān.",
-      "explanationEs": "¡Oh, Allah! Haz que las tumbas de mi madre y de mi padre sean jardines llenos de dicha eterna, en una morada de felicidad perpetua, bajo la sombra de Tu misericordia, ¡oh, el Misericordioso!",
-      "note": "دعاء بالنعيم الخالد"
-    },
-    {
-      "itemNumber": 175,
-      text: 'اللَّهُمَّ اجْعَلْ عَنْ يَمِينِ وَالِدَيَّ نُورًا، حَتَّى تَبْعَثَهُمَا آمِنَيْنِ مُطْمَئِنَّيْنِ فِي نُورٍ مِنْ نُورِكَ.',
-      latin: 'Allāhummaj-‘al ‘an yamīni wālidayya nūran, ḥattā tab‘athahumā āminayni muṭma’innayni fī nūrin min nūrik.',
-      explanationEs: 'Oh Allah, pon a la derecha de mis padres una luz, para que los resucites seguros y tranquilos en una luz procedente de Tu luz.',
-      note: 'دعاء بالاستقرار والنور يوم القيامة'
-    },
-    {
-      "itemNumber": 176,
-      text: 'اللَّهُمَّ افْسَحْ لِأَبِي فِي قَبْرِهِ مَدَّ بَصَرِهِ، وَافْرُشْ قَبْرَهُ مِنْ فِرَاشِ الجَنَّةِ، وَأَعِذْ أُمِّي مِنْ عَذَابِ القَبْرِ وَوَحْشَتِهِ، وَامْلَأْ قُبُورَهُمَا بِالرِّضَا وَالنُّورِ وَالفُسْحَةِ وَالسُّرُورِ.',
-      latin: 'Allāhummaf-saḥ li-abī fī qabrihī madda baṣarih, waf-rush qabrahū min firāshil-jannah, wa a‘idh ummī min ‘adhābil-qabri wa waḥshatih, wam-la’ qubūrahumā bir-riḍā wan-nūri wal-fusḥati was-surūr.',
-      explanationEs: 'Oh Allah, amplía la tumba de mi padre hasta donde alcance su vista, adórnala con lechos del Paraíso, protege a mi madre del castigo y la soledad de la tumba, y llena sus tumbas de satisfacción, luz, espacio y alegría.',
-      note: 'دعاء شامل لفسحة القبر والأنس'
-    },
-    {
-      "itemNumber": 177,
-      "text": "اللَّهُمَّ إِنْ كَانَ وَالِدَايَ مُحْسِنَيْنِ فَزِدْهُمَا مِنْ حَسَنَاتِهِمَا، وَإِنْ كَانَا مُسِيئَيْنِ فَتَجَاوَزْ عَنْ سَيِّئَاتِهِمَا، اللَّهُمَّ لَا تَحْرِمْنَا أَجْرَهُمَا، وَلَا تَفْتِنَّا بَعْدَهُمَا، وَاغْفِرْ لَنَا وَلَهُمَا، وَأَدْخِلْهُمَا الجَنَّةَ بِغَيْرِ حِسَابٍ وَلَا سَابِقَةِ عَذَابٍ، وَاجْعَلْ قَبْرَهُمَا رَوْضَةً مِنْ رِيَاضِ الجَنَّةِ.",
-      "latin": "Allāhumma in kāna wālidayya muḥsinayni fazid-humā min ḥasanātihimā, wa in kānā musīʾayni fatajāwaz ʿan sayyiʾātihimā.\nAllāhumma lā taḥrimnā ajrahumā, wa lā taftinnā baʿdahumā, waghfir lanā wa lahumā, wa adkhilhumā al-jannata bighayri ḥisābin wa lā sābiqati ʿadhābin, wajʿal qabrahumā rawḍatan min riyāḍi al-jannah.",
-      "explanationEs": "¡Oh, Allah! Si mis padres fueron de quienes hicieron el bien, aumenta sus recompensas y sus buenas obras; y si cometieron faltas, pasa por alto sus pecados y perdónalos.\n\n¡Oh, Allah! No nos prives de la recompensa de nuestras buenas obras en su favor, no permitas que caigamos en pruebas y extravíos después de su partida, y perdónanos a nosotros y a ellos.\n\nHaz que entren en el Paraíso sin rendir cuentas y sin sufrir ningún castigo previo, y convierte sus tumbas en jardines de los jardines del Paraíso.",
-      "note": "دعاء بالتجاوز ودخول الجنة بغير حساب"
-    },
-    {
-      "itemNumber": 178,
-      "text": "اللَّهُمَّ فِي يَوْمِ الجُمُعَةِ المُبَارَكِ ارْحَمْ أُمِّي وَأَبِي وَاغْفِرْ لَهُمَا وَانْظُرْ إِلَيْهِمَا بِعَيْنِ لُطْفِكَ وَكَرَمِكَ، وَارْفَعْ دَرَجَاتِهِمَا فِي المَهْدِيِّينَ وَافْسَحْ لَهُمَا فِي قَبْرِهِمَا.",
-      "latin": "Allāhumma fī yawmil-jumu‘atil-mubāraki irḥam ummī wa abī wagh-fir lahumā wan-ẓur ilayhimā bi-‘ayni luṭfika wa karamik, war-fa‘ darajātihimā fil-mahdiyyīn waf-saḥ lahumā fī qabrihimā.",
-      "explanationEs": "Oh Allah, en este bendito día de viernes, ten misericordia de mi madre y mi padre, perdónalos, míralos con Ojo de benevolencia y generosidad, eleva sus rangos entre los guiados y amplía sus tumbas.",
-      "note": "دعاء يوم الجمعة للوالدين"
-    },
-    {
-      "itemNumber": 179,
-      text: 'اللَّهُمَّ أَبْدِلْهُمَا دَارًا خَيْرًا مِنْ دَارِهِمَا، وَأَهْلًا خَيْرًا مِنْ أَهْلِهِمَا، وَأَدْخِلْهُمَا الجَنَّةَ، وَأَعِذْهُمَا مِنْ عَذَابِ القَبْرِ وَمِنْ عَذَابِ النَّارِ.',
-      latin: 'Allāhumma abdil-humā dāran khayran min dārihimā, wa ahlan khayran min ahlihimā, wa adkhil-humāl-jannata, wa a‘idh-humā min ‘adhābil-qabri wa min ‘adhābin-nār.',
-      explanationEs: 'Oh Allah, concédeles una morada mejor que la suya y una familia mejor que la suya; introdúcelos en el Paraíso y protégelos del castigo de la tumba y del Fuego.',
-      note: 'دعاء التبديل والوقاية من العذاب'
-    },
-    {
-      "itemNumber": 180,
-      text: 'اللَّهُمَّ ارْحَمْهُمَا فَوْقَ الأَرْضِ، وَتَحْتَ الأَرْضِ، وَيَوْمَ العَرْضِ عَلَيْكَ، اللَّهُمَّ قِهِمَا عَذَابَكَ يَوْمَ تَبْعَثُ عِبَادَكَ.',
-      latin: 'Allāhummar-ḥamhumā fawqal-arḍ, wa taḥtal-arḍ, wa yawmal-‘arḍi ‘alayk, Allāhumma qihimā ‘adhābaka yawma tab‘athu ‘ibādak.',
-      explanationEs: 'Oh Allah, ten misericordia de ellos sobre la tierra, debajo de la tierra y el Día en que comparezcan ante Ti. Oh Allah, protégelos de Tu castigo el Día en que resucites a Tus siervos.',
-      note: 'دعاء الوقاية يوم البعث'
-    },
-    {
-      "itemNumber": 181,
-      "text": "اللَّهُمَّ يَا ذَا الجَلَالِ وَالإِكْرَامِ، يَا حَيُّ يَا قَيُّومُ، ندعُوكَ بِاسْمِكَ الأَعْظَمِ أَنْ تَبْسُطَ عَلَى وَالِدَيَّ مِنْ بَرَكَاتِكَ وَرَحْمَتِكَ وَرِزْقِكَ، وَأَنْ تُلْبِسَهُمَا العَافِيَةَ وَتَخْتِمَ لَهُمَا بِالمَغْفِرَةِ، وَتَكْفِيَهُمَا كُلَّ هَوْلٍ دُونَ الجَنَّةِ بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ.",
-      "latin": "Allāhumma yā dhal-jalāli wal-ikrām, yā Ḥayyu yā Qayyūm, nadʿūka bismika al-aʿẓami an tabsuṭa ʿalā wālidayya min barakātika wa raḥmatika wa rizqika, wa an tulbisahumā al-ʿāfiyata wa takhtima lahumā bil-maghfirati, wa takfiyahumā kulla hawlin dūna al-jannati biraḥmatika yā Arḥama ar-rāḥimīn.",
-      "explanationEs": "¡Oh, Allah, Dueño de la Majestad y la Generosidad! ¡Oh, Viviente, Sustentador de toda existencia! Te suplicamos por Tu Nombre más grandioso que colmes a mis padres de Tus bendiciones, Tu misericordia y Tu sustento; que los cubras con bienestar y salud, que selles sus vidas con el perdón y que los protejas de todo temor y dificultad hasta que alcancen el Paraíso, por Tu misericordia, ¡oh, el Más Misericordioso de quienes tienen misericordia!",
-      "note": "دعاء الجامعة والبركة باسم الله الأعظم"
-    },
-    {
-      "itemNumber": 182,
-      "text": "اللَّهُمَّ اغْفِرْ لَهُمَا، وَعَافِهِمَا، وَاعْفُ عَنْهُمَا، وَأَكْرِمْ نُزُلَهُمَا، وَوَسِّعْ مَدْخَلَهُمَا، وَاغْسِلْهُمَا بِالمَاءِ وَالثَّلْجِ وَالبَرَدِ، وَنَقِّهِمَا مِنَ الذُّنُوبِ وَالخَطَايَا كَمَا يُنَقَّى الثَّوْبُ الأَبْيَضُ مِنَ الدَّنَسِ.",
-      "latin": "Allāhummagh-fir lahumā, wa ‘āfihimā, wa‘fu ‘anhumā, wa akrim nuzulahumā, wa wassi‘ madkhalahumā, wagh-sil-humā bil-mā’i wath-thalji wal-barad, wa naqqihimā minal-dhunūbi wal-khaṭāyā kamā yunaqqāth-thawbul-abyaḍu minad-danas.",
-      "explanationEs": "¡Oh, Allah! Perdona a mis padres, concédeles bienestar y absuélvelos de sus faltas. Honra su morada, ensancha su lugar de descanso y lávalos con agua, nieve y granizo. Purifícalos de sus pecados y faltas como se purifica una vestidura blanca de toda suciedad.",
-      "note": "صحيح مسلم"
-    },
-    {
-      "itemNumber": 183,
-      "text": "اللَّهُمَّ فِي العَشْرِ الأَوَاخِرِ مِنْ رَمَضَانَ ارْحَمْ أُمِّي وَأَبِي، وَاجْعَلِ المِسْكَ تُرَابَهُمْ، وَالحَرِيرَ فِرَاشَهُمْ، وَأَسْكِنْهُمْ فِي جَنَّاتِ النَّعِيمِ.",
-      "latin": "Allāhumma fīl-‘ashril-awākhiri min Ramaḍāna irḥam ummī wa abī, waj-‘alil-miska turābahum, wal-ḥarīra firāshahum, wa askin-hum fī jannātin-na‘īm.",
-      "explanationEs": "¡Oh, Allah! En los últimos diez días de Ramadán, ten misericordia de mi madre y de mi padre. Haz que el almizcle sea la fragancia de su tierra, que la seda sea su lecho y concédeles morada en los Jardines de las Delicias.",
-      "note": "دعاء العشر الأواخر من رمضان"
-    },
-    {
-      "itemNumber": 184,
-      "text": "اللَّهُمَّ ارْحَمْ وَاغْفِرْ لِكُلِّ مَنْ رَحَلَ عَنَّا وَفَجَعَنَا رَحِيلُهُ، اللَّهُمَّ آنِسْهُمْ فِي قُبُورِهِمْ وَاجْعَلْهُمْ فِي مَسَاكِنِ جَنَّتِكَ آمِنِينَ مُطْمَئِنِّينَ يَا رَبَّ العَالَمِينَ.",
-      "latin": "Allāhummar-ḥam wagh-fir likulli man raḥala ‘annā wa faja‘anā raḥīluh, Allāhumma ānis-hum fī qubūrihim waj-‘alhum fī masākini jannatika āminīna muṭma’innīna yā Rabbal-‘ālamīn.",
-      "explanationEs": "¡Oh, Allah! Ten misericordia y perdona a todos aquellos que nos han dejado y cuya partida nos ha causado un profundo dolor.\n\n¡Oh, Allah! Sé su compañía y consuelo en sus tumbas, y haz que habiten seguros y tranquilos en las moradas de Tu Paraíso, ¡oh, Señor de los mundos!",
-      "note": "دعاء عام للموتى والطمأنينة"
-    },
-    {
-      "itemNumber": 185,
-      "text": "اللَّهُمَّ ارْحَمْ أُمِّي وَاغْفِرْ لَهَا وَأَدْخِلْهَا جَنَّتَكَ مَعَ الصِّدِّيقِينَ وَالأَبْرَارِ وَالصَّالِحِينَ، وَارْحَمْ أَبِي وَتُبْ عَنْهُ وَتَقَبَّلْ دُعَاءَنَا لَهُ، وَاكْتُبْ لَنَا رُؤْيَتَهُمَا فِي جَنَّاتِ النَّعِيمِ.",
-      "latin": "Allāhummar-ḥam ummī wagh-fir lahā wa adkhilhā jannataka ma‘aṣ-ṣiddīqīna wal-abrāri waṣ-ṣāliḥīn, war-ḥam abī wa tub ‘anhu wa taqabbal du‘ā’anā lah, wak-tub lanā ru’yatahumā fī jannātin-na‘īm.",
-      "explanationEs": "¡Oh, Allah! Ten misericordia de mi madre, perdónala e introdúcela en Tu Paraíso junto a los veraces, los piadosos y los virtuosos.\n\nTen misericordia de mi padre, acepta su arrepentimiento y acoge nuestras súplicas por él.\n\nY concédenos la dicha de volver a encontrarnos con ambos en los Jardines de las Delicias.",
-      "note": "دعاء بالجمع في الجنة والرؤية"
-    },
-    {
-      "itemNumber": 186,
-      "text": "اللَّهُمَّ اغْفِرْ لِأُمِّي وَأَبِي وَارْحَمْهُمَا وَاعْفُ عَنْهُمَا، وَأَسْكِنْهُمَا فَسِيحَ جَنَّاتِكَ وَلَا تَجْعَلْهُمَا فِي الآخِرَةِ مِنَ الظَّالِمِينَ بِرَحْمَتِكَ يَا أَكْرَمَ الأَكْرَمِينَ.",
-      "latin": "Allāhummagh-fir li-ummī wa abī war-ḥamhumā wa‘fu ‘anhumā, wa askin-humā fasīḥa jannātika wa lā taj‘al-humā fil-ākhirati minaż-ẓālimīna bi-raḥmatika yā Akramal-akramīn.",
-      "explanationEs": "¡Oh, Allah! Perdona a mi madre y a mi padre, ten misericordia de ambos y absuélvelos de sus faltas. Concédeles una morada en la inmensidad de Tus jardines del Paraíso y no permitas que, en la otra vida, formen parte de quienes se han perjudicado a sí mismos. Por Tu misericordia, ¡oh, el Más Generoso de los generosos!",
-      "note": "دعاء العفو والفسحة في الجنة"
-    },
-    {
-      "itemNumber": 187,
-      "text": "اللَّهُمَّ عَامِلْ أَبِي وَأُمِّي بِمَا أَنْتَ أَهْلُهُ، وَلَا تُعَامِلْهُمَا بِمَا هُمَا أَهْلُهُ، اللَّهُمَّ اجْزِهِمَا عَنِ الإِحْسَانِ إِحْسَانًا وَعَنِ الإِسَاءَةِ عَفْوًا وَغُفْرَانًا.",
-      "latin": "Allāhumma ‘āmil abī wa ummī bimā Anta ahluh, wa lā tu‘āmil-humā bimā humā ahluh, Allāhummaj-zihimā ‘anil-iḥsāni iḥsānā wa ‘anil-isā’ati ‘afwan wa ghufrānā.",
-      "explanationEs": "¡Oh, Allah! Trata a mi padre y a mi madre conforme a lo que Tú mereces por Tu grandeza y misericordia, y no conforme a lo que ellos merecen por sus propias obras.\n\n¡Oh, Allah! Recompénsalos por sus buenas acciones con aún más bondad, y perdona sus malas acciones con Tu indulgencia y Tu perdón.",
-      "note": "دعاء الجزاء بالخير والعفو"
-    },
-    {
-      "itemNumber": 188,
-      "text": "اللَّهُمَّ ارْحَمْ رُوحًا صَعِدَتْ إِلَيْكَ لَمْ يَعُدْ بَيْنَنَا وَبَيْنَهَا إِلَّا الدُّعَاءُ، اللَّهُمَّ ارْحَمْهَا وَاغْفِرْ لَهَا وَانْظُرْ إِلَيْهَا بِعَيْنِ لُطْفِكَ وَكَرَمِكَ يَا رَبَّ العَالَمِينَ.",
-      "latin": "Allāhummar-ḥam rūḥan ṣa‘idat ilayka lam ya‘ud baynanā wa baynahā illād-du‘ā’, Allāhummar-ḥamhā wagh-fir lahā wan-ẓur ilayhā bi-‘ayni luṭfika wa karamika yā Rabbal-‘ālamīn.",
-      "explanationEs": "¡Oh, Allah! Ten misericordia de un alma que ha ascendido hasta Ti y entre la cual y nosotros ya no queda más que la súplica.\n\n¡Oh, Allah! Ten misericordia de ella, perdónala y mírala con Tu mirada de bondad y generosidad, ¡oh, Señor de todos los mundos!",
-      "note": "دعاء للروح الصاعدة والرحمة"
-    },
-    {
-      "itemNumber": 189,
-      "text": "اللَّهُمَّ فِي يَوْمِ عَرَفَةَ الفَضِيلِ أَدْعُوكَ لِوَالِدَيَّ: رَبِّ أَبْدِلْهُمَا دَارًا خَيْرًا مِنْ دَارِهِمَا، وَأَهْلًا خَيْرًا مِنْ أَهْلِهِمَا، وَأَدْخِلْهُمَا الجَنَّةَ، وَأَعِذْهُمَا مِنْ عَذَابِ القَبْرِ وَمِنْ عَذَابِ النَّارِ.",
-      "latin": "Allāhumma fī yawmi ‘Arafatal-faḍīli ad‘ūka li-wālidayy: Rabbi abdil-humā dāran khayran min dārihimā, wa ahlan khayran min ahlihimā, wa adkhil-humāl-jannata wa a‘idh-humā min ‘adhābil-qabri wa min ‘adhābin-nār.",
-      "explanationEs": "¡Oh, Allah! En este bendito día de Arafat, Te suplico por mis padres:\n\nSeñor mío, concédeles una morada mejor que la que tuvieron en este mundo y una compañía mejor que la que tuvieron. Hazlos entrar en el Paraíso y protégelos del castigo de la tumba y del tormento del Fuego.",
-      "note": "دعاء يوم عرفة للوالدين"
-    },
-    {
-      "itemNumber": 190,
-      text: 'اللَّهُمَّ فِي هَذَا اليَوْمِ الفَضِيلِ أَسْأَلُكَ أَنْ تُحْسِنَ إِلَى وَالِدَيَّ إِنْ كَانَا مُحْسِنَيْنِ، وَإِنْ كَانَا مُسِيئَيْنِ فَتَجَاوَزْ عَنْهُمَا، وَأَدْخِلْهُمَا الجَنَّةَ مِنْ غَيْرِ حِسَابٍ وَلَا سَابِقَةِ عَذَابٍ.',
-      latin: 'Allāhumma fī hādhāl-yawmil-faḍīli as’aluka an tuḥsina ilā wālidayya in kānā muḥsinayn, wa in kānā musī’ayni fa-tajāwaz ‘anhumā, wa adkhil-humāl-jannata min ghayri ḥisābin wa lā sābiqati ‘adhāb.',
-      explanationEs: "¡Oh Allah! En este día virtuoso, te pido que colmes de bien a mis padres si fueron de los bienhechores y que pases por alto sus faltas si obraron mal. Hazlos entrar en el Paraíso sin rendir cuentas y sin que hayan sufrido un castigo previo.",
-      note: 'دعاء الإحسان والتجاوز'
-    },
-    {
-      "itemNumber": 191,
-      "text": "اللَّهُمَّ ارْحَمْ وَالِدَيَّ وَاغْفِرْ لَهُمَا وَارْضَ عَنْهُمَا رِضًى تَحِلُّ بِهِ عَلَيْهِمَا جَوَامِعَ رِضْوَانِكَ، وَتُحِلَّهُمَا بِهِ دَارَ كَرَامَتِكَ وَأَمَانِكَ وَمَوَاطِنَ عَفْوِكَ وَغُفْرَانِكَ.",
-      "latin": "Allāhummar-ḥam wālidayya wagh-fir lahumā war-ḍa ‘anhumā riḍan taḥillu bihī ‘alayhimā jawāmi‘a riḍwānik, wa tuḥilluhumā bihī dāra karāmatika wa amānika wa mawāṭina ‘afwika wa ghufrānik.",
-      "explanationEs": "«Oh Allah, ten misericordia de mis padres, perdónalos y complace Te de ellos con una complacencia que les otorgue la plenitud de Tu beneplácito, y hazlos habitar por ella en la morada de Tu honor y seguridad, y en los lugares de Tu perdón y absolución».\n",
-      "note": "دعاء الرضوان والدار الأبدية"
-    },
-    {
-      "itemNumber": 192,
-      "text": "رَبِّ فِي هَذَا اليَوْمِ الَّذِي تُبَاهِي فِيهِ بِعِبَادِكَ اِغْفِرْ لِوَالِدَيَّ مَغْفِرَةً جَامِعَةً تَمْحُو بِهَا سَالِفَ أَوْزَارِهِمَا وَسَيِّئَ إِصْرَارِهِمَا، وَارْحَمْهُمَا رَحْمَةً تُنِيرُ لَهُمَا المَضْجَعَ فِي قُبُورِهِمَا، وَتُؤَمِّنُهُمَا يَوْمَ الفَزَعِ عِنْدَ نُشُورِهِمَا.",
-      "latin": "Rabbi fī hādhāl-yawmil-ladhī tubāhī bihī bi-‘ibādik igh-fir li-wālidayya maghfiratan jāmi‘atan tamḥū bihā sālifa awzārihimā, war-ḥamhumā raḥmatan tunīru lahumāl-maḍja‘a fī qubūrihimā, wa tu’amminuhumā yawmal-faza‘i ‘inda nushūrihimā.",
-      "explanationEs": "«Señor mío, en este día en el que Te enorgulleces de Tus siervos, perdona a mis padres con un perdón integral con el que borres sus faltas pasadas y la persistencia en sus errores, y ten misericordia de ellos con una misericordia que ilumine su lecho en sus tumbas y los ponga a salvo el Día del Gran Terror en su resurrección».\n",
-      "note": "دعاء الغفران الأبدي والأمان"
-    },
-    {
-      "itemNumber": 193,
-      "text": "اللَّهُمَّ ارْزُقْهُمَا الجَنَّةَ وَبَاعِدْ بَيْنَهُمَا وَبَيْنَ النَّارِ، وَشَفِّعْ فِيهِمَا نَبِيَّنَا وَمُصْطَفَاكَ، وَاحْشُرْهُمَا تَحْتَ لِوَائِهِ، وَاسْقِهِمَا مِنْ يَدِهِ الشَّرِيفَةِ شَرْبَةً هَنِيئَةً لَا يَظْمَئَانِ بَعْدَهَا أَبَدًا.",
-      "latin": "Allāhummar-zuq-humāl-jannata wa bā‘id baynahumā wa baynan-nār, wa shaffi‘ fīhimā Nabiyyanā wa Muṣṭafāk, waḥ-shur-humā taḥta liwā’ih, was-qihimā min yadihish-sharīfati sharbatan hanī’atan lā yaẓma’āni ba‘dahā abadā.",
-      "explanationEs": "¡Oh Allah! Concédeles el Paraíso y aléjalos del Fuego. Haz que nuestro Profeta, Tu elegido, interceda por ellos; reúnelos bajo su estandarte y dales de beber de su noble mano un sorbo delicioso tras el cual nunca volverán a sentir sed.",
-      "note": "دعاء الشفاعة والشرب من الحوض"
-    },
-    {
-      "itemNumber": 194,
-      text: 'اللَّهُمَّ مَدَّ لَهُمَا فِي قَبْرِهِمَا مَدَّ بَصَرِهِمَا، وَأَنْزِلْ عَلَى قَبْرِهِمَا الضِّيَاءَ وَالنُّورَ وَالفُسْحَةَ وَالسُّرُورَ، وَافْسَحْ لَهُمَا فِيهِ وَنَوِّرْ لَهُمَا فِيهِ بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ.',
-      latin: 'Allāhumma madda lahumā fī qabrihimā madda baṣarihimā, wa anzil ‘alā qabrihimāḍ-ḍiyā’a wan-nūra wal-fusḥata was-surūr, waf-saḥ lahumā fīhi wa nawwir lahumā fīhi bi-raḥmatika yā Arḥamar-rāḥimīn.',
-      explanationEs: "¡Oh Allah! Amplía sus tumbas hasta donde alcance su vista y haz descender sobre ellas claridad, luz, amplitud y alegría. Dales espacio en ellas e ilumínalas para ellos con Tu misericordia, ¡oh el Más Misericordioso de quienes tienen misericordia!",
-      note: 'دعاء ضياء القبر وسعته'
-    },
-    {
-      "itemNumber": 195,
-      text: 'اللَّهُمَّ أَنْزِلْهُمْ مَنَازِلَ الصِّدِّيقِينَ وَالشُّهَدَاءِ وَالصَّالِحِينَ وَحَسُنَ أُولَئِكَ رَفِيقًا، اللَّهُمَّ أَنْزِلْ أَبِي مَنْزِلًا مُبَارَكًا وَأَنْتَ خَيْرُ المُنْزِلِينَ.',
-      latin: 'Allāhumma anzil-hum manāzilaṣ-ṣiddīqīna wash-shuhadā’i waṣ-ṣāliḥīna wa ḥasuna ulā’ika rafīqā, Allāhumma anzil abī manzilan mubārakan wa Anta khayrul-munzilīn.',
-      explanationEs: "¡Oh Allah! Haz que ocupen las moradas de los veraces, los mártires y los virtuosos; ¡qué excelentes compañeros son estos! ¡Oh Allah! Concede a mi padre una morada bendita; Tú eres el mejor de quienes dan alojamiento.",
-      note: 'دعاء المنازل المباركة والمرافقة الصالحة'
-    },
-    {
-      "itemNumber": 196,
-      text: 'يَا رَبِّ تَمِّمْ لَنَا فَرْحَتَنَا فِي هَذَا اليَوْمِ الفَضِيلِ بِالمَغْفِرَةِ وَالرِّضْوَانِ لِوَالِدَيْنَا يَا رَبَّ العَالَمِينَ.',
-      latin: 'Yā Rabbi tammim lanā farḥatanā fī hādhāl-yawmil-faḍīli bil-maghfirati war-riḍwāni li-wālidaynā yā Rabbal-‘ālamīn.',
-      explanationEs: "¡Señor mío! Completa nuestra alegría en este día virtuoso concediendo perdón y beneplácito a nuestros padres, ¡Señor de los mundos!",
-      note: 'دعاء الفرح بالمغفرة في العيد'
-    },
-    {
-      "itemNumber": 197,
-      text: 'اللَّهُمَّ قَدْ جَاءَنَا العِيدُ وَنَحْنُ فَاقِدُونَ لِآبَائِنَا، فَعَوِّضْنَا وَاجْبُرْ كَسْرَنَا وَاغْفِرْ لَهُمَا، وَارْزُقْنَا رُؤْيَتَهُمَا فِي المَنَامِ فِي أَحْسَنِ حُلَّةٍ وَعَلَى أَحْسَنِ هَيْئَةٍ.',
-      latin: 'Allāhumma qad jā’anāl-‘īdu wa naḥnu fāqidūna li-ābā’inā, fa-‘awwiḍnā waj-bur kasranā wagh-fir lahumā, war-zuqnā ru’yatahumā fil-manāmi fī aḥsani ḥullatin wa ‘alā aḥsani hay’ah.',
-      explanationEs: "¡Oh Allah! Ha llegado la festividad y sentimos la ausencia de nuestros padres. Compénsanos por su pérdida, reconforta nuestro dolor, perdónalos y concédenos verlos en sueños con el aspecto más hermoso y en la mejor apariencia.",
-      note: 'دعاء العيد للآباء ورؤيتهم في المنام'
-    },
-    {
-      "itemNumber": 198,
-      text: 'اللَّهُمَّ أَدْخِلْ وَالِدِينَا جَنَّاتِ الفِرْدَوْسِ الأَعْلَى وَاجْعَلْ عِيدَهُمْ هُنَاكَ يَا أَكْرَمَ الأَكْرَمِينَ.',
-      latin: 'Allāhumma adkhil wālidinā jannātil-firdawsil-a‘lā waj-‘al ‘īdahum hunāka yā Akramal-akramīn.',
-      explanationEs: "¡Oh Allah! Haz entrar a nuestros padres en los Jardines del Firdaws más elevado y haz que celebren allí su festividad, ¡oh el más Generoso de los generosos!",
-      note: 'دعاء الفردوس الأعلى في العيد'
-    },
-    {
-      "itemNumber": 199,
-      text: 'اللَّهُمَّ آنِسْ أُمِّي فِي وَحْدَتِهَا، وَفِي وَحْشَتِهَا، وَفِي غُرْبَتِهَا، وَانْقُلْ أَبِي مِنْ مَوَاطِنِ الدُّودِ وَضِيقِ اللُّحُودِ إِلَى جَنَّاتِ الخُلُودِ.',
-      latin: 'Allāhumma ānis ummī fī waḥdatihā, wa fī waḥshatihā, wa fī ghurbatihā, wan-qul abī min mawāṭinid-dūdi wa ḍīqil-luḥūdi ilā jannātil-khulūd.',
-      explanationEs: "¡Oh Allah! Acompaña a mi madre en su soledad, en su desamparo y en su lejanía; y traslada a mi padre de la morada de los gusanos y la estrechez de la tumba a los Jardines de la Eternidad.",
-      note: 'دعاء الأنس في القبر والنقل للخلود'
-    },
-    {
-      "itemNumber": 200,
-      "text": "اللَّهُمَّ اجْعَلْ قَبْرَهُمَا رَوْضَةً مِنْ رِيَاضِ الجَنَّةِ وَلَا تَجْعَلْهُ حُفْرَةً مِنْ حُفَرِ النَّارِ، وَعَامِلْهُمَا بِمَا أَنْتَ أَهْلُهُ وَلَا تُعَامِلْهُمَا بِمَا هُمَا أَهْلُهُ يَا كَرِيمُ يَا رَحِيمُ.",
-      "latin": "Allāhummaj-‘al qabrahumā rawḍatan min riyāḍil-jannati wa lā taj‘alhu ḥufratan min ḥufarin-nār, wa ‘āmil-humā bimā Anta ahluh wa lā tu‘āmil-humā bimā humā ahluh yā Karīmu yā Raḥīm.",
-      "explanationEs": "¡Oh Allah! Haz que sus tumbas sean jardines de los jardines del Paraíso y no fosas de las fosas del Fuego. Trátalos como corresponde a Tu generosidad y misericordia, y no según lo que ellos merecerían por sus obras. ¡Oh Generoso, oh Misericordioso!",
-      "note": "دعاء الروضة والرحمة"
-    }
+"itemNumber": 186,
+    "text": "اللَّهُمَّ اغْفِرْ لِأُمِّي وَأَبِي وَارْحَمْهُمَا وَاعْفُ عَنْهُمَا، وَأَسْكِنْهُمَا فَسِيحَ جَنَّاتِكَ وَلَا تَجْعَلْهُمَا فِي الآخِرَةِ مِنَ الظَّالِمِينَ بِرَحْمَتِكَ يَا أَكْرَمَ الأَكْرَمِينَ.",
+    "latin": "Allāhummagh-fir li-ummī wa abī war-ḥamhumā wa‘fu ‘anhumā, wa askin-humā fasīḥa jannātika wa lā taj‘al-humā fil-ākhirati minaż-ẓālimīna bi-raḥmatika yā Akramal-akramīn.",
+    "explanationEs": "¡Oh, Allah! Perdona a mi madre y a mi padre, ten misericordia de ambos y absuélvelos de sus faltas. Concédeles una morada en la inmensidad de Tus jardines del Paraíso y no permitas que, en la otra vida, formen parte de quienes se han perjudicado a sí mismos. Por Tu misericordia, ¡oh, el Más Generoso de los generosos!",
+    "note": "دعاء العفو والفسحة في الجنة"
+  },
+  {
+    "itemNumber": 187,
+    "text": "اللَّهُمَّ عَامِلْ أَبِي وَأُمِّي بِمَا أَنْتَ أَهْلُهُ، وَلَا تُعَامِلْهُمَا بِمَا هُمَا أَهْلُهُ، اللَّهُمَّ اجْزِهِمَا عَنِ الإِحْسَانِ إِحْسَانًا وَعَنِ الإِسَاءَةِ عَفْوًا وَغُفْرَانًا.",
+    "latin": "Allāhumma ‘āmil abī wa ummī bimā Anta ahluh, wa lā tu‘āmil-humā bimā humā ahluh, Allāhummaj-zihimā ‘anil-iḥsāni iḥsānā wa ‘anil-isā’ati ‘afwan wa ghufrānā.",
+    "explanationEs": "¡Oh, Allah! Trata a mi padre y a mi madre conforme a lo que Tú mereces por Tu grandeza y misericordia, y no conforme a lo que ellos merecen por sus propias obras.\n\n¡Oh, Allah! Recompénsalos por sus buenas acciones con aún más bondad, y perdona sus malas acciones con Tu indulgencia y Tu perdón.",
+    "note": "دعاء الجزاء بالخير والعفو"
+  },
+  {
+    "itemNumber": 188,
+    "text": "اللَّهُمَّ ارْحَمْ رُوحًا صَعِدَتْ إِلَيْكَ لَمْ يَعُدْ بَيْنَنَا وَبَيْنَهَا إِلَّا الدُّعَاءُ، اللَّهُمَّ ارْحَمْهَا وَاغْفِرْ لَهَا وَانْظُرْ إِلَيْهَا بِعَيْنِ لُطْفِكَ وَكَرَمِكَ يَا رَبَّ العَالَمِينَ.",
+    "latin": "Allāhummar-ḥam rūḥan ṣa‘idat ilayka lam ya‘ud baynanā wa baynahā illād-du‘ā’, Allāhummar-ḥamhā wagh-fir lahā wan-ẓur ilayhā bi-‘ayni luṭfika wa karamika yā Rabbal-‘ālamīn.",
+    "explanationEs": "¡Oh, Allah! Ten misericordia de un alma que ha ascendido hasta Ti y entre la cual y nosotros ya no queda más que la súplica.\n\n¡Oh, Allah! Ten misericordia de ella, perdónala y mírala con Tu mirada de bondad y generosidad, ¡oh, Señor de todos los mundos!",
+    "note": "دعاء للروح الصاعدة والرحمة"
+  },
+  {
+    "itemNumber": 189,
+    "text": "اللَّهُمَّ فِي يَوْمِ عَرَفَةَ الْفَاضِلِ أَدْعُوكَ لِوَالِدَيَّ: رَبِّ أَبْدِلْهُمَا دَارًا خَيْرًا مِنْ دَارِهِمَا، وَأَهْلًا خَيْرًا مِنْ أَهْلِهِمَا، وَأَدْخِلْهُمَا الجَنَّةَ، وَأَعِذْهُمَا مِنْ عَذَابِ القَبْرِ وَمِنْ عَذَابِ النَّارِ.",
+    "latin": "Allāhumma fī yawmi ‘Arafatil-fāḍili ad‘ūka li-wālidayya: Rabbi abdil-humā dāran khayran min dārihimā, wa ahlan khayran min ahlihimā, wa adkhil-humāl-jannata wa a‘idh-humā min ‘adhābil-qabri wa min ‘adhābin-nār.",
+    "explanationEs": "¡Oh Allah! En este virtuoso Día de Arafat, Te suplico por mis padres: Señor mío, concédeles una morada mejor que la que tuvieron y una compañía mejor. Hazlos entrar en el Paraíso y protégelos del castigo de la tumba y del tormento del Fuego.",
+    "note": "دعاء يوم عرفة للوالدين"
+  },
+  {
+    "itemNumber": 190,
+    "text": "اللَّهُمَّ فِي هَذَا اليَوْمِ الفَضِيلِ أَسْأَلُكَ أَنْ تُحْسِنَ إِلَى وَالِدَيَّ إِنْ كَانَا مُحْسِنَيْنِ، وَإِنْ كَانَا مُسِيئَيْنِ فَتَجَاوَزْ عَنْهُمَا، وَأَدْخِلْهُمَا الجَنَّةَ مِنْ غَيْرِ حِسَابٍ وَلَا سَابِقَةِ عَذَابٍ.",
+    "latin": "Allāhumma fī hādhāl-yawmil-faḍīli as’aluka an tuḥsina ilā wālidayya in kānā muḥsinayn, wa in kānā musī’ayni fa-tajāwaz ‘anhumā, wa adkhil-humāl-jannata min ghayri ḥisābin wa lā sābiqati ‘adhāb.",
+    "explanationEs": "¡Oh Allah! En este día virtuoso, te pido que colmes de bien a mis padres si fueron de los bienhechores y que pases por alto sus faltas si obraron mal. Hazlos entrar en el Paraíso sin rendir cuentas y sin que hayan sufrido un castigo previo.",
+    "note": "دعاء الإحسان والتجاوز"
+  },
+  {
+    "itemNumber": 191,
+    "text": "اللَّهُمَّ ارْحَمْ وَالِدَيَّ وَاغْفِرْ لَهُمَا وَارْضَ عَنْهُمَا رِضًى تَحِلُّ بِهِ عَلَيْهِمَا جَوَامِعُ رِضْوَانِكَ، وَتُحِلَّهُمَا بِهِ دَارَ كَرَامَتِكَ وَأَمَانِكَ وَمَوَاطِنَ عَفْوِكَ وَغُفْرَانِكَ.",
+    "latin": "Allāhumma irḥam wālidayya wagh-fir lahumā war-ḍa ‘anhumā riḍan taḥillu bihī ‘alayhimā jawāmi‘u riḍwānik, wa tuḥilluhumā bihī dāra karāmatika wa amānika wa mawāṭina ‘afwika wa ghufrānik.",
+    "explanationEs": "¡Oh Allah! Ten misericordia de mis padres, perdónalos y concédeles Tu complacencia: una complacencia que les otorgue la plenitud de Tu beneplácito y los haga entrar en la morada de Tu honor y seguridad, y en los lugares de Tu perdón y absolución.",
+    "note": "دعاء الرضوان والدار الأبدية"
+  },
+  {
+    "itemNumber": 192,
+    "text": "رَبِّ فِي هَذَا اليَوْمِ الَّذِي تُبَاهِي فِيهِ بِعِبَادِكَ اِغْفِرْ لِوَالِدَيَّ مَغْفِرَةً جَامِعَةً تَمْحُو بِهَا سَالِفَ أَوْزَارِهِمَا وَسَيِّئَاتِ إِصْرَارِهِمَا، وَارْحَمْهُمَا رَحْمَةً تُنِيرُ لَهُمَا المَضْجَعَ فِي قُبُورِهِمَا، وَتُؤَمِّنُهُمَا يَوْمَ الفَزَعِ عِنْدَ نُشُورِهِمَا.",
+    "latin": "Rabbi fī hādhāl-yawmil-ladhī tubāhī fīhi bi-‘ibādik igh-fir li-wālidayya maghfiratan jāmi‘atan tamḥū bihā sālif awzārihimā wa sayyi’āti iṣrārihimā, war-ḥamhumā raḥmatan tunīru lahumāl-maḍja‘a fī qabrayhimā, wa tu’amminuhumā yawmal-faza‘i ‘inda nushūrihimā.",
+    "explanationEs": "Señor mío, en este día en el que Te enorgulleces de Tus siervos, perdona a mis padres con un perdón integral que borre sus faltas pasadas y la persistencia en sus errores. Ten misericordia de ellos con una misericordia que ilumine su lecho en sus tumbas y los ponga a salvo el Día del Gran Terror, cuando sean resucitados.",
+    "note": "دعاء الغفران الأبدي والأمان"
+  },
+  {
+    "itemNumber": 193,
+    "text": "اللَّهُمَّ ارْزُقْهُمَا الجَنَّةَ وَبَاعِدْ بَيْنَهُمَا وَبَيْنَ النَّارِ، وَشَفِّعْ فِيهِمَا نَبِيَّنَا وَمُصْطَفَاكَ، وَاحْشُرْهُمَا تَحْتَ لِوَائِهِ، وَاسْقِهِمَا مِنْ يَدِهِ الشَّرِيفَةِ شَرْبَةً هَنِيئَةً لَا يَظْمَئَانِ بَعْدَهَا أَبَدًا.",
+    "latin": "Allāhummar-zuq-humāl-jannata wa bā‘id baynahumā wa baynan-nār, wa shaffi‘ fīhimā Nabiyyanā wa Muṣṭafāk, waḥ-shur-humā taḥta liwā’ih, was-qihimā min yadihish-sharīfati sharbatan hanī’atan lā yaẓma’āni ba‘dahā abadā.",
+    "explanationEs": "¡Oh Allah! Concédeles el Paraíso y aléjalos del Fuego. Haz que nuestro Profeta, Tu elegido, interceda por ellos; reúnelos bajo su estandarte y dales de beber de su noble mano un sorbo delicioso tras el cual nunca volverán a sentir sed.",
+    "note": "دعاء الشفاعة والشرب من الحوض"
+  },
+  {
+    "itemNumber": 194,
+    "text": "اللَّهُمَّ مَدَّ لَهُمَا فِي قَبْرَيْهِمَا مَدَّ بَصَرِهِمَا، وَأَنْزِلْ عَلَى قَبْرَيْهِمَا الضِّيَاءَ وَالنُّورَ وَالفُسْحَةَ وَالسُّرُورَ، وَافْسَحْ لَهُمَا فِيهِ وَنَوِّرْ لَهُمَا فِيهِ بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ.",
+    "latin": "Allāhumma mudda lahumā fī qabrayhimā madda baṣarihimā, wa anzil ‘alā qabrayhimāḍ-ḍiyā’a wan-nūra wal-fusḥata was-surūr, waf-saḥ lahumā fīhi wa nawwir lahumā fīhi bi-raḥmatika yā Arḥamar-rāḥimīn.",
+    "explanationEs": "¡Oh Allah! Amplía las tumbas de ambos hasta donde alcance su vista. Haz descender sobre ellas claridad, luz, amplitud y alegría; dales espacio e ilumínalas para ellos con Tu misericordia, ¡oh, el Más Misericordioso de quienes tienen misericordia!",
+    "note": "دعاء ضياء القبر وسعته"
+  },
+  {
+    "itemNumber": 195,
+    "text": "اللَّهُمَّ أَنْزِلْهُمْ مَنَازِلَ الصِّدِّيقِينَ وَالشُّهَدَاءِ وَالصَّالِحِينَ وَحَسُنَ أُولَئِكَ رَفِيقًا، اللَّهُمَّ أَنْزِلْ أَبِي مَنْزِلًا مُبَارَكًا وَأَنْتَ خَيْرُ المُنْزِلِينَ.",
+    "latin": "Allāhumma anzil-hum manāzilaṣ-ṣiddīqīna wash-shuhadā’i waṣ-ṣāliḥīna wa ḥasuna ulā’ika rafīqā, Allāhumma anzil abī manzilan mubārakan wa Anta khayrul-munzilīn.",
+    "explanationEs": "¡Oh Allah! Haz que ocupen las moradas de los veraces, los mártires y los virtuosos; ¡qué excelentes compañeros son estos! ¡Oh Allah! Concede a mi padre una morada bendita; Tú eres el mejor de quienes dan alojamiento.",
+    "note": "دعاء المنازل المباركة والمرافقة الصالحة"
+  },
+  {
+    "itemNumber": 196,
+    "text": "يَا رَبِّ تَمِّمْ لَنَا فَرْحَتَنَا فِي هَذَا اليَوْمِ الفَضِيلِ بِالمَغْفِرَةِ وَالرِّضْوَانِ لِوَالِدَيْنَا يَا رَبَّ العَالَمِينَ.",
+    "latin": "Yā Rabbi tammim lanā farḥatanā fī hādhāl-yawmil-faḍīli bil-maghfirati war-riḍwāni li-wālidaynā yā Rabbal-‘ālamīn.",
+    "explanationEs": "¡Señor mío! Completa nuestra alegría en este día virtuoso concediendo perdón y beneplácito a nuestros padres, ¡Señor de los mundos!",
+    "note": "دعاء الفرح بالمغفرة في العيد"
+  },
+  {
+    "itemNumber": 197,
+    "text": "اللَّهُمَّ قَدْ جَاءَنَا العِيدُ وَنَحْنُ فَاقِدُونَ لِوَالِدَيْنَا، فَعَوِّضْنَا وَاجْبُرْ كَسْرَنَا وَاغْفِرْ لَهُمَا، وَارْزُقْنَا رُؤْيَتَهُمَا فِي المَنَامِ فِي أَحْسَنِ حُلَّةٍ وَعَلَى أَحْسَنِ هَيْئَةٍ.",
+    "latin": "Allāhumma qad jā’anāl-‘īdu wa naḥnu fāqidūna li-wālidaynā, fa-‘awwiḍnā waj-bur kasranā wagh-fir lahumā, war-zuqnā ru’yatahumā fil-manāmi fī aḥsani ḥullatin wa ‘alā aḥsani hay’ah.",
+    "explanationEs": "¡Oh Allah! Ha llegado la festividad y sentimos la ausencia de nuestros padres. Compénsanos por su pérdida, reconforta nuestro dolor, perdónalos y concédenos verlos en sueños con el aspecto más hermoso y en la mejor apariencia.",
+    "note": "دعاء العيد للآباء ورؤيتهم في المنام"
+  },
+  {
+    "itemNumber": 198,
+    "text": "اللَّهُمَّ أَدْخِلْ وَالِدَيْنَا جَنَّاتِ الفِرْدَوْسِ الأَعْلَى وَاجْعَلْ عِيدَهُمَا هُنَاكَ يَا أَكْرَمَ الأَكْرَمِينَ.",
+    "latin": "Allāhumma adkhil wālidaynā jannātil-firdawsil-a‘lā waj-‘al ‘īdahumā hunāka yā Akramal-akramīn.",
+    "explanationEs": "¡Oh Allah! Haz entrar a nuestros padres en los Jardines del Firdaws más elevado y haz que celebren allí su festividad, ¡oh, el Más Generoso de los generosos!",
+    "note": "دعاء الفردوس الأعلى في العيد"
+  },
+  {
+    "itemNumber": 199,
+    "text": "اللَّهُمَّ آنِسْ أُمِّي فِي وَحْدَتِهَا، وَفِي وَحْشَتِهَا، وَفِي غُرْبَتِهَا، وَانْقُلْ أَبِي مِنْ مَوَاطِنِ الدُّودِ وَضِيقِ اللُّحُودِ إِلَى جَنَّاتِ الخُلُودِ.",
+    "latin": "Allāhumma ānis ummī fī waḥdatihā, wa fī waḥshatihā, wa fī ghurbatihā, wan-qul abī min mawāṭinid-dūdi wa ḍīqil-luḥūdi ilā jannātil-khulūd.",
+    "explanationEs": "¡Oh Allah! Acompaña a mi madre en su soledad, en su desamparo y en su lejanía; y traslada a mi padre de la morada de los gusanos y la estrechez de la tumba a los Jardines de la Eternidad.",
+    "note": "دعاء الأنس في القبر والنقل للخلود"
+  },
+  {
+    "itemNumber": 200,
+    "text": "اللَّهُمَّ اجْعَلْ قَبْرَيْهِمَا رَوْضَةً مِنْ رِيَاضِ الجَنَّةِ وَلَا تَجْعَلْهُمَا حُفْرَتَيْنِ مِنْ حُفَرِ النَّارِ، وَعَامِلْهُمَا بِمَا أَنْتَ أَهْلُهُ وَلَا تُعَامِلْهُمَا بِمَا هُمَا أَهْلُهُ يَا كَرِيمُ يَا رَحِيمُ.",
+    "latin": "Allāhummaj-‘al qabrayhimā rawḍatan min riyāḍil-jannati wa lā taj‘alhumā ḥufratayni min ḥufarin-nār, wa ‘āmil-humā bimā Anta ahluh wa lā tu‘āmil-humā bimā humā ahluh yā Karīmu yā Raḥīm.",
+    "explanationEs": "¡Oh Allah! Haz que las dos tumbas sean jardines de los jardines del Paraíso y no dos fosas de las fosas del Fuego. Trata a mis padres conforme a lo que corresponde a Tu generosidad y misericordia, y no conforme a lo que ellos merecerían por sus obras. ¡Oh, Generoso, oh, Misericordioso!",
+    "note": "دعاء الروضة والرحمة"
+  }
 	]
 	},
 	{
