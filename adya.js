@@ -2046,52 +2046,73 @@ const adyaData = [
   items: [
     {
       "itemNumber": 224,
-      "text": "اللَّهُمَّ إِنِّي عَبْدُكَ، وَابْنُ عَبْدِكَ، وَابْنُ أَمَتِكَ، نَاصِيَتِي بِيَدِكَ، مَاضٍ فِيَّ حُكْمُكَ، عَدْلٌ فِيَّ قَضَاؤُكَ، أَسْأَلُكَ بِكُلِّ اسْمٍ هُوَ لَكَ سَمَّيْتَ بِهِ نَفْسَكَ، أَوْ عَلَّمْتَهُ أَحَدًا مِنْ خَلْقِكَ، أَوْ أَنْزَلْتَهُ فِي كِتَابِكَ، أَوْ اسْتَأْثَرْتَ بِهِ فِي عِلْمِ الغَيْبِ عِنْدَكَ، أَنْ تَجْعَلَ القُرْآنَ رَبِيعَ قَلْبِي، وَنُورَ صَدْرِي، وَجَلَاءَ حُزْنِي، وَذَهَابَ هَمِّي.",
-      "latin": "Allāhumma innī ‘abduka, wabnu ‘abdika, wabnu amatika, nāṣiyatī biyadika, māḍin fiyya ḥukmuka, ‘adlun fiyya qaḍā’uka, as’aluka bikulli ismin huwa laka sammayta bihī nafsaka, aw ‘allamtahū aḥadan min khalqika, aw anzaltahū fī kitābika, aw ista’tharta bihī fī ‘ilmil-ghaybi ‘indaka, an taj‘alal-Qur’āna rabī‘a qalbī, wa nūra ṣadrī, wa jalā’a ḥuznī, wa dhahāba hammī.",
-      "explanationEs": "¡Oh Allah! Soy Tu siervo, hijo de Tu siervo y de Tu sierva. Mi destino está en Tu mano; Tu decreto sobre mí se cumple y Tu juicio sobre mí es justo. Te pido por cada Nombre que Te pertenece, con el que Te has nombrado, que has enseñado a alguna de Tus criaturas, que has revelado en Tu Libro o que has reservado en el conocimiento de lo oculto junto a Ti, que hagas del Corán la primavera de mi corazón, la luz de mi pecho, el alivio de mi tristeza y la desaparición de mis preocupaciones.",
-      "note": "رواه أحمد وصححه الألباني"
+      "text": "اللَّهُمَّ إِنِّي عَبْدُكَ، ابْنُ عَبْدِكَ، ابْنُ أَمَتِكَ، نَاصِيَتِي بِيَدِكَ، مَاضٍ فِيَّ حُكْمُكَ، عَدْلٌ فِيَّ قَضَاؤُكَ، أَسْأَلُكَ بِكُلِّ اسْمٍ هُوَ لَكَ، سَمَّيْتَ بِهِ نَفْسَكَ، أَوْ أَنْزَلْتَهُ فِي كِتَابِكَ، أَوْ عَلَّمْتَهُ أَحَدًا مِنْ خَلْقِكَ، أَوِ اسْتَأْثَرْتَ بِهِ فِي عِلْمِ الْغَيْبِ عِنْدَكَ، أَنْ تَجْعَلَ الْقُرْآنَ الْعَظِيمَ رَبِيعَ قَلْبِي، وَنُورَ صَدْرِي، وَجِلَاءَ حُزْنِي، وَذَهَابَ هَمِّي.\n",
+      "latin": "Allāhumma innī ʿabduka, ibnu ʿabdika, ibnu amatika. Nāṣiyatī biyadika, māḍin fiyya ḥukmuka, ʿadlun fiyya qaḍāʾuka. Asʾaluka bikulli ismin huwa laka, sammayta bihi nafsaka, aw anzaltahu fī kitābika, aw ʿallamtahu aḥadan min khalqika, aw istaʾtharta bihi fī ʿilmi al-ghaybi ʿindaka, an tajʿala al-Qurʾāna al-ʿaẓīma rabīʿa qalbī, wa nūra ṣadrī, wa jalāʾa ḥuznī, wa dhahāba hammī.",
+      "explanationEs": "¡Oh, Allah! Ciertamente, soy Tu siervo, hijo de Tu siervo y de Tu sierva. Mi frente está en Tu mano; Tu decreto se cumple sobre mí y Tu juicio sobre mí es justo. Te suplico por cada uno de los nombres que Te pertenecen, con los que Te has nombrado a Ti mismo, que has revelado en Tu Libro, que has enseñado a alguna de Tus criaturas o que has reservado en el conocimiento de lo oculto que solo Tú posees, que hagas del Noble Corán la primavera de mi corazón, la luz de mi pecho, el alivio de mi tristeza y la desaparición de mis preocupaciones.",
+      "note": "رواه أحمد وصححه الألباني",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20202.mp3"
+      ]
     },
     {
       "itemNumber": 225,
       "text": "اللَّهُمَّ رَحْمَتَكَ أَرْجُو، فَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ، وَأَصْلِحْ لي شَأْنِي كُلَّهُ\nلَا إِلَهَ إِلَّا أَنْتَ.",
       "latin": "Allāhumma raḥmataka arjū, falā takilnī ilā nafsī ṭarfata ‘ayn, wa aṣliḥ lī sha’nī kullah, lā ilāha illā Ant.",
       "explanationEs": "Oh Allah, Tu misericordia espero, así que no me encomiendes a mí mismo ni por un parpadeo, y rectifica todos mis asuntos. No hay más divinidad que Tú.",
-      "note": "دعوات المكروب (رواه أحمد وأبو داود)"
+      "note": "دعوات المكروب (رواه أحمد وأبو داود)",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20206.mp3"
+      ]
     },
     {
       "itemNumber": 226,
-      text: 'لَا إِلَهَ إِلَّا اللهُ العَظِيمُ الحَلِيمُ، لَا إِلَهَ إِلَّا اللهُ رَبُّ السَّمَاوَاتِ وَالأَرْضِ وَرَبُّ العَرْشِ العَظِيمِ.',
-      latin: 'Lā ilāha illallāhul-‘Aẓīmul-Ḥalīm, lā ilāha illallāhu Rabbus-samāwāti wal-arḍi wa Rabbul-ʿarshil-ʿaẓīm.',
-      explanationEs: "No hay divinidad digna de adoración excepto Allah, el Grandioso, el Clemente. No hay divinidad digna de adoración excepto Allah, Señor de los cielos y de la tierra y Señor del Trono grandioso.",
-      note: 'دعاء الكرب (رواه البخاري ومسلم)'
+      "text": "لَا إِلَهَ إِلَّا اللهُ العَظِيمُ الحَلِيمُ، لَا إِلَهَ إِلَّا اللهُ رَبُّ السَّمَاوَاتِ وَالأَرْضِ وَرَبُّ العَرْشِ العَظِيمِ.",
+      "latin": "Lā ilāha illallāhul-‘Aẓīmul-Ḥalīm, lā ilāha illallāhu Rabbus-samāwāti wal-arḍi wa Rabbul-ʿarshil-ʿaẓīm.",
+      "explanationEs": "No hay divinidad digna de adoración excepto Allah, el Grandioso, el Clemente. No hay divinidad digna de adoración excepto Allah, Señor de los cielos y de la tierra y Señor del Trono grandioso.",
+      "note": "دعاء الكرب (رواه البخاري ومسلم)",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20204.mp3"
+      ]
     },
     {
       "itemNumber": 227,
-      text: 'اللَّهُ اللَّهُ رَبِّي، لَا أُشْرِكُ بِهِ شَيْئًا.',
-      latin: 'Allāhu Allāhu Rabbī, lā ushriku bihī shay’an.',
-      explanationEs: "Allah, Allah es mi Señor; no Le asocio nada.",
-      note: 'كلمات الكرب (رواه أحمد وأبو داود وابن ماجه)'
+      "text": "اللَّهُ اللَّهُ رَبِّي، لَا أُشْرِكُ بِهِ شَيْئًا.",
+      "latin": "Allāhu Allāhu Rabbī, lā ushriku bihī shay’an.",
+      "explanationEs": "Allah, Allah es mi Señor; no Le asocio nada.",
+      "note": "كلمات الكرب (رواه أحمد وأبو داود وابن ماجه)",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20207.mp3"
+      ]
     },
     {
       "itemNumber": 228,
-      text: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الهَمِّ وَالحَزَنِ، وَالعَجْزِ وَالكَسَلِ، وَالبُخْلِ وَالجُبْنِ.',
-      latin: 'Allāhumma innī a‘ūdhu bika minal-hammi wal-ḥazan, wal-‘ajzi wal-kasal, wal-bukhli wal-jubn.',
-      explanationEs: "¡Oh Allah! Me refugio en Ti de la preocupación y la tristeza, de la incapacidad y la pereza, de la tacañería y la cobardía.",
-      note: 'صحيح البخاري'
+      "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ وَالْعَجْزِ وَالْكَسَلِ وَالْجُبْنِ وَالْبُخْلِ وَضَلَعِ الدَّيْنِ وَغَلَبَةِ الرِّجَالِ.",
+      "latin": "Allāhumma innī a‘ūdhu bika minal-hammi wal-ḥazani wal-‘ajzi wal-kasali wal-jubni wal-bukhli wa ḍala‘id-dayni wa ghalabatir-rijāl.",
+      "explanationEs": "¡Oh Allah! Me refugio en Ti de la preocupación y la tristeza, de la incapacidad y la pereza, de la cobardía y la avaricia, del peso de las deudas y de que los hombres me dominen.",
+      "note": "صحيح البخاري",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2031.mp3"
+      ]
     },
     {
       "itemNumber": 229,
-      text: 'لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ.',
-      latin: 'Lā ilāha illā Anta subḥānaka innī kuntu minaż-ẓālimīn.',
-      explanationEs: "No hay divinidad digna de adoración excepto Tú. ¡Glorificado seas! En verdad, he sido de los injustos.",
-      note: 'دعوة ذي النون في بطن الحوت (رواه الترمذي)'
+      "text": "﴿لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبۡحَٰنَكَ إِنِّي كُنتُ مِنَ ٱلظَّٰلِمِينَ۝﴾",
+      "latin": "Lā ilāha illā Anta subḥānaka innī kuntu minaż-ẓālimīn.",
+      "explanationEs": "No hay más divinidad que Tú, ¡Glorificado seas! Ciertamente he sido de los injustos.",
+      "note": "دعوة ذي النون في بطن الحوت (رواه الترمذي)",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q021-087.mp3"
+      ]
     },
     {
       "itemNumber": 230,
-      text: 'لَا إِلَهَ إِلَّا اللهُ الكَرِيمُ الحَلِيمُ، سُبْحَانَهُ وَتَبَارَكَ اللهُ رَبُّ العَرْشِ العَظِيمِ، وَالحَمْدُ للهِ رَبِّ العَالَمِينَ.',
-      latin: 'Lā ilāha illallāhul-Karīmul-Ḥalīm, subḥānahū wa tabārakallāhu Rabbul-ʿarshil-ʿaẓīm, wal-ḥamdu lillāhi Rabbil-‘ālamīn.',
-      explanationEs: "No hay divinidad digna de adoración excepto Allah, el Generoso, el Clemente. ¡Glorificado y bendito sea Allah, Señor del Trono grandioso! Y toda alabanza pertenece a Allah, Señor de los mundos.",
-      note: 'أدعية الكرب والشدة عن علي بن أبي طالب (مسند أحمد والنسائي)'
+      "text": "لَا إِلَهَ إِلَّا اللهُ الكَرِيمُ الحَلِيمُ، سُبْحَانَهُ وَتَبَارَكَ اللهُ رَبُّ العَرْشِ العَظِيمِ، وَالحَمْدُ للهِ رَبِّ العَالَمِينَ.",
+      "latin": "Lā ilāha illallāhul-Karīmul-Ḥalīm, subḥānahū wa tabārakallāhu Rabbul-ʿarshil-ʿaẓīm, wal-ḥamdu lillāhi Rabbil-‘ālamīn.",
+      "explanationEs": "No hay divinidad digna de adoración excepto Allah, el Generoso, el Clemente. ¡Glorificado y bendito sea Allah, Señor del Trono grandioso! Y toda alabanza pertenece a Allah, Señor de los mundos.",
+      "note": "أدعية الكرب والشدة عن علي بن أبي طالب (مسند أحمد والنسائي)",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20230.mp3"
+      ]
     }
     ]
     }
