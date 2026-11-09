@@ -2066,13 +2066,10 @@ const adyaData = [
     },
     {
       "itemNumber": 226,
-      "text": "لَا إِلَهَ إِلَّا اللهُ العَظِيمُ الحَلِيمُ، لَا إِلَهَ إِلَّا اللهُ رَبُّ السَّمَاوَاتِ وَالأَرْضِ وَرَبُّ العَرْشِ العَظِيمِ.",
-      "latin": "Lā ilāha illallāhul-‘Aẓīmul-Ḥalīm, lā ilāha illallāhu Rabbus-samāwāti wal-arḍi wa Rabbul-ʿarshil-ʿaẓīm.",
-      "explanationEs": "No hay divinidad digna de adoración excepto Allah, el Grandioso, el Clemente. No hay divinidad digna de adoración excepto Allah, Señor de los cielos y de la tierra y Señor del Trono grandioso.",
-      "note": "دعاء الكرب (رواه البخاري ومسلم)",
-      "audioUrls": [
-        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20204.mp3"
-      ]
+   	  "text": "لَا إِلَهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ، وَرَبُّ الْأَرْضِ، وَرَبُّ الْعَرْشِ الْكَرِيمِ.",
+      "latin": "Lā ilāha illallāhul-‘Aẓīmul-Ḥalīm, lā ilāha illallāhu Rabbul-‘Arshil-‘Aẓīm, lā ilāha illallāhu Rabbus-samāwāti wa Rabbul-arḍi wa Rabbul-‘Arshil-Karīm.",
+      "explanationEs": "No hay divinidad digna de adoración excepto Allah, el Grandioso, el Indulgente. No hay divinidad digna de adoración excepto Allah, Señor del Grandioso Trono. No hay divinidad digna de adoración excepto Allah, Señor de los cielos, Señor de la tierra y Señor del Noble Trono.",
+      "note": "صحيح البخاري وصحيح مسلم"
     },
     {
       "itemNumber": 227,
@@ -2113,6 +2110,42 @@ const adyaData = [
       "audioUrls": [
         "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20230.mp3"
       ]
+  },
+  {
+    "itemNumber": 231,
+    "text": "يَا رَبِّ، أَنَا تَعِبْتُ وَمَا لِي غَيْرُكَ، فَرِّجْ هَمِّي، وَيَسِّرْ أَمْرِي، وَافْتَحْ لِي بَابًا مِنْ عِنْدِكَ مَا كُنْتُ أَتَوَقَّعُهُ.",
+    "latin": "Yā Rabbī, anā ta‘ibtu wa mā lī ghayruk, farrij hammī, wa yassir amrī, waftaḥ lī bāban min ‘indika mā kuntu atawaqqa‘uh.",
+    "explanationEs": "¡Señor mío! Estoy cansado y no tengo a nadie más que a Ti. Alivia mis preocupaciones, facilita mis asuntos y ábreme una puerta de Tu parte que jamás habría imaginado."
+  },
+  {
+    "itemNumber": 232,
+    "text": "يَا رَبِّ، إِذَا انْسَدَّتْ كُلُّ الْأَبْوَابِ فِي وَجْهِي، افْتَحْ لِي بَابَ رَحْمَتِكَ، وَإِذَا عَجَزْتُ عَنْ إِيجَادِ الْحَلِّ، فَدَبِّرْ لِي أَمْرِي فَأَنْتَ خَيْرُ الْمُدَبِّرِينَ.",
+    "latin": "Yā Rabbī, idhā insaddat kullul-abwābi fī wajhī, iftaḥ lī bāba raḥmatik, wa idhā ‘ajaztu ‘an ījādil-ḥall, fadabbir lī amrī fa-anta khayrul-mudabbirīn.",
+    "explanationEs": "¡Señor mío! Cuando todas las puertas se cierren ante mí, ábreme la puerta de Tu misericordia. Y cuando sea incapaz de encontrar una solución, ocúpate de mis asuntos, pues Tú eres el mejor de los que disponen y organizan."
+  },
+  {
+    "itemNumber": 233,
+    "text": "يَا رَبِّ، إِنِّي أَسْتَوْدِعُكَ مُسْتَقْبَلِي وَأَيَّامِي وَأَحْلَامِي، فَلَا تَجْعَلْ خَوْفِي أَكْبَرَ مِنْ يَقِينِي بِكَ، وَاكْتُبْ لِي الْخَيْرَ حَيْثُ كَانَ.",
+    "latin": "Yā Rabbī, innī astawdi‘uka mustaqbalī wa ayyāmī wa aḥlāmī, falā taj‘al khawfī akbara min yaqīnī bik, waktub lī al-khayra ḥaythu kān.",
+    "explanationEs": "¡Señor mío! Te encomiendo mi futuro, mis días y mis sueños. No permitas que mi miedo sea más grande que mi certeza en Ti, y decrétame el bien dondequiera que se encuentre."
+  },
+  {
+    "itemNumber": 234,
+    "text": "يَا رَبِّ، أَنْتَ تَعْلَمُ مَا فِي قَلْبِي، وَتَعْلَمُ مَا وَقَعَ عَلَيَّ، فَأَنْصِفْنِي، وَرُدَّ لِي حَقِّي، وَاجْبُرْ خَاطِرِي، وَلَا تَجْعَلِ الظُّلْمَ يَكْسِرُ قَلْبِي.",
+    "latin": "Yā Rabbī, anta ta‘lamu mā fī qalbī, wa ta‘lamu mā waqa‘a ‘alayya, fa-anṣifnī, wa rudda lī ḥaqqī, wajbur khāṭirī, wa lā taj‘aliẓ-ẓulma yaksiru qalbī.",
+    "explanationEs": "¡Señor mío! Tú conoces lo que hay en mi corazón y sabes lo que me ha sucedido. Haz justicia conmigo, devuélveme mis derechos, consuela mi corazón y no permitas que la injusticia lo rompa."
+  },
+  {
+    "itemNumber": 235,
+    "text": "يَا رَبِّ، لَا أُرِيدُ إِلَّا فَرَجًا يُطَمْئِنُ قَلْبِي، وَخَيْرًا يُنْسِينِي مَرَارَةَ مَا مَضَى، وَعِوَضًا جَمِيلًا مِنْكَ.",
+    "latin": "Yā Rabbī, lā urīdu illā farajan yuṭma’innu qalbī, wa khayran yunsīnī marārata mā maḍā, wa ‘iwaḍan jamīlan mink.",
+    "explanationEs": "¡Señor mío! No deseo más que un alivio que tranquilice mi corazón, un bien que me haga olvidar la amargura del pasado y una hermosa compensación procedente de Ti."
+  },
+  {
+    "itemNumber": 236,
+    "text": "يَا رَبِّ، قَوِّنِي حِينَ أَضْعَفُ، وَطَمْئِنْ قَلْبِي حِينَ أَخَافُ، وَلَا تُحَمِّلْنِي مَا لَا طَاقَةَ لِي بِهِ، وَكُنْ مَعِي فِي كُلِّ لَحْظَةٍ.",
+    "latin": "Yā Rabbī, qawwinī ḥīna aḍ‘afu, wa ṭam’in qalbī ḥīna akhāfu, wa lā tuḥammilnī mā lā ṭāqata lī bih, wa kun ma‘ī fī kulli laḥẓah.",
+    "explanationEs": "¡Señor mío! Dame fuerzas cuando me debilite, tranquiliza mi corazón cuando tenga miedo, no me impongas aquello que no puedo soportar y acompáñame en cada instante."
     }
     ]
     }
