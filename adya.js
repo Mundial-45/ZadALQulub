@@ -1660,7 +1660,7 @@ const adyaData = [
         "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002286.mp3"
       ]
     },
- {
+    {
     "itemNumber": 168,
     "text": "اللَّهُمَّ اجْعَلْ نَسَائِمَ الجَنَّةِ تَهُبُّ عَلَيْهِمْ يَا أَرْحَمَ الرَّاحِمِينَ.",
     "latin": "Allāhummaj-‘al nasā’imal-jannati tahubbu ‘alayhim yā Arḥamar-rāḥimīn.",
