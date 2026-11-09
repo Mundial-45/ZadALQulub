@@ -1838,10 +1838,10 @@ const adyaData = [
     },
     {
       "itemNumber": 204,
-      "text": "لَا إِلَهَ إِلَّا اللهُ العَظِيمُ الحَلِيمُ، لَا إِلَهَ إِلَّا اللهُ رَبُّ السَّمَاوَاتِ وَالأَرْضِ، وَرَبُّ العَرْشِ العَظِيمِ.",
-      "latin": "Lā ilāha illallāhul-‘Aẓīmul-Ḥalīm, lā ilāha illallāhu Rabbus-samāwāti wal-arḍ, wa Rabbul-ʿarshil-ʿaẓīm.",
-      "explanationEs": "No hay más divinidad que Allah, el Grandioso, el Tolerante. No hay más divinidad que Allah, Señor de los cielos y de la tierra, y Señor del Gran Trono.",
-      "note": "دعاء الكرب (صحيح البخاري ومسلم)",
+      "text": "لَا إِلَهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ، وَرَبُّ الْأَرْضِ، وَرَبُّ الْعَرْشِ الْكَرِيمِ.",
+      "latin": "Lā ilāha illallāhul-‘Aẓīmul-Ḥalīm, lā ilāha illallāhu Rabbul-‘Arshil-‘Aẓīm, lā ilāha illallāhu Rabbus-samāwāti wa Rabbul-arḍi wa Rabbul-‘Arshil-Karīm.",
+      "explanationEs": "No hay divinidad digna de adoración excepto Allah, el Grandioso, el Indulgente. No hay divinidad digna de adoración excepto Allah, Señor del Grandioso Trono. No hay divinidad digna de adoración excepto Allah, Señor de los cielos, Señor de la tierra y Señor del Noble Trono.",
+      "note": "صحيح البخاري وصحيح مسلم",
       "audioUrls": [
         "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20204.mp3"
       ]
