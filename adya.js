@@ -1297,220 +1297,313 @@ const adyaData = [
     },
     {
       "itemNumber": 132,
-      "text": "اللَّهُمَّ اغْفِرْ لِوَالِدَيَّ وَارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا، اللَّهُمَّ يَا بَاسِطَ اليَدَيْنِ بِالعَطَايَا ابْسُطْ عَلَى وَالِدَيَّ مِنْ فَضْلِكَ العَظِيمِ وَجُودِكَ الْوَاسِعِ مَا تَشْرَحُ بِهِ صَدْرَهُمَا لِعِبَادَتِكَ وَطَاعَتِكَ، وَالأُنْسِ بِكَ وَالْعَمَلِ بِمَا يُرْضِيكَ، وَبَارِكْ لَهُمَا فِي عُمُرِهِمَا، وَأَغْنِهِمَا مِنْ فَضْلِكَ، وَأَعِنْهُمَا فِي حِلِّهِمَا وَتَرْحَالِهِمَا وَذَهَابِهِمَا وَإِيَابِهِمَا، وَأَطِلْ فِي عُمُرِهِمَا مَعَ الْعَافِيَةِ فِي صِحَّتِهِمَا وَدِينِهِمَا، وَاجْعَلْ آخِرَ كَلَامِهِمَا مِنَ الدُّنْيَا لَا إِلَهَ إِلَّا اللَّهُ مُحَمَّدٌ رَسُولُ اللَّهِ.",
-      "latin": "Allāhummagh-fir li-wālidayya war-ḥamhumā kamā rabbayānī ṣaghīrā, Allāhumma yā Bāsiṭal-yadayni bil-‘aṭāyā bsuṭ ‘alā wālidayya min faḍlikal-‘aẓīmi wa jūdikal-wāsi‘ mā tashraḥu bihī ṣadrahumā li-‘ibādatika wa ṭā‘atik, wal-unsi bika wal-‘amali bimā yurḍīk, wa bārik lahumā fī ‘umurihimā, wa aghnihimā min faḍlik, wa a‘inhumā fī ḥillihimā wa tarḥālihimā wa dhahābihimā wa iyābihimā, wa aṭil fī ‘umurihimā ma‘al-‘āfiyati fī ṣiḥḥatihimā wa dīnihimā, waj-‘al ākhira kalāmihimā minad-dunyā lā ilāha illallāhu Muḥammadun Rasūlullāh.",
-      "explanationEs": "¡Oh Allah! Perdona a mis padres y ten misericordia de ellos, como me criaron cuando era pequeño. ¡Oh Allah, Tú que extiendes Tus manos concediendo dádivas! Derrama sobre mis padres Tu inmenso favor y Tu generosa abundancia, aquello que ensanche sus corazones para Tu adoración y obediencia, para encontrar consuelo en Ti y realizar aquello que Te complace. Bendice sus vidas, enriquécelos con Tu favor y ayúdalos en sus desplazamientos, viajes, partidas y regresos. Concédeles una vida larga, con salud y firmeza en su religión, y haz que sus últimas palabras en este mundo sean: «No hay divinidad digna de adoración excepto Allah; Muhammad es el Mensajero de Allah».",
-      "note": "دعاء بالصحة وطول العمر والبركة"
+      "text": "اللَّهُمَّ اغْفِرْ لِوَالِدَيَّ وَارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا. اللَّهُمَّ يَا بَاسِطَ الْيَدَيْنِ بِالْعَطَايَا، ابْسُطْ عَلَى وَالِدَيَّ مِنْ فَضْلِكَ الْعَظِيمِ وَجُودِكَ الْوَاسِعِ مَا تَشْرَحُ بِهِ صَدْرَيْهِمَا لِعِبَادَتِكَ وَطَاعَتِكَ، وَالْأُنْسِ بِكَ، وَالْعَمَلِ بِمَا يُرْضِيكَ. وَبَارِكْ لَهُمَا فِي عُمُرَيْهِمَا، وَأَغْنِهِمَا مِنْ فَضْلِكَ، وَأَعِنْهُمَا فِي حِلِّهِمَا وَتَرْحَالِهِمَا، وَذَهَابِهِمَا وَإِيَابِهِمَا. وَأَطِلْ فِي عُمُرَيْهِمَا، وَأَمْتِعْهُمَا بِالصِّحَّةِ وَالْعَافِيَةِ فِي أَبْدَانِهِمَا وَدِينِهِمَا. وَاجْعَلْ آخِرَ كَلَامِهِمَا مِنَ الدُّنْيَا: لَا إِلَهَ إِلَّا اللَّهُ، مُحَمَّدٌ رَسُولُ اللَّهِ.",
+      "latin": "Allāhumma ighfir li-wālidayya warḥamhumā kamā rabbayānī ṣaghīrā. Allāhumma yā bāsiṭa al-yadayni bil-ʿaṭāyā, absuṭ ʿalā wālidayya min faḍlika al-ʿaẓīmi wa-jūdika al-wāsiʿi mā tashraḥu bihi ṣadrayhimā li-ʿibādatika wa-ṭāʿatika, wal-unsِ bika, wal-ʿamali bimā yurḍīka. Wa-bārik lahumā fī ʿumrayhimā, wa-aghnِhimā min faḍlika, wa-aʿinhumā fī ḥillihimā wa-tarḥālihimā, wa-dhahābihimā wa-iyābihimā. Wa-aṭil fī ʿumrayhimā, wa-amtiʿhumā biṣ-ṣiḥḥati wal-ʿāfiyati fī abdānihimā wa-dīnihimā. Wajʿal ākhira kalāmihimā mina ad-dunyā: Lā ilāha illā Allāh, Muḥammadun Rasūlu Allāh.",
+      "explanationEs": "¡Oh, Allah! Perdona a mis padres y ten misericordia de ellos, así como me criaron cuando era pequeño.\n\n¡Oh, Allah! Tú, que extiendes Tus manos con generosidad y dádivas, concede a mis padres de Tu inmenso favor y de Tu ilimitada generosidad aquello que ensanche sus corazones para adorarte, obedecerte, encontrar consuelo en Ti y obrar de manera que estés complacido con ellos.\n\nBendice sus vidas, enriquécelos con Tu favor y acompáñalos en sus desplazamientos, viajes, idas y regresos. Prolonga sus vidas y concédeles salud y bienestar en sus cuerpos y en su religión.\n\nY haz que sus últimas palabras en este mundo sean: «No hay divinidad digna de adoración excepto Allah; Muhammad es el Mensajero de Allah».",
+      "note": "دعاء بالصحة وطول العمر والبركة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20132.mp3"
+      ]
     },
     {
       "itemNumber": 133,
-      "text": "اللَّهُمَّ يَا ذَا الجَلَالِ وَالإِكْرَامِ، يَا حَيُّ يَا قَيُّومُ، نَدْعُوكَ بِاسْمِكَ الأَعْظَمِ الَّذِي إِذَا دُعِيتَ بِهِ أَجَبْتَ أَنْ تَبْسُطَ عَلَى وَالِدَيَّ مِنْ بَرَكَاتِكَ وَرَحْمَتِكَ وَرِزْقِكَ، اللَّهُمَّ أَلْبِسْهُمَا العَافِيَةَ، وَاخْتِمْ لَهُمَا بِالمَغْفِرَةِ حَتَّى لَا تَضُرَّهُمَا الذُّنُوبُ، اللَّهُمَّ اكْفِهِمَا كُلَّ هَوْلٍ دُونَ الجَنَّةِ بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ.",
-      "latin": "Allāhumma yā Dhal-Jalāli wal-Ikrām, yā Ḥayyu yā Qayyūm, nad‘ūka bis-mikal-‘Aẓāmil-ladhī idhā du‘īta bihī ajabta an tabsuṭa ‘alā wālidayya min barakātika wa raḥmatika wa rizqik, Allāhumma albis-humāl-‘āfiyah, wakh-tim lahumā bil-maghfirati ḥattā lā taḍurrahumud-dhunūb, Allāhummak-fihimā kulla hawlin dūnal-jannati bi-raḥmatika yā Arḥamar-rāḥimīn.",
-      "explanationEs": "Oh Allah, Poseedor de la Majestad y el Honor, Te invocamos por Tu Gran Nombre para extender sobre mis padres Tus bendiciones y sustento. Vístelos de salud, sella sus vidas con el perdón para que los pecados no les dañen y protégelos de todo terror antes del Paraíso.",
-      "note": "دعاء البركة والعافية باسم الله الأعظم"
+      "text": "اللَّهُمَّ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ، يَا حَيُّ يَا قَيُّومُ، نَدْعُوكَ بِاسْمِكَ الْأَعْظَمِ الَّذِي إِذَا دُعِيتَ بِهِ أَجَبْتَ، أَنْ تَبْسُطَ عَلَى وَالِدَيَّ مِنْ بَرَكَاتِكَ وَرَحْمَتِكَ وَرِزْقِكَ. اللَّهُمَّ أَلْبِسْهُمَا الْعَافِيَةَ، وَاخْتِمْ لَهُمَا بِالْمَغْفِرَةِ، حَتَّى لَا تَضُرَّهُمَا ذُنُوبُهُمَا. اللَّهُمَّ اكْفِهِمَا كُلَّ هَوْلٍ دُونَ الْجَنَّةِ، بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ.",
+      "latin": "Allāhumma yā dhal-jalāli wal-ikrām, yā Ḥayyu yā Qayyūm, nadʿūka bi-smika al-aʿẓami alladhī idhā duʿīta bihi ajabta, an tabsuṭa ʿalā wālidayya min barakātika wa-raḥmatika wa-rizqika. Allāhumma albis-humā al-ʿāfiyata, wakhtim lahumā bil-maghfirati, ḥattā lā taḍurrahumā dhunūbuhumā. Allāhumma ikfihimā kulla hawlin dūna al-jannati, bi-raḥmatika yā arḥama ar-rāḥimīn.",
+      "explanationEs": "¡Oh, Allah, Dueño de la Majestad y la Generosidad! ¡Oh, Viviente, Sustentador de toda existencia! Te invocamos por Tu Nombre Supremo, por el cual, cuando se Te invoca, respondes, para que concedas a mis padres abundancia de Tus bendiciones, misericordia y provisión.\n\n¡Oh, Allah! Cúbrelos con salud y bienestar, y concede que sus vidas culminen con Tu perdón, de modo que sus pecados no les perjudiquen.\n\n¡Oh, Allah! Protégelos de todo terror y dificultad antes de alcanzar el Paraíso, por Tu misericordia, ¡Oh, el Más Misericordioso de quienes muestran misericordia!",
+      "note": "دعاء البركة والعافية باسم الله الأعظم",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20133.mp3"
+      ]
     },
     {
       "itemNumber": 134,
       "text": "اللَّهُمَّ ارْزُقْ وَالِدَيَّ عَيْشًا قَارًّا، وَرِزْقًا دَارًّا، وَعَمَلًا بَارًّا، اللَّهُمَّ ارْزُقْهُمَا الجَنَّةَ وَمَا يُقَرِّبُهُمَا إِلَيْهَا مِنْ قَوْلٍ أَوْ عَمَلٍ، وَبَاعِدْ بَيْنَهُمَا وَبَيْنَ النَّارِ وَبَيْنَ مَا يُقَرِّبُهُمَا إِلَيْهَا مِنْ قَوْلٍ أَوْ عَمَلٍ.",
       "latin": "Allāhummar-zuq wālidayya ‘ayshan qārran, wa rizqan dārran, wa ‘amalan bārran. Allāhummar-zuqhumal-jannata wa mā yuqarribuhumā ilayhā min qawlin aw ‘amal, wa bā‘id baynahumā wa baynan-nāri wa bayna mā yuqarribuhumā ilayhā min qawlin aw ‘amal.",
       "explanationEs": "¡Oh Allah! Concédeles a mis padres una vida tranquila, un sustento abundante y obras piadosas. Concédeles el Paraíso y todo aquello que los acerque a él, ya sean palabras o acciones. Aléjalos del Fuego y de todo aquello que los acerque a él, ya sean palabras o acciones.",
-      "note": "دعاء للرزق والجنة"
+      "note": "دعاء للرزق والجنة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20134.mp3"
+      ]
     },
     {
       "itemNumber": 135,
-      text: 'اللَّهُمَّ اجْعَلْهُمَا مِنَ الذَّاكِرِينَ لَكَ، الشَّاكِرِينَ لَكَ، الطَّائِعِينَ لَكَ، اللَّهُمَّ أَسْعِدْهُمَا بِتَقْوَاكَ.',
-      latin: 'Allāhummaj-‘alhumā minadh-dhākirīna lak, ash-shākirīna lak, aṭ-ṭā‘īna lak, Allāhumma as‘id-humā bi-taqwāk.',
-      explanationEs: 'Oh Allah, hazlos de los que Te recuerdan, Te agradecen y Te obedecen. Oh Allah, hazlos felices con Tu piedad.',
-      note: 'دعاء الذكر والشكر'
+      "text": "اللَّهُمَّ اجْعَلْ وَالِدَيَّ مِنَ الذَّاكِرِينَ لَكَ، الشَّاكِرِينَ لَكَ، الطَّائِعِينَ لَكَ. اللَّهُمَّ أَسْعِدْهُمَا بِتَقْوَاكَ.",
+      "latin": "Allāhumma ijʿal wālidayya mina adh-dhākirīna laka, ash-shākirīna laka, aṭ-ṭāʾiʿīna laka. Allāhumma asʿidhumā bi-taqwāka.",
+      "explanationEs": "¡Oh, Allah! Haz que mis padres estén entre quienes Te recuerdan, Te agradecen y Te obedecen. ¡Oh, Allah! Concédeles la felicidad por medio de su temor reverencial y su devoción hacia Ti.",
+      "note": "دعاء الذكر والشكر",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20135.mp3"
+      ]
     },
     {
       "itemNumber": 136,
-      "text": "اللَّهُمَّ اجْعَلْ أَوْقَاتَهُمَا بِذِكْرِكَ مَعْمُورَةً، اللَّهُمَّ تَقَبَّلْ تَوْبَتَهُمَا، وَأَجِبْ دَعْوَتَهُمَا، اللَّهُمَّ إِنَّا نَعُوذُ بِكَ أَنْ تَرُدَّهُمَا إِلَى أَرْذَلِ العُمُرِ، اللَّهُمَّ اخْتِمْ بِالحَسَنَاتِ أَعْمَالَهُمَا، وَاجْعَلْ أُمِّي وَأَبِي مِنَ السَّبْعِينَ أَلْفًا الَّذِينَ يَدْخُلُونَ الجَنَّةَ بِلَا حِسَابٍ وَلَا عَذَابٍ.",
-      "latin": "Allāhummaj-‘al awqātahumā bi-dhikrika ma‘mūrah, Allāhumma taqabbal tawbatahumā, wa ajib da‘watahumā, Allāhumma innā na‘ūdhu bika an taruddahumā ilā arḏalil-‘umr, Allāhumma ikhtim biṣ-ṣāliḥāti a‘mālahumā, waj-‘al ummī wa abī minas-sab‘īna alfan alladhīna yadkhulūnal-jannata bilā ḥisābin wa lā ‘adhāb.",
-      "explanationEs": "¡Oh Allah! Llena sus momentos con Tu recuerdo, acepta su arrepentimiento y responde a sus súplicas. ¡Oh Allah! Nos refugiamos en Ti de que lleguen a la vejez más extrema. Haz que sus obras concluyan con buenas acciones y haz que mi madre y mi padre formen parte de los setenta mil que entrarán en el Paraíso sin rendir cuentas ni recibir castigo.",
-      "note": "دعاء بحسن الخاتمة والقبول"
+      "text": "اللَّهُمَّ اجْعَلْ أَوْقَاتَهُمَا بِذِكْرِكَ مَعْمُورَةً. اللَّهُمَّ تَقَبَّلْ تَوْبَتَهُمَا، وَأَجِبْ دَعْوَتَهُمَا. اللَّهُمَّ إِنَّا نَعُوذُ بِكَ مِنْ أَنْ تَرُدَّهُمَا إِلَى أَرْذَلِ الْعُمُرِ. اللَّهُمَّ اخْتِمْ بِالْحَسَنَاتِ أَعْمَالَهُمَا، وَاجْعَلْ أُمِّي وَأَبِي مِنَ السَّبْعِينَ أَلْفًا الَّذِينَ يَدْخُلُونَ الْجَنَّةَ بِغَيْرِ حِسَابٍ وَلَا عَذَابٍ.",
+      "latin": "Allāhumma ijʿal awqātahumā bi-dhikrika maʿmūrah. Allāhumma taqabbal tawbatahumā, wa-ajib daʿwatahumā. Allāhumma innā naʿūdhu bika min an taruddahumā ilā ardhal al-ʿumur. Allāhumma ikhtim bil-ḥasanāti aʿmālahumā, wajʿal ummī wa-abī mina as-sabʿīna alfan alladhīna yadkhulūna al-jannata bi-ghayri ḥisābin wa-lā ʿadhāb.",
+      "explanationEs": "¡Oh, Allah! Llena sus momentos con Tu recuerdo.\n\n¡Oh, Allah! Acepta su arrepentimiento y responde a sus súplicas.\n\n¡Oh, Allah! Nos refugiamos en Ti de que lleguen a la etapa más débil y avanzada de la vejez.\n\n¡Oh, Allah! Haz que sus obras culminen con buenas acciones, e incluye a mi madre y a mi padre entre los setenta mil que entrarán en el Paraíso sin rendir cuentas ni recibir castigo.",
+      "note": "دعاء بحسن الخاتمة والقبول",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20136.mp3"
+      ]
     },
     {
       "itemNumber": 137,
-      text: 'اللَّهُمَّ احْفَظْ لِي أُمِّي وَأَبِي وَلَا تُرِنِي فِيهِمَا أَيَّ مَكْرُوهٍ.',
-      latin: 'Allāhummaḥ-faẓ lī ummī wa abī wa lā turinī fīhimā ayya makrūh.',
-      explanationEs: 'Oh Allah, protege a mi madre y a mi padre y no me muestres ningún mal en ellos.',
-      note: 'دعاء الحفظ من المكروه'
+      "text": "اللَّهُمَّ احْفَظْ لِي أُمِّي وَأَبِي وَلَا تُرِنِي فِيهِمَا أَيَّ مَكْرُوهٍ.",
+      "latin": "Allāhummaḥ-faẓ lī ummī wa abī wa lā turinī fīhimā ayya makrūh.",
+      "explanationEs": "Oh Allah, protege a mi madre y a mi padre y no me muestres ningún mal en ellos.",
+      "note": "دعاء الحفظ من المكروه",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20137.mp3"
+      ]
     },
     {
       "itemNumber": 138,
       "text": "اللَّهُمَّ زِدْهُمَا عُمُرًا وَعَافِيَةً، وَأَبْعِدْ عَنْهُمَا مَتَاعِبَ الدُّنْيَا وَلَا تُذِقْهُمَا دُمُوعَ الضِّيقِ، اللَّهُمَّ بِحَجْمِ سَمَائِكَ أَرِحْ قَلْبَيهُمَا وَأَسْعِدْهُمَا سَعَادَةً لَا تَفْنَى وَلَا تَزُولُ.",
       "latin": "Allāhumma zid-humā ‘umran wa ‘āfiyah, wa ab‘id ‘anhumā matā‘ibad-dunyā wa lā tudhiqhumā dumū‘aḍ-ḍīq, Allāhumma bi-ḥajmi samā’ika ariḥ qalbayhumā wa as‘id-humā sa‘ādatan lā tafnā wa lā tazūl.",
       "explanationEs": "Oh Allah, auméntales vida y salud, aléjalos de las fatigas del mundo, y del suplicio de las lágrimas de angustia. Por la magnitud de Tu cielo, descansa sus corazones y concédeles felicidad eterna.",
-      "note": "دعاء السعادة وراحة القلب"
+      "note": "دعاء السعادة وراحة القلب",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20138.mp3"
+      ]
     },
     {
       "itemNumber": 139,
       "text": "اللَّهُمَّ إِنِّي أَسْتَوْدِعُكَ مَبْسَمَ أَبِي وَقَلْبَ أُمِّي وَفَرْحَتَهُمَا، اللَّهُمَّ إِنِّي اسْتَوْدَعْتُكَ أَغْلَى مَا أَمْلَكُ فَاحْفَظْهُمَا بِعَيْنِكَ الَّتِي لَا تَنَامُ، وَأَبْعِدْ عَنْ وَالِدَيَّ ثِقْلَ الحَيَاةِ وَمُرَّهَا، اللَّهُمَّ أُمِّي وَأَبِي وَمَا دُونَ ذَلِكَ هَيِّنٌ.",
       "latin": "Allāhumma innī astawdi‘uka mabsama abī wa qalba ummī wa farḥatahumā, Allāhumma innī istawda‘tuka aghlā mā amliku faḥfaẓhumā bi-‘aynikal-latī lā tanām, wa ab‘id ‘an wālidayya thiqlal-ḥayāti wa murrahā, Allāhumma ummī wa abī wa mā dūna dhālik hayyin.",
       "explanationEs": "¡Oh Allah! Te encomiendo la sonrisa de mi padre, el corazón de mi madre y la felicidad de ambos. Te encomiendo lo más preciado que poseo. Protégelos bajo Tu mirada, que nunca duerme, y aparta de mis padres el peso y la amargura de la vida. ¡Oh Allah! Mi madre y mi padre son lo más importante; todo lo demás es insignificante.",
-      "note": "دعاء الاستيداع والحفظ الشامل"
+      "note": "دعاء الاستيداع والحفظ الشامل",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20139.mp3"
+      ]
     },
     {
       "itemNumber": 140,
-      text: 'اللَّهُمَّ احْفَظْ قَلْبَهُمَا وَصِحَّتَهُمَا وَعَافِيَتَهُمَا وَأَطِلْ فِي عُمُرِهِمَا وَاحْفَظْهُمَا يَا رَبِّ بِعَيْنِكَ الَّتِي لَا تَنَامُ.',
-      latin: 'Allāhummaḥ-faẓ qalbahumā wa ṣiḥḥatahumā wa ‘āfiyatahumā wa aṭil fī ‘umurihimā waḥ-faẓhumā yā Rabbi bi-‘aynikal-latī lā tanām.',
-      explanationEs: 'Oh Allah, protege sus corazones, su salud y su bienestar, alarga sus vidas y protégelos, Señor, con Tu ojo que no duerme.',
-      note: 'دعاء الصحة وطول العمر'
+      "text": "اللَّهُمَّ احْفَظْ قَلْبَيْهِمَا، وَصِحَّتَهُمَا، وَعَافِيَتَهُمَا، وَأَطِلْ فِي عُمُرَيْهِمَا، وَاحْفَظْهُمَا يَا رَبِّ، بِعَيْنِكَ الَّتِي لَا تَنَامُ.",
+      "latin": "Allāhumma iḥfaẓ qalbayhimā, wa-ṣiḥḥatahumā, wa-ʿāfiyatahumā, wa-aṭil fī ʿumrayhimā, wa-iḥfaẓhumā yā Rabbi, bi-ʿaynika allatī lā tanām.",
+      "explanationEs": "¡Oh, Allah! Protege sus corazones, su salud y su bienestar. Prolonga sus vidas y protégelos, Señor mío, bajo Tu mirada protectora que nunca duerme.",
+      "note": "دعاء الصحة وطول العمر",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20140.mp3"
+      ]
     },
     {
       "itemNumber": 141,
-      "text": "اللَّهُمَّ زِدْ أُمِّي وَأَبِي مَكَانَةً حِينَ يَرْكَعَانِ، وَزِدْهُمَا مَحَبَّةً حِينَ يَرْفَعَانِ، وَزِدْهُمَا إِخْلَاصاً حِينَ يَسْجُدَانِ، وَزِدْهُمَا تَوْفِيقاً وَتَيْسِيراً، وَلَا تُحَرِّمْهُمَا جَنَّتَكَ",
-      "latin": "Allāhumma zid ummī wa abī makānatan ḥīna yarkaʿāni, wa zidhumā maḥabbatan ḥīna yarfaʿāni, wa zidhumā ikhlāṣan ḥīna yasjudāni, wa zidhumā tawfīqan wa taysīran, wa lā tuḥarrimhumā jannataka.",
+      "text": "اللَّهُمَّ زِدْ أُمِّي وَأَبِي مَكَانَةً حِينَ يَرْكَعَانِ، وَزِدْهُمَا مَحَبَّةً حِينَ يَرْفَعَانِ، وَزِدْهُمَا إِخْلَاصًا حِينَ يَسْجُدَانِ، وَزِدْهُمَا تَوْفِيقًا وَتَيْسِيرًا، وَلَا تَحْرِمْهُمَا مِنْ جَنَّتِكَ.",
+      "latin": "Allāhumma zid ummī wa-abī makānatan ḥīna yarkaʿāni, wa-zidhumā maḥabbatan ḥīna yarfaʿāni, wa-zidhumā ikhlāṣan ḥīna yasjudāni, wa-zidhumā tawfīqan wa-taysīran, wa-lā taḥrimhumā min jannatika.",
       "explanationEs": "¡Oh Allah! Aumenta la posición de mi madre y de mi padre cuando se inclinen en la oración, aumenta su amor cuando se incorporen de la inclinación, aumenta su sinceridad cuando se postren y concédeles éxito y facilidad. No los prives de Tu Paraíso.",
-      "note": "دعاء العبادة والقبول"
+      "note": "دعاء العبادة والقبول",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20141.mp3"
+      ]
     },
     {
       "itemNumber": 142,
-      text: 'اللَّهُمَّ احْفَظْ لِي أُمِّي وَأَبِي أَيْنَمَا حَلَّتْ خُطَاهُمْ، اللَّهُمَّ إِنِّي أَسْتَوْدِعُكَ حَيَاتَهُمَا وَصِحَّتَهُمَا وَسَعَادَتَهُمَا فَعِنْدَكَ يَا رَبِّ لَا تَضِيعُ الوَدَائِعُ.',
-      latin: 'Allāhummaḥ-faẓ lī ummī wa abī aynamā ḥallat khuṭāhum, Allāhumma innī astawdi‘uka ḥayātahumā wa ṣiḥḥatahumā wa sa‘ādatahumā fa-‘indaka yā Rabbi lā taḍī‘ul-wadā’i‘.',
-      explanationEs: 'Oh Allah, protege a mi madre y a mi padre dondequiera que vayan. Te encomiendo su vida, salud y felicidad, pues ante Ti, Señor, no se pierden los depósitos.',
-      note: 'دعاء الحفظ في الحل والترحال'
+      "text": "اللَّهُمَّ احْفَظْ لِي أُمِّي وَأَبِي أَيْنَمَا حَلَّتْ خُطَاهُمَا، اللَّهُمَّ إِنِّي أَسْتَوْدِعُكَ حَيَاتَهُمَا وَصِحَّتَهُمَا وَسَعَادَتَهُمَا، فَعِنْدَكَ يَا رَبِّ لَا تَضِيعُ الْوَدَائِعُ.",
+      "latin": "Allāhumma iḥfaẓ lī ummī wa-abī aynamā ḥallat khuṭāhumā. Allāhumma innī astawdiʿuka ḥayātahumā wa-ṣiḥḥatahumā wa-saʿādَtahumā, fa-ʿindaka yā Rabbi lā taḍīʿu al-wadāʾiʿ.",
+      "explanationEs": "¡Oh, Allah! Protege a mi madre y a mi padre allá donde los lleven sus pasos. ¡Oh, Allah! Te confío sus vidas, su salud y su felicidad, pues junto a Ti, Señor mío, nada de lo que se confía se pierde.",
+      "note": "دعاء الحفظ في الحل والترحال",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20142.mp3"
+      ]
     },
     {
       "itemNumber": 143,
-      "text": "اللَّهُمَّ إِنِّي اسْتَوْدَعْتُكَ مَنْ هُمْ أَعَزُّ عَلَيَّ مِنْ نَفْسِي، اللَّهُمَّ احْفَظْ لِي أُمِّي وَأَبِي وَارْزُقْهُمَا فَوْقَ عُمُرِهِمَا عُمُرًا وَفَوْقَ عَافِيَتِهِمَا عَافِيَةً.",
+      "text": "اللَّهُمَّ إِنِّي اسْتَوْدَعْتُكَ مَنْ هُمْ أَعَزُّ عَلَيَّ مِنْ نَفْسِي، اللَّهُمَّ احْفَظْ لِي أُمِّي وَأَبِي، وَارْزُقْهُمَا فَوْقَ عُمُرِهِمَا عُمُرًا، وَفَوْقَ عَافِيَتِهِمَا عَافِيَةً.",
       "latin": "Allāhumma innī istawda‘tuka man hum a‘azzu ‘alayya min nafsī, Allāhummaḥfaẓ lī ummī wa abī warzuqhumā fawqa ‘umrihimā ‘umran wa fawqa ‘āfiyatihimā ‘āfiyah.",
       "explanationEs": "Oh Allah, te he confiado a quienes son más caros para mí que mi propia vida. Protégelos y concédeles más vida sobre su vida y más salud sobre su salud.",
-      "note": "دعاء الاستيداع والمحبة"
+      "note": "دعاء الاستيداع والمحبة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20143.mp3"
+      ]
     },
     {
       "itemNumber": 144,
       "text": "اللَّهُمَّ إِنِّي اسْتَوْدَعْتُكَ قَلْبَ أُمِّي وَقَلْبَ أَبِي مِنْ كُلِّ ذَرَّةِ أَلَمٍ.",
       "latin": "Allāhumma innī istawdi‘tuka qalba ummī wa qalba abī min kulli dharrati alam.",
       "explanationEs": "¡Oh Allah! Te encomiendo el corazón de mi madre y el de mi padre. Protégelos de cualquier dolor, por pequeño que sea.",
-      "note": "دعاء حفظ القلوب من الألم"
+      "note": "دعاء حفظ القلوب من الألم",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20144.mp3"
+      ]
     },
     {
       "itemNumber": 145,
-      text: 'اللَّهُمَّ رَاحَةً وَسَعَادَةً تُلَامِسُ قَلْبَ أُمِّي، وَرَحْمَةً وَمَغْفِرَةً تُلَامِسُ رُوحَ أَبِي.',
-      latin: 'Allāhumma rāḥatan wa sa‘ādatan tulāmisu qalba ummī, wa raḥmatan wa maghfiratan tulāmisu rūḥa abī.',
-      explanationEs: 'Oh Allah, concede paz y felicidad que rocen el corazón de mi madre, y misericordia y perdón que rocen el alma de mi padre.',
-      note: 'دعاء الراحة والرحمة للوالدين'
+      "text": "اللَّهُمَّ رَاحَةً وَسَعَادَةً تُلَامِسُ قَلْبَ أُمِّي، وَرَحْمَةً وَمَغْفِرَةً تُلَامِسُ رُوحَ أَبِي.",
+      "latin": "Allāhumma rāḥatan wa sa‘ādatan tulāmisu qalba ummī, wa raḥmatan wa maghfiratan tulāmisu rūḥa abī.",
+      "explanationEs": "Oh Allah, concede paz y felicidad que rocen el corazón de mi madre, y misericordia y perdón que rocen el alma de mi padre.",
+      "note": "دعاء الراحة والرحمة للوالدين",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20145.mp3"
+      ]
     },
     {
       "itemNumber": 146,
       "text": "اللَّهُمَّ إِنَّكَ كَرِيمٌ عَفُوٌّ تُحِبُّ العَفْوَ فَاعْفُ عَنْ وَالِدَيَّ.",
       "latin": "Allāhumma innaka karīmun ‘afuwwun tuḥibbul-‘afwa fa‘fu ‘an wālidayya.",
       "explanationEs": "Oh Allah, Tú eres Generoso, Indulgente y amas el perdón, así que perdona a mis padres.",
-      "note": "دعاء العفو والمغفرة"
+      "note": "دعاء العفو والمغفرة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20146.mp3"
+      ]
     },
     {
       "itemNumber": 147,
       "text": "اللَّهُمَّ اغْفِرْ لِوَالِدَيَّ جَمِيعَ مَا مَضَى مِنْ ذُنُوبِهِمَا، وَاعْصِمْهُمَا فِيمَا بَقِيَ مِنْ عُمُرِهِمَا، وَارْزُقْهُمَا عَمَلًا زَكِيًّا تَرْضَى بِهِ عَنْهُمَا.",
       "latin": "Allāhummagh-fir li-wālidayya jamī‘a mā maḍā min dhunūbihimā, wa‘ṣimhumā fīmā baqiya min ‘umurihimā, warzuqhumā ‘amalan zakiyyan tarḍā bihī ‘anhumā.",
       "explanationEs": "Oh Allah, perdona a mis padres todos sus pecados pasados, protégelos en lo que queda de sus vidas y concédeles una obra pura con la que estés complacido.",
-      "note": "دعاء المغفرة والعمل الزكي"
+      "note": "دعاء المغفرة والعمل الزكي",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20147.mp3"
+      ]
     },
     {
       "itemNumber": 148,
-      text: 'اللَّهُمَّ لَا تَجْعَلْ لَهُمَا ذَنْبًا إِلَّا غَفَرْتَهُ، وَلَا هَمًّا إِلَّا فَرَّجْتَهُ، وَلَا حَاجَةً مِنْ حَوَائِجِ الدُّنْيَا لَهُمَا فِيهَا صَلَاحٌ إِلَّا قَضَيْتَهَا.',
-      latin: 'Allāhumma lā taj‘al lahumā dhanban illā ghafartah, wa lā hamman illā farrajtah, wa lā ḥājatan min ḥawā’ijid-dunyā lahumā fīhā ṣalāḥun illā qaḍaytah.',
-      explanationEs: 'Oh Allah, no dejes ningún pecado sin perdonar, ni preocupación sin aliviar, ni necesidad mundana beneficiosa sin satisfacer.',
-      note: 'دعاء قضاء الحوائج وتفريج الهموم'
+      "text": "اللَّهُمَّ لَا تَجْعَلْ لَهُمَا ذَنْبًا إِلَّا غَفَرْتَهُ، وَلَا هَمًّا إِلَّا فَرَّجْتَهُ، وَلَا حَاجَةً مِنْ حَوَائِجِ الدُّنْيَا لَهُمَا فِيهَا صَلَاحٌ إِلَّا قَضَيْتَهَا.",
+      "latin": "Allāhumma lā taj‘al lahumā dhanban illā ghafartah, wa lā hamman illā farrajtah, wa lā ḥājatan min ḥawā’ijid-dunyā lahumā fīhā ṣalāḥun illā qaḍaytah.",
+      "explanationEs": "Oh Allah, no dejes ningún pecado sin perdonar, ni preocupación sin aliviar, ni necesidad mundana beneficiosa sin satisfacer.",
+      "note": "دعاء قضاء الحوائج وتفريج الهموم",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20148.mp3"
+      ]
     },
     {
       "itemNumber": 149,
-      text: 'اللَّهُمَّ اغْفِرْ لِوَالِدَيَّ وَارْحَمْهُمَا، وَتَجَاوَزْ عَنْهُمَا، اللَّهُمَّ اجْعَلْنَا مِنْ أَحَبِّ النَّاسِ إِلَيْهِمَا، وَمِنْ أَقْرَبِ الأَبْنَاءِ لَهُمَا، وَأَكْرِمْنَا بِحُسْنِ السُّؤَالِ لَهُمَا وَالحِرْصِ عَلَيْهِمَا، اللَّهُمَّ لَا تُشْغِلْنَا عَنْهُمَا لَا بِمَالٍ وَلَا بِزَوْجَاتٍ وَلَا بِأَوْلَادٍ، اللَّهُمَّ ارْزُقْنَا بِرَّهُمَا فِي حَيَاتِهِمَا وَبَعْدَ وَفَاتِهِمَا.',
-      latin: "Allāhummaghfir li-wālidayya warḥamhumā, wa tajāwaz ʿanhumā. Allāhummajʿalnā min aḥabbin-nāsi ilayhimā, wa min aqrabil-abnāʾi lahumā, wa akrimnā bi-ḥusnis-suʾāli lahumā wal-ḥirṣi ʿalayhimā. Allāhumma lā tushghilnā ʿanhumā lā bimālin wa lā bi-zawjātin wa lā bi-awlād. Allāhummarzuqnā birrahumā fī ḥayātihimā wa baʿda wafātihimā.",
-      explanationEs: "¡Oh Allah! Perdona a mis padres y ten misericordia de ellos; pasa por alto sus faltas. Haz que seamos de las personas más queridas para ellos y de los hijos más cercanos a ellos. Concédenos honrarlos con buenas palabras y mantenernos atentos a sus necesidades. ¡Oh Allah! No permitas que nos distraigamos de ellos por dinero, esposas o hijos. Concédenos tratarlos con bondad durante su vida y después de su muerte.",
-      note: 'دعاء بر الوالدين وعدم الانشغال عنهما'
+      "text": "اللَّهُمَّ اغْفِرْ لِوَالِدَيَّ وَارْحَمْهُمَا، وَتَجَاوَزْ عَنْهُمَا. اللَّهُمَّ اجْعَلْنَا مِنْ أَحَبِّ النَّاسِ إِلَيْهِمَا، وَمِنْ أَقْرَبِ الْأَبْنَاءِ لَهُمَا، وَأَكْرِمْنَا بِحُسْنِ السُّؤَالِ عَنْهُمَا، وَالْحِرْصِ عَلَيْهِمَا. اللَّهُمَّ لَا تُشْغِلْنَا عَنْهُمَا، لَا بِمَالٍ، وَلَا بِزَوْجَاتٍ، وَلَا بِأَوْلَادٍ. اللَّهُمَّ ارْزُقْنَا بِرَّهُمَا فِي حَيَاتِهِمَا وَبَعْدَ وَفَاتِهِمَا.",
+      "latin": "Allāhumma ighfir li-wālidayya wa-rḥamhumā, wa-tajāwaz ʿanhumā. Allāhumma ijʿalnā min aḥabbi an-nāsi ilayhimā, wa-min aqrabi al-abnāʾi lahumā, wa-akrimnā bi-ḥusni as-suʾāli ʿanhumā, wa-l-ḥirṣi ʿalayhimā. Allāhumma lā tushghilnā ʿanhumā, lā bi-mālin, wa-lā bi-zawjātin, wa-lā bi-awlādin. Allāhumma-rzuqnā birrahumā fī ḥayātihimā wa-baʿda wafātihimā.",
+      "explanationEs": "¡Oh, Allah! Perdona a mis padres, ten misericordia de ellos y absuélvelos. ¡Oh, Allah! Haz que seamos de las personas más queridas para ellos y de los hijos que más cerca estén de sus corazones. Honrános permitiéndonos preguntar por ellos con cariño y preocuparnos por su bienestar. ¡Oh, Allah! No permitas que nada nos distraiga de ellos, ni el dinero, ni los cónyuges, ni los hijos. ¡Oh, Allah! Concédenos la virtud de tratarlos con bondad y honrarlos durante sus vidas y después de su fallecimiento.",
+      "note": "دعاء بر الوالدين وعدم الانشغال عنهما",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20149.mp3"
+      ]
     },
     {
       "itemNumber": 150,
-      "text": "اللَّهُمَّ لَا تَحْرِمْهُمَا سِعَةَ رَحْمَتِكَ، وَشُمُولَ عَافِيَتِكَ، وَجَزِيلَ عَطَائِكَ، وَلَا تَمْنَعْ عَنْهُمَا مَوَاهِبَكَ لِسُوءِ مَا عِنْدَهُمَا، وَلَا تَصْرِفْ وَجْهَكَ الكَرِيمَ عَنْهُمَا بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ.",
-      "latin": "Allāhumma lā taḥrimhumā si‘ata raḥmatik, wa shumūla ‘āfiyatik, wa jazīla ‘aṭā’ik, wa lā tamna‘ ‘anhumā mawāhibaka li-sū’i mā ‘indahumā, wa lā taṣrif wajhakal-karīma ‘anhumā bi-raḥmatika yā Arḥamar-rāḥimīn.",
+      "text": "اللَّهُمَّ لَا تَحْرِمْهُمَا سَعَةَ رَحْمَتِكَ، وَشُمُولَ عَافِيَتِكَ، وَجَزِيلَ عَطَائِكَ، وَلَا تَمْنَعْ عَنْهُمَا مَوَاهِبَكَ لِسُوءِ مَا عِنْدَهُمَا، وَلَا تَصْرِفْ وَجْهَكَ الْكَرِيمَ عَنْهُمَا، بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ.",
+      "latin": "Allāhumma lā taḥrimhumā sa‘ata raḥmatik, wa shumūla ‘āfiyatik, wa jazīla ‘aṭā’ik, wa lā tamna‘ ‘anhumā mawāhibaka li-sū’i mā ‘indahumā, wa lā taṣrif wajhakal-karīma ‘anhumā bi-raḥmatika yā Arḥamar-rāḥimīn.",
       "explanationEs": "«Oh Allah, no los prives de la amplitud de Tu misericordia, de la plenitud de Tu bienestar ni de la abundancia de Tu concesión; no les niegues Tus dones por el mal que pueda haber en ellos, y no apartes de ellos Tu Noble Rostro, por Tu misericordia, ¡Oh el más Misericordioso de los misericordiosos!».\n",
-      "note": "دعاء سعة الرحمة والعطاء"
+      "note": "دعاء سعة الرحمة والعطاء",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20150.mp3"
+      ]
     },
     {
       "itemNumber": 151,
-      text: 'اللَّهُمَّ اغْفِرْ لِوَالِدَيْنَا وَارْحَمْهُمَا وَتَجَاوَزْ عَنِ الأَحْيَاءِ مِنْهُمْ وَالأَمْوَاتِ.',
-      latin: 'Allāhummagh-fir li-wālidaynā war-ḥamhumā wa tajāwaz ‘anil-aḥyā’i minhum wal-amwāt.',
-      explanationEs: 'Oh Allah, perdona a nuestros padres, ten misericordia de ellos y pasa por alto las faltas de los vivos y de los muertos.',
-      note: 'دعاء شامل للأحياء والأموات'
+      "text": "اللَّهُمَّ اغْفِرْ لِوَالِدَيْنَا، وَارْحَمْهُمَا، وَتَجَاوَزْ عَنِ الْأَحْيَاءِ مِنْهُمْ وَالْأَمْوَاتِ.",
+      "latin": "Allāhummagh-fir li-wālidaynā war-ḥamhumā wa tajāwaz ‘anil-aḥyā’i minhum wal-amwāt.",
+      "explanationEs": "Oh Allah, perdona a nuestros padres, ten misericordia de ellos y pasa por alto las faltas de los vivos y de los muertos.",
+      "note": "دعاء شامل للأحياء والأموات",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20151.mp3"
+      ]
     },
     {
       "itemNumber": 152,
       "text": "اللَّهُمَّ اغْفِرْ لَهُمَا، وَعَافِهِمَا، وَاعْفُ عَنْهُمَا، وَنَقِّهِمَا مِنَ الذُّنُوبِ وَالخَطَايَا كَمَا يُنَقَّى الثَّوْبُ الأَبْيَضُ مِنَ الدَّنَسِ.",
       "latin": "Allāhummagh-fir lahumā, wa ‘āfihimā, wa‘fu ‘anhumā, wa naqqihimā minadh-dhunūbi wal-khaṭāyā kamā yunaqqāth-thawbul-abyaḍu minad-danas.",
       "explanationEs": "Oh Allah, perdónalos, concédeles salud, absuélvelos y purifícalos de los pecados y faltas como se limpia el vestido blanco de la suciedad.",
-      "note": "دعاء النقاء والمغفرة"
+      "note": "دعاء النقاء والمغفرة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20152.mp3"
+      ]
     },
     {
       "itemNumber": 153,
       "text": "اللَّهُمَّ أَجْزِهِمَا عَنِ الإِحْسَانِ إِحْسَانًا، وَعَنِ الإِسَاءَةِ عَفْوًا وَغُفْرَانًا.",
       "latin": "Allāhumma ijzihimā ‘anil-iḥsāni iḥsānan, wa ‘anil-isā’ati ‘afwan wa ghufrānā.",
       "explanationEs": "Oh Allah, recompensa su bondad con más bondad, y sus faltas con perdón y absolución.",
-      "note": "دعاء الجزاء بالإحسان"
+      "note": "دعاء الجزاء بالإحسان",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20153.mp3"
+      ]
     },
     {
       "itemNumber": 154,
-      "text": "يَا حَيُّ يَا قَيُّومُ، يَا نُورُ يَا قَدُّوسُ، يَا حَيُّ يَا اللهُ، يَا رَحْمَنُ اغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تَحُلُّ النِّقَمَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تُورِثُ النَّدَمَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تَحْبِسُ القِسْمَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تَهْتِكُ العِصَمَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تَقْطَعُ الرَّجَاءَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تُعَجِّلُ الفَنَاءَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تَرُدُّ الدُّعَاءَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تُمْسِكُ غَيْثَ السَّمَاءِ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تُظْلِمُ الهَوَاءَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تَكْشِفُ الغِطَاءَ، اللَّهُمَّ إِنِّي أَسْأَلُكَ، يَا فَارِجَ الهَمِّ، يَا كَاشِفَ الغَمِّ، مُجِيبَ دَعْوَةِ المُضْطَرِّ، رَحْمَنَ الدُّنْيَا وَالآخِرَةِ وَرَحِيمَهُمَا، أَسْأَلُكَ أَنْ تَرْحَمَهُمَا بِرَحْمَةٍ مِنْ عِنْدِكَ تُغْنِيهِمَا بِهَا عَنْ رَحْمَةِ مَنْ سِوَاكَ.",
-      "latin": "Yā Ḥayyu yā Qayyūm, yā Nūru yā Quddūs, yā Ḥayyu yā Allāh, yā Raḥmān, ighfir lahumā adh-dhunūbal-latī taḥullun-niqam, wa ighfir lahumā adh-dhunūbal-latī tūrithun-nadam, wa ighfir lahumā adh-dhunūbal-latī taḥbisul-qism, wa ighfir lahumā adh-dhunūbal-latī tahtikul-ʿiṣam, wa ighfir lahumā adh-dhunūbal-latī taqṭaʿur-rajāʾ, wa ighfir lahumā adh-dhunūbal-latī tuʿajjilul-fanāʾ, wa ighfir lahumā adh-dhunūbal-latī taruddu ad-duʿāʾ, wa ighfir lahumā adh-dhunūbal-latī tumsiku ghaytha as-samāʾ, wa ighfir lahumā adh-dhunūbal-latī tuẓlimul-hawāʾ, wa ighfir lahumā adh-dhunūbal-latī takshiful-ghiṭāʾ. Allāhumma innī asʾaluka, yā fārijal-hamm, yā kāshifal-ghamm, mujība daʿwatil-muḍṭarr, raḥmānad-dunyā wal-ākhirati wa raḥīmahumā. Asʾaluka an tarḥamahumā bi-raḥmatin min ʿindika tughnīhimā bihā ʿan raḥmati man siwāk.",
-      "explanationEs": "¡Oh Viviente, Oh Sustentador, Oh Luz, Oh Santísimo, Oh Viviente, Oh Allah, Oh Misericordioso! Perdona a ambos los pecados que atraen calamidades, los que causan remordimiento, los que impiden el sustento, los que quebrantan las protecciones, los que cortan la esperanza, los que apresuran el fin, los que impiden que la súplica sea respondida, los que retienen la lluvia del cielo, los que oscurecen el aire y los que descubren lo que estaba cubierto. ¡Oh Allah! Te pido, Oh, Quien disipa la preocupación, Oh, Quien elimina la angustia, Quien responde a la súplica del necesitado, Misericordioso en esta vida y en la otra, que tengas misericordia de ambos con una misericordia procedente de Ti que les haga prescindir de la misericordia de cualquiera fuera de Ti.",
-      "note": "دعاء الكرب والمغفرة الواسعة"
+      "text": "يَا حَيُّ يَا قَيُّومُ، يَا نُورُ يَا قُدُّوسُ، يَا حَيُّ يَا اللَّهُ، يَا رَحْمَنُ، اغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تَحُلُّ النِّقَمَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تُورِثُ النَّدَمَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تَحْبِسُ الرِّزْقَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تَهْتِكُ الْعِصَمَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تَقْطَعُ الرَّجَاءَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تُعَجِّلُ الْفَنَاءَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تَرُدُّ الدُّعَاءَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تُمْسِكُ غَيْثَ السَّمَاءِ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تُظْلِمُ الْقُلُوبَ، وَاغْفِرْ لَهُمَا الذُّنُوبَ الَّتِي تَكْشِفُ الْغِطَاءَ.\n\nاللَّهُمَّ إِنِّي أَسْأَلُكَ، يَا فَارِجَ الْهَمِّ، يَا كَاشِفَ الْغَمِّ، يَا مُجِيبَ دَعْوَةِ الْمُضْطَرِّ، يَا رَحْمَنَ الدُّنْيَا وَالْآخِرَةِ وَرَحِيمَهُمَا، أَنْ تَرْحَمَهُمَا بِرَحْمَةٍ مِنْ عِنْدِكَ، تُغْنِيهِمَا بِهَا عَنْ رَحْمَةِ مَنْ سِوَاكَ، يَا أَرْحَمَ الرَّاحِمِينَ.",
+      "latin": "Yā Ḥayyu, yā Qayyūm, yā Nūru, yā Quddūs, yā Ḥayyu, yā Allāh, yā Raḥmān. Ighfir lahumā adh-dhunūba allatī taḥullu an-niqama, wa-ighfir lahumā adh-dhunūba allatī tūriṯu an-nadama, wa-ighfir lahumā adh-dhunūba allatī taḥbisu ar-rizqa, wa-ighfir lahumā adh-dhunūba allatī tahtiku al-ʿiṣama, wa-ighfir lahumā adh-dhunūba allatī taqṭaʿu ar-rajāʾa, wa-ighfir lahumā adh-dhunūba allatī tuʿajjilu al-fanāʾa, wa-ighfir lahumā adh-dhunūba allatī taruddu ad-duʿāʾa, wa-ighfir lahumā adh-dhunūba allatī tumsiku ghaytha as-samāʾi, wa-ighfir lahumā adh-dhunūba allatī tuẓlimu al-qulūba, wa-ighfir lahumā adh-dhunūba allatī takshifu al-ghiṭāʾa.\n\nAllāhumma innī asʾaluka, yā fārija al-hammi, yā kāshifa al-ghammi, yā mujība daʿwati al-muḍṭarri, yā Raḥmāna ad-dunyā wa-al-ākhirati wa-Raḥīmahumā, an tarḥamahumā bi-raḥmatin min ʿindika, tughnīhimā bihā ʿan raḥmati man siwāk, yā arḥama ar-rāḥimīn.",
+      "explanationEs": "¡Oh, Viviente, Sustentador de toda existencia! ¡Oh, Luz, Santísimo! ¡Oh, Allah, el Viviente y el Misericordioso!\n\nPerdona a mis padres los pecados que atraen las calamidades, los que provocan arrepentimiento, los que retienen el sustento, los que quebrantan las protecciones, los que hacen perder la esperanza, los que aceleran el final de la vida, los que hacen que las súplicas sean rechazadas, los que retienen la lluvia del cielo, los que oscurecen los corazones y los que dejan al descubierto lo que estaba oculto.\n\n¡Oh, Allah! Te suplico a Ti, que alivias las preocupaciones, apartas las angustias y respondes a las súplicas de quienes se encuentran en extrema necesidad. Tú eres el Misericordioso en esta vida y en la otra, y el Compasivo en ambas. Te pido que tengas misericordia de mis padres con una misericordia procedente de Ti, tan inmensa que no necesiten la misericordia de nadie más que de Ti. ¡Oh, el Más Misericordioso de los misericordiosos!",
+      "note": "دعاء الكرب والمغفرة الواسعة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20154.mp3"
+      ]
     },
     {
       "itemNumber": 155,
-      text: 'اللَّهُمَّ لَا تَجْعَلْ فِي قَلْبِ وَالِدَيَّ مِنَ الحُزْنِ وَالهَمِّ مِثْقَالَ ذَرَّةٍ، رَبِّ أَسْعِدْ قَلْبَهُمَا لِيَسْعَدَ قَلْبِي يَا كَرِيمُ يَا اللهُ.',
-      latin: 'Allāhumma lā taj‘al fī qalbi wālidayya minal-ḥuzni wal-hammi mithqāla dharrah, Rabbi as‘id qalbahumā li-yas‘ada qalbī yā Karīmu yā Allāh.',
-      explanationEs: 'Oh Allah, no dejes en el corazón de mis padres ni una pizca de tristeza o ansiedad. Señor, haz felices sus corazones para que el mío también sea feliz.',
-      note: 'دعاء إزالة الهم والحزن عن الوالدين'
+      "text": "اللَّهُمَّ لَا تَجْعَلْ فِي قَلْبَيْ وَالِدَيَّ مِنَ الْحُزْنِ وَالْهَمِّ مِثْقَالَ ذَرَّةٍ، رَبِّ أَسْعِدْ قَلْبَيْهِمَا لِيَسْعَدَ قَلْبِي، يَا كَرِيمُ، يَا اللَّهُ.\n",
+      "latin": "Allāhumma lā tajʿal fī qalbay wālidayya mina al-ḥuzni wa-al-hammi mithqāla dharratin. Rabbi asʿid qalbayhimā li-yasʿada qalbī, yā Karīm, yā Allāh.\n",
+      "explanationEs": "¡Oh, Allah! No permitas que haya en los corazones de mis padres ni el más mínimo peso de tristeza o preocupación. Señor mío, llena sus corazones de felicidad para que mi corazón también sea feliz. ¡Oh, Generoso! ¡Oh, Allah!\n",
+      "note": "دعاء إزالة الهم والحزن عن الوالدين",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20155.mp3"
+      ]
     },
     {
       "itemNumber": 156,
-      text: 'يَا فَارِجَ الهَمِّ، وَيَا كَاشِفَ الغَمِّ، فَرِّجْ هَمَّهُمَا وَيَسِّرْ أَمْرَهُمَا، وَارْحَمْ ضَعْفَهُمَا، وَقِلَّةَ حِيلَتِهِمَا، وَارْزُقْهُمَا يَا رَبَّ العَالَمِينَ، يَا وَدُودُ يَا كَرِيمُ، يَا جَبَّارَ السَّمَاوَاتِ وَالأَرْضِ، يَا هَادِيَ القُلُوبِ اهْدِ قَلْبَيْهِمَا، يَا مُغِيثُ أَغِثْهُمَا (ثلاثاً)، اللَّهُمَّ أَعِنَّا عَلَى بِرِّهِمَا حَتَّى يَرْضَيَا عَنَّا فَتَرْضَى، اللَّهُمَّ أَعِنَّا عَلَى الإِحْسَانِ إِلَيْهِمَا فِي كِبَرِهِمَا.',
-      latin: "Yā fārijal-hamm, wa yā kāshifal-ghamm, farrij hammahumā wa yassir amrahumā, warḥam ḍaʿfahumā wa qillata ḥīlatihimā, warzuqhumā yā Rabbal-ʿālamīn. Yā Wadūd, yā Karīm, yā Jabbāras-samāwāti wal-arḍ, yā Hādiyal-qulūbi ihdi qalbayhimā, yā Mughīth aghithhumā (thalāthan). Allāhumma aʿinnā ʿalā birrihimā ḥattā yarḍayā ʿannā fa-tarḍā. Allāhumma aʿinnā ʿalā al-iḥsāni ilayhimā fī kibarihimā.",
-      explanationEs: "¡Oh, Quien disipa la preocupación y elimina la angustia! Alivia sus preocupaciones, facilita sus asuntos, ten piedad de su debilidad y de sus pocos recursos, y provéeles, Señor de los mundos. ¡Oh Afectuoso, Oh Generoso, Oh Poderoso de los cielos y de la Tierra, Oh Guía de los corazones, guía sus corazones! ¡Oh, Quien socorre, socórrelos! (tres veces). ¡Oh Allah! Ayúdanos a tratarlos con bondad hasta que estén complacidos con nosotros y Tú estés complacido. ¡Oh Allah! Ayúdanos a ser benevolentes con ellos durante su vejez.",
-      note: 'دعاء تفريج الهم والإعانة على البر'
+      "text": "\nيَا فَارِجَ الْهَمِّ، وَيَا كَاشِفَ الْغَمِّ، فَرِّجْ هَمَّهُمَا، وَيَسِّرْ أَمْرَهُمَا، وَارْحَمْ ضَعْفَهُمَا وَقِلَّةَ حِيلَتِهِمَا، وَارْزُقْهُمَا يَا رَبَّ الْعَالَمِينَ.\n\nيَا وَدُودُ، يَا كَرِيمُ، يَا جَبَّارَ السَّمَاوَاتِ وَالْأَرْضِ، يَا هَادِيَ الْقُلُوبِ، اهْدِ قَلْبَيْهِمَا، يَا مُغِيثُ، أَغِثْهُمَا، يَا مُغِيثُ، أَغِثْهُمَا، يَا مُغِيثُ، أَغِثْهُمَا.\n\nاللَّهُمَّ أَعِنَّا عَلَى بِرِّهِمَا حَتَّى يَرْضَيَا عَنَّا فَتَرْضَى، وَأَعِنَّا عَلَى الْإِحْسَانِ إِلَيْهِمَا فِي كِبَرِهِمَا.\n",
+      "latin": "\nYā Fārija al-hammi, wa-yā Kāshifa al-ghammi, farrij hammahumā, wa-yassir amrahumā, warḥam ḍaʿfahumā wa-qillata ḥīlatihimā, warzuqhumā yā Rabba al-ʿālamīn.\n\nYā Wadūd, yā Karīm, yā Jabbāra as-samāwāti wa-al-arḍ, yā Hādiya al-qulūb, ihdi qalbayhimā. Yā Mughīth, aghithhumā, yā Mughīth, aghithhumā, yā Mughīth, aghithhumā.\n\nAllāhumma aʿinnā ʿalā birrihimā ḥattā yarḍayā ʿannā fa-tarḍā, wa-aʿinnā ʿalā al-iḥsāni ilayhimā fī kibarihimā.\n",
+      "explanationEs": "\n¡Oh, Quien alivia las preocupaciones y disipa las angustias! Alivia las preocupaciones de mis padres, facilita sus asuntos, ten misericordia de su debilidad y de su falta de recursos, y concédeles sustento, Señor de todos los mundos.\n\n¡Oh, el Más Amoroso! ¡Oh, el Generoso! ¡Oh, Poderoso y Dominador de los cielos y de la Tierra! ¡Oh, Guía de los corazones, guía los corazones de mis padres! ¡Oh, Quien socorre a quienes necesitan ayuda, socórrelos! ¡Socórrelos! ¡Socórrelos!\n\n¡Oh, Allah! Ayúdanos a honrar y tratar bien a nuestros padres, hasta que ellos estén satisfechos con nosotros y Tú estés complacido con nosotros. Ayúdanos también a tratarlos con bondad y excelencia durante su vejez.\n",
+      "note": "دعاء تفريج الهم والإعانة على البر",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20156.mp3"
+      ]
     },
     {
       "itemNumber": 157,
-      "text": "اللَّهُمَّ مَنْ كَانَ مِنْ وَالِدَيَّ مَهْمُومًا فَفَرِّجْ هَمَّهُ وَمَنْ كَانَ مَدْيُونًا فَفُكَّ دَيْنَهُ وَمَنْ كَانَ مَرِيضًا فَرُدَّ عَلَيْهِ عَافِيَتَهُ، اللَّهُمَّ اجْعَلْ وَالِدَيَّ مِنْ أَسْعَدِ السُّعَدَاءِ.",
+      "text": "اللَّهُمَّ مَنْ كَانَ مِنْ وَالِدَيَّ مَهْمُومًا فَفَرِّجْ هَمَّهُ،\nوَمَنْ كَانَ مَدْيُونًا فَفُكَّ دَيْنَهُ،\nوَمَنْ كَانَ مَرِيضًا فَرُدَّ عَلَيْهِ عَافِيَتَهُ،\nاللَّهُمَّ اجْعَلْ وَالِدَيَّ مِنْ أَسْعَدِ السُّعَدَاءِ.",
       "latin": "Allāhumma man kāna min wālidayya mahmūman fa-farrij hammah, wa man kāna madyūnan fa-fukka daynah, wa man kāna marīḍan fa-rudda ‘alayhi ‘āfiyatah, Allāhummaj-‘al wālidayya min as‘adis-su‘adā’.",
       "explanationEs": "¡Oh Allah! Alivia la preocupación de aquel de mis padres que esté angustiado, libera de su deuda a aquel que esté endeudado y devuelve la salud a aquel que esté enfermo. ¡Oh Allah! Haz que mis padres estén entre los más felices.",
-      "note": "دعاء تفريج الهم والدين والشفاء"
+      "note": "دعاء تفريج الهم والدين والشفاء",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20157.mp3"
+      ]
     },
     {
       "itemNumber": 158,
-      "text": "اللَّهُمَّ لَا تَجْمَعْ لَهُمَا بَيْنَ حُزْنِ الدُّنْيَا وَشَقَاءِ الآخِرَةِ بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ، اللَّهُمَّ رَحْمَاكَ رَحْمَاكَ يَا اللهُ، اللَّهُمَّ ارْزُقْنَا وَإِيَّاهُمْ حُسْنَ الخَاتِمَةِ.",
-      "latin": "Allāhumma lā tajma‘ lahumā bayna ḥuznid-dunyā wa shaqā’il-ākhirati bi-raḥmatika yā Arḥamar-rāḥimīn, Allāhumma raḥmāka raḥmāka yā Allāh, Allāhummar-zuqnā wa iyyāhum ḥusnal-khātimah.",
-      "explanationEs": "«Oh Allah, no reúnas para ellos la tristeza de este mundo y la desdicha del Más Allá, por Tu misericordia, ¡Oh el más Misericordioso de los misericordiosos! Oh Allah, Tu misericordia, Tu misericordia, ¡Oh Allah! Oh Allah, concédenos a nosotros y a ellos un buen final».\n",
-      "note": "دعاء حسن الخاتمة"
+      "text": "\nاللَّهُمَّ لَا تَجْمَعْ لَهُمَا بَيْنَ حُزْنِ الدُّنْيَا وَشَقَاءِ الْآخِرَةِ، بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ.\nاللَّهُمَّ رَحْمَاكَ، رَحْمَاكَ، يَا اللَّهُ.\nاللَّهُمَّ ارْزُقْنَا وَإِيَّاهُمَا حُسْنَ الْخَاتِمَةِ.\n",
+      "latin": "\nAllāhumma lā tajmaʿ lahumā bayna ḥuzni ad-dunyā wa-shaqāʾi al-ākhirah, bi-raḥmatika yā Arḥama ar-rāḥimīn.\nAllāhumma raḥmāka, raḥmāka, yā Allāh.\nAllāhumma urzuqnā wa-iyyāhumā ḥusna al-khātimah.\n",
+      "explanationEs": "\n¡Oh, Allah! No permitas que se unan para mis padres la tristeza de esta vida y la desgracia de la otra vida. Por Tu misericordia, ¡oh, el Más Misericordioso de quienes muestran misericordia!\n¡Oh, Allah, te imploramos Tu misericordia! ¡Tu misericordia, oh Allah!\n¡Oh, Allah! Concédenos a nosotros y a ellos un buen final.\n",
+      "note": "دعاء حسن الخاتمة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20158.mp3"
+      ]
     },
     {
       "itemNumber": 159,
-      "text": "اللَّهُمَّ اكْفِهِمَا مَا أَهَمَّهُمَا، اللَّهُمَّ زَوِّدْهُمَا بِالتَّقْوَى، وَاغْفِرْ لَهُمَا ذُنُوبَهُمَا، وَوَجِّهْهُمَا لِلْخَيْرِ أَيْنَمَا تَوَجَّهَا، اللَّهُمَّ يَسِّرْهُمَا لِلْيُسْرَى، وَجَنِّبْهُمَا العُسْرَى، اللَّهُمَّ اجْعَلْ لَهُمَا مِنْ كُلِّ مَا أَهَمَّهُمَا وَكَرَّبَهُمَا مِنْ أُمُورِ الدُّنْيَا وَالآخِرَةِ فَرَجًا وَمَخْرَجًا، وَارْزُقْهُمَا وَاغْفِرْ لَهُمَا ذُنُوبَهُمَا.",
+      "text": "\nاللَّهُمَّ اكْفِهِمَا مَا أَهَمَّهُمَا، اللَّهُمَّ زَوِّدْهُمَا بِالتَّقْوَى، وَاغْفِرْ لَهُمَا ذُنُوبَهُمَا، وَوَجِّهْهُمَا لِلْخَيْرِ أَيْنَمَا تَوَجَّهَا.\nاللَّهُمَّ يَسِّرْهُمَا لِلْيُسْرَى، وَجَنِّبْهُمَا الْعُسْرَى.\nاللَّهُمَّ اجْعَلْ لَهُمَا مِنْ كُلِّ مَا أَهَمَّهُمَا وَكَرَّبَهُمَا مِنْ أُمُورِ الدُّنْيَا وَالْآخِرَةِ فَرَجًا وَمَخْرَجًا، وَارْزُقْهُمَا، وَاغْفِرْ لَهُمَا ذُنُوبَهُمَا.\n",
       "latin": "Allāhummak-fihimā mā ahammahumā, Allāhumma zawwid-humā bit-taqwā, waghfir lahumā dhunūbahumā, wa wajjih-humā lil-khayri aynamā tawajjahā, Allāhumma yassir-humā lil-yusrā, wa jannibhumā al-‘usrā, Allāhumma aj‘al lahumā min kulli mā ahammahumā wa karrabahumā farajan wa makhrajā, warzuq-humā waghfir lahumā dhunūbahumā.",
       "explanationEs": "¡Oh Allah! Sé suficiente para mis padres frente a todo aquello que les preocupa. ¡Oh Allah! Provéelos de piedad, perdona sus pecados y guíalos hacia el bien adondequiera que se dirijan. Facilítales el camino de la facilidad y apártalos de las dificultades. Concédeles alivio y una salida ante cada preocupación y angustia de esta vida y de la otra. Provéeles de sustento y perdona sus pecados.",
-      "note": "دعاء الكفاية والتيسير"
+      "note": "دعاء الكفاية والتيسير",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20159.mp3"
+      ]
     },
     {
       "itemNumber": 160,
-      text: 'اللَّهُمَّ اكْشِفْ عَنْهُمَا كُلَّ بَلْوَى، يَا عَالِمَ كُلِّ خَفِيَّةٍ، يَا صَارِفَ كُلِّ بَلِيَّةٍ، أَغِثْهُمَا، وَالْطُفْ بِهِمَا، وَتَدَارَكْهُمَا بِإِغَاثَتِكَ.',
-      latin: 'Allāhummak-shif ‘anhumā kulla balwā, yā ‘ālima kulli khafiyyah, yā ṣārafa kulli baliyyah, aghithumā, wal-ṭuf bihimā, wa tadārak-humā bi-ighātatik.',
-      explanationEs: 'Oh Allah, aparta de ellos toda prueba, Oh Conocedor de lo oculto, Oh Apartador de calamidades. Socórrelos, sé clemente con ellos y ampáralos con Tu auxilio.',
-      note: 'دعاء كشف البلوى والإغاثة'
+      "text": "اللَّهُمَّ اكْشِفْ عَنْهُمَا كُلَّ بَلْوَى، يَا عَالِمَ كُلِّ خَفِيَّةٍ، يَا صَارِفَ كُلِّ بَلِيَّةٍ، أَغِثْهُمَا، وَالْطُفْ بِهِمَا، وَتَدَارَكْهُمَا بِإِغَاثَتِكَ.\n",
+      "latin": "Allāhummak-shif ‘anhumā kulla balwā, yā ‘ālima kulli khafiyyah, yā ṣārafa kulli baliyyah, aghithumā, wal-ṭuf bihimā, wa tadārak-humā bi-ighātatik.",
+      "explanationEs": "Oh Allah, aparta de ellos toda prueba, Oh Conocedor de lo oculto, Oh Apartador de calamidades. Socórrelos, sé clemente con ellos y ampáralos con Tu auxilio.",
+      "note": "دعاء كشف البلوى والإغاثة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20160.mp3"
+      ]
     },
     {
       "itemNumber": 161,
-      text: 'اللَّهُمَّ فَرِّجْ عَنْ وَالِدَيَّ كُلَّ مَا ضَاقَ بِهِ صَدْرُهُمَا، وَعَجِزَ مَعَهُ صَبْرُهُمَا، وَقَلَّتْ فِيهِ حِيلَتُهُمَا، وَضَعُفَتْ لَهُ قُوَّتُهُمَا.',
-      latin: 'Allāhumma farrij ‘an wālidayya kulla mā ḍāqa bihī ṣadruhumā, wa ‘ajiza ma‘ahu ṣabruhumā, wa qallat fīhi ḥīlatuhumā, wa ḍa‘ufat lahu quwwatuhumā.',
-      explanationEs: 'Oh Allah, alivia a mis padres de todo lo que angustie sus pechos, agote su paciencia, reduzca sus recursos y debilite sus fuerzas.',
-      note: 'دعاء تفريج الضيق وضعف الحيلة'
+      "text": "اللَّهُمَّ فَرِّجْ عَنْ وَالِدَيَّ كُلَّ مَا ضَاقَ بِهِ صَدْرَاهُمَا، وَعَجَزَ مَعَهُ صَبْرُهُمَا، وَقَلَّتْ فِيهِ حِيلَتُهُمَا، وَضَعُفَتْ لَهُ قُوَّتُهُمَا.\n",
+      "latin": "Allāhumma farrij ‘an wālidayya kulla mā ḍāqa bihī ṣadrahumā, wa ‘ajiza ma‘ahu ṣabruhumā, wa qallat fīhi ḥīlatuhumā, wa ḍa‘ufat lahu quwwatuhumā.",
+      "explanationEs": "Oh Allah, alivia a mis padres de todo lo que angustie sus pechos, agote su paciencia, reduzca sus recursos y debilite sus fuerzas.",
+      "note": "دعاء تفريج الضيق وضعف الحيلة",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20161.mp3"
+      ]
     },
     {
       "itemNumber": 162,
-      text: 'اللَّهُمَّ يَا مَنْ بِيَدِكَ تَسْهِيلُ كُلِّ شَدِيدٍ، وَمَنْ بِيَدِكَ إِنْجَازُ الوَعْدِ وَالوَعِيدِ، وَكُلُّ يَوْمٍ هُوَ فِي شَأْنٍ وَأَمْرٍ جَدِيدٍ، أَسْأَلُكَ يَا اللهُ أَنْ تُخْرِجَهُمَا مِنَ الكَرْبِ وَالضِّيقِ لِأَوْسَعِ السُّبُلِ وَالطَّرِيقِ، وَأَسْأَلُكَ أَنْ تَدْفَعَ عَنْهُمَا مَا لَا يُطِيقَانِ.',
-      latin: "Allāhumma yā man biyadika tashīlu kulli shadīd, wa man biyadika injāzul-waʿdi wal-waʿīd, wa kullu yawmin huwa fī shaʾnin wa amrin jadīd, asʾaluka yā Allāhu an tukhrijahumā minal-karbi waḍ-ḍīqi li-awsaʿis-subuli waṭ-ṭarīq, wa asʾaluka an tadfaʿa ʿanhumā mā lā yuṭīqān.",
-      explanationEs: "¡Oh Allah, en Cuya mano está hacer fácil toda dificultad, y en Cuya mano está cumplir la promesa y la advertencia; cada día estás en un asunto nuevo! Te pido, ¡oh Allah!, que saques a ambos de la angustia y la estrechez hacia los caminos más amplios y fáciles, y que alejes de ellos aquello que no pueden soportar.",
-      note: 'دعاء تسهيل الشدائد وإخراج الكرب'
+      "text": "اللَّهُمَّ يَا مَنْ بِيَدِكَ تَسْهِيلُ كُلِّ شَدِيدٍ، وَإِنْجَازُ الْوَعْدِ وَالْوَعِيدِ، وَكُلَّ يَوْمٍ هُوَ فِي شَأْنٍ وَأَمْرٍ جَدِيدٍ، أَسْأَلُكَ يَا اللَّهُ أَنْ تُخْرِجَهُمَا مِنَ الْكَرْبِ وَالضِّيقِ إِلَى أَوْسَعِ السُّبُلِ وَأَيْسَرِ الطُّرُقِ، وَأَسْأَلُكَ أَنْ تَدْفَعَ عَنْهُمَا مَا لَا يُطِيقَانِ.\n",
+      "latin": "Allāhumma yā man bi-yadika tashīlu kulli shadīd, wa-injāzu al-waʿdi wa-al-waʿīd, wa-kulla yawmin huwa fī shaʾnin wa-amrin jadīd. Asʾaluka yā Allāhu an tukhrijahumā mina al-karbi wa-aḍ-ḍīqi ilā awsaʿi as-subuli wa-aysari aṭ-ṭuruq, wa-asʾaluka an tadfaʿa ʿanhumā mā lā yuṭīqān.\n",
+      "explanationEs": "¡Oh, Allah! Tú, en cuyas manos está facilitar toda dificultad, cumplir la promesa y hacer realidad la advertencia, y que cada día estás ocupado en un asunto nuevo.\n\nTe suplico, ¡oh, Allah!, que saques a mis padres de la angustia y la estrechez y los conduzcas hacia los caminos más amplios y fáciles. Te suplico también que apartes de ellos todo aquello que no pueden soportar.\n",
+      "note": "دعاء تسهيل الشدائد وإخراج الكرب",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20162.mp3"
+      ]
     }
 	]
 	},
