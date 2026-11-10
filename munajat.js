@@ -166,7 +166,7 @@ const munajatData = [
   {
     id: "atributos",
     titleAr: "التَّسْبِيحُ وَصِفَاتُ اللَّهِ",
-    titleEs: "Glorificación y atributos de Allah",
+    titleEs: "Glorificación y Atributos de Allah",
     items: [
       {
         "itemNumber": 21,
