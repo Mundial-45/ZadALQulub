@@ -58,7 +58,6 @@ const munajatData = [
         "audioUrls": [
           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Munajat/munajat6.mp3"
         ],
-        "note": "",
         "audioUrl": ""
       },
       {
