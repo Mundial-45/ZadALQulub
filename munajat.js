@@ -3,7 +3,7 @@ const munajatData = [
   {
     id: "alabanza",
     titleAr: "الْحَمْدُ وَالشُّكْرُ",
-    titleEs: "Alabanza y gratitud",
+    titleEs: "Alabanza y Gratitud",
     items: [
       {
         "itemNumber": 1,
