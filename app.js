@@ -713,7 +713,7 @@ function filterButtons() {
   if (matchedGroups.length > 0) {
     matchedGroups.forEach((group) => {
       const title = isEs ? (group.titleEs || group.titleAr) : (group.titleAr || group.titleEs);
-      const count = group.items ? group.items.length : 0;
+      const count = group.items ? group.items.filter(it => !it.isInfo).length : 0;
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.onclick = () => openGroup(group.id);
@@ -804,7 +804,7 @@ function renderButtonsGrid() {
   data.forEach((group, index) => {
     const title = isEs ? (group.titleEs || group.titleAr) : (group.titleAr || group.titleEs);
     if (!title) return;
-    const count = group.items ? group.items.length : 0;
+    const count = group.items ? group.items.filter(it => !it.isInfo).length : 0;
     const style = specialGradients[group.id] || categoryGradients[index % categoryGradients.length];
     const inlineStyle = catInlineStyles[index % catInlineStyles.length];
 
@@ -1326,11 +1326,14 @@ function renderGroupItems() {
     if (resetAllBtn) resetAllBtn.style.display = 'inline-block';
 
     let totalCompletedInGroup = 0;
+    let countableItems = 0;
     currentGroup.items.forEach((it, idx) => {
+      if (it.isInfo) return;
+      countableItems++;
       const cnt = getSavedCount(currentGroup.id, idx, it.count);
       if (cnt === 0) totalCompletedInGroup++;
     });
-    const overallPercent = Math.round((totalCompletedInGroup / totalItems) * 100);
+    const overallPercent = countableItems ? Math.round((totalCompletedInGroup / countableItems) * 100) : 0;
 
     const progressPercentEl = document.getElementById('progressPercent');
     const progressBarFillEl = document.getElementById('progressBarFill');
@@ -1352,6 +1355,7 @@ function renderGroupItems() {
     const isMunajatSection = currentSection === 'munajat';
     const isAzkarSection = currentSection === 'azkar';
     const isAdyaSection = currentSection === 'adya';
+    const isInfoItem = !!item.isInfo;
     const displayedItemNumber = Number(item.itemNumber) || (index + 1);
     const itemProgressStr = isRuqyahSection
       ? (isEs ? `Ruqyah n.º ${displayedItemNumber}` : `رقية رقم ${displayedItemNumber}`)
@@ -1368,12 +1372,12 @@ function renderGroupItems() {
     card.className = 'card-paper-bg rounded-3xl p-6 shadow-lg border border-amber-200/80 dark:border-slate-700 space-y-5 transition-all duration-300';
 
     card.innerHTML = `
-      <div class="flex items-center justify-between text-xs font-bold border-b border-amber-200/60 dark:border-slate-700/60 pb-3">
-        <span class="text-emerald-800 dark:text-emerald-400 bg-emerald-100/80 dark:bg-emerald-950/60 px-3 py-1 rounded-full border border-emerald-300 dark:border-emerald-800">
+      ${isInfoItem && !item.note ? '' : `<div class="flex items-center justify-between text-xs font-bold border-b border-amber-200/60 dark:border-slate-700/60 pb-3">
+        ${isInfoItem ? '' : `<span class="text-emerald-800 dark:text-emerald-400 bg-emerald-100/80 dark:bg-emerald-950/60 px-3 py-1 rounded-full border border-emerald-300 dark:border-emerald-800">
           ${itemProgressStr}
-        </span>
+        </span>`}
         ${item.note ? `<span class="bg-amber-100/80 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 px-3 py-1 rounded-full border border-amber-300 dark:border-amber-800">${item.note}</span>` : ''}
-      </div>
+      </div>`}
 
       ${isEs ? `
         <div class="space-y-4">
@@ -1389,7 +1393,7 @@ function renderGroupItems() {
         </div>
       `}
 
-      ${!isAdya ? `
+      ${!isAdya && !isInfoItem ? `
         <div class="flex flex-col items-center justify-center pt-2">
           <button type="button" onclick="decrementCounter(${index})" class="dhikr-counter-btn ${isDone ? 'is-done' : ''} w-32 h-32 rounded-full flex flex-col items-center justify-center transition transform active:scale-90 cursor-pointer shadow-xl border-4 ${isDone ? 'bg-emerald-600 text-white border-emerald-400 hover:bg-emerald-700' : 'bg-gradient-to-br from-emerald-500 to-teal-700 text-white border-emerald-300 hover:from-emerald-600 hover:to-teal-800'}">
             <span class="text-3xl font-extrabold text-white">${isDone ? '✓' : currentCount}</span>
@@ -1434,7 +1438,7 @@ function renderGroupItems() {
             ✏️ ${isEs ? 'Editar' : 'تعديل'}
           </button>
         ` : ''}
-        ${!isAdya ? `
+        ${!isAdya && !isInfoItem ? `
           <button type="button" onclick="resetSingleItem(${index})" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-rose-100 dark:hover:bg-rose-950 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="إعادة ضبط الذكر">
             🔄
           </button>
