@@ -765,3 +765,33 @@ button[onclick="jumpToInputPage()"]:hover {
   margin-top: .15rem !important;
   gap: .55rem !important;
 }
+
+/* Botones redondos de parar y repetir (opción C). Repetir cambia de color cuando está activado. */
+.audio-icon-btn,
+.audio-player-compact .audio-icon-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 2.35rem !important;
+  height: 2.35rem !important;
+  min-width: 2.35rem;
+  padding: 0 !important;
+  border-radius: 9999px !important;
+  background: #ffffff !important;
+  border: 1.5px solid #cbd5e1 !important;
+  color: #334155 !important;
+  cursor: pointer;
+  transition: background-color .15s ease, color .15s ease, border-color .15s ease, transform .1s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.audio-icon-btn:hover { background: #f1f5f9 !important; }
+.audio-icon-btn:active { transform: scale(.94); }
+.audio-icon-btn:focus-visible { outline: 2px solid #047857 !important; outline-offset: 2px; }
+.audio-icon-btn .audio-icon { width: 18px !important; height: 18px !important; max-width: 18px !important; max-height: 18px !important; fill: currentColor; }
+.audio-icon-btn .audio-icon-stroke, .audio-icon-btn .audio-icon-stroke * { fill: none !important; stroke: currentColor; }
+.audio-repeat-btn.is-active { background: #047857 !important; border-color: #047857 !important; color: #ffffff !important; }
+.audio-repeat-btn.is-active:hover { background: #065f46 !important; }
+.dark .audio-icon-btn { background: #1e293b !important; border-color: #475569 !important; color: #e2e8f0 !important; }
+.dark .audio-icon-btn:hover { background: #334155 !important; }
+.dark .audio-icon-btn:focus-visible { outline-color: #34d399 !important; }
+.dark .audio-repeat-btn.is-active { background: #10b981 !important; border-color: #6ee7b7 !important; color: #052e22 !important; }
