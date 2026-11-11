@@ -595,9 +595,11 @@ const azkarData = [
                     "maxCount": 3,
                     "note": "سورة الإخلاص، سورة الفلق، سورة الناس",
                     "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2051-1.mp3",
                       "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q112.mp3",
                       "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q113.mp3",
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q114.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q114.mp3",
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2051-2.mp3"
                     ]
                   },
                   {
