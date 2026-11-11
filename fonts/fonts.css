@@ -1,0 +1,16 @@
+/* Fuentes locales (SIL Open Font License 1.1, ver OFL-*.txt) */
+@font-face{font-family:'Amiri';font-style:normal;font-weight:400;font-display:swap;src:url('Amiri-Regular.woff') format('woff')}
+@font-face{font-family:'Amiri';font-style:normal;font-weight:700;font-display:swap;src:url('Amiri-Bold.woff') format('woff')}
+@font-face{font-family:'Amiri';font-style:italic;font-weight:400;font-display:swap;src:url('Amiri-Italic.woff') format('woff')}
+@font-face{font-family:'Amiri';font-style:italic;font-weight:700;font-display:swap;src:url('Amiri-BoldItalic.woff') format('woff')}
+@font-face{font-family:'Amiri Quran';font-style:normal;font-weight:400;font-display:swap;src:url('AmiriQuran-Regular.woff') format('woff')}
+@font-face{font-family:'Tajawal';font-style:normal;font-weight:400;font-display:swap;src:url('Tajawal-Regular.woff') format('woff')}
+@font-face{font-family:'Tajawal';font-style:normal;font-weight:500;font-display:swap;src:url('Tajawal-Medium.woff') format('woff')}
+@font-face{font-family:'Tajawal';font-style:normal;font-weight:700;font-display:swap;src:url('Tajawal-Bold.woff') format('woff')}
+@font-face{font-family:'Tajawal';font-style:normal;font-weight:800;font-display:swap;src:url('Tajawal-ExtraBold.woff') format('woff')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('Inter-Regular.woff') format('woff')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url('Inter-SemiBold.woff') format('woff')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url('Inter-Bold.woff') format('woff')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:800;font-display:swap;src:url('Inter-ExtraBold.woff') format('woff')}
+@font-face{font-family:'Lora';font-style:normal;font-weight:400 700;font-display:swap;src:url('Lora-Variable.woff') format('woff')}
+@font-face{font-family:'Lora';font-style:italic;font-weight:400 700;font-display:swap;src:url('Lora-Italic-Variable.woff') format('woff')}
