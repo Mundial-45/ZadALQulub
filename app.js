@@ -290,13 +290,35 @@ function updateAudioProgress() {
   if (seek && !seek.matches(':active')) seek.value = total > 0 ? String(Math.round(now / total * 1000)) : '0';
   if (nowEl) nowEl.textContent = formatAudioTime(now);
   if (durationEl) durationEl.textContent = formatAudioTime(total);
-  const playBtn = document.getElementById('audioPlay-' + i);
-  if (playBtn) playBtn.textContent = currentAudio.paused ? '▶' : 'Ⅱ';
+  setPlayButtonState(i, !currentAudio.paused);
   const repeatBtn = document.getElementById('audioRepeat-' + i);
   if (repeatBtn) { repeatBtn.style.opacity = audioRepeatEnabled ? '1' : '0.55'; repeatBtn.setAttribute('aria-pressed', String(audioRepeatEnabled)); }
   const sequenceEl = document.getElementById('audioSequence-' + i);
   if (sequenceEl) sequenceEl.textContent = activeAudioList.length > 1 ? ((activeAudioListIndex + 1) + '/' + activeAudioList.length) : '';
 }
+const AUDIO_PLAY_ICON = '<svg class="audio-pill-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5.6v12.8a1 1 0 0 0 1.52.85l10.4-6.4a1 1 0 0 0 0-1.7L9.52 4.75A1 1 0 0 0 8 5.6z"/></svg>';
+const AUDIO_PAUSE_ICON = '<svg class="audio-pill-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="6" y="5" width="4.2" height="14" rx="1.2"/><rect x="13.8" y="5" width="4.2" height="14" rx="1.2"/></svg>';
+
+function getPlayButtonLabel(playing) {
+  const isEs = currentLang === 'es';
+  return playing ? (isEs ? 'Pausar' : 'إيقاف مؤقت') : (isEs ? 'Escuchar' : 'استماع');
+}
+
+function getPlayButtonInner(playing) {
+  return (playing ? AUDIO_PAUSE_ICON : AUDIO_PLAY_ICON) + '<span class="audio-pill-label">' + getPlayButtonLabel(playing) + '</span>';
+}
+
+function setPlayButtonState(index, playing) {
+  const btn = document.getElementById('audioPlay-' + index);
+  if (!btn) return;
+  const state = (playing ? 'playing' : 'paused') + '-' + currentLang;
+  if (btn.dataset.state === state) return;
+  btn.dataset.state = state;
+  btn.innerHTML = getPlayButtonInner(playing);
+  btn.setAttribute('aria-label', getPlayButtonLabel(playing));
+  btn.classList.toggle('is-playing', playing);
+}
+
 let activeAudioBaseCycleLength = 1;
 let activeAudioTargetRepeats = 1;
 
@@ -414,8 +436,7 @@ function playNextAudioInSequence(token) {
       activeAudioListIndex = 0;
     } else {
       stopCurrentAudioPlayback();
-      const playBtn = document.getElementById('audioPlay-' + cardIdx);
-      if (playBtn) playBtn.textContent = '▶';
+      setPlayButtonState(cardIdx, false);
       const seek = document.getElementById('audioSeek-' + cardIdx);
       if (seek) seek.value = '1000';
       const nowEl = document.getElementById('audioCurrent-' + cardIdx);
@@ -468,8 +489,7 @@ function stopAudio(index) {
     activeAudioList = [];
     activeAudioListIndex = 0;
     activeAudioCardIndex = null;
-    const playBtn = document.getElementById('audioPlay-' + index);
-    if (playBtn) playBtn.textContent = '▶';
+    setPlayButtonState(index, false);
     const seek = document.getElementById('audioSeek-' + index);
     if (seek) seek.value = '0';
     const now = document.getElementById('audioCurrent-' + index);
@@ -1371,7 +1391,7 @@ function renderGroupItems() {
             </div>
             <div class="flex items-center justify-center gap-4 mt-1">
               <button type="button" onclick="stopAudio(${index})" class="audio-control-button text-base text-slate-700 dark:text-slate-100" aria-label="${isEs ? 'Detener' : 'إيقاف'}">■</button>
-              <button id="audioPlay-${index}" type="button" onclick='playAudio(${JSON.stringify(audioList)}, ${index})' class="audio-control-play w-9 h-9 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-lg font-bold" aria-label="${isEs ? 'Reproducir o pausar' : 'تشغيل أو إيقاف مؤقت'}">▶</button>
+              <button id="audioPlay-${index}" type="button" onclick='playAudio(${JSON.stringify(audioList)}, ${index})' class="audio-control-play audio-pill-btn" data-state="${(currentAudio && activeAudioCardIndex === index && !currentAudio.paused ? 'playing' : 'paused') + '-' + currentLang}" aria-label="${getPlayButtonLabel(!!(currentAudio && activeAudioCardIndex === index && !currentAudio.paused))}">${getPlayButtonInner(!!(currentAudio && activeAudioCardIndex === index && !currentAudio.paused))}</button>
               <button id="audioRepeat-${index}" type="button" onclick="toggleAudioRepeat(${index})" class="audio-control-button text-base text-slate-700 dark:text-slate-100" aria-label="${isEs ? 'Repetir lista' : 'تكرار القائمة'}" title="${isEs ? 'Repetir lista' : 'تكرار القائمة'}">⇄</button>
               <span id="audioSequence-${index}" class="text-[10px] tabular-nums text-slate-500 dark:text-slate-300" aria-live="polite"></span>
             </div>
