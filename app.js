@@ -297,16 +297,42 @@ function updateAudioProgress() {
   const sequenceEl = document.getElementById('audioSequence-' + i);
   if (sequenceEl) sequenceEl.textContent = activeAudioList.length > 1 ? ((activeAudioListIndex + 1) + '/' + activeAudioList.length) : '';
 }
-function normaliseAudioList(audioValue) {
+let activeAudioBaseCycleLength = 1;
+let activeAudioTargetRepeats = 1;
+
+function extractBaseAudioList(audioValue) {
   const values = Array.isArray(audioValue) ? audioValue : [audioValue];
-  return values.flatMap(value => {
+  let explicitMultiplier = null;
+
+  const baseCycle = values.flatMap(value => {
     if (typeof value !== 'string' || !value.trim()) return [];
-    return value.split(/[\s,]+/).map(url => url.trim()).filter(Boolean);
-  });
+    const tokens = value.split(/[\s,]+/).map(url => url.trim()).filter(Boolean);
+    return tokens.map(token => {
+      let cleanUrl = token;
+      const match = token.match(/^(.*?)(?:[|*xX])(\d+)$/);
+      if (match) {
+        cleanUrl = match[1];
+        if (explicitMultiplier === null) {
+          explicitMultiplier = parseInt(match[2], 10) || 1;
+        }
+      }
+      return cleanUrl;
+    });
+  }).filter(Boolean);
+
+  return { urls: baseCycle, multiplier: explicitMultiplier };
 }
-function playAudio(audioValue, index) {
-  const urls = normaliseAudioList(audioValue);
+
+function normaliseAudioList(audioValue, countMultiplier) {
+  const parsed = extractBaseAudioList(audioValue);
+  return parsed.urls;
+}
+
+function playAudio(audioValue, index, countMultiplier) {
+  const parsed = extractBaseAudioList(audioValue);
+  const urls = parsed.urls;
   if (!urls.length) return;
+
   if (currentAudio && activeAudioCardIndex === index) {
     if (currentAudio.paused) {
       currentAudio.play().then(updateAudioProgress).catch(() => showToast(currentLang === 'es' ? 'No se pudo reproducir el audio' : 'تعذر تشغيل الصوت'));
@@ -316,65 +342,125 @@ function playAudio(audioValue, index) {
     updateAudioProgress();
     return;
   }
+
   stopCurrentAudioPlayback();
   activeAudioCardIndex = index;
   activeAudioList = urls;
   activeAudioListIndex = 0;
+
+  let targetRepeatCount = 1;
+  if (parsed.multiplier !== null && parsed.multiplier > 0) {
+    targetRepeatCount = parsed.multiplier;
+  } else if (typeof countMultiplier === 'number' && countMultiplier > 0) {
+    targetRepeatCount = countMultiplier;
+  }
+
+  let remainingCount = targetRepeatCount;
+  if (currentGroup && currentGroup.items[index]) {
+    const saved = getSavedCount(currentGroup.id, index, targetRepeatCount);
+    if (saved > 0) remainingCount = saved;
+  }
+
+  activeAudioTargetRepeats = remainingCount;
+
   const player = document.getElementById('audioPlayer-' + index);
   if (player) player.classList.remove('hidden');
   playNextAudioInSequence(audioPlaybackToken);
 }
+
+let globalAudioElement = null;
+
+function getGlobalAudioElement() {
+  if (!globalAudioElement) {
+    globalAudioElement = document.getElementById('globalAppAudioPlayer');
+    if (!globalAudioElement) {
+      globalAudioElement = document.createElement('audio');
+      globalAudioElement.id = 'globalAppAudioPlayer';
+      globalAudioElement.preload = 'auto';
+      document.body.appendChild(globalAudioElement);
+    }
+  }
+  return globalAudioElement;
+}
+
 function stopCurrentAudioPlayback() {
   audioPlaybackToken++;
-  if (currentAudio) {
-    currentAudio.pause();
-    currentAudio.onended = null;
-    currentAudio.onerror = null;
-    currentAudio.removeAttribute('src');
-    currentAudio.load();
-    currentAudio = null;
+  const audio = getGlobalAudioElement();
+  if (audio) {
+    audio.pause();
+    audio.onended = null;
+    audio.onerror = null;
+    try { audio.currentTime = 0; } catch (e) {}
   }
+  currentAudio = null;
 }
+
 function playNextAudioInSequence(token) {
   if (token !== audioPlaybackToken || activeAudioCardIndex === null) return;
+
   if (activeAudioListIndex >= activeAudioList.length) {
-    if (audioRepeatEnabled && activeAudioList.length) activeAudioListIndex = 0;
-    else {
-      currentAudio = null;
-    const playBtn = document.getElementById('audioPlay-' + activeAudioCardIndex);
-    if (playBtn) playBtn.textContent = '▶';
-    const seek = document.getElementById('audioSeek-' + activeAudioCardIndex);
-    if (seek) seek.value = '1000';
-    const nowEl = document.getElementById('audioCurrent-' + activeAudioCardIndex);
-    const durationEl = document.getElementById('audioDuration-' + activeAudioCardIndex);
-    if (nowEl && durationEl) nowEl.textContent = durationEl.textContent;
-    showToast(currentLang === 'es' ? 'Todos los audios de este zikr han terminado' : 'اكتملت جميع المقاطع الصوتية لهذا الذكر');
+    const cardIdx = activeAudioCardIndex;
+
+    if (cardIdx !== null && typeof decrementCounter === 'function') {
+      decrementCounter(cardIdx, true);
+    }
+
+    let currentRemaining = 0;
+    if (currentGroup && currentGroup.items[cardIdx]) {
+      currentRemaining = getSavedCount(currentGroup.id, cardIdx, 0);
+    }
+
+    if (currentRemaining > 0) {
+      activeAudioListIndex = 0;
+    } else {
+      stopCurrentAudioPlayback();
+      const playBtn = document.getElementById('audioPlay-' + cardIdx);
+      if (playBtn) playBtn.textContent = '▶';
+      const seek = document.getElementById('audioSeek-' + cardIdx);
+      if (seek) seek.value = '1000';
+      const nowEl = document.getElementById('audioCurrent-' + cardIdx);
+      const durationEl = document.getElementById('audioDuration-' + cardIdx);
+      if (nowEl && durationEl) nowEl.textContent = durationEl.textContent;
       return;
     }
   }
+
   const url = activeAudioList[activeAudioListIndex];
-  const audio = new Audio(url);
+  const audio = getGlobalAudioElement();
   currentAudio = audio;
-  audio.preload = 'metadata';
-  audio.loop = false;
-  ['loadedmetadata','durationchange','timeupdate','play','pause'].forEach(ev => audio.addEventListener(ev, updateAudioProgress));
-  audio.onended = () => {
-    if (token !== audioPlaybackToken || currentAudio !== audio) return;
-    activeAudioListIndex++;
-    playNextAudioInSequence(token);
-  };
-  audio.onerror = () => {
-    if (token !== audioPlaybackToken || currentAudio !== audio) return;
-    activeAudioListIndex++;
-    showToast(currentLang === 'es' ? 'Un audio no se pudo cargar; continuando con el siguiente' : 'تعذر تحميل مقطع، تتم متابعة المقطع التالي');
-    playNextAudioInSequence(token);
-  };
-  audio.play().then(updateAudioProgress).catch(() => {
-    if (token !== audioPlaybackToken || currentAudio !== audio) return;
-    activeAudioListIndex++;
-    showToast(currentLang === 'es' ? 'No se pudo reproducir un audio; continuando con el siguiente' : 'تعذر تشغيل مقطع، تتم متابعة المقطع التالي');
-    playNextAudioInSequence(token);
+
+  audio.onended = null;
+  audio.onerror = null;
+
+  audio.src = url;
+  audio.load();
+
+  ['loadedmetadata','durationchange','timeupdate','play','pause'].forEach(ev => {
+    audio.removeEventListener(ev, updateAudioProgress);
+    audio.addEventListener(ev, updateAudioProgress);
   });
+
+  audio.onended = () => {
+    if (token !== audioPlaybackToken) return;
+    activeAudioListIndex++;
+    playNextAudioInSequence(token);
+  };
+
+  audio.onerror = () => {
+    if (token !== audioPlaybackToken) return;
+    activeAudioListIndex++;
+    showToast(currentLang === 'es' ? 'Un audio no se pudo cargar; continuando...' : 'تعذر تحميل مقطع، تتم متابعة المقطع التالي');
+    playNextAudioInSequence(token);
+  };
+
+  const playPromise = audio.play();
+  if (playPromise !== undefined) {
+    playPromise.then(updateAudioProgress).catch(() => {
+      if (token !== audioPlaybackToken) return;
+      activeAudioListIndex++;
+      playNextAudioInSequence(token);
+    });
+  }
 }
 function stopAudio(index) {
   if (currentAudio && activeAudioCardIndex === index) {
@@ -490,6 +576,9 @@ function showSection(sec, skipPushState = false) {
   const searchEl = document.getElementById('searchInput');
   if (searchEl) searchEl.value = '';
   renderButtonsGrid();
+  window.scrollTo({ top: 0, behavior: 'instant' });
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
   if (!skipPushState && window.history && window.history.pushState) {
     try {
       window.history.pushState({ view: 'section', sec: sec }, '', '#section-' + sec);
@@ -515,15 +604,129 @@ function goBackToSection() {
   }
 }
 
+function removeArabicDiacritics(str) {
+  if (!str) return '';
+  return str.replace(/[\u064B-\u0652\u0670\u06D6-\u06ED]/g, '')
+            .replace(/[أإآٱ]/g, 'ا')
+            .replace(/ى/g, 'ي')
+            .replace(/ؤ/g, 'و')
+            .replace(/ئ/g, 'ي')
+            .replace(/ة/g, 'ه');
+}
+
 function filterButtons() {
-  const query = document.getElementById('searchInput').value.toLowerCase().trim();
+  const searchInput = document.getElementById('searchInput');
   const grid = document.getElementById('buttonsGrid');
-  if (!grid) return;
-  const buttons = grid.querySelectorAll('button');
-  buttons.forEach(btn => {
-    const text = btn.innerText.toLowerCase();
-    btn.style.display = text.includes(query) ? 'flex' : 'none';
+  if (!searchInput || !grid) return;
+
+  const rawQuery = searchInput.value.trim();
+  const isEs = currentLang === 'es';
+
+  if (!rawQuery) {
+    renderButtonsGrid();
+    return;
+  }
+
+  const cleanQuery = removeArabicDiacritics(rawQuery.toLowerCase());
+  const sectionModule = getSectionModule(currentSection);
+  const data = sectionModule ? sectionModule.getGroups() : [];
+
+  const matchedGroups = [];
+  const matchedItems = [];
+
+  data.forEach((group) => {
+    const titleArClean = removeArabicDiacritics((group.titleAr || '').toLowerCase());
+    const titleEsClean = (group.titleEs || '').toLowerCase();
+
+    if (titleArClean.includes(cleanQuery) || titleEsClean.includes(cleanQuery)) {
+      matchedGroups.push(group);
+    }
+
+    if (group.items && Array.isArray(group.items)) {
+      group.items.forEach((item, itemIdx) => {
+        const textClean = removeArabicDiacritics((item.text || '').toLowerCase());
+        const expClean = (item.explanationEs || '').toLowerCase();
+        const latinClean = (item.latin || '').toLowerCase();
+        const noteClean = removeArabicDiacritics((item.note || '').toLowerCase());
+
+        if (textClean.includes(cleanQuery) || expClean.includes(cleanQuery) || latinClean.includes(cleanQuery) || noteClean.includes(cleanQuery)) {
+          matchedItems.push({
+            group: group,
+            item: item,
+            itemIdx: itemIdx
+          });
+        }
+      });
+    }
   });
+
+  grid.innerHTML = '';
+
+  if (matchedGroups.length === 0 && matchedItems.length === 0) {
+    grid.innerHTML = `
+      <div class="col-span-full p-6 text-center text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700">
+        <p class="text-sm font-bold">${isEs ? 'No se encontraron resultados para: "' + rawQuery + '"' : 'لم يتم العثور على نتائج لـ: "' + rawQuery + '"'}</p>
+      </div>
+    `;
+    return;
+  }
+
+  if (matchedGroups.length > 0) {
+    matchedGroups.forEach((group) => {
+      const title = isEs ? (group.titleEs || group.titleAr) : (group.titleAr || group.titleEs);
+      const count = group.items ? group.items.length : 0;
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.onclick = () => openGroup(group.id);
+      btn.className = 'p-3.5 sm:p-5 bg-gradient-to-br from-emerald-600 to-teal-800 text-white rounded-2xl shadow-md flex justify-between items-center cursor-pointer text-right min-w-0 border border-white/10';
+      btn.style.cssText = 'background: linear-gradient(135deg, #059669, #115e59) !important; color: #ffffff !important;';
+      btn.innerHTML = `
+        <div class="flex items-center space-x-2.5 sm:space-x-3 space-x-reverse pointer-events-none min-w-0 flex-1">
+          <div class="min-w-0 flex-1">
+            <h3 class="font-bold text-white text-sm sm:text-base leading-snug">${title}</h3>
+            <p class="text-xs text-emerald-100 mt-1">${count} ${isEs ? 'invocaciones' : 'أذكار/أدعية'}</p>
+          </div>
+        </div>
+        <span class="text-emerald-200 font-bold text-sm sm:text-lg pointer-events-none mr-1 flex-shrink-0">${isEs ? '→' : '←'}</span>
+      `;
+      grid.appendChild(btn);
+    });
+  }
+
+  if (matchedItems.length > 0) {
+    const itemHeader = document.createElement('div');
+    itemHeader.className = 'col-span-full font-bold text-xs text-emerald-800 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/60 p-3 rounded-xl border border-emerald-200 dark:border-emerald-800';
+    itemHeader.innerText = isEs ? `Invocaciones encontradas (${matchedItems.length}):` : `الأذكار والأدعية المطابقة (${matchedItems.length}):`;
+    grid.appendChild(itemHeader);
+
+    matchedItems.forEach(({ group, item, itemIdx }) => {
+      const card = document.createElement('div');
+      card.onclick = () => {
+        openGroup(group.id);
+        setTimeout(() => {
+          const cardEl = document.getElementById(`zikr-card-${itemIdx}`);
+          if (cardEl) cardEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 300);
+      };
+      card.className = 'col-span-full card-paper-bg rounded-2xl p-4 sm:p-5 shadow-md border border-amber-200/80 dark:border-slate-700 space-y-3 cursor-pointer hover:border-emerald-500 transition';
+
+      const groupTitle = isEs ? (group.titleEs || group.titleAr) : (group.titleAr || group.titleEs);
+
+      card.innerHTML = `
+        <div class="flex justify-between items-center border-b border-amber-200/60 dark:border-slate-700 pb-2 text-xs font-bold">
+          <span class="text-emerald-800 dark:text-emerald-300 bg-emerald-100/80 dark:bg-emerald-950 px-2.5 py-1 rounded-lg">
+            ${groupTitle}
+          </span>
+          ${item.note ? `<span class="bg-amber-100/80 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 px-2.5 py-1 rounded-lg">${item.note}</span>` : ''}
+        </div>
+        <p class="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100 text-center leading-relaxed dir-rtl whitespace-pre-line custom-text-size">
+          ${item.text}
+        </p>
+        ${item.explanationEs && isEs ? `<p class="text-xs text-slate-700 dark:text-slate-300 italic text-center border-t border-slate-100 dark:border-slate-700/60 pt-2 dir-ltr">${item.explanationEs}</p>` : ''}
+      `;
+      grid.appendChild(card);
+    });
+  }
 }
 
 function renderButtonsGrid() {
@@ -612,6 +815,10 @@ function openGroup(groupId, skipPushState = false) {
 
   renderGroupItems();
 
+  window.scrollTo({ top: 0, behavior: 'instant' });
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+
   if (!skipPushState && window.history && window.history.pushState) {
     try {
       window.history.pushState({ view: 'detail', sec: currentSection, groupId: groupId }, '', '#group-' + groupId);
@@ -640,7 +847,7 @@ function resetGroupProgress(groupId) {
   safeSetStorage(STORAGE_KEY, JSON.stringify(progress));
 }
 
-function decrementCounter(index) {
+function decrementCounter(index, isFromAudio = false) {
   if (!currentGroup || !currentGroup.items[index]) return;
   const item = currentGroup.items[index];
   let currentCount = getSavedCount(currentGroup.id, index, item.count);
@@ -658,7 +865,14 @@ function decrementCounter(index) {
           if (nextElem) {
             nextElem.scrollIntoView({ behavior: 'smooth', block: 'center' });
           }
-        }, 250);
+
+          if (isFromAudio) {
+            const nextItem = currentGroup.items[nextIndex];
+            if (nextItem && (nextItem.audioUrl || (nextItem.audioUrls && nextItem.audioUrls.length))) {
+              playAudio(nextItem.audioUrls || nextItem.audioUrl, nextIndex, nextItem.count || nextItem.maxCount || 1);
+            }
+          }
+        }, 300);
       } else {
         showToast(uiTexts[currentLang].completedGroup);
       }
@@ -1147,7 +1361,7 @@ function renderGroupItems() {
       ` : ''}
 
       ${(() => {
-        const audioList = normaliseAudioList(Array.isArray(item.audioUrls) && item.audioUrls.length ? item.audioUrls : item.audioUrl);
+        const audioList = normaliseAudioList(Array.isArray(item.audioUrls) && item.audioUrls.length ? item.audioUrls : item.audioUrl, item.count || item.maxCount);
         return audioList.length ? `
           <div id="audioPlayer-${index}" class="audio-player-compact mt-2 mb-2 p-2 rounded-xl bg-slate-50 dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700">
             <div class="flex items-center gap-2" dir="ltr">
@@ -1173,7 +1387,7 @@ function renderGroupItems() {
         <button type="button" onclick="shareText('${escapeJsStr(isEs ? (item.explanationEs || item.text) : item.text)}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="مشاركة">
           🔗
         </button>
-        <button type="button" onclick="toggleFavorite('${escapeJsStr(item.text)}')" class="p-2.5 rounded-xl ${isFav ? 'bg-amber-100 dark:bg-amber-950 text-amber-600' : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'} hover:bg-amber-100 dark:hover:bg-amber-900 transition cursor-pointer" title="المفضلة">
+        <button type="button" onclick="toggleFavorite('${escapeJsStr(item.text)}')" class="p-2.5 rounded-xl ${isFav ? 'bg-rose-100 dark:bg-rose-950 text-rose-600' : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'} hover:bg-rose-100 dark:hover:bg-rose-900 transition cursor-pointer" title="المفضلة">
           ${isFav ? '★' : '☆'}
         </button>
         ${['azkar', 'adya', 'ruqyah', 'munajat'].includes(currentSection) ? `
