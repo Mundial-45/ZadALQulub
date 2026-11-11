@@ -275,6 +275,7 @@ let audioRepeatEnabled = false;
 let activeAudioList = [];
 let activeAudioListIndex = 0;
 let audioPlaybackToken = 0;
+let audioErrorStreak = 0;
 function formatAudioTime(seconds) {
   if (!Number.isFinite(seconds) || seconds < 0) return '0:00';
   return Math.floor(seconds / 60) + ':' + String(Math.floor(seconds % 60)).padStart(2, '0');
@@ -291,11 +292,28 @@ function updateAudioProgress() {
   if (nowEl) nowEl.textContent = formatAudioTime(now);
   if (durationEl) durationEl.textContent = formatAudioTime(total);
   setPlayButtonState(i, !currentAudio.paused);
-  const repeatBtn = document.getElementById('audioRepeat-' + i);
-  if (repeatBtn) { repeatBtn.style.opacity = audioRepeatEnabled ? '1' : '0.55'; repeatBtn.setAttribute('aria-pressed', String(audioRepeatEnabled)); }
+  setRepeatButtonsState();
   const sequenceEl = document.getElementById('audioSequence-' + i);
   if (sequenceEl) sequenceEl.textContent = activeAudioList.length > 1 ? ((activeAudioListIndex + 1) + '/' + activeAudioList.length) : '';
 }
+const AUDIO_STOP_ICON = '<svg class="audio-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2.2"/></svg>';
+const AUDIO_REPEAT_ICON = '<svg class="audio-icon audio-icon-stroke" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V9a3 3 0 0 1 3-3h13"/><path d="M17 3l3 3-3 3"/><path d="M20 12v3a3 3 0 0 1-3 3H4"/><path d="M7 21l-3-3 3-3"/></svg>';
+
+function getRepeatButtonLabel() {
+  const isEs = currentLang === 'es';
+  if (audioRepeatEnabled) return isEs ? 'Repetir: activado' : 'التكرار: مفعّل';
+  return isEs ? 'Repetir: desactivado' : 'التكرار: غير مفعّل';
+}
+
+function setRepeatButtonsState() {
+  document.querySelectorAll('[id^="audioRepeat-"]').forEach(function (btn) {
+    btn.classList.toggle('is-active', audioRepeatEnabled);
+    btn.setAttribute('aria-pressed', String(audioRepeatEnabled));
+    btn.setAttribute('aria-label', getRepeatButtonLabel());
+    btn.setAttribute('title', getRepeatButtonLabel());
+  });
+}
+
 const AUDIO_PLAY_ICON = '<svg class="audio-pill-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5.6v12.8a1 1 0 0 0 1.52.85l10.4-6.4a1 1 0 0 0 0-1.7L9.52 4.75A1 1 0 0 0 8 5.6z"/></svg>';
 const AUDIO_PAUSE_ICON = '<svg class="audio-pill-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="6" y="5" width="4.2" height="14" rx="1.2"/><rect x="13.8" y="5" width="4.2" height="14" rx="1.2"/></svg>';
 
@@ -420,7 +438,9 @@ function stopCurrentAudioPlayback() {
 function playNextAudioInSequence(token) {
   if (token !== audioPlaybackToken || activeAudioCardIndex === null) return;
 
-  if (activeAudioListIndex >= activeAudioList.length) {
+  if (activeAudioListIndex >= activeAudioList.length && audioRepeatEnabled) {
+    activeAudioListIndex = 0;
+  } else if (activeAudioListIndex >= activeAudioList.length) {
     const cardIdx = activeAudioCardIndex;
 
     if (cardIdx !== null && typeof decrementCounter === 'function') {
@@ -469,6 +489,7 @@ function playNextAudioInSequence(token) {
 
   audio.onerror = () => {
     if (token !== audioPlaybackToken) return;
+    if (++audioErrorStreak >= Math.max(1, activeAudioList.length)) { audioErrorStreak = 0; const idx = activeAudioCardIndex; stopAudio(idx); return; }
     activeAudioListIndex++;
     showToast(currentLang === 'es' ? 'Un audio no se pudo cargar; continuando...' : 'تعذر تحميل مقطع، تتم متابعة المقطع التالي');
     playNextAudioInSequence(token);
@@ -476,8 +497,9 @@ function playNextAudioInSequence(token) {
 
   const playPromise = audio.play();
   if (playPromise !== undefined) {
-    playPromise.then(updateAudioProgress).catch(() => {
+    playPromise.then(() => { audioErrorStreak = 0; updateAudioProgress(); }).catch(() => {
       if (token !== audioPlaybackToken) return;
+      if (++audioErrorStreak >= Math.max(1, activeAudioList.length)) { audioErrorStreak = 0; const idx = activeAudioCardIndex; stopAudio(idx); return; }
       activeAudioListIndex++;
       playNextAudioInSequence(token);
     });
@@ -504,13 +526,10 @@ function seekAudio(index, value) {
 }
 function toggleAudioRepeat(index) {
   audioRepeatEnabled = !audioRepeatEnabled;
-  // Repetir reinicia la lista completa, no solo el clip actual.
-  if (audioRepeatEnabled && currentAudio && activeAudioCardIndex !== null) {
-    activeAudioListIndex = 0;
-    stopCurrentAudioPlayback();
-    playNextAudioInSequence(audioPlaybackToken);
-  }
-  updateAudioProgress();
+  setRepeatButtonsState();
+  showToast(audioRepeatEnabled
+    ? (currentLang === 'es' ? 'Repetición activada' : 'تم تفعيل التكرار')
+    : (currentLang === 'es' ? 'Repetición desactivada' : 'تم إيقاف التكرار'));
 }
 function escapeJsStr(str) {
   if (!str) return '';
@@ -1390,9 +1409,9 @@ function renderGroupItems() {
               <span id="audioDuration-${index}" class="audio-time text-[10px] tabular-nums text-slate-500 dark:text-slate-300">0:00</span>
             </div>
             <div class="flex items-center justify-center gap-4 mt-1">
-              <button type="button" onclick="stopAudio(${index})" class="audio-control-button text-base text-slate-700 dark:text-slate-100" aria-label="${isEs ? 'Detener' : 'إيقاف'}">■</button>
+              <button type="button" onclick="stopAudio(${index})" class="audio-control-button audio-icon-btn" aria-label="${isEs ? 'Detener' : 'إيقاف'}" title="${isEs ? 'Detener' : 'إيقاف'}">${AUDIO_STOP_ICON}</button>
               <button id="audioPlay-${index}" type="button" onclick='playAudio(${JSON.stringify(audioList)}, ${index})' class="audio-control-play audio-pill-btn" data-state="${(currentAudio && activeAudioCardIndex === index && !currentAudio.paused ? 'playing' : 'paused') + '-' + currentLang}" aria-label="${getPlayButtonLabel(!!(currentAudio && activeAudioCardIndex === index && !currentAudio.paused))}">${getPlayButtonInner(!!(currentAudio && activeAudioCardIndex === index && !currentAudio.paused))}</button>
-              <button id="audioRepeat-${index}" type="button" onclick="toggleAudioRepeat(${index})" class="audio-control-button text-base text-slate-700 dark:text-slate-100" aria-label="${isEs ? 'Repetir lista' : 'تكرار القائمة'}" title="${isEs ? 'Repetir lista' : 'تكرار القائمة'}">⇄</button>
+              <button id="audioRepeat-${index}" type="button" onclick="toggleAudioRepeat(${index})" class="audio-control-button audio-icon-btn audio-repeat-btn${audioRepeatEnabled ? ' is-active' : ''}" aria-pressed="${audioRepeatEnabled}" aria-label="${getRepeatButtonLabel()}" title="${getRepeatButtonLabel()}">${AUDIO_REPEAT_ICON}</button>
               <span id="audioSequence-${index}" class="text-[10px] tabular-nums text-slate-500 dark:text-slate-300" aria-live="polite"></span>
             </div>
           </div>
