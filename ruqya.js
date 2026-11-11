@@ -338,7 +338,7 @@ const ruqyahData = [
             "audioUrl": "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002255.mp3",
             "count": 1,
             "maxCount": 1,
-            "note": "أية الكرسي",
+            "note": "آية الكرسي",
             "audioUrls": []
           },
           {
@@ -830,6 +830,267 @@ const ruqyahData = [
             "count": 7,
             "maxCount": 7,
             "note": "تُقَالُ سَبْعَ مَرَّاتٍ عِنْدَ عِيَادَةِ الْمَرِيضِ (رَوَاهُ أَبُو دَاوُدَ وَالتِّرْمِذِيُّ)"
+          }
+        ]
+      },
+      {
+        "id": "ruqyah_bayt",
+        "titleAr": "رُقْيَةُ الْبَيْتِ",
+        "titleEs": "Ruqya de la casa",
+        "items": [
+          {
+            "isInfo": true,
+            "text": "رُقْيَةُ الْبَيْتِ بِالْمَاءِ:\n• يُؤْخَذُ مَاءٌ طَاهِرٌ فِي إِنَاءٍ نَظِيفٍ، وَيُقْرَأُ عَلَيْهِ مَا تَيَسَّرَ مِنَ الْآيَاتِ وَالْأَدْعِيَةِ الْآتِيَةِ مَعَ النَّفْثِ فِيهِ.\n• ثُمَّ يُرَشُّ فِي أَرْجَاءِ الْبَيْتِ وَزَوَايَاهُ، وَيُجْتَنَبُ رَشُّهُ فِي الْخَلَاءِ وَالْأَمَاكِنِ النَّجِسَةِ، وَلَا يُصَبُّ الْبَاقِي فِي مَجَارِي الْمِيَاهِ، بَلْ يُشْرَبُ أَوْ يُغْتَسَلُ بِهِ.\n• رَشُّ الْمَاءِ الْمَقْرُوءِ فِيهِ أَجَازَهُ بَعْضُ أَهْلِ الْعِلْمِ مِنْ بَابِ الرُّقْيَةِ بِالْمَاءِ، وَلَمْ يَرِدْ فِيهِ حَدِيثٌ خَاصٌّ.\n• وَأَعْظَمُ حِصْنٍ لِلْبَيْتِ قِرَاءَةُ سُورَةِ الْبَقَرَةِ فِيهِ؛ قَالَ النَّبِيُّ ﷺ: «لَا تَجْعَلُوا بُيُوتَكُمْ مَقَابِرَ، إِنَّ الشَّيْطَانَ يَنْفِرُ مِنَ الْبَيْتِ الَّذِي تُقْرَأُ فِيهِ سُورَةُ الْبَقَرَةِ» (رَوَاهُ مُسْلِمٌ)، مَعَ ذِكْرِ اللَّهِ عِنْدَ دُخُولِهِ وَعِنْدَ الطَّعَامِ.",
+            "latin": "Ruqyatul-bayti bil-māʾ: Yuʾkhadhu māʾun ṭāhirun fī ināʾin naẓīf, wa yuqraʾu ʿalayhi mā tayassara minal-āyāti wal-adʿiyatil-ātiyati maʿan-nafthi fīh. Thumma yurashshu fī arjāʾil-bayti wa zawāyāh, wa yujtanabu rashshuhū fil-khalāʾi wal-amākinin-najisah, wa lā yuṣabbul-bāqī fī majāril-miyāh, bal yushrabu aw yughtasalu bih. Rashshul-māʾil-maqrūʾi fīhi ajāzahū baʿḍu ahlil-ʿilmi min bābir-ruqyati bil-māʾ, wa lam yarid fīhi ḥadīthun khāṣṣ. Wa aʿẓamu ḥiṣnin lil-bayti qirāʾatu sūratil-Baqarati fīh; qālan-Nabiyyu ﷺ: «Lā tajʿalū buyūtakum maqābir, innash-shayṭāna yanfiru minal-baytil-ladhī tuqraʾu fīhi sūratul-Baqarah» (rawāhu Muslim), maʿa dhikrillāhi ʿinda dukhūlihī wa ʿindaṭ-ṭaʿām.",
+            "explanationEs": "Ruqya de la casa con agua:\n• Se toma agua pura en un recipiente limpio y se recita sobre ella lo que se pueda de las aleyas y súplicas siguientes, soplando suavemente sobre ella.\n• Después se rocía por las habitaciones y los rincones de la casa. Se evita rociarla en el baño y en lugares impuros, y el sobrante no se tira por el desagüe: se bebe o se usa para lavarse.\n• Rociar agua recitada lo permiten algunos sabios porque la ruqya con agua está permitida, pero no hay un hadiz específico sobre ello.\n• La mayor protección de la casa es recitar en ella la sura Al-Baqara. El Profeta ﷺ dijo: «No conviertan sus casas en tumbas; ciertamente, el Shaytán huye de la casa en la que se recita la sura Al-Baqara» (Muslim). Y también mencionar a Allah al entrar en casa y al comer."
+          },
+          {
+            "itemNumber": 64,
+            "text": "﴿بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ۝ ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ۝ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ۝ مَٰلِكِ يَوۡمِ ٱلدِّينِ۝إِيَّاكَ نَعۡبُدُ وَإِيَّاكَ نَسۡتَعِينُ۝ ٱهۡدِنَا ٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ۝ صِرَٰطَ ٱلَّذِينَ أَنۡعَمۡتَ عَلَيۡهِمۡ غَيۡرِ ٱلۡمَغۡضُوبِ عَلَيۡهِمۡ وَلَا ٱلضَّآلِّينَ۝﴾",
+            "latin": "Bismillāhir-Raḥmānir-Raḥīm. Al-ḥamdu lillāhi Rabbil-ʿālamīn. Ar-Raḥmānir-Raḥīm. Māliki yawmid-dīn. Iyyāka naʿbudu wa iyyāka nastaʿīn. Ihdinaṣ-ṣirāṭal-mustaqīm. Ṣirāṭal-ladhīna anʿamta ʿalayhim ghayril-maghḍūbi ʿalayhim wa lāḍ-ḍāllīn.",
+            "explanationEs": "En el nombre de Allah, el Compasivo, el Misericordioso. Alabado sea Allah, Señor del universo, el Compasivo, el Misericordioso, Soberano absoluto del Día del Juicio Final. Solo a Ti Te adoramos y solo de Ti imploramos ayuda. ¡Guíanos por el camino recto!, el camino de los que has agraciado, no el de los que han incurrido en Tu ira, ni el de los extraviados.",
+            "count": 7,
+            "maxCount": 7,
+            "note": "سورة الفاتحة",
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q001.mp3"
+            ]
+          },
+          {
+            "itemNumber": 65,
+            "text": "﴿الٓمٓ۝ ذَٰلِكَ ٱلۡكِتَٰبُ لَا رَيۡبَۛ فِيهِۛ هُدٗى لِّلۡمُتَّقِينَ۝ ٱلَّذِينَ يُؤۡمِنُونَ بِٱلۡغَيۡبِ وَيُقِيمُونَ ٱلصَّلَوٰةَ وَمِمَّا رَزَقۡنَٰهُمۡ يُنفِقُونَ۝ وَٱلَّذِينَ يُؤۡمِنُونَ بِمَآ أُنزِلَ إِلَيۡكَ وَمَآ أُنزِلَ مِن قَبۡلِكَ وَبِٱلۡأٓخِرَةِ هُمۡ يُوقِنُونَ۝ أُوْلَٰٓئِكَ عَلَىٰ هُدٗى مِّن رَّبِّهِمۡۖ وَأُوْلَٰٓئِكَ هُمُ ٱلۡمُفۡلِحُونَ۝﴾",
+            "latin": "Alif-Lām-Mīm (1). Dhālikal-kitābu lā rayba fīhi, hudan lil-muttaqīn (2). Alladhīna yuʾminūna bil-ghaybi wa yuqīmūnas-salāta wa mimmā razaqnāhum yunfiqūn (3). Wal-ladhīna yuʾminūna bi-mā unzila ilayka wa mā unzila min qablika wa bil-ākhirati hum yūqinūn (4). Ulāʾika ʿalā hudan min Rabbihim, wa ulāʾika humul-mufliḥūn (5).",
+            "explanationEs": "Alif, Lam, Mim. Este es el Libro sobre el cual no hay duda, guía para los que tienen temor de Allah: los que creen en lo oculto, practican la oración y dan en caridad de lo que les he concedido; y los que creen en lo que te ha sido revelado [¡oh, Muhámmad!] y en lo que fue revelado antes de ti, y tienen certeza de la existencia de la otra vida. Ésos son los que están en la guía de su Señor y serán los bienaventurados.",
+            "count": 1,
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-1-4.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002005.mp3"
+            ],
+            "note": "سورة البقرة الآيات 1-5"
+          },
+          {
+            "itemNumber": 66,
+            "text": "﴿وَٱتَّبَعُواْ مَا تَتۡلُواْ ٱلشَّيَٰطِينُ عَلَىٰ مُلۡكِ سُلَيۡمَٰنَۖ وَمَا كَفَرَ سُلَيۡمَٰنُ وَلَٰكِنَّ ٱلشَّيَٰطِينَ كَفَرُواْ يُعَلِّمُونَ ٱلنَّاسَ ٱلسِّحۡرَ وَمَآ أُنزِلَ عَلَى ٱلۡمَلَكَيۡنِ بِبَابِلَ هَٰرُوتَ وَمَٰرُوتَۚ وَمَا يُعَلِّمَانِ مِنۡ أَحَدٍ حَتَّىٰ يَقُولَآ إِنَّمَا نَحۡنُ فِتۡنَةٞ فَلَا تَكۡفُرۡۖ فَيَتَعَلَّمُونَ مِنۡهُمَا مَا يُفَرِّقُونَ بِهِۦ بَيۡنَ ٱلۡمَرۡءِ وَزَوۡجِهِۦۚ وَمَا هُم بِضَآرِّينَ بِهِۦ مِنۡ أَحَدٍ إِلَّا بِإِذۡنِ ٱللَّهِۚ وَيَتَعَلَّمُونَ مَا يَضُرُّهُمۡ وَلَا يَنفَعُهُمۡۚ وَلَقَدۡ عَلِمُواْ لَمَنِ ٱشۡتَرَىٰهُ مَا لَهُۥ فِي ٱلۡأٓخِرَةِ مِنۡ خَلَٰقٖۚ وَلَبِئۡسَ مَا شَرَوۡاْ بِهِۦٓ أَنفُسَهُمۡۚ لَوۡ كَانُواْ يَعۡلَمُونَ۝﴾",
+            "latin": "Watta-baʿū mā tatlush-shayāṭīnu ʿalā mulki Sulaymāna, wa mā kafara Sulaymāna wa lākinna-shshayātīna kafaru yuʿallimūna-nnāsa-ssihra wa mā unzila ʿalal-malakayni bi-Bābila Hārūta wa Mārūta, wa mā yuʿallimāni min ahadin hattā yaqūlā innamā nahnu fitnatun falā takfur, fayataʿallamūna minhumā mā yufarriqūna bihi bayna-l-marʾi wa zawjihi, wa mā hum bi-ḍārrīna bihi min ahadin illā bi-idhni-llāhi, wa yataʿallamūna mā yaḍurruhum wa lā yanfaʿuhum, wa laqad ʿalimū laman-shtarāhu mā lahu fil-ākhirati min khalāqin, wa labaʾsa mā sharaw bihi anfusahum, law kānū yaʿlamūna (102).",
+            "explanationEs": "Pero sí seguían lo que recitaban los demonios durante el reinado de Salomón. Sepan que Salomón no cayó en la incredulidad, sino que fueron los demonios quienes enseñaron a la gente la hechicería y la magia que transmitieron los ángeles Harút y Marút en Babilonia. Ellos no le enseñaban a nadie sin antes advertirle: «Nosotros somos una prueba, no caigan en la incredulidad». A pesar de la advertencia, aprendieron de ellos cómo separar a una persona de su pareja, aunque no podían perjudicar a nadie sin el permiso de Allah. Lo que aprendían los perjudicaba y no los beneficiaba. Pero sabían que quien practicara la hechicería no tendría éxito en la otra vida. ¡Qué mal vendieron sus almas! Si supieran.",
+            "count": 1,
+            "maxCount": 1,
+            "note": "سورة البقرة الاية 102",
+            "audioUrl": "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002102.mp3"
+          },
+          {
+            "itemNumber": 67,
+            "text": "﴿وَإِلَٰهُكُمۡ إِلَٰهٞ وَٰحِدٞۖ لَّآ إِلَٰهَ إِلَّا هُوَ ٱلرَّحۡمَٰنُ ٱلرَّحِيمُ۝ إِنَّ فِي خَلۡقِ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ وَٱخۡتِلَٰفِ ٱلَّيۡلِ وَٱلنَّهَارِ وَٱلۡفُلۡكِ ٱلَّتِي تَجۡرِي فِي ٱلۡبَحۡرِ بِمَا يَنفَعُ ٱلنَّاسَ وَمَآ أَنزَلَ ٱللَّهُ مِنَ ٱلسَّمَآءِ مِن مَّآءٖ فَأَحۡيَا بِهِ ٱلۡأَرۡضَ بَعۡدَ مَوۡتِهَا وَبَثَّ فِيهَا مِن كُلِّ دَآبَّةٖ وَتَصۡرِيفِ ٱلرِّيَٰحِ وَٱلسَّحَابِ ٱلۡمُسَخَّرِ بَيۡنَ ٱلسَّمَآءِ وَٱلۡأَرۡضِ لَأٓيَٰتٖ لِّقَوۡمٖ يَعۡقِلُونَ۝﴾",
+            "latin": "Wa ilāhukum ilāhun wāḥidun lā ilāha illā huwar-raḥmānur-raḥīm (163). Inna fī khalqis-samāwāti wal-arḍi wakhtilāfil-layli wan-nahāri wal-fulkil-latī tajrī fil-baḥri bimā yanfaʿun-nāsa wa mā anzalallāhu minas-samāʾi min māʾin fa-aḥyā bihil-arḍa baʿda mawtihā wa baththa fīhā min kulli dābbatin wa taṣrīfir-riyāḥi was-saḥābil-musakhkhari baynas-samāʾi wal-arḍi la-āyātin li-qawmin yaʿqilūn (164).",
+            "explanationEs": "Su Dios es un Dios Único, no hay divinidad [con derecho a ser adorada] salvo Él, el Compasivo, el Misericordioso. En la creación de los cielos y de la Tierra, en la sucesión de la noche y el día, en las naves que surcan el mar para beneficio de la gente, en el agua que Allah hace descender del cielo para revivir con ella la tierra árida, en la dispersión de toda clase de criaturas sobre la Tierra, en la dirección de los vientos y en las nubes que están entre el cielo y la Tierra, hay señales para quienes razonan.",
+            "count": 1,
+            "maxCount": 1,
+            "note": "سورة البقرة - الآيات 163-164",
+            "audioUrls": [
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002163.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002164.mp3"
+            ],
+            "notes": "",
+            "audioUrl": ""
+          },
+          {
+            "itemNumber": 68,
+            "text": "﴿ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡحَيُّ ٱلۡقَيُّومُۚ لَا تَأۡخُذُهُۥ سِنَةٞ وَلَا نَوۡمٞۚ لَّهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَمَا فِي ٱلۡأَرۡضِۗ مَن ذَا ٱلَّذِي يَشۡفَعُ عِندَهُۥٓ إِلَّا بِإِذۡنِهِۦۚ يَعۡلَمُ مَا بَيۡنَ أَيۡدِيهِمۡ وَمَا خَلۡفَهُمۡۖ وَلَا يُحِيطُونَ بِشَيۡءٖ مِّنۡ عِلۡمِهِۦٓ إِلَّا بِمَا شَآءَۚ وَسِعَ كُرۡسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَۖ وَلَا يَـُٔودُهُۥ حِفۡظُهُمَاۚ وَهُوَ ٱلۡعَلِيُّ ٱلۡعَظِيمُ۝﴾",
+            "latin": "Allāhu lā ilāha illā huwal-ḥayyul-qayyūm, lā taʾkhudhuhu sinatun wa lā nawm, lahū mā fis-samāwāti wa mā fil-arḍ, man dhal-ladhī yashfaʿu ʿindahū illā bi-idhnihi, yaʿlamu mā bayna aydīhim wa mā khalfahum, wa lā yuḥīṭūna bi-shayʾin min ʿilmihi illā bimā shāʾ, wasiʿa kursiyyuhus-samāwāti wal-arḍ, wa lā yaʾūduhu ḥifẓuhumā, wa huwal-ʿaliyyul-ʿaẓīm.",
+            "explanationEs": "Allah, no existe divinidad alguna excepto Él, el Viviente, el Sustentador de toda la creación. No Lo afectan somnolencia ni sueño. Suyo es cuanto hay en los cielos y la Tierra. ¿Quién podrá interceder ante Él si no es con Su permiso? Él conoce lo que hay delante de ellos y lo que hay detrás de ellos, y nadie abarca de Su conocimiento salvo lo que Él quiere. Su Trono se extiende sobre los cielos y la Tierra, y la custodia de ambos no Lo agobia. Él es el Sublime, el Grandioso.",
+            "audioUrl": "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002255.mp3",
+            "count": 1,
+            "maxCount": 1,
+            "note": "آية الكرسي",
+            "audioUrls": []
+          },
+          {
+            "itemNumber": 69,
+            "text": "﴿ءَامَنَ ٱلرَّسُولُ بِمَآ أُنزِلَ إِلَيۡهِ مِن رَّبِّهِۦ وَٱلۡمُؤۡمِنُونَۚ كُلٌّ ءَامَنَ بِٱللَّهِ وَمَلَٰٓئِكَتِهِۦ وَكُتُبِهِۦ وَرُسُلِهِۦ لَا نُفَرِّقُ بَيۡنَ أَحَدٖ مِّن رُّسُلِهِۦۚ وَقَالُواْ سَمِعۡنَا وَأَطَعۡنَاۖ غُفۡرَانَكَ رَبَّنَا وَإِلَيۡكَ ٱلۡمَصِيرُ۝ لَا يُكَلِّفُ ٱللَّهُ نَفۡسًا إِلَّا وُسۡعَهَاۚ لَهَا مَا كَسَبَتۡ وَعَلَيۡهَا مَا ٱكۡتَسَبَتۡۗ رَبَّنَا لَا تُؤَاخِذۡنَآ إِن نَّسِينَآ أَوۡ أَخۡطَأۡنَاۚ رَبَّنَا وَلَا تَحۡمِلۡ عَلَيۡنَآ إِصۡرٗا كَمَا حَمَلۡتَهُۥ عَلَى ٱلَّذِينَ مِن قَبۡلِنَاۚ رَبَّنَا وَلَا تُحَمِّلۡنَا مَا لَا طَاقَةَ لَنَا بِهِۦۖ وَٱعۡفُ عَنَّا وَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَآۚ أَنتَ مَوۡلَىٰنَا فَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ۝﴾",
+            "latin": "Āmana ar-rasūlu bimā unzila ilayhi min rabbihi wal-muʾminūn, kullun āmana billāhi wa malāʾikatihi wa kutubihi wa rusulihi, lā nufarriqu bayna ahadin min rusulihi, wa qālū samiʿnā wa aṭaʿnā, ghufrānaka rabbanā wa ilaykal-maṣīr (285). Lā yukallifu-llāhu nafsan illā wusʿahā, lahā mā kasabat wa ʿalayhā mā iktasabat, rabbanā lā tuʾākhidhnā in nasīnā aw akhṭanā, rabbanā wa lā taḥmil ʿalaynā iṣran kamā ḥamaltahu ʿalal-ladhīna min qablinā, rabbanā wa lā tuḥammilnā mā lā ṭāqata lanā bihi, waʿfu ʿannā waghfir lanā warḥamnā, anta mawlānā fanṣurnā ʿalal-qawmil-kāfirīn (286).",
+            "explanationEs": "El Mensajero cree en lo que le ha sido revelado por su Señor, y así también los creyentes. Todos creen en Allah, en Sus ángeles, en Sus Libros y en Sus mensajeros. No hacemos diferencia entre ninguno de Sus mensajeros. Y dicen: «Oímos y obedecemos. Te pedimos perdón, Señor nuestro, y ante Ti retornaremos». Allah no exige a nadie por encima de sus posibilidades. Cada persona será recompensada según lo que haya hecho y será responsable de lo que haya cometido. «¡Señor nuestro! No nos castigues si nos olvidamos o nos equivocamos. ¡Señor nuestro! No nos impongas una carga como la que impusiste a quienes nos precedieron. ¡Señor nuestro! No nos impongas algo que no podamos soportar. Perdónanos, absuélvenos y ten misericordia de nosotros. Tú eres nuestro Protector, auxílianos contra la gente que rechaza la verdad».",
+            "count": 1,
+            "maxCount": 1,
+            "note": "سورة البقرة الايات 285-286",
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-285-586.mp3"
+            ]
+          },
+          {
+            "itemNumber": 70,
+            "text": "﴿۞ وَأَوۡحَيۡنَآ إِلَىٰ مُوسَىٰٓ أَنۡ أَلۡقِ عَصَاكَۖ فَإِذَا هِيَ تَلۡقَفُ مَا يَأۡفِكُونَ۝ فَوَقَعَ ٱلۡحَقُّ وَبَطَلَ مَا كَانُواْ يَعۡمَلُونَ۝ فَغُلِبُواْ هُنَالِكَ وَٱنقَلَبُواْ صَٰغِرِينَ۝ وَأُلۡقِيَ ٱلسَّحَرَةُ سَٰجِدِينَ۝ قَالُوٓاْ ءَامَنَّا بِرَبِّ ٱلۡعَٰلَمِينَ۝ رَبِّ مُوسَىٰ وَهَٰرُونَ۝﴾",
+            "latin": "Wa awḥaynā ilā Mūsā an alqi ʿaṣāka, fa-idhā hiya talqafu mā yaʾfikūn.\n\nFa-waqaʿa al-ḥaqqu wa baṭala mā kānū yaʿmalūn.\n\nFa-ghulibū hunālika wanqalabū ṣāghirīn.\n\nWa-ulqiya al-saḥaratu sājidīn.\n\nQālū āmannā bi-Rabbi al-ʿālamīn.\n\nRabbi Mūsā wa Hārūn.",
+            "explanationEs": "«Y le revelamos a Moisés: “Arroja tu vara”. Y, de pronto, esta comenzó a devorar todo lo que ellos habían falseado.\n\nAsí se impuso la verdad y quedó anulado todo lo que habían hecho.\n\nY fueron derrotados allí mismo y quedaron humillados.\n\nEntonces, los hechiceros cayeron prosternados.\n\nDijeron: “Creemos en el Señor de todos los mundos, el Señor de Moisés y de Aarón”».",
+            "count": 1,
+            "maxCount": 1,
+            "audioUrls": [
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007117.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007118.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007119.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007120.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007121.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007122.mp3"
+            ],
+            "note": "سورة الاعراف الايات 117-122"
+          },
+          {
+            "itemNumber": 71,
+            "text": "﴿وَقَالَ فِرۡعَوۡنُ ٱئۡتُونِي بِكُلِّ سَٰحِرٍ عَلِيمٖ۝ فَلَمَّا جَآءَ ٱلسَّحَرَةُ قَالَ لَهُم مُّوسَىٰٓ أَلۡقُواْ مَآ أَنتُم مُّلۡقُونَ۝ فَلَمَّآ أَلۡقَوۡاْ قَالَ مُوسَىٰ مَا جِئۡتُم بِهِ ٱلسِّحۡرُۖ إِنَّ ٱللَّهَ سَيُبۡطِلُهُۥٓ إِنَّ ٱللَّهَ لَا يُصۡلِحُ عَمَلَ ٱلۡمُفۡسِدِينَ۝ وَيُحِقُّ ٱللَّهُ ٱلۡحَقَّ بِكَلِمَٰتِهِۦ وَلَوۡ كَرِهَ ٱلۡمُجۡرِمُونَ۝﴾",
+            "latin": "Wa qāla firʿawnu iʾtūnī bi-kulli sāḥirin ʿalīm (79). Fa-lammā jāʾas-saḥaratu qāla lahum Mūsā alqū mā antum mulqūn (80). Fa-lammā alqaw qāla Mūsā mā jiʾtum bihis-siḥru, inna-llāha sayubṭiluhu, inna-llāha lā yuṣliḥu ʿamalal-mufsidin (81). Wa yuḥiqqul-lāhul-ḥaqqa bi-kalimātihi wa law karihal-mujrimūn (82).",
+            "explanationEs": "Dijo el Faraón: «Que me traigan a todo hechicero experto». Cuando llegaron los hechiceros, Moisés les dijo: «Arrojen lo que tengan que arrojar». Cuando arrojaron, Moisés dijo: «Lo que han presentado es hechicería, y Allah la destruirá. Allah no permite que prosperen las obras de quienes siembran la corrupción. Allah confirma la verdad con Sus palabras, aunque ello disguste a los pecadores».",
+            "count": 1,
+            "maxCount": 1,
+            "audioUrls": [
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/010079.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/010080.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/010081.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/010082.mp3"
+            ],
+            "note": "سورة يونس الآيات 79-82",
+            "audioUrl": ""
+          },
+          {
+            "itemNumber": 72,
+            "text": "﴿إِنَّمَا صَنَعُواْ كَيۡدُ سَٰحِرٖۖ وَلَا يُفۡلِحُ ٱلسَّاحِرُ حَيۡثُ أَتَىٰ۝﴾",
+            "latin": "Innamā ṣanaʿū kaydu sāḥirin wa lā yufliḥus-sāḥiru ḥaythu atā.",
+            "explanationEs": "Ciertamente lo que han hecho es artimaña de un mago, y el mago no triunfará por dondequiera que vaya.",
+            "count": 1,
+            "maxCount": 1,
+            "audioUrls": [
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/020069.mp3"
+            ],
+            "note": "سورة طه من الآية 69"
+          },
+          {
+            "itemNumber": 73,
+            "text": "﴿وَٱلصَّٰٓفَّٰتِ صَفّٗا۝ فَٱلزَّٰجِرَٰتِ زَجۡرٗا۝ فَٱلتَّٰلِيَٰتِ ذِكۡرًا۝ إِنَّ إِلَٰهَكُمۡ لَوَٰحِدٞ۝ رَّبُّ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ وَمَا بَيۡنَهُمَا وَرَبُّ ٱلۡمَشَٰرِقِ۝ إِنَّا زَيَّنَّا ٱلسَّمَآءَ ٱلدُّنۡيَا بِزِينَةٍ ٱلۡكَوَاكِبِ۝ وَحِفۡظٗا مِّن كُلِّ شَيۡطَٰنٖ مَّارِدٖ۝ لَّا يَسَّمَّعُونَ إِلَى ٱلۡمَلَإِ ٱلۡأَعۡلَىٰ وَيُقۡذَفُونَ مِن كُلِّ جَانِبٖ۝دُحُورٗاۖ وَلَهُمۡ عَذَابٞ وَاصِبٌ۝ إِلَّا مَنۡ خَطِفَ ٱلۡخَطۡفَةَ فَأَتۡبَعَهُۥ شِهَابٞ ثَاقِبٞ۝﴾",
+            "latin": "Was-ṣāffāti ṣaffā (1), fal-zājirāti zajrā (2), fal-tāliyāti dhikrā (3), inna ilāhakum lawāḥid (4), rabbus-samāwāti wal-arḍi wa mā baynahumā wa rabbul-mashāriq (5), innā zayyannas-samāʾad-dun-yā bi-zīnatil-kawākib (6), wa ḥifẓan min kulli shayṭānin mārid (7), lā yassammaʿūna ilal-malail-aʿlā wa yuq-dhafūna min kulli jānib (8), duḥūran wa lahum ʿadhābun wāṣib (9), illā man khaṭifal-khaṭfata fa-atbaʿahu shihābun thāqib (10).",
+            "explanationEs": "Juro por los que se alinean en filas, por los que apartan con firmeza y por los que recitan el recuerdo: su Dios es Uno, Señor de los cielos, de la Tierra y de lo que hay entre ambos, y Señor de los orientes. Hemos adornado el cielo más cercano con el esplendor de los astros y lo hemos protegido de todo demonio rebelde. No pueden escuchar a los habitantes del mundo superior y son atacados desde todas partes, expulsados; tendrán un castigo perpetuo. Excepto quien logra arrebatar algo al vuelo, pero es perseguido por una estrella fugaz penetrante.",
+            "count": 1,
+            "maxCount": 1,
+            "audioUrls": [
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037001.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037002.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037003.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037004.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037005.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037006.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037007.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037008.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037009.mp3",
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037010.mp3"
+            ],
+            "note": "سورة الصافات الآيات 1-10"
+          },
+          {
+            "itemNumber": 74,
+            "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\n﴿قُلۡ يَٰٓأَيُّهَا ٱلۡكَٰفِرُونَ۝لَآ أَعۡبُدُ مَا تَعۡبُدُونَ۝ وَلَآ أَنتُمۡ عَٰبِدُونَ مَآ أَعۡبُدُ۝وَلَآ أَنَا۠ عَابِدٞ مَّا عَبَدتُّمۡ۝ وَلَآ أَنتُمۡ عَٰبِدُونَ مَآ أَعۡبُدُ۝لَكُمۡ دِينُكُمۡ وَلِيَ دِينِ۝﴾",
+            "latin": "Bismillāhir-Raḥmānir-Raḥīm. Qul yā ayyuhal-kāfirūn (1). Lā aʿbudu mā taʿbudūn (2). Wa lā antum ʿābidūna mā aʿbud (3). Wa lā anā ʿābidun mā ʿabadtum (4). Wa lā antum ʿābidūna mā aʿbud (5). Lakum dīnukum wa liya dīn (6).",
+            "explanationEs": "En el nombre de Allah, el Compasivo, el Misericordioso. Di: «¡Oh, ustedes que rechazan la verdad! No adoro lo que ustedes adoran, ni ustedes adoran lo que yo adoro. Yo no adoraré lo que ustedes adoran, ni ustedes adorarán lo que yo adoro. Ustedes tienen su religión y yo tengo la mía».",
+            "count": 1,
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q009.mp3"
+            ],
+            "note": "سورة الكافرون"
+          },
+          {
+            "itemNumber": 75,
+            "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\n﴿قُلۡ هُوَ ٱللَّهُ أَحَدٌ۝ ٱللَّهُ ٱلصَّمَدُ۝لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ۝ وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ۝﴾",
+            "latin": "Bismillāhir-Raḥmānir-Raḥīm\nQul Huwallāhu Aḥad (1). Allāhuṣ-Ṣamad (2). Lam yalid wa lam yūlad (3). Wa lam yakun lahū kufuwan aḥad (4).",
+            "explanationEs": "En el nombre de Allah, el Compasivo, el Misericordioso\nDi: «Él es Allah, Uno. Allah, el Absoluto [de Quien todos necesitan y Él no necesita de nadie]. No engendró ni fue engendrado. Y no hay nada ni nadie que sea semejante a Él».",
+            "count": 3,
+            "maxCount": 3,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q112.mp3"
+            ],
+            "note": "سورة الإخلاص"
+          },
+          {
+            "itemNumber": 76,
+            "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيم\n﴿قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ۝مِن شَرِّ مَا خَلَقَ۝وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ۝ وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِي ٱلۡعُقَدِ۝وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ۝﴾",
+            "latin": "Bismillāhir-Raḥmānir-Raḥīm\nQul aʿūdhu bi-Rabbil-falaq (1). Min sharri mā khalaq (2). Wa min sharri ghāsiqin idhā waqab (3). Wa min sharri-n-naffāthāti fil-ʿuqud (4). Wa min sharri ḥāsidin idhā ḥasad (5).",
+            "explanationEs": "En el nombre de Allah, el Compasivo, el Misericordioso\nDi: «Me refugio en el Señor del alba, del mal de lo que ha creado, del mal de la oscuridad cuando se extiende, del mal de quienes soplan sobre los nudos [practicando hechicería] y del mal del envidioso cuando envidia».",
+            "count": 3,
+            "maxCount": 3,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q113.mp3"
+            ],
+            "note": "سورة الفلق"
+          },
+          {
+            "itemNumber": 77,
+            "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\n﴿قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ۝ مَلِكِ ٱلنَّاسِ۝ إِلَٰهِ ٱلنَّاسِ۝ مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ۝ ٱلَّذِي يُوَسۡوِسُ فِي صُدُورِ ٱلنَّاسِ۝ مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ۝﴾",
+            "latin": "Bismillāhir-Raḥmānir-Raḥīm\nQul aʿūdhu bi-Rabbin-nās (1). Malikin-nās (2). Ilāhin-nās (3). Min sharril-waswāsil-khannās (4). Alladhī yuwaswisu fī ṣudūrin-nās (5). Minal-jinnati wan-nās (6).",
+            "explanationEs": "En el nombre de Allah, el Compasivo, el Misericordioso\nDi: «Me refugio en el Señor de los seres humanos, el Rey de los seres humanos, el Dios de los seres humanos, del mal del susurrador que se oculta, que susurra en los corazones de los seres humanos, sea [el susurrador] de entre los yinn o de entre los seres humanos».",
+            "count": 3,
+            "maxCount": 3,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q114.mp3"
+            ],
+            "note": "سورة الناس"
+          },
+          {
+            "itemNumber": 78,
+            "text": "بِسْمِ اللَّهِ وَلَجْنَا، وَبِسْمِ اللَّهِ خَرَجْنَا، وَعَلَى رَبِّنَا تَوَكَّلْنَا",
+            "latin": "Bismillāhi walajnā, wa bismillāhi kharajnā, wa ʿalā Rabbinā tawakkalnā.",
+            "explanationEs": "En el nombre de Allah entramos, en el nombre de Allah salimos, y en nuestro Señor confiamos. (Al entrar en casa; después se saluda a la familia. Abu Dawud)",
+            "count": 1,
+            "maxCount": 1,
+            "note": "عِنْدَ دُخُولِ الْبَيْتِ، ثُمَّ يُسَلِّمُ عَلَى أَهْلِهِ (رَوَاهُ أَبُو دَاوُدَ)"
+          },
+          {
+            "itemNumber": 79,
+            "text": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ",
+            "latin": "Aʿūdhu bi-kalimātillāhit-tāmmāti min sharri mā khalaq.",
+            "explanationEs": "Me refugio en las palabras perfectas de Allah del mal de todo lo que ha creado.",
+            "count": 3,
+            "maxCount": 3,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2020.mp3"
+            ],
+            "note": "مَنْ نَزَلَ مَنْزِلًا فَقَالَهَا لَمْ يَضُرَّهُ شَيْءٌ حَتَّى يَرْتَحِلَ مِنْهُ (رَوَاهُ مُسْلِمٌ)"
+          },
+          {
+            "itemNumber": 80,
+            "text": "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
+            "latin": "Bismillāhil-ladhī lā yaḍurru maʿa ismihi shayʾun fīl-arḍi wa lā fīs-samāʾi wa Huwas-Samīʿul-ʿAlīm.",
+            "explanationEs": "En el nombre de Allah, con cuyo nombre nada en la tierra ni en el cielo puede causar daño, y Él es el Omnioyente, el Omnisciente.",
+            "count": 3,
+            "maxCount": 3,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2014.mp3"
+            ]
+          },
+          {
+            "itemNumber": 81,
+            "text": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّةِ، مِنْ كُلِّ شَيْطَانٍ وَهَامَّةٍ، وَمِنْ كُلِّ عَيْنٍ لَامَّةٍ",
+            "latin": "Aʿūdhu bi-kalimātillāhit-tāmmati, min kulli shayṭānin wa hāmmah, wa min kulli ʿaynin lāmmah.",
+            "explanationEs": "Me refugio en las palabras perfectas de Allah contra todo demonio, criatura venenosa y contra todo mal de ojo pernicioso.",
+            "count": 1,
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA10-42.mp3"
+            ]
+          },
+          {
+            "itemNumber": 82,
+            "text": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ الَّتِي لَا يُجَاوِزُهُنَّ بَرٌّ وَلَا فَاجِرٌ، مِنْ شَرِّ مَا خَلَقَ وَذَرَأَ وَبَرَأَ، وَمِنْ شَرِّ مَا يَنْزِلُ مِنَ السَّمَاءِ، وَمِنْ شَرِّ مَا يَعْرُجُ فِيهَا، وَمِنْ شَرِّ مَا ذَرَأَ فِي الْأَرْضِ، وَمِنْ شَرِّ مَا يَخْرُجُ مِنْهَا، وَمِنْ شَرِّ فِتَنِ اللَّيْلِ وَالنَّهَارِ، وَمِنْ شَرِّ كُلِّ طَارِقٍ إِلَّا طَارِقًا يَطْرُقُ بِخَيْرٍ يَا رَحْمَنُ",
+            "latin": "Aʿūdhu bi-kalimātillāhit-tāmmātil-latī lā yujāwizuhunna barrun wa lā fājir, min sharri mā khalaqa wa dharaʾa wa baraʾ, wa min sharri mā yanzilu minas-samāʾ, wa min sharri mā yaʿruju fīhā, wa min sharri mā dharaʾa fil-arḍ, wa min sharri mā yakhruju minhā, wa min sharri fitanil-layli wan-nahār, wa min sharri kulli ṭāriqin illā ṭāriqan yaṭruqu bi-khayr, yā Raḥmān.",
+            "explanationEs": "Me refugio en las palabras perfectas de Allah, que ni el piadoso ni el malvado pueden traspasar, del mal de lo que Él ha creado, multiplicado y originado; del mal de lo que desciende del cielo y del mal de lo que asciende a él; del mal de lo que ha esparcido en la tierra y del mal de lo que sale de ella; del mal de las pruebas de la noche y del día, y del mal de todo visitante nocturno, salvo el que viene con el bien. ¡Oh, Compasivo!",
+            "count": 1,
+            "maxCount": 1,
+            "note": "دُعَاءٌ عَلَّمَهُ جِبْرِيلُ النَّبِيَّ ﷺ لَمَّا كَادَتْهُ الشَّيَاطِينُ (رَوَاهُ أَحْمَدُ)"
+          },
+          {
+            "itemNumber": 83,
+            "text": "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+            "latin": "Lā ilāha illallāhu waḥdahū lā sharīka lah, lahul-mulku wa lahul-ḥamd, wa Huwa ʿalā kulli shayʾin qadīr.",
+            "explanationEs": "No hay divinidad excepto Allah, Único, sin asociado. Suyos son el reino y la alabanza, y Él tiene poder sobre todas las cosas. (Cien veces al día: es una protección contra el Shaytán hasta la noche. Al-Bujari y Muslim)",
+            "count": 100,
+            "maxCount": 100,
+            "note": "مِائَةَ مَرَّةٍ: كَانَتْ لَهُ حِرْزًا مِنَ الشَّيْطَانِ يَوْمَهُ ذَلِكَ حَتَّى يُمْسِيَ (مُتَّفَقٌ عَلَيْهِ)"
           }
         ]
       }
