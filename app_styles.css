@@ -719,13 +719,44 @@ button[onclick="jumpToInputPage()"]:hover {
   padding: .15rem .35rem;
   line-height: 1;
 }
-.audio-player-compact .audio-control-play {
-  width: 2rem !important;
-  height: 2rem !important;
-  min-width: 2rem;
-  min-height: 2rem;
+/* Botón de audio tipo pastilla: icono + «Escuchar/Pausar» (ES) o «استماع/إيقاف مؤقت» (AR). */
+.audio-pill-btn,
+.audio-player-compact .audio-pill-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: .4rem;
+  width: auto !important;
+  height: 2.35rem !important;
+  min-width: 7.5rem;
+  padding: 0 1rem !important;
+  border-radius: 9999px !important;
+  background: #ecfdf5 !important;
+  border: 1.5px solid #047857 !important;
+  color: #065f46 !important;
+  font-family: 'Tajawal', 'Inter', system-ui, sans-serif;
+  font-size: .9rem;
+  font-weight: 700;
   line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color .15s ease, transform .1s ease;
+  -webkit-tap-highlight-color: transparent;
 }
+.audio-pill-btn:hover { background: #d1fae5 !important; }
+.audio-pill-btn:active { transform: scale(.96); }
+.audio-pill-btn:focus-visible { outline: 2px solid #047857 !important; outline-offset: 2px; }
+.audio-pill-btn.is-playing { background: #047857 !important; color: #ffffff !important; }
+.audio-pill-btn .audio-pill-icon { width: 18px !important; height: 18px !important; max-width: 18px !important; max-height: 18px !important; fill: currentColor; flex: 0 0 18px; }
+.audio-pill-btn .audio-pill-label { color: inherit !important; }
+.dark .audio-pill-btn {
+  background: #064e3b !important;
+  border-color: #34d399 !important;
+  color: #d1fae5 !important;
+}
+.dark .audio-pill-btn:hover { background: #065f46 !important; }
+.dark .audio-pill-btn:focus-visible { outline-color: #34d399 !important; }
+.dark .audio-pill-btn.is-playing { background: #10b981 !important; border-color: #6ee7b7 !important; color: #052e22 !important; }
 .audio-player-compact .audio-time {
   white-space: nowrap;
   min-width: 2rem;
