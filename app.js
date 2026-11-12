@@ -662,8 +662,23 @@ function toggleFavorite(id) {
 
 let scrollYBeforeViewChange = null;
 
+// App de Android: mantener la pantalla encendida solo en la misbaha, en el lector del Corán
+// o mientras suena un audio (MainActivity expone AndroidBridge.keepScreenOn).
+function updateKeepScreenOn() {
+  if (!window.AndroidBridge || typeof window.AndroidBridge.keepScreenOn !== 'function') return;
+  const isVisible = function (id) {
+    const el = document.getElementById(id);
+    return !!el && !el.classList.contains('hidden');
+  };
+  const audio = document.getElementById('globalAppAudioPlayer');
+  const playing = !!audio && !audio.paused && !audio.ended;
+  try { window.AndroidBridge.keepScreenOn(isVisible('tasbeehView') || isVisible('quranReaderView') || playing); } catch (e) {}
+}
+['play', 'pause', 'ended'].forEach(function (ev) { document.addEventListener(ev, updateKeepScreenOn, true); });
+
 function hideAllViews() {
   scrollYBeforeViewChange = window.scrollY || window.pageYOffset || 0;
+  setTimeout(updateKeepScreenOn, 0);
   ['homeView', 'categoryListView', 'detailView', 'tasbeehView', 'favoritesView', 'quranView', 'quranSurahsView', 'quranAhzabView', 'quranReaderView'].forEach(id => {
     document.getElementById(id)?.classList.add('hidden');
   });
