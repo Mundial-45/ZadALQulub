@@ -562,14 +562,23 @@ function formatQuotedText(str) {
     .replace(/«[^»]*»(\s*\[[^\]]+\])?/g, (m, ref) => `<span class="${ref ? 'inline-quran-tr' : 'inline-hadith'}">${m}</span>`);
 }
 
+// En la app de Android, MainActivity expone window.AndroidBridge (copiar y compartir nativos).
 function copyText(text) {
-  if (navigator.clipboard) {
-    navigator.clipboard.writeText(text).then(() => showToast(currentLang === 'es' ? 'Copiado al portapapeles' : 'تم نسخ النص بنجاح'));
+  const done = () => showToast(currentLang === 'es' ? 'Copiado al portapapeles' : 'تم نسخ النص بنجاح');
+  if (window.AndroidBridge && typeof window.AndroidBridge.copy === 'function') {
+    window.AndroidBridge.copy(text);
+    done();
+    return;
   }
+  if (navigator.clipboard) navigator.clipboard.writeText(text).then(done).catch(() => {});
 }
 
 function shareText(text) {
-  if (navigator.share) navigator.share({ title: 'Misbaha', text: text }).catch(() => {});
+  if (window.AndroidBridge && typeof window.AndroidBridge.share === 'function') {
+    window.AndroidBridge.share(text);
+    return;
+  }
+  if (navigator.share) navigator.share({ title: 'زاد القلوب', text: text }).catch(() => {});
   else copyText(text);
 }
 
