@@ -7,10 +7,10 @@
         "items": [
           {
             "isInfo": true,
-            "text": "دَلِيلُ الطَّهَارَةِ وَالصَّلَاةِ عَلَى الْمَذْهَبِ الْمَالِكِيِّ",
-            "titleEs": "Guía de la purificación y la oración (escuela malikí)",
-            "explanationAr": "• هَذَا الدَّلِيلُ مُخْتَصَرٌ مُيَسَّرٌ لِمَنْ يُرِيدُ أَنْ يَتَعَلَّمَ الطَّهَارَةَ وَالصَّلَاةَ، وَلَا سِيَّمَا مَنْ دَخَلَ فِي الْإِسْلَامِ حَدِيثًا.\n• اعْتَمَدْنَا فِيهِ الْمَشْهُورَ مِنْ مَذْهَبِ الْإِمَامِ مَالِكِ بْنِ أَنَسٍ رَحِمَهُ اللَّهُ، وَهُوَ مَذْهَبُ أَهْلِ الْمَغْرِبِ وَالْأَنْدَلُسِ.\n• وَفِي الْمَسَائِلِ الَّتِي اخْتَلَفَ فِيهَا الْأَئِمَّةُ جَعَلْنَا لِكُلِّ مَذْهَبٍ مِنَ الْمَذَاهِبِ الْأَرْبَعَةِ (الْمَالِكِيِّ وَالْحَنَفِيِّ وَالشَّافِعِيِّ وَالْحَنْبَلِيِّ) قِسْمًا مُسْتَقِلًّا يُفْتَحُ بِالضَّغْطِ عَلَيْهِ، فِيهِ الْوَصْفُ الْكَامِلُ، وَكُلُّهَا مَذَاهِبُ أَهْلِ السُّنَّةِ، وَالْخِلَافُ بَيْنَهَا خِلَافُ اجْتِهَادٍ مُعْتَبَرٍ.\n• قَالَ النَّبِيُّ ﷺ: «صَلُّوا كَمَا رَأَيْتُمُونِي أُصَلِّي» (البخاري).",
-            "explanationEs": "• Esta guía es un resumen sencillo para quien quiere aprender la purificación y la oración, sobre todo quien ha entrado en el islam hace poco.\n• Sigue la opinión más difundida (al-mashhūr) de la escuela del imam Mālik ibn Anas, que es la escuela del Magreb y de al-Ándalus.\n• En las cuestiones en las que los imames difieren, cada una de las cuatro escuelas (malikí, hanafí, shafi'í y hanbalí) tiene su propio apartado desplegable con la descripción completa. Las cuatro son escuelas de Ahl as-Sunna, y sus diferencias son de interpretación legítima (iŷtihād).\n• El Profeta ﷺ dijo: «Rezad como me habéis visto rezar» (Al-Bujari)."
+            "text": "دَلِيلُ الطَّهَارَةِ وَالصَّلَاةِ عَلَى الْمَذَاهِبِ الْأَرْبَعَةِ",
+            "titleEs": "Guía de la purificación y la oración (las cuatro escuelas)",
+            "explanationAr": "• هَذَا الدَّلِيلُ مُخْتَصَرٌ مُيَسَّرٌ لِمَنْ يُرِيدُ أَنْ يَتَعَلَّمَ الطَّهَارَةَ وَالصَّلَاةَ، وَلَا سِيَّمَا مَنْ دَخَلَ فِي الْإِسْلَامِ حَدِيثًا.\n• مَا اتَّفَقَتْ عَلَيْهِ الْمَذَاهِبُ ذَكَرْنَاهُ مَرَّةً وَاحِدَةً.\n• وَفِي الْمَسَائِلِ الَّتِي اخْتَلَفَ فِيهَا الْأَئِمَّةُ جَعَلْنَا لِكُلِّ مَذْهَبٍ مِنَ الْمَذَاهِبِ الْأَرْبَعَةِ (الْمَالِكِيِّ وَالْحَنَفِيِّ وَالشَّافِعِيِّ وَالْحَنْبَلِيِّ) قِسْمًا مُسْتَقِلًّا يُفْتَحُ بِالضَّغْطِ عَلَيْهِ، فِيهِ الْوَصْفُ الْكَامِلُ، وَكُلُّهَا مَذَاهِبُ أَهْلِ السُّنَّةِ، وَالْخِلَافُ بَيْنَهَا خِلَافُ اجْتِهَادٍ مُعْتَبَرٍ.\n• وَالْبُطَاقَاتُ الَّتِي عَلَيْهَا عَلَامَةُ «الْمَذْهَبُ الْمَالِكِيُّ» مَبْنِيَّةٌ عَلَى الْمَذْهَبِ الْمَالِكِيِّ وَحْدَهُ.\n• قَالَ النَّبِيُّ ﷺ: «صَلُّوا كَمَا رَأَيْتُمُونِي أُصَلِّي» (البخاري).",
+            "explanationEs": "• Esta guía es un resumen sencillo para quien quiere aprender la purificación y la oración, sobre todo quien ha entrado en el islam hace poco.\n• Lo que las escuelas comparten se explica una sola vez.\n• En las cuestiones en las que los imames difieren, cada una de las cuatro escuelas (malikí, hanafí, shafi'í y hanbalí) tiene su propio apartado desplegable con la descripción completa. Las cuatro son escuelas de Ahl as-Sunna, y sus diferencias son de interpretación legítima (iŷtihād).\n• Las tarjetas marcadas con «Escuela malikí» siguen solo la escuela malikí.\n• El Profeta ﷺ dijo: «Rezad como me habéis visto rezar» (Al-Bujari)."
           },
           {
             "isInfo": true,
@@ -446,6 +446,8 @@
             "isInfo": true,
             "text": "سُنَنُ الصَّلَاةِ الْمُؤَكَّدَةُ",
             "titleEs": "Sunnas confirmadas de la oración",
+            "note": "الْمَذْهَبُ الْمَالِكِيُّ",
+            "noteEs": "Escuela malikí",
             "explanationAr": "قِرَاءَةُ سُورَةٍ بَعْدَ الْفَاتِحَةِ فِي الرَّكْعَتَيْنِ الْأُولَيَيْنِ، وَالْقِيَامُ لَهَا، وَالْجَهْرُ فِيمَا يُجْهَرُ فِيهِ، وَالسِّرُّ فِيمَا يُسَرُّ فِيهِ، وَكُلُّ تَكْبِيرَةٍ غَيْرَ تَكْبِيرَةِ الْإِحْرَامِ، وَ«سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ» لِلْإِمَامِ وَالْفَذِّ، وَالتَّشَهُّدَانِ، وَالْجُلُوسُ لَهُمَا، وَالصَّلَاةُ عَلَى النَّبِيِّ ﷺ فِي التَّشَهُّدِ الْأَخِيرِ، وَالسُّجُودُ عَلَى الْأَنْفِ وَالرُّكْبَتَيْنِ وَأَطْرَافِ الْقَدَمَيْنِ، وَرَدُّ الْمَأْمُومِ السَّلَامَ عَلَى إِمَامِهِ.",
             "explanationEs": "Recitar una sura después de Al-Fātiḥa en las dos primeras rakʿas y estar de pie para ello; recitar en voz alta donde corresponde y en voz baja donde corresponde; todos los takbīr salvo el de entrada; decir «Samiʿallāhu liman ḥamidah» (el imam y quien reza solo); los dos tashahhud y estar sentado para ellos; la oración sobre el Profeta ﷺ en el último tashahhud; apoyar en la postración la nariz, las rodillas y las puntas de los pies; y que quien reza detrás del imam le devuelva el saludo."
           }
@@ -1005,6 +1007,8 @@
             "isInfo": true,
             "text": "إِذَا نَسِيتَ سُجُودَ السَّهْوِ",
             "titleEs": "Si olvidas la postración del olvido",
+            "note": "الْمَذْهَبُ الْمَالِكِيُّ",
+            "noteEs": "Escuela malikí",
             "explanationAr": "• الْقَبْلِيُّ: إِنْ نَسِيتَهُ وَسَلَّمْتَ، سَجَدْتَهُ إِنْ تَذَكَّرْتَ قَرِيبًا. فَإِنْ طَالَ الْفَصْلُ وَكَانَ عَنْ نَقْصِ ثَلَاثِ سُنَنٍ فَأَكْثَرَ بَطَلَتِ الصَّلَاةُ وَتُعِيدُهَا، وَإِنْ كَانَ عَنْ أَقَلَّ فَلَا شَيْءَ عَلَيْكَ.\n• الْبَعْدِيُّ: تَسْجُدُهُ مَتَى تَذَكَّرْتَهُ وَلَوْ بَعْدَ مُدَّةٍ طَوِيلَةٍ، وَلَا تَبْطُلُ الصَّلَاةُ بِتَرْكِهِ.\n• وَلَا سُجُودَ لِلسَّهْوِ فِي سُجُودِ السَّهْوِ نَفْسِهِ.",
             "explanationEs": "• El de antes del salām: si lo olvidaste y saludaste, lo haces si te acuerdas al poco. Si ha pasado mucho tiempo y se debía a omitir tres sunnas o más, la oración se invalida y hay que repetirla; si era por menos, no hay que hacer nada.\n• El de después del salām: lo haces cuando te acuerdes, aunque sea mucho después; la oración no se invalida por dejarlo.\n• No hay postración del olvido por equivocarse en la propia postración del olvido."
           }
@@ -1053,6 +1057,8 @@
             "isInfo": true,
             "text": "هَلْ تَقُومُ بِتَكْبِيرٍ؟",
             "titleEs": "¿Te levantas con takbīr?",
+            "note": "الْمَذْهَبُ الْمَالِكِيُّ",
+            "noteEs": "Escuela malikí",
             "explanationAr": "• إِذَا كَانَ جُلُوسُكَ الْأَخِيرُ مَعَ الْإِمَامِ هُوَ ثَانِيَتَكَ أَنْتَ (أَدْرَكْتَ رَكْعَتَيْنِ)، أَوْ أَدْرَكْتَ أَقَلَّ مِنْ رَكْعَةٍ: تَقُومُ بِتَكْبِيرٍ.\n• وَإِلَّا (أَدْرَكْتَ رَكْعَةً أَوْ ثَلَاثًا): تَقُومُ بِغَيْرِ تَكْبِيرٍ، لِأَنَّ ذَلِكَ الْجُلُوسَ لَمْ يَكُنْ فِي مَوْضِعِ جُلُوسِكَ.",
             "explanationEs": "• Si tu última sentada con el imam era tu segunda rakʿa (alcanzaste dos rakʿas), o alcanzaste menos de una rakʿa: te levantas diciendo «Allāhu akbar».\n• Si no (alcanzaste una o tres rakʿas): te levantas sin decir «Allāhu akbar», porque esa sentada no correspondía a tu propia oración."
           },
@@ -1060,6 +1066,8 @@
             "isInfo": true,
             "text": "أَمْثِلَةٌ: الظُّهْرُ وَالْعَصْرُ وَالْعِشَاءُ",
             "titleEs": "Ejemplos: Ẓuhr, ʿAṣr e ʿIshāʾ",
+            "note": "الْمَذْهَبُ الْمَالِكِيُّ",
+            "noteEs": "Escuela malikí",
             "explanationAr": "• فَاتَتْكَ رَكْعَةٌ (أَدْرَكْتَ ثَلَاثًا): تَقُومُ بِلَا تَكْبِيرٍ، وَتَأْتِي بِرَكْعَةٍ بِالْفَاتِحَةِ وَسُورَةٍ، ثُمَّ تَجْلِسُ وَتَتَشَهَّدُ وَتُسَلِّمُ.\n• فَاتَتْكَ رَكْعَتَانِ (أَدْرَكْتَ رَكْعَتَيْنِ): تَقُومُ بِتَكْبِيرٍ، وَتَأْتِي بِرَكْعَتَيْنِ بِالْفَاتِحَةِ وَسُورَةٍ فِي كُلٍّ مِنْهُمَا، وَلَا تَجْلِسُ بَيْنَهُمَا، ثُمَّ تَتَشَهَّدُ وَتُسَلِّمُ.\n• فَاتَتْكَ ثَلَاثٌ (أَدْرَكْتَ رَكْعَةً): تَقُومُ بِلَا تَكْبِيرٍ، وَتَأْتِي بِرَكْعَةٍ بِالْفَاتِحَةِ وَسُورَةٍ وَتَجْلِسُ لِلتَّشَهُّدِ (لِأَنَّهَا ثَانِيَتُكَ)، ثُمَّ تَقُومُ بِتَكْبِيرٍ فَتَأْتِي بِرَكْعَةٍ بِالْفَاتِحَةِ وَسُورَةٍ وَلَا تَجْلِسُ، ثُمَّ بِرَكْعَةٍ بِالْفَاتِحَةِ وَحْدَهَا، وَتَتَشَهَّدُ وَتُسَلِّمُ.\nوَفِي الْعِشَاءِ تَجْهَرُ فِيمَا تَقْضِيهِ مِنَ الرَّكْعَتَيْنِ الْأُولَيَيْنِ.",
             "explanationEs": "• Te faltó una rakʿa (alcanzaste tres): te levantas sin takbīr, rezas una rakʿa con Al-Fātiḥa y una sura, te sientas, haces el tashahhud y saludas.\n• Te faltaron dos (alcanzaste dos): te levantas con takbīr, rezas dos rakʿas con Al-Fātiḥa y una sura en cada una, sin sentarte entre ellas, y luego haces el tashahhud y saludas.\n• Te faltaron tres (alcanzaste una): te levantas sin takbīr; rezas una rakʿa con Al-Fātiḥa y una sura y te sientas para el tashahhud (porque es tu segunda); te levantas con takbīr y rezas otra con Al-Fātiḥa y una sura, sin sentarte; después una con solo Al-Fātiḥa, haces el tashahhud y saludas.\nEn el ʿIshāʾ, lo que recuperes de las dos primeras rakʿas lo recitas en voz alta."
           },
@@ -1067,6 +1075,8 @@
             "isInfo": true,
             "text": "أَمْثِلَةٌ: الْمَغْرِبُ وَالصُّبْحُ",
             "titleEs": "Ejemplos: Maghrib y Fajr",
+            "note": "الْمَذْهَبُ الْمَالِكِيُّ",
+            "noteEs": "Escuela malikí",
             "explanationAr": "• الْمَغْرِبُ، فَاتَتْكَ رَكْعَةٌ (أَدْرَكْتَ رَكْعَتَيْنِ): تَقُومُ بِتَكْبِيرٍ، وَتَأْتِي بِرَكْعَةٍ بِالْفَاتِحَةِ وَسُورَةٍ جَهْرًا، ثُمَّ تَتَشَهَّدُ وَتُسَلِّمُ.\n• الْمَغْرِبُ، فَاتَتْكَ رَكْعَتَانِ (أَدْرَكْتَ رَكْعَةً): تَقُومُ بِلَا تَكْبِيرٍ، وَتَأْتِي بِرَكْعَةٍ بِالْفَاتِحَةِ وَسُورَةٍ جَهْرًا وَتَجْلِسُ لِلتَّشَهُّدِ، ثُمَّ تَقُومُ بِتَكْبِيرٍ فَتَأْتِي بِرَكْعَةٍ بِالْفَاتِحَةِ وَسُورَةٍ جَهْرًا، ثُمَّ تَتَشَهَّدُ وَتُسَلِّمُ. فَتَكُونُ قَدْ جَلَسْتَ ثَلَاثَ مَرَّاتٍ.\n• الصُّبْحُ، فَاتَتْكَ رَكْعَةٌ: تَقُومُ بِلَا تَكْبِيرٍ، وَتَأْتِي بِرَكْعَةٍ بِالْفَاتِحَةِ وَسُورَةٍ جَهْرًا، ثُمَّ تَتَشَهَّدُ وَتُسَلِّمُ.",
             "explanationEs": "• Maghrib, te faltó una rakʿa (alcanzaste dos): te levantas con takbīr, rezas una rakʿa con Al-Fātiḥa y una sura en voz alta, haces el tashahhud y saludas.\n• Maghrib, te faltaron dos (alcanzaste una): te levantas sin takbīr; rezas una rakʿa con Al-Fātiḥa y una sura en voz alta y te sientas para el tashahhud; te levantas con takbīr y rezas otra con Al-Fātiḥa y una sura en voz alta; haces el tashahhud y saludas. Así te habrás sentado tres veces.\n• Fajr, te faltó una rakʿa: te levantas sin takbīr, rezas una rakʿa con Al-Fātiḥa y una sura en voz alta, haces el tashahhud y saludas."
           },
