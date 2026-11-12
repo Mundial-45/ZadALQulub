@@ -130,7 +130,9 @@ let fontSize = 18;
 let currentAudio = null;
 
 const STORAGE_KEY = 'azkar_adya_progress_v5';
-const FAV_KEY = 'azkar_favorites_v5';
+const FAV_KEY = 'azkar_favorites_v5'; // antiguo: favoritos guardados por texto árabe
+const FAV_IDS_KEY = 'zad_favorites_ids_v6'; // favoritos por identificador sección|grupo|número
+const PROGRESS_IDS_KEY = 'zad_progress_ids_v6'; // contadores por identificador
 const THEME_KEY = 'azkar_theme_v5';
 
 function safeGetStorage(key) {
@@ -582,22 +584,74 @@ function shareText(text) {
   else copyText(text);
 }
 
-function loadFavorites() {
-  const saved = safeGetStorage(FAV_KEY);
-  favorites = saved ? JSON.parse(saved) : [];
+// Identificador estable de un elemento: sección|grupo|número del elemento.
+// No cambia si se corrige el texto (tashkil, traducción) ni si se mueven otros elementos del grupo.
+function getItemId(section, group, index) {
+  const item = group && Array.isArray(group.items) ? group.items[index] : null;
+  const number = item && Number(item.itemNumber) ? Number(item.itemNumber) : index + 1;
+  return section + '|' + (group ? group.id : '') + '|' + number;
 }
 
-function toggleFavorite(text) {
-  const index = favorites.indexOf(text);
+function findItemById(id) {
+  const parts = String(id || '').split('|');
+  if (parts.length !== 3) return null;
+  const module = getSectionModule(parts[0]);
+  const group = module && typeof module.findGroup === 'function' ? module.findGroup(parts[1]) : null;
+  if (!group || !Array.isArray(group.items)) return null;
+  const number = Number(parts[2]);
+  const index = group.items.findIndex(function (it, i) { return (Number(it.itemNumber) || i + 1) === number; });
+  return index < 0 ? null : { section: parts[0], group: group, index: index, item: group.items[index] };
+}
+
+function loadFavorites() {
+  try {
+    const saved = JSON.parse(safeGetStorage(FAV_IDS_KEY) || 'null');
+    favorites = Array.isArray(saved) ? saved : [];
+  } catch (e) {
+    favorites = [];
+  }
+}
+
+// Pasa los favoritos antiguos (guardados por texto) al nuevo formato por identificador.
+// Compara también sin tashkil, para recuperar los que dejaron de coincidir al corregir el texto.
+function migrateLegacyFavorites() {
+  const legacyRaw = safeGetStorage(FAV_KEY);
+  if (!legacyRaw || safeGetStorage(FAV_IDS_KEY) !== null) return;
+  let legacy = [];
+  try { legacy = JSON.parse(legacyRaw) || []; } catch (e) { legacy = []; }
+  const normalise = function (t) { return removeArabicDiacritics(String(t || '')).replace(/[^\u0621-\u064A\s]/g, '').replace(/\s+/g, ' ').trim(); };
+  const exact = {}, loose = {};
+  Object.values(window.ZadSectionModules || {}).forEach(function (module) {
+    (module.getGroups ? module.getGroups() : []).forEach(function (group) {
+      (group.items || []).forEach(function (item, index) {
+        const id = getItemId(module.id, group, index);
+        if (item.text && !(item.text in exact)) exact[item.text] = id;
+        const key = normalise(item.text);
+        if (key && !(key in loose)) loose[key] = id;
+      });
+    });
+  });
+  const ids = [];
+  legacy.forEach(function (text) {
+    const id = exact[text] || loose[normalise(text)];
+    if (id && ids.indexOf(id) < 0) ids.push(id);
+  });
+  safeSetStorage(FAV_IDS_KEY, JSON.stringify(ids));
+  favorites = ids;
+}
+
+function toggleFavorite(id) {
+  const index = favorites.indexOf(id);
   if (index > -1) {
     favorites.splice(index, 1);
     showToast(currentLang === 'es' ? 'Eliminado de favoritos' : 'تم الإزالة من المفضلة');
   } else {
-    favorites.push(text);
+    favorites.push(id);
     showToast(currentLang === 'es' ? 'Añadido a favoritos' : 'تم الإضافة إلى المفضلة');
   }
-  safeSetStorage(FAV_KEY, JSON.stringify(favorites));
-  if (currentGroup) renderGroupItems();
+  safeSetStorage(FAV_IDS_KEY, JSON.stringify(favorites));
+  if (currentGroup && !document.getElementById('detailView').classList.contains('hidden')) renderGroupItems();
+  if (!document.getElementById('favoritesView').classList.contains('hidden')) showFavorites(true);
 }
 
 let scrollYBeforeViewChange = null;
@@ -915,25 +969,44 @@ function openGroup(groupId, skipPushState = false) {
   }
 }
 
+// Contadores guardados por identificador del elemento (no por su posición en el grupo).
+function getProgressItemId(groupId, itemIndex) {
+  if (currentGroup && currentGroup.id === groupId) return getItemId(currentSection, currentGroup, itemIndex);
+  const match = findSectionGroup(groupId);
+  return match ? getItemId(match.section, match.group, itemIndex) : null;
+}
+
+function readJsonStorage(key) {
+  try { return JSON.parse(safeGetStorage(key) || '{}') || {}; } catch (e) { return {}; }
+}
+
 function getSavedCount(groupId, itemIndex, defaultCount) {
-  const progress = JSON.parse(safeGetStorage(STORAGE_KEY) || '{}');
-  if (progress[groupId] && progress[groupId][itemIndex] !== undefined) {
-    return progress[groupId][itemIndex];
-  }
+  const id = getProgressItemId(groupId, itemIndex);
+  const progress = readJsonStorage(PROGRESS_IDS_KEY);
+  if (id && progress[id] !== undefined) return progress[id];
+  // Contadores de hoy guardados con el formato antiguo (por posición).
+  const legacy = readJsonStorage(STORAGE_KEY);
+  if (legacy[groupId] && legacy[groupId][itemIndex] !== undefined) return legacy[groupId][itemIndex];
   return defaultCount;
 }
 
 function setSavedCount(groupId, itemIndex, count) {
-  const progress = JSON.parse(safeGetStorage(STORAGE_KEY) || '{}');
-  if (!progress[groupId]) progress[groupId] = {};
-  progress[groupId][itemIndex] = count;
-  safeSetStorage(STORAGE_KEY, JSON.stringify(progress));
+  const id = getProgressItemId(groupId, itemIndex);
+  if (!id) return;
+  const progress = readJsonStorage(PROGRESS_IDS_KEY);
+  progress[id] = count;
+  safeSetStorage(PROGRESS_IDS_KEY, JSON.stringify(progress));
 }
 
 function resetGroupProgress(groupId) {
-  const progress = JSON.parse(safeGetStorage(STORAGE_KEY) || '{}');
-  delete progress[groupId];
-  safeSetStorage(STORAGE_KEY, JSON.stringify(progress));
+  const progress = readJsonStorage(PROGRESS_IDS_KEY);
+  Object.keys(progress).forEach(function (id) {
+    if (id.split('|')[1] === groupId) delete progress[id];
+  });
+  safeSetStorage(PROGRESS_IDS_KEY, JSON.stringify(progress));
+  const legacy = readJsonStorage(STORAGE_KEY);
+  delete legacy[groupId];
+  safeSetStorage(STORAGE_KEY, JSON.stringify(legacy));
 }
 
 function decrementCounter(index, isFromAudio = false) {
@@ -1425,7 +1498,8 @@ function renderGroupItems() {
     const itemSectionModule = getSectionModule(currentSection);
     const isQuranItem = !!(itemSectionModule && itemSectionModule.isQuranItem(item));
     const quranFontClass = isQuranItem ? ' quran-font' : '';
-    const isFav = favorites.includes(item.text);
+    const itemId = getItemId(currentSection, currentGroup, index);
+    const isFav = favorites.includes(itemId);
     const isDone = currentCount === 0;
     const isRuqyahSection = currentSection === 'ruqyah';
     const isMunajatSection = currentSection === 'munajat';
@@ -1510,7 +1584,7 @@ function renderGroupItems() {
         <button type="button" onclick="shareText('${escapeJsStr(getItemShareText(item, isEs))}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="${isEs ? 'Compartir' : 'مشاركة'}" aria-label="${isEs ? 'Compartir' : 'مشاركة'}">
           🔗
         </button>
-        <button type="button" onclick="toggleFavorite('${escapeJsStr(item.text)}')" class="p-2.5 rounded-xl ${isFav ? 'bg-rose-100 dark:bg-rose-950 text-rose-600' : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'} hover:bg-rose-100 dark:hover:bg-rose-900 transition cursor-pointer" title="${isEs ? (isFav ? 'Quitar de favoritos' : 'Añadir a favoritos') : (isFav ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة')}" aria-label="${isEs ? (isFav ? 'Quitar de favoritos' : 'Añadir a favoritos') : (isFav ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة')}">
+        <button type="button" onclick="toggleFavorite('${escapeJsStr(itemId)}')" class="p-2.5 rounded-xl ${isFav ? 'bg-rose-100 dark:bg-rose-950 text-rose-600' : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'} hover:bg-rose-100 dark:hover:bg-rose-900 transition cursor-pointer" title="${isEs ? (isFav ? 'Quitar de favoritos' : 'Añadir a favoritos') : (isFav ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة')}" aria-label="${isEs ? (isFav ? 'Quitar de favoritos' : 'Añadir a favoritos') : (isFav ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة')}">
           ${isFav ? '★' : '☆'}
         </button>
         ${isAdminMode() && ['azkar', 'adya', 'ruqyah', 'munajat', 'asma'].includes(currentSection) ? `
@@ -1546,21 +1620,25 @@ function showFavorites(skipPushState = false) {
       </div>
     `;
   } else {
-    favorites.forEach(text => {
+    favorites.forEach(id => {
+      const found = findItemById(id);
+      if (!found) return;
+      const text = found.item.text || '';
+      const shareTextValue = getItemShareText(found.item, isEs);
       const card = document.createElement('div');
       card.className = 'bg-white dark:bg-slate-800 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-3';
       card.innerHTML = `
         <p class="text-base font-medium leading-relaxed text-slate-800 dark:text-slate-100 whitespace-pre-line">${formatTextWithNewlines(text)}</p>
         <div class="flex items-center justify-between pt-2 border-t border-slate-100 dark:border-slate-700/50">
           <div class="flex items-center space-x-2 space-x-reverse">
-            <button type="button" onclick="copyText('${escapeJsStr(text)}')" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-700 text-xs font-bold text-slate-700 dark:text-slate-200">
+            <button type="button" onclick="copyText('${escapeJsStr(shareTextValue)}')" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-700 text-xs font-bold text-slate-700 dark:text-slate-200">
               📋 ${isEs ? 'Copiar' : 'نسخ'}
             </button>
-            <button type="button" onclick="shareText('${escapeJsStr(text)}')" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-700 text-xs font-bold text-slate-700 dark:text-slate-200">
+            <button type="button" onclick="shareText('${escapeJsStr(shareTextValue)}')" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-700 text-xs font-bold text-slate-700 dark:text-slate-200">
               🔗 ${isEs ? 'Compartir' : 'مشاركة'}
             </button>
           </div>
-          <button type="button" onclick="toggleFavorite('${escapeJsStr(text)}')" class="text-xs font-bold text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/50 px-3 py-1.5 rounded-lg border border-rose-200 dark:border-rose-800">
+          <button type="button" onclick="toggleFavorite('${escapeJsStr(id)}')" class="text-xs font-bold text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/50 px-3 py-1.5 rounded-lg border border-rose-200 dark:border-rose-800">
             ${t.removeFav}
           </button>
         </div>
@@ -1586,6 +1664,7 @@ function checkDailyReset() {
 
     if (lastReset !== todayStr) {
       safeSetStorage(STORAGE_KEY, JSON.stringify({}));
+      safeSetStorage(PROGRESS_IDS_KEY, JSON.stringify({}));
       safeSetStorage('tasbeeh_counts_v5', JSON.stringify({}));
       safeSetStorage(LAST_RESET_DATE_KEY, todayStr);
     }
@@ -1714,6 +1793,7 @@ window.addEventListener('DOMContentLoaded', () => {
   checkDailyReset();
   loadSavedTheme();
   loadFavorites();
+  migrateLegacyFavorites();
   applyLanguageUI();
   if (window.history && window.history.replaceState) {
     try {
