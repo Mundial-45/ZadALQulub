@@ -22,3 +22,4 @@ Estos cambios se dejaron para más adelante porque afectan a cómo funciona la a
 15. **Glosario de términos islámicos en español** (tawhid, shirk, taqwa, nafth, dhikr…).
 16. **Notificaciones** (azkar de la mañana y la tarde, Al-Kahf y salawat del viernes) y **horarios de oración y qibla**: necesitan código nativo en Android.
 17. **Tafsir y traducción por página del Corán**: botón «تفسير / Explicación» entre página anterior y siguiente (pendiente del permiso de la Fundación Mohammed VI y del índice de aleyas por página).
+18. **Guía de la purificación y la oración**: quitada de la app de momento; guardada completa en `pendiente/guia/` (ver su LEEME.md para volver a activarla).

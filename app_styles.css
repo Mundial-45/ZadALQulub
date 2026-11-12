@@ -683,7 +683,6 @@ button[onclick="jumpToInputPage()"]:hover {
 }
 #homeView .home-category-grid > button { grid-column:auto !important; min-width:0 !important; }
 #homeView .home-category-grid > button:nth-child(1),
-#homeView .home-category-grid > button[onclick="showTasbeeh()"],
 #homeView .home-category-grid > button[onclick="showFavorites()"] {
   grid-column:1 / -1 !important;
 }
@@ -692,7 +691,6 @@ button[onclick="jumpToInputPage()"]:hover {
   overflow:hidden;
 }
 #homeView .home-category-grid > button:nth-child(1),
-#homeView .home-category-grid > button[onclick="showTasbeeh()"],
 #homeView .home-category-grid > button[onclick="showFavorites()"] {
   flex-direction:row !important;
   justify-content:center !important;
