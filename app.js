@@ -1402,7 +1402,7 @@ function renderGroupItems() {
 
     const card = document.createElement('div');
     card.id = `zikr-card-${index}`;
-    card.className = 'card-paper-bg rounded-3xl p-6 shadow-lg border border-amber-200/80 dark:border-slate-700 space-y-5 transition-all duration-300';
+    card.className = 'card-paper-bg rounded-3xl p-6 shadow-lg border border-amber-200/80 dark:border-slate-700 space-y-5 transition-all duration-300' + (['guia', 'asma'].includes(currentSection) ? ' guide-center' : '');
 
     card.innerHTML = `
       ${isInfoItem && !item.note ? '' : `<div class="flex items-center justify-between text-xs font-bold border-b border-amber-200/60 dark:border-slate-700/60 pb-3">
@@ -1411,6 +1411,8 @@ function renderGroupItems() {
         </span>`}
         ${item.note ? `<span class="bg-amber-100/80 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 px-3 py-1 rounded-full border border-amber-300 dark:border-amber-800">${isEs && item.noteEs ? item.noteEs : item.note}</span>` : ''}
       </div>`}
+
+      ${item.image ? `<div class="guide-img-wrap"><img src="${item.image}" alt="" class="guide-img" decoding="async"></div>` : ''}
 
       ${isEs ? `
         <div class="space-y-4">
