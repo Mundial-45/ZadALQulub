@@ -1580,7 +1580,17 @@ function renderGroupItems() {
 
   container.innerHTML = '';
 
+  let previousSubtitle = null;
   currentGroup.items.forEach((item, index) => {
+    // Grupos unidos: el título de cada apartado va en su propia ventana, una sola vez
+    // aunque varios azkar seguidos compartan el mismo título.
+    if (item.subtitleAr && item.subtitleAr !== previousSubtitle) {
+      const subtitleBox = document.createElement('div');
+      subtitleBox.className = 'zikr-subtitle-box rounded-2xl px-5 py-4 text-center shadow-sm border border-emerald-200 dark:border-emerald-800 bg-white/90 dark:bg-slate-800';
+      subtitleBox.innerHTML = `<h3 class="text-lg sm:text-xl font-extrabold text-emerald-800 dark:text-emerald-300 leading-snug">${currentLang === 'es' ? (item.subtitleEs || item.subtitleAr) : item.subtitleAr}</h3>`;
+      container.appendChild(subtitleBox);
+    }
+    previousSubtitle = item.subtitleAr || null;
     const currentCount = getSavedCount(currentGroup.id, index, item.count);
     const initialMax = item.maxCount || item.count;
     const itemSectionModule = getSectionModule(currentSection);
@@ -1619,7 +1629,6 @@ function renderGroupItems() {
         </span>`}
         ${item.note ? `<span class="bg-amber-100/80 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 px-3 py-1 rounded-full border border-amber-300 dark:border-amber-800">${isEs && item.noteEs ? item.noteEs : item.note}</span>` : ''}
       </div>`}
-      ${item.subtitleAr ? `<h3 class="zikr-subtitle text-center text-lg sm:text-xl font-extrabold text-emerald-800 dark:text-emerald-300 leading-snug">${isEs ? (item.subtitleEs || item.subtitleAr) : item.subtitleAr}</h3>` : ''}
 
             ${isEs ? `
         <div class="space-y-4">
