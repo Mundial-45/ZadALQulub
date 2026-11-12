@@ -15,7 +15,7 @@ body {
 
 .custom-text-size {
   font-size: var(--app-font-size, 1.125rem);
-  font-family: 'Amiri', serif;
+  font-family: 'Amiri Quran', 'Amiri', serif;
 }
 
 .quran-font {
