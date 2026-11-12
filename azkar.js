@@ -979,7 +979,7 @@ const azkarData = [
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20114.mp3"
+                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20148.mp3"
                         ]
                   },
                   {
@@ -1777,7 +1777,7 @@ const azkarData = [
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20206.mp3"
+                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20240.mp3"
                         ]
                   },
                   {
@@ -1799,7 +1799,7 @@ const azkarData = [
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20207.mp3"
+                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20241.mp3"
                         ]
                   }
             ]
