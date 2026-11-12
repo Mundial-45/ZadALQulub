@@ -822,3 +822,10 @@ h1, h2, h3, #headerTitle,
 #homeView .home-category-card [id$="Title"],
 #buttonsGrid h3, .group-title { font-family: 'Montserrat', 'Cairo', system-ui, sans-serif !important; }
 #homeView .home-category-card [id$="Sub"] { font-family: 'Source Sans 3', 'Cairo', sans-serif; }
+/* Citas dentro de las explicaciones */
+.inline-quran { font-family: 'KFGQPC Hafs', 'Scheherazade New', serif; font-size: 1.12em; font-weight: 400; line-height: 2.3; }
+.inline-hadith { font-family: 'Scheherazade New', 'Crimson Pro', serif; font-size: 1.12em; }
+.es-text-style .inline-hadith { font-family: 'Crimson Pro', 'Scheherazade New', serif; font-size: 1.1em; }
+.inline-quran-tr { font-family: 'Crimson Pro', Georgia, serif; font-style: italic; font-size: 1.1em; color: #065f46; }
+.dark .inline-quran-tr { color: #6ee7b7; }
+.hadith-card .es-text-style .inline-hadith { font-size: 1em; }
