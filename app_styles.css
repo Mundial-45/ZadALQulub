@@ -824,3 +824,66 @@ h1, h2, h3, #headerTitle,
 .inline-hadith { font-family: 'Scheherazade New', 'Crimson Pro', serif; font-size: 1.12em; }
 .custom-text-size .inline-quran { font-size: 1.15em; font-weight: 400 !important; line-height: inherit; }
 .custom-text-size .inline-hadith { font-size: 1.08em; }
+/* Modo oscuro: pie de página, favoritos, cabecera del lector del Corán y guía de transliteración.
+   El Tailwind reducido no trae las clases dark:, así que se definen aquí. */
+.dark footer {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+  color: #94a3b8 !important;
+}
+.dark #favoritesContainer > div {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+  color: #cbd5e1 !important;
+}
+.dark #favoritesContainer > div > p,
+.dark #favoritesContainer .fav-text { color: #f1f5f9 !important; }
+.dark #favoritesContainer .fav-es { color: #e2e8f0 !important; }
+.dark #favoritesContainer .border-t { border-color: #334155 !important; }
+.dark #favoritesContainer button.bg-slate-100 {
+  background-color: #334155 !important;
+  color: #e2e8f0 !important;
+}
+.dark #favoritesContainer button.bg-rose-50 {
+  background-color: rgba(76, 5, 25, 0.5) !important;
+  color: #fb7185 !important;
+  border-color: #9f1239 !important;
+}
+.dark #singleQuranPageCard {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+}
+.dark #singleQuranPageCard > div:first-child {
+  color: #fcd34d !important;
+  border-color: #334155 !important;
+}
+.dark #quranHizbDisplay {
+  background-color: rgba(69, 26, 3, 0.8) !important;
+  color: #fde68a !important;
+  border-color: #92400e !important;
+}
+.dark #quranImageWrapper { background-color: rgba(15, 23, 42, 0.5) !important; }
+.dark #singleQuranPageCard .border-t { border-color: #334155 !important; }
+.dark #singleQuranPageCard .text-slate-500 { color: #94a3b8 !important; }
+.dark #transliterationModal > div {
+  background-color: #1e293b !important;
+  color: #f1f5f9 !important;
+  border-color: #334155 !important;
+}
+.dark #transliterationModal > div > div:first-child { background-color: #064e3b !important; border-color: #334155 !important; }
+.dark #transliterationModal .border-b,
+.dark #transliterationModal .border-t,
+.dark #transliterationModal .border { border-color: #334155 !important; }
+.dark #transliterationModal thead tr { background-color: #334155 !important; color: #e2e8f0 !important; }
+.dark #transliterationModal tbody tr { border-color: rgba(51, 65, 85, 0.6) !important; }
+.dark #transliterationModal .text-emerald-700 { color: #34d399 !important; }
+.dark #transliterationModal .text-slate-600,
+.dark #transliterationModal .text-slate-700 { color: #cbd5e1 !important; }
+.dark #transliterationModal .bg-emerald-50 {
+  background-color: rgba(2, 44, 34, 0.55) !important;
+  border-color: #065f46 !important;
+}
+.dark #transliterationModal .bg-slate-50 { background-color: rgba(15, 23, 42, 0.5) !important; }
+/* Botón «Entendido» de la guía: bg-emerald-600 no está en el Tailwind reducido (salía blanco sobre blanco). */
+#transliterationModal button.bg-emerald-600 { background-color: #059669 !important; color: #ffffff !important; }
+#transliterationModal button.bg-emerald-600:hover { background-color: #047857 !important; }
