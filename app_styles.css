@@ -154,7 +154,7 @@ button[onclick*="showFavorites"] {
 
 /* Custom Paper Texture / Framework Background for Cards (Lighter for max legibility) */
 .card-paper-bg {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url('card_bg.avif'), url('card_bg.jpg') !important;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url('card_bg.avif') !important;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -165,7 +165,7 @@ button[onclick*="showFavorites"] {
 }
 
 .dark .card-paper-bg {
-  background-image: linear-gradient(rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.92)), url('card_bg.avif'), url('card_bg.jpg') !important;
+  background-image: linear-gradient(rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.92)), url('card_bg.avif') !important;
   background-color: #1e293b !important;
   border: 1px solid #334155 !important;
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4) !important;
@@ -390,7 +390,7 @@ button[onclick="prevQuranPage()"]:hover { background-color: #92400e !important; 
 
 /* Tasbeeh cards reuse the exact paper image/overlay used by Azkar and Dua cards. */
 #tasbeehView .card-paper-bg {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url('card_bg.avif'), url('card_bg.jpg') !important;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url('card_bg.avif') !important;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -398,7 +398,7 @@ button[onclick="prevQuranPage()"]:hover { background-color: #92400e !important; 
   color: #1e293b !important;
 }
 .dark #tasbeehView .card-paper-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.92)), url('card_bg.avif'), url('card_bg.jpg') !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.92)), url('card_bg.avif') !important;
   background-color: #000000 !important;
   color: #f8fafc !important;
   border-color: #334155 !important;
