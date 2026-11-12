@@ -2,17 +2,16 @@
 
 Estos cambios se dejaron para más adelante porque afectan a cómo funciona la app dentro del WebView de Android.
 
-1. **PWA (manifest + service worker)** solo para la versión web; debe desactivarse sola en el WebView de Android.
-2. **Pantalla bajo las barras del sistema (Android 15+)**: comprobar en un móvil reciente que el contenido no queda debajo de la barra de estado o de navegación; si pasa, aplicar los insets en `MainActivity`.
+1. **Pantalla bajo las barras del sistema (Android 15+)**: comprobar en un móvil reciente que el contenido no queda debajo de la barra de estado o de navegación; si pasa, aplicar los insets en `MainActivity`.
 
 ## Ideas de contenido guardadas
 
-3. **Los 40 hadices de An-Nawawi** en árabe y español con un comentario breve.
-4. **Aleya o hadiz del día** en la pantalla de inicio.
-5. **Botones rápidos en la misbaha**: 33 + 33 + 34 tras la oración, istighfar ×100, salawat.
-6. **Notificaciones** (azkar de la mañana y la tarde, Al-Kahf y salawat del viernes) y **horarios de oración y qibla**: necesitan código nativo en Android.
-7. **Tafsir y traducción por página del Corán**: botón «تفسير / Explicación» entre página anterior y siguiente (pendiente del permiso de la Fundación Mohammed VI y del índice de aleyas por página).
-8. **Guía de la purificación y la oración**: quitada de la app de momento; guardada completa en `pendiente/guia/` (ver su LEEME.md para volver a activarla).
+2. **Los 40 hadices de An-Nawawi** en árabe y español con un comentario breve.
+3. **Aleya o hadiz del día** en la pantalla de inicio.
+4. **Botones rápidos en la misbaha**: 33 + 33 + 34 tras la oración, istighfar ×100, salawat.
+5. **Notificaciones** (azkar de la mañana y la tarde, Al-Kahf y salawat del viernes) y **horarios de oración y qibla**: necesitan código nativo en Android.
+6. **Tafsir y traducción por página del Corán**: botón «تفسير / Explicación» entre página anterior y siguiente (pendiente del permiso de la Fundación Mohammed VI y del índice de aleyas por página).
+7. **Guía de la purificación y la oración**: quitada de la app de momento; guardada completa en `pendiente/guia/` (ver su LEEME.md para volver a activarla).
 
 ## Hecho en Android (12/11/2026)
 
@@ -28,3 +27,8 @@ Estos cambios se dejaron para más adelante porque afectan a cómo funciona la a
 - Pantalla encendida solo en la misbaha, el lector del Corán o con audio (`AndroidBridge.keepScreenOn`).
 - Librerías de Android actualizadas (core-ktx 1.19.1, appcompat 1.8.0, activity 1.13.0, material 1.14.0, webkit 1.18.0).
 - Nueva sección Glosario de términos islámicos (107 términos), cada uno verificado en islamweb, binbaz o dorar.net con enlace a la fuente, y explicaciones centradas.
+- PWA solo para la web (manifest, service worker e icono oficial); el aviso de instalación sale solo en iPhone/iPad y en Android no se activa.
+- Modo oscuro legible en el pie, favoritos, cabecera del lector del Corán y guía de transliteración.
+- Favoritos en español con transliteración y traducción, y fuente del Corán en las aleyas.
+- Al girar el móvil la app ya no se recarga (`configChanges` en el manifest).
+- Icono monocromo propio para los iconos temáticos de Android 13+.
