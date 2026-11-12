@@ -3265,9 +3265,9 @@ const azkarData = [
             "items": [
                   {
                         "itemNumber": 265,
-                        "text": "﴿وَمِنۡهُم مَّن يَقُولُ رَبَّنَآ ءَاتِنَا فِي ٱلدُّنۡيَا حَسَنَةٗ وَفِي ٱلۡأٓخِرَةِ حَسَنَةٗ وَقِنَا عَذَابَ ٱلنَّارِ۝.﴾",
+                        "text": "﴿رَبَّنَآ ءَاتِنَا فِي ٱلدُّنۡيَا حَسَنَةٗ وَفِي ٱلۡأٓخِرَةِ حَسَنَةٗ وَقِنَا عَذَابَ ٱلنَّارِ۝﴾",
                         "latin": "Rabbanā ātinā fī ad-dunyā ḥasanatan wa fī al-ākhirati ḥasanatan wa qinā ʿadhāba an-nār.",
-                        "explanationEs": "Pero entre ellos hay quienes dicen: «¡Señor nuestro! Danos bienestar en esta vida y en la otra, y presérvanos del tormento del Fuego».",
+                        "explanationEs": "¡Señor nuestro! Danos bienestar en esta vida y en la otra, y presérvanos del tormento del Fuego.",
                         "count": 1,
                         "maxCount": 1,
             "note": "سورة البقرة الآية 201",
