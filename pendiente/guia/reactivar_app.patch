@@ -1,0 +1,205 @@
+diff --git b/app.js a/app.js
+index 75967b3..65d098a 100644
+--- b/app.js
++++ a/app.js
+@@ -58,6 +58,9 @@ const uiTexts = {
+     btnRuqyahTitle: 'الرقية الشرعية',
+     btnRuqyahSub: 'رقية الشفاء، العين، الحسد والمس',
+     ruqyahSectionTitle: 'الرقية الشرعية',
++    btnGuiaTitle: 'دليل الصلاة',
++    btnGuiaSub: 'الطهارة والصلاة على المذاهب الأربعة',
++    guiaSectionTitle: 'دليل الطهارة والصلاة',
+     btnAsmaTitle: 'أسماء الله الحسنى',
+     btnAsmaSub: 'معانيها وشرحها المختصر',
+     asmaSectionTitle: 'أسماء الله الحسنى'
+@@ -117,6 +120,9 @@ const uiTexts = {
+     btnRuqyahTitle: 'Ruqyah Shariyah',
+     btnRuqyahSub: 'Curación, protección contra envidia, ojo y mal',
+     ruqyahSectionTitle: 'Ruqyah Shariyah',
++    btnGuiaTitle: 'Guía de la oración',
++    btnGuiaSub: 'Purificación y oración (las cuatro escuelas)',
++    guiaSectionTitle: 'Guía de la purificación y la oración',
+     btnAsmaTitle: 'Los Nombres de Allah',
+     btnAsmaSub: 'Su significado y explicación breve',
+     asmaSectionTitle: 'Los Nombres de Allah'
+@@ -218,7 +224,7 @@ function applyLanguageUI() {
+   const ruqyahSubEl = document.getElementById('btnRuqyahSub');
+   if (ruqyahSubEl && t.btnRuqyahSub) ruqyahSubEl.innerText = t.btnRuqyahSub;
+ 
+-  [['btnAsmaTitle', t.btnAsmaTitle], ['btnAsmaSub', t.btnAsmaSub]].forEach(([id, txt]) => {
++  [['btnGuiaTitle', t.btnGuiaTitle], ['btnGuiaSub', t.btnGuiaSub], ['btnAsmaTitle', t.btnAsmaTitle], ['btnAsmaSub', t.btnAsmaSub]].forEach(([id, txt]) => {
+     const el = document.getElementById(id);
+     if (el && txt) el.innerText = txt;
+   });
+@@ -613,10 +619,20 @@ function findSectionGroup(groupId) {
+ }
+ 
+ function getItemShareText(item, isEs) {
++  if (Array.isArray(item.madhahib)) {
++    return item.text + '\n\n' + item.madhahib.map(m => (MADHAB_LABELS[m.id] || {})[isEs ? 'es' : 'ar'] + ':\n' + (isEs ? m.es : m.ar)).join('\n\n');
++  }
+   if (isEs) return item.explanationEs || item.text;
+   return item.explanationAr ? item.text + '\n\n' + item.explanationAr : item.text;
+ }
+ 
++const MADHAB_LABELS = {
++  maliki: { ar: 'الْمَذْهَبُ الْمَالِكِيُّ', es: 'Escuela malikí' },
++  hanafi: { ar: 'الْمَذْهَبُ الْحَنَفِيُّ', es: 'Escuela hanafí' },
++  shafii: { ar: 'الْمَذْهَبُ الشَّافِعِيُّ', es: "Escuela shafi'í" },
++  hanbali: { ar: 'الْمَذْهَبُ الْحَنْبَلِيُّ', es: 'Escuela hanbalí' }
++};
++
+ function getGroupItemCount(group) {
+   if (!group || !Array.isArray(group.items)) return 0;
+   return group.items.filter(it => !it.isInfo).length || group.items.length;
+@@ -656,6 +672,7 @@ function openAzkarSection() { showSection('azkar'); }
+ function openAdyaSection() { showSection('adya'); }
+ function openMunajatSection() { showSection('munajat'); }
+ function openRuqyaSection() { showSection('ruqyah'); }
++function openGuiaSection() { showSection('guia'); }
+ function openAsmaSection() { showSection('asma'); }
+ 
+ function goBackToSection() {
+@@ -712,7 +729,7 @@ function filterButtons() {
+     if (group.items && Array.isArray(group.items)) {
+       group.items.forEach((item, itemIdx) => {
+         const textClean = removeArabicDiacritics((item.text || '').toLowerCase());
+-        const expClean = (item.explanationEs || '').toLowerCase();
++        const expClean = ((item.explanationEs || '') + ' ' + (Array.isArray(item.madhahib) ? item.madhahib.map(m => m.es).join(' ') : '')).toLowerCase();
+         const latinClean = (item.latin || '').toLowerCase();
+         const noteClean = removeArabicDiacritics((item.note || '').toLowerCase());
+ 
+@@ -966,7 +983,7 @@ function resetAllInGroup() {
+ 
+ const EDITOR_REPO = 'Mundial-45/ZadALQulub';
+ const EDITOR_BRANCH = 'main';
+-const EDITOR_FILES = { azkar: 'azkar.js', adya: 'adya.js', ruqyah: 'ruqya.js', munajat: 'munajat.js', asma: 'asma.js' };
++const EDITOR_FILES = { azkar: 'azkar.js', adya: 'adya.js', ruqyah: 'ruqya.js', munajat: 'munajat.js', guia: 'guia.js', asma: 'asma.js' };
+ let itemEditorState = null;
+ let pendingItemEdits = loadPendingItemEdits();
+ const PENDING_EDITS_KEY = 'zadAlQulubPendingEdits_v1';
+@@ -1400,7 +1417,7 @@ function renderGroupItems() {
+ 
+     const card = document.createElement('div');
+     card.id = `zikr-card-${index}`;
+-    card.className = 'card-paper-bg rounded-3xl p-6 shadow-lg border border-amber-200/80 dark:border-slate-700 space-y-5 transition-all duration-300' + (currentSection === 'asma' ? ' guide-center' : '');
++    card.className = 'card-paper-bg rounded-3xl p-6 shadow-lg border border-amber-200/80 dark:border-slate-700 space-y-5 transition-all duration-300' + (['guia', 'asma'].includes(currentSection) ? ' guide-center' : '');
+ 
+     card.innerHTML = `
+       ${isInfoItem && !item.note ? '' : `<div class="flex items-center justify-between text-xs font-bold border-b border-amber-200/60 dark:border-slate-700/60 pb-3">
+@@ -1410,13 +1427,16 @@ function renderGroupItems() {
+         ${item.note ? `<span class="bg-amber-100/80 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 px-3 py-1 rounded-full border border-amber-300 dark:border-amber-800">${isEs && item.noteEs ? item.noteEs : item.note}</span>` : ''}
+       </div>`}
+ 
+-            ${isEs ? `
++      ${item.image ? `<div class="guide-img-wrap"><img src="${item.image}" alt="" class="guide-img" decoding="async"></div>` : ''}
++
++      ${isEs ? `
+         <div class="space-y-4">
++          ${item.titleEs ? `<h3 class="guide-es-title">${item.titleEs}</h3>` : ''}
+           ${item.latin ? `<div class="text-sm sm:text-base md:text-lg text-slate-800 dark:text-slate-200 latin-text-style italic text-center font-semibold bg-amber-100/50 dark:bg-slate-900/70 p-4 rounded-2xl border border-amber-300/60 dark:border-slate-700 shadow-sm whitespace-pre-line">${formatTextWithNewlines(item.latin)}</div>` : ''}
+           ${item.explanationEs ? `<div class="text-base sm:text-lg md:text-xl text-slate-900 dark:text-slate-50 es-text-style text-center font-bold bg-emerald-50/90 dark:bg-emerald-950/60 p-4 sm:p-5 rounded-2xl border border-emerald-300/60 dark:border-emerald-800/80 leading-relaxed shadow-sm whitespace-pre-line">${formatTextWithNewlines(item.explanationEs)}</div>` : ''}
+-          <div class="leading-relaxed custom-text-size${quranFontClass} font-bold text-emerald-950 dark:text-emerald-300 text-center tracking-wide pt-3 border-t border-amber-200/60 dark:border-slate-700/60 dir-rtl whitespace-pre-line">
++          ${item.titleEs && !item.latin ? '' : `<div class="leading-relaxed custom-text-size${quranFontClass} font-bold text-emerald-950 dark:text-emerald-300 text-center tracking-wide pt-3 border-t border-amber-200/60 dark:border-slate-700/60 dir-rtl whitespace-pre-line">
+             ${formatTextWithNewlines(item.text)}
+-          </div>
++          </div>`}
+         </div>
+       ` : `
+         <div class="leading-relaxed custom-text-size${quranFontClass} font-bold text-slate-950 dark:text-slate-50 text-center tracking-wide py-2 whitespace-pre-line">
+@@ -1425,6 +1445,24 @@ function renderGroupItems() {
+         ${item.explanationAr ? `<div class="guide-ar-expl whitespace-pre-line" dir="rtl">${formatTextWithNewlines(item.explanationAr)}</div>` : ''}
+       `}
+ 
++      ${(isEs ? item.diffEs : item.diffAr) ? `
++        <details class="guide-diff" dir="${isEs ? 'ltr' : 'rtl'}">
++          <summary>${isEs ? '📚 Diferencias entre las escuelas' : '📚 اختلاف المذاهب'}</summary>
++          <div class="guide-diff-body whitespace-pre-line">${formatTextWithNewlines(isEs ? item.diffEs : item.diffAr)}</div>
++        </details>
++      ` : ''}
++
++      ${Array.isArray(item.madhahib) ? `
++        <div class="guide-madhahib">
++          ${item.madhahib.map(m => `
++            <details class="guide-madhab guide-madhab-${m.id}" dir="${isEs ? 'ltr' : 'rtl'}">
++              <summary>${(MADHAB_LABELS[m.id] || {})[isEs ? 'es' : 'ar'] || m.id}</summary>
++              <div class="guide-madhab-body whitespace-pre-line">${formatTextWithNewlines(isEs ? m.es : m.ar)}</div>
++            </details>
++          `).join('')}
++        </div>
++      ` : ''}
++
+       ${!isAdya && !isInfoItem ? `
+         <div class="flex flex-col items-center justify-center pt-2">
+           <button type="button" onclick="decrementCounter(${index})" class="dhikr-counter-btn ${isDone ? 'is-done' : ''} w-32 h-32 rounded-full flex flex-col items-center justify-center transition transform active:scale-90 cursor-pointer shadow-xl border-4 ${isDone ? 'bg-emerald-600 text-white border-emerald-400 hover:bg-emerald-700' : 'bg-gradient-to-br from-emerald-500 to-teal-700 text-white border-emerald-300 hover:from-emerald-600 hover:to-teal-800'}">
+@@ -1465,7 +1503,7 @@ function renderGroupItems() {
+         <button type="button" onclick="toggleFavorite('${escapeJsStr(item.text)}')" class="p-2.5 rounded-xl ${isFav ? 'bg-rose-100 dark:bg-rose-950 text-rose-600' : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'} hover:bg-rose-100 dark:hover:bg-rose-900 transition cursor-pointer" title="${isEs ? (isFav ? 'Quitar de favoritos' : 'Añadir a favoritos') : (isFav ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة')}" aria-label="${isEs ? (isFav ? 'Quitar de favoritos' : 'Añadir a favoritos') : (isFav ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة')}">
+           ${isFav ? '★' : '☆'}
+         </button>
+-        ${['azkar', 'adya', 'ruqyah', 'munajat', 'asma'].includes(currentSection) ? `
++        ${['azkar', 'adya', 'ruqyah', 'munajat', 'guia', 'asma'].includes(currentSection) ? `
+           <button type="button" onclick="openItemEditor(${index})" class="p-2.5 rounded-xl bg-amber-100 dark:bg-amber-950 hover:bg-amber-200 dark:hover:bg-amber-900 text-amber-800 dark:text-amber-200 transition cursor-pointer" title="${isEs ? 'Editar elemento' : 'تعديل الذكر'}">
+             ✏️ ${isEs ? 'Editar' : 'تعديل'}
+           </button>
+diff --git b/app_styles.css a/app_styles.css
+index a0496a4..5288d21 100644
+--- b/app_styles.css
++++ a/app_styles.css
+@@ -811,7 +811,57 @@ button[onclick="jumpToInputPage()"]:hover {
+   background: rgba(2, 44, 34, 0.55);
+   border-color: rgba(6, 95, 70, 0.8);
+ }
++.guide-diff {
++  border: 1px solid #fcd34d;
++  background: #fffbeb;
++  border-radius: 1rem;
++  padding: 0.6rem 0.9rem;
++}
++.guide-diff summary {
++  cursor: pointer;
++  font-weight: 700;
++  font-size: 0.9rem;
++  color: #92400e;
++  list-style-position: inside;
++}
++.guide-diff-body {
++  margin-top: 0.6rem;
++  font-size: 0.92rem;
++  line-height: 1.9;
++  color: #422006;
++}
++.guide-diff[dir="ltr"] .guide-diff-body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; }
++.guide-diff[dir="rtl"] .guide-diff-body { font-family: 'Tajawal', 'Amiri', sans-serif; }
++.dark .guide-diff { background: rgba(69, 26, 3, 0.45); border-color: #92400e; }
++.dark .guide-diff summary { color: #fcd34d; }
++.dark .guide-diff-body { color: #fde68a; }
++.guide-es-title {
++  font-family: 'Inter', system-ui, sans-serif;
++  font-size: 1.15rem;
++  font-weight: 800;
++  text-align: center;
++  color: #064e3b;
++}
++.dark .guide-es-title { color: #6ee7b7; }
+ .guide-center .guide-ar-expl,
+ .guide-center .es-text-style,
+ .guide-center .latin-text-style { text-align: center !important; }
++.guide-img-wrap { display: flex; justify-content: center; }
++.guide-img { width: 100%; max-width: 340px; height: auto; border-radius: 1.2rem; border: 1px solid rgba(110, 231, 183, 0.6); }
++.dark .guide-img { filter: brightness(0.92); border-color: rgba(6, 95, 70, 0.8); }
+ .guide-madhahib { display: flex; flex-direction: column; gap: 0.6rem; }
++.guide-madhab { border: 1px solid #a7f3d0; background: #f0fdf4; border-radius: 1rem; padding: 0.65rem 0.95rem; }
++.guide-madhab summary { cursor: pointer; font-weight: 800; font-size: 0.98rem; color: #065f46; list-style-position: inside; }
++.guide-madhab[dir="rtl"] summary { font-family: 'Tajawal', 'Amiri', sans-serif; }
++.guide-madhab-body { margin-top: 0.6rem; font-size: 1rem; line-height: 1.9; color: #1e293b; text-align: center; }
++.guide-madhab[dir="rtl"] .guide-madhab-body { font-family: 'Tajawal', 'Amiri', sans-serif; font-size: 1.05rem; line-height: 2; }
++.guide-madhab[dir="ltr"] .guide-madhab-body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; }
++.guide-madhab-hanafi { border-color: #bfdbfe; background: #eff6ff; } .guide-madhab-hanafi summary { color: #1e40af; }
++.guide-madhab-shafii { border-color: #fde68a; background: #fffbeb; } .guide-madhab-shafii summary { color: #92400e; }
++.guide-madhab-hanbali { border-color: #e9d5ff; background: #faf5ff; } .guide-madhab-hanbali summary { color: #6b21a8; }
++.dark .guide-madhab { background: rgba(2, 44, 34, 0.5); border-color: #065f46; }
++.dark .guide-madhab summary { color: #6ee7b7; }
++.dark .guide-madhab-body { color: #e2e8f0; }
++.dark .guide-madhab-hanafi { background: rgba(23, 37, 84, 0.5); border-color: #1e3a8a; } .dark .guide-madhab-hanafi summary { color: #93c5fd; }
++.dark .guide-madhab-shafii { background: rgba(69, 26, 3, 0.45); border-color: #92400e; } .dark .guide-madhab-shafii summary { color: #fcd34d; }
++.dark .guide-madhab-hanbali { background: rgba(59, 7, 100, 0.45); border-color: #6b21a8; } .dark .guide-madhab-hanbali summary { color: #d8b4fe; }

@@ -811,57 +811,7 @@ button[onclick="jumpToInputPage()"]:hover {
   background: rgba(2, 44, 34, 0.55);
   border-color: rgba(6, 95, 70, 0.8);
 }
-.guide-diff {
-  border: 1px solid #fcd34d;
-  background: #fffbeb;
-  border-radius: 1rem;
-  padding: 0.6rem 0.9rem;
-}
-.guide-diff summary {
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 0.9rem;
-  color: #92400e;
-  list-style-position: inside;
-}
-.guide-diff-body {
-  margin-top: 0.6rem;
-  font-size: 0.92rem;
-  line-height: 1.9;
-  color: #422006;
-}
-.guide-diff[dir="ltr"] .guide-diff-body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; }
-.guide-diff[dir="rtl"] .guide-diff-body { font-family: 'Tajawal', 'Amiri', sans-serif; }
-.dark .guide-diff { background: rgba(69, 26, 3, 0.45); border-color: #92400e; }
-.dark .guide-diff summary { color: #fcd34d; }
-.dark .guide-diff-body { color: #fde68a; }
-.guide-es-title {
-  font-family: 'Inter', system-ui, sans-serif;
-  font-size: 1.15rem;
-  font-weight: 800;
-  text-align: center;
-  color: #064e3b;
-}
-.dark .guide-es-title { color: #6ee7b7; }
 .guide-center .guide-ar-expl,
 .guide-center .es-text-style,
 .guide-center .latin-text-style { text-align: center !important; }
-.guide-img-wrap { display: flex; justify-content: center; }
-.guide-img { width: 100%; max-width: 340px; height: auto; border-radius: 1.2rem; border: 1px solid rgba(110, 231, 183, 0.6); }
-.dark .guide-img { filter: brightness(0.92); border-color: rgba(6, 95, 70, 0.8); }
 .guide-madhahib { display: flex; flex-direction: column; gap: 0.6rem; }
-.guide-madhab { border: 1px solid #a7f3d0; background: #f0fdf4; border-radius: 1rem; padding: 0.65rem 0.95rem; }
-.guide-madhab summary { cursor: pointer; font-weight: 800; font-size: 0.98rem; color: #065f46; list-style-position: inside; }
-.guide-madhab[dir="rtl"] summary { font-family: 'Tajawal', 'Amiri', sans-serif; }
-.guide-madhab-body { margin-top: 0.6rem; font-size: 1rem; line-height: 1.9; color: #1e293b; text-align: center; }
-.guide-madhab[dir="rtl"] .guide-madhab-body { font-family: 'Tajawal', 'Amiri', sans-serif; font-size: 1.05rem; line-height: 2; }
-.guide-madhab[dir="ltr"] .guide-madhab-body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; }
-.guide-madhab-hanafi { border-color: #bfdbfe; background: #eff6ff; } .guide-madhab-hanafi summary { color: #1e40af; }
-.guide-madhab-shafii { border-color: #fde68a; background: #fffbeb; } .guide-madhab-shafii summary { color: #92400e; }
-.guide-madhab-hanbali { border-color: #e9d5ff; background: #faf5ff; } .guide-madhab-hanbali summary { color: #6b21a8; }
-.dark .guide-madhab { background: rgba(2, 44, 34, 0.5); border-color: #065f46; }
-.dark .guide-madhab summary { color: #6ee7b7; }
-.dark .guide-madhab-body { color: #e2e8f0; }
-.dark .guide-madhab-hanafi { background: rgba(23, 37, 84, 0.5); border-color: #1e3a8a; } .dark .guide-madhab-hanafi summary { color: #93c5fd; }
-.dark .guide-madhab-shafii { background: rgba(69, 26, 3, 0.45); border-color: #92400e; } .dark .guide-madhab-shafii summary { color: #fcd34d; }
-.dark .guide-madhab-hanbali { background: rgba(59, 7, 100, 0.45); border-color: #6b21a8; } .dark .guide-madhab-hanbali summary { color: #d8b4fe; }
