@@ -1146,6 +1146,12 @@ function resetGroupProgress(groupId) {
   safeSetStorage(STORAGE_KEY, JSON.stringify(legacy));
 }
 
+// Pasar solo al siguiente zikr (con el contador o al terminar el audio) únicamente en estos grupos
+const AUTO_ADVANCE_GROUP_IDS = ['sabah', 'masaa', 'nawm', 'istiyqadh'];
+function isAutoAdvanceGroup() {
+  return currentSection === 'azkar' && !!currentGroup && AUTO_ADVANCE_GROUP_IDS.indexOf(currentGroup.id) !== -1;
+}
+
 function decrementCounter(index, isFromAudio = false) {
   if (!currentGroup || !currentGroup.items[index]) return;
   const item = currentGroup.items[index];
@@ -1159,6 +1165,7 @@ function decrementCounter(index, isFromAudio = false) {
     if (currentCount === 0) {
       const nextIndex = index + 1;
       if (nextIndex < currentGroup.items.length) {
+        if (!isAutoAdvanceGroup()) return;
         setTimeout(() => {
           const nextElem = document.getElementById(`zikr-card-${nextIndex}`);
           if (nextElem) {
