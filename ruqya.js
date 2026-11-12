@@ -1082,15 +1082,6 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "note": "دُعَاءٌ عَلَّمَهُ جِبْرِيلُ النَّبِيَّ ﷺ لَمَّا كَادَتْهُ الشَّيَاطِينُ (رَوَاهُ أَحْمَدُ)"
-          },
-          {
-            "itemNumber": 83,
-            "text": "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
-            "latin": "Lā ilāha illallāhu waḥdahū lā sharīka lah, lahul-mulku wa lahul-ḥamd, wa Huwa ʿalā kulli shayʾin qadīr.",
-            "explanationEs": "No hay divinidad excepto Allah, Único, sin asociado. Suyos son el reino y la alabanza, y Él tiene poder sobre todas las cosas. (Cien veces al día: es una protección contra el Shaytán hasta la noche. Al-Bujari y Muslim)",
-            "count": 100,
-            "maxCount": 100,
-            "note": "مِائَةَ مَرَّةٍ: كَانَتْ لَهُ حِرْزًا مِنَ الشَّيْطَانِ يَوْمَهُ ذَلِكَ حَتَّى يُمْسِيَ (مُتَّفَقٌ عَلَيْهِ)"
           }
         ]
       }
