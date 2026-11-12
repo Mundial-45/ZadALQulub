@@ -618,6 +618,21 @@ function findSectionGroup(groupId) {
   return null;
 }
 
+function getItemShareText(item, isEs) {
+  if (Array.isArray(item.madhahib)) {
+    return item.text + '\n\n' + item.madhahib.map(m => (MADHAB_LABELS[m.id] || {})[isEs ? 'es' : 'ar'] + ':\n' + (isEs ? m.es : m.ar)).join('\n\n');
+  }
+  if (isEs) return item.explanationEs || item.text;
+  return item.explanationAr ? item.text + '\n\n' + item.explanationAr : item.text;
+}
+
+const MADHAB_LABELS = {
+  maliki: { ar: 'الْمَذْهَبُ الْمَالِكِيُّ', es: 'Escuela malikí' },
+  hanafi: { ar: 'الْمَذْهَبُ الْحَنَفِيُّ', es: 'Escuela hanafí' },
+  shafii: { ar: 'الْمَذْهَبُ الشَّافِعِيُّ', es: "Escuela shafi'í" },
+  hanbali: { ar: 'الْمَذْهَبُ الْحَنْبَلِيُّ', es: 'Escuela hanbalí' }
+};
+
 function getGroupItemCount(group) {
   if (!group || !Array.isArray(group.items)) return 0;
   return group.items.filter(it => !it.isInfo).length || group.items.length;
@@ -714,7 +729,7 @@ function filterButtons() {
     if (group.items && Array.isArray(group.items)) {
       group.items.forEach((item, itemIdx) => {
         const textClean = removeArabicDiacritics((item.text || '').toLowerCase());
-        const expClean = (item.explanationEs || '').toLowerCase();
+        const expClean = ((item.explanationEs || '') + ' ' + (Array.isArray(item.madhahib) ? item.madhahib.map(m => m.es).join(' ') : '')).toLowerCase();
         const latinClean = (item.latin || '').toLowerCase();
         const noteClean = removeArabicDiacritics((item.note || '').toLowerCase());
 
@@ -1437,6 +1452,17 @@ function renderGroupItems() {
         </details>
       ` : ''}
 
+      ${Array.isArray(item.madhahib) ? `
+        <div class="guide-madhahib">
+          ${item.madhahib.map(m => `
+            <details class="guide-madhab guide-madhab-${m.id}" dir="${isEs ? 'ltr' : 'rtl'}">
+              <summary>${(MADHAB_LABELS[m.id] || {})[isEs ? 'es' : 'ar'] || m.id}</summary>
+              <div class="guide-madhab-body whitespace-pre-line">${formatTextWithNewlines(isEs ? m.es : m.ar)}</div>
+            </details>
+          `).join('')}
+        </div>
+      ` : ''}
+
       ${!isAdya && !isInfoItem ? `
         <div class="flex flex-col items-center justify-center pt-2">
           <button type="button" onclick="decrementCounter(${index})" class="dhikr-counter-btn ${isDone ? 'is-done' : ''} w-32 h-32 rounded-full flex flex-col items-center justify-center transition transform active:scale-90 cursor-pointer shadow-xl border-4 ${isDone ? 'bg-emerald-600 text-white border-emerald-400 hover:bg-emerald-700' : 'bg-gradient-to-br from-emerald-500 to-teal-700 text-white border-emerald-300 hover:from-emerald-600 hover:to-teal-800'}">
@@ -1468,10 +1494,10 @@ function renderGroupItems() {
       <div class="flex items-center justify-center space-x-2 space-x-reverse pt-2 border-t border-slate-100 dark:border-slate-700">
 
 
-        <button type="button" onclick="copyText('${escapeJsStr(isEs ? (item.explanationEs || item.text) : (item.explanationAr ? item.text + '\n\n' + item.explanationAr : item.text))}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="${isEs ? 'Copiar' : 'نسخ'}" aria-label="${isEs ? 'Copiar' : 'نسخ'}">
+        <button type="button" onclick="copyText('${escapeJsStr(getItemShareText(item, isEs))}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="${isEs ? 'Copiar' : 'نسخ'}" aria-label="${isEs ? 'Copiar' : 'نسخ'}">
           📋
         </button>
-        <button type="button" onclick="shareText('${escapeJsStr(isEs ? (item.explanationEs || item.text) : (item.explanationAr ? item.text + '\n\n' + item.explanationAr : item.text))}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="${isEs ? 'Compartir' : 'مشاركة'}" aria-label="${isEs ? 'Compartir' : 'مشاركة'}">
+        <button type="button" onclick="shareText('${escapeJsStr(getItemShareText(item, isEs))}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="${isEs ? 'Compartir' : 'مشاركة'}" aria-label="${isEs ? 'Compartir' : 'مشاركة'}">
           🔗
         </button>
         <button type="button" onclick="toggleFavorite('${escapeJsStr(item.text)}')" class="p-2.5 rounded-xl ${isFav ? 'bg-rose-100 dark:bg-rose-950 text-rose-600' : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'} hover:bg-rose-100 dark:hover:bg-rose-900 transition cursor-pointer" title="${isEs ? (isFav ? 'Quitar de favoritos' : 'Añadir a favoritos') : (isFav ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة')}" aria-label="${isEs ? (isFav ? 'Quitar de favoritos' : 'Añadir a favoritos') : (isFav ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة')}">
