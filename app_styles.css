@@ -824,8 +824,5 @@ h1, h2, h3, #headerTitle,
 /* Citas: ﴿…﴾ con la fuente del Corán y «…» con la del hadiz; el resto del texto, Amiri Quran */
 .inline-quran { font-family: 'KFGQPC Hafs', 'Scheherazade New', serif; font-size: 1.12em; font-weight: 400; line-height: 2.3; }
 .inline-hadith { font-family: 'Scheherazade New', 'Crimson Pro', serif; font-size: 1.12em; }
-.es-text-style .inline-hadith { font-family: 'Crimson Pro', 'Scheherazade New', serif; font-size: 1.1em; }
-.inline-quran-tr { font-family: 'Crimson Pro', Georgia, serif; font-style: italic; font-size: 1.1em; color: #065f46; }
-.dark .inline-quran-tr { color: #6ee7b7; }
 .custom-text-size .inline-quran { font-size: 1.15em; font-weight: 400 !important; line-height: inherit; }
 .custom-text-size .inline-hadith { font-size: 1.08em; }
