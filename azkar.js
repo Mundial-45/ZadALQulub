@@ -1875,9 +1875,9 @@ const azkarData = [
             ]
       },
       {
-            "id": "waswasa_shadaid",
-            "titleAr": "الْوَسْوَسَةُ وَالشَّدَائِدُ وَالتَّوْبَةُ",
-            "titleEs": "Susurros, dificultades y arrepentimiento",
+            "id": "waswasa",
+            "titleAr": "الْوَسْوَسَةُ وَطَرْدُ الشَّيْطَانِ",
+            "titleEs": "Susurros y ahuyentar al Shaitán",
             "items": [
                   {
                         "itemNumber": 163,
@@ -1915,6 +1915,53 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 166,
+                        "subtitleAr": "دُعَاءُ الوَسْوَسَةِ فِي الصَّلاَةِ وَالقِرَاءَةِ",
+                        "subtitleEs": "Súplica contra las distracciones y susurros en la oración y la lectura",
+                        "text": "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ، وَاتْفُلْ عَلَى يَسَارِكَ (ثَلاَثاً).",
+                        "latin": "Aʿūdhu billāhi mina ash-shayṭāni ar-rajīm (y escupe suavemente a la izquierda tres veces).",
+                        "explanationEs": "Dice: Me refugio en Allah del Demonio repudiado, y sopla suavemente hacia su izquierda tres veces.",
+                        "count": 1,
+                        "maxCount": 1
+                  },
+                  {
+                        "itemNumber": 167,
+                        "subtitleAr": "دُعَاءُ طَرْدِ الشَّيْطَانِ وَوَسَاوِسِهِ",
+                        "subtitleEs": "Acciones para ahuyentar al Demonio y sus susurros",
+                        "text": "الاسْتِعَاذَةُ بِاللَّهِ مِنْهُ.",
+                        "latin": "Al-istiʿādhatu billāhi minh.",
+                        "explanationEs": "Buscar refugio en Allah de él (diciendo: A'udhu billahi mina ash-shaytan ar-rajim).",
+                        "count": 1,
+                        "maxCount": 1
+                  },
+                  {
+                        "itemNumber": 168,
+                        "subtitleAr": "دُعَاءُ طَرْدِ الشَّيْطَانِ وَوَسَاوِسِهِ",
+                        "subtitleEs": "Acciones para ahuyentar al Demonio y sus susurros",
+                        "text": "الأَذَانُ.",
+                        "latin": "Al-adhān.",
+                        "explanationEs": "La llamada a la oración (el Adhán ahuyenta al Demonio).",
+                        "count": 1,
+                        "maxCount": 1
+                  },
+                  {
+                        "itemNumber": 169,
+                        "subtitleAr": "دُعَاءُ طَرْدِ الشَّيْطَانِ وَوَسَاوِسِهِ",
+                        "subtitleEs": "Acciones para ahuyentar al Demonio y sus susurros",
+                        "text": "الأَذْكَارُ وَقِرَاءَةُ الْقُرْآنِ.",
+                        "latin": "Al-adhkāru wa qirāʾatu al-qurʾān.",
+                        "explanationEs": "Las súplicas de recuerdo y la lectura del Corán.",
+                        "count": 1,
+                        "maxCount": 1
+                  }
+            ]
+      },
+      {
+            "id": "shadaid",
+            "titleAr": "الشَّدَائِدُ وَالذُّنُوبُ",
+            "titleEs": "Dificultades, deudas y pecados",
+            "items": [
+                  {
+                        "itemNumber": 170,
                         "subtitleAr": "دُعَاءُ قَضَاءِ الدَّيْنِ",
                         "subtitleEs": "Súplica para el pago de las deudas",
                         "text": "اللَّهُمَّ اكْفِنِي بِحَلاَلِكَ عَنْ حَرَامِكَ، وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ.",
@@ -1927,7 +1974,7 @@ const azkarData = [
                         ]
                   },
                   {
-                        "itemNumber": 167,
+                        "itemNumber": 171,
                         "subtitleAr": "دُعَاءُ قَضَاءِ الدَّيْنِ",
                         "subtitleEs": "Súplica para el pago de las deudas",
                         "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَضَلَعِ الدَّيْنِ وَغَلَبَةِ الرِّجَالِ.",
@@ -1940,17 +1987,7 @@ const azkarData = [
                         ]
                   },
                   {
-                        "itemNumber": 168,
-                        "subtitleAr": "دُعَاءُ الوَسْوَسَةِ فِي الصَّلاَةِ وَالقِرَاءَةِ",
-                        "subtitleEs": "Súplica contra las distracciones y susurros en la oración y la lectura",
-                        "text": "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ، وَاتْفُلْ عَلَى يَسَارِكَ (ثَلاَثاً).",
-                        "latin": "Aʿūdhu billāhi mina ash-shayṭāni ar-rajīm (y escupe suavemente a la izquierda tres veces).",
-                        "explanationEs": "Dice: Me refugio en Allah del Demonio repudiado, y sopla suavemente hacia su izquierda tres veces.",
-                        "count": 1,
-                        "maxCount": 1
-                  },
-                  {
-                        "itemNumber": 169,
+                        "itemNumber": 172,
                         "subtitleAr": "دُعَاءُ مَنِ اسْتَصْعَبَ عَلَيْهِ أَمْرٌ",
                         "subtitleEs": "Súplica para quien se le dificulta un asunto",
                         "text": "اللَّهُمَّ لاَ سَهْلَ إِلاَّ مَا جَعَلْتَهُ سَهْلاً، وَأَنْتَ تَجْعَلُ الْحَزْنَ إِذَا شِئْتَ سَهْلاً.",
@@ -1960,42 +1997,12 @@ const azkarData = [
                         "maxCount": 1
                   },
                   {
-                        "itemNumber": 170,
+                        "itemNumber": 173,
                         "subtitleAr": "مَا يَقُولُ وَيَفْعَلُ مَنْ أَذْنَبَ ذَنْباً",
                         "subtitleEs": "Lo que dice y hace quien comete un pecado",
                         "text": "مَا مِنْ عَبْدٍ يُذْنِبُ ذَنْباً فَيُحْسِنُ الطُّهُورَ، ثُمَّ يَقُومُ فَيُصَلِّي رَكْعَتَيْنِ، ثُمَّ يَسْتَغْفِرُ اللَّهَ إِلاَّ غَفَرَ اللَّهُ لَهُ.",
                         "latin": "Mā min ʿabdin yudhnibu dhanban fa-yuḥsinu aṭ-ṭuhūra, thumma yaqūmu fa-yuṣallī rakʿatayni, thumma yastaghfiru Allāha illā ghafara Allāhu lah.",
                         "explanationEs": "No hay siervo que cometa un pecado, se purifique minuciosamente, luego se levante y realice dos unidades de oración (raka'at), e pida perdón a Allah, sin que Allah lo perdone.",
-                        "count": 1,
-                        "maxCount": 1
-                  },
-                  {
-                        "itemNumber": 171,
-                        "subtitleAr": "دُعَاءُ طَرْدِ الشَّيْطَانِ وَوَسَاوِسِهِ",
-                        "subtitleEs": "Acciones para ahuyentar al Demonio y sus susurros",
-                        "text": "الاسْتِعَاذَةُ بِاللَّهِ مِنْهُ.",
-                        "latin": "Al-istiʿādhatu billāhi minh.",
-                        "explanationEs": "Buscar refugio en Allah de él (diciendo: A'udhu billahi mina ash-shaytan ar-rajim).",
-                        "count": 1,
-                        "maxCount": 1
-                  },
-                  {
-                        "itemNumber": 172,
-                        "subtitleAr": "دُعَاءُ طَرْدِ الشَّيْطَانِ وَوَسَاوِسِهِ",
-                        "subtitleEs": "Acciones para ahuyentar al Demonio y sus susurros",
-                        "text": "الأَذَانُ.",
-                        "latin": "Al-adhān.",
-                        "explanationEs": "La llamada a la oración (el Adhán ahuyenta al Demonio).",
-                        "count": 1,
-                        "maxCount": 1
-                  },
-                  {
-                        "itemNumber": 173,
-                        "subtitleAr": "دُعَاءُ طَرْدِ الشَّيْطَانِ وَوَسَاوِسِهِ",
-                        "subtitleEs": "Acciones para ahuyentar al Demonio y sus susurros",
-                        "text": "الأَذْكَارُ وَقِرَاءَةُ الْقُرْآنِ.",
-                        "latin": "Al-adhkāru wa qirāʾatu al-qurʾān.",
-                        "explanationEs": "Las súplicas de recuerdo y la lectura del Corán.",
                         "count": 1,
                         "maxCount": 1
                   },
@@ -2607,16 +2614,6 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 229,
-                        "subtitleAr": "مَا يَعْصِمُ اللَّهُ بِهِ مِنَ الدَّجَّالِ",
-                        "subtitleEs": "Protección contra la prueba del Falso Mesías (Anticristo)",
-                        "text": "مَنْ حَفِظَ عَشْرَ آيَاتٍ مِنْ أَوَّلِ سُورَةِ الْكَهْفِ عُصِمَ مِنَ الدَّجَّالِ، وَالاسْتِعَاذَةُ بِاللَّهِ مِنْ فِتْنَتِهِ عَقِبَ التَّشَهُّدِ الأَخِيرِ مِنْ كُلِّ صَلاَةٍ.",
-                        "latin": "Man ḥafiẓa ʿashra āyātin min awwali sūrati al-kahfi ʿuṣima mina ad-dajjāl, wal-istiʿādhatu billāhi min fitnatihi ʿaqiba at-tashahhudi al-ākhiri min kulli ṣalāh.",
-                        "explanationEs": "Quien memorice los primeros diez versículos de la sura Al-Kahf estará protegido del Falso Mesías, así como quien busque refugio en Allah de su prueba tras el último Tashahhud en cada oración.",
-                        "count": 1,
-                        "maxCount": 1
-                  },
-                  {
-                        "itemNumber": 230,
                         "subtitleAr": "الدُّعَاءُ لِمَنْ قَالَ: إِنِّي أُحِبُّكَ فِي اللَّهِ",
                         "subtitleEs": "Súplica para quien te dice 'Te amo por la causa de Allah'",
                         "text": "أَحَبَّكَ الَّذِي أَحْبَبْتَنِي لَهُ.",
@@ -2626,7 +2623,7 @@ const azkarData = [
                         "maxCount": 1
                   },
                   {
-                        "itemNumber": 231,
+                        "itemNumber": 230,
                         "subtitleAr": "الدُّعَاءُ لِمَنْ عَرَضَ عَلَيْكَ مَالَهُ",
                         "subtitleEs": "Súplica para quien te ofrece compartir su dinero",
                         "text": "بَارَكَ اللَّهُ لَكَ فِي أَهْلِكَ وَمَالِكَ.",
@@ -2636,7 +2633,7 @@ const azkarData = [
                         "maxCount": 1
                   },
                   {
-                        "itemNumber": 232,
+                        "itemNumber": 231,
                         "subtitleAr": "الدُّعَاءُ لِمَنْ أَقْرَضَ عِنْدَ القَضَاءِ",
                         "subtitleEs": "Súplica para el prestamista al saldar la deuda",
                         "text": "بَارَكَ اللَّهُ لَكَ فِي أَهْلِكَ وَمَالِكَ، إِنَّمَا جَزَاءُ السَّلَفِ الْحَمْدُ وَالأَدَاءُ.",
@@ -2646,22 +2643,39 @@ const azkarData = [
                         "maxCount": 1
                   },
                   {
-                        "itemNumber": 233,
-                        "subtitleAr": "دُعَاءُ الخَوْفِ مِنَ الشِّرْكِ",
-                        "subtitleEs": "Súplica para prevenir el Shirk (asociar socios a Allah)",
-                        "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ أَنْ أُشْرِكَ بِكَ وَأَنَا أَعْلَمُ، وَأَسْتَغْفِرُكَ لِمَا لاَ أَعْلَمُ.",
-                        "latin": "Allāhumma innī aʿūdhu bika an ushrika bika wa anā aʿlam, wa astaghfiruka limā lā aʿlam.",
-                        "explanationEs": "¡Oh Allah! Me refugio en Ti de asociarte algo a sabiendas, y Te pido perdón por lo que desconozco.",
-                        "count": 1,
-                        "maxCount": 1
-                  },
-                  {
-                        "itemNumber": 234,
+                        "itemNumber": 232,
                         "subtitleAr": "الدُّعَاءُ لِمَنْ قَالَ: بَارَكَ اللَّهُ فِيكَ",
                         "subtitleEs": "Súplica para quien te dice 'Que Allah te bendiga'",
                         "text": "وَفِيكَ بَارَكَ اللَّهُ.",
                         "latin": "Wa fīka bāraka Allāh.",
                         "explanationEs": "Y que Allah te bendiga a ti también.",
+                        "count": 1,
+                        "maxCount": 1
+                  }
+            ]
+      },
+      {
+            "id": "himayat_din",
+            "titleAr": "حِفْظُ الدِّينِ مِنَ الْفِتَنِ",
+            "titleEs": "Protección de la fe",
+            "items": [
+                  {
+                        "itemNumber": 233,
+                        "subtitleAr": "مَا يَعْصِمُ اللَّهُ بِهِ مِنَ الدَّجَّالِ",
+                        "subtitleEs": "Protección contra la prueba del Falso Mesías (Anticristo)",
+                        "text": "مَنْ حَفِظَ عَشْرَ آيَاتٍ مِنْ أَوَّلِ سُورَةِ الْكَهْفِ عُصِمَ مِنَ الدَّجَّالِ، وَالاسْتِعَاذَةُ بِاللَّهِ مِنْ فِتْنَتِهِ عَقِبَ التَّشَهُّدِ الأَخِيرِ مِنْ كُلِّ صَلاَةٍ.",
+                        "latin": "Man ḥafiẓa ʿashra āyātin min awwali sūrati al-kahfi ʿuṣima mina ad-dajjāl, wal-istiʿādhatu billāhi min fitnatihi ʿaqiba at-tashahhudi al-ākhiri min kulli ṣalāh.",
+                        "explanationEs": "Quien memorice los primeros diez versículos de la sura Al-Kahf estará protegido del Falso Mesías, así como quien busque refugio en Allah de su prueba tras el último Tashahhud en cada oración.",
+                        "count": 1,
+                        "maxCount": 1
+                  },
+                  {
+                        "itemNumber": 234,
+                        "subtitleAr": "دُعَاءُ الخَوْفِ مِنَ الشِّرْكِ",
+                        "subtitleEs": "Súplica para prevenir el Shirk (asociar socios a Allah)",
+                        "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ أَنْ أُشْرِكَ بِكَ وَأَنَا أَعْلَمُ، وَأَسْتَغْفِرُكَ لِمَا لاَ أَعْلَمُ.",
+                        "latin": "Allāhumma innī aʿūdhu bika an ushrika bika wa anā aʿlam, wa astaghfiruka limā lā aʿlam.",
+                        "explanationEs": "¡Oh Allah! Me refugio en Ti de asociarte algo a sabiendas, y Te pido perdón por lo que desconozco.",
                         "count": 1,
                         "maxCount": 1
                   },

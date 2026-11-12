@@ -625,6 +625,32 @@ const GROUP_ID_ALIASES = {
   'azkar|talbiyah_hajj_umrah': 'azkar|hajj', 'azkar|takbir_rukn_aswad': 'azkar|hajj', 'azkar|dua_bayn_yamani_hajar': 'azkar|hajj', 'azkar|wuquf_safa_marwah': 'azkar|hajj', 'azkar|yawm_arafah': 'azkar|hajj', 'azkar|mashar_haram': 'azkar|hajj', 'azkar|takbir_ramy_jamarat': 'azkar|hajj'
 };
 
+// Azkar: grupos separados de nuevo (los números de algunos azkar cambiaron).
+// Las claves de «waswasa_shadaid» ya no existen y se pueden aplicar siempre; las de «muamala»
+// solo una vez (ZAD_FAV_REMAP_FLAG), porque ese id de grupo se sigue usando.
+const AZKAR_ITEM_REMAP_V2 = {
+  'azkar|waswasa_shadaid|163': 'azkar|waswasa|163',
+  'azkar|waswasa_shadaid|164': 'azkar|waswasa|164',
+  'azkar|waswasa_shadaid|165': 'azkar|waswasa|165',
+  'azkar|waswasa_shadaid|168': 'azkar|waswasa|166',
+  'azkar|waswasa_shadaid|171': 'azkar|waswasa|167',
+  'azkar|waswasa_shadaid|172': 'azkar|waswasa|168',
+  'azkar|waswasa_shadaid|173': 'azkar|waswasa|169',
+  'azkar|waswasa_shadaid|166': 'azkar|shadaid|170',
+  'azkar|waswasa_shadaid|167': 'azkar|shadaid|171',
+  'azkar|waswasa_shadaid|169': 'azkar|shadaid|172',
+  'azkar|waswasa_shadaid|170': 'azkar|shadaid|173',
+  'azkar|waswasa_shadaid|174': 'azkar|shadaid|174',
+  'azkar|muamala|230': 'azkar|muamala|229',
+  'azkar|muamala|231': 'azkar|muamala|230',
+  'azkar|muamala|232': 'azkar|muamala|231',
+  'azkar|muamala|234': 'azkar|muamala|232',
+  'azkar|muamala|229': 'azkar|himayat_din|233',
+  'azkar|muamala|233': 'azkar|himayat_din|234',
+  'azkar|muamala|235': 'azkar|himayat_din|235'
+};
+const ZAD_FAV_REMAP_FLAG = 'zad_fav_remap_v2';
+
 function normaliseItemId(id) {
   const parts = String(id || '').split('|');
   if (parts.length !== 3) return id;
@@ -648,7 +674,13 @@ function loadFavorites() {
     const saved = JSON.parse(safeGetStorage(FAV_IDS_KEY) || 'null');
     favorites = Array.isArray(saved) ? saved : [];
     // Pasar los favoritos de grupos que se han unido a su grupo nuevo.
-    const normalised = favorites.map(normaliseItemId).filter(function (id, i, arr) { return arr.indexOf(id) === i; });
+    const remapOnce = !safeGetStorage(ZAD_FAV_REMAP_FLAG);
+    const normalised = favorites.map(normaliseItemId).map(function (id) {
+      const target = AZKAR_ITEM_REMAP_V2[id];
+      if (!target) return id;
+      return (remapOnce || id.indexOf('azkar|waswasa_shadaid|') === 0) ? target : id;
+    }).filter(function (id, i, arr) { return arr.indexOf(id) === i; });
+    if (remapOnce) safeSetStorage(ZAD_FAV_REMAP_FLAG, '1');
     if (normalised.join() !== favorites.join()) {
       favorites = normalised;
       safeSetStorage(FAV_IDS_KEY, JSON.stringify(favorites));
