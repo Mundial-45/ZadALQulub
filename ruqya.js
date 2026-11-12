@@ -211,7 +211,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA8-41.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA15-56.mp3"
             ]
           },
           {
@@ -222,7 +222,7 @@ const ruqyahData = [
             "count": 3,
             "maxCount": 3,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA9-45.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA16-60.mp3"
             ]
           },
           {
@@ -233,7 +233,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA10-42.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA17-57-81.mp3"
             ]
           },
           {
@@ -244,7 +244,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA11.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA18.mp3"
             ]
           },
           {
@@ -255,7 +255,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA12.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA19.mp3"
             ]
           },
           {
@@ -752,7 +752,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA8-41.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA15-56.mp3"
             ]
           },
           {
@@ -763,7 +763,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA10-42.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA17-57-81.mp3"
             ]
           },
           {
@@ -796,7 +796,7 @@ const ruqyahData = [
             "count": 3,
             "maxCount": 3,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA9-45.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA16-60.mp3"
             ]
           },
           {
@@ -807,7 +807,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA46.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA61.mp3"
             ]
           },
           {
@@ -819,7 +819,7 @@ const ruqyahData = [
             "count": 7,
             "maxCount": 7,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA47.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA62.mp3"
             ]
           },
           {
@@ -1071,7 +1071,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA10-42.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA17-57-81.mp3"
             ]
           },
           {
