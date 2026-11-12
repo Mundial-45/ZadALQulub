@@ -353,7 +353,7 @@ const ruqyahData = [
             "maxCount": 1,
             "note": "سورة البقرة الايات 285-286",
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-285-586.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-285-286.mp3"
             ]
           },
           {
@@ -707,7 +707,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q009.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q109.mp3"
             ],
             "note": "سورة الكافرون"
           },
@@ -920,7 +920,7 @@ const ruqyahData = [
             "maxCount": 1,
             "note": "سورة البقرة الايات 285-286",
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-285-586.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-285-286.mp3"
             ]
           },
           {
@@ -997,7 +997,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q009.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q109.mp3"
             ],
             "note": "سورة الكافرون"
           },
