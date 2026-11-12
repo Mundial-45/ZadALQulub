@@ -658,7 +658,10 @@ const adyaData = [
       "text": "اللَّهُمَّ انْفَعْنِي بِمَا عَلَّمْتَنِي، وَعَلِّمْنِي مَا يَنْفَعُنِي، وَزِدْنِي عِلْمًا",
       "latin": "Allāhumma-nfaʿnī bimā ʿallamtanī, wa ʿallimnī mā yanfaʿunī, wa zidnī ʿilmā.",
       "explanationEs": "¡Oh Allah! Haz que me beneficie de lo que me has enseñado, enséñame lo que me beneficie y acrecienta mi conocimiento.",
-      "note": "رواه الترمذي وابن ماجه"
+      "note": "رواه الترمذي وابن ماجه",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2070.mp3"
+      ]
     }
   ]
   },
