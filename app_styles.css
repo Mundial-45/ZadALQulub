@@ -887,3 +887,11 @@ h1, h2, h3, #headerTitle,
 /* Botón «Entendido» de la guía: bg-emerald-600 no está en el Tailwind reducido (salía blanco sobre blanco). */
 #transliterationModal button.bg-emerald-600 { background-color: #059669 !important; color: #ffffff !important; }
 #transliterationModal button.bg-emerald-600:hover { background-color: #047857 !important; }
+/* Título de la cabecera siempre en una línea; en móviles estrechos, letra algo más pequeña. */
+#headerTitle { white-space: nowrap; }
+@media (max-width: 380px) {
+  #headerTitle { font-size: 0.95rem !important; }
+  header > .container { padding-left: 0.75rem !important; padding-right: 0.75rem !important; }
+  header > .container > div:last-child { gap: 0.3rem; }
+  header > .container > div:last-child > * { margin-left: 0 !important; margin-right: 0 !important; }
+}
