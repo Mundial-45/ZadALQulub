@@ -568,63 +568,90 @@ const adyaData = [
       "text": "اللَّهُمَّ اهْدِنِي وَسَدِّدْنِي",
       "latin": "Allāhumma-hdinī wa saddidnī.",
       "explanationEs": "¡Oh Allah! Guíame y dame acierto.",
-      "note": "رواه مسلم"
+      "note": "رواه مسلم",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2061.mp3"
+      ]
     },
     {
       "itemNumber": 62,
       "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ فِعْلَ الْخَيْرَاتِ، وَتَرْكَ الْمُنْكَرَاتِ، وَحُبَّ الْمَسَاكِينِ، وَأَنْ تَغْفِرَ لِي وَتَرْحَمَنِي، وَإِذَا أَرَدْتَ فِتْنَةَ قَوْمٍ فَتَوَفَّنِي غَيْرَ مَفْتُونٍ، أَسْأَلُكَ حُبَّكَ وَحُبَّ مَنْ يُحِبُّكَ، وَحُبَّ عَمَلٍ يُقَرِّبُ إِلَى حُبِّكَ",
       "latin": "Allāhumma innī asʾaluka fiʿlal-khayrāt, wa tarkal-munkarāt, wa ḥubbal-masākīn, wa an taghfira lī wa tarḥamanī, wa idhā aradta fitnata qawmin fa-tawaffanī ghayra maftūn, asʾaluka ḥubbaka wa ḥubba man yuḥibbuk, wa ḥubba ʿamalin yuqarribu ilā ḥubbik.",
       "explanationEs": "¡Oh Allah! Te pido hacer el bien, abandonar lo reprobable y amar a los pobres; que me perdones y tengas misericordia de mí; y si quieres someter a una gente a una prueba, llévame contigo sin haber caído en ella. Te pido Tu amor, el amor de quien Te ama y el amor de toda obra que acerque a Tu amor.",
-      "note": "رواه الترمذي"
+      "note": "رواه الترمذي",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2062.mp3"
+      ]
     },
     {
       "itemNumber": 63,
       "text": "يَا مُقَلِّبَ الْقُلُوبِ، ثَبِّتْ قَلْبِي عَلَى دِينِكَ",
       "latin": "Yā muqallibal-qulūb, thabbit qalbī ʿalā dīnik.",
       "explanationEs": "¡Oh Tú que haces cambiar los corazones! Afianza mi corazón en Tu religión.",
-      "note": "رواه الترمذي"
+      "note": "رواه الترمذي",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2063.mp3"
+      ]
     },
     {
       "itemNumber": 64,
       "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ شَرِّ سَمْعِي، وَمِنْ شَرِّ بَصَرِي، وَمِنْ شَرِّ لِسَانِي، وَمِنْ شَرِّ قَلْبِي، وَمِنْ شَرِّ مَنِيِّي",
       "latin": "Allāhumma innī aʿūdhu bika min sharri samʿī, wa min sharri baṣarī, wa min sharri lisānī, wa min sharri qalbī, wa min sharri maniyyī.",
       "explanationEs": "¡Oh Allah! Me refugio en Ti del mal de mi oído, del mal de mi vista, del mal de mi lengua, del mal de mi corazón y del mal de mi deseo carnal.",
-      "note": "رواه أبو داود والترمذي"
+      "note": "رواه أبو داود والترمذي",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2064.mp3"
+      ]
     },
     {
       "itemNumber": 65,
       "text": "اللَّهُمَّ أَحْيِنِي مَا كَانَتِ الْحَيَاةُ خَيْرًا لِي، وَتَوَفَّنِي إِذَا كَانَتِ الْوَفَاةُ خَيْرًا لِي",
       "latin": "Allāhumma aḥyinī mā kānatil-ḥayātu khayran lī, wa tawaffanī idhā kānatil-wafātu khayran lī.",
       "explanationEs": "¡Oh Allah! Dame vida mientras la vida sea un bien para mí, y hazme morir cuando la muerte sea un bien para mí.",
-      "note": "متفق عليه"
+      "note": "متفق عليه",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2065.mp3"
+      ]
     },
     {
       "itemNumber": 66,
       "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْبَرَصِ، وَالْجُنُونِ، وَالْجُذَامِ، وَمِنْ سَيِّئِ الْأَسْقَامِ",
       "latin": "Allāhumma innī aʿūdhu bika minal-baraṣ, wal-junūn, wal-judhām, wa min sayyiʾil-asqām.",
       "explanationEs": "¡Oh Allah! Me refugio en Ti del albarazo, de la locura, de la lepra y de las enfermedades graves.",
-      "note": "رواه أبو داود والنسائي"
+      "note": "رواه أبو داود والنسائي",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2066.mp3"
+      ]
     },
     {
       "itemNumber": 67,
       "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ مُنْكَرَاتِ الْأَخْلَاقِ، وَالْأَعْمَالِ، وَالْأَهْوَاءِ",
       "latin": "Allāhumma innī aʿūdhu bika min munkarātil-akhlāq, wal-aʿmāl, wal-ahwāʾ.",
       "explanationEs": "¡Oh Allah! Me refugio en Ti de los malos modales, de las malas obras y de las malas pasiones.",
-      "note": "رواه الترمذي"
+      "note": "رواه الترمذي",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2067.mp3"
+      ]
     },
     {
       "itemNumber": 68,
       "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْفَقْرِ، وَالْقِلَّةِ، وَالذِّلَّةِ، وَأَعُوذُ بِكَ مِنْ أَنْ أَظْلِمَ أَوْ أُظْلَمَ",
       "latin": "Allāhumma innī aʿūdhu bika minal-faqri wal-qillati wadh-dhillah, wa aʿūdhu bika min an aẓlima aw uẓlam.",
       "explanationEs": "¡Oh Allah! Me refugio en Ti de la pobreza, de la escasez y de la humillación, y me refugio en Ti de oprimir o de ser oprimido.",
-      "note": "رواه أبو داود والنسائي"
+      "note": "رواه أبو داود والنسائي",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2068.mp3"
+      ]
     },
     {
       "itemNumber": 69,
       "text": "اللَّهُمَّ مَتِّعْنِي بِسَمْعِي وَبَصَرِي، وَاجْعَلْهُمَا الْوَارِثَ مِنِّي، وَانْصُرْنِي عَلَى مَنْ يَظْلِمُنِي، وَخُذْ مِنْهُ بِثَأْرِي",
       "latin": "Allāhumma mattiʿnī bi-samʿī wa baṣarī, wa-jʿalhumal-wāritha minnī, wa-nṣurnī ʿalā man yaẓlimunī, wa khudh minhu bi-thaʾrī.",
       "explanationEs": "¡Oh Allah! Permíteme disfrutar de mi oído y de mi vista, y haz que me duren hasta el final de mi vida; dame la victoria sobre quien me oprime y tómame el desquite sobre él.",
-      "note": "رواه الترمذي"
+      "note": "رواه الترمذي",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2069.mp3"
+      ]
     },
     {
       "itemNumber": 70,
