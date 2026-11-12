@@ -1,7 +1,7 @@
 /* Fuentes locales.
    - Corán: KFGQPC Uthmanic Hafs (Complejo del Rey Fahd; uso y distribución gratuitos, sin modificar; ver LICENCIA-KFGQPC.txt)
    - Hadiz: Scheherazade New (árabe) + Crimson Pro (español)
-   - Texto general: Tajawal y Amiri (árabe) + Inter (español)
+   - Texto general: Amiri Quran / Amiri y Tajawal (árabe) + Inter (español)
    - Tarjetas y títulos: Cairo (árabe) + Montserrat (español)
    - Transliteración: Lora
    Todas salvo la del Corán: SIL Open Font License 1.1 (ver OFL-*.txt) */
@@ -25,3 +25,4 @@
 @font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url('Inter-SemiBold.woff') format('woff')}
 @font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url('Inter-Bold.woff') format('woff')}
 @font-face{font-family:'Inter';font-style:normal;font-weight:800;font-display:swap;src:url('Inter-ExtraBold.woff') format('woff')}
+@font-face{font-family:'Amiri Quran';font-style:normal;font-weight:400;font-display:swap;src:url('AmiriQuran-Regular.woff') format('woff')}
