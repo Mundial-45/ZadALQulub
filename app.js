@@ -553,7 +553,7 @@ function formatTextWithNewlines(str) {
 }
 
 // Dentro de un texto explicativo, da a cada cita su fuente:
-// ﴿…﴾ = Corán (KFGQPC); «…» seguido de [referencia] = traducción del Corán; otro «…» = hadiz.
+// ﴿…﴾ = Corán (KFGQPC); «…» = hadiz (Scheherazade). Solo para texto árabe.
 function formatQuotedText(str) {
   const text = formatTextWithNewlines(str);
   if (!text) return '';
@@ -1423,7 +1423,7 @@ function renderGroupItems() {
             ${isEs ? `
         <div class="space-y-4">
           ${item.latin ? `<div class="text-sm sm:text-base md:text-lg text-slate-800 dark:text-slate-200 latin-text-style italic text-center font-semibold bg-amber-100/50 dark:bg-slate-900/70 p-4 rounded-2xl border border-amber-300/60 dark:border-slate-700 shadow-sm whitespace-pre-line">${formatTextWithNewlines(item.latin)}</div>` : ''}
-          ${item.explanationEs ? `<div class="text-base sm:text-lg md:text-xl text-slate-900 dark:text-slate-50 es-text-style text-center font-bold bg-emerald-50/90 dark:bg-emerald-950/60 p-4 sm:p-5 rounded-2xl border border-emerald-300/60 dark:border-emerald-800/80 leading-relaxed shadow-sm whitespace-pre-line">${formatQuotedText(item.explanationEs)}</div>` : ''}
+          ${item.explanationEs ? `<div class="text-base sm:text-lg md:text-xl text-slate-900 dark:text-slate-50 es-text-style text-center font-bold bg-emerald-50/90 dark:bg-emerald-950/60 p-4 sm:p-5 rounded-2xl border border-emerald-300/60 dark:border-emerald-800/80 leading-relaxed shadow-sm whitespace-pre-line">${formatTextWithNewlines(item.explanationEs)}</div>` : ''}
           <div class="leading-relaxed custom-text-size${quranFontClass} font-bold text-emerald-950 dark:text-emerald-300 text-center tracking-wide pt-3 border-t border-amber-200/60 dark:border-slate-700/60 dir-rtl whitespace-pre-line">
             ${formatQuotedText(item.text)}
           </div>
