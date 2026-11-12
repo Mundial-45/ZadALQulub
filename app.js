@@ -1676,7 +1676,7 @@ function renderGroupItems() {
 
     const card = document.createElement('div');
     card.id = `zikr-card-${index}`;
-    card.className = 'card-paper-bg rounded-3xl p-6 shadow-lg border border-amber-200/80 dark:border-slate-700 space-y-5 transition-all duration-300' + (currentSection === 'asma' ? ' guide-center' : '') + (['azkar', 'adya', 'ruqyah'].includes(currentSection) && !isQuranItem && !isInfoItem ? ' hadith-card' : '');
+    card.className = 'card-paper-bg rounded-3xl p-6 shadow-lg border border-amber-200/80 dark:border-slate-700 space-y-5 transition-all duration-300' + (['asma', 'glosario'].includes(currentSection) ? ' guide-center' : '') + (['azkar', 'adya', 'ruqyah'].includes(currentSection) && !isQuranItem && !isInfoItem ? ' hadith-card' : '');
 
     card.innerHTML = `
       ${isInfoItem && !item.note ? '' : `<div class="flex items-center justify-between text-xs font-bold border-b border-amber-200/60 dark:border-slate-700/60 pb-3">
