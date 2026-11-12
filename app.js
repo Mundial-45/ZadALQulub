@@ -1700,6 +1700,7 @@ function renderGroupItems() {
         </div>
         ${item.explanationAr ? `<div class="guide-ar-expl whitespace-pre-line" dir="rtl">${formatQuotedText(item.explanationAr)}</div>` : ''}
       `}
+      ${item.sourceUrl ? `<div class="glos-source text-xs text-center text-slate-500 dark:text-slate-400" dir="${isEs ? 'ltr' : 'rtl'}">${isEs ? 'Fuente' : 'المصدر'}: <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer" class="underline text-emerald-700 dark:text-emerald-400">${isEs ? (item.sourceNameEs || item.sourceName || item.sourceUrl) : (item.sourceName || item.sourceUrl)}</a></div>` : ''}
 
       ${!isAdya && !isInfoItem ? `
         <div class="flex flex-col items-center justify-center pt-2">
