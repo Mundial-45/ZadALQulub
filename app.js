@@ -58,9 +58,6 @@ const uiTexts = {
     btnRuqyahTitle: 'الرقية الشرعية',
     btnRuqyahSub: 'رقية الشفاء، العين، الحسد والمس',
     ruqyahSectionTitle: 'الرقية الشرعية',
-    btnGuiaTitle: 'دليل الصلاة',
-    btnGuiaSub: 'الطهارة والصلاة على المذاهب الأربعة',
-    guiaSectionTitle: 'دليل الطهارة والصلاة',
     btnAsmaTitle: 'أسماء الله الحسنى',
     btnAsmaSub: 'معانيها وشرحها المختصر',
     asmaSectionTitle: 'أسماء الله الحسنى'
@@ -120,9 +117,6 @@ const uiTexts = {
     btnRuqyahTitle: 'Ruqyah Shariyah',
     btnRuqyahSub: 'Curación, protección contra envidia, ojo y mal',
     ruqyahSectionTitle: 'Ruqyah Shariyah',
-    btnGuiaTitle: 'Guía de la oración',
-    btnGuiaSub: 'Purificación y oración (las cuatro escuelas)',
-    guiaSectionTitle: 'Guía de la purificación y la oración',
     btnAsmaTitle: 'Los Nombres de Allah',
     btnAsmaSub: 'Su significado y explicación breve',
     asmaSectionTitle: 'Los Nombres de Allah'
@@ -224,7 +218,7 @@ function applyLanguageUI() {
   const ruqyahSubEl = document.getElementById('btnRuqyahSub');
   if (ruqyahSubEl && t.btnRuqyahSub) ruqyahSubEl.innerText = t.btnRuqyahSub;
 
-  [['btnGuiaTitle', t.btnGuiaTitle], ['btnGuiaSub', t.btnGuiaSub], ['btnAsmaTitle', t.btnAsmaTitle], ['btnAsmaSub', t.btnAsmaSub]].forEach(([id, txt]) => {
+  [['btnAsmaTitle', t.btnAsmaTitle], ['btnAsmaSub', t.btnAsmaSub]].forEach(([id, txt]) => {
     const el = document.getElementById(id);
     if (el && txt) el.innerText = txt;
   });
@@ -619,19 +613,9 @@ function findSectionGroup(groupId) {
 }
 
 function getItemShareText(item, isEs) {
-  if (Array.isArray(item.madhahib)) {
-    return item.text + '\n\n' + item.madhahib.map(m => (MADHAB_LABELS[m.id] || {})[isEs ? 'es' : 'ar'] + ':\n' + (isEs ? m.es : m.ar)).join('\n\n');
-  }
   if (isEs) return item.explanationEs || item.text;
   return item.explanationAr ? item.text + '\n\n' + item.explanationAr : item.text;
 }
-
-const MADHAB_LABELS = {
-  maliki: { ar: 'الْمَذْهَبُ الْمَالِكِيُّ', es: 'Escuela malikí' },
-  hanafi: { ar: 'الْمَذْهَبُ الْحَنَفِيُّ', es: 'Escuela hanafí' },
-  shafii: { ar: 'الْمَذْهَبُ الشَّافِعِيُّ', es: "Escuela shafi'í" },
-  hanbali: { ar: 'الْمَذْهَبُ الْحَنْبَلِيُّ', es: 'Escuela hanbalí' }
-};
 
 function getGroupItemCount(group) {
   if (!group || !Array.isArray(group.items)) return 0;
@@ -672,7 +656,6 @@ function openAzkarSection() { showSection('azkar'); }
 function openAdyaSection() { showSection('adya'); }
 function openMunajatSection() { showSection('munajat'); }
 function openRuqyaSection() { showSection('ruqyah'); }
-function openGuiaSection() { showSection('guia'); }
 function openAsmaSection() { showSection('asma'); }
 
 function goBackToSection() {
@@ -729,7 +712,7 @@ function filterButtons() {
     if (group.items && Array.isArray(group.items)) {
       group.items.forEach((item, itemIdx) => {
         const textClean = removeArabicDiacritics((item.text || '').toLowerCase());
-        const expClean = ((item.explanationEs || '') + ' ' + (Array.isArray(item.madhahib) ? item.madhahib.map(m => m.es).join(' ') : '')).toLowerCase();
+        const expClean = (item.explanationEs || '').toLowerCase();
         const latinClean = (item.latin || '').toLowerCase();
         const noteClean = removeArabicDiacritics((item.note || '').toLowerCase());
 
@@ -983,7 +966,7 @@ function resetAllInGroup() {
 
 const EDITOR_REPO = 'Mundial-45/ZadALQulub';
 const EDITOR_BRANCH = 'main';
-const EDITOR_FILES = { azkar: 'azkar.js', adya: 'adya.js', ruqyah: 'ruqya.js', munajat: 'munajat.js', guia: 'guia.js', asma: 'asma.js' };
+const EDITOR_FILES = { azkar: 'azkar.js', adya: 'adya.js', ruqyah: 'ruqya.js', munajat: 'munajat.js', asma: 'asma.js' };
 let itemEditorState = null;
 let pendingItemEdits = loadPendingItemEdits();
 const PENDING_EDITS_KEY = 'zadAlQulubPendingEdits_v1';
@@ -1417,7 +1400,7 @@ function renderGroupItems() {
 
     const card = document.createElement('div');
     card.id = `zikr-card-${index}`;
-    card.className = 'card-paper-bg rounded-3xl p-6 shadow-lg border border-amber-200/80 dark:border-slate-700 space-y-5 transition-all duration-300' + (['guia', 'asma'].includes(currentSection) ? ' guide-center' : '');
+    card.className = 'card-paper-bg rounded-3xl p-6 shadow-lg border border-amber-200/80 dark:border-slate-700 space-y-5 transition-all duration-300' + (currentSection === 'asma' ? ' guide-center' : '');
 
     card.innerHTML = `
       ${isInfoItem && !item.note ? '' : `<div class="flex items-center justify-between text-xs font-bold border-b border-amber-200/60 dark:border-slate-700/60 pb-3">
@@ -1427,16 +1410,13 @@ function renderGroupItems() {
         ${item.note ? `<span class="bg-amber-100/80 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 px-3 py-1 rounded-full border border-amber-300 dark:border-amber-800">${isEs && item.noteEs ? item.noteEs : item.note}</span>` : ''}
       </div>`}
 
-      ${item.image ? `<div class="guide-img-wrap"><img src="${item.image}" alt="" class="guide-img" decoding="async"></div>` : ''}
-
-      ${isEs ? `
+            ${isEs ? `
         <div class="space-y-4">
-          ${item.titleEs ? `<h3 class="guide-es-title">${item.titleEs}</h3>` : ''}
           ${item.latin ? `<div class="text-sm sm:text-base md:text-lg text-slate-800 dark:text-slate-200 latin-text-style italic text-center font-semibold bg-amber-100/50 dark:bg-slate-900/70 p-4 rounded-2xl border border-amber-300/60 dark:border-slate-700 shadow-sm whitespace-pre-line">${formatTextWithNewlines(item.latin)}</div>` : ''}
           ${item.explanationEs ? `<div class="text-base sm:text-lg md:text-xl text-slate-900 dark:text-slate-50 es-text-style text-center font-bold bg-emerald-50/90 dark:bg-emerald-950/60 p-4 sm:p-5 rounded-2xl border border-emerald-300/60 dark:border-emerald-800/80 leading-relaxed shadow-sm whitespace-pre-line">${formatTextWithNewlines(item.explanationEs)}</div>` : ''}
-          ${item.titleEs && !item.latin ? '' : `<div class="leading-relaxed custom-text-size${quranFontClass} font-bold text-emerald-950 dark:text-emerald-300 text-center tracking-wide pt-3 border-t border-amber-200/60 dark:border-slate-700/60 dir-rtl whitespace-pre-line">
+          <div class="leading-relaxed custom-text-size${quranFontClass} font-bold text-emerald-950 dark:text-emerald-300 text-center tracking-wide pt-3 border-t border-amber-200/60 dark:border-slate-700/60 dir-rtl whitespace-pre-line">
             ${formatTextWithNewlines(item.text)}
-          </div>`}
+          </div>
         </div>
       ` : `
         <div class="leading-relaxed custom-text-size${quranFontClass} font-bold text-slate-950 dark:text-slate-50 text-center tracking-wide py-2 whitespace-pre-line">
@@ -1444,24 +1424,6 @@ function renderGroupItems() {
         </div>
         ${item.explanationAr ? `<div class="guide-ar-expl whitespace-pre-line" dir="rtl">${formatTextWithNewlines(item.explanationAr)}</div>` : ''}
       `}
-
-      ${(isEs ? item.diffEs : item.diffAr) ? `
-        <details class="guide-diff" dir="${isEs ? 'ltr' : 'rtl'}">
-          <summary>${isEs ? '📚 Diferencias entre las escuelas' : '📚 اختلاف المذاهب'}</summary>
-          <div class="guide-diff-body whitespace-pre-line">${formatTextWithNewlines(isEs ? item.diffEs : item.diffAr)}</div>
-        </details>
-      ` : ''}
-
-      ${Array.isArray(item.madhahib) ? `
-        <div class="guide-madhahib">
-          ${item.madhahib.map(m => `
-            <details class="guide-madhab guide-madhab-${m.id}" dir="${isEs ? 'ltr' : 'rtl'}">
-              <summary>${(MADHAB_LABELS[m.id] || {})[isEs ? 'es' : 'ar'] || m.id}</summary>
-              <div class="guide-madhab-body whitespace-pre-line">${formatTextWithNewlines(isEs ? m.es : m.ar)}</div>
-            </details>
-          `).join('')}
-        </div>
-      ` : ''}
 
       ${!isAdya && !isInfoItem ? `
         <div class="flex flex-col items-center justify-center pt-2">
@@ -1503,7 +1465,7 @@ function renderGroupItems() {
         <button type="button" onclick="toggleFavorite('${escapeJsStr(item.text)}')" class="p-2.5 rounded-xl ${isFav ? 'bg-rose-100 dark:bg-rose-950 text-rose-600' : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'} hover:bg-rose-100 dark:hover:bg-rose-900 transition cursor-pointer" title="${isEs ? (isFav ? 'Quitar de favoritos' : 'Añadir a favoritos') : (isFav ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة')}" aria-label="${isEs ? (isFav ? 'Quitar de favoritos' : 'Añadir a favoritos') : (isFav ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة')}">
           ${isFav ? '★' : '☆'}
         </button>
-        ${['azkar', 'adya', 'ruqyah', 'munajat', 'guia', 'asma'].includes(currentSection) ? `
+        ${['azkar', 'adya', 'ruqyah', 'munajat', 'asma'].includes(currentSection) ? `
           <button type="button" onclick="openItemEditor(${index})" class="p-2.5 rounded-xl bg-amber-100 dark:bg-amber-950 hover:bg-amber-200 dark:hover:bg-amber-900 text-amber-800 dark:text-amber-200 transition cursor-pointer" title="${isEs ? 'Editar elemento' : 'تعديل الذكر'}">
             ✏️ ${isEs ? 'Editar' : 'تعديل'}
           </button>

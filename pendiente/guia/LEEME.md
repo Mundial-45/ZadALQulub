@@ -10,4 +10,10 @@ La sección se ha quitado de la app de momento. Todo lo necesario para volver a 
 
 1. Mover `guia.js` a la raíz del repositorio y `Guia.webp` a `Iconos/`.
 2. En `index.html`, añadir `<script src="guia.js"></script>` después de `ruqya.js`, y la tarjeta con `onclick="openGuiaSection()"` en el inicio.
-3. `app.js` y `app_styles.css` ya tienen todo lo necesario (textos, desplegables por escuela, imágenes por paso).
+3. Volver a poner en `app.js` y `app_styles.css` el código de la guía (textos del inicio, desplegables por escuela, diferencias, título en español e imágenes por paso). Está guardado en `reactivar_app.patch`; desde la raíz del repositorio:
+
+   ```
+   git apply pendiente/guia/reactivar_app.patch
+   ```
+
+   Si `app.js` ha cambiado mucho y el parche no entra, el archivo muestra con `+` cada línea que hay que añadir y dónde.
