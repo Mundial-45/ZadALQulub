@@ -1,16 +1,20 @@
-/* Fuentes locales (SIL Open Font License 1.1, ver OFL-*.txt) */
-@font-face{font-family:'Amiri';font-style:normal;font-weight:400;font-display:swap;src:url('Amiri-Regular.woff') format('woff')}
-@font-face{font-family:'Amiri';font-style:normal;font-weight:700;font-display:swap;src:url('Amiri-Bold.woff') format('woff')}
-@font-face{font-family:'Amiri';font-style:italic;font-weight:400;font-display:swap;src:url('Amiri-Italic.woff') format('woff')}
-@font-face{font-family:'Amiri';font-style:italic;font-weight:700;font-display:swap;src:url('Amiri-BoldItalic.woff') format('woff')}
-@font-face{font-family:'Amiri Quran';font-style:normal;font-weight:400;font-display:swap;src:url('AmiriQuran-Regular.woff') format('woff')}
-@font-face{font-family:'Tajawal';font-style:normal;font-weight:400;font-display:swap;src:url('Tajawal-Regular.woff') format('woff')}
-@font-face{font-family:'Tajawal';font-style:normal;font-weight:500;font-display:swap;src:url('Tajawal-Medium.woff') format('woff')}
-@font-face{font-family:'Tajawal';font-style:normal;font-weight:700;font-display:swap;src:url('Tajawal-Bold.woff') format('woff')}
-@font-face{font-family:'Tajawal';font-style:normal;font-weight:800;font-display:swap;src:url('Tajawal-ExtraBold.woff') format('woff')}
-@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('Inter-Regular.woff') format('woff')}
-@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url('Inter-SemiBold.woff') format('woff')}
-@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url('Inter-Bold.woff') format('woff')}
-@font-face{font-family:'Inter';font-style:normal;font-weight:800;font-display:swap;src:url('Inter-ExtraBold.woff') format('woff')}
+/* Fuentes locales.
+   - Corán: KFGQPC Uthmanic Hafs (Complejo del Rey Fahd; uso y distribución gratuitos, sin modificar; ver LICENCIA-KFGQPC.txt)
+   - Hadiz: Scheherazade New (árabe) + Crimson Pro (español)
+   - Texto general: IBM Plex Sans Arabic (árabe) + Source Sans 3 (español)
+   - Tarjetas y títulos: Cairo (árabe) + Montserrat (español)
+   - Transliteración: Lora
+   Todas salvo la del Corán: SIL Open Font License 1.1 (ver OFL-*.txt) */
+@font-face{font-family:'KFGQPC Hafs';font-style:normal;font-weight:400;font-display:swap;src:url('KFGQPC-UthmanicHafs.ttf') format('truetype')}
+@font-face{font-family:'Scheherazade New';font-style:normal;font-weight:400;font-display:swap;src:url('ScheherazadeNew-Regular.woff') format('woff')}
+@font-face{font-family:'Scheherazade New';font-style:normal;font-weight:500 900;font-display:swap;src:url('ScheherazadeNew-Bold.woff') format('woff')}
+@font-face{font-family:'Crimson Pro';font-style:normal;font-weight:200 900;font-display:swap;src:url('CrimsonPro-Variable.woff') format('woff')}
+@font-face{font-family:'IBM Plex Sans Arabic';font-style:normal;font-weight:100 400;font-display:swap;src:url('IBMPlexSansArabic-Regular.woff') format('woff')}
+@font-face{font-family:'IBM Plex Sans Arabic';font-style:normal;font-weight:500;font-display:swap;src:url('IBMPlexSansArabic-Medium.woff') format('woff')}
+@font-face{font-family:'IBM Plex Sans Arabic';font-style:normal;font-weight:600;font-display:swap;src:url('IBMPlexSansArabic-SemiBold.woff') format('woff')}
+@font-face{font-family:'IBM Plex Sans Arabic';font-style:normal;font-weight:700 900;font-display:swap;src:url('IBMPlexSansArabic-Bold.woff') format('woff')}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:200 900;font-display:swap;src:url('SourceSans3-Variable.woff') format('woff')}
+@font-face{font-family:'Cairo';font-style:normal;font-weight:200 1000;font-display:swap;src:url('Cairo-Variable.woff') format('woff')}
+@font-face{font-family:'Montserrat';font-style:normal;font-weight:100 900;font-display:swap;src:url('Montserrat-Variable.woff') format('woff')}
 @font-face{font-family:'Lora';font-style:normal;font-weight:400 700;font-display:swap;src:url('Lora-Variable.woff') format('woff')}
 @font-face{font-family:'Lora';font-style:italic;font-weight:400 700;font-display:swap;src:url('Lora-Italic-Variable.woff') format('woff')}

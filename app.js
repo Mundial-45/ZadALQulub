@@ -1085,12 +1085,12 @@ function openItemEditor(index) {
     if (kind === 'string' && isArabicText) {
       control.dir = 'rtl'; control.lang = 'ar';
       control.style.direction = 'rtl'; control.style.textAlign = 'right';
-      control.style.fontFamily = "'Amiri', 'Tajawal', serif";
+      control.style.fontFamily = "'IBM Plex Sans Arabic', serif";
       control.style.backgroundColor = document.documentElement.classList.contains('dark') ? '#172b27' : '#f0fdf4';
     } else if (kind === 'string' && isLtrText) {
       control.dir = 'ltr'; control.lang = normalizedKey.includes('explanation') || normalizedKey.includes('spanish') || normalizedKey.includes('translation') ? 'es' : 'en';
       control.style.direction = 'ltr'; control.style.textAlign = 'left';
-      control.style.fontFamily = "'Inter', 'Lora', sans-serif";
+      control.style.fontFamily = "'Source Sans 3', sans-serif";
       control.style.backgroundColor = document.documentElement.classList.contains('dark') ? '#1e293b' : '#f8fafc';
       control.style.fontSize = '0.95rem';
     } else if (kind === 'string') {
@@ -1400,7 +1400,7 @@ function renderGroupItems() {
 
     const card = document.createElement('div');
     card.id = `zikr-card-${index}`;
-    card.className = 'card-paper-bg rounded-3xl p-6 shadow-lg border border-amber-200/80 dark:border-slate-700 space-y-5 transition-all duration-300' + (currentSection === 'asma' ? ' guide-center' : '');
+    card.className = 'card-paper-bg rounded-3xl p-6 shadow-lg border border-amber-200/80 dark:border-slate-700 space-y-5 transition-all duration-300' + (currentSection === 'asma' ? ' guide-center' : '') + (['azkar', 'adya', 'ruqyah'].includes(currentSection) && !isQuranItem && !isInfoItem ? ' hadith-card' : '');
 
     card.innerHTML = `
       ${isInfoItem && !item.note ? '' : `<div class="flex items-center justify-between text-xs font-bold border-b border-amber-200/60 dark:border-slate-700/60 pb-3">
