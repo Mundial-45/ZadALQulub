@@ -605,7 +605,24 @@ const GROUP_ID_ALIASES = {
   'azkar|dukhul_khala': 'azkar|khala', 'azkar|khuruj_khala': 'azkar|khala',
   'azkar|qabla_wudu': 'azkar|wudu', 'azkar|bada_wudu': 'azkar|wudu',
   'azkar|khuruj_manzil': 'azkar|manzil', 'azkar|dukhul_manzil': 'azkar|manzil',
-  'azkar|dhahab_masjid': 'azkar|masjid', 'azkar|dukhul_masjid': 'azkar|masjid', 'azkar|khuruj_masjid': 'azkar|masjid'
+  'azkar|dhahab_masjid': 'azkar|masjid', 'azkar|dukhul_masjid': 'azkar|masjid', 'azkar|khuruj_masjid': 'azkar|masjid',
+  'azkar|istiftah_salah': 'azkar|salat', 'azkar|ruku': 'azkar|salat', 'azkar|raf_ruku': 'azkar|salat', 'azkar|sujud': 'azkar|salat', 'azkar|jalsa_sajdatayn': 'azkar|salat', 'azkar|sujud_tilawa': 'azkar|salat', 'azkar|tashahhud': 'azkar|salat', 'azkar|salah_ala_nabi_tashahhud': 'azkar|salat', 'azkar|dua_bada_tashahhud': 'azkar|salat',
+  'azkar|taqallub_firash': 'azkar|layl', 'azkar|faza_nawm': 'azkar|layl', 'azkar|ruya_hulm': 'azkar|layl',
+  'azkar|qunut_witr': 'azkar|witr', 'azkar|azkar_bada_witr': 'azkar|witr',
+  'azkar|hamm_hazan': 'azkar|karb_khawf', 'azkar|karb': 'azkar|karb_khawf', 'azkar|liqa_aduw': 'azkar|karb_khawf', 'azkar|khawf_zulm_sultan': 'azkar|karb_khawf', 'azkar|dua_ala_aduw': 'azkar|karb_khawf', 'azkar|khawf_qawm': 'azkar|karb_khawf',
+  'azkar|waswasa_iman': 'azkar|waswasa_shadaid', 'azkar|qada_dayn': 'azkar|waswasa_shadaid', 'azkar|waswasa_salah': 'azkar|waswasa_shadaid', 'azkar|istasaba_amr': 'azkar|waswasa_shadaid', 'azkar|man_adhnaba': 'azkar|waswasa_shadaid', 'azkar|tard_shaytan': 'azkar|waswasa_shadaid', 'azkar|lama_yaqau_ma_la_yardah': 'azkar|waswasa_shadaid',
+  'azkar|tahniat_mawlud': 'azkar|awlad', 'azkar|tawid_awlad': 'azkar|awlad',
+  'azkar|dua_marid': 'azkar|marid', 'azkar|fadl_iyadat_marid': 'azkar|marid', 'azkar|marid_yaisa': 'azkar|marid', 'azkar|talqin_muhtadar': 'azkar|marid',
+  'azkar|dua_musibah': 'azkar|janaiz', 'azkar|ighmad_mayyit': 'azkar|janaiz', 'azkar|dua_mayyit_salah': 'azkar|janaiz', 'azkar|dua_farat': 'azkar|janaiz', 'azkar|tazia': 'azkar|janaiz', 'azkar|idkhal_mayyit_qabr': 'azkar|janaiz', 'azkar|bada_dafn_mayyit': 'azkar|janaiz', 'azkar|ziyarat_qubur': 'azkar|janaiz',
+  'azkar|dua_rih': 'azkar|rih_matar', 'azkar|dua_rad': 'azkar|rih_matar', 'azkar|istisqa': 'azkar|rih_matar', 'azkar|nuzul_matar': 'azkar|rih_matar', 'azkar|bada_matar': 'azkar|rih_matar', 'azkar|istishqa': 'azkar|rih_matar', 'azkar|ruyat_hilal': 'azkar|rih_matar',
+  'azkar|iftar_saim': 'azkar|taam_siyam', 'azkar|qabla_taam': 'azkar|taam_siyam', 'azkar|bada_taam': 'azkar|taam_siyam', 'azkar|dua_dayf': 'azkar|taam_siyam', 'azkar|talab_taam_sharab': 'azkar|taam_siyam', 'azkar|iftar_ind_ahl_bayt': 'azkar|taam_siyam', 'azkar|saim_hadara_taam': 'azkar|taam_siyam', 'azkar|saim_sabbahu_ahad': 'azkar|taam_siyam', 'azkar|bakurat_thamar': 'azkar|taam_siyam',
+  'azkar|atas': 'azkar|utas', 'azkar|atas_kafir': 'azkar|utas',
+  'azkar|dua_mutazawwij': 'azkar|zawaj', 'azkar|dua_mutazawwij_dabbah': 'azkar|zawaj', 'azkar|qabla_ityan_zawjah': 'azkar|zawaj',
+  'azkar|ghadab': 'azkar|muamala', 'azkar|ruyat_mubtala': 'azkar|muamala', 'azkar|fi_majlis': 'azkar|muamala', 'azkar|kaffarat_majlis': 'azkar|muamala', 'azkar|dua_liman_qala_ghafarallah_lak': 'azkar|muamala', 'azkar|dua_liman_sanaa_marufan': 'azkar|muamala', 'azkar|ismah_min_dajjal': 'azkar|muamala', 'azkar|dua_liman_qala_uhibbuk_fillah': 'azkar|muamala', 'azkar|dua_liman_arada_malahu': 'azkar|muamala', 'azkar|dua_liman_aqrada': 'azkar|muamala', 'azkar|khawf_shirk': 'azkar|muamala', 'azkar|dua_liman_qala_barakallah_fik': 'azkar|muamala', 'azkar|karahiyat_tiyarah': 'azkar|muamala',
+  'azkar|rukub': 'azkar|safar_all', 'azkar|safar': 'azkar|safar_all', 'azkar|dukhul_qaryah': 'azkar|safar_all', 'azkar|dukhul_suq': 'azkar|safar_all', 'azkar|taisa_markub': 'azkar|safar_all', 'azkar|musafir_lil_muqim': 'azkar|safar_all', 'azkar|muqim_lil_musafir': 'azkar|safar_all', 'azkar|takbir_tasbih_safar': 'azkar|safar_all', 'azkar|musafir_ashara': 'azkar|safar_all', 'azkar|nazala_manzilan': 'azkar|safar_all', 'azkar|ruju_min_safar': 'azkar|safar_all',
+  'azkar|ifsha_salam': 'azkar|salam', 'azkar|radd_salam_ala_kafir': 'azkar|salam',
+  'azkar|siyah_dik_nahiq_himar': 'azkar|hayawan', 'azkar|nubah_kilab': 'azkar|hayawan',
+  'azkar|talbiyah_hajj_umrah': 'azkar|hajj', 'azkar|takbir_rukn_aswad': 'azkar|hajj', 'azkar|dua_bayn_yamani_hajar': 'azkar|hajj', 'azkar|wuquf_safa_marwah': 'azkar|hajj', 'azkar|yawm_arafah': 'azkar|hajj', 'azkar|mashar_haram': 'azkar|hajj', 'azkar|takbir_ramy_jamarat': 'azkar|hajj'
 };
 
 function normaliseItemId(id) {

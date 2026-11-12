@@ -1101,14 +1101,14 @@ const azkarData = [
             ]
       },
       {
-            "id": "istiftah_salah",
-            "titleAr": "دعاء استفتاح الصلاة",
-            "titleEs": "Súplicas de apertura de la oración",
-            "noteAr": "يقال هذا الدعاء في بداية الصلاة بعد تكبيرة الإحرام وقبل قراءة الفاتحة",
-            "noteEs": "Esta súplica se dice al comienzo de la oración, después del Takbir inicial y antes de recitar Al-Fatihah",
+            "id": "salat",
+            "titleAr": "أَذْكَارُ الصَّلَاةِ",
+            "titleEs": "Azkar de la oración",
             "items": [
                   {
                         "itemNumber": 93,
+                        "subtitleAr": "دعاء استفتاح الصلاة",
+                        "subtitleEs": "Súplicas de apertura de la oración",
                         "text": "اللَّهُمَّ بَاعِدْ بَيْنِي وَبَيْنَ خَطَايَايَ كَمَا بَاعَدْتَ بَيْنَ الْمَشْرِقِ وَالْمَغْرِبِ، اللَّهُمَّ نَقِّنِي مِنْ خَطَايَايَ كَمَا يُنَقَّى الثَّوْبُ الْأَبْيَضُ مِنَ الدَّنَسِ، اللَّهُمَّ اغْسِلْني مِنْ خَطَايَايَ، بِالثَّلْجِ وَالْماءِ وَالْبَرَدِ.",
                         "latin": "Allāhumma bāʿid baynī wa bayna khaṭāyāya kamā bāʿadta baynal-mashriqi wal-maghrib, Allāhumma naqqinī min khaṭāyāya kamā yunaqqath-thawbul-abyaḍu minad-danas, Allāhummag-silnī min khaṭāyāya bith-thalji wal-māʾi wal-barad.",
                         "explanationEs": "¡Oh Allah! Aléjame de mis pecados tanto como has alejado el Oriente del Occidente. ¡Oh Allah! Purifícame de mis pecados tal como se limpia una vestidura blanca de la suciedad. ¡Oh Allah! Lava mis pecados con nieve, agua y granizo.",
@@ -1117,6 +1117,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 94,
+                        "subtitleAr": "دعاء استفتاح الصلاة",
+                        "subtitleEs": "Súplicas de apertura de la oración",
                         "text": "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلاَ إِلَهَ غَيْرُكَ.",
                         "latin": "Subḥānakallāhumma wa bi-ḥamdika, wa tabārakasmuka, wa taʿālā jadduka, wa lā ilāha ghayruka.",
                         "explanationEs": "Glorificado seas, ¡Oh Allah!, y alabado seas. Bendito sea Tu Nombre, exaltada sea Tu Majestad, y no hay más divinidad con derecho a ser adorada excepto Tú.",
@@ -1125,6 +1127,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 95,
+                        "subtitleAr": "دعاء استفتاح الصلاة",
+                        "subtitleEs": "Súplicas de apertura de la oración",
                         "text": "وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَوَاتِ وَالأَرْضَ حَنِيفَاً وَمَا أَنَا مِنَ الْمُشْرِكِينَ، إِنَّ صَلاَتِي، وَنُسُكِي، وَمَحْيَايَ، وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ، لاَ شَرِيكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ. اللَّهُمَّ أَنْتَ المَلِكُ لاَ إِلَهَ إِلاَّ أَنْتَ، أَنْتَ رَبِّي وَأَنَا عَبْدُكَ، ظَلَمْتُ نَفْسِي وَاعْتَرَفْتُ بِذَنْبِي فَاغْفِرْ لِي ذُنُوبي جَمِيعًا إِنَّهُ لاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ. وَاهْدِنِي لِأَحْسَنِ الأَخْلاقِ لاَ يَهْدِي لِأَحْسَنِها إِلاَّ أَنْتَ، وَاصْرِفْ عَنِّي سَيِّئَهَا، لاَ يَصْرِفُ عَنِّي سَيِّئَهَا إِلاَّ أَنْتَ، لَبَّيْكَ وَسَعْدَيْكَ، وَالخَيْرُ كُلُّهُ بِيَدَيْكَ، وَالشَّرُّ لَيْسَ إِلَيْكَ، أَنَا بِكَ وَإِلَيْكَ، تَبارَكْتَ وَتَعَالَيْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ.",
                         "latin": "Wajjahtu wajhiya lilladhī faṭara as-samāwāti wal-arḍa ḥanīfan wa mā anā mina al-mushrikīn. Inna ṣalātī, wa nusukī, wa maḥyāya, wa mamātī lillāhi rabbi al-ʿālamīn, lā sharīka lahu wa bidhālika umirtu wa anā mina al-muslimīn. Allāhumma anta al-maliku lā ilāha illā ant, anta rabbī wa anā ʿabduk, ẓalamtu nafsī waʿtaraftu bidhanbī faghfir lī dhunūbī jamīʿan innahu lā yaghfiru adhdhunūba illā ant. Wahdinī li-aḥsani al-akhlāqi lā yahdī li-aḥsanihā illā ant, waṣrif ʿannī sayyiʾahā lā yaṣrifu ʿannī sayyiʾahā illā ant, labbayka wa saʿdayk, wal-khayru kulluhu bi-yadayk, wash-sharru laysa ilayk, anā bika wa ilayk, tabārakta wa taʿālayt, astaghfiruka wa atūbu ilayk.",
                         "explanationEs": "He orientado mi rostro francamente hacia Aquel que creó los cielos y la tierra, y no soy de los asociadores. Ciertamente mi oración, mis sacrificios, mi vida y mi muerte pertenecen a Allah, Señor de los mundos, Sin asociados. Esto se me ha ordenado y soy de los musulmanes. ¡Oh Allah! Tú eres el Rey, no hay más divinidad excepto Tú. Tú eres mi Señor y yo soy Tu siervo. He sido injusto conmigo mismo y reconozco mi pecado, perdóname todos mis pecados, pues nadie perdona los pecados excepto Tú. Guíame hacia el mejor carácter, pues nadie guía hacia él excepto Tú, y aparta de mí el mal carácter, pues nadie lo aparta de mí excepto Tú. Heme aquí a Tu servicio, todo el bien está en Tus manos y el mal no proviene de Ti. Exaltado y Enaltecido seas, pido Tu perdón y me arrepiento ante Ti.",
@@ -1133,6 +1137,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 96,
+                        "subtitleAr": "دعاء استفتاح الصلاة",
+                        "subtitleEs": "Súplicas de apertura de la oración",
                         "text": "اللَّهُمَّ رَبَّ جَبْرَائِيلَ وَمِيكَائِيلَ وَإِسْرَافِيلَ، فَاطِرَ السَّمَوَاتِ وَالأَرْضِ، عَالِمَ الْغَيْبِ وَالشَّهَادَةِ، أَنْتَ تَحْكُمُ بَيْنَ عِبَادِكَ فِيمَا كَانُوا فِيهِ يَخْتَلِفُونَ، اهْدِنِي لِمَا اخْتُلِفَ فِيهِ مِنَ الْحَقِّ بِإِذْنِكَ، إِنَّكَ تَهْدِي مَنْ تَشَاءُ إِلَى صِرَاطٍ مُسْتَقِيمٍ.",
                         "latin": "Allāhumma Rabba Jabrāʾīla wa Mīkāʾīla wa Isrāfīl, Fāṭiras-samāwāti wal-arḍ, ʿĀlimal-ghaybi wash-shahādah, Anta taḥkumu bayna ʿibādika fīmā kānū fīhi yakhtalifūn, ihdinī limākh-tulifa fīhi minal-ḥaqqi bi-idhnik, innaka tahdī man tashāʾu ilā ṣirāṭim-mustaqīm.",
                         "explanationEs": "¡Oh Allah! Señor de Gabriel, Miguel e Israfil. Creador de los cielos y de la tierra, Conocedor de lo oculto y de lo manifiesto. Tú juzgas entre Tus siervos en aquello en lo que diferían. Guíame con Tu permiso hacia la verdad en aquello en lo que se discrepa. (Muslim)",
@@ -1140,11 +1146,13 @@ const azkarData = [
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2047.mp3"
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2047.mp3"
                         ]
                   },
                   {
                         "itemNumber": 97,
+                        "subtitleAr": "دعاء استفتاح الصلاة",
+                        "subtitleEs": "Súplicas de apertura de la oración",
                         "text": "اللَّهُ أَكْبَرُ كَبِيرَاً، اللَّهُ أَكْبَرُ كَبِيراً، اللَّهُ أَكْبَرُ كَبِيراً، وَالْحَمْدُ لِلَّهِ كَثيراً، وَالْحَمْدُ لِلَّهِ كَثيراً، وَالْحَمْدُ لِلَّهِ كَثيراً، وَسُبْحَانَ اللَّهِ بُكْرَةً وَأَصِيلاً (ثلاثاً). أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ: مِنْ نَفْخِهِ، وَنَفْثِهِ، وَهَمْزِهِ.",
                         "latin": "Allāhu akbaru kabīrā, Allāhu akbaru kabīrā, Allāhu akbaru kabīrā, wal-ḥamdu lillāhi kathīrā, wal-ḥamdu lillāhi kathīrā, wal-ḥamdu lillāhi kathīrā, wa subḥāna Allāhi bukratan wa aṣīlā (tres veces). Aʿūdhu billāhi mina ash-shayṭāni: min nafkhihi, wa nafthihi, wa hamzih.",
                         "explanationEs": "Allah es el más Grande en grandeza (x3), y alabado sea Allah en abundancia (x3), y glorificado sea Allah por la mañana y por la tarde (x3). Me refugio en Allah del Demonio: de su orgullo (soplo), de su poesía/hechicería (saliva) y de su locura/susurros.",
@@ -1153,21 +1161,18 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 98,
+                        "subtitleAr": "دعاء استفتاح الصلاة",
+                        "subtitleEs": "Súplicas de apertura de la oración",
                         "text": "اللَّهُمَّ لَكَ الْحَمْدُ، أَنْتَ نُورُ السَّمَوَاتِ وَالأَرْضِ وَمَنْ فِيهِنَّ، وَلَكَ الْحَمْدُ أَنْتَ قَيِّمُ السَّمَوَاتِ وَالأَرْضِ وَمَنْ فِيهِنَّ، وَلَكَ الْحَمْدُ أَنْتَ رَبُّ السَّمَوَاتِ وَالأَرْضِ وَمَنْ فِيهِنَّ، وَلَكَ الْحَمْدُ لَكَ مُلْكُ السَّمَوَاتِ وَالأَرْضِ وَمَنْ فِيهِنَّ، وَلَكَ الْحَمْدُ أَنْتَ مَلِكُ السَّمَوَاتِ وَالأَرْضِ، وَلَكَ الْحَمْدُ، أَنْتَ الْحَقُّ، وَوَعْدُكَ الْحَقُّ، وَقَوْلُكَ الْحَقُّ، وَلِقاؤُكَ الْحَقُّ، وَالْجَنَّةُ حَقٌّ، وَالنَّارُ حَقٌّ، وَالنَّبِيُّونَ حَقٌّ، وَمحَمَّدٌ صلى الله عليه وسلم حَقٌّ، وَالسّاعَةُ حَقٌّ، اللَّهُمَّ لَكَ أَسْلَمْتُ، وَعَلَيْكَ تَوَكَّلْتُ، وَبِكَ آمَنْتُ، وَإِلَيْكَ أَنَبْتُ، وَبِكَ خاصَمْتُ، وَإِلَيْكَ حاكَمْتُ. فَاغْفِرْ لِي مَا قَدَّمْتُ، وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ، وَمَا أَعْلَنْتُ، وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي، أَنْتَ المُقَدِّمُ، وَأَنْتَ المُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ، أَنْتَ إِلَهِي لاَ إِلَهَ إِلاَّ أَنْتَ، وَلاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللَّهِ.",
                         "latin": "Allāhumma laka al-ḥamd, anta nūru as-samāwāti wal-arḍi wa man fīhin, wa laka al-ḥamdu anta qayyimu as-samāwāti wal-arḍi wa man fīhin, wa laka al-ḥamdu anta rabbu as-samāwāti wal-arḍi wa man fīhin, wa laka al-ḥamdu laka mulku as-samāwāti wal-arḍi wa man fīhin, wa laka al-ḥamdu anta maliku as-samāwāti wal-arḍ, wa laka al-ḥamd, anta al-ḥaqq, wa waʿduka al-ḥaqq, wa qawluka al-ḥaqq, wa liqāʾuka al-ḥaqq, wal-jannatu ḥaqq, wan-nāru ḥaqq, wan-nabiyyūna ḥaqq, wa Muḥammadun ṣallā Allāhu ʿalayhi wa sallama ḥaqq, was-sāʿatu ḥaqq. Allāhumma laka aslamtu, wa ʿalayka tawakkaltu, wa bika āmantu, wa ilayka anabtu, wa bika khāṣamtu, wa ilayka ḥākamtu. Faghfir lī mā qaddamtu, wa mā akhkhartu, wa mā asrartu, wa mā aʿlantu, wa mā anta aʿlamu bihi minnī, anta al-muqaddimu wa anta al-muʾakhkhiru lā ilāha illā ant, anta ilāhī lā ilāha illā ant, wa lā ḥawla wa lā quwwata illā billāh.",
                         "explanationEs": "¡Oh Allah! A Ti pertenecen todas las alabanzas, Tú eres la Luz de los cielos y de la tierra y de cuanto hay en ellos. A Ti pertenecen las alabanzas, Tú eres el Sustentador de los cielos y de la tierra y de cuanto hay en ellos. A Ti pertenecen las alabanzas, Tú eres el Señor de los cielos y de la tierra y de cuanto hay en ellos. A Ti pertenecen las alabanzas, Tuyo es el reino de los cielos y de la tierra y de cuanto hay en ellos. A Ti pertenecen las alabanzas, Tú eres el Rey de los cielos y de la tierra. A Ti pertenecen las alabanzas, Tú eres la Verdad, Tu promesa es verdadera, Tu palabra es verdad, el encuentro Contigo es verdad, el Paraíso es verdad, el Infierno es verdad, los Profetas son verdad, Muhammad (que la paz y las bendiciones de Allah sean con él) es verdad y la Hora es verdad. ¡Oh Allah! A Ti me he sometido, en Ti he confiado, en Ti he creído, a Ti me he vuelto en arrepentimiento, por Ti he disputado y a Tu juicio me he acogido. Perdóname lo que he hecho en el pasado y lo que haga en el futuro, lo que he ocultado y lo que he manifestado, y lo que Tú conoces mejor que yo. Tú eres Quien adelanta y Quien retrasa, no hay más divinidad excepto Tú. Tú eres mi Allah, no hay más divinidad excepto Tú, y no hay fuerza ni poder sino en Allah.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "ruku",
-            "titleAr": "دُعَاءُ الرُّكُوعِ",
-            "titleEs": "Súplica durante la inclinación (Rukūʿ)",
-            "items": [
+                  },
                   {
                         "itemNumber": 99,
+                        "subtitleAr": "دُعَاءُ الرُّكُوعِ",
+                        "subtitleEs": "Súplica durante la inclinación (Rukūʿ)",
                         "text": "سُبْحَانَ رَبِّيَ الْعَظِيمِ.",
                         "latin": "Subḥāna rabbiya al-ʿaẓīm.",
                         "explanationEs": "Glorificado sea mi Señor, el Grandioso. (Se dice tres veces).",
@@ -1176,6 +1181,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 100,
+                        "subtitleAr": "دُعَاءُ الرُّكُوعِ",
+                        "subtitleEs": "Súplica durante la inclinación (Rukūʿ)",
                         "text": "سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ، اللَّهُمَّ اغْفِرْ لِي.",
                         "latin": "Subḥānaka Allāhumma rabbanā wa bi-ḥamdika, Allāhumma ighfir lī.",
                         "explanationEs": "Glorificado seas, ¡oh Allah, Señor nuestro!, y alabado seas. ¡Oh Allah! Perdóname.",
@@ -1184,6 +1191,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 101,
+                        "subtitleAr": "دُعَاءُ الرُّكُوعِ",
+                        "subtitleEs": "Súplica durante la inclinación (Rukūʿ)",
                         "text": "سُبُّوحٌ، قُدُّوسٌ، رَبُّ الْمَلاَئِكَةِ وَالرُّوحِ.",
                         "latin": "Subbūḥun, quddūsun, rabbu al-malāʾikati war-rūḥ.",
                         "explanationEs": "Glorioso, Santísimo, Señor de los ángeles y del Espíritu (el ángel Gabriel).",
@@ -1192,6 +1201,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 102,
+                        "subtitleAr": "دُعَاءُ الرُّكُوعِ",
+                        "subtitleEs": "Súplica durante la inclinación (Rukūʿ)",
                         "text": "اللَّهُمَّ لَكَ رَكَعْتُ، وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ، خَشَعَ لَكَ سَمْعِي، وَبَصَرِي، وَمُخِّي، وَعَظْمِي، وَعَصَبِي، وَمَا اسْتَقَلَّتْ بِهِ قَدَمِي.",
                         "latin": "Allāhumma laka rakaʿtu, wa bika āmantu, wa laka aslamtu, khashaʿa laka samʿī, wa baṣarī, wa mukhkhī, wa ʿaẓmī, wa ʿaṣabī, wa mā istaqallat bihi qadamī.",
                         "explanationEs": "¡Oh Allah! Ante Ti me he inclinado, en Ti he creído y a Ti me he sometido. Se han humillado ante Ti mi oído, mi vista, mi cerebro, mis huesos, mis nervios y lo que sostienen mis pies.",
@@ -1200,21 +1211,18 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 103,
+                        "subtitleAr": "دُعَاءُ الرُّكُوعِ",
+                        "subtitleEs": "Súplica durante la inclinación (Rukūʿ)",
                         "text": "سُبْحَانَ ذِي الْجَبَرُوتِ، وَالْمَلَكُوتِ، وَالْكِبْرِيَاءِ، وَالْعَظَمَةِ.",
                         "latin": "Subḥāna dhī al-jabarūti, wal-malakūti, wal-kibriyāʾi, wal-ʿaẓamah.",
                         "explanationEs": "Glorificado sea el Poseedor del poder absoluto, la soberanía, la grandeza y la majestad.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "raf_ruku",
-            "titleAr": "دُعَاءُ الرَّفْعِ مِنَ الرُّكُوعِ",
-            "titleEs": "Súplica al levantarse de la inclinación (Rukūʿ)",
-            "items": [
+                  },
                   {
                         "itemNumber": 104,
+                        "subtitleAr": "دُعَاءُ الرَّفْعِ مِنَ الرُّكُوعِ",
+                        "subtitleEs": "Súplica al levantarse de la inclinación (Rukūʿ)",
                         "text": "سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ.",
                         "latin": "Samiʿa Allāhu liman ḥamidah.",
                         "explanationEs": "Allah escucha a quien lo alaba.",
@@ -1223,6 +1231,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 105,
+                        "subtitleAr": "دُعَاءُ الرَّفْعِ مِنَ الرُّكُوعِ",
+                        "subtitleEs": "Súplica al levantarse de la inclinación (Rukūʿ)",
                         "text": "رَبَّنَا وَلَكَ الْحَمْدُ، حَمْداً كَثِيراً طَيِّباً مُبَارَكاً فِيهِ.",
                         "latin": "Rabbanā wa laka al-ḥamdu, ḥamdan kathīran ṭayyiban mubārakan fīh.",
                         "explanationEs": "¡Señor nuestro! A Ti pertenecen las alabanzas, alabanzas abundantes, puras y benditas.",
@@ -1231,21 +1241,18 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 106,
+                        "subtitleAr": "دُعَاءُ الرَّفْعِ مِنَ الرُّكُوعِ",
+                        "subtitleEs": "Súplica al levantarse de la inclinación (Rukūʿ)",
                         "text": "مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ، وَمَا بَيْنَهُمَا، وَمِلْءَ مَا شِئْتَ مِنْ شَيْءٍ بَعْدُ. أَهْلَ الثَّنَاءِ وَالْمَجْدِ، أَحَقُّ مَا قَالَ الْعَبْدُ، وَكُلُّنَا لَكَ عَبْدٌ. اللَّهُمَّ لاَ مَانِعَ لِمَا أَعْطَيْتَ، وَلاَ مُعْطِيَ لِمَا مَنَعْتَ، وَلاَ يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ.",
                         "latin": "Milʾa as-samāwāti wa milʾa al-arḍi, wa mā baynahumā, wa milʾa mā shiʾta min shayʾin baʿd. Ahla ath-thanāʾi wal-majd, aḥaqqu mā qāla al-ʿabdu, wa kullunā laka ʿabd. Allāhumma lā māniʿa limā aʿṭayta, wa lā muʿṭiya limā manaʿta, wa lā yanfaʿu dhā al-jaddi minka al-jadd.",
                         "explanationEs": "[Alabanzas que llenan] los cielos, la tierra, lo que hay entre ambos y cuanto Tú desees después. Digno de alabanza y gloria; es lo más verdadero que dice un siervo, y todos somos Tus siervos. ¡Oh Allah! Nadie puede privar lo que Tú concedes, ni nadie puede conceder lo que Tú privas, y la riqueza no beneficia a quien la posee frente a Ti.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "sujud",
-            "titleAr": "دُعَاءُ السُّجُودِ",
-            "titleEs": "Súplica durante la prosternación (Suyūd)",
-            "items": [
+                  },
                   {
                         "itemNumber": 107,
+                        "subtitleAr": "دُعَاءُ السُّجُودِ",
+                        "subtitleEs": "Súplica durante la prosternación (Suyūd)",
                         "text": "سُبْحَانَ رَبِّيَ الأَعْلَى.",
                         "latin": "Subḥāna rabbiya al-aʿlā.",
                         "explanationEs": "Glorificado sea mi Señor, el Altísimo. (Se dice tres veces).",
@@ -1254,6 +1261,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 108,
+                        "subtitleAr": "دُعَاءُ السُّجُودِ",
+                        "subtitleEs": "Súplica durante la prosternación (Suyūd)",
                         "text": "سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ، اللَّهُمَّ اغْفِرْ لِي.",
                         "latin": "Subḥānaka Allāhumma rabbanā wa bi-ḥamdika, Allāhumma ighfir lī.",
                         "explanationEs": "Glorificado seas, ¡oh Allah, Señor nuestro!, y alabado seas. ¡Oh Allah! Perdóname.",
@@ -1262,6 +1271,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 109,
+                        "subtitleAr": "دُعَاءُ السُّجُودِ",
+                        "subtitleEs": "Súplica durante la prosternación (Suyūd)",
                         "text": "سُبُّوحٌ، قُدُّوسٌ، رَبُّ الْمَلَائِكَةِ وَالرُّوحِ.",
                         "latin": "Subbūḥun, quddūsun, rabbu al-malāʾikati war-rūḥ.",
                         "explanationEs": "Glorioso, Santísimo, Señor de los ángeles y del Espíritu (el ángel Gabriel).",
@@ -1270,6 +1281,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 110,
+                        "subtitleAr": "دُعَاءُ السُّجُودِ",
+                        "subtitleEs": "Súplica durante la prosternación (Suyūd)",
                         "text": "اللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ، سَجَدَ وَجْهِيَ لِلَّذِي خَلَقَهُ، وَصَوَّرَهُ، وَشَقَّ سَمْعَهُ وَبَصَرَهُ، تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ.",
                         "latin": "Allāhumma laka sajadtu wa bika āmantu, wa laka aslamtu, sajada wajhiya lilladhī khalaqahu, wa ṣawwarahu, wa shaqqa samʿahu wa baṣarahu, tabāraka Allāhu aḥsanu al-khāliqīn.",
                         "explanationEs": "¡Oh Allah! Ante Ti me he prosternado, en Ti he creído y a Ti me he sometido. Se ha prosternado mi rostro ante Aquel que lo creó, le dio forma y abrió su oído y su vista. Bendito sea Allah, el mejor de los creadores.",
@@ -1278,6 +1291,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 111,
+                        "subtitleAr": "دُعَاءُ السُّجُودِ",
+                        "subtitleEs": "Súplica durante la prosternación (Suyūd)",
                         "text": "سُبْحَانَ ذِي الْجَبَرُوتِ، وَالْمَلَكُوتِ، وَالْكِبْرِيَاءِ، وَالْعَظَمَةِ.",
                         "latin": "Subḥāna dhī al-jabarūti, wal-malakūti, wal-kibriyāʾi, wal-ʿaẓamah.",
                         "explanationEs": "Glorificado sea el Poseedor del poder absoluto, la soberanía, la grandeza y la majestad.",
@@ -1286,35 +1301,34 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 112,
+                        "subtitleAr": "دُعَاءُ السُّجُودِ",
+                        "subtitleEs": "Súplica durante la prosternación (Suyūd)",
                         "text": "اللَّهُمَّ اغْفِرْ لِي ذَنْبِي كُلَّهُ: دِقَّهُ وَجِلَّهُ، وَأَوَّلَهُ وَآخِرَهُ، وَعَلاَنِيَّتَهُ وَسِرَّهُ.",
                         "latin": "Allāhumma ighfir lī dhanbī kullah: diqqahu wa jillahu, wa awwalahu wa ākhirahu, wa ʿalāniyatahu wa sirrah.",
                         "explanationEs": "¡Oh Allah! Perdóname todos mis pecados: los pequeños y los grandes, los primeros y los últimos, los públicos y los secretos.",
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2035.mp3"
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2035.mp3"
                         ]
                   },
                   {
                         "itemNumber": 113,
+                        "subtitleAr": "دُعَاءُ السُّجُودِ",
+                        "subtitleEs": "Súplica durante la prosternación (Suyūd)",
                         "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِرِضَاكَ مِنْ سَخَطِكَ، وَبِمُعَافَاتِكَ مِنْ عُقُوبَتِكَ، وَأَعُوذُ بِكَ مِنْكَ، لاَ أُحْصِي ثَنَاءً عَلَيْكَ، أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ.",
                         "latin": "Allāhumma innī aʿūdhu bi-riḍāka min sakhaṭika, wa bi-muʿāfātika min ʿuqūbatika, wa aʿūdhu bika minka, lā uḥṣī thanāʾan ʿalayka, anta kamā athnayta ʿalā nafsik.",
                         "explanationEs": "¡Oh Allah! Me refugio en Tu complacencia de Tu enojo, en Tu perdón de Tu castigo, y me refugio en Ti de Ti. No puedo enumerar Tus alabanzas; Tú eres tal como Te has alabado a Ti mismo.",
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2048.mp3"
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2048.mp3"
                         ]
-                  }
-            ]
-      },
-      {
-            "id": "jalsa_sajdatayn",
-            "titleAr": "دُعَاءُ الجَلْسَةِ بَيْنَ السَّجْدَتَيْنِ",
-            "titleEs": "Súplica en la sentada entre las dos prosternaciones",
-            "items": [
+                  },
                   {
                         "itemNumber": 114,
+                        "subtitleAr": "دُعَاءُ الجَلْسَةِ بَيْنَ السَّجْدَتَيْنِ",
+                        "subtitleEs": "Súplica en la sentada entre las dos prosternaciones",
                         "text": "رَبِّ اغْفِرْ لِي، رَبِّ اغْفِرْ لِي.",
                         "latin": "Rabbi ighfir lī, Rabbi ighfir lī.",
                         "explanationEs": "Señor mío perdóname, Señor mío perdóname.",
@@ -1323,87 +1337,75 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 115,
+                        "subtitleAr": "دُعَاءُ الجَلْسَةِ بَيْنَ السَّجْدَتَيْنِ",
+                        "subtitleEs": "Súplica en la sentada entre las dos prosternaciones",
                         "text": "اللَّهُمَّ اغْفِرْ لِي، وَارْحَمْنِي، وَاهْدِنِي، وَاجْبُرْنِي، وَعَافِنِي، وَارْزُقْنِي، وَارْفَعْنِي.",
                         "latin": "Allāhumma ighfir lī, warḥamnī, wahdinī, wajburnī, wa ʿāfinī, warzuqnī, warfaʿnī.",
                         "explanationEs": "¡Oh Allah! Perdóname, ten misericordia de mí, guíame, reconforta mis carencias, dame salud, susténtame y elévame.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "sujud_tilawa",
-            "titleAr": "دُعَاءُ سُجُودِ التِّلاَوَةِ",
-            "titleEs": "Súplica para la prosternación por lectura (Suyuud At-Tilawa)",
-            "items": [
+                  },
                   {
                         "itemNumber": 116,
+                        "subtitleAr": "دُعَاءُ سُجُودِ التِّلاَوَةِ",
+                        "subtitleEs": "Súplica para la prosternación por lectura (Suyuud At-Tilawa)",
                         "text": "سَجَدَ وَجْهِيَ لِلَّذِي خَلَقَهُ، وَشَقَّ سَمْعَهُ وَبَصَرَهُ بِحَوْلِهِ وَقُوَّتِهِ، ﴿فَتَبَارَكَ ٱللَّهُ أَحۡسَنُ ٱلۡخَٰلِقِينَ۝﴾",
                         "latin": "Sajada wajhiya lilladhī khalaqahu, wa shaqqa samʿahu wa baṣarahu bi-ḥawlihi wa quwwatih, fa-tabāraka Allāhu aḥsanu al-khāliqīn.",
                         "explanationEs": "Se ha prosternado mi rostro ante Aquel que lo creó y le dio oído y vista con Su poder y fuerza. ¡Bendito sea Allah, el mejor de los creadores!",
                         "count": 1,
                         "maxCount": 1,
-            "note": "سورة المؤمنون الآية 14",
-            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023014.mp3"]
-      },
+                        "note": "سورة المؤمنون الآية 14",
+                        "audioUrls": [
+                              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023014.mp3"
+                        ]
+                  },
                   {
                         "itemNumber": 117,
+                        "subtitleAr": "دُعَاءُ سُجُودِ التِّلاَوَةِ",
+                        "subtitleEs": "Súplica para la prosternación por lectura (Suyuud At-Tilawa)",
                         "text": "اللَّهُمَّ اكْتُبْ لِي بِهَا عِنْدَكَ أَجْراً، وَضَعْ عَنِّي بِهَا وِزْراً، وَاجْعَلْهَا لِي عِنْدَكَ ذُخْراً، وَتَقَبَّلْهَا مِنِّي كَمَا تَقَبَّلْتَهَا مِنْ عَبْدِكَ دَاوُدَ.",
                         "latin": "Allāhumma iktub lī bihā ʿindaka ajran, wa ḍaʿ ʿannī bihā wizran, wa ijʿalhā lī ʿindaka dhukhran, wa taqabbalhā minnī kamā taqabbaltahā min ʿabdika Dāwūd.",
                         "explanationEs": "¡Oh Allah! Anota para mí por ella (esta prosternación) una recompensa ante Ti, quítame con ella una carga, hazla para mí un tesoro ante Ti y acéptala de mí como la aceptaste de Tu siervo David.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "tashahhud",
-            "titleAr": "التَّشَهُّدُ",
-            "titleEs": "El Tashahhud",
-            "items": [
+                  },
                   {
                         "itemNumber": 118,
+                        "subtitleAr": "التَّشَهُّدُ",
+                        "subtitleEs": "El Tashahhud",
                         "text": "التَّحِيَّاتُ لِلَّهِ، وَالصَّلَوَاتُ، وَالطَّيِّبَاتُ، السَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلاَمُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ. أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّداً عَبْدُهُ وَرَسُولُهُ.",
                         "latin": "At-taḥiyyātu lillāhi, waṣ-ṣalawātu, waṭ-ṭayyibāt. As-salāmu ʿalayka ayyuhā an-nabiyyu wa raḥmatu Allāhi wa barakātuh, as-salāmu ʿalaynā wa ʿalā ʿibādillāhi aṣ-ṣāliḥīn. Ashhadu an lā ilāha illā Allāhu wa ashhadu anna Muḥammadan ʿabduhu wa rasūluh.",
                         "explanationEs": "Todas las veneraciones, oraciones y buenas palabras pertenecen a Allah. La paz sea contigo, ¡oh Profeta!, así como la misericordia de Allah y Sus bendiciones. La paz sea con nosotros y con los siervos piadosos de Allah. Atestiguo que no hay más divinidad que Allah y atestiguo que Muhammad es Su siervo y mensajero.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "salah_ala_nabi_tashahhud",
-            "titleAr": "الصَّلاَةُ عَلَى النَّبِيِّ بَعْدَ التَّشَهُّدِ",
-            "titleEs": "Súplica por el Profeta tras el Tashahhud",
-            "items": [
+                  },
                   {
                         "itemNumber": 119,
+                        "subtitleAr": "الصَّلاَةُ عَلَى النَّبِيِّ بَعْدَ التَّشَهُّدِ",
+                        "subtitleEs": "Súplica por el Profeta tras el Tashahhud",
                         "text": "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ، وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ، وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ.",
                         "latin": "Allāhumma ṣalli ʿalā Muḥammadin, wa ʿalā āli Muḥammad, kamā ṣallayta ʿalā Ibrāhīma, wa ʿalā āli Ibrāhīm, innaka ḥamīdun majīd. Allāhumma bārik ʿalā Muḥammadin wa ʿalā āli Muḥammad, kamā bārakta ʿalā Ibrāhīma wa ʿalā āli Ibrāhīm, innaka ḥamīdun majīd.",
                         "explanationEs": "¡Oh Allah! Bendice a Muhammad y a la familia de Muhammad, como bendijiste a Abraham y a la familia de Abraham, ciertamente Tú eres Loable, Glorioso. ¡Oh Allah! Prospera a Muhammad y a la familia de Muhammad, como prosperaste a Abraham y a la familia de Abraham, ciertamente Tú eres Loable, Glorioso.",
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2060.mp3"
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2060.mp3"
                         ]
                   },
                   {
                         "itemNumber": 120,
+                        "subtitleAr": "الصَّلاَةُ عَلَى النَّبِيِّ بَعْدَ التَّشَهُّدِ",
+                        "subtitleEs": "Súplica por el Profeta tras el Tashahhud",
                         "text": "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى أَزْوَاجِهِ وَذُرِّيَّتِهِ، كَمَا صَلَّيْتَ عَلَى آلِ إِبْرَاهِيمَ. وَبَارِكْ عَلَى مُحَمَّدٍ وَعَلَى أَزْوَاجِهِ وَذُرِّيَّتِهِ، كَمَا بَارَكْتَ عَلَى آلِ إِبْرَاهِيمَ. إِنَّكَ حَمِيدٌ مَجِيدٌ.",
                         "latin": "Allāhumma ṣalli ʿalā Muḥammadin wa ʿalā azwājihi wa dhurriyyatih, kamā ṣallayta ʿalā āli Ibrāhīm. Wa bārik ʿalā Muḥammadin wa ʿalā azwājihi wa dhurriyyatih, kamā bārakta ʿalā āli Ibrāhīm. Innaka ḥamīdun majīd.",
                         "explanationEs": "¡Oh Allah! Bendice a Muhammad, a sus esposas y a su descendencia, como bendijiste a la familia de Abraham. Y prospera a Muhammad, a sus esposas y a su descendencia, como prosperaste a la familia de Abraham. Ciertamente Tú eres Loable, Glorioso.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "dua_bada_tashahhud",
-            "titleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
-            "titleEs": "Súplicas tras el último Tashahhud antes del saludo final",
-            "items": [
+                  },
                   {
                         "itemNumber": 121,
+                        "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
+                        "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
                         "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَمِنْ عَذَابِ جَهَنَّمَ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ.",
                         "latin": "Allāhumma innī aʿūdhu bika min ʿadhābi al-qabr, wa min ʿadhābi jahannam, wa min fitnati al-maḥyā wal-mamāt, wa min sharri fitnati al-masīḥi ad-dajjāl.",
                         "explanationEs": "¡Oh Allah! Me refugio en Ti del castigo de la tumba, del castigo del Infierno, de las pruebas de la vida y de la muerte, y del mal de la prueba del Falso Mesías (Anticristo).",
@@ -1412,6 +1414,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 122,
+                        "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
+                        "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
                         "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْمَأْثَمِ وَالْمَغْرَمِ.",
                         "latin": "Allāhumma innī aʿūdhu bika min ʿadhābi al-qabr, wa aʿūdhu bika min fitnati al-masīḥi ad-dajjāl, wa aʿūdhu bika min fitnati al-maḥyā wal-mamāt. Allāhumma innī aʿūdhu bika mina al-maʾthami wal-maghram.",
                         "explanationEs": "¡Oh Allah! Me refugio en Ti del castigo de la tumba, del juicio del Falso Mesías, y de las pruebas de la vida y de la muerte. ¡Oh Allah! Me refugio en Ti del pecado y de las deudas agobiantes.",
@@ -1420,17 +1424,21 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 123,
+                        "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
+                        "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
                         "text": "اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْماً كَثِيراً، وَلاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ، فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ وَارْحَمْنِي، إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ.",
                         "latin": "Allāhumma innī ẓalamtu nafsī ẓulman kathīrā, wa lā yaghfiru adhdhunūba illā ant, faghfir lī maghfiratan min ʿindika warḥamnī, innaka anta al-ghafūru ar-raḥīm.",
                         "explanationEs": "¡Oh Allah! Ciertamente me he oprimido a mí mismo en gran manera y nadie perdona los pecados excepto Tú, concedeme pues un perdón de Tu parte y ten misericordia de mí, ciertamente Tú eres el Absolvedor, el Misericordioso.",
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2033.mp3"
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2033.mp3"
                         ]
                   },
                   {
                         "itemNumber": 124,
+                        "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
+                        "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
                         "text": "اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ، وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ، وَمَا أَعْلَنْتُ، وَمَا أَسْرَفْتُ، وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي. أَنْتَ الْمُقَدِّمُ، وَأَنْتَ الْمُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ.",
                         "latin": "Allāhumma ighfir lī mā qaddamtu, wa mā akhkhartu, wa mā asrartu, wa mā aʿlantu, wa mā asraftu, wa mā anta aʿlamu bihi minnī. Anta al-muqaddimu, wa anta al-muʾakhkhiru lā ilāha illā ant.",
                         "explanationEs": "¡Oh Allah! Perdóname lo que he hecho en el pasado y lo que haga en el futuro, lo que he ocultado, lo que he manifestado, mis excesos y lo que Tú conoces mejor que yo. Tú eres Quien adelanta y Quien retrasa, no hay más divinidad excepto Tú.",
@@ -1439,6 +1447,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 125,
+                        "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
+                        "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
                         "text": "اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ، وَشُكْرِكَ، وَحُسْنِ عِبَادَتِكَ.",
                         "latin": "Allāhumma aʿinnī ʿalā dhikrika, wa shukrika, wa ḥusni ʿibādatik.",
                         "explanationEs": "¡Oh Allah! Ayúdame a recordarte, agradecerte y adorarte de la mejor manera.",
@@ -1447,17 +1457,21 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 126,
+                        "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
+                        "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
                         "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْبُخْلِ، وَأَعُوذُ بِكَ مِنَ الْجُبْنِ، وَأَعُوذُ بِكَ مِنْ أَنْ أُرَدَّ إِلَى أَرْذَلِ الْعُمُرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الدُّنْيَا وَعَذَابِ الْقَبْرِ.",
                         "latin": "Allāhumma innī aʿūdhu bika mina al-bukhl, wa aʿūdhu bika mina al-jubn, wa aʿūdhu bika min an uradda ilā ardhali al-ʿumur, wa aʿūdhu bika min fitnati ad-dunyā wa ʿadhābi al-qabr.",
                         "explanationEs": "¡Oh Allah! Me refugio en Ti de la tacañería, la cobardía, la decrepitud en la vejez, las pruebas de este mundo y el castigo de la tumba.",
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2037.mp3"
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2037.mp3"
                         ]
                   },
                   {
                         "itemNumber": 127,
+                        "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
+                        "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
                         "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْجَنَّةَ وَأَعُوذُ بِكَ مِنَ النَّارِ.",
                         "latin": "Allāhumma innī asʾaluka al-jannata wa aʿūdhu bika mina an-nār.",
                         "explanationEs": "¡Oh Allah! Te pido el Paraíso y me refugio en Ti del Fuego.",
@@ -1466,6 +1480,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 128,
+                        "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
+                        "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
                         "text": "اللَّهُمَّ بِعِلْمِكَ الْغَيْبَ وَقُدْرَتِكَ عَلَى الْخَلْقِ أَحْيِنِي مَا عَلِمْتَ الْحَيَاةَ خَيْرًا لِي، وَتَوَفَّنِي إِذَا عَلِمْتَ الْوَفَاةَ خَيْرًا لِي، اللَّهُمَّ وَأَسْأَلُكَ خَشْيَتَكَ فِي الْغَيْبِ وَالشَّهَادَةِ، وَأَسْأَلُكَ كَلِمَةَ الْحَقِّ فِي الرِّضَا وَالْغَضَبِ، وَأَسْأَلُكَ الْقَصْدَ فِي الْفَقْرِ وَالْغِنَى، وَأَسْأَلُكَ نَعِيمًا لَا يَنْفَدُ، وَأَسْأَلُكَ قُرَّةَ عَيْنٍ لَا تَنْقَطِعُ، وَأَسْأَلُكَ الرِّضَاءَ بَعْدَ الْقَضَاءِ، وَأَسْأَلُكَ بَرْدَ الْعَيْشِ بَعْدَ الْمَوْتِ، وَأَسْأَلُكَ لَذَّةَ النَّظَرِ إِلَى وَجْهِكَ وَالشَّوْقَ إِلَى لِقَائِكَ فِي غَيْرِ ضَرَّاءَ مُضِرَّةٍ وَلَا فِتْنَةٍ مُضِلَّةٍ، اللَّهُمَّ زَيِّنَّا بِزِينَةِ الْإِيمَانِ، وَاجْعَلْنَا هُدَاةً مُهْتَدِينَ.",
                         "latin": "Allāhumma bi-ʿilmikal-ghayba wa qudratika ʿalal-khalqi aḥyinī mā ʿalimtal-ḥayāta khayran lī, wa tawaffanī idhā ʿalimtal-wafāta khayran lī. Allāhumma wa asʾaluka khashyataka fil-ghaybi wash-shahādah, wa asʾaluka kalimatil-ḥaqqi fir-riḍā wal-ghaḍab, wa asʾalukal-qaṣda fil-faqri wal-ghinā, wa asʾaluka naʿīman lā yanfad, wa asʾaluka qurrata ʿaynin lā tanqaṭiʿ, wa asʾalukar-riḍāʾa baʿdal-qaḍāʾ, wa asʾaluka bardal-ʿayshi baʿdal-mawt, wa asʾaluka ladhdhatan-naẓari ilā wajhika wash-shawqa ilā liqāʾik fī ghayri ḍarrāʾa muḍirrah, wa lā fitnatin muḍillatin. Allāhumma zayyinnā bi-zīnatil-īmāni waj-ʿalnā hudātan muhtadīn.",
                         "explanationEs": "¡Oh Allah! Por Tu conocimiento de lo oculto y Tu poder sobre la creación, mantenme con vida mientras sepas que la vida es mejor para mí, y hazme morir cuando sepas que la muerte es mejor para mí. Te pido que Te tema en privado y en público, que diga la verdad tanto en la satisfacción como en la ira, y que mantenga la moderación tanto en la pobreza como en la riqueza. Te pido un deleite que no se agote, una alegría que nunca se extinga, estar complacido después del decreto, una vida apacible después de la muerte, el placer de contemplar Tu Rostro y el anhelo de encontrarte, sin adversidad perjudicial ni prueba que me haga extraviarme. ¡Oh Allah! Adórnanos con la belleza de la fe y haz que seamos guías bien guiados.",
@@ -1473,11 +1489,13 @@ const azkarData = [
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2052.mp3"
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2052.mp3"
                         ]
                   },
                   {
                         "itemNumber": 129,
+                        "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
+                        "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
                         "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ يَا أَللَّهُ بِأَنَّكَ الْوَاحِدُ الأَحَدُ الصَّمَدُ الَّذِي لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُنْ لَهُ كُفُواً أَحَدٌ، أَنْ تَغْفِرَ لِي ذُنُوبِي إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ.",
                         "latin": "Allāhumma innī asʾaluka yā Allāhu bi-annaka al-wāḥidu al-aḥadu aṣ-ṣamadu alladhī lam yalid wa lam yūlad, wa lam yakun lahu kufuwan aḥad, an taghfira lī dhunūbī innaka anta al-ghafūru ar-raḥīm.",
                         "explanationEs": "¡Oh Allah! Te pido, ¡oh Allah!, porque Tú eres el Único, el Absoluto, Quien no engendró ni fue engendrado y no hay nadie semejante a Él, que perdones mis pecados. Ciertamente Tú eres el Absolvedor, el Misericordioso.",
@@ -1486,6 +1504,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 130,
+                        "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
+                        "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
                         "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنَّ لَكَ الْحَمْدَ لاَ إِلَهَ إِلاَّ أَنْتَ وَحْدَكَ لاَ شَرِيكَ لَكَ، الْمَنَّانُ، يَا بَدِيعَ السَّمَوَاتِ وَالأَرْضِ يَا ذَا الْجَلاَلِ وَالإِكْرَامِ، يَا حَيُّ يَا قَيُّومُ إِنِّي أَسْأَلُكَ الْجَنَّةَ وَأَعُوذُ بِكَ مِنَ النَّارِ.",
                         "latin": "Allāhumma innī asʾaluka bi-anna laka al-ḥamda lā ilāha illā anta waḥdaka lā sharīka lak, al-mannān, yā badīʿa as-samāwāti wal-arḍ, yā dhā al-jalāli wal-ikrām, yā ḥayyu yā qayyūmu innī asʾaluka al-jannata wa aʿūdhu bika mina an-nār.",
                         "explanationEs": "¡Oh Allah! Te pido porque a Ti pertenecen las alabanzas, no hay más divinidad excepto Tú, Único, sin asociados, el Sempiterno Concededor, ¡oh Creador originario de los cielos y de la tierra!, ¡oh Poseedor de la majestad y del honor!, ¡oh Viviente, oh Sustentador de todo! Te pido el Paraíso y me refugio en Ti del Fuego.",
@@ -1494,6 +1514,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 131,
+                        "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
+                        "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
                         "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنِّي أَشْهَدُ أَنَّكَ أَنْتَ اللَّهُ لاَ إِلَهَ إِلاَّ أَنْتَ الأَحَدُ الصَّمَدُ الَّذِي لَمْ يَلِدْ وَلَمْ يُولَدْ وَلَمْ يَكُنْ لَهُ كُفُواً أَحَدٌ.",
                         "latin": "Allāhumma innī asʾaluka bi-annī ashhadu annaka anta Allāhu lā ilāha illā anta al-aḥadu aṣ-ṣamadu alladhī lam yalid wa lam yūlad wa lam yakun lahu kufuwan aḥad.",
                         "explanationEs": "¡Oh Allah! Te pido pues atestiguo que Tú eres Allah, no hay más divinidad excepto Tú, el Único, el Absoluto, Quien no engendró ni fue engendrado y no hay nadie semejante a Él.",
@@ -1607,42 +1629,34 @@ const azkarData = [
             ]
       },
       {
-            "id": "taqallub_firash",
-            "titleAr": "الدُّعَاءُ عِنْدَ التَّقَلُّبِ فِي الفِرَاشِ لَيْلاً",
-            "titleEs": "Súplica al darse la vuelta en la cama por la noche",
+            "id": "layl",
+            "titleAr": "أَذْكَارُ اللَّيْلِ وَالنَّوْمِ",
+            "titleEs": "La noche y el sueño",
             "items": [
                   {
                         "itemNumber": 142,
+                        "subtitleAr": "الدُّعَاءُ عِنْدَ التَّقَلُّبِ فِي الفِرَاشِ لَيْلاً",
+                        "subtitleEs": "Súplica al darse la vuelta en la cama por la noche",
                         "text": "لاَ إِلَهَ إِلاَّ اللَّهُ الْوَاحِدُ الْقَهَّارُ، رَبُّ السَّمَوَاتِ وَالأَرْضِ وَمَا بَيْنَهُمَا الْعَزِيزُ الْغَفَّارُ.",
                         "latin": "Lā ilāha illā Allāhu al-wāḥidu al-qahhār, rabbu as-samāwāti wal-arḍi wa mā baynahumā al-ʿazīzu al-ghaffār.",
                         "explanationEs": "No hay más divinidad que Allah, el Único, el Dominador, Señor de los cielos y de la tierra y de lo que hay entre ambos, el Poderoso, el Absolvedor.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "faza_nawm",
-            "titleAr": "دُعَاءُ الفَزَعِ فِي النَّوْمِ وَمَنْ بُلِيَ بِالوَحْشَةِ",
-            "titleEs": "Súplica ante el sobresalto al dormir o la sensación de angustia",
-            "items": [
+                  },
                   {
                         "itemNumber": 143,
+                        "subtitleAr": "دُعَاءُ الفَزَعِ فِي النَّوْمِ وَمَنْ بُلِيَ بِالوَحْشَةِ",
+                        "subtitleEs": "Súplica ante el sobresalto al dormir o la sensación de angustia",
                         "text": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ غَضَبِهِ وَعِقَابِهِ، وَشَرِّ عِبَادِهِ، وَمِنْ هَمَزَاتِ الشَّيَاطِينِ وَأَنْ يَحْضُرُونِ.",
                         "latin": "Aʿūdhu bi-kalimāti Allāhi at-tāmmāti min ghaḍabihi wa ʿiqābih, wa sharri ʿibādih, wa min hamazāti ash-shayāṭīni wa an yaḥḍurūn.",
                         "explanationEs": "Me refugio en las palabras perfectas de Allah de Su ira, de Su castigo, del mal de Sus siervos y de las incitaciones de los demonios y de que se presenten ante mí.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "ruya_hulm",
-            "titleAr": "مَا يَفْعَلُ مَنْ رَأَى الرُّؤْيَا أَوْ الحُلْمَ",
-            "titleEs": "Lo que debe hacer quien tiene una visión o un sueño",
-            "items": [
+                  },
                   {
                         "itemNumber": 144,
+                        "subtitleAr": "مَا يَفْعَلُ مَنْ رَأَى الرُّؤْيَا أَوْ الحُلْمَ",
+                        "subtitleEs": "Lo que debe hacer quien tiene una visión o un sueño",
                         "text": "يَنْفُثُ عَنْ يَسَارِهِ (ثَلاَثاً)، وَيَسْتَعِيذُ بِاللَّهِ مِنَ الشَّيْطَانِ وَمِنْ شَرِّ مَا رَأَى (ثَلاَثَ مَرَّاتٍ)، وَلاَ يُحَدِّثْ بِهَا أَحَداً، وَيَتَحَوَّلُ عَنْ جَنْبِهِ الَّذِي كَانَ عَلَيْهِ.",
                         "latin": "Yanfuthu ʿan yasārihi (thalāthan), wa yastaʿīdhu billāhi mina ash-shayṭāni wa min sharri mā raʾā (thalātha marrāt), wa lā yuḥaddith bihā aḥadā, wa yataḥawwalu ʿan janbihi alladhī kāna ʿalayh.",
                         "explanationEs": "Sopla suavemente a su izquierda tres veces, busca refugio en Allah del Demonio y del mal de lo que vio (tres veces), no se lo cuenta a nadie y cambia del costado sobre el que estaba recostado.",
@@ -1651,6 +1665,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 145,
+                        "subtitleAr": "مَا يَفْعَلُ مَنْ رَأَى الرُّؤْيَا أَوْ الحُلْمَ",
+                        "subtitleEs": "Lo que debe hacer quien tiene una visión o un sueño",
                         "text": "وَيَقُومُ يُصَلِّي إِنْ أَرَادَ ذَلِكَ.",
                         "latin": "Wa yaqūmu yuṣallī in arāda dhālik.",
                         "explanationEs": "Y se levanta a orar si así lo desea.",
@@ -1660,12 +1676,14 @@ const azkarData = [
             ]
       },
       {
-            "id": "qunut_witr",
-            "titleAr": "دُعَاءُ قُنُوتِ الوِتْرِ",
-            "titleEs": "Súplica del Qunūt en la oración del Witr",
+            "id": "witr",
+            "titleAr": "أَذْكَارُ الْوِتْرِ",
+            "titleEs": "Azkar del Witr",
             "items": [
                   {
                         "itemNumber": 146,
+                        "subtitleAr": "دُعَاءُ قُنُوتِ الوِتْرِ",
+                        "subtitleEs": "Súplica del Qunūt en la oración del Witr",
                         "text": "اللَّهُمَّ اهْدِنِي فِيمَنْ هَدَيْتَ، وَعَافِنِي فِيمَنْ عَافَيْتَ، وَتَوَلَّنِي فِيمَنْ تَوَلَّيْتَ، وَبَارِكْ لِي فِيمَا أَعْطَيْتَ، وَقِنِي شَرَّ مَا قَضَيْتَ؛ فَإِنَّكَ تَقْضِي وَلاَ يُقْضَى عَلَيْكَ، إِنَّهُ لاَ يَذِلُّ مَنْ وَالَيْتَ، [وَلاَ يَعِزُّ مَنْ عَادَيْتَ]، تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ.",
                         "latin": "Allāhumma ihdinī fīman hadayt, wa ʿāfinī fīman ʿāfayt, wa tawallanī fīman tawallayt, wa bārik lī fīmā aʿṭayt, wa qinī sharra mā qaḍayt; fa-innaka taqḍī wa lā yuqḍā ʿalayk, innahu lā yadhillu man wālayt, [wa lā yaʿizzu man ʿādayt], tabārakta rabbanā wa taʿālayt.",
                         "explanationEs": "¡Oh Allah! Guíame junto a quienes has guiado, dame salud junto a quienes has sanado, protégeme junto a quienes has protegido, bendice para mí lo que me has concedido y líbrame del mal de lo que has decretado. Ciertamente Tú decretas y nadie decreta contra Ti; no será humillado a quien Tú proteges [ni será enaltecido a quien Tú tomas por enemigo]. Bendito y Enaltecido seas, Señor nuestro.",
@@ -1674,32 +1692,31 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 147,
+                        "subtitleAr": "دُعَاءُ قُنُوتِ الوِتْرِ",
+                        "subtitleEs": "Súplica del Qunūt en la oración del Witr",
                         "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِرِضَاكَ مِنْ سَخَطِكَ، وَبِمُعَافَاتِكَ مِنْ عُقُوبَتِكَ، وَأَعُوذُ بِكَ مِنْكَ، لاَ أُحْصِي ثَنَاءً عَلَيْكَ، أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ.",
                         "latin": "Allāhumma innī aʿūdhu bi-riḍāka min sakhaṭika, wa bi-muʿāfātika min ʿuqūbatika, wa aʿūdhu bika minka, lā uḥṣī thanāʾan ʿalayka, anta kamā athnayta ʿalā nafsik.",
                         "explanationEs": "¡Oh Allah! Me refugio en Tu complacencia de Tu enojo, en Tu perdón de Tu castigo, y me refugio en Ti de Ti. No puedo enumerar Tus alabanzas; Tú eres tal como Te has alabado a Ti mismo.",
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2048.mp3"
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2048.mp3"
                         ]
                   },
                   {
                         "itemNumber": 148,
+                        "subtitleAr": "دُعَاءُ قُنُوتِ الوِتْرِ",
+                        "subtitleEs": "Súplica del Qunūt en la oración del Witr",
                         "text": "اللَّهُمَّ إِيَّاكَ نَعْبُدُ، وَلَكَ نُصَلِّي وَنَسْجُدُ، وَإِلَيْكَ نَسْعَى وَنَحْفِدُ، نَرْجُو رَحْمَتَكَ، وَنَخْشَى عَذَابَكَ، إِنَّ عَذَابَكَ بِالْكَافِرِينَ مُلْحَقٌ. اللَّهُمَّ إِنَّا نَسْتَعِينُكَ، وَنَسْتَغْفِرُكَ، وَنُثْنِي عَلَيْكَ الْخَيْرَ، وَلاَ نَكْفُرُكَ، وَنُؤْمِنُ بِكَ، وَنَخْضَعُ لَكَ، وَنَخْلَعُ مَنْ يَكْفُرُكَ.",
                         "latin": "Allāhumma iyyāka naʿbudu, wa laka nuṣallī wa nasjudu, wa ilayka nasʿā wa naḥfid, narjū raḥmataka, wa nakhshā ʿadhābak, inna ʿadhābaka bil-kāfirīna mulḥaq. Allāhumma innā nastaʿīnuka, wa nastaghfiruka, wa nuthnī ʿalayka al-khayra, wa lā nakfuruka, wa nuʾminu bika, wa nakhḍaʿu laka, wa nakhlaʿu man yakfuruk.",
                         "explanationEs": "¡Oh Allah! A Ti solo adoramos, por Ti oramos y nos prosternamos, hacia Ti nos esmeramos y apresuramos. Esperamos Tu misericordia y tememos Tu castigo; ciertamente Tu castigo alcanzará a los incrédulos. ¡Oh Allah! A Ti pedimos ayuda, a Ti pedimos perdón, Te alabamos con todo bien, no somos ingratos Contigo, creemos en Ti, nos sometemos a Ti y nos apartamos de quien Te niega.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "azkar_bada_witr",
-            "titleAr": "الذِّكْرُ عَقِبَ السَّلاَمِ مِنَ الوِتْرِ",
-            "titleEs": "Súplica tras el saludo final en la oración del Witr",
-            "items": [
+                  },
                   {
                         "itemNumber": 149,
+                        "subtitleAr": "الذِّكْرُ عَقِبَ السَّلاَمِ مِنَ الوِتْرِ",
+                        "subtitleEs": "Súplica tras el saludo final en la oración del Witr",
                         "text": "سُبْحَانَ الْمَلِكِ الْقُدُّوسِ (ثَلاَثَ مَرَّاتٍ)، وَالثَّالِثَةُ يَجْهَرُ بِهَا وَيَمُدُّ بِهَا صَوْتَهُ يَقُولُ: [رَبِّ الْمَلاَئِكَةِ وَالرُّوحِ].",
                         "latin": "Subḥāna al-maliki al-quddūs (tres veces, alzando y alargando la voz en la tercera diciendo): [Rabbi al-malāʾikati war-rūḥ].",
                         "explanationEs": "Glorificado sea el Rey, el Santísimo (tres veces, elevando y alargando la voz en la tercera oportunidad diciendo: [Señor de los ángeles y del Espíritu]).",
@@ -1709,12 +1726,14 @@ const azkarData = [
             ]
       },
       {
-            "id": "hamm_hazan",
-            "titleAr": "دُعَاءُ الهَمِّ وَالحَزَنِ",
-            "titleEs": "Súplica ante la preocupación y la tristeza",
+            "id": "karb_khawf",
+            "titleAr": "أَدْعِيَةُ الْهَمِّ وَالْكَرْبِ وَالْخَوْفِ",
+            "titleEs": "Angustia, aflicción y miedo",
             "items": [
                   {
                         "itemNumber": 150,
+                        "subtitleAr": "دُعَاءُ الهَمِّ وَالحَزَنِ",
+                        "subtitleEs": "Súplica ante la preocupación y la tristeza",
                         "text": "اللَّهُمَّ إِنِّي عَبْدُكَ، ابْنُ عَبْدِكَ، ابْنُ أَمَتِكَ، نَاصِيَتِي بِيَدِكَ، مَاضٍ فِيَّ حُكْمُكَ، عَدْلٌ فِيَّ قَضَاؤُكَ، أَسْأَلُكَ بِكُلِّ اسْمٍ هُوَ لَكَ، سَمَّيْتَ بِهِ نَفْسَكَ، أَوْ أَنْزَلْتَهُ فِي كِتَابِكَ، أَوْ عَلَّمْتَهُ أَحَداً مِنْ خَلْقِكَ، أَوِ اسْتَأْثَرْتَ بِهِ فِي عِلْمِ الْغَيْبِ عِنْدَكَ، أَنْ تَجْعَلَ الْقُرْآنَ رَبِيعَ قَلْبِي، وَنُورَ صَدْرِي، وَجَلاَءَ حُزْنِي، وَذَهَابَ هَمِّي.",
                         "latin": "Allāhumma innī ʿabduka, ibnu ʿabdika, ibnu amatika, nāṣiyatī bi-yadik, māḍin fiyya ḥukmuk, ʿadlun fiyya qaḍāʾuk, asʾaluka bi-kulli ismin huwa lak, sammayta bihi nafsak, aw anzaltahu fī kitābik, aw ʿallamtahu aḥadan min khalqik, aw istaʾtharta bihi fī ʿilmi al-ghaybi ʿindak, an tajʿala al-qurʾāna rabīʿa qalbī, wa nūra ṣadrī, wa jalāʾa ḥuznī, wa dhahāba hammī.",
                         "explanationEs": "¡Oh Allah! Ciertamente soy Tu siervo, hijo de Tu siervo, hijo de Tu sierva. Mi frente está en Tu mano, Tu juicio sobre mí es ejecutable y Tu decreto sobre mí es justo. Te pido por cada nombre que Te pertenece, con el que Te has nombrado a Ti mismo, o has revelado en Tu Libro, o has enseñado a alguno de Tus seres creados, o Te has reservado en el conocimiento de lo oculto junto a Ti, que hagas del Corán la primavera de mi corazón, la luz de mi pecho, el alivio de mi tristeza y la liberación de mi preocupación.",
@@ -1723,24 +1742,21 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 151,
+                        "subtitleAr": "دُعَاءُ الهَمِّ وَالحَزَنِ",
+                        "subtitleEs": "Súplica ante la preocupación y la tristeza",
                         "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَضَلَعِ الدَّيْنِ وَغَلَبَةِ الرِّجَالِ.",
                         "latin": "Allāhumma innī aʿūdhu bika mina al-hammi wal-ḥazan, wal-ʿajzi wal-kasal, wal-bukhli wal-jubn, wa ḍalaʿi ad-dayni wa ghalabati ar-rijāl.",
                         "explanationEs": "¡Oh Allah! Me refugio en Ti de la ansiedad y de la tristeza, de la incapacidad y de la pereza, de la tacañería y de la cobardía, del peso de las deudas y de la opresión de los hombres.",
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2036.mp3"
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2036.mp3"
                         ]
-                  }
-            ]
-      },
-      {
-            "id": "karb",
-            "titleAr": "دُعَاءُ الكَرْبِ",
-            "titleEs": "Súplica ante la aflicción o angustia severa",
-            "items": [
+                  },
                   {
                         "itemNumber": 152,
+                        "subtitleAr": "دُعَاءُ الكَرْبِ",
+                        "subtitleEs": "Súplica ante la aflicción o angustia severa",
                         "text": "لاَ إِلَهَ إِلاَّ اللَّهُ الْعَظِيمُ الْحَلِيمُ، لاَ إِلَهَ إِلاَّ اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لاَ إِلَهَ إِلاَّ اللَّهُ رَبُّ السَّمَوَاتِ وَرَبُّ الأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ.",
                         "latin": "Lā ilāha illā Allāhu al-ʿaẓīmu al-ḥalīm, lā ilāha illā Allāhu rabbu al-ʿarshi al-ʿaẓīm, lā ilāha illā Allāhu rabbu as-samāwāti wa rabbu al-arḍi wa rabbu al-ʿarshi al-karīm.",
                         "explanationEs": "No hay más divinidad que Allah, el Grandioso, el Tolerante. No hay más divinidad que Allah, Señor del Trono grandioso. No hay más divinidad que Allah, Señor de los cielos, Señor de la tierra y Señor del Trono noble.",
@@ -1749,46 +1765,47 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 153,
+                        "subtitleAr": "دُعَاءُ الكَرْبِ",
+                        "subtitleEs": "Súplica ante la aflicción o angustia severa",
                         "text": "اللَّهُمَّ رَحْمَتَكَ أَرْجُو، فَلاَ تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ، وَأَصْلِحْ لِي شَأْنِي كُلَّهُ، لاَ إِلَهَ إِلاَّ أَنْتَ.",
                         "latin": "Allāhumma raḥmataka arjū, fa-lā takilnī ilā nafsī ṭarfata ʿayn, wa aṣliḥ lī shaʾnī kullah, lā ilāha illā ant.",
                         "explanationEs": "¡Oh Allah! Tu misericordia espero, no me abandones a mí mismo ni por el parpadeo de un ojo, y arregla todos mis asuntos. No hay más divinidad excepto Tú.",
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20255.mp3"
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20255.mp3"
                         ]
                   },
                   {
                         "itemNumber": 154,
+                        "subtitleAr": "دُعَاءُ الكَرْبِ",
+                        "subtitleEs": "Súplica ante la aflicción o angustia severa",
                         "text": "لاَ إِلَهَ إِلاَّ أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ.",
                         "latin": "Lā ilāha illā anta subḥānaka innī kuntu mina aẓ-ẓālimīn.",
                         "explanationEs": "No hay más divinidad excepto Tú, ¡glorificado seas! Ciertamente he sido de los injustos.",
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/021087.mp3"
+                              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/021087.mp3"
                         ]
                   },
                   {
                         "itemNumber": 155,
+                        "subtitleAr": "دُعَاءُ الكَرْبِ",
+                        "subtitleEs": "Súplica ante la aflicción o angustia severa",
                         "text": "اللَّهُ اللَّهُ رَبِّي لاَ أُشْرِكُ بِهِ شَيْئاً.",
                         "latin": "Allāhu Allāhu rabbī lā ushriku bihi shayʾā.",
                         "explanationEs": "Allah, Allah es mi Señor, no le asocio absolutamente nada.",
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20256.mp3"
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20256.mp3"
                         ]
-                  }
-            ]
-      },
-      {
-            "id": "liqa_aduw",
-            "titleAr": "دُعَاءُ لِقَاءِ العَدُوِّ وَذِي السُّلْطَانِ",
-            "titleEs": "Súplica al enfrentarse al enemigo o a un gobernante/autoridad",
-            "items": [
+                  },
                   {
                         "itemNumber": 156,
+                        "subtitleAr": "دُعَاءُ لِقَاءِ العَدُوِّ وَذِي السُّلْطَانِ",
+                        "subtitleEs": "Súplica al enfrentarse al enemigo o a un gobernante/autoridad",
                         "text": "اللَّهُمَّ إِنَّا نَجْعَلُكَ فِي نُحُورِهِمْ، وَنَعُوذُ بِكَ مِنْ شُرُورِهِمْ.",
                         "latin": "Allāhumma innā najʿaluka fī nuḥūrihim, wa naʿūdhu bika min shurūrihim.",
                         "explanationEs": "¡Oh Allah! Te ponemos al frente contra ellos y nos refugiamo en Ti de sus males.",
@@ -1797,6 +1814,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 157,
+                        "subtitleAr": "دُعَاءُ لِقَاءِ العَدُوِّ وَذِي السُّلْطَانِ",
+                        "subtitleEs": "Súplica al enfrentarse al enemigo o a un gobernante/autoridad",
                         "text": "اللَّهُمَّ أَنْتَ عَضُدِي، وَأَنْتَ نَصِيرِي، بِكَ أَحُولُ وَبِكَ أَصُولُ، وَبِكَ أُقَاتِلُ.",
                         "latin": "Allāhumma anta ʿaḍudī, wa anta naṣīrī, bika aḥūlu wa bika aṣūlu, wa bika uqātil.",
                         "explanationEs": "¡Oh Allah! Tú eres mi apoyo y Tú eres mi socorredor. Por Ti me muevo, por Ti me defiendo y por Ti combato.",
@@ -1805,21 +1824,18 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 158,
+                        "subtitleAr": "دُعَاءُ لِقَاءِ العَدُوِّ وَذِي السُّلْطَانِ",
+                        "subtitleEs": "Súplica al enfrentarse al enemigo o a un gobernante/autoridad",
                         "text": "حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ.",
                         "latin": "Ḥasbunā Allāhu wa niʿma al-wakīl.",
                         "explanationEs": "Suficiente para nosotros es Allah, y ¡qué excelente Protector!",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "khawf_zulm_sultan",
-            "titleAr": "دُعَاءُ مَنْ خَافَ ظُلْمَ السُّلْطَانِ",
-            "titleEs": "Súplica de quien teme la opresión de un gobernante",
-            "items": [
+                  },
                   {
                         "itemNumber": 159,
+                        "subtitleAr": "دُعَاءُ مَنْ خَافَ ظُلْمَ السُّلْطَانِ",
+                        "subtitleEs": "Súplica de quien teme la opresión de un gobernante",
                         "text": "اللَّهُمَّ ربَّ السَّمَوَاتِ السَّبْعِ، وَرَبَّ الْعَرْشِ الْعَظِيمِ، كُنْ لِي جَاراً مِنْ فُلاَنِ بْنِ فُلاَنٍ، وَأَحْزَابِهِ مِنْ خَلاَئِقِكَ، أَنْ يَفْرُطَ عَلَيَّ أَحَدٌ مِنْهُمْ أَوْ يَطْغَى، عَزَّ جَارُكَ، وَجَلَّ ثَنَاؤُكَ، وَلاَ إِلَهَ إِلاَّ أَنْتَ.",
                         "latin": "Allāhumma rabba as-samāwāti as-sabʿi, wa rabba al-ʿarshi al-ʿaẓīm, kun lī jāran min fulāni ibni fulān, wa aḥzābihi min khalāʾiqika, an yafruṭa ʿalayya aḥadun minhum aw yaṭghā, ʿazza jāruka, wa jalla thanāʾuka, wa lā ilāha illā ant.",
                         "explanationEs": "¡Oh Allah, Señor de los siete cielos y Señor del Trono grandioso! Sé para mí un protector contra (Fulano, hijo de Fulano) y sus aliados de Tu creación, para que ninguno de ellos se me adelante en agresión ni se extralimite contra mí. Poderoso es Tu protegido, gloriosa es Tu alabanza y no hay más divinidad excepto Tú.",
@@ -1828,36 +1844,28 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 160,
+                        "subtitleAr": "دُعَاءُ مَنْ خَافَ ظُلْمَ السُّلْطَانِ",
+                        "subtitleEs": "Súplica de quien teme la opresión de un gobernante",
                         "text": "اللَّهُ أَكْبَرُ، اللَّهُ أَعَزُّ مِنْ خَلْقِهِ جَمِيعاً، اللَّهُ أَعَزُّ مِمَّا أَخَافُ وَأَحْذَرُ، أَعُوذُ بِاللَّهِ الَّذِي لاَ إِلَهَ إِلاَّ هُوَ، الْمُمْسِكِ السَّمَوَاتِ السَّبْعِ أَنْ يَقَعْنَ عَلَى الأَرْضِ إِلاَّ بِإِذْنِهِ، مِنْ شَرِّ عَبْدِكَ فُلاَنٍ، وَجُنُودِهِ وَأَتْبَاعِهِ وَأَشْيَاعِهِ، مِنَ الْجِنِّ وَالإِنْسِ، اللَّهُمَّ كُنْ لِي جَاراً مِنْ شَرِّهِمْ، جَلَّ ثَنَاؤُكَ وَعَزَّ جَارُكَ، وَتَبَارَكَ اسْمُكَ، وَلاَ إِلَهَ غَيْرُكَ.",
                         "latin": "Allāhu akbaru, Allāhu aʿazzu min khalqihi jamīʿan, Allāhu aʿazzu mimmā akhāfu wa aḥdhar, aʿūdhu billāhi alladhī lā ilāha illā huwa, al-mumsiki as-samāwāti as-sabʿi an yaqaʿna ʿalā al-arḍi illā bi-idhnih, min sharri ʿabdika fulān, wa junūdihi wa atbāʿihi wa ashyāʿih, mina al-jinni wal-ins, Allāhumma kun lī jāran min sharrihim, jalla thanāʾuka wa ʿazza jāruk, wa tabāraka ismuk, wa lā ilāha ghayruk (tres veces).",
                         "explanationEs": "Allah es el más Grande, Allah es más poderoso que toda Su creación, Allah es más poderoso que lo que temo y precavo. Me refugio en Allah, no hay más divinidad excepto Él, Quien sostiene los siete cielos para que no caigan sobre la tierra sino por Su permiso, del mal de Tu siervo (Fulano), de sus ejércitos, sus seguidores y sus partidarios, de entre los genios y los humanos. ¡Oh Allah! Sé para mí un protector contra sus males. Gloriosa es Tu alabanza, poderoso es Tu protegido, bendito es Tu nombre y no hay más divinidad que Tú. (Se dice tres veces).",
                         "count": 3,
                         "maxCount": 3
-                  }
-            ]
-      },
-      {
-            "id": "dua_ala_aduw",
-            "titleAr": "الدُّعَاءُ عَلَى العَدُوِّ",
-            "titleEs": "Súplica contra el enemigo",
-            "items": [
+                  },
                   {
                         "itemNumber": 161,
+                        "subtitleAr": "الدُّعَاءُ عَلَى العَدُوِّ",
+                        "subtitleEs": "Súplica contra el enemigo",
                         "text": "اللَّهُمَّ مُنْزِلَ الْكِتَابِ، سَرِيعَ الْحِسَابِ، اهْزِمِ الأَحْزَابَ، اللَّهُمَّ اهْزِمْهُمْ وَزَلْزِلْهُمْ.",
                         "latin": "Allāhumma munzila al-kitāb, sarīʿa al-ḥisāb, ihzimi al-aḥzāb, Allāhumma ihzimhum wa zalzilhum.",
                         "explanationEs": "¡Oh Allah! Revelador del Libro, Rápido en el cómputo, derrota a las facciones enemigas. ¡Oh Allah! Derrótalos y hazlos temblar.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "khawf_qawm",
-            "titleAr": "مَا يَقُولُ مَنْ خَافَ قَوْماً",
-            "titleEs": "Lo que dice quien teme a un grupo de personas",
-            "items": [
+                  },
                   {
                         "itemNumber": 162,
+                        "subtitleAr": "مَا يَقُولُ مَنْ خَافَ قَوْماً",
+                        "subtitleEs": "Lo que dice quien teme a un grupo de personas",
                         "text": "اللَّهُمَّ اكْفِنِيهِمْ بِمَا شِئْتَ.",
                         "latin": "Allāhumma ikfinīhim bi-mā shiʾt.",
                         "explanationEs": "¡Oh Allah! Protégeme de ellos como Tú quieras.",
@@ -1867,12 +1875,14 @@ const azkarData = [
             ]
       },
       {
-            "id": "waswasa_iman",
-            "titleAr": "دُعَاءُ مَنْ أَصَابَهُ وَسْوَسَةٌ فِي الإِيمَانِ",
-            "titleEs": "Súplica para quien sufre de susurros/dudas sobre la fe",
+            "id": "waswasa_shadaid",
+            "titleAr": "الْوَسْوَسَةُ وَالشَّدَائِدُ وَالتَّوْبَةُ",
+            "titleEs": "Susurros, dificultades y arrepentimiento",
             "items": [
                   {
                         "itemNumber": 163,
+                        "subtitleAr": "دُعَاءُ مَنْ أَصَابَهُ وَسْوَسَةٌ فِي الإِيمَانِ",
+                        "subtitleEs": "Súplica para quien sufre de susurros/dudas sobre la fe",
                         "text": "يَسْتَعِيذُ بِاللَّهِ وَيَنْتَهِي عَمَّا شَكَّ فِيهِ.",
                         "latin": "Yastaʿīdhu billāhi wa yantahī ʿammā shakka fīh.",
                         "explanationEs": "Busca refugio en Allah y se abstiene de dar curso a las dudas que le surgen.",
@@ -1881,6 +1891,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 164,
+                        "subtitleAr": "دُعَاءُ مَنْ أَصَابَهُ وَسْوَسَةٌ فِي الإِيمَانِ",
+                        "subtitleEs": "Súplica para quien sufre de susurros/dudas sobre la fe",
                         "text": "آمَنْتُ بِاللَّهِ وَرُسُلِهِ.",
                         "latin": "Āmantu billāhi wa rusulih.",
                         "explanationEs": "Dice: Creo en Allah y en Sus mensajeros.",
@@ -1889,97 +1901,78 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 165,
+                        "subtitleAr": "دُعَاءُ مَنْ أَصَابَهُ وَسْوَسَةٌ فِي الإِيمَانِ",
+                        "subtitleEs": "Súplica para quien sufre de susurros/dudas sobre la fe",
                         "text": "﴿هُوَ ٱلۡأَوَّلُ وَٱلۡأٓخِرُ وَٱلظَّٰهِرُ وَٱلۡبَاطِنُۖ وَهُوَ بِكُلِّ شَيۡءٍ عَلِيمٌ۝﴾.",
                         "latin": "Huwa al-awwalu wal-ākhiru waẓ-ẓāhiru wal-bāṭinu wa huwa bi-kulli shayʾin ʿalīm.",
                         "explanationEs": "Lee las palabras del Altísimo: Él es el Primero y el Último, el Manifiesto y el Oculto. Él conoce todas las cosas.",
                         "count": 1,
                         "maxCount": 1,
-            "note": "سورة الحديد الآية 3",
-            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/057003.mp3"]
-      }
-            ]
-      },
-      {
-            "id": "qada_dayn",
-            "titleAr": "دُعَاءُ قَضَاءِ الدَّيْنِ",
-            "titleEs": "Súplica para el pago de las deudas",
-            "items": [
+                        "note": "سورة الحديد الآية 3",
+                        "audioUrls": [
+                              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/057003.mp3"
+                        ]
+                  },
                   {
                         "itemNumber": 166,
+                        "subtitleAr": "دُعَاءُ قَضَاءِ الدَّيْنِ",
+                        "subtitleEs": "Súplica para el pago de las deudas",
                         "text": "اللَّهُمَّ اكْفِنِي بِحَلاَلِكَ عَنْ حَرَامِكَ، وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ.",
                         "latin": "Allāhumma ikfinī bi-ḥalālika ʿan ḥarāmik, wa aghninī bi-faḍlika ʿamman siwāk.",
                         "explanationEs": "¡Oh Allah! Haz que lo lícito me sea suficiente frente a lo ilícito, y enriquéceme con Tu favor prescindiendo de cualquier otro fuera de Ti.",
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2056.mp3"
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2056.mp3"
                         ]
                   },
                   {
                         "itemNumber": 167,
+                        "subtitleAr": "دُعَاءُ قَضَاءِ الدَّيْنِ",
+                        "subtitleEs": "Súplica para el pago de las deudas",
                         "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَضَلَعِ الدَّيْنِ وَغَلَبَةِ الرِّجَالِ.",
                         "latin": "Allāhumma innī aʿūdhu bika mina al-hammi wal-ḥazan, wal-ʿajzi wal-kasal, wal-bukhli wal-jubn, wa ḍalaʿi ad-dayni wa ghalabati ar-rijāl.",
                         "explanationEs": "¡Oh Allah! Me refugio en Ti de la ansiedad y de la tristeza, de la incapacidad y de la pereza, de la tacañería y de la cobardía, del peso de las deudas y de la opresión de los hombres.",
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2036.mp3"
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2036.mp3"
                         ]
-                  }
-            ]
-      },
-      {
-            "id": "waswasa_salah",
-            "titleAr": "دُعَاءُ الوَسْوَسَةِ فِي الصَّلاَةِ وَالقِرَاءَةِ",
-            "titleEs": "Súplica contra las distracciones y susurros en la oración y la lectura",
-            "items": [
+                  },
                   {
                         "itemNumber": 168,
+                        "subtitleAr": "دُعَاءُ الوَسْوَسَةِ فِي الصَّلاَةِ وَالقِرَاءَةِ",
+                        "subtitleEs": "Súplica contra las distracciones y susurros en la oración y la lectura",
                         "text": "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ، وَاتْفُلْ عَلَى يَسَارِكَ (ثَلاَثاً).",
                         "latin": "Aʿūdhu billāhi mina ash-shayṭāni ar-rajīm (y escupe suavemente a la izquierda tres veces).",
                         "explanationEs": "Dice: Me refugio en Allah del Demonio repudiado, y sopla suavemente hacia su izquierda tres veces.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "istasaba_amr",
-            "titleAr": "دُعَاءُ مَنِ اسْتَصْعَبَ عَلَيْهِ أَمْرٌ",
-            "titleEs": "Súplica para quien se le dificulta un asunto",
-            "items": [
+                  },
                   {
                         "itemNumber": 169,
+                        "subtitleAr": "دُعَاءُ مَنِ اسْتَصْعَبَ عَلَيْهِ أَمْرٌ",
+                        "subtitleEs": "Súplica para quien se le dificulta un asunto",
                         "text": "اللَّهُمَّ لاَ سَهْلَ إِلاَّ مَا جَعَلْتَهُ سَهْلاً، وَأَنْتَ تَجْعَلُ الْحَزْنَ إِذَا شِئْتَ سَهْلاً.",
                         "latin": "Allāhumma lā sahla illā mā jaʿaltahu sahlā, wa anta tajʿalu al-ḥazna idhā shiʾta sahlā.",
                         "explanationEs": "¡Oh Allah! No hay nada fácil salvo lo que Tú haces fácil, y Tú haces que la dificultad, si quieres, sea fácil.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "man_adhnaba",
-            "titleAr": "مَا يَقُولُ وَيَفْعَلُ مَنْ أَذْنَبَ ذَنْباً",
-            "titleEs": "Lo que dice y hace quien comete un pecado",
-            "items": [
+                  },
                   {
                         "itemNumber": 170,
+                        "subtitleAr": "مَا يَقُولُ وَيَفْعَلُ مَنْ أَذْنَبَ ذَنْباً",
+                        "subtitleEs": "Lo que dice y hace quien comete un pecado",
                         "text": "مَا مِنْ عَبْدٍ يُذْنِبُ ذَنْباً فَيُحْسِنُ الطُّهُورَ، ثُمَّ يَقُومُ فَيُصَلِّي رَكْعَتَيْنِ، ثُمَّ يَسْتَغْفِرُ اللَّهَ إِلاَّ غَفَرَ اللَّهُ لَهُ.",
                         "latin": "Mā min ʿabdin yudhnibu dhanban fa-yuḥsinu aṭ-ṭuhūra, thumma yaqūmu fa-yuṣallī rakʿatayni, thumma yastaghfiru Allāha illā ghafara Allāhu lah.",
                         "explanationEs": "No hay siervo que cometa un pecado, se purifique minuciosamente, luego se levante y realice dos unidades de oración (raka'at), e pida perdón a Allah, sin que Allah lo perdone.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "tard_shaytan",
-            "titleAr": "دُعَاءُ طَرْدِ الشَّيْطَانِ وَوَسَاوِسِهِ",
-            "titleEs": "Acciones para ahuyentar al Demonio y sus susurros",
-            "items": [
+                  },
                   {
                         "itemNumber": 171,
+                        "subtitleAr": "دُعَاءُ طَرْدِ الشَّيْطَانِ وَوَسَاوِسِهِ",
+                        "subtitleEs": "Acciones para ahuyentar al Demonio y sus susurros",
                         "text": "الاسْتِعَاذَةُ بِاللَّهِ مِنْهُ.",
                         "latin": "Al-istiʿādhatu billāhi minh.",
                         "explanationEs": "Buscar refugio en Allah de él (diciendo: A'udhu billahi mina ash-shaytan ar-rajim).",
@@ -1988,6 +1981,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 172,
+                        "subtitleAr": "دُعَاءُ طَرْدِ الشَّيْطَانِ وَوَسَاوِسِهِ",
+                        "subtitleEs": "Acciones para ahuyentar al Demonio y sus susurros",
                         "text": "الأَذَانُ.",
                         "latin": "Al-adhān.",
                         "explanationEs": "La llamada a la oración (el Adhán ahuyenta al Demonio).",
@@ -1996,21 +1991,18 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 173,
+                        "subtitleAr": "دُعَاءُ طَرْدِ الشَّيْطَانِ وَوَسَاوِسِهِ",
+                        "subtitleEs": "Acciones para ahuyentar al Demonio y sus susurros",
                         "text": "الأَذْكَارُ وَقِرَاءَةُ الْقُرْآنِ.",
                         "latin": "Al-adhkāru wa qirāʾatu al-qurʾān.",
                         "explanationEs": "Las súplicas de recuerdo y la lectura del Corán.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "lama_yaqau_ma_la_yardah",
-            "titleAr": "الدُّعَاءُ حِينَمَا يَقَعُ مَا لاَ يَرْضَاهُ أَوْ غُلِبَ عَلَى أَمْرِهِ",
-            "titleEs": "Súplica cuando ocurre algo Indeseado o se es superado por las circunstancias",
-            "items": [
+                  },
                   {
                         "itemNumber": 174,
+                        "subtitleAr": "الدُّعَاءُ حِينَمَا يَقَعُ مَا لاَ يَرْضَاهُ أَوْ غُلِبَ عَلَى أَمْرِهِ",
+                        "subtitleEs": "Súplica cuando ocurre algo Indeseado o se es superado por las circunstancias",
                         "text": "قَدَرُ اللَّهِ وَمَا شَاءَ فَعَلَ.",
                         "latin": "Qadaru Allāhi wa mā shāʾa faʿal.",
                         "explanationEs": "Es el decreto de Allah, y Él hace lo que quiere.",
@@ -2020,27 +2012,24 @@ const azkarData = [
             ]
       },
       {
-            "id": "tahniat_mawlud",
-            "titleAr": "تَهْنِئَةُ المَوْلُودِ لَهُ وَجَوَابُهُ",
-            "titleEs": "Felicitación por el nacimiento de un bebé y su respuesta",
+            "id": "awlad",
+            "titleAr": "أَذْكَارُ الْأَوْلَادِ",
+            "titleEs": "Los hijos",
             "items": [
                   {
                         "itemNumber": 175,
+                        "subtitleAr": "تَهْنِئَةُ المَوْلُودِ لَهُ وَجَوَابُهُ",
+                        "subtitleEs": "Felicitación por el nacimiento de un bebé y su respuesta",
                         "text": "بَارَكَ اللَّهُ لَكَ فِي الْمَوْهُوبِ لَكَ، وَشَكَرْتَ الْوَاهِبَ، وَبَلَغَ أَشُدَّهُ، وَرُزِقْتَ بِرَّهُ. وَيَرُدُّ عَلَيْهِ الْمُهَنَّأُ فَيَقُولُ: بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ، وَجَزَاكَ اللَّهُ خَيْراً، وَرَزَقَكَ اللَّهُ مِثْلَهُ، وَأَجْزَلَ ثَوَابَكَ.",
                         "latin": "Bāraka Allāhu laka fī al-mawhūbi lak, wa shakarta al-wāhib, wa balagha ashuddah, wa ruziqta birrah. Wa yaruddu ʿalayhi al-muhannāʾu fa-yaqūl: Bāraka Allāhu laka wa bāraka ʿalayk, wa jazāka Allāhu khayrā, wa razaqaka Allāhu mithlah, wa ajzala thawābak.",
                         "explanationEs": "Que Allah bendiga para ti lo que te ha concedido, agradezcas al Otorgante, llegue a su madurez y seas agraciado con su piedad filial. Y quien recibe la felicitación responde: Que Allah te bendiga y derrame Sus bendiciones sobre ti, te recompense con el bien, te conceda algo semejante y multiplique tu recompensa.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "tawid_awlad",
-            "titleAr": "مَا يُعَوَّذُ بِهِ الأَوْلاَدُ",
-            "titleEs": "Súplica de protección para los niños",
-            "items": [
+                  },
                   {
                         "itemNumber": 176,
+                        "subtitleAr": "مَا يُعَوَّذُ بِهِ الأَوْلاَدُ",
+                        "subtitleEs": "Súplica de protección para los niños",
                         "text": "أُعِيذُكُمَا بِكَلِمَاتِ اللَّهِ التَّامَّةِ مِنْ كُلِّ شَيْطَانٍ وَهَامَّةٍ، وَمِنْ كُلِّ عَيْنٍ لاَمَّةٍ.",
                         "latin": "Uʿīdhukumā bi-kalimāti Allāhi at-tāmmati min kulli shayṭānin wa hāmmah, wa min kulli ʿaynin lāmmah.",
                         "explanationEs": "Los pongo bajo la protección de las palabras perfectas de Allah de todo demonio, de todo animal venenoso y de todo ojo dañino.",
@@ -2050,12 +2039,14 @@ const azkarData = [
             ]
       },
       {
-            "id": "dua_marid",
-            "titleAr": "الدُّعَاءُ لِلْمَرِيضِ فِي عِيَادَتِهِ",
-            "titleEs": "Súplica por el enfermo al visitarlo",
+            "id": "marid",
+            "titleAr": "أَذْكَارُ الْمَرِيضِ",
+            "titleEs": "El enfermo",
             "items": [
                   {
                         "itemNumber": 177,
+                        "subtitleAr": "الدُّعَاءُ لِلْمَرِيضِ فِي عِيَادَتِهِ",
+                        "subtitleEs": "Súplica por el enfermo al visitarlo",
                         "text": "لاَ بَأْسَ طَهُورٌ إِنْ شَاءَ اللَّهُ.",
                         "latin": "Lā baʾsa ṭahūrun in shāʾa Allāh.",
                         "explanationEs": "No hay mal alguno, esto es una purificación, si Allah quiere.",
@@ -2064,36 +2055,28 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 178,
+                        "subtitleAr": "الدُّعَاءُ لِلْمَرِيضِ فِي عِيَادَتِهِ",
+                        "subtitleEs": "Súplica por el enfermo al visitarlo",
                         "text": "أَسْأَلُ اللَّهَ الْعَظِيمَ رَبَّ الْعَرْشِ الْعَظِيمِ أَنْ يَشْفِيَكَ.",
                         "latin": "Asʾalu Allāha al-ʿaẓīma rabba al-ʿarshi al-ʿaẓīmi an yashfiyak.",
                         "explanationEs": "Ruego a Allah el Grandioso, Señor del Trono grandioso, que te sane. (Siete veces).",
                         "count": 7,
                         "maxCount": 7
-                  }
-            ]
-      },
-      {
-            "id": "fadl_iyadat_marid",
-            "titleAr": "فَضْلُ عِيَادَةِ المَرِيضِ",
-            "titleEs": "Mérito de visitar al enfermo",
-            "items": [
+                  },
                   {
                         "itemNumber": 179,
+                        "subtitleAr": "فَضْلُ عِيَادَةِ المَرِيضِ",
+                        "subtitleEs": "Mérito de visitar al enfermo",
                         "text": "قَالَ النَّبِيُّ صلى الله عليه وسلم: إِذَا عَادَ الرَّجُلُ أَخَاهُ الْمُسْلِمَ مَشَى فِي خِرَافَةِ الْجَنَّةِ حَتَّى يَجْلِسَ، فَإِذَا جَلَسَ غَمَرَتْهُ الرَّحْمَةُ، فَإِنْ كَانَ غُدْوَةً صَلَّى عَلَيْهِ سَبْعُونَ أَلْفَ مَلَكٍ حَتَّى يُمْسِيَ، وَإِنْ كَانَ مَسَاءً صَلَّى عَلَيْهِ سَبْعُونَ أَلْفَ مَلَكٍ حَتَّى يُصْبِحَ.",
                         "latin": "Qāla an-nabiyyu ṣallā Allāhu ʿalayhi wa sallam: Idhā ʿāda ar-rajulu akhāhu al-muslima mashā fī khirāfati al-jannati ḥattā yajlis, fa-idhā jalasa ghamarathuhu ar-raḥmah, fa-in kāna ghudwatan ṣallā ʿalayhi sabʿūna alfa malakin ḥattā yumsiya, wa in kāna masāʾan ṣallā ʿalayhi sabʿūna alfa malakin ḥattā yuṣbiḥ.",
                         "explanationEs": "Dijo el Profeta (que la paz y las bendiciones de Allah sean con él): Cuando un musulmán visita a su hermano musulmán enfermo, camina recolectando los frutos del Paraíso hasta que se sienta; y cuando se sienta, la misericordia lo envuelve. Si es por la mañana, setenta mil ángeles piden por él hasta la tarde; y si es por la tarde, setenta mil ángeles piden por él hasta la mañana.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "marid_yaisa",
-            "titleAr": "دُعَاءُ المَرِيضِ الَّذِي يَئِسَ مِنْ حَيَاتِهِ",
-            "titleEs": "Súplica del enfermo terminal o que pierde la esperanza de vida",
-            "items": [
+                  },
                   {
                         "itemNumber": 180,
+                        "subtitleAr": "دُعَاءُ المَرِيضِ الَّذِي يَئِسَ مِنْ حَيَاتِهِ",
+                        "subtitleEs": "Súplica del enfermo terminal o que pierde la esperanza de vida",
                         "text": "اللَّهُمَّ اغْفِرْ لِي، وَارْحَمْنِي، وَأَلْحِقْنِي بِالرَّفِيقِ الأَعْلَى.",
                         "latin": "Allāhumma ighfir lī, warḥamnī, wa al-ḥiqnī bir-rafīqi al-aʿlā.",
                         "explanationEs": "¡Oh Allah! Perdóname, ten misericordia de mí y únete a mí con el Compañero Supremo (Allah en el nivel más alto del Paraíso).",
@@ -2102,6 +2085,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 181,
+                        "subtitleAr": "دُعَاءُ المَرِيضِ الَّذِي يَئِسَ مِنْ حَيَاتِهِ",
+                        "subtitleEs": "Súplica del enfermo terminal o que pierde la esperanza de vida",
                         "text": "لاَ إِلَهَ إِلاَّ اللَّهُ إِنَّ لِلْمَوْتِ سَكَرَاتٍ.",
                         "latin": "Lā ilāha illā Allāhu inna lil-mawti sakarāt.",
                         "explanationEs": "No hay más divinidad que Allah; ciertamente la muerte tiene sus agonías.",
@@ -2110,21 +2095,18 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 182,
+                        "subtitleAr": "دُعَاءُ المَرِيضِ الَّذِي يَئِسَ مِنْ حَيَاتِهِ",
+                        "subtitleEs": "Súplica del enfermo terminal o que pierde la esperanza de vida",
                         "text": "لاَ إِلَهَ إِلاَّ اللَّهُ وَاللَّهُ أَكْبَرُ، لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ، لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لاَ إِلَهَ إِلاَّ اللَّهُ لَهُ المُلْكُ وَلَهُ الْحَمْدُ، لاَ إِلَهَ إِلاَّ اللَّهُ وَلاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللَّهِ.",
                         "latin": "Lā ilāha illā Allāhu wallāhu akbar, lā ilāha illā Allāhu waḥdah, lā ilāha illā Allāhu waḥdahu lā sharīka lah, lā ilāha illā Allāhu lahu al-mulku wa lahu al-ḥamd, lā ilāha illā Allāhu wa lā ḥawla wa lā quwwata illā billāh.",
                         "explanationEs": "No hay más divinidad que Allah y Allah es el más Grande. No hay más divinidad que Allah, Único. No hay más divinidad que Allah, Único, sin asociados. No hay más divinidad que Allah, Suyo es el reino y Suya es la alabanza. No hay más divinidad que Allah y no hay fuerza ni poder sino en Allah.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "talqin_muhtadar",
-            "titleAr": "تَلْقِينُ المُحْتَضَرِ",
-            "titleEs": "Inculcar el testimonio al moribundo",
-            "items": [
+                  },
                   {
                         "itemNumber": 183,
+                        "subtitleAr": "تَلْقِينُ المُحْتَضَرِ",
+                        "subtitleEs": "Inculcar el testimonio al moribundo",
                         "text": "مَنْ كَانَ آخِرُ كَلاَمِهِ لاَ إِلَهَ إِلاَّ اللَّهُ دَخَلَ الْجَنَّةَ.",
                         "latin": "Man kāna ākhiru kalāmihi lā ilāha illā Allāhu dakhala al-jannah.",
                         "explanationEs": "Aquel cuyas últimas palabras sean 'no hay más divinidad que Allah', entrará al Paraíso.",
@@ -2134,42 +2116,34 @@ const azkarData = [
             ]
       },
       {
-            "id": "dua_musibah",
-            "titleAr": "دُعَاءُ مَنْ أَصَابَهُ مُصِيبَةٌ",
-            "titleEs": "Súplica de quien sufre una desgracia o calamidad",
+            "id": "janaiz",
+            "titleAr": "أَذْكَارُ الْمُصِيبَةِ وَالْجَنَائِزِ",
+            "titleEs": "Desgracia, fallecimiento y entierro",
             "items": [
                   {
                         "itemNumber": 184,
+                        "subtitleAr": "دُعَاءُ مَنْ أَصَابَهُ مُصِيبَةٌ",
+                        "subtitleEs": "Súplica de quien sufre una desgracia o calamidad",
                         "text": "إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ، اللَّهُمَّ أْجُرْنِي فِي مُصِيبَتِي، وَأَخْلِفْ لِي خَيْراً مِنْهَا.",
                         "latin": "Innā lillāhi wa innā ilayhi rājiʿūn, Allāhummaʾ-jurnī fī muṣībatī, wa akhlif lī khayran minhā.",
                         "explanationEs": "Ciertamente pertenecemos a Allah y a Él hemos de retornar. ¡Oh Allah! Recompénsame en mi desgracia y reemplázamela por algo mejor.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "ighmad_mayyit",
-            "titleAr": "الدُّعَاءُ عِنْدَ إِغْمَاضِ المَيِّتِ",
-            "titleEs": "Súplica al cerrar los ojos al difunto",
-            "items": [
+                  },
                   {
                         "itemNumber": 185,
+                        "subtitleAr": "الدُّعَاءُ عِنْدَ إِغْمَاضِ المَيِّتِ",
+                        "subtitleEs": "Súplica al cerrar los ojos al difunto",
                         "text": "اللَّهُمَّ اغْفِرْ لِفُلاَنٍ (بِاسْمِهِ) وَارْفَعْ دَرَجَتَهُ فِي الْمَهْدِيِّينَ، وَاخْلُفْهُ فِي عَقِبِهِ فِي الْغَابِرِينَ، وَاغْفِرْ لَنَا وَلَهُ يَا رَبَّ الْعَالَمِينَ، وَافْسَحْ لَهُ فِي قَبْرِهِ، وَنَوِّرْ لَهُ فِيهِ.",
                         "latin": "Allāhumma ighfir li-fulān (por su nombre) warfaʿ darajatahu fī al-mahdiyyīn, wakhlufhu fī ʿaqibihi fī al-ghābirīn, waghfir lanā wa lahu yā rabba al-ʿālamīn, wafsaḥ lahu fī qabrih, wa nawwir lahu fīh.",
                         "explanationEs": "¡Oh Allah! Perdona a (menciona su nombre) y eleva su rango entre los bien guiados, sé Su sustituto para sus descendientes que quedan atrás, perdónanos a nosotros y a él, ¡oh Señor de los mundos!, ensancha para él su tumba e ilumínasela.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "dua_mayyit_salah",
-            "titleAr": "الدُّعَاءُ لِلْمَيِّتِ فِي الصَّلاَةِ عَلَيْهِ",
-            "titleEs": "Súplica por el difunto en la oración fúnebre (Janazah)",
-            "items": [
+                  },
                   {
                         "itemNumber": 186,
+                        "subtitleAr": "الدُّعَاءُ لِلْمَيِّتِ فِي الصَّلاَةِ عَلَيْهِ",
+                        "subtitleEs": "Súplica por el difunto en la oración fúnebre (Janazah)",
                         "text": "اللَّهُمَّ اغْفِرْ لَهُ وَارْحَمْهُ، وَعَافِهِ، وَاعْفُ عَنْهُ، وَأَكْرِمْ نُزُلَهُ، وَوَسِّعْ مُدْخَلَهُ، وَاغْسِلْهُ بِالْمَاءِ وَالثَّلْجِ وَالْبَرَدِ، وَنَقِّهِ مِنَ الْخَطَايَا كَمَا نَقَّيْتَ الثَّوْبَ الأَبْيَضَ مِنَ الدَّنَسِ، وَأَبْدِلْهُ دَاراً خَيْراً مِنْ دَارِهِ، وَأَهْلاً خَيْراً مِنْ أَهْلِهِ، وَزَوْجاً خَيْراً مِنْ زَوْجِهِ، وَأَدْخِلْهُ الْجَنَّةَ، وَأَعِذْهُ مِنْ عَذَابِ القَبْرِ [وَعَذَابِ النَّارِ].",
                         "latin": "Allāhumma ighfir lahu warḥamhu, wa ʿāfihi, waʿfu ʿanhu, wa akrim nuzulahu, wa wassiʿ mudkhalahu, waghsilhu bil-māʾi wath-thalji wal-barad, wa naqqihi mina al-khaṭāyā kamā naqqayta ath-thawba al-abyaḍa mina ad-danas, wa abdilhu dāran khayran min dārih, wa ahlan khayran min ahlih, wa zawjan khayran min zawjih, wa adkhilhu al-jannah, wa aʿidhhu min ʿadhābi al-qabr [wa ʿadhābi an-nār].",
                         "explanationEs": "¡Oh Allah! Perdónalo y ten misericordia de él, dale bienestar y perdónalo, honra su morada y ensancha su entrada; lávalo con agua, nieve y granizo, y purifícalo de los pecados como purificas el vestido blanco de la impureza. Concédele una morada mejor que su morada, una familia mejor que su familia, un cónyuge mejor que su cónyuge, introdúcelo en el Paraíso y protégelo del castigo de la tumba [y del castigo del Fuego].",
@@ -2178,6 +2152,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 187,
+                        "subtitleAr": "الدُّعَاءُ لِلْمَيِّتِ فِي الصَّلاَةِ عَلَيْهِ",
+                        "subtitleEs": "Súplica por el difunto en la oración fúnebre (Janazah)",
                         "text": "اللَّهُمَّ اغْفِرْ لِحَيِّنَا وَمَيِّتِنَا، وَشَاهِدِنَا وَغَائِبِنَا، وَصَغِيرِنَا وَكَبِيرِنَا، وَذَكَرِنَا وَأُنْثَانَا. اللَّهُمَّ مَنْ أَحْيَيْتَهُ مِنَّا فَأَحْيِهِ عَلَى الإِسْلاَمِ، وَمَنْ تَوَفَّيْتَهُ مِنَّا فَتَوَفَّهُ عَلَى الإِيمَانِ، اللَّهُمَّ لاَ تَحْرِمْنَا أَجْرَهُ، وَلاَ تُضِلَّنَا بَعْدَهُ.",
                         "latin": "Allāhumma ighfir li-ḥayyinā wa mayyitinā, wa shāhidinā wa ghāʾibinā, wa ṣaghīrinā wa kabīrinā, wa dhakarinā wa unthānā. Allāhumma man aḥyaytahu minnā fa-aḥyihi ʿalā al-islām, wa man tawaffaytahu minnā fa-tawaffahu ʿalā al-īmān. Allāhumma lā taḥrimnā ajrah, wa lā tuḍillanā baʿdah.",
                         "explanationEs": "¡Oh Allah! Perdona a nuestros vivos y a nuestros muertos, a los presentes y a los ausentes, a nuestros pequeños y a nuestros grandes, a nuestros hombres y a nuestras mujeres. ¡Oh Allah! A quien de nosotros mantengas con vida, hazlo vivir en el Islam, y a quien hagas morir, hazlo morir en la fe. ¡Oh Allah! No nos prives de su recompensa ni nos extravíes después de él.",
@@ -2186,6 +2162,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 188,
+                        "subtitleAr": "الدُّعَاءُ لِلْمَيِّتِ فِي الصَّلاَةِ عَلَيْهِ",
+                        "subtitleEs": "Súplica por el difunto en la oración fúnebre (Janazah)",
                         "text": "اللَّهُمَّ إِنَّ فُلاَنَ بْنَ فُلاَنٍ فِي ذِمَّتِكَ، وَحَبْلِ جِوَارِكَ، فَقِهِ مِنْ فِتْنَةِ الْقَبْرِ، وَعَذَابِ النَّارِ، وَأَنْتَ أَهْلُ الْوَفَاءِ وَالْحَقِّ، فَاغْفِرْ لَهُ وَارْحَمْهُ إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ.",
                         "latin": "Allāhumma inna fulāna ibna fulān fī dhimmatika, wa ḥabli jiwārik, fa-qihi min fitnati al-qabr, wa ʿadhābi an-nār, wa anta ahlu al-wafāʾi wal-ḥaqq, faghfir lahu warḥamhu innaka anta al-ghafūru ar-raḥīm.",
                         "explanationEs": "¡Oh Allah! Ciertamente (Fulano hijo de Fulano) está bajo Tu protección y Tu amparo; protégelo de la prueba de la tumba y del castigo del Fuego. Tú eres el Dueño del cumplimiento y de la Verdad, perdónalo y ten misericordia de él, ciertamente Tú eres el Absolvedor, el Misericordioso.",
@@ -2194,21 +2172,18 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 189,
+                        "subtitleAr": "الدُّعَاءُ لِلْمَيِّتِ فِي الصَّلاَةِ عَلَيْهِ",
+                        "subtitleEs": "Súplica por el difunto en la oración fúnebre (Janazah)",
                         "text": "اللَّهُمَّ عَبْدُكَ وَابْنُ أَمَتِكَ احْتَاجَ إِلَى رَحْمَتِكَ، وَأَنْتَ غَنِيٌّ عَنْ عَذَابِهِ، إِنْ كَانَ مُحْسِناً فَزِدْ فِي حَسَنَاتِهِ، وَإِنْ كَانَ مُسِيئاً فَتَجَاوَزْ عَنْهُ.",
                         "latin": "Allāhumma ʿabduka wabnu amatika iḥtāja ilā raḥmatik, wa anta ghaniyyun ʿan ʿadhābih, in kāna muḥsinan fa-zid fī ḥasanātih, wa in kāna musīʾan fa-tajāwaz ʿanh.",
                         "explanationEs": "¡Oh Allah! Tu siervo e hijo de Tu sierva está necesitado de Tu misericordia, y Tú no necesitas de su castigo. Si fue benefactor, aumenta sus buenas obras; y si fue pecador, pasa por alto sus faltas.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "dua_farat",
-            "titleAr": "الدُّعَاءُ لِلْفَرَطِ فِي الصَّلاَةِ عَلَيْهِ",
-            "titleEs": "Súplica en la oración fúnebre por un niño fallecido (Farat)",
-            "items": [
+                  },
                   {
                         "itemNumber": 190,
+                        "subtitleAr": "الدُّعَاءُ لِلْفَرَطِ فِي الصَّلاَةِ عَلَيْهِ",
+                        "subtitleEs": "Súplica en la oración fúnebre por un niño fallecido (Farat)",
                         "text": "اللَّهُمَّ أَعِذْهُ مِنْ عَذَابِ الْقَبْرِ. [اللَّهُمَّ اجْعَلْهُ فَرَطاً وَذُخْراً لِوَالِدَيْهِ، وَشَفِيعاً مُجَاباً، اللَّهُمَّ ثَقِّلْ بِهِ مَوَازِينَهُمَا، وَأَعْظِمْ بِهِ أُجُورَهُمَا، وَأَلْحِقْهُ بِصَالِحِ الْمُؤْمِنِينَ، وَاجْعَلْهُ فِي كَفَالَةِ إِبْرَاهِيمَ، وَقِهِ بِرَحْمَتِكَ عَذَابَ الْجَحِيمِ، وَأَبْدِلْهُ دَاراً خَيْراً مِنْ دَارِهِ، وَأَهْلاً خَيْراً مِنْ أَهْلِهِ، اللَّهُمَّ اغْفِرْ لِأَسْلاَفِنَا، وَأَفْرَاطِنَا، وَمَنْ سَبَقَنَا بِالإِيمَانِ].",
                         "latin": "Allāhumma aʿidhhu min ʿadhābi al-qabr. [Allāhumma ijʿalhu faraṭan wa dhukhran li-wālidayh, wa shafīʿan mujābā, Allāhumma thaqqil bihi mawāzīnahumā, wa aʿẓim bihi ujūrahumā, wa al-ḥiqhu bi-ṣāliḥi al-muʾminīn, wa ijʿalhu fī kafālati Ibrāhīm, wa qihi bi-raḥmatika ʿadhāba al-jaḥīm, wa abdilhu dāran khayran min dārih, wa ahlan khayran min ahlih, Allāhumma ighfir li-aslāfinā, wa afrāṭinā, wa man sabaqanā bil-īmān].",
                         "explanationEs": "¡Oh Allah! Protégelo del castigo de la tumba. [¡Oh Allah! Hazlo un precursor y un tesoro para sus padres, y un intercesor cuya intercesión sea aceptada. ¡Oh Allah! Haz pesada con él la balanza de sus padres, engrandece con él sus recompensas, únelo a los creyentes piadosos, ponlo bajo el cuidado de Abraham y líbralo con Tu misericordia del castigo del Infierno. Concédele una morada mejor que su morada y una familia mejor que su familia. ¡Oh Allah! Perdona a nuestros antepasados, a nuestros niños fallecidos y a quienes nos precedieron en la fe].",
@@ -2217,66 +2192,48 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 191,
+                        "subtitleAr": "الدُّعَاءُ لِلْفَرَطِ فِي الصَّلاَةِ عَلَيْهِ",
+                        "subtitleEs": "Súplica en la oración fúnebre por un niño fallecido (Farat)",
                         "text": "اللَّهُمَّ اجْعَلْهُ لَنَا فَرَطاً، وَسَلَفاً، وَأَجْراً.",
                         "latin": "Allāhumma ijʿalhu lanā faraṭan, wa salafan, wa ajran.",
                         "explanationEs": "¡Oh Allah! Hazlo para nosotros un precursor, un antecesor y una recompensa.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "tazia",
-            "titleAr": "دُعَاءُ التَّعْزِيَةِ",
-            "titleEs": "Súplica de pésame o condolencia",
-            "items": [
+                  },
                   {
                         "itemNumber": 192,
+                        "subtitleAr": "دُعَاءُ التَّعْزِيَةِ",
+                        "subtitleEs": "Súplica de pésame o condolencia",
                         "text": "إِنَّ لِلَّهِ مَا أَخَذَ، وَلَهُ مَا أَعْطَى، وَكُلُّ شَيْءٍ عِنْدَهُ بِأَجَلٍ مُسَمًّى... فَلْتَصْبِرْ وَلْتَحْتَسِبْ. [أَعْظَمَ اللَّهُ أَجْرَكَ، وَأَحْسَنَ عَزَاءَكَ، وَغَفَرَ لِمَيِّتِكَ].",
                         "latin": "Inna lillāhi mā akhadha, wa lahu mā aʿṭā, wa kullu shayʾin ʿindahu bi-ajalin musammā... fal-taṣbir wal-taḥtasib. [Aʿẓama Allāhu ajrak, wa aḥsana ʿazāʾak, wa ghafara li-mayyitik].",
                         "explanationEs": "Ciertamente a Allah pertenece lo que toma y lo que da, y todo para Él tiene un plazo fijado... Ten paciencia y busca la recompensa divina. [Que Allah engrandezca tu recompensa, consolide tu consuelo y perdone a tu difunto].",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "idkhal_mayyit_qabr",
-            "titleAr": "الدُّعَاءُ عِنْدَ إِدْخَالِ المَيِّتِ القَبْرَ",
-            "titleEs": "Súplica al introducir al difunto en la tumba",
-            "items": [
+                  },
                   {
                         "itemNumber": 193,
+                        "subtitleAr": "الدُّعَاءُ عِنْدَ إِدْخَالِ المَيِّتِ القَبْرَ",
+                        "subtitleEs": "Súplica al introducir al difunto en la tumba",
                         "text": "بِسْمِ اللَّهِ وَعَلَى سُنَّةِ رَسُولِ اللَّهِ.",
                         "latin": "Bismillāhi wa ʿalā sunnati rasūlillāh.",
                         "explanationEs": "En el nombre de Allah y siguiendo la Sunnah (tradición) del Mensajero de Allah.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "bada_dafn_mayyit",
-            "titleAr": "الدُّعَاءُ بَعْدَ دَفْنِ المَيِّتِ",
-            "titleEs": "Súplica después de sepultar al difunto",
-            "items": [
+                  },
                   {
                         "itemNumber": 194,
+                        "subtitleAr": "الدُّعَاءُ بَعْدَ دَفْنِ المَيِّتِ",
+                        "subtitleEs": "Súplica después de sepultar al difunto",
                         "text": "اللَّهُمَّ اغْفِرْ لَهُ، اللَّهُمَّ ثَبِّتْهُ.",
                         "latin": "Allāhumma ighfir lah, Allāhumma thabbith.",
                         "explanationEs": "¡Oh Allah! Perdónalo. ¡Oh Allah! Manténlo firme (ante las preguntas de los ángeles).",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "ziyarat_qubur",
-            "titleAr": "دُعَاءُ زِيَارَةِ القُبُورِ",
-            "titleEs": "Súplica al visitar los cementerios",
-            "items": [
+                  },
                   {
                         "itemNumber": 195,
+                        "subtitleAr": "دُعَاءُ زِيَارَةِ القُبُورِ",
+                        "subtitleEs": "Súplica al visitar los cementerios",
                         "text": "السَّلاَمُ عَلَيْكُمْ أَهْلَ الدِّيَارِ، مِنَ الْمُؤْمِنِينَ وَالْمُسْلِمِينَ، وَإِنَّا إِنْ شَاءَ اللَّهُ بِكُمْ لاَحِقُونَ، [وَيَرْحَمُ اللَّهُ الْمُسْتَقْدِمِينَ مِنَّا وَالْمُسْتَأْخِرِينَ]، أَسْأَلُ اللَّهَ لَنَا وَلَكُمُ الْعَافِيَةَ.",
                         "latin": "As-salāmu ʿalaykum ahla ad-diyār, mina al-muʾminīna wal-muslimīn, wa innā in shāʾa Allāhu bikum lāḥiqūn, [wa yarḥamu Allāhu al-mustaqdimīna minnā wal-mustaʾkhirīn], asʾalu Allāha lanā wa lakumu al-ʿāfiyah.",
                         "explanationEs": "La paz sea con vosotros, habitantes de las moradas, de entre los creyentes y los musulmanes. Ciertamente nosotros, si Allah quiere, nos uniremos a vosotros. [Que Allah tenga misericordia de los primeros y de los últimos de entre nosotros]. Pido a Allah el bienestar para nosotros y para vosotros.",
@@ -2286,12 +2243,14 @@ const azkarData = [
             ]
       },
       {
-            "id": "dua_rih",
-            "titleAr": "دُعَاءُ الرِّيحِ",
-            "titleEs": "Súplica cuando sopla el viento",
+            "id": "rih_matar",
+            "titleAr": "أَذْكَارُ الرِّيحِ وَالْمَطَرِ وَالْهِلَالِ",
+            "titleEs": "Viento, lluvia y luna nueva",
             "items": [
                   {
                         "itemNumber": 196,
+                        "subtitleAr": "دُعَاءُ الرِّيحِ",
+                        "subtitleEs": "Súplica cuando sopla el viento",
                         "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَهَا، وَأَعُوذُ بِكَ مِنْ شَرِّهَا.",
                         "latin": "Allāhumma innī asʾaluka khayrahā, wa aʿūdhu bika min sharrihā.",
                         "explanationEs": "¡Oh Allah! Te pido su bien y me refugio en Ti de su mal.",
@@ -2300,36 +2259,28 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 197,
+                        "subtitleAr": "دُعَاءُ الرِّيحِ",
+                        "subtitleEs": "Súplica cuando sopla el viento",
                         "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَهَا، وَخَيْرَ مَا فِيهَا، وَخَيْرَ مَا أُرْسِلَتْ بِهِ، وَأَعُوذُ بِكَ مِنْ شَرِّهَا، وَشَرِّ مَا فِيهَا، وَشَرِّ مَا أُرْسِلَتْ بِهِ.",
                         "latin": "Allāhumma innī asʾaluka khayrahā, wa khayra mā fīhā, wa khayra mā ursilat bih, wa aʿūdhu bika min sharrihā, wa sharri mā fīhā, wa sharri mā ursilat bih.",
                         "explanationEs": "¡Oh Allah! Te pido su bien, el bien de lo que hay en él y el bien con el que ha sido enviado; y me refugio en Ti de su mal, del mal de lo que hay en él y del mal con el que ha sido enviado.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "dua_rad",
-            "titleAr": "دُعَاءُ الرَّعْدِ",
-            "titleEs": "Súplica al escuchar el trueno",
-            "items": [
+                  },
                   {
                         "itemNumber": 198,
+                        "subtitleAr": "دُعَاءُ الرَّعْدِ",
+                        "subtitleEs": "Súplica al escuchar el trueno",
                         "text": "سُبْحَانَ الَّذِي يُسَبِّحُ الرَّعْدُ بِحَمْدِهِ وَالْمَلاَئِكَةُ مِنْ خِيفَتِهِ.",
                         "latin": "Subḥāna alladhī yusabbiḥu ar-raʿdu bi-ḥamdihi wal-malāʾikatu min khīfatih.",
                         "explanationEs": "Glorificado sea Aquel a Quien el trueno alaba con Sus elogios y los ángeles por el temor a Él.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "istisqa",
-            "titleAr": "مِنْ أَدْعِيَةِ الاسْتِسْقَاءِ",
-            "titleEs": "Súplicas para pedir la lluvia (Istisqa')",
-            "items": [
+                  },
                   {
                         "itemNumber": 199,
+                        "subtitleAr": "مِنْ أَدْعِيَةِ الاسْتِسْقَاءِ",
+                        "subtitleEs": "Súplicas para pedir la lluvia (Istisqa')",
                         "text": "اللَّهُمَّ اسْقِنَا غَيْثاً مُغِيثاً مَرِيئاً مَرِيعاً، نَافِعاً غَيْرَ ضَارٍّ، عَاجِلاً غَيْرَ آجِلٍ.",
                         "latin": "Allāhumma isqinā ghaythan mughīthan marīʾan marīʿā, nāfiʿan ghayra ḍārr, ʿājilan ghayra ājil.",
                         "explanationEs": "¡Oh Allah! Envíanos una lluvia socorredora, provechosa, fértil, beneficiosa y no perjudicial, pronta y no demorada.",
@@ -2338,6 +2289,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 200,
+                        "subtitleAr": "مِنْ أَدْعِيَةِ الاسْتِسْقَاءِ",
+                        "subtitleEs": "Súplicas para pedir la lluvia (Istisqa')",
                         "text": "اللَّهُمَّ أَغِثْنَا، اللَّهُمَّ أَغِثْنَا، اللَّهُمَّ أَغِثْنَا.",
                         "latin": "Allāhumma aghithnā, Allāhumma aghithnā, Allāhumma aghithnā.",
                         "explanationEs": "¡Oh Allah! Socórrenos con lluvia, ¡oh Allah! Socórrenos con lluvia, ¡oh Allah! Socórrenos con lluvia.",
@@ -2346,66 +2299,48 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 201,
+                        "subtitleAr": "مِنْ أَدْعِيَةِ الاسْتِسْقَاءِ",
+                        "subtitleEs": "Súplicas para pedir la lluvia (Istisqa')",
                         "text": "اللَّهُمَّ اسْقِ عِبَادَكَ، وَبَهَائِمَكَ، وَانْشُرْ رَحْمَتَكَ، وَأَحْيِي بَلَدَكَ الْمَيِّتَ.",
                         "latin": "Allāhumma isqi ʿibādaka, wa bahāʾimaka, wan-shur raḥmataka, wa aḥyi baladaka al-mayyit.",
                         "explanationEs": "¡Oh Allah! Da de beber a Tus siervos y a Tus animales, extiende Tu misericordia y da vida a Tu tierra muerta.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "nuzul_matar",
-            "titleAr": "الدُّعَاءُ إِذَا نَزَلَ المَطَرُ",
-            "titleEs": "Súplica cuando comienza a llover",
-            "items": [
+                  },
                   {
                         "itemNumber": 202,
+                        "subtitleAr": "الدُّعَاءُ إِذَا نَزَلَ المَطَرُ",
+                        "subtitleEs": "Súplica cuando comienza a llover",
                         "text": "اللَّهُمَّ صَيِّباً نَافِعاً.",
                         "latin": "Allāhumma ṣayyiban nāfiʿan.",
                         "explanationEs": "¡Oh Allah! Haz que sea una lluvia abundante y beneficiosa.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "bada_matar",
-            "titleAr": "الذِّكْرُ بَعْدَ نُزُولِ المَطَرِ",
-            "titleEs": "Súplica después de la lluvia",
-            "items": [
+                  },
                   {
                         "itemNumber": 203,
+                        "subtitleAr": "الذِّكْرُ بَعْدَ نُزُولِ المَطَرِ",
+                        "subtitleEs": "Súplica después de la lluvia",
                         "text": "مُطِرْنَا بِفَضْلِ اللَّهِ وَرَحْمَتِهِ.",
                         "latin": "Muṭirnā bi-faḍli Allāhi wa raḥmatih.",
                         "explanationEs": "Ha llovido sobre nosotros por la gracia de Allah y Su misericordia.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "istishqa",
-            "titleAr": "مِنْ أَدْعِيَةِ الاسْتِصْحَاءِ",
-            "titleEs": "Súplica para detener el exceso de lluvia (Istishā')",
-            "items": [
+                  },
                   {
                         "itemNumber": 204,
+                        "subtitleAr": "مِنْ أَدْعِيَةِ الاسْتِصْحَاءِ",
+                        "subtitleEs": "Súplica para detener el exceso de lluvia (Istishā')",
                         "text": "اللَّهُمَّ حَوَالَيْنَا وَلاَ عَلَيْنَا، اللَّهُمَّ عَلَى الآكَامِ وَالظِّرَابِ، وَبُطُونِ الأَوْدِيَةِ، وَمَنَابِتِ الشَّجَرِ.",
                         "latin": "Allāhumma ḥawālaynā wa lā ʿalaynā, Allāhumma ʿalā al-ākāmi waẓ-ẓirāb, wa buṭūni al-awdiyah, wa manābiti ash-shajar.",
                         "explanationEs": "¡Oh Allah! Que llueva a nuestro alrededor y no sobre nosotros; ¡oh Allah! Sobre las colinas, las montañas, los lechos de los valles y donde crecen los árboles.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "ruyat_hilal",
-            "titleAr": "دُعَاءُ رُؤْيَةِ الهِلاَلِ",
-            "titleEs": "Súplica al avistar la luna creciente (Creciente lunar)",
-            "items": [
+                  },
                   {
                         "itemNumber": 205,
+                        "subtitleAr": "دُعَاءُ رُؤْيَةِ الهِلاَلِ",
+                        "subtitleEs": "Súplica al avistar la luna creciente (Creciente lunar)",
                         "text": "اللَّهُ أَكْبَرُ، اللَّهُمَّ أَهِلَّهُ عَلَيْنَا بِالأَمْنِ وَالإِيمَانِ، وَالسَّلاَمَةِ وَالإِسْلاَمِ، وَالتَّوْفِيقِ لِمَا تُحِبُّ رَبَّنَا وَتَرْضَى، رَبُّنَا وَرَبُّكَ اللَّهُ.",
                         "latin": "Allāhu akbar, Allāhumma ahillahu ʿalaynā bil-amni wal-īmān, was-salāmati wal-islām, wat-tawfīqi limā tuḥibbu rabbanā wa tarḍā, rabbunā wa rabbuka Allāh.",
                         "explanationEs": "Allah es el más Grande. ¡Oh Allah! Haz que este creciente surja sobre nosotros con seguridad y fe, paz e Islam, y con éxito en lo que Tú amas, Señor nuestro, y te complace. Nuestro Señor y tu Señor (¡oh luna!) es Allah.",
@@ -2415,12 +2350,14 @@ const azkarData = [
             ]
       },
       {
-            "id": "iftar_saim",
-            "titleAr": "الدُّعَاءُ عِنْدَ إِفْطَارِ الصَّائِمِ",
-            "titleEs": "Súplica al romper el ayuno",
+            "id": "taam_siyam",
+            "titleAr": "أَذْكَارُ الطَّعَامِ وَالصِّيَامِ",
+            "titleEs": "Comida y ayuno",
             "items": [
                   {
                         "itemNumber": 206,
+                        "subtitleAr": "الدُّعَاءُ عِنْدَ إِفْطَارِ الصَّائِمِ",
+                        "subtitleEs": "Súplica al romper el ayuno",
                         "text": "ذَهَبَ الظَّمَأُ وَابْتَلَّتِ العُرُوقُ، وَثَبَتَ الأَجْرُ إِنْ شَاءَ اللَّهُ.",
                         "latin": "Dhahaba aẓ-ẓamaʾu wabtallati al-ʿurūq, wa thabata al-ajru in shāʾa Allāh.",
                         "explanationEs": "La sed se ha ido, las venas se han humedecido y la recompensa se ha confirmado, si Allah quiere.",
@@ -2429,21 +2366,18 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 207,
+                        "subtitleAr": "الدُّعَاءُ عِنْدَ إِفْطَارِ الصَّائِمِ",
+                        "subtitleEs": "Súplica al romper el ayuno",
                         "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ بِرَحْمَتِكَ الَّتِي وَسِعَتْ كُلَّ شَيْءٍ أَنْ تَغْفِرَ لِي.",
                         "latin": "Allāhumma innī asʾaluka bi-raḥmatika allatī wasiʿat kulla shayʾin an taghfira lī.",
                         "explanationEs": "¡Oh Allah! Te pido por Tu misericordia, que abarca todas las cosas, que me perdones.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "qabla_taam",
-            "titleAr": "الدُّعَاءُ قَبْلَ الطَّعَامِ",
-            "titleEs": "Súplica antes de comer",
-            "items": [
+                  },
                   {
                         "itemNumber": 208,
+                        "subtitleAr": "الدُّعَاءُ قَبْلَ الطَّعَامِ",
+                        "subtitleEs": "Súplica antes de comer",
                         "text": "إِذَا أَكَلَ أَحَدُكُمْ طَعَاماً فَلْيَقُلْ: بِسْمِ اللَّهِ، فَإِنْ نَسِيَ فِي أَوَّلِهِ فَلْيَقُلْ: بِسْمِ اللَّهِ فِي أَوَّلِهِ وَآخِرِهِ.",
                         "latin": "Idhā akala aḥadukum ṭaʿāman fal-yaqul: Bismillāh, fa-in nasiya fī awwalihi fal-yaqul: Bismillāhi fī awwalihi wa ākhirih.",
                         "explanationEs": "Cuando uno de vosotros vaya a comer, que diga 'Bismillah' (En el nombre de Allah). Si lo olvida al principio, que diga 'Bismillahi fi awwalihi wa akhirih' (En el nombre de Allah al principio y al final).",
@@ -2452,21 +2386,18 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 209,
+                        "subtitleAr": "الدُّعَاءُ قَبْلَ الطَّعَامِ",
+                        "subtitleEs": "Súplica antes de comer",
                         "text": "مَنْ أَطْعَمَهُ اللَّهُ الطَّعَامَ فَلْيَقُلْ: اللَّهُمَّ بَارِكْ لَنَا فِيهِ وَأَطْعِمْنَا خَيْراً مِنْهُ، وَمَنْ سَقَاهُ اللَّهُ لَبَناً فَلْيَقُلْ: اللَّهُمَّ بَارِكْ لَنَا فِيهِ وَزِدْنَا مِنْهُ.",
                         "latin": "Man aṭʿamahu Allāhu aṭ-ṭaʿāma fal-yaqul: Allāhumma bārik lanā fīhi wa aṭʿimnā khayran minh. Wa man saqāhu Allāhu labanan fal-yaqul: Allāhumma bārik lanā fīhi wa zidnā minh.",
                         "explanationEs": "A quien Allah le proporcione comida, que diga: '¡Oh Allah! Bendícenosla y danos de comer algo mejor que ella'. Y a quien Allah le dé de beber leche, que diga: '¡Oh Allah! Bendísenosla y auméntanosla'.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "bada_taam",
-            "titleAr": "الدُّعَاءُ عِنْدَ الفَرَاغِ مِنَ الطَّعَامِ",
-            "titleEs": "Súplica al terminar de comer",
-            "items": [
+                  },
                   {
                         "itemNumber": 210,
+                        "subtitleAr": "الدُّعَاءُ عِنْدَ الفَرَاغِ مِنَ الطَّعَامِ",
+                        "subtitleEs": "Súplica al terminar de comer",
                         "text": "الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنِي هَذَا، وَرَزَقَنِيهِ، مِنْ غَيْرِ حَوْلٍ مِنِّي وَلاَ قُوَّةٍ.",
                         "latin": "Al-ḥamdu lillāhi alladhī aṭʿamanī hādhā, wa razaqanīhi, min ghayri ḥawlin minnī wa lā quwwah.",
                         "explanationEs": "Alabado sea Allah, Quien me ha alimentado con esto y me lo ha concedido sin que de mi parte haya habido fuerza ni poder.",
@@ -2475,96 +2406,68 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 211,
+                        "subtitleAr": "الدُّعَاءُ عِنْدَ الفَرَاغِ مِنَ الطَّعَامِ",
+                        "subtitleEs": "Súplica al terminar de comer",
                         "text": "الْحَمْدُ لِلَّهِ حَمْداً كَثِيراً طَيِّباً مُبَارَكاً فِيهِ، غَيْرَ مَكْفِيٍّ وَلاَ مُوَدَّعٍ، وَلاَ مُسْتَغْنَىً عَنْهُ رَبَّنَا.",
                         "latin": "Al-ḥamdu lillāhi ḥamdan kathīran ṭayyiban mubārakan fīh, ghayra makfiyyin wa lā muwaddaʿin, wa lā mustaghnan ʿanhu rabbanā.",
                         "explanationEs": "Alabado sea Allah con alabanzas abundantes, puras y benditas; una alabanza continua, jamás suficiente, incesante e indispensable, ¡oh Señor nuestro!",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "dua_dayf",
-            "titleAr": "دُعَاءُ الضَّيْفِ لِصَاحِبِ الطَّعَامِ",
-            "titleEs": "Súplica del invitado para el anfitrión que ofrece la comida",
-            "items": [
+                  },
                   {
                         "itemNumber": 212,
+                        "subtitleAr": "دُعَاءُ الضَّيْفِ لِصَاحِبِ الطَّعَامِ",
+                        "subtitleEs": "Súplica del invitado para el anfitrión que ofrece la comida",
                         "text": "اللَّهُمَّ بَارِكْ لَهُمْ فِيمَا رَزَقْتَهُمْ، وَاغْفِرْ لَهُمْ وَارْحَمْهُمْ.",
                         "latin": "Allāhumma bārik lahum fīmā razaqtahum, waghfir lahum warḥamhum.",
                         "explanationEs": "¡Oh Allah! Bendíceles el sustento que les has concedido, perdónales y ten misericordia de ellos.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "talab_taam_sharab",
-            "titleAr": "التَّعْرِيضُ بِالدُّعَاءِ لِطَلَبِ الطَّعَامِ أَوْ الشَّرَابِ",
-            "titleEs": "Súplica para quien da de comer o de beber",
-            "items": [
+                  },
                   {
                         "itemNumber": 213,
+                        "subtitleAr": "التَّعْرِيضُ بِالدُّعَاءِ لِطَلَبِ الطَّعَامِ أَوْ الشَّرَابِ",
+                        "subtitleEs": "Súplica para quien da de comer o de beber",
                         "text": "اللَّهُمَّ أَطْعِمْ مَنْ أَطْعَمَنِي، وَاسْقِ مَنْ سَقَانِي.",
                         "latin": "Allāhumma aṭʿim man aṭʿamanī, wasqi man saqānī.",
                         "explanationEs": "¡Oh Allah! Alimenta a quien me alimentó y da de beber a quien me dio de beber.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "iftar_ind_ahl_bayt",
-            "titleAr": "الدُّعَاءُ إِذَا أَفْطَرَ عِنْدَ أَهْلِ بَيْتٍ",
-            "titleEs": "Súplica al romper el ayuno en casa de alguien",
-            "items": [
+                  },
                   {
                         "itemNumber": 214,
+                        "subtitleAr": "الدُّعَاءُ إِذَا أَفْطَرَ عِنْدَ أَهْلِ بَيْتٍ",
+                        "subtitleEs": "Súplica al romper el ayuno en casa de alguien",
                         "text": "أَفْطَرَ عِنْدَكُمُ الصَّائِمُونَ، وَأَكَلَ طَعَامَكُمُ الأَبْرَارُ، وَصَلَّتْ عَلَيْكُمُ المَلاَئِكَةُ.",
                         "latin": "Afṭara ʿindakumu aṣ-ṣāʾimūn, wa akala ṭaʿāmakumu al-abrār, wa ṣallat ʿalaykumu al-malāʾikah.",
                         "explanationEs": "Que rompan el ayuno en vuestra casa los ayunantes, coman de vuestra comida los piadosos y roguen por vosotros los ángeles.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "saim_hadara_taam",
-            "titleAr": "دُعَاءُ الصَّائِمِ إِذَا حَضَرَ الطَّعَامُ وَلَمْ يُفْطِرْ",
-            "titleEs": "Qué debe hacer el ayunante si le invitan a comer y no rompe su ayuno",
-            "items": [
+                  },
                   {
                         "itemNumber": 215,
+                        "subtitleAr": "دُعَاءُ الصَّائِمِ إِذَا حَضَرَ الطَّعَامُ وَلَمْ يُفْطِرْ",
+                        "subtitleEs": "Qué debe hacer el ayunante si le invitan a comer y no rompe su ayuno",
                         "text": "إِذَا دُعِيَ أَحَدُكُمْ فَلْيُجِبْ، فَإِنْ كَانَ صَائِماً فَلْيُصَلِّ، وَإِنْ كَانَ مُفْطِراً فَلْيَطْعَمْ (وَمَعْنَى فَلْيُصَلِّ أَيْ فَلْيَدْعُ).",
                         "latin": "Idhā duʿiya aḥadukum fal-yujib, fa-in kāna ṣāʾiman fal-yuṣalli, wa in kāna mufṭiran fal-yaṭʿam (wa maʿnā fal-yuṣalli ay fal-yadʿu).",
                         "explanationEs": "Si uno de vosotros es invitado a comer, que acepte. Si está ayunando, que suplique por los anfitriones; y si no está ayunando, que coma.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "saim_sabbahu_ahad",
-            "titleAr": "مَا يَقُولُ الصَّائِمُ إِذَا سَابَّهُ أَحَدٌ",
-            "titleEs": "Lo que dice el ayunante si alguien lo insulta o provoca",
-            "items": [
+                  },
                   {
                         "itemNumber": 216,
+                        "subtitleAr": "مَا يَقُولُ الصَّائِمُ إِذَا سَابَّهُ أَحَدٌ",
+                        "subtitleEs": "Lo que dice el ayunante si alguien lo insulta o provoca",
                         "text": "إِنِّي صَائِمٌ، إِنِّي صَائِمٌ.",
                         "latin": "Innī ṣāʾim, innī ṣāʾim.",
                         "explanationEs": "Estoy ayunando, estoy ayunando.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "bakurat_thamar",
-            "titleAr": "الدُّعَاءُ عِنْدَ رُؤْيَةِ بَاكُورَةِ الثَّمَرِ",
-            "titleEs": "Súplica al ver los primeros frutos de la temporada",
-            "items": [
+                  },
                   {
                         "itemNumber": 217,
+                        "subtitleAr": "الدُّعَاءُ عِنْدَ رُؤْيَةِ بَاكُورَةِ الثَّمَرِ",
+                        "subtitleEs": "Súplica al ver los primeros frutos de la temporada",
                         "text": "اللَّهُمَّ بَارِكْ لَنَا فِي ثَمَرِنَا، وَبَارِكْ لَنَا فِي مَدِينَتِنَا، وَبَارِكْ لَنَا فِي صَاعِنَا، وَبَارِكْ لَنَا فِي مُدِّنَا.",
                         "latin": "Allāhumma bārik lanā fī thamarinā, wa bārik lanā fī madīnatinā, wa bārik lanā fī ṣāʿinā, wa bārik lanā fī muddinā.",
                         "explanationEs": "¡Oh Allah! Bendícenos en nuestros frutos, bendícenos en nuestra ciudad, bendícenos en nuestros recipientes de medida (Sa' y Mudd).",
@@ -2574,27 +2477,24 @@ const azkarData = [
             ]
       },
       {
-            "id": "atas",
-            "titleAr": "دُعَاءُ العَطَاسِ",
-            "titleEs": "Etiqueta y súplica al estornudar",
+            "id": "utas",
+            "titleAr": "أَذْكَارُ الْعُطَاسِ",
+            "titleEs": "El estornudo",
             "items": [
                   {
                         "itemNumber": 218,
+                        "subtitleAr": "دُعَاءُ العَطَاسِ",
+                        "subtitleEs": "Etiqueta y súplica al estornudar",
                         "text": "إِذَا عَطَسَ أَحَدُكُمْ فَلْيَقُلْ: الْحَمْدُ لِلَّهِ، وَلْيَقُلْ لَهُ أَخُوهُ أَوْ صَاحِبُهُ: يَرْحَمُكَ اللَّهُ، فَإِذَا قَالَ لَهُ: يَرْحَمُكَ اللَّهُ، فَلْيَقُلْ: يَهْدِيكُمُ اللَّهُ وَيُصْلِحُ بَالَكُمْ.",
                         "latin": "Idhā ʿaṭaṣa aḥadukum fal-yaqul: Al-ḥamdu lillāh, wa l-yaqul lahu akhūhu aw ṣāḥibuh: Yarḥamuka Allāh, fa-idhā qāla lah: Yarḥamuka Allāh, fal-yaqul: Yahdīkumu Allāhu wa yuṣliḥu bālakum.",
                         "explanationEs": "Cuando alguno de vosotros estornude, que diga 'Alabado sea Allah'. Su hermano o compañero debe responderle 'Que Allah tenga misericordia de ti'. Y cuando le responda esto, el que estornudó debe decir 'Que Allah os guíe y mejore vuestra situación'.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "atas_kafir",
-            "titleAr": "مَا يُقَالُ لِلْكَافِرِ إِذَا عَطَسَ فَحَمِدَ اللَّهَ",
-            "titleEs": "Lo que se responde a un no musulmán cuando estornuda y alaba a Allah",
-            "items": [
+                  },
                   {
                         "itemNumber": 219,
+                        "subtitleAr": "مَا يُقَالُ لِلْكَافِرِ إِذَا عَطَسَ فَحَمِدَ اللَّهَ",
+                        "subtitleEs": "Lo que se responde a un no musulmán cuando estornuda y alaba a Allah",
                         "text": "يَهْدِيكُمُ اللَّهُ وَيُصْلِحُ بَالَكُمْ.",
                         "latin": "Yahdīkumu Allāhu wa yuṣliḥu bālakum.",
                         "explanationEs": "Que Allah os guíe y mejore vuestra situación.",
@@ -2604,42 +2504,34 @@ const azkarData = [
             ]
       },
       {
-            "id": "dua_mutazawwij",
-            "titleAr": "الدُّعَاءُ لِلْمُتَزَوِّجِ",
-            "titleEs": "Súplica de felicitación al recién casado",
+            "id": "zawaj",
+            "titleAr": "أَذْكَارُ الزَّوَاجِ",
+            "titleEs": "El matrimonio",
             "items": [
                   {
                         "itemNumber": 220,
+                        "subtitleAr": "الدُّعَاءُ لِلْمُتَزَوِّجِ",
+                        "subtitleEs": "Súplica de felicitación al recién casado",
                         "text": "بَارَكَ اللَّهُ لَكَ، وَبَارَكَ عَلَيْكَ، وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ.",
                         "latin": "Bāraka Allāhu laka, wa bāraka ʿalayka, wa jamaʿa baynakumā fī khayr.",
                         "explanationEs": "Que Allah te bendiga, derrame Su bendición sobre ti y os una a ambos en el bien.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "dua_mutazawwij_dabbah",
-            "titleAr": "دُعَاءُ المُتَزَوِّجِ وَشِرَاءِ الدَّابَّةِ",
-            "titleEs": "Súplica del recién casado o al adquirir una montura/vehículo",
-            "items": [
+                  },
                   {
                         "itemNumber": 221,
+                        "subtitleAr": "دُعَاءُ المُتَزَوِّجِ وَشِرَاءِ الدَّابَّةِ",
+                        "subtitleEs": "Súplica del recién casado o al adquirir una montura/vehículo",
                         "text": "إِذَا تَزَوَّجَ أَحَدُكُمُ امْرَأَةً، أَوْ إِذَا اشْتَرَى خَادِماً فَلْيَقُلْ: اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَهَا، وَخَيْرَ مَا جَبَلْتَهَا عَلَيْهِ، وَأَعُوذُ بِكَ مِنْ شَرِّهَا، وَشَرِّ مَا جَبَلْتَهَا عَلَيْهِ. وَإِذَا اشْتَرَى بَعِيراً فَلْيَأْخُذْ بِذِرْوَةِ سَنَامِهِ وَلْيَقُلْ مِثْلَ ذَلِكَ.",
                         "latin": "Idhā tazawwaja aḥadukumu imraʾatan, aw idhā ishtarā khādiman fal-yaqul: Allāhumma innī asʾaluka khayrahā, wa khayra mā jabaltahā ʿalayh, wa aʿūdhu bika min sharrihā, wa sharri mā jabaltahā ʿalayh. Wa idhā ishtarā baʿīran fal-yaʾkhudh bi-dhirwati sanāmihi wa l-yaqul mithla dhālik.",
                         "explanationEs": "Cuando alguno de vosotros se case con una mujer o compre un sirviente, que diga: '¡Oh Allah! Te pido de su bien y del bien de la naturaleza con que la creaste, y me refugio en Ti de su mal y del mal de la naturaleza con que la creaste'. Y si compra un camello (o vehículo), que tome la parte superior de su joroba y diga lo mismo.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "qabla_ityan_zawjah",
-            "titleAr": "الدُّعَاءُ قَبْلَ إِتْيَانِ الزَّوْجَةِ",
-            "titleEs": "Súplica antes de la intimidad con la esposa",
-            "items": [
+                  },
                   {
                         "itemNumber": 222,
+                        "subtitleAr": "الدُّعَاءُ قَبْلَ إِتْيَانِ الزَّوْجَةِ",
+                        "subtitleEs": "Súplica antes de la intimidad con la esposa",
                         "text": "بِسْمِ اللَّهِ، اللَّهُمَّ جَنِّبْنَا الشَّيْطَانَ، وَجَنِّبِ الشَّيْطَانَ مَا رَزَقْتَنَا.",
                         "latin": "Bismillāh, Allāhumma jannibnā ash-shayṭān, wa jannibi ash-shayṭāna mā razaqtanā.",
                         "explanationEs": "En el nombre de Allah. ¡Oh Allah! Aleja de nosotros al Demonio y aleja al Demonio de la descendencia que nos concedas.",
@@ -2649,192 +2541,134 @@ const azkarData = [
             ]
       },
       {
-            "id": "ghadab",
-            "titleAr": "دُعَاءُ الغَضَبِ",
-            "titleEs": "Súplica cuando se siente ira o enojo",
+            "id": "muamala",
+            "titleAr": "أَذْكَارُ الْمُعَامَلَةِ وَالْمَجَالِسِ",
+            "titleEs": "Trato con la gente y reuniones",
             "items": [
                   {
                         "itemNumber": 223,
+                        "subtitleAr": "دُعَاءُ الغَضَبِ",
+                        "subtitleEs": "Súplica cuando se siente ira o enojo",
                         "text": "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ.",
                         "latin": "Aʿūdhu billāhi mina ash-shayṭāni ar-rajīm.",
                         "explanationEs": "Me refugio en Allah del Demonio repudiado.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "ruyat_mubtala",
-            "titleAr": "دُعَاءُ مَنْ رَأَى مُبْتَلًى",
-            "titleEs": "Súplica al ver a una persona afligida o con alguna prueba",
-            "items": [
+                  },
                   {
                         "itemNumber": 224,
+                        "subtitleAr": "دُعَاءُ مَنْ رَأَى مُبْتَلًى",
+                        "subtitleEs": "Súplica al ver a una persona afligida o con alguna prueba",
                         "text": "الْحَمْدُ لِلَّهِ الَّذِي عَافَانِي مِمَّا ابْتَلاَكَ بِهِ، وَفَضَّلَنِي عَلَى كَثِيرٍ مِمَّنْ خَلَقَ تَفْضِيلاً.",
                         "latin": "Al-ḥamdu lillāhi alladhī ʿāfānī mimmā ibtalāka bih, wa faḍḍalanī ʿalā kathīrin mimman khalaqa tafḍīlā.",
                         "explanationEs": "Alabado sea Allah, Quien me ha librado de la prueba con la que te ha probado a ti, y me ha favorecido notablemente por encima de gran parte de Su creación.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "fi_majlis",
-            "titleAr": "مَا يُقَالُ فِي المَجْلِسِ",
-            "titleEs": "Lo que se dice durante una reunión o asamblea",
-            "items": [
+                  },
                   {
                         "itemNumber": 225,
+                        "subtitleAr": "مَا يُقَالُ فِي المَجْلِسِ",
+                        "subtitleEs": "Lo que se dice durante una reunión o asamblea",
                         "text": "رَبِّ اغْفِرْ لِي، وَتُبْ عَلَيَّ، إِنَّكَ أَنْتَ التَّوَّابُ الْغَفُورُ.",
                         "latin": "Rabbi ighfir lī, wa tub ʿalayya, innaka anta at-tawwābu al-ghafūr.",
                         "explanationEs": "Se contaba que el Mensajero de Allah decía cien veces en una misma reunión antes de levantarse: 'Señor mío perdóname y acepta mi arrepentimiento, ciertamente Tú eres el Indulgente, el Absolvedor'.",
                         "count": 100,
                         "maxCount": 100
-                  }
-            ]
-      },
-      {
-            "id": "kaffarat_majlis",
-            "titleAr": "كَفَّارَةُ المَجْلِسِ",
-            "titleEs": "Súplica de expiación al concluir una reunión",
-            "items": [
+                  },
                   {
                         "itemNumber": 226,
+                        "subtitleAr": "كَفَّارَةُ المَجْلِسِ",
+                        "subtitleEs": "Súplica de expiación al concluir una reunión",
                         "text": "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ أَنْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ.",
                         "latin": "Subḥānaka Allāhumma wa bi-ḥamdika, ashhadu an lā ilāha illā anta, astaghfiruka wa atūbu ilayk.",
                         "explanationEs": "Glorificado seas, ¡oh Allah!, y alabado seas. Atestiguo que no hay más divinidad excepto Tú, pido Tu perdón y me arrepiento ante Ti.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "dua_liman_qala_ghafarallah_lak",
-            "titleAr": "الدُّعَاءُ لِمَنْ قَالَ: غَفَرَ اللَّهُ لَكَ",
-            "titleEs": "Súplica para quien te dice 'Que Allah te perdone'",
-            "items": [
+                  },
                   {
                         "itemNumber": 227,
+                        "subtitleAr": "الدُّعَاءُ لِمَنْ قَالَ: غَفَرَ اللَّهُ لَكَ",
+                        "subtitleEs": "Súplica para quien te dice 'Que Allah te perdone'",
                         "text": "وَلَكَ.",
                         "latin": "Wa lak.",
                         "explanationEs": "Y a ti también.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "dua_liman_sanaa_marufan",
-            "titleAr": "الدُّعَاءُ لِمَنْ صَنَعَ إِلَيْكَ مَعْرُوفاً",
-            "titleEs": "Súplica para quien te hace un favor o buena acción",
-            "items": [
+                  },
                   {
                         "itemNumber": 228,
+                        "subtitleAr": "الدُّعَاءُ لِمَنْ صَنَعَ إِلَيْكَ مَعْرُوفاً",
+                        "subtitleEs": "Súplica para quien te hace un favor o buena acción",
                         "text": "جَزَاكَ اللَّهُ خَيْراً.",
                         "latin": "Jazāka Allāhu khayran.",
                         "explanationEs": "Que Allah te recompense con el bien.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "ismah_min_dajjal",
-            "titleAr": "مَا يَعْصِمُ اللَّهُ بِهِ مِنَ الدَّجَّالِ",
-            "titleEs": "Protección contra la prueba del Falso Mesías (Anticristo)",
-            "items": [
+                  },
                   {
                         "itemNumber": 229,
+                        "subtitleAr": "مَا يَعْصِمُ اللَّهُ بِهِ مِنَ الدَّجَّالِ",
+                        "subtitleEs": "Protección contra la prueba del Falso Mesías (Anticristo)",
                         "text": "مَنْ حَفِظَ عَشْرَ آيَاتٍ مِنْ أَوَّلِ سُورَةِ الْكَهْفِ عُصِمَ مِنَ الدَّجَّالِ، وَالاسْتِعَاذَةُ بِاللَّهِ مِنْ فِتْنَتِهِ عَقِبَ التَّشَهُّدِ الأَخِيرِ مِنْ كُلِّ صَلاَةٍ.",
                         "latin": "Man ḥafiẓa ʿashra āyātin min awwali sūrati al-kahfi ʿuṣima mina ad-dajjāl, wal-istiʿādhatu billāhi min fitnatihi ʿaqiba at-tashahhudi al-ākhiri min kulli ṣalāh.",
                         "explanationEs": "Quien memorice los primeros diez versículos de la sura Al-Kahf estará protegido del Falso Mesías, así como quien busque refugio en Allah de su prueba tras el último Tashahhud en cada oración.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "dua_liman_qala_uhibbuk_fillah",
-            "titleAr": "الدُّعَاءُ لِمَنْ قَالَ: إِنِّي أُحِبُّكَ فِي اللَّهِ",
-            "titleEs": "Súplica para quien te dice 'Te amo por la causa de Allah'",
-            "items": [
+                  },
                   {
                         "itemNumber": 230,
+                        "subtitleAr": "الدُّعَاءُ لِمَنْ قَالَ: إِنِّي أُحِبُّكَ فِي اللَّهِ",
+                        "subtitleEs": "Súplica para quien te dice 'Te amo por la causa de Allah'",
                         "text": "أَحَبَّكَ الَّذِي أَحْبَبْتَنِي لَهُ.",
                         "latin": "Aḥabbaka alladhī aḥbabtanī lah.",
                         "explanationEs": "Que Te ame Aquel por Quien me has amado.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "dua_liman_arada_malahu",
-            "titleAr": "الدُّعَاءُ لِمَنْ عَرَضَ عَلَيْكَ مَالَهُ",
-            "titleEs": "Súplica para quien te ofrece compartir su dinero",
-            "items": [
+                  },
                   {
                         "itemNumber": 231,
+                        "subtitleAr": "الدُّعَاءُ لِمَنْ عَرَضَ عَلَيْكَ مَالَهُ",
+                        "subtitleEs": "Súplica para quien te ofrece compartir su dinero",
                         "text": "بَارَكَ اللَّهُ لَكَ فِي أَهْلِكَ وَمَالِكَ.",
                         "latin": "Bāraka Allāhu laka fī ahlika wa mālik.",
                         "explanationEs": "Que Allah bendiga para ti a tu familia y tus bienes.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "dua_liman_aqrada",
-            "titleAr": "الدُّعَاءُ لِمَنْ أَقْرَضَ عِنْدَ القَضَاءِ",
-            "titleEs": "Súplica para el prestamista al saldar la deuda",
-            "items": [
+                  },
                   {
                         "itemNumber": 232,
+                        "subtitleAr": "الدُّعَاءُ لِمَنْ أَقْرَضَ عِنْدَ القَضَاءِ",
+                        "subtitleEs": "Súplica para el prestamista al saldar la deuda",
                         "text": "بَارَكَ اللَّهُ لَكَ فِي أَهْلِكَ وَمَالِكَ، إِنَّمَا جَزَاءُ السَّلَفِ الْحَمْدُ وَالأَدَاءُ.",
                         "latin": "Bāraka Allāhu laka fī ahlika wa mālik, innamā jazāʾu as-salafi al-ḥamdu wal-adāʾ.",
                         "explanationEs": "Que Allah bendiga para ti a tu familia y tus bienes. La verdadera recompensa por un préstamo es el agradecimiento y la devolución puntual.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "khawf_shirk",
-            "titleAr": "دُعَاءُ الخَوْفِ مِنَ الشِّرْكِ",
-            "titleEs": "Súplica para prevenir el Shirk (asociar socios a Allah)",
-            "items": [
+                  },
                   {
                         "itemNumber": 233,
+                        "subtitleAr": "دُعَاءُ الخَوْفِ مِنَ الشِّرْكِ",
+                        "subtitleEs": "Súplica para prevenir el Shirk (asociar socios a Allah)",
                         "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ أَنْ أُشْرِكَ بِكَ وَأَنَا أَعْلَمُ، وَأَسْتَغْفِرُكَ لِمَا لاَ أَعْلَمُ.",
                         "latin": "Allāhumma innī aʿūdhu bika an ushrika bika wa anā aʿlam, wa astaghfiruka limā lā aʿlam.",
                         "explanationEs": "¡Oh Allah! Me refugio en Ti de asociarte algo a sabiendas, y Te pido perdón por lo que desconozco.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "dua_liman_qala_barakallah_fik",
-            "titleAr": "الدُّعَاءُ لِمَنْ قَالَ: بَارَكَ اللَّهُ فِيكَ",
-            "titleEs": "Súplica para quien te dice 'Que Allah te bendiga'",
-            "items": [
+                  },
                   {
                         "itemNumber": 234,
+                        "subtitleAr": "الدُّعَاءُ لِمَنْ قَالَ: بَارَكَ اللَّهُ فِيكَ",
+                        "subtitleEs": "Súplica para quien te dice 'Que Allah te bendiga'",
                         "text": "وَفِيكَ بَارَكَ اللَّهُ.",
                         "latin": "Wa fīka bāraka Allāh.",
                         "explanationEs": "Y que Allah te bendiga a ti también.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "karahiyat_tiyarah",
-            "titleAr": "دُعَاءُ كَرَاهِيَةِ الطِّيَرَةِ",
-            "titleEs": "Súplica contra la superstición o el mal augurio (Tiyarah)",
-            "items": [
+                  },
                   {
                         "itemNumber": 235,
+                        "subtitleAr": "دُعَاءُ كَرَاهِيَةِ الطِّيَرَةِ",
+                        "subtitleEs": "Súplica contra la superstición o el mal augurio (Tiyarah)",
                         "text": "اللَّهُمَّ لاَ طَيْرَ إِلاَّ طَيْرُكَ، وَلاَ خَيْرَ إِلاَّ خَيْرُكَ، وَلاَ إِلَهَ غَيْرُكَ.",
                         "latin": "Allāhumma lā ṭayra illā ṭayruk, wa lā khayra illā khayruk, wa lā ilāha ghayruk.",
                         "explanationEs": "¡Oh Allah! No hay augurio sino Tu decreto, no hay bien sino Tu bien, y no hay más divinidad aparte de Ti.",
@@ -2844,106 +2678,84 @@ const azkarData = [
             ]
       },
       {
-            "id": "rukub",
-            "titleAr": "دُعَاءُ الرُّكُوبِ",
-            "titleEs": "Súplica al montar un medio de transporte",
+            "id": "safar_all",
+            "titleAr": "أَذْكَارُ السَّفَرِ",
+            "titleEs": "El viaje",
             "items": [
                   {
                         "itemNumber": 236,
+                        "subtitleAr": "دُعَاءُ الرُّكُوبِ",
+                        "subtitleEs": "Súplica al montar un medio de transporte",
                         "text": "بِسْمِ اللَّهِ، وَالْحَمْدُ لِلَّهِ ﴿سُبۡحَٰنَ ٱلَّذِي سَخَّرَ لَنَا هَٰذَا وَمَا كُنَّا لَهُۥ مُقۡرِنِينَ۝ وَإِنَّآ إِلَىٰ رَبِّنَا لَمُنقَلِبُونَ۝﴾، الْحَمْدُ لِلَّهِ، الْحَمْدُ لِلَّهِ، الْحَمْدُ لِلَّهِ، اللَّهُ أَكْبَرُ، اللَّهُ أَكْبَرُ، اللَّهُ أَكْبَرُ، سُبْحَانَكَ اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي فَاغْفِرْ لِي؛ فَإِنَّهُ لاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ.",
                         "latin": "Bismillāh, wal-ḥamdu lillāh Subḥāna alladhī sakhkhara lanā hādhā wa mā kunnā lahu muqrinīn, wa innā ilā rabbinā la-munqalibūn, Al-ḥamdu lillāh, Al-ḥamdu lillāh, Al-ḥamdu lillāh, Allāhu akbar, Allāhu akbar, Allāhu akbar, Subḥānaka Allāhumma innī ẓalamtu nafsī faghfir lī; fa-innahu lā yaghfiru adhdhunūba illā ant.",
                         "explanationEs": "En el nombre de Allah, y alabado sea Allah. «Glorificado sea Quien nos lo ha facilitado, ya que nosotros no habríamos sido capaces [por nuestro mero esfuerzo], y ante nuestro Señor hemos de regresar». Alabado sea Allah (x3), Allah es el más Grande (x3). Glorificado seas, ¡oh Allah! Ciertamente me he oprimido a mí mismo, perdóname pues nadie perdona los pecados excepto Tú.",
                         "count": 1,
                         "maxCount": 1,
-            "note": "سورة الزخرف الآيات 13-14",
-            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/043013.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/043014.mp3"]
-      }
-            ]
-      },
-      {
-            "id": "safar",
-            "titleAr": "دُعَاءُ السَّفَرِ",
-            "titleEs": "Súplica de viaje",
-            "items": [
+                        "note": "سورة الزخرف الآيات 13-14",
+                        "audioUrls": [
+                              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/043013.mp3",
+                              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/043014.mp3"
+                        ]
+                  },
                   {
                         "itemNumber": 237,
+                        "subtitleAr": "دُعَاءُ السَّفَرِ",
+                        "subtitleEs": "Súplica de viaje",
                         "text": "اللَّهُ أَكْبَرُ، اللَّهُ أَكْبَرُ، اللَّهُ أَكْبَرُ، ﴿سُبۡحَٰنَ ٱلَّذِي سَخَّرَ لَنَا هَٰذَا وَمَا كُنَّا لَهُۥ مُقۡرِنِينَ۝ وَإِنَّآ إِلَىٰ رَبِّنَا لَمُنقَلِبُونَ۝﴾. اللَّهُمَّ إِنَّا نَسْأَلُكَ فِي سَفَرِنَا هَذَا البِرَّ وَالتَّقْوَى، وَمِنَ الْعَمَلِ مَا تَرْضَى، اللَّهُمَّ هَوِّنْ عَلَيْنَا سَفَرَنَا هَذَا وَاطْوِ عَنَّا بُعْدَهُ، اللَّهُمَّ أَنْتَ الصَّاحِبُ فِي السَّفَرِ، وَالْخَلِيفَةُ فِي الأَهْلِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ وَعْثَاءِ السَّفَرِ، وَكَآبَةِ المَنْظَرِ، وَسُوءِ المُنْقَلَبِ فِي المَالِ وَالأَهْلِ. (وَإِذَا رَجَعَ قَالَهُنَّ وَزَادَ فِيهِنَّ: آيِبُونَ، تَائِبُونَ، عَابِدُونَ، لِرَبِّنَا حَامِدُونَ).",
                         "latin": "Allāhu akbar, Allāhu akbar, Allāhu akbar, Subḥāna alladhī sakhkhara lanā hādhā wa mā kunnā lahu muqrinīn, wa innā ilā rabbinā la-munqalibūn. Allāhumma innā nasʾaluka fī safarinā hādhā al-birra wat-taqwā, wa mina al-ʿamali mā tarḍā, Allāhumma hawwin ʿalaynā safaranā hādhā waṭwi ʿannā buʿdah, Allāhumma anta aṣ-ṣāḥibu fī as-safar, wal-khalīfatu fī al-ahl, Allāhumma innī aʿūdhu bika min waʿthāʾi as-safar, wa kaʾābati al-manẓar, wa sūʾi al-munqalabi fī al-māli wal-ahl. (Wa idhā rajaʿa qālahunna wa zāda fīhinna: Āyibūna, tāʾibūna, ʿābidūna, li-rabbinā ḥāmidūn).",
                         "explanationEs": "Allah es el Más Grande (tres veces). «Glorificado sea Quien nos lo ha facilitado, ya que nosotros no habríamos sido capaces [por nuestro mero esfuerzo], y ante nuestro Señor hemos de regresar». ¡Oh Allah! Te pedimos en este viaje la piedad, el temor de Ti y las obras que Te complacen. ¡Oh Allah! Haznos fácil este viaje y acorta su distancia. ¡Oh Allah! Tú eres el Compañero en el viaje y el Protector de la familia. ¡Oh Allah! Me refugio en Ti de las dificultades del viaje, de la tristeza de las vistas y de un mal regreso en mis bienes y mi familia. Al regresar, repite lo mismo y añade: «Regresamos arrepentidos, adorando y alabando a nuestro Señor».",
                         "count": 1,
                         "maxCount": 1,
-            "note": "سورة الزخرف الآيات 13-14",
-            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/043013.mp3","https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/043014.mp3"]
-      }
-            ]
-      },
-      {
-            "id": "dukhul_qaryah",
-            "titleAr": "دُعَاءُ دُخُولِ القَرْيَةِ أَوْ البَلْدَةِ",
-            "titleEs": "Súplica al entrar a un pueblo o ciudad",
-            "items": [
+                        "note": "سورة الزخرف الآيات 13-14",
+                        "audioUrls": [
+                              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/043013.mp3",
+                              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/043014.mp3"
+                        ]
+                  },
                   {
                         "itemNumber": 238,
+                        "subtitleAr": "دُعَاءُ دُخُولِ القَرْيَةِ أَوْ البَلْدَةِ",
+                        "subtitleEs": "Súplica al entrar a un pueblo o ciudad",
                         "text": "اللَّهُمَّ رَبَّ السَّمَوَاتِ السَّبْعِ وَمَا أَظْلَلْنَ، وَرَبَّ الأَرَضِينَ السَّبْعِ وَمَا أَقْلَلْنَ، وَرَبَّ الشَّيَاطِينِ وَمَا أَضْلَلْنَ، وَرَبَّ الرِّيَاحِ وَمَا ذَرَيْنَ، أَسْأَلُكَ خَيْرَ هَذِهِ الْقَرْيَةِ، وَخَيْرَ أَهْلِهَا، وَخَيْرَ مَا فِيهَا، وَأَعُوذُ بِكَ مِنْ شَرِّهَا، وَشَرِّ أَهْلِهَا، وَشَرِّ مَا فِيهَا.",
                         "latin": "Allāhumma rabba as-samāwāti as-sabʿi wa mā aẓlaln, wa rabba al-araḍīna as-sabʿi wa mā aqlaln, wa rabba ash-shayāṭīni wa mā aḍlaln, wa rabba ar-riyāḥi wa mā dharayn, asʾaluka khayra hādhihi al-qaryah, wa khayra ahlihā, wa khayra mā fīhā, wa aʿūdhu bika min sharrihā, wa sharri ahlihā, wa sharri mā fīhā.",
                         "explanationEs": "¡Oh Allah! Señor de los siete cielos y de lo que cubren, Señor de las siete tierras y de lo que sostienen, Señor de los demonios y de a quienes extravían, Señor de los vientos y de lo que dispersan. Te pido el bien de este pueblo, el bien de sus habitantes y el bien de lo que hay en él; y me refugio en Ti de su mal, del mal de sus habitantes y del mal de lo que hay en él.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "dukhul_suq",
-            "titleAr": "دُعَاءُ دُخُولِ السُّوقِ",
-            "titleEs": "Súplica al entrar al mercado",
-            "items": [
+                  },
                   {
                         "itemNumber": 239,
+                        "subtitleAr": "دُعَاءُ دُخُولِ السُّوقِ",
+                        "subtitleEs": "Súplica al entrar al mercado",
                         "text": "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ، وَلَهُ الْحَمْدُ، يُحْيِي وَيُمِيتُ، وَهُوَ حَيٌّ لاَ يَمُوتُ، بِيَدِهِ الْخَيْرُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
                         "latin": "Lā ilāha illā Allāhu waḥdahu lā sharīka lah, lahu al-mulku, wa lahu al-ḥamd, yuḥyī wa yumīt, wa huwa ḥayyun lā yamūt, bi-yadihi al-khayr, wa huwa ʿalā kulli shayʾin qadīr.",
                         "explanationEs": "No hay más divinidad que Allah, Único, sin asociados. Suyo es el reino y Suya es la alabanza, da la vida y da la muerte, y Él es Inmortal. En Su mano está el bien y Él es Omnipotente sobre todas las cosas.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "taisa_markub",
-            "titleAr": "الدُّعَاءُ إِذَا تَعِسَ المَرْكُوبُ",
-            "titleEs": "Súplica si tropieza la montura o el vehículo sufre un percance",
-            "items": [
+                  },
                   {
                         "itemNumber": 240,
+                        "subtitleAr": "الدُّعَاءُ إِذَا تَعِسَ المَرْكُوبُ",
+                        "subtitleEs": "Súplica si tropieza la montura o el vehículo sufre un percance",
                         "text": "بِسْمِ اللَّهِ.",
                         "latin": "Bismillāh.",
                         "explanationEs": "En el nombre de Allah.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "musafir_lil_muqim",
-            "titleAr": "دُعَاءُ المُسَافِرِ لِلْمُقِيمِ",
-            "titleEs": "Súplica del viajero para el residente al despedirse",
-            "items": [
+                  },
                   {
                         "itemNumber": 241,
+                        "subtitleAr": "دُعَاءُ المُسَافِرِ لِلْمُقِيمِ",
+                        "subtitleEs": "Súplica del viajero para el residente al despedirse",
                         "text": "أَسْتَوْدِعُكُمُ اللَّهَ الَّذِي لاَ تَضِيعُ وَدَائِعُهُ.",
                         "latin": "Astawdiʿukumu Allāha alladhī lā taḍīʿu wadāʾiʿuh.",
                         "explanationEs": "Os encomiendo a Allah, Aquel ante Quien los depósitos encomendados nunca se pierden.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "muqim_lil_musafir",
-            "titleAr": "دُعَاءُ المُقِيمِ لِلْمُسَافِرِ",
-            "titleEs": "Súplica del residente para el viajero",
-            "items": [
+                  },
                   {
                         "itemNumber": 242,
+                        "subtitleAr": "دُعَاءُ المُقِيمِ لِلْمُسَافِرِ",
+                        "subtitleEs": "Súplica del residente para el viajero",
                         "text": "أَسْتَوْدِعُ اللَّهَ دِينَكَ، وَأَمَانَتَكَ، وَخَوَاتِيمَ عَمَلِكَ.",
                         "latin": "Astawdiʿu Allāha dīnaka, wa amānataka, wa khawātīma ʿamalik.",
                         "explanationEs": "Encomiendo a Allah tu religión, tu fidelidad y las últimas de tus obras.",
@@ -2952,69 +2764,51 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 243,
+                        "subtitleAr": "دُعَاءُ المُقِيمِ لِلْمُسَافِرِ",
+                        "subtitleEs": "Súplica del residente para el viajero",
                         "text": "زَوَّدَكَ اللَّهُ التَّقْوَى، وَغَفَرَ ذَنْبَكَ، وَيَسَّرَ لَكَ الخَيْرَ حَيْثُ مَا كُنْتَ.",
                         "latin": "Zawwadaka Allāhu at-taqwā, wa ghafara dhanbaka, wa yassara laka al-khayra ḥaythu mā kunt.",
                         "explanationEs": "Que Allah te provenga de piedad, perdone tu pecado y te facilite el bien dondequiera que estés.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "takbir_tasbih_safar",
-            "titleAr": "التَّكْبِيرُ وَالتَّسْبِيحُ فِي سَيْرِ السَّفَرِ",
-            "titleEs": "Proclamar la grandeza de Allah y glorificarlo durante el viaje",
-            "items": [
+                  },
                   {
                         "itemNumber": 244,
+                        "subtitleAr": "التَّكْبِيرُ وَالتَّسْبِيحُ فِي سَيْرِ السَّفَرِ",
+                        "subtitleEs": "Proclamar la grandeza de Allah y glorificarlo durante el viaje",
                         "text": "قَالَ جَابِرٌ رضي الله عنه: كُنَّا إِذَا صَعَدْنَا كَبَّرْنَا، وَإِذَا نَزَلْنَا سَبَّحْنَا.",
                         "latin": "Qāla Jābirun raḍiya Allāhu ʿanh: Kunnā idhā ṣaʿidnā kabbarnā, wa idhā nazalnā sabbaḥnā.",
                         "explanationEs": "Dijo Jabir (que Allah esté complacido con él): Cuando subíamos (una cuesta o montaña) decíamos 'Allahu Akbar' (Allah es el más Grande), y cuando bajábamos decíamos 'Subhanallah' (Glorificado sea Allah).",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "musafir_ashara",
-            "titleAr": "دُعَاءُ المُسَافِرِ إِذَا أَسْحَرَ",
-            "titleEs": "Súplica del viajero al amanecer (al rayar el alba)",
-            "items": [
+                  },
                   {
                         "itemNumber": 245,
+                        "subtitleAr": "دُعَاءُ المُسَافِرِ إِذَا أَسْحَرَ",
+                        "subtitleEs": "Súplica del viajero al amanecer (al rayar el alba)",
                         "text": "سَمَّعَ سَامِعٌ بِحَمْدِ اللَّهِ، وَحُسْنِ بَلاَئِهِ عَلَيْنَا، رَبَّنَا صَاحِبْنَا، وَأَفْضِلْ عَلَيْنَا، عَائِذاً بِاللَّهِ مِنَ النَّارِ.",
                         "latin": "Sammaʿa sāmiʿun bi-ḥamdi Allāhi, wa ḥusni balāʾihi ʿalaynā, rabbanā ṣāḥibnā, wa afḍil ʿalaynā, ʿāʾidhan billāhi mina an-nār.",
                         "explanationEs": "Que un testigo atestigüe nuestra alabanza a Allah y Sus buenas pruebas sobre nosotros. Señor nuestro, acompáñanos y agrácianos con Tu favor; nos refugiamos en Allah del Fuego.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "nazala_manzilan",
-            "titleAr": "الدُّعَاءُ إِذَا نَزَلَ مَنْزِلاً فِي سَفَرٍ أَوْ غَيْرِهِ",
-            "titleEs": "Súplica al hacer una parada o alojarse en un lugar",
-            "items": [
+                  },
                   {
                         "itemNumber": 246,
+                        "subtitleAr": "الدُّعَاءُ إِذَا نَزَلَ مَنْزِلاً فِي سَفَرٍ أَوْ غَيْرِهِ",
+                        "subtitleEs": "Súplica al hacer una parada o alojarse en un lugar",
                         "text": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ.",
                         "latin": "Aʿūdhu bi-kalimāti Allāhi at-tāmmāti min sharri mā khalaq.",
                         "explanationEs": "Me refugio en las palabras perfectas de Allah del mal de lo que ha creado.",
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2020.mp3"
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2020.mp3"
                         ]
-                  }
-            ]
-      },
-      {
-            "id": "ruju_min_safar",
-            "titleAr": "ذِكْرُ الرُّجُوعِ مِنَ السَّفَرِ",
-            "titleEs": "Súplica al regresar de un viaje",
-            "items": [
+                  },
                   {
                         "itemNumber": 247,
+                        "subtitleAr": "ذِكْرُ الرُّجُوعِ مِنَ السَّفَرِ",
+                        "subtitleEs": "Súplica al regresar de un viaje",
                         "text": "اللَّهُ أَكْبَرُ، اللَّهُ أَكْبَرُ، اللَّهُ أَكْبَرُ، لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ، وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، آيِبُونَ، تَائِبُونَ، عَابِدُونَ، لِرَبِّنَا حَامِدُونَ، صَدَقَ اللَّهُ وَعْدَهُ، وَنَصَرَ عَبْدَهُ، وَهَزَمَ الأَحْزَابَ وَحْدَهُ.",
                         "latin": "Allāhu akbar, Allāhu akbar, Allāhu akbar, lā ilāha illā Allāhu waḥdahu lā sharīka lah, lahu al-mulku, wa lahu al-ḥamd, wa huwa ʿalā kulli shayʾin qadīr, āyibūna, tāʾibūna, ʿābidūna, li-rabbinā ḥāmidūn, ṣadaqa Allāhu waʿdah, wa naṣara ʿabdah, wa hazama al-aḥzāba waḥdah.",
                         "explanationEs": "Allah es el más Grande (x3). No hay más divinidad que Allah, Único, sin asociados. Suyo es el reino y Suya es la alabanza, y Él es Omnipotente sobre todas las cosas. Regresamos arrepentidos, adorando y alabando a nuestro Señor. Allah ha cumplido Su promesa, ha socorrido a Su siervo y ha derrotado Él solo a las facciones enemigas.",
@@ -3086,12 +2880,14 @@ const azkarData = [
             ]
       },
       {
-            "id": "ifsha_salam",
-            "titleAr": "إِفْشَاءُ السَّلاَمِ",
-            "titleEs": "Difundir el saludo de paz (Salam)",
+            "id": "salam",
+            "titleAr": "أَذْكَارُ السَّلَامِ",
+            "titleEs": "El saludo de paz",
             "items": [
                   {
                         "itemNumber": 254,
+                        "subtitleAr": "إِفْشَاءُ السَّلاَمِ",
+                        "subtitleEs": "Difundir el saludo de paz (Salam)",
                         "text": "قَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم: لاَ تَدْخُلُوا الْجَنَّةَ حَتَّى تُؤْمِنُوا، وَلاَ تُؤْمِنُوا حَتَّى تَحَابُّوا، أَوَلاَ أَدُلُّكُمْ عَلَى شَيْءٍ إِذَا فَعَلْتُمُوهُ تَحَابَبْتُمْ، أَفْشُوا السَّلاَمَ بَيْنَكُمْ.",
                         "latin": "Qāla rasūlu Allāhi ṣallā Allāhu ʿalayhi wa sallam: Lā tadkhulū al-jannata ḥattā tuʾminū, wa lā tuʾminū ḥattā taḥābbū, awalā adullukum ʿalā shayʾin idhā faʿaltumūhu taḥābabtum, afshū as-salāma baynakum.",
                         "explanationEs": "Dijo el Mensajero de Allah (paz y bendiciones de Allah sean con él): No entraréis al Paraíso hasta que creáis, y no creeréis (plenamente) hasta que os améis unos a otros. ¿Acaso no os indicaré algo que si lo hacéis os amaréis? Difundid el saludo de paz entre vosotros.",
@@ -3100,6 +2896,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 255,
+                        "subtitleAr": "إِفْشَاءُ السَّلاَمِ",
+                        "subtitleEs": "Difundir el saludo de paz (Salam)",
                         "text": "ثَلاَثٌ مَنْ جَمَعَهُنَّ فَقَدْ جَمَعَ الإِيمَانَ: الإِنْصَافُ مِنْ نَفْسِكَ، وَبَذْلُ السَّلاَمِ لِلْعَالَمِ، وَالإِنْفَاقُ مِنَ الإِقْتَارِ.",
                         "latin": "Thalāthun man jamaʿahunna faqad jamaʿa al-īmān: Al-inṣāfu min nafsik, wa badhlu as-salāmi lil-ʿālam, wal-infāqu mina al-iqtār.",
                         "explanationEs": "Tres cosas, quien las reúna habrá reunido la fe completa: la equidad con uno mismo, saludar con la paz a todo el mundo y dar en caridad aun en la escasez.",
@@ -3108,21 +2906,18 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 256,
+                        "subtitleAr": "إِفْشَاءُ السَّلاَمِ",
+                        "subtitleEs": "Difundir el saludo de paz (Salam)",
                         "text": "وَعَنْ عَبْدِ اللَّهِ بْنِ عُمَرَ رَضِيَ اللَّهُ عَنْهُمَا: أَنَّ رَجُلاً سَأَلَ النَّبِيَّ صلى الله عليه وسلم أَيُّ الإِسْلاَمِ خَيْرٌ؟ قَالَ: تُطْعِمُ الطَّعَامَ، وَتَقْرَأُ السَّلاَمَ عَلَى مَنْ عَرَفْتَ وَمَنْ لَمْ تَعْرِفْ.",
                         "latin": "Wa ʿan ʿAbdillāhi ibni ʿUmara raḍiya Allāhu ʿanhumā: Anna rajulan saʾala an-nabiyya ṣallā Allāhu ʿalayhi wa sallama ayyu al-islāmi khayr? Qāl: Tuṭʿimu aṭ-ṭaʿām, wa taqraʾu as-salāma ʿalā man ʿarafta wa man lam taʿrif.",
                         "explanationEs": "Un hombre preguntó al Profeta (paz y bendiciones sean con él): ¿Qué acción del Islam es la mejor? Respondió: Dar de comer y saludar con la paz a quien conoces y a quien no conoces.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "radd_salam_ala_kafir",
-            "titleAr": "كَيْفَ يَرُدُّ السَّلاَمَ عَلَى الكَافِرِ إِذَا سَلَّمَ",
-            "titleEs": "Cómo responder el saludo a un no musulmán",
-            "items": [
+                  },
                   {
                         "itemNumber": 257,
+                        "subtitleAr": "كَيْفَ يَرُدُّ السَّلاَمَ عَلَى الكَافِرِ إِذَا سَلَّمَ",
+                        "subtitleEs": "Cómo responder el saludo a un no musulmán",
                         "text": "إِذَا سَلَّمَ عَلَيْكُمْ أَهْلُ الْكِتَابِ فَقُولُوا: وَعَلَيْكُمْ.",
                         "latin": "Idhā sallama ʿalaykum ahlu al-kitābi fa-qūlū: Wa ʿalaykum.",
                         "explanationEs": "Cuando os saluden la Gente del Libro (cristianos o judíos), decid: 'Y sobre vosotros'.",
@@ -3132,27 +2927,24 @@ const azkarData = [
             ]
       },
       {
-            "id": "siyah_dik_nahiq_himar",
-            "titleAr": "الدُّعَاءُ عِنْدَ سَمَاعِ صِيَاحِ الدِّيكِ وَنَهِيقِ الحِمَارِ",
-            "titleEs": "Súplica al escuchar el canto del gallo o el rebuzno del asno",
+            "id": "hayawan",
+            "titleAr": "عِنْدَ سَمَاعِ الْحَيَوَانَاتِ",
+            "titleEs": "Al escuchar animales",
             "items": [
                   {
                         "itemNumber": 258,
+                        "subtitleAr": "الدُّعَاءُ عِنْدَ سَمَاعِ صِيَاحِ الدِّيكِ وَنَهِيقِ الحِمَارِ",
+                        "subtitleEs": "Súplica al escuchar el canto del gallo o el rebuzno del asno",
                         "text": "إِذَا سَمِعْتُمْ صِيَاحَ الدِّيَكَةِ فَاسْأَلُوا اللَّهَ مِنْ فَضْلِهِ؛ فَإِنَّهَا رَأَتْ مَلَكاً، وَإِذَا سَمِعْتُمْ نَهِيقَ الْحِمَارِ فَتَعَوَّذُوا بِاللَّهِ مِنَ الشَّيْطَانِ؛ فَإِنَّهُ رَأَى شَيْطَاناً.",
                         "latin": "Idhā samiʿtum ṣiyāḥa ad-diyakati fasʾalū Allāha min faḍlihi; fa-innahā raʾat malakā, wa idhā samiʿtum nahīqa al-ḥimāri fa-taʿawwadhū billāhi mina ash-shayṭāni; fa-innahu raʾā shayṭānā.",
                         "explanationEs": "Cuando escuchéis el canto de los gallos, pedid a Allah de Su favor, pues han visto a un ángel; y cuando escuchéis el rebuzno del asno, refugiaos en Allah del Demonio, pues ha visto a un demonio.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "nubah_kilab",
-            "titleAr": "دُعَاءُ نُبَاحِ الكِلاَبِ بِاللَّيْلِ",
-            "titleEs": "Súplica al escuchar el ladrido de los perros por la noche",
-            "items": [
+                  },
                   {
                         "itemNumber": 259,
+                        "subtitleAr": "دُعَاءُ نُبَاحِ الكِلاَبِ بِاللَّيْلِ",
+                        "subtitleEs": "Súplica al escuchar el ladrido de los perros por la noche",
                         "text": "إِذَا سَمِعْتُمْ نُبَاحَ الْكِلاَبِ وَنَهِيقَ الْحَمِيرِ بِاللَّيْلِ فَتَعَوَّذُوا بِاللَّهِ مِنْهُنَّ؛ فَإِنَّهُنَّ يَرَيْنَ مَا لاَ تَرَوْنَ.",
                         "latin": "Idhā samiʿtum nubāḥa al-kilābi wa nahīqa al-ḥamīri bil-layli fa-taʿawwadhū billāhi minhunna; fa-innahunna yarayna mā lā tarawn.",
                         "explanationEs": "Cuando escuchéis el ladrido de los perros o el rebuzno de los asnos por la noche, refugiaos en Allah de ellos, pues ven lo que vosotros no veis.",
@@ -3207,104 +2999,78 @@ const azkarData = [
             ]
       },
       {
-            "id": "talbiyah_hajj_umrah",
-            "titleAr": "كَيْفَ يُلَبِّي المُحْرِمُ فِي الحَجِّ أَوْ العُمْرَةِ؟",
-            "titleEs": "La Talbiyah durante el Hajj o la Umrah",
+            "id": "hajj",
+            "titleAr": "أَذْكَارُ الْحَجِّ وَالْعُمْرَةِ",
+            "titleEs": "Hajj y Umra",
             "items": [
                   {
                         "itemNumber": 263,
+                        "subtitleAr": "كَيْفَ يُلَبِّي المُحْرِمُ فِي الحَجِّ أَوْ العُمْرَةِ؟",
+                        "subtitleEs": "La Talbiyah durante el Hajj o la Umrah",
                         "text": "لَبَّيْكَ اللَّهُمَّ لَبَّيْكَ، لَبَّيْكَ لاَ شَرِيكَ لَكَ لَبَّيْكَ، إِنَّ الْحَمْدَ، وَالنِّعْمَةَ، لَكَ وَالْمُلْكُ، لاَ شَرِيكَ لَكَ.",
                         "latin": "Labbayka Allāhumma labbayk, labbayka lā sharīka laka labbayk, inna al-ḥamda, wan-niʿmata, laka wal-mulk, lā sharīka lak.",
                         "explanationEs": "Heme aquí, ¡oh Allah!, a Tu servicio. Heme aquí, no tienes asociados, heme aquí. Ciertamente la alabanza, las bendiciones y la soberanía Te pertenecen, no tienes asociados.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "takbir_rukn_aswad",
-            "titleAr": "التَّكْبِيرُ إِذَا أَتَى الرُّكْنَ الأَسْوَدَ",
-            "titleEs": "Proclamar la grandeza de Allah al llegar a la Piedra Negra",
-            "items": [
+                  },
                   {
                         "itemNumber": 264,
+                        "subtitleAr": "التَّكْبِيرُ إِذَا أَتَى الرُّكْنَ الأَسْوَدَ",
+                        "subtitleEs": "Proclamar la grandeza de Allah al llegar a la Piedra Negra",
                         "text": "طَافَ النَّبِيُّ صلى الله عليه وسلم بِالْبَيْتِ عَلَى بَعِيرٍ كُلَّمَا أَتَى الرُّكْنَي أَشَارَ إِلَيْهِ بِشَيْءٍ عِنْدَهُ وَكَبَّرَ.",
                         "latin": "Ṭāfa an-nabiyyu ṣallā Allāhu ʿalayhi wa sallama bil-bayti ʿalā baʿīrin kullamā atā ar-rukna ashāra ilayhi bi-shayʾin ʿindahu wa kabbar.",
                         "explanationEs": "El Profeta (paz y bendiciones sean con él) realizó el Tawaf alrededor de la Kaaba sobre un camello; cada vez que llegaba a la esquina de la Piedra Negra, la señalaba con lo que tenía en la mano y decía 'Allahu Akbar'.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "dua_bayn_yamani_hajar",
-            "titleAr": "الدُّعَاءُ بَيْنَ الرُّكْنِ اليَمَانِي وَالحَجَرِ الأَسْوَدِ",
-            "titleEs": "Súplica entre la Esquina Yamani y la Piedra Negra",
-            "items": [
+                  },
                   {
                         "itemNumber": 265,
+                        "subtitleAr": "الدُّعَاءُ بَيْنَ الرُّكْنِ اليَمَانِي وَالحَجَرِ الأَسْوَدِ",
+                        "subtitleEs": "Súplica entre la Esquina Yamani y la Piedra Negra",
                         "text": "﴿رَبَّنَآ ءَاتِنَا فِي ٱلدُّنۡيَا حَسَنَةٗ وَفِي ٱلۡأٓخِرَةِ حَسَنَةٗ وَقِنَا عَذَابَ ٱلنَّارِ۝﴾",
                         "latin": "Rabbanā ātinā fī ad-dunyā ḥasanatan wa fī al-ākhirati ḥasanatan wa qinā ʿadhāba an-nār.",
                         "explanationEs": "¡Señor nuestro! Danos bienestar en esta vida y en la otra, y presérvanos del tormento del Fuego.",
                         "count": 1,
                         "maxCount": 1,
-            "note": "سورة البقرة الآية 201",
-            "audioUrls": ["https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002201.mp3"]
-      }
-            ]
-      },
-      {
-            "id": "wuquf_safa_marwah",
-            "titleAr": "دُعَاءُ الوُقُوفِ عَلَى الصَّفَا وَالمَرْوَةِ",
-            "titleEs": "Súplica al subir a las colinas de As-Safa y Al-Marwah",
-            "items": [
+                        "note": "سورة البقرة الآية 201",
+                        "audioUrls": [
+                              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002201.mp3"
+                        ]
+                  },
                   {
                         "itemNumber": 266,
+                        "subtitleAr": "دُعَاءُ الوُقُوفِ عَلَى الصَّفَا وَالمَرْوَةِ",
+                        "subtitleEs": "Súplica al subir a las colinas de As-Safa y Al-Marwah",
                         "text": "قَرَأَ: إِنَّ ٱلصَّفَا وَٱلۡمَرۡوَةَ مِن شَعَآئِرِ ٱللَّهِۖ، أَبْدَأُ بِمَا بَدَأَ اللَّهُ بِهِ، فَبَدَأَ بِالصَّفَا فَرَقِيَ عَلَيْهِ حَتَّى رَأَى الْبَيْتَ، فَاسْتَقْبَلَ الْقِبْلَةَ، فَوَحَّدَ اللَّهَ وَكَبَّرَهُ وَقَالَ: لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ، أَنْجَزَ وَعْدَهُ، وَنَصَرَ عَبْدَهُ، وَهَزَمَ الأَحْزَابَ وَحْدَهُ، ثُمَّ دَعَا بَيْنَ ذَلِكَ (ثَلاَثَ مَرَّاتٍ).",
                         "latin": "Qaraʾa: Inna aṣ-ṣafā wal-marwata min shaʿāʾirillāh, abdaʾu bi-mā badaʾa Allāhu bih, fa-badaʾa biṣ-ṣafā fa-raqiya ʿalayhi ḥattā raʾā al-bayt, fas-taqbala al-qiblata, fa-waḥḥada Allāha wa kabbarah, wa qāl: Lā ilāha illā Allāhu waḥdahu lā sharīka lah, lahu al-mulku wa lahu al-ḥamdu wa huwa ʿalā kulli shayʾin qadīr, lā ilāha illā Allāhu waḥdah, anjaza waʿdah, wa naṣara ʿabdah, wa hazama al-aḥzāba waḥdah, thumma daʿā bayna dhālik (thalātha marrāt).",
                         "explanationEs": "Leyó: Ciertamente As-Safa y Al-Marwah son símbolos de Allah. Empiezo por aquello por lo que Allah empezó. Comenzó por As-Safa y subió hasta ver la Casa (la Kaaba); se orientó hacia la qibla, proclamó la unicidad de Allah y Su grandeza, y dijo: «No hay divinidad digna de adoración excepto Allah, Único, sin asociado. Suyo es el dominio y Suya es la alabanza, y Él tiene poder sobre todas las cosas. No hay divinidad digna de adoración excepto Allah, Único; cumplió Su promesa, ayudó a Su siervo y derrotó Él solo a los confederados». Luego suplicó entre esas invocaciones (tres veces). Hizo en Al-Marwah lo mismo que en As-Safa.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "yawm_arafah",
-            "titleAr": "الدُّعَاءُ يَوْمَ عَرَفَةَ",
-            "titleEs": "Súplica en el día de Arafah",
-            "items": [
+                  },
                   {
                         "itemNumber": 267,
+                        "subtitleAr": "الدُّعَاءُ يَوْمَ عَرَفَةَ",
+                        "subtitleEs": "Súplica en el día de Arafah",
                         "text": "قَالَ النَّبِيُّ صلى الله عليه وسلم: خَيْرُ الدُّعَاءِ دُعَاءُ يَوْمِ عَرَفَةَ، وَخَيْرُ مَا قُلْتُ أَنَا وَالنَّبِيُّونَ مِنْ قَبْلِي: لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
                         "latin": "Qāla an-nabiyyu ṣallā Allāhu ʿalayhi wa sallam: Khayru ad-duʿāʾi duʿāʾu yawmi ʿarafah, wa khayru mā qultu anā wan-nabiyyūna min qablī: Lā ilāha illā Allāhu waḥdahu lā sharīka lah, lahu al-mulku wa lahu al-ḥamd, wa huwa ʿalā kulli shayʾin qadīr.",
                         "explanationEs": "Dijo el Profeta (paz y bendiciones sean con él): La mejor súplica es la del día de Arafah, y lo mejor que he dicho yo y los profetas anteriores a mí es: 'No hay más divinidad que Allah, Único, sin asociados. Suyo es el reino y Suya es la alabanza, y Él es Omnipotente sobre todas las cosas'.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "mashar_haram",
-            "titleAr": "الذِّكْرُ عِنْدَ المَشْعَرِ الحَرَامِ",
-            "titleEs": "Recuerdo en Al-Mash'ar Al-Haram (Muzdalifah)",
-            "items": [
+                  },
                   {
                         "itemNumber": 268,
+                        "subtitleAr": "الذِّكْرُ عِنْدَ المَشْعَرِ الحَرَامِ",
+                        "subtitleEs": "Recuerdo en Al-Mash'ar Al-Haram (Muzdalifah)",
                         "text": "رَكِبَ النَّبِيُّ صلى الله عليه وسلم الْقَصْوَاءَ حَتَّى أَتَى الْمَشْعَرَ الْحَرَامَ فَاسْتَقْبَلَ الْقِبْلَةَ (فَدَعَاهُ، وَكَبَّرَهُ، وَهَلَّلَهُ، وَوَحَّدَهُ) فَلَمْ يَزَلْ وَاقِفاً حَتَّى أَسْفَرَ جِدّاً فَدَفَعَ قَبْلَ أَنْ تَطْلُعَ الشَّمْسُ.",
                         "latin": "Rakiba an-nabiyyu ṣallā Allāhu ʿalayhi wa sallam al-qaṣwāʾa ḥattā atā al-mashʿara al-ḥarāma fas-taqbala al-qiblah (fa-daʿāh, wa kabbarah, wa hallalah, wa waḥḥadah) fa-lam yazal wāqifan ḥattā asfara jiddān fa-dafaʿa qabla an taṭluʿa ash-shams.",
                         "explanationEs": "El Profeta (paz y bendiciones sean con él) montó su camella Al-Qaswa hasta llegar a Al-Mash'ar Al-Haram, se orientó a la Qibla, suplicó a Allah, enalteció Su grandeza, proclamó Su unicidad y permaneció allí hasta que aclaró bien el día, partiendo antes de que saliera el sol.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "takbir_ramy_jamarat",
-            "titleAr": "التَّكْبِيرُ عِنْدَ رَمْيِ الجِمَارِ مَعَ كُلِّ حَصَاةٍ",
-            "titleEs": "Proclamar la grandeza de Allah al lanzar las piedras en los Jamarat",
-            "items": [
+                  },
                   {
                         "itemNumber": 269,
+                        "subtitleAr": "التَّكْبِيرُ عِنْدَ رَمْيِ الجِمَارِ مَعَ كُلِّ حَصَاةٍ",
+                        "subtitleEs": "Proclamar la grandeza de Allah al lanzar las piedras en los Jamarat",
                         "text": "يُكَبِّرُ كُلَّمَا رَمَى بِحَصَاةٍ عِنْدَ الْجِمَارِ الثَّلاَثِ، ثُمَّ يَتَقَدَّمُ، وَيَقِفُ يَدْعُو مُسْتَقْبِلَ الْقِبْلَةِ، رَافِعاً يَدَيْهِ بَعْدَ الْجَمْرَةِ الأُولَى وَالثَّانِيَةِ. أَمَّا جَمْرَةُ الْعَقَبَةِ فَيَرْمِيهَا وَيُكَبِّرُ عِنْدَ كُلِّ حَصَاةٍ وَيَنْصَرِفُ وَلاَ يَقِفُ عِنْدَهَا.",
                         "latin": "Yukabbiru kullamā ramā bi-ḥaṣātin ʿinda al-jimāri ath-thalāth, thumma yataqaddamu, wa yaqifu yadʿū mustaqbila al-qiblati, rāfiʿan yadayhi baʿda al-jamrati al-ūlā wath-thāniyah. Ammā jamratu al-ʿaqabati fa-yarmīhā wa yukabbiru ʿinda kulli ḥaṣātin wa yanṣarif wa lā yaqifu ʿindahā.",
                         "explanationEs": "Dice 'Allahu Akbar' con cada guijarro que lanza en los tres pilares (Jamarat). Tras el primero y el segundo, avanza, se orienta a la Qibla con las manos levantadas y suplica. En cuanto al pilar grande (Jamrat Al-Aqabah), lanza las piedras diciendo 'Allahu Akbar' en cada una y se retira sin detenerse a suplicar.",
