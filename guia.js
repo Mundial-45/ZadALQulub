@@ -55,12 +55,68 @@
           },
           {
             "isInfo": true,
-            "text": "صِفَةُ الْوُضُوءِ خُطْوَةً خُطْوَةً",
-            "titleEs": "El wudu paso a paso",
-            "explanationAr": "١. انْوِ بِقَلْبِكَ رَفْعَ الْحَدَثِ، وَقُلْ: بِسْمِ اللَّهِ.\n٢. اغْسِلْ يَدَيْكَ إِلَى الْكُوعَيْنِ ثَلَاثًا.\n٣. تَمَضْمَضْ ثَلَاثًا، ثُمَّ اسْتَنْشِقْ وَاسْتَنْثِرْ ثَلَاثًا.\n٤. اغْسِلْ وَجْهَكَ ثَلَاثًا مَعَ الدَّلْكِ.\n٥. اغْسِلْ يَدَكَ الْيُمْنَى إِلَى الْمِرْفَقِ ثَلَاثًا، ثُمَّ الْيُسْرَى.\n٦. امْسَحْ رَأْسَكَ: ابْدَأْ مِنْ مُقَدَّمِهِ إِلَى قَفَاكَ ثُمَّ رُدَّ يَدَيْكَ إِلَى حَيْثُ بَدَأْتَ.\n٧. امْسَحْ أُذُنَيْكَ ظَاهِرًا وَبَاطِنًا بِمَاءٍ جَدِيدٍ.\n٨. اغْسِلْ رِجْلَكَ الْيُمْنَى إِلَى الْكَعْبِ ثَلَاثًا مَعَ تَخْلِيلِ الْأَصَابِعِ، ثُمَّ الْيُسْرَى.",
-            "explanationEs": "1. Ten en el corazón la intención de purificarte y di: «Bismillāh».\n2. Lava las manos hasta las muñecas tres veces.\n3. Enjuágate la boca tres veces; luego aspira agua por la nariz y expúlsala, tres veces.\n4. Lava la cara tres veces frotando.\n5. Lava el brazo derecho hasta el codo tres veces, y luego el izquierdo.\n6. Pasa las manos mojadas por la cabeza: desde la frente hasta la nuca, y vuelve al punto de partida.\n7. Pasa las manos por las orejas, por fuera y por dentro, con agua nueva.\n8. Lava el pie derecho hasta el tobillo tres veces pasando el agua entre los dedos, y luego el izquierdo.",
+            "text": "النِّيَّةُ وَغَسْلُ الْكَفَّيْنِ",
+            "titleEs": "La intención y lavar las manos",
+            "note": "الْخُطْوَةُ ١",
+            "noteEs": "Paso 1",
+            "explanationAr": "انْوِ بِقَلْبِكَ رَفْعَ الْحَدَثِ، وَقُلْ: «بِسْمِ اللَّهِ»، ثُمَّ اغْسِلْ يَدَيْكَ إِلَى الْكُوعَيْنِ ثَلَاثًا قَبْلَ إِدْخَالِهِمَا فِي الْإِنَاءِ.",
+            "explanationEs": "Ten en el corazón la intención de purificarte, di «Bismillāh» y lava las manos hasta las muñecas tres veces antes de meterlas en el recipiente."
+          },
+          {
+            "isInfo": true,
+            "text": "الْمَضْمَضَةُ وَالِاسْتِنْشَاقُ",
+            "titleEs": "Enjuagar la boca y la nariz",
+            "note": "الْخُطْوَةُ ٢",
+            "noteEs": "Paso 2",
+            "explanationAr": "تَمَضْمَضْ ثَلَاثًا: أَدْخِلِ الْمَاءَ فِي فَمِكَ وَحَرِّكْهُ ثُمَّ مُجَّهُ. ثُمَّ اسْتَنْشِقِ الْمَاءَ بِأَنْفِكَ وَاسْتَنْثِرْهُ ثَلَاثًا، مُمْسِكًا أَنْفَكَ بِيَدِكَ الْيُسْرَى.",
+            "explanationEs": "Enjuágate la boca tres veces: mete agua, muévela y escúpela. Después aspira agua por la nariz y expúlsala tres veces, sujetándote la nariz con la mano izquierda."
+          },
+          {
+            "isInfo": true,
+            "text": "غَسْلُ الْوَجْهِ",
+            "titleEs": "Lavar la cara",
+            "note": "الْخُطْوَةُ ٣",
+            "noteEs": "Paso 3",
+            "explanationAr": "اغْسِلْ وَجْهَكَ ثَلَاثًا مَعَ الدَّلْكِ: مِنْ مَنَابِتِ شَعْرِ الرَّأْسِ إِلَى آخِرِ الذَّقَنِ، وَمِنَ الْأُذُنِ إِلَى الْأُذُنِ، وَخَلِّلِ اللِّحْيَةَ الْخَفِيفَةَ.",
+            "explanationEs": "Lava la cara tres veces frotando: desde donde nace el pelo hasta el final de la barbilla, y de oreja a oreja. Si la barba es poco poblada, haz llegar el agua entre ella."
+          },
+          {
+            "isInfo": true,
+            "text": "غَسْلُ الْيَدَيْنِ إِلَى الْمِرْفَقَيْنِ",
+            "titleEs": "Lavar los brazos hasta los codos",
+            "note": "الْخُطْوَةُ ٤",
+            "noteEs": "Paso 4",
+            "explanationAr": "اغْسِلْ يَدَكَ الْيُمْنَى مِنْ أَطْرَافِ الْأَصَابِعِ إِلَى الْمِرْفَقِ ثَلَاثًا مَعَ الدَّلْكِ وَتَخْلِيلِ الْأَصَابِعِ، ثُمَّ الْيُسْرَى كَذَلِكَ.",
+            "explanationEs": "Lava el brazo derecho desde la punta de los dedos hasta el codo incluido, tres veces, frotando y pasando el agua entre los dedos; luego el izquierdo igual."
+          },
+          {
+            "isInfo": true,
+            "text": "مَسْحُ الرَّأْسِ",
+            "titleEs": "Pasar las manos por la cabeza",
+            "note": "الْخُطْوَةُ ٥",
+            "noteEs": "Paso 5",
+            "explanationAr": "بَلِّلْ يَدَيْكَ وَامْسَحْ رَأْسَكَ كُلَّهُ: ابْدَأْ مِنْ مُقَدَّمِهِ إِلَى قَفَاكَ، ثُمَّ رُدَّ يَدَيْكَ إِلَى حَيْثُ بَدَأْتَ، مَرَّةً وَاحِدَةً.",
+            "explanationEs": "Moja las manos y pásalas por toda la cabeza: desde la frente hasta la nuca, y vuelve al punto de partida, una sola vez.",
             "diffAr": "• مَسْحُ الرَّأْسِ: جَمِيعُهُ فَرْضٌ عِنْدَ الْمَالِكِيَّةِ وَالْحَنَابِلَةِ، وَرُبُعُهُ عِنْدَ الْحَنَفِيَّةِ، وَأَقَلُّ جُزْءٍ مِنْهُ عِنْدَ الشَّافِعِيَّةِ.\n• تَثْلِيثُ مَسْحِ الرَّأْسِ سُنَّةٌ عِنْدَ الشَّافِعِيَّةِ، وَمَرَّةً وَاحِدَةً عِنْدَ الْبَاقِينَ.",
             "diffEs": "• Pasar la mano por la cabeza: toda la cabeza es obligatoria para malikíes y hanbalíes; un cuarto para los hanafíes; basta una parte mínima para los shafi'íes.\n• Repetir tres veces el paso por la cabeza es sunna para los shafi'íes; para los demás se hace una sola vez."
+          },
+          {
+            "isInfo": true,
+            "text": "مَسْحُ الْأُذُنَيْنِ",
+            "titleEs": "Pasar las manos por las orejas",
+            "note": "الْخُطْوَةُ ٦",
+            "noteEs": "Paso 6",
+            "explanationAr": "خُذْ مَاءً جَدِيدًا وَامْسَحْ أُذُنَيْكَ: بَاطِنَهُمَا بِالسَّبَّابَتَيْنِ، وَظَاهِرَهُمَا بِالْإِبْهَامَيْنِ.",
+            "explanationEs": "Toma agua nueva y pasa las manos por las orejas: el interior con los índices y el exterior con los pulgares."
+          },
+          {
+            "isInfo": true,
+            "text": "غَسْلُ الرِّجْلَيْنِ إِلَى الْكَعْبَيْنِ",
+            "titleEs": "Lavar los pies hasta los tobillos",
+            "note": "الْخُطْوَةُ ٧",
+            "noteEs": "Paso 7",
+            "explanationAr": "اغْسِلْ رِجْلَكَ الْيُمْنَى إِلَى الْكَعْبِ ثَلَاثًا مَعَ الدَّلْكِ وَتَخْلِيلِ الْأَصَابِعِ، ثُمَّ الْيُسْرَى كَذَلِكَ.",
+            "explanationEs": "Lava el pie derecho hasta el tobillo incluido, tres veces, frotando y pasando el agua entre los dedos; luego el izquierdo igual."
           },
           {
             "isInfo": true,

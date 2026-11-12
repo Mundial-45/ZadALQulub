@@ -845,3 +845,9 @@ button[onclick="jumpToInputPage()"]:hover {
   color: #064e3b;
 }
 .dark .guide-es-title { color: #6ee7b7; }
+.guide-center .guide-ar-expl,
+.guide-center .es-text-style,
+.guide-center .latin-text-style { text-align: center !important; }
+.guide-img-wrap { display: flex; justify-content: center; }
+.guide-img { width: 100%; max-width: 340px; height: auto; border-radius: 1.2rem; border: 1px solid rgba(110, 231, 183, 0.6); }
+.dark .guide-img { filter: brightness(0.92); border-color: rgba(6, 95, 70, 0.8); }
