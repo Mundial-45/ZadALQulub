@@ -1,7 +1,7 @@
 /* App Styles for Zad Al-Qulub (100% Fail-Safe Local CSS) */
 
 body {
-  font-family: 'Source Sans 3', 'IBM Plex Sans Arabic', system-ui, -apple-system, sans-serif;
+  font-family: 'Tajawal', 'Inter', system-ui, -apple-system, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f8fafc;
@@ -15,7 +15,7 @@ body {
 
 .custom-text-size {
   font-size: var(--app-font-size, 1.125rem);
-  font-family: 'IBM Plex Sans Arabic', 'Source Sans 3', sans-serif;
+  font-family: 'Amiri', serif;
 }
 
 .quran-font {
@@ -319,14 +319,14 @@ button[onclick*="showFavorites"] {
 
 /* Typography & Larger Sizing for Latin Transliteration and Spanish Translation */
 .latin-text-style {
-  font-family: 'Lora', 'Georgia', serif !important;
+  font-family: 'Lora', 'Georgia', 'Inter', serif !important;
   font-size: max(1rem, calc(var(--app-font-size, 1.125rem) * 0.95)) !important;
   line-height: 1.75 !important;
   letter-spacing: 0.015em !important;
 }
 
 .es-text-style {
-  font-family: 'Source Sans 3', 'IBM Plex Sans Arabic', system-ui, -apple-system, sans-serif !important;
+  font-family: 'Inter', 'Tajawal', system-ui, -apple-system, sans-serif !important;
   font-size: max(1.1rem, calc(var(--app-font-size, 1.125rem) * 1.08)) !important;
   line-height: 1.8 !important;
   letter-spacing: 0.01em !important;
@@ -732,7 +732,7 @@ button[onclick="jumpToInputPage()"]:hover {
   background: #ecfdf5 !important;
   border: 1.5px solid #047857 !important;
   color: #065f46 !important;
-  font-family: 'Source Sans 3', 'IBM Plex Sans Arabic', system-ui, -apple-system, sans-serif;
+  font-family: 'Tajawal', 'Inter', system-ui, sans-serif;
   font-size: .9rem;
   font-weight: 700;
   line-height: 1;
@@ -796,7 +796,7 @@ button[onclick="jumpToInputPage()"]:hover {
 
 /* Guía de la oración y Nombres de Allah */
 .guide-ar-expl {
-  font-family: 'IBM Plex Sans Arabic', 'Source Sans 3', sans-serif;
+  font-family: 'Tajawal', 'Amiri', sans-serif;
   font-size: 1.05rem;
   line-height: 2;
   text-align: right;
@@ -816,12 +816,11 @@ button[onclick="jumpToInputPage()"]:hover {
 .guide-center .latin-text-style { text-align: center !important; }
 .guide-madhahib { display: flex; flex-direction: column; gap: 0.6rem; }
 /* Tipografía: hadiz, títulos y tarjetas */
-.hadith-card .custom-text-size { font-family: 'Scheherazade New', 'IBM Plex Sans Arabic', serif !important; font-size: calc(var(--app-font-size, 1.125rem) * 1.15); line-height: 2.1; }
+.hadith-card .custom-text-size { font-family: 'Scheherazade New', 'Amiri', serif !important; font-size: calc(var(--app-font-size, 1.125rem) * 1.15); line-height: 2.1; }
 .hadith-card .es-text-style { font-family: 'Crimson Pro', 'Scheherazade New', Georgia, serif !important; font-size: max(1.2rem, calc(var(--app-font-size, 1.125rem) * 1.18)) !important; line-height: 1.65 !important; }
 h1, h2, h3, #headerTitle,
 #homeView .home-category-card [id$="Title"],
 #buttonsGrid h3, .group-title { font-family: 'Montserrat', 'Cairo', system-ui, sans-serif !important; }
-#homeView .home-category-card [id$="Sub"] { font-family: 'Source Sans 3', 'Cairo', sans-serif; }
 /* Citas dentro de las explicaciones */
 .inline-quran { font-family: 'KFGQPC Hafs', 'Scheherazade New', serif; font-size: 1.12em; font-weight: 400; line-height: 2.3; }
 .inline-hadith { font-family: 'Scheherazade New', 'Crimson Pro', serif; font-size: 1.12em; }

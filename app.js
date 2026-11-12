@@ -1095,12 +1095,12 @@ function openItemEditor(index) {
     if (kind === 'string' && isArabicText) {
       control.dir = 'rtl'; control.lang = 'ar';
       control.style.direction = 'rtl'; control.style.textAlign = 'right';
-      control.style.fontFamily = "'IBM Plex Sans Arabic', serif";
+      control.style.fontFamily = "'Amiri', 'Tajawal', serif";
       control.style.backgroundColor = document.documentElement.classList.contains('dark') ? '#172b27' : '#f0fdf4';
     } else if (kind === 'string' && isLtrText) {
       control.dir = 'ltr'; control.lang = normalizedKey.includes('explanation') || normalizedKey.includes('spanish') || normalizedKey.includes('translation') ? 'es' : 'en';
       control.style.direction = 'ltr'; control.style.textAlign = 'left';
-      control.style.fontFamily = "'Source Sans 3', sans-serif";
+      control.style.fontFamily = "'Inter', 'Lora', sans-serif";
       control.style.backgroundColor = document.documentElement.classList.contains('dark') ? '#1e293b' : '#f8fafc';
       control.style.fontSize = '0.95rem';
     } else if (kind === 'string') {
