@@ -682,16 +682,14 @@ button[onclick="jumpToInputPage()"]:hover {
   gap:0.7rem !important;
 }
 #homeView .home-category-grid > button { grid-column:auto !important; min-width:0 !important; }
-#homeView .home-category-grid > button:nth-child(1),
-#homeView .home-category-grid > button[onclick="showFavorites()"] {
+#homeView .home-category-grid > button:nth-child(1) {
   grid-column:1 / -1 !important;
 }
 #homeView .home-category-card {
   border-radius:1rem !important;
   overflow:hidden;
 }
-#homeView .home-category-grid > button:nth-child(1),
-#homeView .home-category-grid > button[onclick="showFavorites()"] {
+#homeView .home-category-grid > button:nth-child(1) {
   flex-direction:row !important;
   justify-content:center !important;
 }
