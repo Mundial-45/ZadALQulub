@@ -326,9 +326,9 @@ button[onclick*="showFavorites"] {
 }
 
 .es-text-style {
-  font-family: 'Inter', 'Tajawal', system-ui, -apple-system, sans-serif !important;
-  font-size: max(1.1rem, calc(var(--app-font-size, 1.125rem) * 1.08)) !important;
-  line-height: 1.8 !important;
+  font-family: 'Amiri', 'Inter', Georgia, serif !important;
+  font-size: max(1.25rem, calc(var(--app-font-size, 1.125rem) * 1.22)) !important;
+  line-height: 1.75 !important;
   letter-spacing: 0.01em !important;
 }
 
@@ -351,7 +351,7 @@ button[onclick*="showFavorites"] {
 .es-text-style {
   direction: ltr !important;
   text-align: left !important;
-  font-size: max(0.98rem, calc(var(--app-font-size, 1.125rem) * 0.94)) !important;
+  font-size: max(1.15rem, calc(var(--app-font-size, 1.125rem) * 1.1)) !important;
   line-height: 1.7 !important;
   background-color: #eff6ff !important;
   color: #1e3a8a !important;
