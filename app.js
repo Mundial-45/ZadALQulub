@@ -600,7 +600,10 @@ function toggleFavorite(text) {
   if (currentGroup) renderGroupItems();
 }
 
+let scrollYBeforeViewChange = null;
+
 function hideAllViews() {
+  scrollYBeforeViewChange = window.scrollY || window.pageYOffset || 0;
   ['homeView', 'categoryListView', 'detailView', 'tasbeehView', 'favoritesView', 'quranView', 'quranSurahsView', 'quranAhzabView', 'quranReaderView'].forEach(id => {
     document.getElementById(id)?.classList.add('hidden');
   });
@@ -1632,6 +1635,29 @@ document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') closeTransliterationGuide();
 });
 
+// Recordar la posición de desplazamiento de cada vista: antes de abrir otra vista se guarda
+// scrollY en la entrada actual del historial, y al volver atrás se restaura.
+(function () {
+  if (!window.history || !window.history.pushState) return;
+  const originalPushState = window.history.pushState.bind(window.history);
+  window.history.pushState = function (state, title, url) {
+    try {
+      // Las vistas suben arriba antes de llamar a pushState: usar la posición guardada en hideAllViews().
+      const y = scrollYBeforeViewChange !== null ? scrollYBeforeViewChange : (window.scrollY || window.pageYOffset || 0);
+      window.history.replaceState(Object.assign({}, window.history.state || {}, { scrollY: y }), '');
+    } catch (e) {}
+    scrollYBeforeViewChange = null;
+    return originalPushState(state, title, url);
+  };
+})();
+
+function restoreScrollFromState(state) {
+  const y = state && Number(state.scrollY);
+  if (!y) return;
+  // Esperar a que la vista se pinte (las vistas hacen scrollTo(0) al mostrarse).
+  requestAnimationFrame(() => requestAnimationFrame(() => window.scrollTo(0, y)));
+}
+
 window.addEventListener('popstate', (e) => {
   const transliterationModal = document.getElementById('transliterationModal');
   if (transliterationModal && !transliterationModal.classList.contains('hidden')) {
@@ -1651,6 +1677,8 @@ window.addEventListener('popstate', (e) => {
       case 'quranReader': if (typeof openQuranPage === 'function') openQuranPage(e.state.page || 1, true); break;
       default: goHome(true);
     }
+    restoreScrollFromState(e.state);
+    scrollYBeforeViewChange = null;
   } else {
     goHome(true);
   }
