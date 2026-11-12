@@ -1783,11 +1783,15 @@ function showFavorites(skipPushState = false) {
       const found = findItemById(id);
       if (!found) return;
       const text = found.item.text || '';
+      const favModule = getSectionModule(found.section);
+      const favQuranFont = favModule && typeof favModule.isQuranItem === 'function' && favModule.isQuranItem(found.item) ? ' quran-font' : '';
       const shareTextValue = getItemShareText(found.item, isEs);
       const card = document.createElement('div');
       card.className = 'bg-white dark:bg-slate-800 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-3';
       card.innerHTML = `
-        <p class="text-base font-medium leading-relaxed text-slate-800 dark:text-slate-100 whitespace-pre-line">${formatTextWithNewlines(text)}</p>
+        <p class="fav-text custom-text-size${favQuranFont} text-base font-medium leading-relaxed text-slate-800 dark:text-slate-100 whitespace-pre-line" dir="rtl">${formatQuotedText(text)}</p>
+        ${isEs && found.item.latin ? `<p class="fav-es text-sm italic leading-relaxed text-slate-600 dark:text-slate-300 whitespace-pre-line" dir="ltr">${formatTextWithNewlines(found.item.latin)}</p>` : ''}
+        ${isEs && found.item.explanationEs ? `<p class="fav-es text-sm leading-relaxed text-slate-700 dark:text-slate-200 whitespace-pre-line" dir="ltr">${formatTextWithNewlines(found.item.explanationEs)}</p>` : ''}
         <div class="flex items-center justify-between pt-2 border-t border-slate-100 dark:border-slate-700/50">
           <div class="flex items-center space-x-2 space-x-reverse">
             <button type="button" onclick="copyText('${escapeJsStr(shareTextValue)}')" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-700 text-xs font-bold text-slate-700 dark:text-slate-200">
