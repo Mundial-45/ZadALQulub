@@ -616,7 +616,7 @@ function loadFavorites() {
 // Compara también sin tashkil, para recuperar los que dejaron de coincidir al corregir el texto.
 function migrateLegacyFavorites() {
   const legacyRaw = safeGetStorage(FAV_KEY);
-  if (!legacyRaw || safeGetStorage(FAV_IDS_KEY) !== null) return;
+  if (!legacyRaw || safeGetStorage(FAV_IDS_KEY) !== null || !allSectionsLoaded()) return;
   let legacy = [];
   try { legacy = JSON.parse(legacyRaw) || []; } catch (e) { legacy = []; }
   const normalise = function (t) { return removeArabicDiacritics(String(t || '')).replace(/[^\u0621-\u064A\s]/g, '').replace(/\s+/g, ' ').trim(); };
@@ -675,6 +675,37 @@ function goHome(skipPushState = false) {
   }
 }
 
+// Carga de secciones bajo demanda: cada archivo de datos se carga con un <script> dinámico
+// (no con fetch(), que falla en file:///android_asset) la primera vez que se necesita.
+const SECTION_FILES = { azkar: 'azkar.js', adya: 'adya.js', munajat: 'munajat.js', ruqyah: 'ruqya.js', asma: 'asma.js' };
+const sectionLoadPromises = {};
+
+function isSectionLoaded(sec) {
+  return !!(window.ZadSectionModules && window.ZadSectionModules[sec]);
+}
+
+function loadSection(sec) {
+  if (!SECTION_FILES[sec] || isSectionLoaded(sec)) return Promise.resolve();
+  if (!sectionLoadPromises[sec]) {
+    sectionLoadPromises[sec] = new Promise(function (resolve) {
+      const script = document.createElement('script');
+      script.src = SECTION_FILES[sec];
+      script.onload = function () { resolve(); };
+      script.onerror = function () { delete sectionLoadPromises[sec]; resolve(); };
+      document.head.appendChild(script);
+    });
+  }
+  return sectionLoadPromises[sec];
+}
+
+function loadAllSections() {
+  return Promise.all(Object.keys(SECTION_FILES).map(loadSection));
+}
+
+function allSectionsLoaded() {
+  return Object.keys(SECTION_FILES).every(isSectionLoaded);
+}
+
 function getSectionModule(sec) {
   return (window.ZadSectionModules && window.ZadSectionModules[sec]) || null;
 }
@@ -706,6 +737,10 @@ function getCountUnit(isEs) {
 
 function showSection(sec, skipPushState = false) {
   if (!sec) sec = 'azkar';
+  if (SECTION_FILES[sec] && !isSectionLoaded(sec)) {
+    loadSection(sec).then(function () { if (isSectionLoaded(sec)) showSection(sec, skipPushState); });
+    return;
+  }
   currentSection = sec;
   hideAllViews();
   document.getElementById('categoryListView')?.classList.remove('hidden');
@@ -933,8 +968,16 @@ function renderButtonsGrid() {
   });
 }
 
-function openGroup(groupId, skipPushState = false) {
+function openGroup(groupId, skipPushState = false, sectionHint = null) {
   if (!groupId) return;
+  if (!findSectionGroup(groupId) && !allSectionsLoaded()) {
+    const loading = sectionHint && SECTION_FILES[sectionHint] ? loadSection(sectionHint) : loadAllSections();
+    loading.then(function () {
+      if (findSectionGroup(groupId)) openGroup(groupId, skipPushState);
+      else if (!allSectionsLoaded()) loadAllSections().then(function () { if (findSectionGroup(groupId)) openGroup(groupId, skipPushState); });
+    });
+    return;
+  }
   // Resolve from the active section first, then fall back to all registered modules.
   const activeModule = getSectionModule(currentSection);
   const activeGroup = activeModule && typeof activeModule.findGroup === 'function'
@@ -1604,6 +1647,10 @@ function renderGroupItems() {
 }
 
 function showFavorites(skipPushState = false) {
+  if (!allSectionsLoaded()) {
+    loadAllSections().then(function () { migrateLegacyFavorites(); showFavorites(skipPushState); });
+    return;
+  }
   hideAllViews();
   document.getElementById('favoritesView')?.classList.remove('hidden');
   loadFavorites();
@@ -1773,7 +1820,7 @@ window.addEventListener('popstate', (e) => {
     switch (e.state.view) {
       case 'home': goHome(true); break;
       case 'section': showSection(e.state.sec, true); break;
-      case 'detail': openGroup(e.state.groupId, true); break;
+      case 'detail': openGroup(e.state.groupId, true, e.state.sec); break;
       case 'tasbeeh': showTasbeeh(true); break;
       case 'favorites': showFavorites(true); break;
       case 'quran': if (typeof showQuranView === 'function') showQuranView(true); break;
@@ -1793,11 +1840,19 @@ window.addEventListener('DOMContentLoaded', () => {
   checkDailyReset();
   loadSavedTheme();
   loadFavorites();
-  migrateLegacyFavorites();
   applyLanguageUI();
   if (window.history && window.history.replaceState) {
     try {
       window.history.replaceState({ view: 'home' }, '', '#home');
     } catch (e) {}
   }
+});
+
+// Cuando la pantalla de inicio ya se ha mostrado, cargar el resto de secciones en segundo plano.
+window.addEventListener('load', () => {
+  setTimeout(function () {
+    loadAllSections().then(function () {
+      migrateLegacyFavorites();
+    });
+  }, 1200);
 });
