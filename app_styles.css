@@ -683,8 +683,8 @@ button[onclick="jumpToInputPage()"]:hover {
 }
 #homeView .home-category-grid > button { grid-column:auto !important; min-width:0 !important; }
 #homeView .home-category-grid > button:nth-child(1),
-#homeView .home-category-grid > button:nth-child(6),
-#homeView .home-category-grid > button:nth-child(7) {
+#homeView .home-category-grid > button[onclick="showTasbeeh()"],
+#homeView .home-category-grid > button[onclick="showFavorites()"] {
   grid-column:1 / -1 !important;
 }
 #homeView .home-category-card {
@@ -692,8 +692,8 @@ button[onclick="jumpToInputPage()"]:hover {
   overflow:hidden;
 }
 #homeView .home-category-grid > button:nth-child(1),
-#homeView .home-category-grid > button:nth-child(6),
-#homeView .home-category-grid > button:nth-child(7) {
+#homeView .home-category-grid > button[onclick="showTasbeeh()"],
+#homeView .home-category-grid > button[onclick="showFavorites()"] {
   flex-direction:row !important;
   justify-content:center !important;
 }
@@ -795,3 +795,53 @@ button[onclick="jumpToInputPage()"]:hover {
 .dark .audio-icon-btn:hover { background: #334155 !important; }
 .dark .audio-icon-btn:focus-visible { outline-color: #34d399 !important; }
 .dark .audio-repeat-btn.is-active { background: #10b981 !important; border-color: #6ee7b7 !important; color: #052e22 !important; }
+
+/* Guía de la oración y Nombres de Allah */
+.guide-ar-expl {
+  font-family: 'Tajawal', 'Amiri', sans-serif;
+  font-size: 1.05rem;
+  line-height: 2;
+  text-align: right;
+  color: #1e293b;
+  background: rgba(236, 253, 245, 0.85);
+  border: 1px solid rgba(110, 231, 183, 0.6);
+  border-radius: 1rem;
+  padding: 0.9rem 1rem;
+}
+.dark .guide-ar-expl {
+  color: #e2e8f0;
+  background: rgba(2, 44, 34, 0.55);
+  border-color: rgba(6, 95, 70, 0.8);
+}
+.guide-diff {
+  border: 1px solid #fcd34d;
+  background: #fffbeb;
+  border-radius: 1rem;
+  padding: 0.6rem 0.9rem;
+}
+.guide-diff summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #92400e;
+  list-style-position: inside;
+}
+.guide-diff-body {
+  margin-top: 0.6rem;
+  font-size: 0.92rem;
+  line-height: 1.9;
+  color: #422006;
+}
+.guide-diff[dir="ltr"] .guide-diff-body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; }
+.guide-diff[dir="rtl"] .guide-diff-body { font-family: 'Tajawal', 'Amiri', sans-serif; }
+.dark .guide-diff { background: rgba(69, 26, 3, 0.45); border-color: #92400e; }
+.dark .guide-diff summary { color: #fcd34d; }
+.dark .guide-diff-body { color: #fde68a; }
+.guide-es-title {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  text-align: center;
+  color: #064e3b;
+}
+.dark .guide-es-title { color: #6ee7b7; }

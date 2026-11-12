@@ -57,7 +57,13 @@ const uiTexts = {
     tabContinueText: '3. متابعة القراءة',
     btnRuqyahTitle: 'الرقية الشرعية',
     btnRuqyahSub: 'رقية الشفاء، العين، الحسد والمس',
-    ruqyahSectionTitle: 'الرقية الشرعية'
+    ruqyahSectionTitle: 'الرقية الشرعية',
+    btnGuiaTitle: 'دليل الصلاة',
+    btnGuiaSub: 'الطهارة والصلاة على المذهب المالكي',
+    guiaSectionTitle: 'دليل الطهارة والصلاة',
+    btnAsmaTitle: 'أسماء الله الحسنى',
+    btnAsmaSub: 'معانيها وشرحها المختصر',
+    asmaSectionTitle: 'أسماء الله الحسنى'
   },
   es: {
     headerTitle: 'Zad Al-Qulub',
@@ -113,7 +119,13 @@ const uiTexts = {
     tabContinueText: '3. Continuar leyendo',
     btnRuqyahTitle: 'Ruqyah Shariyah',
     btnRuqyahSub: 'Curación, protección contra envidia, ojo y mal',
-    ruqyahSectionTitle: 'Ruqyah Shariyah'
+    ruqyahSectionTitle: 'Ruqyah Shariyah',
+    btnGuiaTitle: 'Guía de la oración',
+    btnGuiaSub: 'Purificación y oración (escuela malikí)',
+    guiaSectionTitle: 'Guía de la purificación y la oración',
+    btnAsmaTitle: 'Los Nombres de Allah',
+    btnAsmaSub: 'Su significado y explicación breve',
+    asmaSectionTitle: 'Los Nombres de Allah'
   }
 };
 
@@ -211,6 +223,11 @@ function applyLanguageUI() {
   if (ruqyahTitleEl && t.btnRuqyahTitle) ruqyahTitleEl.innerText = t.btnRuqyahTitle;
   const ruqyahSubEl = document.getElementById('btnRuqyahSub');
   if (ruqyahSubEl && t.btnRuqyahSub) ruqyahSubEl.innerText = t.btnRuqyahSub;
+
+  [['btnGuiaTitle', t.btnGuiaTitle], ['btnGuiaSub', t.btnGuiaSub], ['btnAsmaTitle', t.btnAsmaTitle], ['btnAsmaSub', t.btnAsmaSub]].forEach(([id, txt]) => {
+    const el = document.getElementById(id);
+    if (el && txt) el.innerText = txt;
+  });
 
   const munajatTitleEl = document.getElementById('btnMunajatTitle');
   if (munajatTitleEl) munajatTitleEl.innerText = t.btnMunajatTitle;
@@ -601,6 +618,17 @@ function findSectionGroup(groupId) {
   return null;
 }
 
+function getGroupItemCount(group) {
+  if (!group || !Array.isArray(group.items)) return 0;
+  return group.items.filter(it => !it.isInfo).length || group.items.length;
+}
+
+function getCountUnit(isEs) {
+  const m = getSectionModule(currentSection);
+  if (m && typeof m.getCountUnit === 'function') return m.getCountUnit(isEs);
+  return isEs ? 'invocaciones' : 'أذكار/أدعية';
+}
+
 function showSection(sec, skipPushState = false) {
   if (!sec) sec = 'azkar';
   currentSection = sec;
@@ -629,6 +657,8 @@ function openAzkarSection() { showSection('azkar'); }
 function openAdyaSection() { showSection('adya'); }
 function openMunajatSection() { showSection('munajat'); }
 function openRuqyaSection() { showSection('ruqyah'); }
+function openGuiaSection() { showSection('guia'); }
+function openAsmaSection() { showSection('asma'); }
 
 function goBackToSection() {
   if (window.history && window.history.length > 1) {
@@ -713,7 +743,7 @@ function filterButtons() {
   if (matchedGroups.length > 0) {
     matchedGroups.forEach((group) => {
       const title = isEs ? (group.titleEs || group.titleAr) : (group.titleAr || group.titleEs);
-      const count = group.items ? group.items.filter(it => !it.isInfo).length : 0;
+      const count = getGroupItemCount(group);
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.onclick = () => openGroup(group.id);
@@ -723,7 +753,7 @@ function filterButtons() {
         <div class="flex items-center space-x-2.5 sm:space-x-3 space-x-reverse pointer-events-none min-w-0 flex-1">
           <div class="min-w-0 flex-1">
             <h3 class="font-bold text-white text-sm sm:text-base leading-snug">${title}</h3>
-            <p class="text-xs text-emerald-100 mt-1">${count} ${isEs ? 'invocaciones' : 'أذكار/أدعية'}</p>
+            <p class="text-xs text-emerald-100 mt-1">${count} ${getCountUnit(isEs)}</p>
           </div>
         </div>
         <span class="text-emerald-200 font-bold text-sm sm:text-lg pointer-events-none mr-1 flex-shrink-0">${isEs ? '→' : '←'}</span>
@@ -804,7 +834,7 @@ function renderButtonsGrid() {
   data.forEach((group, index) => {
     const title = isEs ? (group.titleEs || group.titleAr) : (group.titleAr || group.titleEs);
     if (!title) return;
-    const count = group.items ? group.items.filter(it => !it.isInfo).length : 0;
+    const count = getGroupItemCount(group);
     const style = specialGradients[group.id] || categoryGradients[index % categoryGradients.length];
     const inlineStyle = catInlineStyles[index % catInlineStyles.length];
 
@@ -820,7 +850,7 @@ function renderButtonsGrid() {
         </div>
         <div class="min-w-0 flex-1">
           <h3 class="font-bold text-white text-sm sm:text-base leading-snug">${title}</h3>
-          <p class="text-xs ${style.textSec} mt-1">${count} ${isEs ? 'invocaciones' : 'أذكار/أدعية'}</p>
+          <p class="text-xs ${style.textSec} mt-1">${count} ${getCountUnit(isEs)}</p>
         </div>
       </div>
       <span class="${style.arrow} font-bold text-sm sm:text-lg pointer-events-none mr-1 flex-shrink-0">${isEs ? '→' : '←'}</span>
@@ -938,7 +968,7 @@ function resetAllInGroup() {
 
 const EDITOR_REPO = 'Mundial-45/ZadALQulub';
 const EDITOR_BRANCH = 'main';
-const EDITOR_FILES = { azkar: 'azkar.js', adya: 'adya.js', ruqyah: 'ruqya.js', munajat: 'munajat.js' };
+const EDITOR_FILES = { azkar: 'azkar.js', adya: 'adya.js', ruqyah: 'ruqya.js', munajat: 'munajat.js', guia: 'guia.js', asma: 'asma.js' };
 let itemEditorState = null;
 let pendingItemEdits = loadPendingItemEdits();
 const PENDING_EDITS_KEY = 'zadAlQulubPendingEdits_v1';
@@ -1357,7 +1387,10 @@ function renderGroupItems() {
     const isAdyaSection = currentSection === 'adya';
     const isInfoItem = !!item.isInfo;
     const displayedItemNumber = Number(item.itemNumber) || (index + 1);
-    const itemProgressStr = isRuqyahSection
+    const labelModule = getSectionModule(currentSection);
+    const itemProgressStr = (labelModule && typeof labelModule.getItemLabel === 'function')
+      ? labelModule.getItemLabel(isEs, displayedItemNumber)
+      : isRuqyahSection
       ? (isEs ? `Ruqyah n.º ${displayedItemNumber}` : `رقية رقم ${displayedItemNumber}`)
       : isMunajatSection
         ? (isEs ? `Munajat n.º ${displayedItemNumber}` : `مناجاة رقم ${displayedItemNumber}`)
@@ -1376,22 +1409,31 @@ function renderGroupItems() {
         ${isInfoItem ? '' : `<span class="text-emerald-800 dark:text-emerald-400 bg-emerald-100/80 dark:bg-emerald-950/60 px-3 py-1 rounded-full border border-emerald-300 dark:border-emerald-800">
           ${itemProgressStr}
         </span>`}
-        ${item.note ? `<span class="bg-amber-100/80 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 px-3 py-1 rounded-full border border-amber-300 dark:border-amber-800">${item.note}</span>` : ''}
+        ${item.note ? `<span class="bg-amber-100/80 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 px-3 py-1 rounded-full border border-amber-300 dark:border-amber-800">${isEs && item.noteEs ? item.noteEs : item.note}</span>` : ''}
       </div>`}
 
       ${isEs ? `
         <div class="space-y-4">
+          ${item.titleEs ? `<h3 class="guide-es-title">${item.titleEs}</h3>` : ''}
           ${item.latin ? `<div class="text-sm sm:text-base md:text-lg text-slate-800 dark:text-slate-200 latin-text-style italic text-center font-semibold bg-amber-100/50 dark:bg-slate-900/70 p-4 rounded-2xl border border-amber-300/60 dark:border-slate-700 shadow-sm whitespace-pre-line">${formatTextWithNewlines(item.latin)}</div>` : ''}
           ${item.explanationEs ? `<div class="text-base sm:text-lg md:text-xl text-slate-900 dark:text-slate-50 es-text-style text-center font-bold bg-emerald-50/90 dark:bg-emerald-950/60 p-4 sm:p-5 rounded-2xl border border-emerald-300/60 dark:border-emerald-800/80 leading-relaxed shadow-sm whitespace-pre-line">${formatTextWithNewlines(item.explanationEs)}</div>` : ''}
-          <div class="leading-relaxed custom-text-size${quranFontClass} font-bold text-emerald-950 dark:text-emerald-300 text-center tracking-wide pt-3 border-t border-amber-200/60 dark:border-slate-700/60 dir-rtl whitespace-pre-line">
+          ${item.titleEs && !item.latin ? '' : `<div class="leading-relaxed custom-text-size${quranFontClass} font-bold text-emerald-950 dark:text-emerald-300 text-center tracking-wide pt-3 border-t border-amber-200/60 dark:border-slate-700/60 dir-rtl whitespace-pre-line">
             ${formatTextWithNewlines(item.text)}
-          </div>
+          </div>`}
         </div>
       ` : `
         <div class="leading-relaxed custom-text-size${quranFontClass} font-bold text-slate-950 dark:text-slate-50 text-center tracking-wide py-2 whitespace-pre-line">
           ${formatTextWithNewlines(item.text)}
         </div>
+        ${item.explanationAr ? `<div class="guide-ar-expl whitespace-pre-line" dir="rtl">${formatTextWithNewlines(item.explanationAr)}</div>` : ''}
       `}
+
+      ${(isEs ? item.diffEs : item.diffAr) ? `
+        <details class="guide-diff" dir="${isEs ? 'ltr' : 'rtl'}">
+          <summary>${isEs ? '📚 Diferencias entre las escuelas' : '📚 اختلاف المذاهب'}</summary>
+          <div class="guide-diff-body whitespace-pre-line">${formatTextWithNewlines(isEs ? item.diffEs : item.diffAr)}</div>
+        </details>
+      ` : ''}
 
       ${!isAdya && !isInfoItem ? `
         <div class="flex flex-col items-center justify-center pt-2">
@@ -1424,16 +1466,16 @@ function renderGroupItems() {
       <div class="flex items-center justify-center space-x-2 space-x-reverse pt-2 border-t border-slate-100 dark:border-slate-700">
 
 
-        <button type="button" onclick="copyText('${escapeJsStr(isEs ? (item.explanationEs || item.text) : item.text)}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="${isEs ? 'Copiar' : 'نسخ'}" aria-label="${isEs ? 'Copiar' : 'نسخ'}">
+        <button type="button" onclick="copyText('${escapeJsStr(isEs ? (item.explanationEs || item.text) : (item.explanationAr ? item.text + '\n\n' + item.explanationAr : item.text))}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="${isEs ? 'Copiar' : 'نسخ'}" aria-label="${isEs ? 'Copiar' : 'نسخ'}">
           📋
         </button>
-        <button type="button" onclick="shareText('${escapeJsStr(isEs ? (item.explanationEs || item.text) : item.text)}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="${isEs ? 'Compartir' : 'مشاركة'}" aria-label="${isEs ? 'Compartir' : 'مشاركة'}">
+        <button type="button" onclick="shareText('${escapeJsStr(isEs ? (item.explanationEs || item.text) : (item.explanationAr ? item.text + '\n\n' + item.explanationAr : item.text))}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="${isEs ? 'Compartir' : 'مشاركة'}" aria-label="${isEs ? 'Compartir' : 'مشاركة'}">
           🔗
         </button>
         <button type="button" onclick="toggleFavorite('${escapeJsStr(item.text)}')" class="p-2.5 rounded-xl ${isFav ? 'bg-rose-100 dark:bg-rose-950 text-rose-600' : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'} hover:bg-rose-100 dark:hover:bg-rose-900 transition cursor-pointer" title="${isEs ? (isFav ? 'Quitar de favoritos' : 'Añadir a favoritos') : (isFav ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة')}" aria-label="${isEs ? (isFav ? 'Quitar de favoritos' : 'Añadir a favoritos') : (isFav ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة')}">
           ${isFav ? '★' : '☆'}
         </button>
-        ${['azkar', 'adya', 'ruqyah', 'munajat'].includes(currentSection) ? `
+        ${['azkar', 'adya', 'ruqyah', 'munajat', 'guia', 'asma'].includes(currentSection) ? `
           <button type="button" onclick="openItemEditor(${index})" class="p-2.5 rounded-xl bg-amber-100 dark:bg-amber-950 hover:bg-amber-200 dark:hover:bg-amber-900 text-amber-800 dark:text-amber-200 transition cursor-pointer" title="${isEs ? 'Editar elemento' : 'تعديل الذكر'}">
             ✏️ ${isEs ? 'Editar' : 'تعديل'}
           </button>
