@@ -41,10 +41,10 @@
   function hintHtml() {
     if (lang() === 'es') {
       return '<strong>Instala Zad Al-Qulub en tu iPhone o iPad</strong><br>' +
-        'Pulsa ' + SHARE_ICON + ' <strong>Compartir</strong> y luego <strong>«Añadir a pantalla de inicio»</strong>.';
+        'Pulsa ' + SHARE_ICON + ' <strong>Compartir</strong> (si no lo ves, está en el menú <strong>···</strong>), luego <strong>«Ver más»</strong> y después <strong>«Añadir a pantalla de inicio»</strong>.';
     }
     return '<strong>ثبّت زاد القلوب على جهازك</strong><br>' +
-      'اضغط ' + SHARE_ICON + ' <strong>مشاركة</strong> ثم <strong>«إضافة إلى الشاشة الرئيسية»</strong>.';
+      'اضغط ' + SHARE_ICON + ' <strong>مشاركة</strong> (إن لم يظهر فهو في قائمة <strong>···</strong>)، ثم <strong>«عرض المزيد»</strong>، ثم <strong>«إضافة إلى الشاشة الرئيسية»</strong>.';
   }
 
   function render() {
