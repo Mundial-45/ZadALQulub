@@ -1039,13 +1039,39 @@ function applyPendingEditsToGroup(group, section) {
   });
 }
 
+// Modo administrador: el botón Editar solo aparece tras pulsar 3 veces el título «Zad Al-Qulub».
+// Nunca se activa dentro de la app de Android.
+const ADMIN_MODE_KEY = 'zadAlQulubAdminMode';
+let headerTitleTaps = [];
+
+function isAdminMode() {
+  if (window.AndroidBridge) return false;
+  try { return localStorage.getItem(ADMIN_MODE_KEY) === '1'; } catch (e) { return false; }
+}
+
+function handleHeaderTitleTap() {
+  if (window.AndroidBridge) return;
+  const now = Date.now();
+  headerTitleTaps = headerTitleTaps.filter(function (t) { return now - t < 900; });
+  headerTitleTaps.push(now);
+  if (headerTitleTaps.length < 3) return;
+  headerTitleTaps = [];
+  const enable = !isAdminMode();
+  try {
+    if (enable) localStorage.setItem(ADMIN_MODE_KEY, '1'); else localStorage.removeItem(ADMIN_MODE_KEY);
+  } catch (e) {}
+  const isEs = currentLang === 'es';
+  showToast(enable ? (isEs ? 'Modo edición activado' : 'تم تفعيل وضع التعديل') : (isEs ? 'Modo edición desactivado' : 'تم إيقاف وضع التعديل'));
+  updatePendingEditsDock();
+}
+
 function updatePendingEditsDock() {
   const dock = document.getElementById('pendingEditsDock');
   const count = document.getElementById('pendingEditsCount');
   const list = document.getElementById('pendingEditsSummary');
   if (!dock || !count) return;
   const total = pendingItemEdits.length;
-  dock.classList.toggle('hidden', total === 0);
+  dock.classList.toggle('hidden', total === 0 || !isAdminMode());
   count.textContent = String(total);
   if (list) list.textContent = currentLang === 'es'
     ? total + (total === 1 ? ' cambio pendiente' : ' cambios pendientes') + '. Se guardan primero en este dispositivo.'
@@ -1487,7 +1513,7 @@ function renderGroupItems() {
         <button type="button" onclick="toggleFavorite('${escapeJsStr(item.text)}')" class="p-2.5 rounded-xl ${isFav ? 'bg-rose-100 dark:bg-rose-950 text-rose-600' : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'} hover:bg-rose-100 dark:hover:bg-rose-900 transition cursor-pointer" title="${isEs ? (isFav ? 'Quitar de favoritos' : 'Añadir a favoritos') : (isFav ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة')}" aria-label="${isEs ? (isFav ? 'Quitar de favoritos' : 'Añadir a favoritos') : (isFav ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة')}">
           ${isFav ? '★' : '☆'}
         </button>
-        ${['azkar', 'adya', 'ruqyah', 'munajat', 'asma'].includes(currentSection) ? `
+        ${isAdminMode() && ['azkar', 'adya', 'ruqyah', 'munajat', 'asma'].includes(currentSection) ? `
           <button type="button" onclick="openItemEditor(${index})" class="p-2.5 rounded-xl bg-amber-100 dark:bg-amber-950 hover:bg-amber-200 dark:hover:bg-amber-900 text-amber-800 dark:text-amber-200 transition cursor-pointer" title="${isEs ? 'Editar elemento' : 'تعديل الذكر'}">
             ✏️ ${isEs ? 'Editar' : 'تعديل'}
           </button>
