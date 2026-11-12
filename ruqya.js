@@ -339,7 +339,10 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "note": "آية الكرسي",
-            "audioUrls": []
+            "audioUrls": [],
+            "audioUrls": [
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002255.mp3"
+            ]
           },
           {
             "itemNumber": 26,
@@ -903,7 +906,10 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "note": "آية الكرسي",
-            "audioUrls": []
+            "audioUrls": [],
+            "audioUrls": [
+              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002255.mp3"
+            ]
           },
           {
             "itemNumber": 69,
