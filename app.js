@@ -1,6 +1,20 @@
 // app.js - Controlador principal de la aplicación / زَادُ الْقُلُوبِ
 
-let currentLang = safeGetStorage('app_lang') || 'ar';
+// El enlace puede llevar el idioma: ?lang=es o ?lang=ar. Se guarda para las próximas visitas.
+let currentLang = (function () {
+  try {
+    const fromLink = new URLSearchParams(window.location.search).get('lang');
+    if (fromLink === 'es' || fromLink === 'ar') {
+      safeSetStorage('app_lang', fromLink);
+      // Se quita ?lang de la barra para que al recargar mande el idioma elegido con el botón.
+      const url = new URL(window.location.href);
+      url.searchParams.delete('lang');
+      window.history.replaceState(window.history.state, '', url.pathname + url.search + url.hash);
+      return fromLink;
+    }
+  } catch (e) {}
+  return safeGetStorage('app_lang') || 'ar';
+})();
 
 const uiTexts = {
   ar: {
