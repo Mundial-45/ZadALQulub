@@ -60,7 +60,10 @@ const uiTexts = {
     ruqyahSectionTitle: 'الرقية الشرعية',
     btnAsmaTitle: 'أسماء الله الحسنى',
     btnAsmaSub: 'معانيها وشرحها المختصر',
-    asmaSectionTitle: 'أسماء الله الحسنى'
+    asmaSectionTitle: 'أسماء الله الحسنى',
+    btnGlosarioTitle: 'معجم المصطلحات',
+    btnGlosarioSub: 'مصطلحات إسلامية مشروحة',
+    glosarioSectionTitle: 'معجم المصطلحات الإسلامية'
   },
   es: {
     headerTitle: 'Zad Al-Qulub',
@@ -119,7 +122,10 @@ const uiTexts = {
     ruqyahSectionTitle: 'Ruqyah Shariyah',
     btnAsmaTitle: 'Los Nombres de Allah',
     btnAsmaSub: 'Su significado y explicación breve',
-    asmaSectionTitle: 'Los Nombres de Allah'
+    asmaSectionTitle: 'Los Nombres de Allah',
+    btnGlosarioTitle: 'Glosario',
+    btnGlosarioSub: 'Términos islámicos explicados',
+    glosarioSectionTitle: 'Glosario de términos islámicos'
   }
 };
 
@@ -220,7 +226,7 @@ function applyLanguageUI() {
   const ruqyahSubEl = document.getElementById('btnRuqyahSub');
   if (ruqyahSubEl && t.btnRuqyahSub) ruqyahSubEl.innerText = t.btnRuqyahSub;
 
-  [['btnAsmaTitle', t.btnAsmaTitle], ['btnAsmaSub', t.btnAsmaSub]].forEach(([id, txt]) => {
+  [['btnAsmaTitle', t.btnAsmaTitle], ['btnAsmaSub', t.btnAsmaSub], ['btnGlosarioTitle', t.btnGlosarioTitle], ['btnGlosarioSub', t.btnGlosarioSub]].forEach(([id, txt]) => {
     const el = document.getElementById(id);
     if (el && txt) el.innerText = txt;
   });
@@ -677,7 +683,7 @@ function goHome(skipPushState = false) {
 
 // Carga de secciones bajo demanda: cada archivo de datos se carga con un <script> dinámico
 // (no con fetch(), que falla en file:///android_asset) la primera vez que se necesita.
-const SECTION_FILES = { azkar: 'azkar.js', adya: 'adya.js', munajat: 'munajat.js', ruqyah: 'ruqya.js', asma: 'asma.js' };
+const SECTION_FILES = { azkar: 'azkar.js', adya: 'adya.js', munajat: 'munajat.js', ruqyah: 'ruqya.js', asma: 'asma.js', glosario: 'glosario.js' };
 const sectionLoadPromises = {};
 
 function isSectionLoaded(sec) {
@@ -768,6 +774,7 @@ function openAdyaSection() { showSection('adya'); }
 function openMunajatSection() { showSection('munajat'); }
 function openRuqyaSection() { showSection('ruqyah'); }
 function openAsmaSection() { showSection('asma'); }
+function openGlosarioSection() { showSection('glosario'); }
 
 function goBackToSection() {
   if (window.history && window.history.length > 1) {
@@ -1104,7 +1111,7 @@ function resetAllInGroup() {
 
 const EDITOR_REPO = 'Mundial-45/ZadALQulub';
 const EDITOR_BRANCH = 'main';
-const EDITOR_FILES = { azkar: 'azkar.js', adya: 'adya.js', ruqyah: 'ruqya.js', munajat: 'munajat.js', asma: 'asma.js' };
+const EDITOR_FILES = { azkar: 'azkar.js', adya: 'adya.js', ruqyah: 'ruqya.js', munajat: 'munajat.js', asma: 'asma.js', glosario: 'glosario.js' };
 let itemEditorState = null;
 let pendingItemEdits = loadPendingItemEdits();
 const PENDING_EDITS_KEY = 'zadAlQulubPendingEdits_v1';
@@ -1630,7 +1637,7 @@ function renderGroupItems() {
         <button type="button" onclick="toggleFavorite('${escapeJsStr(itemId)}')" class="p-2.5 rounded-xl ${isFav ? 'bg-rose-100 dark:bg-rose-950 text-rose-600' : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'} hover:bg-rose-100 dark:hover:bg-rose-900 transition cursor-pointer" title="${isEs ? (isFav ? 'Quitar de favoritos' : 'Añadir a favoritos') : (isFav ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة')}" aria-label="${isEs ? (isFav ? 'Quitar de favoritos' : 'Añadir a favoritos') : (isFav ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة')}">
           ${isFav ? '★' : '☆'}
         </button>
-        ${isAdminMode() && ['azkar', 'adya', 'ruqyah', 'munajat', 'asma'].includes(currentSection) ? `
+        ${isAdminMode() && ['azkar', 'adya', 'ruqyah', 'munajat', 'asma', 'glosario'].includes(currentSection) ? `
           <button type="button" onclick="openItemEditor(${index})" class="p-2.5 rounded-xl bg-amber-100 dark:bg-amber-950 hover:bg-amber-200 dark:hover:bg-amber-900 text-amber-800 dark:text-amber-200 transition cursor-pointer" title="${isEs ? 'Editar elemento' : 'تعديل الذكر'}">
             ✏️ ${isEs ? 'Editar' : 'تعديل'}
           </button>
