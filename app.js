@@ -598,8 +598,25 @@ function getItemId(section, group, index) {
   return section + '|' + (group ? group.id : '') + '|' + number;
 }
 
-function findItemById(id) {
+// Grupos que se han unido en otro: el identificador antiguo apunta al grupo nuevo.
+const GROUP_ID_ALIASES = {
+  'azkar|lubs_thawb': 'azkar|libas', 'azkar|lubs_thawb_jadid': 'azkar|libas',
+  'azkar|dua_liman_labisa_thawban_jadidan': 'azkar|libas', 'azkar|wada_thawb': 'azkar|libas',
+  'azkar|dukhul_khala': 'azkar|khala', 'azkar|khuruj_khala': 'azkar|khala',
+  'azkar|qabla_wudu': 'azkar|wudu', 'azkar|bada_wudu': 'azkar|wudu',
+  'azkar|khuruj_manzil': 'azkar|manzil', 'azkar|dukhul_manzil': 'azkar|manzil',
+  'azkar|dhahab_masjid': 'azkar|masjid', 'azkar|dukhul_masjid': 'azkar|masjid', 'azkar|khuruj_masjid': 'azkar|masjid'
+};
+
+function normaliseItemId(id) {
   const parts = String(id || '').split('|');
+  if (parts.length !== 3) return id;
+  const alias = GROUP_ID_ALIASES[parts[0] + '|' + parts[1]];
+  return alias ? alias + '|' + parts[2] : id;
+}
+
+function findItemById(id) {
+  const parts = String(normaliseItemId(id) || '').split('|');
   if (parts.length !== 3) return null;
   const module = getSectionModule(parts[0]);
   const group = module && typeof module.findGroup === 'function' ? module.findGroup(parts[1]) : null;
@@ -613,6 +630,12 @@ function loadFavorites() {
   try {
     const saved = JSON.parse(safeGetStorage(FAV_IDS_KEY) || 'null');
     favorites = Array.isArray(saved) ? saved : [];
+    // Pasar los favoritos de grupos que se han unido a su grupo nuevo.
+    const normalised = favorites.map(normaliseItemId).filter(function (id, i, arr) { return arr.indexOf(id) === i; });
+    if (normalised.join() !== favorites.join()) {
+      favorites = normalised;
+      safeSetStorage(FAV_IDS_KEY, JSON.stringify(favorites));
+    }
   } catch (e) {
     favorites = [];
   }
@@ -1596,6 +1619,7 @@ function renderGroupItems() {
         </span>`}
         ${item.note ? `<span class="bg-amber-100/80 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 px-3 py-1 rounded-full border border-amber-300 dark:border-amber-800">${isEs && item.noteEs ? item.noteEs : item.note}</span>` : ''}
       </div>`}
+      ${item.subtitleAr ? `<h3 class="zikr-subtitle text-center text-lg sm:text-xl font-extrabold text-emerald-800 dark:text-emerald-300 leading-snug">${isEs ? (item.subtitleEs || item.subtitleAr) : item.subtitleAr}</h3>` : ''}
 
             ${isEs ? `
         <div class="space-y-4">

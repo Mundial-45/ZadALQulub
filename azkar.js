@@ -834,77 +834,66 @@ const azkarData = [
             ]
       },
       {
-            "id": "lubs_thawb",
-            "titleAr": "دعاءُ لُبْسِ الثَّوْبِ",
-            "titleEs": "Súplica al vestirse",
+            "id": "libas",
+            "titleAr": "أَذْكَارُ اللِّبَاسِ",
+            "titleEs": "Azkar de la ropa",
             "items": [
                   {
-                    "itemNumber": 71,
-                    "text": "الْحَمْدُ لِلَّهِ الَّذِي كَسَانِي هَذَا (الثَّوْبَ) وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلاَ قُوَّةٍ.",
-                    "latin": "Al-ḥamdu lillāhi alladhī kasānī hādhā (ath-thawba) wa razaqanīhi min ghayri ḥawlin minnī wa lā quwwah.",
-                    "explanationEs": "Alabado sea Allah, Quien me ha vestido con esta (prenda) y me la ha concedido sin que de mi parte haya habido fuerza ni poder.",
-                    "count": 1,
-                    "maxCount": 1,
-                    "audioUrls": [
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2071.mp3"
-                    ]
-                  }
-            ]
-      },
-      {
-            "id": "lubs_thawb_jadid",
-            "titleAr": "دعاءُ لُبْسِ الثَّوْبِ الجَدِيدِ",
-            "titleEs": "Súplica al vestirse con ropa nueva",
-            "items": [
-                  {
-                    "itemNumber": 72,
-                    "text": "اللَّهُمَّ لَكَ الْحَمْدُ أَنْتَ كَسَوْتَنِيهِ، أَسْأَلُكَ مِنْ خَيْرِهِ وَخَيْرِ مَا صُنِعَ لَهُ، وَأَعُوذُ بِكَ مِنْ شَرِّهِ وَشَرِّ مَا صُنِعَ لَهُ.",
-                    "latin": "Allāhumma laka al-ḥamdu anta kasawtanīh, asʾaluka min khayrihi wa khayri mā ṣuniʿa lah, wa aʿūdhu bika min sharrihi wa sharri mā ṣuniʿa lah.",
-                    "explanationEs": "¡Oh Allah! A Ti pertenecen las alabanzas. Tú me has vestido con ella. Te pido de su bien y del bien para el que fue hecha, y me refugio en Ti de su mal y del mal para el que fue hecha.",
-                    "count": 1,
-                    "maxCount": 1,
-                    "audioUrls": [
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2072.mp3"
-                    ]
-                  }
-            ]
-      },
-      {
-            "id": "dua_liman_labisa_thawban_jadidan",
-            "titleAr": "الدُّعَاءُ لِمَنْ لَبِسَ ثَوْباً جَدِيداً",
-            "titleEs": "Súplica por alguien que estrena ropa nueva",
-            "items": [
-                  {
-                    "itemNumber": 73,
-                    "text": "تُبْلِي وَيُخْلِفُ اللَّهُ تَعَالَى.",
-                    "latin": "Tublī wa yukhlifu Allāhu taʿālā.",
-                    "explanationEs": "Que la desgastes (con larga vida) y que Allah Altísimo te la reemplace.",
-                    "count": 1,
-                    "maxCount": 1,
-                    "audioUrls": [
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2073.mp3"
-                    ]
+                        "itemNumber": 71,
+                        "subtitleAr": "دعاءُ لُبْسِ الثَّوْبِ",
+                        "subtitleEs": "Súplica al vestirse",
+                        "text": "الْحَمْدُ لِلَّهِ الَّذِي كَسَانِي هَذَا (الثَّوْبَ) وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلاَ قُوَّةٍ.",
+                        "latin": "Al-ḥamdu lillāhi alladhī kasānī hādhā (ath-thawba) wa razaqanīhi min ghayri ḥawlin minnī wa lā quwwah.",
+                        "explanationEs": "Alabado sea Allah, Quien me ha vestido con esta (prenda) y me la ha concedido sin que de mi parte haya habido fuerza ni poder.",
+                        "count": 1,
+                        "maxCount": 1,
+                        "audioUrls": [
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2071.mp3"
+                        ]
                   },
                   {
-                    "itemNumber": 74,
-                    "text": "اِلْبَسْ جَدِيداً وَعِشْ حَمِيداً وَمُتْ شَهِيداً.",
-                    "latin": "Ilbas jadīdan, wa ʿish ḥamīdan, wa mut shahīdā.",
-                    "explanationEs": "Vístete de nuevo, vive de manera elogiable y muere como mártir.",
-                    "count": 1,
-                    "maxCount": 1,
-                    "audioUrls": [
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2074.mp3"
-                    ]
-                  }
-            ]
-      },
-      {
-            "id": "wada_thawb",
-            "titleAr": "مَا يَقُولُ إِذَا وَضَعَ ثَوْبَهُ",
-            "titleEs": "Lo que se dice al quitarse la ropa",
-            "items": [
+                        "itemNumber": 72,
+                        "subtitleAr": "دعاءُ لُبْسِ الثَّوْبِ الجَدِيدِ",
+                        "subtitleEs": "Súplica al vestirse con ropa nueva",
+                        "text": "اللَّهُمَّ لَكَ الْحَمْدُ أَنْتَ كَسَوْتَنِيهِ، أَسْأَلُكَ مِنْ خَيْرِهِ وَخَيْرِ مَا صُنِعَ لَهُ، وَأَعُوذُ بِكَ مِنْ شَرِّهِ وَشَرِّ مَا صُنِعَ لَهُ.",
+                        "latin": "Allāhumma laka al-ḥamdu anta kasawtanīh, asʾaluka min khayrihi wa khayri mā ṣuniʿa lah, wa aʿūdhu bika min sharrihi wa sharri mā ṣuniʿa lah.",
+                        "explanationEs": "¡Oh Allah! A Ti pertenecen las alabanzas. Tú me has vestido con ella. Te pido de su bien y del bien para el que fue hecha, y me refugio en Ti de su mal y del mal para el que fue hecha.",
+                        "count": 1,
+                        "maxCount": 1,
+                        "audioUrls": [
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2072.mp3"
+                        ]
+                  },
+                  {
+                        "itemNumber": 73,
+                        "subtitleAr": "الدُّعَاءُ لِمَنْ لَبِسَ ثَوْباً جَدِيداً",
+                        "subtitleEs": "Súplica por alguien que estrena ropa nueva",
+                        "text": "تُبْلِي وَيُخْلِفُ اللَّهُ تَعَالَى.",
+                        "latin": "Tublī wa yukhlifu Allāhu taʿālā.",
+                        "explanationEs": "Que la desgastes (con larga vida) y que Allah Altísimo te la reemplace.",
+                        "count": 1,
+                        "maxCount": 1,
+                        "audioUrls": [
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2073.mp3"
+                        ]
+                  },
+                  {
+                        "itemNumber": 74,
+                        "subtitleAr": "الدُّعَاءُ لِمَنْ لَبِسَ ثَوْباً جَدِيداً",
+                        "subtitleEs": "Súplica por alguien que estrena ropa nueva",
+                        "text": "اِلْبَسْ جَدِيداً وَعِشْ حَمِيداً وَمُتْ شَهِيداً.",
+                        "latin": "Ilbas jadīdan, wa ʿish ḥamīdan, wa mut shahīdā.",
+                        "explanationEs": "Vístete de nuevo, vive de manera elogiable y muere como mártir.",
+                        "count": 1,
+                        "maxCount": 1,
+                        "audioUrls": [
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2074.mp3"
+                        ]
+                  },
                   {
                         "itemNumber": 75,
+                        "subtitleAr": "مَا يَقُولُ إِذَا وَضَعَ ثَوْبَهُ",
+                        "subtitleEs": "Lo que se dice al quitarse la ropa",
                         "text": "بِسْمِ اللَّهِ.",
                         "latin": "Bismillāh.",
                         "explanationEs": "En el nombre de Allah.",
@@ -914,27 +903,24 @@ const azkarData = [
             ]
       },
       {
-            "id": "dukhul_khala",
-            "titleAr": "دُعَاءُ دُخُولِ الخَلاَءِ",
-            "titleEs": "Súplica al entrar al baño/sanitario",
+            "id": "khala",
+            "titleAr": "أَذْكَارُ الْخَلَاءِ",
+            "titleEs": "Azkar del baño",
             "items": [
                   {
                         "itemNumber": 76,
+                        "subtitleAr": "دُعَاءُ دُخُولِ الخَلاَءِ",
+                        "subtitleEs": "Súplica al entrar al baño/sanitario",
                         "text": "[بِسْمِ اللَّهِ] اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبْثِ وَالْخَبَائِثِ.",
                         "latin": "[Bismillāh] Allāhumma innī aʿūdhu bika mina al-khubthi wal-khabāʾith.",
                         "explanationEs": "[En el nombre de Allah]. ¡Oh Allah! Me refugio en Ti de los demonios masculinos y femeninos (del mal y de las impurezas).",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "khuruj_khala",
-            "titleAr": "دُعَاءُ الخُرُوجِ مِنَ الخَلاَءِ",
-            "titleEs": "Súplica al salir del baño/sanitario",
-            "items": [
+                  },
                   {
                         "itemNumber": 77,
+                        "subtitleAr": "دُعَاءُ الخُرُوجِ مِنَ الخَلاَءِ",
+                        "subtitleEs": "Súplica al salir del baño/sanitario",
                         "text": "غُفْرَانَكَ.",
                         "latin": "Ghufrānak.",
                         "explanationEs": "Pido Tu perdón.",
@@ -944,27 +930,24 @@ const azkarData = [
             ]
       },
       {
-            "id": "qabla_wudu",
-            "titleAr": "الذِّكْرُ قَبْلَ الوُضُوءِ",
-            "titleEs": "Súplica antes de realizar las abluciones (Wudu)",
+            "id": "wudu",
+            "titleAr": "أَذْكَارُ الْوُضُوءِ",
+            "titleEs": "Azkar de las abluciones (Wudu)",
             "items": [
                   {
                         "itemNumber": 78,
+                        "subtitleAr": "الذِّكْرُ قَبْلَ الوُضُوءِ",
+                        "subtitleEs": "Súplica antes de realizar las abluciones (Wudu)",
                         "text": "بِسْمِ اللَّهِ.",
                         "latin": "Bismillāh.",
                         "explanationEs": "En el nombre de Allah.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "bada_wudu",
-            "titleAr": "الذِّكْرُ بَعْدَ الفَرَاغِ مِنَ الوُضُوءِ",
-            "titleEs": "Súplica al terminar las abluciones (Wudu)",
-            "items": [
+                  },
                   {
                         "itemNumber": 79,
+                        "subtitleAr": "الذِّكْرُ بَعْدَ الفَرَاغِ مِنَ الوُضُوءِ",
+                        "subtitleEs": "Súplica al terminar las abluciones (Wudu)",
                         "text": "أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّداً عَبْدُهُ وَرَسُولُهُ.",
                         "latin": "Ashhadu an lā ilāha illā Allāhu waḥdahu lā sharīka lahu wa ashhadu anna Muḥammadan ʿabduhu wa rasūluh.",
                         "explanationEs": "Atestiguo que no hay más divinidad que Allah, Único, sin asociados, y atestiguo que Muhammad es Su siervo y mensajero.",
@@ -973,17 +956,21 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 80,
+                        "subtitleAr": "الذِّكْرُ بَعْدَ الفَرَاغِ مِنَ الوُضُوءِ",
+                        "subtitleEs": "Súplica al terminar las abluciones (Wudu)",
                         "text": "اللَّهُمَّ اجْعَلْنِي مِنَ التَّوَّابِينَ وَاجْعَلْنِي مِنَ الْمُتَطَهِّرِينَ.",
                         "latin": "Allāhumma ijʿalnī mina at-tawwābīna wa ijʿalnī mina al-mutaṭahhirīn.",
                         "explanationEs": "¡Oh Allah! Hazme de los que se arrepienten y hazme de los que se purifican.",
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20163.mp3"
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20163.mp3"
                         ]
                   },
                   {
                         "itemNumber": 81,
+                        "subtitleAr": "الذِّكْرُ بَعْدَ الفَرَاغِ مِنَ الوُضُوءِ",
+                        "subtitleEs": "Súplica al terminar las abluciones (Wudu)",
                         "text": "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ أَنْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ.",
                         "latin": "Subḥānaka Allāhumma wa bi-ḥamdika, ashhadu an lā ilāha illā anta, astaghfiruka wa atūbu ilayk.",
                         "explanationEs": "Glorificado seas, ¡oh Allah!, y alabado seas. Atestiguo que no hay más divinidad excepto Tú, pido Tu perdón y me arrepiento ante Ti.",
@@ -993,12 +980,14 @@ const azkarData = [
             ]
       },
       {
-            "id": "khuruj_manzil",
-            "titleAr": "الذِّكْرُ عِنْدَ الخُرُوجِ مِنَ المَنْزِلِ",
-            "titleEs": "Súplica al salir de casa",
+            "id": "manzil",
+            "titleAr": "أَذْكَارُ الْمَنْزِلِ",
+            "titleEs": "Azkar de la casa",
             "items": [
                   {
                         "itemNumber": 82,
+                        "subtitleAr": "الذِّكْرُ عِنْدَ الخُرُوجِ مِنَ المَنْزِلِ",
+                        "subtitleEs": "Súplica al salir de casa",
                         "text": "بِسْمِ اللَّهِ، تَوَكَّلْتُ عَلَى اللَّهِ، وَلاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللَّهِ.",
                         "latin": "Bismillāhi, tawakkaltu ʿalā Allāh, wa lā ḥawla wa lā quwwata illā billāh.",
                         "explanationEs": "En el nombre de Allah, me encomiendo a Allah; no hay fuerza ni poder sino en Allah.",
@@ -1007,21 +996,18 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 83,
+                        "subtitleAr": "الذِّكْرُ عِنْدَ الخُرُوجِ مِنَ المَنْزِلِ",
+                        "subtitleEs": "Súplica al salir de casa",
                         "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ أَنْ أَضِلَّ، أَوْ أُضَلَّ، أَوْ أَزِلَّ، أَوْ أُزَلَّ، أَوْ أَظْلِمَ، أَوْ أُظْلَمَ، أَوْ أَجْهَلَ، أَوْ يُجْهَلَ عَلَيَّ.",
                         "latin": "Allāhumma innī aʿūdhu bika an aḍilla, aw uḍalla, aw azilla, aw uzalla, aw aẓlima, aw uẓlama, aw ajhala, aw yujhala ʿalayy.",
                         "explanationEs": "¡Oh Allah! Me refugio en Ti para no extraviarme ni ser extraviado, no resbalar (cometer falta) ni ser hecho resbalar, no oprimir ni ser oprimido, y no actuar con ignorancia ni ser tratado con ignorancia.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "dukhul_manzil",
-            "titleAr": "الذِّكْرُ عِنْدَ دُخُولِ المَنْزِلِ",
-            "titleEs": "Súplica al entrar a casa",
-            "items": [
+                  },
                   {
                         "itemNumber": 84,
+                        "subtitleAr": "الذِّكْرُ عِنْدَ دُخُولِ المَنْزِلِ",
+                        "subtitleEs": "Súplica al entrar a casa",
                         "text": "بِسْمِ اللَّهِ وَلَجْنَا، وَبِسْمِ اللَّهِ خَرَجْنَا، وَعَلَى اللَّهِ رَبِّنَا تَوَكَّلْنَا (ثُمَّ لِيُسَلِّمْ عَلَى أَهْلِهِ).",
                         "latin": "Bismillāhi walajnā, wa bismillāhi kharajnā, wa ʿalā Allāhi rabbinā tawakkalnā (luego saluda a su familia).",
                         "explanationEs": "En el nombre de Allah entramos y en el nombre de Allah salimos, y en Allah nuestro Señor confiamos. (Luego debe saludar a su familia).",
@@ -1031,42 +1017,34 @@ const azkarData = [
             ]
       },
       {
-            "id": "dhahab_masjid",
-            "titleAr": "دُعَاءُ الذَّهَابِ إِلَى المَسْجِدِ",
-            "titleEs": "Súplica al ir a la mezquita",
+            "id": "masjid",
+            "titleAr": "أَذْكَارُ الْمَسْجِدِ",
+            "titleEs": "Azkar de la mezquita",
             "items": [
                   {
                         "itemNumber": 85,
+                        "subtitleAr": "دُعَاءُ الذَّهَابِ إِلَى المَسْجِدِ",
+                        "subtitleEs": "Súplica al ir a la mezquita",
                         "text": "اللَّهُمَّ اجْعَلْ فِي قَلْبِي نُوراً، وَفِي لِسَانِي نُوراً، وَفِي سَمْعِي نُوراً، وَفِي بَصَرِي نُوراً، وَمِنْ فَوْقِي نُوراً، وَمِنْ تَحْتِي نُوراً، وَعَنْ يَمِينِي نُوراً، وَعَنْ شِمَالِي نُوراً، وَمِنْ أَمَامِي نُوراً، وَمِنْ خَلْفِي نُوراً، وَاجْعَلْ فِي نَفْسِي نُوراً، وَأَعْظِمْ لِي نُوراً، وَعَظِّمْ لِي نُوراً، وَاجْعَلْ لِي نُوراً، وَاجْعَلْنِي نُوراً، اللَّهُمَّ أَعْطِنِي نُوراً، وَاجْعَلْ فِي عَصَبِي نُوراً، وَفِي لَحْمِي نُوراً، وَفِي دَمِي نُوراً، وَفِي شَعْرِي نُوراً، وَفِي بَشَرِي نُوراً، اللَّهُمَّ اجْعَلْ لِي نُوراً فِي قَبْرِي وَنُوراً فِي عِظَامِي، وَزِدْنِي نُوراً، وَزِدْنِي نُوراً، وَزِدْنِي نُوراً، وَهَبْ لِي نُوراً عَلَى نُورٍ.",
                         "latin": "Allāhumma ijʿal fī qalbī nūran, wa fī lisānī nūran, wa fī samʿī nūran, wa fī baṣarī nūran, wa min fawqī nūran, wa min taḥtī nūran, wa ʿan yamīnī nūran, wa ʿan shimālī nūran, wa min amāmī nūran, wa min khalfī nūran, wa ijʿal fī nafsī nūran, wa aʿẓim lī nūran, wa ʿaẓẓim lī nūran, wa ijʿal lī nūran, wa ijʿalnī nūran, Allāhumma aʿṭinī nūran, wa ijʿal fī ʿaṣabī nūran, wa fī laḥmī nūran, wa fī damī nūran, wa fī shaʿrī nūran, wa fī basharī nūran, Allāhumma ijʿal lī nūrann fī qabrī wa nūrann fī ʿiẓāmī, wa zidnī nūran, wa zidnī nūran, wa zidnī nūran, wa hab lī nūrann ʿalā nūr.",
                         "explanationEs": "¡Oh Allah! Pon luz en mi corazón, luz en mi lengua, luz en mi oído, luz en mi vista, luz por encima de mí, luz por debajo de mí, luz a mi derecha, luz a mi izquierda, luz delante de mí y luz detrás de mí. Pon luz en mi alma, magnifica para mí la luz, aumenta para mí la luz, haz para mí una luz y hazme luz. ¡Oh Allah! Dame luz, pon luz en mis nervios, luz en mi carne, luz en mi sangre, luz en mi cabello y luz en mi piel. ¡Oh Allah! Pon para mí luz en mi tumba y luz en mis huesos, auméntame la luz, auméntame la luz, auméntame la luz y concédeme luz sobre luz.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "dukhul_masjid",
-            "titleAr": "دُعَاءُ دُخُولِ المَسْجِدِ",
-            "titleEs": "Súplica al entrar a la mezquita",
-            "items": [
+                  },
                   {
                         "itemNumber": 86,
+                        "subtitleAr": "دُعَاءُ دُخُولِ المَسْجِدِ",
+                        "subtitleEs": "Súplica al entrar a la mezquita",
                         "text": "يَبْدَأُ بِرِجْلِهِ الْيُمْنَى، وَيَقُولُ: أَعُوذُ بِاللَّهِ العَظِيمِ، وَبِوَجْهِهِ الْكَرِيمِ، وَسُلْطَانِهِ الْقَدِيمِ، مِنَ الشَّيْطَانِ الرَّجِيمِ، [بِسْمِ اللَّهِ، وَالصَّلَاةُ وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ]، اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ.",
                         "latin": "(Empieza con el pie derecho y dice): Aʿūdhu billāhi al-ʿaẓīm, wa bi-wajhihi al-karīm, wa sulṭānihi al-qadīm, mina ash-shayṭāni ar-rajīm. [Bismillāhi, waṣ-ṣalātu was-salāmu ʿalā rasūlillāh], Allāhumma iftaḥ lī abwāba raḥmatik.",
                         "explanationEs": "Entra con el pie derecho y dice: Me refugio en Allah el Grandioso, en Su noble Rostro y en Su poder eterno, del Demonio repudiado. [En el nombre de Allah, y que las bendiciones y la paz sean sobre el Mensajero de Allah]. ¡Oh Allah! Ábreme las puertas de Tu misericordia.",
                         "count": 1,
                         "maxCount": 1
-                  }
-            ]
-      },
-      {
-            "id": "khuruj_masjid",
-            "titleAr": "دُعَاءُ الخُرُوجِ مِنَ المَسْجِدِ",
-            "titleEs": "Súplica al salir de la mezquita",
-            "items": [
+                  },
                   {
                         "itemNumber": 87,
+                        "subtitleAr": "دُعَاءُ الخُرُوجِ مِنَ المَسْجِدِ",
+                        "subtitleEs": "Súplica al salir de la mezquita",
                         "text": "يَبْدَأُ بِرِجْلِهِ الْيُسْرَى وَيَقُولُ: بِسْمِ اللَّهِ وَالصَّلاَةُ وَالسَّلاَمُ عَلَى رَسُولِ اللَّهِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ، اللَّهُمَّ اعْصِمْنِي مِنَ الشَّيْطَانِ الرَّجِيمِ.",
                         "latin": "(Empieza con el pie izquierdo y dice): Bismillāhi waṣ-ṣalātu was-salāmu ʿalā rasūlillāh, Allāhumma innī asʾaluka min faḍlik, Allāhumma iʿṣimnī mina ash-shayṭāni ar-rajīm.",
                         "explanationEs": "Sale con el pie izquierdo y dice: En el nombre de Allah, y que las bendiciones y la paz sean sobre el Mensajero de Allah. ¡Oh Allah! Te pido de Tu favor. ¡Oh Allah! Protégeme del Demonio repudiado.",
