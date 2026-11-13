@@ -1467,7 +1467,7 @@ const azkarData = [
                         "maxCount": 1,
                         "note": "سورة المؤمنون الآية 14",
                         "audioUrls": [
-                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q023-014.mp3"
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20116.mp3"
                         ]
                   },
                   {
