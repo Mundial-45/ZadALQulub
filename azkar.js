@@ -639,7 +639,7 @@ const azkarData = [
                   },
                   {
                     "itemNumber": 55,
-                    "text": "اللَّهُمَّ إِنَّكَ خَلَقْتَ نَفْسِي وَأَنْتَ تَوَفَّاهَا، لَكَ مَمَاتُهَا وَمَحْياهَا، إِنْ أَحْيَيْتَهَا فَاحْفَظْهَا، وَإِنْ أَمَتَّهَا فَاغْفِرْ لَهَا. اللَّهُمَّ إِنِّي أَسْأَلُكَ العَافِيَةَ.",
+                    "text": "اللَّهُمَّ إِنَّكَ خَلَقْتَ نَفْسِي وَأَنْتَ تَوَفَّاهَا، لَكَ مَمَاتُهَا وَمَحْيَاهَا، إِنْ أَحْيَيْتَهَا فَاحْفَظْهَا، وَإِنْ أَمَتَّهَا فَاغْفِرْ لَهَا. اللَّهُمَّ إِنِّي أَسْأَلُكَ العَافِيَةَ.",
                     "latin": "Allāhumma innaka khalaqta nafsī wa-anta tawaffāhā, laka mamātuhā wa-maḥyāhā, in aḥyaytahā faḥ-faẓhā, wa-in amattahā fagh-fir lahā. Allāhumma innī asʾaluka al-ʿāfiyah.",
                     "explanationEs": "¡Oh Allah! Tú has creado mi alma y Tú Te la llevas. A Ti pertenece su muerte y su vida. Si la mantienes con vida, protégela; y si la haces morir, perdónala. ¡Oh Allah! Te pido bienestar.",
                     "count": 1,
@@ -787,7 +787,7 @@ const azkarData = [
             "items": [
                   {
                     "itemNumber": 67,
-                    "text": "الْحَمْدُ للَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا، وَإِلَيْهِ النُّشُورُ",
+                    "text": "الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا، وَإِلَيْهِ النُّشُورُ",
                     "latin": "Al-ḥamdu lillāhi-lladhī aḥyānā baʿda mā amātanā wa-ilayhi-n-nushūr.",
                     "explanationEs": "Alabado sea Allah, Quien nos devolvió la vida tras habernos hecho morir (dormir), y hacia Él es el retorno.",
                     "count": 1,
@@ -809,7 +809,7 @@ const azkarData = [
                   },
                   {
                     "itemNumber": 69,
-                    "text": "الْحَمْدُ لِلَّهِ الَّذِي عَافَانِي فِي جَسَدِي، وَرَدَّ عَلَيَّ رُوحِي، وَأَذِنَ لي بِذِكْرِهِ",
+                    "text": "الْحَمْدُ لِلَّهِ الَّذِي عَافَانِي فِي جَسَدِي، وَرَدَّ عَلَيَّ رُوحِي، وَأَذِنَ لِي بِذِكْرِهِ",
                     "latin": "Al-ḥamdu lillāhi-lladhī ʿāfānī fī jasadī, wa-radda ʿalayya rūḥī, wa-adhina lī bi-dhikrih.",
                     "explanationEs": "Alabado sea Allah, Quien sanó mi cuerpo, me devolvió mi alma y me permitió recordarle.",
                     "count": 1,
@@ -1029,17 +1029,17 @@ const azkarData = [
                         ]
                   },
                   {
-                        "itemNumber": 84,
-                        "subtitleAr": "الذِّكْرُ عِنْدَ دُخُولِ المَنْزِلِ",
-                        "subtitleEs": "Súplica al entrar a casa",
-                        "text": "بِسْمِ اللَّهِ وَلَجْنَا، وَبِسْمِ اللَّهِ خَرَجْنَا، وَعَلَى اللَّهِ رَبِّنَا تَوَكَّلْنَا\n\n(ثُمَّ لِيُسَلِّمْ عَلَى أَهْلِهِ).",
-                        "latin": "Bismillāhi walajnā, wa bismillāhi kharajnā, wa ʿalā Allāhi rabbinā tawakkalnā (luego saluda a su familia).",
-                        "explanationEs": "En el nombre de Allah entramos y en el nombre de Allah salimos, y en Allah nuestro Señor confiamos. (Luego debe saludar a su familia).",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2084.mp3"
-                        ]
+                    "itemNumber": 84,
+                    "subtitleAr": "الذِّكْرُ عِنْدَ دُخُولِ المَنْزِلِ",
+                    "subtitleEs": "Súplica al entrar a casa",
+                    "text": "بِسْمِ اللَّهِ وَلَجْنَا، وَبِسْمِ اللَّهِ خَرَجْنَا، وَعَلَى اللَّهِ رَبِّنَا تَوَكَّلْنَا\n\n(ثُمَّ لِيُسَلِّمْ عَلَى أَهْلِهِ).",
+                    "latin": "Bismillāhi walajnā, wa bismillāhi kharajnā, wa ʿalā Allāhi rabbinā tawakkalnā (luego saluda a su familia).",
+                    "explanationEs": "En el nombre de Allah entramos y en el nombre de Allah salimos, y en Allah nuestro Señor confiamos. (Luego debe saludar a su familia).",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2084.mp3"
+                    ]
                   }
             ]
       },
@@ -1062,17 +1062,17 @@ const azkarData = [
                         ]
                   },
                   {
-                        "itemNumber": 86,
-                        "subtitleAr": "دُعَاءُ دُخُولِ المَسْجِدِ",
-                        "subtitleEs": "Súplica al entrar a la mezquita",
-                        "text": "يَبْدَأُ بِرِجْلِهِ الْيُمْنَى، وَيَقُولُ:\n\nأَعُوذُ بِاللَّهِ العَظِيمِ، وَبِوَجْهِهِ الْكَرِيمِ، وَسُلْطَانِهِ الْقَدِيمِ، مِنَ الشَّيْطَانِ الرَّجِيمِ، [بِسْمِ اللَّهِ، وَالصَّلَاةُ وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ]، اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ.",
-                        "latin": "(Empieza con el pie derecho y dice): Aʿūdhu billāhi al-ʿaẓīm, wa bi-wajhihi al-karīm, wa sulṭānihi al-qadīm, minash-shayṭāni ar-rajīm. [Bismillāhi, waṣ-ṣalātu was-salāmu ʿalā rasūlillāh], Allāhumma iftaḥ lī abwāba raḥmatik.",
-                        "explanationEs": "Entra con el pie derecho y dice: Me refugio en Allah el Grandioso, en Su noble Rostro y en Su poder eterno, de Shaitán el maldito. [En el nombre de Allah, y que las bendiciones y la paz sean sobre el Mensajero de Allah]. ¡Oh Allah! Ábreme las puertas de Tu misericordia.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2086.mp3"
-                        ]
+                    "itemNumber": 86,
+                    "subtitleAr": "دُعَاءُ دُخُولِ المَسْجِدِ",
+                    "subtitleEs": "Súplica al entrar a la mezquita",
+                    "text": "يَبْدَأُ بِرِجْلِهِ الْيُمْنَى، وَيَقُولُ:\n\nأَعُوذُ بِاللَّهِ العَظِيمِ، وَبِوَجْهِهِ الْكَرِيمِ، وَسُلْطَانِهِ الْقَدِيمِ، مِنَ الشَّيْطَانِ الرَّجِيمِ، [بِسْمِ اللَّهِ، وَالصَّلَاةُ وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ]، اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ.",
+                    "latin": "(Empieza con el pie derecho y dice): Aʿūdhu billāhi al-ʿaẓīm, wa bi-wajhihi al-karīm, wa sulṭānihi al-qadīm, minash-shayṭāni ar-rajīm. [Bismillāhi, waṣ-ṣalātu was-salāmu ʿalā rasūlillāh], Allāhumma iftaḥ lī abwāba raḥmatik.",
+                    "explanationEs": "Entra con el pie derecho y dice: Me refugio en Allah el Grandioso, en Su noble Rostro y en Su poder eterno, de Shaitán el maldito. [En el nombre de Allah, y que las bendiciones y la paz sean sobre el Mensajero de Allah]. ¡Oh Allah! Ábreme las puertas de Tu misericordia.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2086.mp3"
+                    ]
                   },
                   {
                         "itemNumber": 87,
@@ -1095,15 +1095,15 @@ const azkarData = [
             "titleEs": "Súplicas relacionadas con la llamada a la oración (Adhán)",
             "items": [
                   {
-                        "itemNumber": 88,
-                        "text": "يَقُولُ مِثْلَ مَا يَقُولُ الْمُؤَذِّنُ إِلاَّ فِي (حَيَّ عَلَى الصَّلاَةِ) وَ(حَيَّ عَلَى الْفَلاَحِ) فَيَقُولُ:\n\nلاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللَّهِ.",
-                        "latin": "Repite lo que dice el muecín, excepto en «Ḥayya ʿalā ṣ-ṣalāh» y «Ḥayya ʿalā l-falāḥ», donde dice: Lā ḥawla wa lā quwwata illā billāh.",
-                        "explanationEs": "Repite las mismas palabras que el muecín (llamador a la oración), excepto al escuchar 'Acudid a la oración' y 'Acudid al éxito', donde debe decir: No hay fuerza ni poder sino en Allah.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2088.mp3"
-                        ]
+                    "itemNumber": 88,
+                    "text": "يَقُولُ مِثْلَ مَا يَقُولُ الْمُؤَذِّنُ إِلاَّ فِي (حَيَّ عَلَى الصَّلاَةِ) وَ(حَيَّ عَلَى الْفَلاَحِ) فَيَقُولُ:\n\nلاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللَّهِ.",
+                    "latin": "Repite lo que dice el muecín, excepto en «Ḥayya ʿalā ṣ-ṣalāh» y «Ḥayya ʿalā l-falāḥ», donde dice: Lā ḥawla wa lā quwwata illā billāh.",
+                    "explanationEs": "Repite las mismas palabras que el muecín (llamador a la oración), excepto al escuchar 'Acudid a la oración' y 'Acudid al éxito', donde debe decir: No hay fuerza ni poder sino en Allah.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2088.mp3"
+                    ]
                   },
                   {
                         "itemNumber": 89,
@@ -1183,31 +1183,31 @@ const azkarData = [
                         ]
                   },
                   {
-                        "itemNumber": 95,
-                        "subtitleAr": "دعاء استفتاح الصلاة",
-                        "subtitleEs": "Súplicas de apertura de la oración",
-                        "text": "وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَوَاتِ وَالأَرْضَ حَنِيفاً وَمَا أَنَا مِنَ الْمُشْرِكِينَ، إِنَّ صَلاَتِي، وَنُسُكِي، وَمَحْيَايَ، وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ، لاَ شَرِيكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ. اللَّهُمَّ أَنْتَ المَلِكُ لاَ إِلَهَ إِلاَّ أَنْتَ، أَنْتَ رَبِّي وَأَنَا عَبْدُكَ، ظَلَمْتُ نَفْسِي وَاعْتَرَفْتُ بِذَنْبِي فَاغْفِرْ لِي ذُنُوبي جَمِيعاً إِنَّهُ لاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ. وَاهْدِنِي لِأَحْسَنِ الأَخْلاَقِ لاَ يَهْدِي لِأَحْسَنِها إِلاَّ أَنْتَ، وَاصْرِفْ عَنِّي سَيِّئَهَا، لاَ يَصْرِفُ عَنِّي سَيِّئَهَا إِلاَّ أَنْتَ، لَبَّيْكَ وَسَعْدَيْكَ، وَالخَيْرُ كُلُّهُ بِيَدَيْكَ، وَالشَّرُّ لَيْسَ إِلَيْكَ، أَنَا بِكَ وَإِلَيْكَ، تَبَارَكْتَ وَتَعَالَيْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ.",
-                        "latin": "Wajjahtu wajhiya lilladhī faṭara as-samāwāti wal-arḍa ḥanīfan wa mā anā minal-mushrikīn. Inna ṣalātī, wa nusukī, wa maḥyāya, wa mamātī lillāhi rabbi al-ʿālamīn, lā sharīka lahu wa bidhālika umirtu wa anā minal-muslimīn. Allāhumma anta al-maliku lā ilāha illā ant, anta rabbī wa anā ʿabduk, ẓalamtu nafsī waʿtaraftu bidhanbī faghfir lī dhunūbī jamīʿan innahu lā yaghfiru adhdhunūba illā ant. Wahdinī li-aḥsani al-akhlāqi lā yahdī li-aḥsanihā illā ant, waṣrif ʿannī sayyiʾahā lā yaṣrifu ʿannī sayyiʾahā illā ant, labbayka wa saʿdayk, wal-khayru kulluhu bi-yadayk, wash-sharru laysa ilayk, anā bika wa ilayk, tabārakta wa taʿālayt, astaghfiruka wa atūbu ilayk.",
-                        "explanationEs": "He orientado mi rostro, como monoteísta puro, hacia Aquel que creó los cielos y la tierra, y no soy de los asociadores. Ciertamente mi oración, mis sacrificios, mi vida y mi muerte pertenecen a Allah, Señor de los mundos, Sin asociados. Esto se me ha ordenado y soy de los musulmanes. ¡Oh Allah! Tú eres el Rey, no hay más divinidad excepto Tú. Tú eres mi Señor y yo soy Tu siervo. He sido injusto conmigo mismo y reconozco mi pecado, perdóname todos mis pecados, pues nadie perdona los pecados excepto Tú. Guíame hacia el mejor carácter, pues nadie guía hacia él excepto Tú, y aparta de mí el mal carácter, pues nadie lo aparta de mí excepto Tú. Heme aquí a Tu servicio, una y otra vez; todo el bien está en Tus manos y el mal no se Te atribuye. Existo por Ti y a Ti retorno. Bendito y Enaltecido seas; pido Tu perdón y me arrepiento ante Ti.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2095.mp3"
-                        ]
+                    "itemNumber": 95,
+                    "subtitleAr": "دعاء استفتاح الصلاة",
+                    "subtitleEs": "Súplicas de apertura de la oración",
+                    "text": "وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَوَاتِ وَالأَرْضَ حَنِيفاً وَمَا أَنَا مِنَ الْمُشْرِكِينَ، إِنَّ صَلاَتِي، وَنُسُكِي، وَمَحْيَايَ، وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ، لاَ شَرِيكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ. اللَّهُمَّ أَنْتَ المَلِكُ لاَ إِلَهَ إِلاَّ أَنْتَ، أَنْتَ رَبِّي وَأَنَا عَبْدُكَ، ظَلَمْتُ نَفْسِي وَاعْتَرَفْتُ بِذَنْبِي فَاغْفِرْ لِي ذُنُوبِي جَمِيعاً إِنَّهُ لاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ. وَاهْدِنِي لِأَحْسَنِ الأَخْلاَقِ لاَ يَهْدِي لِأَحْسَنِهَا إِلاَّ أَنْتَ، وَاصْرِفْ عَنِّي سَيِّئَهَا، لاَ يَصْرِفُ عَنِّي سَيِّئَهَا إِلاَّ أَنْتَ، لَبَّيْكَ وَسَعْدَيْكَ، وَالخَيْرُ كُلُّهُ بِيَدَيْكَ، وَالشَّرُّ لَيْسَ إِلَيْكَ، أَنَا بِكَ وَإِلَيْكَ، تَبَارَكْتَ وَتَعَالَيْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ.",
+                    "latin": "Wajjahtu wajhiya lilladhī faṭara as-samāwāti wal-arḍa ḥanīfan wa mā anā minal-mushrikīn. Inna ṣalātī, wa nusukī, wa maḥyāya, wa mamātī lillāhi rabbi al-ʿālamīn, lā sharīka lahu wa bidhālika umirtu wa anā minal-muslimīn. Allāhumma anta al-maliku lā ilāha illā ant, anta rabbī wa anā ʿabduk, ẓalamtu nafsī waʿtaraftu bidhanbī faghfir lī dhunūbī jamīʿan innahu lā yaghfiru adhdhunūba illā ant. Wahdinī li-aḥsani al-akhlāqi lā yahdī li-aḥsanihā illā ant, waṣrif ʿannī sayyiʾahā lā yaṣrifu ʿannī sayyiʾahā illā ant, labbayka wa saʿdayk, wal-khayru kulluhu bi-yadayk, wash-sharru laysa ilayk, anā bika wa ilayk, tabārakta wa taʿālayt, astaghfiruka wa atūbu ilayk.",
+                    "explanationEs": "He orientado mi rostro, como monoteísta puro, hacia Aquel que creó los cielos y la tierra, y no soy de los asociadores. Ciertamente mi oración, mis sacrificios, mi vida y mi muerte pertenecen a Allah, Señor de los mundos, Sin asociados. Esto se me ha ordenado y soy de los musulmanes. ¡Oh Allah! Tú eres el Rey, no hay más divinidad excepto Tú. Tú eres mi Señor y yo soy Tu siervo. He sido injusto conmigo mismo y reconozco mi pecado, perdóname todos mis pecados, pues nadie perdona los pecados excepto Tú. Guíame hacia el mejor carácter, pues nadie guía hacia él excepto Tú, y aparta de mí el mal carácter, pues nadie lo aparta de mí excepto Tú. Heme aquí a Tu servicio, una y otra vez; todo el bien está en Tus manos y el mal no se Te atribuye. Existo por Ti y a Ti retorno. Bendito y Enaltecido seas; pido Tu perdón y me arrepiento ante Ti.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2095.mp3"
+                    ]
                   },
                   {
-                        "itemNumber": 96,
-                        "subtitleAr": "دعاء استفتاح الصلاة",
-                        "subtitleEs": "Súplicas de apertura de la oración",
-                        "text": "اللَّهُمَّ رَبَّ جَبْرَائِيلَ وَمِيكَائِيلَ وَإِسْرَافِيلَ، فَاطِرَ السَّمَوَاتِ وَالأَرْضِ، عَالِمَ الْغَيْبِ وَالشَّهَادَةِ، أَنْتَ تَحْكُمُ بَيْنَ عِبَادِكَ فِيمَا كَانُوا فِيهِ يَخْتَلِفُونَ، اهْدِنِي لِمَا اخْتُلِفَ فِيهِ مِنَ الْحَقِّ بِإِذْنِكَ، إِنَّكَ تَهْدِي مَنْ تَشَاءُ إِلَى صِرَاطٍ مُسْتَقِيمٍ.",
-                        "latin": "Allāhumma Rabba Jabrāʾīla wa Mīkāʾīla wa Isrāfīl, Fāṭiras-samāwāti wal-arḍ, ʿĀlimal-ghaybi wash-shahādah, Anta taḥkumu bayna ʿibādika fīmā kānū fīhi yakhtalifūn, ihdinī limākh-tulifa fīhi minal-ḥaqqi bi-idhnik, innaka tahdī man tashāʾu ilā ṣirāṭim-mustaqīm.",
-                        "explanationEs": "¡Oh Allah! Señor de Yibril, Mikail e Israfil. Creador de los cielos y de la tierra, Conocedor de lo oculto y de lo manifiesto. Tú juzgas entre Tus siervos en aquello en lo que diferían. Guíame con Tu permiso hacia la verdad en aquello en lo que se discrepa. (Muslim)",
-                        "note": "رواه مسلم",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2047.mp3"
-                        ]
+                    "itemNumber": 96,
+                    "subtitleAr": "دعاء استفتاح الصلاة",
+                    "subtitleEs": "Súplicas de apertura de la oración",
+                    "text": "اللَّهُمَّ رَبَّ جَبْرَائِيلَ وَمِيكَائِيلَ وَإِسْرَافِيلَ، فَاطِرَ السَّمَوَاتِ وَالأَرْضِ، عَالِمَ الْغَيْبِ وَالشَّهَادَةِ، أَنْتَ تَحْكُمُ بَيْنَ عِبَادِكَ فِيمَا كَانُوا فِيهِ يَخْتَلِفُونَ، اهْدِنِي لِمَا اخْتُلِفَ فِيهِ مِنَ الْحَقِّ بِإِذْنِكَ، إِنَّكَ تَهْدِي مَنْ تَشَاءُ إِلَى صِرَاطٍ مُسْتَقِيمٍ.",
+                    "latin": "Allāhumma Rabba Jabrāʾīla wa Mīkāʾīla wa Isrāfīl, Fāṭiras-samāwāti wal-arḍ, ʿĀlimal-ghaybi wash-shahādah, Anta taḥkumu bayna ʿibādika fīmā kānū fīhi yakhtalifūn, ihdinī limākh-tulifa fīhi minal-ḥaqqi bi-idhnik, innaka tahdī man tashāʾu ilā ṣirāṭim-mustaqīm.",
+                    "explanationEs": "¡Oh Allah! Señor de Yibril, Mikail e Israfil. Creador de los cielos y de la tierra, Conocedor de lo oculto y de lo manifiesto. Tú juzgas entre Tus siervos en aquello en lo que diferían. Guíame con Tu permiso hacia la verdad en aquello en lo que se discrepa, Tú guías a quien quieres hacia un camino recto. (Muslim)",
+                    "note": "رواه مسلم",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2047.mp3"
+                    ]
                   },
                   {
                         "itemNumber": 97,
@@ -1223,17 +1223,17 @@ const azkarData = [
                         ]
                   },
                   {
-                        "itemNumber": 98,
-                        "subtitleAr": "دعاء استفتاح الصلاة",
-                        "subtitleEs": "Súplicas de apertura de la oración",
-                        "text": "اللَّهُمَّ لَكَ الْحَمْدُ، أَنْتَ نُورُ السَّمَوَاتِ وَالأَرْضِ وَمَنْ فِيهِنَّ، وَلَكَ الْحَمْدُ أَنْتَ قَيِّمُ السَّمَوَاتِ وَالأَرْضِ وَمَنْ فِيهِنَّ، وَلَكَ الْحَمْدُ أَنْتَ رَبُّ السَّمَوَاتِ وَالأَرْضِ وَمَنْ فِيهِنَّ، وَلَكَ الْحَمْدُ لَكَ مُلْكُ السَّمَوَاتِ وَالأَرْضِ وَمَنْ فِيهِنَّ، وَلَكَ الْحَمْدُ أَنْتَ مَلِكُ السَّمَوَاتِ وَالأَرْضِ، وَلَكَ الْحَمْدُ، أَنْتَ الْحَقُّ، وَوَعْدُكَ الْحَقُّ، وَقَوْلُكَ الْحَقُّ، وَلِقَاؤُكَ الْحَقُّ، وَالْجَنَّةُ حَقٌّ، وَالنَّارُ حَقٌّ، وَالنَّبِيُّونَ حَقٌّ، وَمُحَمَّدٌ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ حَقٌّ، وَالسّاعَةُ حَقٌّ، اللَّهُمَّ لَكَ أَسْلَمْتُ، وَعَلَيْكَ تَوَكَّلْتُ، وَبِكَ آمَنْتُ، وَإِلَيْكَ أَنَبْتُ، وَبِكَ خَاصَمْتُ، وَإِلَيْكَ حَاكَمْتُ. فَاغْفِرْ لِي مَا قَدَّمْتُ، وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ، وَمَا أَعْلَنْتُ، وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي، أَنْتَ المُقَدِّمُ، وَأَنْتَ المُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ، أَنْتَ إِلَهِي لاَ إِلَهَ إِلاَّ أَنْتَ، وَلاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللَّهِ.",
-                        "latin": "Allāhumma laka al-ḥamd, anta nūru as-samāwāti wal-arḍi wa man fīhin, wa laka al-ḥamdu anta qayyimu as-samāwāti wal-arḍi wa man fīhin, wa laka al-ḥamdu anta rabbu as-samāwāti wal-arḍi wa man fīhin, wa laka al-ḥamdu laka mulku as-samāwāti wal-arḍi wa man fīhin, wa laka al-ḥamdu anta maliku as-samāwāti wal-arḍ, wa laka al-ḥamd, anta al-ḥaqq, wa waʿduka al-ḥaqq, wa qawluka al-ḥaqq, wa liqāʾuka al-ḥaqq, wal-jannatu ḥaqq, wan-nāru ḥaqq, wan-nabiyyūna ḥaqq, wa Muḥammadun ṣallā Allāhu ʿalayhi wa sallama ḥaqq, was-sāʿatu ḥaqq. Allāhumma laka aslamtu, wa ʿalayka tawakkaltu, wa bika āmantu, wa ilayka anabtu, wa bika khāṣamtu, wa ilayka ḥākamtu. Faghfir lī mā qaddamtu, wa mā akhkhartu, wa mā asrartu, wa mā aʿlantu, wa mā anta aʿlamu bihi minnī, anta al-muqaddimu wa anta al-muʾakhkhiru lā ilāha illā ant, anta ilāhī lā ilāha illā ant, wa lā ḥawla wa lā quwwata illā billāh.",
-                        "explanationEs": "¡Oh Allah! A Ti pertenecen todas las alabanzas, Tú eres la Luz de los cielos y de la tierra y de cuanto hay en ellos. A Ti pertenecen las alabanzas, Tú eres el Sustentador de los cielos y de la tierra y de cuanto hay en ellos. A Ti pertenecen las alabanzas, Tú eres el Señor de los cielos y de la tierra y de cuanto hay en ellos. A Ti pertenecen las alabanzas, Tuyo es el reino de los cielos y de la tierra y de cuanto hay en ellos. A Ti pertenecen las alabanzas, Tú eres el Rey de los cielos y de la tierra. A Ti pertenecen las alabanzas, Tú eres la Verdad, Tu promesa es verdadera, Tu palabra es verdad, el encuentro Contigo es verdad, el Paraíso es verdad, el Infierno es verdad, los Profetas son verdad, Muhammad (que la paz y las bendiciones de Allah sean con él) es verdad y la Hora es verdad. ¡Oh Allah! A Ti me he sometido, en Ti he confiado, en Ti he creído, a Ti me he vuelto en arrepentimiento, por Ti he disputado y a Tu juicio me he acogido. Perdóname lo que he hecho en el pasado y lo que haga en el futuro, lo que he ocultado y lo que he manifestado, y lo que Tú conoces mejor que yo. Tú eres Quien adelanta y Quien retrasa, no hay más divinidad excepto Tú. Tú eres mi Dios, no hay más divinidad excepto Tú, y no hay fuerza ni poder sino en Allah.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2098.mp3"
-                        ]
+                    "itemNumber": 98,
+                    "subtitleAr": "دعاء استفتاح الصلاة",
+                    "subtitleEs": "Súplicas de apertura de la oración",
+                    "text": "اللَّهُمَّ لَكَ الْحَمْدُ، أَنْتَ نُورُ السَّمَوَاتِ وَالأَرْضِ وَمَنْ فِيهِنَّ، وَلَكَ الْحَمْدُ أَنْتَ قَيِّمُ السَّمَوَاتِ وَالأَرْضِ وَمَنْ فِيهِنَّ، وَلَكَ الْحَمْدُ أَنْتَ رَبُّ السَّمَوَاتِ وَالأَرْضِ وَمَنْ فِيهِنَّ، وَلَكَ الْحَمْدُ لَكَ مُلْكُ السَّمَوَاتِ وَالأَرْضِ وَمَنْ فِيهِنَّ، وَلَكَ الْحَمْدُ أَنْتَ مَلِكُ السَّمَوَاتِ وَالأَرْضِ، وَلَكَ الْحَمْدُ، أَنْتَ الْحَقُّ، وَوَعْدُكَ الْحَقُّ، وَقَوْلُكَ الْحَقُّ، وَلِقَاؤُكَ الْحَقُّ، وَالْجَنَّةُ حَقٌّ، وَالنَّارُ حَقٌّ، وَالنَّبِيُّونَ حَقٌّ، وَمُحَمَّدٌ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ حَقٌّ، وَالسَّاعَةُ حَقٌّ، اللَّهُمَّ لَكَ أَسْلَمْتُ، وَعَلَيْكَ تَوَكَّلْتُ، وَبِكَ آمَنْتُ، وَإِلَيْكَ أَنَبْتُ، وَبِكَ خَاصَمْتُ، وَإِلَيْكَ حَاكَمْتُ. فَاغْفِرْ لِي مَا قَدَّمْتُ، وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ، وَمَا أَعْلَنْتُ، وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي، أَنْتَ المُقَدِّمُ، وَأَنْتَ المُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ، أَنْتَ إِلَهِي لاَ إِلَهَ إِلاَّ أَنْتَ، وَلاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللَّهِ.",
+                    "latin": "Allāhumma laka al-ḥamd, anta nūru as-samāwāti wal-arḍi wa man fīhin, wa laka al-ḥamdu anta qayyimu as-samāwāti wal-arḍi wa man fīhin, wa laka al-ḥamdu anta rabbu as-samāwāti wal-arḍi wa man fīhin, wa laka al-ḥamdu laka mulku as-samāwāti wal-arḍi wa man fīhin, wa laka al-ḥamdu anta maliku as-samāwāti wal-arḍ, wa laka al-ḥamd, anta al-ḥaqq, wa waʿduka al-ḥaqq, wa qawluka al-ḥaqq, wa liqāʾuka al-ḥaqq, wal-jannatu ḥaqq, wan-nāru ḥaqq, wan-nabiyyūna ḥaqq, wa Muḥammadun ṣallā Allāhu ʿalayhi wa sallama ḥaqq, was-sāʿatu ḥaqq. Allāhumma laka aslamtu, wa ʿalayka tawakkaltu, wa bika āmantu, wa ilayka anabtu, wa bika khāṣamtu, wa ilayka ḥākamtu. Faghfir lī mā qaddamtu, wa mā akhkhartu, wa mā asrartu, wa mā aʿlantu, wa mā anta aʿlamu bihi minnī, anta al-muqaddimu wa anta al-muʾakhkhiru lā ilāha illā ant, anta ilāhī lā ilāha illā ant, wa lā ḥawla wa lā quwwata illā billāh.",
+                    "explanationEs": "¡Oh Allah! A Ti pertenecen todas las alabanzas, Tú eres la Luz de los cielos y de la tierra y de cuanto hay en ellos. A Ti pertenecen las alabanzas, Tú eres el Sustentador de los cielos y de la tierra y de cuanto hay en ellos. A Ti pertenecen las alabanzas, Tú eres el Señor de los cielos y de la tierra y de cuanto hay en ellos. A Ti pertenecen las alabanzas, Tuyo es el reino de los cielos y de la tierra y de cuanto hay en ellos. A Ti pertenecen las alabanzas, Tú eres el Rey de los cielos y de la tierra. A Ti pertenecen las alabanzas, Tú eres la Verdad, Tu promesa es verdadera, Tu palabra es verdad, el encuentro Contigo es verdad, el Paraíso es verdad, el Infierno es verdad, los Profetas son verdad, Muhammad (que la paz y las bendiciones de Allah sean con él) es verdad y la Hora es verdad. ¡Oh Allah! A Ti me he sometido, en Ti he confiado, en Ti he creído, a Ti me he vuelto en arrepentimiento, por Ti he disputado y a Tu juicio me he acogido. Perdóname lo que he hecho en el pasado y lo que haga en el futuro, lo que he ocultado y lo que he manifestado, y lo que Tú conoces mejor que yo. Tú eres Quien adelanta y Quien retrasa, no hay más divinidad excepto Tú. Tú eres mi Dios, no hay más divinidad excepto Tú, y no hay fuerza ni poder sino en Allah.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2098.mp3"
+                    ]
                   },
                   {
                         "itemNumber": 99,
