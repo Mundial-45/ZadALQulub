@@ -265,7 +265,10 @@ const ruqyahData = [
             "explanationEs": "Pido a Allah, el Grandioso, Señor del Trono grandioso, que te cure. (Siete veces al visitar al enfermo. Abu Dawud y At-Tirmidhi)",
             "count": 7,
             "maxCount": 7,
-            "note": "تُقَالُ سَبْعَ مَرَّاتٍ عِنْدَ عِيَادَةِ الْمَرِيضِ (رَوَاهُ أَبُو دَاوُدَ وَالتِّرْمِذِيُّ)"
+            "note": "تُقَالُ سَبْعَ مَرَّاتٍ عِنْدَ عِيَادَةِ الْمَرِيضِ (رَوَاهُ أَبُو دَاوُدَ وَالتِّرْمِذِيُّ)",
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA20-63.mp3"
+            ]
           }
         ]
       },
@@ -832,7 +835,10 @@ const ruqyahData = [
             "explanationEs": "Pido a Allah, el Grandioso, Señor del Trono grandioso, que te cure. (Siete veces al visitar al enfermo. Abu Dawud y At-Tirmidhi)",
             "count": 7,
             "maxCount": 7,
-            "note": "تُقَالُ سَبْعَ مَرَّاتٍ عِنْدَ عِيَادَةِ الْمَرِيضِ (رَوَاهُ أَبُو دَاوُدَ وَالتِّرْمِذِيُّ)"
+            "note": "تُقَالُ سَبْعَ مَرَّاتٍ عِنْدَ عِيَادَةِ الْمَرِيضِ (رَوَاهُ أَبُو دَاوُدَ وَالتِّرْمِذِيُّ)",
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/ROQYA20-63.mp3"
+            ]
           }
         ]
       },
@@ -1038,15 +1044,6 @@ const ruqyahData = [
             "note": "سورة الناس"
           },
           {
-            "itemNumber": 78,
-            "text": "بِسْمِ اللَّهِ وَلَجْنَا، وَبِسْمِ اللَّهِ خَرَجْنَا، وَعَلَى رَبِّنَا تَوَكَّلْنَا",
-            "latin": "Bismillāhi walajnā, wa bismillāhi kharajnā, wa ʿalā Rabbinā tawakkalnā.",
-            "explanationEs": "En el nombre de Allah entramos, en el nombre de Allah salimos, y en nuestro Señor confiamos. (Al entrar en casa; después se saluda a la familia. Abu Dawud)",
-            "count": 1,
-            "maxCount": 1,
-            "note": "عِنْدَ دُخُولِ الْبَيْتِ، ثُمَّ يُسَلِّمُ عَلَى أَهْلِهِ (رَوَاهُ أَبُو دَاوُدَ)"
-          },
-          {
             "itemNumber": 79,
             "text": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ",
             "latin": "Aʿūdhu bi-kalimātillāhit-tāmmāti min sharri mā khalaq.",
@@ -1082,12 +1079,15 @@ const ruqyahData = [
           },
           {
             "itemNumber": 82,
-            "text": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ الَّتِي لَا يُجَاوِزُهُنَّ بَرٌّ وَلَا فَاجِرٌ، مِنْ شَرِّ مَا خَلَقَ وَذَرَأَ وَبَرَأَ، وَمِنْ شَرِّ مَا يَنْزِلُ مِنَ السَّمَاءِ، وَمِنْ شَرِّ مَا يَعْرُجُ فِيهَا، وَمِنْ شَرِّ مَا ذَرَأَ فِي الْأَرْضِ، وَمِنْ شَرِّ مَا يَخْرُجُ مِنْهَا، وَمِنْ شَرِّ فِتَنِ اللَّيْلِ وَالنَّهَارِ، وَمِنْ شَرِّ كُلِّ طَارِقٍ إِلَّا طَارِقًا يَطْرُقُ بِخَيْرٍ يَا رَحْمَنُ",
-            "latin": "Aʿūdhu bi-kalimātillāhit-tāmmātil-latī lā yujāwizuhunna barrun wa lā fājir, min sharri mā khalaqa wa dharaʾa wa baraʾ, wa min sharri mā yanzilu minas-samāʾ, wa min sharri mā yaʿruju fīhā, wa min sharri mā dharaʾa fil-arḍ, wa min sharri mā yakhruju minhā, wa min sharri fitanil-layli wan-nahār, wa min sharri kulli ṭāriqin illā ṭāriqan yaṭruqu bi-khayr, yā Raḥmān.",
-            "explanationEs": "Me refugio en las palabras perfectas de Allah, que ni el piadoso ni el malvado pueden traspasar, del mal de lo que Él ha creado, multiplicado y originado; del mal de lo que desciende del cielo y del mal de lo que asciende a él; del mal de lo que ha esparcido en la tierra y del mal de lo que sale de ella; del mal de las pruebas de la noche y del día, y del mal de todo visitante nocturno, salvo el que viene con el bien. ¡Oh, Compasivo!",
+            "text": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ الَّتِي لَا يُجَاوِزُهُنَّ بَرٌّ وَلَا فَاجِرٌ، مِنْ شَرِّ مَا خَلَقَ وَبَرَأَ وَذَرَأَ، وَمِنْ شَرِّ مَا يَنْزِلُ مِنَ السَّمَاءِ، وَمِنْ شَرِّ مَا يَعْرُجُ فِيهَا، وَمِنْ شَرِّ مَا ذَرَأَ فِي الْأَرْضِ، وَمِنْ شَرِّ مَا يَخْرُجُ مِنْهَا، وَمِنْ شَرِّ فِتَنِ اللَّيْلِ وَالنَّهَارِ، وَمِنْ شَرِّ كُلِّ طَارِقٍ إِلَّا طَارِقًا يَطْرُقُ بِخَيْرٍ يَا رَحْمَنُ",
+            "latin": "Aʿūdhu bi-kalimātillāhit-tāmmātil-latī lā yujāwizuhunna barrun wa lā fājir, min sharri mā khalaqa wa baraʾa wa dharaʾ, wa min sharri mā yanzilu minas-samāʾ, wa min sharri mā yaʿruju fīhā, wa min sharri mā dharaʾa fil-arḍ, wa min sharri mā yakhruju minhā, wa min sharri fitanil-layli wan-nahār, wa min sharri kulli ṭāriqin illā ṭāriqan yaṭruqu bi-khayr, yā Raḥmān.",
+            "explanationEs": "Me refugio en las palabras perfectas de Allah, que ni el piadoso ni el malvado pueden traspasar, del mal de lo que Él ha creado, originado y multiplicado; del mal de lo que desciende del cielo y del mal de lo que asciende a él; del mal de lo que ha esparcido en la tierra y del mal de lo que sale de ella; del mal de las pruebas de la noche y del día, y del mal de todo visitante nocturno, salvo el que viene con el bien. ¡Oh, Compasivo!",
             "count": 1,
             "maxCount": 1,
-            "note": "دُعَاءٌ عَلَّمَهُ جِبْرِيلُ النَّبِيَّ ﷺ لَمَّا كَادَتْهُ الشَّيَاطِينُ (رَوَاهُ أَحْمَدُ)"
+            "note": "دُعَاءٌ عَلَّمَهُ جِبْرِيلُ النَّبِيَّ ﷺ لَمَّا كَادَتْهُ الشَّيَاطِينُ (رَوَاهُ أَحْمَدُ)",
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20277.mp3"
+            ]
           }
         ]
       }
