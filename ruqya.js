@@ -386,15 +386,16 @@ const ruqyahData = [
           },
           {
             "itemNumber": 31,
-            "text": "﴿وَإِمَّا يَنزَغَنَّكَ مِنَ ٱلشَّيۡطَٰنِ نَزۡغٞ فَٱسۡتَعِذۡ بِٱللَّهِۚ إِنَّهُۥ سَمِيعٌ عَلِيمٌ\u06dd﴾",
-            "latin": "Wa immā yanzaghannaka minash-shayṭāniبِٱللَّهِۚ إِنَّهُۥ سَمِيعٌ عَلِيمٌ nazghun fastaʿidh billāh, innahū samīʿun ʿalīm.",
+            "text": "﴿وَإِمَّا يَنزَغَنَّكَ مِنَ ٱلشَّيۡطَٰنِ نَزۡغٞ فَٱسۡتَعِذۡ بِٱللَّهِۚ إِنَّهُۥ سَمِيعٌ عَلِيمٌ۝﴾",
+            "latin": "Wa immā yanzaghannaka minash-shayṭāni nazghun fastaʿidh billāh, innahū samīʿun ʿalīm.",
             "explanationEs": "Y si una instigación del demonio te incita, busca refugio en Allah; ciertamente Él es Oyente, Conocedor.",
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
               "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q007-200.mp3"
             ],
-            "note": "سورة الأعراف الآية 200"
+            "note": "سورة الأعراف الآية 200",
+            "audioUrl": ""
           },
           {
             "itemNumber": 32,
