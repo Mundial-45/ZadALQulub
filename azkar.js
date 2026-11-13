@@ -810,7 +810,7 @@ const azkarData = [
                   {
                     "itemNumber": 69,
                     "text": "الْحَمْدُ لِلَّهِ الَّذِي عَافَانِي فِي جَسَدِي، وَرَدَّ عَلَيَّ رُوحِي، وَأَذِنَ لي بِذِكْرِهِ",
-                    "latin": "Alhamdu lillāhi-lladhī ʿāfānī fī jasadī, wa-radda ʿalayya rūḥī, wa-adhina lī bi-dhikrih.",
+                    "latin": "Al-ḥamdu lillāhi-lladhī ʿāfānī fī jasadī, wa-radda ʿalayya rūḥī, wa-adhina lī bi-dhikrih.",
                     "explanationEs": "Alabado sea Allah, Quien sanó mi cuerpo, me devolvió mi alma y me permitió recordarle.",
                     "count": 1,
                     "maxCount": 1,
