@@ -33,7 +33,7 @@ const uiTexts = {
     home: 'الرئيسية',
     resetAll: 'إعادة الكل',
     reset: 'إعادة ضبط',
-    searchPlaceholder: 'ابحث عن ذكر أو دعاء...',
+    searchPlaceholder: 'ابحث عن ذكر أو دعاء أو برقمه...',
     countLabel: 'التكرار',
     doneLabel: 'تم المتبقي',
     progressLabel: 'نسبة الإنجاز الكلية',
@@ -95,7 +95,7 @@ const uiTexts = {
     home: 'Inicio',
     resetAll: 'Reiniciar todo',
     reset: 'Reiniciar',
-    searchPlaceholder: 'Buscar suplicación o dhikr...',
+    searchPlaceholder: 'Buscar suplicación, dhikr o número...',
     countLabel: 'Repetición',
     doneLabel: 'Completado',
     progressLabel: 'Progreso total',
@@ -914,6 +914,12 @@ function filterButtons() {
   }
 
   const cleanQuery = removeArabicDiacritics(rawQuery.toLowerCase());
+  // Búsqueda por número: «121», «١٢١», «#121», «رقم 121», «n.º 121».
+  const digitsQuery = rawQuery
+    .replace(/[\u0660-\u0669]/g, d => String(d.charCodeAt(0) - 0x0660))
+    .replace(/[\u06F0-\u06F9]/g, d => String(d.charCodeAt(0) - 0x06F0));
+  const numberMatch = digitsQuery.match(/^(?:#|رقم|n\.?\s*[º°o]?\.?|no\.?|nº)?\s*(\d{1,4})$/i);
+  const searchNumber = numberMatch ? Number(numberMatch[1]) : null;
   const sectionModule = getSectionModule(currentSection);
   const data = sectionModule ? sectionModule.getGroups() : [];
 
@@ -924,7 +930,7 @@ function filterButtons() {
     const titleArClean = removeArabicDiacritics((group.titleAr || '').toLowerCase());
     const titleEsClean = (group.titleEs || '').toLowerCase();
 
-    if (titleArClean.includes(cleanQuery) || titleEsClean.includes(cleanQuery)) {
+    if (searchNumber === null && (titleArClean.includes(cleanQuery) || titleEsClean.includes(cleanQuery))) {
       matchedGroups.push(group);
     }
 
@@ -935,11 +941,16 @@ function filterButtons() {
         const latinClean = (item.latin || '').toLowerCase();
         const noteClean = removeArabicDiacritics((item.note || '').toLowerCase());
 
-        if (textClean.includes(cleanQuery) || expClean.includes(cleanQuery) || latinClean.includes(cleanQuery) || noteClean.includes(cleanQuery)) {
+        const itemNumber = Number(item.itemNumber) || (itemIdx + 1);
+        const isMatch = searchNumber !== null
+          ? itemNumber === searchNumber
+          : (textClean.includes(cleanQuery) || expClean.includes(cleanQuery) || latinClean.includes(cleanQuery) || noteClean.includes(cleanQuery));
+        if (isMatch) {
           matchedItems.push({
             group: group,
             item: item,
-            itemIdx: itemIdx
+            itemIdx: itemIdx,
+            itemNumber: itemNumber
           });
         }
       });
@@ -985,7 +996,7 @@ function filterButtons() {
     itemHeader.innerText = isEs ? `Invocaciones encontradas (${matchedItems.length}):` : `الأذكار والأدعية المطابقة (${matchedItems.length}):`;
     grid.appendChild(itemHeader);
 
-    matchedItems.forEach(({ group, item, itemIdx }) => {
+    matchedItems.forEach(({ group, item, itemIdx, itemNumber }) => {
       const card = document.createElement('div');
       card.onclick = () => {
         openGroup(group.id);
@@ -1001,7 +1012,7 @@ function filterButtons() {
       card.innerHTML = `
         <div class="flex justify-between items-center border-b border-amber-200/60 dark:border-slate-700 pb-2 text-xs font-bold">
           <span class="text-emerald-800 dark:text-emerald-300 bg-emerald-100/80 dark:bg-emerald-950 px-2.5 py-1 rounded-lg">
-            ${groupTitle}
+            ${groupTitle} · ${isEs ? 'n.º ' + itemNumber : 'رقم ' + itemNumber}
           </span>
           ${item.note ? `<span class="bg-amber-100/80 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 px-2.5 py-1 rounded-lg">${item.note}</span>` : ''}
         </div>
