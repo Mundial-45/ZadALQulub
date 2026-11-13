@@ -1174,7 +1174,10 @@ const adyaData = [
       "text": "اللَّهُمَّ يَا ذَا الرَّحْمَةِ الْوَاسِعَةِ، يَا مُطَّلِعاً عَلَى السَّرَائِرِ وَالضَّمَائِرِ وَالْهَوَاجِسِ وَالْخَوَاطِرِ، لَا يَعْزُبُ عَنْكَ شَيْءٌ، نَسْأَلُكَ مِنْ وَاسِعِ فَضْلِكَ وَرَحْمَتِكَ، وَأُنْساً وَفَرَجاً مِنْ بَحْرِ كَرَمِكَ، أَنْتَ بِيَدِكَ الْأَمْرُ كُلُّهُ وَمَقَالِيدُ كُلِّ شَيْءٍ، فَهَبْ لَنَا مَا تَقَرُّ بِهِ أَعْيُنُنَا وَتُغْنِينَا عَنْ سُؤَالِ غَيْرِكَ، فَإِنَّكَ وَاسِعُ الْكَرَمِ، كَثِيرُ الْجُودِ، فَبِبابِكَ وَاقِفُونَ وَلِجُودِكَ الْوَاسِعِ الْمَعْرُوفِ مُنْتَظِرُونَ يَا كَرِيمُ يَا رَحِيمُ.",
       "latin": "Allāhumma yā dhal-raḥmati al-wāsiʿati, yā muṭṭaliʿan ʿalā al-sarāʾiri waḍ-ḍamāʾiri wal-hawājisi wal-khawāṭiri, lā yaʿzubu ʿanka shayʾun, nasʾaluka min wāsiʿi faḍlika wa raḥmatika, wa unsan wa farajan min baḥri karamika, anta biyadika al-amru kulluhu wa maqālīdu kulli shayʾin, fahab lanā mā taqarru bihi aʿyununā wa tughnīnā ʿan suʾāli ghayrika, fa-innaka wāsiʿu al-karami, kathīru al-jūdi, fa-bibābika wāqifūna wa lijūdika al-wāsiʿi al-maʿrūfi muntaẓirūna, yā Karīmu yā Raḥīm.",
       "explanationEs": "¡Oh, Allah! ¡Oh, Dueño de la inmensa misericordia! ¡Oh, Quien conoce todos los secretos, las intenciones ocultas, los pensamientos y las inquietudes del corazón! Nada se oculta a Ti.\nTe pedimos de Tu inmenso favor y de Tu misericordia, y consuelo y alivio procedentes del océano de Tu bondad.\nTú tienes en Tus manos todos los asuntos y las llaves de todas las cosas. Concédenos aquello que alegre nuestros ojos y nos haga innecesario pedir a nadie más que a Ti.\nCiertamente, Tú eres inmenso en generosidad y abundante en dádivas.\nEstamos de pie ante Tu puerta, esperando Tu inmensa y conocida generosidad.\n¡Oh el más Generoso! ¡Oh el más Misericordioso!",
-      "note": "دعاء الفضل والفرج (صيغة عامة مقترحة)"
+      "note": "دعاء الفضل والفرج (صيغة عامة مقترحة)",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20119.mp3"
+      ]
     },
     {
       "itemNumber": 120,
@@ -1191,7 +1194,10 @@ const adyaData = [
       "text": "إِلَهِي أَدْعُوكَ دُعَاءَ مَنِ اشْتَدَّتْ فَاقَتُهُ، وَضَعُفَتْ قُوَّتُهُ، وَقَلَّتْ حِيلَتُهُ.\nدُعَاءَ الغَرِيقِ, المُضْطَرِّ, البَائِسِ, الفقيرِ, الَّذِي لَا يَجِدُ لِكَشْفِ مَا هُوَ فِيهِ مِنَ الذُّنُوبِ إِلَّا أَنْتَ.\nيَا حَيُّ يَا قَيُّومُ، بِرَحْمَتِكَ أَسْتَغِيثُ، أَصْلِحْ لِي شَأْنِي كُلَّهُ، وَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ.",
       "latin": "Ilāhī adʿūka duʿāʾa mani ishtaddat fāqatuh, wa ḍaʿufat quwwatuh, wa qallat ḥīlatuh, duʿāʾal-gharīqi al-muḍṭarri al-bāʾisi al-faqīri alladhī lā yajidu li-kashfi mā huwa fīhi minadh-dhunūbi illā Ant. Yā Ḥayyu yā Qayyūm, bi-raḥmatika astaghīth, aṣliḥ lī shaʾnī kullah, wa lā takilnī ilā nafsī ṭarfata ʿayn.",
       "explanationEs": "¡Dios mío! Te suplico con la súplica de quien se encuentra en una necesidad extrema, cuya fuerza se ha debilitado y cuyos recursos son escasos; con la súplica de quien se ahoga, desesperado, afligido y pobre, y no encuentra a nadie salvo a Ti que lo libre de la situación en la que se encuentra.\n\n¡Oh Viviente, oh Sustentador! En Tu misericordia busco auxilio: arregla todos mis asuntos y no me dejes a merced de mí mismo ni un abrir y cerrar de ojos.",
-      "note": "دعاء المضطر والغريق (صيغة عامة مقترحة)"
+      "note": "دعاء المضطر والغريق (صيغة عامة مقترحة)",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20121.mp3"
+      ]
     },
     {
       "itemNumber": 122,
@@ -1208,7 +1214,10 @@ const adyaData = [
       "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ وَرَحْمَتِكَ، فَإِنَّهُ لَا يَمْلِكُهَا إِلَّا أَنْتَ.",
       "latin": "Allāhumma innī asʾaluka min faḍlika wa raḥmatik, fa-innahu lā yamlikuhā illā Ant.",
       "explanationEs": "¡Oh Allah! Te pido de Tu favor y de Tu misericordia, pues nadie los posee salvo Tú.",
-      "note": "رواه الطبراني في الكبير، وصححه الألباني في صحيح الجامع (1278)"
+      "note": "رواه الطبراني في الكبير، وصححه الألباني في صحيح الجامع (1278)",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20123.mp3"
+      ]
     },
     {
       "itemNumber": 124,
@@ -1861,14 +1870,20 @@ const adyaData = [
       "text": "اللَّهُمَّ زِدْهُمَا عُمُرًا وَعَافِيَةً، وَأَبْعِدْ عَنْهُمَا مَتَاعِبَ الدُّنْيَا وَلَا تُذِقْهُمَا دُمُوعَ الضِّيقِ، اللَّهُمَّ أَرِحْ قَلْبَيْهِمَا رَاحَةً وَاسِعَةً، وَأَسْعِدْهُمَا سَعَادَةً لَا تَفْنَى وَلَا تَزُولُ.",
       "latin": "Allāhumma zid-humā ʿumran wa ʿāfiyah, wa abʿid ʿanhumā matāʿibad-dunyā wa lā tudhiqhumā dumūʿaḍ-ḍīq, Allāhumma ariḥ qalbayhimā rāḥatan wāsiʿah, wa asʿid-humā saʿādatan lā tafnā wa lā tazūl.",
       "explanationEs": "Oh Allah, auméntales vida y salud, aléjalos de las fatigas del mundo, y del suplicio de las lágrimas de angustia. Oh Allah, da a sus corazones un descanso amplio y concédeles felicidad eterna.",
-      "note": "دعاء السعادة وراحة القلب (صيغة عامة مقترحة)"
+      "note": "دعاء السعادة وراحة القلب (صيغة عامة مقترحة)",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20187.mp3"
+      ]
     },
     {
       "itemNumber": 188,
       "text": "اللَّهُمَّ إِنِّي أَسْتَوْدِعُكَ مَبْسَمَ أَبِي وَقَلْبَ أُمِّي وَفَرْحَتَهُمَا، اللَّهُمَّ إِنِّي اسْتَوْدَعْتُكَ أَغْلَى مَا أَمْلِكُ فَاحْفَظْهُمَا بِعَيْنِكَ الَّتِي لَا تَنَامُ، وَأَبْعِدْ عَنْ وَالِدَيَّ ثِقْلَ الحَيَاةِ وَمُرَّهَا.",
       "latin": "Allāhumma innī astawdiʿuka mabsama abī wa qalba ummī wa farḥatahumā, Allāhumma innī istawdaʿtuka aghlā mā amliku faḥfaẓhumā bi-ʿaynikal-latī lā tanām, wa abʿid ʿan wālidayya thiqlal-ḥayāti wa murrahā.",
       "explanationEs": "¡Oh Allah! Te encomiendo la sonrisa de mi padre, el corazón de mi madre y la felicidad de ambos. Te encomiendo lo más preciado que poseo. Protégelos bajo Tu mirada, que nunca duerme, y aparta de mis padres el peso y la amargura de la vida.",
-      "note": "دعاء الاستيداع والحفظ الشامل (صيغة عامة مقترحة)"
+      "note": "دعاء الاستيداع والحفظ الشامل (صيغة عامة مقترحة)",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20188.mp3"
+      ]
     },
     {
       "itemNumber": 189,
@@ -2220,7 +2235,10 @@ const adyaData = [
     "text": "اللَّهُمَّ اجْعَلْ قَبْرَيْ أُمِّي وَأَبِي رَوْضَتَيْنِ وَبُسْتَانَيْنِ، فِي نَعِيمٍ دَائِمٍ وَدَارِ خُلْدٍ، بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ.",
     "latin": "Allāhumma-jʿal qabray ummī wa-abī rawḍatayn wa-bustānayn, fī naʿīmin dāʾimin wa dāri khuldin, bi-raḥmatika yā Arḥamar-rāḥimīn.",
     "explanationEs": "¡Oh, Allah! Haz que las tumbas de mi madre y de mi padre sean dos jardines y dos vergeles, en una dicha eterna y en una morada de eternidad, por Tu misericordia, ¡oh el más Misericordioso de los misericordiosos!",
-    "note": "دعاء بالنعيم الخالد (صيغة عامة مقترحة)"
+    "note": "دعاء بالنعيم الخالد (صيغة عامة مقترحة)",
+    "audioUrls": [
+      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20223.mp3"
+    ]
   },
   {
     "itemNumber": 224,
@@ -2695,7 +2713,10 @@ const adyaData = [
       "text": "اللَّهُمَّ ارْزُقْنِي حَظَّ الدُّنْيَا وَنَعِيمَ الْآخِرَةِ، وَيَسِّرْ لِي كُلَّ أَمْرٍ عَسِيرٍ. يَا رَبِّ، ارْزُقْنِي أَيَّامًا جَمِيلَةً، وَأَخْبَارًا مُفْرِحَةً، وَرَاحَةَ بَالٍ، وَتَوْفِيقًا مِنْ عِنْدِكَ. إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
       "latin": "Allāhumma-rzuqnī ḥaẓẓad-dunyā wa naʿīmal-ākhirah, wa yassir lī kulla amrin ʿasīr. Yā Rabbi-rzuqnī ayyāman jamīlah, wa akhbāran mufriḥah, wa rāḥata bāl, wa tawfīqan min ʿindik. Innaka ʿalā kulli shayʾin qadīr.",
       "explanationEs": "¡Oh Allah! Concédeme una buena porción de esta vida y las delicias de la otra, y facilítame todo asunto difícil. ¡Señor mío! Concédeme días hermosos, noticias alegres, tranquilidad de corazón y éxito procedente de Ti. Ciertamente, Tú tienes poder sobre todas las cosas.",
-      "note": "دعاء التيسير وراحة البال (صيغة عامة مقترحة)"
+      "note": "دعاء التيسير وراحة البال (صيغة عامة مقترحة)",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20270.mp3"
+      ]
     },
     {
       "itemNumber": 271,

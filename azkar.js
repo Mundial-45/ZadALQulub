@@ -2379,7 +2379,10 @@ const azkarData = [
                         "latin": "Man kāna ākhiru kalāmihi lā ilāha illā Allāhu dakhala al-jannah.",
                         "explanationEs": "Aquel cuyas últimas palabras sean 'no hay más divinidad que Allah', entrará al Paraíso.",
                         "count": 1,
-                        "maxCount": 1
+                        "maxCount": 1,
+                        "audioUrls": [
+                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20183.mp3"
+                        ]
                   }
             ]
       },
