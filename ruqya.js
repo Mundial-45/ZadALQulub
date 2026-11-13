@@ -607,7 +607,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q067-001-005.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q067-001-004.mp3"
             ],
             "note": "سورة الملك الآيات 1-5"
           },
@@ -631,7 +631,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q072-001-003.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q072-001-002.mp3"
             ],
             "note": "سورة الجن الآيات 1-3"
           },
