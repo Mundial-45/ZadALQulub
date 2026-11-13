@@ -95,7 +95,7 @@
             "text": "الْبَاطِنُ",
             "latin": "Al-Bāṭin",
             "explanationAr": "الَّذِي لَيْسَ دُونَهُ شَيْءٌ، الْمُطَّلِعُ عَلَى السَّرَائِرِ وَالْخَفَايَا.",
-            "explanationEs": "El Oculto\nAquel más cercano que lo cual no hay nada; conoce los secretos y lo más escondido.",
+            "explanationEs": "El Oculto\nNada hay más cercano que Él; conoce los secretos y lo más escondido.",
             "note": "وَرَدَ فِي الْقُرْآنِ",
             "noteEs": "En el Corán"
           },
@@ -309,7 +309,7 @@
             "text": "الرَّزَّاقُ",
             "latin": "Ar-Razzāq",
             "explanationAr": "الَّذِي يَرْزُقُ جَمِيعَ الْخَلْقِ، رِزْقَ الْأَبْدَانِ وَرِزْقَ الْقُلُوبِ بِالْإِيمَانِ وَالْعِلْمِ.",
-            "explanationEs": "El Sustentador\nProvee a toda la creación: el sustento de los cuerpos y el de los corazones con la fe y el conocimiento.",
+            "explanationEs": "El Proveedor\nProvee a toda la creación: el sustento de los cuerpos y el de los corazones con la fe y el conocimiento.",
             "note": "وَرَدَ فِي الْقُرْآنِ",
             "noteEs": "En el Corán"
           },
@@ -435,7 +435,7 @@
             "text": "الْغَفَّارُ",
             "latin": "Al-Ghaffār",
             "explanationAr": "كَثِيرُ الْمَغْفِرَةِ، يَسْتُرُ ذُنُوبَ عِبَادِهِ وَيَتَجَاوَزُ عَنْهَا مَهْمَا كَثُرَتْ.",
-            "explanationEs": "El Perdonador\nPerdona mucho: cubre los pecados de Sus siervos y los pasa por alto, por muchos que sean.",
+            "explanationEs": "El Gran Perdonador\nPerdona mucho: cubre los pecados de Sus siervos y los pasa por alto, por muchos que sean.",
             "note": "وَرَدَ فِي الْقُرْآنِ",
             "noteEs": "En el Corán"
           },
@@ -444,7 +444,7 @@
             "text": "الْغَفُورُ",
             "latin": "Al-Ghafūr",
             "explanationAr": "الَّذِي يَسْتُرُ الذُّنُوبَ وَيَقِي صَاحِبَهَا عُقُوبَتَهَا.",
-            "explanationEs": "El Indulgente\nCubre los pecados y protege a quien los cometió de su castigo.",
+            "explanationEs": "El Perdonador\nCubre los pecados y protege a quien los cometió de su castigo.",
             "note": "وَرَدَ فِي الْقُرْآنِ",
             "noteEs": "En el Corán"
           },
