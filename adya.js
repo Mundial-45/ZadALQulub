@@ -15,11 +15,13 @@ const adyaData = [
     },
     {
       "itemNumber": 2,
-      "text": "﴿قَالُواْ رَبَّنَآ أَفۡرِغۡ عَلَيۡنَا صَبۡرٗا وَثَبِّتۡ أَقۡدَامَنَا وَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ۝﴾",
+      "text": "﴿رَبَّنَآ أَفۡرِغۡ عَلَيۡنَا صَبۡرٗا وَثَبِّتۡ أَقۡدَامَنَا وَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ۝﴾",
       "latin": "Qālū: Rabbanā afrigh ʿalaynā ṣabran wa thabbit aqdāmanā wanṣurnā ʿalal-qawmil-kāfirīn.",
       "explanationEs": "Dijeron: «¡Señor nuestro! Danos paciencia, mantennos firmes y concédenos la victoria sobre los que niegan la verdad».",
       "note": "سورة البقرة من الآية 250",
-      "audioUrls": ["https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-250.mp3"]
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-250.mp3"
+      ]
     },
     {
       "itemNumber": 3,
@@ -719,10 +721,10 @@ const adyaData = [
     },
     {
       "itemNumber": 76,
-      "text": "﴿رَّبِّ ٱغۡفِرۡ لِي وَلِوَٰلِدَيَّ وَلِمَن دَخَلَ بَيۡتِيَ مُؤۡمِنࣰا وَلِلۡمُؤۡمِنِينَ وَٱلۡمُؤۡمِنَٰتِۖ﴾",
-      "latin": "Rabbi-ghfir lī wa li-wālidayya wa liman dakhala baytiya muʾminan wa lil-muʾminīna wal-muʾmināt.",
-      "explanationEs": "«¡Señor mío! Perdóname y perdona a mis padres, a todo aquel que ingrese a mi casa como creyente, y a todos los hombres y mujeres que crean en Ti».",
-      "note": "نوح عليه السلام · سورة نوح من الآية 28",
+      "text": "﴿رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِمَنْ دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَالمُؤْمِنَاتِ وَلَا تَزِدِ الظَّالِمِينَ إِلَّا تَبَارًا۝﴾",
+      "latin": "Rabbigh-fir lī wa li-wālidayya wa liman dakhala baytiya muʾminan wa lil-muʾminīna wal-muʾmināti wa lā tazidiẓ-ẓālimīna illā tabārā.",
+      "explanationEs": "«¡Señor mío! Perdóname a mí, a mis padres, a quien ingrese creyente a mi casa, y a todos los creyentes y las creyentes, y no aumentes a los injustos sino en perdición.» (Nuh: 28)",
+      "note": "نوح عليه السلام · سورة نوح  الآية 28",
       "audioUrls": [
         "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q071-028.mp3"
       ]
@@ -980,9 +982,9 @@ const adyaData = [
     },
     {
       "itemNumber": 102,
-      "text": "﴿رَّبِّ زِدۡنِي عِلۡمࣰا۝﴾",
-      "latin": "Rabbi zidnī ʿilmā.",
-      "explanationEs": "«¡Señor mío! Acrecienta mi conocimiento».",
+      "text": "﴿فَتَعَٰلَى ٱللَّهُ ٱلۡمَلِكُ ٱلۡحَقُّۗ وَلَا تَعۡجَلۡ بِٱلۡقُرۡءَانِ مِن قَبۡلِ أَن يُقۡضَىٰٓ إِلَيۡكَ وَحۡيُهُۥۖ وَقُل رَّبِّ زِدۡنِي عِلۡمٗا۝﴾",
+      "latin": "Fa-taʿālā Allāhu al-Maliku al-Ḥaqq, wa lā taʿjal bil-Qurʾāni min qabli an yuqḍā ilayka waḥyuh, wa qul Rabbi zidnī ʿilmā.",
+      "explanationEs": "«Exaltado sea Allah, el Rey, la Verdad. No te apresures con el Corán antes de que se complete su revelación, y di: ¡Señor mío! Acrecienta mi conocimiento».",
       "note": "نبينا محمد ﷺ · سورة طه من الآية 114",
       "audioUrls": [
         "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q020-114.mp3"
@@ -1439,9 +1441,9 @@ const adyaData = [
     },
     {
       "itemNumber": 146,
-      "text": "﴿رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِمَنْ دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَالمُؤْمِنَاتِ۝﴾",
-      "latin": "Rabbigh-fir lī wa li-wālidayya wa liman dakhala baytiya muʾminan wa lil-muʾminīna wal-muʾmināt.",
-      "explanationEs": "«¡Señor mío! Perdóname a mí, a mis padres, a quien ingrese creyente a mi casa, y a todos los creyentes y las creyentes.» (Nuh: 28)",
+      "text": "﴿رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِمَنْ دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَالمُؤْمِنَاتِ وَلَا تَزِدِ الظَّالِمِينَ إِلَّا تَبَارًا۝﴾",
+      "latin": "Rabbigh-fir lī wa li-wālidayya wa liman dakhala baytiya muʾminan wa lil-muʾminīna wal-muʾmināti wa lā tazidiẓ-ẓālimīna illā tabārā.",
+      "explanationEs": "«¡Señor mío! Perdóname a mí, a mis padres, a quien ingrese creyente a mi casa, y a todos los creyentes y las creyentes, y no aumentes a los injustos sino en perdición.» (Nuh: 28)",
       "note": "سورة نوح من الآية 28",
       "audioUrls": [
         "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q071-028.mp3"
