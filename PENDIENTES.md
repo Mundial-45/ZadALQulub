@@ -1,23 +1,16 @@
 # Mejoras pendientes (para cuando se pruebe en Android Studio)
 
-## ⚠️ Urgente: contenido que hay que quitar o cambiar en árabe
+## ⚠️ Urgente: contenido
 
-Salieron en la revisión de contenido. No se tocaron porque implican borrar súplicas o cambiar el texto árabe; hay que decidir cada una.
-
-**Adya**
-1. **#270 «دعاء التسخير»**: pide «سَخِّرْ لِي جُنُودَ الْأَرْضِ وَمَلَائِكَةَ السَّمَاءِ» y que Allah diga «كن» a lo que uno desea. Súplica popular sin base y criticada por los sabios. Propuesta: quitarla.
-2. **#121 «يَا غِيَاثُ أَغِثْنِي» (×3)**: «الغياث» no está probado como nombre de Allah. Propuesta: cambiar por la auténtica «يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ».
-3. **#119 y #123**: son la misma súplica dos veces, con expresiones de tono sufí («فَيْضَةً مِنْ فَيْضِ فَضْلِكَ»، «قَبْضَةً مِنْ نُورِ سُلْطَانِكَ»). Propuesta: quitar una y cambiar esas dos frases.
-4. **#187 «بِحَجْمِ سَمَائِكَ أَرِحْ قَلْبَيْهِمَا»**: suena a juramento por la creación. Propuesta: «اللَّهُمَّ أَرِحْ قَلْبَيْهِمَا رَاحَةً وَاسِعَةً».
-5. **#188 «اللَّهُمَّ أُمِّي وَأَبِي وَمَا دُونَ ذَلِكَ هَيِّنٌ»**: exageración («todo lo demás es poca cosa»), cuando Allah y Su religión van antes. Propuesta: quitar esa frase.
-6. **#223 «تَحْتَ ظِلِّ الرَّحْمَنِ»**: expresión sin base para las tumbas. Propuesta: quitar esas palabras o cambiarlas por «بِرَحْمَتِكَ».
+**Audios por grabar en Adya** (se cambió el texto y se quitó el audio antiguo)
+1. #119, #121, #123, #187, #188, #223 y #270 no tienen audio. #123 es una súplica nueva: «اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ وَرَحْمَتِكَ، فَإِنَّهُ لَا يَمْلِكُهَا إِلَّا أَنْتَ».
 
 **Fuentes que faltan (son hadices, pero la nota no lo dice)**
-7. Adya #106 y #111 (رحمن الدنيا والآخرة ورحيمهما…), #107 y #113 (اللهم رب السماوات السبع…), #228 (أبدلهما دارا خيرا من دارهما), #256 (الله الله ربي لا أشرك به شيئا), #260. Buscar la fuente y el grado en dorar o islamweb.
-8. Adya #55 («اللهم إني أسألك الثبات في الأمر»): la nota dice «الطبراني في الكبير»; comprobar el grado.
+2. Adya #106 y #111 (رحمن الدنيا والآخرة ورحيمهما…), #107 y #113 (اللهم رب السماوات السبع…), #228 (أبدلهما دارا خيرا من دارهما), #256 (الله الله ربي لا أشرك به شيئا), #260. Buscar la fuente y el grado en dorar o islamweb.
+3. Adya #55 («اللهم إني أسألك الثبات في الأمر»): la nota dice «الطبراني في الكبير»; comprobar el grado.
 
 **Por revisar**
-9. **Munajat**: se leyó a mano el grupo de atributos y una súplica de cada grupo, y se pasó un barrido automático. Quedan por leer a mano unas 168.
+4. **Munajat**: se leyó a mano el grupo de atributos y una súplica de cada grupo, y se pasó un barrido automático. Quedan por leer a mano unas 168.
 
 ## Android
 
