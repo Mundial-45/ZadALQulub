@@ -1975,7 +1975,7 @@ const azkarData = [
                         "count": 1,
                         "maxCount": 1,
                         "audioUrls": [
-                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q021-087.mp3"
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20154.mp3"
                         ]
                   },
                   {
@@ -3127,7 +3127,7 @@ const azkarData = [
                         "maxCount": 1,
                         "note": "سورة الزخرف الآيات 13-14",
                         "audioUrls": [
-                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q043-013-014.mp3"
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20236.mp3"
                         ]
                   },
                   {
@@ -3141,7 +3141,7 @@ const azkarData = [
                         "maxCount": 1,
                         "note": "سورة الزخرف الآيات 13-14",
                         "audioUrls": [
-                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q043-013-014.mp3"
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20237.mp3"
                         ]
                   },
                   {
@@ -3544,7 +3544,7 @@ const azkarData = [
                         "maxCount": 1,
                         "note": "سورة البقرة الآية 201",
                         "audioUrls": [
-                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-201.mp3"
+                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20265.mp3"
                         ]
                   },
                   {
