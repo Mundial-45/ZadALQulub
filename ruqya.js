@@ -1044,15 +1044,6 @@ const ruqyahData = [
             "note": "سورة الناس"
           },
           {
-            "itemNumber": 78,
-            "text": "بِسْمِ اللَّهِ وَلَجْنَا، وَبِسْمِ اللَّهِ خَرَجْنَا، وَعَلَى رَبِّنَا تَوَكَّلْنَا",
-            "latin": "Bismillāhi walajnā, wa bismillāhi kharajnā, wa ʿalā Rabbinā tawakkalnā.",
-            "explanationEs": "En el nombre de Allah entramos, en el nombre de Allah salimos, y en nuestro Señor confiamos. (Al entrar en casa; después se saluda a la familia. Abu Dawud)",
-            "count": 1,
-            "maxCount": 1,
-            "note": "عِنْدَ دُخُولِ الْبَيْتِ، ثُمَّ يُسَلِّمُ عَلَى أَهْلِهِ (رَوَاهُ أَبُو دَاوُدَ)"
-          },
-          {
             "itemNumber": 79,
             "text": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ",
             "latin": "Aʿūdhu bi-kalimātillāhit-tāmmāti min sharri mā khalaq.",
