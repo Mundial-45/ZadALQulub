@@ -19,13 +19,7 @@ const ruqyahData = [
             "count": 7,
             "maxCount": 7,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/001001.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/001002.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/001003.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/001004.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/001005.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/001006.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/001007.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q001.mp3"
             ],
             "note": "سورة الفاتحة"
           },
@@ -37,7 +31,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002255.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-255.mp3"
             ],
             "note": "سورة البقرة الآية 255"
           },
@@ -49,8 +43,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002285.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002286.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-285-286.mp3"
             ],
             "note": "سورة البقرة الآيات 285-286"
           },
@@ -62,9 +55,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007054.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007055.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007056.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q007-054-056.mp3"
             ],
             "note": "سورة الأعراف الآيات 54-56"
           },
@@ -76,7 +67,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/009014.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q009-014.mp3"
             ],
             "note": "سورة التوبة الآية 14"
           },
@@ -88,7 +79,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/010057.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q010-057.mp3"
             ],
             "note": "سورة يونس الآية 57"
           },
@@ -100,7 +91,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/016069.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q016-069.mp3"
             ],
             "note": "سورة النحل الآية 69"
           },
@@ -112,7 +103,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/017082.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q017-082.mp3"
             ],
             "note": "سورة الإسراء الآية 82"
           },
@@ -124,10 +115,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023115.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023116.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023117.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023118.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q023-115-118.mp3"
             ],
             "note": "سورة المؤمنون الآيات 115-118"
           },
@@ -139,7 +127,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/026080.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q026-080.mp3"
             ],
             "note": "سورة الشعراء الآية 80"
           },
@@ -151,7 +139,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/041044.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q041-044.mp3"
             ],
             "note": "سورة فصلت الآية 44"
           },
@@ -163,10 +151,7 @@ const ruqyahData = [
             "count": 3,
             "maxCount": 3,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112001.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112002.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112003.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/112004.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q112.mp3"
             ],
             "note": "سورة الإخلاص"
           },
@@ -178,11 +163,7 @@ const ruqyahData = [
             "count": 3,
             "maxCount": 3,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113001.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113002.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113003.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113004.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/113005.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q113.mp3"
             ],
             "note": "سورة الفلق"
           },
@@ -194,12 +175,7 @@ const ruqyahData = [
             "count": 3,
             "maxCount": 3,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114001.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114002.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114003.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114004.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114005.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/114006.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q114.mp3"
             ],
             "note": "سورة الناس"
           },
@@ -304,7 +280,7 @@ const ruqyahData = [
             "maxCount": 1,
             "audioUrls": [
               "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-1-4.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002005.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-005.mp3"
             ],
             "note": "سورة البقرة الآيات 1-5"
           },
@@ -316,7 +292,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "note": "سورة البقرة الاية 102",
-            "audioUrl": "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002102.mp3"
+            "audioUrl": "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-102.mp3"
           },
           {
             "itemNumber": 24,
@@ -327,8 +303,7 @@ const ruqyahData = [
             "maxCount": 1,
             "note": "سورة البقرة - الآيات 163-164",
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002163.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002164.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-163-164.mp3"
             ],
             "notes": "",
             "audioUrl": ""
@@ -338,13 +313,13 @@ const ruqyahData = [
             "text": "﴿ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡحَيُّ ٱلۡقَيُّومُۚ لَا تَأۡخُذُهُۥ سِنَةٞ وَلَا نَوۡمٞۚ لَّهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَمَا فِي ٱلۡأَرۡضِۗ مَن ذَا ٱلَّذِي يَشۡفَعُ عِندَهُۥٓ إِلَّا بِإِذۡنِهِۦۚ يَعۡلَمُ مَا بَيۡنَ أَيۡدِيهِمۡ وَمَا خَلۡفَهُمۡۖ وَلَا يُحِيطُونَ بِشَيۡءٖ مِّنۡ عِلۡمِهِۦٓ إِلَّا بِمَا شَآءَۚ وَسِعَ كُرۡسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَۖ وَلَا يَـُٔودُهُۥ حِفۡظُهُمَاۚ وَهُوَ ٱلۡعَلِيُّ ٱلۡعَظِيمُ۝﴾",
             "latin": "Allāhu lā ilāha illā huwal-ḥayyul-qayyūm, lā taʾkhudhuhu sinatun wa lā nawm, lahū mā fis-samāwāti wa mā fil-arḍ, man dhal-ladhī yashfaʿu ʿindahū illā bi-idhnihi, yaʿlamu mā bayna aydīhim wa mā khalfahum, wa lā yuḥīṭūna bi-shayʾin min ʿilmihi illā bimā shāʾ, wasiʿa kursiyyuhus-samāwāti wal-arḍ, wa lā yaʾūduhu ḥifẓuhumā, wa huwal-ʿaliyyul-ʿaẓīm.",
             "explanationEs": "Allah, no existe divinidad alguna excepto Él, el Viviente, el Sustentador de toda la creación. No Lo afectan somnolencia ni sueño. Suyo es cuanto hay en los cielos y la Tierra. ¿Quién podrá interceder ante Él si no es con Su permiso? Él conoce lo que hay delante de ellos y lo que hay detrás de ellos, y nadie abarca de Su conocimiento salvo lo que Él quiere. Su Kursi (escabel) abarca los cielos y la Tierra, y la custodia de ambos no Lo agobia. Él es el Sublime, el Grandioso.",
-            "audioUrl": "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002255.mp3",
+            "audioUrl": "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-255.mp3",
             "count": 1,
             "maxCount": 1,
             "note": "آية الكرسي",
             "audioUrls": [],
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002255.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-255.mp3"
             ]
           },
           {
@@ -367,8 +342,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003018.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003019.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q003-018-019.mp3"
             ],
             "note": "سورة آل عمران الايات 18-19",
             "audioUrl": ""
@@ -381,8 +355,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003026.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/003027.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q003-026-027.mp3"
             ],
             "note": "سورة آل عمران الآيات 26-27",
             "audioUrl": ""
@@ -395,9 +368,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007054.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007055.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007056.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q007-054-056.mp3"
             ],
             "note": "سورة الأعراف الآيات 54-56"
           },
@@ -409,12 +380,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007117.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007118.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007119.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007120.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007121.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007122.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q007-117-122.mp3"
             ],
             "note": "سورة الاعراف الايات 117-122"
           },
@@ -426,7 +392,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007200.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q007-200.mp3"
             ],
             "note": "سورة الأعراف الآية 200"
           },
@@ -438,7 +404,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/009014.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q009-014.mp3"
             ],
             "note": "سورة التوبة الآية 14"
           },
@@ -450,7 +416,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/010057.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q010-057.mp3"
             ],
             "note": "سورة يونس الآية 57"
           },
@@ -462,10 +428,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/010079.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/010080.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/010081.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/010082.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q010-079-082.mp3"
             ],
             "note": "سورة يونس الآيات 79-82",
             "audioUrl": ""
@@ -478,7 +441,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "note": "سورة يونس الآية 107",
-            "audioUrl": "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/010107.mp3"
+            "audioUrl": "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q010-107.mp3"
           },
           {
             "itemNumber": 36,
@@ -488,7 +451,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/016069.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q016-069.mp3"
             ],
             "note": "سورة النحل الآية 69"
           },
@@ -500,8 +463,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/017045.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/017046.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q017-045-046.mp3"
             ],
             "note": "سورة الإسراء الآيات 45-46"
           },
@@ -513,7 +475,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/017082.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q017-082.mp3"
             ],
             "note": "سورة الإسراء الآية 82"
           },
@@ -525,7 +487,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/020069.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q020-069.mp3"
             ],
             "note": "سورة طه من الآية 69"
           },
@@ -537,8 +499,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023097.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023098.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q023-097-098.mp3"
             ],
             "note": "سورة المؤمنون الآيات 97-98"
           },
@@ -550,10 +511,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023115.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023116.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023117.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/023118.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q023-115-118.mp3"
             ],
             "note": "سورة المؤمنون الآيات 115-118"
           },
@@ -565,7 +523,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/026080.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q026-080.mp3"
             ],
             "note": "سورة الشعراء الآية 80"
           },
@@ -589,16 +547,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037001.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037002.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037003.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037004.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037005.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037006.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037007.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037008.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037009.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037010.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q037-001-010.mp3"
             ],
             "note": "سورة الصافات الآيات 1-10"
           },
@@ -610,7 +559,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/041044.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q041-044.mp3"
             ],
             "note": "سورة فصلت الآية 44"
           },
@@ -622,10 +571,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/046029.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/046030.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/046031.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/046032.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q046-029-032.mp3"
             ],
             "note": "سورة الأحقاف الآيات 29-32"
           },
@@ -637,10 +583,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/055033.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/055034.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/055035.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/055036.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q055-033-036.mp3"
             ],
             "note": "سورة الرحمن الآيات 33-36"
           },
@@ -652,10 +595,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/059021.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/059022.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/059023.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/059024.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q059-021-024.mp3"
             ],
             "note": "سورة الحشر الآيات 21-24"
           },
@@ -667,11 +607,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/067001.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/067002.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/067003.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/067004.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/067005.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q067-001-005.mp3"
             ],
             "note": "سورة الملك الآيات 1-5"
           },
@@ -683,8 +619,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/068051.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/068052.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q068-051-052.mp3"
             ],
             "note": "سورة القلم الآيات 51-52"
           },
@@ -696,9 +631,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/072001.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/072002.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/072003.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q072-001-003.mp3"
             ],
             "note": "سورة الجن الآيات 1-3"
           },
@@ -874,7 +807,7 @@ const ruqyahData = [
             "maxCount": 1,
             "audioUrls": [
               "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-1-4.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002005.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-005.mp3"
             ],
             "note": "سورة البقرة الآيات 1-5"
           },
@@ -886,7 +819,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "note": "سورة البقرة الاية 102",
-            "audioUrl": "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002102.mp3"
+            "audioUrl": "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-102.mp3"
           },
           {
             "itemNumber": 67,
@@ -897,8 +830,7 @@ const ruqyahData = [
             "maxCount": 1,
             "note": "سورة البقرة - الآيات 163-164",
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002163.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002164.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-163-164.mp3"
             ],
             "notes": "",
             "audioUrl": ""
@@ -908,13 +840,13 @@ const ruqyahData = [
             "text": "﴿ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡحَيُّ ٱلۡقَيُّومُۚ لَا تَأۡخُذُهُۥ سِنَةٞ وَلَا نَوۡمٞۚ لَّهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَمَا فِي ٱلۡأَرۡضِۗ مَن ذَا ٱلَّذِي يَشۡفَعُ عِندَهُۥٓ إِلَّا بِإِذۡنِهِۦۚ يَعۡلَمُ مَا بَيۡنَ أَيۡدِيهِمۡ وَمَا خَلۡفَهُمۡۖ وَلَا يُحِيطُونَ بِشَيۡءٖ مِّنۡ عِلۡمِهِۦٓ إِلَّا بِمَا شَآءَۚ وَسِعَ كُرۡسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَۖ وَلَا يَـُٔودُهُۥ حِفۡظُهُمَاۚ وَهُوَ ٱلۡعَلِيُّ ٱلۡعَظِيمُ۝﴾",
             "latin": "Allāhu lā ilāha illā huwal-ḥayyul-qayyūm, lā taʾkhudhuhu sinatun wa lā nawm, lahū mā fis-samāwāti wa mā fil-arḍ, man dhal-ladhī yashfaʿu ʿindahū illā bi-idhnihi, yaʿlamu mā bayna aydīhim wa mā khalfahum, wa lā yuḥīṭūna bi-shayʾin min ʿilmihi illā bimā shāʾ, wasiʿa kursiyyuhus-samāwāti wal-arḍ, wa lā yaʾūduhu ḥifẓuhumā, wa huwal-ʿaliyyul-ʿaẓīm.",
             "explanationEs": "Allah, no existe divinidad alguna excepto Él, el Viviente, el Sustentador de toda la creación. No Lo afectan somnolencia ni sueño. Suyo es cuanto hay en los cielos y la Tierra. ¿Quién podrá interceder ante Él si no es con Su permiso? Él conoce lo que hay delante de ellos y lo que hay detrás de ellos, y nadie abarca de Su conocimiento salvo lo que Él quiere. Su Kursi (escabel) abarca los cielos y la Tierra, y la custodia de ambos no Lo agobia. Él es el Sublime, el Grandioso.",
-            "audioUrl": "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002255.mp3",
+            "audioUrl": "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-255.mp3",
             "count": 1,
             "maxCount": 1,
             "note": "آية الكرسي",
             "audioUrls": [],
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/002255.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-255.mp3"
             ]
           },
           {
@@ -937,12 +869,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007117.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007118.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007119.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007120.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007121.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/007122.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q007-117-122.mp3"
             ],
             "note": "سورة الاعراف الايات 117-122"
           },
@@ -954,10 +881,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/010079.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/010080.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/010081.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/010082.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q010-079-082.mp3"
             ],
             "note": "سورة يونس الآيات 79-82",
             "audioUrl": ""
@@ -970,7 +894,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/020069.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q020-069.mp3"
             ],
             "note": "سورة طه من الآية 69"
           },
@@ -982,16 +906,7 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "audioUrls": [
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037001.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037002.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037003.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037004.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037005.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037006.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037007.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037008.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037009.mp3",
-              "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/037010.mp3"
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q037-001-010.mp3"
             ],
             "note": "سورة الصافات الآيات 1-10"
           },
