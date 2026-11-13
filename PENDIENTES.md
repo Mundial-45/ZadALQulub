@@ -2,8 +2,11 @@
 
 ## ⚠️ Urgente: contenido
 
-**Audios por grabar en Adya** (se cambió el texto y se quitó el audio antiguo)
-1. #119, #121, #123, #187, #188, #223 y #270 no tienen audio. #123 es una súplica nueva: «اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ وَرَحْمَتِكَ، فَإِنَّهُ لَا يَمْلِكُهَا إِلَّا أَنْتَ».
+**Audios por grabar**
+1. **Adya** (se cambió el texto y se quitó el audio antiguo): #119, #121, #123, #187, #188, #223 y #270. #123 es una súplica nueva: «اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ وَرَحْمَتِكَ، فَإِنَّهُ لَا يَمْلِكُهَا إِلَّا أَنْتَ».
+   - **Azkar**: enfermo #183 «مَنْ كَانَ آخِرُ كَلَامِهِ لَا إِلَهَ إِلَّا اللَّهُ دَخَلَ الْجَنَّةَ».
+   - **Ruqya**: #20 y #63 «أَسْأَلُ اللَّهَ الْعَظِيمَ، رَبَّ الْعَرْشِ الْعَظِيمِ، أَنْ يَشْفِيَكَ» (mismo texto, sirve un audio), casa #78 «بِسْمِ اللَّهِ وَلَجْنَا…» y casa #82 «أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ الَّتِي لَا يُجَاوِزُهُنَّ…».
+   - **Munajat**: solo 9 de 204 tienen audio (decidir si se graban todas).
 
 **Fuentes que faltan (son hadices, pero la nota no lo dice)**
 2. Adya #106 y #111 (رحمن الدنيا والآخرة ورحيمهما…), #107 y #113 (اللهم رب السماوات السبع…), #228 (أبدلهما دارا خيرا من دارهما), #256 (الله الله ربي لا أشرك به شيئا), #260. Buscar la fuente y el grado en dorar o islamweb.
