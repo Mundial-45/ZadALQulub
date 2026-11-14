@@ -1171,10 +1171,22 @@ function resetGroupProgress(groupId) {
   safeSetStorage(STORAGE_KEY, JSON.stringify(legacy));
 }
 
-// Pasar solo al siguiente zikr (con el contador o al terminar el audio) únicamente en estos grupos
+// Pasar al siguiente zikr al completar el contador o el audio en los grupos indicados.
 const AUTO_ADVANCE_GROUP_IDS = ['sabah', 'masaa', 'nawm', 'istiyqadh'];
+const AUTO_ADVANCE_RUQYAH_IDS = [
+  'ruqyah_shariyah_healing',
+  'ruqyah_shariyah_complete_healing',
+  'ruqyah_bayt'
+];
 function isAutoAdvanceGroup() {
-  return currentSection === 'azkar' && !!currentGroup && AUTO_ADVANCE_GROUP_IDS.indexOf(currentGroup.id) !== -1;
+  if (!currentGroup) return false;
+  if (currentSection === 'azkar') {
+    return AUTO_ADVANCE_GROUP_IDS.indexOf(currentGroup.id) !== -1;
+  }
+  if (currentSection === 'ruqyah') {
+    return AUTO_ADVANCE_RUQYAH_IDS.indexOf(currentGroup.id) !== -1;
+  }
+  return false;
 }
 
 function decrementCounter(index, isFromAudio = false) {
