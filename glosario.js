@@ -770,7 +770,15 @@ const glosarioData = [
         "explanationEs": "Najāsa (impureza ritual)\nCosa considerada impura por la ley islámica, que impide la validez de la oración si se lleva encima o está en el lugar donde se reza.",
         "sourceName": "الدرر السنية",
         "sourceNameEs": "Al-Durar al-Saniyya (dorar.net)",
-        "sourceUrl": "https://dorar.net/feqhia/146/%D8%A7%D9%84%D9%85%D8%A8%D8%AD%D8%AB-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D8%AA%D8%B9%D8%B1%D9%8A%D9%81-%D8%A7%D9%84%D9%86%D8%AC%D8%A7%D8%B3%D8%A9"
+        "sourceUrl": "https://dorar.net/feqhia/146/%D8%A7%D9%84%D9%85%D8%A8%D8%AD%D8%AB-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D8%AA%D8%B9%D8%B1%D9%8A%D9%81-%D8%A7%D9%84%D9%86%D8%AC%D8%A7%D8%B3%D8%A9",
+        "words": [
+          {
+            "w": "صِفَة حُكْمِيَّة",
+            "wEs": "Ṣifa ḥukmiyya (cualidad legal)",
+            "ar": "وَصْفٌ شَرْعِيٌّ لَا يُرَى بِالْعَيْنِ، يَثْبُتُ لِلشَّيْءِ بِحُكْمِ الشَّرْعِ.",
+            "es": "Una condición establecida por la ley islámica, no una cualidad visible."
+          }
+        ]
       },
       {
         "itemNumber": 161,
@@ -780,7 +788,21 @@ const glosarioData = [
         "explanationEs": "Ḥadath (estado de impureza)\nEstado legal del cuerpo que impide rezar y otros actos que exigen pureza. El menor se resuelve con el wuḍūʾ; el mayor exige el ghusl: yanāba, menstruación y sangrado posparto.",
         "sourceName": "إسلام ويب",
         "sourceNameEs": "IslamWeb",
-        "sourceUrl": "https://www.islamweb.net/ar/fatwa/23980/"
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/23980/",
+        "words": [
+          {
+            "w": "الْجَنَابَة",
+            "wEs": "Yanāba (impureza mayor)",
+            "ar": "حَالَةُ مَنْ خَرَجَ مِنْهُ الْمَنِيُّ أَوْ جَامَعَ، وَتُوجِبُ الْغُسْلَ.",
+            "es": "Estado tras una relación conyugal o una eyaculación; obliga al ghusl."
+          },
+          {
+            "w": "النِّفَاس",
+            "wEs": "Nifās (sangrado posparto)",
+            "ar": "الدَّمُ الْخَارِجُ بَعْدَ الْوِلَادَةِ.",
+            "es": "La sangre que sale tras el parto."
+          }
+        ]
       },
       {
         "itemNumber": 162,
@@ -1231,7 +1253,27 @@ const glosarioData = [
         "explanationEs": "Ḥasan (hadiz aceptable)\nHadiz aceptable con la cadena conectada y transmisores íntegros, pero con una memoria algo menos firme que la de los transmisores del hadiz ṣaḥīḥ. No tiene anomalía ni defecto oculto.",
         "sourceName": "إسلام ويب",
         "sourceNameEs": "IslamWeb",
-        "sourceUrl": "https://www.islamweb.net/ar/fatwa/58345/"
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/58345/",
+        "words": [
+          {
+            "w": "ضَبْط",
+            "wEs": "Ḍabṭ (precisión)",
+            "ar": "إِتْقَانُ الرَّاوِي لِمَا يَرْوِيهِ بِحِفْظِهِ أَوْ كِتَابَتِهِ.",
+            "es": "La exactitud con que el transmisor retiene y transmite lo que oye, de memoria o por escrito."
+          },
+          {
+            "w": "الشُّذُوذ",
+            "wEs": "Shudhūdh (anomalía)",
+            "ar": "أَنْ يُخَالِفَ الرَّاوِيَ الْمَقْبُولُ مَنْ هُوَ أَوْثَقُ مِنْهُ.",
+            "es": "Cuando un transmisor aceptable contradice a otro más fiable que él."
+          },
+          {
+            "w": "الْعِلَّة",
+            "wEs": "ʿIlla (defecto oculto)",
+            "ar": "سَبَبٌ خَفِيٌّ يَقْدَحُ فِي صِحَّةِ الْحَدِيثِ مَعَ أَنَّ ظَاهِرَهُ السَّلَامَةُ.",
+            "es": "Un fallo escondido que daña el hadiz aunque a simple vista parezca correcto."
+          }
+        ]
       },
       {
         "itemNumber": 148,
@@ -1251,7 +1293,15 @@ const glosarioData = [
         "explanationEs": "Mawḍūʿ (hadiz inventado)\nPalabras fabricadas que algunos atribuyeron falsamente al Profeta ﷺ. Es el peor hadiz débil y no debe transmitirse sin aclarar que es inventado.",
         "sourceName": "إسلام ويب",
         "sourceNameEs": "IslamWeb",
-        "sourceUrl": "https://www.islamweb.net/ar/fatwa/27850/"
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/27850/",
+        "words": [
+          {
+            "w": "مُخْتَلَق",
+            "wEs": "Mujtalaq (fabricado)",
+            "ar": "مُصْطَنَعٌ، أَيْ ابْتَدَعَهُ إِنْسَانٌ مِنْ عِنْدِهِ.",
+            "es": "Inventado: alguien lo creó por su cuenta y lo atribuyó a otro."
+          }
+        ]
       },
       {
         "itemNumber": 150,
