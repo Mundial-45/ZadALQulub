@@ -761,6 +761,106 @@ const glosarioData = [
         "sourceName": "إسلام ويب",
         "sourceNameEs": "IslamWeb",
         "sourceUrl": "https://www.islamweb.net/ar/fatwa/75689/"
+      },
+      {
+        "itemNumber": 160,
+        "text": "نَجَاسَةٌ",
+        "latin": "Najāsah",
+        "explanationAr": "عَيْنٌ مُسْتَقْذَرَةٌ شَرْعًا، وَهِيَ صِفَةٌ حُكْمِيَّةٌ تَمْنَعُ صِحَّةَ الصَّلَاةِ بِهَا أَوْ فِيهَا.",
+        "explanationEs": "Najāsa (impureza ritual)\nCosa considerada impura por la ley islámica, que impide la validez de la oración si se lleva encima o está en el lugar donde se reza.",
+        "sourceName": "الدرر السنية",
+        "sourceNameEs": "Al-Durar al-Saniyya (dorar.net)",
+        "sourceUrl": "https://dorar.net/feqhia/146/%D8%A7%D9%84%D9%85%D8%A8%D8%AD%D8%AB-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D8%AA%D8%B9%D8%B1%D9%8A%D9%81-%D8%A7%D9%84%D9%86%D8%AC%D8%A7%D8%B3%D8%A9"
+      },
+      {
+        "itemNumber": 161,
+        "text": "حَدَثٌ",
+        "latin": "Ḥadath",
+        "explanationAr": "وَصْفٌ حُكْمِيٌّ يَقُومُ بِالْبَدَنِ وَيَمْنَعُ مِنَ الصَّلَاةِ وَنَحْوِهَا مِمَّا تُشْتَرَطُ لَهُ الطَّهَارَةُ؛ فَالْأَصْغَرُ يَكْفِي فِيهِ الْوُضُوءُ، وَالْأَكْبَرُ يُوجِبُ الْغُسْلَ: الْجَنَابَةُ وَالْحَيْضُ وَالنِّفَاسُ.",
+        "explanationEs": "Ḥadath (estado de impureza)\nEstado legal del cuerpo que impide rezar y otros actos que exigen pureza. El menor se resuelve con el wuḍūʾ; el mayor exige el ghusl: yanāba, menstruación y sangrado posparto.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/23980/"
+      },
+      {
+        "itemNumber": 162,
+        "text": "اسْتِنْجَاءٌ",
+        "latin": "Istinjāʾ",
+        "explanationAr": "إِزَالَةُ مَا خَرَجَ مِنْ أَحَدِ السَّبِيلَيْنِ بِالْمَاءِ أَوْ بِحَجَرٍ وَنَحْوِهِ، وَهُوَ وَاجِبٌ مِنْ كُلِّ خَارِجٍ مِنْهُمَا، وَلَا يُشْرَعُ مِنَ الرِّيحِ.",
+        "explanationEs": "Istinjāʾ (limpieza tras las necesidades)\nQuitar lo que ha salido de las partes íntimas con agua o con piedra o algo similar. Es obligatorio tras toda salida por ellas, y no está prescrito tras expulsar gases.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/399256/"
+      },
+      {
+        "itemNumber": 163,
+        "text": "مَسْحٌ",
+        "latin": "Masḥ",
+        "explanationAr": "إِمْرَارُ الْيَدِ الْمُبْتَلَّةِ عَلَى الشَّيْءِ، وَمِنْهُ الْمَسْحُ عَلَى الْخُفَّيْنِ أَوِ الْجَوْرَبَيْنِ بَدَلَ غَسْلِ الرِّجْلَيْنِ: يَوْمًا وَلَيْلَةً لِلْمُقِيمِ، وَثَلَاثَةَ أَيَّامٍ بِلَيَالِيهَا لِلْمُسَافِرِ.",
+        "explanationEs": "Masḥ (pasar la mano húmeda)\nPasar la mano mojada sobre una parte permitida. Incluye pasarla sobre los jufs o calcetines en lugar de lavar los pies en el wuḍūʾ: un día y una noche para el residente y tres días con sus noches para el viajero.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/5345/"
+      },
+      {
+        "itemNumber": 164,
+        "text": "شُرُوطُ الصَّلَاةِ",
+        "latin": "Shurūṭ aṣ-ṣalāh",
+        "explanationAr": "أُمُورٌ خَارِجَةٌ عَنْ مَاهِيَّةِ الصَّلَاةِ لَا يَجُوزُ التَّلَبُّسُ بِهَا إِلَّا بَعْدَ اسْتِكْمَالِهَا، كَالطَّهَارَةِ وَسَتْرِ الْعَوْرَةِ وَاسْتِقْبَالِ الْقِبْلَةِ.",
+        "explanationEs": "Shurūṭ aṣ-ṣalāh (condiciones de la oración)\nRequisitos externos a la oración que deben cumplirse antes de empezar y mantenerse, como la pureza, cubrir la ʿawra y orientarse a la qibla.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/12280/"
+      },
+      {
+        "itemNumber": 165,
+        "text": "أَرْكَانُ الصَّلَاةِ",
+        "latin": "Arkān aṣ-ṣalāh",
+        "explanationAr": "أَجْزَاؤُهَا الْأَسَاسِيَّةُ الدَّاخِلَةُ فِي حَقِيقَتِهَا كَالْقِيَامِ وَالرُّكُوعِ وَالسُّجُودِ، وَمَنْ تَرَكَ رُكْنًا نَاسِيًا ثُمَّ تَذَكَّرَ وَجَبَ عَلَيْهِ أَنْ يَأْتِيَ بِهِ وَيَسْجُدَ لِلسَّهْوِ.",
+        "explanationEs": "Arkān aṣ-ṣalāh (pilares de la oración)\nSus partes esenciales, como estar de pie, el rukūʿ y el sujūd. Quien omite un pilar por olvido y lo recuerda debe realizarlo y hacer la postración por olvido.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/12455/"
+      },
+      {
+        "itemNumber": 166,
+        "text": "سُجُودُ السَّهْوِ",
+        "latin": "Sujūd as-sahw",
+        "explanationAr": "سَجْدَتَانِ يَسْجُدُهُمَا الْمُصَلِّي لِجَبْرِ خَلَلٍ سَهَا عَنْهُ فِي صَلَاتِهِ، وَالْأَفْضَلُ أَنْ يَكُونَا قَبْلَ السَّلَامِ إِلَّا فِي حَالَتَيْنِ: إِذَا سَلَّمَ عَنْ نَقْصِ رَكْعَةٍ فَأَكْثَرَ، أَوْ بَنَى عَلَى غَالِبِ ظَنِّهِ.",
+        "explanationEs": "Sujūd as-sahw (postración por olvido)\nDos postraciones que se hacen para reparar un error cometido por descuido en la oración. Lo mejor es hacerlas antes del salām, salvo en dos casos: si saludó habiendo omitido una o más rakʿas, o si continuó basándose en su mayor suposición.",
+        "sourceName": "موقع ابن باز",
+        "sourceNameEs": "Web del Sheij Ibn Baz",
+        "sourceUrl": "https://binbaz.org.sa/fatwas/11428/"
+      },
+      {
+        "itemNumber": 167,
+        "text": "التَّشَهُّدُ",
+        "latin": "At-tashahhud",
+        "explanationAr": "الذِّكْرُ الَّذِي يُقَالُ فِي الْجُلُوسِ مِنَ الصَّلَاةِ، يَبْدَأُ بِـ«التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ» وَيَنْتَهِي بِالشَّهَادَتَيْنِ؛ وَيُضَافُ إِلَيْهِ فِي الْأَخِيرِ الصَّلَاةُ عَلَى النَّبِيِّ ﷺ.",
+        "explanationEs": "At-tashahhud (el testimonio en la oración)\nLa fórmula que se recita al sentarse en la oración: comienza con «at-taḥiyyātu lillāhi…» y termina con las dos shahādas. En el tashahhud final se añade la bendición sobre el Profeta ﷺ.",
+        "sourceName": "موقع ابن باز",
+        "sourceNameEs": "Web del Sheij Ibn Baz",
+        "sourceUrl": "https://binbaz.org.sa/fatwas/14814/"
+      },
+      {
+        "itemNumber": 168,
+        "text": "الْجَمْعُ وَالْقَصْرُ",
+        "latin": "Al-jamʿ wa-l-qaṣr",
+        "explanationAr": "الْقَصْرُ أَدَاءُ الصَّلَاةِ الرُّبَاعِيَّةِ رَكْعَتَيْنِ فِي السَّفَرِ وَهُوَ سُنَّةٌ، وَالْجَمْعُ أَدَاءُ الظُّهْرِ مَعَ الْعَصْرِ أَوِ الْمَغْرِبِ مَعَ الْعِشَاءِ فِي وَقْتِ إِحْدَاهُمَا وَهُوَ رُخْصَةٌ؛ وَيُشْتَرَطُ سَفَرٌ مُبَاحٌ تَبْلُغُ مَسَافَتُهُ نَحْوَ ثَلَاثَةٍ وَثَمَانِينَ كِيلُومِتْرًا.",
+        "explanationEs": "Al-jamʿ wa-l-qaṣr (agrupar y acortar)\nQaṣr es rezar en dos rakʿas las oraciones de cuatro durante el viaje y es sunna. Jamʿ es juntar Ẓuhr con ʿAṣr, o Maghrib con ʿIshāʾ, en el tiempo de una de ellas, y es una facilidad. Se requiere un viaje lícito de unos 83 km.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/108818/"
+      },
+      {
+        "itemNumber": 169,
+        "text": "كَفَّارَةٌ",
+        "latin": "Kaffārah",
+        "explanationAr": "مَا يُقَدِّرُهُ الشَّرْعُ جَبْرًا لِنَقْصٍ أَوْ خَطَأٍ أَوْ زَجْرًا عَنْ مَعْصِيَةٍ، يُغَطَّى بِهِ الْإِثْمُ، وَمِنْهَا كَفَّارَةُ الْيَمِينِ وَكَفَّارَةُ انْتِهَاكِ حُرْمَةِ نَهَارِ رَمَضَانَ.",
+        "explanationEs": "Kaffārah (expiación)\nLo que la ley islámica fija para reparar una falta o un error, o para disuadir de una desobediencia, y con lo que se cubre el pecado. Por ejemplo, la expiación del juramento y la de violar el día de Ramadán.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/205507/"
       }
     ]
   },
@@ -1122,6 +1222,136 @@ const glosarioData = [
         "sourceName": "الدرر السنية",
         "sourceNameEs": "Al-Durar al-Saniyya (dorar.net)",
         "sourceUrl": "https://dorar.net/osolfeqh/363/"
+      },
+      {
+        "itemNumber": 147,
+        "text": "حَسَنٌ",
+        "latin": "Ḥasan",
+        "explanationAr": "حَدِيثٌ مَقْبُولٌ اتَّصَلَ سَنَدُهُ بِرُوَاةٍ عُدُولٍ، غَيْرَ أَنَّ ضَبْطَ رَاوِيهِ أَخَفُّ مِنْ ضَبْطِ رُوَاةِ الصَّحِيحِ، وَسَلِمَ مِنَ الشُّذُوذِ وَالْعِلَّةِ.",
+        "explanationEs": "Ḥasan (hadiz aceptable)\nHadiz aceptable con la cadena conectada y transmisores íntegros, pero con una memoria algo menos firme que la de los transmisores del hadiz ṣaḥīḥ. No tiene anomalía ni defecto oculto.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/58345/"
+      },
+      {
+        "itemNumber": 148,
+        "text": "ضَعِيفٌ",
+        "latin": "Ḍaʿīf",
+        "explanationAr": "حَدِيثٌ فَقَدَ شَرْطًا أَوْ أَكْثَرَ مِنْ شُرُوطِ الْحَدِيثِ الْمَقْبُولِ، وَلَا يُعْمَلُ بِهِ إِذَا اشْتَدَّ ضَعْفُهُ، كَأَنْ يَكُونَ فِي إِسْنَادِهِ كَذَّابٌ أَوِ انْقِطَاعٌ.",
+        "explanationEs": "Ḍaʿīf (hadiz débil)\nHadiz al que le falta alguna o varias de las condiciones del hadiz aceptable. Según el Sheij Ibn Baz, no se actúa con el que es muy débil, por ejemplo si su cadena tiene un mentiroso o está cortada.",
+        "sourceName": "موقع ابن باز",
+        "sourceNameEs": "Web del Sheij Ibn Baz",
+        "sourceUrl": "https://binbaz.org.sa/fatwas/1014/"
+      },
+      {
+        "itemNumber": 149,
+        "text": "مَوْضُوعٌ",
+        "latin": "Mawḍūʿ",
+        "explanationAr": "كَلَامٌ مُخْتَلَقٌ نَسَبَهُ بَعْضُ النَّاسِ إِلَى النَّبِيِّ ﷺ كَذِبًا، وَهُوَ شَرُّ الْأَحَادِيثِ الضَّعِيفَةِ، وَلَا تَجُوزُ رِوَايَتُهُ إِلَّا مَعَ بَيَانِ وَضْعِهِ.",
+        "explanationEs": "Mawḍūʿ (hadiz inventado)\nPalabras fabricadas que algunos atribuyeron falsamente al Profeta ﷺ. Es el peor hadiz débil y no debe transmitirse sin aclarar que es inventado.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/27850/"
+      },
+      {
+        "itemNumber": 150,
+        "text": "إِسْنَادٌ",
+        "latin": "Isnād",
+        "explanationAr": "سِلْسِلَةُ الرُّوَاةِ الَّذِينَ نَقَلُوا الْحَدِيثَ إِلَى قَائِلِهِ، وَبِهِ يُمَيَّزُ صَحِيحُهُ مِنْ ضَعِيفِهِ، وَقَدْ قَالَ ابْنُ الْمُبَارَكِ إِنَّهُ مِنَ الدِّينِ.",
+        "explanationEs": "Isnād (cadena de transmisión)\nLa cadena de transmisores que lleva un hadiz hasta quien lo dijo. Con ella se distingue el hadiz sólido del débil. Ibn al-Mubārak dijo que el isnād forma parte de la religión.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/27005/"
+      },
+      {
+        "itemNumber": 151,
+        "text": "حَدِيثٌ قُدْسِيٌّ",
+        "latin": "Ḥadīth qudsī",
+        "explanationAr": "مَا يَرْوِيهِ النَّبِيُّ ﷺ عَنْ رَبِّهِ، مَعْنَاهُ مِنَ اللَّهِ وَلَفْظُهُ مِنَ النَّبِيِّ ﷺ عَلَى الرَّاجِحِ، وَلَيْسَ لَهُ حُكْمُ الْقُرْآنِ فِي الْإِعْجَازِ وَلَا يُجْزِئُ فِي الصَّلَاةِ.",
+        "explanationEs": "Ḥadīth qudsī (hadiz sagrado)\nLo que el Profeta ﷺ transmite de su Señor. Según la opinión más sólida, su sentido es de Allah y su formulación del Profeta. No tiene las reglas del Corán: no es inimitable y no sustituye al Corán en la oración.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/72798/"
+      },
+      {
+        "itemNumber": 152,
+        "text": "وَحْيٌ",
+        "latin": "Waḥy",
+        "explanationAr": "إِعْلَامُ اللَّهِ مَنِ اصْطَفَاهُ مِنْ عِبَادِهِ بِمَا شَاءَ إِعْلَامًا خَفِيًّا سَرِيعًا، وَوَحْيُ التَّشْرِيعِ خَاصٌّ بِالْأَنْبِيَاءِ وَالرُّسُلِ، أَمَّا الْإِلْهَامُ فَقَدْ يَكُونُ لِغَيْرِهِمْ.",
+        "explanationEs": "Waḥy (revelación)\nLa comunicación rápida y oculta de Allah a quien elige de entre Sus siervos. La revelación legislativa es exclusiva de los profetas y mensajeros; la inspiración (ilhām), en sentido amplio, puede darse también a otros.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/280525/"
+      },
+      {
+        "itemNumber": 153,
+        "text": "أَسْبَابُ النُّزُولِ",
+        "latin": "Asbāb an-nuzūl",
+        "explanationAr": "الْوَاقِعَةُ أَوِ السُّؤَالُ الَّذِي نَزَلَتِ الْآيَةُ أَوِ السُّورَةُ عَقِبَهُ بَيَانًا لَهُ، وَمَعْرِفَتُهَا تُعِينُ عَلَى فَهْمِ الْآيَةِ، وَالْعِبْرَةُ بِعُمُومِ اللَّفْظِ لَا بِخُصُوصِ السَّبَبِ.",
+        "explanationEs": "Asbāb an-nuzūl (circunstancias de la revelación)\nEl suceso o la pregunta a raíz de los cuales descendió un versículo o una sura para aclararlos. Conocerlos ayuda a entender el versículo; la regla es que cuenta la generalidad de la expresión, no lo particular del motivo.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/68832/"
+      },
+      {
+        "itemNumber": 154,
+        "text": "مُحْكَمٌ",
+        "latin": "Muḥkam",
+        "explanationAr": "مِنَ الْقُرْآنِ مَا وَضَحَ مَعْنَاهُ، كَآيَاتِ الصَّلَاةِ وَالْمُحَرَّمَاتِ، وَإِلَيْهِ يُرَدُّ مَا اشْتَبَهَ مَعْنَاهُ.",
+        "explanationEs": "Muḥkam (versículo claro y preciso)\nLa parte del Corán cuyo sentido es evidente, como los versículos sobre la oración o lo prohibido. A él se remite lo que resulta ambiguo.",
+        "sourceName": "موقع ابن باز",
+        "sourceNameEs": "Web del Sheij Ibn Baz",
+        "sourceUrl": "https://binbaz.org.sa/fatwas/21213/"
+      },
+      {
+        "itemNumber": 155,
+        "text": "مُتَشَابِهٌ",
+        "latin": "Mutashābih",
+        "explanationAr": "آيَاتٌ يَحْتَاجُ مَعْنَاهَا إِلَى بَيَانٍ وَرَدٍّ إِلَى الْمُحْكَمِ، وَقِيلَ: هُوَ مَا اسْتَأْثَرَ اللَّهُ بِعِلْمِهِ، وَقَدِ اخْتَلَفَ الْعُلَمَاءُ فِي حَدِّهِ.",
+        "explanationEs": "Mutashābih (versículo que requiere explicación)\nVersículos cuyo sentido necesita aclaración y remitirse a lo muḥkam. Según otra opinión, es lo que solo Allah conoce. Los sabios discrepan en su definición.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/57733/"
+      },
+      {
+        "itemNumber": 156,
+        "text": "نَاسِخٌ وَمَنْسُوخٌ",
+        "latin": "Nāsikh wa mansūkh",
+        "explanationAr": "النَّسْخُ رَفْعُ حُكْمٍ شَرْعِيٍّ مُتَقَدِّمٍ بِخِطَابٍ شَرْعِيٍّ مُتَأَخِّرٍ؛ فَالنَّاسِخُ الْحُكْمُ الْمُتَأَخِّرُ وَالْمَنْسُوخُ الْحُكْمُ الْمُتَقَدِّمُ، وَلَا يَثْبُتُ إِلَّا بِالْكِتَابِ وَالسُّنَّةِ، كَنَسْخِ وُجُوبِ صَوْمِ عَاشُورَاءَ بِصِيَامِ رَمَضَانَ.",
+        "explanationEs": "Nāsikh wa mansūkh (abrogante y abrogado)\nEl naskh es la retirada de una norma legal anterior mediante un texto legal posterior. El nāsikh es la norma posterior y el mansūkh la anterior. Solo se establece con el Corán y la Sunna. Ejemplo: el ayuno de ʿĀshūrāʾ dejó de ser obligatorio al prescribirse el de Ramadán.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/6166/"
+      },
+      {
+        "itemNumber": 157,
+        "text": "قِرَاءَاتٌ",
+        "latin": "Qirāʾāt",
+        "explanationAr": "أَوْجُهُ أَدَاءِ الْقُرْآنِ الْمَنْقُولَةُ عَنِ الْقُرَّاءِ، وَالْمُتَوَاتِرُ مِنْهَا عَشْرُ قِرَاءَاتٍ لِكُلِّ قَارِئٍ رَاوِيَانِ، كَقِرَاءَةِ نَافِعٍ بِرِوَايَةِ قَالُونَ.",
+        "explanationEs": "Qirāʾāt (lecturas del Corán)\nLas formas de recitar el Corán transmitidas por los grandes recitadores. Las transmitidas por tawātur son diez, y cada recitador tiene dos transmisores principales, por ejemplo la lectura de Nāfiʿ por la transmisión de Qālūn.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/11163/"
+      },
+      {
+        "itemNumber": 158,
+        "text": "مُصْحَفٌ",
+        "latin": "Muṣḥaf",
+        "explanationAr": "الْكِتَابُ الْمَكْتُوبُ الَّذِي جُمِعَ فِيهِ الْقُرْآنُ، وَيَحْرُمُ عَلَى الْمُحْدِثِ مَسُّهُ عِنْدَ جُمْهُورِ الْفُقَهَاءِ، أَمَّا كُتُبُ التَّفْسِيرِ فَلَا حَرَجَ فِي مَسِّهَا.",
+        "explanationEs": "Muṣḥaf (ejemplar del Corán)\nEl libro escrito donde se recoge el Corán. Según la mayoría de los juristas, quien está en estado de impureza (ḥadath) no debe tocarlo. Los libros de exégesis no tienen esa misma norma.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/35557/"
+      },
+      {
+        "itemNumber": 159,
+        "text": "وَقْفٌ وَابْتِدَاءٌ",
+        "latin": "Waqf wa-ibtidāʾ",
+        "explanationAr": "الْوَقْفُ قَطْعُ الصَّوْتِ عِنْدَ آخِرِ الْكَلِمَةِ بِنِيَّةِ اسْتِئْنَافِ الْقِرَاءَةِ، وَالِابْتِدَاءُ الشُّرُوعُ فِي الْقِرَاءَةِ بَعْدَ قَطْعٍ أَوْ وَقْفٍ، وَالضَّابِطُ فِيهِمَا سَلَامَةُ الْمَعْنَى: تَامٌّ وَحَسَنٌ وَقَبِيحٌ.",
+        "explanationEs": "Waqf wa-ibtidāʾ (detenerse y reanudar)\nWaqf es la pausa al final de una palabra con intención de seguir recitando; ibtidāʾ es comenzar o reanudar. El criterio es que el sentido quede correcto. Las pausas son completas, buenas o desaconsejables.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/article/42052/"
       }
     ]
   },
@@ -1329,6 +1559,183 @@ const glosarioData = [
         "sourceName": "الدرر السنية",
         "sourceNameEs": "Al-Durar al-Saniyya (dorar.net)",
         "sourceUrl": "https://dorar.net/aqeeda/2948/"
+      },
+      {
+        "itemNumber": 170,
+        "text": "أَمَانَةٌ",
+        "latin": "Amānah",
+        "explanationAr": "كُلُّ مَا ائْتُمِنَ عَلَيْهِ الْعَبْدُ: فَرَائِضُ اللَّهِ وَحُقُوقُهُ، وَحُقُوقُ النَّاسِ مِنَ الْوَدَائِعِ وَالْعَوَارِي وَالرُّهُونِ؛ وَضِدُّهَا الْخِيَانَةُ.",
+        "explanationEs": "Amāna (honestidad, confianza, responsabilidad)\nTodo aquello que se le confía al siervo: los deberes hacia Allah y los derechos de la gente, como depósitos, préstamos y prendas. Su contrario es la traición.",
+        "sourceName": "موقع ابن باز",
+        "sourceNameEs": "Web del Sheij Ibn Baz",
+        "sourceUrl": "https://binbaz.org.sa/fatwas/7492/"
+      },
+      {
+        "itemNumber": 171,
+        "text": "صِدْقٌ",
+        "latin": "Ṣidq",
+        "explanationAr": "الْإِخْبَارُ بِمَا يُوَافِقُ الْوَاقِعَ، وَيَكُونُ فِي الْقَوْلِ وَالْفِعْلِ، وَهُوَ يَهْدِي إِلَى الْبِرِّ وَالْبِرُّ يَهْدِي إِلَى الْجَنَّةِ.",
+        "explanationEs": "Ṣidq (veracidad y sinceridad)\nDecir lo que corresponde a la realidad, tanto en las palabras como en los actos. Según el hadiz, la veracidad guía a la bondad y la bondad guía al Paraíso.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/109451/"
+      },
+      {
+        "itemNumber": 172,
+        "text": "تَوَاضُعٌ",
+        "latin": "Tawāḍuʿ",
+        "explanationAr": "الِانْقِيَادُ لِلْحَقِّ وَقَبُولُهُ مِمَّنْ جَاءَ بِهِ، وَخَفْضُ الْجَنَاحِ لِلنَّاسِ وَتَرْكُ التَّرَفُّعِ عَلَيْهِمْ؛ قَالَ النَّبِيُّ ﷺ: «مَا تَوَاضَعَ أَحَدٌ لِلَّهِ إِلَّا رَفَعَهُ اللَّهُ».",
+        "explanationEs": "Tawāḍuʿ (humildad)\nSometerse a la verdad y aceptarla de quien la diga, y tratar a la gente con trato humilde sin mirarla por encima del hombro. Dijo el Profeta ﷺ: «Nadie se humilla ante Allah sin que Allah lo eleve».",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://islamweb.net/ar/article/231175/"
+      },
+      {
+        "itemNumber": 173,
+        "text": "حَيَاءٌ",
+        "latin": "Ḥayāʾ",
+        "explanationAr": "خُلُقٌ كَرِيمٌ فِي الْقَلْبِ يَمْنَعُ صَاحِبَهُ مِنَ الْخِصَالِ الذَّمِيمَةِ وَيَحْمِلُهُ عَلَى مَكَارِمِ الْأَخْلَاقِ، وَهُوَ شُعْبَةٌ مِنَ الْإِيمَانِ.",
+        "explanationEs": "Ḥayāʾ (pudor y modestia)\nUn noble rasgo del corazón que aparta a la persona de lo reprobable y la lleva a las buenas costumbres. Es una de las ramas de la fe.",
+        "sourceName": "موقع ابن باز",
+        "sourceNameEs": "Web del Sheij Ibn Baz",
+        "sourceUrl": "https://binbaz.org.sa/fatwas/11879/"
+      },
+      {
+        "itemNumber": 174,
+        "text": "عَفْوٌ",
+        "latin": "ʿAfw",
+        "explanationAr": "التَّجَاوُزُ عَنِ الْمُسِيءِ وَتَرْكُ الِانْتِقَامِ مِنْهُ رَجَاءَ ثَوَابِ اللَّهِ؛ قَالَ النَّبِيُّ ﷺ: «وَمَا زَادَ اللَّهُ عَبْدًا بِعَفْوٍ إِلَّا عِزًّا».",
+        "explanationEs": "ʿAfw (perdón y disculpa)\nPasar por alto la ofensa de quien nos hizo daño y renunciar a vengarse, esperando la recompensa de Allah. Dijo el Profeta ﷺ: «Allah no aumenta a un siervo por perdonar sino en honor».",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/401320/"
+      },
+      {
+        "itemNumber": 175,
+        "text": "عَدْلٌ",
+        "latin": "ʿAdl",
+        "explanationAr": "وَضْعُ كُلِّ شَيْءٍ فِي مَوْضِعِهِ وَإِعْطَاءُ كُلِّ ذِي حَقٍّ حَقَّهُ بِلَا مَيْلٍ، وَهُوَ مَطْلُوبٌ فِي الْحُكْمِ وَالشَّهَادَةِ وَالْقَوْلِ وَالْمُعَامَلَةِ.",
+        "explanationEs": "ʿAdl (justicia y equidad)\nPoner cada cosa en su lugar y dar a cada uno su derecho sin parcialidad. Se exige al juzgar, al testimoniar, al hablar y en el trato con los demás.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/35122/"
+      },
+      {
+        "itemNumber": 176,
+        "text": "رِفْقٌ",
+        "latin": "Rifq",
+        "explanationAr": "لِينُ الْجَانِبِ بِالْقَوْلِ وَالْفِعْلِ وَالْأَخْذُ بِالْأَسْهَلِ، وَهُوَ ضِدُّ الْعُنْفِ؛ قَالَ النَّبِيُّ ﷺ: «إِنَّ اللَّهَ رَفِيقٌ يُحِبُّ الرِّفْقَ فِي الْأَمْرِ كُلِّهِ».",
+        "explanationEs": "Rifq (amabilidad, gentileza)\nSuavidad en el trato, de palabra y de obra, y preferir el camino más fácil. Es lo opuesto a la dureza. Dijo el Profeta ﷺ: «Allah es amable y ama la amabilidad en todos los asuntos».",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/article/184701/"
+      },
+      {
+        "itemNumber": 177,
+        "text": "إِيثَارٌ",
+        "latin": "Īthār",
+        "explanationAr": "أَنْ يُقَدِّمَ الْمَرْءُ غَيْرَهُ عَلَى نَفْسِهِ بِالشَّيْءِ مَعَ حَاجَتِهِ إِلَيْهِ، وَضِدُّهُ الْأَثَرَةُ وَالشُّحُّ، وَقَدْ أَثْنَى اللَّهُ عَلَى الْأَنْصَارِ بِهِ.",
+        "explanationEs": "Īthār (preferir a los demás)\nDar a otro lo que uno mismo necesita, anteponiendo su bienestar al propio. Su contrario es el egoísmo y la avaricia. Allah elogió por ello a los Anṣār.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/38973/"
+      },
+      {
+        "itemNumber": 178,
+        "text": "حِلْمٌ",
+        "latin": "Ḥilm",
+        "explanationAr": "الْأَنَاةُ وَالتَّثَبُّتُ فِي الْأَمْرِ وَضَبْطُ النَّفْسِ عِنْدَ الْغَضَبِ وَكَظْمُ الْغَيْظِ، وَمِنْ أَسْمَاءِ اللَّهِ الْحَلِيمُ.",
+        "explanationEs": "Ḥilm (paciencia, serenidad, dominio de la ira)\nCalma y reflexión ante los asuntos, control de uno mismo cuando se enfada y contener la ira. Al-Ḥalīm es uno de los nombres de Allah.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/article/20208/"
+      },
+      {
+        "itemNumber": 179,
+        "text": "عِفَّةٌ",
+        "latin": "ʿIffah",
+        "explanationAr": "حِفْظُ النَّفْسِ عَمَّا يَقْبُحُ وَيَشِينُهَا، وَالْكَفُّ عَنِ الْمَحَارِمِ وَالْفَوَاحِشِ وَعَنْ سُؤَالِ النَّاسِ.",
+        "explanationEs": "ʿIffa (castidad y protección de la dignidad)\nPreservar el alma de lo indecoroso, abstenerse de lo prohibido y de las faltas graves, y no humillarse pidiendo a la gente.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/37828/"
+      }
+    ]
+  },
+  {
+    "id": "glosario_sira",
+    "titleAr": "السِّيرَةُ وَالْأَجْيَالُ الْأُولَى",
+    "titleEs": "Historia y primeras generaciones",
+    "items": [
+      {
+        "itemNumber": 180,
+        "text": "هِجْرَةٌ",
+        "latin": "Hijrah",
+        "explanationAr": "انْتِقَالُ النَّبِيِّ ﷺ وَأَصْحَابِهِ مِنْ مَكَّةَ إِلَى الْمَدِينَةِ ابْتِغَاءَ مَرْضَاةِ اللَّهِ، فَكَانَتْ بِدَايَةَ قِيَامِ دَوْلَةِ الْإِسْلَامِ؛ وَتُطْلَقُ أَيْضًا عَلَى هَجْرِ مَا نَهَى اللَّهُ عَنْهُ.",
+        "explanationEs": "Hijra (emigración)\nLa emigración del Profeta ﷺ y sus compañeros de La Meca a Medina buscando la complacencia de Allah, con la que comenzó el Estado islámico. También significa abandonar lo que Allah ha prohibido.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/article/13410/"
+      },
+      {
+        "itemNumber": 181,
+        "text": "الْمُهَاجِرُونَ",
+        "latin": "Al-Muhājirūn",
+        "explanationAr": "الصَّحَابَةُ الَّذِينَ خَرَجُوا مِنْ دِيَارِهِمْ وَأَمْوَالِهِمْ وَجَاءُوا إِلَى الْمَدِينَةِ لِنُصْرَةِ اللَّهِ وَرَسُولِهِ وَإِقَامَةِ دِينِهِ.",
+        "explanationEs": "Al-Muhājirūn (los emigrantes)\nLos compañeros que dejaron sus hogares y bienes en La Meca y llegaron a Medina para apoyar la causa de Allah y de Su Mensajero y establecer la religión.",
+        "sourceName": "إسلام ويب (تفسير ابن كثير)",
+        "sourceNameEs": "IslamWeb (Tafsīr Ibn Kathīr)",
+        "sourceUrl": "https://www.islamweb.net/ar/library/index.php?page=bookcontents&ID=625&idfrom=0&idto=0&flag=1&bk_no=49&ayano=0&surano=0&bookhad=0"
+      },
+      {
+        "itemNumber": 182,
+        "text": "الْأَنْصَارُ",
+        "latin": "Al-Anṣār",
+        "explanationAr": "الْمُسْلِمُونَ مِنْ أَهْلِ الْمَدِينَةِ الَّذِينَ آوَوُا الْمُهَاجِرِينَ وَنَصَرُوا رَسُولَ اللَّهِ ﷺ وَآثَرُوهُمْ عَلَى أَنْفُسِهِمْ.",
+        "explanationEs": "Al-Anṣār (los auxiliares)\nLos musulmanes de Medina que acogieron a los emigrantes, apoyaron al Mensajero de Allah ﷺ y los prefirieron a sí mismos.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/article/135916/"
+      },
+      {
+        "itemNumber": 183,
+        "text": "أَهْلُ الْبَيْتِ",
+        "latin": "Ahl al-Bayt",
+        "explanationAr": "أَهْلُ بَيْتِ النَّبِيِّ ﷺ عَلَى الرَّاجِحِ هُمْ بَنُو هَاشِمٍ وَبَنُو الْمُطَّلِبِ، وَيَدْخُلُ فِيهِمْ أَزْوَاجُهُ، وَلَهُمْ حَقُّ الْمَحَبَّةِ وَالْإِكْرَامِ.",
+        "explanationEs": "Ahl al-Bayt (la familia del Profeta ﷺ)\nSegún la opinión más sólida son los Banū Hāshim y los Banū al-Muṭṭalib, e incluyen a sus esposas. Les corresponde el derecho al amor y al respeto.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/58248/"
+      },
+      {
+        "itemNumber": 184,
+        "text": "التَّابِعُونَ",
+        "latin": "At-Tābiʿūn",
+        "explanationAr": "الْمُسْلِمُونَ الَّذِينَ لَقُوا بَعْضَ الصَّحَابَةِ وَلَمْ يَلْقَوُا النَّبِيَّ ﷺ بَعْدَ إِسْلَامِهِمْ، وَهُمْ الْجِيلُ الَّذِي جَاءَ بَعْدَ الصَّحَابَةِ.",
+        "explanationEs": "At-Tābiʿūn (los seguidores)\nLos musulmanes que conocieron a algún compañero del Profeta pero no llegaron a ver al Profeta ﷺ siendo musulmanes. Son la generación posterior a los compañeros.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/62541/"
+      },
+      {
+        "itemNumber": 185,
+        "text": "غَزْوَةٌ",
+        "latin": "Ghazwah",
+        "explanationAr": "خُرُوجٌ لِلْقِتَالِ يَقُودُ فِيهِ النَّبِيُّ ﷺ الْجَيْشَ بِنَفْسِهِ، وَعَدَدُهَا نَحْوُ سَبْعٍ وَعِشْرِينَ، قَاتَلَ فِي تِسْعٍ مِنْهَا.",
+        "explanationEs": "Ghazwa (expedición con el Profeta)\nUna campaña en la que el propio Profeta ﷺ dirige el ejército. Fueron unas veintisiete, y combatió personalmente en nueve de ellas.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb (audio)",
+        "sourceUrl": "https://audio.islamweb.net/audio/index.php?page=FullContent&full=1&audioid=445998"
+      },
+      {
+        "itemNumber": 186,
+        "text": "سَرِيَّةٌ",
+        "latin": "Sariyyah",
+        "explanationAr": "بَعْثٌ يُرْسِلُهُ النَّبِيُّ ﷺ بِقِيَادَةِ أَحَدِ أَصْحَابِهِ دُونَ أَنْ يَخْرُجَ مَعَهُمْ، كَسَرِيَّةِ مُؤْتَةَ بِقِيَادَةِ زَيْدِ بْنِ حَارِثَةَ، وَسُمِّيَتْ بِذَلِكَ لِأَنَّ الْعَادَةَ أَنْ تُبْعَثَ لَيْلًا.",
+        "explanationEs": "Sariyya (expedición sin el Profeta)\nUna fuerza que el Profeta ﷺ enviaba al mando de un compañero, sin acudir él, como la de Muʾta bajo Zayd ibn Ḥāritha. Se llama así porque solía partir de noche.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb (audio)",
+        "sourceUrl": "https://audio.islamweb.net/audio/index.php?page=FullContent&full=1&audioid=195168"
       }
     ]
   },
