@@ -204,6 +204,116 @@ const glosarioData = [
         "sourceName": "الدرر السنية (ابن باز)",
         "sourceNameEs": "Al-Durar al-Saniyya (Ibn Baz)",
         "sourceUrl": "https://dorar.net/aqeeda/2366/"
+      },
+      {
+        "itemNumber": 108,
+        "text": "الْبَرْزَخُ",
+        "latin": "Al-Barzaj",
+        "explanationAr": "الْمَرْحَلَةُ الَّتِي بَيْنَ مَوْتِ الْإِنْسَانِ وَبَعْثِهِ يَوْمَ الْقِيَامَةِ.",
+        "explanationEs": "El Barzaj\nLa etapa entre la muerte de la persona y su resurrección el Día del Juicio. En ella se vive la vida de la tumba.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/4314/"
+      },
+      {
+        "itemNumber": 109,
+        "text": "عَذَابُ الْقَبْرِ وَنَعِيمُهُ",
+        "latin": "ʿAdhāb al-qabr wa naʿīmuh",
+        "explanationAr": "مَا يَلْقَاهُ الْمَيِّتُ فِي قَبْرِهِ مِنْ عَذَابٍ أَوْ نَعِيمٍ، وَهُوَ ثَابِتٌ بِالْقُرْآنِ وَالسُّنَّةِ.",
+        "explanationEs": "El castigo y el deleite de la tumba\nLo que el difunto encuentra en su tumba, castigo o bienestar. Es una creencia confirmada por el Corán y la Sunna.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/16778/"
+      },
+      {
+        "itemNumber": 110,
+        "text": "الصِّرَاطُ",
+        "latin": "Aṣ-ṣirāṭ",
+        "explanationAr": "جِسْرٌ مَنْصُوبٌ عَلَى جَهَنَّمَ يَمُرُّ عَلَيْهِ النَّاسُ يَوْمَ الْقِيَامَةِ، وَيَنْجُو مَنْ نَجَّاهُ اللَّهُ.",
+        "explanationEs": "El Sirat (el puente)\nPuente tendido sobre el Infierno que todos deben cruzar el Día del Juicio. Se salva quien Allah salve.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/article/229612/"
+      },
+      {
+        "itemNumber": 111,
+        "text": "الْمِيزَانُ",
+        "latin": "Al-mīzān",
+        "explanationAr": "الْمِيزَانُ الَّذِي تُوزَنُ بِهِ أَعْمَالُ الْعِبَادِ يَوْمَ الْقِيَامَةِ بِالْعَدْلِ.",
+        "explanationEs": "La Balanza\nLa balanza con la que se pesan con justicia las obras de los siervos el Día del Juicio.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/article/229612/"
+      },
+      {
+        "itemNumber": 112,
+        "text": "الْحَوْضُ",
+        "latin": "Al-ḥawḍ",
+        "explanationAr": "حَوْضُ نَبِيِّنَا مُحَمَّدٍ ﷺ يَرِدُ عَلَيْهِ أَهْلُ الْإِيمَانِ يَوْمَ الْقِيَامَةِ.",
+        "explanationEs": "El Estanque (Hawd)\nEl estanque del Profeta Muhammad ﷺ al que acuden los creyentes el Día del Juicio.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/article/229612/"
+      },
+      {
+        "itemNumber": 113,
+        "text": "الشَّفَاعَةُ",
+        "latin": "Ash-shafāʿa",
+        "explanationAr": "طَلَبُ الْخَيْرِ لِلْغَيْرِ مِنَ اللَّهِ، وَلَا تَكُونُ إِلَّا بِإِذْنِهِ سُبْحَانَهُ وَرِضَاهُ عَمَّنْ يُشْفَعُ لَهُ.",
+        "explanationEs": "La intercesión\nPedir a Allah un bien para otro. Solo ocurre con el permiso de Allah y su complacencia con aquel por quien se intercede.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/22872/"
+      },
+      {
+        "itemNumber": 114,
+        "text": "الرُّوحُ",
+        "latin": "Ar-rūḥ",
+        "explanationAr": "سِرُّ الْحَيَاةِ فِي الْجَسَدِ، وَحَقِيقَتُهَا مِنْ عِلْمِ اللَّهِ تَعَالَى: ﴿قُلِ الرُّوحُ مِنْ أَمْرِ رَبِّي﴾.",
+        "explanationEs": "El alma (rūḥ)\nEl principio de la vida en el cuerpo. Su verdadera naturaleza pertenece al conocimiento de Allah (Corán 17:85).",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/article/150005/"
+      },
+      {
+        "itemNumber": 115,
+        "text": "الْقَضَاءُ",
+        "latin": "Al-qaḍāʾ",
+        "explanationAr": "حُكْمُ اللَّهِ النَّافِذُ فِي خَلْقِهِ، وَيَتَّصِلُ بِالْقَدَرِ، وَهُوَ تَقْدِيرُهُ لِلْأَشْيَاءِ قَبْلَ وُقُوعِهَا.",
+        "explanationEs": "El decreto (qaḍāʾ)\nLa sentencia de Allah que se cumple en su creación. Está unido al qadar, su determinación de las cosas antes de que sucedan.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/20434/"
+      },
+      {
+        "itemNumber": 116,
+        "text": "اللَّوْحُ الْمَحْفُوظُ",
+        "latin": "Al-lawḥ al-maḥfūẓ",
+        "explanationAr": "كِتَابٌ عِنْدَ اللَّهِ كَتَبَ فِيهِ مَقَادِيرَ الْخَلْقِ، مَحْفُوظٌ مِنَ التَّغْيِيرِ وَالتَّبْدِيلِ.",
+        "explanationEs": "La Tabla Protegida\nEl libro junto a Allah donde están escritos los destinos de la creación, a salvo de todo cambio.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/60787/"
+      },
+      {
+        "itemNumber": 117,
+        "text": "الْفِطْرَةُ",
+        "latin": "Al-fiṭra",
+        "explanationAr": "الْخِلْقَةُ الَّتِي خَلَقَ اللَّهُ النَّاسَ عَلَيْهَا، وَفِيهَا الِاسْتِعْدَادُ لِمَعْرِفَةِ اللَّهِ وَتَوْحِيدِهِ.",
+        "explanationEs": "La fitra (naturaleza innata)\nLa disposición natural con la que Allah creó a las personas, inclinada a reconocerle y a creer en su unicidad.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/214030/"
+      },
+      {
+        "itemNumber": 118,
+        "text": "النَّبِيُّ وَالرَّسُولُ",
+        "latin": "An-nabiyy wa ar-rasūl",
+        "explanationAr": "النَّبِيُّ مَنْ أُوحِيَ إِلَيْهِ، وَالرَّسُولُ نَبِيٌّ أُمِرَ بِتَبْلِيغِ الرِّسَالَةِ؛ فَكُلُّ رَسُولٍ نَبِيٌّ وَلَيْسَ كُلُّ نَبِيٍّ رَسُولًا.",
+        "explanationEs": "El Profeta y el Mensajero\nEl nabí recibe revelación; el rasūl es un nabí al que además se ordena transmitir el mensaje. Todo rasūl es nabí, pero no todo nabí es rasūl.",
+        "sourceName": "موقع ابن باز",
+        "sourceNameEs": "Web del Sheij Ibn Baz",
+        "sourceUrl": "https://binbaz.org.sa/fatwas/11104/"
       }
     ]
   },
@@ -551,6 +661,280 @@ const glosarioData = [
         "sourceName": "الدرر السنية (ابن تيمية)",
         "sourceNameEs": "Al-Durar al-Saniyya (Ibn Taymiyya)",
         "sourceUrl": "https://dorar.net/feqhia/2816/"
+      },
+      {
+        "itemNumber": 119,
+        "text": "صَلَاةُ الضُّحَى",
+        "latin": "Ṣalāt aḍ-ḍuḥā",
+        "explanationAr": "سُنَّةٌ مُؤَكَّدَةٌ، أَقَلُّهَا رَكْعَتَانِ وَأَفْضَلُهَا ثَمَانٍ، وَوَقْتُهَا مِنِ ارْتِفَاعِ الشَّمْسِ إِلَى قُبَيْلِ الزَّوَالِ.",
+        "explanationEs": "La oración del Duha\nSunna confirmada: mínimo dos rakʿas, lo mejor son ocho. Su tiempo va desde que el sol se eleva hasta poco antes del mediodía.",
+        "sourceName": "موقع ابن باز",
+        "sourceNameEs": "Web del Sheij Ibn Baz",
+        "sourceUrl": "https://binbaz.org.sa/fatwas/13715/"
+      },
+      {
+        "itemNumber": 120,
+        "text": "قِيَامُ اللَّيْلِ وَالتَّهَجُّدُ",
+        "latin": "Qiyām al-layl wa at-tahajjud",
+        "explanationAr": "صَلَاةُ التَّطَوُّعِ بِاللَّيْلِ مِنْ بَعْدِ الْعِشَاءِ إِلَى الْفَجْرِ، وَأَفْضَلُهَا فِي الثُّلُثِ الْأَخِيرِ، وَالسُّنَّةُ أَنْ يُسَلِّمَ مِنْ كُلِّ رَكْعَتَيْنِ.",
+        "explanationEs": "La oración de la noche y el Tahajjud\nOración voluntaria entre la oración de la tarde-noche (ʿIshāʾ) y el alba. Lo mejor es el último tercio de la noche, con saludo cada dos rakʿas.",
+        "sourceName": "موقع ابن باز",
+        "sourceNameEs": "Web del Sheij Ibn Baz",
+        "sourceUrl": "https://binbaz.org.sa/fatwas/11275/"
+      },
+      {
+        "itemNumber": 121,
+        "text": "الِاسْتِخَارَةُ",
+        "latin": "Al-istijāra",
+        "explanationAr": "طَلَبُ الْخِيَرَةِ مِنَ اللَّهِ فِي أَمْرٍ يَحَارُ فِيهِ الْعَبْدُ، بِرَكْعَتَيْنِ ثُمَّ دُعَاءٍ بَعْدَ السَّلَامِ، ثُمَّ يَسْتَشِيرُ أَهْلَ النُّصْحِ.",
+        "explanationEs": "La istijara\nPedir a Allah que elija lo mejor ante una decisión dudosa: dos rakʿas y la súplica prescrita tras el saludo. Después conviene consultar a gente sincera y sabia.",
+        "sourceName": "موقع ابن باز",
+        "sourceNameEs": "Web del Sheij Ibn Baz",
+        "sourceUrl": "https://binbaz.org.sa/fatwas/4480/"
+      },
+      {
+        "itemNumber": 122,
+        "text": "التَّرَاوِيحُ",
+        "latin": "At-tarāwīḥ",
+        "explanationAr": "قِيَامُ رَمَضَانَ بَعْدَ الْعِشَاءِ جَمَاعَةً، وَلَيْسَ لَهَا عَدَدٌ مَحْصُورٌ، وَالْأَفْضَلُ إِحْدَى عَشْرَةَ رَكْعَةً.",
+        "explanationEs": "Las tarāwīḥ\nOración nocturna de Ramadán en congregación tras ʿIshāʾ. No tiene un número fijo; lo mejor son once rakʿas, como hacía el Profeta ﷺ.",
+        "sourceName": "موقع ابن باز",
+        "sourceNameEs": "Web del Sheij Ibn Baz",
+        "sourceUrl": "https://binbaz.org.sa/fatwas/4335/"
+      },
+      {
+        "itemNumber": 123,
+        "text": "سُجُودُ الشُّكْرِ",
+        "latin": "Sujūd ash-shukr",
+        "explanationAr": "سَجْدَةٌ لِلَّهِ شُكْرًا عَلَى نِعْمَةٍ جَدِيدَةٍ أَوِ انْدِفَاعِ نِقْمَةٍ.",
+        "explanationEs": "La prosternación de gratitud\nUna prosternación a Allah por una nueva bendición o por haber evitado un mal. Según Ibn Baz no exige ablución; otros sabios sí la exigen.",
+        "sourceName": "موقع ابن باز",
+        "sourceNameEs": "Web del Sheij Ibn Baz",
+        "sourceUrl": "https://binbaz.org.sa/fatwas/18300/"
+      },
+      {
+        "itemNumber": 124,
+        "text": "لَيْلَةُ الْقَدْرِ",
+        "latin": "Laylat al-qadr",
+        "explanationAr": "لَيْلَةٌ فِي الْعَشْرِ الْأَوَاخِرِ مِنْ رَمَضَانَ، الْعَمَلُ فِيهَا خَيْرٌ مِنْ أَلْفِ شَهْرٍ؛ وَمِنْ دُعَائِهَا: «اللَّهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي».",
+        "explanationEs": "La Noche del Destino\nNoche de los últimos diez días de Ramadán; obrar en ella vale más que mil meses. Se recomienda la súplica: «Oh Allah, Tú eres Perdonador y amas el perdón; perdóname».",
+        "sourceName": "موقع ابن باز",
+        "sourceNameEs": "Web del Sheij Ibn Baz",
+        "sourceUrl": "https://binbaz.org.sa/fatwas/12965/"
+      },
+      {
+        "itemNumber": 125,
+        "text": "يَوْمُ عَرَفَةَ",
+        "latin": "Yawm ʿArafa",
+        "explanationAr": "التَّاسِعُ مِنْ ذِي الْحِجَّةِ، فِيهِ الْوُقُوفُ بِعَرَفَةَ؛ وَصِيَامُهُ لِغَيْرِ الْحَاجِّ يُكَفِّرُ سَنَةً مَاضِيَةً وَسَنَةً بَاقِيَةً.",
+        "explanationEs": "El día de ʿArafa\nEl 9 de Dhul Hijja, día de la estancia en ʿArafa. Ayunarlo, quien no esté de peregrinación, expía el año anterior y el siguiente.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/58344/"
+      },
+      {
+        "itemNumber": 126,
+        "text": "الْفِدْيَةُ",
+        "latin": "Al-fidya",
+        "explanationAr": "مَا يُبْذَلُ جَبْرًا لِتَقْصِيرٍ فِي عِبَادَةٍ، كَمَنِ ارْتَكَبَ مَحْظُورًا فِي الْإِحْرَامِ، أَوْ عَجَزَ عَنِ الصِّيَامِ عَجْزًا دَائِمًا.",
+        "explanationEs": "La fidya (compensación)\nLo que se ofrece para suplir una falta en un acto de adoración: por un prohibido del ihram, con ayuno, comida a pobres o sacrificio; o por quien no puede ayunar nunca más.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/hajj/article/136211/"
+      },
+      {
+        "itemNumber": 127,
+        "text": "الْوِرْدُ",
+        "latin": "Al-wird",
+        "explanationAr": "مَا يَلْتَزِمُهُ الْمُسْلِمُ كُلَّ يَوْمٍ مِنْ قِرَاءَةٍ أَوْ ذِكْرٍ أَوْ صَلَاةٍ، وَأَحَبُّ الْعَمَلِ إِلَى اللَّهِ أَدْوَمُهُ وَإِنْ قَلَّ.",
+        "explanationEs": "El wird (rutina diaria)\nLo que el musulmán se compromete a hacer cada día: lectura, recuerdo o rezo. Lo más amado por Allah es lo constante, aunque sea poco.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/61655/"
+      },
+      {
+        "itemNumber": 128,
+        "text": "الصَّلَاةُ عَلَى النَّبِيِّ ﷺ",
+        "latin": "Aṣ-ṣalāt ʿalā an-nabiyy",
+        "explanationAr": "الدُّعَاءُ لِلنَّبِيِّ ﷺ بِالرَّحْمَةِ وَالتَّعْظِيمِ، مِثْلُ: «اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ»، وَقَدْ أَمَرَ اللَّهُ بِهَا فِي كِتَابِهِ.",
+        "explanationEs": "Bendecir al Profeta ﷺ\nPedir a Allah que honre y bendiga al Profeta, por ejemplo: «Oh Allah, bendice a Muhammad». Allah lo ordenó en el Corán.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/75689/"
+      }
+    ]
+  },
+  {
+    "id": "glosario_tazkiya",
+    "titleAr": "تَزْكِيَةُ النَّفْسِ وَالْقَلْبِ",
+    "titleEs": "Purificación del alma y del corazón",
+    "items": [
+      {
+        "itemNumber": 139,
+        "text": "الْخُشُوعُ",
+        "latin": "Al-khushūʿ",
+        "explanationAr": "سُكُونُ الْقَلْبِ وَخُضُوعُهُ لِلَّهِ، وَيَظْهَرُ أَثَرُهُ عَلَى الْجَوَارِحِ فِي الصَّلَاةِ.",
+        "explanationEs": "El khushūʿ (recogimiento)\nQuietud y sumisión del corazón ante Allah, cuyo efecto se ve en el cuerpo durante la oración.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/283984/"
+      },
+      {
+        "itemNumber": 140,
+        "text": "الْمُحَاسَبَةُ",
+        "latin": "Al-muḥāsaba",
+        "explanationAr": "أَنْ يَنْظُرَ الْعَبْدُ فِي أَعْمَالِهِ، فَيَشْكُرَ عَلَى الْحَسَنِ وَيَتُوبَ مِنَ السَّيِّئِ.",
+        "explanationEs": "El examen de conciencia\nRevisar las propias acciones: agradecer las buenas y arrepentirse de las malas.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/article/74734/"
+      },
+      {
+        "itemNumber": 141,
+        "text": "الْمُرَاقَبَةُ",
+        "latin": "Al-murāqaba",
+        "explanationAr": "دَوَامُ عِلْمِ الْعَبْدِ بِاطِّلَاعِ اللَّهِ عَلَيْهِ فِي السِّرِّ وَالْعَلَنِ.",
+        "explanationEs": "La murāqaba (vigilancia)\nSer siempre consciente de que Allah te ve y te conoce, en lo oculto y en lo manifiesto.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/127228/"
+      },
+      {
+        "itemNumber": 142,
+        "text": "النَّفْسُ",
+        "latin": "An-nafs",
+        "explanationAr": "ذَاتُ الْإِنْسَانِ، وَلَهَا ثَلَاثُ أَحْوَالٍ: الْأَمَّارَةُ بِالسُّوءِ، وَاللَّوَّامَةُ، وَالْمُطْمَئِنَّةُ.",
+        "explanationEs": "El nafs (el yo)\nLa propia persona, con tres estados: la que incita al mal, la que se reprocha y la serena.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/346897/"
+      },
+      {
+        "itemNumber": 143,
+        "text": "التَّزْكِيَةُ",
+        "latin": "At-tazkiya",
+        "explanationAr": "تَطْهِيرُ النَّفْسِ مِنَ الذُّنُوبِ وَالْأَخْلَاقِ الذَّمِيمَةِ، وَتَنْمِيَتُهَا بِالطَّاعَةِ وَالْأَخْلَاقِ الْحَسَنَةِ.",
+        "explanationEs": "La purificación (tazkiya)\nLimpiar el alma de pecados y malos rasgos, y hacerla crecer con obediencia y buen carácter.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/346897/"
+      },
+      {
+        "itemNumber": 144,
+        "text": "الزُّهْدُ",
+        "latin": "Az-zuhd",
+        "explanationAr": "تَرْكُ مَا لَا يَنْفَعُ فِي الْآخِرَةِ، وَلَا يَعْنِي تَرْكَ الْمُبَاحِ كُلِّهِ.",
+        "explanationEs": "El zuhd (desapego)\nDejar lo que no beneficia en la otra vida. No significa renunciar a todo lo lícito.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/20776/"
+      },
+      {
+        "itemNumber": 145,
+        "text": "الْوَرَعُ",
+        "latin": "Al-waraʿ",
+        "explanationAr": "اجْتِنَابُ الشُّبُهَاتِ خَشْيَةَ الْوُقُوعِ فِي الْحَرَامِ.",
+        "explanationEs": "El wara (escrúpulo)\nEvitar lo dudoso por temor a caer en lo prohibido.",
+        "sourceName": "موقع ابن باز",
+        "sourceNameEs": "Web del Sheij Ibn Baz",
+        "sourceUrl": "https://binbaz.org.sa/fatwas/22170/"
+      },
+      {
+        "itemNumber": 146,
+        "text": "الْخَوْفُ وَالرَّجَاءُ",
+        "latin": "Al-khawf wa ar-rajāʾ",
+        "explanationAr": "جَنَاحَا الْمُؤْمِنِ: يَخَافُ عِقَابَ اللَّهِ وَيَرْجُو رَحْمَتَهُ، فَلَا يَيْأَسُ وَلَا يَأْمَنُ.",
+        "explanationEs": "El temor y la esperanza\nLas dos alas del creyente: teme el castigo de Allah y espera su misericordia, sin desesperar ni sentirse a salvo.",
+        "sourceName": "موقع ابن باز",
+        "sourceNameEs": "Web del Sheij Ibn Baz",
+        "sourceUrl": "https://binbaz.org.sa/fatwas/13043/"
+      }
+    ]
+  },
+  {
+    "id": "glosario_hima",
+    "titleAr": "الرُّقْيَةُ وَالْحِمَايَةُ",
+    "titleEs": "Ruqya y protección",
+    "items": [
+      {
+        "itemNumber": 131,
+        "text": "الْمَسُّ",
+        "latin": "Al-mass",
+        "explanationAr": "أَذًى يُصِيبُ الْإِنْسَانَ مِنَ الْجِنِّ، وَعِلَاجُهُ بِالرُّقْيَةِ الشَّرْعِيَّةِ وَالْأَذْكَارِ.",
+        "explanationEs": "El mass (toque de los genios)\nDaño que un genio puede causar a una persona. Se trata con la ruqya legítima y con los azkar.",
+        "sourceName": "موقع ابن باز",
+        "sourceNameEs": "Web del Sheij Ibn Baz",
+        "sourceUrl": "https://binbaz.org.sa/fatwas/3269/"
+      },
+      {
+        "itemNumber": 132,
+        "text": "الْوَسْوَسَةُ",
+        "latin": "Al-waswasa",
+        "explanationAr": "مَا يُلْقِيهِ الشَّيْطَانُ فِي النَّفْسِ مِنْ خَوَاطِرَ سُوءٍ، وَعِلَاجُهَا بِالِاسْتِعَاذَةِ بِاللَّهِ وَالْإِعْرَاضِ عَنْهَا.",
+        "explanationEs": "La waswasa (susurro)\nLos malos pensamientos que el demonio echa en el corazón. Se combate pidiendo refugio en Allah e ignorándolos.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/article/73980/"
+      },
+      {
+        "itemNumber": 133,
+        "text": "الْمُعَوِّذَتَانِ",
+        "latin": "Al-muʿawwidhatān",
+        "explanationAr": "سُورَتَا الْفَلَقِ وَالنَّاسِ، يُسْتَعَاذُ بِهِمَا مِنْ كُلِّ شَرٍّ، وَيُسَنُّ قِرَاءَتُهُمَا صَبَاحًا وَمَسَاءً وَعِنْدَ النَّوْمِ.",
+        "explanationEs": "Las dos súplicas de refugio\nLas suras Al-Falaq y An-Nas. Se recitan para refugiarse de todo mal, por la mañana, por la tarde y al dormir.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/75596/"
+      },
+      {
+        "itemNumber": 134,
+        "text": "آيَةُ الْكُرْسِيِّ",
+        "latin": "Āyat al-kursī",
+        "explanationAr": "الْآيَةُ ٢٥٥ مِنْ سُورَةِ الْبَقَرَةِ، أَعْظَمُ آيَةٍ فِي الْقُرْآنِ، وَمَنْ قَرَأَهَا عِنْدَ نَوْمِهِ لَمْ يَزَلْ عَلَيْهِ مِنَ اللَّهِ حَافِظٌ.",
+        "explanationEs": "El versículo del Trono\nAleya 255 de Al-Baqara, la más grande del Corán. Quien la recita al dormir tiene un protector de Allah durante la noche.",
+        "sourceName": "الدرر السنية",
+        "sourceNameEs": "Al-Durar al-Saniyya (dorar.net)",
+        "sourceUrl": "https://dorar.net/hadith/sharh/141083"
+      },
+      {
+        "itemNumber": 135,
+        "text": "الْحِرْزُ",
+        "latin": "Al-ḥirz",
+        "explanationAr": "الْحِفْظُ وَالْمَنَعَةُ؛ وَمَنْ قَالَ ذِكْرَ التَّهْلِيلِ مِائَةَ مَرَّةٍ كَانَ فِي حِرْزٍ مِنَ الشَّيْطَانِ يَوْمَهُ ذَلِكَ.",
+        "explanationEs": "El ḥirz (protección)\nResguardo y defensa. Quien dice cien veces «No hay más dios que Allah…» queda protegido del demonio durante ese día.",
+        "sourceName": "موقع ابن باز",
+        "sourceNameEs": "Web del Sheij Ibn Baz",
+        "sourceUrl": "https://binbaz.org.sa/fatwas/19888/"
+      },
+      {
+        "itemNumber": 136,
+        "text": "الْحِجَامَةُ",
+        "latin": "Al-ḥijāma",
+        "explanationAr": "عِلَاجٌ نَبَوِيٌّ بِإِخْرَاجِ الدَّمِ مِنَ الْجِلْدِ بِالْكُؤُوسِ، وَهِيَ مُبَاحَةٌ وَمَرْوِيَّةٌ فِي السُّنَّةِ.",
+        "explanationEs": "La hiyama (ventosas)\nTratamiento que consiste en extraer sangre de la piel con ventosas. Es lícito y se menciona en la Sunna.",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/135818/"
+      },
+      {
+        "itemNumber": 137,
+        "text": "الْكَرْبُ",
+        "latin": "Al-karb",
+        "explanationAr": "الْغَمُّ الشَّدِيدُ الَّذِي يَأْخُذُ بِالنَّفْسِ؛ وَمِنْ دُعَائِهِ: «اللَّهُ اللَّهُ رَبِّي لَا أُشْرِكُ بِهِ شَيْئًا».",
+        "explanationEs": "El karb (angustia)\nLa pena intensa que oprime el alma. Entre sus súplicas está: «Allah, Allah es mi Señor, no le asocio nada».",
+        "sourceName": "إسلام ويب",
+        "sourceNameEs": "IslamWeb",
+        "sourceUrl": "https://www.islamweb.net/ar/fatwa/293725/"
+      },
+      {
+        "itemNumber": 138,
+        "text": "الْهَمُّ وَالْحَزَنُ",
+        "latin": "Al-hamm wa al-ḥazan",
+        "explanationAr": "الْهَمُّ أَلَمُ النَّفْسِ مِمَّا يُتَوَقَّعُ، وَالْحَزَنُ أَلَمُهَا مِمَّا وَقَعَ؛ وَيُقَالُ: «اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ».",
+        "explanationEs": "La preocupación y la tristeza\nEl hamm es el dolor por lo que se teme que ocurra; el ḥazan, por lo que ya ocurrió. Se pide refugio en Allah de ambos.",
+        "sourceName": "الدرر السنية",
+        "sourceNameEs": "Al-Durar al-Saniyya (dorar.net)",
+        "sourceUrl": "https://dorar.net/hadith/sharh/1034"
       }
     ]
   },
@@ -1102,6 +1486,26 @@ const glosarioData = [
         "sourceName": "إسلام ويب",
         "sourceNameEs": "IslamWeb",
         "sourceUrl": "https://audio.islamweb.net/audio/index.php?audioid=184345&page=FullContent"
+      },
+      {
+        "itemNumber": 129,
+        "text": "لَا إِلَهَ إِلَّا اللَّهُ",
+        "latin": "Lā ilāha illā Allāh",
+        "explanationAr": "كَلِمَةُ التَّوْحِيدِ، مَعْنَاهَا: لَا مَعْبُودَ بِحَقٍّ إِلَّا اللَّهُ، فَفِيهَا نَفْيٌ وَإِثْبَاتٌ.",
+        "explanationEs": "No hay más dios que Allah\nLa palabra de la unicidad: no hay nada digno de adoración salvo Allah. Niega toda falsa divinidad y afirma la adoración solo para Allah.",
+        "sourceName": "موقع ابن باز",
+        "sourceNameEs": "Web del Sheij Ibn Baz",
+        "sourceUrl": "https://binbaz.org.sa/fatwas/15667/"
+      },
+      {
+        "itemNumber": 130,
+        "text": "حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ",
+        "latin": "Ḥasbunā Allāhu wa niʿma al-wakīl",
+        "explanationAr": "كَلِمَةُ تَوَكُّلٍ، مَعْنَاهَا: اللَّهُ كَافِينَا وَنِعْمَ الْمُفَوَّضُ إِلَيْهِ؛ قَالَهَا إِبْرَاهِيمُ حِينَ أُلْقِيَ فِي النَّارِ، وَقَالَهَا مُحَمَّدٌ ﷺ.",
+        "explanationEs": "Allah nos basta y es el mejor protector\nFrase de confianza en Allah. La dijo Ibrahim al ser arrojado al fuego y también el Profeta Muhammad ﷺ.",
+        "sourceName": "الدرر السنية",
+        "sourceNameEs": "Al-Durar al-Saniyya (dorar.net)",
+        "sourceUrl": "https://dorar.net/hadith/sharh/151307"
       }
     ]
   }
