@@ -207,11 +207,14 @@
   }
 
   var views = {};
-  function ensureViews() {
-    if (views.adab) return;
+  // Los estilos se inyectan al cargar el script: el botón de entrada se pinta antes de abrir ninguna pantalla.
+  (function () {
     var st = document.createElement('style');
     st.textContent = CSS;
     document.head.appendChild(st);
+  })();
+  function ensureViews() {
+    if (views.adab) return;
     var anchor = document.getElementById('categoryListView');
     var parent = anchor && anchor.parentNode;
     if (!parent) return;
