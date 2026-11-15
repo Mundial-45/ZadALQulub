@@ -14,6 +14,7 @@
 
 ## Android
 
+- **Pantallas de «Normas y consejos» (adab) en azkar y adya**: ya está en GitHub (`adab.js`, 1 línea en `index.html`, `sw.js` solo web). Falta copiar `adab.js` a `assets` y añadir `<script src="adab.js"></script>` tras `app.js` en el `index.html` de Android; luego probar el botón atrás y el cambio de idioma.
 Estos cambios se dejaron para más adelante porque afectan a cómo funciona la app dentro del WebView de Android.
 
 1. **Pantalla bajo las barras del sistema (Android 15+)**: comprobar en un móvil reciente que el contenido no queda debajo de la barra de estado o de navegación; si pasa, aplicar los insets en `MainActivity`.

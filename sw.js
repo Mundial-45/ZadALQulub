@@ -1,6 +1,6 @@
 // sw.js — service worker de la versión web (PWA). No se registra dentro de la app de Android.
 // Al cambiar archivos de la app, subir CACHE_VERSION para que los móviles descarguen la versión nueva.
-const CACHE_VERSION = 'zad-v2';
+const CACHE_VERSION = 'zad-v3';
 const CORE_CACHE = CACHE_VERSION + '-core';
 const RUNTIME_CACHE = CACHE_VERSION + '-runtime';
 
@@ -8,6 +8,7 @@ const CORE_FILES = [
   './',
   'index.html',
   'app.js',
+  'adab.js',
   'html2canvas.min.js',
   'pwa.js',
   'quran.js',
