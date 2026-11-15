@@ -1129,7 +1129,7 @@ const adyaData = [
     },
     {
       "itemNumber": 116,
-      "text": "يَا ذَا الجَلَالِ وَالإِكْرَامِ، يَا قَاضِيَ الحَاجَاتِ، يَا أَرْحَمَ الرَّاحِمِينَ، يَا حَيُّ يَا قَيُّومُ، لَا إِلَهَ إِلَّا أَنْتَ المَلِكُ الحَقُّ المُبِينُ. اللَّهُمَّ إِنِّي أَحْمَدُكَ حَمْدًا كَثِيرًا وَأَشْكُرُكَ شُكْرًا كَثِيرًا يَلِيقُ بِجَلَالِ وَجْهِكَ وَعَظِيمِ سُلْطَانِكَ. اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ. يَا اللهُ، يَا رَبُّ، يَا حَيُّ يَا قَيُّومُ، يَا ذَا الجَلَالِ وَالإِكْرَامِ، أَسْأَلُكَ بِاسْمِكَ العَظِيمِ الأَعْظَمِ أَنْ تَرْزُقَنِي رِزْقًا وَاسِعًا حَلَالًا طَيِّبًا، بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ.",
+      "text": "يَا ذَا الجَلَالِ وَالإِكْرَامِ، يَا قَاضِيَ الحَاجَاتِ، يَا أَرْحَمَ الرَّاحِمِينَ، يَا حَيُّ يَا قَيُّومُ، لَا إِلَهَ إِلَّا أَنْتَ المَلِكُ الحَقُّ المُبِينُ. اللَّهُمَّ إِنِّي أَحْمَدُكَ حَمْدًا كَثِيرًا وَأَشْكُرُكَ شُكْرًا كَثِيرًا يَلِيقُ بِجَلَالِ وَجْهِكَ وَعَظِيمِ سُلْطَانِكَ. اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ. يَا اللَّهُ، يَا رَبُّ، يَا حَيُّ يَا قَيُّومُ، يَا ذَا الجَلَالِ وَالإِكْرَامِ، أَسْأَلُكَ بِاسْمِكَ العَظِيمِ الأَعْظَمِ أَنْ تَرْزُقَنِي رِزْقًا وَاسِعًا حَلَالًا طَيِّبًا، بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ.",
       "latin": "Yā Dhal-Jalāli wal-Ikrām, yā Qāḍiyal-ḥājāt, yā Arḥamar-rāḥimīn, yā Ḥayyu yā Qayyūm, lā ilāha illā Antal-Malikul-Ḥaqqul-Mubīn. Allāhumma innī aḥmaduka ḥamdan kathīrā, wa ashkuruka shukran kathīrā, yalīqu bi-jalāli wajhika wa ʿaẓīmi sulṭānik. Allāhummak-finī bi-ḥalālika ʿan ḥarāmika wa aghninī bi-faḍlika ʿamman siwāk. Yā Allāh, yā Rabb, yā Ḥayyu yā Qayyūm, yā Dhal-Jalāli wal-Ikrām, asʾaluka bis-mikal-ʿaẓīmil-aʿẓam an tarzuqanī rizqan wāsiʿan ḥalālan ṭayyiban, bi-raḥmatika yā Arḥamar-rāḥimīn.",
       "explanationEs": "«¡Oh Poseedor de la Majestad y la Generosidad!, ¡Oh Cumplidor de las necesidades!, ¡Oh el más Misericordioso de los misericordiosos!, ¡Oh Viviente, Oh Sustentador!, no hay divinidad excepto Tú, el Rey, la Verdad Evidente. \n\nOh Allah, Te alabo con abundante alabanza y Te agradezco con abundante agradecimiento, como corresponde a la majestad de Tu Rostro y a la grandeza de Tu soberanía. \n\nOh Allah, haz que me baste lo lícito que Tú me concedes para no recurrir a lo ilícito, y enriquéceme con Tu favor para no necesitar de nadie más que de Ti. \n\n¡Oh Allah, Oh Señor, Oh Viviente, Oh Sustentador!, ¡Oh Poseedor de la Majestad y la Generosidad!, Te pido por Tu Nombre Grandioso, el más Grande, que me concedas un sustento amplio, lícito y puro, por Tu misericordia, ¡Oh el más Misericordioso de los misericordiosos!».",
       "note": "دعاء قضاء الحاجات والرزق (صيغة عامة مقترحة)",
@@ -1139,7 +1139,7 @@ const adyaData = [
     },
     {
       "itemNumber": 117,
-      "text": "اللَّهُمَّ ارْزُقْنَا رِزْقًا حَلَالًا طَيِّبًا مُبَارَكًا فِيهِ كَمَا تُحِبُّ وَتَرْضَى يَا رَبَّ العَالَمِينَ. حَسْبُنَا اللهُ سَيُؤْتِينَا اللهُ مِنْ فَضْلِهِ إِنَّا إِلَى اللهِ رَاغِبُونَ.",
+      "text": "اللَّهُمَّ ارْزُقْنَا رِزْقًا حَلَالًا طَيِّبًا مُبَارَكًا فِيهِ كَمَا تُحِبُّ وَتَرْضَى يَا رَبَّ العَالَمِينَ. حَسْبُنَا اللَّهُ سَيُؤْتِينَا اللَّهُ مِنْ فَضْلِهِ إِنَّا إِلَى اللَّهِ رَاغِبُونَ.",
       "latin": "Allāhummar-zuqnā rizqan ḥalālan ṭayyiban mubārakan fīhi kamā tuḥibbu wa tarḍā yā Rabbal-ʿālamīn. Ḥasbunallāhu sayuʾtin-Allāhu min faḍlih, innā ilallāhi rāghibūn.",
       "explanationEs": "​«Oh Allah, concédenos un sustento lícito, puro y bendito, tal como Amas y Te agrada, ¡Oh Señor de los mundos! Allah nos basta; Allah nos dará de Su favor, y ciertamente hacia Allah dirigimos nuestros deseos».",
       "note": "دعاء الرزق والتوكل (صيغة عامة مقترحة)",
@@ -1149,7 +1149,7 @@ const adyaData = [
     },
     {
       "itemNumber": 118,
-      "text": "الحَمْدُ للهِ الَّذِي لَا يَنْسَى مَنْ ذَكَرَهُ.\n الحَمْدُ للهِ الَّذِي لَا يَخِيبُ مَنْ رَجَاهُ.\n الحَمْدُ للهِ الَّذِي مَنْ تَوَكَّلَ عَلَيْهِ كَفَاهُ\n الحَمْدُ للهِ الَّذِي مَنْ وَثِقَ بِهِ لَمْ يَكِلْهُ إِلَى غَيْرِهِ.\n الحَمْدُ للهِ الَّذِي هُوَ ثِقَتُنَا حِينَ تَسُوءُ ظُنُونُنَا بِأَعْمَالِنَا.\n الحَمْدُ للهِ الَّذِي هُوَ رَجَاؤُنَا حِينَ يَنْقَطِعُ الحِيلُ وَالحَبْلُ مِنَّا.",
+      "text": "الحَمْدُ للَّهِ الَّذِي لَا يَنْسَى مَنْ ذَكَرَهُ.\n الحَمْدُ للَّهِ الَّذِي لَا يَخِيبُ مَنْ رَجَاهُ.\n الحَمْدُ للَّهِ الَّذِي مَنْ تَوَكَّلَ عَلَيْهِ كَفَاهُ\n الحَمْدُ للَّهِ الَّذِي مَنْ وَثِقَ بِهِ لَمْ يَكِلْهُ إِلَى غَيْرِهِ.\n الحَمْدُ للَّهِ الَّذِي هُوَ ثِقَتُنَا حِينَ تَسُوءُ ظُنُونُنَا بِأَعْمَالِنَا.\n الحَمْدُ للَّهِ الَّذِي هُوَ رَجَاؤُنَا حِينَ يَنْقَطِعُ الحِيلُ وَالحَبْلُ مِنَّا.",
       "latin": "Al-ḥamdu lillāhil-ladhī lā yansā man dhakarah, al-ḥamdu lillāhil-ladhī lā yakhību man rajāh, al-ḥamdu lillāhil-ladhī man tawakkala ʿalayhi kafāh, al-ḥamdu lillāhil-ladhī man wathiqa bihī lam yakilhu ilā ghayrih. Al-ḥamdu lillāhil-ladhī huwa thiqatunā ḥīna tasūʾu ẓunūnunā bi-aʿmālinā, al-ḥamdu lillāhil-ladhī huwa rajāʾunā ḥīna yanqaṭiʿul-ḥiylu wal-ḥablu minnā.",
       "explanationEs": "Alabado sea Allah, Quien no olvida a quien Le recuerda. Alabado sea Allah, Quien no decepciona a quien deposita en Él su esperanza. Alabado sea Allah, Quien basta a quien confía en Él. Alabado sea Allah, Quien no abandona a quien confía en Él en manos de nadie más.\n\nAlabado sea Allah, Quien es nuestro apoyo cuando tenemos una mala opinión de nuestras propias obras. Alabado sea Allah, Quien es nuestra esperanza cuando se agotan nuestros recursos y se rompen todos nuestros vínculos.",
       "note": "حمد الله والتوكل عليه (صيغة عامة مقترحة)",
@@ -2558,7 +2558,7 @@ const adyaData = [
     },
     {
       "itemNumber": 256,
-      "text": "اللهُ؛ اللهُ رَبِّي، لَا أُشْرِكُ بِهِ شَيْئًا.",
+      "text": "اللَّهُ؛ اللَّهُ رَبِّي، لَا أُشْرِكُ بِهِ شَيْئًا.",
       "latin": "Allāhu, Allāhu Rabbī, lā ushriku bihī shayʾā.",
       "explanationEs": "Allah, Allah es mi Señor; no Le asocio nada en absoluto.",
       "note": "دعاء لتفريج الضيق",
@@ -2638,7 +2638,7 @@ const adyaData = [
     },
     {
       "itemNumber": 264,
-      "text": "حَسْبِيَ اللهُ لِمَا أَهَمَّنِي، حَسْبِيَ اللهُ لِمَنْ بَغَى عَلَيَّ، حَسْبِيَ اللهُ لِمَنْ حَسَدَنِي، حَسْبِيَ اللهُ لِمَنْ كَادَنِي بِسُوءٍ، حَسْبِيَ اللهُ عِنْدَ المَوْتِ، حَسْبِيَ اللهُ عِنْدَ الصِّرَاطِ، حَسْبِيَ اللهُ لَا إِلَهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ العَرْشِ العَظِيمِ.",
+      "text": "حَسْبِيَ اللَّهُ لِمَا أَهَمَّنِي.\nحَسْبِيَ اللَّهُ لِمَنْ بَغَى عَلَيَّ.\nحَسْبِيَ اللَّهُ لِمَنْ حَسَدَنِي.\nحَسْبِيَ اللَّهُ لِمَنْ كَادَنِي بِسُوءٍ.\nحَسْبِيَ اللَّهُ عِنْدَ المَوْتِ.\nحَسْبِيَ اللَّهُ عِنْدَ الصِّرَاطِ.\nحَسْبِيَ اللَّهُ لَا إِلَهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ العَرْشِ العَظِيمِ.",
       "latin": "Ḥasbiyallāhu limā ahammanī, ḥasbiyallāhu liman baghā ʿalayya, ḥasbiyallāhu liman ḥasadanī, ḥasbiyallāhu liman kādanī bi-sūʾ, ḥasbiyallāhu ʿindal-mawt, ḥasbiyallāhu ʿindaṣ-ṣirāṭ, ḥasbiyallāhu lā ilāha illā Huwa ʿalayhi tawakkaltu wa Huwa Rabbul-ʿarshil-ʿaẓīm.",
       "explanationEs": "Allah me basta para aquello que me preocupa; Allah me basta contra quien me oprime, contra quien me envidia y contra quien trama el mal contra mí. Allah me bastará en el momento de la muerte y en el paso por el Puente. No hay divinidad digna de adoración excepto Él; en Él deposito mi confianza y Él es el Señor del Trono grandioso.",
       "note": "دعاء الكفاية والتحصين (صيغة عامة مقترحة)",
@@ -2796,14 +2796,14 @@ const adyaData = [
     },
     {
       "itemNumber": 279,
-      "text": "لَا إِلَهَ إِلَّا اللهُ الكَرِيمُ الحَلِيمُ، سُبْحَانَهُ وَتَبَارَكَ اللهُ رَبُّ العَرْشِ العَظِيمِ، وَالحَمْدُ للهِ رَبِّ العَالَمِينَ.",
+      "text": "لَا إِلَهَ إِلَّا اللَّهُ الكَرِيمُ الحَلِيمُ، سُبْحَانَهُ وَتَبَارَكَ اللَّهُ رَبُّ العَرْشِ العَظِيمِ، وَالحَمْدُ للَّهِ رَبِّ العَالَمِينَ.",
       "latin": "Lā ilāha illallāhul-Karīmul-Ḥalīm, subḥānahū wa tabārakallāhu Rabbul-ʿarshil-ʿaẓīm, wal-ḥamdu lillāhi Rabbil-ʿālamīn.",
       "explanationEs": "No hay divinidad digna de adoración excepto Allah, el Generoso, el Clemente. ¡Glorificado y bendito sea Allah, Señor del Trono grandioso! Y toda alabanza pertenece a Allah, Señor de los mundos.",
       "note": "أدعية الكرب والشدة عن علي بن أبي طالب (مسند أحمد والنسائي)",
       "audioUrls": [
         "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20279.mp3"
       ]
-  },
+    },
   {
     "itemNumber": 280,
     "text": "يَا رَبِّ، أَنَا تَعِبْتُ وَمَا لِي غَيْرُكَ، فَرِّجْ هَمِّي، وَيَسِّرْ أَمْرِي، وَافْتَحْ لِي بَابًا مِنْ عِنْدِكَ مَا كُنْتُ أَتَوَقَّعُهُ.",
