@@ -34,6 +34,11 @@
         ar: 'دَوَامُ التَّفَكُّرِ فِي مَعَانِي الْأَذْكَارِ، وَاسْتِحْضَارُ اطِّلَاعِ اللَّهِ عَلَى عَبْدِهِ وَهُوَ يَذْكُرُهُ، وَدَوَامُ اللَّجَأِ إِلَى اللَّهِ أَنْ يَجْعَلَ الْقَلْبَ حَاضِرًا.',
         es: 'Meditar continuamente el significado de los azkar, recordar que Allah te ve mientras Le recuerdas y pedirle siempre que haga presente tu corazón.',
         src: [iw(365107)] },
+      { tAr: 'الِافْتِتَاحُ بِالْحَمْدِ وَالثَّنَاءِ', tEs: 'Empezar con alabanza y glorificación',
+        ar: 'يُسْتَحَبُّ أَنْ يَبْدَأَ الْعَبْدُ ذِكْرَهُ وَدُعَاءَهُ بِحَمْدِ اللَّهِ وَالثَّنَاءِ عَلَيْهِ، ثُمَّ يُصَلِّيَ عَلَى النَّبِيِّ ﷺ. وَقَدْ أَجْمَعَ الْعُلَمَاءُ عَلَى اسْتِحْبَابِ ذَلِكَ.',
+        es: 'Es recomendable comenzar alabando a Allah y glorificándole, y luego invocar la paz sobre el Profeta ﷺ. Los ulemas coinciden en que es recomendable (an-Nawawi, citado por IslamWeb).',
+        src: [iw(328927), iw(40954)],
+        link: 'thanaa' },
       { tAr: 'الطَّهَارَةُ', tEs: 'La pureza ritual',
         ar: 'يُسْتَحَبُّ أَنْ يَذْكُرَ اللَّهَ عَلَى طَهَارَةٍ، وَلَيْسَتِ الطَّهَارَةُ شَرْطًا لِلذِّكْرِ؛ فَقَدْ كَانَ النَّبِيُّ ﷺ يَذْكُرُ اللَّهَ عَلَى كُلِّ أَحْيَانِهِ.',
         es: 'Es recomendable recordar a Allah en estado de pureza, pero no es condición del dhikr: el Profeta ﷺ recordaba a Allah en todo momento.',
@@ -174,13 +179,13 @@
     'html.dark .adab-intro{color:#94a3b8}',
     '.adab-card{background:#fff;border:1px solid #e2e8f0;border-radius:1rem;padding:1rem;margin-bottom:.9rem;box-shadow:0 1px 2px rgba(0,0,0,.05)}',
     'html.dark .adab-card{background:#1e293b;border-color:#334155}',
-    '.adab-card h3{font-weight:700;font-size:.95rem;color:#047857;margin:0 0 .6rem}',
+    '.adab-card h3{text-align:center;font-weight:700;font-size:.95rem;color:#047857;margin:0 0 .6rem}',
     'html.dark .adab-card h3{color:#34d399}',
-    '.adab-ar{font-family:"Amiri Quran","Amiri",serif;font-size:calc(var(--app-font-size,18px)*1.12);line-height:2.1;text-align:right;direction:rtl;color:#0f172a;white-space:pre-line}',
+    '.adab-ar{line-height:2.1;text-align:center;direction:rtl;font-weight:700;color:#0f172a;white-space:pre-line}',
     'html.dark .adab-ar{color:#f1f5f9}',
-    '.adab-latin{font-style:italic;font-size:.85rem;line-height:1.7;color:#64748b;margin-top:.6rem;direction:ltr;text-align:left;white-space:pre-line}',
-    'html.dark .adab-latin{color:#94a3b8}',
-    '.adab-es{font-size:.9rem;line-height:1.7;color:#334155;margin-top:.6rem;direction:ltr;text-align:left;white-space:pre-line}',
+    '.adab-latin{font-style:italic;font-weight:600;color:#475569;margin-top:.6rem;direction:ltr;text-align:center;white-space:pre-line}',
+    'html.dark .adab-latin{color:#cbd5e1}',
+    '.adab-es{font-weight:700;color:#334155;margin-top:.6rem;direction:ltr;text-align:center;white-space:pre-line}',
     'html.dark .adab-es{color:#cbd5e1}',
     '.adab-src{font-size:.75rem;margin-top:.7rem;padding-top:.5rem;border-top:1px dashed #cbd5e1;color:#64748b}',
     'html.dark .adab-src{border-color:#475569;color:#94a3b8}',
@@ -235,9 +240,9 @@
     data.cards.forEach(function (c) {
       var card = mk('div', 'adab-card');
       card.appendChild(mk('h3', '', es ? c.tEs : c.tAr));
-      card.appendChild(mk('div', 'adab-ar', c.ar));
-      if (c.latin) card.appendChild(mk('div', 'adab-latin', c.latin));
-      if (es) card.appendChild(mk('div', 'adab-es', c.es));
+      card.appendChild(mk('div', 'adab-ar custom-text-size', c.ar));
+      if (es && c.latin) card.appendChild(mk('div', 'adab-latin latin-text-style', c.latin));
+      if (es) card.appendChild(mk('div', 'adab-es es-text-style', c.es));
       var srcs = (c.src || []).concat(c.srcExtra || []);
       if (srcs.length) {
         var box = mk('div', 'adab-src');
