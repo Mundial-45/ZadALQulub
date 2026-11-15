@@ -604,6 +604,72 @@ function shareText(text) {
   else copyText(text);
 }
 
+// Compartir la tarjeta completa (con su fondo) como imagen PNG.
+// html2canvas se carga solo la primera vez que se comparte (assets/html2canvas.min.js).
+var _html2canvasPromise = null;
+function loadHtml2Canvas() {
+  if (window.html2canvas) return Promise.resolve(window.html2canvas);
+  if (_html2canvasPromise) return _html2canvasPromise;
+  _html2canvasPromise = new Promise(function (resolve, reject) {
+    var s = document.createElement('script');
+    s.src = 'html2canvas.min.js';
+    s.onload = function () { window.html2canvas ? resolve(window.html2canvas) : reject(new Error('html2canvas')); };
+    s.onerror = function () { _html2canvasPromise = null; reject(new Error('html2canvas')); };
+    document.head.appendChild(s);
+  });
+  return _html2canvasPromise;
+}
+
+async function renderCardToCanvas(card) {
+  const html2canvas = await loadHtml2Canvas();
+  if (document.fonts && document.fonts.ready) { try { await document.fonts.ready; } catch (e) {} }
+  const pageBg = getComputedStyle(document.body).backgroundColor || '#ffffff';
+  return html2canvas(card, {
+    scale: Math.min(2, window.devicePixelRatio || 2),
+    useCORS: true,
+    logging: false,
+    backgroundColor: pageBg,
+    // Se omiten el contador, el reproductor de audio y la fila de botones.
+    ignoreElements: function (el) { return !!(el.hasAttribute && el.hasAttribute('data-no-share')); },
+    onclone: function (doc, cloned) {
+      // El espaciado entre letras rompe la unión de las letras árabes al dibujar.
+      cloned.style.letterSpacing = 'normal';
+      cloned.querySelectorAll('*').forEach(function (el) { el.style.letterSpacing = 'normal'; });
+      cloned.style.boxShadow = 'none';
+      cloned.style.margin = '0';
+      const mark = doc.createElement('div');
+      mark.textContent = 'زاد القلوب · Zad Al-Qulub';
+      mark.style.cssText = 'text-align:center;font-size:13px;font-weight:700;opacity:.55;padding-top:6px;letter-spacing:normal;';
+      cloned.appendChild(mark);
+    }
+  });
+}
+
+async function shareCard(btn, text) {
+  const card = btn && btn.closest ? btn.closest('.card-paper-bg') : null;
+  if (!card) { shareText(text); return; }
+  showToast(currentLang === 'es' ? 'Preparando imagen…' : 'جارٍ تجهيز الصورة…');
+  try {
+    const canvas = await renderCardToCanvas(card);
+    if (window.AndroidBridge && typeof window.AndroidBridge.shareImage === 'function') {
+      window.AndroidBridge.shareImage(canvas.toDataURL('image/png').split(',')[1]);
+      return;
+    }
+    const blob = await new Promise(function (resolve) { canvas.toBlob(resolve, 'image/png'); });
+    if (blob) {
+      const file = new File([blob], 'zad-al-qulub.png', { type: 'image/png' });
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        await navigator.share({ files: [file], title: 'زاد القلوب' });
+        return;
+      }
+    }
+    shareText(text);
+  } catch (e) {
+    if (e && e.name === 'AbortError') return;
+    shareText(text);
+  }
+}
+
 // Identificador estable de un elemento: sección|grupo|número del elemento.
 // No cambia si se corrige el texto (tashkil, traducción) ni si se mueven otros elementos del grupo.
 function getItemId(section, group, index) {
@@ -1740,7 +1806,7 @@ function renderGroupItems() {
       ${item.sourceUrl ? `<div class="glos-source text-xs text-center text-slate-500 dark:text-slate-400" dir="${isEs ? 'ltr' : 'rtl'}">${isEs ? 'Fuente' : 'المصدر'}: <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer" class="underline text-emerald-700 dark:text-emerald-400">${isEs ? (item.sourceNameEs || item.sourceName || item.sourceUrl) : (item.sourceName || item.sourceUrl)}</a></div>` : ''}
 
       ${!isAdya && !isInfoItem ? `
-        <div class="flex flex-col items-center justify-center pt-2">
+        <div data-no-share class="flex flex-col items-center justify-center pt-2">
           <button type="button" onclick="decrementCounter(${index})" class="dhikr-counter-btn ${isDone ? 'is-done' : ''} w-32 h-32 rounded-full flex flex-col items-center justify-center transition transform active:scale-90 cursor-pointer shadow-xl border-4 ${isDone ? 'bg-emerald-600 text-white border-emerald-400 hover:bg-emerald-700' : 'bg-gradient-to-br from-emerald-500 to-teal-700 text-white border-emerald-300 hover:from-emerald-600 hover:to-teal-800'}">
             <span class="text-3xl font-extrabold text-white">${isDone ? '✓' : currentCount}</span>
             <span class="text-[11px] font-semibold mt-1 opacity-90 text-white">${isDone ? t.completedItem : t.pressToCount}</span>
@@ -1752,7 +1818,7 @@ function renderGroupItems() {
       ${(() => {
         const audioList = normaliseAudioList(Array.isArray(item.audioUrls) && item.audioUrls.length ? item.audioUrls : item.audioUrl, item.count || item.maxCount);
         return audioList.length ? `
-          <div id="audioPlayer-${index}" class="audio-player-compact mt-2 mb-2 p-2 rounded-xl bg-slate-50 dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700">
+          <div data-no-share id="audioPlayer-${index}" class="audio-player-compact mt-2 mb-2 p-2 rounded-xl bg-slate-50 dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700">
             <div class="flex items-center gap-2" dir="ltr">
               <span id="audioCurrent-${index}" class="audio-time text-[10px] tabular-nums text-slate-500 dark:text-slate-300">0:00</span>
               <input id="audioSeek-${index}" type="range" min="0" max="1000" value="0" step="1" oninput="seekAudio(${index}, this.value)" class="flex-1 min-w-0 accent-slate-800 dark:accent-slate-200 cursor-pointer" aria-label="${isEs ? 'Progreso del audio' : 'تقدم الصوت'}">
@@ -1767,13 +1833,13 @@ function renderGroupItems() {
           </div>
         ` : '';
       })()}
-      <div class="flex items-center justify-center space-x-2 space-x-reverse pt-2 border-t border-slate-100 dark:border-slate-700">
+      <div data-no-share class="flex items-center justify-center space-x-2 space-x-reverse pt-2 border-t border-slate-100 dark:border-slate-700">
 
 
         <button type="button" onclick="copyText('${escapeJsStr(getItemShareText(item, isEs))}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="${isEs ? 'Copiar' : 'نسخ'}" aria-label="${isEs ? 'Copiar' : 'نسخ'}">
           📋
         </button>
-        <button type="button" onclick="shareText('${escapeJsStr(getItemShareText(item, isEs))}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="${isEs ? 'Compartir' : 'مشاركة'}" aria-label="${isEs ? 'Compartir' : 'مشاركة'}">
+        <button type="button" onclick="shareCard(this, '${escapeJsStr(getItemShareText(item, isEs))}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="${isEs ? 'Compartir' : 'مشاركة'}" aria-label="${isEs ? 'Compartir' : 'مشاركة'}">
           🔗
         </button>
         <button type="button" onclick="toggleFavorite('${escapeJsStr(itemId)}')" class="p-2.5 rounded-xl ${isFav ? 'bg-rose-100 dark:bg-rose-950 text-rose-600' : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'} hover:bg-rose-100 dark:hover:bg-rose-900 transition cursor-pointer" title="${isEs ? (isFav ? 'Quitar de favoritos' : 'Añadir a favoritos') : (isFav ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة')}" aria-label="${isEs ? (isFav ? 'Quitar de favoritos' : 'Añadir a favoritos') : (isFav ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة')}">
