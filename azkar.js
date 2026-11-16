@@ -1457,18 +1457,15 @@ const azkarData = [
                         ]
                   },
                   {
-                        "itemNumber": 116,
-                        "subtitleAr": "دُعَاءُ سُجُودِ التِّلاَوَةِ",
-                        "subtitleEs": "Súplica para la prosternación por lectura (Suyuud At-Tilawa)",
-                        "text": "سَجَدَ وَجْهِيَ لِلَّذِي خَلَقَهُ، وَشَقَّ سَمْعَهُ وَبَصَرَهُ بِحَوْلِهِ وَقُوَّتِهِ، ﴿فَتَبَارَكَ ٱللَّهُ أَحۡسَنُ ٱلۡخَٰلِقِينَ۝﴾",
-                        "latin": "Sajada wajhiya lilladhī khalaqahu, wa shaqqa samʿahu wa baṣarahu bi-ḥawlihi wa quwwatih, fa-tabāraka Allāhu aḥsanu al-khāliqīn.",
-                        "explanationEs": "Se ha prosternado mi rostro ante Aquel que lo creó y le dio oído y vista con Su poder y fuerza. ¡Bendito sea Allah, el mejor de los creadores!",
-                        "count": 1,
-                        "maxCount": 1,
-                        "note": "سورة المؤمنون الآية 14",
-                        "audioUrls": [
-                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q023-014.mp3"
-                        ]
+                    "itemNumber": 116,
+                    "subtitleAr": "دُعَاءُ سُجُودِ التِّلاَوَةِ",
+                    "subtitleEs": "Súplica para la prosternación por lectura (Suyuud At-Tilawa)",
+                    "text": "سَجَدَ وَجْهِيَ لِلَّذِي خَلَقَهُ، وَشَقَّ سَمْعَهُ وَبَصَرَهُ بِحَوْلِهِ وَقُوَّتِهِ، فَتَبَارَكَ ٱللَّهُ أَحۡسَنُ ٱلۡخَٰلِقِينَ.",
+                    "latin": "Sajada wajhiya lilladhī khalaqahu, wa shaqqa samʿahu wa baṣarahu bi-ḥawlihi wa quwwatih, fa-tabāraka Allāhu aḥsanu al-khāliqīn.",
+                    "explanationEs": "Se ha prosternado mi rostro ante Aquel que lo creó y le dio oído y vista con Su poder y fuerza. ¡Bendito sea Allah, el mejor de los creadores!",
+                    "count": 1,
+                    "maxCount": 1,
+                    "note": "سورة المؤمنون الآية 14"
                   },
                   {
                         "itemNumber": 117,
