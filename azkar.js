@@ -1164,31 +1164,33 @@ const azkarData = [
                       "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2090.mp3"
                     ],
                     "noteBefore": "يُصَلِّي عَلَى النَّبِيِّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ بَعْدَ فَرَاغِهِ مِنْ إِجَابَةِ الْمُؤَذِّنِ:",
-                    "noteBeforeEs": "Invoca bendiciones sobre el Profeta (que la paz y las bendiciones de Allah sean con él) tras responder a la llamada del muecín:"
+                    "noteBeforeEs": "Invoca bendiciones sobre el Profeta (que la paz y las bendiciones de Allah sean con él) tras responder a la llamada del muecín:",
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 91,
+                    "itemNumber": 91,
                     "subtitleAr": "مَا يُقَالُ بَعْدَ الْأَذَانِ",
                     "subtitleEs": "Lo que se dice después del adhán",
-                        "text": "اللَّهُمَّ رَبَّ هَذِهِ الدَّعْوَةِ التَّامَّةِ، وَالصَّلاَةِ الْقَائِمَةِ، آتِ مُحَمَّداً الْوَسِيلَةَ وَالْفَضِيلَةَ، وَابْعَثْهُ مَقَاماً مَحْمُوداً الَّذِي وَعَدْتَهُ، [إِنَّكَ لاَ تُخْلِفُ الْمِيعَادَ].",
-                        "latin": "Allāhumma rabba hādhihi ad-daʿwati at-tāmmah, waṣ-ṣalāti al-qāʾimah, āti Muḥammadan al-wasīlata wal-faḍīlah, wabʿathhu maqāman maḥmūdan alladhī waʿadtah, [innaka lā tukhlifu al-mīʿād].",
-                        "explanationEs": "¡Oh Allah, Señor de esta llamada perfecta y de la oración que se va a celebrar! Concede a Muhammad la cercanía (Al-Wasilah) y la excelencia, y resucítalo en la posición honorable que le has prometido. [Ciertamente Tú no faltas a Tu promesa].",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2091.mp3"
-                        ]
-                  },
-                  {
-                    "itemNumber": 92,
-                    "text": "يَدْعُو لِنَفْسِهِ بَيْنَ الأَذَانِ وَالإِقَامَةِ فَإِنَّ الدُّعَاءَ حِينَئِذٍ لاَ يُرَدُّ.",
-                    "latin": "Yadʿū li-nafsihi bayna al-adhāni wal-iqāmah, fa-inna ad-duʿāʾa ḥīnaʾidhin lā yuradd.",
-                    "explanationEs": "Suplica por sí mismo entre la llamada a la oración (Adhán) y el inicio de la misma (Iqámah), pues la súplica en ese momento no es rechazada.",
+                    "text": "اللَّهُمَّ رَبَّ هَذِهِ الدَّعْوَةِ التَّامَّةِ، وَالصَّلاَةِ الْقَائِمَةِ، آتِ مُحَمَّداً الْوَسِيلَةَ وَالْفَضِيلَةَ، وَابْعَثْهُ مَقَاماً مَحْمُوداً الَّذِي وَعَدْتَهُ، [إِنَّكَ لاَ تُخْلِفُ الْمِيعَادَ].",
+                    "latin": "Allāhumma rabba hādhihi ad-daʿwati at-tāmmah, waṣ-ṣalāti al-qāʾimah, āti Muḥammadan al-wasīlata wal-faḍīlah, wabʿathhu maqāman maḥmūdan alladhī waʿadtah, [innaka lā tukhlifu al-mīʿād].",
+                    "explanationEs": "¡Oh Allah, Señor de esta llamada perfecta y de la oración que se va a celebrar! Concede a Muhammad la cercanía (Al-Wasilah) y la excelencia, y resucítalo en la posición honorable que le has prometido. [Ciertamente Tú no faltas a Tu promesa].",
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2092.mp3"
-                    ]
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2091.mp3"
+                    ],
+                    "noCounter": true
+                  },
+                  {
+                    "itemNumber": 92,
+                    "text": "",
+                    "latin": "",
+                    "explanationEs": "",
+                    "count": 1,
+                    "maxCount": 1,
+                    "noCounter": true,
+                    "noteBefore": "يَدْعُو لِنَفْسِهِ بَيْنَ الأَذَانِ وَالإِقَامَةِ فَإِنَّ الدُّعَاءَ حِينَئِذٍ لاَ يُرَدُّ.",
+                    "noteBeforeEs": "Suplica por sí mismo entre la llamada a la oración (Adhán) y el inicio de la misma (Iqámah), pues la súplica en ese momento no es rechazada."
                   }
             ]
       },
@@ -1198,30 +1200,32 @@ const azkarData = [
             "titleEs": "Azkar de la oración",
             "items": [
                   {
-                        "itemNumber": 93,
-                        "subtitleAr": "دعاء استفتاح الصلاة",
-                        "subtitleEs": "Súplicas de apertura de la oración",
-                        "text": "اللَّهُمَّ بَاعِدْ بَيْنِي وَبَيْنَ خَطَايَايَ كَمَا بَاعَدْتَ بَيْنَ الْمَشْرِقِ وَالْمَغْرِبِ، اللَّهُمَّ نَقِّنِي مِنْ خَطَايَايَ كَمَا يُنَقَّى الثَّوْبُ الْأَبْيَضُ مِنَ الدَّنَسِ، اللَّهُمَّ اغْسِلْنِي مِنْ خَطَايَايَ، بِالثَّلْجِ وَالْمَاءِ وَالْبَرَدِ.",
-                        "latin": "Allāhumma bāʿid baynī wa bayna khaṭāyāya kamā bāʿadta baynal-mashriqi wal-maghrib, Allāhumma naqqinī min khaṭāyāya kamā yunaqqath-thawbul-abyaḍu minad-danas, Allāhumma-ghsilnī min khaṭāyāya bith-thalji wal-māʾi wal-barad.",
-                        "explanationEs": "¡Oh Allah! Aléjame de mis pecados tanto como has alejado el Oriente del Occidente. ¡Oh Allah! Purifícame de mis pecados tal como se limpia una vestidura blanca de la suciedad. ¡Oh Allah! Lava mis pecados con nieve, agua y granizo.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2093.mp3"
-                        ]
+                    "itemNumber": 93,
+                    "subtitleAr": "دعاء استفتاح الصلاة",
+                    "subtitleEs": "Súplicas de apertura de la oración",
+                    "text": "اللَّهُمَّ بَاعِدْ بَيْنِي وَبَيْنَ خَطَايَايَ كَمَا بَاعَدْتَ بَيْنَ الْمَشْرِقِ وَالْمَغْرِبِ، اللَّهُمَّ نَقِّنِي مِنْ خَطَايَايَ كَمَا يُنَقَّى الثَّوْبُ الْأَبْيَضُ مِنَ الدَّنَسِ، اللَّهُمَّ اغْسِلْنِي مِنْ خَطَايَايَ، بِالثَّلْجِ وَالْمَاءِ وَالْبَرَدِ.",
+                    "latin": "Allāhumma bāʿid baynī wa bayna khaṭāyāya kamā bāʿadta baynal-mashriqi wal-maghrib, Allāhumma naqqinī min khaṭāyāya kamā yunaqqath-thawbul-abyaḍu minad-danas, Allāhumma-ghsilnī min khaṭāyāya bith-thalji wal-māʾi wal-barad.",
+                    "explanationEs": "¡Oh Allah! Aléjame de mis pecados tanto como has alejado el Oriente del Occidente. ¡Oh Allah! Purifícame de mis pecados tal como se limpia una vestidura blanca de la suciedad. ¡Oh Allah! Lava mis pecados con nieve, agua y granizo.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2093.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 94,
-                        "subtitleAr": "دعاء استفتاح الصلاة",
-                        "subtitleEs": "Súplicas de apertura de la oración",
-                        "text": "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلاَ إِلَهَ غَيْرُكَ.",
-                        "latin": "Subḥānakallāhumma wa bi-ḥamdika, wa tabārakasmuka, wa taʿālā jadduka, wa lā ilāha ghayruka.",
-                        "explanationEs": "Glorificado seas, ¡Oh Allah!, y alabado seas. Bendito sea Tu Nombre, exaltada sea Tu Majestad, y no hay más divinidad con derecho a ser adorada excepto Tú.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2094.mp3"
-                        ]
+                    "itemNumber": 94,
+                    "subtitleAr": "دعاء استفتاح الصلاة",
+                    "subtitleEs": "Súplicas de apertura de la oración",
+                    "text": "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلاَ إِلَهَ غَيْرُكَ.",
+                    "latin": "Subḥānakallāhumma wa bi-ḥamdika, wa tabārakasmuka, wa taʿālā jadduka, wa lā ilāha ghayruka.",
+                    "explanationEs": "Glorificado seas, ¡Oh Allah!, y alabado seas. Bendito sea Tu Nombre, exaltada sea Tu Majestad, y no hay más divinidad con derecho a ser adorada excepto Tú.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2094.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
                     "itemNumber": 95,
@@ -1234,7 +1238,8 @@ const azkarData = [
                     "maxCount": 1,
                     "audioUrls": [
                       "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2095.mp3"
-                    ]
+                    ],
+                    "noCounter": true
                   },
                   {
                     "itemNumber": 96,
@@ -1248,20 +1253,22 @@ const azkarData = [
                     "maxCount": 1,
                     "audioUrls": [
                       "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2047.mp3"
-                    ]
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 97,
-                        "subtitleAr": "دعاء استفتاح الصلاة",
-                        "subtitleEs": "Súplicas de apertura de la oración",
-                        "text": "اللَّهُ أَكْبَرُ كَبِيراً، اللَّهُ أَكْبَرُ كَبِيراً، اللَّهُ أَكْبَرُ كَبِيراً، وَالْحَمْدُ لِلَّهِ كَثِيراً، وَالْحَمْدُ لِلَّهِ كَثِيراً، وَالْحَمْدُ لِلَّهِ كَثِيراً، وَسُبْحَانَ اللَّهِ بُكْرَةً وَأَصِيلاً (ثَلاَثاً). أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ: مِنْ نَفْخِهِ، وَنَفْثِهِ، وَهَمْزِهِ.",
-                        "latin": "Allāhu akbaru kabīrā, Allāhu akbaru kabīrā, Allāhu akbaru kabīrā, wal-ḥamdu lillāhi kathīrā, wal-ḥamdu lillāhi kathīrā, wal-ḥamdu lillāhi kathīrā, wa subḥāna Allāhi bukratan wa aṣīlā (tres veces). Aʿūdhu billāhi minash-shayṭāni: min nafkhihi, wa nafthihi, wa hamzih.",
-                        "explanationEs": "Allah es el más Grande en grandeza (x3), y alabado sea Allah en abundancia (x3), y glorificado sea Allah por la mañana y por la tarde (x3). Me refugio en Allah de Shaitán: de su orgullo (soplo), de su poesía/hechicería (saliva) y de su locura/susurros.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2097.mp3"
-                        ]
+                    "itemNumber": 97,
+                    "subtitleAr": "دعاء استفتاح الصلاة",
+                    "subtitleEs": "Súplicas de apertura de la oración",
+                    "text": "اللَّهُ أَكْبَرُ كَبِيراً، اللَّهُ أَكْبَرُ كَبِيراً، اللَّهُ أَكْبَرُ كَبِيراً، وَالْحَمْدُ لِلَّهِ كَثِيراً، وَالْحَمْدُ لِلَّهِ كَثِيراً، وَالْحَمْدُ لِلَّهِ كَثِيراً، وَسُبْحَانَ اللَّهِ بُكْرَةً وَأَصِيلاً (ثَلاَثاً). أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ: مِنْ نَفْخِهِ، وَنَفْثِهِ، وَهَمْزِهِ.",
+                    "latin": "Allāhu akbaru kabīrā, Allāhu akbaru kabīrā, Allāhu akbaru kabīrā, wal-ḥamdu lillāhi kathīrā, wal-ḥamdu lillāhi kathīrā, wal-ḥamdu lillāhi kathīrā, wa subḥāna Allāhi bukratan wa aṣīlā (tres veces). Aʿūdhu billāhi minash-shayṭāni: min nafkhihi, wa nafthihi, wa hamzih.",
+                    "explanationEs": "Allah es el más Grande en grandeza (x3), y alabado sea Allah en abundancia (x3), y glorificado sea Allah por la mañana y por la tarde (x3). Me refugio en Allah de Shaitán: de su orgullo (soplo), de su poesía/hechicería (saliva) y de su locura/susurros.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2097.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
                     "itemNumber": 98,
@@ -1274,435 +1281,475 @@ const azkarData = [
                     "maxCount": 1,
                     "audioUrls": [
                       "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2098.mp3"
-                    ]
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 99,
-                        "subtitleAr": "دُعَاءُ الرُّكُوعِ",
-                        "subtitleEs": "Súplica durante la inclinación (Rukūʿ)",
-                        "text": "سُبْحَانَ رَبِّيَ الْعَظِيمِ.",
-                        "latin": "Subḥāna rabbiya al-ʿaẓīm.",
-                        "explanationEs": "Glorificado sea mi Señor, el Grandioso. (Se dice tres veces).",
-                        "count": 3,
-                        "maxCount": 3,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2099.mp3"
-                        ]
+                    "itemNumber": 99,
+                    "subtitleAr": "دُعَاءُ الرُّكُوعِ",
+                    "subtitleEs": "Súplica durante la inclinación (Rukūʿ)",
+                    "text": "سُبْحَانَ رَبِّيَ الْعَظِيمِ.",
+                    "latin": "Subḥāna rabbiya al-ʿaẓīm.",
+                    "explanationEs": "Glorificado sea mi Señor, el Grandioso.",
+                    "count": 3,
+                    "maxCount": 3,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2099.mp3"
+                    ],
+                    "noCounter": true,
+                    "noteAfter": "ثَلَاثَ مَرَّاتٍ أَوْ أَكْثَرَ",
+                    "noteAfterEs": "Tres veces o más",
+                    "note": "",
+                    "audioUrl": "",
+                    "noteBefore": "",
+                    "noteBeforeEs": ""
                   },
                   {
-                        "itemNumber": 100,
-                        "subtitleAr": "دُعَاءُ الرُّكُوعِ",
-                        "subtitleEs": "Súplica durante la inclinación (Rukūʿ)",
-                        "text": "سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ، اللَّهُمَّ اغْفِرْ لِي.",
-                        "latin": "Subḥānaka Allāhumma rabbanā wa bi-ḥamdika, Allāhumma ighfir lī.",
-                        "explanationEs": "Glorificado seas, ¡oh Allah, Señor nuestro!, y alabado seas. ¡Oh Allah! Perdóname.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20100.mp3"
-                        ]
+                    "itemNumber": 100,
+                    "subtitleAr": "دُعَاءُ الرُّكُوعِ",
+                    "subtitleEs": "Súplica durante la inclinación (Rukūʿ)",
+                    "text": "سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ، اللَّهُمَّ اغْفِرْ لِي.",
+                    "latin": "Subḥānaka Allāhumma rabbanā wa bi-ḥamdika, Allāhumma ighfir lī.",
+                    "explanationEs": "Glorificado seas, ¡oh Allah, Señor nuestro!, y alabado seas. ¡Oh Allah! Perdóname.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20100.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 101,
-                        "subtitleAr": "دُعَاءُ الرُّكُوعِ",
-                        "subtitleEs": "Súplica durante la inclinación (Rukūʿ)",
-                        "text": "سُبُّوحٌ، قُدُّوسٌ، رَبُّ الْمَلاَئِكَةِ وَالرُّوحِ.",
-                        "latin": "Subbūḥun, quddūsun, rabbu al-malāʾikati war-rūḥ.",
-                        "explanationEs": "Glorioso, Santísimo, Señor de los ángeles y del Espíritu (el ángel Yibril).",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20101.mp3"
-                        ]
+                    "itemNumber": 101,
+                    "subtitleAr": "دُعَاءُ الرُّكُوعِ",
+                    "subtitleEs": "Súplica durante la inclinación (Rukūʿ)",
+                    "text": "سُبُّوحٌ، قُدُّوسٌ، رَبُّ الْمَلاَئِكَةِ وَالرُّوحِ.",
+                    "latin": "Subbūḥun, quddūsun, rabbu al-malāʾikati war-rūḥ.",
+                    "explanationEs": "Glorioso, Santísimo, Señor de los ángeles y del Espíritu (el ángel Yibril).",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20101.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 102,
-                        "subtitleAr": "دُعَاءُ الرُّكُوعِ",
-                        "subtitleEs": "Súplica durante la inclinación (Rukūʿ)",
-                        "text": "اللَّهُمَّ لَكَ رَكَعْتُ، وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ، خَشَعَ لَكَ سَمْعِي، وَبَصَرِي، وَمُخِّي، وَعَظْمِي، وَعَصَبِي، وَمَا اسْتَقَلَّتْ بِهِ قَدَمِي.",
-                        "latin": "Allāhumma laka rakaʿtu, wa bika āmantu, wa laka aslamtu, khashaʿa laka samʿī, wa baṣarī, wa mukhkhī, wa ʿaẓmī, wa ʿaṣabī, wa mā istaqallat bihi qadamī.",
-                        "explanationEs": "¡Oh Allah! Ante Ti me he inclinado, en Ti he creído y a Ti me he sometido. Se han humillado ante Ti mi oído, mi vista, mi cerebro, mis huesos, mis nervios y lo que sostienen mis pies.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20102.mp3"
-                        ]
+                    "itemNumber": 102,
+                    "subtitleAr": "دُعَاءُ الرُّكُوعِ",
+                    "subtitleEs": "Súplica durante la inclinación (Rukūʿ)",
+                    "text": "اللَّهُمَّ لَكَ رَكَعْتُ، وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ، خَشَعَ لَكَ سَمْعِي، وَبَصَرِي، وَمُخِّي، وَعَظْمِي، وَعَصَبِي، وَمَا اسْتَقَلَّتْ بِهِ قَدَمِي.",
+                    "latin": "Allāhumma laka rakaʿtu, wa bika āmantu, wa laka aslamtu, khashaʿa laka samʿī, wa baṣarī, wa mukhkhī, wa ʿaẓmī, wa ʿaṣabī, wa mā istaqallat bihi qadamī.",
+                    "explanationEs": "¡Oh Allah! Ante Ti me he inclinado, en Ti he creído y a Ti me he sometido. Se han humillado ante Ti mi oído, mi vista, mi cerebro, mis huesos, mis nervios y lo que sostienen mis pies.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20102.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 103,
-                        "subtitleAr": "دُعَاءُ الرُّكُوعِ",
-                        "subtitleEs": "Súplica durante la inclinación (Rukūʿ)",
-                        "text": "سُبْحَانَ ذِي الْجَبَرُوتِ، وَالْمَلَكُوتِ، وَالْكِبْرِيَاءِ، وَالْعَظَمَةِ.",
-                        "latin": "Subḥāna dhī al-jabarūti, wal-malakūti, wal-kibriyāʾi, wal-ʿaẓamah.",
-                        "explanationEs": "Glorificado sea el Poseedor del poder absoluto, la soberanía, la grandeza y la majestad.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20103.mp3"
-                        ]
+                    "itemNumber": 103,
+                    "subtitleAr": "دُعَاءُ الرُّكُوعِ",
+                    "subtitleEs": "Súplica durante la inclinación (Rukūʿ)",
+                    "text": "سُبْحَانَ ذِي الْجَبَرُوتِ، وَالْمَلَكُوتِ، وَالْكِبْرِيَاءِ، وَالْعَظَمَةِ.",
+                    "latin": "Subḥāna dhī al-jabarūti, wal-malakūti, wal-kibriyāʾi, wal-ʿaẓamah.",
+                    "explanationEs": "Glorificado sea el Poseedor del poder absoluto, la soberanía, la grandeza y la majestad.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20103.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 104,
-                        "subtitleAr": "دُعَاءُ الرَّفْعِ مِنَ الرُّكُوعِ",
-                        "subtitleEs": "Súplica al levantarse de la inclinación (Rukūʿ)",
-                        "text": "سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ.",
-                        "latin": "Samiʿa Allāhu liman ḥamidah.",
-                        "explanationEs": "Allah escucha a quien lo alaba.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20104.mp3"
-                        ]
+                    "itemNumber": 104,
+                    "subtitleAr": "دُعَاءُ الرَّفْعِ مِنَ الرُّكُوعِ",
+                    "subtitleEs": "Súplica al levantarse de la inclinación (Rukūʿ)",
+                    "text": "سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ.",
+                    "latin": "Samiʿa Allāhu liman ḥamidah.",
+                    "explanationEs": "Allah escucha a quien lo alaba.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20104.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 105,
-                        "subtitleAr": "دُعَاءُ الرَّفْعِ مِنَ الرُّكُوعِ",
-                        "subtitleEs": "Súplica al levantarse de la inclinación (Rukūʿ)",
-                        "text": "رَبَّنَا وَلَكَ الْحَمْدُ، حَمْداً كَثِيراً طَيِّباً مُبَارَكاً فِيهِ.",
-                        "latin": "Rabbanā wa laka al-ḥamdu, ḥamdan kathīran ṭayyiban mubārakan fīh.",
-                        "explanationEs": "¡Señor nuestro! A Ti pertenecen las alabanzas, alabanzas abundantes, puras y benditas.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20105.mp3"
-                        ]
+                    "itemNumber": 105,
+                    "subtitleAr": "دُعَاءُ الرَّفْعِ مِنَ الرُّكُوعِ",
+                    "subtitleEs": "Súplica al levantarse de la inclinación (Rukūʿ)",
+                    "text": "رَبَّنَا وَلَكَ الْحَمْدُ، حَمْداً كَثِيراً طَيِّباً مُبَارَكاً فِيهِ.",
+                    "latin": "Rabbanā wa laka al-ḥamdu, ḥamdan kathīran ṭayyiban mubārakan fīh.",
+                    "explanationEs": "¡Señor nuestro! A Ti pertenecen las alabanzas, alabanzas abundantes, puras y benditas.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20105.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 106,
-                        "subtitleAr": "دُعَاءُ الرَّفْعِ مِنَ الرُّكُوعِ",
-                        "subtitleEs": "Súplica al levantarse de la inclinación (Rukūʿ)",
-                        "text": "مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ، وَمَا بَيْنَهُمَا، وَمِلْءَ مَا شِئْتَ مِنْ شَيْءٍ بَعْدُ. أَهْلَ الثَّنَاءِ وَالْمَجْدِ، أَحَقُّ مَا قَالَ الْعَبْدُ، وَكُلُّنَا لَكَ عَبْدٌ. اللَّهُمَّ لاَ مَانِعَ لِمَا أَعْطَيْتَ، وَلاَ مُعْطِيَ لِمَا مَنَعْتَ، وَلاَ يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ.",
-                        "latin": "Milʾa as-samāwāti wa milʾa al-arḍi, wa mā baynahumā, wa milʾa mā shiʾta min shayʾin baʿd. Ahla ath-thanāʾi wal-majd, aḥaqqu mā qāla al-ʿabdu, wa kullunā laka ʿabd. Allāhumma lā māniʿa limā aʿṭayta, wa lā muʿṭiya limā manaʿta, wa lā yanfaʿu dhā al-jaddi minka al-jadd.",
-                        "explanationEs": "[Alabanzas que llenan] los cielos, la tierra, lo que hay entre ambos y cuanto Tú desees después. Digno de alabanza y gloria; es lo más verdadero que dice un siervo, y todos somos Tus siervos. ¡Oh Allah! Nadie puede privar lo que Tú concedes, ni nadie puede conceder lo que Tú privas, y la riqueza no beneficia a quien la posee frente a Ti.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20106.mp3"
-                        ]
+                    "itemNumber": 106,
+                    "subtitleAr": "دُعَاءُ الرَّفْعِ مِنَ الرُّكُوعِ",
+                    "subtitleEs": "Súplica al levantarse de la inclinación (Rukūʿ)",
+                    "text": "مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ، وَمَا بَيْنَهُمَا، وَمِلْءَ مَا شِئْتَ مِنْ شَيْءٍ بَعْدُ. أَهْلَ الثَّنَاءِ وَالْمَجْدِ، أَحَقُّ مَا قَالَ الْعَبْدُ، وَكُلُّنَا لَكَ عَبْدٌ. اللَّهُمَّ لاَ مَانِعَ لِمَا أَعْطَيْتَ، وَلاَ مُعْطِيَ لِمَا مَنَعْتَ، وَلاَ يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ.",
+                    "latin": "Milʾa as-samāwāti wa milʾa al-arḍi, wa mā baynahumā, wa milʾa mā shiʾta min shayʾin baʿd. Ahla ath-thanāʾi wal-majd, aḥaqqu mā qāla al-ʿabdu, wa kullunā laka ʿabd. Allāhumma lā māniʿa limā aʿṭayta, wa lā muʿṭiya limā manaʿta, wa lā yanfaʿu dhā al-jaddi minka al-jadd.",
+                    "explanationEs": "[Alabanzas que llenan] los cielos, la tierra, lo que hay entre ambos y cuanto Tú desees después. Digno de alabanza y gloria; es lo más verdadero que dice un siervo, y todos somos Tus siervos. ¡Oh Allah! Nadie puede privar lo que Tú concedes, ni nadie puede conceder lo que Tú privas, y la riqueza no beneficia a quien la posee frente a Ti.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20106.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 107,
-                        "subtitleAr": "دُعَاءُ السُّجُودِ",
-                        "subtitleEs": "Súplica durante la prosternación (Suyūd)",
-                        "text": "سُبْحَانَ رَبِّيَ الأَعْلَى.",
-                        "latin": "Subḥāna rabbiya al-aʿlā.",
-                        "explanationEs": "Glorificado sea mi Señor, el Altísimo. (Se dice tres veces).",
-                        "count": 3,
-                        "maxCount": 3,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20107.mp3"
-                        ]
+                    "itemNumber": 107,
+                    "subtitleAr": "دُعَاءُ السُّجُودِ",
+                    "subtitleEs": "Súplica durante la prosternación (Suyūd)",
+                    "text": "سُبْحَانَ رَبِّيَ الأَعْلَى.",
+                    "latin": "Subḥāna rabbiya al-aʿlā.",
+                    "explanationEs": "Glorificado sea mi Señor, el Altísimo.",
+                    "count": 3,
+                    "maxCount": 3,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20107.mp3"
+                    ],
+                    "noCounter": true,
+                    "noteAfter": "ثَلَاثَ مَرَّاتٍ أَوْ أَكْثَرَ",
+                    "noteAfterEs": "Tres veces o más"
                   },
                   {
-                        "itemNumber": 108,
-                        "subtitleAr": "دُعَاءُ السُّجُودِ",
-                        "subtitleEs": "Súplica durante la prosternación (Suyūd)",
-                        "text": "سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ، اللَّهُمَّ اغْفِرْ لِي.",
-                        "latin": "Subḥānaka Allāhumma rabbanā wa bi-ḥamdika, Allāhumma ighfir lī.",
-                        "explanationEs": "Glorificado seas, ¡oh Allah, Señor nuestro!, y alabado seas. ¡Oh Allah! Perdóname.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20100.mp3"
-                        ]
+                    "itemNumber": 108,
+                    "subtitleAr": "دُعَاءُ السُّجُودِ",
+                    "subtitleEs": "Súplica durante la prosternación (Suyūd)",
+                    "text": "سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ، اللَّهُمَّ اغْفِرْ لِي.",
+                    "latin": "Subḥānaka Allāhumma rabbanā wa bi-ḥamdika, Allāhumma ighfir lī.",
+                    "explanationEs": "Glorificado seas, ¡oh Allah, Señor nuestro!, y alabado seas. ¡Oh Allah! Perdóname.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20100.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 109,
-                        "subtitleAr": "دُعَاءُ السُّجُودِ",
-                        "subtitleEs": "Súplica durante la prosternación (Suyūd)",
-                        "text": "سُبُّوحٌ، قُدُّوسٌ، رَبُّ الْمَلَائِكَةِ وَالرُّوحِ.",
-                        "latin": "Subbūḥun, quddūsun, rabbu al-malāʾikati war-rūḥ.",
-                        "explanationEs": "Glorioso, Santísimo, Señor de los ángeles y del Espíritu (el ángel Yibril).",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20101.mp3"
-                        ]
+                    "itemNumber": 109,
+                    "subtitleAr": "دُعَاءُ السُّجُودِ",
+                    "subtitleEs": "Súplica durante la prosternación (Suyūd)",
+                    "text": "سُبُّوحٌ، قُدُّوسٌ، رَبُّ الْمَلَائِكَةِ وَالرُّوحِ.",
+                    "latin": "Subbūḥun, quddūsun, rabbu al-malāʾikati war-rūḥ.",
+                    "explanationEs": "Glorioso, Santísimo, Señor de los ángeles y del Espíritu (el ángel Yibril).",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20101.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 110,
-                        "subtitleAr": "دُعَاءُ السُّجُودِ",
-                        "subtitleEs": "Súplica durante la prosternación (Suyūd)",
-                        "text": "اللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ، سَجَدَ وَجْهِيَ لِلَّذِي خَلَقَهُ، وَصَوَّرَهُ، وَشَقَّ سَمْعَهُ وَبَصَرَهُ، تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ.",
-                        "latin": "Allāhumma laka sajadtu wa bika āmantu, wa laka aslamtu, sajada wajhiya lilladhī khalaqahu, wa ṣawwarahu, wa shaqqa samʿahu wa baṣarahu, tabāraka Allāhu aḥsanu al-khāliqīn.",
-                        "explanationEs": "¡Oh Allah! Ante Ti me he prosternado, en Ti he creído y a Ti me he sometido. Se ha prosternado mi rostro ante Aquel que lo creó, le dio forma y abrió su oído y su vista. Bendito sea Allah, el mejor de los creadores.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20110.mp3"
-                        ]
+                    "itemNumber": 110,
+                    "subtitleAr": "دُعَاءُ السُّجُودِ",
+                    "subtitleEs": "Súplica durante la prosternación (Suyūd)",
+                    "text": "اللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ، سَجَدَ وَجْهِيَ لِلَّذِي خَلَقَهُ، وَصَوَّرَهُ، وَشَقَّ سَمْعَهُ وَبَصَرَهُ، تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ.",
+                    "latin": "Allāhumma laka sajadtu wa bika āmantu, wa laka aslamtu, sajada wajhiya lilladhī khalaqahu, wa ṣawwarahu, wa shaqqa samʿahu wa baṣarahu, tabāraka Allāhu aḥsanu al-khāliqīn.",
+                    "explanationEs": "¡Oh Allah! Ante Ti me he prosternado, en Ti he creído y a Ti me he sometido. Se ha prosternado mi rostro ante Aquel que lo creó, le dio forma y abrió su oído y su vista. Bendito sea Allah, el mejor de los creadores.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20110.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 111,
-                        "subtitleAr": "دُعَاءُ السُّجُودِ",
-                        "subtitleEs": "Súplica durante la prosternación (Suyūd)",
-                        "text": "سُبْحَانَ ذِي الْجَبَرُوتِ، وَالْمَلَكُوتِ، وَالْكِبْرِيَاءِ، وَالْعَظَمَةِ.",
-                        "latin": "Subḥāna dhī al-jabarūti, wal-malakūti, wal-kibriyāʾi, wal-ʿaẓamah.",
-                        "explanationEs": "Glorificado sea el Poseedor del poder absoluto, la soberanía, la grandeza y la majestad.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20103.mp3"
-                        ]
+                    "itemNumber": 111,
+                    "subtitleAr": "دُعَاءُ السُّجُودِ",
+                    "subtitleEs": "Súplica durante la prosternación (Suyūd)",
+                    "text": "سُبْحَانَ ذِي الْجَبَرُوتِ، وَالْمَلَكُوتِ، وَالْكِبْرِيَاءِ، وَالْعَظَمَةِ.",
+                    "latin": "Subḥāna dhī al-jabarūti, wal-malakūti, wal-kibriyāʾi, wal-ʿaẓamah.",
+                    "explanationEs": "Glorificado sea el Poseedor del poder absoluto, la soberanía, la grandeza y la majestad.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20103.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 112,
-                        "subtitleAr": "دُعَاءُ السُّجُودِ",
-                        "subtitleEs": "Súplica durante la prosternación (Suyūd)",
-                        "text": "اللَّهُمَّ اغْفِرْ لِي ذَنْبِي كُلَّهُ: دِقَّهُ وَجِلَّهُ، وَأَوَّلَهُ وَآخِرَهُ، وَعَلاَنِيَّتَهُ وَسِرَّهُ.",
-                        "latin": "Allāhumma ighfir lī dhanbī kullah: diqqahu wa jillahu, wa awwalahu wa ākhirahu, wa ʿalāniyatahu wa sirrah.",
-                        "explanationEs": "¡Oh Allah! Perdóname todos mis pecados: los pequeños y los grandes, los primeros y los últimos, los públicos y los secretos.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2035.mp3"
-                        ]
+                    "itemNumber": 112,
+                    "subtitleAr": "دُعَاءُ السُّجُودِ",
+                    "subtitleEs": "Súplica durante la prosternación (Suyūd)",
+                    "text": "اللَّهُمَّ اغْفِرْ لِي ذَنْبِي كُلَّهُ: دِقَّهُ وَجِلَّهُ، وَأَوَّلَهُ وَآخِرَهُ، وَعَلاَنِيَّتَهُ وَسِرَّهُ.",
+                    "latin": "Allāhumma ighfir lī dhanbī kullah: diqqahu wa jillahu, wa awwalahu wa ākhirahu, wa ʿalāniyatahu wa sirrah.",
+                    "explanationEs": "¡Oh Allah! Perdóname todos mis pecados: los pequeños y los grandes, los primeros y los últimos, los públicos y los secretos.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2035.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 113,
-                        "subtitleAr": "دُعَاءُ السُّجُودِ",
-                        "subtitleEs": "Súplica durante la prosternación (Suyūd)",
-                        "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِرِضَاكَ مِنْ سَخَطِكَ، وَبِمُعَافَاتِكَ مِنْ عُقُوبَتِكَ، وَأَعُوذُ بِكَ مِنْكَ، لاَ أُحْصِي ثَنَاءً عَلَيْكَ، أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ.",
-                        "latin": "Allāhumma innī aʿūdhu bi-riḍāka min sakhaṭika, wa bi-muʿāfātika min ʿuqūbatika, wa aʿūdhu bika minka, lā uḥṣī thanāʾan ʿalayka, anta kamā athnayta ʿalā nafsik.",
-                        "explanationEs": "¡Oh Allah! Me refugio en Tu complacencia de Tu enojo, en Tu perdón de Tu castigo, y me refugio en Ti de Ti. No puedo enumerar Tus alabanzas; Tú eres tal como Te has alabado a Ti mismo.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2048.mp3"
-                        ]
+                    "itemNumber": 113,
+                    "subtitleAr": "دُعَاءُ السُّجُودِ",
+                    "subtitleEs": "Súplica durante la prosternación (Suyūd)",
+                    "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِرِضَاكَ مِنْ سَخَطِكَ، وَبِمُعَافَاتِكَ مِنْ عُقُوبَتِكَ، وَأَعُوذُ بِكَ مِنْكَ، لاَ أُحْصِي ثَنَاءً عَلَيْكَ، أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ.",
+                    "latin": "Allāhumma innī aʿūdhu bi-riḍāka min sakhaṭika, wa bi-muʿāfātika min ʿuqūbatika, wa aʿūdhu bika minka, lā uḥṣī thanāʾan ʿalayka, anta kamā athnayta ʿalā nafsik.",
+                    "explanationEs": "¡Oh Allah! Me refugio en Tu complacencia de Tu enojo, en Tu perdón de Tu castigo, y me refugio en Ti de Ti. No puedo enumerar Tus alabanzas; Tú eres tal como Te has alabado a Ti mismo.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2048.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 114,
-                        "subtitleAr": "دُعَاءُ الجَلْسَةِ بَيْنَ السَّجْدَتَيْنِ",
-                        "subtitleEs": "Súplica en la sentada entre las dos prosternaciones",
-                        "text": "رَبِّ اغْفِرْ لِي، رَبِّ اغْفِرْ لِي.",
-                        "latin": "Rabbi ighfir lī, Rabbi ighfir lī.",
-                        "explanationEs": "Señor mío perdóname, Señor mío perdóname.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20114.mp3"
-                        ]
+                    "itemNumber": 114,
+                    "subtitleAr": "دُعَاءُ الجَلْسَةِ بَيْنَ السَّجْدَتَيْنِ",
+                    "subtitleEs": "Súplica en la sentada entre las dos prosternaciones",
+                    "text": "رَبِّ اغْفِرْ لِي، رَبِّ اغْفِرْ لِي.",
+                    "latin": "Rabbi ighfir lī, Rabbi ighfir lī.",
+                    "explanationEs": "Señor mío perdóname, Señor mío perdóname.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20114.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 115,
-                        "subtitleAr": "دُعَاءُ الجَلْسَةِ بَيْنَ السَّجْدَتَيْنِ",
-                        "subtitleEs": "Súplica en la sentada entre las dos prosternaciones",
-                        "text": "اللَّهُمَّ اغْفِرْ لِي، وَارْحَمْنِي، وَاهْدِنِي، وَاجْبُرْنِي، وَعَافِنِي، وَارْزُقْنِي، وَارْفَعْنِي.",
-                        "latin": "Allāhumma ighfir lī, warḥamnī, wahdinī, wajburnī, wa ʿāfinī, warzuqnī, warfaʿnī.",
-                        "explanationEs": "¡Oh Allah! Perdóname, ten misericordia de mí, guíame, reconforta mis carencias, dame salud, susténtame y elévame.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20115.mp3"
-                        ]
+                    "itemNumber": 115,
+                    "subtitleAr": "دُعَاءُ الجَلْسَةِ بَيْنَ السَّجْدَتَيْنِ",
+                    "subtitleEs": "Súplica en la sentada entre las dos prosternaciones",
+                    "text": "اللَّهُمَّ اغْفِرْ لِي، وَارْحَمْنِي، وَاهْدِنِي، وَاجْبُرْنِي، وَعَافِنِي، وَارْزُقْنِي، وَارْفَعْنِي.",
+                    "latin": "Allāhumma ighfir lī, warḥamnī, wahdinī, wajburnī, wa ʿāfinī, warzuqnī, warfaʿnī.",
+                    "explanationEs": "¡Oh Allah! Perdóname, ten misericordia de mí, guíame, reconforta mis carencias, dame salud, susténtame y elévame.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20115.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
                     "itemNumber": 116,
                     "subtitleAr": "دُعَاءُ سُجُودِ التِّلاَوَةِ",
                     "subtitleEs": "Súplica para la prosternación por lectura (Suyuud At-Tilawa)",
-                    "text": "سَجَدَ وَجْهِيَ لِلَّذِي خَلَقَهُ، وَشَقَّ سَمْعَهُ وَبَصَرَهُ بِحَوْلِهِ وَقُوَّتِهِ، فَتَبَارَكَ ٱللَّهُ أَحۡسَنُ ٱلۡخَٰلِقِينَ.",
-                    "latin": "Sajada wajhiya lilladhī khalaqahu, wa shaqqa samʿahu wa baṣarahu bi-ḥawlihi wa quwwatih, fa-tabāraka Allāhu aḥsanu al-khāliqīn.",
-                    "explanationEs": "Se ha prosternado mi rostro ante Aquel que lo creó y le dio oído y vista con Su poder y fuerza. ¡Bendito sea Allah, el mejor de los creadores!",
+                    "text": "اللَّهُمَّ لَكَ سَجَدْتُ، وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ، سَجَدَ وَجْهِيَ لِلَّذِي خَلَقَهُ وَصَوَّرَهُ، وَشَقَّ سَمْعَهُ وَبَصَرَهُ، تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ.",
+                    "latin": "Allāhumma laka sajadtu, wa bika āmantu, wa laka aslamtu. Sajada wajhiya lilladhī khalaqahu wa ṣawwarahu, wa shaqqa samʿahu wa baṣarahu. Tabāraka Allāhu aḥsanu al-khāliqīn.",
+                    "explanationEs": "¡Oh, Allah! Ante Ti me he postrado, en Ti he creído y a Ti me he sometido. Mi rostro se ha postrado ante Aquel que lo creó y le dio forma, y le concedió el oído y la vista. ¡Bendito sea Allah, el mejor de los creadores!",
                     "count": 1,
                     "maxCount": 1,
-                    "note": "سورة المؤمنون الآية 14"
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 117,
-                        "subtitleAr": "دُعَاءُ سُجُودِ التِّلاَوَةِ",
-                        "subtitleEs": "Súplica para la prosternación por lectura (Suyuud At-Tilawa)",
-                        "text": "اللَّهُمَّ اكْتُبْ لِي بِهَا عِنْدَكَ أَجْراً، وَضَعْ عَنِّي بِهَا وِزْراً، وَاجْعَلْهَا لِي عِنْدَكَ ذُخْراً، وَتَقَبَّلْهَا مِنِّي كَمَا تَقَبَّلْتَهَا مِنْ عَبْدِكَ دَاوُدَ.",
-                        "latin": "Allāhumma iktub lī bihā ʿindaka ajran, wa ḍaʿ ʿannī bihā wizran, wa ijʿalhā lī ʿindaka dhukhran, wa taqabbalhā minnī kamā taqabbaltahā min ʿabdika Dāwūd.",
-                        "explanationEs": "¡Oh Allah! Anota para mí por ella (esta prosternación) una recompensa ante Ti, quítame con ella una carga, hazla para mí un tesoro ante Ti y acéptala de mí como la aceptaste de Tu siervo Dawud.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20117.mp3"
-                        ]
+                    "itemNumber": 117,
+                    "subtitleAr": "دُعَاءُ سُجُودِ التِّلاَوَةِ",
+                    "subtitleEs": "Súplica para la prosternación por lectura (Suyuud At-Tilawa)",
+                    "text": "اللَّهُمَّ اكْتُبْ لِي بِهَا عِنْدَكَ أَجْراً، وَضَعْ عَنِّي بِهَا وِزْراً، وَاجْعَلْهَا لِي عِنْدَكَ ذُخْراً، وَتَقَبَّلْهَا مِنِّي كَمَا تَقَبَّلْتَهَا مِنْ عَبْدِكَ دَاوُدَ.",
+                    "latin": "Allāhumma iktub lī bihā ʿindaka ajran, wa ḍaʿ ʿannī bihā wizran, wa ijʿalhā lī ʿindaka dhukhran, wa taqabbalhā minnī kamā taqabbaltahā min ʿabdika Dāwūd.",
+                    "explanationEs": "¡Oh Allah! Anota para mí por ella (esta prosternación) una recompensa ante Ti, quítame con ella una carga, hazla para mí un tesoro ante Ti y acéptala de mí como la aceptaste de Tu siervo Dawud.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20117.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 118,
-                        "subtitleAr": "التَّشَهُّدُ",
-                        "subtitleEs": "El Tashahhud",
-                        "text": "التَّحِيَّاتُ لِلَّهِ، وَالصَّلَوَاتُ، وَالطَّيِّبَاتُ، السَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلاَمُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ. أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّداً عَبْدُهُ وَرَسُولُهُ.",
-                        "latin": "At-taḥiyyātu lillāhi, waṣ-ṣalawātu, waṭ-ṭayyibāt. As-salāmu ʿalayka ayyuhā an-nabiyyu wa raḥmatu Allāhi wa barakātuh, as-salāmu ʿalaynā wa ʿalā ʿibādillāhi aṣ-ṣāliḥīn. Ashhadu an lā ilāha illā Allāhu wa ashhadu anna Muḥammadan ʿabduhu wa rasūluh.",
-                        "explanationEs": "Todas las veneraciones, oraciones y buenas palabras pertenecen a Allah. La paz sea contigo, ¡oh Profeta!, así como la misericordia de Allah y Sus bendiciones. La paz sea con nosotros y con los siervos piadosos de Allah. Atestiguo que no hay más divinidad que Allah y atestiguo que Muhammad es Su siervo y mensajero.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20118.mp3"
-                        ]
+                    "itemNumber": 118,
+                    "subtitleAr": "التَّشَهُّدُ",
+                    "subtitleEs": "El Tashahhud",
+                    "text": "التَّحِيَّاتُ لِلَّهِ، وَالصَّلَوَاتُ، وَالطَّيِّبَاتُ، السَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلاَمُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ. أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّداً عَبْدُهُ وَرَسُولُهُ.",
+                    "latin": "At-taḥiyyātu lillāhi, waṣ-ṣalawātu, waṭ-ṭayyibāt. As-salāmu ʿalayka ayyuhā an-nabiyyu wa raḥmatu Allāhi wa barakātuh, as-salāmu ʿalaynā wa ʿalā ʿibādillāhi aṣ-ṣāliḥīn. Ashhadu an lā ilāha illā Allāhu wa ashhadu anna Muḥammadan ʿabduhu wa rasūluh.",
+                    "explanationEs": "Todas las veneraciones, oraciones y buenas palabras pertenecen a Allah. La paz sea contigo, ¡oh Profeta!, así como la misericordia de Allah y Sus bendiciones. La paz sea con nosotros y con los siervos piadosos de Allah. Atestiguo que no hay más divinidad que Allah y atestiguo que Muhammad es Su siervo y mensajero.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20118.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 119,
-                        "subtitleAr": "الصَّلاَةُ عَلَى النَّبِيِّ بَعْدَ التَّشَهُّدِ",
-                        "subtitleEs": "Súplica por el Profeta tras el Tashahhud",
-                        "text": "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ، وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ، وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ.",
-                        "latin": "Allāhumma ṣalli ʿalā Muḥammadin, wa ʿalā āli Muḥammad, kamā ṣallayta ʿalā Ibrāhīma, wa ʿalā āli Ibrāhīm, innaka ḥamīdun majīd. Allāhumma bārik ʿalā Muḥammadin wa ʿalā āli Muḥammad, kamā bārakta ʿalā Ibrāhīma wa ʿalā āli Ibrāhīm, innaka ḥamīdun majīd.",
-                        "explanationEs": "¡Oh Allah! Exalta a Muhammad y a la familia de Muhammad, como exaltaste a Ibrahim y a la familia de Ibrahim; ciertamente Tú eres Loable, Glorioso. ¡Oh Allah! Bendice a Muhammad y a la familia de Muhammad, como bendijiste a Ibrahim y a la familia de Ibrahim; ciertamente Tú eres Loable, Glorioso.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2060.mp3"
-                        ]
+                    "itemNumber": 119,
+                    "subtitleAr": "الصَّلاَةُ عَلَى النَّبِيِّ بَعْدَ التَّشَهُّدِ",
+                    "subtitleEs": "Súplica por el Profeta tras el Tashahhud",
+                    "text": "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ، وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ، وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ.",
+                    "latin": "Allāhumma ṣalli ʿalā Muḥammadin, wa ʿalā āli Muḥammad, kamā ṣallayta ʿalā Ibrāhīma, wa ʿalā āli Ibrāhīm, innaka ḥamīdun majīd. Allāhumma bārik ʿalā Muḥammadin wa ʿalā āli Muḥammad, kamā bārakta ʿalā Ibrāhīma wa ʿalā āli Ibrāhīm, innaka ḥamīdun majīd.",
+                    "explanationEs": "¡Oh Allah! Exalta a Muhammad y a la familia de Muhammad, como exaltaste a Ibrahim y a la familia de Ibrahim; ciertamente Tú eres Loable, Glorioso. ¡Oh Allah! Bendice a Muhammad y a la familia de Muhammad, como bendijiste a Ibrahim y a la familia de Ibrahim; ciertamente Tú eres Loable, Glorioso.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2060.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 120,
-                        "subtitleAr": "الصَّلاَةُ عَلَى النَّبِيِّ بَعْدَ التَّشَهُّدِ",
-                        "subtitleEs": "Súplica por el Profeta tras el Tashahhud",
-                        "text": "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى أَزْوَاجِهِ وَذُرِّيَّتِهِ، كَمَا صَلَّيْتَ عَلَى آلِ إِبْرَاهِيمَ. وَبَارِكْ عَلَى مُحَمَّدٍ وَعَلَى أَزْوَاجِهِ وَذُرِّيَّتِهِ، كَمَا بَارَكْتَ عَلَى آلِ إِبْرَاهِيمَ. إِنَّكَ حَمِيدٌ مَجِيدٌ.",
-                        "latin": "Allāhumma ṣalli ʿalā Muḥammadin wa ʿalā azwājihi wa dhurriyyatih, kamā ṣallayta ʿalā āli Ibrāhīm. Wa bārik ʿalā Muḥammadin wa ʿalā azwājihi wa dhurriyyatih, kamā bārakta ʿalā āli Ibrāhīm. Innaka ḥamīdun majīd.",
-                        "explanationEs": "¡Oh Allah! Exalta a Muhammad, a sus esposas y a su descendencia, como exaltaste a la familia de Ibrahim. Y bendice a Muhammad, a sus esposas y a su descendencia, como bendijiste a la familia de Ibrahim. Ciertamente Tú eres Loable, Glorioso.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20120.mp3"
-                        ]
+                    "itemNumber": 120,
+                    "subtitleAr": "الصَّلاَةُ عَلَى النَّبِيِّ بَعْدَ التَّشَهُّدِ",
+                    "subtitleEs": "Súplica por el Profeta tras el Tashahhud",
+                    "text": "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى أَزْوَاجِهِ وَذُرِّيَّتِهِ، كَمَا صَلَّيْتَ عَلَى آلِ إِبْرَاهِيمَ. وَبَارِكْ عَلَى مُحَمَّدٍ وَعَلَى أَزْوَاجِهِ وَذُرِّيَّتِهِ، كَمَا بَارَكْتَ عَلَى آلِ إِبْرَاهِيمَ. إِنَّكَ حَمِيدٌ مَجِيدٌ.",
+                    "latin": "Allāhumma ṣalli ʿalā Muḥammadin wa ʿalā azwājihi wa dhurriyyatih, kamā ṣallayta ʿalā āli Ibrāhīm. Wa bārik ʿalā Muḥammadin wa ʿalā azwājihi wa dhurriyyatih, kamā bārakta ʿalā āli Ibrāhīm. Innaka ḥamīdun majīd.",
+                    "explanationEs": "¡Oh Allah! Exalta a Muhammad, a sus esposas y a su descendencia, como exaltaste a la familia de Ibrahim. Y bendice a Muhammad, a sus esposas y a su descendencia, como bendijiste a la familia de Ibrahim. Ciertamente Tú eres Loable, Glorioso.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20120.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 121,
-                        "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
-                        "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
-                        "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَمِنْ عَذَابِ جَهَنَّمَ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ.",
-                        "latin": "Allāhumma innī aʿūdhu bika min ʿadhābi al-qabr, wa min ʿadhābi jahannam, wa min fitnati al-maḥyā wal-mamāt, wa min sharri fitnati al-masīḥi ad-dajjāl.",
-                        "explanationEs": "¡Oh Allah! Me refugio en Ti del castigo de la tumba, del castigo del Infierno, de las pruebas de la vida y de la muerte, y del mal de la prueba del Falso Mesías (Anticristo).",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20121.mp3"
-                        ]
+                    "itemNumber": 121,
+                    "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
+                    "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
+                    "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَمِنْ عَذَابِ جَهَنَّمَ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ.",
+                    "latin": "Allāhumma innī aʿūdhu bika min ʿadhābi al-qabr, wa min ʿadhābi jahannam, wa min fitnati al-maḥyā wal-mamāt, wa min sharri fitnati al-masīḥi ad-dajjāl.",
+                    "explanationEs": "¡Oh Allah! Me refugio en Ti del castigo de la tumba, del castigo del Infierno, de las pruebas de la vida y de la muerte, y del mal de la prueba del Falso Mesías (Anticristo).",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20121.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 122,
-                        "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
-                        "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
-                        "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْمَأْثَمِ وَالْمَغْرَمِ.",
-                        "latin": "Allāhumma innī aʿūdhu bika min ʿadhābi al-qabr, wa aʿūdhu bika min fitnati al-masīḥi ad-dajjāl, wa aʿūdhu bika min fitnati al-maḥyā wal-mamāt. Allāhumma innī aʿūdhu bika minal-maʾthami wal-maghram.",
-                        "explanationEs": "¡Oh Allah! Me refugio en Ti del castigo de la tumba, del juicio del Falso Mesías, y de las pruebas de la vida y de la muerte. ¡Oh Allah! Me refugio en Ti del pecado y de las deudas agobiantes.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20122.mp3"
-                        ]
+                    "itemNumber": 122,
+                    "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
+                    "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
+                    "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْمَأْثَمِ وَالْمَغْرَمِ.",
+                    "latin": "Allāhumma innī aʿūdhu bika min ʿadhābi al-qabr, wa aʿūdhu bika min fitnati al-masīḥi ad-dajjāl, wa aʿūdhu bika min fitnati al-maḥyā wal-mamāt. Allāhumma innī aʿūdhu bika minal-maʾthami wal-maghram.",
+                    "explanationEs": "¡Oh Allah! Me refugio en Ti del castigo de la tumba, del juicio del Falso Mesías, y de las pruebas de la vida y de la muerte. ¡Oh Allah! Me refugio en Ti del pecado y de las deudas agobiantes.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20122.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 123,
-                        "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
-                        "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
-                        "text": "اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْماً كَثِيراً، وَلاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ، فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ وَارْحَمْنِي، إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ.",
-                        "latin": "Allāhumma innī ẓalamtu nafsī ẓulman kathīrā, wa lā yaghfiru adhdhunūba illā ant, faghfir lī maghfiratan min ʿindika warḥamnī, innaka anta al-ghafūru ar-raḥīm.",
-                        "explanationEs": "¡Oh Allah! Ciertamente me he oprimido a mí mismo en gran manera y nadie perdona los pecados excepto Tú, concédeme pues un perdón de Tu parte y ten misericordia de mí, ciertamente Tú eres el Absolvedor, el Misericordioso.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2033.mp3"
-                        ]
+                    "itemNumber": 123,
+                    "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
+                    "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
+                    "text": "اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْماً كَثِيراً، وَلاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ، فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ وَارْحَمْنِي، إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ.",
+                    "latin": "Allāhumma innī ẓalamtu nafsī ẓulman kathīrā, wa lā yaghfiru adhdhunūba illā ant, faghfir lī maghfiratan min ʿindika warḥamnī, innaka anta al-ghafūru ar-raḥīm.",
+                    "explanationEs": "¡Oh Allah! Ciertamente me he oprimido a mí mismo en gran manera y nadie perdona los pecados excepto Tú, concédeme pues un perdón de Tu parte y ten misericordia de mí, ciertamente Tú eres el Absolvedor, el Misericordioso.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2033.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 124,
-                        "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
-                        "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
-                        "text": "اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ، وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ، وَمَا أَعْلَنْتُ، وَمَا أَسْرَفْتُ، وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي. أَنْتَ الْمُقَدِّمُ، وَأَنْتَ الْمُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ.",
-                        "latin": "Allāhumma ighfir lī mā qaddamtu, wa mā akhkhartu, wa mā asrartu, wa mā aʿlantu, wa mā asraftu, wa mā anta aʿlamu bihi minnī. Anta al-muqaddimu, wa anta al-muʾakhkhiru lā ilāha illā ant.",
-                        "explanationEs": "¡Oh Allah! Perdóname lo que he hecho en el pasado y lo que haga en el futuro, lo que he ocultado, lo que he manifestado, mis excesos y lo que Tú conoces mejor que yo. Tú eres Quien adelanta y Quien retrasa, no hay más divinidad excepto Tú.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20124.mp3"
-                        ]
+                    "itemNumber": 124,
+                    "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
+                    "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
+                    "text": "اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ، وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ، وَمَا أَعْلَنْتُ، وَمَا أَسْرَفْتُ، وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي. أَنْتَ الْمُقَدِّمُ، وَأَنْتَ الْمُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ.",
+                    "latin": "Allāhumma ighfir lī mā qaddamtu, wa mā akhkhartu, wa mā asrartu, wa mā aʿlantu, wa mā asraftu, wa mā anta aʿlamu bihi minnī. Anta al-muqaddimu, wa anta al-muʾakhkhiru lā ilāha illā ant.",
+                    "explanationEs": "¡Oh Allah! Perdóname lo que he hecho en el pasado y lo que haga en el futuro, lo que he ocultado, lo que he manifestado, mis excesos y lo que Tú conoces mejor que yo. Tú eres Quien adelanta y Quien retrasa, no hay más divinidad excepto Tú.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20124.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 125,
-                        "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
-                        "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
-                        "text": "اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ، وَشُكْرِكَ، وَحُسْنِ عِبَادَتِكَ.",
-                        "latin": "Allāhumma aʿinnī ʿalā dhikrika, wa shukrika, wa ḥusni ʿibādatik.",
-                        "explanationEs": "¡Oh Allah! Ayúdame a recordarte, agradecerte y adorarte de la mejor manera.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20125.mp3"
-                        ]
+                    "itemNumber": 125,
+                    "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
+                    "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
+                    "text": "اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ، وَشُكْرِكَ، وَحُسْنِ عِبَادَتِكَ.",
+                    "latin": "Allāhumma aʿinnī ʿalā dhikrika, wa shukrika, wa ḥusni ʿibādatik.",
+                    "explanationEs": "¡Oh Allah! Ayúdame a recordarte, agradecerte y adorarte de la mejor manera.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20125.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 126,
-                        "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
-                        "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
-                        "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْبُخْلِ، وَأَعُوذُ بِكَ مِنَ الْجُبْنِ، وَأَعُوذُ بِكَ مِنْ أَنْ أُرَدَّ إِلَى أَرْذَلِ الْعُمُرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الدُّنْيَا وَعَذَابِ الْقَبْرِ.",
-                        "latin": "Allāhumma innī aʿūdhu bika minal-bukhl, wa aʿūdhu bika minal-jubn, wa aʿūdhu bika min an uradda ilā ardhali al-ʿumur, wa aʿūdhu bika min fitnati ad-dunyā wa ʿadhābi al-qabr.",
-                        "explanationEs": "¡Oh Allah! Me refugio en Ti de la tacañería, la cobardía, la decrepitud en la vejez, las pruebas de este mundo y el castigo de la tumba.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2037.mp3"
-                        ]
+                    "itemNumber": 126,
+                    "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
+                    "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
+                    "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْبُخْلِ، وَأَعُوذُ بِكَ مِنَ الْجُبْنِ، وَأَعُوذُ بِكَ مِنْ أَنْ أُرَدَّ إِلَى أَرْذَلِ الْعُمُرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الدُّنْيَا وَعَذَابِ الْقَبْرِ.",
+                    "latin": "Allāhumma innī aʿūdhu bika minal-bukhl, wa aʿūdhu bika minal-jubn, wa aʿūdhu bika min an uradda ilā ardhali al-ʿumur, wa aʿūdhu bika min fitnati ad-dunyā wa ʿadhābi al-qabr.",
+                    "explanationEs": "¡Oh Allah! Me refugio en Ti de la tacañería, la cobardía, la decrepitud en la vejez, las pruebas de este mundo y el castigo de la tumba.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2037.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 127,
-                        "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
-                        "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
-                        "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْجَنَّةَ وَأَعُوذُ بِكَ مِنَ النَّارِ.",
-                        "latin": "Allāhumma innī asʾaluka al-jannata wa aʿūdhu bika minan-nār.",
-                        "explanationEs": "¡Oh Allah! Te pido el Paraíso y me refugio en Ti del Fuego.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20127.mp3"
-                        ]
+                    "itemNumber": 127,
+                    "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
+                    "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
+                    "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْجَنَّةَ وَأَعُوذُ بِكَ مِنَ النَّارِ.",
+                    "latin": "Allāhumma innī asʾaluka al-jannata wa aʿūdhu bika minan-nār.",
+                    "explanationEs": "¡Oh Allah! Te pido el Paraíso y me refugio en Ti del Fuego.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20127.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 128,
-                        "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
-                        "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
-                        "text": "اللَّهُمَّ بِعِلْمِكَ الْغَيْبَ وَقُدْرَتِكَ عَلَى الْخَلْقِ أَحْيِنِي مَا عَلِمْتَ الْحَيَاةَ خَيْراً لِي، وَتَوَفَّنِي إِذَا عَلِمْتَ الْوَفَاةَ خَيْراً لِي، اللَّهُمَّ وَأَسْأَلُكَ خَشْيَتَكَ فِي الْغَيْبِ وَالشَّهَادَةِ، وَأَسْأَلُكَ كَلِمَةَ الْحَقِّ فِي الرِّضَا وَالْغَضَبِ، وَأَسْأَلُكَ الْقَصْدَ فِي الْفَقْرِ وَالْغِنَى، وَأَسْأَلُكَ نَعِيماً لَا يَنْفَدُ، وَأَسْأَلُكَ قُرَّةَ عَيْنٍ لَا تَنْقَطِعُ، وَأَسْأَلُكَ الرِّضَاءَ بَعْدَ الْقَضَاءِ، وَأَسْأَلُكَ بَرْدَ الْعَيْشِ بَعْدَ الْمَوْتِ، وَأَسْأَلُكَ لَذَّةَ النَّظَرِ إِلَى وَجْهِكَ وَالشَّوْقَ إِلَى لِقَائِكَ فِي غَيْرِ ضَرَّاءَ مُضِرَّةٍ وَلَا فِتْنَةٍ مُضِلَّةٍ، اللَّهُمَّ زَيِّنَّا بِزِينَةِ الْإِيمَانِ، وَاجْعَلْنَا هُدَاةً مُهْتَدِينَ.",
-                        "latin": "Allāhumma bi-ʿilmikal-ghayba wa qudratika ʿalal-khalqi aḥyinī mā ʿalimtal-ḥayāta khayran lī, wa tawaffanī idhā ʿalimtal-wafāta khayran lī. Allāhumma wa asʾaluka khashyataka fil-ghaybi wash-shahādah, wa asʾaluka kalimatil-ḥaqqi fir-riḍā wal-ghaḍab, wa asʾalukal-qaṣda fil-faqri wal-ghinā, wa asʾaluka naʿīman lā yanfad, wa asʾaluka qurrata ʿaynin lā tanqaṭiʿ, wa asʾalukar-riḍāʾa baʿdal-qaḍāʾ, wa asʾaluka bardal-ʿayshi baʿdal-mawt, wa asʾaluka ladhdhatan-naẓari ilā wajhika wash-shawqa ilā liqāʾik fī ghayri ḍarrāʾa muḍirrah, wa lā fitnatin muḍillatin. Allāhumma zayyinnā bi-zīnatil-īmāni waj-ʿalnā hudātan muhtadīn.",
-                        "explanationEs": "¡Oh Allah! Por Tu conocimiento de lo oculto y Tu poder sobre la creación, mantenme con vida mientras sepas que la vida es mejor para mí, y hazme morir cuando sepas que la muerte es mejor para mí. Te pido que Te tema en privado y en público, que diga la verdad tanto en la satisfacción como en la ira, y que mantenga la moderación tanto en la pobreza como en la riqueza. Te pido un deleite que no se agote, una alegría que nunca se extinga, estar complacido después del decreto, una vida apacible después de la muerte, el placer de contemplar Tu Rostro y el anhelo de encontrarte, sin adversidad perjudicial ni prueba que me haga extraviarme. ¡Oh Allah! Adórnanos con la belleza de la fe y haz que seamos guías bien guiados.",
-                        "note": "رواه النسائي (إسناد حسن)",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2052.mp3"
-                        ]
+                    "itemNumber": 128,
+                    "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
+                    "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
+                    "text": "اللَّهُمَّ بِعِلْمِكَ الْغَيْبَ وَقُدْرَتِكَ عَلَى الْخَلْقِ أَحْيِنِي مَا عَلِمْتَ الْحَيَاةَ خَيْراً لِي، وَتَوَفَّنِي إِذَا عَلِمْتَ الْوَفَاةَ خَيْراً لِي، اللَّهُمَّ وَأَسْأَلُكَ خَشْيَتَكَ فِي الْغَيْبِ وَالشَّهَادَةِ، وَأَسْأَلُكَ كَلِمَةَ الْحَقِّ فِي الرِّضَا وَالْغَضَبِ، وَأَسْأَلُكَ الْقَصْدَ فِي الْفَقْرِ وَالْغِنَى، وَأَسْأَلُكَ نَعِيماً لَا يَنْفَدُ، وَأَسْأَلُكَ قُرَّةَ عَيْنٍ لَا تَنْقَطِعُ، وَأَسْأَلُكَ الرِّضَاءَ بَعْدَ الْقَضَاءِ، وَأَسْأَلُكَ بَرْدَ الْعَيْشِ بَعْدَ الْمَوْتِ، وَأَسْأَلُكَ لَذَّةَ النَّظَرِ إِلَى وَجْهِكَ وَالشَّوْقَ إِلَى لِقَائِكَ فِي غَيْرِ ضَرَّاءَ مُضِرَّةٍ وَلَا فِتْنَةٍ مُضِلَّةٍ، اللَّهُمَّ زَيِّنَّا بِزِينَةِ الْإِيمَانِ، وَاجْعَلْنَا هُدَاةً مُهْتَدِينَ.",
+                    "latin": "Allāhumma bi-ʿilmikal-ghayba wa qudratika ʿalal-khalqi aḥyinī mā ʿalimtal-ḥayāta khayran lī, wa tawaffanī idhā ʿalimtal-wafāta khayran lī. Allāhumma wa asʾaluka khashyataka fil-ghaybi wash-shahādah, wa asʾaluka kalimatil-ḥaqqi fir-riḍā wal-ghaḍab, wa asʾalukal-qaṣda fil-faqri wal-ghinā, wa asʾaluka naʿīman lā yanfad, wa asʾaluka qurrata ʿaynin lā tanqaṭiʿ, wa asʾalukar-riḍāʾa baʿdal-qaḍāʾ, wa asʾaluka bardal-ʿayshi baʿdal-mawt, wa asʾaluka ladhdhatan-naẓari ilā wajhika wash-shawqa ilā liqāʾik fī ghayri ḍarrāʾa muḍirrah, wa lā fitnatin muḍillatin. Allāhumma zayyinnā bi-zīnatil-īmāni waj-ʿalnā hudātan muhtadīn.",
+                    "explanationEs": "¡Oh Allah! Por Tu conocimiento de lo oculto y Tu poder sobre la creación, mantenme con vida mientras sepas que la vida es mejor para mí, y hazme morir cuando sepas que la muerte es mejor para mí. Te pido que Te tema en privado y en público, que diga la verdad tanto en la satisfacción como en la ira, y que mantenga la moderación tanto en la pobreza como en la riqueza. Te pido un deleite que no se agote, una alegría que nunca se extinga, estar complacido después del decreto, una vida apacible después de la muerte, el placer de contemplar Tu Rostro y el anhelo de encontrarte, sin adversidad perjudicial ni prueba que me haga extraviarme. ¡Oh Allah! Adórnanos con la belleza de la fe y haz que seamos guías bien guiados.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2052.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 129,
-                        "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
-                        "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
-                        "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ يَا أَللَّهُ بِأَنَّكَ الْوَاحِدُ الأَحَدُ الصَّمَدُ الَّذِي لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُنْ لَهُ كُفُواً أَحَدٌ، أَنْ تَغْفِرَ لِي ذُنُوبِي إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ.",
-                        "latin": "Allāhumma innī asʾaluka yā Allāhu bi-annaka al-wāḥidu al-aḥadu aṣ-ṣamadu alladhī lam yalid wa lam yūlad, wa lam yakun lahu kufuwan aḥad, an taghfira lī dhunūbī innaka anta al-ghafūru ar-raḥīm.",
-                        "explanationEs": "¡Oh Allah! Te pido, ¡oh Allah!, porque Tú eres el Único, el Absoluto, Quien no engendró ni fue engendrado y no hay nadie semejante a Él, que perdones mis pecados. Ciertamente Tú eres el Absolvedor, el Misericordioso.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20129.mp3"
-                        ]
+                    "itemNumber": 129,
+                    "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
+                    "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
+                    "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ يَا أَللَّهُ بِأَنَّكَ الْوَاحِدُ الأَحَدُ الصَّمَدُ الَّذِي لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُنْ لَهُ كُفُواً أَحَدٌ، أَنْ تَغْفِرَ لِي ذُنُوبِي إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ.",
+                    "latin": "Allāhumma innī asʾaluka yā Allāhu bi-annaka al-wāḥidu al-aḥadu aṣ-ṣamadu alladhī lam yalid wa lam yūlad, wa lam yakun lahu kufuwan aḥad, an taghfira lī dhunūbī innaka anta al-ghafūru ar-raḥīm.",
+                    "explanationEs": "¡Oh Allah! Te pido, ¡oh Allah!, porque Tú eres el Único, el Absoluto, Quien no engendró ni fue engendrado y no hay nadie semejante a Él, que perdones mis pecados. Ciertamente Tú eres el Absolvedor, el Misericordioso.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20129.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 130,
-                        "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
-                        "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
-                        "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنَّ لَكَ الْحَمْدَ لاَ إِلَهَ إِلاَّ أَنْتَ وَحْدَكَ لاَ شَرِيكَ لَكَ، الْمَنَّانُ، يَا بَدِيعَ السَّمَوَاتِ وَالأَرْضِ يَا ذَا الْجَلاَلِ وَالإِكْرَامِ، يَا حَيُّ يَا قَيُّومُ إِنِّي أَسْأَلُكَ الْجَنَّةَ وَأَعُوذُ بِكَ مِنَ النَّارِ.",
-                        "latin": "Allāhumma innī asʾaluka bi-anna laka al-ḥamda lā ilāha illā anta waḥdaka lā sharīka lak, al-mannān, yā badīʿa as-samāwāti wal-arḍ, yā dhā al-jalāli wal-ikrām, yā ḥayyu yā qayyūmu innī asʾaluka al-jannata wa aʿūdhu bika minan-nār.",
-                        "explanationEs": "¡Oh Allah! Te pido porque a Ti pertenecen las alabanzas, no hay más divinidad excepto Tú, Único, sin asociados, el Dadivoso, ¡oh Creador originario de los cielos y de la tierra!, ¡oh Poseedor de la majestad y del honor!, ¡oh Viviente, oh Sustentador de todo! Te pido el Paraíso y me refugio en Ti del Fuego.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20130.mp3"
-                        ]
+                    "itemNumber": 130,
+                    "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
+                    "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
+                    "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنَّ لَكَ الْحَمْدَ لاَ إِلَهَ إِلاَّ أَنْتَ وَحْدَكَ لاَ شَرِيكَ لَكَ، الْمَنَّانُ، يَا بَدِيعَ السَّمَوَاتِ وَالأَرْضِ يَا ذَا الْجَلاَلِ وَالإِكْرَامِ، يَا حَيُّ يَا قَيُّومُ إِنِّي أَسْأَلُكَ الْجَنَّةَ وَأَعُوذُ بِكَ مِنَ النَّارِ.",
+                    "latin": "Allāhumma innī asʾaluka bi-anna laka al-ḥamda lā ilāha illā anta waḥdaka lā sharīka lak, al-mannān, yā badīʿa as-samāwāti wal-arḍ, yā dhā al-jalāli wal-ikrām, yā ḥayyu yā qayyūmu innī asʾaluka al-jannata wa aʿūdhu bika minan-nār.",
+                    "explanationEs": "¡Oh Allah! Te pido porque a Ti pertenecen las alabanzas, no hay más divinidad excepto Tú, Único, sin asociados, el Dadivoso, ¡oh Creador originario de los cielos y de la tierra!, ¡oh Poseedor de la majestad y del honor!, ¡oh Viviente, oh Sustentador de todo! Te pido el Paraíso y me refugio en Ti del Fuego.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20130.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 131,
-                        "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
-                        "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
-                        "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنِّي أَشْهَدُ أَنَّكَ أَنْتَ اللَّهُ لاَ إِلَهَ إِلاَّ أَنْتَ الأَحَدُ الصَّمَدُ الَّذِي لَمْ يَلِدْ وَلَمْ يُولَدْ وَلَمْ يَكُنْ لَهُ كُفُواً أَحَدٌ.",
-                        "latin": "Allāhumma innī asʾaluka bi-annī ashhadu annaka anta Allāhu lā ilāha illā anta al-aḥadu aṣ-ṣamadu alladhī lam yalid wa lam yūlad wa lam yakun lahu kufuwan aḥad.",
-                        "explanationEs": "¡Oh Allah! Te pido pues atestiguo que Tú eres Allah, no hay más divinidad excepto Tú, el Único, el Absoluto, Quien no engendró ni fue engendrado y no hay nadie semejante a Él.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20131.mp3"
-                        ]
+                    "itemNumber": 131,
+                    "subtitleAr": "الدُّعَاءُ بَعْدَ التَّشَهُّدِ الأَخِيرِ قَبْلَ السَّلاَمِ",
+                    "subtitleEs": "Súplicas tras el último Tashahhud antes del saludo final",
+                    "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنِّي أَشْهَدُ أَنَّكَ أَنْتَ اللَّهُ لاَ إِلَهَ إِلاَّ أَنْتَ الأَحَدُ الصَّمَدُ الَّذِي لَمْ يَلِدْ وَلَمْ يُولَدْ وَلَمْ يَكُنْ لَهُ كُفُواً أَحَدٌ.",
+                    "latin": "Allāhumma innī asʾaluka bi-annī ashhadu annaka anta Allāhu lā ilāha illā anta al-aḥadu aṣ-ṣamadu alladhī lam yalid wa lam yūlad wa lam yakun lahu kufuwan aḥad.",
+                    "explanationEs": "¡Oh Allah! Te pido pues atestiguo que Tú eres Allah, no hay más divinidad excepto Tú, el Único, el Absoluto, Quien no engendró ni fue engendrado y no hay nadie semejante a Él.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20131.mp3"
+                    ],
+                    "noCounter": true
                   }
             ]
       },
@@ -1712,37 +1759,40 @@ const azkarData = [
             "titleEs": "Súplicas y alabanzas después de la oración",
             "items": [
                   {
-                        "itemNumber": 132,
-                        "text": "أَسْتَغْفِرُ اللَّهَ (ثَلاَثاً)، اللَّهُمَّ أَنْتَ السَّلاَمُ، وَمِنْكَ السَّلاَمُ، تَبَارَكْتَ يَا ذَا الْجَلاَلِ وَالإِكْرَامِ.",
-                        "latin": "Astaghfiru Allāh (tres veces). Allāhumma anta as-salām, wa minka as-salām, tabārakta yā dhā al-jalāli wal-ikrām.",
-                        "explanationEs": "Pido perdón a Allah (tres veces). ¡Oh Allah! Tú eres la Paz y de Ti procede la paz. Bendito seas, ¡oh Poseedor de la majestad y del honor!",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20132.mp3"
-                        ]
+                    "itemNumber": 132,
+                    "text": "أَسْتَغْفِرُ اللَّهَ (ثَلاَثاً)، اللَّهُمَّ أَنْتَ السَّلاَمُ، وَمِنْكَ السَّلاَمُ، تَبَارَكْتَ يَا ذَا الْجَلاَلِ وَالإِكْرَامِ.",
+                    "latin": "Astaghfiru Allāh (tres veces). Allāhumma anta as-salām, wa minka as-salām, tabārakta yā dhā al-jalāli wal-ikrām.",
+                    "explanationEs": "Pido perdón a Allah (tres veces). ¡Oh Allah! Tú eres la Paz y de Ti procede la paz. Bendito seas, ¡oh Poseedor de la majestad y del honor!",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20132.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 133,
-                        "text": "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، اللَّهُمَّ لاَ مَانِعَ لِمَا أَعْطَيْتَ، وَلاَ مُعْطِيَ لِمَا مَنَعْتَ، وَلاَ يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ.",
-                        "latin": "Lā ilāha illā Allāhu waḥdahu lā sharīka lah, lahu al-mulku wa lahu al-ḥamd, wa huwa ʿalā kulli shayʾin qadīr. Allāhumma lā māniʿa limā aʿṭayt, wa lā muʿṭiya limā manaʿt, wa lā yanfaʿu dhā al-jaddi minka al-jadd.",
-                        "explanationEs": "No hay más divinidad que Allah, Único, sin asociados. Suyo es el reino y Suya es la alabanza, y Él es Omnipotente sobre todas las cosas. ¡Oh Allah! Nadie puede privar lo que Tú concedes, ni nadie puede conceder lo que Tú privas, y la riqueza no beneficia a quien la posee frente a Ti.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20133.mp3"
-                        ]
+                    "itemNumber": 133,
+                    "text": "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، اللَّهُمَّ لاَ مَانِعَ لِمَا أَعْطَيْتَ، وَلاَ مُعْطِيَ لِمَا مَنَعْتَ، وَلاَ يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ.",
+                    "latin": "Lā ilāha illā Allāhu waḥdahu lā sharīka lah, lahu al-mulku wa lahu al-ḥamd, wa huwa ʿalā kulli shayʾin qadīr. Allāhumma lā māniʿa limā aʿṭayt, wa lā muʿṭiya limā manaʿt, wa lā yanfaʿu dhā al-jaddi minka al-jadd.",
+                    "explanationEs": "No hay más divinidad que Allah, Único, sin asociados. Suyo es el reino y Suya es la alabanza, y Él es Omnipotente sobre todas las cosas. ¡Oh Allah! Nadie puede privar lo que Tú concedes, ni nadie puede conceder lo que Tú privas, y la riqueza no beneficia a quien la posee frente a Ti.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20133.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 134,
-                        "text": "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ، وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ. لاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللَّهِ، لاَ إِلَهَ إِلاَّ اللَّهُ، وَلاَ نَعْبُدُ إِلاَّ إِيَّاهُ، لَهُ النِّعْمَةُ وَلَهُ الْفَضْلُ وَلَهُ الثَّنَاءُ الْحَسَنُ، لاَ إِلَهَ إِلاَّ اللَّهُ مُخْلِصِينَ لَهُ الدِّينَ وَلَوْ كَرِهَ الْكَافِرُونَ.",
-                        "latin": "Lā ilāha illā Allāhu waḥdahu lā sharīka lah, lahu al-mulku, wa lahu al-ḥamdu, wa huwa ʿalā kulli shayʾin qadīr. Lā ḥawla wa lā quwwata illā billāh, lā ilāha illā Allāhu, wa lā naʿbudu illā iyyāh, lahu an-niʿmatu wa lahu al-faḍlu wa lahu ath-thanāʾu al-ḥasan, lā ilāha illā Allāhu mukhliṣīna lahu ad-dīna wa law kariha al-kāfirūn.",
-                        "explanationEs": "No hay más divinidad que Allah, Único, sin asociados. Suyo es el reino y Suya es la alabanza, y Él es Omnipotente sobre todas las cosas. No hay fuerza ni poder sino en Allah. No hay más divinidad que Allah y no adoramos sino a Él. De Él procede la gracia, el favor y la hermosa alabanza. No hay más divinidad que Allah, profesándole la religión de manera sincera aunque esto disguste a los incrédulos.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20134.mp3"
-                        ]
+                    "itemNumber": 134,
+                    "text": "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ، وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ. لاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللَّهِ، لاَ إِلَهَ إِلاَّ اللَّهُ، وَلاَ نَعْبُدُ إِلاَّ إِيَّاهُ، لَهُ النِّعْمَةُ وَلَهُ الْفَضْلُ وَلَهُ الثَّنَاءُ الْحَسَنُ، لاَ إِلَهَ إِلاَّ اللَّهُ مُخْلِصِينَ لَهُ الدِّينَ وَلَوْ كَرِهَ الْكَافِرُونَ.",
+                    "latin": "Lā ilāha illā Allāhu waḥdahu lā sharīka lah, lahu al-mulku, wa lahu al-ḥamdu, wa huwa ʿalā kulli shayʾin qadīr. Lā ḥawla wa lā quwwata illā billāh, lā ilāha illā Allāhu, wa lā naʿbudu illā iyyāh, lahu an-niʿmatu wa lahu al-faḍlu wa lahu ath-thanāʾu al-ḥasan, lā ilāha illā Allāhu mukhliṣīna lahu ad-dīna wa law kariha al-kāfirūn.",
+                    "explanationEs": "No hay más divinidad que Allah, Único, sin asociados. Suyo es el reino y Suya es la alabanza, y Él es Omnipotente sobre todas las cosas. No hay fuerza ni poder sino en Allah. No hay más divinidad que Allah y no adoramos sino a Él. De Él procede la gracia, el favor y la hermosa alabanza. No hay más divinidad que Allah, profesándole la religión de manera sincera aunque esto disguste a los incrédulos.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20134.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
                         "itemNumber": 135,
@@ -1756,57 +1806,70 @@ const azkarData = [
                         ]
                   },
                   {
-                        "itemNumber": 136,
-                        "text": "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
-                        "latin": "Lā ilāha illā Allāhu waḥdahu lā sharīka lah, lahu al-mulku wa lahu al-ḥamdu wa huwa ʿalā kulli shayʾin qadīr.",
-                        "explanationEs": "No hay más divinidad que Allah, Único, sin asociados. Suyo es el reino y Suya es la alabanza, y Él es Omnipotente sobre todas las cosas. (Se completa con esto el número 100 en el dhikr).",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20136.mp3"
-                        ]
+                    "itemNumber": 136,
+                    "text": "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
+                    "latin": "Lā ilāha illā Allāhu waḥdahu lā sharīka lah, lahu al-mulku wa lahu al-ḥamdu wa huwa ʿalā kulli shayʾin qadīr.",
+                    "explanationEs": "No hay más divinidad que Allah, Único, sin asociados. Suyo es el reino y Suya es la alabanza, y Él es Omnipotente sobre todas las cosas.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20136.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 137,
-                        "text": "﴿بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ قُلۡ هُوَ ٱللَّهُ أَحَدٌ۝ ٱللَّهُ ٱلصَّمَدُ۝ لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ۝ وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ۝\n\nقُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ۝ مِن شَرِّ مَا خَلَقَ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ۝ وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِي ٱلۡعُقَدِ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ۝\n\nقُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ۝ مَلِكِ ٱلنَّاسِ۝ إِلَٰهِ ٱلنَّاسِ۝ مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ۝ ٱلَّذِي يُوَسۡوِسُ فِي صُدُورِ ٱلنَّاسِ۝ مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ۝﴾",
-                        "latin": "Bismillāhir-raḥmānir-raḥīm: Qul Huwallāhu aḥad, Allāhuṣ-ṣamad, lam yalid wa lam yūlad, wa lam yakun lahū kufuwan aḥad. Wa Qul aʿūdhu bi-rabbil-falaq, min sharri mā khalaq, wa min sharri ghāsiqin idhā waqab, wa min sharrin-naffāthāti fil-ʿuqad, wa min sharri ḥāsidin idhā ḥasad. Wa Qul aʿūdhu bi-rabbin-nās, Malikin-nās, Ilāhin-nās, min sharril-waswāsil-khannās, alladhī yuwaswisu fī ṣudūrin-nās, minal-jinnati wan-nās.",
-                        "explanationEs": "Lectura de las suras Al-Ijlás, Al-Falaq y An-Nas tras cada oración (se repiten tres veces tras la oración del Fajr y del Maghrib).\n\nEn el nombre de Allah, el Compasivo, el Misericordioso. Di: «Él es Allah, Uno. Allah es el Absoluto. No engendró ni fue engendrado. Y no hay nada ni nadie que sea semejante a Él».\n\nDi: «Me refugio en el Señor del amanecer, de todo el mal que existe en lo que Él creó, del mal de la oscuridad de la noche cuando se extiende, del mal de las [hechiceras] sopladoras de nudos, y del mal del envidioso cuando envidia».\n\nDi: «Me refugio en el Señor de los seres humanos, en el Rey Soberano de los seres humanos, en el [único] Dios de los seres humanos, de la maldad del [demonio] susurrador que huye [cuando el nombre de Allah es mencionado], que susurra en los corazones de los seres humanos, y existe entre los yinn y entre los seres humanos».",
-                        "count": 1,
-                        "maxCount": 1,
-            "note": "سورة الإخلاص، سورة الفلق، سورة الناس",
-            "audioUrls": ["https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q112.mp3","https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q113.mp3","https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q114.mp3"]
-      },
-                  {
-                        "itemNumber": 138,
-                        "text": "﴿ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡحَيُّ ٱلۡقَيُّومُۚ لَا تَأۡخُذُهُۥ سِنَةٞ وَلَا نَوۡمٞۚ لَّهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَمَا فِي ٱلۡأَرۡضِۗ مَن ذَا ٱلَّذِي يَشۡفَعُ عِندَهُۥٓ إِلَّا بِإِذۡنِهِۦۚ يَعۡلَمُ مَا بَيۡنَ أَيۡدِيهِمۡ وَمَا خَلۡفَهُمۡۖ وَلَا يُحِيطُونَ بِشَيۡءٖ مِّنۡ عِلۡمِهِۦٓ إِلَّا بِمَا شَآءَۚ وَسِعَ كُرۡسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَۖ وَلَا يَـُٔودُهُۥ حِفۡظُهُمَاۚ وَهُوَ ٱلۡعَلِيُّ ٱلۡعَظِيمُ۝﴾",
-                        "latin": "Allāhu lā ilāha illā huwa al-ḥayyu al-qayyūm, lā taʾkhudhuhu sinatun wa lā nawm, lahu mā fis-samāwāti wa mā fil-arḍ, man dhā alladhī Yashfaʿu ʿindahu illā bi-idhnih, yaʿlamu mā bayna aydīhim wa mā khalfahum, wa lā yuḥīṭūna bi-shayʾin min ʿilmihi illā bi-mā shāʾ, wasiʿa kursiyyuhu as-samāwāti wal-arḍ, wa lā yaʾūduhu ḥifẓuhumā wa huwa al-ʿaliyyu al-ʿaẓīm.",
-                        "explanationEs": "¡Allah! No existe nada ni nadie con derecho a ser adorado excepto Él, el Viviente [Eterno], el Sustentador [y Gobernador de toda la creación]. No Lo afectan somnolencia ni sueño. Suyo es cuanto hay en los cielos y la Tierra. ¿Quién podrá interceder ante Él si no es con Su permiso? Conoce el pasado y el futuro [lo manifiesto y lo oculto] y nadie abarca de Su conocimiento salvo lo que Él quiere. El escabel de Su Trono abarca los cielos y la Tierra, y la custodia [y mantenimiento] de ambos no Lo agobia. Y Él es el Sublime, el Grandioso. [Al-Baqarah: 255]",
-                        "count": 1,
-                        "maxCount": 1,
-            "note": "سورة البقرة الآية 255",
-            "audioUrls": ["https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-255.mp3"]
-      },
-                  {
-                        "itemNumber": 139,
-                        "text": "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
-                        "latin": "Lā ilāha illā Allāhu waḥdahu lā sharīka lah, lahu al-mulku wa lahu al-ḥamdu yuḥyī wa yumītu wa huwa ʿalā kulli shayʾin qadīr.",
-                        "explanationEs": "No hay más divinidad que Allah, Único, sin asociados, Suyo es el reino y Suya es la alabanza, Él da la vida y da la muerte, y Él es Omnipotente sobre todas las cosas (diez veces tras el Maghrib y el Fajr).",
-                        "count": 10,
-                        "maxCount": 10,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20139.mp3"
-                        ]
+                    "itemNumber": 137,
+                    "text": "﴿بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ قُلۡ هُوَ ٱللَّهُ أَحَدٌ۝ ٱللَّهُ ٱلصَّمَدُ۝ لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ۝ وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ۝\n\nقُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ۝ مِن شَرِّ مَا خَلَقَ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ۝ وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِي ٱلۡعُقَدِ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ۝\n\nقُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ۝ مَلِكِ ٱلنَّاسِ۝ إِلَٰهِ ٱلنَّاسِ۝ مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ۝ ٱلَّذِي يُوَسۡوِسُ فِي صُدُورِ ٱلنَّاسِ۝ مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ۝﴾",
+                    "latin": "Bismillāhir-raḥmānir-raḥīm: Qul Huwallāhu aḥad, Allāhuṣ-ṣamad, lam yalid wa lam yūlad, wa lam yakun lahū kufuwan aḥad. Wa Qul aʿūdhu bi-rabbil-falaq, min sharri mā khalaq, wa min sharri ghāsiqin idhā waqab, wa min sharrin-naffāthāti fil-ʿuqad, wa min sharri ḥāsidin idhā ḥasad. Wa Qul aʿūdhu bi-rabbin-nās, Malikin-nās, Ilāhin-nās, min sharril-waswāsil-khannās, alladhī yuwaswisu fī ṣudūrin-nās, minal-jinnati wan-nās.",
+                    "explanationEs": "Lectura de las suras Al-Ijlás, Al-Falaq y An-Nas tras cada oración (se repiten tres veces tras la oración del Fajr y del Maghrib).\n\nEn el nombre de Allah, el Compasivo, el Misericordioso. Di: «Él es Allah, Uno. Allah es el Absoluto. No engendró ni fue engendrado. Y no hay nada ni nadie que sea semejante a Él».\n\nDi: «Me refugio en el Señor del amanecer, de todo el mal que existe en lo que Él creó, del mal de la oscuridad de la noche cuando se extiende, del mal de las [hechiceras] sopladoras de nudos, y del mal del envidioso cuando envidia».\n\nDi: «Me refugio en el Señor de los seres humanos, en el Rey Soberano de los seres humanos, en el [único] Dios de los seres humanos, de la maldad del [demonio] susurrador que huye [cuando el nombre de Allah es mencionado], que susurra en los corazones de los seres humanos, y existe entre los yinn y entre los seres humanos».",
+                    "count": 1,
+                    "maxCount": 1,
+                    "note": "سورة الإخلاص، سورة الفلق، سورة الناس",
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q112.mp3",
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q113.mp3",
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q114.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 140,
-                        "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْماً نَافِعاً، وَرِزْقاً طَيِّباً، وَعَمَلاً مُتَقَبَّلاً.",
-                        "latin": "Allāhumma innī asʾaluka ʿilman nāfiʿā, wa rizqan ṭayyibā, wa ʿamalan mutaqabbalā.",
-                        "explanationEs": "¡Oh Allah! Te pido un conocimiento útil, un sustento puro y lícito, y obras aceptables (se dice tras el saludo final de la oración del Fajr).",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2021.mp3"
-                        ]
+                    "itemNumber": 138,
+                    "text": "﴿ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡحَيُّ ٱلۡقَيُّومُۚ لَا تَأۡخُذُهُۥ سِنَةٞ وَلَا نَوۡمٞۚ لَّهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَمَا فِي ٱلۡأَرۡضِۗ مَن ذَا ٱلَّذِي يَشۡفَعُ عِندَهُۥٓ إِلَّا بِإِذۡنِهِۦۚ يَعۡلَمُ مَا بَيۡنَ أَيۡدِيهِمۡ وَمَا خَلۡفَهُمۡۖ وَلَا يُحِيطُونَ بِشَيۡءٖ مِّنۡ عِلۡمِهِۦٓ إِلَّا بِمَا شَآءَۚ وَسِعَ كُرۡسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَۖ وَلَا يَـُٔودُهُۥ حِفۡظُهُمَاۚ وَهُوَ ٱلۡعَلِيُّ ٱلۡعَظِيمُ۝﴾",
+                    "latin": "Allāhu lā ilāha illā huwa al-ḥayyu al-qayyūm, lā taʾkhudhuhu sinatun wa lā nawm, lahu mā fis-samāwāti wa mā fil-arḍ, man dhā alladhī Yashfaʿu ʿindahu illā bi-idhnih, yaʿlamu mā bayna aydīhim wa mā khalfahum, wa lā yuḥīṭūna bi-shayʾin min ʿilmihi illā bi-mā shāʾ, wasiʿa kursiyyuhu as-samāwāti wal-arḍ, wa lā yaʾūduhu ḥifẓuhumā wa huwa al-ʿaliyyu al-ʿaẓīm.",
+                    "explanationEs": "¡Allah! No existe nada ni nadie con derecho a ser adorado excepto Él, el Viviente [Eterno], el Sustentador [y Gobernador de toda la creación]. No Lo afectan somnolencia ni sueño. Suyo es cuanto hay en los cielos y la Tierra. ¿Quién podrá interceder ante Él si no es con Su permiso? Conoce el pasado y el futuro [lo manifiesto y lo oculto] y nadie abarca de Su conocimiento salvo lo que Él quiere. El escabel de Su Trono abarca los cielos y la Tierra, y la custodia [y mantenimiento] de ambos no Lo agobia. Y Él es el Sublime, el Grandioso. [Al-Baqarah: 255]",
+                    "count": 1,
+                    "maxCount": 1,
+                    "note": "سورة البقرة الآية 255",
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-255.mp3"
+                    ],
+                    "noCounter": true
+                  },
+                  {
+                    "itemNumber": 139,
+                    "text": "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.",
+                    "latin": "Lā ilāha illā Allāhu waḥdahu lā sharīka lah, lahu al-mulku wa lahu al-ḥamdu yuḥyī wa yumītu wa huwa ʿalā kulli shayʾin qadīr.",
+                    "explanationEs": "No hay más divinidad que Allah, Único, sin asociados, Suyo es el reino y Suya es la alabanza, Él da la vida y da la muerte, y Él es Omnipotente sobre todas las cosas.",
+                    "count": 10,
+                    "maxCount": 10,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20139.mp3"
+                    ],
+                    "noCounter": true,
+                    "noteAfter": "10 مَرَّاتٍ بَعْدَ صَلَاتَيِ الْمَغْرِبِ وَالْفَجْرِ.",
+                    "noteAfterEs": "10 veces tras el Maghrib y el Fajr"
+                  },
+                  {
+                    "itemNumber": 140,
+                    "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْماً نَافِعاً، وَرِزْقاً طَيِّباً، وَعَمَلاً مُتَقَبَّلاً.",
+                    "latin": "Allāhumma innī asʾaluka ʿilman nāfiʿā, wa rizqan ṭayyibā, wa ʿamalan mutaqabbalā.",
+                    "explanationEs": "¡Oh Allah! Te pido un conocimiento útil, un sustento puro y lícito, y obras aceptables (se dice tras el saludo final de la oración del Fajr).",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2021.mp3"
+                    ],
+                    "noCounter": true
                   }
             ]
       },
