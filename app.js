@@ -1803,8 +1803,7 @@ function renderGroupItems() {
         </div>
         ${item.explanationAr ? `<div class="guide-ar-expl whitespace-pre-line" dir="rtl">${formatQuotedText(item.explanationAr)}</div>` : ''}
       `}
-      ${Array.isArray(item.words) && item.words.length ? `<details data-no-share class="glos-words rounded-2xl border border-amber-200/70 dark:border-slate-700 bg-amber-50/60 dark:bg-slate-900/50 p-3 text-sm" dir="${isEs ? 'ltr' : 'rtl'}"><summary class="cursor-pointer font-bold text-emerald-800 dark:text-emerald-300 text-center">${isEs ? '📖 Palabras difíciles' : '📖 كلمات صعبة'}</summary><div class="mt-3 space-y-3">${item.words.map(w => `<div><div class="font-bold text-slate-900 dark:text-slate-50">${isEs ? (w.wEs || w.w) : w.w}</div><div class="text-slate-700 dark:text-slate-300 leading-relaxed">${isEs ? w.es : w.ar}</div></div>`).join('')}</div></details>` : ''}
-      ${item.sourceUrl ? `<div class="glos-source text-xs text-center text-slate-500 dark:text-slate-400" dir="${isEs ? 'ltr' : 'rtl'}">${isEs ? 'Fuente' : 'المصدر'}: <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer" class="underline text-emerald-700 dark:text-emerald-400">${isEs ? (item.sourceNameEs || item.sourceName || item.sourceUrl) : (item.sourceName || item.sourceUrl)}</a></div>` : ''}
+      ${item.sourceUrl && currentSection !== 'glosario' ? `<div class="glos-source text-xs text-center text-slate-500 dark:text-slate-400" dir="${isEs ? 'ltr' : 'rtl'}">${isEs ? 'Fuente' : 'المصدر'}: <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer" class="underline text-emerald-700 dark:text-emerald-400">${isEs ? (item.sourceNameEs || item.sourceName || item.sourceUrl) : (item.sourceName || item.sourceUrl)}</a></div>` : ''}
 
       ${!isAdya && !isInfoItem ? `
         <div data-no-share class="flex flex-col items-center justify-center pt-2">

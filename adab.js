@@ -109,6 +109,32 @@
     ]
   };
 
+  /* ───────────── Ruqyah: normas y método ───────────── */
+  var RUQYAH = {
+    titleAr: 'آدَابُ وَطَرِيقَةُ الرُّقْيَةِ',
+    titleEs: 'Normas y método de la ruqyah',
+    introAr: 'خُلَاصَةُ آدَابِ الرُّقْيَةِ الشَّرْعِيَّةِ وَطَرِيقَتِهَا، وَهِيَ عَامَّةٌ لِجَمِيعِ الرُّقَى الْوَارِدَةِ فِي هَذَا الْقِسْمِ.',
+    introEs: 'Resumen de las normas y del método de la ruqyah legítima; vale para todas las ruqyas de esta sección.',
+    cards: [
+      { tAr: "الِاعْتِقَادُ وَالْإِخْلَاصُ", tEs: "Creencia y sinceridad",
+        ar: "الِاعْتِقَادُ الْجَازِمُ بِأَنَّ الشِّفَاءَ بِيَدِ اللَّهِ وَحْدَهُ، وَأَنَّ الرُّقْيَةَ سَبَبٌ مَشْرُوعٌ لَا تَنْفَعُ بِذَاتِهَا، بَلْ بِإِذْنِ اللَّهِ.\nالْإِخْلَاصُ وَالتَّوَكُّلُ عَلَى اللَّهِ تَعَالَى.",
+        es: "Creencia firme de que la curación está únicamente en manos de Allah, y de que la ruqyah es un medio legítimo que no beneficia por sí misma, sino con el permiso de Allah.\nSinceridad y plena confianza en Allah, el Altísimo." },
+      AZKAR.cards.filter(function (c) { return c.link === 'thanaa'; })[0],
+      { tAr: "مَا يُرْقَى بِهِ وَمَا يُجْتَنَبُ", tEs: "Con qué se hace la ruqyah y qué se evita",
+        ar: "أَنْ تَكُونَ بِكَلَامِ اللَّهِ، أَوْ بِأَسْمَائِهِ وَصِفَاتِهِ، أَوْ بِالْأَدْعِيَةِ الْمَأْثُورَةِ، بِاللِّسَانِ الْعَرَبِيِّ أَوْ بِمَا يُعْرَفُ مَعْنَاهُ.\nاجْتِنَابُ التَّمَائِمِ وَالطَّلَاسِمِ، وَكُلِّ مَا فِيهِ شِرْكٌ أَوْ كَلَامٌ لَا يُعْرَفُ مَعْنَاهُ.",
+        es: "Que se haga con la Palabra de Allah, con Sus Nombres y Atributos o con las súplicas transmitidas, en árabe o con palabras de significado comprensible.\nEvitar los amuletos, los talismanes y todo lo que contenga shirk o palabras de significado desconocido." },
+      { tAr: "طَرِيقَةُ الرُّقْيَةِ: النَّفْثُ وَالْمَسْحُ", tEs: "Método: soplido y pasar las manos",
+        ar: "النَّفْثُ (نَفْخٌ خَفِيفٌ مَعَ شَيْءٍ يَسِيرٍ مِنَ الرِّيقِ) عَلَى النَّفْسِ أَوْ عَلَى الْمَرِيضِ أَوْ فِي الْكَفَّيْنِ، ثُمَّ مَسْحُ جَسَدِ الْمَرِيضِ بِهِمَا.",
+        es: "Soplido leve (con un poco de saliva) sobre uno mismo, sobre el enfermo o en las palmas de las manos, para luego pasarlas por el cuerpo del enfermo." },
+      { tAr: "الرُّقْيَةُ بِالْمَاءِ وَالزَّيْتِ", tEs: "La ruqyah con agua y aceite",
+        ar: "تَجُوزُ الْقِرَاءَةُ عَلَى الْمَاءِ مُبَاشَرَةً أَوْ عَلَى زَيْتِ الزَّيْتُونِ، ثُمَّ يَشْرَبُ مِنْهُ الْمَرِيضُ أَوْ يَغْتَسِلُ بِهِ، وَيَدَّهِنُ بِالزَّيْتِ.",
+        es: "Se permite recitar directamente sobre el agua o sobre aceite de oliva; luego el enfermo bebe de ella o se lava con ella, y se unge con el aceite." },
+      { tAr: "رُقْيَةُ الْبَيْتِ بِالْمَاءِ", tEs: "Ruqya de la casa con agua",
+        ar: "يُؤْخَذُ مَاءٌ طَاهِرٌ فِي إِنَاءٍ نَظِيفٍ، وَيُقْرَأُ عَلَيْهِ مَا تَيَسَّرَ مِنَ الْآيَاتِ وَالْأَدْعِيَةِ الْآتِيَةِ مَعَ النَّفْثِ فِيهِ.\nثُمَّ يُرَشُّ فِي أَرْجَاءِ الْبَيْتِ وَزَوَايَاهُ، وَيُجْتَنَبُ رَشُّهُ فِي الْخَلَاءِ وَالْأَمَاكِنِ النَّجِسَةِ، وَلَا يُصَبُّ الْبَاقِي فِي مَجَارِي الْمِيَاهِ، بَلْ يُشْرَبُ أَوْ يُغْتَسَلُ بِهِ.\nرَشُّ الْمَاءِ الْمَقْرُوءِ فِيهِ أَجَازَهُ بَعْضُ أَهْلِ الْعِلْمِ مِنْ بَابِ الرُّقْيَةِ بِالْمَاءِ، وَلَمْ يَرِدْ فِيهِ حَدِيثٌ خَاصٌّ.\nوَأَعْظَمُ حِصْنٍ لِلْبَيْتِ قِرَاءَةُ سُورَةِ الْبَقَرَةِ فِيهِ؛ قَالَ النَّبِيُّ ﷺ: «لَا تَجْعَلُوا بُيُوتَكُمْ مَقَابِرَ، إِنَّ الشَّيْطَانَ يَنْفِرُ مِنَ الْبَيْتِ الَّذِي تُقْرَأُ فِيهِ سُورَةُ الْبَقَرَةِ» (رَوَاهُ مُسْلِمٌ)، مَعَ ذِكْرِ اللَّهِ عِنْدَ دُخُولِهِ وَعِنْدَ الطَّعَامِ.",
+        es: "Se toma agua pura en un recipiente limpio y se recita sobre ella lo que se pueda de las aleyas y súplicas siguientes, soplando suavemente sobre ella.\nDespués se rocía por las habitaciones y los rincones de la casa. Se evita rociarla en el baño y en lugares impuros, y el sobrante no se tira por el desagüe: se bebe o se usa para lavarse.\nRociar agua recitada lo permiten algunos sabios porque la ruqya con agua está permitida, pero no hay un hadiz específico sobre ello.\nLa mayor protección de la casa es recitar en ella la sura Al-Baqara. El Profeta ﷺ dijo: «No conviertan sus casas en tumbas; ciertamente, el Shaytán huye de la casa en la que se recita la sura Al-Baqara» (Muslim). Y también mencionar a Allah al entrar en casa y al comer." }
+    ]
+  };
+
   /* ───────────── Fórmulas de alabanza (ثناء) ───────────── */
   var THANAA = {
     titleAr: 'صِيَغُ الثَّنَاءِ عَلَى اللَّهِ',
@@ -164,7 +190,7 @@
     ]
   };
 
-  var DATA = { azkar: AZKAR, adya: ADYA, thanaa: THANAA };
+  var DATA = { azkar: AZKAR, adya: ADYA, ruqyah: RUQYAH, thanaa: THANAA };
 
   /* ───────────── Estilos propios (no dependen del CSS purgado de Tailwind) ───────────── */
   var CSS = [
@@ -308,7 +334,7 @@
     origRender.apply(this, arguments);
     var s = sec();
     var grid = document.getElementById('buttonsGrid');
-    if (!grid || (s !== 'azkar' && s !== 'adya')) return;
+    if (!grid || (s !== 'azkar' && s !== 'adya' && s !== 'ruqyah')) return;
     var data = DATA[s];
     var es = isEs();
     var btn = mk('button', 'adab-entry');

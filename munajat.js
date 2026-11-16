@@ -1,6 +1,19 @@
 // munajat — datos y funciones específicas de sección.
 const munajatData = [
   {
+    id: "munajat_intro",
+    titleAr: "مُقَدِّمَةٌ",
+    titleEs: "Introducción",
+    items: [
+      {
+        "isInfo": true,
+        "text": "الْمُنَاجَاةُ وَالتَّضَرُّعُ إِلَى اللَّهِ",
+        "explanationAr": "• هَذِهِ الْمُنَاجَاتُ أَدْعِيَةٌ وَتَضَرُّعَاتٌ مَصُوغَةٌ بِأُسْلُوبٍ أَدَبِيٍّ، يُنَاجِي بِهَا الْعَبْدُ رَبَّهُ بِكَلَامِهِ. وَهِيَ لَيْسَتْ أَحَادِيثَ وَلَا آثَارًا مَنْقُولَةً، فَلَا تُنْسَبُ إِلَى النَّبِيِّ ﷺ وَلَا إِلَى أَحَدٍ مِنَ الصَّحَابَةِ أَوِ الْعُلَمَاءِ.\n• وَالدُّعَاءُ بِغَيْرِ الْمَأْثُورِ جَائِزٌ، وَلَيْسَ شَرْطًا أَنْ يَرِدَ كُلُّ دُعَاءٍ بِلَفْظِهِ عَنِ النَّبِيِّ ﷺ. وَمِنْ أَقْوَالِ أَهْلِ الْعِلْمِ:\n• قَالَ النَّوَوِيُّ فِي «رَوْضَةِ الطَّالِبِينَ» (1/256)، فِي الدُّعَاءِ بَعْدَ التَّشَهُّدِ: «وله أن يدعو بما شاء من أمر الدنيا والآخرة، وأمور الآخرة أفضل... والصواب الذي عليه الجماهير: جواز الجميع، لكن ما ورد في الأخبار أحب من غيره».\n• وَقَالَ الشَّيْخُ ابْنُ بَازٍ رَحِمَهُ اللَّهُ: «أما الدعاء فالإنسان يدعو بما شاء بما أحب من الدعوات الطيبة، التي ليس فيها محذور، لكن الوارد أفضل».\n• وَجَاءَ فِي فَتْوَى اللَّجْنَةِ الدَّائِمَةِ لِلْبُحُوثِ الْعِلْمِيَّةِ وَالْإِفْتَاءِ: «يدعو الإنسان ربه سرًّا تضرعًا وخفية، ولا يدعو بمحرم، ويدعو الله تعالى في صلاته وفي غير صلاته باللغة العربية وبغيرها من اللغات على حسب ما يتيسر له».\n• وَقَالَ أَحْمَدُ زَرُّوق فِي «قَوَاعِدِهِ» (ص 75): «بساط الشريعة قاضٍ بجواز الأخذ بكل ذكر ودعاء صح معناه وسلم مبناه».\n• وَيُرَاعَى فِي الْمُنَاجَاةِ: صِحَّةُ الْمَعْنَى فِي حَقِّ اللَّهِ، وَأَلَّا تَتَضَمَّنَ اعْتِدَاءً أَوْ طَلَبًا لِمُحَرَّمٍ، وَأَلَّا يُعْتَقَدَ لَهَا ثَوَابٌ مَخْصُوصٌ أَوْ عَدَدٌ أَوْ وَقْتٌ مُحَدَّدٌ بِلَا دَلِيلٍ. وَتَبْقَى الْأَدْعِيَةُ الْمَأْثُورَةُ مِنَ الْقُرْآنِ وَالسُّنَّةِ أَفْضَلَ مَا يُدْعَى بِهِ.",
+        "explanationEs": "• Estas munajat son súplicas e invocaciones redactadas en estilo literario para que el siervo se dirija a su Señor con sus propias palabras. No son hadices ni transmisiones antiguas, por lo que no se atribuyen al Profeta ﷺ ni a ningún compañero o sabio.\n• Suplicar con fórmulas que no están transmitidas es lícito, y no es condición que cada súplica llegue con su texto exacto del Profeta ﷺ. Algunas palabras de los sabios:\n• An-Nawawi, en «Rawdat at-Talibin» (1/256), sobre la súplica después del tashahhud: «Puede suplicar lo que quiera de los asuntos de este mundo y del otro, y los del otro mundo son mejores... Lo correcto, según la mayoría, es que todo es lícito, aunque lo transmitido en los textos es más querido que lo demás».\n• El sheij Ibn Baz, que Allah tenga misericordia de él: «En cuanto a la súplica, la persona suplica lo que quiera de las súplicas buenas que le gusten, sin nada censurable; pero lo transmitido es mejor».\n• Fatwa del Comité Permanente de Investigación Científica y Fatwa: «La persona suplica a su Señor en secreto, con humildad y discreción, sin pedir nada prohibido, y suplica a Allah en su oración y fuera de ella, en árabe o en otras lenguas, según le resulte posible».\n• Ahmad Zarruq, en «Al-Qawa‘id» (p. 75): «El terreno de la Ley permite adoptar cualquier dhikr o súplica cuyo significado sea correcto y cuya forma sea sana».\n• Condiciones: que el significado sea correcto respecto a Allah; que no haya transgresión ni petición de algo prohibido; y que no se crea, sin prueba, que tienen una recompensa especial, un número o un momento fijados. Las súplicas transmitidas del Corán y la Sunna siguen siendo lo mejor con lo que suplicar."
+      }
+    ]
+  },
+  {
     id: "alabanza",
     titleAr: "الْحَمْدُ وَالشُّكْرُ",
     titleEs: "Alabanza y Gratitud",
