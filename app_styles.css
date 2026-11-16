@@ -895,3 +895,28 @@ h1, h2, h3, #headerTitle,
   header > .container > div:last-child { gap: 0.3rem; }
   header > .container > div:last-child > * { margin-left: 0 !important; margin-right: 0 !important; }
 }
+
+/* Notas antes y después del zikr: tono violeta suave, distinto del resto de la tarjeta. */
+.zikr-note {
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.9;
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  white-space: pre-line;
+  color: #4c1d95;
+  background-color: #f5f0ff;
+  border: 1px solid #c4b5fd;
+  box-shadow: 0 1px 2px rgba(76, 29, 149, 0.08);
+}
+.zikr-note-es {
+  direction: ltr;
+  font-size: max(1rem, calc(var(--app-font-size, 1.125rem) * 0.95));
+  line-height: 1.7;
+}
+.dark .zikr-note {
+  color: #ede9fe;
+  background-color: rgba(76, 29, 149, 0.3);
+  border-color: #6d4fc2;
+  box-shadow: none;
+}

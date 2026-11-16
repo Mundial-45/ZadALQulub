@@ -1727,12 +1727,12 @@ async function publishPendingChanges(event) {
 }
 
 // Nota que sale antes o después del zikr dentro de su tarjeta (campos noteBefore/noteAfter y sus versiones en español).
-function renderZikrNote(arText, esText, isEs) {
+function renderZikrNote(arText, esText, isEs, kind) {
   const useEs = !!(isEs && esText);
   const txt = useEs ? esText : arText;
   if (!txt) return '';
   const body = useEs ? formatTextWithNewlines(txt) : formatQuotedText(txt);
-  return `<div class="zikr-note ${useEs ? 'es-text-style text-base sm:text-lg' : 'custom-text-size'} text-center font-bold leading-relaxed text-slate-800 dark:text-slate-100 bg-amber-50/90 dark:bg-slate-800/80 border border-amber-200/80 dark:border-slate-700 rounded-2xl px-4 py-3 whitespace-pre-line" dir="${useEs ? 'ltr' : 'rtl'}">${body}</div>`;
+  return `<div class="zikr-note zikr-note-${kind}${useEs ? ' zikr-note-es' : ' custom-text-size'}" dir="${useEs ? 'ltr' : 'rtl'}">${body}</div>`;
 }
 
 function renderGroupItems() {
@@ -1824,7 +1824,7 @@ function renderGroupItems() {
         ${item.note ? `<span class="bg-amber-100/80 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 px-3 py-1 rounded-full border border-amber-300 dark:border-amber-800">${isEs && item.noteEs ? item.noteEs : item.note}</span>` : ''}
       </div>`}
 
-      ${renderZikrNote(item.noteBefore, item.noteBeforeEs, isEs)}
+      ${renderZikrNote(item.noteBefore, item.noteBeforeEs, isEs, 'before')}
             ${isEs ? `
         <div class="space-y-4">
           ${item.latin ? `<div class="text-sm sm:text-base md:text-lg text-slate-800 dark:text-slate-200 latin-text-style italic text-center font-semibold bg-amber-100/50 dark:bg-slate-900/70 p-4 rounded-2xl border border-amber-300/60 dark:border-slate-700 shadow-sm whitespace-pre-line">${formatTextWithNewlines(item.latin)}</div>` : ''}
@@ -1839,7 +1839,7 @@ function renderGroupItems() {
         </div>
         ${item.explanationAr ? `<div class="guide-ar-expl whitespace-pre-line" dir="rtl">${formatQuotedText(item.explanationAr)}</div>` : ''}
       `}
-      ${renderZikrNote(item.noteAfter, item.noteAfterEs, isEs)}
+      ${renderZikrNote(item.noteAfter, item.noteAfterEs, isEs, 'after')}
       ${item.sourceUrl && currentSection !== 'glosario' ? `<div class="glos-source text-xs text-center text-slate-500 dark:text-slate-400" dir="${isEs ? 'ltr' : 'rtl'}">${isEs ? 'Fuente' : 'المصدر'}: <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer" class="underline text-emerald-700 dark:text-emerald-400">${isEs ? (item.sourceNameEs || item.sourceName || item.sourceUrl) : (item.sourceName || item.sourceUrl)}</a></div>` : ''}
 
       ${!isAdya && !isInfoItem && !noCounter ? `
