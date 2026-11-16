@@ -1879,15 +1879,13 @@ const azkarData = [
             "titleEs": "Súplica de la oración de la orientación o consulta (Al-Istijárah)",
             "items": [
                   {
-                        "itemNumber": 141,
-                        "text": "اللَّهُمَّ إِنِّي أَسْتَخِيرُكَ بِعِلْمِكَ، وَأَسْتَقْدِرُكَ بِقُدْرَتِكَ، وَأَسْأَلُكَ مِنْ فَضْلِكَ الْعَظِيمِ؛ فَإِنَّكَ تَقْدِرُ وَلاَ أَقْدِرُ، وَتَعْلَمُ وَلاَ أَعْلَمُ، وَأَنْتَ عَلاَّمُ الْغُيُوبِ، اللَّهُمَّ إِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الأَمْرَ\n\n- وَيُسَمِّي حَاجَتَهُ -\n\nخَيْرٌ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي\n\n(أَوْ قَالَ: عَاجِلِهِ وَآجِلِهِ)\n\nفَاقْدُرْهُ لِي وَيَسِّرْهُ لِي ثُمَّ بَارِكْ لِي فِيهِ، وَإِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الأَمْرَ شَرٌّ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي\n\n(أَوْ قَالَ: عَاجِلِهِ وَآجِلِهِ)\n\nفَاصْرِفْهُ عَنِّي وَاصْرِفْنِي عَنْهُ وَاقْدُرْ لِيَ الْخَيْرَ حَيْثُ كَانَ ثُمَّ أَرْضِنِي بِهِ.",
-                        "latin": "Allāhumma innī astakhīruka bi-ʿilmika, wa astaqdiruka bi-qudratika, wa asʾaluka min faḍlika al-ʿaẓīm; fa-innaka taqdiru wa lā aqdir, wa taʿlamu wa lā aʿlam, wa anta ʿallāmu al-ghuyūb. Allāhumma in kunta taʿlamu anna hādhā al-amra (y nombra su asunto) khayrun lī fī dīnī wa maʿāshī wa ʿāqibati amrī (aw qāla: ʿājilihi wa ājilih) faqdurhu lī wa yassirhu lī thumma bārik lī fīh, wa in kunta taʿlamu anna hādhā al-amra sharrun lī fī dīnī wa maʿāshī wa ʿāqibati amrī (aw qāla: ʿājilihi wa ājilih) faṣrifhu ʿannī waṣrifnī ʿanhu waqdur lī al-khayra ḥaythu kāna thumma arḍinī bih.",
-                        "explanationEs": "¡Oh Allah! Te pido orientación mediante Tu conocimiento, Te pido capacidad mediante Tu poder y Te pido de Tu gran favor; pues Tú puedes y yo no puedo, Tú sabes y yo no sé, y Tú eres el Conocedor de lo oculto. ¡Oh Allah! Si sabes que este asunto (nombra su necesidad) es bueno para mí en mi religión, mi vida y mi destino final, decrétamelo, facilítamelo y luego bendícemelo. Y si sabes que este asunto es malo para mí en mi religión, mi vida y mi destino final, apártalo de mí y apártame de él, decreta para mí el bien dondequiera que esté y haz que me sienta complacido con ello.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20141.mp3"
-                        ]
+                    "itemNumber": 141,
+                    "text": "اللَّهُمَّ إِنِّي أَسْتَخِيرُكَ بِعِلْمِكَ، وَأَسْتَقْدِرُكَ بِقُدْرَتِكَ، وَأَسْأَلُكَ مِنْ فَضْلِكَ الْعَظِيمِ؛ فَإِنَّكَ تَقْدِرُ وَلاَ أَقْدِرُ، وَتَعْلَمُ وَلاَ أَعْلَمُ، وَأَنْتَ عَلاَّمُ الْغُيُوبِ، اللَّهُمَّ إِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الأَمْرَ  -(وَيُسَمِّي حَاجَتَهُ)- خَيْرٌ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي، فَاقْدُرْهُ لِي وَيَسِّرْهُ لِي ثُمَّ بَارِكْ لِي فِيهِ، وَإِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الأَمْرَ شَرٌّ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي، فَاصْرِفْهُ عَنِّي وَاصْرِفْنِي عَنْهُ وَاقْدُرْ لِيَ الْخَيْرَ حَيْثُ كَانَ ثُمَّ أَرْضِنِي بِهِ.",
+                    "latin": "Allāhumma innī astakhīruka biʿilmika, wa astaqdiruka biqudratika, wa asʾaluka min faḍlika al-ʿaẓīm; fa-innaka taqdiru wa lā aqdiru, wa taʿlamu wa lā aʿlamu, wa anta ʿallāmu al-ghuyūb.\nAllāhumma in kunta taʿlamu anna hādhā al-amra -(mencionando aquí la necesidad concreta por la que se pide orientación)- khayrun lī fī dīnī wa maʿāshī wa ʿāqibati amrī, faqdurhu lī wa yassirhu lī, thumma bārik lī fīh.\nWa in kunta taʿlamu anna hādhā al-amra sharrun lī fī dīnī wa maʿāshī wa ʿāqibati amrī, faṣrifhu ʿannī waṣrifnī ʿanhu, waqdur liya al-khayra ḥaythu kāna, thumma arḍinī bih.",
+                    "explanationEs": "¡Oh, Allah! Te pido que elijas por mí mediante Tu conocimiento, y Te pido capacidad mediante Tu poder, y Te suplico que me concedas de Tu inmenso favor. Ciertamente, Tú tienes poder y yo no tengo poder; Tú sabes y yo no sé, y Tú eres el Conocedor de todo lo oculto.\n¡Oh, Allah! Si sabes que este asunto -(mencionando aquí la necesidad concreta por la que se pide orientación)- es bueno para mí en mi religión, en mi sustento y en el desenlace de mis asuntos, decrétalo para mí, facilítamelo y después bendíceme en ello.\nY si sabes que este asunto es malo para mí en mi religión, en mi sustento y en el desenlace de mis asuntos, apártalo de mí y apártame de él. Decreta para mí el bien dondequiera que se encuentre y después haz que quede satisfecho con él.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "noCounter": true
                   }
             ]
       },
@@ -1897,56 +1895,57 @@ const azkarData = [
             "titleEs": "La noche y el sueño",
             "items": [
                   {
-                        "itemNumber": 142,
-                        "subtitleAr": "الدُّعَاءُ عِنْدَ التَّقَلُّبِ فِي الفِرَاشِ لَيْلاً",
-                        "subtitleEs": "Súplica al darse la vuelta en la cama por la noche",
-                        "text": "لاَ إِلَهَ إِلاَّ اللَّهُ الْوَاحِدُ الْقَهَّارُ، رَبُّ السَّمَوَاتِ وَالأَرْضِ وَمَا بَيْنَهُمَا الْعَزِيزُ الْغَفَّارُ.",
-                        "latin": "Lā ilāha illā Allāhu al-wāḥidu al-qahhār, rabbu as-samāwāti wal-arḍi wa mā baynahumā al-ʿazīzu al-ghaffār.",
-                        "explanationEs": "No hay más divinidad que Allah, el Único, el Dominador, Señor de los cielos y de la tierra y de lo que hay entre ambos, el Poderoso, el Absolvedor.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20142.mp3"
-                        ]
+                    "itemNumber": 142,
+                    "subtitleAr": "الدُّعَاءُ عِنْدَ التَّقَلُّبِ فِي الفِرَاشِ لَيْلاً",
+                    "subtitleEs": "Súplica al darse la vuelta en la cama por la noche",
+                    "text": "لاَ إِلَهَ إِلاَّ اللَّهُ الْوَاحِدُ الْقَهَّارُ، رَبُّ السَّمَوَاتِ وَالأَرْضِ وَمَا بَيْنَهُمَا الْعَزِيزُ الْغَفَّارُ.",
+                    "latin": "Lā ilāha illā Allāhu al-wāḥidu al-qahhār, rabbu as-samāwāti wal-arḍi wa mā baynahumā al-ʿazīzu al-ghaffār.",
+                    "explanationEs": "No hay más divinidad que Allah, el Único, el Dominador, Señor de los cielos y de la tierra y de lo que hay entre ambos, el Poderoso, el Absolvedor.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20142.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 143,
-                        "subtitleAr": "دُعَاءُ الفَزَعِ فِي النَّوْمِ وَمَنْ بُلِيَ بِالوَحْشَةِ",
-                        "subtitleEs": "Súplica ante el sobresalto al dormir o la sensación de angustia",
-                        "text": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ غَضَبِهِ وَعِقَابِهِ، وَشَرِّ عِبَادِهِ، وَمِنْ هَمَزَاتِ الشَّيَاطِينِ وَأَنْ يَحْضُرُونِ.",
-                        "latin": "Aʿūdhu bi-kalimāti Allāhi at-tāmmāti min ghaḍabihi wa ʿiqābih, wa sharri ʿibādih, wa min hamazāti ash-shayāṭīni wa an yaḥḍurūn.",
-                        "explanationEs": "Me refugio en las palabras perfectas de Allah de Su ira, de Su castigo, del mal de Sus siervos y de las incitaciones de los demonios y de que se presenten ante mí.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20143.mp3"
-                        ]
+                    "itemNumber": 143,
+                    "subtitleAr": "دُعَاءُ الفَزَعِ فِي النَّوْمِ وَمَنْ بُلِيَ بِالوَحْشَةِ",
+                    "subtitleEs": "Súplica ante el sobresalto al dormir o la sensación de angustia",
+                    "text": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ غَضَبِهِ وَعِقَابِهِ، وَشَرِّ عِبَادِهِ، وَمِنْ هَمَزَاتِ الشَّيَاطِينِ وَأَنْ يَحْضُرُونِ.",
+                    "latin": "Aʿūdhu bi-kalimāti Allāhi at-tāmmāti min ghaḍabihi wa ʿiqābih, wa sharri ʿibādih, wa min hamazāti ash-shayāṭīni wa an yaḥḍurūn.",
+                    "explanationEs": "Me refugio en las palabras perfectas de Allah de Su ira, de Su castigo, del mal de Sus siervos y de las incitaciones de los demonios y de que se presenten ante mí.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20143.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 144,
-                        "subtitleAr": "مَا يَفْعَلُ مَنْ رَأَى الرُّؤْيَا أَوْ الحُلْمَ",
-                        "subtitleEs": "Lo que debe hacer quien tiene una visión o un sueño",
-                        "text": "يَنْفُثُ عَنْ يَسَارِهِ (ثَلاَثاً)، وَيَسْتَعِيذُ بِاللَّهِ مِنَ الشَّيْطَانِ وَمِنْ شَرِّ مَا رَأَى (ثَلاَثَ مَرَّاتٍ)، وَلاَ يُحَدِّثْ بِهَا أَحَداً، وَيَتَحَوَّلُ عَنْ جَنْبِهِ الَّذِي كَانَ عَلَيْهِ.",
-                        "latin": "Yanfuthu ʿan yasārihi (thalāthan), wa yastaʿīdhu billāhi minash-shayṭāni wa min sharri mā raʾā (thalātha marrāt), wa lā yuḥaddith bihā aḥadā, wa yataḥawwalu ʿan janbihi alladhī kāna ʿalayh.",
-                        "explanationEs": "Sopla suavemente a su izquierda tres veces, busca refugio en Allah de Shaitán y del mal de lo que vio (tres veces), no se lo cuenta a nadie y cambia del costado sobre el que estaba recostado.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20144.mp3"
-                        ]
+                    "itemNumber": 144,
+                    "subtitleAr": "مَا يَفْعَلُ مَنْ رَأَى الرُّؤْيَا أَوْ الحُلْمَ",
+                    "subtitleEs": "Lo que debe hacer quien tiene una visión o un sueño",
+                    "text": "",
+                    "latin": "",
+                    "explanationEs": "",
+                    "count": 1,
+                    "maxCount": 1,
+                    "noCounter": true,
+                    "noteBefore": "يَنْفُثُ عَنْ يَسَارِهِ (ثَلاَثاً)، وَيَسْتَعِيذُ بِاللَّهِ مِنَ الشَّيْطَانِ وَمِنْ شَرِّ مَا رَأَى (ثَلاَثَ مَرَّاتٍ)، وَلاَ يُحَدِّثْ بِهَا أَحَداً، وَيَتَحَوَّلُ عَنْ جَنْبِهِ الَّذِي كَانَ عَلَيْهِ."
                   },
                   {
-                        "itemNumber": 145,
-                        "subtitleAr": "مَا يَفْعَلُ مَنْ رَأَى الرُّؤْيَا أَوْ الحُلْمَ",
-                        "subtitleEs": "Lo que debe hacer quien tiene una visión o un sueño",
-                        "text": "وَيَقُومُ يُصَلِّي إِنْ أَرَادَ ذَلِكَ.",
-                        "latin": "Wa yaqūmu yuṣallī in arāda dhālik.",
-                        "explanationEs": "Y se levanta a orar si así lo desea.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20145.mp3"
-                        ]
+                    "itemNumber": 145,
+                    "subtitleAr": "مَا يَفْعَلُ مَنْ رَأَى الرُّؤْيَا أَوْ الحُلْمَ",
+                    "subtitleEs": "Lo que debe hacer quien tiene una visión o un sueño",
+                    "text": "",
+                    "latin": "",
+                    "explanationEs": "",
+                    "count": 1,
+                    "maxCount": 1,
+                    "noCounter": true,
+                    "noteBefore": "وَيَقُومُ يُصَلِّي إِنْ أَرَادَ ذَلِكَ.",
+                    "noteBeforeEs": "Y se levanta a orar si así lo desea."
                   }
             ]
       },
