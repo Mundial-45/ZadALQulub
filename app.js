@@ -309,12 +309,34 @@ let activeAudioList = [];
 let activeAudioListIndex = 0;
 let audioPlaybackToken = 0;
 let audioErrorStreak = 0;
+// El audio activo se identifica por sección + grupo + tarjeta: el número de tarjeta solo se repite en todos los grupos.
+let activeAudioKey = null;
+function audioKeyFor(index) {
+  return (currentSection || '') + '|' + (currentGroup ? currentGroup.id : '') + '|' + index;
+}
+function isActiveAudioCard(index) {
+  return !!currentAudio && activeAudioCardIndex === index && activeAudioKey === audioKeyFor(index);
+}
+function resetActiveAudioState() {
+  activeAudioList = [];
+  activeAudioListIndex = 0;
+  activeAudioCardIndex = null;
+  activeAudioKey = null;
+}
+// Al salir de un grupo, un audio en pausa ya no tiene tarjeta a la que volver: se descarta.
+function releasePausedAudio() {
+  if (currentAudio && currentAudio.paused) {
+    stopCurrentAudioPlayback();
+    resetActiveAudioState();
+  }
+}
 function formatAudioTime(seconds) {
   if (!Number.isFinite(seconds) || seconds < 0) return '0:00';
   return Math.floor(seconds / 60) + ':' + String(Math.floor(seconds % 60)).padStart(2, '0');
 }
 function updateAudioProgress() {
   if (!currentAudio || activeAudioCardIndex === null) return;
+  if (activeAudioKey !== audioKeyFor(activeAudioCardIndex)) return;
   const i = activeAudioCardIndex;
   const seek = document.getElementById('audioSeek-' + i);
   const nowEl = document.getElementById('audioCurrent-' + i);
@@ -406,7 +428,7 @@ function playAudio(audioValue, index, countMultiplier) {
   const urls = parsed.urls;
   if (!urls.length) return;
 
-  if (currentAudio && activeAudioCardIndex === index) {
+  if (isActiveAudioCard(index)) {
     if (currentAudio.paused) {
       currentAudio.play().then(updateAudioProgress).catch(() => showToast(currentLang === 'es' ? 'No se pudo reproducir el audio' : 'تعذر تشغيل الصوت'));
     } else {
@@ -418,6 +440,7 @@ function playAudio(audioValue, index, countMultiplier) {
 
   stopCurrentAudioPlayback();
   activeAudioCardIndex = index;
+  activeAudioKey = audioKeyFor(index);
   activeAudioList = urls;
   activeAudioListIndex = 0;
 
@@ -475,6 +498,12 @@ function playNextAudioInSequence(token) {
     activeAudioListIndex = 0;
   } else if (activeAudioListIndex >= activeAudioList.length) {
     const cardIdx = activeAudioCardIndex;
+
+    if (activeAudioKey !== audioKeyFor(cardIdx)) {
+      stopCurrentAudioPlayback();
+      resetActiveAudioState();
+      return;
+    }
 
     if (cardIdx !== null && typeof decrementCounter === 'function') {
       decrementCounter(cardIdx, true);
@@ -539,11 +568,9 @@ function playNextAudioInSequence(token) {
   }
 }
 function stopAudio(index) {
-  if (currentAudio && activeAudioCardIndex === index) {
+  if (isActiveAudioCard(index)) {
     stopCurrentAudioPlayback();
-    activeAudioList = [];
-    activeAudioListIndex = 0;
-    activeAudioCardIndex = null;
+    resetActiveAudioState();
     setPlayButtonState(index, false);
     const seek = document.getElementById('audioSeek-' + index);
     if (seek) seek.value = '0';
@@ -552,7 +579,7 @@ function stopAudio(index) {
   }
 }
 function seekAudio(index, value) {
-  if (currentAudio && activeAudioCardIndex === index && Number.isFinite(currentAudio.duration) && currentAudio.duration > 0) {
+  if (isActiveAudioCard(index) && Number.isFinite(currentAudio.duration) && currentAudio.duration > 0) {
     currentAudio.currentTime = Number(value) / 1000 * currentAudio.duration;
     updateAudioProgress();
   }
@@ -829,6 +856,7 @@ function updateKeepScreenOn() {
 ['play', 'pause', 'ended'].forEach(function (ev) { document.addEventListener(ev, updateKeepScreenOn, true); });
 
 function hideAllViews() {
+  releasePausedAudio();
   scrollYBeforeViewChange = window.scrollY || window.pageYOffset || 0;
   setTimeout(updateKeepScreenOn, 0);
   ['homeView', 'categoryListView', 'detailView', 'tasbeehView', 'favoritesView', 'quranView', 'quranSurahsView', 'quranAhzabView', 'quranReaderView'].forEach(id => {
