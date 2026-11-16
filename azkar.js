@@ -588,9 +588,13 @@ const azkarData = [
             "items": [
                   {
                     "itemNumber": 51,
-                    "text": "يَجْمَعُ كَفَّيْهِ ثُمَّ يَنْفُثُ فِيهِمَا فَيَقْرَأُ فِيهِمَا:\n\nبِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ\n﴿قُلۡ هُوَ ٱللَّهُ أَحَدٌ۝ ٱللَّهُ ٱلصَّمَدُ۝ لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ۝ وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ۝﴾\n\nبِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ\n﴿قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ۝ مِن شَرِّ مَا خَلَقَ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ۝ وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِي ٱلۡعُقَدِ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ۝﴾\n\nبِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ\n﴿قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ۝ مَلِكِ ٱلنَّاسِ۝ إِلَٰهِ ٱلنَّاسِ۝ مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ۝ ٱلَّذِي يُوَسۡوِسُ فِي صُدُورِ ٱلنَّاسِ۝ مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ۝﴾\n\nثُمَّ يَمْسَحُ بِهِمَا مَا اسْتَطَاعَ مِنْ جَسَدِهِ يَبْدَأُ بِهِمَا عَلَى رَأْسِهِ وَوَجْهِهِ وَمَا أَقْبَلَ مِنْ جَسَدِهِ.",
-                    "latin": "Yajmaʿu kaffayhi thumma yanfuthu fīhimā fa-yaqraʾu fīhimā:\nBismillāhir-raḥmānir-raḥīm. Qul Huwallāhu aḥad, Allāhuṣ-ṣamad, lam yalid wa lam yūlad, wa lam yakun lahū kufuwan aḥad.\n\nBismillāhir-raḥmānir-raḥīm. Qul aʿūdhu bi-rabbil-falaq, min sharri mā khalaq, wa min sharri ghāsiqin idhā waqab, wa min sharrin-naffāthāti fil-ʿuqad, wa min sharri ḥāsidin idhā ḥasad.\n\nBismillāhir-raḥmānir-raḥīm. Qul aʿūdhu bi-rabbin-nās, Malikin-nās, Ilāhin-nās, min sharril-waswāsil-khannās, alladhī yuwaswisu fī ṣudūrin-nās, minal-jinnati wan-nās.\nThumma yamsaḥu bihimā mā istaṭāʿa min jasadih, yabdaʾu bihimā ʿalā raʾsihī wa wajhihī wa mā aqbala min jasadih.",
-                    "explanationEs": "Junta las palmas de sus manos, sopla suavemente en ellas y recita en ellas:\nEn el nombre de Allah, el Compasivo, el Misericordioso. Di: «Él es Allah, Uno. Allah es el Absoluto. No engendró ni fue engendrado. Y no hay nada ni nadie que sea semejante a Él».\n\nEn el nombre de Allah, el Compasivo, el Misericordioso. Di: «Me refugio en el Señor del amanecer, de todo el mal que existe en lo que Él creó, del mal de la oscuridad de la noche cuando se extiende, del mal de las [hechiceras] sopladoras de nudos, y del mal del envidioso cuando envidia».\n\nEn el nombre de Allah, el Compasivo, el Misericordioso. Di: «Me refugio en el Señor de los seres humanos, en el Rey Soberano de los seres humanos, en el [único] Dios de los seres humanos, de la maldad del [demonio] susurrador que huye [cuando el nombre de Allah es mencionado], que susurra en los corazones de los seres humanos, y existe entre los yinn y entre los seres humanos».\nLuego pasa las palmas de sus manos por el cuerpo hasta donde le sea posible alcanzar, comenzando por la cabeza, el rostro y la parte delantera del cuerpo.",
+                    "text": "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ\n﴿قُلۡ هُوَ ٱللَّهُ أَحَدٌ۝ ٱللَّهُ ٱلصَّمَدُ۝ لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ۝ وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ۝﴾\n\nبِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ\n﴿قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ۝ مِن شَرِّ مَا خَلَقَ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ۝ وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِي ٱلۡعُقَدِ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ۝﴾\n\nبِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ\n﴿قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ۝ مَلِكِ ٱلنَّاسِ۝ إِلَٰهِ ٱلنَّاسِ۝ مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ۝ ٱلَّذِي يُوَسۡوِسُ فِي صُدُورِ ٱلنَّاسِ۝ مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ۝﴾",
+                    "latin": "Bismillāhir-raḥmānir-raḥīm. Qul Huwallāhu aḥad, Allāhuṣ-ṣamad, lam yalid wa lam yūlad, wa lam yakun lahū kufuwan aḥad.\n\nBismillāhir-raḥmānir-raḥīm. Qul aʿūdhu bi-rabbil-falaq, min sharri mā khalaq, wa min sharri ghāsiqin idhā waqab, wa min sharrin-naffāthāti fil-ʿuqad, wa min sharri ḥāsidin idhā ḥasad.\n\nBismillāhir-raḥmānir-raḥīm. Qul aʿūdhu bi-rabbin-nās, Malikin-nās, Ilāhin-nās, min sharril-waswāsil-khannās, alladhī yuwaswisu fī ṣudūrin-nās, minal-jinnati wan-nās.",
+                    "explanationEs": "En el nombre de Allah, el Compasivo, el Misericordioso. Di: «Él es Allah, Uno. Allah es el Absoluto. No engendró ni fue engendrado. Y no hay nada ni nadie que sea semejante a Él».\n\nEn el nombre de Allah, el Compasivo, el Misericordioso. Di: «Me refugio en el Señor del amanecer, de todo el mal que existe en lo que Él creó, del mal de la oscuridad de la noche cuando se extiende, del mal de las [hechiceras] sopladoras de nudos, y del mal del envidioso cuando envidia».\n\nEn el nombre de Allah, el Compasivo, el Misericordioso. Di: «Me refugio en el Señor de los seres humanos, en el Rey Soberano de los seres humanos, en el [único] Dios de los seres humanos, de la maldad del [demonio] susurrador que huye [cuando el nombre de Allah es mencionado], que susurra en los corazones de los seres humanos, y existe entre los yinn y entre los seres humanos».",
+                    "noteBefore": "يَجْمَعُ كَفَّيْهِ ثُمَّ يَنْفُثُ فِيهِمَا فَيَقْرَأُ فِيهِمَا:",
+                    "noteBeforeEs": "Junta las palmas de sus manos, sopla suavemente en ellas y recita en ellas:",
+                    "noteAfter": "ثُمَّ يَمْسَحُ بِهِمَا مَا اسْتَطَاعَ مِنْ جَسَدِهِ يَبْدَأُ بِهِمَا عَلَى رَأْسِهِ وَوَجْهِهِ وَمَا أَقْبَلَ مِنْ جَسَدِهِ.",
+                    "noteAfterEs": "Luego pasa las palmas de sus manos por el cuerpo hasta donde le sea posible alcanzar, comenzando por la cabeza, el rostro y la parte delantera del cuerpo.",
                     "count": 3,
                     "maxCount": 3,
                     "note": "سورة الإخلاص، سورة الفلق، سورة الناس",
@@ -1096,6 +1100,8 @@ const azkarData = [
             "items": [
                   {
                     "itemNumber": 88,
+                    "subtitleAr": "مَا يُقَالُ أَثْنَاءَ الْأَذَانِ",
+                    "subtitleEs": "Lo que se dice durante el adhán",
                     "text": "يَقُولُ مِثْلَ مَا يَقُولُ الْمُؤَذِّنُ إِلاَّ فِي (حَيَّ عَلَى الصَّلاَةِ) وَ(حَيَّ عَلَى الْفَلاَحِ) فَيَقُولُ:\n\nلاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللَّهِ.",
                     "latin": "Repite lo que dice el muecín, excepto en «Ḥayya ʿalā ṣ-ṣalāh» y «Ḥayya ʿalā l-falāḥ», donde dice: Lā ḥawla wa lā quwwata illā billāh.",
                     "explanationEs": "Repite las mismas palabras que el muecín (llamador a la oración), excepto al escuchar 'Acudid a la oración' y 'Acudid al éxito', donde debe decir: No hay fuerza ni poder sino en Allah.",
@@ -1107,6 +1113,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 89,
+                    "subtitleAr": "مَا يُقَالُ أَثْنَاءَ الْأَذَانِ",
+                    "subtitleEs": "Lo que se dice durante el adhán",
                         "text": "وَأَنَا أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ وَأَنَّ مُحَمَّداً عَبْدُهُ وَرَسُولُهُ، رَضِيتُ بِاللَّهِ رَبَّاً، وَبِمُحَمَّدٍ رَسُولاً، وَبِالإِسْلاَمِ دِيناً.\n\n(يَقُولُ ذَلِكَ عَقِبَ تَشَهُّدِ الْمُؤَذِّنِ).",
                         "latin": "Wa anā ashhadu an lā ilāha illā Allāhu waḥdahu lā sharīka lahu wa anna Muḥammadan ʿabduhu wa rasūluh, raḍītu billāhi rabban, wa bi-Muḥammadin rasūlan, wa bil-islāmi dīnan.",
                         "explanationEs": "Y yo atestiguo que no hay más divinidad que Allah, Único, sin asociados, y que Muhammad es Su siervo y Mensajero. Acepto complacido a Allah como Señor, a Muhammad como Mensajero y al Islam como religión. (Dice esto tras la atestiguación del muecín).",
@@ -1118,6 +1126,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 90,
+                    "subtitleAr": "مَا يُقَالُ بَعْدَ الْأَذَانِ",
+                    "subtitleEs": "Lo que se dice después del adhán",
                         "text": "يُصَلِّي عَلَى النَّبِيِّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ بَعْدَ فَرَاغِهِ مِنْ إِجَابَةِ الْمُؤَذِّنِ.",
                         "latin": "Ṣallā Allāhu ʿalan-nabiyyi ṣallā Allāhu ʿalayhi wa sallam baʿda farāghihi min ijābati al-muʾadhdhin.",
                         "explanationEs": "Invoca bendiciones sobre el Profeta (que la paz y las bendiciones de Allah sean con él) tras responder a la llamada del muecín.",
@@ -1129,6 +1139,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 91,
+                    "subtitleAr": "مَا يُقَالُ بَعْدَ الْأَذَانِ",
+                    "subtitleEs": "Lo que se dice después del adhán",
                         "text": "اللَّهُمَّ رَبَّ هَذِهِ الدَّعْوَةِ التَّامَّةِ، وَالصَّلاَةِ الْقَائِمَةِ، آتِ مُحَمَّداً الْوَسِيلَةَ وَالْفَضِيلَةَ، وَابْعَثْهُ مَقَاماً مَحْمُوداً الَّذِي وَعَدْتَهُ، [إِنَّكَ لاَ تُخْلِفُ الْمِيعَادَ].",
                         "latin": "Allāhumma rabba hādhihi ad-daʿwati at-tāmmah, waṣ-ṣalāti al-qāʾimah, āti Muḥammadan al-wasīlata wal-faḍīlah, wabʿathhu maqāman maḥmūdan alladhī waʿadtah, [innaka lā tukhlifu al-mīʿād].",
                         "explanationEs": "¡Oh Allah, Señor de esta llamada perfecta y de la oración que se va a celebrar! Concede a Muhammad la cercanía (Al-Wasilah) y la excelencia, y resucítalo en la posición honorable que le has prometido. [Ciertamente Tú no faltas a Tu promesa].",
@@ -1140,6 +1152,8 @@ const azkarData = [
                   },
                   {
                         "itemNumber": 92,
+                    "subtitleAr": "مَا يُقَالُ بَعْدَ الْأَذَانِ",
+                    "subtitleEs": "Lo que se dice después del adhán",
                         "text": "يَدْعُو لِنَفْسِهِ بَيْنَ الأَذَانِ وَالإِقَامَةِ فَإِنَّ الدُّعَاءَ حِينَئِذٍ لاَ يُرَدُّ.",
                         "latin": "Yadʿū li-nafsihi bayna al-adhāni wal-iqāmah, fa-inna ad-duʿāʾa ḥīnaʾidhin lā yuradd.",
                         "explanationEs": "Suplica por sí mismo entre la llamada a la oración (Adhán) y el inicio de la misma (Iqámah), pues la súplica en ese momento no es rechazada.",

@@ -893,8 +893,12 @@ function findSectionGroup(groupId) {
 }
 
 function getItemShareText(item, isEs) {
-  if (isEs) return item.explanationEs || item.text;
-  return item.explanationAr ? item.text + '\n\n' + item.explanationAr : item.text;
+  const noteBefore = isEs ? (item.noteBeforeEs || item.noteBefore) : item.noteBefore;
+  const noteAfter = isEs ? (item.noteAfterEs || item.noteAfter) : item.noteAfter;
+  let body;
+  if (isEs) body = item.explanationEs || item.text;
+  else body = item.explanationAr ? item.text + '\n\n' + item.explanationAr : item.text;
+  return [noteBefore, body, noteAfter].filter(Boolean).join('\n\n');
 }
 
 function getGroupItemCount(group) {
@@ -1413,6 +1417,11 @@ function openItemEditor(index) {
   // Mostrar estos campos en el editor sin obligar a guardarlos vacíos en los datos.
   if (!Object.prototype.hasOwnProperty.call(draft, 'audioUrl')) draft.audioUrl = '';
   if (!Object.prototype.hasOwnProperty.call(draft, 'audioUrls')) draft.audioUrls = [];
+  // Opciones del zikr: quitar el contador y notas antes/después del texto.
+  if (!Object.prototype.hasOwnProperty.call(draft, 'noCounter')) draft.noCounter = false;
+  ['noteBefore', 'noteBeforeEs', 'noteAfter', 'noteAfterEs'].forEach(function (k) {
+    if (!Object.prototype.hasOwnProperty.call(draft, k)) draft[k] = '';
+  });
   itemEditorState = {
     index: index, groupId: currentGroup.id, section: currentSection, filePath: filePath,
     originalItem: JSON.parse(JSON.stringify(baseline)), draftItem: JSON.parse(JSON.stringify(draft)),
@@ -1448,15 +1457,15 @@ function openItemEditor(index) {
     }
     control.dataset.editorKey = key; control.dataset.editorKind = kind; control.id = 'item-editor-field-' + key; label.htmlFor = control.id;
     const normalizedKey = key.toLowerCase();
-    const isArabicText = ['text', 'textar', 'titlear', 'arabic', 'arabictext'].includes(normalizedKey);
-    const isLtrText = ['latin', 'transliteration', 'explanationes', 'explanation_es', 'spanish', 'translationes', 'translation_es'].includes(normalizedKey) || normalizedKey.includes('latin') || normalizedKey.includes('explanationes');
+    const isArabicText = ['text', 'textar', 'titlear', 'arabic', 'arabictext', 'notebefore', 'noteafter'].includes(normalizedKey);
+    const isLtrText = ['latin', 'transliteration', 'explanationes', 'explanation_es', 'spanish', 'translationes', 'translation_es'].includes(normalizedKey) || normalizedKey.includes('latin') || normalizedKey.includes('explanationes') || /^note(before|after)es$/.test(normalizedKey);
     if (kind === 'string' && isArabicText) {
       control.dir = 'rtl'; control.lang = 'ar';
       control.style.direction = 'rtl'; control.style.textAlign = 'right';
       control.style.fontFamily = "'Amiri', 'Tajawal', serif";
       control.style.backgroundColor = document.documentElement.classList.contains('dark') ? '#172b27' : '#f0fdf4';
     } else if (kind === 'string' && isLtrText) {
-      control.dir = 'ltr'; control.lang = normalizedKey.includes('explanation') || normalizedKey.includes('spanish') || normalizedKey.includes('translation') ? 'es' : 'en';
+      control.dir = 'ltr'; control.lang = normalizedKey.includes('explanation') || normalizedKey.includes('spanish') || normalizedKey.includes('translation') || /^note(before|after)es$/.test(normalizedKey) ? 'es' : 'en';
       control.style.direction = 'ltr'; control.style.textAlign = 'left';
       control.style.fontFamily = "'Inter', 'Lora', sans-serif";
       control.style.backgroundColor = document.documentElement.classList.contains('dark') ? '#1e293b' : '#f8fafc';
@@ -1465,6 +1474,18 @@ function openItemEditor(index) {
       control.dir = 'auto'; control.style.textAlign = 'start';
     }
     wrap.appendChild(label); wrap.appendChild(control);
+    const fieldHints = {
+      noCounter: ['Marca esta casilla para quitar el contador de este zikr.', 'ضع علامة لإزالة العدّاد من هذا الذكر.'],
+      noteBefore: ['Nota en árabe que sale ANTES del zikr (dentro de su ventana).', 'ملاحظة تظهر قبل الذكر داخل نفس النافذة.'],
+      noteBeforeEs: ['Traducción al español de la nota de antes.', 'ترجمة الملاحظة السابقة إلى الإسبانية.'],
+      noteAfter: ['Nota en árabe que sale DESPUÉS del zikr (dentro de su ventana).', 'ملاحظة تظهر بعد الذكر داخل نفس النافذة.'],
+      noteAfterEs: ['Traducción al español de la nota de después.', 'ترجمة الملاحظة اللاحقة إلى الإسبانية.']
+    };
+    if (fieldHints[key]) {
+      const fh = document.createElement('p'); fh.className = 'text-xs text-slate-500';
+      fh.textContent = fieldHints[key][currentLang === 'es' ? 0 : 1];
+      wrap.appendChild(fh);
+    }
     if (kind === 'json') {
       const hint = document.createElement('p'); hint.className = 'text-xs text-slate-500';
       hint.textContent = currentLang === 'es' ? 'JSON válido; conserva corchetes y comillas.' : 'أدخل JSON صحيحًا مع الأقواس وعلامات الاقتباس.';
@@ -1503,6 +1524,10 @@ function buildEditedItem() {
   });
   // Los campos opcionales vacíos se muestran en el editor, pero no se guardan en el JS.
   if (typeof updated.note === 'string' && !updated.note.trim()) delete updated.note;
+  ['noteBefore', 'noteBeforeEs', 'noteAfter', 'noteAfterEs'].forEach(function (k) {
+    if (typeof updated[k] === 'string' && !updated[k].trim()) delete updated[k];
+  });
+  if (updated.noCounter !== true) delete updated.noCounter;
   if (typeof updated.audioUrl === 'string' && !updated.audioUrl.trim()) delete updated.audioUrl;
   if (Array.isArray(updated.audioUrls)) {
     updated.audioUrls = updated.audioUrls.map(url => typeof url === 'string' ? url.trim() : url).filter(Boolean);
@@ -1701,6 +1726,15 @@ async function publishPendingChanges(event) {
   }
 }
 
+// Nota que sale antes o después del zikr dentro de su tarjeta (campos noteBefore/noteAfter y sus versiones en español).
+function renderZikrNote(arText, esText, isEs) {
+  const useEs = !!(isEs && esText);
+  const txt = useEs ? esText : arText;
+  if (!txt) return '';
+  const body = useEs ? formatTextWithNewlines(txt) : formatQuotedText(txt);
+  return `<div class="zikr-note ${useEs ? 'es-text-style text-base sm:text-lg' : 'custom-text-size'} text-center font-bold leading-relaxed text-slate-800 dark:text-slate-100 bg-amber-50/90 dark:bg-slate-800/80 border border-amber-200/80 dark:border-slate-700 rounded-2xl px-4 py-3 whitespace-pre-line" dir="${useEs ? 'ltr' : 'rtl'}">${body}</div>`;
+}
+
 function renderGroupItems() {
   const container = document.getElementById('itemsContainer');
   if (!container || !currentGroup || !currentGroup.items.length) return;
@@ -1724,7 +1758,7 @@ function renderGroupItems() {
     let totalCompletedInGroup = 0;
     let countableItems = 0;
     currentGroup.items.forEach((it, idx) => {
-      if (it.isInfo) return;
+      if (it.isInfo || it.noCounter) return;
       countableItems++;
       const cnt = getSavedCount(currentGroup.id, idx, it.count);
       if (cnt === 0) totalCompletedInGroup++;
@@ -1763,6 +1797,7 @@ function renderGroupItems() {
     const isAzkarSection = currentSection === 'azkar';
     const isAdyaSection = currentSection === 'adya';
     const isInfoItem = !!item.isInfo;
+    const noCounter = !!item.noCounter;
     const displayedItemNumber = Number(item.itemNumber) || (index + 1);
     const labelModule = getSectionModule(currentSection);
     const itemProgressStr = (labelModule && typeof labelModule.getItemLabel === 'function')
@@ -1789,6 +1824,7 @@ function renderGroupItems() {
         ${item.note ? `<span class="bg-amber-100/80 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 px-3 py-1 rounded-full border border-amber-300 dark:border-amber-800">${isEs && item.noteEs ? item.noteEs : item.note}</span>` : ''}
       </div>`}
 
+      ${renderZikrNote(item.noteBefore, item.noteBeforeEs, isEs)}
             ${isEs ? `
         <div class="space-y-4">
           ${item.latin ? `<div class="text-sm sm:text-base md:text-lg text-slate-800 dark:text-slate-200 latin-text-style italic text-center font-semibold bg-amber-100/50 dark:bg-slate-900/70 p-4 rounded-2xl border border-amber-300/60 dark:border-slate-700 shadow-sm whitespace-pre-line">${formatTextWithNewlines(item.latin)}</div>` : ''}
@@ -1803,9 +1839,10 @@ function renderGroupItems() {
         </div>
         ${item.explanationAr ? `<div class="guide-ar-expl whitespace-pre-line" dir="rtl">${formatQuotedText(item.explanationAr)}</div>` : ''}
       `}
+      ${renderZikrNote(item.noteAfter, item.noteAfterEs, isEs)}
       ${item.sourceUrl && currentSection !== 'glosario' ? `<div class="glos-source text-xs text-center text-slate-500 dark:text-slate-400" dir="${isEs ? 'ltr' : 'rtl'}">${isEs ? 'Fuente' : 'المصدر'}: <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer" class="underline text-emerald-700 dark:text-emerald-400">${isEs ? (item.sourceNameEs || item.sourceName || item.sourceUrl) : (item.sourceName || item.sourceUrl)}</a></div>` : ''}
 
-      ${!isAdya && !isInfoItem ? `
+      ${!isAdya && !isInfoItem && !noCounter ? `
         <div data-no-share class="flex flex-col items-center justify-center pt-2">
           <button type="button" onclick="decrementCounter(${index})" class="dhikr-counter-btn ${isDone ? 'is-done' : ''} w-32 h-32 rounded-full flex flex-col items-center justify-center transition transform active:scale-90 cursor-pointer shadow-xl border-4 ${isDone ? 'bg-emerald-600 text-white border-emerald-400 hover:bg-emerald-700' : 'bg-gradient-to-br from-emerald-500 to-teal-700 text-white border-emerald-300 hover:from-emerald-600 hover:to-teal-800'}">
             <span class="text-3xl font-extrabold text-white">${isDone ? '✓' : currentCount}</span>
@@ -1850,7 +1887,7 @@ function renderGroupItems() {
             ✏️ ${isEs ? 'Editar' : 'تعديل'}
           </button>
         ` : ''}
-        ${!isAdya && !isInfoItem ? `
+        ${!isAdya && !isInfoItem && !noCounter ? `
           <button type="button" onclick="resetSingleItem(${index})" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-rose-100 dark:hover:bg-rose-950 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="${isEs ? 'Reiniciar contador' : 'إعادة ضبط الذكر'}" aria-label="${isEs ? 'Reiniciar contador' : 'إعادة ضبط الذكر'}">
             🔄
           </button>
