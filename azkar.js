@@ -599,11 +599,9 @@ const azkarData = [
                     "maxCount": 3,
                     "note": "سورة الإخلاص، سورة الفلق، سورة الناس",
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2051-1.mp3",
                       "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q112.mp3",
                       "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q113.mp3",
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q114.mp3",
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2051-2.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q114.mp3"
                     ]
                   },
                   {
@@ -1955,56 +1953,59 @@ const azkarData = [
             "titleEs": "Azkar del Witr",
             "items": [
                   {
-                        "itemNumber": 146,
-                        "subtitleAr": "دُعَاءُ قُنُوتِ الوِتْرِ",
-                        "subtitleEs": "Súplica del Qunūt en la oración del Witr",
-                        "text": "اللَّهُمَّ اهْدِنِي فِيمَنْ هَدَيْتَ، وَعَافِنِي فِيمَنْ عَافَيْتَ، وَتَوَلَّنِي فِيمَنْ تَوَلَّيْتَ، وَبَارِكْ لِي فِيمَا أَعْطَيْتَ، وَقِنِي شَرَّ مَا قَضَيْتَ؛ فَإِنَّكَ تَقْضِي وَلاَ يُقْضَى عَلَيْكَ، إِنَّهُ لاَ يَذِلُّ مَنْ وَالَيْتَ، [وَلاَ يَعِزُّ مَنْ عَادَيْتَ]، تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ.",
-                        "latin": "Allāhumma ihdinī fīman hadayt, wa ʿāfinī fīman ʿāfayt, wa tawallanī fīman tawallayt, wa bārik lī fīmā aʿṭayt, wa qinī sharra mā qaḍayt; fa-innaka taqḍī wa lā yuqḍā ʿalayk, innahu lā yadhillu man wālayt, [wa lā yaʿizzu man ʿādayt], tabārakta rabbanā wa taʿālayt.",
-                        "explanationEs": "¡Oh Allah! Guíame junto a quienes has guiado, dame salud junto a quienes has sanado, protégeme junto a quienes has protegido, bendice para mí lo que me has concedido y líbrame del mal de lo que has decretado. Ciertamente Tú decretas y nadie decreta contra Ti; no será humillado a quien Tú proteges [ni será enaltecido a quien Tú tomas por enemigo]. Bendito y Enaltecido seas, Señor nuestro.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20146.mp3"
-                        ]
+                    "itemNumber": 146,
+                    "subtitleAr": "دُعَاءُ قُنُوتِ الوِتْرِ",
+                    "subtitleEs": "Súplica del Qunūt en la oración del Witr",
+                    "text": "اللَّهُمَّ اهْدِنِي فِيمَنْ هَدَيْتَ، وَعَافِنِي فِيمَنْ عَافَيْتَ، وَتَوَلَّنِي فِيمَنْ تَوَلَّيْتَ، وَبَارِكْ لِي فِيمَا أَعْطَيْتَ، وَقِنِي شَرَّ مَا قَضَيْتَ؛ فَإِنَّكَ تَقْضِي وَلاَ يُقْضَى عَلَيْكَ، إِنَّهُ لاَ يَذِلُّ مَنْ وَالَيْتَ، [وَلاَ يَعِزُّ مَنْ عَادَيْتَ]، تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ.",
+                    "latin": "Allāhumma ihdinī fīman hadayt, wa ʿāfinī fīman ʿāfayt, wa tawallanī fīman tawallayt, wa bārik lī fīmā aʿṭayt, wa qinī sharra mā qaḍayt; fa-innaka taqḍī wa lā yuqḍā ʿalayk, innahu lā yadhillu man wālayt, [wa lā yaʿizzu man ʿādayt], tabārakta rabbanā wa taʿālayt.",
+                    "explanationEs": "¡Oh Allah! Guíame junto a quienes has guiado, dame salud junto a quienes has sanado, protégeme junto a quienes has protegido, bendice para mí lo que me has concedido y líbrame del mal de lo que has decretado. Ciertamente Tú decretas y nadie decreta contra Ti; no será humillado a quien Tú proteges [ni será enaltecido a quien Tú tomas por enemigo]. Bendito y Enaltecido seas, Señor nuestro.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20146.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 147,
-                        "subtitleAr": "دُعَاءُ قُنُوتِ الوِتْرِ",
-                        "subtitleEs": "Súplica del Qunūt en la oración del Witr",
-                        "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِرِضَاكَ مِنْ سَخَطِكَ، وَبِمُعَافَاتِكَ مِنْ عُقُوبَتِكَ، وَأَعُوذُ بِكَ مِنْكَ، لاَ أُحْصِي ثَنَاءً عَلَيْكَ، أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ.",
-                        "latin": "Allāhumma innī aʿūdhu bi-riḍāka min sakhaṭika, wa bi-muʿāfātika min ʿuqūbatika, wa aʿūdhu bika minka, lā uḥṣī thanāʾan ʿalayka, anta kamā athnayta ʿalā nafsik.",
-                        "explanationEs": "¡Oh Allah! Me refugio en Tu complacencia de Tu enojo, en Tu perdón de Tu castigo, y me refugio en Ti de Ti. No puedo enumerar Tus alabanzas; Tú eres tal como Te has alabado a Ti mismo.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2048.mp3"
-                        ]
+                    "itemNumber": 147,
+                    "subtitleAr": "دُعَاءُ قُنُوتِ الوِتْرِ",
+                    "subtitleEs": "Súplica del Qunūt en la oración del Witr",
+                    "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِرِضَاكَ مِنْ سَخَطِكَ، وَبِمُعَافَاتِكَ مِنْ عُقُوبَتِكَ، وَأَعُوذُ بِكَ مِنْكَ، لاَ أُحْصِي ثَنَاءً عَلَيْكَ، أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ.",
+                    "latin": "Allāhumma innī aʿūdhu bi-riḍāka min sakhaṭika, wa bi-muʿāfātika min ʿuqūbatika, wa aʿūdhu bika minka, lā uḥṣī thanāʾan ʿalayka, anta kamā athnayta ʿalā nafsik.",
+                    "explanationEs": "¡Oh Allah! Me refugio en Tu complacencia de Tu enojo, en Tu perdón de Tu castigo, y me refugio en Ti de Ti. No puedo enumerar Tus alabanzas; Tú eres tal como Te has alabado a Ti mismo.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2048.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 148,
-                        "subtitleAr": "دُعَاءُ قُنُوتِ الوِتْرِ",
-                        "subtitleEs": "Súplica del Qunūt en la oración del Witr",
-                        "text": "اللَّهُمَّ إِيَّاكَ نَعْبُدُ، وَلَكَ نُصَلِّي وَنَسْجُدُ، وَإِلَيْكَ نَسْعَى وَنَحْفِدُ، نَرْجُو رَحْمَتَكَ، وَنَخْشَى عَذَابَكَ، إِنَّ عَذَابَكَ بِالْكَافِرِينَ مُلْحَقٌ. اللَّهُمَّ إِنَّا نَسْتَعِينُكَ، وَنَسْتَغْفِرُكَ، وَنُثْنِي عَلَيْكَ الْخَيْرَ، وَلاَ نَكْفُرُكَ، وَنُؤْمِنُ بِكَ، وَنَخْضَعُ لَكَ، وَنَخْلَعُ مَنْ يَكْفُرُكَ.",
-                        "latin": "Allāhumma iyyāka naʿbudu, wa laka nuṣallī wa nasjudu, wa ilayka nasʿā wa naḥfid, narjū raḥmataka, wa nakhshā ʿadhābak, inna ʿadhābaka bil-kāfirīna mulḥaq. Allāhumma innā nastaʿīnuka, wa nastaghfiruka, wa nuthnī ʿalayka al-khayra, wa lā nakfuruka, wa nuʾminu bika, wa nakhḍaʿu laka, wa nakhlaʿu man yakfuruk.",
-                        "explanationEs": "¡Oh Allah! A Ti solo adoramos, por Ti oramos y nos prosternamos, hacia Ti nos esmeramos y apresuramos. Esperamos Tu misericordia y tememos Tu castigo; ciertamente Tu castigo alcanzará a los incrédulos. ¡Oh Allah! A Ti pedimos ayuda, a Ti pedimos perdón, Te alabamos con todo bien, no somos ingratos Contigo, creemos en Ti, nos sometemos a Ti y nos apartamos de quien Te niega.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20148.mp3"
-                        ]
+                    "itemNumber": 148,
+                    "subtitleAr": "دُعَاءُ قُنُوتِ الوِتْرِ",
+                    "subtitleEs": "Súplica del Qunūt en la oración del Witr",
+                    "text": "اللَّهُمَّ إِيَّاكَ نَعْبُدُ، وَلَكَ نُصَلِّي وَنَسْجُدُ، وَإِلَيْكَ نَسْعَى وَنَحْفِدُ، نَرْجُو رَحْمَتَكَ، وَنَخْشَى عَذَابَكَ، إِنَّ عَذَابَكَ بِالْكَافِرِينَ مُلْحَقٌ. اللَّهُمَّ إِنَّا نَسْتَعِينُكَ، وَنَسْتَغْفِرُكَ، وَنُثْنِي عَلَيْكَ الْخَيْرَ، وَلاَ نَكْفُرُكَ، وَنُؤْمِنُ بِكَ، وَنَخْضَعُ لَكَ، وَنَخْلَعُ مَنْ يَكْفُرُكَ.",
+                    "latin": "Allāhumma iyyāka naʿbudu, wa laka nuṣallī wa nasjudu, wa ilayka nasʿā wa naḥfid, narjū raḥmataka, wa nakhshā ʿadhābak, inna ʿadhābaka bil-kāfirīna mulḥaq. Allāhumma innā nastaʿīnuka, wa nastaghfiruka, wa nuthnī ʿalayka al-khayra, wa lā nakfuruka, wa nuʾminu bika, wa nakhḍaʿu laka, wa nakhlaʿu man yakfuruk.",
+                    "explanationEs": "¡Oh Allah! A Ti solo adoramos, por Ti oramos y nos prosternamos, hacia Ti nos esmeramos y apresuramos. Esperamos Tu misericordia y tememos Tu castigo; ciertamente Tu castigo alcanzará a los incrédulos. ¡Oh Allah! A Ti pedimos ayuda, a Ti pedimos perdón, Te alabamos con todo bien, no somos ingratos Contigo, creemos en Ti, nos sometemos a Ti y nos apartamos de quien Te niega.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20148.mp3"
+                    ],
+                    "noCounter": true
                   },
                   {
-                        "itemNumber": 149,
-                        "subtitleAr": "الذِّكْرُ عَقِبَ السَّلاَمِ مِنَ الوِتْرِ",
-                        "subtitleEs": "Súplica tras el saludo final en la oración del Witr",
-                        "text": "سُبْحَانَ الْمَلِكِ الْقُدُّوسِ (ثَلاَثَ مَرَّاتٍ)،\n\nوَالثَّالِثَةُ يَجْهَرُ بِهَا وَيَمُدُّ بِهَا صَوْتَهُ يَقُولُ:\n\n[رَبِّ الْمَلاَئِكَةِ وَالرُّوحِ].",
-                        "latin": "Subḥāna al-maliki al-quddūs (tres veces, alzando y alargando la voz en la tercera diciendo): [Rabbi al-malāʾikati war-rūḥ].",
-                        "explanationEs": "Glorificado sea el Rey, el Santísimo (tres veces, elevando y alargando la voz en la tercera oportunidad diciendo: [Señor de los ángeles y del Espíritu]).",
-                        "count": 3,
-                        "maxCount": 3,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20149.mp3"
-                        ]
+                    "itemNumber": 149,
+                    "subtitleAr": "الذِّكْرُ عَقِبَ السَّلاَمِ مِنَ الوِتْرِ",
+                    "subtitleEs": "Súplica tras el saludo final en la oración del Witr",
+                    "text": "سُبْحَانَ الْمَلِكِ الْقُدُّوسِ،\nسُبْحَانَ الْمَلِكِ الْقُدُّوسِ،\nسُبْحَانَ الْمَلِكِ الْقُدُّوسِ، رَبِّ الْمَلاَئِكَةِ وَالرُّوحِ.",
+                    "latin": "Subḥāna al-maliki al-quddūs,\nSubḥāna al-maliki al-quddūs,\nSubḥāna al-maliki al-quddūs, Rabbi al-malāʾikati war-rūḥ.",
+                    "explanationEs": "Glorificado sea el Rey, el Santísimo,\nGlorificado sea el Rey, el Santísimo,\nGlorificado sea el Rey, el Santísimo, Señor de los ángeles y del Espíritu.",
+                    "count": 3,
+                    "maxCount": 3,
+                    "noCounter": true,
+                    "noteAfter": "وَالثَّالِثَةُ يَجْهَرُ بِهَا وَيَمُدُّ بِهَا صَوْتَهُ",
+                    "noteAfterEs": "Elevando y alargando la voz en la tercera."
                   }
             ]
       },
@@ -2190,17 +2191,17 @@ const azkarData = [
             "titleEs": "Susurros y ahuyentar a Shaitán",
             "items": [
                   {
-                        "itemNumber": 163,
-                        "subtitleAr": "دُعَاءُ مَنْ أَصَابَهُ وَسْوَسَةٌ فِي الإِيمَانِ",
-                        "subtitleEs": "Súplica para quien sufre de susurros/dudas sobre la fe",
-                        "text": "يَسْتَعِيذُ بِاللَّهِ وَيَنْتَهِي عَمَّا شَكَّ فِيهِ.",
-                        "latin": "Yastaʿīdhu billāhi wa yantahī ʿammā shakka fīh.",
-                        "explanationEs": "Busca refugio en Allah y se abstiene de dar curso a las dudas que le surgen.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20163.mp3"
-                        ]
+                    "itemNumber": 163,
+                    "subtitleAr": "دُعَاءُ مَنْ أَصَابَهُ وَسْوَسَةٌ فِي الإِيمَانِ",
+                    "subtitleEs": "Súplica para quien sufre de susurros/dudas sobre la fe",
+                    "text": "",
+                    "latin": "",
+                    "explanationEs": "",
+                    "count": 1,
+                    "maxCount": 1,
+                    "noCounter": true,
+                    "noteBefore": "يَسْتَعِيذُ بِاللَّهِ وَيَنْتَهِي عَمَّا شَكَّ فِيهِ.",
+                    "noteBeforeEs": "Busca refugio en Allah y se abstiene de dar curso a las dudas que le surgen."
                   },
                   {
                         "itemNumber": 164,
