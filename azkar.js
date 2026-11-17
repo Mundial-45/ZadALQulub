@@ -1047,15 +1047,17 @@ const azkarData = [
                     "itemNumber": 84,
                     "subtitleAr": "الذِّكْرُ عِنْدَ دُخُولِ المَنْزِلِ",
                     "subtitleEs": "Súplica al entrar a casa",
-                    "text": "بِسْمِ اللَّهِ وَلَجْنَا، وَبِسْمِ اللَّهِ خَرَجْنَا، وَعَلَى اللَّهِ رَبِّنَا تَوَكَّلْنَا\n\n(ثُمَّ لِيُسَلِّمْ عَلَى أَهْلِهِ).",
-                    "latin": "Bismillāhi walajnā, wa bismillāhi kharajnā, wa ʿalā Allāhi rabbinā tawakkalnā (luego saluda a su familia).",
-                    "explanationEs": "En el nombre de Allah entramos y en el nombre de Allah salimos, y en Allah nuestro Señor confiamos. (Luego debe saludar a su familia).",
+                    "text": "بِسْمِ اللَّهِ وَلَجْنَا، وَبِسْمِ اللَّهِ خَرَجْنَا، وَعَلَى اللَّهِ رَبِّنَا تَوَكَّلْنَا",
+                    "latin": "Bismillāhi walajnā, wa bismillāhi kharajnā, wa ʿalā Allāhi rabbinā tawakkalnā.",
+                    "explanationEs": "En el nombre de Allah entramos y en el nombre de Allah salimos, y en Allah nuestro Señor confiamos.",
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
                       "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2084.mp3"
                     ],
-                    "noCounter": true
+                    "noCounter": true,
+                    "noteAfter": "(ثُمَّ لِيُسَلِّمْ عَلَى أَهْلِهِ).",
+                    "noteAfterEs": " (Luego debe saludar a su familia)."
                   }
             ]
       },
@@ -2886,32 +2888,37 @@ const azkarData = [
                         ]
                   },
                   {
-                        "itemNumber": 208,
-                        "subtitleAr": "الدُّعَاءُ قَبْلَ الطَّعَامِ",
-                        "subtitleEs": "Súplica antes de comer",
-                        "text": "إِذَا أَكَلَ أَحَدُكُمْ طَعَاماً فَلْيَقُلْ:\n\nبِسْمِ اللَّهِ،\n\nفَإِنْ نَسِيَ فِي أَوَّلِهِ فَلْيَقُلْ:\n\nبِسْمِ اللَّهِ فِي أَوَّلِهِ وَآخِرِهِ.",
-                        "latin": "Idhā akala aḥadukum ṭaʿāman fal-yaqul: Bismillāh, fa-in nasiya fī awwalihi fal-yaqul: Bismillāhi fī awwalihi wa ākhirih.",
-                        "explanationEs": "Cuando uno de vosotros vaya a comer, que diga 'Bismillah' (En el nombre de Allah). Si lo olvida al principio, que diga 'Bismillahi fi awwalihi wa akhirih' (En el nombre de Allah al principio y al final).",
-                        "count": 1,
-                        "maxCount": 1,
-                        "noCounter": true,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20208.mp3"
-                        ]
+                    "itemNumber": 208,
+                    "subtitleAr": "الدُّعَاءُ قَبْلَ الطَّعَامِ",
+                    "subtitleEs": "Súplica antes de comer",
+                    "text": "بِسْمِ اللَّهِ.",
+                    "latin": "Bismillāhi.",
+                    "explanationEs": "En el nombre de Allah.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "noCounter": true,
+                    "noteBefore": "إِذَا أَكَلَ أَحَدُكُمْ طَعَاماً فَلْيَقُلْ:",
+                    "noteBeforeEs": "Cuando uno de vosotros vaya a comer, que diga: 'Bismillah'"
                   },
                   {
-                        "itemNumber": 209,
-                        "subtitleAr": "الدُّعَاءُ قَبْلَ الطَّعَامِ",
-                        "subtitleEs": "Súplica antes de comer",
-                        "text": "مَنْ أَطْعَمَهُ اللَّهُ الطَّعَامَ فَلْيَقُلْ:\n\nاللَّهُمَّ بَارِكْ لَنَا فِيهِ وَأَطْعِمْنَا خَيْراً مِنْهُ،\n\nوَمَنْ سَقَاهُ اللَّهُ لَبَناً فَلْيَقُلْ:\n\nاللَّهُمَّ بَارِكْ لَنَا فِيهِ وَزِدْنَا مِنْهُ.",
-                        "latin": "Man aṭʿamahu Allāhu aṭ-ṭaʿāma fal-yaqul: Allāhumma bārik lanā fīhi wa aṭʿimnā khayran minh. Wa man saqāhu Allāhu labanan fal-yaqul: Allāhumma bārik lanā fīhi wa zidnā minh.",
-                        "explanationEs": "A quien Allah le proporcione comida, que diga: '¡Oh Allah! Bendícenosla y danos de comer algo mejor que ella'. Y a quien Allah le dé de beber leche, que diga: '¡Oh Allah! Bendícenosla y auméntanosla'.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "noCounter": true,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20209.mp3"
-                        ]
+                    "itemNumber": 209,
+                    "subtitleAr": "الدُّعَاءُ قَبْلَ الطَّعَامِ",
+                    "subtitleEs": "Súplica antes de comer",
+                    "text": "\n",
+                    "latin": "",
+                    "explanationEs": "",
+                    "count": 1,
+                    "maxCount": 1,
+                    "noCounter": true,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20209.mp3"
+                    ],
+                    "noteBefore": "مَنْ أَطْعَمَهُ اللَّهُ الطَّعَامَ فَلْيَقُلْ: اللَّهُمَّ بَارِكْ لَنَا فِيهِ وَأَطْعِمْنَا خَيْراً مِنْهُ.",
+                    "noteBeforeEs": "A quien Allah le proporcione comida, que diga: '¡Oh Allah! Bendícenosla y danos de comer algo mejor que ella'.",
+                    "noteAfter": "وَمَنْ سَقَاهُ اللَّهُ لَبَناً فَلْيَقُلْ: اللَّهُمَّ بَارِكْ لَنَا فِيهِ وَزِدْنَا مِنْهُ.",
+                    "noteAfterEs": "Y a quien Allah le dé de beber leche, que diga: '¡Oh Allah! Bendícenosla y auméntanosla'.",
+                    "note": "",
+                    "audioUrl": ""
                   },
                   {
                         "itemNumber": 210,
