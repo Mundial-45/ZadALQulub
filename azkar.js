@@ -3487,9 +3487,9 @@ const azkarData = [
             ]
       },
       {
-            "id": "amr_yasurruhu_aw_yakrahuh",
-            "titleAr": "مَا يَقُولُ مَنْ أَتَاهُ أَمْرٌ يَسُرُّهُ أَوْ يَكْرَهُهُ",
-            "titleEs": "Lo que se dice ante un acontecimiento agradable o desagradable",
+            "id": "amr_yakrahuh",
+            "titleAr": "مَا يَقُولُ مَنْ أَتَاهُ أَمْرٌ يَكْرَهُهُ",
+            "titleEs": "Lo que se dice ante un acontecimiento desagradable",
             "items": [
                   {
                     "itemNumber": 248,
