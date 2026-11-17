@@ -1799,6 +1799,9 @@ const azkarData = [
                         "explanationEs": "Glorificado sea Allah, alabado sea Allah, Allah es el más Grande. (33 veces cada uno).",
                         "count": 33,
                         "maxCount": 33,
+                        "noCounter": true,
+                        "noteAfter": "(يُقَالُ 33 مَرَّةً)",
+                        "noteAfterEs": "(Se dice 33 veces)",
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20135.mp3"
                         ]
@@ -2023,6 +2026,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Ciertamente soy Tu siervo, hijo de Tu siervo, hijo de Tu sierva. Mi frente está en Tu mano, Tu juicio sobre mí es ejecutable y Tu decreto sobre mí es justo. Te pido por cada nombre que Te pertenece, con el que Te has nombrado a Ti mismo, o has revelado en Tu Libro, o has enseñado a alguno de Tus seres creados, o Te has reservado en el conocimiento de lo oculto junto a Ti, que hagas del Corán la primavera de mi corazón, la luz de mi pecho, el alivio de mi tristeza y la liberación de mi preocupación.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20150.mp3"
                         ]
@@ -2036,6 +2040,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Me refugio en Ti de la ansiedad y de la tristeza, de la incapacidad y de la pereza, de la tacañería y de la cobardía, del peso de las deudas y de la opresión de los hombres.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                               "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2036.mp3"
                         ]
@@ -2049,6 +2054,7 @@ const azkarData = [
                         "explanationEs": "No hay más divinidad que Allah, el Grandioso, el Tolerante. No hay más divinidad que Allah, Señor del Trono grandioso. No hay más divinidad que Allah, Señor de los cielos, Señor de la tierra y Señor del Trono noble.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20152.mp3"
                         ]
@@ -2062,6 +2068,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Tu misericordia espero, no me abandones a mí mismo ni por el parpadeo de un ojo, y arregla todos mis asuntos. No hay más divinidad excepto Tú.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                               "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20255.mp3"
                         ]
@@ -2075,6 +2082,7 @@ const azkarData = [
                         "explanationEs": "No hay más divinidad excepto Tú, ¡glorificado seas! Ciertamente he sido de los injustos.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                               "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20154.mp3"
                         ]
@@ -2088,6 +2096,7 @@ const azkarData = [
                         "explanationEs": "Allah, Allah es mi Señor, no le asocio absolutamente nada.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                               "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%20256.mp3"
                         ]
@@ -2101,6 +2110,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Te ponemos al frente contra ellos y nos refugiamos en Ti de sus males.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20156.mp3"
                         ]
@@ -2114,6 +2124,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Tú eres mi apoyo y Tú eres mi socorredor. Por Ti me muevo, por Ti me defiendo y por Ti combato.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20157.mp3"
                         ]
@@ -2127,6 +2138,7 @@ const azkarData = [
                         "explanationEs": "Suficiente para nosotros es Allah, y ¡qué excelente Protector!",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20158.mp3"
                         ]
@@ -2140,6 +2152,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah, Señor de los siete cielos y Señor del Trono grandioso! Sé para mí un protector contra (Fulano, hijo de Fulano) y sus aliados de Tu creación, para que ninguno de ellos se me adelante en agresión ni se extralimite contra mí. Poderoso es Tu protegido, gloriosa es Tu alabanza y no hay más divinidad excepto Tú.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20159.mp3"
                         ]
@@ -2153,6 +2166,9 @@ const azkarData = [
                         "explanationEs": "Allah es el más Grande, Allah es más poderoso que toda Su creación, Allah es más poderoso que lo que temo y precavo. Me refugio en Allah, no hay más divinidad excepto Él, Quien sostiene los siete cielos para que no caigan sobre la tierra sino por Su permiso, del mal de Tu siervo (Fulano), de sus ejércitos, sus seguidores y sus partidarios, de entre los genios y los humanos. ¡Oh Allah! Sé para mí un protector contra sus males. Gloriosa es Tu alabanza, poderoso es Tu protegido, bendito es Tu nombre y no hay más divinidad que Tú. (Se dice tres veces).",
                         "count": 3,
                         "maxCount": 3,
+                        "noCounter": true,
+                        "noteAfter": "(يُقَالُ ثَلَاثَ مَرَّاتٍ)",
+                        "noteAfterEs": "(Se dice tres veces)",
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20160.mp3"
                         ]
@@ -2166,6 +2182,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Revelador del Libro, Rápido en el cómputo, derrota a las facciones enemigas. ¡Oh Allah! Derrótalos y hazlos temblar.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20161.mp3"
                         ]
@@ -2179,6 +2196,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Protégeme de ellos como Tú quieras.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20162.mp3"
                         ]
@@ -2212,6 +2230,7 @@ const azkarData = [
                         "explanationEs": "Dice: Creo en Allah y en Sus mensajeros.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20164.mp3"
                         ]
@@ -2225,6 +2244,7 @@ const azkarData = [
                         "explanationEs": "Lee las palabras del Altísimo: Él es el Primero y el Último, el Manifiesto y el Oculto. Él conoce todas las cosas.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "note": "سورة الحديد الآية 3",
                         "audioUrls": [
                               "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q057-003.mp3"
@@ -2239,6 +2259,7 @@ const azkarData = [
                         "explanationEs": "Dice: Me refugio en Allah de Shaitán el maldito, y sopla suavemente hacia su izquierda tres veces.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20166.mp3"
                         ]
@@ -2252,6 +2273,7 @@ const azkarData = [
                         "explanationEs": "Buscar refugio en Allah de él (diciendo: A'udhu billahi mina ash-shaytan ar-rajim).",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20167.mp3"
                         ]
@@ -2265,6 +2287,7 @@ const azkarData = [
                         "explanationEs": "La llamada a la oración (el Adhán ahuyenta a Shaitán).",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20168.mp3"
                         ]
@@ -2278,6 +2301,7 @@ const azkarData = [
                         "explanationEs": "Las súplicas de recuerdo y la lectura del Corán.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20169.mp3"
                         ]
@@ -2298,6 +2322,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Haz que lo lícito me sea suficiente frente a lo ilícito, y enriquéceme con Tu favor prescindiendo de cualquier otro fuera de Ti.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                               "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2056.mp3"
                         ]
@@ -2311,6 +2336,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Me refugio en Ti de la ansiedad y de la tristeza, de la incapacidad y de la pereza, de la tacañería y de la cobardía, del peso de las deudas y de la opresión de los hombres.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                               "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2036.mp3"
                         ]
@@ -2324,6 +2350,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! No hay nada fácil salvo lo que Tú haces fácil, y Tú haces que la dificultad, si quieres, sea fácil.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20172.mp3"
                         ]
@@ -2337,6 +2364,7 @@ const azkarData = [
                         "explanationEs": "No hay siervo que cometa un pecado, se purifique minuciosamente, luego se levante y realice dos unidades de oración (raka'at), y pida perdón a Allah, sin que Allah lo perdone.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20173.mp3"
                         ]
@@ -2350,6 +2378,7 @@ const azkarData = [
                         "explanationEs": "Es el decreto de Allah, y Él hace lo que quiere.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20174.mp3"
                         ]
@@ -2370,6 +2399,7 @@ const azkarData = [
                         "explanationEs": "Que Allah bendiga para ti lo que te ha concedido, agradezcas al Otorgante, llegue a su madurez y seas agraciado con su piedad filial. Y quien recibe la felicitación responde: Que Allah te bendiga y derrame Sus bendiciones sobre ti, te recompense con el bien, te conceda algo semejante y multiplique tu recompensa.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20175.mp3"
                         ]
@@ -2383,6 +2413,7 @@ const azkarData = [
                         "explanationEs": "Los pongo bajo la protección de las palabras perfectas de Allah de todo demonio, de todo animal venenoso y de todo ojo dañino.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20176.mp3"
                         ]
@@ -2403,6 +2434,7 @@ const azkarData = [
                         "explanationEs": "No hay mal alguno, esto es una purificación, si Allah quiere.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20177.mp3"
                         ]
@@ -2416,6 +2448,9 @@ const azkarData = [
                         "explanationEs": "Ruego a Allah el Grandioso, Señor del Trono grandioso, que te sane. (Siete veces).",
                         "count": 7,
                         "maxCount": 7,
+                        "noCounter": true,
+                        "noteAfter": "(يُقَالُ سَبْعَ مَرَّاتٍ)",
+                        "noteAfterEs": "(Se dice siete veces)",
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20178.mp3"
                         ]
@@ -2429,6 +2464,7 @@ const azkarData = [
                         "explanationEs": "Dijo el Profeta (que la paz y las bendiciones de Allah sean con él): Cuando un musulmán visita a su hermano musulmán enfermo, camina recolectando los frutos del Paraíso hasta que se sienta; y cuando se sienta, la misericordia lo envuelve. Si es por la mañana, setenta mil ángeles piden por él hasta la tarde; y si es por la tarde, setenta mil ángeles piden por él hasta la mañana.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20179.mp3"
                         ]
@@ -2442,6 +2478,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Perdóname, ten misericordia de mí y reúneme con el Compañero Supremo (los profetas, los veraces, los mártires y los justos, en lo más alto del Paraíso).",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20180.mp3"
                         ]
@@ -2455,6 +2492,7 @@ const azkarData = [
                         "explanationEs": "No hay más divinidad que Allah; ciertamente la muerte tiene sus agonías.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20181.mp3"
                         ]
@@ -2468,6 +2506,7 @@ const azkarData = [
                         "explanationEs": "No hay más divinidad que Allah y Allah es el más Grande. No hay más divinidad que Allah, Único. No hay más divinidad que Allah, Único, sin asociados. No hay más divinidad que Allah, Suyo es el reino y Suya es la alabanza. No hay más divinidad que Allah y no hay fuerza ni poder sino en Allah.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20182.mp3"
                         ]
@@ -2481,6 +2520,7 @@ const azkarData = [
                         "explanationEs": "Aquel cuyas últimas palabras sean 'no hay más divinidad que Allah', entrará al Paraíso.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20183.mp3"
                         ]
@@ -2501,6 +2541,7 @@ const azkarData = [
                         "explanationEs": "Ciertamente pertenecemos a Allah y a Él hemos de retornar. ¡Oh Allah! Recompénsame en mi desgracia y reemplázamela por algo mejor.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20184.mp3"
                         ]
@@ -2514,6 +2555,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Perdona a (menciona su nombre) y eleva su rango entre los bien guiados, sé Tú su sustituto entre sus descendientes que quedan atrás, perdónanos a nosotros y a él, ¡oh Señor de los mundos!, ensancha para él su tumba e ilumínasela.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20185.mp3"
                         ]
@@ -2527,6 +2569,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Perdónalo y ten misericordia de él, dale bienestar y perdónalo, honra su morada y ensancha su entrada; lávalo con agua, nieve y granizo, y purifícalo de los pecados como purificas el vestido blanco de la impureza. Concédele una morada mejor que su morada, una familia mejor que su familia, un cónyuge mejor que su cónyuge, introdúcelo en el Paraíso y protégelo del castigo de la tumba [y del castigo del Fuego].",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20186.mp3"
                         ]
@@ -2540,6 +2583,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Perdona a nuestros vivos y a nuestros muertos, a los presentes y a los ausentes, a nuestros pequeños y a nuestros grandes, a nuestros hombres y a nuestras mujeres. ¡Oh Allah! A quien de nosotros mantengas con vida, hazlo vivir en el Islam, y a quien hagas morir, hazlo morir en la fe. ¡Oh Allah! No nos prives de su recompensa ni nos extravíes después de él.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20187.mp3"
                         ]
@@ -2553,6 +2597,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Ciertamente (Fulano hijo de Fulano) está bajo Tu protección y Tu amparo; protégelo de la prueba de la tumba y del castigo del Fuego. Tú eres el Dueño del cumplimiento y de la Verdad, perdónalo y ten misericordia de él, ciertamente Tú eres el Absolvedor, el Misericordioso.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20188.mp3"
                         ]
@@ -2566,6 +2611,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Tu siervo e hijo de Tu sierva está necesitado de Tu misericordia, y Tú no necesitas de su castigo. Si fue benefactor, aumenta sus buenas obras; y si fue pecador, pasa por alto sus faltas.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20189.mp3"
                         ]
@@ -2579,6 +2625,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Protégelo del castigo de la tumba. [¡Oh Allah! Hazlo un precursor y un tesoro para sus padres, y un intercesor cuya intercesión sea aceptada. ¡Oh Allah! Haz pesada con él la balanza de sus padres, engrandece con él sus recompensas, únelo a los creyentes piadosos, ponlo bajo el cuidado de Ibrahim y líbralo con Tu misericordia del castigo del Infierno. Concédele una morada mejor que su morada y una familia mejor que su familia. ¡Oh Allah! Perdona a nuestros antepasados, a nuestros niños fallecidos y a quienes nos precedieron en la fe].",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20190.mp3"
                         ]
@@ -2592,6 +2639,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Hazlo para nosotros un precursor, un antecesor y una recompensa.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20191.mp3"
                         ]
@@ -2605,6 +2653,7 @@ const azkarData = [
                         "explanationEs": "Ciertamente a Allah pertenece lo que toma y lo que da, y todo para Él tiene un plazo fijado... Ten paciencia y busca la recompensa divina. [Que Allah engrandezca tu recompensa, consolide tu consuelo y perdone a tu difunto].",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20192.mp3"
                         ]
@@ -2618,6 +2667,7 @@ const azkarData = [
                         "explanationEs": "En el nombre de Allah y siguiendo la Sunnah (tradición) del Mensajero de Allah.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20193.mp3"
                         ]
@@ -2631,6 +2681,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Perdónalo. ¡Oh Allah! Manténlo firme (ante las preguntas de los ángeles).",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20194.mp3"
                         ]
@@ -2644,6 +2695,7 @@ const azkarData = [
                         "explanationEs": "La paz sea con vosotros, habitantes de las moradas, de entre los creyentes y los musulmanes. Ciertamente nosotros, si Allah quiere, nos uniremos a vosotros. [Que Allah tenga misericordia de los primeros y de los últimos de entre nosotros]. Pido a Allah el bienestar para nosotros y para vosotros.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20195.mp3"
                         ]
@@ -2664,6 +2716,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Te pido su bien y me refugio en Ti de su mal.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20196.mp3"
                         ]
@@ -2677,6 +2730,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Te pido su bien, el bien de lo que hay en él y el bien con el que ha sido enviado; y me refugio en Ti de su mal, del mal de lo que hay en él y del mal con el que ha sido enviado.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20197.mp3"
                         ]
@@ -2690,6 +2744,7 @@ const azkarData = [
                         "explanationEs": "Glorificado sea Aquel a Quien el trueno alaba con Sus elogios y los ángeles por el temor a Él.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20198.mp3"
                         ]
@@ -2703,6 +2758,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Envíanos una lluvia socorredora, provechosa, fértil, beneficiosa y no perjudicial, pronta y no demorada.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20199.mp3"
                         ]
@@ -2716,6 +2772,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Socórrenos con lluvia, ¡oh Allah! Socórrenos con lluvia, ¡oh Allah! Socórrenos con lluvia.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20200.mp3"
                         ]
@@ -2729,6 +2786,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Da de beber a Tus siervos y a Tus animales, extiende Tu misericordia y da vida a Tu tierra muerta.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20201.mp3"
                         ]
@@ -2742,6 +2800,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Haz que sea una lluvia abundante y beneficiosa.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20202.mp3"
                         ]
@@ -2755,6 +2814,7 @@ const azkarData = [
                         "explanationEs": "Ha llovido sobre nosotros por la gracia de Allah y Su misericordia.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20203.mp3"
                         ]
@@ -2768,6 +2828,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Que llueva a nuestro alrededor y no sobre nosotros; ¡oh Allah! Sobre las colinas, las montañas, los lechos de los valles y donde crecen los árboles.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20204.mp3"
                         ]
@@ -2781,6 +2842,7 @@ const azkarData = [
                         "explanationEs": "Allah es el más Grande. ¡Oh Allah! Haz que este creciente surja sobre nosotros con seguridad y fe, paz e Islam, y con éxito en lo que Tú amas, Señor nuestro, y te complace. Nuestro Señor y tu Señor (¡oh luna!) es Allah.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20205.mp3"
                         ]
@@ -2801,6 +2863,7 @@ const azkarData = [
                         "explanationEs": "La sed se ha ido, las venas se han humedecido y la recompensa se ha confirmado, si Allah quiere.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20206.mp3"
                         ]
@@ -2814,6 +2877,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Te pido por Tu misericordia, que abarca todas las cosas, que me perdones.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20207.mp3"
                         ]
@@ -2827,6 +2891,7 @@ const azkarData = [
                         "explanationEs": "Cuando uno de vosotros vaya a comer, que diga 'Bismillah' (En el nombre de Allah). Si lo olvida al principio, que diga 'Bismillahi fi awwalihi wa akhirih' (En el nombre de Allah al principio y al final).",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20208.mp3"
                         ]
@@ -2840,6 +2905,7 @@ const azkarData = [
                         "explanationEs": "A quien Allah le proporcione comida, que diga: '¡Oh Allah! Bendícenosla y danos de comer algo mejor que ella'. Y a quien Allah le dé de beber leche, que diga: '¡Oh Allah! Bendícenosla y auméntanosla'.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20209.mp3"
                         ]
@@ -2853,6 +2919,7 @@ const azkarData = [
                         "explanationEs": "Alabado sea Allah, Quien me ha alimentado con esto y me lo ha concedido sin que de mi parte haya habido fuerza ni poder.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20210.mp3"
                         ]
@@ -2866,6 +2933,7 @@ const azkarData = [
                         "explanationEs": "Alabado sea Allah con alabanzas abundantes, puras y benditas; una alabanza continua, jamás suficiente, incesante e indispensable, ¡oh Señor nuestro!",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20211.mp3"
                         ]
@@ -2879,6 +2947,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Bendíceles el sustento que les has concedido, perdónales y ten misericordia de ellos.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20212.mp3"
                         ]
@@ -2892,6 +2961,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Alimenta a quien me alimentó y da de beber a quien me dio de beber.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20213.mp3"
                         ]
@@ -2905,6 +2975,7 @@ const azkarData = [
                         "explanationEs": "Que rompan el ayuno en vuestra casa los ayunantes, coman de vuestra comida los piadosos y roguen por vosotros los ángeles.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20214.mp3"
                         ]
@@ -2918,6 +2989,7 @@ const azkarData = [
                         "explanationEs": "Si uno de vosotros es invitado a comer, que acepte. Si está ayunando, que suplique por los anfitriones; y si no está ayunando, que coma.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20215.mp3"
                         ]
@@ -2931,6 +3003,7 @@ const azkarData = [
                         "explanationEs": "Estoy ayunando, estoy ayunando.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20216.mp3"
                         ]
@@ -2944,6 +3017,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Bendícenos en nuestros frutos, bendícenos en nuestra ciudad, bendícenos en nuestros recipientes de medida (Sa' y Mudd).",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20217.mp3"
                         ]
@@ -2964,6 +3038,7 @@ const azkarData = [
                         "explanationEs": "Cuando alguno de vosotros estornude, que diga 'Alabado sea Allah'. Su hermano o compañero debe responderle 'Que Allah tenga misericordia de ti'. Y cuando le responda esto, el que estornudó debe decir 'Que Allah os guíe y mejore vuestra situación'.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20218.mp3"
                         ]
@@ -2977,6 +3052,7 @@ const azkarData = [
                         "explanationEs": "Que Allah os guíe y mejore vuestra situación.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20219.mp3"
                         ]
@@ -2997,6 +3073,7 @@ const azkarData = [
                         "explanationEs": "Que Allah te bendiga, derrame Su bendición sobre ti y os una a ambos en el bien.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20220.mp3"
                         ]
@@ -3010,6 +3087,7 @@ const azkarData = [
                         "explanationEs": "Cuando alguno de vosotros se case con una mujer o compre un sirviente, que diga: '¡Oh Allah! Te pido de su bien y del bien de la naturaleza con que la creaste, y me refugio en Ti de su mal y del mal de la naturaleza con que la creaste'. Y si compra un camello (o vehículo), que tome la parte superior de su joroba y diga lo mismo.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20221.mp3"
                         ]
@@ -3023,6 +3101,7 @@ const azkarData = [
                         "explanationEs": "En el nombre de Allah. ¡Oh Allah! Aleja de nosotros a Shaitán y aleja a Shaitán de la descendencia que nos concedas.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20222.mp3"
                         ]
@@ -3043,6 +3122,7 @@ const azkarData = [
                         "explanationEs": "Me refugio en Allah de Shaitán el maldito.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20223.mp3"
                         ]
@@ -3056,6 +3136,7 @@ const azkarData = [
                         "explanationEs": "Alabado sea Allah, Quien me ha librado de la prueba con la que te ha probado a ti, y me ha favorecido notablemente por encima de gran parte de Su creación.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20224.mp3"
                         ]
@@ -3069,6 +3150,9 @@ const azkarData = [
                         "explanationEs": "Se contaba que el Mensajero de Allah decía cien veces en una misma reunión antes de levantarse: 'Señor mío perdóname y acepta mi arrepentimiento, ciertamente Tú eres el Indulgente, el Absolvedor'.",
                         "count": 100,
                         "maxCount": 100,
+                        "noCounter": true,
+                        "noteAfter": "(يُقَالُ 100 مَرَّةً)",
+                        "noteAfterEs": "(Se dice 100 veces)",
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20225.mp3"
                         ]
@@ -3082,6 +3166,7 @@ const azkarData = [
                         "explanationEs": "Glorificado seas, ¡oh Allah!, y alabado seas. Atestiguo que no hay más divinidad excepto Tú, pido Tu perdón y me arrepiento ante Ti.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2081.mp3"
                         ]
@@ -3095,6 +3180,7 @@ const azkarData = [
                         "explanationEs": "Y a ti también.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20227.mp3"
                         ]
@@ -3108,6 +3194,7 @@ const azkarData = [
                         "explanationEs": "Que Allah te recompense con el bien.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20228.mp3"
                         ]
@@ -3121,6 +3208,7 @@ const azkarData = [
                         "explanationEs": "Que te ame Aquel por Quien me has amado.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20229.mp3"
                         ]
@@ -3134,6 +3222,7 @@ const azkarData = [
                         "explanationEs": "Que Allah bendiga para ti a tu familia y tus bienes.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20230.mp3"
                         ]
@@ -3147,6 +3236,7 @@ const azkarData = [
                         "explanationEs": "Que Allah bendiga para ti a tu familia y tus bienes. La verdadera recompensa por un préstamo es el agradecimiento y la devolución puntual.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20231.mp3"
                         ]
@@ -3160,6 +3250,7 @@ const azkarData = [
                         "explanationEs": "Y que Allah te bendiga a ti también.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20232.mp3"
                         ]
@@ -3180,6 +3271,7 @@ const azkarData = [
                         "explanationEs": "Quien memorice los primeros diez versículos de la sura Al-Kahf estará protegido del Falso Mesías, así como quien busque refugio en Allah de su prueba tras el último Tashahhud en cada oración.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20233.mp3"
                         ]
@@ -3193,6 +3285,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Me refugio en Ti de asociarte algo a sabiendas, y Te pido perdón por lo que desconozco.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20234.mp3"
                         ]
@@ -3206,6 +3299,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! No hay augurio sino Tu decreto, no hay bien sino Tu bien, y no hay más divinidad aparte de Ti.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20235.mp3"
                         ]
@@ -3226,6 +3320,7 @@ const azkarData = [
                         "explanationEs": "En el nombre de Allah, y alabado sea Allah. «Glorificado sea Quien nos lo ha facilitado, ya que nosotros no habríamos sido capaces [por nuestro mero esfuerzo], y ante nuestro Señor hemos de regresar». Alabado sea Allah (x3), Allah es el más Grande (x3). Glorificado seas, ¡oh Allah! Ciertamente me he oprimido a mí mismo, perdóname pues nadie perdona los pecados excepto Tú.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "note": "سورة الزخرف الآيات 13-14",
                         "audioUrls": [
                               "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20236.mp3"
@@ -3240,6 +3335,7 @@ const azkarData = [
                         "explanationEs": "Allah es el Más Grande (tres veces). «Glorificado sea Quien nos lo ha facilitado, ya que nosotros no habríamos sido capaces [por nuestro mero esfuerzo], y ante nuestro Señor hemos de regresar». ¡Oh Allah! Te pedimos en este viaje la piedad, el temor de Ti y las obras que Te complacen. ¡Oh Allah! Haznos fácil este viaje y acorta su distancia. ¡Oh Allah! Tú eres el Compañero en el viaje y el Protector de la familia. ¡Oh Allah! Me refugio en Ti de las dificultades del viaje, de la tristeza de las vistas y de un mal regreso en mis bienes y mi familia. Al regresar, repite lo mismo y añade: «Regresamos arrepentidos, adorando y alabando a nuestro Señor».",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "note": "سورة الزخرف الآيات 13-14",
                         "audioUrls": [
                               "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20237.mp3"
@@ -3254,6 +3350,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! Señor de los siete cielos y de lo que cubren, Señor de las siete tierras y de lo que sostienen, Señor de los demonios y de a quienes extravían, Señor de los vientos y de lo que dispersan. Te pido el bien de este pueblo, el bien de sus habitantes y el bien de lo que hay en él; y me refugio en Ti de su mal, del mal de sus habitantes y del mal de lo que hay en él.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20238.mp3"
                         ]
@@ -3267,6 +3364,7 @@ const azkarData = [
                         "explanationEs": "No hay más divinidad que Allah, Único, sin asociados. Suyo es el reino y Suya es la alabanza, da la vida y da la muerte, y Él es Inmortal. En Su mano está el bien y Él es Omnipotente sobre todas las cosas.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20239.mp3"
                         ]
@@ -3280,6 +3378,7 @@ const azkarData = [
                         "explanationEs": "En el nombre de Allah.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2075.mp3"
                         ]
@@ -3293,6 +3392,7 @@ const azkarData = [
                         "explanationEs": "Os encomiendo a Allah, Aquel ante Quien los depósitos encomendados nunca se pierden.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20241.mp3"
                         ]
@@ -3306,6 +3406,7 @@ const azkarData = [
                         "explanationEs": "Encomiendo a Allah tu religión, tu fidelidad y las últimas de tus obras.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20242.mp3"
                         ]
@@ -3319,6 +3420,7 @@ const azkarData = [
                         "explanationEs": "Que Allah te provea de piedad, perdone tu pecado y te facilite el bien dondequiera que estés.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20243.mp3"
                         ]
@@ -3332,6 +3434,7 @@ const azkarData = [
                         "explanationEs": "Dijo Jabir (que Allah esté complacido con él): Cuando subíamos (una cuesta o montaña) decíamos 'Allahu Akbar' (Allah es el más Grande), y cuando bajábamos decíamos 'Subhanallah' (Glorificado sea Allah).",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20244.mp3"
                         ]
@@ -3345,6 +3448,7 @@ const azkarData = [
                         "explanationEs": "Que un testigo atestigüe nuestra alabanza a Allah y Sus buenas pruebas sobre nosotros. Señor nuestro, acompáñanos y agrácianos con Tu favor; nos refugiamos en Allah del Fuego.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20245.mp3"
                         ]
@@ -3358,6 +3462,7 @@ const azkarData = [
                         "explanationEs": "Me refugio en las palabras perfectas de Allah del mal de lo que ha creado.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                               "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2020.mp3"
                         ]
@@ -3371,6 +3476,7 @@ const azkarData = [
                         "explanationEs": "Allah es el más Grande (x3). No hay más divinidad que Allah, Único, sin asociados. Suyo es el reino y Suya es la alabanza, y Él es Omnipotente sobre todas las cosas. Regresamos arrepentidos, adorando y alabando a nuestro Señor. Allah ha cumplido Su promesa, ha socorrido a Su siervo y ha derrotado Él solo a las facciones enemigas.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20247.mp3"
                         ]
@@ -3389,6 +3495,7 @@ const azkarData = [
                         "explanationEs": "Cuando al Profeta (paz y bendiciones de Allah sean con él) le llegaba algo alegre, decía: 'Alabado sea Allah, con Cuyo favor se completan las buenas obras'. Y cuando le acontecía algo indeseado, decía: 'Alabado sea Allah en toda circunstancia'.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20248.mp3"
                         ]
@@ -3407,6 +3514,7 @@ const azkarData = [
                         "explanationEs": "Dijo el Profeta (paz y bendiciones sean con él): Quien pida para mí una bendición, Allah lo bendecirá diez veces por ella.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20249.mp3"
                         ]
@@ -3418,6 +3526,7 @@ const azkarData = [
                         "explanationEs": "Y dijo: No hagáis de mi tumba un lugar de festividad recurrente, y pedid bendiciones por mí; pues vuestra oración me llega dondequiera que estéis.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20250.mp3"
                         ]
@@ -3429,6 +3538,7 @@ const azkarData = [
                         "explanationEs": "Y dijo: El tacaño es aquel ante quien soy mencionado y no pide bendiciones por mí.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20251.mp3"
                         ]
@@ -3440,6 +3550,7 @@ const azkarData = [
                         "explanationEs": "Y dijo: Allah tiene ángeles que recorren la tierra para hacerme llegar el saludo de paz de mi comunidad.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20252.mp3"
                         ]
@@ -3451,6 +3562,7 @@ const azkarData = [
                         "explanationEs": "Y dijo: No hay nadie que me salude con la paz sin que Allah me devuelva el alma para que yo le devuelva el saludo.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20253.mp3"
                         ]
@@ -3471,6 +3583,7 @@ const azkarData = [
                         "explanationEs": "Dijo el Mensajero de Allah (paz y bendiciones de Allah sean con él): No entraréis al Paraíso hasta que creáis, y no creeréis (plenamente) hasta que os améis unos a otros. ¿Acaso no os indicaré algo que si lo hacéis os amaréis? Difundid el saludo de paz entre vosotros.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20254.mp3"
                         ]
@@ -3484,6 +3597,7 @@ const azkarData = [
                         "explanationEs": "Tres cosas, quien las reúna habrá reunido la fe completa: la equidad con uno mismo, saludar con la paz a todo el mundo y dar en caridad aun en la escasez.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20255.mp3"
                         ]
@@ -3497,6 +3611,7 @@ const azkarData = [
                         "explanationEs": "Un hombre preguntó al Profeta (paz y bendiciones sean con él): ¿Qué acción del Islam es la mejor? Respondió: Dar de comer y saludar con la paz a quien conoces y a quien no conoces.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20256.mp3"
                         ]
@@ -3510,6 +3625,7 @@ const azkarData = [
                         "explanationEs": "Cuando os saluden la Gente del Libro (cristianos o judíos), decid: 'Y sobre vosotros'.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20257.mp3"
                         ]
@@ -3530,6 +3646,7 @@ const azkarData = [
                         "explanationEs": "Cuando escuchéis el canto de los gallos, pedid a Allah de Su favor, pues han visto a un ángel; y cuando escuchéis el rebuzno del asno, refugiaos en Allah de Shaitán, pues ha visto a un demonio.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20258.mp3"
                         ]
@@ -3543,6 +3660,7 @@ const azkarData = [
                         "explanationEs": "Cuando escuchéis el ladrido de los perros o el rebuzno de los asnos por la noche, refugiaos en Allah de ellos, pues ven lo que vosotros no veis.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20259.mp3"
                         ]
@@ -3561,6 +3679,7 @@ const azkarData = [
                         "explanationEs": "Dijo el Profeta (paz y bendiciones sean con él): ¡Oh Allah! A cualquier creyente al que haya insultado, haz que eso sea para él un motivo de cercanía a Ti en el Día de la Resurrección.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20260.mp3"
                         ]
@@ -3579,6 +3698,7 @@ const azkarData = [
                         "explanationEs": "Si alguno de vosotros no tiene más remedio que elogiar a su hermano, que diga: 'Considero a Fulano —y Allah es su Juez, y no purifico a nadie por encima de Allah— que es así y así', si conoce eso de él.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20261.mp3"
                         ]
@@ -3597,6 +3717,7 @@ const azkarData = [
                         "explanationEs": "¡Oh Allah! No me juzgues por lo que dicen, perdóname lo que ignoran de mí y [hazme mejor de lo que ellos piensan].",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20262.mp3"
                         ]
@@ -3617,6 +3738,7 @@ const azkarData = [
                         "explanationEs": "Heme aquí, ¡oh Allah!, a Tu servicio. Heme aquí, no tienes asociados, heme aquí. Ciertamente la alabanza, las bendiciones y la soberanía Te pertenecen, no tienes asociados.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20263.mp3"
                         ]
@@ -3630,6 +3752,7 @@ const azkarData = [
                         "explanationEs": "El Profeta (paz y bendiciones sean con él) realizó el Tawaf alrededor de la Kaaba sobre un camello; cada vez que llegaba a la esquina de la Piedra Negra, la señalaba con lo que tenía en la mano y decía 'Allahu Akbar'.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20264.mp3"
                         ]
@@ -3643,6 +3766,7 @@ const azkarData = [
                         "explanationEs": "¡Señor nuestro! Danos bienestar en esta vida y en la otra, y presérvanos del tormento del Fuego.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "note": "سورة البقرة الآية 201",
                         "audioUrls": [
                               "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20265.mp3"
@@ -3657,6 +3781,7 @@ const azkarData = [
                         "explanationEs": "Leyó: Ciertamente As-Safa y Al-Marwah son símbolos de Allah. Empiezo por aquello por lo que Allah empezó. Comenzó por As-Safa y subió hasta ver la Casa (la Kaaba); se orientó hacia la qibla, proclamó la unicidad de Allah y Su grandeza, y dijo: «No hay divinidad digna de adoración excepto Allah, Único, sin asociado. Suyo es el dominio y Suya es la alabanza, y Él tiene poder sobre todas las cosas. No hay divinidad digna de adoración excepto Allah, Único; cumplió Su promesa, ayudó a Su siervo y derrotó Él solo a los confederados». Luego suplicó entre esas invocaciones (tres veces). Hizo en Al-Marwah lo mismo que en As-Safa.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20266.mp3"
                         ]
@@ -3670,6 +3795,7 @@ const azkarData = [
                         "explanationEs": "Dijo el Profeta (paz y bendiciones sean con él): La mejor súplica es la del día de Arafah, y lo mejor que he dicho yo y los profetas anteriores a mí es: 'No hay más divinidad que Allah, Único, sin asociados. Suyo es el reino y Suya es la alabanza, y Él es Omnipotente sobre todas las cosas'.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20267.mp3"
                         ]
@@ -3683,6 +3809,7 @@ const azkarData = [
                         "explanationEs": "El Profeta (paz y bendiciones sean con él) montó su camella Al-Qaswa hasta llegar a Al-Mash'ar Al-Haram, se orientó a la Qibla, suplicó a Allah, enalteció Su grandeza, proclamó Su unicidad y permaneció allí hasta que aclaró bien el día, partiendo antes de que saliera el sol.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20268.mp3"
                         ]
@@ -3696,6 +3823,7 @@ const azkarData = [
                         "explanationEs": "Dice 'Allahu Akbar' con cada guijarro que lanza en los tres pilares (Jamarat). Tras el primero y el segundo, avanza, se orienta a la Qibla con las manos levantadas y suplica. En cuanto al pilar grande (Jamrat Al-Aqabah), lanza las piedras diciendo 'Allahu Akbar' en cada una y se retira sin detenerse a suplicar.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20269.mp3"
                         ]
@@ -3714,6 +3842,7 @@ const azkarData = [
                         "explanationEs": "¡Glorificado sea Allah!",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20270.mp3"
                         ]
@@ -3725,6 +3854,7 @@ const azkarData = [
                         "explanationEs": "¡Allah es el más Grande!",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20271.mp3"
                         ]
@@ -3743,6 +3873,7 @@ const azkarData = [
                         "explanationEs": "Cuando al Profeta (paz y bendiciones sean con él) le llegaba algo que le alegraba, se prosternaba inmediatamente en agradecimiento a Allah, Bendito y Enaltecido sea.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20272.mp3"
                         ]
@@ -3761,6 +3892,7 @@ const azkarData = [
                         "explanationEs": "Coloca tu mano sobre el lugar donde sientes dolor en tu cuerpo y di 'Bismillah' (En el nombre de Allah) tres veces, y luego di siete veces: 'Me refugio en Allah y en Su poder del mal que siento y al que temo'.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20273.mp3"
                         ]
@@ -3779,6 +3911,7 @@ const azkarData = [
                         "explanationEs": "Si alguno de vosotros ve algo que le admire en su hermano, en sí mismo o en sus bienes, que invoque la bendición de Allah para ello, pues el mal de ojo es una realidad.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20274.mp3"
                         ]
@@ -3797,6 +3930,7 @@ const azkarData = [
                         "explanationEs": "¡No hay más divinidad que Allah!",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20275.mp3"
                         ]
@@ -3815,6 +3949,7 @@ const azkarData = [
                         "explanationEs": "En el nombre de Allah, y Allah es el más Grande. [¡Oh Allah! De Ti proviene y a Ti se ofrece]. ¡Oh Allah! Acepta de mí.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20276.mp3"
                         ]
@@ -3833,6 +3968,7 @@ const azkarData = [
                         "explanationEs": "Me refugio en las palabras perfectas de Allah, que ningún piadoso ni perverso puede traspasar: del mal de lo que creó, concibió y multiplicó; del mal de lo que desciende del cielo y de lo que asciende a él; del mal de lo que se multiplica en la tierra y de lo que sale de ella; del mal de las pruebas de la noche y del día; y del mal de todo visitante nocturno, excepto aquel que trae el bien, ¡oh Misericordioso!",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20277.mp3"
                         ]
@@ -3851,6 +3987,7 @@ const azkarData = [
                         "explanationEs": "Dijo el Mensajero de Allah (paz y bendiciones sean con él): ¡Por Allah! Pido perdón a Allah y me arrepiento ante Él en el día más de setenta veces.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20278.mp3"
                         ]
@@ -3862,6 +3999,7 @@ const azkarData = [
                         "explanationEs": "Y dijo: ¡Oh gente! Arrepentíos ante Allah, pues yo me arrepiento ante Él cien veces al día.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20279.mp3"
                         ]
@@ -3873,6 +4011,7 @@ const azkarData = [
                         "explanationEs": "Y dijo: Quien diga 'Pido perdón a Allah el Grandioso, no hay más divinidad excepto Él, el Viviente, el Sustentador de todo, y me arrepiento ante Él', Allah lo perdonará aunque haya huido del combate.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20280.mp3"
                         ]
@@ -3884,6 +4023,7 @@ const azkarData = [
                         "explanationEs": "Y dijo: Lo más cerca que está el Señor de Su siervo es en lo profundo de la última parte de la noche. Si puedes ser de los que recuerdan a Allah en esa hora, sélo.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20281.mp3"
                         ]
@@ -3895,6 +4035,7 @@ const azkarData = [
                         "explanationEs": "Y dijo: Lo más cerca que está el siervo de su Señor es cuando está prosternado; por tanto, abundad en las súplicas.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20282.mp3"
                         ]
@@ -3906,6 +4047,7 @@ const azkarData = [
                         "explanationEs": "Y dijo: Ciertamente ocurre que mi corazón se distrae levemente y pido perdón a Allah cien veces al día.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20283.mp3"
                         ]
@@ -3924,6 +4066,9 @@ const azkarData = [
                         "explanationEs": "Dijo el Profeta (paz y bendiciones sean con él): Quien diga 'Glorificado sea Allah y alabado sea' cien veces al día, sus pecados serán borrados aunque sean como la espuma del mar.",
                         "count": 100,
                         "maxCount": 100,
+                        "noCounter": true,
+                        "noteAfter": "(يُقَالُ 100 مَرَّةً)",
+                        "noteAfterEs": "(Se dice 100 veces)",
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20284.mp3"
                         ]
@@ -3935,6 +4080,9 @@ const azkarData = [
                         "explanationEs": "Y dijo (la paz y las bendiciones de Allah sean con él): «Quien diga diez veces: “No hay divinidad digna de adoración excepto Allah, Único, sin asociado; Suyo es el dominio y Suya es la alabanza, y Él tiene poder sobre todas las cosas”, será como quien haya liberado a cuatro personas de los descendientes de Ismail».",
                         "count": 10,
                         "maxCount": 10,
+                        "noCounter": true,
+                        "noteAfter": "(يُقَالُ عَشْرَ مَرَّاتٍ)",
+                        "noteAfterEs": "(Se dice diez veces)",
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20285.mp3"
                         ]
@@ -3946,6 +4094,7 @@ const azkarData = [
                         "explanationEs": "Y dijo: Dos palabras son livianas para la lengua, pesadas en la balanza y amadas por el Misericordioso: 'Subhanallahi wa bihamdih, Subhanallahil-'Azim' (Glorificado sea Allah y alabado sea, Glorificado sea Allah el Grandioso).",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20286.mp3"
                         ]
@@ -3957,6 +4106,7 @@ const azkarData = [
                         "explanationEs": "Y dijo: Decir 'Subhanallah, wal-hamdulillah, wa la ilaha illallah, wallahu akbar' me es más querido que todo aquello sobre lo que sale el sol.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20287.mp3"
                         ]
@@ -3968,6 +4118,9 @@ const azkarData = [
                         "explanationEs": "Y dijo: ¿Acaso es incapaz alguno de vosotros de ganar mil buenas acciones cada día? Glorifica a Allah (diciendo Subhanallah) cien veces, y se le anotarán mil buenas acciones o se le borrarán mil pecados.",
                         "count": 100,
                         "maxCount": 100,
+                        "noCounter": true,
+                        "noteAfter": "(يُقَالُ 100 مَرَّةً)",
+                        "noteAfterEs": "(Se dice 100 veces)",
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20288.mp3"
                         ]
@@ -3979,6 +4132,7 @@ const azkarData = [
                         "explanationEs": "Quien diga 'Subhanallahil-'Azimi wa bihamdih' (Glorificado sea Allah el Grandioso y alabado sea), se le plantará una palmera en el Paraíso.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20289.mp3"
                         ]
@@ -3990,6 +4144,7 @@ const azkarData = [
                         "explanationEs": "Y dijo: ¡Oh Abdullah bin Qais! ¿Acaso no te indicaré un tesoro de los tesoros del Paraíso? Di: 'La hawla wa la quwwata illa billah' (No hay fuerza ni poder sino en Allah).",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20290.mp3"
                         ]
@@ -4001,6 +4156,7 @@ const azkarData = [
                         "explanationEs": "Y dijo: Las palabras más amadas por Allah son cuatro: Subhanallah, Al-hamdulillah, La ilaha illallah y Allahu Akbar; no importa con cuál de ellas comiences.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20291.mp3"
                         ]
@@ -4012,6 +4168,7 @@ const azkarData = [
                         "explanationEs": "Un beduino vino al Mensajero de Allah (paz y bendiciones sean con él) y dijo: Enséñame unas palabras que decir. Dijo: Di 'No hay más divinidad que Allah, Único, sin asociados; Allah es el más Grande en grandeza, alabado sea Allah en abundancia, glorificado sea Allah, Señor de los mundos, no hay fuerza ni poder sino en Allah el Poderoso, el Sabio'. El hombre dijo: Esas son para mi Señor, ¿y para mí? Dijo: Di '¡Oh Allah! Perdóname, ten misericordia de mí, guíame y susténtame'.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20292.mp3"
                         ]
@@ -4023,6 +4180,7 @@ const azkarData = [
                         "explanationEs": "Cuando una persona abrazaba el Islam, el Profeta (paz y bendiciones sean con él) le enseñaba la oración y luego le ordenaba suplicar con estas palabras: '¡Oh Allah! Perdóname, ten misericordia de mí, guíame, dame salud y susténtame'.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20293.mp3"
                         ]
@@ -4034,6 +4192,7 @@ const azkarData = [
                         "explanationEs": "La mejor súplica es 'Al-hamdulillah' (Alabado sea Allah), y el mejor recuerdo es 'La ilaha illallah' (No hay más divinidad que Allah).",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20294.mp3"
                         ]
@@ -4045,6 +4204,7 @@ const azkarData = [
                         "explanationEs": "Las obras perdurables y piadosas son: Subhanallah, Al-hamdulillah, La ilaha illallah, Allahu Akbar, wa La hawla wa la quwwata illa billah.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20295.mp3"
                         ]
@@ -4063,6 +4223,7 @@ const azkarData = [
                         "explanationEs": "De Abdullah bin Amr (que Allah esté complacido con ambos), dijo: Vi al Profeta (paz y bendiciones de Allah sean con él) contar las glorificaciones con los dedos de su mano derecha.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20296.mp3"
                         ]
@@ -4081,6 +4242,7 @@ const azkarData = [
                         "explanationEs": "Dijo el Profeta (paz y bendiciones sean con él): Al anochecer (o entrada la tarde), mantened a vuestros niños dentro de casa, pues los demonios se dispersan en ese momento. Transcurrida una hora de la noche, dejadlos; cerrad las puertas mencionando el nombre de Allah, pues Shaitán no abre una puerta cerrada; atad los odres mencionando el nombre de Allah; cubrid vuestros recipientes mencionando el nombre de Allah aunque sea atravesando algo sobre ellos, y apagad vuestras lámparas.",
                         "count": 1,
                         "maxCount": 1,
+                        "noCounter": true,
                         "audioUrls": [
                           "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20297.mp3"
                         ]
@@ -4096,7 +4258,9 @@ const azkarData = [
     id: 'azkar',
     // Carpetas de la lista: cada una se muestra como un solo botón que agrupa a varios grupos.
     folders: [
-      { id: 'folder_sabah_masaa', titleAr: 'أذكار الصباح والمساء', titleEs: 'Azkar de la mañana y de la tarde', children: ['sabah', 'masaa'] }
+      { id: 'folder_sabah_masaa', titleAr: 'أذكار الصباح والمساء', titleEs: 'Azkar de la mañana y de la tarde', children: ['sabah', 'masaa'] },
+      { id: 'folder_layl_nawm', titleAr: 'أَذْكَارُ اللَّيْلِ وَالنَّوْمِ', titleEs: 'Azkar de la noche y del sueño', children: ['nawm', 'istiyqadh', 'layl'] },
+      { id: 'folder_tahara_salat', titleAr: 'أَذْكَارُ الطَّهَارَةِ وَالصَّلَاةِ', titleEs: 'Azkar de la purificación y la oración', children: ['khala', 'wudu', 'masjid', 'azkar_adhan', 'salat', 'witr', 'istikhara'] }
     ],
     getGroups: function () { return groups; },
     findGroup: function (groupId) { return groups.find(function (group) { return group.id === groupId; }) || null; },
