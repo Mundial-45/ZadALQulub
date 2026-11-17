@@ -759,11 +759,18 @@ const AZKAR_ITEM_REMAP_V2 = {
 };
 const ZAD_FAV_REMAP_FLAG = 'zad_fav_remap_v2';
 
+// Azkar que pasaron a otro grupo conservando su numero: el id antiguo apunta al nuevo.
+const ITEM_MOVES = {
+  'azkar|salat|116': 'azkar|sujud_tilawa|116',
+  'azkar|salat|117': 'azkar|sujud_tilawa|117'
+};
+
 function normaliseItemId(id) {
   const parts = String(id || '').split('|');
   if (parts.length !== 3) return id;
   const alias = GROUP_ID_ALIASES[parts[0] + '|' + parts[1]];
-  return alias ? alias + '|' + parts[2] : id;
+  const resolved = alias ? alias + '|' + parts[2] : id;
+  return ITEM_MOVES[resolved] || resolved;
 }
 
 function findItemById(id) {

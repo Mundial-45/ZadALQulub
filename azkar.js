@@ -1529,31 +1529,6 @@ const azkarData = [
                     "noCounter": true
                   },
                   {
-                    "itemNumber": 116,
-                    "subtitleAr": "دُعَاءُ سُجُودِ التِّلاَوَةِ",
-                    "subtitleEs": "Súplica para la prosternación por lectura (Suyuud At-Tilawa)",
-                    "text": "اللَّهُمَّ لَكَ سَجَدْتُ، وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ، سَجَدَ وَجْهِيَ لِلَّذِي خَلَقَهُ وَصَوَّرَهُ، وَشَقَّ سَمْعَهُ وَبَصَرَهُ، تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ.",
-                    "latin": "Allāhumma laka sajadtu, wa bika āmantu, wa laka aslamtu. Sajada wajhiya lilladhī khalaqahu wa ṣawwarahu, wa shaqqa samʿahu wa baṣarahu. Tabāraka Allāhu aḥsanu al-khāliqīn.",
-                    "explanationEs": "¡Oh, Allah! Ante Ti me he postrado, en Ti he creído y a Ti me he sometido. Mi rostro se ha postrado ante Aquel que lo creó y le dio forma, y le concedió el oído y la vista. ¡Bendito sea Allah, el mejor de los creadores!",
-                    "count": 1,
-                    "maxCount": 1,
-                    "noCounter": true
-                  },
-                  {
-                    "itemNumber": 117,
-                    "subtitleAr": "دُعَاءُ سُجُودِ التِّلاَوَةِ",
-                    "subtitleEs": "Súplica para la prosternación por lectura (Suyuud At-Tilawa)",
-                    "text": "اللَّهُمَّ اكْتُبْ لِي بِهَا عِنْدَكَ أَجْراً، وَضَعْ عَنِّي بِهَا وِزْراً، وَاجْعَلْهَا لِي عِنْدَكَ ذُخْراً، وَتَقَبَّلْهَا مِنِّي كَمَا تَقَبَّلْتَهَا مِنْ عَبْدِكَ دَاوُدَ.",
-                    "latin": "Allāhumma iktub lī bihā ʿindaka ajran, wa ḍaʿ ʿannī bihā wizran, wa ijʿalhā lī ʿindaka dhukhran, wa taqabbalhā minnī kamā taqabbaltahā min ʿabdika Dāwūd.",
-                    "explanationEs": "¡Oh Allah! Anota para mí por ella (esta prosternación) una recompensa ante Ti, quítame con ella una carga, hazla para mí un tesoro ante Ti y acéptala de mí como la aceptaste de Tu siervo Dawud.",
-                    "count": 1,
-                    "maxCount": 1,
-                    "audioUrls": [
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20117.mp3"
-                    ],
-                    "noCounter": true
-                  },
-                  {
                     "itemNumber": 118,
                     "subtitleAr": "التَّشَهُّدُ",
                     "subtitleEs": "El Tashahhud",
@@ -1947,6 +1922,34 @@ const azkarData = [
                     "noCounter": true,
                     "noteBefore": "وَيَقُومُ يُصَلِّي إِنْ أَرَادَ ذَلِكَ.",
                     "noteBeforeEs": "Y se levanta a orar si así lo desea."
+                  }
+            ]
+      },
+      {
+            "id": "sujud_tilawa",
+            "titleAr": "دُعَاءُ سُجُودِ التِّلاَوَةِ",
+            "titleEs": "Súplica para la prosternación por lectura (Suyuud At-Tilawa)",
+            "items": [
+                  {
+                    "itemNumber": 116,
+                    "text": "اللَّهُمَّ لَكَ سَجَدْتُ، وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ، سَجَدَ وَجْهِيَ لِلَّذِي خَلَقَهُ وَصَوَّرَهُ، وَشَقَّ سَمْعَهُ وَبَصَرَهُ، تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ.",
+                    "latin": "Allāhumma laka sajadtu, wa bika āmantu, wa laka aslamtu. Sajada wajhiya lilladhī khalaqahu wa ṣawwarahu, wa shaqqa samʿahu wa baṣarahu. Tabāraka Allāhu aḥsanu al-khāliqīn.",
+                    "explanationEs": "¡Oh, Allah! Ante Ti me he postrado, en Ti he creído y a Ti me he sometido. Mi rostro se ha postrado ante Aquel que lo creó y le dio forma, y le concedió el oído y la vista. ¡Bendito sea Allah, el mejor de los creadores!",
+                    "count": 1,
+                    "maxCount": 1,
+                    "noCounter": true
+                  },
+                  {
+                    "itemNumber": 117,
+                    "text": "اللَّهُمَّ اكْتُبْ لِي بِهَا عِنْدَكَ أَجْراً، وَضَعْ عَنِّي بِهَا وِزْراً، وَاجْعَلْهَا لِي عِنْدَكَ ذُخْراً، وَتَقَبَّلْهَا مِنِّي كَمَا تَقَبَّلْتَهَا مِنْ عَبْدِكَ دَاوُدَ.",
+                    "latin": "Allāhumma iktub lī bihā ʿindaka ajran, wa ḍaʿ ʿannī bihā wizran, wa ijʿalhā lī ʿindaka dhukhran, wa taqabbalhā minnī kamā taqabbaltahā min ʿabdika Dāwūd.",
+                    "explanationEs": "¡Oh Allah! Anota para mí por ella (esta prosternación) una recompensa ante Ti, quítame con ella una carga, hazla para mí un tesoro ante Ti y acéptala de mí como la aceptaste de Tu siervo Dawud.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20117.mp3"
+                    ],
+                    "noCounter": true
                   }
             ]
       },
@@ -4260,7 +4263,8 @@ const azkarData = [
     folders: [
       { id: 'folder_sabah_masaa', titleAr: 'أذكار الصباح والمساء', titleEs: 'Azkar de la mañana y de la tarde', children: ['sabah', 'masaa'] },
       { id: 'folder_layl_nawm', titleAr: 'أَذْكَارُ اللَّيْلِ وَالنَّوْمِ', titleEs: 'Azkar de la noche y del sueño', children: ['nawm', 'istiyqadh', 'layl'] },
-      { id: 'folder_tahara_salat', titleAr: 'أَذْكَارُ الطَّهَارَةِ وَالصَّلَاةِ', titleEs: 'Azkar de la purificación y la oración', children: ['khala', 'wudu', 'masjid', 'azkar_adhan', 'salat', 'witr', 'istikhara'] }
+      { id: 'folder_tahara_salat', titleAr: 'أَذْكَارُ الطَّهَارَةِ وَالصَّلَاةِ', titleEs: 'Azkar de la purificación y la oración', children: ['khala', 'wudu', 'masjid', 'azkar_adhan', 'salat', 'azkar_bada_salah', 'sujud_tilawa', 'witr', 'istikhara'] },
+      { id: 'folder_hayat_yawmiya', titleAr: 'أَذْكَارُ الحَيَاةِ اليَوْمِيَّةِ', titleEs: 'Azkar de la vida diaria', children: ['libas', 'manzil', 'taam_siyam', 'utas', 'salam', 'muamala', 'zawaj', 'awlad', 'safar_all'] }
     ],
     getGroups: function () { return groups; },
     findGroup: function (groupId) { return groups.find(function (group) { return group.id === groupId; }) || null; },
