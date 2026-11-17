@@ -3492,16 +3492,15 @@ const azkarData = [
             "titleEs": "Lo que se dice ante un acontecimiento agradable o desagradable",
             "items": [
                   {
-                        "itemNumber": 248,
-                        "text": "كَانَ النَّبِيُّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ إِذَا أَتَاهُ الأَمْرُ يَسُرُّهُ قَالَ:\n\nالْحَمْدُ لِلَّهِ الَّذِي بِنِعْمَتِهِ تَتِمُّ الصَّالِحَاتُ،\n\nوَإِذَا أَتَاهُ الأَمْرُ يَكْرَهُهُ قَالَ:\n\nالْحَمْدُ لِلَّهِ عَلَى كُلِّ حَالٍ.",
-                        "latin": "Kāna an-nabiyyu ṣallā Allāhu ʿalayhi wa sallama idhā atāhu al-amru yasurruhu qāl: Al-ḥamdu lillāhi alladhī bi-niʿmatihi tatimmu aṣ-ṣāliḥāt, wa idhā atāhu al-amru yakrahuhu qāl: Al-ḥamdu lillāhi ʿalā kulli ḥāl.",
-                        "explanationEs": "Cuando al Profeta (paz y bendiciones de Allah sean con él) le llegaba algo alegre, decía: 'Alabado sea Allah, con Cuyo favor se completan las buenas obras'. Y cuando le acontecía algo indeseado, decía: 'Alabado sea Allah en toda circunstancia'.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "noCounter": true,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20248.mp3"
-                        ]
+                    "itemNumber": 248,
+                    "text": "الْحَمْدُ لِلَّهِ عَلَى كُلِّ حَالٍ.",
+                    "latin": "Al-ḥamdu lillāhi ʿalā kulli ḥāl.",
+                    "explanationEs": "Alabado sea Allah en toda circunstancia.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "noCounter": true,
+                    "noteBefore": "كَانَ النَّبِيُّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ إِذَا أَتَاهُ الأَمْرُ يَكْرَهُهُ قَالَ:",
+                    "noteBeforeEs": "Cuando al Profeta (paz y bendiciones de Allah sean con él) cuando le acontecía algo indeseado, decía:"
                   }
             ]
       },
@@ -3870,16 +3869,15 @@ const azkarData = [
             "titleEs": "Lo que hace quien recibe un acontecimiento feliz",
             "items": [
                   {
-                        "itemNumber": 272,
-                        "text": "كَانَ النَّبِيُّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ إِذَا أَتَاهُ أَمْرٌ يَسُرُّهُ أَوْ يُسَرُّ بِهِ خَرَّ سَاجِداً شُكْراً لِلَّهِ تَبَارَكَ وَتَعَالَى.",
-                        "latin": "Kāna an-nabiyyu ṣallā Allāhu ʿalayhi wa sallama idhā atāhu amrun yasurruhu aw yusarru bihi kharra sājidan shukran lillāhi tabāraka wa taʿālā.",
-                        "explanationEs": "Cuando al Profeta (paz y bendiciones sean con él) le llegaba algo que le alegraba, se prosternaba inmediatamente en agradecimiento a Allah, Bendito y Enaltecido sea.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "noCounter": true,
-                        "audioUrls": [
-                          "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%20272.mp3"
-                        ]
+                    "itemNumber": 272,
+                    "text": "الْحَمْدُ لِلَّهِ الَّذِي بِنِعْمَتِهِ تَتِمُّ الصَّالِحَاتُ،",
+                    "latin": "Al-ḥamdu lillāhi alladhī bi-niʿmatihi tatimmu aṣ-ṣāliḥāt",
+                    "explanationEs": "Alabado sea Allah, con Cuyo favor se completan las buenas obras",
+                    "count": 1,
+                    "maxCount": 1,
+                    "noCounter": true,
+                    "noteBefore": "كَانَ النَّبِيُّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ إِذَا أَتَاهُ الأَمْرُ يَسُرُّهُ قَالَ:",
+                    "noteBeforeEs": "Cuando al Profeta (paz y bendiciones de Allah sean con él) le llegaba algo alegre, decía:"
                   }
             ]
       },
