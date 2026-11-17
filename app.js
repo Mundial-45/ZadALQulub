@@ -901,13 +901,31 @@ function isSectionLoaded(sec) {
   return !!(window.ZadSectionModules && window.ZadSectionModules[sec]);
 }
 
+// Audios sustituidos desde ZadALQulub Audio Studio (archivo audio-overrides.js, generado a mano por el administrador).
+// Sin ese archivo, o con la lista vacía, no cambia nada. Clave = <sección>_<n.º de elemento>, p. ej. azkar_12.
+function applyAudioOverrides(sec) {
+  try {
+    const cfg = window.ZAD_AUDIO_OVERRIDES;
+    const mod = getSectionModule(sec);
+    if (!cfg || cfg.enabled === false || !cfg.items || !mod || typeof mod.getGroups !== 'function') return;
+    mod.getGroups().forEach(function (group) {
+      (group.items || []).forEach(function (item, i) {
+        const entry = cfg.items[sec + '_' + (Number(item.itemNumber) || i + 1)];
+        if (!entry || typeof entry.url !== 'string' || entry.url.indexOf('https://') !== 0) return;
+        item.audioUrls = [entry.url];
+        delete item.audioUrl;
+      });
+    });
+  } catch (e) { /* un fallo aquí nunca debe impedir abrir la sección */ }
+}
+
 function loadSection(sec) {
   if (!SECTION_FILES[sec] || isSectionLoaded(sec)) return Promise.resolve();
   if (!sectionLoadPromises[sec]) {
     sectionLoadPromises[sec] = new Promise(function (resolve) {
       const script = document.createElement('script');
       script.src = SECTION_FILES[sec];
-      script.onload = function () { resolve(); };
+      script.onload = function () { applyAudioOverrides(sec); resolve(); };
       script.onerror = function () { delete sectionLoadPromises[sec]; resolve(); };
       document.head.appendChild(script);
     });
