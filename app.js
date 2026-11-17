@@ -145,6 +145,7 @@ const uiTexts = {
 
 let currentSection = null;
 let currentGroup = null;
+let currentFolderId = null;
 let favorites = [];
 let fontSize = 18;
 let currentAudio = null;
@@ -865,6 +866,14 @@ function hideAllViews() {
 }
 
 function goHome(skipPushState = false) {
+  // Dentro de una carpeta de la lista, «atrás» vuelve a la lista principal de la sección.
+  const listView = document.getElementById('categoryListView');
+  if (!skipPushState && currentFolderId && currentSection && listView && !listView.classList.contains('hidden')) {
+    if (window.history && window.history.state && window.history.state.folder) window.history.back();
+    else showSection(currentSection, true);
+    return;
+  }
+  currentFolderId = null;
   hideAllViews();
   document.getElementById('homeView')?.classList.remove('hidden');
   currentSection = null;
@@ -940,13 +949,49 @@ function getCountUnit(isEs) {
   return isEs ? 'invocaciones' : 'أذكار/أدعية';
 }
 
-function showSection(sec, skipPushState = false) {
+// Carpetas: un módulo puede declarar `folders` [{id, titleAr, titleEs, children:[idsDeGrupo]}].
+// En la lista de la sección las carpetas aparecen como un solo botón que agrupa a sus hijos.
+function getFolder(module, folderId) {
+  return ((module && module.folders) || []).find(function (f) { return f.id === folderId; }) || null;
+}
+
+function getSectionEntries(module) {
+  const groups = module ? module.getGroups() : [];
+  const folders = (module && module.folders) || [];
+  if (currentFolderId) {
+    const folder = getFolder(module, currentFolderId);
+    if (folder) return folder.children.map(function (id) { return groups.find(function (g) { return g.id === id; }); }).filter(Boolean);
+    return groups;
+  }
+  if (!folders.length) return groups;
+  const folderOf = {};
+  folders.forEach(function (f) { f.children.forEach(function (id) { folderOf[id] = f; }); });
+  const out = [], added = {};
+  groups.forEach(function (g) {
+    const f = folderOf[g.id];
+    if (!f) { out.push(g); return; }
+    if (added[f.id]) return;
+    added[f.id] = true;
+    out.push({
+      id: f.id, titleAr: f.titleAr, titleEs: f.titleEs, isFolder: true,
+      items: [].concat.apply([], f.children.map(function (id) { const c = groups.find(function (x) { return x.id === id; }); return c ? c.items : []; }))
+    });
+  });
+  return out;
+}
+
+function openFolder(folderId) {
+  showSection(currentSection, false, folderId);
+}
+
+function showSection(sec, skipPushState = false, folderId = null) {
   if (!sec) sec = 'azkar';
   if (SECTION_FILES[sec] && !isSectionLoaded(sec)) {
-    loadSection(sec).then(function () { if (isSectionLoaded(sec)) showSection(sec, skipPushState); });
+    loadSection(sec).then(function () { if (isSectionLoaded(sec)) showSection(sec, skipPushState, folderId); });
     return;
   }
   currentSection = sec;
+  currentFolderId = folderId && getFolder(getSectionModule(sec), folderId) ? folderId : null;
   hideAllViews();
   document.getElementById('categoryListView')?.classList.remove('hidden');
   const t = uiTexts[currentLang];
@@ -954,7 +999,11 @@ function showSection(sec, skipPushState = false) {
   if (titleEl) {
     const sectionModule = getSectionModule(sec);
     titleEl.innerText = sectionModule ? sectionModule.getTitle(t) : (t.azkarSectionTitle || '');
+    const folder = getFolder(sectionModule, currentFolderId);
+    if (folder) titleEl.innerText = currentLang === 'es' ? (folder.titleEs || folder.titleAr) : (folder.titleAr || folder.titleEs);
   }
+  const backLabel = document.querySelector('#categoryListView .btn-back-label');
+  if (backLabel) backLabel.innerText = currentFolderId ? (t.back || 'رجوع') : (t.home || backLabel.innerText);
   const searchEl = document.getElementById('searchInput');
   if (searchEl) searchEl.value = '';
   renderButtonsGrid();
@@ -963,7 +1012,7 @@ function showSection(sec, skipPushState = false) {
   document.body.scrollTop = 0;
   if (!skipPushState && window.history && window.history.pushState) {
     try {
-      window.history.pushState({ view: 'section', sec: sec }, '', '#section-' + sec);
+      window.history.pushState({ view: 'section', sec: sec, folder: currentFolderId }, '', '#section-' + sec + (currentFolderId ? '-' + currentFolderId : ''));
     } catch (e) {}
   }
 }
@@ -1129,7 +1178,7 @@ function renderButtonsGrid() {
   if (!grid) return;
   grid.innerHTML = '';
   const sectionModule = getSectionModule(currentSection);
-  const data = sectionModule ? sectionModule.getGroups() : [];
+  const data = getSectionEntries(sectionModule);
   const isEs = currentLang === 'es';
 
   const categoryGradients = [
@@ -1166,13 +1215,14 @@ function renderButtonsGrid() {
 
     const btn = document.createElement('button');
     btn.type = 'button';
-    btn.onclick = () => openGroup(group.id);
+    btn.onclick = group.isFolder ? () => openFolder(group.id) : () => openGroup(group.id);
     btn.className = `p-3.5 sm:p-5 ${style.bg} rounded-2xl shadow-md hover:shadow-xl transition transform active:scale-95 flex justify-between items-center cursor-pointer text-right min-w-0 border border-white/10`;
     btn.style.cssText = inlineStyle;
     btn.innerHTML = `
       <div class="flex items-center space-x-2.5 sm:space-x-3 space-x-reverse pointer-events-none min-w-0 flex-1">
         <div class="p-2.5 sm:p-3 ${style.iconBg} rounded-xl flex-shrink-0">
-          <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+          ${group.isFolder ? '<svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"></path></svg>' : ''}
+          ${group.isFolder ? '' : '<svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>'}
         </div>
         <div class="min-w-0 flex-1">
           <h3 class="font-bold text-white text-sm sm:text-base leading-snug">${title}</h3>
@@ -2103,7 +2153,7 @@ window.addEventListener('popstate', (e) => {
   if (e.state && e.state.view) {
     switch (e.state.view) {
       case 'home': goHome(true); break;
-      case 'section': showSection(e.state.sec, true); break;
+      case 'section': showSection(e.state.sec, true, e.state.folder || null); break;
       case 'detail': openGroup(e.state.groupId, true, e.state.sec); break;
       case 'tasbeeh': showTasbeeh(true); break;
       case 'favorites': showFavorites(true); break;

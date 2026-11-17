@@ -4094,6 +4094,10 @@ const azkarData = [
   const groups = azkarData;
   const sectionModule = {
     id: 'azkar',
+    // Carpetas de la lista: cada una se muestra como un solo botón que agrupa a varios grupos.
+    folders: [
+      { id: 'folder_sabah_masaa', titleAr: 'أذكار الصباح والمساء', titleEs: 'Azkar de la mañana y de la tarde', children: ['sabah', 'masaa'] }
+    ],
     getGroups: function () { return groups; },
     findGroup: function (groupId) { return groups.find(function (group) { return group.id === groupId; }) || null; },
     getTitle: function (texts) { return texts.azkarSectionTitle; },

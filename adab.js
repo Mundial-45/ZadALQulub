@@ -335,6 +335,7 @@
     var s = sec();
     var grid = document.getElementById('buttonsGrid');
     if (!grid || (s !== 'azkar' && s !== 'adya' && s !== 'ruqyah')) return;
+    if (typeof currentFolderId !== 'undefined' && currentFolderId) return; // dentro de una carpeta no se muestra la entrada de adab
     var data = DATA[s];
     var es = isEs();
     var btn = mk('button', 'adab-entry');
