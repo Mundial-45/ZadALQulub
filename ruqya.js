@@ -137,7 +137,7 @@ const ruqyahData = [
             "text": "بِسْمِ اللَّهِ\nأَعُوذُ بِاللَّهِ وَقُدْرَتِهِ مِنْ شَرِّ مَا أَجِدُ، وَأُحَاذِرُ",
             "latin": "Bismillāh.\nAʿūdhu bil-lāhi wa qudratihi min sharri mā ajidu, wa uḥādhir.",
             "explanationEs": "En el nombre de Allah.\nMe refugio en Allah y en Su poder del mal de lo que siento y de lo que temo.",
-            "noteBefore": "يَضَعُ يَدَهُ عَلَى مَوْضِعِ الْأَلَمِ مِنْ جَسَدِهِ وَيَقُولُ «بِسْمِ اللَّهِ» ثَلَاثًا، ثُمَّ يَقُولُ سَبْعَ مَرَّاتٍ:",
+            "noteBefore": "يَضَعُ يَدَهُ عَلَى مَوْضِعِ الْأَلَمِ مِنْ جَسَدِهِ وَيَقُولُ «بِسْمِ اللَّهِ» ثَلَاثًا، ثُمَّ يَقُولُ سَبْعَ مَرَّاتٍ: «أَعُوذُ بِاللَّهِ وَقُدْرَتِهِ مِنْ شَرِّ مَا أَجِدُ، وَأُحَاذِرُ»",
             "noteBeforeEs": "Pon la mano sobre el lugar del dolor, di «Bismillāh» tres veces y luego repite siete veces la segunda frase.",
             "note": "رَوَاهُ مُسْلِمٌ",
             "stages": [
