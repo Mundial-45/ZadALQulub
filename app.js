@@ -604,6 +604,29 @@ function formatTextWithNewlines(str) {
 
 // Dentro de un texto explicativo, da a cada cita su fuente:
 // ﴿…﴾ = Corán (KFGQPC); «…» = hadiz (Scheherazade). Solo para texto árabe.
+// Zikr con varias partes con repeticiones distintas (item.stages = [3, 7]; el texto va en una línea por parte).
+function getStageInfo(item, currentCount) {
+  if (!item || !Array.isArray(item.stages) || item.stages.length < 2 || !(currentCount > 0)) return null;
+  const total = item.stages.reduce(function (a, c) { return a + c; }, 0);
+  const done = Math.max(0, total - currentCount);
+  let acc = 0;
+  for (let i = 0; i < item.stages.length; i++) {
+    if (done < acc + item.stages[i]) return { index: i, remaining: acc + item.stages[i] - done, max: item.stages[i] };
+    acc += item.stages[i];
+  }
+  return null;
+}
+
+function formatStagedText(str, item, stage, quoted) {
+  const fmt = quoted ? formatQuotedText : formatTextWithNewlines;
+  const lines = String(str || '').split('\n');
+  if (!item || !Array.isArray(item.stages) || item.stages.length < 2 || lines.length !== item.stages.length) return fmt(str);
+  return lines.map(function (ln, i) {
+    const dim = stage && stage.index !== i;
+    return '<span class="stage-line" style="display:block;transition:opacity .2s;opacity:' + (dim ? '0.35' : '1') + '">' + fmt(ln) + ' <span dir="ltr" style="font-size:.7em;opacity:.75">×' + item.stages[i] + '</span></span>';
+  }).join('');
+}
+
 function formatQuotedText(str) {
   const text = formatTextWithNewlines(str);
   if (!text) return '';
@@ -1889,6 +1912,7 @@ function renderGroupItems() {
     previousSubtitle = item.subtitleAr || null;
     const currentCount = getSavedCount(currentGroup.id, index, item.count);
     const initialMax = item.maxCount || item.count;
+    const stageInfo = getStageInfo(item, currentCount);
     const itemSectionModule = getSectionModule(currentSection);
     const isQuranItem = !!(itemSectionModule && itemSectionModule.isQuranItem(item));
     const quranFontClass = isQuranItem ? ' quran-font' : '';
@@ -1930,15 +1954,15 @@ function renderGroupItems() {
       ${renderZikrNote(item.noteBefore, item.noteBeforeEs, isEs, 'before')}
             ${isEs ? `
         <div class="space-y-4">
-          ${item.latin ? `<div class="text-sm sm:text-base md:text-lg text-slate-800 dark:text-slate-200 latin-text-style italic text-center font-semibold bg-amber-100/50 dark:bg-slate-900/70 p-4 rounded-2xl border border-amber-300/60 dark:border-slate-700 shadow-sm whitespace-pre-line">${formatTextWithNewlines(item.latin)}</div>` : ''}
-          ${item.explanationEs ? `<div class="text-base sm:text-lg md:text-xl text-slate-900 dark:text-slate-50 es-text-style text-center font-bold bg-emerald-50/90 dark:bg-emerald-950/60 p-4 sm:p-5 rounded-2xl border border-emerald-300/60 dark:border-emerald-800/80 leading-relaxed shadow-sm whitespace-pre-line">${formatTextWithNewlines(item.explanationEs)}</div>` : ''}
+          ${item.latin ? `<div class="text-sm sm:text-base md:text-lg text-slate-800 dark:text-slate-200 latin-text-style italic text-center font-semibold bg-amber-100/50 dark:bg-slate-900/70 p-4 rounded-2xl border border-amber-300/60 dark:border-slate-700 shadow-sm whitespace-pre-line">${formatStagedText(item.latin, item, stageInfo, false)}</div>` : ''}
+          ${item.explanationEs ? `<div class="text-base sm:text-lg md:text-xl text-slate-900 dark:text-slate-50 es-text-style text-center font-bold bg-emerald-50/90 dark:bg-emerald-950/60 p-4 sm:p-5 rounded-2xl border border-emerald-300/60 dark:border-emerald-800/80 leading-relaxed shadow-sm whitespace-pre-line">${formatStagedText(item.explanationEs, item, stageInfo, false)}</div>` : ''}
           <div class="leading-relaxed custom-text-size${quranFontClass} font-bold text-emerald-950 dark:text-emerald-300 text-center tracking-wide pt-3 border-t border-amber-200/60 dark:border-slate-700/60 dir-rtl whitespace-pre-line">
-            ${formatQuotedText(item.text)}
+            ${formatStagedText(item.text, item, stageInfo, true)}
           </div>
         </div>
       ` : `
         <div class="leading-relaxed custom-text-size${quranFontClass} font-bold text-slate-950 dark:text-slate-50 text-center tracking-wide py-2 whitespace-pre-line">
-          ${formatQuotedText(item.text)}
+          ${formatStagedText(item.text, item, stageInfo, true)}
         </div>
         ${item.explanationAr ? `<div class="guide-ar-expl whitespace-pre-line" dir="rtl">${formatQuotedText(item.explanationAr)}</div>` : ''}
       `}
@@ -1948,9 +1972,9 @@ function renderGroupItems() {
       ${!isAdya && !isInfoItem && !noCounter ? `
         <div data-no-share class="flex flex-col items-center justify-center pt-2">
           <button type="button" onclick="decrementCounter(${index})" class="dhikr-counter-btn ${isDone ? 'is-done' : ''} w-32 h-32 rounded-full flex flex-col items-center justify-center transition transform active:scale-90 cursor-pointer shadow-xl border-4 ${isDone ? 'bg-emerald-600 text-white border-emerald-400 hover:bg-emerald-700' : 'bg-gradient-to-br from-emerald-500 to-teal-700 text-white border-emerald-300 hover:from-emerald-600 hover:to-teal-800'}">
-            <span class="text-3xl font-extrabold text-white">${isDone ? '✓' : currentCount}</span>
+            <span class="text-3xl font-extrabold text-white">${isDone ? '✓' : (stageInfo ? stageInfo.remaining : currentCount)}</span>
             <span class="text-[11px] font-semibold mt-1 opacity-90 text-white">${isDone ? t.completedItem : t.pressToCount}</span>
-            ${!isDone ? `<span class="text-[10px] opacity-75 mt-0.5 text-white">${currentCount} /${initialMax}</span>` : ''}
+            ${!isDone ? `<span class="text-[10px] opacity-75 mt-0.5 text-white">${stageInfo ? stageInfo.remaining + ' /' + stageInfo.max : currentCount + ' /' + initialMax}</span>` : ''}
           </button>
         </div>
       ` : ''}
