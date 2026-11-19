@@ -11,7 +11,10 @@ const ruqyahData = [
             "latin": "Aʿūdhu billāhis-Samīʿil-ʿAlīmi minash-Shayṭānir-rajīm, min hamzihi wa nafkhihī wa nafthih.",
             "explanationEs": "Me refugio en Allah, el Omnioyente, el Omnisciente, contra el demonio maldito, de sus incitaciones, de su arrogancia y de sus susurros o hechizos.",
             "count": 1,
-            "maxCount": 1
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya1.mp3"
+            ]
           },
           {
             "itemNumber": 2,
@@ -20,7 +23,10 @@ const ruqyahData = [
             "explanationEs": "En el nombre de Allah, el Compasivo, el Misericordioso. Alabado sea Allah, Señor del universo, el Compasivo, el Misericordioso, Soberano absoluto del Día del Juicio Final. Solo a Ti Te adoramos y solo de Ti imploramos ayuda. ¡Guíanos por el camino recto!, el camino de los que has agraciado, no el de los que han incurrido en Tu ira, ni el de los extraviados.",
             "count": 7,
             "maxCount": 7,
-            "note": "سورة الفاتحة"
+            "note": "سورة الفاتحة",
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya2.mp3"
+            ]
           },
           {
             "itemNumber": 3,
@@ -88,7 +94,10 @@ const ruqyahData = [
             "latin": "Allāhumma Rabban-nās, adhhibil-baʾs, ishfi wa Antash-Shāfī, lā shifāʾa illā shifāʾuk, shifāʾan lā yughādiru saqamā.",
             "explanationEs": "¡Oh Allah, Señor de los hombres! Haz desaparecer la enfermedad, sana pues Tú eres el Sanador; no hay sanación sino Tu sanación, una sanación que no deja dolencia alguna.",
             "count": 1,
-            "maxCount": 1
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya8.mp3"
+            ]
           },
           {
             "itemNumber": 9,
@@ -96,7 +105,10 @@ const ruqyahData = [
             "latin": "Bismillāhi arqīk, min kulli shayʾin yuʾdhīk, min sharri kulli nafsin aw ʿayni ḥāsid, Allāhu yashfīk, bismillāhi arqīk.",
             "explanationEs": "En el nombre de Allah te hago la ruqyah, contra todo lo que te perjudique, del mal de toda alma o del ojo de un envidioso, Allah te curará; en el nombre de Allah te hago la ruqyah.",
             "count": 3,
-            "maxCount": 3
+            "maxCount": 3,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya9.mp3"
+            ]
           },
           {
             "itemNumber": 10,
@@ -104,7 +116,10 @@ const ruqyahData = [
             "latin": "Bismillāhil-ladhī lā yaḍurru maʿa ismihi shayʾun fīl-arḍi wa lā fīs-samāʾi wa Huwas-Samīʿul-ʿAlīm.",
             "explanationEs": "En el nombre de Allah, con cuyo nombre nada en la tierra ni en el cielo puede causar daño, y Él es el Omnioyente, el Omnisciente.",
             "count": 3,
-            "maxCount": 3
+            "maxCount": 3,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya10.mp3"
+            ]
           },
           {
             "itemNumber": 11,
@@ -112,7 +127,10 @@ const ruqyahData = [
             "latin": "Bismillāhi yubrīk, wa min kulli dāʾin yashfīk, wa min sharri ḥāsidin idhā ḥasad, wa sharri kulli dhi ʿayn.",
             "explanationEs": "En el nombre de Allah, Él te sana y te cura de toda enfermedad, del mal del envidioso cuando envidia y del mal de todo poseedor de mal de ojo.",
             "count": 1,
-            "maxCount": 1
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya11.mp3"
+            ]
           },
           {
             "itemNumber": 12,
@@ -127,7 +145,11 @@ const ruqyahData = [
               7
             ],
             "count": 10,
-            "maxCount": 10
+            "maxCount": 10,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya12-1.mp3",
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya12-2.mp3"
+            ]
           },
           {
             "itemNumber": 13,
@@ -135,7 +157,10 @@ const ruqyahData = [
             "latin": "Aʿūdhu bi-kalimātillāhit-tāmmati, min kulli shayṭānin wa hāmmah, wa min kulli ʿaynin lāmmah.",
             "explanationEs": "Me refugio en las palabras perfectas de Allah contra todo demonio y criatura venenosa, y contra todo ojo dañino.",
             "count": 1,
-            "maxCount": 1
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya13.mp3"
+            ]
           },
           {
             "itemNumber": 14,
@@ -144,7 +169,10 @@ const ruqyahData = [
             "explanationEs": "En el nombre de Allah. El polvo de nuestra tierra, con la saliva de algunos de nosotros, sanará a nuestro enfermo con el permiso de nuestro Señor. (Bujari y Muslim)",
             "note": "رَوَاهُ الْبُخَارِيُّ وَمُسْلِمٌ",
             "count": 1,
-            "maxCount": 1
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya14.mp3"
+            ]
           },
           {
             "itemNumber": 15,
@@ -161,7 +189,10 @@ const ruqyahData = [
             "explanationEs": "Pido a Allah, el Grandioso, Señor del Trono grandioso, que te cure. (Siete veces al visitar al enfermo. Abu Dawud y At-Tirmidhi)",
             "count": 7,
             "maxCount": 7,
-            "note": "تُقَالُ سَبْعَ مَرَّاتٍ عِنْدَ عِيَادَةِ الْمَرِيضِ (رَوَاهُ أَبُو دَاوُدَ وَالتِّرْمِذِيُّ)"
+            "note": "تُقَالُ سَبْعَ مَرَّاتٍ عِنْدَ عِيَادَةِ الْمَرِيضِ (رَوَاهُ أَبُو دَاوُدَ وَالتِّرْمِذِيُّ)",
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya16.mp3"
+            ]
           }
         ]
       },
@@ -176,7 +207,10 @@ const ruqyahData = [
             "latin": "Aʿūdhu billāhis-Samīʿil-ʿAlīmi minash-Shayṭānir-rajīm, min hamzihi wa nafkhihī wa nafthih.",
             "explanationEs": "Me refugio en Allah, el Omnioyente, el Omnisciente, contra el demonio maldito, de sus incitaciones, de su arrogancia y de sus susurros o hechizos.",
             "count": 1,
-            "maxCount": 1
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya1.mp3"
+            ]
           },
           {
             "itemNumber": 18,
@@ -185,7 +219,10 @@ const ruqyahData = [
             "explanationEs": "En el nombre de Allah, el Compasivo, el Misericordioso. Alabado sea Allah, Señor del universo, el Compasivo, el Misericordioso, Soberano absoluto del Día del Juicio Final. Solo a Ti Te adoramos y solo de Ti imploramos ayuda. ¡Guíanos por el camino recto!, el camino de los que has agraciado, no el de los que han incurrido en Tu ira, ni el de los extraviados.",
             "count": 7,
             "maxCount": 7,
-            "note": "سورة الفاتحة"
+            "note": "سورة الفاتحة",
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya2.mp3"
+            ]
           },
           {
             "itemNumber": 19,
@@ -195,7 +232,10 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "note": "سورة البقرة الاية 102",
-            "audioUrl": "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-102.mp3"
+            "audioUrl": "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-102.mp3",
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya19.mp3"
+            ]
           },
           {
             "itemNumber": 20,
@@ -229,7 +269,10 @@ const ruqyahData = [
             "explanationEs": "«Y le revelamos a Musa: “Arroja tu vara”. Y, de pronto, esta comenzó a devorar todo lo que ellos habían falseado.\n\nAsí se impuso la verdad y quedó anulado todo lo que habían hecho.\n\nY fueron derrotados allí mismo y quedaron humillados.\n\nEntonces, los hechiceros cayeron prosternados.\n\nDijeron: “Creemos en el Señor de todos los mundos, el Señor de Musa y de Harun”».",
             "count": 1,
             "maxCount": 1,
-            "note": "سورة الاعراف الايات 117-122"
+            "note": "سورة الاعراف الايات 117-122",
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya22.mp3"
+            ]
           },
           {
             "itemNumber": 23,
@@ -239,7 +282,10 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "note": "سورة يونس الآيات 79-82",
-            "audioUrl": ""
+            "audioUrl": "",
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya23.mp3"
+            ]
           },
           {
             "itemNumber": 24,
@@ -248,7 +294,10 @@ const ruqyahData = [
             "explanationEs": "Ciertamente lo que han hecho es artimaña de un mago, y el mago no triunfará por dondequiera que vaya.",
             "count": 1,
             "maxCount": 1,
-            "note": "سورة طه من الآية 69"
+            "note": "سورة طه من الآية 69",
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya24.mp3"
+            ]
           },
           {
             "itemNumber": 25,
@@ -257,7 +306,10 @@ const ruqyahData = [
             "explanationEs": "En el nombre de Allah, el Compasivo, el Misericordioso. Di: «¡Oh, ustedes que rechazan la verdad! No adoro lo que ustedes adoran, ni ustedes adoran lo que yo adoro. Yo no adoraré lo que ustedes adoran, ni ustedes adorarán lo que yo adoro. Ustedes tienen su religión y yo tengo la mía».",
             "count": 1,
             "maxCount": 1,
-            "note": "سورة الكافرون"
+            "note": "سورة الكافرون",
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya25.mp3"
+            ]
           },
           {
             "itemNumber": 26,
@@ -301,7 +353,10 @@ const ruqyahData = [
             "latin": "Allāhumma Rabban-nās, adhhibil-baʾs, ishfi wa Antash-Shāfī, lā shifāʾa illā shifāʾuk, shifāʾan lā yughādiru saqamā.",
             "explanationEs": "¡Oh Allah, Señor de los hombres! Haz desaparecer la enfermedad, sana pues Tú eres el Sanador; no hay sanación sino Tu sanación, una sanación que no deja dolencia alguna.",
             "count": 1,
-            "maxCount": 1
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya8.mp3"
+            ]
           },
           {
             "itemNumber": 30,
@@ -309,7 +364,10 @@ const ruqyahData = [
             "latin": "Aʿūdhu bi-kalimātillāhit-tāmmati, min kulli shayṭānin wa hāmmah, wa min kulli ʿaynin lāmmah.",
             "explanationEs": "Me refugio en las palabras perfectas de Allah contra todo demonio, criatura venenosa y contra todo mal de ojo pernicioso.",
             "count": 1,
-            "maxCount": 1
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya13.mp3"
+            ]
           },
           {
             "itemNumber": 31,
@@ -325,7 +383,10 @@ const ruqyahData = [
             "latin": "Bismillāhil-ladhī lā yaḍurru maʿa ismihi shayʾun fīl-arḍi wa lā fīs-samāʾi wa Huwas-Samīʿul-ʿAlīm.",
             "explanationEs": "En el nombre de Allah, con cuyo nombre nada en la tierra ni en el cielo puede causar daño, y Él es el Omnioyente, el Omnisciente.",
             "count": 3,
-            "maxCount": 3
+            "maxCount": 3,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya10.mp3"
+            ]
           },
           {
             "itemNumber": 33,
@@ -333,7 +394,10 @@ const ruqyahData = [
             "latin": "Bismillāhi arqīk, min kulli shayʾin yuʾdhīk, min sharri kulli nafsin, aw ʿayni ḥāsid, Allāhu yashfīk bismillāhi arqīk.",
             "explanationEs": "En el nombre de Allah te hago la ruqyah, contra todo lo que te perjudica, del mal de cada alma o de los ojos del envidioso. Que Allah te cure; en el nombre de Allah te hago la ruqyah.",
             "count": 3,
-            "maxCount": 3
+            "maxCount": 3,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya9.mp3"
+            ]
           },
           {
             "itemNumber": 34,
@@ -341,7 +405,10 @@ const ruqyahData = [
             "latin": "Bismillāhi yubrīk, wa min kulli dāʾin yashfīk, wa min sharri ḥāsidin idhā ḥasad, wa sharri kulli dhi ʿayn.",
             "explanationEs": "En el nombre de Allah, Él te sana y te cura de toda enfermedad, del mal del envidioso cuando envidia y del mal de todo poseedor de mal de ojo.",
             "count": 1,
-            "maxCount": 1
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya11.mp3"
+            ]
           },
           {
             "itemNumber": 35,
@@ -356,7 +423,11 @@ const ruqyahData = [
               7
             ],
             "count": 10,
-            "maxCount": 10
+            "maxCount": 10,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya12-1.mp3",
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya12-2.mp3"
+            ]
           },
           {
             "itemNumber": 36,
@@ -365,7 +436,10 @@ const ruqyahData = [
             "explanationEs": "Pido a Allah, el Grandioso, Señor del Trono grandioso, que te cure. (Siete veces al visitar al enfermo. Abu Dawud y At-Tirmidhi)",
             "count": 7,
             "maxCount": 7,
-            "note": "تُقَالُ سَبْعَ مَرَّاتٍ عِنْدَ عِيَادَةِ الْمَرِيضِ (رَوَاهُ أَبُو دَاوُدَ وَالتِّرْمِذِيُّ)"
+            "note": "تُقَالُ سَبْعَ مَرَّاتٍ عِنْدَ عِيَادَةِ الْمَرِيضِ (رَوَاهُ أَبُو دَاوُدَ وَالتِّرْمِذِيُّ)",
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya16.mp3"
+            ]
           }
         ]
       },
@@ -380,7 +454,10 @@ const ruqyahData = [
             "latin": "Aʿūdhu billāhis-Samīʿil-ʿAlīmi minash-Shayṭānir-rajīm, min hamzihi wa nafkhihī wa nafthih.",
             "explanationEs": "Me refugio en Allah, el Omnioyente, el Omnisciente, contra el demonio maldito, de sus incitaciones, de su arrogancia y de sus susurros o hechizos.",
             "count": 1,
-            "maxCount": 1
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya1.mp3"
+            ]
           },
           {
             "itemNumber": 38,
@@ -389,7 +466,10 @@ const ruqyahData = [
             "explanationEs": "En el nombre de Allah, el Compasivo, el Misericordioso. Alabado sea Allah, Señor del universo, el Compasivo, el Misericordioso, Soberano absoluto del Día del Juicio Final. Solo a Ti Te adoramos y solo de Ti imploramos ayuda. ¡Guíanos por el camino recto!, el camino de los que has agraciado, no el de los que han incurrido en Tu ira, ni el de los extraviados.",
             "count": 7,
             "maxCount": 7,
-            "note": "سورة الفاتحة"
+            "note": "سورة الفاتحة",
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya2.mp3"
+            ]
           },
           {
             "itemNumber": 39,
@@ -399,7 +479,10 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "note": "سورة البقرة الاية 102",
-            "audioUrl": "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-102.mp3"
+            "audioUrl": "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-102.mp3",
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya19.mp3"
+            ]
           },
           {
             "itemNumber": 40,
@@ -433,7 +516,10 @@ const ruqyahData = [
             "explanationEs": "«Y le revelamos a Musa: “Arroja tu vara”. Y, de pronto, esta comenzó a devorar todo lo que ellos habían falseado.\n\nAsí se impuso la verdad y quedó anulado todo lo que habían hecho.\n\nY fueron derrotados allí mismo y quedaron humillados.\n\nEntonces, los hechiceros cayeron prosternados.\n\nDijeron: “Creemos en el Señor de todos los mundos, el Señor de Musa y de Harun”».",
             "count": 1,
             "maxCount": 1,
-            "note": "سورة الاعراف الايات 117-122"
+            "note": "سورة الاعراف الايات 117-122",
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya22.mp3"
+            ]
           },
           {
             "itemNumber": 43,
@@ -443,7 +529,10 @@ const ruqyahData = [
             "count": 1,
             "maxCount": 1,
             "note": "سورة يونس الآيات 79-82",
-            "audioUrl": ""
+            "audioUrl": "",
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya23.mp3"
+            ]
           },
           {
             "itemNumber": 44,
@@ -452,7 +541,10 @@ const ruqyahData = [
             "explanationEs": "Ciertamente lo que han hecho es artimaña de un mago, y el mago no triunfará por dondequiera que vaya.",
             "count": 1,
             "maxCount": 1,
-            "note": "سورة طه من الآية 69"
+            "note": "سورة طه من الآية 69",
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya24.mp3"
+            ]
           },
           {
             "itemNumber": 45,
@@ -461,7 +553,10 @@ const ruqyahData = [
             "explanationEs": "En el nombre de Allah, el Compasivo, el Misericordioso. Di: «¡Oh, ustedes que rechazan la verdad! No adoro lo que ustedes adoran, ni ustedes adoran lo que yo adoro. Yo no adoraré lo que ustedes adoran, ni ustedes adorarán lo que yo adoro. Ustedes tienen su religión y yo tengo la mía».",
             "count": 1,
             "maxCount": 1,
-            "note": "سورة الكافرون"
+            "note": "سورة الكافرون",
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya25.mp3"
+            ]
           },
           {
             "itemNumber": 46,
@@ -514,7 +609,10 @@ const ruqyahData = [
             "latin": "Bismillāhil-ladhī lā yaḍurru maʿa ismihi shayʾun fīl-arḍi wa lā fīs-samāʾi wa Huwas-Samīʿul-ʿAlīm.",
             "explanationEs": "En el nombre de Allah, con cuyo nombre nada en la tierra ni en el cielo puede causar daño, y Él es el Omnioyente, el Omnisciente.",
             "count": 3,
-            "maxCount": 3
+            "maxCount": 3,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya10.mp3"
+            ]
           },
           {
             "itemNumber": 51,
@@ -522,7 +620,10 @@ const ruqyahData = [
             "latin": "Aʿūdhu bi-kalimātillāhit-tāmmati, min kulli shayṭānin wa hāmmah, wa min kulli ʿaynin lāmmah.",
             "explanationEs": "Me refugio en las palabras perfectas de Allah contra todo demonio, criatura venenosa y contra todo mal de ojo pernicioso.",
             "count": 1,
-            "maxCount": 1
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya13.mp3"
+            ]
           },
           {
             "itemNumber": 52,
