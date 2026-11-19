@@ -7,14 +7,6 @@ const ruqyahData = [
         "items": [
           {
             "itemNumber": 1,
-            "text": "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
-            "latin": "Bismillāhil-ladhī lā yaḍurru maʿa ismihi shayʾun fīl-arḍi wa lā fīs-samāʾi wa Huwas-Samīʿul-ʿAlīm.",
-            "explanationEs": "En el nombre de Allah, con cuyo nombre nada en la tierra ni en el cielo puede causar daño, y Él es el Omnioyente, el Omnisciente.",
-            "count": 3,
-            "maxCount": 3
-          },
-          {
-            "itemNumber": 2,
             "text": "أَعُوذُ بِاللَّهِ السَّمِيعِ الْعَلِيمِ مِنَ الشَّيْطَانِ الرَّجِيمِ، مِنْ هَمْزِهِ وَنَفْخِهِ وَنَفْثِهِ",
             "latin": "Aʿūdhu billāhis-Samīʿil-ʿAlīmi minash-Shayṭānir-rajīm, min hamzihi wa nafkhihī wa nafthih.",
             "explanationEs": "Me refugio en Allah, el Omnioyente, el Omnisciente, contra el demonio maldito, de sus incitaciones, de su arrogancia y de sus susurros o hechizos.",
@@ -22,7 +14,7 @@ const ruqyahData = [
             "maxCount": 1
           },
           {
-            "itemNumber": 3,
+            "itemNumber": 2,
             "text": "﴿بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ۝ ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ۝ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ۝ مَٰلِكِ يَوۡمِ ٱلدِّينِ۝إِيَّاكَ نَعۡبُدُ وَإِيَّاكَ نَسۡتَعِينُ۝ ٱهۡدِنَا ٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ۝ صِرَٰطَ ٱلَّذِينَ أَنۡعَمۡتَ عَلَيۡهِمۡ غَيۡرِ ٱلۡمَغۡضُوبِ عَلَيۡهِمۡ وَلَا ٱلضَّآلِّينَ۝﴾",
             "latin": "Bismillāhir-Raḥmānir-Raḥīm. Al-ḥamdu lillāhi Rabbil-ʿālamīn. Ar-Raḥmānir-Raḥīm. Māliki yawmid-dīn. Iyyāka naʿbudu wa iyyāka nastaʿīn. Ihdinaṣ-ṣirāṭal-mustaqīm. Ṣirāṭal-ladhīna anʿamta ʿalayhim ghayril-maghḍūbi ʿalayhim wa lāḍ-ḍāllīn.",
             "explanationEs": "En el nombre de Allah, el Compasivo, el Misericordioso. Alabado sea Allah, Señor del universo, el Compasivo, el Misericordioso, Soberano absoluto del Día del Juicio Final. Solo a Ti Te adoramos y solo de Ti imploramos ayuda. ¡Guíanos por el camino recto!, el camino de los que has agraciado, no el de los que han incurrido en Tu ira, ni el de los extraviados.",
@@ -31,7 +23,7 @@ const ruqyahData = [
             "note": "سورة الفاتحة"
           },
           {
-            "itemNumber": 4,
+            "itemNumber": 3,
             "text": "﴿ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡحَيُّ ٱلۡقَيُّومُۚ لَا تَأۡخُذُهُۥ سِنَةٞ وَلَا نَوۡمٞۚ لَّهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَمَا فِي ٱلۡأَرۡضِۗ مَن ذَا ٱلَّذِي يَشۡفَعُ عِندَهُۥٓ إِلَّا بِإِذۡنِهِۦۚ يَعۡلَمُ مَا بَيۡنَ أَيۡدِيهِمۡ وَمَا خَلۡفَهُمۡۖ وَلَا يُحِيطُونَ بِشَيۡءٖ مِّنۡ عِلۡمِهِۦٓ إِلَّا بِمَا شَآءَۚ وَسِعَ كُرۡسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَۖ وَلَا يَـُٔودُهُۥ حِفۡظُهُمَاۚ وَهُوَ ٱلۡعَلِيُّ ٱلۡعَظِيمُ۝﴾",
             "latin": "Allāhu lā ilāha illā Huwal-Ḥayyul-Qayyūm, lā taʾkhudhuhū sinatun wa lā nawm, lahū mā fīs-samāwāti wa mā fīl-arḍ, man dhal-ladhī yashfaʿu ʿindahū illā bi-idhnih, yaʿlamu mā bayna aydīhim wa mā khalfahum, wa lā yuḥīṭūna bi-shayʾin min ʿilmihī illā bi-mā shāʾ, wasiʿa kursiyyuhus-samāwāti wal-arḍ, wa lā yaʾūduhū ḥifẓuhumā, wa Huwal-ʿAliyyul-ʿAẓīm.",
             "explanationEs": "¡Allah! No existe nada ni nadie con derecho a ser adorado excepto Él, el Viviente [Eterno], el Sustentador [y Gobernador de toda la creación]. No Lo afectan somnolencia ni sueño. Suyo es cuanto hay en los cielos y la Tierra. ¿Quién podrá interceder ante Él si no es con Su permiso? Conoce el pasado y el futuro [lo manifiesto y lo oculto] y nadie abarca de Su conocimiento salvo lo que Él quiere. El escabel de Su Trono abarca los cielos y la Tierra, y la custodia [y mantenimiento] de ambos no Lo agobia. Y Él es el Sublime, el Grandioso. (Ayat al-Kursi; traducción de Isa García)",
@@ -43,7 +35,7 @@ const ruqyahData = [
             ]
           },
           {
-            "itemNumber": 5,
+            "itemNumber": 4,
             "text": "﴿ءَامَنَ ٱلرَّسُولُ بِمَآ أُنزِلَ إِلَيۡهِ مِن رَّبِّهِۦ وَٱلۡمُؤۡمِنُونَۚ كُلٌّ ءَامَنَ بِٱللَّهِ وَمَلَٰٓئِكَتِهِۦ وَكُتُبِهِۦ وَرُسُلِهِۦ لَا نُفَرِّقُ بَيۡنَ أَحَدٖ مِّن رُّسُلِهِۦۚ وَقَالُواْ سَمِعۡنَا وَأَطَعۡنَاۖ غُفۡرَانَكَ رَبَّنَا وَإِلَيۡكَ ٱلۡمَصِيرُ۝ لَا يُكَلِّفُ ٱللَّهُ نَفۡسًا إِلَّا وُسۡعَهَاۚ لَهَا مَا كَسَبَتۡ وَعَلَيۡهَا مَا ٱكۡتَسَبَتۡۗ رَبَّنَا لَا تُؤَاخِذۡنَآ إِن نَّسِينَآ أَوۡ أَخۡطَأۡنَاۚ رَبَّنَا وَلَا تَحۡمِلۡ عَلَيۡنَآ إِصۡرٗا كَمَا حَمَلۡتَهُۥ عَلَى ٱلَّذِينَ مِن قَبۡلِنَاۚ رَبَّنَا وَلَا تُحَمِّلۡنَا مَا لَا طَاقَةَ لَنَا بِهِۦۖ وَٱعۡفُ عَنَّا وَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَآۚ أَنتَ مَوۡلَىٰنَا فَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ۝﴾",
             "latin": "Āmanar-rasūlu bi-mā unzila ilayhi min rabbihī wal-muʾminūn, kullun āmana billāhi wa malāʾikatihī wa kutubihī wa rusulih, lā nufarriqu bayna aḥadin min rusulih, wa qālū samiʿnā wa aṭaʿnā ghufrānaka Rabbanā wa ilaykal-maṣīr. Lā yukallifullāhu nafsan illā wusʿahā, lahā mā kasabat wa ʿalayhā mak-tasabat, Rabbanā lā tuʾākhidhnā in nasīnā aw akhṭaʾnā, Rabbanā wa lā taḥmil ʿalaynā iṣran kamā ḥamaltahū ʿalāl-ladhīna min qablinā, Rabbanā wa lā tuḥammilnā mā lā ṭāqata lanā bih, waʿfu ʿannā waghfir lanā warḥamnā, Anta Mawlānā fanṣurnā ʿalāl-qawmil-kāfirīn.",
             "explanationEs": "El Mensajero cree en lo que le ha sido revelado por su Señor, y lo mismo hacen los creyentes. Todos creen en Allah, en Sus ángeles, en Sus Libros y en Sus Mensajeros. No hacemos diferencia entre ninguno de Sus Mensajeros. Y dicen: «Oímos y obedecemos. Perdónanos, Señor nuestro, pues ante Ti retornaremos». Allah no exige a nadie por encima de sus posibilidades; a su favor tendrá el bien que haga, y en su contra tendrá el mal que haga. «¡Señor nuestro! No nos castigues si olvidamos o cometemos un error. ¡Señor nuestro! No nos impongas una carga como la que impusiste a quienes nos precedieron. ¡Señor nuestro! No nos impongas algo superior a lo que podamos soportar. Perdónanos, absuélvenos y ten misericordia de nosotros. Tú eres nuestro Protector, concédenos el triunfo sobre los que niegan la verdad». (Al-Baqarah 2:285-286; traducción de Isa García)",
@@ -55,7 +47,7 @@ const ruqyahData = [
             ]
           },
           {
-            "itemNumber": 6,
+            "itemNumber": 5,
             "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\n﴿قُلۡ هُوَ ٱللَّهُ أَحَدٌ۝ ٱللَّهُ ٱلصَّمَدُ۝لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ۝ وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ۝﴾",
             "latin": "Bismillāhir-Raḥmānir-Raḥīm. Qul Huwallāhu Aḥad. Allāhuṣ-Ṣamad. Lam yalid wa lam yūlad. Wa lam yakun lahū kufuwan aḥad.",
             "explanationEs": "En el nombre de Allah, el Compasivo, el Misericordioso. Di: «Él es Allah, Uno. Allah, el Absoluto. No ha engendrado ni ha sido engendrado. Y no hay nada ni nadie que sea semejante a Él».",
@@ -67,7 +59,7 @@ const ruqyahData = [
             ]
           },
           {
-            "itemNumber": 7,
+            "itemNumber": 6,
             "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\n﴿قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ۝مِن شَرِّ مَا خَلَقَ۝وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ۝ وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِي ٱلۡعُقَدِ۝وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ۝﴾",
             "latin": "Bismillāhir-Raḥmānir-Raḥīm. Qul aʿūdhu bi-Rabbil-falaq. Min sharri mā khalaq. Wa min sharri ghāsiqin idhā waqab. Wa min sharrin-naffāthāti fīl-ʿuqad. Wa min sharri ḥāsidin idhā ḥasad.",
             "explanationEs": "En el nombre de Allah, el Compasivo, el Misericordioso. Di: «Me refugio en el Señor del amanecer, de todo el mal que existe en lo que Él creó, del mal de la oscuridad de la noche cuando se extiende, del mal de las [hechiceras] sopladoras de nudos, y del mal del envidioso cuando envidia».",
@@ -79,7 +71,7 @@ const ruqyahData = [
             ]
           },
           {
-            "itemNumber": 8,
+            "itemNumber": 7,
             "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\n﴿قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ۝ مَلِكِ ٱلنَّاسِ۝ إِلَٰهِ ٱلنَّاسِ۝ مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ۝ ٱلَّذِي يُوَسۡوِسُ فِي صُدُورِ ٱلنَّاسِ۝ مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ۝﴾",
             "latin": "Bismillāhir-Raḥmānir-Raḥīm. Qul aʿūdhu bi-Rabbin-nās. Malikin-nās. Ilāhin-nās. Min sharril-waswāsil-khannās. Alladhī yuwaswisu fī ṣudūrin-nās. Minal-jinnati wan-nās.",
             "explanationEs": "En el nombre de Allah, el Compasivo, el Misericordioso. Di: «Me refugio en el Señor de los seres humanos, el Soberano de los seres humanos, el Dios de los seres humanos, del mal del susurrador que huye [cada vez que Allah es mencionado], que susurra en los corazones de los seres humanos, y existe entre los yinnes y entre los seres humanos».",
@@ -91,7 +83,7 @@ const ruqyahData = [
             ]
           },
           {
-            "itemNumber": 9,
+            "itemNumber": 8,
             "text": "اللَّهُمَّ رَبَّ النَّاسِ، أَذْهِبِ الْبَأْسَ، اشْفِ وَأَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ، شِفَاءً لَا يُغَادِرُ سَقَمًا",
             "latin": "Allāhumma Rabban-nās, adhhibil-baʾs, ishfi wa Antash-Shāfī, lā shifāʾa illā shifāʾuk, shifāʾan lā yughādiru saqamā.",
             "explanationEs": "¡Oh Allah, Señor de los hombres! Haz desaparecer la enfermedad, sana pues Tú eres el Sanador; no hay sanación sino Tu sanación, una sanación que no deja dolencia alguna.",
@@ -99,10 +91,18 @@ const ruqyahData = [
             "maxCount": 1
           },
           {
-            "itemNumber": 10,
+            "itemNumber": 9,
             "text": "بِسْمِ اللَّهِ أَرْقِيكَ، مِنْ كُلِّ شَيْءٍ يُؤْذِيكَ، مِنْ شَرِّ كُلِّ نَفْسٍ أَوْ عَيْنِ حَاسِدٍ، اللَّهُ يَشْفِيكَ، بِسْمِ اللَّهِ أَرْقِيكَ",
             "latin": "Bismillāhi arqīk, min kulli shayʾin yuʾdhīk, min sharri kulli nafsin aw ʿayni ḥāsid, Allāhu yashfīk, bismillāhi arqīk.",
             "explanationEs": "En el nombre de Allah te hago la ruqyah, contra todo lo que te perjudique, del mal de toda alma o del ojo de un envidioso, Allah te curará; en el nombre de Allah te hago la ruqyah.",
+            "count": 3,
+            "maxCount": 3
+          },
+          {
+            "itemNumber": 10,
+            "text": "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
+            "latin": "Bismillāhil-ladhī lā yaḍurru maʿa ismihi shayʾun fīl-arḍi wa lā fīs-samāʾi wa Huwas-Samīʿul-ʿAlīm.",
+            "explanationEs": "En el nombre de Allah, con cuyo nombre nada en la tierra ni en el cielo puede causar daño, y Él es el Omnioyente, el Omnisciente.",
             "count": 3,
             "maxCount": 3
           },
