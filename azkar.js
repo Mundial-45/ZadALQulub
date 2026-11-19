@@ -599,21 +599,23 @@ const azkarData = [
                     "maxCount": 3,
                     "note": "سورة الإخلاص، سورة الفلق، سورة الناس",
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q112.mp3",
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q113.mp3",
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q114.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2051-1.mp3",
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2051-2.mp3",
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2051-3.mp3"
                     ]
                   },
                   {
-                        "itemNumber": 52,
-                        "text": "﴿ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡحَيُّ ٱلۡقَيُّومُۚ لَا تَأۡخُذُهُۥ سِنَةٞ وَلَا نَوۡمٞۚ لَّهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَمَا فِي ٱلۡأَرۡضِۗ مَن ذَا ٱلَّذِي يَشۡفَعُ عِندَهُۥٓ إِلَّا بِإِذۡنِهِۦۚ يَعۡلَمُ مَا بَيۡنَ أَيۡدِيهِمۡ وَمَا خَلۡفَهُمۡۖ وَلَا يُحِيطُونَ بِشَيۡءٖ مِّنۡ عِلۡمِهِۦٓ إِلَّا بِمَا شَآءَۚ وَسِعَ كُرۡسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَۖ وَلَا يَـُٔودُهُۥ حِفۡظُهُمَاۚ وَهُوَ ٱلۡعَلِيُّ ٱلۡعَظِيمُ۝﴾",
-                        "latin": "Allāhu lā ilāha illā huwa al-ḥayyu al-qayyūm, lā taʾkhudhuhu sinatun wa-lā nawm, lahu mā fis-samāwāti wa-mā fil-arḍ, man dhāl-ladhī yashfaʿu ʿindahu illā bi-idhnih, yaʿlamu mā bayna aydīhim wa-mā khalfahum, wa-lā yuḥīṭūna bi-shayʾin min ʿilmihi illā bimā shāʾ, wasiʿa kursiyyuhu as-samāwāti wal-arḍ, wa-lā yaʾūduhu ḥifẓuhumā, wa-huwa al-ʿaliyyu al-ʿaẓīm.",
-                        "explanationEs": "¡Allah! No existe nada ni nadie con derecho a ser adorado excepto Él, el Viviente [Eterno], el Sustentador [y Gobernador de toda la creación]. No Lo afectan somnolencia ni sueño. Suyo es cuanto hay en los cielos y la Tierra. ¿Quién podrá interceder ante Él si no es con Su permiso? Conoce el pasado y el futuro [lo manifiesto y lo oculto] y nadie abarca de Su conocimiento salvo lo que Él quiere. El escabel de Su Trono abarca los cielos y la Tierra, y la custodia [y mantenimiento] de ambos no Lo agobia. Y Él es el Sublime, el Grandioso.",
-                        "count": 1,
-                        "maxCount": 1,
-            "note": "آية الكرسي",
-            "audioUrls": ["https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-255.mp3"]
-      },
+                    "itemNumber": 52,
+                    "text": "﴿ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡحَيُّ ٱلۡقَيُّومُۚ لَا تَأۡخُذُهُۥ سِنَةٞ وَلَا نَوۡمٞۚ لَّهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَمَا فِي ٱلۡأَرۡضِۗ مَن ذَا ٱلَّذِي يَشۡفَعُ عِندَهُۥٓ إِلَّا بِإِذۡنِهِۦۚ يَعۡلَمُ مَا بَيۡنَ أَيۡدِيهِمۡ وَمَا خَلۡفَهُمۡۖ وَلَا يُحِيطُونَ بِشَيۡءٖ مِّنۡ عِلۡمِهِۦٓ إِلَّا بِمَا شَآءَۚ وَسِعَ كُرۡسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَۖ وَلَا يَـُٔودُهُۥ حِفۡظُهُمَاۚ وَهُوَ ٱلۡعَلِيُّ ٱلۡعَظِيمُ۝﴾",
+                    "latin": "Allāhu lā ilāha illā huwa al-ḥayyu al-qayyūm, lā taʾkhudhuhu sinatun wa-lā nawm, lahu mā fis-samāwāti wa-mā fil-arḍ, man dhāl-ladhī yashfaʿu ʿindahu illā bi-idhnih, yaʿlamu mā bayna aydīhim wa-mā khalfahum, wa-lā yuḥīṭūna bi-shayʾin min ʿilmihi illā bimā shāʾ, wasiʿa kursiyyuhu as-samāwāti wal-arḍ, wa-lā yaʾūduhu ḥifẓuhumā, wa-huwa al-ʿaliyyu al-ʿaẓīm.",
+                    "explanationEs": "¡Allah! No existe nada ni nadie con derecho a ser adorado excepto Él, el Viviente [Eterno], el Sustentador [y Gobernador de toda la creación]. No Lo afectan somnolencia ni sueño. Suyo es cuanto hay en los cielos y la Tierra. ¿Quién podrá interceder ante Él si no es con Su permiso? Conoce el pasado y el futuro [lo manifiesto y lo oculto] y nadie abarca de Su conocimiento salvo lo que Él quiere. El escabel de Su Trono abarca los cielos y la Tierra, y la custodia [y mantenimiento] de ambos no Lo agobia. Y Él es el Sublime, el Grandioso.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "note": "آية الكرسي",
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2052.mp3"
+                    ]
+                  },
                   {
                     "itemNumber": 53,
                     "text": "﴿ءَامَنَ ٱلرَّسُولُ بِمَآ أُنزِلَ إِلَيۡهِ مِن رَّبِّهِۦ وَٱلۡمُؤۡمِنُونَۚ كُلٌّ ءَامَنَ بِٱللَّهِ وَمَلَٰٓئِكَتِهِۦ وَكُتُبِهِۦ وَرُسُلِهِۦ لَا نُفَرِّقُ بَيۡنَ أَحَدٖ مِّن رُّسُلِهِۦۚ وَقَالُواْ سَمِعۡنَا وَأَطَعۡنَاۖ غُفۡرَانَكَ رَبَّنَا وَإِلَيۡكَ ٱلۡمَصِيرُ۝ لَا يُكَلِّفُ ٱللَّهُ نَفۡسًا إِلَّا وُسۡعَهَاۚ لَهَا مَا كَسَبَتۡ وَعَلَيۡهَا مَا ٱكۡتَسَبَتۡۗ رَبَّنَا لَا تُؤَاخِذۡنَآ إِن نَّسِينَآ أَوۡ أَخۡطَأۡنَاۚ رَبَّنَا وَلَا تَحۡمِلۡ عَلَيۡنَآ إِصۡرٗا كَمَا حَمَلۡتَهُۥ عَلَى ٱلَّذِينَ مِن قَبۡلِنَاۚ رَبَّنَا وَلَا تُحَمِّلۡنَا مَا لَا طَاقَةَ لَنَا بِهِۦۖ وَٱعۡفُ عَنَّا وَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَآۚ أَنتَ مَوۡلَىٰنَا فَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ۝﴾",
@@ -623,7 +625,7 @@ const azkarData = [
                     "maxCount": 1,
                     "note": "سورة البقرة الآيات 285-286",
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q002-285-286.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2053.mp3"
                     ]
                   },
                   {
@@ -634,10 +636,8 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2054.m4a"
-                    ],
-                    "note": "",
-                    "audioUrl": ""
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2054.mp3"
+                    ]
                   },
                   {
                     "itemNumber": 55,
@@ -647,7 +647,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2055.m4a"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2055.mp3"
                     ]
                   },
                   {
@@ -659,7 +659,7 @@ const azkarData = [
                     "maxCount": 3,
                     "note": "ثلاث مرات",
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2056.m4a"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2056.mp3"
                     ]
                   },
                   {
@@ -670,7 +670,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2057.m4a"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2057.mp3"
                     ]
                   },
                   {
@@ -710,15 +710,15 @@ const azkarData = [
                     ]
                   },
                   {
-                        "itemNumber": 61,
-                        "text": "اللَّهُمَّ رَبَّ السَّمَوَاتِ السَّبْعِ وَرَبَّ الأَرْضِ، وَرَبَّ الْعَرْشِ الْعَظِيمِ، رَبَّنَا وَرَبَّ كُلِّ شَيْءٍ، فَالِقَ الْحَبِّ وَالنَّوَى، وَمُنْزِلَ التَّوْرَاةِ وَالْإِنْجِيلِ، وَالْفُرْقَانِ، أَعُوذُ بِكَ مِنْ شَرِّ كُلِّ شَيْءٍ أَنْتَ آخِذٌ بِنَاصِيَتِهِ. اللَّهُمَّ أَنْتَ الأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ الآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ، وَأَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، وَأَنْتَ الْبَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، اقْضِ عَنَّا الدَّيْنَ وَأَغْنِنَا مِنَ الْفَقْرِ.",
-                        "latin": "Allāhumma rabba as-samāwāti as-sabʿi wa-rabbal-arḍi wa-rabba al-ʿarshi al-ʿaẓīm, rabbanā wa-rabba kulli shayʾ, fāliqal-ḥabbi wan-nawā, wa-munzila at-tawrāti wal-injīli wal-furqān, aʿūdhu bika min sharri kulli shayʾin anta ākhidhun bi-nāṣiyatih. Allāhumma anta al-awwalu fa-laysa qablaka shayʾ, wa-anta al-ākhiru fa-laysa baʿdaka shayʾ, wa-anta aẓ-ẓāhiru fa-laysa fawqaka shayʾ, wa-anta al-bāṭinu fa-laysa dūnaka shayʾ, iqḍi ʿannā ad-dayna wa-aghninā minal-faqr.",
-                        "explanationEs": "¡Oh Allah! Señor de los siete cielos, Señor de la Tierra y Señor del Grandioso Trono, Señor nuestro y Señor de todas las cosas, que haces germinar el grano y el hueso, revelador de la Torá, del Evangelio y del Criterio (el Corán). Me refugio en Ti del mal de toda cosa que esté bajo Tu dominio. ¡Oh Allah! Tú eres el Primero y no hay nada antes de Ti; Tú eres el Último y no hay nada después de Ti; Tú eres el Manifiesto y no hay nada por encima de Ti; Tú eres el Oculto y no hay nada más allá de Ti. Salda nuestras deudas y líbranos de la pobreza.",
-                        "count": 1,
-                        "maxCount": 1,
-                        "audioUrls": [
-                            "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2039.mp3"
-                        ]
+                    "itemNumber": 61,
+                    "text": "اللَّهُمَّ رَبَّ السَّمَوَاتِ السَّبْعِ وَرَبَّ الأَرْضِ، وَرَبَّ الْعَرْشِ الْعَظِيمِ، رَبَّنَا وَرَبَّ كُلِّ شَيْءٍ، فَالِقَ الْحَبِّ وَالنَّوَى، وَمُنْزِلَ التَّوْرَاةِ وَالْإِنْجِيلِ، وَالْفُرْقَانِ، أَعُوذُ بِكَ مِنْ شَرِّ كُلِّ شَيْءٍ أَنْتَ آخِذٌ بِنَاصِيَتِهِ. اللَّهُمَّ أَنْتَ الأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ الآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ، وَأَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، وَأَنْتَ الْبَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، اقْضِ عَنَّا الدَّيْنَ وَأَغْنِنَا مِنَ الْفَقْرِ.",
+                    "latin": "Allāhumma rabba as-samāwāti as-sabʿi wa-rabbal-arḍi wa-rabba al-ʿarshi al-ʿaẓīm, rabbanā wa-rabba kulli shayʾ, fāliqal-ḥabbi wan-nawā, wa-munzila at-tawrāti wal-injīli wal-furqān, aʿūdhu bika min sharri kulli shayʾin anta ākhidhun bi-nāṣiyatih. Allāhumma anta al-awwalu fa-laysa qablaka shayʾ, wa-anta al-ākhiru fa-laysa baʿdaka shayʾ, wa-anta aẓ-ẓāhiru fa-laysa fawqaka shayʾ, wa-anta al-bāṭinu fa-laysa dūnaka shayʾ, iqḍi ʿannā ad-dayna wa-aghninā minal-faqr.",
+                    "explanationEs": "¡Oh Allah! Señor de los siete cielos, Señor de la Tierra y Señor del Grandioso Trono, Señor nuestro y Señor de todas las cosas, que haces germinar el grano y el hueso, revelador de la Torá, del Evangelio y del Criterio (el Corán). Me refugio en Ti del mal de toda cosa que esté bajo Tu dominio. ¡Oh Allah! Tú eres el Primero y no hay nada antes de Ti; Tú eres el Último y no hay nada después de Ti; Tú eres el Manifiesto y no hay nada por encima de Ti; Tú eres el Oculto y no hay nada más allá de Ti. Salda nuestras deudas y líbranos de la pobreza.",
+                    "count": 1,
+                    "maxCount": 1,
+                    "audioUrls": [
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2061.mp3"
+                    ]
                   },
                   {
                     "itemNumber": 62,
@@ -728,7 +728,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2062.m4a"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2062.mp3"
                     ]
                   },
                   {
@@ -739,10 +739,8 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2013.mp3"
-                    ],
-                    "note": "",
-                    "audioUrl": ""
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2063.mp3"
+                    ]
                   },
                   {
                     "itemNumber": 64,
@@ -753,7 +751,7 @@ const azkarData = [
                     "maxCount": 1,
                     "note": "سُورَةَ الْمُلْكِ",
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q067.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2064.mp3"
                     ]
                   },
                   {
@@ -765,7 +763,7 @@ const azkarData = [
                     "maxCount": 1,
                     "note": "سُورَةَ السَّجْدَةِ",
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q032.mp3"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2065.mp3"
                     ]
                   },
                   {
@@ -777,7 +775,7 @@ const azkarData = [
                     "maxCount": 1,
                     "note": "يُجعل آخر ما يقول قبل النوم",
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2066.m4a"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2066.mp3"
                     ]
                   }
             ]
