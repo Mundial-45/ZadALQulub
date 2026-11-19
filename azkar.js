@@ -793,7 +793,7 @@ const azkarData = [
                     "count": 1,
                     "maxCount": 1,
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2067.m4a"
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2067.mp3"
                     ]
                   },
                   {
@@ -827,9 +827,8 @@ const azkarData = [
                     "maxCount": 1,
                     "note": "سورة آل عمران الآيات 190-200",
                     "audioUrls": [
-                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Quran/Q003-190-200.mp3"
-                    ],
-                    "audioUrl": ""
+                      "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Zikr/zikr%2070.mp3"
+                    ]
                   }
             ]
       },
