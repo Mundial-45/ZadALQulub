@@ -393,6 +393,11 @@ function setPlayButtonState(index, playing) {
   btn.classList.toggle('is-playing', playing);
 }
 
+// Zikr por fases con un audio por fase (item.stages = [3, 7] y audioUrls = [audio1, audio2]).
+function isStagedAudioItem(item, list) {
+  return !!(item && Array.isArray(item.stages) && item.stages.length >= 2 && Array.isArray(list) && list.length === item.stages.length);
+}
+
 let activeAudioBaseCycleLength = 1;
 let activeAudioTargetRepeats = 1;
 
@@ -444,6 +449,10 @@ function playAudio(audioValue, index, countMultiplier) {
   activeAudioKey = audioKeyFor(index);
   activeAudioList = urls;
   activeAudioListIndex = 0;
+  if (currentGroup && currentGroup.items[index] && isStagedAudioItem(currentGroup.items[index], urls)) {
+    const stagedStart = getStageInfo(currentGroup.items[index], getSavedCount(currentGroup.id, index, currentGroup.items[index].count));
+    if (stagedStart) activeAudioListIndex = stagedStart.index;
+  }
 
   let targetRepeatCount = 1;
   if (parsed.multiplier !== null && parsed.multiplier > 0) {
@@ -546,6 +555,21 @@ function playNextAudioInSequence(token) {
 
   audio.onended = () => {
     if (token !== audioPlaybackToken) return;
+    const stagedIdx = activeAudioCardIndex;
+    const stagedItem = currentGroup && stagedIdx !== null ? currentGroup.items[stagedIdx] : null;
+    if (stagedItem && isStagedAudioItem(stagedItem, activeAudioList) && activeAudioKey === audioKeyFor(stagedIdx)) {
+      // Cada reproducción cuenta una repetición de su fase: el audio 1 se repite tantas veces como la fase 1, y así el resto.
+      decrementCounter(stagedIdx, true);
+      const stagedNext = getStageInfo(stagedItem, getSavedCount(currentGroup.id, stagedIdx, 0));
+      if (stagedNext) {
+        activeAudioListIndex = stagedNext.index;
+        playNextAudioInSequence(token);
+      } else {
+        stopCurrentAudioPlayback();
+        setPlayButtonState(stagedIdx, false);
+      }
+      return;
+    }
     activeAudioListIndex++;
     playNextAudioInSequence(token);
   };
