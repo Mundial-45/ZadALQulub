@@ -180,7 +180,10 @@ const ruqyahData = [
             "latin": "Bismillāhi, aʿūdhu bi-kalimātillāhit-tāmmati min ghaḍabihī wa ʿiqābih, wa sharri ʿibādih, wa min hamazātish-shayāṭīni wa an yaḥḍurūn.",
             "explanationEs": "En el nombre de Allah, me refugio en las palabras perfectas de Allah de Su ira y Su castigo, del mal de Sus siervos, de los susurros de los demonios y de que se presenten ante mí.",
             "count": 1,
-            "maxCount": 1
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya15.mp3"
+            ]
           },
           {
             "itemNumber": 16,
@@ -375,7 +378,10 @@ const ruqyahData = [
             "latin": "Aʿūdhu bi-kalimātillāhit-tāmmāti min sharri mā khalaq.",
             "explanationEs": "Me refugio en las palabras perfectas de Allah del mal de todo lo que ha creado.",
             "count": 1,
-            "maxCount": 1
+            "maxCount": 1,
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya31.mp3"
+            ]
           },
           {
             "itemNumber": 32,
@@ -415,7 +421,7 @@ const ruqyahData = [
             "text": "بِسْمِ اللَّهِ\nأَعُوذُ بِاللَّهِ وَقُدْرَتِهِ مِنْ شَرِّ مَا أَجِدُ، وَأُحَاذِرُ",
             "latin": "Bismillāh.\nAʿūdhu bil-lāhi wa qudratihi min sharri mā ajidu, wa uḥādhir.",
             "explanationEs": "En el nombre de Allah.\nMe refugio en Allah y en Su poder del mal de lo que siento y de lo que temo.",
-            "noteBefore": "يَضَعُ يَدَهُ عَلَى مَوْضِعِ الْأَلَمِ مِنْ جَسَدِهِ وَيَقُولُ «بِسْمِ اللَّهِ» ثَلَاثًا، ثُمَّ يَقُولُ سَبْعَ مَرَّاتٍ:",
+            "noteBefore": "يَضَعُ يَدَهُ عَلَى مَوْضِعِ الْأَلَمِ مِنْ جَسَدِهِ وَيَقُولُ «بِسْمِ اللَّهِ» ثَلَاثًا، ثُمَّ يَقُولُ سَبْعَ مَرَّاتٍ: «أَعُوذُ بِاللَّهِ وَقُدْرَتِهِ مِنْ شَرِّ مَا أَجِدُ، وَأُحَاذِرُ»",
             "noteBeforeEs": "Pon la mano sobre el lugar del dolor, di «Bismillāh» tres veces y luego repite siete veces la segunda frase.",
             "note": "رَوَاهُ مُسْلِمٌ",
             "stages": [
@@ -601,7 +607,10 @@ const ruqyahData = [
             "explanationEs": "Me refugio en las palabras perfectas de Allah del mal de todo lo que ha creado.",
             "count": 3,
             "maxCount": 3,
-            "note": "مَنْ نَزَلَ مَنْزِلًا فَقَالَهَا لَمْ يَضُرَّهُ شَيْءٌ حَتَّى يَرْتَحِلَ مِنْهُ (رَوَاهُ مُسْلِمٌ)"
+            "note": "مَنْ نَزَلَ مَنْزِلًا فَقَالَهَا لَمْ يَضُرَّهُ شَيْءٌ حَتَّى يَرْتَحِلَ مِنْهُ (رَوَاهُ مُسْلِمٌ)",
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya31.mp3"
+            ]
           },
           {
             "itemNumber": 50,
@@ -632,7 +641,10 @@ const ruqyahData = [
             "explanationEs": "Me refugio en las palabras perfectas de Allah, que ni el piadoso ni el malvado pueden traspasar, del mal de lo que Él ha creado, originado y multiplicado; del mal de lo que desciende del cielo y del mal de lo que asciende a él; del mal de lo que ha esparcido en la tierra y del mal de lo que sale de ella; del mal de las pruebas de la noche y del día, y del mal de todo visitante nocturno, salvo el que viene con el bien. ¡Oh, Compasivo!",
             "count": 1,
             "maxCount": 1,
-            "note": "دُعَاءٌ عَلَّمَهُ جِبْرِيلُ النَّبِيَّ ﷺ لَمَّا كَادَتْهُ الشَّيَاطِينُ (رَوَاهُ أَحْمَدُ)"
+            "note": "دُعَاءٌ عَلَّمَهُ جِبْرِيلُ النَّبِيَّ ﷺ لَمَّا كَادَتْهُ الشَّيَاطِينُ (رَوَاهُ أَحْمَدُ)",
+            "audioUrls": [
+              "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Ruqya/roqya52.mp3"
+            ]
           }
         ]
       }
