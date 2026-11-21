@@ -745,6 +745,162 @@ async function shareCard(btn, text) {
   }
 }
 
+// ---- Compartir como vídeo en la web (navegador) ---------------------------------------------
+// Dibuja la tarjeta, reproduce el audio y lo graba con MediaRecorder. Tarda lo que dura el audio.
+// Para quitarlo: poner ENABLE_WEB_VIDEO_SHARE = false (desaparece el botón 🎬).
+const ENABLE_WEB_VIDEO_SHARE = true;
+const WEB_VIDEO_MAX_SEC = 90;   // audios más largos se recortan para no esperar minutos
+var _webVideoCancel = false;
+var _webVideoTimer = null;
+
+function pickWebVideoMime() {
+  try {
+    const list = ['video/mp4;codecs=avc1.42E01E,mp4a.40.2', 'video/mp4', 'video/webm;codecs=vp9,opus', 'video/webm;codecs=vp8,opus', 'video/webm'];
+    for (let i = 0; i < list.length; i++) { if (MediaRecorder.isTypeSupported(list[i])) return list[i]; }
+  } catch (e) {}
+  return '';
+}
+
+function canShareVideoWebHere() {
+  try {
+    return ENABLE_WEB_VIDEO_SHARE && !window.AndroidBridge && typeof MediaRecorder !== 'undefined'
+      && !!(window.AudioContext || window.webkitAudioContext)
+      && !!HTMLCanvasElement.prototype.captureStream && !!pickWebVideoMime();
+  } catch (e) { return false; }
+}
+
+// Primer audio con https de un elemento ('' si no tiene): es el que se mete en el vídeo.
+function getCardVideoAudio(item) {
+  const list = normaliseAudioList(Array.isArray(item.audioUrls) && item.audioUrls.length ? item.audioUrls : item.audioUrl, item.count || item.maxCount);
+  return list.find(function (u) { return typeof u === 'string' && u.indexOf('https://') === 0; }) || '';
+}
+
+function showWebVideoProgress() {
+  hideWebVideoProgress();
+  _webVideoCancel = false;
+  const es = currentLang === 'es';
+  const box = document.createElement('div');
+  box.id = 'zadWebVideoProgress';
+  box.setAttribute('role', 'alert');
+  box.style.cssText = 'position:fixed;inset:0;z-index:99999;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;padding:24px;';
+  box.innerHTML =
+    '<div style="background:#1f2937;color:#fff;border-radius:18px;padding:22px 20px;max-width:320px;width:100%;text-align:center;box-shadow:0 10px 40px rgba(0,0,0,.4);">' +
+      '<div id="zadWvTitle" style="font-size:17px;font-weight:700;margin-bottom:6px;">' + (es ? 'Creando el vídeo…' : 'جارٍ تجهيز الفيديو…') + '</div>' +
+      '<div id="zadWvSub" style="font-size:13px;opacity:.85;margin-bottom:14px;">' + (es ? 'No cierres esta pestaña hasta que termine' : 'لا تغلق هذه الصفحة حتى ينتهي') + '</div>' +
+      '<div style="height:8px;border-radius:4px;background:rgba(255,255,255,.2);overflow:hidden;">' +
+        '<div id="zadWvBar" style="height:100%;width:3%;border-radius:4px;background:#fbbf24;transition:width .25s linear;"></div>' +
+      '</div>' +
+      '<div id="zadWvPct" style="font-size:12px;opacity:.8;margin-top:6px;">0%</div>' +
+      '<button type="button" id="zadWvCancel" style="margin-top:14px;padding:6px 16px;border-radius:10px;background:rgba(255,255,255,.15);color:#fff;font-size:13px;cursor:pointer;">' + (es ? 'Cancelar' : 'إلغاء') + '</button>' +
+    '</div>';
+  document.body.appendChild(box);
+  document.getElementById('zadWvCancel').onclick = function () { _webVideoCancel = true; hideWebVideoProgress(); };
+}
+function setWebVideoProgress(pct, label) {
+  const bar = document.getElementById('zadWvBar'); const t = document.getElementById('zadWvPct'); const sub = document.getElementById('zadWvSub');
+  pct = Math.max(0, Math.min(100, Math.round(pct)));
+  if (bar) bar.style.width = Math.max(3, pct) + '%';
+  if (t) t.textContent = pct + '%';
+  if (sub && label) sub.textContent = label;
+}
+function hideWebVideoProgress() {
+  if (_webVideoTimer) { clearInterval(_webVideoTimer); _webVideoTimer = null; }
+  const box = document.getElementById('zadWebVideoProgress');
+  if (box && box.parentNode) box.parentNode.removeChild(box);
+}
+
+async function shareCardVideoWeb(btn, audioUrl, text) {
+  const card = btn && btn.closest ? btn.closest('.card-paper-bg') : null;
+  if (!card || !audioUrl || !canShareVideoWebHere()) { shareCard(btn, text); return; }
+  const es = currentLang === 'es';
+  showWebVideoProgress();
+  let ac = null;
+  try {
+    setWebVideoProgress(2, es ? 'Preparando la tarjeta…' : 'تجهيز البطاقة…');
+    const cardCanvas = await renderCardToCanvas(card);
+    if (_webVideoCancel) return;
+
+    setWebVideoProgress(8, es ? 'Descargando el audio…' : 'تحميل الصوت…');
+    const resp = await fetch(audioUrl);
+    if (!resp.ok) throw new Error('audio');
+    const data = await resp.arrayBuffer();
+    if (_webVideoCancel) return;
+    const AC = window.AudioContext || window.webkitAudioContext;
+    ac = new AC();
+    try { await ac.resume(); } catch (e) {}
+    const buffer = await ac.decodeAudioData(data);
+    if (_webVideoCancel) { ac.close(); return; }
+    const dur = Math.min(buffer.duration, WEB_VIDEO_MAX_SEC);
+
+    // Lienzo del vídeo: ancho 720 y medidas pares.
+    let W = 720, H = Math.round(cardCanvas.height * W / cardCanvas.width);
+    if (H > 1280) { H = 1280; W = Math.round(cardCanvas.width * H / cardCanvas.height); }
+    W -= W % 2; H -= H % 2;
+    const vc = document.createElement('canvas'); vc.width = W; vc.height = H;
+    const g = vc.getContext('2d');
+    const bg = getComputedStyle(document.body).backgroundColor || '#ffffff';
+    const draw = function () { g.fillStyle = bg; g.fillRect(0, 0, W, H); g.drawImage(cardCanvas, 0, 0, W, H); };
+    draw();
+
+    const dest = ac.createMediaStreamDestination();
+    const gain = ac.createGain();
+    const src = ac.createBufferSource(); src.buffer = buffer;
+    src.connect(gain); gain.connect(dest);
+    const fade = Math.min(1, dur / 4);
+    gain.gain.setValueAtTime(1, ac.currentTime);
+    gain.gain.setValueAtTime(1, ac.currentTime + Math.max(0, dur - fade));
+    gain.gain.linearRampToValueAtTime(0, ac.currentTime + dur);
+
+    const stream = vc.captureStream(25);
+    dest.stream.getAudioTracks().forEach(function (tr) { stream.addTrack(tr); });
+    const mime = pickWebVideoMime();
+    const rec = new MediaRecorder(stream, { mimeType: mime, videoBitsPerSecond: 1500000, audioBitsPerSecond: 128000 });
+    const chunks = [];
+    rec.ondataavailable = function (ev) { if (ev.data && ev.data.size) chunks.push(ev.data); };
+    const done = new Promise(function (resolve) { rec.onstop = resolve; });
+
+    setWebVideoProgress(12, es ? 'Grabando el vídeo (dura lo mismo que el audio)…' : 'تسجيل الفيديو (بمدة الصوت)…');
+    rec.start(500);
+    const t0 = ac.currentTime;
+    src.start(0, 0, dur);
+    _webVideoTimer = setInterval(function () {
+      draw();   // fuerza fotogramas nuevos
+      const p = (ac.currentTime - t0) / dur;
+      setWebVideoProgress(12 + 85 * Math.min(1, p));
+      if (_webVideoCancel || p >= 1) {
+        clearInterval(_webVideoTimer); _webVideoTimer = null;
+        setTimeout(function () { try { rec.stop(); } catch (e) {} }, 300);
+      }
+    }, 100);
+    await done;
+    try { ac.close(); } catch (e) {}
+    if (_webVideoCancel) return;
+
+    const base = mime.split(';')[0];
+    const ext = base.indexOf('mp4') >= 0 ? 'mp4' : 'webm';
+    const blob = new Blob(chunks, { type: base });
+    if (!blob.size) throw new Error('empty');
+    const file = new File([blob], 'zad-al-qulub.' + ext, { type: base });
+    setWebVideoProgress(100, es ? 'Listo' : 'تم');
+    hideWebVideoProgress();
+    if (navigator.canShare && navigator.canShare({ files: [file] })) {
+      try { await navigator.share({ files: [file], title: 'زاد القلوب' }); return; }
+      catch (e) { if (e && e.name === 'AbortError') return; }
+    }
+    // Sin menú de compartir (ordenador): se descarga el archivo.
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob); a.download = file.name;
+    document.body.appendChild(a); a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 4000);
+    showToast(es ? 'Vídeo descargado' : 'تم تنزيل الفيديو');
+  } catch (e) {
+    try { if (ac) ac.close(); } catch (e2) {}
+    hideWebVideoProgress();
+    if (_webVideoCancel) return;
+    shareCard(btn, text);
+  }
+}
+
 // Identificador estable de un elemento: sección|grupo|número del elemento.
 // No cambia si se corrige el texto (tashkil, traducción) ni si se mueven otros elementos del grupo.
 function getItemId(section, group, index) {
@@ -2030,6 +2186,11 @@ function renderGroupItems() {
         <button type="button" onclick="shareCard(this, '${escapeJsStr(getItemShareText(item, isEs))}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="${isEs ? 'Compartir' : 'مشاركة'}" aria-label="${isEs ? 'Compartir' : 'مشاركة'}">
           🔗
         </button>
+        ${canShareVideoWebHere() && getCardVideoAudio(item) ? `
+        <button type="button" onclick="shareCardVideoWeb(this, '${escapeJsStr(getCardVideoAudio(item))}', '${escapeJsStr(getItemShareText(item, isEs))}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="${isEs ? 'Compartir como vídeo con audio' : 'مشاركة كفيديو مع الصوت'}" aria-label="${isEs ? 'Compartir como vídeo con audio' : 'مشاركة كفيديو مع الصوت'}">
+          🎬
+        </button>
+        ` : ''}
         <button type="button" onclick="toggleFavorite('${escapeJsStr(itemId)}')" class="p-2.5 rounded-xl ${isFav ? 'bg-rose-100 dark:bg-rose-950 text-rose-600' : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'} hover:bg-rose-100 dark:hover:bg-rose-900 transition cursor-pointer" title="${isEs ? (isFav ? 'Quitar de favoritos' : 'Añadir a favoritos') : (isFav ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة')}" aria-label="${isEs ? (isFav ? 'Quitar de favoritos' : 'Añadir a favoritos') : (isFav ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة')}">
           ${isFav ? '★' : '☆'}
         </button>
