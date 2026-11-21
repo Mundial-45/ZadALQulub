@@ -389,7 +389,7 @@ function getPlayButtonLabel(playing) {
 }
 
 function getPlayButtonInner(playing) {
-  return (playing ? AUDIO_PAUSE_ICON : AUDIO_PLAY_ICON) + '<span class="audio-pill-label">' + getPlayButtonLabel(playing) + '</span>';
+  return playing ? AUDIO_PAUSE_ICON : AUDIO_PLAY_ICON;
 }
 
 function setPlayButtonState(index, playing) {
@@ -400,6 +400,7 @@ function setPlayButtonState(index, playing) {
   btn.dataset.state = state;
   btn.innerHTML = getPlayButtonInner(playing);
   btn.setAttribute('aria-label', getPlayButtonLabel(playing));
+  btn.setAttribute('title', getPlayButtonLabel(playing));
   btn.classList.toggle('is-playing', playing);
 }
 
@@ -2025,7 +2026,7 @@ function renderGroupItems() {
             </div>
             <div class="flex items-center justify-center gap-4 mt-1">
               <button type="button" onclick="stopAudio(${index})" class="audio-control-button audio-icon-btn" aria-label="${isEs ? 'Detener' : 'إيقاف'}" title="${isEs ? 'Detener' : 'إيقاف'}">${AUDIO_STOP_ICON}</button>
-              <button id="audioPlay-${index}" type="button" onclick='playAudio(${JSON.stringify(audioList)}, ${index})' class="audio-control-play audio-pill-btn" data-state="${(currentAudio && activeAudioCardIndex === index && !currentAudio.paused ? 'playing' : 'paused') + '-' + currentLang}" aria-label="${getPlayButtonLabel(!!(currentAudio && activeAudioCardIndex === index && !currentAudio.paused))}">${getPlayButtonInner(!!(currentAudio && activeAudioCardIndex === index && !currentAudio.paused))}</button>
+              <button id="audioPlay-${index}" type="button" onclick='playAudio(${JSON.stringify(audioList)}, ${index})' class="audio-control-play audio-pill-btn" data-state="${(currentAudio && activeAudioCardIndex === index && !currentAudio.paused ? 'playing' : 'paused') + '-' + currentLang}" aria-label="${getPlayButtonLabel(!!(currentAudio && activeAudioCardIndex === index && !currentAudio.paused))}" title="${getPlayButtonLabel(!!(currentAudio && activeAudioCardIndex === index && !currentAudio.paused))}">${getPlayButtonInner(!!(currentAudio && activeAudioCardIndex === index && !currentAudio.paused))}</button>
               <button id="audioRepeat-${index}" type="button" onclick="toggleAudioRepeat(${index})" class="audio-control-button audio-icon-btn audio-repeat-btn${audioRepeatEnabled ? ' is-active' : ''}" aria-pressed="${audioRepeatEnabled}" aria-label="${getRepeatButtonLabel()}" title="${getRepeatButtonLabel()}">${AUDIO_REPEAT_ICON}</button>
               <span id="audioSequence-${index}" class="text-[10px] tabular-nums text-slate-500 dark:text-slate-300" aria-live="polite"></span>
             </div>

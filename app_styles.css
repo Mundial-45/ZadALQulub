@@ -936,3 +936,13 @@ h1, h2, h3, #headerTitle,
   box-shadow: 0 6px 20px rgba(0, 0, 0, .55);
   border-color: #10b981 !important;
 }
+
+/* Botón play/pausa: solo el círculo con el icono, igual que parar y repetir. */
+.audio-pill-btn,
+.audio-player-compact .audio-pill-btn {
+  width: 2.35rem !important;
+  min-width: 2.35rem !important;
+  height: 2.35rem !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
