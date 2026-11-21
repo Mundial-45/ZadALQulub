@@ -920,3 +920,19 @@ h1, h2, h3, #headerTitle,
   border-color: #6d4fc2;
   box-shadow: none;
 }
+
+/* Reproductor fijo mientras hay un audio activo (útil en duas largos como los de Qunut). */
+.audio-player-compact.audio-sticky {
+  position: sticky;
+  top: 4.6rem;
+  bottom: .75rem;
+  z-index: 35;
+  background: #f8fafc !important;
+  box-shadow: 0 6px 20px rgba(2, 44, 34, .28);
+  border-color: #6ee7b7 !important;
+}
+.dark .audio-player-compact.audio-sticky {
+  background: #1e293b !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .55);
+  border-color: #10b981 !important;
+}

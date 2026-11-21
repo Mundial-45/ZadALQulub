@@ -318,11 +318,20 @@ function audioKeyFor(index) {
 function isActiveAudioCard(index) {
   return !!currentAudio && activeAudioCardIndex === index && activeAudioKey === audioKeyFor(index);
 }
+// Reproductor fijo: mientras el audio está activo (sonando o en pausa) el reproductor de su tarjeta
+// se queda visible aunque se suba o baje por un dua largo.
+function syncStickyAudioPlayer() {
+  const active = (currentAudio && activeAudioCardIndex !== null && activeAudioKey === audioKeyFor(activeAudioCardIndex))
+    ? document.getElementById('audioPlayer-' + activeAudioCardIndex) : null;
+  document.querySelectorAll('.audio-player-compact.audio-sticky').forEach(el => { if (el !== active) el.classList.remove('audio-sticky'); });
+  if (active && !active.classList.contains('audio-sticky')) active.classList.add('audio-sticky');
+}
 function resetActiveAudioState() {
   activeAudioList = [];
   activeAudioListIndex = 0;
   activeAudioCardIndex = null;
   activeAudioKey = null;
+  document.querySelectorAll('.audio-player-compact.audio-sticky').forEach(el => el.classList.remove('audio-sticky'));
 }
 // Al salir de un grupo, un audio en pausa ya no tiene tarjeta a la que volver: se descarta.
 function releasePausedAudio() {
@@ -338,6 +347,7 @@ function formatAudioTime(seconds) {
 function updateAudioProgress() {
   if (!currentAudio || activeAudioCardIndex === null) return;
   if (activeAudioKey !== audioKeyFor(activeAudioCardIndex)) return;
+  syncStickyAudioPlayer();
   const i = activeAudioCardIndex;
   const seek = document.getElementById('audioSeek-' + i);
   const nowEl = document.getElementById('audioCurrent-' + i);
@@ -471,6 +481,7 @@ function playAudio(audioValue, index, countMultiplier) {
 
   const player = document.getElementById('audioPlayer-' + index);
   if (player) player.classList.remove('hidden');
+  syncStickyAudioPlayer();
   playNextAudioInSequence(audioPlaybackToken);
 }
 
