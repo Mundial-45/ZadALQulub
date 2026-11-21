@@ -334,7 +334,7 @@
     origRender.apply(this, arguments);
     var s = sec();
     var grid = document.getElementById('buttonsGrid');
-    if (!grid || (s !== 'azkar' && s !== 'adya' && s !== 'ruqyah')) return;
+    if (!grid || (s !== 'adya' && s !== 'ruqyah')) return; // en azkar la entrada va dentro de sabah, masaa, nawm e istiyqadh
     if (typeof currentFolderId !== 'undefined' && currentFolderId) return; // dentro de una carpeta no se muestra la entrada de adab
     var data = DATA[s];
     var es = isEs();
@@ -349,6 +349,35 @@
     btn.onclick = function () { openAdab(s); };
     grid.insertBefore(btn, grid.firstChild);
   };
+
+  // Entrada de «Adab y consejos» dentro de los azkar de la mañana, la tarde, el sueño y el despertar.
+  var ADAB_AZKAR_GROUPS = { sabah: 1, masaa: 1, nawm: 1, istiyqadh: 1 };
+  var origRenderItems = window.renderGroupItems;
+  if (typeof origRenderItems === 'function') {
+    window.renderGroupItems = function () {
+      var r = origRenderItems.apply(this, arguments);
+      try {
+        var container = document.getElementById('itemsContainer');
+        if (container && sec() === 'azkar' && typeof currentGroup !== 'undefined' && currentGroup && ADAB_AZKAR_GROUPS[currentGroup.id] && DATA.azkar) {
+          var old = container.querySelector('.adab-entry');
+          if (old) old.remove();
+          var es = isEs();
+          var data = DATA.azkar;
+          var btn = mk('button', 'adab-entry');
+          btn.type = 'button';
+          var left = mk('div');
+          left.style.textAlign = es ? 'left' : 'right';
+          left.appendChild(mk('span', '', es ? data.titleEs : data.titleAr));
+          left.appendChild(mk('small', '', data.cards.length + (es ? ' consejos' : ' نَصِيحَةً')));
+          btn.appendChild(left);
+          btn.appendChild(mk('span', '', es ? '→' : '←'));
+          btn.onclick = function () { openAdab('azkar'); };
+          container.insertBefore(btn, container.firstChild);
+        }
+      } catch (e) {}
+      return r;
+    };
+  }
 
   var origLang = window.applyLanguageUI;
   window.applyLanguageUI = function () {
