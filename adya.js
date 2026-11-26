@@ -1062,8 +1062,8 @@ const adyaData = [
       "text": "الْحَمْدُ لِلَّهِ عَدَدَ مَا أَحْصَى كِتَابُهُ، وَالْحَمْدُ لِلَّهِ عَدَدَ مَا فِي كِتَابِهِ، وَالْحَمْدُ لِلَّهِ عَدَدَ مَا أَحْصَى خَلْقُهُ، وَالْحَمْدُ لِلَّهِ مِلْءَ مَا فِي خَلْقِهِ، وَالْحَمْدُ لِلَّهِ مِلْءَ سَمَاوَاتِهِ وَأَرْضِهِ، وَالْحَمْدُ لِلَّهِ عَدَدَ كُلِّ شَيْءٍ، وَالْحَمْدُ لِلَّهِ عَلَى كُلِّ شَيْءٍ",
       "latin": "Al-ḥamdu lillāhi ʿadada mā aḥṣā kitābuh, wal-ḥamdu lillāhi ʿadada mā fī kitābih, wal-ḥamdu lillāhi ʿadada mā aḥṣā khalquh, wal-ḥamdu lillāhi milʾa mā fī khalqih, wal-ḥamdu lillāhi milʾa samāwātihī wa arḍih, wal-ḥamdu lillāhi ʿadada kulli shayʾ, wal-ḥamdu lillāhi ʿalā kulli shayʾ.",
       "explanationEs": "«Alabado sea Allah en número de lo que ha registrado su Libro; alabado sea Allah en número de lo que hay en su Libro; alabado sea Allah en número de lo que ha contado su creación; alabado sea Allah en plenitud de lo que hay en su creación; alabado sea Allah en plenitud de sus cielos y de su tierra; alabado sea Allah en número de todas las cosas; alabado sea Allah por todas las cosas».",
-      "note": "أحمد والنسائي",
-      "noteEs": "Ahmad y Nasai"
+      "note": "النسائي وابن حبان",
+      "noteEs": "Nasai e Ibn Hibban"
     },
     {
       "itemNumber": 388,
