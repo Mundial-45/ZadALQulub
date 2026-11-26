@@ -1133,7 +1133,7 @@ function hideAllViews() {
   scrollYBeforeViewChange = window.scrollY || window.pageYOffset || 0;
   setTimeout(updateKeepScreenOn, 0);
   ['homeView', 'categoryListView', 'detailView', 'tasbeehView', 'favoritesView', 'quranView', 'quranSurahsView', 'quranAhzabView', 'quranReaderView'].forEach(id => {
-    document.getElementById(id)?.classList.add('hidden');
+    (function(e){if(e)e.classList.add('hidden');})(document.getElementById(id));
   });
 }
 
@@ -1147,7 +1147,7 @@ function goHome(skipPushState = false) {
   }
   currentFolderId = null;
   hideAllViews();
-  document.getElementById('homeView')?.classList.remove('hidden');
+  (function(e){if(e)e.classList.remove('hidden');})(document.getElementById('homeView'));
   currentSection = null;
   currentGroup = null;
   if (!skipPushState && window.history && window.history.pushState) {
@@ -1292,7 +1292,7 @@ function showSection(sec, skipPushState = false, folderId = null) {
   currentSection = sec;
   currentFolderId = folderId && getFolder(getSectionModule(sec), folderId) ? folderId : null;
   hideAllViews();
-  document.getElementById('categoryListView')?.classList.remove('hidden');
+  (function(e){if(e)e.classList.remove('hidden');})(document.getElementById('categoryListView'));
   const t = uiTexts[currentLang];
   const titleEl = document.getElementById('sectionTitle');
   if (titleEl) {
@@ -1559,7 +1559,7 @@ function openGroup(groupId, skipPushState = false, sectionHint = null) {
   applyPendingEditsToGroup(currentGroup, currentSection);
 
   hideAllViews();
-  document.getElementById('detailView')?.classList.remove('hidden');
+  (function(e){if(e)e.classList.remove('hidden');})(document.getElementById('detailView'));
 
   const isEs = currentLang === 'es';
   const groupTitle = isEs ? (currentGroup.titleEs || currentGroup.titleAr) : (currentGroup.titleAr || currentGroup.titleEs);
@@ -2306,7 +2306,7 @@ function showFavorites(skipPushState = false) {
     return;
   }
   hideAllViews();
-  document.getElementById('favoritesView')?.classList.remove('hidden');
+  (function(e){if(e)e.classList.remove('hidden');})(document.getElementById('favoritesView'));
   loadFavorites();
   const container = document.getElementById('favoritesContainer');
   if (!container) return;

@@ -182,7 +182,7 @@ const quranAhzab = [
 
 function showQuranView(skipPushState = false) {
   hideAllViews();
-  document.getElementById('quranView')?.classList.remove('hidden');
+  (function(e){if(e)e.classList.remove('hidden');})(document.getElementById('quranView'));
   updateContinueReadingCard();
   if (!skipPushState && window.history && window.history.pushState) {
     try {
@@ -193,7 +193,7 @@ function showQuranView(skipPushState = false) {
 
 function showQuranSurahsView(skipPushState = false) {
   hideAllViews();
-  document.getElementById('quranSurahsView')?.classList.remove('hidden');
+  (function(e){if(e)e.classList.remove('hidden');})(document.getElementById('quranSurahsView'));
   renderSurahsList();
   if (!skipPushState && window.history && window.history.pushState) {
     try {
@@ -204,7 +204,7 @@ function showQuranSurahsView(skipPushState = false) {
 
 function showQuranAhzabView(skipPushState = false) {
   hideAllViews();
-  document.getElementById('quranAhzabView')?.classList.remove('hidden');
+  (function(e){if(e)e.classList.remove('hidden');})(document.getElementById('quranAhzabView'));
   renderAhzabList();
   if (!skipPushState && window.history && window.history.pushState) {
     try {
@@ -353,7 +353,7 @@ let touchEndY = 0;
 
 function openQuranPage(pageNumber, skipPushState = false) {
   hideAllViews();
-  document.getElementById('quranReaderView')?.classList.remove('hidden');
+  (function(e){if(e)e.classList.remove('hidden');})(document.getElementById('quranReaderView'));
 
   const pageNum = Math.min(Math.max(1, parseInt(pageNumber) || 1), 638);
   displayQuranPage(pageNum);

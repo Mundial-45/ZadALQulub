@@ -52,7 +52,7 @@ function renderTasbeehVirtues() {
 
 function showTasbeeh(skipPushState = false) {
   hideAllViews();
-  document.getElementById('tasbeehView')?.classList.remove('hidden');
+  (function(e){if(e)e.classList.remove('hidden');})(document.getElementById('tasbeehView'));
   renderTasbeehGrid();
   if (!skipPushState && window.history && window.history.pushState) {
     try {
