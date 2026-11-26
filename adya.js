@@ -1067,9 +1067,9 @@ const adyaData = [
     },
     {
       "itemNumber": 388,
-      "text": "اللَّهُمَّ لَكَ الْحَمْدُ كَالَّذِي نَقُولُ، وَخَيْرًا مِمَّا نَقُولُ",
-      "latin": "Allāhumma laka l-ḥamdu kalladhī naqūl, wa khayran mimmā naqūl.",
-      "explanationEs": "«Oh Allah, para Ti es la alabanza, como la que decimos y mejor que la que decimos».",
+      "text": "اللَّهُمَّ لَكَ الْحَمْدُ كَالَّذِي نَقُولُ، وَخَيْرًا مِمَّا نَقُولُ، اللَّهُمَّ لَكَ صَلَاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي، وَإِلَيْكَ مَآبِي، وَلَكَ رَبِّ تُرَاثِي، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَوَسْوَسَةِ الصَّدْرِ، وَشَتَاتِ الْأَمْرِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ شَرِّ مَا تَجِيءُ بِهِ الرِّيحُ",
+      "latin": "Allāhumma laka l-ḥamdu kalladhī naqūl, wa khayran mimmā naqūl. Allāhumma laka ṣalātī wa nusukī wa maḥyāya wa mamātī, wa ilayka maʾābī, wa laka rabbi turāthī. Allāhumma innī aʿūdhu bika min ʿadhābil-qabr, wa waswasatiṣ-ṣadr, wa shatātil-amr. Allāhumma innī aʿūdhu bika min sharri mā tajīʾu bihir-rīḥ.",
+      "explanationEs": "«Oh Allah, para Ti es la alabanza, como la que decimos y mejor que la que decimos. Oh Allah, para Ti son mi oración, mi sacrificio, mi vida y mi muerte; a Ti será mi retorno y a Ti, Señor mío, pertenece mi herencia. Oh Allah, me refugio en Ti del castigo de la tumba, de los susurros del pecho y de la dispersión del asunto. Oh Allah, me refugio en Ti del mal de lo que trae el viento».",
       "note": "الترمذي (ضعيف)",
       "noteEs": "Tirmidhi (débil)"
     },
