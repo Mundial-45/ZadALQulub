@@ -967,9 +967,9 @@ h1, h2, h3, #headerTitle,
 .dark .zad-tlink { color:#fcd34d; background:rgba(120,53,15,.35); border-color:rgba(251,191,36,.3); }
 
 /* Espacios compactos en las tarjetas de zikr */
-[id^="zikr-card-"] { padding: 0.75rem 1rem !important; }
-[id^="zikr-card-"] > * + * { margin-top: 0.5rem !important; }
-[id^="zikr-card-"] .custom-text-size { padding-top: 0 !important; padding-bottom: 0 !important; }
+[id^="zikr-card-"] { padding: 1rem 1rem !important; }
+[id^="zikr-card-"] > * + * { margin-top: 0.9rem !important; }
+[id^="zikr-card-"] .custom-text-size { padding-top: 0.25rem !important; padding-bottom: 0.25rem !important; }
 [id^="zikr-card-"] > div[data-no-share].flex-col { padding-top: 0 !important; }
 [id^="zikr-card-"] .audio-player-compact { margin-top: 0 !important; margin-bottom: 0 !important; }
 
