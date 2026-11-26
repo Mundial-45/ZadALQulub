@@ -1013,6 +1013,205 @@ const adyaData = [
   ]
   },
   {
+  id: 'adya_hamd_shukr',
+  titleAr: 'أَدْعِيَةُ الْحَمْدِ وَالشُّكْرِ',
+  titleEs: 'Súplicas de Alabanza y Gratitud',
+  items: [
+    {
+      "itemNumber": 382,
+      "text": "﴿الْحَمْدُ لِلَّهِ الَّذِي لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ وَلَهُ الْحَمْدُ فِي الْآخِرَةِ وَهُوَ الْحَكِيمُ الْخَبِيرُ ۝ يَعْلَمُ مَا يَلِجُ فِي الْأَرْضِ وَمَا يَخْرُجُ مِنْهَا وَمَا يَنْزِلُ مِنَ السَّمَاءِ وَمَا يَعْرُجُ فِيهَا وَهُوَ الرَّحِيمُ الْغَفُورُ﴾",
+      "latin": "al-ḥamdu lillāhi alladhī lahū mā fis-samāwāti wa mā fil-arḍi wa lahul-ḥamdu fil-ākhirati wa huwal-ḥakīmul-khabīr. yaʿlamu mā yaliju fil-arḍi wa mā yakhruju minhā wa mā yanzilu mina s-samāʾi wa mā yaʿruju fīhā wa huwar-raḥīmul-ghafūr.",
+      "explanationEs": "«Alabado sea Allah, a Quien pertenece cuanto hay en los cielos y en la tierra; y a Él pertenece la alabanza en la Otra Vida. Él es el Sabio, el Bien Informado. Sabe lo que penetra en la tierra y lo que sale de ella, lo que desciende del cielo y lo que asciende a él. Y Él es el Misericordioso, el Perdonador».",
+      "note": "ثناء على الله · سورة سبأ الآيتان 1–2",
+      "noteEs": "Alabanza a Allah · Corán 34:1-2"
+    },
+    {
+      "itemNumber": 383,
+      "text": "﴿الْحَمْدُ لِلَّهِ فَاطِرِ السَّمَاوَاتِ وَالْأَرْضِ جَاعِلِ الْمَلَائِكَةِ رُسُلًا أُولِي أَجْنِحَةٍ مَثْنَىٰ وَثُلَاثَ وَرُبَاعَ يَزِيدُ فِي الْخَلْقِ مَا يَشَاءُ إِنَّ اللَّهَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ﴾",
+      "latin": "al-ḥamdu lillāhi fāṭiris-samāwāti wal-arḍi jāʿilil-malāʾikati rusulan ulī ajniḥatin mathnā wa thulātha wa rubāʿ, yazīdu fil-khalqi mā yashāʾ, innallāha ʿalā kulli shayʾin qadīr.",
+      "explanationEs": "«Alabado sea Allah, Creador de los cielos y de la tierra, que hizo de los ángeles mensajeros dotados de alas, de dos en dos, de tres en tres y de cuatro en cuatro. Aumenta en la creación lo que quiere. Ciertamente Allah tiene poder sobre todas las cosas».",
+      "note": "ثناء على الله · سورة فاطر الآية 1",
+      "noteEs": "Alabanza a Allah · Corán 35:1"
+    },
+    {
+      "itemNumber": 384,
+      "text": "اللَّهُمَّ لَكَ الْحَمْدُ أَنْتَ نُورُ السَّمَاوَاتِ وَالْأَرْضِ وَمَنْ فِيهِنَّ، وَلَكَ الْحَمْدُ أَنْتَ قَيِّمُ السَّمَاوَاتِ وَالْأَرْضِ وَمَنْ فِيهِنَّ، وَلَكَ الْحَمْدُ أَنْتَ الْحَقُّ، وَوَعْدُكَ حَقٌّ، وَقَوْلُكَ حَقٌّ، وَلِقَاؤُكَ حَقٌّ، وَالْجَنَّةُ حَقٌّ، وَالنَّارُ حَقٌّ، وَالنَّبِيُّونَ حَقٌّ، وَمُحَمَّدٌ ﷺ حَقٌّ، وَالسَّاعَةُ حَقٌّ، اللَّهُمَّ لَكَ أَسْلَمْتُ، وَبِكَ آمَنْتُ، وَعَلَيْكَ تَوَكَّلْتُ، وَإِلَيْكَ أَنَبْتُ، وَبِكَ خَاصَمْتُ، وَإِلَيْكَ حَاكَمْتُ، فَاغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ، أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ، لَا إِلَهَ إِلَّا أَنْتَ",
+      "latin": "Allāhumma laka l-ḥamd, anta nūrus-samāwāti wal-arḍi wa man fīhinn, wa laka l-ḥamd, anta qayyimus-samāwāti wal-arḍi wa man fīhinn, wa laka l-ḥamd, antal-ḥaqq, wa waʿduka ḥaqq, wa qawluka ḥaqq, wa liqāʾuka ḥaqq, wal-jannatu ḥaqq, wan-nāru ḥaqq, wan-nabiyyūna ḥaqq, wa Muḥammadun ṣallallāhu ʿalayhi wa sallama ḥaqq, was-sāʿatu ḥaqq. Allāhumma laka aslamtu, wa bika āmantu, wa ʿalayka tawakkaltu, wa ilayka anabtu, wa bika khāṣamtu, wa ilayka ḥākamtu, faghfir lī mā qaddamtu wa mā akhkhartu, wa mā asrartu wa mā aʿlantu, antal-muqaddimu wa antal-muʾakhkhiru, lā ilāha illā ant.",
+      "explanationEs": "«Oh Allah, para Ti es la alabanza: Tú eres la luz de los cielos y de la tierra y de cuantos hay en ellos. Para Ti es la alabanza: Tú eres quien sostiene los cielos y la tierra y a cuantos hay en ellos. Para Ti es la alabanza: Tú eres la Verdad; tu promesa es verdad, tu palabra es verdad, el encuentro contigo es verdad, el Paraíso es verdad, el Fuego es verdad, los Profetas son verdad, Muhammad ﷺ es verdad y la Hora es verdad. Oh Allah, a Ti me he sometido, en Ti he creído, en Ti he puesto mi confianza, a Ti me he vuelto arrepentido, por Ti he discutido y a Ti he recurrido para que juzgues. Perdóname lo que he hecho antes y lo que haré después, lo que he ocultado y lo que he manifestado. Tú eres Quien adelanta y Quien atrasa; no hay más dios que Tú».",
+      "note": "دعاء قيام الليل · البخاري 1120 ومسلم 769 · صحيح",
+      "noteEs": "Súplica de la oración nocturna · Bujari 1120 y Muslim 769 · Auténtico"
+    },
+    {
+      "itemNumber": 385,
+      "text": "رَبِّ أَعِنِّي وَلَا تُعِنْ عَلَيَّ، وَانْصُرْنِي وَلَا تَنْصُرْ عَلَيَّ، وَامْكُرْ لِي وَلَا تَمْكُرْ عَلَيَّ، وَاهْدِنِي وَيَسِّرِ الْهُدَى لِي، وَانْصُرْنِي عَلَى مَنْ بَغَى عَلَيَّ، رَبِّ اجْعَلْنِي لَكَ شَكَّارًا، لَكَ ذَكَّارًا، لَكَ رَهَّابًا، لَكَ مِطْوَاعًا، لَكَ مُخْبِتًا، إِلَيْكَ أَوَّاهًا مُنِيبًا، رَبِّ تَقَبَّلْ تَوْبَتِي، وَاغْسِلْ حَوْبَتِي، وَأَجِبْ دَعْوَتِي، وَثَبِّتْ حُجَّتِي، وَاهْدِ قَلْبِي، وَسَدِّدْ لِسَانِي، وَاسْلُلْ سَخِيمَةَ قَلْبِي",
+      "latin": "Rabbi aʿinnī wa lā tuʿin ʿalayya, wanṣurnī wa lā tanṣur ʿalayya, wamkur lī wa lā tamkur ʿalayya, wahdinī wa yassiril-hudā lī, wanṣurnī ʿalā man baghā ʿalayya. Rabbi ajʿalnī laka shakkāran, laka dhakkāran, laka rahhāban, laka miṭwāʿan, laka mukhbitan, ilayka awwāhan munībā. Rabbi taqabbal tawbatī, waghsil ḥawbatī, wa ajib daʿwatī, wa thabbit ḥujjatī, wahdi qalbī, wa saddid lisānī, wasluł sakhīmata qalbī.",
+      "explanationEs": "«Señor mío, ayúdame y no ayudes contra mí; dame la victoria y no la des contra mí; urde a mi favor y no urdas contra mí; guíame y facilítame la guía; ayúdame contra quien me agravie. Señor mío, hazme muy agradecido hacia Ti, muy recordador de Ti, muy temeroso de Ti, muy obediente a Ti, humilde ante Ti, suplicante y arrepentido hacia Ti. Señor mío, acepta mi arrepentimiento, lava mi pecado, responde a mi súplica, afirma mi argumento, guía mi corazón, endereza mi lengua y arranca el rencor de mi corazón».",
+      "note": "ابن عباس رضي الله عنهما · أبو داود 1510 والترمذي 3551 · صحيح",
+      "noteEs": "Ibn ʿAbbās · Abu Dawud 1510 y Tirmidhi 3551 · Auténtico"
+    },
+    {
+      "itemNumber": 386,
+      "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الثَّبَاتَ فِي الْأَمْرِ، وَالْعَزِيمَةَ عَلَى الرُّشْدِ، وَأَسْأَلُكَ شُكْرَ نِعْمَتِكَ وَحُسْنَ عِبَادَتِكَ، وَأَسْأَلُكَ قَلْبًا سَلِيمًا وَلِسَانًا صَادِقًا، وَأَسْأَلُكَ مِنْ خَيْرِ مَا تَعْلَمُ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا تَعْلَمُ، وَأَسْتَغْفِرُكَ لِمَا تَعْلَمُ، إِنَّكَ أَنْتَ عَلَّامُ الْغُيُوبِ",
+      "latin": "Allāhumma innī asʾaluka th-thabāta fil-amr, wal-ʿazīmata ʿalar-rushd, wa asʾaluka shukra niʿmatika wa ḥusna ʿibādatik, wa asʾaluka qalban salīman wa lisānan ṣādiqā, wa asʾaluka min khayri mā taʿlam, wa aʿūdhu bika min sharri mā taʿlam, wa astaghfiruka limā taʿlam, innaka anta ʿallāmul-ghuyūb.",
+      "explanationEs": "«Oh Allah, te pido firmeza en el asunto y determinación en la rectitud; te pido agradecer tu favor y adorarte de la mejor manera; te pido un corazón sano y una lengua veraz; te pido de lo mejor que Tú conoces, me refugio en Ti de lo peor que Tú conoces y te pido perdón por lo que Tú conoces. Ciertamente Tú eres el Conocedor de lo oculto».",
+      "note": "شداد بن أوس رضي الله عنه · الترمذي 3407 وأحمد والنسائي · حسن",
+      "noteEs": "Šaddād ibn Aws · Tirmidhi 3407, Ahmad y Nasai · Bueno (hasan)"
+    },
+    {
+      "itemNumber": 387,
+      "text": "بِسْمِ اللَّهِ، تَوَكَّلْتُ عَلَى اللَّهِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ أَنْ أَضِلَّ أَوْ أُضَلَّ، أَوْ أَزِلَّ أَوْ أُزَلَّ، أَوْ أَظْلِمَ أَوْ أُظْلَمَ، أَوْ أَجْهَلَ أَوْ يُجْهَلَ عَلَيَّ",
+      "latin": "Bismillāh, tawakkaltu ʿalallāh. Allāhumma innī aʿūdhu bika an aḍilla aw uḍalla, aw azilla aw uzalla, aw aẓlima aw uẓlama, aw ajhala aw yujhala ʿalayya.",
+      "explanationEs": "«En el nombre de Allah, en Allah he puesto mi confianza. Oh Allah, me refugio en Ti de extraviarme o de que me extravíen, de resbalar o de que me hagan resbalar, de oprimir o de ser oprimido, de obrar con ignorancia o de que se obre con ignorancia conmigo».",
+      "note": "أم سلمة رضي الله عنها · أبو داود 5094 والترمذي 3427 · صحيح (يقال عند الخروج من البيت)",
+      "noteEs": "Umm Salama · Abu Dawud 5094 y Tirmidhi 3427 · Auténtico (al salir de casa)"
+    },
+    {
+      "itemNumber": 388,
+      "text": "الْحَمْدُ لِلَّهِ عَدَدَ مَا خَلَقَ، وَالْحَمْدُ لِلَّهِ مِلْءَ مَا خَلَقَ، وَالْحَمْدُ لِلَّهِ عَدَدَ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ، وَالْحَمْدُ لِلَّهِ مِلْءَ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ، وَالْحَمْدُ لِلَّهِ عَدَدَ مَا أَحْصَى كِتَابُهُ، وَالْحَمْدُ لِلَّهِ مِلْءَ مَا أَحْصَى كِتَابُهُ، وَالْحَمْدُ لِلَّهِ عَدَدَ كُلِّ شَيْءٍ، وَالْحَمْدُ لِلَّهِ مِلْءَ كُلِّ شَيْءٍ",
+      "latin": "Al-ḥamdu lillāhi ʿadada mā khalaq, wal-ḥamdu lillāhi milʾa mā khalaq, wal-ḥamdu lillāhi ʿadada mā fis-samāwāti wa mā fil-arḍ, wal-ḥamdu lillāhi milʾa mā fis-samāwāti wa mā fil-arḍ, wal-ḥamdu lillāhi ʿadada mā aḥṣā kitābuh, wal-ḥamdu lillāhi milʾa mā aḥṣā kitābuh, wal-ḥamdu lillāhi ʿadada kulli shayʾ, wal-ḥamdu lillāhi milʾa kulli shayʾ.",
+      "explanationEs": "«Alabado sea Allah en número de lo que creó; alabado sea Allah en plenitud de lo que creó; alabado sea Allah en número de cuanto hay en los cielos y en la tierra; alabado sea Allah en plenitud de cuanto hay en los cielos y en la tierra; alabado sea Allah en número de lo que su Libro ha registrado; alabado sea Allah en plenitud de lo que su Libro ha registrado; alabado sea Allah en número de todas las cosas; alabado sea Allah en plenitud de todas las cosas».",
+      "note": "أبو أمامة رضي الله عنه · أحمد والنسائي في الكبرى وابن حبان · حسّنه بعض أهل العلم",
+      "noteEs": "Abū Umāma · Ahmad, Nasai (al-Kubrā) e Ibn Ḥibbān · Lo consideran bueno (hasan) algunos sabios"
+    },
+    {
+      "itemNumber": 389,
+      "text": "اللَّهُمَّ لَكَ الْحَمْدُ كَالَّذِي نَقُولُ، وَخَيْرًا مِمَّا نَقُولُ",
+      "latin": "Allāhumma laka l-ḥamdu kalladhī naqūl, wa khayran mimmā naqūl.",
+      "explanationEs": "«Oh Allah, para Ti es la alabanza, como la que decimos y mejor que la que decimos».",
+      "note": "الترمذي 3520 · ضعيف الإسناد، ومعناه صحيح",
+      "noteEs": "Tirmidhi 3520 · Cadena débil (el significado es correcto)"
+    },
+    {
+      "itemNumber": 390,
+      "text": "اللَّهُمَّ لَكَ الْحَمْدُ كُلُّهُ، وَلَكَ الشُّكْرُ كُلُّهُ، وَإِلَيْكَ يَرْجِعُ الْأَمْرُ كُلُّهُ عَلَانِيَتُهُ وَسِرُّهُ، فَأَهْلٌ أَنْتَ أَنْ تُحْمَدَ، وَأَهْلٌ أَنْتَ أَنْ تُعْبَدَ، وَأَنْتَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+      "latin": "Allāhumma laka l-ḥamdu kulluh, wa lakash-shukru kulluh, wa ilayka yarjiʿul-amru kulluh ʿalāniyatuhū wa sirruh, fa-ahlun anta an tuḥmad, wa ahlun anta an tuʿbad, wa anta ʿalā kulli shayʾin qadīr.",
+      "explanationEs": "«Oh Allah, para Ti es toda la alabanza y para Ti todo el agradecimiento; a Ti retorna todo el asunto, en público y en secreto. Eres digno de ser alabado y digno de ser adorado, y Tú tienes poder sobre todas las cosas».",
+      "note": "أصل «لك الحمد كله» في حديث عبيد بن رفاعة (أحمد)، وبقية اللفظ بإسناد ضعيف",
+      "noteEs": "El inicio «para Ti es toda la alabanza» consta en el hadiz de ʿUbayd ibn Rifāʿa (Ahmad); el resto, con cadena débil"
+    },
+    {
+      "itemNumber": 391,
+      "text": "اللَّهُمَّ اغْفِرْ لَنَا وَارْحَمْنَا وَارْضَ عَنَّا، وَتَقَبَّلْ مِنَّا، وَأَدْخِلْنَا الْجَنَّةَ، وَنَجِّنَا مِنَ النَّارِ، وَأَصْلِحْ لَنَا شَأْنَنَا كُلَّهُ",
+      "latin": "Allāhumma ghfir lanā warḥamnā warḍa ʿannā, wa taqabbal minnā, wa adkhilnal-jannah, wa najjinā minan-nār, wa aṣliḥ lanā shaʾnanā kullah.",
+      "explanationEs": "«Oh Allah, perdónanos, ten misericordia de nosotros y complácete de nosotros; acepta nuestras obras, haznos entrar en el Paraíso, sálvanos del Fuego y mejora todos nuestros asuntos».",
+      "note": "دعاء عام (غير مأثور بهذا اللفظ)",
+      "noteEs": "Súplica general (no transmitida con esta redacción)"
+    },
+    {
+      "itemNumber": 392,
+      "text": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ، يُحِبُّ مَنْ دَعَاهُ خَفِيًّا، وَيُجِيبُ مَنْ نَادَاهُ نَجِيًّا، وَيَزِيدُ مَنْ كَانَ مِنْهُ حَيِيًّا، وَيُكْرِمُ مَنْ كَانَ لَهُ وَفِيًّا، وَيَهْدِي مَنْ كَانَ صَادِقَ الْوَعْدِ رَضِيًّا",
+      "latin": "Al-ḥamdu lillāhi rabbil-ʿālamīn, yuḥibbu man daʿāhu khafiyyā, wa yujību man nādāhu najiyyā, wa yazīdu man kāna minhu ḥayiyyā, wa yukrimu man kāna lahū wafiyyā, wa yahdī man kāna ṣādiqal-waʿdi raḍiyyā.",
+      "explanationEs": "«Alabado sea Allah, Señor de los mundos: ama a quien le invoca en secreto, responde a quien le llama en confidencia, aumenta a quien siente recato ante Él, honra a quien le es fiel y guía a quien es sincero en su promesa y está complacido».",
+      "note": "دعاء عام (غير مأثور بهذا اللفظ) · على ألفاظ قرآنية (مريم 3 و52 و54)",
+      "noteEs": "Súplica general (no transmitida con esta redacción) · con palabras del Corán (19:3, 52, 54)"
+    },
+    {
+      "itemNumber": 393,
+      "text": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ الَّذِي أَحْصَى كُلَّ شَيْءٍ عَدَدًا، وَجَعَلَ لِكُلِّ شَيْءٍ أَمَدًا، وَلَا يُشْرِكُ فِي حُكْمِهِ أَحَدًا، وَخَلَقَ الْجِنَّ وَجَعَلَهُمْ طَرَائِقَ قِدَدًا",
+      "latin": "Al-ḥamdu lillāhi rabbil-ʿālamīn alladhī aḥṣā kulla shayʾin ʿadadā, wa jaʿala likulli shayʾin amadā, wa lā yushriku fī ḥukmihī aḥadā, wa khalaqal-jinna wa jaʿalahum ṭarāʾiqa qidadā.",
+      "explanationEs": "«Alabado sea Allah, Señor de los mundos, que ha contado todas las cosas una a una, ha puesto a cada cosa un plazo, no asocia a nadie en su decreto y creó a los genios haciéndolos de sendas diversas».",
+      "note": "دعاء عام (غير مأثور بهذا اللفظ) · على ألفاظ قرآنية (الجن 28 و11، الكهف 26)",
+      "noteEs": "Súplica general (no transmitida con esta redacción) · con palabras del Corán (72:28, 72:11, 18:26)"
+    },
+    {
+      "itemNumber": 394,
+      "text": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ الَّذِي جَعَلَ لِكُلِّ شَيْءٍ قَدَرًا، وَجَعَلَ لِكُلِّ قَدَرٍ أَجَلًا، وَجَعَلَ لِكُلِّ أَجَلٍ كِتَابًا",
+      "latin": "Al-ḥamdu lillāhi rabbil-ʿālamīn alladhī jaʿala likulli shayʾin qadarā, wa jaʿala likulli qadarin ajalā, wa jaʿala likulli ajalin kitābā.",
+      "explanationEs": "«Alabado sea Allah, Señor de los mundos, que ha puesto a cada cosa una medida, a cada medida un término y a cada término un registro».",
+      "note": "دعاء عام (غير مأثور بهذا اللفظ) · على معنى (الطلاق 3، الرعد 38)",
+      "noteEs": "Súplica general (no transmitida con esta redacción) · según el sentido de 65:3 y 13:38"
+    },
+    {
+      "itemNumber": 395,
+      "text": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ، حَمْدًا لِشُكْرِهِ أَدَاءً، وَلِحَقِّهِ قَضَاءً، وَلِحُبِّهِ رَجَاءً، وَلِفَضْلِهِ نَمَاءً، وَلِثَوَابِهِ عَطَاءً",
+      "latin": "Al-ḥamdu lillāhi rabbil-ʿālamīn, ḥamdan lishukrihī adāʾā, wa liḥaqqihī qaḍāʾā, wa liḥubbihī rajāʾā, wa lifaḍlihī namāʾā, wa lithawābihī ʿaṭāʾā.",
+      "explanationEs": "«Alabado sea Allah, Señor de los mundos, con una alabanza que cumple con su agradecimiento, salda su derecho, anhela su amor, hace crecer su favor y espera su recompensa».",
+      "note": "دعاء عام (غير مأثور بهذا اللفظ)",
+      "noteEs": "Súplica general (no transmitida con esta redacción)"
+    },
+    {
+      "itemNumber": 396,
+      "text": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ، الَّذِي سَبَّحَتْ لَهُ الشَّمْسُ وَالنُّجُومُ وَالشُّهُبُ، وَنَاجَاهُ الشَّجَرُ وَالْوَحْشُ وَالدَّوَابُّ، وَالطَّيْرُ فِي أَوْكَارِهَا كُلٌّ لَهُ أَوَّابٌ، فَسُبْحَانَكَ يَا مَنْ إِلَيْهِ الْمَرْجِعُ وَالْمَآبُ",
+      "latin": "Al-ḥamdu lillāhi rabbil-ʿālamīn, alladhī sabbaḥat lahush-shamsu wan-nujūmu wash-shuhub, wa nājāhush-shajaru wal-waḥshu wad-dawābb, waṭ-ṭayru fī awkārihā kullun lahū awwāb, fa-subḥānaka yā man ilayhil-marjiʿu wal-maʾāb.",
+      "explanationEs": "«Alabado sea Allah, Señor de los mundos, a Quien glorificaron el sol, las estrellas y los astros, a Quien susurraron los árboles, las fieras y los animales, y todas las aves en sus nidos se vuelven a Él. ¡Glorificado seas, Aquel a Quien es el retorno y el regreso!».",
+      "note": "دعاء عام (غير مأثور بهذا اللفظ)",
+      "noteEs": "Súplica general (no transmitida con esta redacción)"
+    },
+    {
+      "itemNumber": 397,
+      "text": "سُبْحَانَكَ يَا رَبِّ، لَا يُقَالُ لِغَيْرِكَ سُبْحَانَ، وَأَنْتَ عَظِيمُ الْبُرْهَانِ، شَدِيدُ السُّلْطَانِ، لَا يُعْجِزُكَ إِنْسٌ وَلَا جَانٌّ",
+      "latin": "Subḥānaka yā rabb, lā yuqālu lighayrika subḥān, wa anta ʿaẓīmul-burhān, shadīdus-sulṭān, lā yuʿjizuka insun wa lā jānn.",
+      "explanationEs": "«¡Glorificado seas, Señor! No se dice «Subhan» de otro que de Ti. Eres grande en la prueba, firme en el dominio; no te supera ni hombre ni genio».",
+      "note": "دعاء عام (غير مأثور بهذا اللفظ)",
+      "noteEs": "Súplica general (no transmitida con esta redacción)"
+    },
+    {
+      "itemNumber": 398,
+      "text": "اللَّهُمَّ إِنَّ شُكْرَكَ نِعْمَةٌ تَسْتَحِقُّ الشُّكْرَ، فَأَعِنِّي عَلَى شُكْرِكَ، يَا مَنْ لَهُ الْحَمْدُ كَمَا يَنْبَغِي لِجَلَالِ وَجْهِهِ وَعَظِيمِ سُلْطَانِهِ",
+      "latin": "Allāhumma inna shukraka niʿmatun tastaḥiqqush-shukr, fa-aʿinnī ʿalā shukrik, yā man lahul-ḥamdu kamā yanbaghī lijalāli wajhihī wa ʿaẓīmi sulṭānih.",
+      "explanationEs": "«Oh Allah, agradecerte es en sí un favor que merece agradecimiento; ayúdame a agradecerte, Tú, a Quien pertenece la alabanza como conviene a la majestad de su Rostro y a la grandeza de su soberanía».",
+      "note": "دعاء عام (غير مأثور بهذا اللفظ) (عُدِّلت صيغة «علمني كيف أشكرك» إلى «أعني على شكرك»)",
+      "noteEs": "Súplica general (no transmitida con esta redacción) (se cambió «enséñame cómo agradecerte» por «ayúdame a agradecerte»)"
+    },
+    {
+      "itemNumber": 399,
+      "text": "اللَّهُمَّ أَرْضِنَا بِقَضَائِكَ وَبِمَا قَسَمْتَهُ لَنَا، وَاجْعَلْنَا مِنَ الْحَامِدِينَ لَكَ فِي السَّرَّاءِ وَالضَّرَّاءِ، اللَّهُمَّ يَا مَنْ لُطْفُهُ بِخَلْقِهِ شَامِلٌ، وَخَيْرُهُ لِعَبْدِهِ وَاصِلٌ، لَا تُخْرِجْنِي وَذُرِّيَّتِي وَأَهْلِي وَأَحِبَّائِي مِنْ دَائِرَةِ أَلْطَافِكَ، وَآمِنَّا مِنْ كُلِّ مَا نَخَافُ، وَكُنْ لَنَا بِلُطْفِكَ الْخَفِيِّ",
+      "latin": "Allāhumma arḍinā biqaḍāʾik wa bimā qasamtahū lanā, wajʿalnā minal-ḥāmidīna laka fis-sarrāʾi waḍ-ḍarrāʾ. Allāhumma yā man luṭfuhū bikhalqihī shāmil, wa khayruhū liʿabdihī wāṣil, lā tukhrijnī wa dhurriyyatī wa ahlī wa aḥibbāʾī min dāʾirati alṭāfik, wa āminnā min kulli mā nakhāf, wa kun lanā biluṭfikal-khafiyy.",
+      "explanationEs": "«Oh Allah, haznos conformes con tu decreto y con lo que nos has repartido, y haznos de quienes te alaban en la prosperidad y en la adversidad. Oh Allah, Aquel cuya bondad abarca a su creación y cuyo bien llega a su siervo: no me excluyas, ni a mi descendencia, mi familia y mis seres queridos, del círculo de tus favores; protégenos de todo lo que tememos y está con nosotros con tu bondad sutil».",
+      "note": "دعاء عام (غير مأثور بهذا اللفظ)",
+      "noteEs": "Súplica general (no transmitida con esta redacción)"
+    },
+    {
+      "itemNumber": 400,
+      "text": "اللَّهُمَّ بِكَ مَلَاذِي، اللَّهُمَّ أَتَوَسَّلُ إِلَيْكَ بِأَسْمَائِكَ الْحُسْنَى: الْوَاحِدِ الْأَحَدِ الْفَرْدِ الصَّمَدِ، وَبِاسْمِكَ الْعَظِيمِ، فَرِّجْ عَنِّي مَا أَمْسَيْتُ فِيهِ وَأَصْبَحْتُ فِيهِ، أَجِرْنِي، أَجِرْنِي، أَجِرْنِي يَا اللَّهُ، يَا كَاشِفَ الْغَمِّ وَالْهُمُومِ، وَمُفَرِّجَ الْكَرْبِ الْعَظِيمِ، وَيَا مَنْ إِذَا أَرَادَ شَيْئًا يَقُولُ لَهُ كُنْ فَيَكُونُ، يَا رَبِّ يَا رَبِّ، أَحَاطَتْ بِي الذُّنُوبُ وَالْمَعَاصِي فَلَا أَجِدُ الرَّحْمَةَ وَالْعِنَايَةَ مِنْ غَيْرِكَ، فَأَمِدَّنِي بِهَا",
+      "latin": "Allāhumma bika malādhī. Allāhumma atawassalu ilayka bi-asmāʾikal-ḥusnā: al-wāḥidil-aḥadil-fardiṣ-ṣamad, wa bismikal-ʿaẓīm, farrij ʿannī mā amsaytu fīhi wa aṣbaḥtu fīh. Ajirnī, ajirnī, ajirnī yā Allāh, yā kāshifal-ghammi wal-humūm, wa mufarrijal-karbil-ʿaẓīm, wa yā man idhā arāda shayʾan yaqūlu lahū kun fayakūn. Yā rabb, yā rabb, aḥāṭat bīdh-dhunūbu wal-maʿāṣī falā ajidur-raḥmata wal-ʿināyata min ghayrik, fa-amiddanī bihā.",
+      "explanationEs": "«Oh Allah, en Ti me refugio. Oh Allah, me acerco a Ti por tus bellos nombres: el Único, el Uno, el Solitario, el Inmutable, y por tu nombre grandioso: alivia lo que me aflige de noche y de día. Protégeme, protégeme, protégeme, oh Allah; Tú que disipas la angustia y las penas y alivias la gran aflicción, Tú que cuando quieres algo dices «¡Sé!» y es. Señor mío, Señor mío, me han rodeado los pecados y las desobediencias y no encuentro misericordia ni cuidado fuera de Ti; concédemelos».",
+      "note": "دعاء عام (غير مأثور بهذا اللفظ)",
+      "noteEs": "Súplica general (no transmitida con esta redacción)"
+    },
+    {
+      "itemNumber": 401,
+      "text": "اللَّهُمَّ أَلِنْ لِي قُلُوبَ عِبَادِكَ كَمَا أَلَنْتَ الْحَدِيدَ لِدَاوُدَ، وَيَسِّرْ لِي أُمُورِي كَمَا يَسَّرْتَ الْبَحْرَ لِمُوسَى، فَإِنَّ نَوَاصِيَهُمْ بِيَدِكَ وَقُلُوبَهُمْ بَيْنَ أُصْبُعَيْنِ مِنْ أَصَابِعِكَ، يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِينِكَ، اللَّهُمَّ أَطْفِئْ غَضَبَهُمْ بِحِلْمِكَ، وَاجْعَلْ لِي فِي قُلُوبِهِمْ مَوَدَّةً",
+      "latin": "Allāhumma alin lī qulūba ʿibādik kamā alanta l-ḥadīda lidāwūd, wa yassir lī umūrī kamā yassarta l-baḥra limūsā, fa-inna nawāṣiyahum biyadik wa qulūbahum bayna uṣbuʿayni min aṣābiʿik, yā muqallibal-qulūbi thabbit qalbī ʿalā dīnik. Allāhumma aṭfiʾ ghaḍabahum biḥilmik, wajʿal lī fī qulūbihim mawaddah.",
+      "explanationEs": "«Oh Allah, ablanda para mí los corazones de tus siervos como ablandaste el hierro para Dawud, y facilita mis asuntos como facilitaste el mar a Musa, pues sus frentes están en tu mano y sus corazones entre dos dedos de tus dedos. Oh Quien hace girar los corazones, afirma mi corazón en tu religión. Oh Allah, apaga su ira con tu clemencia y pon en sus corazones afecto hacia mí».",
+      "note": "دعاء عام (غير مأثور بهذا اللفظ) (عُدِّل لفظ «سخّر لي جميع خلقك» و«أطفأت غضبهم»؛ «مقلّب القلوب» و«بين أصبعين» ثابتان في الحديث)",
+      "noteEs": "Súplica general (no transmitida con esta redacción) (se ajustó la redacción popular «somete para mí a toda tu creación»; «Quien hace girar los corazones» y «entre dos dedos» constan en el hadiz)"
+    },
+    {
+      "itemNumber": 402,
+      "text": "اللَّهُمَّ يَا ذَا الرَّحْمَةِ الْوَاسِعَةِ، يَا مُطَّلِعًا عَلَى السَّرَائِرِ وَالضَّمَائِرِ وَالْهَوَاجِسِ وَالْخَوَاطِرِ، لَا يَعْزُبُ عَنْكَ شَيْءٌ، أَسْأَلُكَ مِنْ فَضْلِكَ الْوَاسِعِ وَكَرَمِكَ الْعَظِيمِ، أَنْتَ بِيَدِكَ الْأَمْرُ كُلُّهُ وَمَقَالِيدُ كُلِّ شَيْءٍ، فَهَبْ لَنَا مَا تَقَرُّ بِهِ أَعْيُنُنَا، وَأَغْنِنَا بِفَضْلِكَ عَمَّنْ سِوَاكَ، فَإِنَّكَ وَاسِعُ الْكَرَمِ، كَثِيرُ الْجُودِ، حَسَنُ الشِّيَمِ، فِي بَابِكَ وَاقِفُونَ، وَلِجُودِكَ الْوَاسِعِ مُنْتَظِرُونَ، يَا كَرِيمُ يَا رَحِيمُ",
+      "latin": "Allāhumma yā dhar-raḥmatil-wāsiʿah, yā muṭṭaliʿan ʿalas-sarāʾiri waḍ-ḍamāʾiri wal-hawājisi wal-khawāṭir, lā yaʿzubu ʿanka shayʾ, asʾaluka min faḍlikal-wāsiʿi wa karamikal-ʿaẓīm, anta biyadikal-amru kulluhū wa maqālīdu kulli shayʾ, fahab lanā mā taqarru bihī aʿyununā, wa aghninā bifaḍlika ʿamman siwāk, fa-innaka wāsiʿul-karam, kathīrul-jūd, ḥasanush-shiyam, fī bābika wāqifūn, wa lijūdikal-wāsiʿi muntaẓirūn, yā karīm yā raḥīm.",
+      "explanationEs": "«Oh Allah, Dueño de la misericordia vasta, que conoces los secretos, las conciencias, los presentimientos y los pensamientos, y a Quien nada se le escapa: te pido de tu favor vasto y de tu enorme generosidad. En tu mano está todo el asunto y las llaves de todas las cosas; concédenos lo que alegre nuestros ojos y enriquécenos con tu favor para prescindir de otros que Tú. Ciertamente Tú eres de generosidad amplia, de dádiva abundante y de buen carácter; estamos a tu puerta y esperamos tu vasta generosidad, oh Generoso, oh Misericordioso».",
+      "note": "دعاء عام (غير مأثور بهذا اللفظ) (حُذفت عبارتا «فيضة من فيضان» و«قبضة من نور سلطانك»؛ «أغنني بفضلك عمن سواك» من حديث الترمذي 3563)",
+      "noteEs": "Súplica general (no transmitida con esta redacción) (se retiraron dos expresiones poco apropiadas; «enriquécenos con tu favor» procede del hadiz de Tirmidhi 3563)"
+    },
+    {
+      "itemNumber": 403,
+      "text": "اللَّهُمَّ لَكَ الْحَمْدُ حَتَّى تَرْضَى، وَلَكَ الْحَمْدُ إِذَا رَضِيتَ، وَلَكَ الْحَمْدُ بَعْدَ الرِّضَا",
+      "latin": "Allāhumma laka l-ḥamdu ḥattā tarḍā, wa laka l-ḥamdu idhā raḍīt, wa laka l-ḥamdu baʿdar-riḍā.",
+      "explanationEs": "«Oh Allah, para Ti es la alabanza hasta que te complazcas, para Ti es la alabanza cuando te has complacido y para Ti es la alabanza después de la complacencia».",
+      "note": "دعاء عام (غير مأثور بهذا اللفظ) · على معنى «لك العتبى حتى ترضى»",
+      "noteEs": "Súplica general (no transmitida con esta redacción) · en el sentido de «a Ti el reproche hasta que te complazcas»"
+    },
+    {
+      "itemNumber": 404,
+      "text": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ، خَلَقَ اللَّوْحَ وَالْقَلَمَ، وَخَلَقَ الْخَلْقَ مِنَ الْعَدَمِ، وَدَبَّرَ الْأَرْزَاقَ وَالْآجَالَ بِالْمَقَادِيرِ وَحَكَمَ، وَجَمَّلَ اللَّيْلَ بِالنُّجُومِ فِي الظُّلَمِ",
+      "latin": "Al-ḥamdu lillāhi rabbil-ʿālamīn, khalaqal-lawḥa wal-qalam, wa khalaqal-khalqa minal-ʿadam, wa dabbaral-arzāqa wal-āqāla bil-maqādīri wa ḥakam, wa jammalal-layla bin-nujūmi fiẓ-ẓulam.",
+      "explanationEs": "«Alabado sea Allah, Señor de los mundos, que creó la Tabla y el cálamo, creó a las criaturas de la nada, dispuso los sustentos y los plazos según las medidas y decretó, y embelleció la noche con las estrellas en las tinieblas».",
+      "note": "دعاء عام (غير مأثور بهذا اللفظ)",
+      "noteEs": "Súplica general (no transmitida con esta redacción)"
+    },
+    {
+      "itemNumber": 405,
+      "text": "سُبْحَانَكَ يَا رَبِّ، اسْمُكَ خَيْرُ اسْمٍ، وَذِكْرُكَ طُمَأْنِينَةٌ لِلْقُلُوبِ، وَحُبُّكَ رَاحَةٌ لِلرُّوحِ، وَفَضْلُكَ لَا يُحْصَى",
+      "latin": "Subḥānaka yā rabb, ismuka khayru ism, wa dhikruka ṭumaʾnīnatun lil-qulūb, wa ḥubbuka rāḥatun lir-rūḥ, wa faḍluka lā yuḥṣā.",
+      "explanationEs": "«¡Glorificado seas, Señor! Tu nombre es el mejor de los nombres, tu recuerdo es sosiego para los corazones, tu amor es descanso para el alma y tu favor no se puede contar».",
+      "note": "دعاء عام (غير مأثور بهذا اللفظ) (عُدّلت «شفاء للسقم» إلى «طمأنينة للقلوب» من الرعد 28)",
+      "noteEs": "Súplica general (no transmitida con esta redacción) (se cambió «cura de la enfermedad» por «sosiego para los corazones», 13:28)"
+    }
+  ]
+  },
+  {
   id: 'adya_rizq',
   titleAr: 'أَدْعِيَةُ الرِّزْقِ وَقَضَاءِ الدَّيْنِ',
   titleEs: 'Súplicas para el Sustento y las Deudas',
