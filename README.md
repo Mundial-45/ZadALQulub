@@ -1,1 +1,0 @@
-# ZadAlQulub1
