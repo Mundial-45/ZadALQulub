@@ -965,3 +965,10 @@ h1, h2, h3, #headerTitle,
 .zad-tlinks { display:flex; flex-wrap:wrap; gap:.4rem; justify-content:center; }
 .zad-tlink { font-size:.75rem; font-weight:700; color:#b45309; background:rgba(254,243,199,.7); border:1px solid rgba(217,119,6,.35); padding:.2rem .7rem; border-radius:999px; cursor:pointer; }
 .dark .zad-tlink { color:#fcd34d; background:rgba(120,53,15,.35); border-color:rgba(251,191,36,.3); }
+
+/* Espacios compactos en las tarjetas de zikr */
+[id^="zikr-card-"] { padding: 0.75rem 1rem !important; }
+[id^="zikr-card-"] > * + * { margin-top: 0.5rem !important; }
+[id^="zikr-card-"] .custom-text-size { padding-top: 0 !important; padding-bottom: 0 !important; }
+[id^="zikr-card-"] > div[data-no-share].flex-col { padding-top: 0 !important; }
+[id^="zikr-card-"] .audio-player-compact { margin-top: 0 !important; margin-bottom: 0 !important; }
