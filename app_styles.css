@@ -1,0 +1,967 @@
+/* App Styles for Zad Al-Qulub (100% Fail-Safe Local CSS) */
+
+body {
+  font-family: 'Tajawal', 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+.dark body {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+.custom-text-size {
+  font-size: var(--app-font-size, 1.125rem);
+  font-family: 'Amiri Quran', 'Amiri', serif;
+}
+
+.quran-font {
+  font-family: 'Amiri Quran', 'Amiri', serif;
+}
+
+/* Header Fail-Safe Styles */
+header, .bg-emerald-700 {
+  background-color: #047857 !important;
+  color: #ffffff !important;
+}
+
+.dark header, .dark .bg-emerald-900 {
+  background-color: #064e3b !important;
+  color: #ffffff !important;
+}
+
+/* Explicit SVG Icon Constraints */
+svg {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  fill: currentColor;
+}
+
+svg.w-10, svg.h-10 {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  max-width: 2.5rem !important;
+  max-height: 2.5rem !important;
+}
+
+svg.w-8, svg.h-8 {
+  width: 2rem !important;
+  height: 2rem !important;
+  max-width: 2rem !important;
+  max-height: 2rem !important;
+}
+
+svg.w-6, svg.h-6 {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  max-width: 1.5rem !important;
+  max-height: 1.5rem !important;
+}
+
+svg.w-5, svg.h-5 {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+  max-width: 1.25rem !important;
+  max-height: 1.25rem !important;
+}
+
+/* Home Screen Category Buttons Background Gradients & Colors */
+button[onclick*="showQuranView"] {
+  background: linear-gradient(135deg, #d97706 0%, #78350f 100%) !important;
+  color: #ffffff !important;
+}
+
+button[onclick*="openAzkarSection"], button[onclick*="showSection('azkar')"] {
+  background: linear-gradient(135deg, #059669 0%, #065f46 100%) !important;
+  color: #ffffff !important;
+}
+
+button[onclick*="openAdyaSection"], button[onclick*="showSection('adya')"] {
+  background: linear-gradient(135deg, #0d9488 0%, #115e59 100%) !important;
+  color: #ffffff !important;
+}
+
+button[onclick*="openMunajatSection"], button[onclick*="showSection('munajat')"] {
+  background: linear-gradient(135deg, #0284c7 0%, #1e40af 100%) !important;
+  color: #ffffff !important;
+}
+
+button[onclick*="showTasbeeh"] {
+  background: linear-gradient(135deg, #0891b2 0%, #0f766e 100%) !important;
+  color: #ffffff !important;
+}
+
+button[onclick*="openRuqyaSection"], button[onclick*="showSection('ruqyah')"] {
+  background: linear-gradient(135deg, #4f46e5 0%, #312e81 100%) !important;
+  color: #ffffff !important;
+}
+
+button[onclick*="showFavorites"] {
+  background: linear-gradient(135deg, #e11d48 0%, #991b1b 100%) !important;
+  color: #ffffff !important;
+}
+
+/* Force high contrast text on home category buttons */
+#homeView button, #homeView button * {
+  color: #ffffff !important;
+}
+
+/* Quran View Sub-Category Buttons Colors & Contrast */
+#cardSurahsBtn, button[onclick*="showQuranSurahsView"] {
+  background: linear-gradient(135deg, #059669 0%, #065f46 100%) !important;
+  color: #ffffff !important;
+}
+
+#cardAhzabBtn, button[onclick*="showQuranAhzabView"] {
+  background: linear-gradient(135deg, #0d9488 0%, #115e59 100%) !important;
+  color: #ffffff !important;
+}
+
+#cardContinueBtn, button[onclick*="continueLastReading"] {
+  background: linear-gradient(135deg, #d97706 0%, #78350f 100%) !important;
+  color: #ffffff !important;
+}
+
+#quranView button, #quranView button * {
+  color: #ffffff !important;
+}
+
+/* Layout Utilities Fail-Safe */
+.grid { display: grid !important; }
+.grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)) !important; }
+.grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .sm\:col-span-2 { grid-column: span 2 / span 2 !important; }
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+}
+
+.flex { display: flex !important; }
+.flex-col { flex-direction: column !important; }
+.items-center { align-items: center !important; }
+.justify-center { justify-content: center !important; }
+.justify-between { justify-content: space-between !important; }
+
+.block { display: block !important; }
+.hidden { display: none !important; }
+
+/* Custom Paper Texture / Framework Background for Cards (Lighter for max legibility) */
+.card-paper-bg {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url('card_bg.avif') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-color: #ffffff !important;
+  border: 1px solid #fcd34d !important;
+  box-shadow: 0 10px 25px -5px rgba(180, 83, 9, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04) !important;
+  border-radius: 1.5rem !important;
+}
+
+.dark .card-paper-bg {
+  background-image: linear-gradient(rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.92)), url('card_bg.avif') !important;
+  background-color: #1e293b !important;
+  border: 1px solid #334155 !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Counter button: green circle with progress ring */
+.dhikr-counter-btn, button[onclick*="decrementCounter"] {
+  position: relative !important;
+  width: 7.25rem !important; height: 7.25rem !important; min-width: 7.25rem !important; min-height: 7.25rem !important;
+  border-radius: 9999px !important;
+  display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important;
+  background: linear-gradient(135deg, #059669 0%, #0d9488 100%) !important;
+  color: #ffffff !important; border: 0 !important;
+  box-shadow: 0 10px 20px -5px rgba(5, 150, 105, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.1) !important;
+  cursor: pointer !important; transition: transform 0.15s ease !important;
+  user-select: none !important; -webkit-tap-highlight-color: transparent !important;
+  outline: none !important; margin: 0 auto !important; padding: 0 !important;
+}
+.dhikr-counter-btn:active, button[onclick*="decrementCounter"]:active { transform: scale(0.94) !important; }
+.dhikr-counter-btn.is-done, button[onclick*="decrementCounter"].is-done {
+  background: linear-gradient(135deg, #10b981 0%, #047857 100%) !important;
+}
+.dhikr-counter-btn *, button[onclick*="decrementCounter"] * { color: #ffffff !important; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important; }
+.zad-ring-svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.zad-ring-svg .zad-ring-track { stroke: rgba(255, 255, 255, 0.28); }
+.zad-ring-svg .zad-ring-bar { stroke: #ecfdf5; transition: stroke-dashoffset 0.25s ease; }
+.zad-ring-num { font-size: 1.9rem; font-weight: 800; line-height: 1; position: relative; }
+.zad-ring-cap { font-size: 10.5px; font-weight: 600; margin-top: 4px; position: relative; max-width: 5.2rem; text-align: center; line-height: 1.15; opacity: 0.95; }
+
+/* Tasbeeh Counter Button */
+.tasbeeh-counter-btn, button[onclick*="incrementTasbeeh"] {
+  width: 7.5rem !important;
+  height: 7.5rem !important;
+  min-width: 7.5rem !important;
+  min-height: 7.5rem !important;
+  border-radius: 9999px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: linear-gradient(135deg, #d97706 0%, #b45309 100%) !important;
+  color: #ffffff !important;
+  border: 4px solid #fcd34d !important;
+  box-shadow: 0 10px 20px -5px rgba(217, 119, 6, 0.4) !important;
+  cursor: pointer !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  user-select: none !important;
+  outline: none !important;
+  margin: 0 auto !important;
+}
+
+.tasbeeh-counter-btn:active, button[onclick*="incrementTasbeeh"]:active {
+  transform: scale(0.92) !important;
+}
+
+.tasbeeh-counter-btn *, button[onclick*="incrementTasbeeh"] * {
+  color: #ffffff !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Progress Bar Container */
+#progressBarContainer {
+  background-color: #ffffff !important;
+  border: 1px solid #f1f5f9 !important;
+  border-radius: 1rem !important;
+  padding: 1rem 1.25rem !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+}
+
+.dark #progressBarContainer {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+}
+
+#progressBarFill {
+  background: linear-gradient(90deg, #10b981 0%, #059669 100%) !important;
+  height: 100% !important;
+  border-radius: 9999px !important;
+  transition: width 0.3s ease-in-out !important;
+}
+
+#progressPercent {
+  color: #047857 !important;
+  font-weight: 800 !important;
+  font-size: 0.9rem !important;
+}
+
+.dark #progressPercent {
+  color: #34d399 !important;
+}
+
+/* Action Icon Buttons */
+.action-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0.625rem !important;
+  border-radius: 0.75rem !important;
+  background-color: #f1f5f9 !important;
+  color: #334155 !important;
+  border: 1px solid #e2e8f0 !important;
+  transition: all 0.2s ease !important;
+  cursor: pointer !important;
+}
+
+.dark .action-btn {
+  background-color: #334155 !important;
+  color: #f8fafc !important;
+  border-color: #475569 !important;
+}
+
+.action-btn:hover, .action-btn:active {
+  background-color: #d1fae5 !important;
+  color: #047857 !important;
+  border-color: #a7f3d0 !important;
+}
+
+.dark .action-btn:hover, .dark .action-btn:active {
+  background-color: #064e3b !important;
+  color: #a7f3d0 !important;
+}
+
+/* Rounded corners & shadows */
+.rounded-3xl { border-radius: 1.5rem !important; }
+.rounded-2xl { border-radius: 1rem !important; }
+.rounded-xl { border-radius: 0.75rem !important; }
+.shadow-xl { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important; }
+.shadow-md { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important; }
+
+/* Text Color Classes */
+.text-white { color: #ffffff !important; }
+.text-emerald-100 { color: #d1fae5 !important; }
+.text-teal-100 { color: #ccfbf1 !important; }
+.text-sky-100 { color: #e0f2fe !important; }
+.text-cyan-100 { color: #cffaff !important; }
+.text-rose-100 { color: #ffe4e6 !important; }
+
+/* Typography & Larger Sizing for Latin Transliteration and Spanish Translation */
+.latin-text-style {
+  font-family: 'Lora', 'Georgia', 'Inter', serif !important;
+  font-size: max(1rem, calc(var(--app-font-size, 1.125rem) * 0.95)) !important;
+  line-height: 1.75 !important;
+  letter-spacing: 0.015em !important;
+}
+
+.es-text-style {
+  font-family: 'Amiri', 'Inter', Georgia, serif !important;
+  font-size: max(1.25rem, calc(var(--app-font-size, 1.125rem) * 1.22)) !important;
+  line-height: 1.75 !important;
+  letter-spacing: 0.01em !important;
+}
+
+
+/* Stable writing direction: Arabic remains RTL and Latin/Spanish remain LTR in every UI language. */
+.dir-rtl { direction: rtl !important; unicode-bidi: plaintext; }
+.dir-ltr { direction: ltr !important; unicode-bidi: plaintext; }
+.latin-text-style {
+  direction: ltr !important;
+  text-align: left !important;
+  font-size: max(0.9rem, calc(var(--app-font-size, 1.125rem) * 0.88)) !important;
+  line-height: 1.7 !important;
+  background-color: #fffbeb !important;
+  color: #334155 !important;
+}
+.dark .latin-text-style {
+  background-color: #1e293b !important;
+  color: #e2e8f0 !important;
+}
+.es-text-style {
+  direction: ltr !important;
+  text-align: left !important;
+  font-size: max(1.15rem, calc(var(--app-font-size, 1.125rem) * 1.1)) !important;
+  line-height: 1.7 !important;
+  background-color: #eff6ff !important;
+  color: #1e3a8a !important;
+}
+.dark .es-text-style {
+  background-color: #172554 !important;
+  color: #dbeafe !important;
+}
+/* Make navigation buttons visibly colored in both Arabic and Spanish. */
+button[onclick="goBackToSection()"],
+button[onclick="goHome()"] {
+  background-color: #d1fae5 !important;
+  color: #065f46 !important;
+  border: 1px solid #6ee7b7 !important;
+  box-shadow: 0 2px 5px rgba(6, 95, 70, 0.12) !important;
+}
+.dark button[onclick="goBackToSection()"],
+.dark button[onclick="goHome()"] {
+  background-color: #064e3b !important;
+  color: #d1fae5 !important;
+  border-color: #047857 !important;
+}
+button[onclick="nextQuranPage()"] {
+  background-color: #047857 !important;
+  color: #ffffff !important;
+  border: 1px solid #065f46 !important;
+}
+button[onclick="prevQuranPage()"] {
+  background-color: #b45309 !important;
+  color: #ffffff !important;
+  border: 1px solid #92400e !important;
+}
+button[onclick="nextQuranPage()"]:hover { background-color: #065f46 !important; }
+button[onclick="prevQuranPage()"]:hover { background-color: #92400e !important; }
+
+
+/* Tasbeeh cards reuse the exact paper image/overlay used by Azkar and Dua cards. */
+#tasbeehView .card-paper-bg {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url('card_bg.avif') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+}
+.dark #tasbeehView .card-paper-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.92)), url('card_bg.avif') !important;
+  background-color: #000000 !important;
+  color: #f8fafc !important;
+  border-color: #334155 !important;
+}
+.dark #tasbeehView .card-paper-bg h3,
+.dark #tasbeehView .card-paper-bg .dir-rtl {
+  color: #f8fafc !important;
+}
+
+/* Dark-mode visibility audit: native controls, Quran navigation, indexes and tasbeeh. */
+html.light { color-scheme: light; }
+html.dark { color-scheme: dark; }
+
+input, select, textarea, option, button {
+  -webkit-tap-highlight-color: transparent;
+}
+input, select, textarea {
+  max-width: 100%;
+}
+html.dark input,
+html.dark select,
+html.dark textarea {
+  background-color: #1e293b;
+  color: #f1f5f9;
+  border-color: #64748b;
+  color-scheme: dark;
+}
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: #cbd5e1 !important;
+  opacity: 1;
+}
+html.dark select option {
+  background-color: #0f172a !important;
+  color: #f1f5f9 !important;
+}
+html.dark input:focus,
+html.dark select:focus,
+html.dark textarea:focus,
+html.dark button:focus-visible {
+  outline: 2px solid #34d399 !important;
+  outline-offset: 2px;
+}
+html.dark input:disabled,
+html.dark select:disabled,
+html.dark textarea:disabled,
+html.dark button:disabled {
+  color: #cbd5e1 !important;
+  opacity: 0.8 !important;
+}
+
+/* Quran page jump: keep the label readable on both themes. */
+button[onclick="jumpToInputPage()"] {
+  background: #059669 !important;
+  color: #ffffff !important;
+  border: 1px solid #34d399 !important;
+  min-height: 2.25rem;
+}
+button[onclick="jumpToInputPage()"] *,
+#jumpBtnText {
+  color: #ffffff !important;
+}
+button[onclick="jumpToInputPage()"]:hover {
+  background: #047857 !important;
+}
+
+/* Quran Surah and Hizb indexes: force high contrast for every generated label. */
+#surahsListContainer > div,
+#ahzabListContainer > button {
+  color: #1e293b !important;
+}
+#surahsListContainer .text-slate-500 {
+  color: #64748b !important;
+}
+.dark #surahsListContainer > div,
+.dark #ahzabListContainer > button {
+  background-color: #1e293b !important;
+  color: #f1f5f9 !important;
+  border-color: #475569 !important;
+}
+.dark #surahsListContainer .text-slate-800,
+.dark #surahsListContainer .text-slate-700,
+.dark #surahsListContainer .text-slate-600,
+.dark #surahsListContainer .text-slate-500,
+.dark #ahzabListContainer .text-slate-800,
+.dark #ahzabListContainer .text-slate-700,
+.dark #ahzabListContainer .text-slate-600,
+.dark #ahzabListContainer .text-slate-500 {
+  color: #e2e8f0 !important;
+}
+.dark #surahsListContainer .bg-slate-100 {
+  background-color: #334155 !important;
+}
+
+/* Tasbeeh text contrast, including Spanish and transliteration cards. */
+#tasbeehView .latin-text-style,
+#tasbeehView .es-text-style {
+  display: block;
+  width: 100%;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+}
+#tasbeehView .latin-text-style {
+  background-color: #fffbeb !important;
+  color: #334155 !important;
+  border: 1px solid #fcd34d !important;
+  direction: ltr !important;
+  text-align: left !important;
+}
+#tasbeehView .es-text-style {
+  background-color: #eff6ff !important;
+  color: #1e3a8a !important;
+  direction: ltr !important;
+  text-align: left !important;
+}
+.dark #tasbeehView .latin-text-style {
+  background-color: #1e293b !important;
+  color: #f1f5f9 !important;
+  border-color: #64748b !important;
+}
+.dark #tasbeehView .es-text-style {
+  background-color: #172554 !important;
+  color: #dbeafe !important;
+  border: 1px solid #1d4ed8 !important;
+}
+.dark #tasbeehView h3,
+.dark #tasbeehView .dir-rtl {
+  color: #f1f5f9 !important;
+}
+.dark #tasbeehView button:not([onclick*="incrementTasbeeh"]) {
+  color: #e2e8f0 !important;
+}
+.dark #tasbeehView button[onclick*="resetSingleTasbeeh"] {
+  background-color: #334155 !important;
+  border: 1px solid #64748b !important;
+  border-radius: 0.75rem !important;
+  padding: 0.5rem 0.75rem !important;
+}
+
+
+/* Compact responsive home category tiles with transparent, consistent-size icons. */
+#homeView .home-category-grid { width:100%; align-content:start; }
+#homeView .home-category-card {
+  min-width:0;
+  min-height:clamp(112px, 17vh, 158px);
+  padding:0.7rem 0.45rem !important;
+  gap:0.45rem !important;
+  border-radius:1rem !important;
+}
+#homeView .home-icon-wrap {
+  display:flex; align-items:center; justify-content:center;
+  width:40px; height:40px; flex:0 0 40px;
+  background:transparent !important; border-radius:0 !important; padding:0 !important;
+}
+#homeView .home-category-icon {
+  display:block; width:36px; height:36px; max-width:36px; max-height:36px;
+  object-fit:contain; background:transparent !important;
+  border:0 !important; box-shadow:none !important;
+}
+#homeView .home-favorite-icon { color:#fff; }
+#homeView .home-category-card > span:last-child { min-width:0; width:100%; }
+#homeView .home-category-card [id$="Title"] {
+  font-size:clamp(0.78rem, 1.7vw, 1rem) !important;
+  line-height:1.35 !important;
+  white-space:normal;
+}
+#homeView .home-category-card [id$="Sub"] {
+  font-size:clamp(0.62rem, 1.25vw, 0.75rem) !important;
+  line-height:1.35 !important;
+  white-space:normal;
+}
+@media (min-width:640px) {
+  #homeView .home-category-card { min-height:136px; padding:0.8rem !important; }
+  #homeView .home-icon-wrap { width:42px; height:42px; flex-basis:42px; }
+  #homeView .home-category-icon { width:38px; height:38px; max-width:38px; max-height:38px; }
+}
+@media (min-width:1024px) {
+  #homeView .home-category-grid { grid-template-columns:repeat(4,minmax(0,1fr)) !important; }
+  #homeView .home-category-card { min-height:145px; }
+}
+@media (max-width:380px) {
+  #homeView .home-category-card [id$="Sub"] { display:none; }
+  #homeView .home-category-card { min-height:104px; }
+}
+
+/* Keep externally hosted logo backgrounds visually unobtrusive on colored cards. */
+#homeView button[onclick="showQuranView()"] .home-category-icon,
+#homeView button[onclick="showTasbeeh()"] .home-category-icon,
+#homeView button[onclick="openRuqyaSection()"] .home-category-icon {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+
+
+/* Home layout requested: Quran full row; two pairs; Tasbeeh and Favorites full rows. */
+#homeView .home-category-grid {
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:0.65rem !important;
+  width:100%;
+}
+#homeView .home-category-card {
+  min-width:0;
+  min-height:118px !important;
+  padding:0.65rem 0.4rem !important;
+  gap:0.4rem !important;
+  border-radius:1.05rem !important;
+  overflow:hidden;
+}
+#homeView .home-category-card.home-category-wide {
+  grid-column:1 / -1 !important;
+  min-height:92px !important;
+  flex-direction:row !important;
+  justify-content:center !important;
+  gap:0.85rem !important;
+  padding:0.65rem 1rem !important;
+}
+#homeView .home-icon-wrap {
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  flex:0 0 46px !important;
+  width:46px !important;
+  height:46px !important;
+  padding:0 !important;
+  background:transparent !important;
+  border-radius:0 !important;
+}
+#homeView .home-category-icon {
+  display:block !important;
+  width:44px !important;
+  height:44px !important;
+  max-width:44px !important;
+  max-height:44px !important;
+  object-fit:contain !important;
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+}
+#homeView .home-category-card > span:last-child {
+  display:block;
+  width:100%;
+  min-width:0;
+}
+#homeView .home-category-card.home-category-wide > span:last-child {
+  width:auto;
+  max-width:calc(100% - 60px);
+}
+#homeView .home-category-card [id$="Title"] {
+  font-size:clamp(0.8rem,1.9vw,1.05rem) !important;
+  line-height:1.35 !important;
+  white-space:normal !important;
+}
+#homeView .home-category-card [id$="Sub"] {
+  font-size:clamp(0.62rem,1.3vw,0.75rem) !important;
+  line-height:1.3 !important;
+  white-space:normal !important;
+}
+@media (min-width:700px) {
+  #homeView .home-category-grid { gap:0.9rem !important; }
+  #homeView .home-category-card { min-height:136px !important; }
+  #homeView .home-category-card.home-category-wide { min-height:104px !important; }
+  #homeView .home-icon-wrap { flex-basis:54px !important; width:54px !important; height:54px !important; }
+  #homeView .home-category-icon { width:50px !important; height:50px !important; max-width:50px !important; max-height:50px !important; }
+}
+@media (max-width:360px) {
+  #homeView .home-category-card { min-height:108px !important; }
+  #homeView .home-category-card.home-category-wide { min-height:86px !important; padding:0.5rem !important; }
+  #homeView .home-category-card [id$="Sub"] { font-size:0.6rem !important; }
+}
+
+
+
+/* Final home layout: full-width Quran, two paired rows, full-width Tasbeeh/Favorites. */
+#homeView .home-category-grid {
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;
+  grid-auto-flow:row !important;
+  gap:0.7rem !important;
+}
+#homeView .home-category-grid > button { grid-column:auto !important; min-width:0 !important; }
+#homeView .home-category-grid > button:nth-child(1) {
+  grid-column:1 / -1 !important;
+}
+#homeView .home-category-card {
+  border-radius:1rem !important;
+  overflow:hidden;
+}
+#homeView .home-category-grid > button:nth-child(1) {
+  flex-direction:row !important;
+  justify-content:center !important;
+}
+@media (min-width:700px) {
+  #homeView .home-category-grid { grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important; gap:0.9rem !important; }
+}
+
+
+/* Compact audio player: reduce vertical footprint on phones and tablets. */
+.audio-player-compact {
+  padding: .35rem .55rem !important;
+  margin-top: .4rem !important;
+  margin-bottom: .4rem !important;
+}
+.audio-player-compact input[type="range"] {
+  min-width: 0;
+  height: 1rem;
+  margin: 0;
+}
+.audio-player-compact .audio-control-button {
+  min-width: 1.8rem;
+  min-height: 1.8rem;
+  padding: .15rem .35rem;
+  line-height: 1;
+}
+/* Botón de audio tipo pastilla: icono + «Escuchar/Pausar» (ES) o «استماع/إيقاف مؤقت» (AR). */
+.audio-pill-btn,
+.audio-player-compact .audio-pill-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: .4rem;
+  width: auto !important;
+  height: 2.35rem !important;
+  min-width: 7.5rem;
+  padding: 0 1rem !important;
+  border-radius: 9999px !important;
+  background: #ecfdf5 !important;
+  border: 1.5px solid #047857 !important;
+  color: #065f46 !important;
+  font-family: 'Tajawal', 'Inter', system-ui, sans-serif;
+  font-size: .9rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color .15s ease, transform .1s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.audio-pill-btn:hover { background: #d1fae5 !important; }
+.audio-pill-btn:active { transform: scale(.96); }
+.audio-pill-btn:focus-visible { outline: 2px solid #047857 !important; outline-offset: 2px; }
+.audio-pill-btn.is-playing { background: #047857 !important; color: #ffffff !important; }
+.audio-pill-btn .audio-pill-icon { width: 18px !important; height: 18px !important; max-width: 18px !important; max-height: 18px !important; fill: currentColor; flex: 0 0 18px; }
+.audio-pill-btn .audio-pill-label { color: inherit !important; }
+.dark .audio-pill-btn {
+  background: #064e3b !important;
+  border-color: #34d399 !important;
+  color: #d1fae5 !important;
+}
+.dark .audio-pill-btn:hover { background: #065f46 !important; }
+.dark .audio-pill-btn:focus-visible { outline-color: #34d399 !important; }
+.dark .audio-pill-btn.is-playing { background: #10b981 !important; border-color: #6ee7b7 !important; color: #052e22 !important; }
+.audio-player-compact .audio-time {
+  white-space: nowrap;
+  min-width: 2rem;
+}
+.audio-player-compact .flex.items-center.justify-center {
+  margin-top: .15rem !important;
+  gap: .55rem !important;
+}
+
+/* Botones redondos de parar y repetir (opción C). Repetir cambia de color cuando está activado. */
+.audio-icon-btn,
+.audio-player-compact .audio-icon-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 2.35rem !important;
+  height: 2.35rem !important;
+  min-width: 2.35rem;
+  padding: 0 !important;
+  border-radius: 9999px !important;
+  background: #ffffff !important;
+  border: 1.5px solid #cbd5e1 !important;
+  color: #334155 !important;
+  cursor: pointer;
+  transition: background-color .15s ease, color .15s ease, border-color .15s ease, transform .1s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.audio-icon-btn:hover { background: #f1f5f9 !important; }
+.audio-icon-btn:active { transform: scale(.94); }
+.audio-icon-btn:focus-visible { outline: 2px solid #047857 !important; outline-offset: 2px; }
+.audio-icon-btn .audio-icon { width: 18px !important; height: 18px !important; max-width: 18px !important; max-height: 18px !important; fill: currentColor; }
+.audio-icon-btn .audio-icon-stroke, .audio-icon-btn .audio-icon-stroke * { fill: none !important; stroke: currentColor; }
+.audio-repeat-btn.is-active { background: #047857 !important; border-color: #047857 !important; color: #ffffff !important; }
+.audio-repeat-btn.is-active:hover { background: #065f46 !important; }
+.dark .audio-icon-btn { background: #1e293b !important; border-color: #475569 !important; color: #e2e8f0 !important; }
+.dark .audio-icon-btn:hover { background: #334155 !important; }
+.dark .audio-icon-btn:focus-visible { outline-color: #34d399 !important; }
+.dark .audio-repeat-btn.is-active { background: #10b981 !important; border-color: #6ee7b7 !important; color: #052e22 !important; }
+
+/* Guía de la oración y Nombres de Allah */
+.guide-ar-expl {
+  font-family: 'Tajawal', 'Amiri', sans-serif;
+  font-size: 1.05rem;
+  line-height: 2;
+  text-align: right;
+  color: #1e293b;
+  background: rgba(236, 253, 245, 0.85);
+  border: 1px solid rgba(110, 231, 183, 0.6);
+  border-radius: 1rem;
+  padding: 0.9rem 1rem;
+}
+.dark .guide-ar-expl {
+  color: #e2e8f0;
+  background: rgba(2, 44, 34, 0.55);
+  border-color: rgba(6, 95, 70, 0.8);
+}
+.guide-center .guide-ar-expl,
+.guide-center .es-text-style,
+.guide-center .latin-text-style { text-align: center !important; }
+.guide-madhahib { display: flex; flex-direction: column; gap: 0.6rem; }
+/* Tipografía: hadiz, títulos y tarjetas */
+
+
+h1, h2, h3, #headerTitle,
+#homeView .home-category-card [id$="Title"],
+#buttonsGrid h3, .group-title { font-family: 'Montserrat', 'Cairo', system-ui, sans-serif !important; }
+/* Citas: ﴿…﴾ con la fuente del Corán y «…» con la del hadiz; el resto del texto, Amiri Quran */
+.inline-quran { font-family: 'KFGQPC Hafs', 'Scheherazade New', serif; font-size: 1.12em; font-weight: 400; line-height: 2.3; }
+.inline-hadith { font-family: 'Lateef', 'Scheherazade New', 'Crimson Pro', serif; font-size: 1.25em; }
+.custom-text-size .inline-quran { font-size: 1.15em; font-weight: 400 !important; line-height: inherit; }
+.custom-text-size .inline-hadith { font-size: 1.2em; }
+/* Modo oscuro: pie de página, favoritos, cabecera del lector del Corán y guía de transliteración.
+   El Tailwind reducido no trae las clases dark:, así que se definen aquí. */
+.dark footer {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+  color: #94a3b8 !important;
+}
+.dark #favoritesContainer > div {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+  color: #cbd5e1 !important;
+}
+.dark #favoritesContainer > div > p,
+.dark #favoritesContainer .fav-text { color: #f1f5f9 !important; }
+.dark #favoritesContainer .fav-es { color: #e2e8f0 !important; }
+.dark #favoritesContainer .border-t { border-color: #334155 !important; }
+.dark #favoritesContainer button.bg-slate-100 {
+  background-color: #334155 !important;
+  color: #e2e8f0 !important;
+}
+.dark #favoritesContainer button.bg-rose-50 {
+  background-color: rgba(76, 5, 25, 0.5) !important;
+  color: #fb7185 !important;
+  border-color: #9f1239 !important;
+}
+.dark #singleQuranPageCard {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+}
+.dark #singleQuranPageCard > div:first-child {
+  color: #fcd34d !important;
+  border-color: #334155 !important;
+}
+.dark #quranHizbDisplay {
+  background-color: rgba(69, 26, 3, 0.8) !important;
+  color: #fde68a !important;
+  border-color: #92400e !important;
+}
+.dark #quranImageWrapper { background-color: rgba(15, 23, 42, 0.5) !important; }
+.dark #singleQuranPageCard .border-t { border-color: #334155 !important; }
+.dark #singleQuranPageCard .text-slate-500 { color: #94a3b8 !important; }
+.dark #transliterationModal > div {
+  background-color: #1e293b !important;
+  color: #f1f5f9 !important;
+  border-color: #334155 !important;
+}
+.dark #transliterationModal > div > div:first-child { background-color: #064e3b !important; border-color: #334155 !important; }
+.dark #transliterationModal .border-b,
+.dark #transliterationModal .border-t,
+.dark #transliterationModal .border { border-color: #334155 !important; }
+.dark #transliterationModal thead tr { background-color: #334155 !important; color: #e2e8f0 !important; }
+.dark #transliterationModal tbody tr { border-color: rgba(51, 65, 85, 0.6) !important; }
+.dark #transliterationModal .text-emerald-700 { color: #34d399 !important; }
+.dark #transliterationModal .text-slate-600,
+.dark #transliterationModal .text-slate-700 { color: #cbd5e1 !important; }
+.dark #transliterationModal .bg-emerald-50 {
+  background-color: rgba(2, 44, 34, 0.55) !important;
+  border-color: #065f46 !important;
+}
+.dark #transliterationModal .bg-slate-50 { background-color: rgba(15, 23, 42, 0.5) !important; }
+/* Botón «Entendido» de la guía: bg-emerald-600 no está en el Tailwind reducido (salía blanco sobre blanco). */
+#transliterationModal button.bg-emerald-600 { background-color: #059669 !important; color: #ffffff !important; }
+#transliterationModal button.bg-emerald-600:hover { background-color: #047857 !important; }
+/* Título de la cabecera siempre en una línea; en móviles estrechos, letra algo más pequeña. */
+#headerTitle { white-space: nowrap; }
+@media (max-width: 380px) {
+  #headerTitle { font-size: 0.95rem !important; }
+  header > .container { padding-left: 0.75rem !important; padding-right: 0.75rem !important; }
+  header > .container > div:last-child { gap: 0.3rem; }
+  header > .container > div:last-child > * { margin-left: 0 !important; margin-right: 0 !important; }
+}
+
+/* Notas antes y después del zikr: tono violeta suave, distinto del resto de la tarjeta. */
+.zikr-note {
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.9;
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  white-space: pre-line;
+  color: #4c1d95;
+  background-color: #f5f0ff;
+  border: 1px solid #c4b5fd;
+  box-shadow: 0 1px 2px rgba(76, 29, 149, 0.08);
+}
+.zikr-note-es {
+  direction: ltr;
+  font-size: max(1rem, calc(var(--app-font-size, 1.125rem) * 0.95));
+  line-height: 1.7;
+}
+.dark .zikr-note {
+  color: #ede9fe;
+  background-color: rgba(76, 29, 149, 0.3);
+  border-color: #6d4fc2;
+  box-shadow: none;
+}
+
+/* Reproductor fijo mientras hay un audio activo (útil en duas largos como los de Qunut). */
+.audio-player-compact.audio-sticky {
+  position: sticky;
+  top: 4.6rem;
+  bottom: .75rem;
+  z-index: 35;
+  background: #f8fafc !important;
+  box-shadow: 0 6px 20px rgba(2, 44, 34, .28);
+  border-color: #6ee7b7 !important;
+}
+.dark .audio-player-compact.audio-sticky {
+  background: #1e293b !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .55);
+  border-color: #10b981 !important;
+}
+
+/* Botón play/pausa: solo el círculo con el icono, igual que parar y repetir. */
+.audio-pill-btn,
+.audio-player-compact .audio-pill-btn {
+  width: 2.35rem !important;
+  min-width: 2.35rem !important;
+  height: 2.35rem !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+
+.zad-xref { color: #047857; text-decoration: underline; text-underline-offset: 4px; font-weight: 800; cursor: pointer; }
+.dark .zad-xref { color: #6ee7b7; }
+
+.zad-table-wrap { margin: 12px auto 4px; max-width: 360px; border: 2px solid #1e3a8a; border-radius: 10px; overflow: hidden; background: #fff; }
+.dark .zad-table-wrap { background: #0f172a; border-color: #6ee7b7; }
+.zad-table-title { text-align: center; font-weight: 900; font-size: 1.15em; padding: 8px; color: #1e3a8a; border-bottom: 2px solid #1e3a8a; }
+.dark .zad-table-title { color: #6ee7b7; border-color: #6ee7b7; }
+.zad-table { width: 100%; border-collapse: collapse; text-align: center; font-weight: 800; }
+.zad-table th, .zad-table td { border: 1px solid #1e3a8a; padding: 6px 4px; height: 38px; }
+.dark .zad-table th, .dark .zad-table td { border-color: #475569; }
+.zad-table thead th { color: #b91c1c; } .zad-table thead th:nth-child(2) { color: #15803d; } .zad-table thead th:nth-child(1) { color: #1e3a8a; }
+.dark .zad-table thead th { color: #fca5a5; } .dark .zad-table thead th:nth-child(2) { color: #86efac; } .dark .zad-table thead th:nth-child(1) { color: #93c5fd; }
+.zad-table tbody th { color: #0f172a; } .dark .zad-table tbody th { color: #e2e8f0; }
+.zad-table-none { display: block; height: 30px; background: linear-gradient(to top left, transparent calc(50% - 1px), #1e3a8a, transparent calc(50% + 1px)); }
+.dark .zad-table-none { background: linear-gradient(to top left, transparent calc(50% - 1px), #94a3b8, transparent calc(50% + 1px)); }
+
+.zad-links { display: flex; flex-direction: column; gap: .45rem; margin: 10px auto 2px; max-width: 420px; }
+.zad-chip { display: block; padding: .55rem .9rem; border-radius: .9rem; border: 1px solid rgba(5,150,105,.55); background: rgba(5,150,105,.1); font-size: .9rem; line-height: 1.6; text-align: center; text-decoration: none; min-height: 44px; }
+
+.zad-shared-note { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; justify-content: center; padding: .5rem .7rem; border-radius: .9rem; background: rgba(251,191,36,.18); border: 1px dashed rgba(217,119,6,.7); font-size: .8rem; font-weight: 700; line-height: 1.6; text-align: center; }
+.zad-chip-sm { display: inline-block; padding: .25rem .7rem; min-height: 32px; border-radius: 2rem; border: 1px solid rgba(5,150,105,.6); background: rgba(5,150,105,.12); text-decoration: none; font-weight: 800; }
+
+
+
+/* Rosario: botones de virtudes y enlace desde las tarjetas de azkar */
+.tasbeeh-virtue-btn { display:block; width:100%; padding:.8rem 1rem; border-radius:1rem; border:1px solid rgba(16,185,129,.35); background:rgba(236,253,245,.8); color:#065f46; font-weight:700; font-size:.95rem; text-align:center; cursor:pointer; transition:background .2s; }
+.tasbeeh-virtue-btn:hover { background:rgba(209,250,229,.95); }
+.dark .tasbeeh-virtue-btn { background:rgba(6,78,59,.35); color:#a7f3d0; border-color:rgba(52,211,153,.3); }
+.tasbeeh-flash { box-shadow:0 0 0 4px rgba(245,158,11,.75), 0 10px 25px rgba(0,0,0,.15) !important; }
+.zad-tlinks { display:flex; flex-wrap:wrap; gap:.4rem; justify-content:center; }
+.zad-tlink { font-size:.75rem; font-weight:700; color:#b45309; background:rgba(254,243,199,.7); border:1px solid rgba(217,119,6,.35); padding:.2rem .7rem; border-radius:999px; cursor:pointer; }
+.dark .zad-tlink { color:#fcd34d; background:rgba(120,53,15,.35); border-color:rgba(251,191,36,.3); }

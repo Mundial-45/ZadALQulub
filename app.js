@@ -1,0 +1,2516 @@
+// app.js - Controlador principal de la aplicación / زَادُ الْقُلُوبِ
+
+// El enlace puede llevar el idioma: ?lang=es o ?lang=ar. Se guarda para las próximas visitas.
+let currentLang = (function () {
+  try {
+    const fromLink = new URLSearchParams(window.location.search).get('lang');
+    if (fromLink === 'es' || fromLink === 'ar') {
+      safeSetStorage('app_lang', fromLink);
+      // Se quita ?lang de la barra para que al recargar mande el idioma elegido con el botón.
+      const url = new URL(window.location.href);
+      url.searchParams.delete('lang');
+      window.history.replaceState(window.history.state, '', url.pathname + url.search + url.hash);
+      return fromLink;
+    }
+  } catch (e) {}
+  return safeGetStorage('app_lang') || 'ar';
+})();
+
+const uiTexts = {
+  ar: {
+    headerTitle: 'زَادُ الْقُلُوبِ',
+    headerSubtitle: 'جامع الأذكار والأدعية والمناجاة',
+    homeWelcome: 'اختر القسم للبدء:',
+    btnAzkarTitle: 'الأذكار اليومية',
+    btnAzkarSub: 'الصباح، المساء، النوم، الاستيقاظ، أذكار الصلاة',
+    btnAdyaTitle: 'الأدعية المأثورة',
+    btnAdyaSub: 'أدعية الرزق، الشفاء، الفرج، الحفظ، وقضاء الحوائج',
+    btnTasbeehTitle: 'المسبحة الإلكترونية',
+    btnTasbeehSub: 'عداد إلكتروني للتسبيح والاستغفار',
+    btnFavTitle: 'المفضلة',
+    btnFavSub: 'الأذكار والأدعية المحفوظة لديك',
+    back: 'رجوع',
+    home: 'الرئيسية',
+    resetAll: 'إعادة ضبط الكل',
+    reset: 'إعادة ضبط',
+    searchPlaceholder: 'ابحث عن ذكر أو دعاء أو برقمه...',
+    countLabel: 'التكرار',
+    doneLabel: 'تم المتبقي',
+    progressLabel: 'نسبة الإنجاز الكلية',
+    arabicOriginal: 'النص الأصلي باللغة العربية:',
+    azkarSectionTitle: 'الأذكار اليومية',
+    adyaSectionTitle: 'الأدعية المأثورة',
+    noFavs: 'لا توجد أذكار مضافة للمفضلة حالياً.',
+    removeFav: 'إزالة من المفضلة',
+    prevBtn: 'السابق',
+    nextBtn: 'التالي',
+    itemProgress: 'الذكر {current} من {total}',
+    completedGroup: '🎉 تم إكمال جميع أذكار هذا القسم',
+    pressToCount: 'اضغط للتكرار',
+    completedItem: 'تم الإكمال ✓',
+    btnMunajatTitle: 'مناجاة وتضرعات',
+    btnMunajatSub: 'مناجاة، ثناء، استغفار وشوق إلى الله',
+    munajatSectionTitle: 'مناجاة وتضرعات',
+    btnQuranTitle: 'القرآن الكريم (برواية ورش)',
+    btnQuranSub: 'المصحف الشريف كاملًا برواية ورش عن نافع',
+    quranHeaderTitle: 'القرآن الكريم (برواية ورش)',
+    startReadingBtn: 'بدء القراءة',
+    indexBtnText: 'فهرس القرآن (ورش) 📖',
+    jumpBtnText: 'انتقال',
+    nextPageBtn: 'الصفحة التالية',
+    prevPageBtn: 'الصفحة السابقة',
+    pageLabelText: 'صفحة',
+    pageOfText: 'من 638',
+    hizbLabelText: 'الحزب',
+    swipeHintText: 'اسحب لليمين للصفحة التالية',
+    surahSearchPlaceholder: 'ابحث عن سورة بالاسم أو الرقم...',
+    tabSurahsText: '1. السور',
+    tabSurahsSub: '114 سورة',
+    tabAhzabText: '2. الأحزاب',
+    tabAhzabSub: '60 حزب',
+    tabContinueText: '3. متابعة القراءة',
+    btnRuqyahTitle: 'الرقية الشرعية',
+    btnRuqyahSub: 'رقية الشفاء، العين، الحسد والمس',
+    ruqyahSectionTitle: 'الرقية الشرعية',
+    btnAsmaTitle: 'أسماء الله الحسنى',
+    btnAsmaSub: 'معانيها وشرحها المختصر',
+    asmaSectionTitle: 'أسماء الله الحسنى',
+    btnGlosarioTitle: 'معجم المصطلحات',
+    btnGlosarioSub: 'مصطلحات إسلامية مشروحة',
+    glosarioSectionTitle: 'معجم المصطلحات الإسلامية'
+  },
+  es: {
+    headerTitle: 'Zad Al-Qulub',
+    headerSubtitle: 'Provisión de los Corazones - Invocaciones y Súplicas',
+    homeWelcome: 'Elige una categoría:',
+    btnAzkarTitle: 'Azkar Diarios',
+    btnAzkarSub: 'Mañana, tarde, dormir, despertar y oración',
+    btnAdyaTitle: 'Súplicas (Du\'as)',
+    btnAdyaSub: 'Sustento, curación, alivio y protección',
+    btnTasbeehTitle: 'Rosario Electrónico (Tasbeeh)',
+    btnTasbeehSub: 'Contador digital para el recuerdo de Allah',
+    btnFavTitle: 'Favoritos',
+    btnFavSub: 'Invocaciones guardadas',
+    back: 'Volver',
+    home: 'Inicio',
+    resetAll: 'Reiniciar todo',
+    reset: 'Reiniciar',
+    searchPlaceholder: 'Buscar súplica, dhikr o número...',
+    countLabel: 'Repetición',
+    doneLabel: 'Completado',
+    progressLabel: 'Progreso total',
+    arabicOriginal: 'Texto original en árabe:',
+    azkarSectionTitle: 'Azkar Diarios',
+    adyaSectionTitle: 'Súplicas Seleccionadas',
+    noFavs: 'No hay invocaciones guardadas en favoritos.',
+    removeFav: 'Eliminar de favoritos',
+    prevBtn: 'Anterior',
+    nextBtn: 'Siguiente',
+    itemProgress: 'Invocación {current} de {total}',
+    completedGroup: '¡Has completado todas las invocaciones! 🎉',
+    pressToCount: 'Toca para contar',
+    completedItem: 'Completado ✓',
+    btnMunajatTitle: 'Invocaciones y Súplicas',
+    btnMunajatSub: 'Alabanza, arrepentimiento y anhelo íntimo de Allah',
+    munajatSectionTitle: 'Invocaciones y Súplicas Íntimas',
+    btnQuranTitle: 'El Sagrado Corán (Lectura Warsh)',
+    btnQuranSub: 'Lectura completa del Corán según la recitación Warsh',
+    quranHeaderTitle: 'El Sagrado Corán (Warsh)',
+    startReadingBtn: 'Empezar lectura',
+    indexBtnText: 'Índice del Corán 📖',
+    jumpBtnText: 'Ir',
+    nextPageBtn: 'Página siguiente',
+    prevPageBtn: 'Página anterior',
+    pageLabelText: 'Página',
+    pageOfText: 'de 638',
+    hizbLabelText: 'Hizb',
+    swipeHintText: 'Desliza a la derecha para ir a la página siguiente',
+    surahSearchPlaceholder: 'Buscar sura por nombre o número...',
+    tabSurahsText: '1. Suras',
+    tabSurahsSub: '114 suras',
+    tabAhzabText: '2. Ahzab',
+    tabAhzabSub: '60 hizb',
+    tabContinueText: '3. Continuar leyendo',
+    btnRuqyahTitle: 'Ruqya legítima (sharʿiyya)',
+    btnRuqyahSub: 'Curación, protección contra envidia, ojo y mal',
+    ruqyahSectionTitle: 'Ruqya legítima (sharʿiyya)',
+    btnAsmaTitle: 'Los Nombres de Allah',
+    btnAsmaSub: 'Su significado y explicación breve',
+    asmaSectionTitle: 'Los Nombres de Allah',
+    btnGlosarioTitle: 'Glosario',
+    btnGlosarioSub: 'Términos islámicos explicados',
+    glosarioSectionTitle: 'Glosario de términos islámicos'
+  }
+};
+
+let currentSection = null;
+let currentGroup = null;
+let currentFolderId = null;
+let favorites = [];
+let fontSize = 18;
+let currentAudio = null;
+
+const STORAGE_KEY = 'azkar_adya_progress_v5';
+const FAV_KEY = 'azkar_favorites_v5'; // antiguo: favoritos guardados por texto árabe
+const FAV_IDS_KEY = 'zad_favorites_ids_v6'; // favoritos por identificador sección|grupo|número
+const PROGRESS_IDS_KEY = 'zad_progress_ids_v6'; // contadores por identificador
+const THEME_KEY = 'azkar_theme_v5';
+
+function safeGetStorage(key) {
+  try { return localStorage.getItem(key); } catch (e) { return null; }
+}
+function safeSetStorage(key, val) {
+  try { localStorage.setItem(key, val); } catch (e) {}
+}
+
+function toggleLanguage() {
+  currentLang = currentLang === 'ar' ? 'es' : 'ar';
+  safeSetStorage('app_lang', currentLang);
+  applyLanguageUI();
+}
+
+function applyLanguageUI() {
+  const isEs = currentLang === 'es';
+  const t = uiTexts[currentLang];
+
+  document.documentElement.dir = isEs ? 'ltr' : 'rtl';
+  document.documentElement.lang = currentLang;
+
+  const infoBtn = document.getElementById('transliterationInfoBtn');
+  if (infoBtn) {
+    infoBtn.style.setProperty('display', isEs ? 'inline-flex' : 'none', 'important');
+    if (isEs) infoBtn.classList.remove('hidden');
+    else infoBtn.classList.add('hidden');
+  }
+
+  document.getElementById('langBtnText').innerText = isEs ? 'AR' : 'ES';
+  document.getElementById('headerTitle').innerText = t.headerTitle + adminTitleSuffix();
+  document.title = (isAdminMode() ? '[ADMIN] ' : '') + 'زاد القلوب - Zad Al-Qulub';
+  document.getElementById('headerSubtitle').innerText = t.headerSubtitle;
+  document.getElementById('homeWelcome').innerText = t.homeWelcome;
+
+  document.getElementById('btnAzkarTitle').innerText = t.btnAzkarTitle;
+  document.getElementById('btnAzkarSub').innerText = t.btnAzkarSub;
+  document.getElementById('btnAdyaTitle').innerText = t.btnAdyaTitle;
+  document.getElementById('btnAdyaSub').innerText = t.btnAdyaSub;
+  document.getElementById('btnTasbeehTitle').innerText = t.btnTasbeehTitle;
+  document.getElementById('btnTasbeehSub').innerText = t.btnTasbeehSub;
+  document.getElementById('btnFavTitle').innerText = t.btnFavTitle;
+  document.getElementById('btnFavSub').innerText = t.btnFavSub;
+
+  const quranTitleEl = document.getElementById('btnQuranTitle');
+  if (quranTitleEl && t.btnQuranTitle) quranTitleEl.innerText = t.btnQuranTitle;
+  const quranSubEl = document.getElementById('btnQuranSub');
+  if (quranSubEl && t.btnQuranSub) quranSubEl.innerText = t.btnQuranSub;
+  const quranHeaderEl = document.getElementById('quranIndexTitle');
+  if (quranHeaderEl && t.quranHeaderTitle) quranHeaderEl.innerText = t.quranHeaderTitle;
+
+  const startReadingBtn = document.getElementById('startReadingBtn');
+  if (startReadingBtn && t.startReadingBtn) startReadingBtn.innerText = t.startReadingBtn;
+  const indexBtnText = document.getElementById('indexBtnText');
+  if (indexBtnText && t.indexBtnText) indexBtnText.innerText = t.indexBtnText;
+  const jumpBtnText = document.getElementById('jumpBtnText');
+  if (jumpBtnText && t.jumpBtnText) jumpBtnText.innerText = t.jumpBtnText;
+  const nextPageBtn = document.getElementById('nextBtnText');
+  if (nextPageBtn && t.nextPageBtn) nextPageBtn.innerText = t.nextPageBtn;
+  const prevPageBtn = document.getElementById('prevBtnText');
+  if (prevPageBtn && t.prevPageBtn) prevPageBtn.innerText = t.prevPageBtn;
+  const swipeHint = document.getElementById('swipeHint');
+  if (swipeHint && t.swipeHintText) swipeHint.innerText = t.swipeHintText;
+  const quranSearchInput = document.getElementById('quranSearchInput');
+  if (quranSearchInput && t.surahSearchPlaceholder) quranSearchInput.placeholder = t.surahSearchPlaceholder;
+  const pageLabelText = document.getElementById('pageLabelText');
+  if (pageLabelText && t.pageLabelText) pageLabelText.innerText = t.pageLabelText;
+  const pageOfText = document.getElementById('pageOfText');
+  if (pageOfText && t.pageOfText) pageOfText.innerText = t.pageOfText;
+
+  const tabSurahsText = document.getElementById('tabSurahsText');
+  if (tabSurahsText && t.tabSurahsText) tabSurahsText.innerText = t.tabSurahsText;
+  const tabSurahsSub = document.getElementById('tabSurahsSub');
+  if (tabSurahsSub && t.tabSurahsSub) tabSurahsSub.innerText = t.tabSurahsSub;
+  const tabAhzabText = document.getElementById('tabAhzabText');
+  if (tabAhzabText && t.tabAhzabText) tabAhzabText.innerText = t.tabAhzabText;
+  const tabAhzabSub = document.getElementById('tabAhzabSub');
+  if (tabAhzabSub && t.tabAhzabSub) tabAhzabSub.innerText = t.tabAhzabSub;
+  const tabContinueText = document.getElementById('tabContinueText');
+  if (tabContinueText && t.tabContinueText) tabContinueText.innerText = t.tabContinueText;
+
+  if (typeof updateContinueReadingCard === 'function') updateContinueReadingCard();
+
+  const ruqyahTitleEl = document.getElementById('btnRuqyahTitle');
+  if (ruqyahTitleEl && t.btnRuqyahTitle) ruqyahTitleEl.innerText = t.btnRuqyahTitle;
+  const ruqyahSubEl = document.getElementById('btnRuqyahSub');
+  if (ruqyahSubEl && t.btnRuqyahSub) ruqyahSubEl.innerText = t.btnRuqyahSub;
+
+  [['btnAsmaTitle', t.btnAsmaTitle], ['btnAsmaSub', t.btnAsmaSub], ['btnGlosarioTitle', t.btnGlosarioTitle], ['btnGlosarioSub', t.btnGlosarioSub]].forEach(([id, txt]) => {
+    const el = document.getElementById(id);
+    if (el && txt) el.innerText = txt;
+  });
+
+  const munajatTitleEl = document.getElementById('btnMunajatTitle');
+  if (munajatTitleEl) munajatTitleEl.innerText = t.btnMunajatTitle;
+  const munajatSubEl = document.getElementById('btnMunajatSub');
+  if (munajatSubEl) munajatSubEl.innerText = t.btnMunajatSub;
+
+  document.getElementById('searchInput').placeholder = t.searchPlaceholder;
+  document.getElementById('resetAllBtn').innerText = t.resetAll;
+  document.getElementById('progressTextLabel').innerText = t.progressLabel;
+  document.getElementById('tasbeehHeaderTitle').innerText = t.btnTasbeehTitle;
+  document.getElementById('resetTasbeehBtn').innerText = t.resetAll;
+  document.getElementById('favHeaderTitle').innerText = t.btnFavTitle;
+  document.getElementById('footerText').innerText = isEs ? 'Zad Al-Qulub © 2026' : 'زَادُ الْقُلُوبِ - جامع الأذكار والأدعية والمناجاة © 2026';
+  const footerDua = document.getElementById('footerDua'); if (footerDua) footerDua.innerText = isEs ? 'No me olvidéis en vuestras súplicas 🤲' : 'لَا تَنْسَوْنِي بِالدُّعَاءِ 🤲';
+
+  if (typeof window.zadCreditsRefresh === 'function') window.zadCreditsRefresh();
+  document.querySelectorAll('.btn-back-label').forEach(el => el.innerText = t.back);
+
+  if (currentGroup) {
+    document.getElementById('itemGroupTitle').innerText = isEs ? currentGroup.titleEs : currentGroup.titleAr;
+    renderGroupItems();
+  }
+  if (!document.getElementById('categoryListView').classList.contains('hidden')) {
+    document.getElementById('sectionTitle').innerText = currentSection === 'azkar' ? t.azkarSectionTitle : t.adyaSectionTitle;
+    renderButtonsGrid();
+  }
+  if (!document.getElementById('tasbeehView').classList.contains('hidden') && typeof renderTasbeehGrid === 'function') renderTasbeehGrid();
+  if (!document.getElementById('favoritesView').classList.contains('hidden')) showFavorites();
+}
+
+function showToast(msg) {
+  const toast = document.getElementById('toast');
+  if (!toast) return;
+  toast.innerText = msg;
+  toast.classList.remove('opacity-0', 'pointer-events-none');
+  setTimeout(() => { toast.classList.add('opacity-0', 'pointer-events-none'); }, 2000);
+}
+
+function toggleDarkMode() {
+  const html = document.documentElement;
+  if (html.classList.contains('dark')) {
+    html.classList.remove('dark');
+    safeSetStorage(THEME_KEY, 'light');
+  } else {
+    html.classList.add('dark');
+    safeSetStorage(THEME_KEY, 'dark');
+  }
+}
+
+function loadSavedTheme() {
+  const savedTheme = safeGetStorage(THEME_KEY);
+  if (savedTheme === 'dark' || (!savedTheme && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark');
+  }
+}
+
+function changeFontSize(delta) {
+  fontSize = Math.min(Math.max(14, fontSize + delta * 2), 28);
+  document.documentElement.style.setProperty('--app-font-size', `${fontSize}px`);
+}
+
+let activeAudioCardIndex = null;
+let audioRepeatEnabled = false;
+let activeAudioList = [];
+let activeAudioListIndex = 0;
+let audioPlaybackToken = 0;
+let audioErrorStreak = 0;
+// El audio activo se identifica por sección + grupo + tarjeta: el número de tarjeta solo se repite en todos los grupos.
+let activeAudioKey = null;
+function audioKeyFor(index) {
+  return (currentSection || '') + '|' + (currentGroup ? currentGroup.id : '') + '|' + index;
+}
+function isActiveAudioCard(index) {
+  return !!currentAudio && activeAudioCardIndex === index && activeAudioKey === audioKeyFor(index);
+}
+// Reproductor fijo: mientras el audio está activo (sonando o en pausa) el reproductor de su tarjeta
+// se queda visible aunque se suba o baje por un dua largo.
+function syncStickyAudioPlayer() {
+  const active = (currentAudio && activeAudioCardIndex !== null && activeAudioKey === audioKeyFor(activeAudioCardIndex))
+    ? document.getElementById('audioPlayer-' + activeAudioCardIndex) : null;
+  document.querySelectorAll('.audio-player-compact.audio-sticky').forEach(el => { if (el !== active) el.classList.remove('audio-sticky'); });
+  if (active && !active.classList.contains('audio-sticky')) active.classList.add('audio-sticky');
+}
+function resetActiveAudioState() {
+  activeAudioList = [];
+  activeAudioListIndex = 0;
+  activeAudioCardIndex = null;
+  activeAudioKey = null;
+  document.querySelectorAll('.audio-player-compact.audio-sticky').forEach(el => el.classList.remove('audio-sticky'));
+}
+// Al salir de un grupo, un audio en pausa ya no tiene tarjeta a la que volver: se descarta.
+function releasePausedAudio() {
+  if (currentAudio && currentAudio.paused) {
+    stopCurrentAudioPlayback();
+    resetActiveAudioState();
+  }
+}
+function formatAudioTime(seconds) {
+  if (!Number.isFinite(seconds) || seconds < 0) return '0:00';
+  return Math.floor(seconds / 60) + ':' + String(Math.floor(seconds % 60)).padStart(2, '0');
+}
+function updateAudioProgress() {
+  if (!currentAudio || activeAudioCardIndex === null) return;
+  if (activeAudioKey !== audioKeyFor(activeAudioCardIndex)) return;
+  syncStickyAudioPlayer();
+  const i = activeAudioCardIndex;
+  const seek = document.getElementById('audioSeek-' + i);
+  const nowEl = document.getElementById('audioCurrent-' + i);
+  const durationEl = document.getElementById('audioDuration-' + i);
+  const total = Number.isFinite(currentAudio.duration) ? currentAudio.duration : 0;
+  const now = Number.isFinite(currentAudio.currentTime) ? currentAudio.currentTime : 0;
+  if (seek && !seek.matches(':active')) seek.value = total > 0 ? String(Math.round(now / total * 1000)) : '0';
+  if (nowEl) nowEl.textContent = formatAudioTime(now);
+  if (durationEl) durationEl.textContent = formatAudioTime(total);
+  setPlayButtonState(i, !currentAudio.paused);
+  setRepeatButtonsState();
+  const sequenceEl = document.getElementById('audioSequence-' + i);
+  if (sequenceEl) sequenceEl.textContent = activeAudioList.length > 1 ? ((activeAudioListIndex + 1) + '/' + activeAudioList.length) : '';
+}
+const AUDIO_STOP_ICON = '<svg class="audio-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2.2"/></svg>';
+const AUDIO_REPEAT_ICON = '<svg class="audio-icon audio-icon-stroke" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V9a3 3 0 0 1 3-3h13"/><path d="M17 3l3 3-3 3"/><path d="M20 12v3a3 3 0 0 1-3 3H4"/><path d="M7 21l-3-3 3-3"/></svg>';
+
+function getRepeatButtonLabel() {
+  const isEs = currentLang === 'es';
+  if (audioRepeatEnabled) return isEs ? 'Repetir: activado' : 'التكرار: مفعّل';
+  return isEs ? 'Repetir: desactivado' : 'التكرار: غير مفعّل';
+}
+
+function setRepeatButtonsState() {
+  document.querySelectorAll('[id^="audioRepeat-"]').forEach(function (btn) {
+    btn.classList.toggle('is-active', audioRepeatEnabled);
+    btn.setAttribute('aria-pressed', String(audioRepeatEnabled));
+    btn.setAttribute('aria-label', getRepeatButtonLabel());
+    btn.setAttribute('title', getRepeatButtonLabel());
+  });
+}
+
+const AUDIO_PLAY_ICON = '<svg class="audio-pill-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5.6v12.8a1 1 0 0 0 1.52.85l10.4-6.4a1 1 0 0 0 0-1.7L9.52 4.75A1 1 0 0 0 8 5.6z"/></svg>';
+const AUDIO_PAUSE_ICON = '<svg class="audio-pill-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="6" y="5" width="4.2" height="14" rx="1.2"/><rect x="13.8" y="5" width="4.2" height="14" rx="1.2"/></svg>';
+
+function getPlayButtonLabel(playing) {
+  const isEs = currentLang === 'es';
+  return playing ? (isEs ? 'Pausar' : 'إيقاف مؤقت') : (isEs ? 'Escuchar' : 'استماع');
+}
+
+function getPlayButtonInner(playing) {
+  return playing ? AUDIO_PAUSE_ICON : AUDIO_PLAY_ICON;
+}
+
+function setPlayButtonState(index, playing) {
+  const btn = document.getElementById('audioPlay-' + index);
+  if (!btn) return;
+  const state = (playing ? 'playing' : 'paused') + '-' + currentLang;
+  if (btn.dataset.state === state) return;
+  btn.dataset.state = state;
+  btn.innerHTML = getPlayButtonInner(playing);
+  btn.setAttribute('aria-label', getPlayButtonLabel(playing));
+  btn.setAttribute('title', getPlayButtonLabel(playing));
+  btn.classList.toggle('is-playing', playing);
+}
+
+// Zikr por fases con un audio por fase (item.stages = [3, 7] y audioUrls = [audio1, audio2]).
+function isStagedAudioItem(item, list) {
+  return !!(item && Array.isArray(item.stages) && item.stages.length >= 2 && Array.isArray(list) && list.length === item.stages.length);
+}
+
+let activeAudioBaseCycleLength = 1;
+let activeAudioTargetRepeats = 1;
+
+function extractBaseAudioList(audioValue) {
+  const values = Array.isArray(audioValue) ? audioValue : [audioValue];
+  let explicitMultiplier = null;
+
+  const baseCycle = values.flatMap(value => {
+    if (typeof value !== 'string' || !value.trim()) return [];
+    const tokens = value.split(/[\s,]+/).map(url => url.trim()).filter(Boolean);
+    return tokens.map(token => {
+      let cleanUrl = token;
+      const match = token.match(/^(.*?)(?:[|*xX])(\d+)$/);
+      if (match) {
+        cleanUrl = match[1];
+        if (explicitMultiplier === null) {
+          explicitMultiplier = parseInt(match[2], 10) || 1;
+        }
+      }
+      return cleanUrl;
+    });
+  }).filter(Boolean);
+
+  return { urls: baseCycle, multiplier: explicitMultiplier };
+}
+
+function normaliseAudioList(audioValue, countMultiplier) {
+  const parsed = extractBaseAudioList(audioValue);
+  return parsed.urls;
+}
+
+function playAudio(audioValue, index, countMultiplier) {
+  const parsed = extractBaseAudioList(audioValue);
+  const urls = parsed.urls;
+  if (!urls.length) return;
+
+  if (isActiveAudioCard(index)) {
+    if (currentAudio.paused) {
+      currentAudio.play().then(updateAudioProgress).catch(() => showToast(currentLang === 'es' ? 'No se pudo reproducir el audio' : 'تعذر تشغيل الصوت'));
+    } else {
+      currentAudio.pause();
+    }
+    updateAudioProgress();
+    return;
+  }
+
+  stopCurrentAudioPlayback();
+  activeAudioCardIndex = index;
+  activeAudioKey = audioKeyFor(index);
+  activeAudioList = urls;
+  activeAudioListIndex = 0;
+  if (currentGroup && currentGroup.items[index] && isStagedAudioItem(currentGroup.items[index], urls)) {
+    const stagedStart = getStageInfo(currentGroup.items[index], getSavedCount(currentGroup.id, index, currentGroup.items[index].count));
+    if (stagedStart) activeAudioListIndex = stagedStart.index;
+  }
+
+  let targetRepeatCount = 1;
+  if (parsed.multiplier !== null && parsed.multiplier > 0) {
+    targetRepeatCount = parsed.multiplier;
+  } else if (typeof countMultiplier === 'number' && countMultiplier > 0) {
+    targetRepeatCount = countMultiplier;
+  }
+
+  let remainingCount = targetRepeatCount;
+  if (currentGroup && currentGroup.items[index]) {
+    const saved = getSavedCount(currentGroup.id, index, targetRepeatCount);
+    if (saved > 0) remainingCount = saved;
+  }
+
+  activeAudioTargetRepeats = remainingCount;
+
+  const player = document.getElementById('audioPlayer-' + index);
+  if (player) player.classList.remove('hidden');
+  syncStickyAudioPlayer();
+  playNextAudioInSequence(audioPlaybackToken);
+}
+
+let globalAudioElement = null;
+
+function getGlobalAudioElement() {
+  if (!globalAudioElement) {
+    globalAudioElement = document.getElementById('globalAppAudioPlayer');
+    if (!globalAudioElement) {
+      globalAudioElement = document.createElement('audio');
+      globalAudioElement.id = 'globalAppAudioPlayer';
+      globalAudioElement.preload = 'auto';
+      document.body.appendChild(globalAudioElement);
+    }
+  }
+  return globalAudioElement;
+}
+
+function stopCurrentAudioPlayback() {
+  audioPlaybackToken++;
+  const audio = getGlobalAudioElement();
+  if (audio) {
+    audio.pause();
+    audio.onended = null;
+    audio.onerror = null;
+    try { audio.currentTime = 0; } catch (e) {}
+  }
+  currentAudio = null;
+}
+
+function playNextAudioInSequence(token) {
+  if (token !== audioPlaybackToken || activeAudioCardIndex === null) return;
+
+  if (activeAudioListIndex >= activeAudioList.length && audioRepeatEnabled) {
+    activeAudioListIndex = 0;
+  } else if (activeAudioListIndex >= activeAudioList.length) {
+    const cardIdx = activeAudioCardIndex;
+
+    if (activeAudioKey !== audioKeyFor(cardIdx)) {
+      stopCurrentAudioPlayback();
+      resetActiveAudioState();
+      return;
+    }
+
+    if (cardIdx !== null && typeof decrementCounter === 'function') {
+      decrementCounter(cardIdx, true);
+    }
+
+    let currentRemaining = 0;
+    if (currentGroup && currentGroup.items[cardIdx]) {
+      currentRemaining = getSavedCount(currentGroup.id, cardIdx, 0);
+    }
+
+    if (currentRemaining > 0) {
+      activeAudioListIndex = 0;
+    } else {
+      stopCurrentAudioPlayback();
+      setPlayButtonState(cardIdx, false);
+      const seek = document.getElementById('audioSeek-' + cardIdx);
+      if (seek) seek.value = '1000';
+      const nowEl = document.getElementById('audioCurrent-' + cardIdx);
+      const durationEl = document.getElementById('audioDuration-' + cardIdx);
+      if (nowEl && durationEl) nowEl.textContent = durationEl.textContent;
+      return;
+    }
+  }
+
+  const url = activeAudioList[activeAudioListIndex];
+  const audio = getGlobalAudioElement();
+  currentAudio = audio;
+
+  audio.onended = null;
+  audio.onerror = null;
+
+  audio.src = url;
+  audio.load();
+
+  ['loadedmetadata','durationchange','timeupdate','play','pause'].forEach(ev => {
+    audio.removeEventListener(ev, updateAudioProgress);
+    audio.addEventListener(ev, updateAudioProgress);
+  });
+
+  audio.onended = () => {
+    if (token !== audioPlaybackToken) return;
+    const stagedIdx = activeAudioCardIndex;
+    const stagedItem = currentGroup && stagedIdx !== null ? currentGroup.items[stagedIdx] : null;
+    if (stagedItem && isStagedAudioItem(stagedItem, activeAudioList) && activeAudioKey === audioKeyFor(stagedIdx)) {
+      // Cada reproducción cuenta una repetición de su fase: el audio 1 se repite tantas veces como la fase 1, y así el resto.
+      decrementCounter(stagedIdx, true);
+      const stagedNext = getStageInfo(stagedItem, getSavedCount(currentGroup.id, stagedIdx, 0));
+      if (stagedNext) {
+        activeAudioListIndex = stagedNext.index;
+        playNextAudioInSequence(token);
+      } else {
+        stopCurrentAudioPlayback();
+        setPlayButtonState(stagedIdx, false);
+      }
+      return;
+    }
+    activeAudioListIndex++;
+    playNextAudioInSequence(token);
+  };
+
+  audio.onerror = () => {
+    if (token !== audioPlaybackToken) return;
+    if (++audioErrorStreak >= Math.max(1, activeAudioList.length)) { audioErrorStreak = 0; const idx = activeAudioCardIndex; stopAudio(idx); return; }
+    activeAudioListIndex++;
+    showToast(currentLang === 'es' ? 'Un audio no se pudo cargar; continuando...' : 'تعذر تحميل مقطع، تتم متابعة المقطع التالي');
+    playNextAudioInSequence(token);
+  };
+
+  const playPromise = audio.play();
+  if (playPromise !== undefined) {
+    playPromise.then(() => { audioErrorStreak = 0; updateAudioProgress(); }).catch(() => {
+      if (token !== audioPlaybackToken) return;
+      if (++audioErrorStreak >= Math.max(1, activeAudioList.length)) { audioErrorStreak = 0; const idx = activeAudioCardIndex; stopAudio(idx); return; }
+      activeAudioListIndex++;
+      playNextAudioInSequence(token);
+    });
+  }
+}
+function stopAudio(index) {
+  if (isActiveAudioCard(index)) {
+    stopCurrentAudioPlayback();
+    resetActiveAudioState();
+    setPlayButtonState(index, false);
+    const seek = document.getElementById('audioSeek-' + index);
+    if (seek) seek.value = '0';
+    const now = document.getElementById('audioCurrent-' + index);
+    if (now) now.textContent = '0:00';
+  }
+}
+function seekAudio(index, value) {
+  if (isActiveAudioCard(index) && Number.isFinite(currentAudio.duration) && currentAudio.duration > 0) {
+    currentAudio.currentTime = Number(value) / 1000 * currentAudio.duration;
+    updateAudioProgress();
+  }
+}
+function toggleAudioRepeat(index) {
+  audioRepeatEnabled = !audioRepeatEnabled;
+  setRepeatButtonsState();
+  showToast(audioRepeatEnabled
+    ? (currentLang === 'es' ? 'Repetición activada' : 'تم تفعيل التكرار')
+    : (currentLang === 'es' ? 'Repetición desactivada' : 'تم إيقاف التكرار'));
+}
+function escapeJsStr(str) {
+  if (!str) return '';
+  return str.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/"/g, '&quot;').replace(/\r?\n/g, '\\n');
+}
+
+function formatTextWithNewlines(str) {
+  if (!str) return '';
+  return str.replace(/\\n/g, '\n');
+}
+
+// Dentro de un texto explicativo, da a cada cita su fuente:
+// ﴿…﴾ = Corán (KFGQPC); «…» = hadiz (Scheherazade). Solo para texto árabe.
+// Zikr con varias partes con repeticiones distintas (item.stages = [3, 7]; el texto va en una línea por parte).
+function getStageInfo(item, currentCount) {
+  if (!item || !Array.isArray(item.stages) || item.stages.length < 2 || !(currentCount > 0)) return null;
+  const total = item.stages.reduce(function (a, c) { return a + c; }, 0);
+  const done = Math.max(0, total - currentCount);
+  let acc = 0;
+  for (let i = 0; i < item.stages.length; i++) {
+    if (done < acc + item.stages[i]) return { index: i, remaining: acc + item.stages[i] - done, max: item.stages[i] };
+    acc += item.stages[i];
+  }
+  return null;
+}
+
+function formatStagedText(str, item, stage, quoted) {
+  const fmt = quoted ? formatQuotedText : formatTextWithNewlines;
+  const lines = String(str || '').split('\n');
+  if (!item || !Array.isArray(item.stages) || item.stages.length < 2 || lines.length !== item.stages.length) return fmt(str);
+  return lines.map(function (ln, i) {
+    const dim = stage && stage.index !== i;
+    return '<span class="stage-line" style="display:block;transition:opacity .2s;opacity:' + (dim ? '0.35' : '1') + '">' + fmt(ln) + ' <span dir="ltr" style="font-size:.7em;opacity:.75">×' + item.stages[i] + '</span></span>';
+  }).join('');
+}
+
+// Enlaces internos entre secciones: item.xref = {phrase, section, group, num}
+function applyXref(html, item) {
+  const x = item && item.xref;
+  const ph = (currentLang === 'es' && x && x.phraseEs) ? x.phraseEs : (x && x.phrase);
+  if (!x || !html || html.indexOf(ph) < 0) return html;
+  return html.replace(ph, `<a href="#" class="zad-xref" data-xs="${x.section}" data-xg="${x.group}" data-xn="${x.num}">${ph}</a>`);
+}
+// Enlaces en línea (varios por elemento): item.xrefs = [{field:'text'|'explanationEs'|'explanationAr', phrase, section, group?, num?}]
+function applyXrefs(html, item, field) {
+  const list = item && Array.isArray(item.xrefs) ? item.xrefs : null;
+  if (!list || !html) return html;
+  let out = html;
+  list.forEach(x => {
+    if (!x || x.field !== field || !x.phrase || out.indexOf(x.phrase) < 0) return;
+    out = out.replace(x.phrase, `<a href="#" class="zad-xref" data-xs="${x.section}"${x.group ? ` data-xg="${x.group}"` : ''}${x.num ? ` data-xn="${x.num}"` : ''}>${x.phrase}</a>`);
+  });
+  return out;
+}
+function global_openAzkar() { if (typeof window.openAzkarSection === 'function') window.openAzkarSection(); }
+function openXref(el) {
+  const sec = el.dataset.xs, grp = el.dataset.xg, num = parseInt(el.dataset.xn, 10);
+  if (!grp) {
+    if (sec === 'quran' && typeof showQuranView === 'function') showQuranView();
+    else if (sec === 'azkar' && typeof global_openAzkar === 'function') global_openAzkar();
+    else if (typeof showSection === 'function') showSection(sec);
+    window.scrollTo(0, 0);
+    return;
+  }
+  openGroup(grp, false, sec);
+  if (isNaN(num)) { window.scrollTo(0, 0); return; }
+  let tries = 0;
+  const jump = () => {
+    const g = typeof currentGroup !== 'undefined' ? currentGroup : null;
+    if (g && g.id === grp && g.items) {
+      const idx = g.items.findIndex((it, i) => (Number(it.itemNumber) || i + 1) === num);
+      const card = idx >= 0 && document.getElementById(`zikr-card-${idx}`);
+      if (card) { card.scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
+    }
+    if (++tries < 12) setTimeout(jump, 250);
+  };
+  setTimeout(jump, 300);
+}
+document.addEventListener('click', function (e) {
+  const a = e.target.closest && e.target.closest('a.zad-xref');
+  if (a) { e.preventDefault(); openXref(a); }
+});
+
+// Tabla opcional del término: item.table = {titleAr,titleEs,headAr,headEs,rows:[[antes,"ar|es",después]]}; «-» = celda tachada
+// Aviso solo para el administrador: otros elementos de la misma sección con el mismo texto árabe (ignora tashkil y puntuación).
+let _sharedIdx = null;
+function sharedTextNorm(s) {
+  return String(s || '').normalize('NFD').replace(/[\u0300-\u036f\u064B-\u065F\u0670\u06D6-\u06ED\u0640]/g, '')
+    .replace(/[أإآٱ]/g, 'ا').replace(/ى/g, 'ي').replace(/ة/g, 'ه').replace(/[^\p{L}\p{N}]/gu, '');
+}
+function renderSharedTextNotice(item, isEs) {
+  if (typeof isAdminMode !== 'function' || !isAdminMode() || !item || item.isInfo || !currentSection) return '';
+  const key = sharedTextNorm(item.text);
+  if (!key) return '';
+  const now = Date.now();
+  const SEC = ['azkar', 'adya', 'ruqyah'];
+  const missing = SEC.filter(x => !isSectionLoaded(x));
+  if (missing.length && !renderSharedTextNotice._loading) {
+    renderSharedTextNotice._loading = true;
+    Promise.all(missing.map(loadSection)).then(() => { _sharedIdx = null; if (typeof renderGroupItems === 'function' && currentGroup) renderGroupItems(); }).catch(() => {});
+  }
+  if (!_sharedIdx || now - _sharedIdx.t > 10000) {
+    const map = new Map();
+    SEC.forEach(sec => {
+      const m = getSectionModule(sec);
+      const groups = m && typeof m.getGroups === 'function' ? m.getGroups() : [];
+      groups.forEach(g => (g.items || []).forEach((it, i) => {
+        if (!it || it.isInfo) return;
+        const k = sharedTextNorm(it.text); if (!k) return;
+        (map.get(k) || map.set(k, []).get(k)).push({ sec, gid: g.id, num: Number(it.itemNumber) || (i + 1) });
+      }));
+    });
+    _sharedIdx = { t: now, map };
+  }
+  const me = Number(item.itemNumber) || 0;
+  const others = (_sharedIdx.map.get(key) || []).filter(o => !(o.sec === currentSection && o.num === me));
+  if (!others.length) return '';
+  const names = { azkar: ['ذكر', 'Zikr'], adya: ['دعاء', 'Dua'], munajat: ['مناجاة', 'Munajat'], ruqyah: ['رقية', 'Ruqya'] };
+  const links = others.slice(0, 12).map(o => { const nm = (names[o.sec] || ['رقم', 'N.º'])[isEs ? 1 : 0]; return `<a href="#" class="zad-xref zad-chip-sm" data-xs="${o.sec}" data-xg="${o.gid}" data-xn="${o.num}">${nm} ${isEs ? 'n.º ' : ''}${o.num}</a>`; }).join('');
+  return `<div data-no-share class="zad-shared-note" dir="${isEs ? 'ltr' : 'rtl'}"><span>⚠ ${isEs ? 'Admin: este elemento comparte el mismo texto con' : 'للمشرف: يشترك هذا النص مع'}</span> ${links}${others.length > 12 ? ' …' : ''}</div>`;
+}
+
+function renderItemLinks(item, isEs) {
+  const ls = item && item.links;
+  if (!Array.isArray(ls) || !ls.length) return '';
+  const names = { azkar: ['الأذكار', 'Adhkar'], adya: ['الأدعية', 'Súplicas'], ruqyah: ['الرقية', 'Ruqya'], munajat: ['المناجاة', 'Munayat'], asma: ['الأسماء الحسنى', 'Nombres de Allah'] };
+  const pre = isEs ? 'Ver en' : 'انظر في';
+  return `<div class="zad-links" dir="${isEs ? 'ltr' : 'rtl'}">` + ls.map(l => {
+    const sn = (names[l.section] || ['', ''])[isEs ? 1 : 0];
+    const label = isEs ? (l.es || l.ar) : (l.ar || l.es);
+    return `<a href="#" class="zad-xref zad-chip" data-xs="${l.section}" data-xg="${l.group}"${l.num ? ` data-xn="${l.num}"` : ''}>↗ ${pre} ${sn}: ${label}${l.num ? ` (${isEs ? 'n.º ' : 'رقم '}${l.num})` : ''}</a>`;
+  }).join('') + '</div>';
+}
+
+function renderItemTable(item, isEs) {
+  const t = item && item.table;
+  if (!t) return renderItemLinks(item, isEs);
+  const head = (isEs ? t.headEs : t.headAr) || [];
+  const cell = v => v === '-' ? '<span class="zad-table-none"></span>' : v;
+  const rows = t.rows.map(r => { const p = String(r[1]).split('|'); return `<tr><td>${cell(r[0])}</td><th>${isEs ? (p[1] || p[0]) : p[0]}</th><td>${cell(r[2])}</td></tr>`; }).join('');
+  return `<div class="zad-table-wrap" dir="${isEs ? 'ltr' : 'rtl'}"><div class="zad-table-title">${isEs ? t.titleEs : t.titleAr}</div><table class="zad-table"><thead><tr>${head.map(h => `<th>${h}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div>` + renderItemLinks(item, isEs);
+}
+
+function formatQuotedText(str) {
+  const text = formatTextWithNewlines(str);
+  if (!text) return '';
+  return text
+    .replace(/﴿[^﴾]*﴾/g, m => `<span class="inline-quran">${m}</span>`)
+    .replace(/«[^»]*»(\s*\[[^\]]+\])?/g, (m, ref) => `<span class="${ref ? 'inline-quran-tr' : 'inline-hadith'}">${m}</span>`);
+}
+
+// En la app de Android, MainActivity expone window.AndroidBridge (copiar y compartir nativos).
+function copyText(text) {
+  const done = () => showToast(currentLang === 'es' ? 'Copiado al portapapeles' : 'تم نسخ النص بنجاح');
+  if (window.AndroidBridge && typeof window.AndroidBridge.copy === 'function') {
+    window.AndroidBridge.copy(text);
+    done();
+    return;
+  }
+  if (navigator.clipboard) navigator.clipboard.writeText(text).then(done).catch(() => {});
+}
+
+function shareText(text) {
+  if (window.AndroidBridge && typeof window.AndroidBridge.share === 'function') {
+    window.AndroidBridge.share(text);
+    return;
+  }
+  if (navigator.share) navigator.share({ title: 'زاد القلوب', text: text }).catch(() => {});
+  else copyText(text);
+}
+
+// Compartir la tarjeta completa (con su fondo) como imagen PNG.
+// html2canvas se carga solo la primera vez que se comparte (assets/html2canvas.min.js).
+var _html2canvasPromise = null;
+function loadHtml2Canvas() {
+  if (window.html2canvas) return Promise.resolve(window.html2canvas);
+  if (_html2canvasPromise) return _html2canvasPromise;
+  _html2canvasPromise = new Promise(function (resolve, reject) {
+    var s = document.createElement('script');
+    s.src = 'html2canvas.min.js';
+    s.onload = function () { window.html2canvas ? resolve(window.html2canvas) : reject(new Error('html2canvas')); };
+    s.onerror = function () { _html2canvasPromise = null; reject(new Error('html2canvas')); };
+    document.head.appendChild(s);
+  });
+  return _html2canvasPromise;
+}
+
+async function renderCardToCanvas(card) {
+  const html2canvas = await loadHtml2Canvas();
+  if (document.fonts && document.fonts.ready) { try { await document.fonts.ready; } catch (e) {} }
+  const pageBg = getComputedStyle(document.body).backgroundColor || '#ffffff';
+  return html2canvas(card, {
+    scale: Math.min(2, window.devicePixelRatio || 2),
+    useCORS: true,
+    logging: false,
+    backgroundColor: pageBg,
+    // Se omiten el contador, el reproductor de audio y la fila de botones.
+    ignoreElements: function (el) { return !!(el.hasAttribute && el.hasAttribute('data-no-share')); },
+    onclone: function (doc, cloned) {
+      // El espaciado entre letras rompe la unión de las letras árabes al dibujar.
+      cloned.style.letterSpacing = 'normal';
+      cloned.querySelectorAll('*').forEach(function (el) { el.style.letterSpacing = 'normal'; });
+      cloned.style.boxShadow = 'none';
+      cloned.style.margin = '0';
+      const mark = doc.createElement('div');
+      mark.textContent = 'زاد القلوب · Zad Al-Qulub';
+      mark.style.cssText = 'text-align:center;font-size:13px;font-weight:700;opacity:.55;padding-top:6px;letter-spacing:normal;';
+      cloned.appendChild(mark);
+    }
+  });
+}
+
+async function shareCard(btn, text) {
+  const card = btn && btn.closest ? btn.closest('.card-paper-bg') : null;
+  if (!card) { shareText(text); return; }
+  showToast(currentLang === 'es' ? 'Preparando imagen…' : 'جارٍ تجهيز الصورة…');
+  try {
+    const canvas = await renderCardToCanvas(card);
+    if (window.AndroidBridge && typeof window.AndroidBridge.shareImage === 'function') {
+      window.AndroidBridge.shareImage(canvas.toDataURL('image/png').split(',')[1]);
+      return;
+    }
+    const blob = await new Promise(function (resolve) { canvas.toBlob(resolve, 'image/png'); });
+    if (blob) {
+      const file = new File([blob], 'zad-al-qulub.png', { type: 'image/png' });
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        await navigator.share({ files: [file], title: 'زاد القلوب' });
+        return;
+      }
+    }
+    shareText(text);
+  } catch (e) {
+    if (e && e.name === 'AbortError') return;
+    shareText(text);
+  }
+}
+
+// Identificador estable de un elemento: sección|grupo|número del elemento.
+// No cambia si se corrige el texto (tashkil, traducción) ni si se mueven otros elementos del grupo.
+function getItemId(section, group, index) {
+  const item = group && Array.isArray(group.items) ? group.items[index] : null;
+  const number = item && Number(item.itemNumber) ? Number(item.itemNumber) : index + 1;
+  return section + '|' + (group ? group.id : '') + '|' + number;
+}
+
+// Grupos que se han unido en otro: el identificador antiguo apunta al grupo nuevo.
+const GROUP_ID_ALIASES = {
+  'azkar|lubs_thawb': 'azkar|libas', 'azkar|lubs_thawb_jadid': 'azkar|libas',
+  'azkar|dua_liman_labisa_thawban_jadidan': 'azkar|libas', 'azkar|wada_thawb': 'azkar|libas',
+  'azkar|dukhul_khala': 'azkar|khala', 'azkar|khuruj_khala': 'azkar|khala',
+  'azkar|qabla_wudu': 'azkar|wudu', 'azkar|bada_wudu': 'azkar|wudu',
+  'azkar|khuruj_manzil': 'azkar|manzil', 'azkar|dukhul_manzil': 'azkar|manzil',
+  'azkar|dhahab_masjid': 'azkar|masjid', 'azkar|dukhul_masjid': 'azkar|masjid', 'azkar|khuruj_masjid': 'azkar|masjid',
+  'azkar|istiftah_salah': 'azkar|salat', 'azkar|ruku': 'azkar|salat', 'azkar|raf_ruku': 'azkar|salat', 'azkar|sujud': 'azkar|salat', 'azkar|jalsa_sajdatayn': 'azkar|salat', 'azkar|tashahhud': 'azkar|salat', 'azkar|salah_ala_nabi_tashahhud': 'azkar|salat', 'azkar|dua_bada_tashahhud': 'azkar|salat',
+  'azkar|taqallub_firash': 'azkar|layl', 'azkar|faza_nawm': 'azkar|layl', 'azkar|ruya_hulm': 'azkar|layl',
+  'azkar|qunut_witr': 'azkar|witr', 'azkar|azkar_bada_witr': 'azkar|witr',
+  'azkar|hamm_hazan': 'azkar|karb_khawf', 'azkar|karb': 'azkar|karb_khawf', 'azkar|liqa_aduw': 'azkar|karb_khawf', 'azkar|khawf_zulm_sultan': 'azkar|karb_khawf', 'azkar|dua_ala_aduw': 'azkar|karb_khawf', 'azkar|khawf_qawm': 'azkar|karb_khawf',
+  'azkar|waswasa_iman': 'azkar|waswasa_shadaid', 'azkar|qada_dayn': 'azkar|waswasa_shadaid', 'azkar|waswasa_salah': 'azkar|waswasa_shadaid', 'azkar|istasaba_amr': 'azkar|waswasa_shadaid', 'azkar|man_adhnaba': 'azkar|waswasa_shadaid', 'azkar|tard_shaytan': 'azkar|waswasa_shadaid', 'azkar|lama_yaqau_ma_la_yardah': 'azkar|waswasa_shadaid',
+  'azkar|tahniat_mawlud': 'azkar|awlad', 'azkar|tawid_awlad': 'azkar|awlad',
+  'azkar|dua_marid': 'azkar|marid', 'azkar|fadl_iyadat_marid': 'azkar|marid', 'azkar|marid_yaisa': 'azkar|marid', 'azkar|talqin_muhtadar': 'azkar|marid',
+  'azkar|dua_musibah': 'azkar|janaiz', 'azkar|ighmad_mayyit': 'azkar|janaiz', 'azkar|dua_mayyit_salah': 'azkar|janaiz', 'azkar|dua_farat': 'azkar|janaiz', 'azkar|tazia': 'azkar|janaiz', 'azkar|idkhal_mayyit_qabr': 'azkar|janaiz', 'azkar|bada_dafn_mayyit': 'azkar|janaiz', 'azkar|ziyarat_qubur': 'azkar|janaiz',
+  'azkar|dua_rih': 'azkar|rih_matar', 'azkar|dua_rad': 'azkar|rih_matar', 'azkar|istisqa': 'azkar|rih_matar', 'azkar|nuzul_matar': 'azkar|rih_matar', 'azkar|bada_matar': 'azkar|rih_matar', 'azkar|istishqa': 'azkar|rih_matar', 'azkar|ruyat_hilal': 'azkar|rih_matar',
+  'azkar|iftar_saim': 'azkar|taam_siyam', 'azkar|qabla_taam': 'azkar|taam_siyam', 'azkar|bada_taam': 'azkar|taam_siyam', 'azkar|dua_dayf': 'azkar|taam_siyam', 'azkar|talab_taam_sharab': 'azkar|taam_siyam', 'azkar|iftar_ind_ahl_bayt': 'azkar|taam_siyam', 'azkar|saim_hadara_taam': 'azkar|taam_siyam', 'azkar|saim_sabbahu_ahad': 'azkar|taam_siyam', 'azkar|bakurat_thamar': 'azkar|taam_siyam',
+  'azkar|atas': 'azkar|utas', 'azkar|atas_kafir': 'azkar|utas',
+  'azkar|dua_mutazawwij': 'azkar|zawaj', 'azkar|dua_mutazawwij_dabbah': 'azkar|zawaj', 'azkar|qabla_ityan_zawjah': 'azkar|zawaj',
+  'azkar|ghadab': 'azkar|muamala', 'azkar|ruyat_mubtala': 'azkar|muamala', 'azkar|fi_majlis': 'azkar|muamala', 'azkar|kaffarat_majlis': 'azkar|muamala', 'azkar|dua_liman_qala_ghafarallah_lak': 'azkar|muamala', 'azkar|dua_liman_sanaa_marufan': 'azkar|muamala', 'azkar|ismah_min_dajjal': 'azkar|muamala', 'azkar|dua_liman_qala_uhibbuk_fillah': 'azkar|muamala', 'azkar|dua_liman_arada_malahu': 'azkar|muamala', 'azkar|dua_liman_aqrada': 'azkar|muamala', 'azkar|khawf_shirk': 'azkar|muamala', 'azkar|dua_liman_qala_barakallah_fik': 'azkar|muamala', 'azkar|karahiyat_tiyarah': 'azkar|muamala',
+  'azkar|rukub': 'azkar|safar_all', 'azkar|safar': 'azkar|safar_all', 'azkar|dukhul_qaryah': 'azkar|safar_all', 'azkar|dukhul_suq': 'azkar|safar_all', 'azkar|taisa_markub': 'azkar|safar_all', 'azkar|musafir_lil_muqim': 'azkar|safar_all', 'azkar|muqim_lil_musafir': 'azkar|safar_all', 'azkar|takbir_tasbih_safar': 'azkar|safar_all', 'azkar|musafir_ashara': 'azkar|safar_all', 'azkar|nazala_manzilan': 'azkar|safar_all', 'azkar|ruju_min_safar': 'azkar|safar_all',
+  'azkar|ifsha_salam': 'azkar|salam', 'azkar|radd_salam_ala_kafir': 'azkar|salam',
+  'azkar|siyah_dik_nahiq_himar': 'azkar|hayawan', 'azkar|nubah_kilab': 'azkar|hayawan',
+  'azkar|talbiyah_hajj_umrah': 'azkar|hajj', 'azkar|takbir_rukn_aswad': 'azkar|hajj', 'azkar|dua_bayn_yamani_hajar': 'azkar|hajj', 'azkar|wuquf_safa_marwah': 'azkar|hajj', 'azkar|yawm_arafah': 'azkar|hajj', 'azkar|mashar_haram': 'azkar|hajj', 'azkar|takbir_ramy_jamarat': 'azkar|hajj'
+};
+
+// Azkar: grupos separados de nuevo (los números de algunos azkar cambiaron).
+// Las claves de «waswasa_shadaid» ya no existen y se pueden aplicar siempre; las de «muamala»
+// solo una vez (ZAD_FAV_REMAP_FLAG), porque ese id de grupo se sigue usando.
+const AZKAR_ITEM_REMAP_V2 = {
+  'azkar|waswasa_shadaid|163': 'azkar|waswasa|163',
+  'azkar|waswasa_shadaid|164': 'azkar|waswasa|164',
+  'azkar|waswasa_shadaid|165': 'azkar|waswasa|165',
+  'azkar|waswasa_shadaid|168': 'azkar|waswasa|166',
+  'azkar|waswasa_shadaid|171': 'azkar|waswasa|167',
+  'azkar|waswasa_shadaid|172': 'azkar|waswasa|168',
+  'azkar|waswasa_shadaid|173': 'azkar|waswasa|169',
+  'azkar|waswasa_shadaid|166': 'azkar|shadaid|170',
+  'azkar|waswasa_shadaid|167': 'azkar|shadaid|171',
+  'azkar|waswasa_shadaid|169': 'azkar|shadaid|172',
+  'azkar|waswasa_shadaid|170': 'azkar|shadaid|173',
+  'azkar|waswasa_shadaid|174': 'azkar|shadaid|174',
+  'azkar|muamala|230': 'azkar|muamala|229',
+  'azkar|muamala|231': 'azkar|muamala|230',
+  'azkar|muamala|232': 'azkar|muamala|231',
+  'azkar|muamala|234': 'azkar|muamala|232',
+  'azkar|muamala|229': 'azkar|himayat_din|233',
+  'azkar|muamala|233': 'azkar|himayat_din|234',
+  'azkar|muamala|235': 'azkar|himayat_din|235'
+};
+const ZAD_FAV_REMAP_FLAG = 'zad_fav_remap_v2';
+
+// Azkar que pasaron a otro grupo conservando su numero: el id antiguo apunta al nuevo.
+const ITEM_MOVES = {
+  'azkar|salat|116': 'azkar|sujud_tilawa|116',
+  'azkar|salat|117': 'azkar|sujud_tilawa|117',
+  'azkar|marid|180': 'adya|adya_ihtidar|360', 'azkar|marid|181': 'adya|adya_ihtidar|363', 'azkar|marid|182': 'adya|adya_ihtidar|378', 'azkar|marid|183': 'adya|adya_ihtidar|359',
+  'azkar|janaiz|184': 'adya|adya_musiba|380', 'azkar|janaiz|185': 'adya|adya_ihtidar|364', 'azkar|janaiz|186': 'adya|adya_lilmawta|373', 'azkar|janaiz|187': 'adya|adya_lilmawta|372',
+  'azkar|janaiz|188': 'adya|adya_lilmawta|374', 'azkar|janaiz|189': 'adya|adya_lilmawta|379', 'azkar|janaiz|190': 'adya|adya_atfal_mawta|376', 'azkar|janaiz|191': 'adya|adya_atfal_mawta|375',
+  'azkar|janaiz|192': 'adya|adya_musiba|381', 'azkar|janaiz|193': 'adya|adya_ba3d_dafn|365', 'azkar|janaiz|194': 'adya|adya_ba3d_dafn|367', 'azkar|janaiz|195': 'adya|adya_ba3d_dafn|368'
+};
+
+// Renumeración de azkar (números por orden de archivo): los favoritos guardados con el número antiguo se pasan UNA vez al nuevo.
+const AZKAR_NUM_REMAP_V3 = {
+  'azkar|sabah|21': 'azkar|sabah|20', 'azkar|sabah|22': 'azkar|sabah|21', 'azkar|sabah|23': 'azkar|sabah|22', 'azkar|sabah|24': 'azkar|sabah|23',
+  'azkar|sabah|25': 'azkar|sabah|24', 'azkar|masaa|26': 'azkar|masaa|25', 'azkar|masaa|27': 'azkar|masaa|26', 'azkar|masaa|28': 'azkar|masaa|27',
+  'azkar|masaa|29': 'azkar|masaa|28', 'azkar|masaa|30': 'azkar|masaa|29', 'azkar|masaa|31': 'azkar|masaa|30', 'azkar|masaa|32': 'azkar|masaa|31',
+  'azkar|masaa|33': 'azkar|masaa|32', 'azkar|masaa|34': 'azkar|masaa|33', 'azkar|masaa|35': 'azkar|masaa|34', 'azkar|masaa|36': 'azkar|masaa|35',
+  'azkar|masaa|37': 'azkar|masaa|36', 'azkar|masaa|38': 'azkar|masaa|37', 'azkar|masaa|39': 'azkar|masaa|38', 'azkar|masaa|40': 'azkar|masaa|39',
+  'azkar|masaa|41': 'azkar|masaa|40', 'azkar|masaa|42': 'azkar|masaa|41', 'azkar|masaa|43': 'azkar|masaa|42', 'azkar|masaa|44': 'azkar|masaa|43',
+  'azkar|masaa|45': 'azkar|masaa|44', 'azkar|masaa|47': 'azkar|masaa|45', 'azkar|masaa|48': 'azkar|masaa|46', 'azkar|masaa|49': 'azkar|masaa|47',
+  'azkar|masaa|50': 'azkar|masaa|48', 'azkar|nawm|51': 'azkar|nawm|49', 'azkar|nawm|52': 'azkar|nawm|50', 'azkar|nawm|53': 'azkar|nawm|51',
+  'azkar|nawm|54': 'azkar|nawm|52', 'azkar|nawm|55': 'azkar|nawm|53', 'azkar|nawm|56': 'azkar|nawm|54', 'azkar|nawm|57': 'azkar|nawm|55',
+  'azkar|nawm|58': 'azkar|nawm|56', 'azkar|nawm|59': 'azkar|nawm|57', 'azkar|nawm|60': 'azkar|nawm|58', 'azkar|nawm|61': 'azkar|nawm|59',
+  'azkar|nawm|62': 'azkar|nawm|60', 'azkar|nawm|63': 'azkar|nawm|61', 'azkar|nawm|64': 'azkar|nawm|62', 'azkar|nawm|65': 'azkar|nawm|63',
+  'azkar|nawm|66': 'azkar|nawm|64', 'azkar|istiyqadh|67': 'azkar|istiyqadh|65', 'azkar|istiyqadh|68': 'azkar|istiyqadh|66',
+  'azkar|istiyqadh|69': 'azkar|istiyqadh|67', 'azkar|istiyqadh|70': 'azkar|istiyqadh|68', 'azkar|layl|142': 'azkar|layl|69',
+  'azkar|layl|143': 'azkar|layl|70', 'azkar|layl|144': 'azkar|layl|71', 'azkar|khala|76': 'azkar|khala|72', 'azkar|khala|77': 'azkar|khala|73',
+  'azkar|wudu|78': 'azkar|wudu|74', 'azkar|wudu|79': 'azkar|wudu|75', 'azkar|wudu|80': 'azkar|wudu|76', 'azkar|wudu|81': 'azkar|wudu|77',
+  'azkar|masjid|85': 'azkar|masjid|78', 'azkar|masjid|86': 'azkar|masjid|79', 'azkar|masjid|87': 'azkar|masjid|80',
+  'azkar|azkar_adhan|88': 'azkar|azkar_adhan|81', 'azkar|azkar_adhan|89': 'azkar|azkar_adhan|82', 'azkar|azkar_adhan|90': 'azkar|azkar_adhan|83',
+  'azkar|azkar_adhan|91': 'azkar|azkar_adhan|84', 'azkar|azkar_adhan|92': 'azkar|azkar_adhan|85', 'azkar|salat|93': 'azkar|salat|86',
+  'azkar|salat|94': 'azkar|salat|87', 'azkar|salat|95': 'azkar|salat|88', 'azkar|salat|96': 'azkar|salat|89', 'azkar|salat|97': 'azkar|salat|90',
+  'azkar|salat|98': 'azkar|salat|91', 'azkar|salat|99': 'azkar|salat|92', 'azkar|salat|100': 'azkar|salat|93', 'azkar|salat|101': 'azkar|salat|94',
+  'azkar|salat|102': 'azkar|salat|95', 'azkar|salat|103': 'azkar|salat|96', 'azkar|salat|104': 'azkar|salat|97', 'azkar|salat|105': 'azkar|salat|98',
+  'azkar|salat|106': 'azkar|salat|99', 'azkar|salat|107': 'azkar|salat|100', 'azkar|salat|108': 'azkar|salat|101', 'azkar|salat|109': 'azkar|salat|102',
+  'azkar|salat|110': 'azkar|salat|103', 'azkar|salat|111': 'azkar|salat|104', 'azkar|salat|112': 'azkar|salat|105', 'azkar|salat|113': 'azkar|salat|106',
+  'azkar|salat|114': 'azkar|salat|107', 'azkar|salat|115': 'azkar|salat|108', 'azkar|salat|118': 'azkar|salat|109', 'azkar|salat|119': 'azkar|salat|110',
+  'azkar|salat|120': 'azkar|salat|111', 'azkar|salat|121': 'azkar|salat|112', 'azkar|salat|123': 'azkar|salat|113', 'azkar|salat|124': 'azkar|salat|114',
+  'azkar|salat|125': 'azkar|salat|115', 'azkar|salat|126': 'azkar|salat|116', 'azkar|salat|127': 'azkar|salat|117', 'azkar|salat|128': 'azkar|salat|118',
+  'azkar|salat|129': 'azkar|salat|119', 'azkar|salat|130': 'azkar|salat|120', 'azkar|azkar_bada_salah|132': 'azkar|azkar_bada_salah|121',
+  'azkar|azkar_bada_salah|133': 'azkar|azkar_bada_salah|122', 'azkar|azkar_bada_salah|134': 'azkar|azkar_bada_salah|123',
+  'azkar|azkar_bada_salah|135': 'azkar|azkar_bada_salah|124', 'azkar|azkar_bada_salah|137': 'azkar|azkar_bada_salah|125',
+  'azkar|azkar_bada_salah|138': 'azkar|azkar_bada_salah|126', 'azkar|azkar_bada_salah|139': 'azkar|azkar_bada_salah|127',
+  'azkar|azkar_bada_salah|140': 'azkar|azkar_bada_salah|128', 'azkar|sujud_tilawa|116': 'azkar|sujud_tilawa|129',
+  'azkar|sujud_tilawa|117': 'azkar|sujud_tilawa|130', 'azkar|witr|146': 'azkar|witr|131', 'azkar|witr|147': 'azkar|witr|132',
+  'azkar|witr|148': 'azkar|witr|133', 'azkar|witr|149': 'azkar|witr|134', 'azkar|istikhara|141': 'azkar|istikhara|135',
+  'azkar|karb_khawf|150': 'azkar|karb_khawf|136', 'azkar|karb_khawf|151': 'azkar|karb_khawf|137', 'azkar|karb_khawf|152': 'azkar|karb_khawf|138',
+  'azkar|karb_khawf|153': 'azkar|karb_khawf|139', 'azkar|karb_khawf|154': 'azkar|karb_khawf|140', 'azkar|karb_khawf|155': 'azkar|karb_khawf|141',
+  'azkar|karb_khawf|156': 'azkar|karb_khawf|142', 'azkar|karb_khawf|157': 'azkar|karb_khawf|143', 'azkar|karb_khawf|158': 'azkar|karb_khawf|144',
+  'azkar|karb_khawf|159': 'azkar|karb_khawf|145', 'azkar|karb_khawf|160': 'azkar|karb_khawf|146', 'azkar|karb_khawf|161': 'azkar|karb_khawf|147',
+  'azkar|karb_khawf|162': 'azkar|karb_khawf|148', 'azkar|waswasa|163': 'azkar|waswasa|149', 'azkar|waswasa|164': 'azkar|waswasa|150',
+  'azkar|waswasa|165': 'azkar|waswasa|151', 'azkar|waswasa|166': 'azkar|waswasa|152', 'azkar|waswasa|167': 'azkar|waswasa|153',
+  'azkar|waswasa|168': 'azkar|waswasa|154', 'azkar|waswasa|169': 'azkar|waswasa|155', 'azkar|shadaid|170': 'azkar|shadaid|156',
+  'azkar|shadaid|171': 'azkar|shadaid|157', 'azkar|shadaid|172': 'azkar|shadaid|158', 'azkar|shadaid|173': 'azkar|shadaid|159',
+  'azkar|shadaid|174': 'azkar|shadaid|160', 'azkar|amr_yakrahuh|248': 'azkar|amr_yakrahuh|161',
+  'azkar|khashya_isabat_ayn|274': 'azkar|khashya_isabat_ayn|162', 'azkar|ind_faza|275': 'azkar|ind_faza|163',
+  'azkar|radd_kayd_shayatin|277': 'azkar|radd_kayd_shayatin|164', 'azkar|himayat_din|233': 'azkar|himayat_din|165',
+  'azkar|himayat_din|234': 'azkar|himayat_din|166', 'azkar|himayat_din|235': 'azkar|himayat_din|167', 'azkar|libas|71': 'azkar|libas|168',
+  'azkar|libas|72': 'azkar|libas|169', 'azkar|libas|73': 'azkar|libas|170', 'azkar|libas|74': 'azkar|libas|171', 'azkar|libas|75': 'azkar|libas|172',
+  'azkar|manzil|82': 'azkar|manzil|173', 'azkar|manzil|83': 'azkar|manzil|174', 'azkar|manzil|84': 'azkar|manzil|175',
+  'azkar|taam_siyam|206': 'azkar|taam_siyam|176', 'azkar|taam_siyam|207': 'azkar|taam_siyam|177', 'azkar|taam_siyam|208': 'azkar|taam_siyam|178',
+  'azkar|taam_siyam|209': 'azkar|taam_siyam|179', 'azkar|taam_siyam|210': 'azkar|taam_siyam|180', 'azkar|taam_siyam|211': 'azkar|taam_siyam|181',
+  'azkar|taam_siyam|212': 'azkar|taam_siyam|182', 'azkar|taam_siyam|213': 'azkar|taam_siyam|183', 'azkar|taam_siyam|214': 'azkar|taam_siyam|184',
+  'azkar|taam_siyam|216': 'azkar|taam_siyam|185', 'azkar|safar_all|236': 'azkar|safar_all|186', 'azkar|safar_all|237': 'azkar|safar_all|187',
+  'azkar|safar_all|238': 'azkar|safar_all|188', 'azkar|safar_all|239': 'azkar|safar_all|189', 'azkar|safar_all|240': 'azkar|safar_all|190',
+  'azkar|safar_all|241': 'azkar|safar_all|191', 'azkar|safar_all|242': 'azkar|safar_all|192', 'azkar|safar_all|243': 'azkar|safar_all|193',
+  'azkar|safar_all|244': 'azkar|safar_all|194', 'azkar|safar_all|245': 'azkar|safar_all|195', 'azkar|safar_all|246': 'azkar|safar_all|196',
+  'azkar|safar_all|247': 'azkar|safar_all|197', 'azkar|marid|177': 'azkar|marid|198', 'azkar|marid|178': 'azkar|marid|199',
+  'azkar|marid|179': 'azkar|marid|200', 'azkar|waja_fi_jasad|273': 'azkar|waja_fi_jasad|201', 'azkar|zawaj|220': 'azkar|zawaj|202',
+  'azkar|zawaj|221': 'azkar|zawaj|203', 'azkar|zawaj|222': 'azkar|zawaj|204', 'azkar|awlad|175': 'azkar|awlad|205', 'azkar|awlad|176': 'azkar|awlad|206',
+  'azkar|dhabh_nahr|276': 'azkar|dhabh_nahr|207', 'azkar|amr_yasurruh|272': 'azkar|amr_yasurruh|208',
+  'azkar|taajjub_amr_sarr|270': 'azkar|taajjub_amr_sarr|209', 'azkar|taajjub_amr_sarr|271': 'azkar|taajjub_amr_sarr|210',
+  'azkar|muamala|223': 'azkar|muamala|211', 'azkar|muamala|224': 'azkar|muamala|212', 'azkar|muamala|225': 'azkar|muamala|213',
+  'azkar|muamala|226': 'azkar|muamala|214', 'azkar|muamala|228': 'azkar|muamala|215', 'azkar|muamala|229': 'azkar|muamala|216',
+  'azkar|muamala|230': 'azkar|muamala|217', 'azkar|muamala|231': 'azkar|muamala|218', 'azkar|muamala|232': 'azkar|muamala|219',
+  'azkar|salam|254': 'azkar|salam|220', 'azkar|salam|255': 'azkar|salam|221', 'azkar|salam|256': 'azkar|salam|222', 'azkar|salam|257': 'azkar|salam|223',
+  'azkar|utas|218': 'azkar|utas|224', 'azkar|utas|219': 'azkar|utas|225', 'azkar|dua_liman_sababtah|260': 'azkar|dua_liman_sababtah|226',
+  'azkar|madh_muslim|261': 'azkar|madh_muslim|227', 'azkar|idha_zukkiya|262': 'azkar|idha_zukkiya|228',
+  'azkar|anwa_khayr_adab|297': 'azkar|anwa_khayr_adab|229', 'azkar|rih_matar|196': 'azkar|rih_matar|230', 'azkar|rih_matar|197': 'azkar|rih_matar|231',
+  'azkar|rih_matar|198': 'azkar|rih_matar|232', 'azkar|rih_matar|199': 'azkar|rih_matar|233', 'azkar|rih_matar|200': 'azkar|rih_matar|234',
+  'azkar|rih_matar|201': 'azkar|rih_matar|235', 'azkar|rih_matar|202': 'azkar|rih_matar|236', 'azkar|rih_matar|203': 'azkar|rih_matar|237',
+  'azkar|rih_matar|204': 'azkar|rih_matar|238', 'azkar|rih_matar|205': 'azkar|rih_matar|239', 'azkar|hayawan|258': 'azkar|hayawan|240',
+  'azkar|hayawan|259': 'azkar|hayawan|241', 'azkar|fadl_salah_ala_nabi|249': 'rosario|fadl_salah_ala_nabi|1',
+  'azkar|fadl_salah_ala_nabi|250': 'rosario|fadl_salah_ala_nabi|2', 'azkar|fadl_salah_ala_nabi|251': 'rosario|fadl_salah_ala_nabi|3',
+  'azkar|fadl_salah_ala_nabi|252': 'rosario|fadl_salah_ala_nabi|4', 'azkar|fadl_salah_ala_nabi|253': 'rosario|fadl_salah_ala_nabi|5',
+  'azkar|istighfar_tawbah|278': 'rosario|istighfar_tawbah|6', 'azkar|istighfar_tawbah|279': 'rosario|istighfar_tawbah|7',
+  'azkar|istighfar_tawbah|280': 'rosario|istighfar_tawbah|8', 'azkar|istighfar_tawbah|281': 'rosario|istighfar_tawbah|9',
+  'azkar|istighfar_tawbah|282': 'rosario|istighfar_tawbah|10', 'azkar|istighfar_tawbah|283': 'rosario|istighfar_tawbah|11',
+  'azkar|fadl_tasbih_tahlil|284': 'rosario|fadl_tasbih_tahlil|12', 'azkar|fadl_tasbih_tahlil|285': 'rosario|fadl_tasbih_tahlil|13',
+  'azkar|fadl_tasbih_tahlil|286': 'rosario|fadl_tasbih_tahlil|14', 'azkar|fadl_tasbih_tahlil|287': 'rosario|fadl_tasbih_tahlil|15',
+  'azkar|fadl_tasbih_tahlil|288': 'rosario|fadl_tasbih_tahlil|16', 'azkar|fadl_tasbih_tahlil|289': 'rosario|fadl_tasbih_tahlil|17',
+  'azkar|fadl_tasbih_tahlil|290': 'rosario|fadl_tasbih_tahlil|18', 'azkar|fadl_tasbih_tahlil|291': 'rosario|fadl_tasbih_tahlil|19',
+  'azkar|fadl_tasbih_tahlil|292': 'rosario|fadl_tasbih_tahlil|20', 'azkar|fadl_tasbih_tahlil|293': 'rosario|fadl_tasbih_tahlil|21',
+  'azkar|fadl_tasbih_tahlil|294': 'rosario|fadl_tasbih_tahlil|22', 'azkar|fadl_tasbih_tahlil|295': 'rosario|fadl_tasbih_tahlil|23',
+  'azkar|kayfa_yusabbih_nabi|296': 'rosario|kayfa_yusabbih_nabi|24'
+};
+const ZAD_FAV_REMAP_V3_FLAG = 'zad_fav_remap_v3';
+
+function normaliseItemId(id, useMoves) {
+  const parts = String(id || '').split('|');
+  if (parts.length !== 3) return id;
+  const alias = GROUP_ID_ALIASES[parts[0] + '|' + parts[1]];
+  const resolved = alias ? alias + '|' + parts[2] : id;
+  // ITEM_MOVES usa numeración antigua: solo en la migración única (si no, chocaría con los números nuevos).
+  return (useMoves && ITEM_MOVES[resolved]) || resolved;
+}
+
+function findItemById(id) {
+  const parts = String(normaliseItemId(id) || '').split('|');
+  if (parts.length !== 3) return null;
+  const module = getSectionModule(parts[0]);
+  const group = module && typeof module.findGroup === 'function' ? module.findGroup(parts[1]) : null;
+  if (!group || !Array.isArray(group.items)) return null;
+  const number = Number(parts[2]);
+  const index = group.items.findIndex(function (it, i) { return (Number(it.itemNumber) || i + 1) === number; });
+  return index < 0 ? null : { section: parts[0], group: group, index: index, item: group.items[index] };
+}
+
+function loadFavorites() {
+  try {
+    const saved = JSON.parse(safeGetStorage(FAV_IDS_KEY) || 'null');
+    favorites = Array.isArray(saved) ? saved : [];
+    // Pasar los favoritos de grupos que se han unido a su grupo nuevo.
+    const remapOnce = !safeGetStorage(ZAD_FAV_REMAP_FLAG);
+    const remapV3 = !safeGetStorage(ZAD_FAV_REMAP_V3_FLAG);
+    const normalised = favorites.map(function (id) { return normaliseItemId(id, remapV3); }).map(function (id) {
+      const target = AZKAR_ITEM_REMAP_V2[id];
+      if (!target) return id;
+      return (remapOnce || id.indexOf('azkar|waswasa_shadaid|') === 0) ? target : id;
+    }).filter(function (id, i, arr) { return arr.indexOf(id) === i; });
+    if (remapOnce) safeSetStorage(ZAD_FAV_REMAP_FLAG, '1');
+    if (remapV3) { for (let i = 0; i < normalised.length; i++) { const t = AZKAR_NUM_REMAP_V3[normalised[i]]; if (t) normalised[i] = t; } safeSetStorage(ZAD_FAV_REMAP_V3_FLAG, '1'); }
+    const dedup = normalised.filter(function (id, i, arr) { return arr.indexOf(id) === i; });
+    normalised.length = 0; Array.prototype.push.apply(normalised, dedup);
+    if (normalised.join() !== favorites.join()) {
+      favorites = normalised;
+      safeSetStorage(FAV_IDS_KEY, JSON.stringify(favorites));
+    }
+  } catch (e) {
+    favorites = [];
+  }
+}
+
+// Pasa los favoritos antiguos (guardados por texto) al nuevo formato por identificador.
+// Compara también sin tashkil, para recuperar los que dejaron de coincidir al corregir el texto.
+function migrateLegacyFavorites() {
+  const legacyRaw = safeGetStorage(FAV_KEY);
+  if (!legacyRaw || safeGetStorage(FAV_IDS_KEY) !== null || !allSectionsLoaded()) return;
+  let legacy = [];
+  try { legacy = JSON.parse(legacyRaw) || []; } catch (e) { legacy = []; }
+  const normalise = function (t) { return removeArabicDiacritics(String(t || '')).replace(/[^\u0621-\u064A\s]/g, '').replace(/\s+/g, ' ').trim(); };
+  const exact = {}, loose = {};
+  Object.values(window.ZadSectionModules || {}).forEach(function (module) {
+    (module.getGroups ? module.getGroups() : []).forEach(function (group) {
+      (group.items || []).forEach(function (item, index) {
+        const id = getItemId(module.id, group, index);
+        if (item.text && !(item.text in exact)) exact[item.text] = id;
+        const key = normalise(item.text);
+        if (key && !(key in loose)) loose[key] = id;
+      });
+    });
+  });
+  const ids = [];
+  legacy.forEach(function (text) {
+    const id = exact[text] || loose[normalise(text)];
+    if (id && ids.indexOf(id) < 0) ids.push(id);
+  });
+  safeSetStorage(FAV_IDS_KEY, JSON.stringify(ids));
+  favorites = ids;
+}
+
+function toggleFavorite(id) {
+  const index = favorites.indexOf(id);
+  if (index > -1) {
+    favorites.splice(index, 1);
+    showToast(currentLang === 'es' ? 'Eliminado de favoritos' : 'تمت الإزالة من المفضلة');
+  } else {
+    favorites.push(id);
+    showToast(currentLang === 'es' ? 'Añadido a favoritos' : 'تمت الإضافة إلى المفضلة');
+  }
+  safeSetStorage(FAV_IDS_KEY, JSON.stringify(favorites));
+  if (currentGroup && !document.getElementById('detailView').classList.contains('hidden')) renderGroupItems();
+  if (!document.getElementById('favoritesView').classList.contains('hidden')) showFavorites(true);
+}
+
+let scrollYBeforeViewChange = null;
+
+// App de Android: mantener la pantalla encendida solo en la misbaha, en el lector del Corán
+// o mientras suena un audio (MainActivity expone AndroidBridge.keepScreenOn).
+function updateKeepScreenOn() {
+  if (!window.AndroidBridge || typeof window.AndroidBridge.keepScreenOn !== 'function') return;
+  const isVisible = function (id) {
+    const el = document.getElementById(id);
+    return !!el && !el.classList.contains('hidden');
+  };
+  const audio = document.getElementById('globalAppAudioPlayer');
+  const playing = !!audio && !audio.paused && !audio.ended;
+  try { window.AndroidBridge.keepScreenOn(isVisible('tasbeehView') || isVisible('quranReaderView') || playing); } catch (e) {}
+}
+['play', 'pause', 'ended'].forEach(function (ev) { document.addEventListener(ev, updateKeepScreenOn, true); });
+
+function hideAllViews() {
+  releasePausedAudio();
+  scrollYBeforeViewChange = window.scrollY || window.pageYOffset || 0;
+  setTimeout(updateKeepScreenOn, 0);
+  ['homeView', 'categoryListView', 'detailView', 'tasbeehView', 'favoritesView', 'quranView', 'quranSurahsView', 'quranAhzabView', 'quranReaderView'].forEach(id => {
+    document.getElementById(id)?.classList.add('hidden');
+  });
+}
+
+function goHome(skipPushState = false) {
+  // Dentro de una carpeta de la lista, «atrás» vuelve a la lista principal de la sección.
+  const listView = document.getElementById('categoryListView');
+  if (!skipPushState && currentFolderId && currentSection && listView && !listView.classList.contains('hidden')) {
+    if (window.history && window.history.state && window.history.state.folder) window.history.back();
+    else showSection(currentSection, true);
+    return;
+  }
+  currentFolderId = null;
+  hideAllViews();
+  document.getElementById('homeView')?.classList.remove('hidden');
+  currentSection = null;
+  currentGroup = null;
+  if (!skipPushState && window.history && window.history.pushState) {
+    try {
+      window.history.pushState({ view: 'home' }, '', '#home');
+    } catch (e) {}
+  }
+}
+
+// Carga de secciones bajo demanda: cada archivo de datos se carga con un <script> dinámico
+// (no con fetch(), que falla en file:///android_asset) la primera vez que se necesita.
+const SECTION_FILES = { azkar: 'azkar.js', adya: 'adya.js', munajat: 'munajat.js', ruqyah: 'ruqya.js', asma: 'asma.js', glosario: 'glosario.js', qalb: 'qalb.js', ramadan: 'ramadan.js', rosario: 'rosario.js' };
+const sectionLoadPromises = {};
+
+function isSectionLoaded(sec) {
+  return !!(window.ZadSectionModules && window.ZadSectionModules[sec]);
+}
+
+// Audios sustituidos desde ZadALQulub Audio Studio (archivo audio-overrides.js, generado a mano por el administrador).
+// Sin ese archivo, o con la lista vacía, no cambia nada. Clave = <sección>_<n.º de elemento>, p. ej. azkar_12.
+function applyAudioOverrides(sec) {
+  try {
+    const cfg = window.ZAD_AUDIO_OVERRIDES;
+    const mod = getSectionModule(sec);
+    if (!cfg || cfg.enabled === false || !cfg.items || !mod || typeof mod.getGroups !== 'function') return;
+    mod.getGroups().forEach(function (group) {
+      (group.items || []).forEach(function (item, i) {
+        const entry = cfg.items[sec + '_' + (Number(item.itemNumber) || i + 1)];
+        if (!entry || typeof entry.url !== 'string' || entry.url.indexOf('https://') !== 0) return;
+        item.audioUrls = [entry.url];
+        delete item.audioUrl;
+      });
+    });
+  } catch (e) { /* un fallo aquí nunca debe impedir abrir la sección */ }
+}
+
+function loadSection(sec) {
+  if (!SECTION_FILES[sec] || isSectionLoaded(sec)) return Promise.resolve();
+  if (!sectionLoadPromises[sec]) {
+    sectionLoadPromises[sec] = new Promise(function (resolve) {
+      const script = document.createElement('script');
+      script.src = SECTION_FILES[sec];
+      script.onload = function () { applyAudioOverrides(sec); resolve(); };
+      script.onerror = function () { delete sectionLoadPromises[sec]; resolve(); };
+      document.head.appendChild(script);
+    });
+  }
+  return sectionLoadPromises[sec];
+}
+
+function loadAllSections() {
+  return Promise.all(Object.keys(SECTION_FILES).map(loadSection));
+}
+
+function allSectionsLoaded() {
+  return Object.keys(SECTION_FILES).every(isSectionLoaded);
+}
+
+function getSectionModule(sec) {
+  return (window.ZadSectionModules && window.ZadSectionModules[sec]) || null;
+}
+
+function findSectionGroup(groupId) {
+  const modules = Object.values(window.ZadSectionModules || {});
+  for (const module of modules) {
+    const group = module.findGroup(groupId);
+    if (group) return { group: group, section: module.id, module: module };
+  }
+  return null;
+}
+
+function getItemShareText(item, isEs) {
+  const noteBefore = isEs ? (item.noteBeforeEs || item.noteBefore) : item.noteBefore;
+  const noteAfter = isEs ? (item.noteAfterEs || item.noteAfter) : item.noteAfter;
+  let body;
+  if (isEs) body = item.explanationEs || item.text;
+  else body = item.explanationAr ? item.text + '\n\n' + item.explanationAr : item.text;
+  return [noteBefore, body, noteAfter].filter(Boolean).join('\n\n');
+}
+
+function getGroupItemCount(group) {
+  if (!group || !Array.isArray(group.items)) return 0;
+  return group.items.filter(it => !it.isInfo).length || group.items.length;
+}
+
+function getCountUnit(isEs) {
+  const m = getSectionModule(currentSection);
+  if (m && typeof m.getCountUnit === 'function') return m.getCountUnit(isEs);
+  return isEs ? 'invocaciones' : 'أذكار/أدعية';
+}
+
+// Carpetas: un módulo puede declarar `folders` [{id, titleAr, titleEs, children:[idsDeGrupo]}].
+// En la lista de la sección las carpetas aparecen como un solo botón que agrupa a sus hijos.
+function renderTasbeehLinks(item, isEs) {
+  if (!item || !Array.isArray(item.tasbeehLinks) || !item.tasbeehLinks.length) return '';
+  const n = item.tasbeehLinks.length;
+  return '<div data-no-share class="zad-tlinks">' + item.tasbeehLinks.map(function (id, i) {
+    return '<button type="button" class="zad-tlink" onclick="openTasbeehCounter(\'' + id + '\')">' + (isEs ? 'Contar en el rosario' : 'عُدَّ في المسبحة') + (n > 1 ? ' (' + (i + 1) + ')' : '') + ' ›</button>';
+  }).join('') + '</div>';
+}
+
+function getFolder(module, folderId) {
+  return ((module && module.folders) || []).find(function (f) { return f.id === folderId; }) || null;
+}
+
+function getSectionEntries(module) {
+  const groups = module ? module.getGroups() : [];
+  const folders = (module && module.folders) || [];
+  if (currentFolderId) {
+    const folder = getFolder(module, currentFolderId);
+    if (folder) return folder.children.map(function (id) { return groups.find(function (g) { return g.id === id; }); }).filter(Boolean);
+    return groups;
+  }
+  if (!folders.length) return groups;
+  const folderOf = {};
+  folders.forEach(function (f) { f.children.forEach(function (id) { folderOf[id] = f; }); });
+  const out = [], added = {};
+  groups.forEach(function (g) {
+    const f = folderOf[g.id];
+    if (!f) { out.push(g); return; }
+    if (added[f.id]) return;
+    added[f.id] = true;
+    out.push({
+      id: f.id, titleAr: f.titleAr, titleEs: f.titleEs, isFolder: true,
+      items: [].concat.apply([], f.children.map(function (id) { const c = groups.find(function (x) { return x.id === id; }); return c ? c.items : []; }))
+    });
+  });
+  return out;
+}
+
+function openFolder(folderId) {
+  showSection(currentSection, false, folderId);
+}
+
+function showSection(sec, skipPushState = false, folderId = null) {
+  if (!sec) sec = 'azkar';
+  if (sec === 'ramadan' && !isRamadanVisible()) sec = 'azkar';
+  if (SECTION_FILES[sec] && !isSectionLoaded(sec)) {
+    loadSection(sec).then(function () { if (isSectionLoaded(sec)) showSection(sec, skipPushState, folderId); });
+    return;
+  }
+  currentSection = sec;
+  currentFolderId = folderId && getFolder(getSectionModule(sec), folderId) ? folderId : null;
+  hideAllViews();
+  document.getElementById('categoryListView')?.classList.remove('hidden');
+  const t = uiTexts[currentLang];
+  const titleEl = document.getElementById('sectionTitle');
+  if (titleEl) {
+    const sectionModule = getSectionModule(sec);
+    titleEl.innerText = sectionModule ? sectionModule.getTitle(t) : (t.azkarSectionTitle || '');
+    const folder = getFolder(sectionModule, currentFolderId);
+    if (folder) titleEl.innerText = currentLang === 'es' ? (folder.titleEs || folder.titleAr) : (folder.titleAr || folder.titleEs);
+  }
+  const backLabel = document.querySelector('#categoryListView .btn-back-label');
+  if (backLabel) backLabel.innerText = currentFolderId ? (t.back || 'رجوع') : (t.home || backLabel.innerText);
+  const searchEl = document.getElementById('searchInput');
+  if (searchEl) searchEl.value = '';
+  renderButtonsGrid();
+  window.scrollTo({ top: 0, behavior: 'instant' });
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  if (!skipPushState && window.history && window.history.pushState) {
+    try {
+      window.history.pushState({ view: 'section', sec: sec, folder: currentFolderId }, '', '#section-' + sec + (currentFolderId ? '-' + currentFolderId : ''));
+    } catch (e) {}
+  }
+}
+
+function openAzkarSection() { showSection('azkar'); }
+function openAdyaSection() { showSection('adya'); }
+function openMunajatSection() { showSection('munajat'); }
+function openRuqyaSection() { showSection('ruqyah'); }
+function openAsmaSection() { showSection('asma'); }
+function openGlosarioSection() { showSection('glosario'); }
+
+function goBackToSection() {
+  if (window.history && window.history.length > 1) {
+    window.history.back();
+  } else {
+    hideAllViews();
+    if (currentSection) {
+      showSection(currentSection, true);
+    } else {
+      goHome(true);
+    }
+  }
+}
+
+function removeArabicDiacritics(str) {
+  if (!str) return '';
+  return str.replace(/[\u064B-\u0652\u0670\u06D6-\u06ED]/g, '')
+            .replace(/[أإآٱ]/g, 'ا')
+            .replace(/ى/g, 'ي')
+            .replace(/ؤ/g, 'و')
+            .replace(/ئ/g, 'ي')
+            .replace(/ة/g, 'ه');
+}
+
+function filterButtons() {
+  const searchInput = document.getElementById('searchInput');
+  const grid = document.getElementById('buttonsGrid');
+  if (!searchInput || !grid) return;
+
+  const rawQuery = searchInput.value.trim();
+  const isEs = currentLang === 'es';
+
+  if (!rawQuery) {
+    renderButtonsGrid();
+    return;
+  }
+
+  const cleanQuery = removeArabicDiacritics(rawQuery.toLowerCase());
+  // Búsqueda por número: «121», «١٢١», «#121», «رقم 121», «n.º 121».
+  const digitsQuery = rawQuery
+    .replace(/[\u0660-\u0669]/g, d => String(d.charCodeAt(0) - 0x0660))
+    .replace(/[\u06F0-\u06F9]/g, d => String(d.charCodeAt(0) - 0x06F0));
+  const numberMatch = digitsQuery.match(/^(?:#|رقم|n\.?\s*[º°o]?\.?|no\.?|nº)?\s*(\d{1,4})$/i);
+  const searchNumber = numberMatch ? Number(numberMatch[1]) : null;
+  const sectionModule = getSectionModule(currentSection);
+  const data = sectionModule ? sectionModule.getGroups() : [];
+
+  const matchedGroups = [];
+  const matchedItems = [];
+
+  data.forEach((group) => {
+    const titleArClean = removeArabicDiacritics((group.titleAr || '').toLowerCase());
+    const titleEsClean = (group.titleEs || '').toLowerCase();
+
+    if (searchNumber === null && (titleArClean.includes(cleanQuery) || titleEsClean.includes(cleanQuery))) {
+      matchedGroups.push(group);
+    }
+
+    if (group.items && Array.isArray(group.items)) {
+      group.items.forEach((item, itemIdx) => {
+        const textClean = removeArabicDiacritics((item.text || '').toLowerCase());
+        const expClean = (item.explanationEs || '').toLowerCase();
+        const latinClean = (item.latin || '').toLowerCase();
+        const noteClean = removeArabicDiacritics((item.note || '').toLowerCase());
+
+        const itemNumber = Number(item.itemNumber) || (itemIdx + 1);
+        const isMatch = searchNumber !== null
+          ? itemNumber === searchNumber
+          : (textClean.includes(cleanQuery) || expClean.includes(cleanQuery) || latinClean.includes(cleanQuery) || noteClean.includes(cleanQuery));
+        if (isMatch) {
+          matchedItems.push({
+            group: group,
+            item: item,
+            itemIdx: itemIdx,
+            itemNumber: itemNumber
+          });
+        }
+      });
+    }
+  });
+
+  grid.innerHTML = '';
+
+  if (matchedGroups.length === 0 && matchedItems.length === 0) {
+    grid.innerHTML = `
+      <div class="col-span-full p-6 text-center text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700">
+        <p class="text-sm font-bold">${isEs ? 'No se encontraron resultados para: "' + rawQuery + '"' : 'لم يتم العثور على نتائج لـ: "' + rawQuery + '"'}</p>
+      </div>
+    `;
+    return;
+  }
+
+  if (matchedGroups.length > 0) {
+    matchedGroups.forEach((group) => {
+      const title = isEs ? (group.titleEs || group.titleAr) : (group.titleAr || group.titleEs);
+      const count = getGroupItemCount(group);
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.onclick = () => openGroup(group.id);
+      btn.className = 'p-3.5 sm:p-5 bg-gradient-to-br from-emerald-600 to-teal-800 text-white rounded-2xl shadow-md flex justify-between items-center cursor-pointer text-right min-w-0 border border-white/10';
+      btn.style.cssText = 'background: linear-gradient(135deg, #059669, #115e59) !important; color: #ffffff !important;';
+      btn.innerHTML = `
+        <div class="flex items-center space-x-2.5 sm:space-x-3 space-x-reverse pointer-events-none min-w-0 flex-1">
+          <div class="min-w-0 flex-1">
+            <h3 class="font-bold text-white text-sm sm:text-base leading-snug">${title}</h3>
+            <p class="text-xs text-emerald-100 mt-1">${count} ${getCountUnit(isEs)}</p>
+          </div>
+        </div>
+        <span class="text-emerald-200 font-bold text-sm sm:text-lg pointer-events-none mr-1 flex-shrink-0">${isEs ? '→' : '←'}</span>
+      `;
+      grid.appendChild(btn);
+    });
+  }
+
+  if (matchedItems.length > 0) {
+    const itemHeader = document.createElement('div');
+    itemHeader.className = 'col-span-full font-bold text-xs text-emerald-800 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/60 p-3 rounded-xl border border-emerald-200 dark:border-emerald-800';
+    itemHeader.innerText = isEs ? `Invocaciones encontradas (${matchedItems.length}):` : `الأذكار والأدعية المطابقة (${matchedItems.length}):`;
+    grid.appendChild(itemHeader);
+
+    matchedItems.forEach(({ group, item, itemIdx, itemNumber }) => {
+      const card = document.createElement('div');
+      card.onclick = () => {
+        openGroup(group.id);
+        setTimeout(() => {
+          const cardEl = document.getElementById(`zikr-card-${itemIdx}`);
+          if (cardEl) cardEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 300);
+      };
+      card.className = 'col-span-full card-paper-bg rounded-2xl p-4 sm:p-5 shadow-md border border-amber-200/80 dark:border-slate-700 space-y-3 cursor-pointer hover:border-emerald-500 transition';
+
+      const groupTitle = isEs ? (group.titleEs || group.titleAr) : (group.titleAr || group.titleEs);
+
+      card.innerHTML = `
+        <div class="flex justify-between items-center border-b border-amber-200/60 dark:border-slate-700 pb-2 text-xs font-bold">
+          <span class="text-emerald-800 dark:text-emerald-300 bg-emerald-100/80 dark:bg-emerald-950 px-2.5 py-1 rounded-lg">
+            ${groupTitle} · ${isEs ? 'n.º ' + itemNumber : 'رقم ' + itemNumber}
+          </span>
+          ${item.note ? `<span class="bg-amber-100/80 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 px-2.5 py-1 rounded-lg">${item.note}</span>` : ''}
+        </div>
+        <p class="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100 text-center leading-relaxed dir-rtl whitespace-pre-line custom-text-size">
+          ${item.text}
+        </p>
+        ${item.explanationEs && isEs ? `<p class="text-xs text-slate-700 dark:text-slate-300 italic text-center border-t border-slate-100 dark:border-slate-700/60 pt-2 dir-ltr">${item.explanationEs}</p>` : ''}
+      `;
+      grid.appendChild(card);
+    });
+  }
+}
+
+function renderButtonsGrid() {
+  const grid = document.getElementById('buttonsGrid');
+  if (!grid) return;
+  grid.innerHTML = '';
+  const sectionModule = getSectionModule(currentSection);
+  const data = getSectionEntries(sectionModule);
+  const isEs = currentLang === 'es';
+
+  const categoryGradients = [
+    { bg: 'bg-gradient-to-br from-emerald-600 to-teal-800 text-white', iconBg: 'bg-white/20 text-white', textSec: 'text-emerald-100', arrow: 'text-emerald-200' },
+    { bg: 'bg-gradient-to-br from-sky-500 to-teal-700 text-white', iconBg: 'bg-white/20 text-white', textSec: 'text-sky-100', arrow: 'text-sky-200' },
+    { bg: 'bg-gradient-to-br from-teal-600 to-emerald-800 text-white', iconBg: 'bg-white/20 text-white', textSec: 'text-teal-100', arrow: 'text-teal-200' },
+    { bg: 'bg-gradient-to-br from-cyan-600 to-sky-800 text-white', iconBg: 'bg-white/20 text-white', textSec: 'text-cyan-100', arrow: 'text-cyan-200' },
+    { bg: 'bg-gradient-to-br from-emerald-700 to-cyan-900 text-white', iconBg: 'bg-white/20 text-white', textSec: 'text-emerald-100', arrow: 'text-emerald-200' },
+    { bg: 'bg-gradient-to-br from-teal-500 to-sky-700 text-white', iconBg: 'bg-white/20 text-white', textSec: 'text-teal-100', arrow: 'text-teal-200' }
+  ];
+
+  const specialGradients = {
+    sabah: { bg: 'bg-gradient-to-br from-emerald-600 to-teal-800 text-white', iconBg: 'bg-white/20 text-white', textSec: 'text-emerald-100', arrow: 'text-emerald-200' },
+    masaa: { bg: 'bg-gradient-to-br from-sky-600 to-teal-800 text-white', iconBg: 'bg-white/20 text-white', textSec: 'text-sky-100', arrow: 'text-sky-200' },
+    nawm: { bg: 'bg-gradient-to-br from-teal-700 to-cyan-900 text-white', iconBg: 'bg-white/20 text-white', textSec: 'text-teal-100', arrow: 'text-teal-200' },
+    istiyqadh: { bg: 'bg-gradient-to-br from-cyan-600 to-emerald-700 text-white', iconBg: 'bg-white/20 text-white', textSec: 'text-cyan-100', arrow: 'text-cyan-200' }
+  };
+
+  const catInlineStyles = [
+    'background: linear-gradient(135deg, #059669, #115e59) !important; color: #ffffff !important;',
+    'background: linear-gradient(135deg, #0284c7, #0f766e) !important; color: #ffffff !important;',
+    'background: linear-gradient(135deg, #0d9488, #065f46) !important; color: #ffffff !important;',
+    'background: linear-gradient(135deg, #0891b2, #0369a1) !important; color: #ffffff !important;',
+    'background: linear-gradient(135deg, #047857, #164e63) !important; color: #ffffff !important;',
+    'background: linear-gradient(135deg, #14b8a6, #0369a1) !important; color: #ffffff !important;'
+  ];
+
+
+  data.forEach((group, index) => {
+    const title = isEs ? (group.titleEs || group.titleAr) : (group.titleAr || group.titleEs);
+    if (!title) return;
+    const count = getGroupItemCount(group);
+    const style = specialGradients[group.id] || categoryGradients[index % categoryGradients.length];
+    const inlineStyle = catInlineStyles[index % catInlineStyles.length];
+
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.onclick = group.isFolder ? () => openFolder(group.id) : () => openGroup(group.id);
+    btn.className = `p-3.5 sm:p-5 ${style.bg} rounded-2xl shadow-md hover:shadow-xl transition transform active:scale-95 flex justify-between items-center cursor-pointer text-right min-w-0 border border-white/10`;
+    btn.style.cssText = inlineStyle;
+    btn.innerHTML = `
+      <div class="flex items-center space-x-2.5 sm:space-x-3 space-x-reverse pointer-events-none min-w-0 flex-1">
+        <div class="p-2.5 sm:p-3 ${style.iconBg} rounded-xl flex-shrink-0">
+          ${group.isFolder ? '<svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"></path></svg>' : ''}
+          ${group.isFolder ? '' : '<svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>'}
+        </div>
+        <div class="min-w-0 flex-1">
+          <h3 class="font-bold text-white text-sm sm:text-base leading-snug">${title}</h3>
+          <p class="text-xs ${style.textSec} mt-1">${count} ${getCountUnit(isEs)}</p>
+        </div>
+      </div>
+      <span class="${style.arrow} font-bold text-sm sm:text-lg pointer-events-none mr-1 flex-shrink-0">${isEs ? '→' : '←'}</span>
+    `;
+    grid.appendChild(btn);
+  });
+}
+
+function openGroup(groupId, skipPushState = false, sectionHint = null) {
+  if (!groupId) return;
+  if (!findSectionGroup(groupId) && !allSectionsLoaded()) {
+    const loading = sectionHint && SECTION_FILES[sectionHint] ? loadSection(sectionHint) : loadAllSections();
+    loading.then(function () {
+      if (findSectionGroup(groupId)) openGroup(groupId, skipPushState);
+      else if (!allSectionsLoaded()) loadAllSections().then(function () { if (findSectionGroup(groupId)) openGroup(groupId, skipPushState); });
+    });
+    return;
+  }
+  // Resolve from the active section first, then fall back to all registered modules.
+  const activeModule = getSectionModule(currentSection);
+  const activeGroup = activeModule && typeof activeModule.findGroup === 'function'
+    ? activeModule.findGroup(groupId)
+    : null;
+  const match = activeGroup
+    ? { group: activeGroup, section: activeModule.id }
+    : findSectionGroup(groupId);
+  if (!match || !match.group || !Array.isArray(match.group.items)) return;
+  currentGroup = match.group;
+  currentSection = match.section;
+  applyPendingEditsToGroup(currentGroup, currentSection);
+
+  hideAllViews();
+  document.getElementById('detailView')?.classList.remove('hidden');
+
+  const isEs = currentLang === 'es';
+  const groupTitle = isEs ? (currentGroup.titleEs || currentGroup.titleAr) : (currentGroup.titleAr || currentGroup.titleEs);
+  const titleEl = document.getElementById('itemGroupTitle');
+  if (titleEl) titleEl.innerText = groupTitle || '';
+
+  renderGroupItems();
+
+  window.scrollTo({ top: 0, behavior: 'instant' });
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+
+  if (!skipPushState && window.history && window.history.pushState) {
+    try {
+      window.history.pushState({ view: 'detail', sec: currentSection, groupId: groupId }, '', '#group-' + groupId);
+    } catch (e) {}
+  }
+}
+
+// Contadores guardados por identificador del elemento (no por su posición en el grupo).
+function getProgressItemId(groupId, itemIndex) {
+  if (currentGroup && currentGroup.id === groupId) return getItemId(currentSection, currentGroup, itemIndex);
+  const match = findSectionGroup(groupId);
+  return match ? getItemId(match.section, match.group, itemIndex) : null;
+}
+
+function readJsonStorage(key) {
+  try { return JSON.parse(safeGetStorage(key) || '{}') || {}; } catch (e) { return {}; }
+}
+
+function getSavedCount(groupId, itemIndex, defaultCount) {
+  const id = getProgressItemId(groupId, itemIndex);
+  const progress = readJsonStorage(PROGRESS_IDS_KEY);
+  if (id && progress[id] !== undefined) return progress[id];
+  // Contadores de hoy guardados con el formato antiguo (por posición).
+  const legacy = readJsonStorage(STORAGE_KEY);
+  if (legacy[groupId] && legacy[groupId][itemIndex] !== undefined) return legacy[groupId][itemIndex];
+  return defaultCount;
+}
+
+function setSavedCount(groupId, itemIndex, count) {
+  const id = getProgressItemId(groupId, itemIndex);
+  if (!id) return;
+  const progress = readJsonStorage(PROGRESS_IDS_KEY);
+  progress[id] = count;
+  safeSetStorage(PROGRESS_IDS_KEY, JSON.stringify(progress));
+}
+
+function resetGroupProgress(groupId) {
+  const progress = readJsonStorage(PROGRESS_IDS_KEY);
+  Object.keys(progress).forEach(function (id) {
+    if (id.split('|')[1] === groupId) delete progress[id];
+  });
+  safeSetStorage(PROGRESS_IDS_KEY, JSON.stringify(progress));
+  const legacy = readJsonStorage(STORAGE_KEY);
+  delete legacy[groupId];
+  safeSetStorage(STORAGE_KEY, JSON.stringify(legacy));
+}
+
+// Pasar al siguiente zikr al completar el contador o el audio en los grupos indicados.
+const AUTO_ADVANCE_GROUP_IDS = ['sabah', 'masaa', 'nawm', 'istiyqadh'];
+const AUTO_ADVANCE_RUQYAH_IDS = [
+  'ruqyah_shariyah_healing',
+  'ruqyah_shariyah_complete_healing',
+  'ruqyah_bayt'
+];
+function isAutoAdvanceGroup() {
+  if (!currentGroup) return false;
+  if (currentSection === 'azkar') {
+    return AUTO_ADVANCE_GROUP_IDS.indexOf(currentGroup.id) !== -1;
+  }
+  if (currentSection === 'ruqyah') {
+    return AUTO_ADVANCE_RUQYAH_IDS.indexOf(currentGroup.id) !== -1;
+  }
+  return false;
+}
+
+function decrementCounter(index, isFromAudio = false) {
+  if (!currentGroup || !currentGroup.items[index]) return;
+  const item = currentGroup.items[index];
+  let currentCount = getSavedCount(currentGroup.id, index, item.count);
+
+  if (currentCount > 0) {
+    currentCount--;
+    setSavedCount(currentGroup.id, index, currentCount);
+    renderGroupItems();
+
+    if (currentCount === 0) {
+      const nextIndex = index + 1;
+      if (nextIndex < currentGroup.items.length) {
+        if (!isAutoAdvanceGroup()) return;
+        setTimeout(() => {
+          const nextElem = document.getElementById(`zikr-card-${nextIndex}`);
+          if (nextElem) {
+            nextElem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+
+          if (isFromAudio) {
+            const nextItem = currentGroup.items[nextIndex];
+            if (nextItem && (nextItem.audioUrl || (nextItem.audioUrls && nextItem.audioUrls.length))) {
+              playAudio(nextItem.audioUrls || nextItem.audioUrl, nextIndex, nextItem.count || nextItem.maxCount || 1);
+            }
+          }
+        }, 300);
+      } else {
+        showToast(uiTexts[currentLang].completedGroup);
+      }
+    }
+  }
+}
+
+function resetSingleItem(index) {
+  if (currentGroup && currentGroup.items[index]) {
+    setSavedCount(currentGroup.id, index, currentGroup.items[index].count);
+    renderGroupItems();
+    showToast(currentLang === 'es' ? 'Contador reiniciado' : 'تمت إعادة ضبط الذكر الحالي');
+  }
+}
+
+function resetAllInGroup() {
+  if (currentGroup) {
+    resetGroupProgress(currentGroup.id);
+    renderGroupItems();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    showToast(currentLang === 'es' ? 'Se han reiniciado todos los contadores' : 'تمت إعادة تصفير كافة أذكار المجموعة');
+  }
+}
+
+const EDITOR_REPO = 'Mundial-45/ZadALQulub';
+const EDITOR_BRANCH = 'main';
+const EDITOR_FILES = { azkar: 'azkar.js', adya: 'adya.js', ruqyah: 'ruqya.js', munajat: 'munajat.js', asma: 'asma.js', glosario: 'glosario.js', qalb: 'qalb.js', ramadan: 'ramadan.js', rosario: 'rosario.js' };
+let itemEditorState = null;
+let pendingItemEdits = loadPendingItemEdits();
+const PENDING_EDITS_KEY = 'zadAlQulubPendingEdits_v1';
+
+function loadPendingItemEdits() {
+  try {
+    const value = JSON.parse(localStorage.getItem('zadAlQulubPendingEdits_v1') || '[]');
+    return Array.isArray(value) ? value : [];
+  } catch (error) { return []; }
+}
+
+function persistPendingItemEdits() {
+  try {
+    localStorage.setItem(PENDING_EDITS_KEY, JSON.stringify(pendingItemEdits));
+    updatePendingEditsDock();
+  } catch (error) {
+    showToast(currentLang === 'es' ? 'No se pudieron guardar los cambios temporales en este dispositivo.' : 'تعذر حفظ التعديلات المؤقتة على هذا الجهاز.');
+  }
+}
+
+function getPendingEdit(section, groupId, index) {
+  return pendingItemEdits.find(function (entry) {
+    return entry.section === section && entry.groupId === groupId && entry.index === index;
+  }) || null;
+}
+
+function getBaselineItem(section, groupId, index, currentItem) {
+  const pending = getPendingEdit(section, groupId, index);
+  return pending ? pending.originalItem : currentItem;
+}
+
+function getBaselineOccurrence(section, groupId, index, items) {
+  const baseline = getBaselineItem(section, groupId, index, items[index]);
+  let occurrence = 0;
+  for (let i = 0; i < index; i++) {
+    const prior = getBaselineItem(section, groupId, i, items[i]);
+    if (prior && baseline && prior.text === baseline.text) occurrence++;
+  }
+  return occurrence;
+}
+
+function applyPendingEditsToGroup(group, section) {
+  if (!group || !Array.isArray(group.items)) return;
+  pendingItemEdits.forEach(function (entry) {
+    if (entry.section === section && entry.groupId === group.id && group.items[entry.index]) {
+      group.items[entry.index] = JSON.parse(JSON.stringify(entry.updatedItem));
+    }
+  });
+}
+
+// Modo administrador: el botón Editar solo aparece tras pulsar 3 veces el título «Zad Al-Qulub».
+// Nunca se activa dentro de la app de Android.
+const ADMIN_MODE_KEY = 'zadAlQulubAdminMode';
+let headerTitleTaps = [];
+
+// Ramadán: oculto para todos hasta el 01-02-2027; desde ese día solo lo ve el admin.
+const RAMADAN_SHOW_FROM = new Date(2027, 1, 1);
+function isRamadanVisible() { return isAdminMode() && new Date() >= RAMADAN_SHOW_FROM; }
+
+function isAdminMode() {
+  if (window.AndroidBridge) return false;
+  try { return localStorage.getItem(ADMIN_MODE_KEY) === '1'; } catch (e) { return false; }
+}
+
+function adminTitleSuffix() { return isAdminMode() ? ' ⚙️ Admin' : ''; }
+
+function handleHeaderTitleTap() {
+  if (window.AndroidBridge) return;
+  const now = Date.now();
+  headerTitleTaps = headerTitleTaps.filter(function (t) { return now - t < 900; });
+  headerTitleTaps.push(now);
+  if (headerTitleTaps.length < 3) return;
+  headerTitleTaps = [];
+  const enable = !isAdminMode();
+  try {
+    if (enable) localStorage.setItem(ADMIN_MODE_KEY, '1'); else localStorage.removeItem(ADMIN_MODE_KEY);
+  } catch (e) {}
+  const isEs = currentLang === 'es';
+  showToast(enable ? (isEs ? 'Modo edición activado' : 'تم تفعيل وضع التعديل') : (isEs ? 'Modo edición desactivado' : 'تم إيقاف وضع التعديل'));
+  const ht = document.getElementById('headerTitle');
+  if (ht) ht.innerText = (isEs ? 'Zad Al-Qulub' : 'زَادُ الْقُلُوبِ') + adminTitleSuffix();
+  document.title = (isAdminMode() ? '[ADMIN] ' : '') + 'زاد القلوب - Zad Al-Qulub';
+  updatePendingEditsDock();
+  try { window.dispatchEvent(new Event('zad-admin')); } catch (e) {}
+}
+
+function updatePendingEditsDock() {
+  const dock = document.getElementById('pendingEditsDock');
+  const count = document.getElementById('pendingEditsCount');
+  const list = document.getElementById('pendingEditsSummary');
+  if (!dock || !count) return;
+  const total = pendingItemEdits.length;
+  dock.classList.toggle('hidden', total === 0 || !isAdminMode());
+  count.textContent = String(total);
+  if (list) list.textContent = currentLang === 'es'
+    ? total + (total === 1 ? ' cambio pendiente' : ' cambios pendientes') + '. Se guardan primero en este dispositivo.'
+    : total + ' تعديلات مؤقتة محفوظة على هذا الجهاز.';
+}
+
+window.addEventListener('DOMContentLoaded', updatePendingEditsDock);
+
+function openItemEditor(index) {
+  if (!currentGroup || !currentGroup.items || !currentGroup.items[index]) return;
+  const filePath = EDITOR_FILES[currentSection];
+  if (!filePath) return showToast(currentLang === 'es' ? 'Esta sección no admite edición.' : 'لا يمكن تعديل هذا القسم.');
+  const existing = getPendingEdit(currentSection, currentGroup.id, index);
+  const baseline = existing ? existing.originalItem : JSON.parse(JSON.stringify(currentGroup.items[index]));
+  const draft = existing ? existing.updatedItem : JSON.parse(JSON.stringify(currentGroup.items[index]));
+  // El nombre correcto del campo es "note", no "notes".
+  if (!Object.prototype.hasOwnProperty.call(draft, 'note')) draft.note = typeof draft.notes === 'string' ? draft.notes : '';
+  delete draft.notes;
+  // Mostrar estos campos en el editor sin obligar a guardarlos vacíos en los datos.
+  if (!Object.prototype.hasOwnProperty.call(draft, 'audioUrl')) draft.audioUrl = '';
+  if (!Object.prototype.hasOwnProperty.call(draft, 'audioUrls')) draft.audioUrls = [];
+  // Opciones del zikr: quitar el contador y notas antes/después del texto.
+  if (!Object.prototype.hasOwnProperty.call(draft, 'noCounter')) draft.noCounter = false;
+  ['noteBefore', 'noteBeforeEs', 'noteAfter', 'noteAfterEs'].forEach(function (k) {
+    if (!Object.prototype.hasOwnProperty.call(draft, k)) draft[k] = '';
+  });
+  itemEditorState = {
+    index: index, groupId: currentGroup.id, section: currentSection, filePath: filePath,
+    originalItem: JSON.parse(JSON.stringify(baseline)), draftItem: JSON.parse(JSON.stringify(draft)),
+    occurrence: existing ? existing.occurrence : getBaselineOccurrence(currentSection, currentGroup.id, index, currentGroup.items)
+  };
+  const modal = document.getElementById('itemEditorModal'), fields = document.getElementById('itemEditorFields');
+  if (!modal || !fields) return;
+  document.getElementById('itemEditorTitle').textContent = (currentLang === 'es' ? 'Editar elemento ' : 'تعديل العنصر ') + (index + 1);
+  setItemEditorStatus(currentLang === 'es' ? 'Los cambios se guardarán temporalmente en este dispositivo. Puedes publicar varios juntos después.' : 'ستُحفظ التعديلات مؤقتًا على هذا الجهاز ويمكن نشرها جميعًا لاحقًا.', false);
+  fields.replaceChildren();
+  Object.keys(itemEditorState.draftItem).forEach(function (key) {
+    const value = itemEditorState.draftItem[key], wrap = document.createElement('div'), label = document.createElement('label');
+    wrap.className = 'space-y-1.5'; label.className = 'block text-sm font-bold text-slate-700 dark:text-slate-200'; label.textContent = key;
+    const isAudioListField = key === 'audioUrls';
+    const kind = isAudioListField ? 'audio-list' : value === null ? 'json' : Array.isArray(value) || typeof value === 'object' ? 'json' : typeof value;
+    let control;
+    if (kind === 'audio-list') {
+      control = document.createElement('textarea');
+      control.rows = 4;
+      control.value = (Array.isArray(value) ? value : []).join('\n');
+      control.placeholder = 'https://.../audio1.mp3\nhttps://.../audio2.mp3';
+      control.className = 'w-full rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 p-3 text-sm';
+      control.spellcheck = false;
+    } else if (kind === 'boolean') {
+      control = document.createElement('input'); control.type = 'checkbox'; control.checked = value; control.className = 'h-5 w-5 accent-emerald-600';
+    } else if (kind === 'number') {
+      control = document.createElement('input'); control.type = 'number'; control.step = 'any'; control.value = String(value);
+      control.className = 'w-full rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 p-3';
+    } else {
+      control = document.createElement('textarea'); control.rows = kind === 'string' ? (key === 'text' || key.toLowerCase().includes('explanation') || key === 'latin' ? 5 : 2) : 4;
+      control.value = kind === 'string' ? value : JSON.stringify(value, null, 2);
+      control.className = 'w-full rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 p-3 text-sm'; control.spellcheck = false;
+    }
+    control.dataset.editorKey = key; control.dataset.editorKind = kind; control.id = 'item-editor-field-' + key; label.htmlFor = control.id;
+    const normalizedKey = key.toLowerCase();
+    const isArabicText = ['text', 'textar', 'titlear', 'arabic', 'arabictext', 'notebefore', 'noteafter'].includes(normalizedKey);
+    const isLtrText = ['latin', 'transliteration', 'explanationes', 'explanation_es', 'spanish', 'translationes', 'translation_es'].includes(normalizedKey) || normalizedKey.includes('latin') || normalizedKey.includes('explanationes') || /^note(before|after)es$/.test(normalizedKey);
+    if (kind === 'string' && isArabicText) {
+      control.dir = 'rtl'; control.lang = 'ar';
+      control.style.direction = 'rtl'; control.style.textAlign = 'right';
+      control.style.fontFamily = "'Amiri', 'Tajawal', serif";
+      control.style.backgroundColor = document.documentElement.classList.contains('dark') ? '#172b27' : '#f0fdf4';
+    } else if (kind === 'string' && isLtrText) {
+      control.dir = 'ltr'; control.lang = normalizedKey.includes('explanation') || normalizedKey.includes('spanish') || normalizedKey.includes('translation') || /^note(before|after)es$/.test(normalizedKey) ? 'es' : 'en';
+      control.style.direction = 'ltr'; control.style.textAlign = 'left';
+      control.style.fontFamily = "'Inter', 'Lora', sans-serif";
+      control.style.backgroundColor = document.documentElement.classList.contains('dark') ? '#1e293b' : '#f8fafc';
+      control.style.fontSize = '0.95rem';
+    } else if (kind === 'string') {
+      control.dir = 'auto'; control.style.textAlign = 'start';
+    }
+    wrap.appendChild(label); wrap.appendChild(control);
+    const fieldHints = {
+      noCounter: ['Marca esta casilla para quitar el contador de este zikr.', 'ضع علامة لإزالة العدّاد من هذا الذكر.'],
+      noteBefore: ['Nota en árabe que sale ANTES del zikr (dentro de su ventana).', 'ملاحظة تظهر قبل الذكر داخل نفس النافذة.'],
+      noteBeforeEs: ['Traducción al español de la nota de antes.', 'ترجمة الملاحظة السابقة إلى الإسبانية.'],
+      noteAfter: ['Nota en árabe que sale DESPUÉS del zikr (dentro de su ventana).', 'ملاحظة تظهر بعد الذكر داخل نفس النافذة.'],
+      noteAfterEs: ['Traducción al español de la nota de después.', 'ترجمة الملاحظة اللاحقة إلى الإسبانية.']
+    };
+    if (fieldHints[key]) {
+      const fh = document.createElement('p'); fh.className = 'text-xs text-slate-500';
+      fh.textContent = fieldHints[key][currentLang === 'es' ? 0 : 1];
+      wrap.appendChild(fh);
+    }
+    if (kind === 'json') {
+      const hint = document.createElement('p'); hint.className = 'text-xs text-slate-500';
+      hint.textContent = currentLang === 'es' ? 'JSON válido; conserva corchetes y comillas.' : 'أدخل JSON صحيحًا مع الأقواس وعلامات الاقتباس.';
+      wrap.appendChild(hint);
+    }
+    fields.appendChild(wrap);
+  });
+  modal.classList.remove('hidden'); document.body.classList.add('overflow-hidden');
+}
+
+function closeItemEditor() {
+  const modal = document.getElementById('itemEditorModal'); if (modal) modal.classList.add('hidden');
+  document.body.classList.remove('overflow-hidden'); itemEditorState = null;
+}
+
+function setItemEditorStatus(message, isError) {
+  const status = document.getElementById('itemEditorStatus'); if (!status) return;
+  status.textContent = message;
+  status.className = 'text-sm rounded-xl p-3 ' + (isError ? 'bg-rose-50 text-rose-800 dark:bg-rose-950 dark:text-rose-200' : 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200');
+}
+
+function buildEditedItem() {
+  if (!itemEditorState) throw new Error('No hay ningún elemento seleccionado.');
+  const updated = JSON.parse(JSON.stringify(itemEditorState.draftItem));
+  document.querySelectorAll('#itemEditorFields [data-editor-key]').forEach(function (control) {
+    const key = control.dataset.editorKey, kind = control.dataset.editorKind;
+    if (kind === 'string') updated[key] = control.value;
+    else if (kind === 'audio-list') updated[key] = control.value.split(/\r?\n/).map(url => url.trim()).filter(Boolean);
+    else if (kind === 'number') {
+      if (control.value.trim() === '' || !Number.isFinite(Number(control.value))) throw new Error('Valor numérico inválido en ' + key);
+      updated[key] = Number(control.value);
+    } else if (kind === 'boolean') updated[key] = control.checked;
+    else {
+      try { updated[key] = JSON.parse(control.value); } catch (error) { throw new Error('JSON inválido en la propiedad ' + key); }
+    }
+  });
+  // Los campos opcionales vacíos se muestran en el editor, pero no se guardan en el JS.
+  if (typeof updated.note === 'string' && !updated.note.trim()) delete updated.note;
+  ['noteBefore', 'noteBeforeEs', 'noteAfter', 'noteAfterEs'].forEach(function (k) {
+    if (typeof updated[k] === 'string' && !updated[k].trim()) delete updated[k];
+  });
+  if (updated.noCounter !== true) delete updated.noCounter;
+  if (typeof updated.audioUrl === 'string' && !updated.audioUrl.trim()) delete updated.audioUrl;
+  if (Array.isArray(updated.audioUrls)) {
+    updated.audioUrls = updated.audioUrls.map(url => typeof url === 'string' ? url.trim() : url).filter(Boolean);
+    if (!updated.audioUrls.length) delete updated.audioUrls;
+  }
+  delete updated.notes;
+  return updated;
+}
+
+function stageItemChanges() {
+  if (!itemEditorState) return;
+  try {
+    const updatedItem = buildEditedItem(), state = itemEditorState;
+    const entry = {
+      section: state.section, groupId: state.groupId, index: state.index, filePath: state.filePath,
+      originalItem: state.originalItem, updatedItem: updatedItem, occurrence: state.occurrence
+    };
+    const existingIndex = pendingItemEdits.findIndex(function (pending) {
+      return pending.section === entry.section && pending.groupId === entry.groupId && pending.index === entry.index;
+    });
+    if (existingIndex >= 0) pendingItemEdits[existingIndex] = entry;
+    else pendingItemEdits.push(entry);
+    if (currentGroup && currentGroup.id === state.groupId && currentSection === state.section) currentGroup.items[state.index] = updatedItem;
+    persistPendingItemEdits();
+    closeItemEditor();
+    if (typeof renderGroupItems === 'function') renderGroupItems();
+    showToast(currentLang === 'es' ? 'Cambio guardado temporalmente. Aún no se ha enviado a GitHub.' : 'تم حفظ التعديل مؤقتًا ولم يُرسل إلى GitHub بعد.');
+  } catch (error) {
+    setItemEditorStatus(error.message || String(error), true);
+  }
+}
+
+function scanEditorObjectRanges(source) {
+  const ranges = [], stack = [];
+  let quote = '', escaped = false, lineComment = false, blockComment = false;
+  for (let i = 0; i < source.length; i++) {
+    const ch = source[i], next = source[i + 1];
+    if (lineComment) { if (ch === '\n') lineComment = false; continue; }
+    if (blockComment) { if (ch === '*' && next === '/') { blockComment = false; i++; } continue; }
+    if (quote) {
+      if (escaped) { escaped = false; continue; }
+      if (ch === '\\') { escaped = true; continue; }
+      if (ch === quote) quote = '';
+      continue;
+    }
+    if (ch === '/' && next === '/') { lineComment = true; i++; continue; }
+    if (ch === '/' && next === '*') { blockComment = true; i++; continue; }
+    if (ch === '"' || ch === "'" || ch.charCodeAt(0) === 96) { quote = ch; continue; }
+    if (ch === '{') stack.push(i);
+    else if (ch === '}' && stack.length) ranges.push({ start: stack.pop(), end: i + 1 });
+  }
+  return ranges.sort(function (a, b) { return a.start - b.start || (a.end - a.start) - (b.end - b.start); });
+}
+
+function readEditorSourceString(literal) {
+  try {
+    if (literal[0] === '"') return JSON.parse(literal);
+    return literal.slice(1, -1).replace(/\\\\/g, '\\').replace(/\\'/g, "'").replace(/\\"/g, '"').replace(/\\n/g, '\n').replace(/\\r/g, '\r').replace(/\\t/g, '\t');
+  } catch (error) { return null; }
+}
+
+function getEditorObjectText(objectSource) {
+  const match = objectSource.match(/["']?text["']?\s*:\s*("(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*')/s);
+  return match ? readEditorSourceString(match[1]) : null;
+}
+
+function locateEditorItemRange(source, groupId, originalItem, occurrence) {
+  const ranges = scanEditorObjectRanges(source);
+  const groupCandidates = ranges.filter(function (range) {
+    const snippet = source.slice(range.start, range.end);
+    const idMatch = snippet.match(/["']?id["']?\s*:\s*("(?:\\\\.|[^"\\\\])*"|'(?:\\\\.|[^'\\\\])*')/s);
+    return !!(idMatch && readEditorSourceString(idMatch[1]) === groupId && /["']?items["']?\s*:/.test(snippet));
+  }).sort(function (a, b) { return (a.end - a.start) - (b.end - b.start); });
+  if (!groupCandidates.length) throw new Error('No se encontró el grupo ' + groupId + ' en el archivo.');
+  const groupRange = groupCandidates[0];
+  const matching = ranges.filter(function (range) {
+    return range.start >= groupRange.start && range.end <= groupRange.end && getEditorObjectText(source.slice(range.start, range.end)) === originalItem.text;
+  });
+  const minimal = matching.filter(function (range) {
+    return !matching.some(function (other) { return other.start > range.start && other.end < range.end; });
+  }).sort(function (a, b) { return a.start - b.start; });
+  const target = minimal[occurrence];
+  if (!target) throw new Error('No se pudo localizar con seguridad el elemento original en el grupo ' + groupId + '. No se publicó ningún cambio.');
+  return target;
+}
+
+function replaceEditorItemSource(source, groupId, itemIndex, originalItem, updatedItem, occurrenceOverride) {
+  const occurrence = typeof occurrenceOverride === 'number' ? occurrenceOverride : getBaselineOccurrence(currentSection, groupId, itemIndex, currentGroup.items);
+  const target = locateEditorItemRange(source, groupId, originalItem, occurrence);
+  const indentStart = source.lastIndexOf('\n', target.start - 1) + 1, indent = source.slice(indentStart, target.start).match(/^\s*/)[0];
+  const replacement = JSON.stringify(updatedItem, null, 2).split('\n').map(function (line, index) { return index === 0 ? line : indent + line; }).join('\n');
+  return source.slice(0, target.start) + replacement + source.slice(target.end);
+}
+
+function decodeEditorBase64(value) {
+  const binary = atob(value.replace(/\s/g, '')), bytes = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+  return new TextDecoder('utf-8').decode(bytes);
+}
+
+function encodeEditorBase64(value) {
+  const bytes = new TextEncoder().encode(value); let binary = '';
+  for (let i = 0; i < bytes.length; i += 0x8000) binary += String.fromCharCode.apply(null, bytes.subarray(i, Math.min(i + 0x8000, bytes.length)));
+  return btoa(binary);
+}
+
+function openPendingPublishModal() {
+  if (!pendingItemEdits.length) return;
+  const modal = document.getElementById('pendingPublishModal'), list = document.getElementById('pendingPublishList');
+  if (!modal || !list) return;
+  list.replaceChildren();
+  pendingItemEdits.forEach(function (entry) {
+    const row = document.createElement('div'); row.className = 'rounded-lg bg-slate-100 p-3 text-sm dark:bg-slate-800';
+    row.textContent = entry.section + ' / ' + entry.groupId + ' / elemento ' + (entry.index + 1);
+    list.appendChild(row);
+  });
+  const token = document.getElementById('githubEditToken'); if (token) token.value = '';
+  setPendingPublishStatus(currentLang === 'es' ? 'Se publicarán todos los cambios pendientes en un solo commit de GitHub.' : 'سيتم نشر جميع التعديلات المعلقة في عملية حفظ واحدة على GitHub.', false);
+  modal.classList.remove('hidden'); document.body.classList.add('overflow-hidden');
+}
+
+function closePendingPublishModal() {
+  const modal = document.getElementById('pendingPublishModal'); if (modal) modal.classList.add('hidden');
+  document.body.classList.remove('overflow-hidden');
+}
+
+function setPendingPublishStatus(message, isError) {
+  const status = document.getElementById('pendingPublishStatus'); if (!status) return;
+  status.textContent = message;
+  status.className = 'text-sm rounded-xl p-3 ' + (isError ? 'bg-rose-50 text-rose-800 dark:bg-rose-950 dark:text-rose-200' : 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200');
+}
+
+async function publishPendingChanges(event) {
+  if (event) event.preventDefault();
+  if (!pendingItemEdits.length) return;
+  const tokenInput = document.getElementById('githubEditToken'), token = tokenInput ? tokenInput.value.trim() : '';
+  if (!token) return setPendingPublishStatus(currentLang === 'es' ? 'Introduce tu token fine-grained de GitHub.' : 'أدخل رمز GitHub المحدود الصلاحيات.', true);
+  const button = document.getElementById('publishPendingButton');
+  if (button) { button.disabled = true; button.textContent = currentLang === 'es' ? 'Publicando…' : 'جارٍ النشر…'; }
+  const headers = { 'Accept': 'application/vnd.github+json', 'Authorization': 'Bearer ' + token, 'X-GitHub-Api-Version': '2022-11-28', 'Content-Type': 'application/json' };
+  async function api(path, options) {
+    const response = await fetch('https://api.github.com/repos/' + EDITOR_REPO + path, Object.assign({ headers: headers }, options || {}));
+    const data = await response.json();
+    if (!response.ok) throw new Error(data.message || ('Error HTTP ' + response.status));
+    return data;
+  }
+  try {
+    setPendingPublishStatus(currentLang === 'es' ? 'Leyendo el estado actual de GitHub…' : 'جارٍ قراءة حالة GitHub الحالية…', false);
+    const ref = await api('/git/ref/heads/' + encodeURIComponent(EDITOR_BRANCH));
+    const headSha = ref.object.sha;
+    const commit = await api('/git/commits/' + headSha);
+    const grouped = {};
+    pendingItemEdits.forEach(function (entry) {
+      if (!grouped[entry.filePath]) grouped[entry.filePath] = [];
+      grouped[entry.filePath].push(entry);
+    });
+    const newContents = {};
+    for (const path of Object.keys(grouped)) {
+      const file = await api('/contents/' + path + '?ref=' + headSha);
+      let source = decodeEditorBase64(file.content || '');
+      const edits = grouped[path].map(function (entry) {
+        const target = locateEditorItemRange(source, entry.groupId, entry.originalItem, entry.occurrence);
+        const indentStart = source.lastIndexOf('\n', target.start - 1), lineStart = indentStart < 0 ? 0 : indentStart + 1;
+        const indent = source.slice(lineStart, target.start).match(/^\s*/)[0];
+        return { start: target.start, end: target.end, replacement: JSON.stringify(entry.updatedItem, null, 2).split('\n').map(function (line, i) { return i === 0 ? line : indent + line; }).join('\n') };
+      }).sort(function (a, b) { return b.start - a.start; });
+      edits.forEach(function (edit) { source = source.slice(0, edit.start) + edit.replacement + source.slice(edit.end); });
+      newContents[path] = source;
+    }
+    setPendingPublishStatus(currentLang === 'es' ? 'Preparando un único commit con todos los archivos…' : 'جارٍ تجهيز حفظ واحد لجميع الملفات…', false);
+    const treeEntries = [];
+    for (const path of Object.keys(newContents)) {
+      const blob = await api('/git/blobs', { method: 'POST', body: JSON.stringify({ content: newContents[path], encoding: 'utf-8' }) });
+      treeEntries.push({ path: path, mode: '100644', type: 'blob', sha: blob.sha });
+    }
+    const tree = await api('/git/trees', { method: 'POST', body: JSON.stringify({ base_tree: commit.tree.sha, tree: treeEntries }) });
+    const newCommit = await api('/git/commits', { method: 'POST', body: JSON.stringify({ message: 'Actualizar contenido: ' + pendingItemEdits.length + ' elemento(s)', tree: tree.sha, parents: [headSha] }) });
+    setPendingPublishStatus(currentLang === 'es' ? 'Publicando el commit en main…' : 'جارٍ نشر التعديلات في main…', false);
+    await api('/git/refs/heads/' + encodeURIComponent(EDITOR_BRANCH), { method: 'PATCH', body: JSON.stringify({ sha: newCommit.sha, force: false }) });
+    pendingItemEdits = [];
+    persistPendingItemEdits();
+    if (currentGroup && currentGroup.items) {
+      const section = currentSection, groupId = currentGroup.id;
+      currentGroup.items.forEach(function (item, index) {
+        const entry = getPendingEdit(section, groupId, index);
+        if (entry) currentGroup.items[index] = entry.updatedItem;
+      });
+    }
+    closePendingPublishModal();
+    if (typeof renderGroupItems === 'function' && currentGroup) renderGroupItems();
+    showToast(currentLang === 'es' ? 'Todos los cambios se han guardado en un solo commit de GitHub.' : 'تم حفظ جميع التعديلات في عملية واحدة على GitHub.');
+  } catch (error) {
+    setPendingPublishStatus((currentLang === 'es' ? 'No se pudieron publicar los cambios: ' : 'تعذر نشر التعديلات: ') + (error.message || String(error)), true);
+  } finally {
+    if (button) { button.disabled = false; button.textContent = currentLang === 'es' ? 'Publicar todos en GitHub' : 'نشر الكل على GitHub'; }
+  }
+}
+
+// Nota que sale antes o después del zikr dentro de su tarjeta (campos noteBefore/noteAfter y sus versiones en español).
+function renderZikrNote(arText, esText, isEs, kind) {
+  const useEs = !!(isEs && esText);
+  const txt = useEs ? esText : arText;
+  if (!txt) return '';
+  const body = useEs ? formatTextWithNewlines(txt) : formatQuotedText(txt);
+  return `<div class="zikr-note zikr-note-${kind}${useEs ? ' zikr-note-es' : ' custom-text-size'}" dir="${useEs ? 'ltr' : 'rtl'}">${body}</div>`;
+}
+
+function renderGroupItems() {
+  const container = document.getElementById('itemsContainer');
+  if (!container || !currentGroup || !currentGroup.items.length) return;
+
+  const totalItems = currentGroup.items.length;
+  const isEs = currentLang === 'es';
+  const activeSectionModule = getSectionModule(currentSection);
+  const isAdya = !!(activeSectionModule && activeSectionModule.isDevotional);
+  const t = uiTexts[currentLang];
+
+  const progressBarContainer = document.getElementById('progressBarContainer');
+  const resetAllBtn = document.getElementById('resetAllBtn');
+
+  if (isAdya) {
+    if (progressBarContainer) progressBarContainer.style.display = 'none';
+    if (resetAllBtn) resetAllBtn.style.display = 'none';
+  } else {
+    if (progressBarContainer) progressBarContainer.style.display = 'block';
+    if (resetAllBtn) resetAllBtn.style.display = 'inline-block';
+
+    let totalCompletedInGroup = 0;
+    let countableItems = 0;
+    currentGroup.items.forEach((it, idx) => {
+      if (it.isInfo || it.noCounter) return;
+      countableItems++;
+      const cnt = getSavedCount(currentGroup.id, idx, it.count);
+      if (cnt === 0) totalCompletedInGroup++;
+    });
+    const overallPercent = countableItems ? Math.round((totalCompletedInGroup / countableItems) * 100) : 0;
+
+    const progressPercentEl = document.getElementById('progressPercent');
+    const progressBarFillEl = document.getElementById('progressBarFill');
+    if (progressPercentEl) progressPercentEl.innerText = `${overallPercent}%`;
+    if (progressBarFillEl) progressBarFillEl.style.width = `${overallPercent}%`;
+  }
+
+  container.innerHTML = '';
+
+  let previousSubtitle = null;
+  currentGroup.items.forEach((item, index) => {
+    // Grupos unidos: el título de cada apartado va en su propia ventana, una sola vez
+    // aunque varios azkar seguidos compartan el mismo título.
+    if (item.subtitleAr && item.subtitleAr !== previousSubtitle) {
+      const subtitleBox = document.createElement('div');
+      subtitleBox.className = 'zikr-subtitle-box rounded-2xl px-5 py-4 text-center shadow-sm border border-emerald-200 dark:border-emerald-800 bg-white/90 dark:bg-slate-800';
+      subtitleBox.innerHTML = `<h3 class="text-lg sm:text-xl font-extrabold text-emerald-800 dark:text-emerald-300 leading-snug">${currentLang === 'es' ? (item.subtitleEs || item.subtitleAr) : item.subtitleAr}</h3>`;
+      container.appendChild(subtitleBox);
+    }
+    previousSubtitle = item.subtitleAr || null;
+    const currentCount = getSavedCount(currentGroup.id, index, item.count);
+    const initialMax = item.maxCount || item.count;
+    const stageInfo = getStageInfo(item, currentCount);
+    const itemSectionModule = getSectionModule(currentSection);
+    const isQuranItem = !!(itemSectionModule && itemSectionModule.isQuranItem(item));
+    const quranFontClass = isQuranItem ? ' quran-font' : '';
+    const itemId = getItemId(currentSection, currentGroup, index);
+    const isFav = favorites.includes(itemId);
+    const isDone = currentCount === 0;
+    const isRuqyahSection = currentSection === 'ruqyah';
+    const isMunajatSection = currentSection === 'munajat';
+    const isAzkarSection = currentSection === 'azkar';
+    const isAdyaSection = currentSection === 'adya';
+    const isInfoItem = !!item.isInfo;
+    const noCounter = !!item.noCounter;
+    // Público: posición en la lista abierta (1…n, sin contar avisos). Administrador: itemNumber global (= nombre del audio).
+    const positionInList = currentGroup.items.slice(0, index + 1).filter(x => !x.isInfo).length || (index + 1);
+    const displayedItemNumber = (typeof isAdminMode === 'function' && isAdminMode())
+      ? (Number(item.itemNumber) || (index + 1))
+      : positionInList;
+    const labelModule = getSectionModule(currentSection);
+    const itemProgressStr = (labelModule && typeof labelModule.getItemLabel === 'function')
+      ? labelModule.getItemLabel(isEs, displayedItemNumber)
+      : isRuqyahSection
+      ? (isEs ? `Ruqya n.º ${displayedItemNumber}` : `رقية رقم ${displayedItemNumber}`)
+      : isMunajatSection
+        ? (isEs ? `Munajat n.º ${displayedItemNumber}` : `مناجاة رقم ${displayedItemNumber}`)
+        : isAzkarSection
+          ? (isEs ? `Zikr n.º ${displayedItemNumber}` : `ذكر رقم ${displayedItemNumber}`)
+          : isAdyaSection
+            ? (isEs ? `Dua n.º ${displayedItemNumber}` : `دعاء رقم ${displayedItemNumber}`)
+            : t.itemProgress.replace('{current}', displayedItemNumber).replace('{total}', totalItems);
+
+    const card = document.createElement('div');
+    card.id = `zikr-card-${index}`;
+    card.className = 'card-paper-bg rounded-3xl p-6 shadow-lg border border-amber-200/80 dark:border-slate-700 space-y-5 transition-all duration-300' + (['asma', 'glosario'].includes(currentSection) ? ' guide-center' : '') + (['azkar', 'adya', 'ruqyah'].includes(currentSection) && !isQuranItem && !isInfoItem ? ' hadith-card' : '');
+
+    const hideNumberChip = false;
+    card.innerHTML = `
+      ${(isInfoItem || hideNumberChip) && !item.note ? '' : `<div class="flex items-center justify-between text-xs font-bold border-b border-amber-200/60 dark:border-slate-700/60 pb-3">
+        ${isInfoItem || hideNumberChip ? '' : `<span class="text-emerald-800 dark:text-emerald-400 bg-emerald-100/80 dark:bg-emerald-950/60 px-3 py-1 rounded-full border border-emerald-300 dark:border-emerald-800">
+          ${itemProgressStr}
+        </span>`}
+        ${item.note ? `<span class="bg-amber-100/80 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 px-3 py-1 rounded-full border border-amber-300 dark:border-amber-800">${isEs && item.noteEs ? item.noteEs : item.note}</span>` : ''}
+      </div>`}
+
+      ${renderSharedTextNotice(item, isEs)}
+      ${renderZikrNote(item.noteBefore, item.noteBeforeEs, isEs, 'before')}
+            ${isEs ? `
+        <div class="space-y-4">
+          ${item.latin ? `<div class="text-sm sm:text-base md:text-lg text-slate-800 dark:text-slate-200 latin-text-style italic text-center font-semibold bg-amber-100/50 dark:bg-slate-900/70 p-4 rounded-2xl border border-amber-300/60 dark:border-slate-700 shadow-sm whitespace-pre-line">${formatStagedText(item.latin, item, stageInfo, false)}</div>` : ''}
+          ${item.explanationEs ? `<div class="text-base sm:text-lg md:text-xl text-slate-900 dark:text-slate-50 es-text-style text-center font-bold bg-emerald-50/90 dark:bg-emerald-950/60 p-4 sm:p-5 rounded-2xl border border-emerald-300/60 dark:border-emerald-800/80 leading-relaxed shadow-sm whitespace-pre-line">${applyXrefs(applyXref(formatStagedText(item.explanationEs, item, stageInfo, false), item), item, 'explanationEs')}</div>` : ''}
+          ${renderItemTable(item, true)}
+          <div class="leading-relaxed custom-text-size${quranFontClass} font-bold text-emerald-950 dark:text-emerald-300 text-center tracking-wide pt-3 border-t border-amber-200/60 dark:border-slate-700/60 dir-rtl whitespace-pre-line">
+            ${applyXrefs(formatStagedText(item.text, item, stageInfo, true), item, 'text')}
+          </div>
+        </div>
+      ` : `
+        <div class="leading-relaxed custom-text-size${quranFontClass} font-bold text-slate-950 dark:text-slate-50 text-center tracking-wide py-2 whitespace-pre-line">
+          ${applyXrefs(formatStagedText(item.text, item, stageInfo, true), item, 'text')}
+        </div>
+        ${item.explanationAr ? `<div class="guide-ar-expl whitespace-pre-line" dir="rtl">${applyXrefs(applyXref(formatQuotedText(item.explanationAr), item), item, 'explanationAr')}</div>` : ''}
+        ${renderItemTable(item, false)}
+      `}
+      ${renderZikrNote(item.noteAfter, item.noteAfterEs, isEs, 'after')}
+      ${renderTasbeehLinks(item, isEs)}
+      ${item.sourceUrl && currentSection !== 'glosario' ? `<div class="glos-source text-xs text-center text-slate-500 dark:text-slate-400" dir="${isEs ? 'ltr' : 'rtl'}">${isEs ? 'Fuente' : 'المصدر'}: <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer" class="underline text-emerald-700 dark:text-emerald-400">${isEs ? (item.sourceNameEs || item.sourceName || item.sourceUrl) : (item.sourceName || item.sourceUrl)}</a></div>` : ''}
+
+      ${!isAdya && !isInfoItem && !noCounter ? `
+        <div data-no-share class="flex flex-col items-center justify-center pt-2">
+          ${(() => {
+            const _tot = stageInfo ? stageInfo.max : initialMax, _rem = stageInfo ? stageInfo.remaining : currentCount;
+            const _off = isDone ? 0 : Math.round(282.7 * (_tot > 0 ? Math.min(1, Math.max(0, _rem / _tot)) : 1) * 10) / 10;
+            return `<button type="button" onclick="decrementCounter(${index})" class="dhikr-counter-btn ${isDone ? 'is-done' : ''}">
+            <svg class="zad-ring-svg" viewBox="0 0 100 100" aria-hidden="true"><circle class="zad-ring-track" cx="50" cy="50" r="45" fill="none" stroke-width="5"/><circle class="zad-ring-bar" cx="50" cy="50" r="45" fill="none" stroke-width="5" stroke-linecap="round" stroke-dasharray="282.7" stroke-dashoffset="${_off}" transform="rotate(-90 50 50)"/></svg>
+            <span class="zad-ring-num">${isDone ? '✓' : _rem}</span>
+            <span class="zad-ring-cap">${isDone ? t.completedItem : t.pressToCount}</span>
+          </button>`;
+          })()}
+        </div>
+      ` : ''}
+
+      ${(() => {
+        const audioList = normaliseAudioList(Array.isArray(item.audioUrls) && item.audioUrls.length ? item.audioUrls : item.audioUrl, item.count || item.maxCount);
+        return audioList.length ? `
+          <div data-no-share id="audioPlayer-${index}" class="audio-player-compact mt-2 mb-2 p-2 rounded-xl bg-slate-50 dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700">
+            <div class="flex items-center gap-2" dir="ltr">
+              <span id="audioCurrent-${index}" class="audio-time text-[10px] tabular-nums text-slate-500 dark:text-slate-300">0:00</span>
+              <input id="audioSeek-${index}" type="range" min="0" max="1000" value="0" step="1" oninput="seekAudio(${index}, this.value)" class="flex-1 min-w-0 accent-slate-800 dark:accent-slate-200 cursor-pointer" aria-label="${isEs ? 'Progreso del audio' : 'تقدم الصوت'}">
+              <span id="audioDuration-${index}" class="audio-time text-[10px] tabular-nums text-slate-500 dark:text-slate-300">0:00</span>
+            </div>
+            <div class="flex items-center justify-center gap-4 mt-1">
+              <button type="button" onclick="stopAudio(${index})" class="audio-control-button audio-icon-btn" aria-label="${isEs ? 'Detener' : 'إيقاف'}" title="${isEs ? 'Detener' : 'إيقاف'}">${AUDIO_STOP_ICON}</button>
+              <button id="audioPlay-${index}" type="button" onclick='playAudio(${JSON.stringify(audioList)}, ${index})' class="audio-control-play audio-pill-btn${(isActiveAudioCard(index) && !currentAudio.paused) ? ' is-playing' : ''}" data-state="${(isActiveAudioCard(index) && !currentAudio.paused ? 'playing' : 'paused') + '-' + currentLang}" aria-label="${getPlayButtonLabel(!!(isActiveAudioCard(index) && !currentAudio.paused))}" title="${getPlayButtonLabel(!!(isActiveAudioCard(index) && !currentAudio.paused))}">${getPlayButtonInner(!!(isActiveAudioCard(index) && !currentAudio.paused))}</button>
+              <button id="audioRepeat-${index}" type="button" onclick="toggleAudioRepeat(${index})" class="audio-control-button audio-icon-btn audio-repeat-btn${audioRepeatEnabled ? ' is-active' : ''}" aria-pressed="${audioRepeatEnabled}" aria-label="${getRepeatButtonLabel()}" title="${getRepeatButtonLabel()}">${AUDIO_REPEAT_ICON}</button>
+              <span id="audioSequence-${index}" class="text-[10px] tabular-nums text-slate-500 dark:text-slate-300" aria-live="polite"></span>
+            </div>
+          </div>
+        ` : '';
+      })()}
+      <div data-no-share class="flex items-center justify-center space-x-2 space-x-reverse pt-2 border-t border-slate-100 dark:border-slate-700">
+
+
+        <button type="button" onclick="copyText('${escapeJsStr(getItemShareText(item, isEs))}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="${isEs ? 'Copiar' : 'نسخ'}" aria-label="${isEs ? 'Copiar' : 'نسخ'}">
+          📋
+        </button>
+        <button type="button" onclick="shareCard(this, '${escapeJsStr(getItemShareText(item, isEs))}')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 dark:hover:bg-emerald-900 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="${isEs ? 'Compartir' : 'مشاركة'}" aria-label="${isEs ? 'Compartir' : 'مشاركة'}">
+          🔗
+        </button>
+        <button type="button" onclick="toggleFavorite('${escapeJsStr(itemId)}')" class="p-2.5 rounded-xl ${isFav ? 'bg-rose-100 dark:bg-rose-950 text-rose-600' : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'} hover:bg-rose-100 dark:hover:bg-rose-900 transition cursor-pointer" title="${isEs ? (isFav ? 'Quitar de favoritos' : 'Añadir a favoritos') : (isFav ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة')}" aria-label="${isEs ? (isFav ? 'Quitar de favoritos' : 'Añadir a favoritos') : (isFav ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة')}">
+          ${isFav ? '★' : '☆'}
+        </button>
+        ${isAdminMode() && ['azkar', 'adya', 'ruqyah', 'munajat', 'asma', 'glosario', 'qalb', 'ramadan', 'rosario'].includes(currentSection) ? `
+          <button type="button" onclick="openItemEditor(${index})" class="p-2.5 rounded-xl bg-amber-100 dark:bg-amber-950 hover:bg-amber-200 dark:hover:bg-amber-900 text-amber-800 dark:text-amber-200 transition cursor-pointer" title="${isEs ? 'Editar elemento' : 'تعديل الذكر'}">
+            ✏️ ${isEs ? 'Editar' : 'تعديل'}
+          </button>
+        ` : ''}
+        ${!isAdya && !isInfoItem && !noCounter ? `
+          <button type="button" onclick="resetSingleItem(${index})" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-rose-100 dark:hover:bg-rose-950 text-slate-700 dark:text-slate-200 transition cursor-pointer" title="${isEs ? 'Reiniciar contador' : 'إعادة ضبط الذكر'}" aria-label="${isEs ? 'Reiniciar contador' : 'إعادة ضبط الذكر'}">
+            🔄
+          </button>
+        ` : ''}
+      </div>
+    `;
+    container.appendChild(card);
+  });
+}
+
+function showFavorites(skipPushState = false) {
+  if (!allSectionsLoaded()) {
+    loadAllSections().then(function () { migrateLegacyFavorites(); showFavorites(skipPushState); });
+    return;
+  }
+  hideAllViews();
+  document.getElementById('favoritesView')?.classList.remove('hidden');
+  loadFavorites();
+  const container = document.getElementById('favoritesContainer');
+  if (!container) return;
+  container.innerHTML = '';
+  const isEs = currentLang === 'es';
+  const t = uiTexts[currentLang];
+
+  if (!favorites.length) {
+    container.innerHTML = `
+      <div class="p-8 text-center text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-800 rounded-3xl border border-slate-200 dark:border-slate-700">
+        <p class="text-base font-medium">${t.noFavs}</p>
+      </div>
+    `;
+  } else {
+    favorites.forEach(id => {
+      const found = findItemById(id);
+      if (!found) return;
+      const text = found.item.text || '';
+      const favModule = getSectionModule(found.section);
+      const favQuranFont = favModule && typeof favModule.isQuranItem === 'function' && favModule.isQuranItem(found.item) ? ' quran-font' : '';
+      const shareTextValue = getItemShareText(found.item, isEs);
+      const card = document.createElement('div');
+      card.className = 'bg-white dark:bg-slate-800 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-3';
+      card.innerHTML = `
+        <p class="fav-text custom-text-size${favQuranFont} text-base font-medium leading-relaxed text-slate-800 dark:text-slate-100 whitespace-pre-line" dir="rtl">${formatQuotedText(text)}</p>
+        ${isEs && found.item.latin ? `<p class="fav-es text-sm italic leading-relaxed text-slate-600 dark:text-slate-300 whitespace-pre-line" dir="ltr">${formatTextWithNewlines(found.item.latin)}</p>` : ''}
+        ${isEs && found.item.explanationEs ? `<p class="fav-es text-sm leading-relaxed text-slate-700 dark:text-slate-200 whitespace-pre-line" dir="ltr">${formatTextWithNewlines(found.item.explanationEs)}</p>` : ''}
+        <div class="flex items-center justify-between pt-2 border-t border-slate-100 dark:border-slate-700/50">
+          <div class="flex items-center space-x-2 space-x-reverse">
+            <button type="button" onclick="copyText('${escapeJsStr(shareTextValue)}')" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-700 text-xs font-bold text-slate-700 dark:text-slate-200">
+              📋 ${isEs ? 'Copiar' : 'نسخ'}
+            </button>
+            <button type="button" onclick="shareText('${escapeJsStr(shareTextValue)}')" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-700 text-xs font-bold text-slate-700 dark:text-slate-200">
+              🔗 ${isEs ? 'Compartir' : 'مشاركة'}
+            </button>
+          </div>
+          <button type="button" onclick="toggleFavorite('${escapeJsStr(id)}')" class="text-xs font-bold text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/50 px-3 py-1.5 rounded-lg border border-rose-200 dark:border-rose-800">
+            ${t.removeFav}
+          </button>
+        </div>
+      `;
+      container.appendChild(card);
+    });
+  }
+
+  if (!skipPushState && window.history && window.history.pushState) {
+    try {
+      window.history.pushState({ view: 'favorites' }, '', '#favorites');
+    } catch (e) {}
+  }
+}
+
+const LAST_RESET_DATE_KEY = 'misbaha_last_reset_date_v1';
+
+function checkDailyReset() {
+  try {
+    const now = new Date();
+    const todayStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+    const lastReset = safeGetStorage(LAST_RESET_DATE_KEY);
+
+    if (lastReset !== todayStr) {
+      safeSetStorage(STORAGE_KEY, JSON.stringify({}));
+      safeSetStorage(PROGRESS_IDS_KEY, JSON.stringify({}));
+      safeSetStorage('tasbeeh_counts_v5', JSON.stringify({}));
+      safeSetStorage(LAST_RESET_DATE_KEY, todayStr);
+    }
+  } catch (e) {}
+}
+
+let transliterationSavedScrollY = 0;
+let transliterationSavedBodyStyles = null;
+
+function lockPageBehindTransliteration() {
+  transliterationSavedScrollY = window.scrollY || window.pageYOffset || 0;
+  const body = document.body;
+  transliterationSavedBodyStyles = {
+    position: body.style.position,
+    top: body.style.top,
+    left: body.style.left,
+    right: body.style.right,
+    width: body.style.width,
+    overflow: body.style.overflow
+  };
+  body.style.position = 'fixed';
+  body.style.top = '-' + transliterationSavedScrollY + 'px';
+  body.style.left = '0';
+  body.style.right = '0';
+  body.style.width = '100%';
+  body.style.overflow = 'hidden';
+}
+
+function unlockPageBehindTransliteration() {
+  const body = document.body;
+  if (transliterationSavedBodyStyles) {
+    body.style.position = transliterationSavedBodyStyles.position;
+    body.style.top = transliterationSavedBodyStyles.top;
+    body.style.left = transliterationSavedBodyStyles.left;
+    body.style.right = transliterationSavedBodyStyles.right;
+    body.style.width = transliterationSavedBodyStyles.width;
+    body.style.overflow = transliterationSavedBodyStyles.overflow;
+    transliterationSavedBodyStyles = null;
+  }
+  window.scrollTo(0, transliterationSavedScrollY);
+}
+
+function hideTransliterationGuide() {
+  const modal = document.getElementById('transliterationModal');
+  if (!modal || modal.classList.contains('hidden')) return;
+  modal.classList.add('hidden');
+  unlockPageBehindTransliteration();
+}
+
+function openTransliterationGuide() {
+  const modal = document.getElementById('transliterationModal');
+  if (!modal || !modal.classList.contains('hidden')) return;
+  lockPageBehindTransliteration();
+  modal.classList.remove('hidden');
+  if (window.history && window.history.pushState) {
+    try {
+      window.history.pushState({ ...(window.history.state || {}), view: 'transliterationGuide' }, '', '#transliteration');
+    } catch (e) {}
+  }
+}
+
+function closeTransliterationGuide() {
+  const modal = document.getElementById('transliterationModal');
+  if (!modal || modal.classList.contains('hidden')) return;
+  if (window.history && window.history.state && window.history.state.view === 'transliterationGuide') {
+    window.history.back();
+  } else {
+    hideTransliterationGuide();
+  }
+}
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeTransliterationGuide();
+});
+
+// Recordar la posición de desplazamiento de cada vista: antes de abrir otra vista se guarda
+// scrollY en la entrada actual del historial, y al volver atrás se restaura.
+(function () {
+  if (!window.history || !window.history.pushState) return;
+  const originalPushState = window.history.pushState.bind(window.history);
+  window.history.pushState = function (state, title, url) {
+    try {
+      // Las vistas suben arriba antes de llamar a pushState: usar la posición guardada en hideAllViews().
+      const y = scrollYBeforeViewChange !== null ? scrollYBeforeViewChange : (window.scrollY || window.pageYOffset || 0);
+      window.history.replaceState(Object.assign({}, window.history.state || {}, { scrollY: y }), '');
+    } catch (e) {}
+    scrollYBeforeViewChange = null;
+    return originalPushState(state, title, url);
+  };
+})();
+
+function restoreScrollFromState(state) {
+  const y = state && Number(state.scrollY);
+  if (!y) return;
+  // Esperar a que la vista se pinte (las vistas hacen scrollTo(0) al mostrarse).
+  requestAnimationFrame(() => requestAnimationFrame(() => window.scrollTo(0, y)));
+}
+
+window.addEventListener('popstate', (e) => {
+  const transliterationModal = document.getElementById('transliterationModal');
+  if (transliterationModal && !transliterationModal.classList.contains('hidden')) {
+    hideTransliterationGuide();
+    return;
+  }
+  if (e.state && e.state.view) {
+    switch (e.state.view) {
+      case 'home': goHome(true); break;
+      case 'section': showSection(e.state.sec, true, e.state.folder || null); break;
+      case 'detail': openGroup(e.state.groupId, true, e.state.sec); break;
+      case 'tasbeeh': showTasbeeh(true); break;
+      case 'favorites': showFavorites(true); break;
+      case 'quran': if (typeof showQuranView === 'function') showQuranView(true); break;
+      case 'quranSurahs': if (typeof showQuranSurahsView === 'function') showQuranSurahsView(true); break;
+      case 'quranAhzab': if (typeof showQuranAhzabView === 'function') showQuranAhzabView(true); break;
+      case 'quranReader': if (typeof openQuranPage === 'function') openQuranPage(e.state.page || 1, true); break;
+      default: goHome(true);
+    }
+    restoreScrollFromState(e.state);
+    scrollYBeforeViewChange = null;
+  } else {
+    goHome(true);
+  }
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  checkDailyReset();
+  loadSavedTheme();
+  loadFavorites();
+  applyLanguageUI();
+  if (window.history && window.history.replaceState) {
+    try {
+      window.history.replaceState({ view: 'home' }, '', '#home');
+    } catch (e) {}
+  }
+});
+
+// Cuando la pantalla de inicio ya se ha mostrado, cargar el resto de secciones en segundo plano.
+window.addEventListener('load', () => {
+  setTimeout(function () {
+    loadAllSections().then(function () {
+      migrateLegacyFavorites();
+    });
+  }, 1200);
+});

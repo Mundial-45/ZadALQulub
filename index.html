@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>زاد القلوب - Zad Al-Qulub</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#047857">
+  <link rel="apple-touch-icon" href="Iconos/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="زاد القلوب">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="stylesheet" href="tailwind.min.css">
+  <link rel="stylesheet" href="app_styles.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <style>
+    body { font-family: 'Tajawal', 'Inter', sans-serif; }
+    .custom-text-size { font-size: var(--app-font-size, 1.125rem); font-family: 'Amiri Quran', 'Amiri', serif; }
+    .quran-font { font-family: 'Amiri Quran', 'Amiri', serif !important; font-weight: 400 !important; line-height: 1.85 !important; padding-top: 0.18em; padding-bottom: 0.28em; overflow: visible; font-kerning: normal; }
+    /* Extra vertical room for Quranic diacritics and waqf marks so they do not collide with the previous line. */
+    .quran-font, .quran-font * { line-height: 1.85 !important; }
+  .quran-nav-arrow { direction:ltr !important; unicode-bidi:isolate !important; display:inline-block; min-width:1.1em; text-align:center; }
+  #audioSeekBar { accent-color:#059669; }
+  </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-screen flex flex-col justify-between transition-colors duration-300">
+
+  <!-- Header -->
+  <header class="bg-emerald-700 dark:bg-emerald-900 text-white py-4 shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4 flex items-center justify-between">
+      <div>
+        <h1 class="text-xl md:text-2xl font-extrabold tracking-wide cursor-pointer" id="headerTitle" onclick="handleHeaderTitleTap(); goHome()">زَادُ الْقُلُوبِ</h1>
+        <p class="text-emerald-100 text-xs hidden sm:block" id="headerSubtitle">جامع الأذكار والأدعية والمناجاة</p>
+      </div>
+      
+      <div class="flex items-center space-x-2 space-x-reverse">
+        <!-- زر دليل Pronunciación / Transliteración (i) (يظهر فقط في اللغة الإسبانية) -->
+        <button type="button" onclick="openTransliterationGuide()" id="transliterationInfoBtn" style="display: none;" class="p-2 bg-emerald-800 dark:bg-emerald-950 hover:bg-emerald-600 rounded-xl transition text-xs font-bold flex items-center justify-center cursor-pointer w-9 h-9" title="Guía de pronunciación latina / Transliteración">
+          ℹ️
+        </button>
+
+        <!-- زر تغيير اللغة -->
+        <button type="button" onclick="toggleLanguage()" class="p-2 bg-emerald-800 dark:bg-emerald-950 hover:bg-emerald-600 rounded-xl transition text-xs font-bold flex items-center gap-1 cursor-pointer" title="تغيير اللغة / Cambiar idioma">
+          🌐 <span id="langBtnText">ES</span>
+        </button>
+
+        <button type="button" onclick="changeFontSize(1)" class="p-1.5 bg-emerald-800 dark:bg-emerald-950 hover:bg-emerald-600 rounded-lg text-xs font-bold transition">A+</button>
+        <button type="button" onclick="changeFontSize(-1)" class="p-1.5 bg-emerald-800 dark:bg-emerald-950 hover:bg-emerald-600 rounded-lg text-xs font-bold transition">A-</button>
+        
+        <button type="button" onclick="toggleDarkMode()" class="p-2 bg-emerald-800 dark:bg-emerald-950 hover:bg-emerald-600 rounded-xl transition" title="تبديل الوضع">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="container mx-auto px-3 sm:px-4 py-3 sm:py-4 max-w-6xl flex-grow">
+
+    <!-- VIEW 1: الرئيسية -->
+    <div id="homeView" class="space-y-3 sm:space-y-4 my-auto pt-2 sm:pt-3">
+      <h2 id="homeWelcome" class="text-center text-lg sm:text-xl font-bold text-slate-700 dark:text-slate-300 mb-3 sm:mb-4">اختر القسم للبدء:</h2>
+      
+      <div class="home-category-grid grid grid-cols-2 gap-2.5 sm:gap-3">
+<button type="button" onclick="showQuranView()" class="home-category-card home-category-wide bg-gradient-to-br from-amber-600 to-amber-800 hover:from-amber-700 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-amber-300/30">
+          <span class="home-icon-wrap"><img src="Iconos/Quran.webp" alt="القرآن الكريم" class="home-category-icon" loading="lazy" decoding="async"></span>
+          <span class="block">
+            <span class="block text-lg sm:text-xl font-extrabold" id="btnQuranTitle">القرآن الكريم (برواية ورش)</span>
+            <span class="block text-amber-100 text-xs mt-0.5 line-clamp-1" id="btnQuranSub">المصحف الشريف كاملًا برواية ورش عن نافع</span>
+          </span>
+        </button>
+
+<button type="button" onclick="openAzkarSection()" class="home-category-card bg-gradient-to-br from-emerald-600 to-emerald-800 hover:from-emerald-700 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-white/10">
+          <span class="home-icon-wrap"><img src="Iconos/Azkar.webp" alt="الأذكار اليومية" class="home-category-icon" loading="lazy" decoding="async"></span>
+          <span class="block">
+            <span class="block text-base sm:text-lg font-bold" id="btnAzkarTitle">الأذكار اليومية</span>
+            <span class="block text-emerald-100 text-[10px] sm:text-xs mt-0.5 line-clamp-1" id="btnAzkarSub">الصباح، المساء، النوم، أذكار الصلاة</span>
+          </span>
+        </button>
+
+<button type="button" onclick="openAdyaSection()" class="home-category-card bg-gradient-to-br from-teal-600 to-teal-800 hover:from-teal-700 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-white/10">
+          <span class="home-icon-wrap"><img src="Iconos/Dua.webp" alt="الأدعية المأثورة" class="home-category-icon" loading="lazy" decoding="async"></span>
+          <span class="block">
+            <span class="block text-base sm:text-lg font-bold" id="btnAdyaTitle">الأدعية المأثورة</span>
+            <span class="block text-teal-100 text-[10px] sm:text-xs mt-0.5 line-clamp-1" id="btnAdyaSub">الرزق، الشفاء، الفرج، الحفظ</span>
+          </span>
+        </button>
+
+<button type="button" onclick="openMunajatSection()" class="home-category-card bg-gradient-to-br from-sky-600 to-blue-700 hover:from-sky-700 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-white/10">
+          <span class="home-icon-wrap"><img src="Iconos/Munajat.webp" alt="مناجاة وتضرعات" class="home-category-icon" loading="lazy" decoding="async"></span>
+          <span class="block">
+            <span class="block text-base sm:text-lg font-bold" id="btnMunajatTitle">مناجاة وتضرعات</span>
+            <span class="block text-sky-100 text-[10px] sm:text-xs mt-0.5 line-clamp-1" id="btnMunajatSub">Invocaciones y Súplicas Íntimas</span>
+          </span>
+        </button>
+
+<button type="button" onclick="openRuqyaSection()" class="home-category-card bg-gradient-to-br from-indigo-600 to-indigo-900 hover:from-indigo-700 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-indigo-300/30">
+          <span class="home-icon-wrap"><img src="Iconos/Ruqya.webp" alt="الرقية الشرعية" class="home-category-icon" loading="lazy" decoding="async"></span>
+          <span class="block">
+            <span class="block text-lg sm:text-xl font-bold" id="btnRuqyahTitle">الرقية الشرعية</span>
+            <span class="block text-indigo-100 text-[10px] sm:text-xs mt-0.5 line-clamp-1" id="btnRuqyahSub">رقية الشفاء، العين، الحسد والمس</span>
+          </span>
+        </button>
+
+<button type="button" onclick="openAsmaSection()" class="home-category-card bg-gradient-to-br from-indigo-600 to-indigo-900 hover:from-indigo-700 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-white/10" style="background: linear-gradient(135deg, #1e3a8a, #0f172a) !important;">
+          <span class="home-icon-wrap"><img src="Iconos/Asma.webp" alt="أسماء الله الحسنى" class="home-category-icon" loading="lazy" decoding="async"></span>
+          <span class="block">
+            <span class="block text-lg sm:text-xl font-bold" id="btnAsmaTitle">أسماء الله الحسنى</span>
+            <span class="block text-indigo-100 text-[10px] sm:text-xs mt-0.5 line-clamp-1" id="btnAsmaSub">معانيها وشرحها المختصر</span>
+          </span>
+        </button>
+
+<button type="button" onclick="showTasbeeh()" class="home-category-card bg-gradient-to-br from-cyan-600 to-teal-800 hover:from-cyan-700 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-white/10">
+          <span class="home-icon-wrap"><img src="Iconos/Rosario.webp" alt="المسبحة الإلكترونية" class="home-category-icon" loading="lazy" decoding="async"></span>
+          <span class="block">
+            <span class="block text-lg sm:text-xl font-bold" id="btnTasbeehTitle">المسبحة الإلكترونية</span>
+            <span class="block text-cyan-100 text-[10px] sm:text-xs mt-0.5 line-clamp-1" id="btnTasbeehSub">عداد إلكتروني للتسبيح والاستغفار</span>
+          </span>
+        </button>
+
+<button type="button" onclick="openGlosarioSection()" class="home-category-card bg-gradient-to-br from-teal-700 to-slate-900 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-white/10" style="background: linear-gradient(135deg, #0f766e, #134e4a) !important;">
+          <span class="home-icon-wrap"><img src="Iconos/Glosario.webp" alt="معجم المصطلحات" class="home-category-icon" loading="lazy" decoding="async"></span>
+          <span class="block">
+            <span class="block text-lg sm:text-xl font-bold" id="btnGlosarioTitle">معجم المصطلحات</span>
+            <span class="block text-teal-100 text-[10px] sm:text-xs mt-0.5 line-clamp-1" id="btnGlosarioSub">مصطلحات إسلامية مشروحة</span>
+          </span>
+        </button>
+
+<button type="button" onclick="showFavorites()" class="home-category-card bg-gradient-to-br from-rose-600 to-rose-800 hover:from-rose-700 text-white p-3 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center gap-2 cursor-pointer border border-white/10">
+          <span class="home-icon-wrap"><img src="Iconos/Favoritos.webp" alt="المفضلة" class="home-category-icon" loading="lazy" decoding="async"></span>
+          <span class="block">
+            <span class="block text-base sm:text-lg font-bold" id="btnFavTitle">المفضلة</span>
+            <span class="block text-rose-100 text-[10px] sm:text-xs mt-0.5 line-clamp-1" id="btnFavSub">الأذكار والأدعية المحفوظة لديك</span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- VIEW 2: القوائم -->
+    <div id="categoryListView" class="hidden space-y-6">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
+        <button type="button" onclick="goHome()" class="flex items-center text-sm font-semibold text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 px-3 py-1.5 rounded-xl border border-emerald-200 dark:border-emerald-800">
+          <span class="btn-back-label">الرئيسية</span>
+        </button>
+        <h2 id="sectionTitle" class="text-xl font-bold text-slate-800 dark:text-slate-100"></h2>
+        <div class="w-16"></div>
+      </div>
+
+      <div class="relative">
+        <input type="text" id="searchInput" aria-label="ابحث عن ذكر أو دعاء..." onkeyup="filterButtons()" placeholder="ابحث عن ذكر أو دعاء..." class="w-full p-3.5 pr-10 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white dark:bg-slate-800 text-sm">
+      </div>
+
+      <div id="buttonsGrid" class="grid grid-cols-1 gap-3.5 sm:gap-4"></div>
+    </div>
+
+    <!-- VIEW 3: تفاصيل القراءة (قائمة جميع أذكار المجموعة) -->
+    <div id="detailView" class="hidden space-y-6">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 py-2">
+        <button type="button" onclick="goBackToSection()" class="flex items-center text-sm font-semibold text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 px-3 py-1.5 rounded-xl border border-emerald-200 dark:border-emerald-800">
+          <span class="btn-back-label">رجوع</span>
+        </button>
+        <h2 id="itemGroupTitle" class="text-lg md:text-xl font-bold text-slate-800 dark:text-slate-100 text-center px-2"></h2>
+        
+        <button type="button" onclick="resetAllInGroup()" id="resetAllBtn" class="text-xs font-medium text-slate-600 dark:text-slate-400 hover:text-red-600 bg-slate-100 dark:bg-slate-800 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700">
+          إعادة ضبط الكل
+        </button>
+      </div>
+
+      <!-- شريط إنجاز المجموعة -->
+      <div id="progressBarContainer" class="bg-white dark:bg-slate-800 p-4 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-2">
+        <div class="flex justify-between items-center text-xs font-bold text-slate-600 dark:text-slate-300">
+          <span id="progressTextLabel">نسبة الإنجاز الكلية</span>
+          <span id="progressPercent">0%</span>
+        </div>
+        <div class="w-full bg-slate-100 dark:bg-slate-700 h-2.5 rounded-full overflow-hidden">
+          <div id="progressBarFill" class="bg-emerald-500 h-full w-0 transition-all duration-300"></div>
+        </div>
+      </div>
+
+      <!-- حاوية قائمة الأذكار -->
+      <div id="itemsContainer" class="space-y-6"></div>
+    </div>
+
+    <!-- VIEW 4: المسبحة -->
+    <div id="tasbeehView" class="hidden space-y-6 pt-4">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
+        <button type="button" onclick="goHome()" class="flex items-center text-sm font-semibold text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 px-3 py-1.5 rounded-xl border border-emerald-200 dark:border-emerald-800">
+          <span class="btn-back-label">الرئيسية</span>
+        </button>
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-100" id="tasbeehHeaderTitle">المسبحة الإلكترونية الشاملة</h2>
+        <button type="button" onclick="resetAllTasbeehs()" id="resetTasbeehBtn" class="text-xs font-bold text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/50 px-3 py-1.5 rounded-xl border border-rose-200 dark:border-rose-800">
+          تصفير الكل
+        </button>
+      </div>
+
+      <div id="tasbeehVirtues" class="pb-2"></div>
+
+      <div id="tasbeehGrid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+    </div>
+
+    <!-- VIEW 5: المفضلة -->
+    <div id="favoritesView" class="hidden space-y-6">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
+        <button type="button" onclick="goHome()" class="flex items-center text-sm font-semibold text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 px-3 py-1.5 rounded-xl border border-emerald-200 dark:border-emerald-800">
+          <span class="btn-back-label">الرئيسية</span>
+        </button>
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-100" id="favHeaderTitle">المفضلة</h2>
+        <div class="w-16"></div>
+      </div>
+      <div id="favoritesContainer" class="space-y-4"></div>
+    </div>
+
+    <!-- VIEW 6: قسم القرآن الكريم الرئيسي (الصفحة الرئيسية للقرآن بـ 3 بطاقات) -->
+    <div id="quranView" class="hidden space-y-6">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
+        <button type="button" onclick="goHome()" class="flex items-center text-sm font-semibold text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 px-3 py-1.5 rounded-xl border border-emerald-200 dark:border-emerald-800">
+          <span class="btn-back-label">الرئيسية</span>
+        </button>
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-100" id="quranIndexTitle">القرآن الكريم (برواية ورش)</h2>
+        <div class="w-16"></div>
+      </div>
+
+      <!-- البطاقات الثلاث الرئيسية (3 Secciones) -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <!-- 1. قائمة السور (Lista de Suras) -->
+        <button type="button" onclick="showQuranSurahsView()" id="cardSurahsBtn" class="bg-gradient-to-br from-emerald-600 to-emerald-800 hover:from-emerald-700 text-white p-5 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center space-y-2 cursor-pointer border border-white/10">
+          <span class="block p-3 bg-white/20 rounded-2xl text-3xl">📜</span>
+          <span class="block">
+            <span class="block text-lg font-bold" id="tabSurahsText">1. فهرس السور</span>
+            <span class="block text-emerald-100 text-xs mt-0.5" id="tabSurahsSub">114 سورة</span>
+          </span>
+        </button>
+
+        <!-- 2. قائمة الأحزاب (Lista de Ahzab) -->
+        <button type="button" onclick="showQuranAhzabView()" id="cardAhzabBtn" class="bg-gradient-to-br from-teal-600 to-teal-800 hover:from-teal-700 text-white p-5 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center space-y-2 cursor-pointer border border-white/10">
+          <span class="block p-3 bg-white/20 rounded-2xl text-3xl">🕌</span>
+          <span class="block">
+            <span class="block text-lg font-bold" id="tabAhzabText">2. فهرس الأحزاب</span>
+            <span class="block text-teal-100 text-xs mt-0.5" id="tabAhzabSub">60 حزب</span>
+          </span>
+        </button>
+
+        <!-- 3. متابعة القراءة (Continuar Leyendo) -->
+        <button type="button" onclick="continueLastReading()" id="cardContinueBtn" class="bg-gradient-to-br from-amber-600 to-amber-800 hover:from-amber-700 text-white p-5 rounded-2xl shadow-lg transition transform active:scale-95 text-center flex flex-col items-center justify-center space-y-2 cursor-pointer border border-white/10 sm:col-span-1">
+          <span class="block p-3 bg-white/20 rounded-2xl text-3xl">🔖</span>
+          <span class="block">
+            <span class="block text-lg font-bold" id="tabContinueText">3. متابعة القراءة</span>
+            <span class="block text-amber-100 text-xs mt-0.5 line-clamp-1" id="tabContinueSub">صفحة 1</span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- VIEW 6B: صفحة قائمة السور (114 سورة) -->
+    <div id="quranSurahsView" class="hidden space-y-5">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
+        <button type="button" onclick="showQuranView()" class="flex items-center text-sm font-semibold text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 px-3 py-1.5 rounded-xl border border-emerald-200 dark:border-emerald-800">
+          <span id="quranMenuBtnLabel">فهرس القرآن 📖</span>
+        </button>
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-100" id="surahsPageTitle">فهرس السور</h2>
+        <div class="w-16"></div>
+      </div>
+
+      <!-- محرك البحث السريع للسور -->
+      <div class="relative">
+        <label for="quranSearchInput" class="sr-only">ابحث عن سورة بالاسم أو الرقم</label>
+        <input type="text" id="quranSearchInput" aria-label="ابحث عن سورة بالاسم أو الرقم" oninput="filterSurahs()" placeholder="ابحث عن سورة بالاسم أو الرقم..." class="w-full p-3 pr-10 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500">
+        <span class="absolute left-3 top-3 text-slate-400">🔍</span>
+      </div>
+
+      <div id="surahsListContainer" class="grid gap-3 sm:grid-cols-2"></div>
+    </div>
+
+    <!-- VIEW 6C: صفحة قائمة الأحزاب (60 حزب - 3 في كل صف) -->
+    <div id="quranAhzabView" class="hidden space-y-5">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
+        <button type="button" onclick="showQuranView()" class="flex items-center text-sm font-semibold text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 px-3 py-1.5 rounded-xl border border-emerald-200 dark:border-emerald-800">
+          <span id="quranMenuBtnLabel2">فهرس القرآن 📖</span>
+        </button>
+        <h2 class="text-xl font-bold text-slate-800 dark:text-slate-100" id="ahzabPageTitle">فهرس الأحزاب</h2>
+        <div class="w-16"></div>
+      </div>
+
+      <div id="ahzabListContainer" class="grid grid-cols-3 gap-2.5 sm:gap-4"></div>
+    </div>
+
+    <!-- VIEW 7: قارئ صفحات القرآن الكريم (صفحة واحدة مفرداة مع دعم الإيماءات والسحب) -->
+    <div id="quranReaderView" class="hidden space-y-4">
+      <!-- شريط التحكم العلوي -->
+      <div class="sticky top-16 z-40 flex items-center justify-between bg-slate-900/90 text-white p-3 rounded-2xl backdrop-blur-md border border-slate-700/80 shadow-xl">
+        <button type="button" onclick="showQuranView()" class="flex items-center text-xs font-bold bg-amber-600 hover:bg-amber-700 text-white px-3 py-1.5 rounded-xl transition cursor-pointer">
+          <span id="indexBtnText">فهرس السور 📖</span>
+        </button>
+
+        <div class="flex items-center space-x-1.5 space-x-reverse">
+          <label for="jumpPageInput" class="sr-only">رقم الصفحة</label>
+          <input type="number" id="jumpPageInput" aria-label="رقم الصفحة" min="1" max="638" placeholder="1..638" class="w-16 p-1.5 text-center text-xs font-bold rounded-lg bg-slate-800 border border-slate-600 text-white focus:outline-none focus:ring-2 focus:ring-amber-500">
+          <button type="button" onclick="jumpToInputPage()" class="text-xs bg-emerald-600 hover:bg-emerald-700 px-2.5 py-1.5 rounded-lg font-bold transition cursor-pointer">
+            <span id="jumpBtnText">انتقال</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- بطاقة الصفحة المفرداة مع دعم الإيماءات والسحب -->
+      <div id="singleQuranPageCard" class="w-full max-w-2xl mx-auto bg-white dark:bg-slate-800 p-3 sm:p-4 rounded-3xl shadow-xl border border-amber-200/80 dark:border-slate-700 text-center relative select-none">
+
+        <!-- الشريط العلوية داخل الصفحة -->
+        <div class="flex items-center justify-between text-xs sm:text-sm font-extrabold text-amber-800 dark:text-amber-300 pb-2 mb-2 border-b border-amber-200/60 dark:border-slate-700 px-2">
+          <span><span id="pageLabelText">صفحة</span> <span id="quranPageNumDisplay">1</span> <span id="pageOfText">من 638</span></span>
+          <span id="quranHizbDisplay" class="bg-amber-100 dark:bg-amber-950/80 text-amber-900 dark:text-amber-200 px-2.5 py-0.5 rounded-md border border-amber-300/60 text-xs">الحزب 1</span>
+          <span id="quranSurahDisplay" class="font-bold">سورة الفاتحة</span>
+        </div>
+
+        <!-- صورة الصفحة مع دعم السحب والتمرير Touch Swipe -->
+        <div id="quranImageWrapper" class="relative overflow-hidden cursor-grab active:cursor-grabbing my-2 rounded-2xl bg-amber-50/50 dark:bg-slate-900/50 min-h-[400px] flex items-center justify-center">
+          <img id="quranPageImg" src="quran_pages/page1.png" class="w-full h-auto rounded-2xl shadow-md transition-opacity duration-150" alt="المصحف الشريف">
+        </div>
+
+        <!-- شريط التنقل السفلية بين الصفحات (dir-ltr يضمن أن الصفحة التالية دائماً على اليسار) -->
+        <div class="flex items-center justify-between pt-3 mt-2 border-t border-amber-200/60 dark:border-slate-700 dir-ltr">
+          <!-- Button ON LEFT: NEXT Page -->
+          <button type="button" onclick="nextQuranPage()" class="flex items-center gap-1 px-3.5 py-2 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs shadow-md transition transform active:scale-95 cursor-pointer">
+            <span class="quran-nav-arrow" dir="ltr" aria-hidden="true">←</span><span id="nextBtnText">الصفحة التالية</span>
+          </button>
+
+          <span class="text-[11px] font-semibold text-slate-500 dark:text-slate-400 hidden sm:inline">
+            <span id="swipeHint">اسحب لليمين للصفحة التالية ➔</span>
+          </span>
+
+          <!-- Button ON RIGHT: PREVIOUS Page -->
+          <button type="button" onclick="prevQuranPage()" class="flex items-center gap-1 px-3.5 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs shadow-md transition transform active:scale-95 cursor-pointer">
+            <span id="prevBtnText">الصفحة السابقة</span><span class="quran-nav-arrow" dir="ltr" aria-hidden="true">→</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Audio playback progress -->
+  <section id="audioProgressPanel" class="hidden mx-auto max-w-3xl px-4 py-3 mb-3 bg-white dark:bg-slate-800 rounded-2xl border border-emerald-200 dark:border-slate-700 shadow-md" aria-label="Audio playback">
+    <div class="flex items-center justify-between gap-3 mb-2">
+      <span id="audioProgressTitle" class="text-sm font-bold text-slate-700 dark:text-slate-100">تقدم التلاوة</span>
+      <button type="button" id="audioCloseBtn" class="px-2 py-1 rounded-lg bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-100 text-xs" aria-label="إغلاق مشغل الصوت">✕</button>
+    </div>
+    <input id="audioSeekBar" type="range" min="0" max="1000" value="0" step="1" class="w-full accent-emerald-600 cursor-pointer" aria-label="Audio progress">
+    <div class="flex justify-between gap-3 text-xs tabular-nums text-slate-500 dark:text-slate-300" dir="ltr">
+      <span id="audioCurrentTime">0:00</span><span id="audioDuration">0:00</span>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 py-4 text-center text-xs text-slate-500 dark:text-slate-400">
+    <span id="footerText">زَادُ الْقُلُوبِ - جامع الأذكار والأدعية والمناجاة © 2026</span>
+    <div id="footerDua" class="mt-1 font-semibold">لَا تَنْسَوْنِي بِالدُّعَاءِ 🤲</div>
+  </footer>
+
+  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-slate-800 text-white text-xs px-4 py-2.5 rounded-full shadow-2xl opacity-0 pointer-events-none transition duration-300 z-50"></div>
+
+
+
+  <!-- Cada sección carga sus datos y funciones antes del controlador común. -->
+  <script src="audio-overrides.js"></script>
+  <script src="quran.js"></script>
+  <script src="tasbeeh.js"></script>
+  <script src="app.js"></script>
+  <script src="adab.js"></script>
+  <script src="extras.js"></script>
+  <script src="rihla.js"></script>
+  <script src="daily-routine.js"></script>
+  <script src="daily-routine-storage.js"></script>
+  <script src="daily-routine-progress.js"></script>
+  <script src="daily-routine-ui.js"></script>
+  <script src="global-search.js"></script>
+  <script src="credits.js"></script>
+  <script src="pwa.js"></script>
+
+  <!-- Modal: Guía de Transliteración (i) -->
+  <div id="transliterationModal" onclick="if(event.target === this) closeTransliterationGuide()" style="touch-action:none; overscroll-behavior:none;" class="fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-[9999] flex items-center justify-center p-3 sm:p-4 hidden transition-opacity duration-300" role="dialog" aria-modal="true" aria-labelledby="transliterationModalTitle">
+    <div style="height:85vh; height:85dvh; max-height:85dvh; min-height:0; touch-action:pan-y;" class="bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 rounded-3xl max-w-xl w-full min-h-0 flex flex-col shadow-2xl border border-slate-200 dark:border-slate-700 overflow-hidden">
+
+      <!-- Modal Header -->
+      <div class="p-5 border-b border-slate-200 dark:border-slate-700 flex items-center justify-between bg-emerald-700 dark:bg-emerald-900 text-white">
+        <div class="flex items-center space-x-2 space-x-reverse">
+          <span class="text-xl">ℹ️</span>
+          <div>
+            <h3 id="transliterationModalTitle" class="font-extrabold text-base md:text-lg">Guía de Transliteración y Pronunciación</h3>
+            <p class="text-emerald-100 text-xs">Equivalencia de letras árabes en caracteres latinos</p>
+          </div>
+        </div>
+        <button type="button" onclick="closeTransliterationGuide()" class="p-2 rounded-xl hover:bg-white/20 text-white transition text-lg font-bold">
+          ✕
+        </button>
+      </div>
+
+      <!-- Modal Body (Scrollable) -->
+      <div class="p-5 space-y-4 text-xs sm:text-sm dir-ltr" style="flex:1 1 0%; min-height:0; height:0; overflow-y:auto; overflow-x:hidden; -webkit-overflow-scrolling:touch; overscroll-behavior-y:contain; touch-action:pan-y;">
+        <p class="text-slate-600 dark:text-slate-300 leading-relaxed bg-emerald-50 dark:bg-emerald-950/40 p-3 rounded-2xl border border-emerald-100 dark:border-emerald-900">
+          Esta guía te ayuda a pronunciar correctamente los Azkar en árabe leyendo el texto en caracteres latinos:
+        </p>
+
+        <div class="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-700">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="bg-slate-100 dark:bg-slate-700/80 text-slate-700 dark:text-slate-200 font-bold border-b border-slate-200 dark:border-slate-700">
+                <th class="p-3 text-center">Árabe</th>
+                <th class="p-3">Latino</th>
+                <th class="p-3">Pronunciación en Español</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 dark:divide-slate-700/50">
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">أ / إ / ء</td><td class="p-2.5 font-bold">a, i, u / ʾ</td><td class="p-2.5">Al inicio de palabra, solo la vocal (a, i, u). En medio o al final se escribe ʾ: un corte suave de la voz (Hamzah), ej. asʾaluka, shayʾ</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ب</td><td class="p-2.5 font-bold">b</td><td class="p-2.5">Como la 'b' en español</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ت</td><td class="p-2.5 font-bold">t</td><td class="p-2.5">Como la 't' en español</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ث</td><td class="p-2.5 font-bold">th</td><td class="p-2.5">Como la 'z' en 'zapato' (o 'th' en 'think')</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ج</td><td class="p-2.5 font-bold">j</td><td class="p-2.5">Como la 'j' en inglés o 'y' fuerte</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ح</td><td class="p-2.5 font-bold">ḥ</td><td class="p-2.5">'H' aspirada profunda desde la garganta</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">خ</td><td class="p-2.5 font-bold">kh</td><td class="p-2.5">Como la 'j' en español (ej. 'juan')</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">د</td><td class="p-2.5 font-bold">d</td><td class="p-2.5">Como la 'd' en español</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ذ</td><td class="p-2.5 font-bold">dh</td><td class="p-2.5">Como la 'd' suave en 'cada' (o 'th' en 'this')</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ر</td><td class="p-2.5 font-bold">r</td><td class="p-2.5">Como la 'r' suave en español</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ز</td><td class="p-2.5 font-bold">z</td><td class="p-2.5">Como la 'z' en inglés (sonido zumbado)</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">س</td><td class="p-2.5 font-bold">s</td><td class="p-2.5">Como la 's' en español</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ش</td><td class="p-2.5 font-bold">sh</td><td class="p-2.5">Como la 'sh' en inglés (ej. 'show')</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ص</td><td class="p-2.5 font-bold">ṣ</td><td class="p-2.5">'S' enfática y profunda (Ṣād)</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ض</td><td class="p-2.5 font-bold">ḍ</td><td class="p-2.5">'D' enfática y profunda (Ḍād)</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ط</td><td class="p-2.5 font-bold">ṭ</td><td class="p-2.5">'T' enfática y profunda (Ṭā)</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ظ</td><td class="p-2.5 font-bold">ẓ</td><td class="p-2.5">'Z / Dh' enfática y profunda (Ẓā)</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ع</td><td class="p-2.5 font-bold">‘ / ʿ</td><td class="p-2.5">Sonido gutural profundo ('Ayn)</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">غ</td><td class="p-2.5 font-bold">gh</td><td class="p-2.5">Como la 'r' en francés o 'g' suave (Ghayn)</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ف</td><td class="p-2.5 font-bold">f</td><td class="p-2.5">Como la 'f' en español</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ق</td><td class="p-2.5 font-bold">q</td><td class="p-2.5">'K' profunda desde la parte posterior de la garganta</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ك</td><td class="p-2.5 font-bold">k</td><td class="p-2.5">Como la 'k' o 'c' en español</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ل</td><td class="p-2.5 font-bold">l</td><td class="p-2.5">Como la 'l' en español</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">م</td><td class="p-2.5 font-bold">m</td><td class="p-2.5">Como la 'm' en español</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ن</td><td class="p-2.5 font-bold">n</td><td class="p-2.5">Como la 'n' en español</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">هـ</td><td class="p-2.5 font-bold">h</td><td class="p-2.5">'H' aspirada suave (ej. 'hello' en inglés)</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">و</td><td class="p-2.5 font-bold">w / ū</td><td class="p-2.5">'W' consonante (ej. 'water') o 'Ū' vocal larga</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ي</td><td class="p-2.5 font-bold">y / ī</td><td class="p-2.5">'Y' consonante (ej. 'yo') o 'Ī' vocal larga</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">آ / ــَـا</td><td class="p-2.5 font-bold">ā</td><td class="p-2.5">'A' larga (se sostiene el doble de tiempo)</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ــِـي</td><td class="p-2.5 font-bold">ī</td><td class="p-2.5">'I' larga (se sostiene el doble de tiempo)</td></tr>
+              <tr><td class="p-2.5 text-center font-bold text-base text-emerald-700 dark:text-emerald-400">ــُـو</td><td class="p-2.5 font-bold">ū</td><td class="p-2.5">'U' larga (se sostiene el doble de tiempo)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-4 border-t border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/50 flex justify-end">
+        <button type="button" onclick="closeTransliterationGuide()" class="px-5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-bold text-xs transition">
+          Entendido
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Editor de contenido: la clave de GitHub se introduce solo durante la sesión -->
+  <div id="itemEditorModal" class="hidden fixed inset-0 z-[100] overflow-y-auto bg-slate-950/70 p-3 sm:p-6" role="dialog" aria-modal="true" aria-labelledby="itemEditorTitle">
+    <div class="mx-auto my-4 max-w-3xl overflow-hidden rounded-2xl border border-emerald-200 bg-white shadow-2xl dark:border-slate-700 dark:bg-slate-900">
+      <div class="flex items-center justify-between gap-3 border-b border-slate-200 p-4 dark:border-slate-700">
+        <h2 id="itemEditorTitle" class="text-lg font-extrabold text-emerald-800 dark:text-emerald-300">Editar elemento</h2>
+        <button type="button" onclick="closeItemEditor()" class="rounded-xl px-3 py-2 text-xl hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Cerrar">✕</button>
+      </div>
+      <form onsubmit="stageItemChanges(); return false;" class="space-y-4 p-4 sm:p-6">
+        <div id="itemEditorFields" class="grid grid-cols-1 gap-4 md:grid-cols-2"></div>
+        <p class="text-sm text-slate-600 dark:text-slate-300">Los cambios quedan guardados temporalmente en este dispositivo. Puedes seguir editando otros elementos y publicarlos juntos cuando quieras.</p>
+        <p id="itemEditorStatus" class="text-sm rounded-xl bg-slate-100 p-3 text-slate-700 dark:bg-slate-800 dark:text-slate-200" role="status" aria-live="polite"></p>
+        <div class="flex flex-wrap justify-end gap-2 border-t border-slate-200 pt-4 dark:border-slate-700">
+          <button type="button" onclick="closeItemEditor()" class="rounded-xl border border-slate-300 px-4 py-2.5 font-bold hover:bg-slate-100 dark:border-slate-600 dark:hover:bg-slate-800">Cancelar</button>
+          <button id="itemEditorSaveButton" type="submit" class="rounded-xl bg-emerald-700 px-5 py-2.5 font-bold text-white hover:bg-emerald-800 disabled:opacity-50">Guardar temporalmente</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <div id="pendingEditsDock" class="hidden relative z-10 mx-auto mt-6 mb-6 w-full max-w-3xl rounded-2xl border border-emerald-300 bg-white/95 p-3 shadow-xl dark:border-emerald-800 dark:bg-slate-900/95">
+    <div class="flex items-center gap-3">
+      <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-100 font-extrabold text-emerald-800 dark:bg-emerald-950 dark:text-emerald-200" id="pendingEditsCount">0</div>
+      <div class="min-w-0 flex-1">
+        <p class="font-bold text-slate-900 dark:text-white">Cambios temporales</p>
+        <p id="pendingEditsSummary" class="text-xs text-slate-600 dark:text-slate-300"></p>
+      </div>
+      <button type="button" onclick="openPendingPublishModal()" class="shrink-0 rounded-xl bg-emerald-700 px-4 py-2.5 text-sm font-bold text-white hover:bg-emerald-800">Publicar todos</button>
+    </div>
+  </div>
+  <div id="pendingPublishModal" class="hidden fixed inset-0 z-[110] overflow-y-auto bg-slate-950/70 p-3 sm:p-6" role="dialog" aria-modal="true" aria-labelledby="pendingPublishTitle">
+    <div class="mx-auto my-4 max-w-2xl overflow-hidden rounded-2xl border border-emerald-200 bg-white shadow-2xl dark:border-slate-700 dark:bg-slate-900">
+      <div class="flex items-center justify-between gap-3 border-b border-slate-200 p-4 dark:border-slate-700">
+        <h2 id="pendingPublishTitle" class="text-lg font-extrabold text-emerald-800 dark:text-emerald-300">Publicar cambios pendientes</h2>
+        <button type="button" onclick="closePendingPublishModal()" class="rounded-xl px-3 py-2 text-xl hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Cerrar">✕</button>
+      </div>
+      <form onsubmit="publishPendingChanges(event)" class="space-y-4 p-4 sm:p-6">
+        <p class="text-sm text-slate-600 dark:text-slate-300">Revisa la lista y publica todos los cambios en un único commit de GitHub.</p>
+        <div id="pendingPublishList" class="max-h-56 space-y-2 overflow-y-auto"></div>
+        <div class="space-y-2 rounded-xl border border-amber-300 bg-amber-50 p-3 dark:border-amber-800 dark:bg-amber-950/40">
+          <label for="githubEditToken" class="block text-sm font-bold text-slate-800 dark:text-slate-100">Token personal de GitHub (fine-grained)</label>
+          <input id="githubEditToken" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="github_pat_…" class="w-full rounded-xl border border-slate-300 bg-white p-3 text-sm dark:border-slate-600 dark:bg-slate-800" required>
+          <p class="text-xs leading-relaxed text-slate-700 dark:text-slate-300">Autoriza solo el repositorio <strong>Mundial-45/ZadALQulub</strong> y el permiso <strong>Contents: Read and write</strong>. No compartas el token. No se guarda en localStorage.</p>
+          <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer" class="inline-block text-sm font-bold text-emerald-700 underline dark:text-emerald-300">Crear token en GitHub</a>
+        </div>
+        <p id="pendingPublishStatus" class="text-sm rounded-xl bg-slate-100 p-3 text-slate-700 dark:bg-slate-800 dark:text-slate-200" role="status" aria-live="polite"></p>
+        <div class="flex flex-wrap justify-end gap-2 border-t border-slate-200 pt-4 dark:border-slate-700">
+          <button type="button" onclick="closePendingPublishModal()" class="rounded-xl border border-slate-300 px-4 py-2.5 font-bold hover:bg-slate-100 dark:border-slate-600 dark:hover:bg-slate-800">Seguir editando</button>
+          <button id="publishPendingButton" type="submit" class="rounded-xl bg-emerald-700 px-5 py-2.5 font-bold text-white hover:bg-emerald-800 disabled:opacity-50">Publicar todos en GitHub</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
