@@ -984,3 +984,10 @@ h1, h2, h3, #headerTitle,
 .dhikr-counter-btn .zad-ring-svg, button[onclick*="decrementCounter"] .zad-ring-svg { display: none !important; }
 .zad-ring-num { font-size: 1.5rem; }
 .zad-ring-cap { font-size: 0.95rem; font-weight: 600; margin-top: 0; max-width: none; white-space: nowrap; line-height: 1; }
+
+/* Barra de progreso en el propio botón: se aclara de derecha a izquierda según las pulsaciones */
+.dhikr-counter-btn, button[onclick*="decrementCounter"] {
+  background: linear-gradient(to left, #34d399 0, #10b981 var(--p, 0%), #047857 var(--p, 0%), #065f46 100%) !important;
+  transition: background 0.25s ease, transform 0.15s ease !important;
+}
+.dhikr-counter-btn.is-done, button[onclick*="decrementCounter"].is-done { background: #10b981 !important; }

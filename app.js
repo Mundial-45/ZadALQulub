@@ -2245,7 +2245,8 @@ function renderGroupItems() {
           ${(() => {
             const _tot = stageInfo ? stageInfo.max : initialMax, _rem = stageInfo ? stageInfo.remaining : currentCount;
             const _off = isDone ? 0 : Math.round(282.7 * (_tot > 0 ? Math.min(1, Math.max(0, _rem / _tot)) : 1) * 10) / 10;
-            return `<button type="button" onclick="decrementCounter(${index})" class="dhikr-counter-btn ${isDone ? 'is-done' : ''}">
+            const _pct = isDone ? 100 : Math.round((1 - (_tot > 0 ? Math.min(1, Math.max(0, _rem / _tot)) : 1)) * 100);
+            return `<button type="button" onclick="decrementCounter(${index})" style="--p:${_pct}%" class="dhikr-counter-btn ${isDone ? 'is-done' : ''}">
             <svg class="zad-ring-svg" viewBox="0 0 100 100" aria-hidden="true"><circle class="zad-ring-track" cx="50" cy="50" r="45" fill="none" stroke-width="5"/><circle class="zad-ring-bar" cx="50" cy="50" r="45" fill="none" stroke-width="5" stroke-linecap="round" stroke-dasharray="282.7" stroke-dashoffset="${_off}" transform="rotate(-90 50 50)"/></svg>
             <span class="zad-ring-num">${isDone ? '✓' : _rem}</span>
             <span class="zad-ring-cap">${isDone ? t.completedItem : t.pressToCount}</span>
