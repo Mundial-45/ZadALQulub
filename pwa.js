@@ -27,7 +27,7 @@
   // 'https://play.google.com/store/apps/details?id=com.zadalqulub.app'),
   // en el navegador de Android el botón "Instalar" lleva a Play Store.
   // Mientras esté vacío, se mantiene el comportamiento anterior (instalación PWA).
-  var PLAY_STORE_URL = '';
+  var PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.zadalqulub.app';
 
   var installPrompt = null;
   var dismissedThisVisit = false;
