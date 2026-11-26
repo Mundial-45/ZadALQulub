@@ -972,3 +972,15 @@ h1, h2, h3, #headerTitle,
 [id^="zikr-card-"] .custom-text-size { padding-top: 0 !important; padding-bottom: 0 !important; }
 [id^="zikr-card-"] > div[data-no-share].flex-col { padding-top: 0 !important; }
 [id^="zikr-card-"] .audio-player-compact { margin-top: 0 !important; margin-bottom: 0 !important; }
+
+/* Botón de conteo rectangular: una sola línea (número + "pulsa para repetir") */
+.dhikr-counter-btn, button[onclick*="decrementCounter"] {
+  width: 100% !important; max-width: 17rem !important; min-width: 0 !important;
+  height: 2.9rem !important; min-height: 2.9rem !important;
+  border-radius: 0.85rem !important;
+  flex-direction: row !important; gap: 0.75rem !important;
+  padding: 0 1rem !important;
+}
+.dhikr-counter-btn .zad-ring-svg, button[onclick*="decrementCounter"] .zad-ring-svg { display: none !important; }
+.zad-ring-num { font-size: 1.5rem; }
+.zad-ring-cap { font-size: 0.95rem; font-weight: 600; margin-top: 0; max-width: none; white-space: nowrap; line-height: 1; }
