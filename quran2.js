@@ -67,8 +67,8 @@
       '<style>' +
       '#quran2View{width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}' +
       '#quran2View .q2-night img{filter:invert(1) hue-rotate(180deg) brightness(.9)}' +
-      '#quran2View .q2-box{position:relative;width:100%;padding-bottom:134%}' +
-      '#quran2View .q2-box img{position:absolute;left:4.3%;top:0;width:91.5%;height:100%;clip-path:inset(0 3% 0 3%);object-fit:contain}' +
+      '#quran2View .q2-box{position:relative;width:100%;padding-bottom:126%}' +
+      '#quran2View .q2-box img{position:absolute;left:7%;top:0;width:86%;height:100%;object-fit:contain}' +
       '#quran2View .q2-cad{height:.55rem;background-size:100% 100%;background-repeat:no-repeat}' +
       '#quran2View .q2-cad1{background-image:url(quran_pages/q2_cadre1.jpg)}#quran2View .q2-cad2{background-image:url(quran_pages/q2_cadre2.jpg)}' +
       '#quran2View .q2-hd{display:flex;align-items:center;justify-content:space-between;direction:rtl;height:2.7rem;padding:0 1.6rem;gap:.35rem;font-size:calc(min(.78rem,2.75vw) * var(--q2z,1));white-space:nowrap;overflow:hidden;color:#5b3a12;background:#f6e2b8;position:relative}' +
