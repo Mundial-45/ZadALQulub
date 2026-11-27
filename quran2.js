@@ -65,6 +65,7 @@
     host.parentNode.insertBefore(v, host.nextSibling);
     v.innerHTML =
       '<style>' +
+      '#quran2View{width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}' +
       '#quran2View .q2-night img{filter:invert(1) hue-rotate(180deg) brightness(.9)}' +
       '#quran2View .q2-box{position:relative;width:100%;padding-bottom:134%}' +
       '#quran2View .q2-box img{position:absolute;left:4.3%;top:0;width:91.5%;height:100%;clip-path:inset(0 3% 0 3%);object-fit:contain}' +
@@ -79,7 +80,7 @@
       '#quran2View .q2-gutr{position:absolute;right:0;top:0;bottom:0;width:7%;background:linear-gradient(90deg,transparent 34%,#d98a7f 34% 38%,#c9473f 38% 62%,#d98a7f 62% 66%,transparent 66%),#f6e2b8;border-left:3px double #a8742a;box-shadow:inset 0 0 0 2px #e9cd8f}' +
       '#quran2View .q2-gx{box-shadow:inset 0 0 0 2px #e9cd8f}' +
       '#quran2View .q2-gut{background:linear-gradient(90deg,transparent 34%,#d98a7f 34% 38%,#c9473f 38% 62%,#d98a7f 62% 66%,transparent 66%),#f6e2b8}' +
-      '#quran2View .q2-tag{position:absolute;z-index:2;left:.3%;width:8.6%;transform:translateY(-50%);text-align:center;pointer-events:none;font-size:calc(.8rem * var(--q2z,1));line-height:1}' +
+      '#quran2View .q2-tag{position:absolute;z-index:2;left:1.2%;width:8%;transform:translateY(-50%);text-align:center;pointer-events:none;font-size:calc(.8rem * var(--q2z,1));line-height:1}' +
       '#quran2View .q2-tag .m{aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:#c9473f;color:#fbe9d0;font-weight:700;clip-path:polygon(50.0% 0.0%,60.6% 10.4%,75.0% 6.7%,79.0% 21.0%,93.3% 25.0%,89.6% 39.4%,100.0% 50.0%,89.6% 60.6%,93.3% 75.0%,79.0% 79.0%,75.0% 93.3%,60.6% 89.6%,50.0% 100.0%,39.4% 89.6%,25.0% 93.3%,21.0% 79.0%,6.7% 75.0%,10.4% 60.6%,0.0% 50.0%,10.4% 39.4%,6.7% 25.0%,21.0% 21.0%,25.0% 6.7%,39.4% 10.4%);box-shadow:0 0 0 .45em #f6e2b8}' +
       '#quran2View .q2-tag.rb .m{clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);font-size:.9em}' +
       '#quran2View .q2-tag.nf .m{clip-path:polygon(50.0% 0.0%,58.6% 6.8%,69.1% 3.8%,74.4% 13.4%,85.4% 14.6%,86.6% 25.6%,96.2% 30.9%,93.2% 41.4%,100.0% 50.0%,93.2% 58.6%,96.2% 69.1%,86.6% 74.4%,85.4% 85.4%,74.4% 86.6%,69.1% 96.2%,58.6% 93.2%,50.0% 100.0%,41.4% 93.2%,30.9% 96.2%,25.6% 86.6%,14.6% 85.4%,13.4% 74.4%,3.8% 69.1%,6.8% 58.6%,0.0% 50.0%,6.8% 41.4%,3.8% 30.9%,13.4% 25.6%,14.6% 14.6%,25.6% 13.4%,30.9% 3.8%,41.4% 6.8%);background:#b73a34}' +
