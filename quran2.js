@@ -62,10 +62,13 @@
       '#quran2View .q2-night img{filter:invert(1) hue-rotate(180deg) brightness(.9)}' +
       '#quran2View .q2-box{position:relative;width:100%;padding-bottom:146.6%}' +
       '#quran2View .q2-box img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:contain}' +
-      '#quran2View .q2-hd{display:flex;align-items:center;justify-content:space-between;direction:rtl;height:2.6rem;padding:0 .8rem;font-size:.85rem;color:#6b5a4a;border-top:4px double #8a7a68;border-bottom:4px double #8a7a68;background:#fdca9b}' +
-      '#quran2View .q2-hd b{font-weight:600}#quran2View .q2-hd i{font-style:normal;font-size:.7rem;color:#9a3412;margin-inline-start:.4rem}' +
-      '#quran2View .q2-hd .q2-dot{display:inline-block;width:.8rem;height:.8rem;border-radius:50%;background:#f5b98a;margin:0 .4rem}' +
-      '#quran2View .q2-num{height:2.2rem;line-height:2.2rem;text-align:center;font-size:1rem;color:#6b5a4a;background:#fdca9b}' +
+      '#quran2View .q2-cad{height:.55rem;background-size:100% 100%;background-repeat:no-repeat}' +
+      '#quran2View .q2-cad1{background-image:url(quran_pages/q2_cadre1.jpg)}#quran2View .q2-cad2{background-image:url(quran_pages/q2_cadre2.jpg)}' +
+      '#quran2View .q2-hd{display:flex;align-items:center;justify-content:space-between;direction:rtl;height:2.7rem;padding:0 1.9rem;font-size:.95rem;white-space:nowrap;overflow:hidden;color:#7a3b2a;background:#fdca9b;position:relative}' +
+      '#quran2View .q2-hd>span{display:inline-block}#quran2View .q2-hd i{font-style:normal;margin-inline-start:.6rem}' +
+      '#quran2View .q2-ros{position:absolute;top:50%;width:2.6rem;height:2.6rem;margin-top:-1.3rem;border-radius:50%;background:radial-gradient(circle,#f3a3ad 0 34%,#fbe9a6 36% 50%,rgba(251,233,166,.45) 52% 62%,transparent 64%)}' +
+      '#quran2View .q2-ros.r{right:-.7rem}#quran2View .q2-ros.l{left:-.7rem}' +
+      '#quran2View .q2-num{height:2.2rem;line-height:2.2rem;text-align:center;font-size:1.05rem;color:#7a3b2a;background:#fdca9b;border-bottom:2px solid rgba(124,58,42,.2)}' +
       '#quran2View .q2-btn{padding:.4rem .7rem;border-radius:.75rem;font-weight:700;font-size:.8rem;cursor:pointer;background:#334155;color:#fff}' +
       '#quran2View .q2-bar{background:rgba(15,23,42,.95);color:#fff}' +
       '#quran2View .q2-ok{background:#059669}#quran2View .q2-am{background:#d97706}' +
@@ -198,7 +201,9 @@
     for (var i = 1; i <= TOTAL; i++) {
       var d = mk('div', 'q2-pg');
       d.setAttribute('data-p', i);
+      d.appendChild(mk('div', 'q2-cad q2-cad1'));
       d.appendChild(mk('div', 'q2-hd'));
+      d.appendChild(mk('div', 'q2-cad q2-cad2'));
       d.appendChild(mk('div', 'q2-box'));
       d.appendChild(mk('div', 'q2-num', String(i)));
       frag.appendChild(d);
@@ -211,13 +216,14 @@
     var pg = $('q2Pages'); if (!pg || !pg.firstChild) return;
     var es = isEs();
     for (var i = 1; i <= TOTAL; i++) {
-      var hd = pg.childNodes[i - 1].firstChild;
+      var hd = pg.childNodes[i - 1].childNodes[1];
       var hz = hizbOf(i), jz = Math.ceil(hz / 2), tm = parseInt(THUMN.charAt(i - 1), 10) || 0;
       var sur = quranSurahs[0];
       for (var k = 0; k < quranSurahs.length; k++) { if (quranSurahs[k].page <= i) sur = quranSurahs[k]; else break; }
-      var html = '<span><span class="q2-dot"></span>' + (es ? 'Yuz ' + jz : 'الجزء ' + JUZ_AR[jz - 1]) + '</span>' +
+      var html = '<span class="q2-ros r"></span><span class="q2-ros l"></span>' +
+        '<span>' + (es ? 'Yuz ' + jz : 'الجزء ' + JUZ_AR[jz - 1]) + '</span>' +
         '<span>' + (es ? 'Sura ' + sur.nameEs : 'سورة ' + sur.nameAr) + '</span>' +
-        '<span>' + (es ? 'Hizb ' : 'الحزب ') + hz + (tm ? '<i>' + (es ? THUMN_ES[tm] : THUMN_AR[tm]) + '</i>' : '') + '<span class="q2-dot"></span></span>';
+        '<span>' + (es ? 'Hizb ' : 'الحزب ') + hz + (tm ? '<i>' + (es ? THUMN_ES[tm] : THUMN_AR[tm]) + '</i>' : '') + '</span>';
       hd.innerHTML = html;
     }
   }
@@ -228,14 +234,27 @@
     var pg = $('q2Pages'); if (!pg) return;
     var lo = clampPage(cur - KEEP_BEHIND), hi = clampPage(cur + KEEP_AHEAD);
     for (var i = 1; i <= TOTAL; i++) {
-      var d = pg.childNodes[i - 1].childNodes[1], img = d.querySelector('img');
+      var d = pg.childNodes[i - 1].childNodes[3], img = d.querySelector('img');
       if (i >= lo && i <= hi) {
         if (!img) { img = document.createElement('img'); img.alt = ''; img.decoding = 'async'; img.src = 'quran_pages/page' + i + '.png'; d.appendChild(img); }
       } else if (img && (i < lo - 2 || i > hi + 2)) { d.removeChild(img); }
     }
   }
-  function setCur(p) {
+  // Aviso al llegar leyendo a la mitad del hizb o al comienzo de un hizb nuevo
+  function notifyMark(prev, now) {
+    if (now <= prev || now - prev > 12) return; // solo avanzando con la lectura; no al saltar lejos
+    var es = isEs(), msg = '';
+    for (var q = prev + 1; q <= now; q++) {
+      var hz = hizbOf(q), tm = parseInt(THUMN.charAt(q - 1), 10) || 0, ptm = parseInt(THUMN.charAt(q - 2), 10) || 0;
+      if (hz !== hizbOf(q - 1)) msg = es ? ('Comienza el hizb ' + hz) : ('بداية الحزب ' + hz);
+      else if (tm === 4 && ptm !== 4) msg = es ? ('Mitad del hizb ' + hz) : ('نصف الحزب ' + hz);
+    }
+    if (msg) toast(msg);
+  }
+  function setCur(p, notify) {
+    var prevPage = cur;
     cur = clampPage(p);
+    if (notify) notifyMark(prevPage, cur);
     set(K_LAST, String(cur));
     $('q2PageIn').value = cur;
     $('q2Range').value = cur;
@@ -261,7 +280,7 @@
       scrollTimer = 0;
       var y = window.pageYOffset + barBottom() + 40 - listTop();
       var p = clampPage(Math.floor(y / pageH()) + 1);
-      if (p !== cur) setCur(p);
+      if (p !== cur) setCur(p, true);
     }, 80);
   }
 
