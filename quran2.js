@@ -65,6 +65,9 @@
       '#quran2View .q2-cad1{background-image:url(quran_pages/q2_cadre1.jpg)}#quran2View .q2-cad2{background-image:url(quran_pages/q2_cadre2.jpg)}' +
       '#quran2View .q2-hd{display:flex;align-items:center;justify-content:space-between;direction:rtl;height:2.7rem;padding:0 1.25rem;gap:.35rem;font-size:calc(min(.78rem,2.75vw) * var(--q2z,1));white-space:nowrap;overflow:hidden;color:#7a3b2a;background:#fdca9b;position:relative}' +
       '#quran2View .q2-hd>span{display:inline-block}#quran2View .q2-hd i{font-style:normal;margin-inline-start:.4rem}' +
+      '#quran2View .q2-hz{color:#b3001b;font-weight:800;text-shadow:0 0 5px rgba(255,238,160,.95),0 0 10px rgba(255,196,50,.75)}' +
+      '@keyframes q2pulse{0%{transform:scale(1);text-shadow:0 0 5px rgba(255,238,160,.95)}40%{transform:scale(1.28);text-shadow:0 0 12px #fff,0 0 22px #ffd23c,0 0 34px #ffb300}100%{transform:scale(1)}}' +
+      '#quran2View .q2-hz.q2-pulse{animation:q2pulse 1.4s ease-in-out}' +
       '#quran2View .q2-ros{position:absolute;top:50%;width:1.7rem;height:1.7rem;margin-top:-.85rem;border-radius:50%;background:radial-gradient(circle,#f3a3ad 0 34%,#fbe9a6 36% 50%,rgba(251,233,166,.45) 52% 62%,transparent 64%)}' +
       '#quran2View .q2-ros.r{right:-.35rem}#quran2View .q2-ros.l{left:-.35rem}' +
       '#quran2View .q2-num{height:2.2rem;line-height:2.2rem;text-align:center;font-size:calc(min(.9rem,3.4vw) * var(--q2z,1));color:#7a3b2a;background:#fdca9b;border-bottom:2px solid rgba(124,58,42,.2)}' +
@@ -215,7 +218,7 @@
       var html = '<span class="q2-ros r"></span><span class="q2-ros l"></span>' +
         '<span>' + (es ? 'Yuz ' + jz : 'الجزء ' + JUZ_AR[jz - 1]) + '</span>' +
         '<span>' + (es ? 'Sura ' + sur.nameEs : 'سورة ' + sur.nameAr) + '</span>' +
-        '<span>' + (es ? 'Hizb ' : 'الحزب ') + hz + (tm ? '<i>' + (es ? THUMN_ES[tm] : THUMN_AR[tm]) + '</i>' : '') + '</span>';
+        '<span>' + '<b class="' + (i > 1 && hz !== hizbOf(i - 1) || i === 1 ? 'q2-hz' : '') + '" style="font-weight:inherit;display:inline-block">' + (es ? 'Hizb ' : 'الحزب ') + hz + '</b>' + (tm ? '<i>' + (es ? THUMN_ES[tm] : THUMN_AR[tm]) + '</i>' : '') + '</span>';
       hd.innerHTML = html;
     }
   }
@@ -234,43 +237,14 @@
     }
   }
   // Aviso al llegar leyendo a la mitad del hizb o al comienzo de un hizb nuevo
-  // Ordinal árabe 1..60 («العاشر», «الحادي والعشرون»…) para el aviso de hizb
-  function ordAr(n) {
-    var U = ['الأول', 'الثاني', 'الثالث', 'الرابع', 'الخامس', 'السادس', 'السابع', 'الثامن', 'التاسع'];
-    var T = ['العشرون', 'الثلاثون', 'الأربعون', 'الخمسون', 'الستون'];
-    if (n < 10) return U[n - 1];
-    if (n === 10) return 'العاشر';
-    if (n === 11) return 'الحادي عشر';
-    if (n === 12) return 'الثاني عشر';
-    if (n < 20) return U[n - 11] + ' عشر';
-    var t = Math.floor(n / 10), u = n % 10;
-    return u === 0 ? T[t - 2] : U[u - 1] + ' و' + T[t - 2];
-  }
-  var noticeTimer = 0;
-  function notice(text) {
-    var v = $('quran2View'); if (!v) return;
-    var n = $('q2Notice');
-    if (!n) {
-      n = mk('div');
-      n.id = 'q2Notice';
-      n.style.cssText = 'position:fixed;left:50%;bottom:16%;transform:translateX(-50%);z-index:70;display:flex;align-items:center;gap:.6rem;background:#fff;color:#1f2937;padding:.7rem 1.3rem;border-radius:999px;box-shadow:0 4px 18px rgba(0,0,0,.3);font-size:1rem;font-weight:600;direction:rtl;pointer-events:none;opacity:0;transition:opacity .18s;white-space:nowrap';
-      n.innerHTML = '<span></span><img src="Iconos/Quran.webp" alt="" style="width:1.4rem;height:1.4rem;object-fit:contain">';
-      v.appendChild(n);
-    }
-    n.firstChild.textContent = text;
-    n.style.opacity = '1';
-    clearTimeout(noticeTimer);
-    noticeTimer = setTimeout(function () { n.style.opacity = '0'; }, 1400);
-  }
+  // Al centrarse la página donde empieza un hizb, el «الحزب N» de su cabecera se ilumina un momento.
   function notifyMark(prev, now) {
-    if (now === prev || Math.abs(now - prev) > 12) return; // no al saltar lejos con el panel
-    var es = isEs(), msg = '', dir = now > prev ? 1 : -1;
-    for (var q = prev + dir; q !== now + dir; q += dir) {
-      var hz = hizbOf(q), tm = parseInt(THUMN.charAt(q - 1), 10) || 0, ptm = parseInt(THUMN.charAt(q - 2), 10) || 0;
-      if (q > 1 && hz !== hizbOf(q - 1)) msg = es ? ('Hizb ' + hz) : ('الحزب ' + ordAr(hz));
-      else if (tm === 4 && ptm !== 4) msg = es ? ('Mitad del hizb ' + hz) : ('نصف الحزب ' + ordAr(hz));
-    }
-    if (msg) notice(msg);
+    if (now === prev || hizbOf(now) === hizbOf(now - 1) || now < 2) return;
+    var pg = $('q2Pages'); if (!pg) return;
+    var el = pg.childNodes[now - 1].querySelector('.q2-hz'); if (!el) return;
+    el.classList.remove('q2-pulse');
+    void el.offsetWidth;
+    el.classList.add('q2-pulse');
   }
   function setCur(p, notify) {
     var prevPage = cur;
