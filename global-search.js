@@ -26,7 +26,7 @@
       .normalize('NFD').replace(/[̀-ًͯ-ٰٟۖ-ۭـ]/g, '')
       .replace(/[أإآٱ]/g, 'ا').replace(/ى/g, 'ي').replace(/ة/g, 'ه').replace(/ؤ/g, 'و').replace(/ئ/g, 'ي')
       .replace(/[ʿʾ‘’ʼ'`´]/g, '')
-      .replace(/[^\p{L}\p{N}\s]/gu, ' ').replace(/\s+/g, ' ').trim();
+      .replace(/[^؀-ۿA-Za-z0-9À-ɏ\s]/g, ' ').replace(/\s+/g, ' ').trim();
   }
 
   function kindOf(sec, item) {

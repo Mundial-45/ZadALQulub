@@ -419,7 +419,7 @@ function extractBaseAudioList(audioValue) {
   const values = Array.isArray(audioValue) ? audioValue : [audioValue];
   let explicitMultiplier = null;
 
-  const baseCycle = values.flatMap(value => {
+  const baseCycle = [].concat.apply([], values.map(value => {
     if (typeof value !== 'string' || !value.trim()) return [];
     const tokens = value.split(/[\s,]+/).map(url => url.trim()).filter(Boolean);
     return tokens.map(token => {
@@ -433,7 +433,7 @@ function extractBaseAudioList(audioValue) {
       }
       return cleanUrl;
     });
-  }).filter(Boolean);
+  })).filter(Boolean);
 
   return { urls: baseCycle, multiplier: explicitMultiplier };
 }
@@ -718,7 +718,7 @@ document.addEventListener('click', function (e) {
 let _sharedIdx = null;
 function sharedTextNorm(s) {
   return String(s || '').normalize('NFD').replace(/[\u0300-\u036f\u064B-\u065F\u0670\u06D6-\u06ED\u0640]/g, '')
-    .replace(/[أإآٱ]/g, 'ا').replace(/ى/g, 'ي').replace(/ة/g, 'ه').replace(/[^\p{L}\p{N}]/gu, '');
+    .replace(/[أإآٱ]/g, 'ا').replace(/ى/g, 'ي').replace(/ة/g, 'ه').replace(/[^؀-ۿA-Za-z0-9À-ɏ]/g, '');
 }
 function renderSharedTextNotice(item, isEs) {
   if (typeof isAdminMode !== 'function' || !isAdminMode() || !item || item.isInfo || !currentSection) return '';
@@ -1978,7 +1978,7 @@ function readEditorSourceString(literal) {
 }
 
 function getEditorObjectText(objectSource) {
-  const match = objectSource.match(/["']?text["']?\s*:\s*("(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*')/s);
+  const match = objectSource.match(/["']?text["']?\s*:\s*("(?:\\[\s\S]|[^"\\])*"|'(?:\\[\s\S]|[^'\\])*')/);
   return match ? readEditorSourceString(match[1]) : null;
 }
 
@@ -1986,7 +1986,7 @@ function locateEditorItemRange(source, groupId, originalItem, occurrence) {
   const ranges = scanEditorObjectRanges(source);
   const groupCandidates = ranges.filter(function (range) {
     const snippet = source.slice(range.start, range.end);
-    const idMatch = snippet.match(/["']?id["']?\s*:\s*("(?:\\\\.|[^"\\\\])*"|'(?:\\\\.|[^'\\\\])*')/s);
+    const idMatch = snippet.match(/["']?id["']?\s*:\s*("(?:\\\\[\s\S]|[^"\\\\])*"|'(?:\\\\[\s\S]|[^'\\\\])*')/);
     return !!(idMatch && readEditorSourceString(idMatch[1]) === groupId && /["']?items["']?\s*:/.test(snippet));
   }).sort(function (a, b) { return (a.end - a.start) - (b.end - b.start); });
   if (!groupCandidates.length) throw new Error('No se encontró el grupo ' + groupId + ' en el archivo.');
