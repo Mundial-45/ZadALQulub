@@ -65,7 +65,7 @@
       '#quran2View .q2-cad1{background-image:url(quran_pages/q2_cadre1.jpg)}#quran2View .q2-cad2{background-image:url(quran_pages/q2_cadre2.jpg)}' +
       '#quran2View .q2-hd{display:flex;align-items:center;justify-content:space-between;direction:rtl;height:2.7rem;padding:0 1.25rem;gap:.35rem;font-size:calc(min(.78rem,2.75vw) * var(--q2z,1));white-space:nowrap;overflow:hidden;color:#7a3b2a;background:#fdca9b;position:relative}' +
       '#quran2View .q2-hd>span{display:inline-block}#quran2View .q2-hd i{font-style:normal;margin-inline-start:.4rem}' +
-      '#quran2View .q2-hz{color:#9f0f1d;font-weight:800;background:#fff;padding:.12rem .65rem;border-radius:999px;box-shadow:0 0 0 2px rgba(255,255,255,.55),0 1px 6px rgba(0,0,0,.25)}' +
+      '#quran2View .q2-hz{padding:.12rem .65rem;border-radius:999px;transition:background .2s,color .2s,box-shadow .2s}#quran2View .q2-hz.q2-lit{color:#9f0f1d;font-weight:800;background:#fff;box-shadow:0 0 0 2px rgba(255,255,255,.55),0 1px 6px rgba(0,0,0,.25)}' +
       '@keyframes q2pulse{0%{transform:scale(1)}40%{transform:scale(1.25);box-shadow:0 0 0 3px #fff,0 0 18px 6px rgba(255,255,255,.95)}100%{transform:scale(1)}}' +
       '#quran2View .q2-hz.q2-pulse{animation:q2pulse 1.4s ease-in-out}' +
       '#quran2View .q2-ros{position:absolute;top:50%;width:1.7rem;height:1.7rem;margin-top:-.85rem;border-radius:50%;background:radial-gradient(circle,#f3a3ad 0 34%,#fbe9a6 36% 50%,rgba(251,233,166,.45) 52% 62%,transparent 64%)}' +
@@ -237,19 +237,20 @@
     }
   }
   // Aviso al llegar leyendo a la mitad del hizb o al comienzo de un hizb nuevo
-  // Al centrarse la página donde empieza un hizb, el «الحزب N» de su cabecera se ilumina un momento.
+  // Solo mientras la página donde empieza un hizb está centrada, su «الحزب N» se pone en blanco y pulsa una vez.
+  var litEl = null;
   function notifyMark(prev, now) {
-    if (now === prev || hizbOf(now) === hizbOf(now - 1) || now < 2) return;
+    if (litEl) { litEl.classList.remove('q2-lit', 'q2-pulse'); litEl = null; }
+    if (now < 2 || hizbOf(now) === hizbOf(now - 1)) return;
     var pg = $('q2Pages'); if (!pg) return;
     var el = pg.childNodes[now - 1].querySelector('.q2-hz'); if (!el) return;
-    el.classList.remove('q2-pulse');
-    void el.offsetWidth;
-    el.classList.add('q2-pulse');
+    el.classList.add('q2-lit', 'q2-pulse');
+    litEl = el;
   }
   function setCur(p, notify) {
     var prevPage = cur;
     cur = clampPage(p);
-    if (notify) notifyMark(prevPage, cur);
+    notifyMark(prevPage, cur);
     set(K_LAST, String(cur));
     $('q2PageIn').value = cur;
     $('q2Range').value = cur;
