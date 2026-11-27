@@ -2126,8 +2126,8 @@ function renderProof(item, isEs) {
   return '<details data-no-share class="zad-proof">' +
     '<summary>' + esc(title) + '</summary>' +
     '<div class="zad-proof-body">' +
-      '<div class="zad-proof-ar" dir="rtl">' + esc(p.ar) + '</div>' +
-      (isEs && p.es ? '<div class="zad-proof-es">' + esc(p.es) + '</div>' : '') +
+      '<div class="zad-proof-ar custom-text-size quran-font" dir="rtl">' + esc(p.ar) + '</div>' +
+      (isEs && p.es ? '<div class="zad-proof-es es-text-style">' + esc(p.es) + '</div>' : '') +
       (ref ? '<div class="zad-proof-ref" dir="' + (isEs ? 'ltr' : 'rtl') + '">' + esc(ref) + '</div>' : '') +
       (grade ? '<div class="zad-proof-grade" dir="' + (isEs ? 'ltr' : 'rtl') + '">' + esc(grade) + '</div>' : '') +
     '</div></details>';
