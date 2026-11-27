@@ -82,7 +82,7 @@
       '#quran2View .q2-gx{box-shadow:inset 0 0 0 2px #e9cd8f}' +
       '#quran2View .q2-gut{background:linear-gradient(90deg,transparent 34%,#d98a7f 34% 38%,#c9473f 38% 62%,#d98a7f 62% 66%,transparent 66%),#f6e2b8}' +
       '#quran2View .q2-tag{position:absolute;z-index:2;left:.6%;width:7.6%;transform:translateY(-50%);text-align:center;pointer-events:none;font-size:calc(.6rem * var(--q2z,1));line-height:1}' +
-      '#quran2View .q2-tag .m{aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:#c9473f;color:#fbe9d0;font-weight:700;clip-path:polygon(50.0% 0.0%,60.6% 10.4%,75.0% 6.7%,79.0% 21.0%,93.3% 25.0%,89.6% 39.4%,100.0% 50.0%,89.6% 60.6%,93.3% 75.0%,79.0% 79.0%,75.0% 93.3%,60.6% 89.6%,50.0% 100.0%,39.4% 89.6%,25.0% 93.3%,21.0% 79.0%,6.7% 75.0%,10.4% 60.6%,0.0% 50.0%,10.4% 39.4%,6.7% 25.0%,21.0% 21.0%,25.0% 6.7%,39.4% 10.4%);box-shadow:0 0 0 .45em #f6e2b8}' +
+      '#quran2View .q2-tag .m{aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:#c9473f;color:#fbe9d0;font-weight:700;clip-path:polygon(50.0% 0.0%,60.6% 10.4%,75.0% 6.7%,79.0% 21.0%,93.3% 25.0%,89.6% 39.4%,100.0% 50.0%,89.6% 60.6%,93.3% 75.0%,79.0% 79.0%,75.0% 93.3%,60.6% 89.6%,50.0% 100.0%,39.4% 89.6%,25.0% 93.3%,21.0% 79.0%,6.7% 75.0%,10.4% 60.6%,0.0% 50.0%,10.4% 39.4%,6.7% 25.0%,21.0% 21.0%,25.0% 6.7%,39.4% 10.4%);}' +
       '#quran2View .q2-tag.rb .m{clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);font-size:.9em}' +
       '#quran2View .q2-tag.nf .m{clip-path:polygon(50.0% 0.0%,58.6% 6.8%,69.1% 3.8%,74.4% 13.4%,85.4% 14.6%,86.6% 25.6%,96.2% 30.9%,93.2% 41.4%,100.0% 50.0%,93.2% 58.6%,96.2% 69.1%,86.6% 74.4%,85.4% 85.4%,74.4% 86.6%,69.1% 96.2%,58.6% 93.2%,50.0% 100.0%,41.4% 93.2%,30.9% 96.2%,25.6% 86.6%,14.6% 85.4%,13.4% 74.4%,3.8% 69.1%,6.8% 58.6%,0.0% 50.0%,6.8% 41.4%,3.8% 30.9%,13.4% 25.6%,14.6% 14.6%,25.6% 13.4%,30.9% 3.8%,41.4% 6.8%);background:#b73a34}' +
       '#quran2View .q2-tag .n{margin:.35em auto 0;width:72%;aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:#c9473f;color:#fbe9d0;font-size:.85em;font-weight:700;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}' +
@@ -176,16 +176,32 @@
 
   // Zoom con dos dedos (sin botones): la anchura de las páginas cambia y se mantiene el punto central.
   function setupPinch() {
-    var wrap = $('q2Wrap'), d0 = 0, z0 = 1;
+    var wrap = $('q2Wrap'), pg = $('q2Pages'), d0 = 0, z0 = 1, zt = 1;
     function dist(e) { var a = e.touches[0], b = e.touches[1]; return Math.sqrt(Math.pow(a.clientX - b.clientX, 2) + Math.pow(a.clientY - b.clientY, 2)); }
-    wrap.addEventListener('touchstart', function (e) { if (e.touches.length === 2) { d0 = dist(e); z0 = zoomLevel(); pinchAt = Date.now(); } }, { passive: true });
+    wrap.addEventListener('touchstart', function (e) {
+      if (e.touches.length === 2) {
+        d0 = dist(e); z0 = zoomLevel(); zt = z0; pinchAt = Date.now();
+        // Durante el gesto solo se escala con transform (sin recalcular el diseño de 638 páginas): fluido.
+        var ox = wrap.scrollLeft + wrap.clientWidth / 2, oy = window.pageYOffset + window.innerHeight / 2 - listTop();
+        pg.style.transformOrigin = ox + 'px ' + oy + 'px';
+        pg.style.willChange = 'transform';
+      }
+    }, { passive: true });
     wrap.addEventListener('touchmove', function (e) {
       if (e.touches.length !== 2 || !d0) return;
       e.preventDefault();
       pinchAt = Date.now();
-      setZoom(z0 * dist(e) / d0, true);
+      zt = Math.min(3, Math.max(1, z0 * dist(e) / d0));
+      pg.style.transform = 'scale(' + (zt / z0) + ')';
     }, { passive: false });
-    wrap.addEventListener('touchend', function (e) { if (e.touches.length < 2 && d0) { d0 = 0; pinchAt = Date.now(); } }, { passive: true });
+    function end() {
+      if (!d0) return;
+      d0 = 0; pinchAt = Date.now();
+      pg.style.transform = ''; pg.style.willChange = ''; pg.style.transformOrigin = '';
+      setZoom(zt, true);   // un único recálculo al terminar el gesto
+    }
+    wrap.addEventListener('touchend', function (e) { if (e.touches.length < 2) end(); }, { passive: true });
+    wrap.addEventListener('touchcancel', end, { passive: true });
   }
   function setZoom(z, keepPos) {
     z = Math.min(3, Math.max(1, Math.round(z * 100) / 100));
@@ -194,11 +210,12 @@
     set(K_ZOOM, String(z));
     var pg = $('q2Pages'), wrap = $('q2Wrap'), r = z / old, vh = window.innerHeight;
     var lt = listTop(), y = window.pageYOffset, sl = wrap.scrollLeft, w = wrap.clientWidth;
+    var f = (y - lt + vh / 2) / pageH();   // posición del centro de la pantalla en «páginas» (todas miden lo mismo)
     pg.style.width = (z * 100) + '%';
     pg.style.setProperty('--q2z', String(z));
     if (keepPos) {
       programmatic++;
-      window.scrollTo(0, Math.max(0, lt + (y - lt + vh / 2) * r - vh / 2));
+      window.scrollTo(0, Math.max(0, lt + f * pageH() - vh / 2));
       wrap.scrollLeft = (sl + w / 2) * r - w / 2;
       setTimeout(function () { programmatic = Math.max(0, programmatic - 1); }, 120);
     }
