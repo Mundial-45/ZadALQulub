@@ -534,10 +534,10 @@ const adyaData = [
     },
     {
       "itemNumber": 58,
-      "text": "رَبِّ أَعِنِّي وَلَا تُعِنْ عَلَيَّ، وَانْصُرْنِي وَلَا تَنْصُرْ عَلَيَّ، وَامْكُرْ لِي وَلَا تَمْكُرْ عَلَيَّ، وَاهْدِنِي وَيَسِّرِ الْهُدَى لِي، وَانْصُرْنِي عَلَى مَنْ بَغَى عَلَيَّ. رَبِّ اجْعَلْنِي لَكَ شَكَّارًا، لَكَ ذَكَّارًا، لَكَ رَهَّابًا، لَكَ مِطْوَاعًا، لَكَ مُخْبِتًا، إِلَيْكَ أَوَّاهًا مُنِيبًا. رَبِّ تَقَبَّلْ تَوْبَتِي، وَاغْسِلْ حَوْبَتِي، وَأَجِبْ دَعْوَتِي، وَثَبِّتْ حُجَّتِي، وَسَدِّدْ لِسَانِي، وَاهْدِ قَلْبِي، وَاسْلُلْ سَخِيمَةَ صَدْرِي.",
-      "latin": "Rabbi aʿinnī wa-lā tuʿin ʿalayya, wa-nṣurnī wa-lā tanṣur ʿalayya, wa-mkur lī wa-lā tamkur ʿalayya, wa-hdinī wa-yassiri-l-hudā lī, wa-nṣurnī ʿalā man baghā ʿalayya.\n\nRabbi-jʿalnī laka shakkāran, laka dhakkāran, laka rahhāban, laka miṭwāʿan, laka mukhbitan, ilayka awwāhan munīban.\nRabbi taqabbal tawbatī, wa-ghsil ḥawbatī, wa-ajib daʿwatī, wa-thabbit ḥujjatī, wa-saddid lisānī, wa-hdi qalbī, wa-s-lul sakhīmata ṣadrī.",
-      "explanationEs": "¡Señor mío! Ayúdame y no ayudes contra mí. Concédeme la victoria y no concedas la victoria contra mí. Trama a mi favor y no contra mí. Guíame y facilita para mí el camino de la guía. Concédeme la victoria sobre quien me oprima.\n\n¡Señor mío! Haz que sea muy agradecido contigo, que Te recuerde constantemente, que Te tema profundamente, que Te obedezca plenamente, que sea humilde ante Ti, que vuelva a Ti con devoción y arrepentimiento.\n\n¡Señor mío! Acepta mi arrepentimiento, purifica mis faltas, responde a mi súplica, fortalece mis argumentos, endereza mi lengua, guía mi corazón y arranca de mi pecho todo rencor y resentimiento.",
-      "note": "رواه الترمذي (إسناد صحيح)",
+      "text": "رَبِّ أَعِنِّي وَلَا تُعِنْ عَلَيَّ، وَانْصُرْنِي وَلَا تَنْصُرْ عَلَيَّ، وَامْكُرْ لِي وَلَا تَمْكُرْ عَلَيَّ، وَاهْدِنِي وَيَسِّرِ الْهُدَى لِي، وَانْصُرْنِي عَلَى مَنْ بَغَى عَلَيَّ، رَبِّ اجْعَلْنِي لَكَ شَكَّارًا، لَكَ ذَكَّارًا، لَكَ رَهَّابًا، لَكَ مِطْوَاعًا، لَكَ مُخْبِتًا، إِلَيْكَ أَوَّاهًا مُنِيبًا، رَبِّ تَقَبَّلْ تَوْبَتِي، وَاغْسِلْ حَوْبَتِي، وَأَجِبْ دَعْوَتِي، وَثَبِّتْ حُجَّتِي، وَاهْدِ قَلْبِي، وَسَدِّدْ لِسَانِي، وَاسْلُلْ سَخِيمَةَ قَلْبِي",
+      "latin": "Rabbi aʿinnī wa lā tuʿin ʿalayya, wanṣurnī wa lā tanṣur ʿalayya, wamkur lī wa lā tamkur ʿalayya, wahdinī wa yassiril-hudā lī, wanṣurnī ʿalā man baghā ʿalayya. Rabbi ajʿalnī laka shakkāran, laka dhakkāran, laka rahhāban, laka miṭwāʿan, laka mukhbitan, ilayka awwāhan munībā. Rabbi taqabbal tawbatī, waghsil ḥawbatī, wa ajib daʿwatī, wa thabbit ḥujjatī, wahdi qalbī, wa saddid lisānī, wasluł sakhīmata qalbī.\nRabbi-jʿalnī laka shakkāran, laka dhakkāran, laka rahhāban, laka miṭwāʿan, laka mukhbitan, ilayka awwāhan munīban.\nRabbi taqabbal tawbatī, wa-ghsil ḥawbatī, wa-ajib daʿwatī, wa-thabbit ḥujjatī, wa-saddid lisānī, wa-hdi qalbī, wa-s-lul sakhīmata ṣadrī.",
+      "explanationEs": "«Señor mío, ayúdame y no ayudes contra mí; dame la victoria y no la des contra mí; urde a mi favor y no urdas contra mí; guíame y facilítame la guía; ayúdame contra quien me agravie. Señor mío, hazme muy agradecido hacia Ti, muy recordador de Ti, muy temeroso de Ti, muy obediente a Ti, humilde ante Ti, suplicante y arrepentido hacia Ti. Señor mío, acepta mi arrepentimiento, lava mi pecado, responde a mi súplica, afirma mi argumento, guía mi corazón, endereza mi lengua y arranca el rencor de mi corazón».\n¡Señor mío! Haz que sea muy agradecido contigo, que Te recuerde constantemente, que Te tema profundamente, que Te obedezca plenamente, que sea humilde ante Ti, que vuelva a Ti con devoción y arrepentimiento.\n\n¡Señor mío! Acepta mi arrepentimiento, purifica mis faltas, responde a mi súplica, fortalece mis argumentos, endereza mi lengua, guía mi corazón y arranca de mi pecho todo rencor y resentimiento.",
+      "note": "أبو داود والترمذي",
       "audioUrls": [
         "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2058.opus"
       ]
@@ -1047,7 +1047,10 @@ const adyaData = [
       "latin": "Rabbi aʿinnī wa lā tuʿin ʿalayya, wanṣurnī wa lā tanṣur ʿalayya, wamkur lī wa lā tamkur ʿalayya, wahdinī wa yassiril-hudā lī, wanṣurnī ʿalā man baghā ʿalayya. Rabbi ajʿalnī laka shakkāran, laka dhakkāran, laka rahhāban, laka miṭwāʿan, laka mukhbitan, ilayka awwāhan munībā. Rabbi taqabbal tawbatī, waghsil ḥawbatī, wa ajib daʿwatī, wa thabbit ḥujjatī, wahdi qalbī, wa saddid lisānī, wasluł sakhīmata qalbī.",
       "explanationEs": "«Señor mío, ayúdame y no ayudes contra mí; dame la victoria y no la des contra mí; urde a mi favor y no urdas contra mí; guíame y facilítame la guía; ayúdame contra quien me agravie. Señor mío, hazme muy agradecido hacia Ti, muy recordador de Ti, muy temeroso de Ti, muy obediente a Ti, humilde ante Ti, suplicante y arrepentido hacia Ti. Señor mío, acepta mi arrepentimiento, lava mi pecado, responde a mi súplica, afirma mi argumento, guía mi corazón, endereza mi lengua y arranca el rencor de mi corazón».",
       "note": "أبو داود والترمذي",
-      "noteEs": "Abu Dawud y Tirmidhi"
+      "noteEs": "Abu Dawud y Tirmidhi",
+      "audioUrls": [
+        "https://github.com/Mundial-45/ZadAlQulub-Audio/raw/refs/heads/main/Dua/dua%2058.opus"
+      ]
     },
     {
       "itemNumber": 386,
