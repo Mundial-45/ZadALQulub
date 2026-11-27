@@ -64,11 +64,11 @@
       '#quran2View .q2-box img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:contain}' +
       '#quran2View .q2-cad{height:.55rem;background-size:100% 100%;background-repeat:no-repeat}' +
       '#quran2View .q2-cad1{background-image:url(quran_pages/q2_cadre1.jpg)}#quran2View .q2-cad2{background-image:url(quran_pages/q2_cadre2.jpg)}' +
-      '#quran2View .q2-hd{display:flex;align-items:center;justify-content:space-between;direction:rtl;height:2.7rem;padding:0 1.9rem;font-size:.95rem;white-space:nowrap;overflow:hidden;color:#7a3b2a;background:#fdca9b;position:relative}' +
-      '#quran2View .q2-hd>span{display:inline-block}#quran2View .q2-hd i{font-style:normal;margin-inline-start:.6rem}' +
-      '#quran2View .q2-ros{position:absolute;top:50%;width:2.6rem;height:2.6rem;margin-top:-1.3rem;border-radius:50%;background:radial-gradient(circle,#f3a3ad 0 34%,#fbe9a6 36% 50%,rgba(251,233,166,.45) 52% 62%,transparent 64%)}' +
-      '#quran2View .q2-ros.r{right:-.7rem}#quran2View .q2-ros.l{left:-.7rem}' +
-      '#quran2View .q2-num{height:2.2rem;line-height:2.2rem;text-align:center;font-size:1.05rem;color:#7a3b2a;background:#fdca9b;border-bottom:2px solid rgba(124,58,42,.2)}' +
+      '#quran2View .q2-hd{display:flex;align-items:center;justify-content:space-between;direction:rtl;height:2.7rem;padding:0 1.25rem;gap:.35rem;font-size:calc(min(.78rem,2.75vw) * var(--q2z,1));white-space:nowrap;overflow:hidden;color:#7a3b2a;background:#fdca9b;position:relative}' +
+      '#quran2View .q2-hd>span{display:inline-block}#quran2View .q2-hd i{font-style:normal;margin-inline-start:.4rem}' +
+      '#quran2View .q2-ros{position:absolute;top:50%;width:1.7rem;height:1.7rem;margin-top:-.85rem;border-radius:50%;background:radial-gradient(circle,#f3a3ad 0 34%,#fbe9a6 36% 50%,rgba(251,233,166,.45) 52% 62%,transparent 64%)}' +
+      '#quran2View .q2-ros.r{right:-.35rem}#quran2View .q2-ros.l{left:-.35rem}' +
+      '#quran2View .q2-num{height:2.2rem;line-height:2.2rem;text-align:center;font-size:calc(min(.9rem,3.4vw) * var(--q2z,1));color:#7a3b2a;background:#fdca9b;border-bottom:2px solid rgba(124,58,42,.2)}' +
       '#quran2View .q2-btn{padding:.4rem .7rem;border-radius:.75rem;font-weight:700;font-size:.8rem;cursor:pointer;background:#334155;color:#fff}' +
       '#quran2View .q2-bar{background:rgba(15,23,42,.95);color:#fff}' +
       '#quran2View .q2-ok{background:#059669}#quran2View .q2-am{background:#d97706}' +
@@ -187,6 +187,7 @@
     var z = zoomLevel();
     if (pg.style.width !== (z * 100) + '%') {
       pg.style.width = (z * 100) + '%';
+      pg.style.setProperty('--q2z', String(z));
       if (pg.firstChild) setTimeout(function () { goTo(cur); }, 0); // al cambiar el zoom cambia el alto de página
     }
     $('q2Wrap').classList.toggle('q2-night', get(K_NIGHT) === '1');
