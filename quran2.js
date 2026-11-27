@@ -10,6 +10,12 @@
   var K_ZOOM = 'quran2_zoom_v1';
   var K_NIGHT = 'quran2_night_v1';
   var cur = 1;
+  // Marca de ثمن por página (0 = ninguna, 1..7 = الثمن الأول، ربع، الثالث، نصف، الخامس، ثلاثة أرباع، السابع). Datos del mushaf de Warsh; sirve a esta edición de 638 páginas.
+  var THUMN = '00012345677012345567012234556701223456701124456770123345677012334566701223456701223345670012344567001233456700123445670012344556700122344567012345667001233456670012334566701223456701123345667012345677012334567701123445677012344567001233455670012234567001233456670112234556701223455670122344567700123445670012334556770112345567011234556701223456670112344566701123445677012334556700112345567001234456700123345670011234556670012344567012344567011223455677012334556700122344566701123456770112334567001234566701122344566700122344566700123456670112344567701122344567701223445567700123345670011233445667001223345667001122345567701122344556667777';
+  var THUMN_AR = ['', 'الثمن الأول', 'ربع الحزب', 'الثمن الثالث', 'نصف الحزب', 'الثمن الخامس', 'ثلاثة أرباع الحزب', 'الثمن السابع'];
+  var THUMN_ES = ['', 'Octavo 1 del hizb', 'Cuarto del hizb', 'Octavo 3 del hizb', 'Medio hizb', 'Octavo 5 del hizb', 'Tres cuartos del hizb', 'Octavo 7 del hizb'];
+  var JUZ_AR = ['الأول', 'الثاني', 'الثالث', 'الرابع', 'الخامس', 'السادس', 'السابع', 'الثامن', 'التاسع', 'العاشر', 'الحادي عشر', 'الثاني عشر', 'الثالث عشر', 'الرابع عشر', 'الخامس عشر', 'السادس عشر', 'السابع عشر', 'الثامن عشر', 'التاسع عشر', 'العشرون', 'الحادي والعشرون', 'الثاني والعشرون', 'الثالث والعشرون', 'الرابع والعشرون', 'الخامس والعشرون', 'السادس والعشرون', 'السابع والعشرون', 'الثامن والعشرون', 'التاسع والعشرون', 'الثلاثون'];
+  function hizbOf(p) { var h = 1; for (var i = 0; i < quranAhzab.length; i++) { if (quranAhzab[i].page <= p) h = quranAhzab[i].id; else break; } return h; }
 
   function isEs() { return typeof currentLang !== 'undefined' && currentLang === 'es'; }
   function adminOk() { return typeof isAdminMode === 'function' && isAdminMode(); }
@@ -90,6 +96,7 @@
           '<span id="q2Hizb" style="background:#fef3c7;color:#78350f;padding:1px 8px;border-radius:6px"></span>' +
           '<span id="q2SurahLbl"></span>' +
         '</div>' +
+        '<div id="q2Thumn" class="text-center text-xs font-bold pt-1" style="color:#fcd34d;min-height:1.1rem"></div>' +
         '<input id="q2Range" type="range" min="1" max="' + TOTAL + '" value="1" dir="rtl" class="w-full" />' +
       '</div>' +
       '<div id="q2GoPanel" class="hidden bg-white dark:bg-slate-800 p-3 rounded-2xl border border-amber-200/80 dark:border-slate-700 space-y-3">' +
@@ -219,7 +226,9 @@
     set(K_LAST, String(cur));
     var info = getSurahInfoForPage(cur), es = isEs();
     $('q2PageLbl').textContent = (es ? 'Pág. ' : 'صفحة ') + cur + '/' + TOTAL;
-    $('q2Hizb').textContent = (es ? 'Hizb ' : 'الحزب ') + info.hizb;
+    var hz = hizbOf(cur), jz = Math.ceil(hz / 2), tm = parseInt(THUMN.charAt(cur - 1), 10) || 0;
+    $('q2Hizb').textContent = (es ? 'Yuz ' + jz + ' · Hizb ' : JUZ_AR[jz - 1] + ' · الحزب ') + hz;
+    $('q2Thumn').textContent = tm ? (es ? THUMN_ES[tm] : THUMN_AR[tm]) : '';
     $('q2SurahLbl').textContent = info.title;
     $('q2PageIn').value = cur;
     $('q2Range').value = cur;
