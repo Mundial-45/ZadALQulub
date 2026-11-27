@@ -1479,10 +1479,10 @@
             "noteEs": "En la Sunna",
             "proof": {
               "type": "hadith",
-              "ar": "«اللَّهُمَّ رَبَّ النَّاسِ، أَذْهِبِ الْبَأْسَ، اشْفِ أَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ، شِفَاءً لَا يُغَادِرُ سَقَمًا»",
-              "es": "«¡Oh Allah, Señor de los hombres! Quita el mal; cura, pues Tú eres Quien cura: no hay curación sino la Tuya, una curación que no deje enfermedad.»",
-              "refAr": "رواه البخاري (5675) ومسلم (2191)",
-              "refEs": "Al-Bujari 5675 y Muslim 2191"
+              "ar": "«أَذْهِبِ الْبَأْسَ رَبَّ النَّاسِ، اشْفِ وَأَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ، شِفَاءً لَا يُغَادِرُ سَقَمًا»",
+              "es": "«Quita el mal, Señor de los hombres; cura, pues Tú eres Quien cura: no hay curación sino la Tuya, una curación que no deje enfermedad.»",
+              "refAr": "رواه البخاري ومسلم",
+              "refEs": "Al-Bujari y Muslim"
             }
           },
           {
@@ -1549,8 +1549,8 @@
               "type": "hadith",
               "ar": "«أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ، لَا إِلَهَ إِلَّا أَنْتَ»",
               "es": "«Tú eres Quien adelanta y Tú eres Quien atrasa; no hay más divinidad que Tú.»",
-              "refAr": "رواه البخاري (6398) ومسلم (2719)",
-              "refEs": "Al-Bujari 6398 y Muslim 2719"
+              "refAr": "رواه البخاري ومسلم",
+              "refEs": "Al-Bujari y Muslim"
             }
           },
           {
@@ -1565,8 +1565,8 @@
               "type": "hadith",
               "ar": "«أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ، لَا إِلَهَ إِلَّا أَنْتَ»",
               "es": "«Tú eres Quien adelanta y Tú eres Quien atrasa; no hay más divinidad que Tú.»",
-              "refAr": "رواه البخاري (6398) ومسلم (2719)",
-              "refEs": "Al-Bujari 6398 y Muslim 2719"
+              "refAr": "رواه البخاري ومسلم",
+              "refEs": "Al-Bujari y Muslim"
             }
           },
           {
