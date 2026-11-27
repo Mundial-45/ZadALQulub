@@ -75,6 +75,12 @@
       '#quran2View .q2-hz.q2-pulse{animation:q2pulse 1.4s ease-in-out}' +
       '#quran2View .q2-gut{position:absolute;left:0;top:0;bottom:0;width:9%;background:#f6e2b8;border-right:3px double #a8742a;box-shadow:inset 0 0 0 2px #e9cd8f}' +
       '#quran2View .q2-tag{position:absolute;z-index:2;left:.8%;transform:translateY(-50%);width:7.4%;box-sizing:border-box;padding:.3em 0 .35em;text-align:center;line-height:1.15;background:#e4f1f3;color:#1f3a40;border:1px solid #6f9299;border-radius:.9em .9em .25em .25em;font-size:calc(.46rem * var(--q2z,1));box-shadow:0 1px 3px rgba(0,0,0,.25)}' +
+      '#quran2View .q2-tag.hz0{background:#fbf5e2;color:#173f6b;border:2px solid #1f4b7a;border-radius:50% 50% .3em .3em / 1.5em 1.5em .3em .3em;padding-top:.9em;box-shadow:0 0 0 1px #c9a24a,0 1px 3px rgba(0,0,0,.3)}' +
+      '#quran2View .q2-tag.hz4{background:#fbf5e2;color:#173f6b;border:2px solid #7a3b2a;border-radius:50% 50% .3em .3em / 1.5em 1.5em .3em .3em;padding-top:.9em;box-shadow:0 0 0 1px #c9a24a,0 1px 3px rgba(0,0,0,.3)}' +
+      '#quran2View .q2-tag.hz4:before{content:"\\2756";position:absolute;top:.05em;left:0;right:0;font-size:.85em;line-height:1;color:#b8862b}' +
+      '#quran2View .q2-tag.hz4 .t1{color:#7a3b2a;font-weight:700}' +
+      '#quran2View .q2-tag.hz0:before{content:"\\2756";position:absolute;top:.05em;left:0;right:0;font-size:.85em;line-height:1;color:#b8862b}' +
+      '#quran2View .q2-tag.hz0 .t3{color:#173f6b}' +
       '#quran2View .q2-tag b{display:block;font-weight:500}#quran2View .q2-tag .t1{font-size:.95em;color:#7a3b2a;min-height:1.1em}#quran2View .q2-tag .t3{font-size:1.25em;font-weight:700}' +
       '#quran2View .q2-ros{position:absolute;top:50%;transform:translateY(-52%);font-size:calc(1.15rem * var(--q2z,1));line-height:1;color:#a8742a}' +
       '#quran2View .q2-ros.r{right:.45rem}#quran2View .q2-ros.l{left:.45rem}' +
@@ -224,7 +230,7 @@
     for (i = 0; i < DOTS.length; i++) {
       var pgNo = Math.floor(DOTS[i] / 1000), y = DOTS[i] % 1000, n = i + 1, hz = Math.floor(n / 8) + 1, k = n % 8;
       var box = pg.childNodes[pgNo - 1] && pg.childNodes[pgNo - 1].childNodes[3]; if (!box) continue;
-      var tg = mk('div', 'q2-tag');
+      var tg = mk('div', k ? (k == 4 ? 'q2-tag hz4' : 'q2-tag') : 'q2-tag hz0');
       tg.style.top = (y / 10) + '%';
       tg.innerHTML = '<b class="t1">' + (k ? (es ? DOT_ES[k] : DOT_AR[k]) : '') + '</b><b class="t2">' + (es ? 'Hizb' : 'الحزب') + '</b><b class="t3">' + hz + '</b>';
       box.appendChild(tg);
