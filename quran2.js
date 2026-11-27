@@ -219,7 +219,7 @@
       hd.innerHTML = html;
     }
   }
-  function pageH() { var f = $('q2Pages') && $('q2Pages').firstChild; return f ? f.offsetHeight || 1 : 1; }
+  function pageH() { var f = $('q2Pages') && $('q2Pages').firstChild; return f ? f.getBoundingClientRect().height || 1 : 1; } // con decimales: offsetHeight redondea y el error se acumula en 638 páginas
   function appHeader(hide) { var hd = document.querySelector('header'); if (hd) hd.style.display = hide ? 'none' : ''; }
   function barBottom() { return 0; }
   function listTop() { var pg = $('q2Pages'); return pg.getBoundingClientRect().top + window.pageYOffset; }
@@ -234,15 +234,43 @@
     }
   }
   // Aviso al llegar leyendo a la mitad del hizb o al comienzo de un hizb nuevo
-  function notifyMark(prev, now) {
-    if (now <= prev || now - prev > 12) return; // solo avanzando con la lectura; no al saltar lejos
-    var es = isEs(), msg = '';
-    for (var q = prev + 1; q <= now; q++) {
-      var hz = hizbOf(q), tm = parseInt(THUMN.charAt(q - 1), 10) || 0, ptm = parseInt(THUMN.charAt(q - 2), 10) || 0;
-      if (hz !== hizbOf(q - 1)) msg = es ? ('Comienza el hizb ' + hz) : ('بداية الحزب ' + hz);
-      else if (tm === 4 && ptm !== 4) msg = es ? ('Mitad del hizb ' + hz) : ('نصف الحزب ' + hz);
+  // Ordinal árabe 1..60 («العاشر», «الحادي والعشرون»…) para el aviso de hizb
+  function ordAr(n) {
+    var U = ['الأول', 'الثاني', 'الثالث', 'الرابع', 'الخامس', 'السادس', 'السابع', 'الثامن', 'التاسع'];
+    var T = ['العشرون', 'الثلاثون', 'الأربعون', 'الخمسون', 'الستون'];
+    if (n < 10) return U[n - 1];
+    if (n === 10) return 'العاشر';
+    if (n === 11) return 'الحادي عشر';
+    if (n === 12) return 'الثاني عشر';
+    if (n < 20) return U[n - 11] + ' عشر';
+    var t = Math.floor(n / 10), u = n % 10;
+    return u === 0 ? T[t - 2] : U[u - 1] + ' و' + T[t - 2];
+  }
+  var noticeTimer = 0;
+  function notice(text) {
+    var v = $('quran2View'); if (!v) return;
+    var n = $('q2Notice');
+    if (!n) {
+      n = mk('div');
+      n.id = 'q2Notice';
+      n.style.cssText = 'position:fixed;left:50%;bottom:16%;transform:translateX(-50%);z-index:70;display:flex;align-items:center;gap:.6rem;background:#fff;color:#1f2937;padding:.7rem 1.3rem;border-radius:999px;box-shadow:0 4px 18px rgba(0,0,0,.3);font-size:1rem;font-weight:600;direction:rtl;pointer-events:none;opacity:0;transition:opacity .18s;white-space:nowrap';
+      n.innerHTML = '<span></span><img src="Iconos/Quran.webp" alt="" style="width:1.4rem;height:1.4rem;object-fit:contain">';
+      v.appendChild(n);
     }
-    if (msg) toast(msg);
+    n.firstChild.textContent = text;
+    n.style.opacity = '1';
+    clearTimeout(noticeTimer);
+    noticeTimer = setTimeout(function () { n.style.opacity = '0'; }, 1400);
+  }
+  function notifyMark(prev, now) {
+    if (now === prev || Math.abs(now - prev) > 12) return; // no al saltar lejos con el panel
+    var es = isEs(), msg = '', dir = now > prev ? 1 : -1;
+    for (var q = prev + dir; q !== now + dir; q += dir) {
+      var hz = hizbOf(q), tm = parseInt(THUMN.charAt(q - 1), 10) || 0, ptm = parseInt(THUMN.charAt(q - 2), 10) || 0;
+      if (q > 1 && hz !== hizbOf(q - 1)) msg = es ? ('Hizb ' + hz) : ('الحزب ' + ordAr(hz));
+      else if (tm === 4 && ptm !== 4) msg = es ? ('Mitad del hizb ' + hz) : ('نصف الحزب ' + ordAr(hz));
+    }
+    if (msg) notice(msg);
   }
   function setCur(p, notify) {
     var prevPage = cur;
@@ -262,7 +290,8 @@
     p = clampPage(p);
     setCur(p);
     programmatic++;
-    window.scrollTo(0, Math.max(0, listTop() + (p - 1) * pageH() - barBottom() + 2));
+    var ph = pageH(), vh = window.innerHeight, top = listTop() + (p - 1) * ph;
+    window.scrollTo(0, Math.max(0, ph < vh ? top - (vh - ph) / 2 : top)); // la página queda centrada (o arriba si no cabe)
     setTimeout(function () { programmatic = Math.max(0, programmatic - 1); }, 120);
   }
   var scrollTimer = 0;
@@ -271,7 +300,7 @@
     var v = $('quran2View'); if (!v || v.classList.contains('hidden')) return;
     scrollTimer = setTimeout(function () {
       scrollTimer = 0;
-      var y = window.pageYOffset + barBottom() + 40 - listTop();
+      var y = window.pageYOffset + window.innerHeight / 2 - listTop(); // página que está en el centro de la pantalla
       var p = clampPage(Math.floor(y / pageH()) + 1);
       if (p !== cur) setCur(p, true);
     }, 80);
