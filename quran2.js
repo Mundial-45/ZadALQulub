@@ -85,7 +85,8 @@
       '#quran2View .q2-tag.rb .m{clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);font-size:.9em}' +
       '#quran2View .q2-tag.nf .m{clip-path:polygon(50.0% 0.0%,58.6% 6.8%,69.1% 3.8%,74.4% 13.4%,85.4% 14.6%,86.6% 25.6%,96.2% 30.9%,93.2% 41.4%,100.0% 50.0%,93.2% 58.6%,96.2% 69.1%,86.6% 74.4%,85.4% 85.4%,74.4% 86.6%,69.1% 96.2%,58.6% 93.2%,50.0% 100.0%,41.4% 93.2%,30.9% 96.2%,25.6% 86.6%,14.6% 85.4%,13.4% 74.4%,3.8% 69.1%,6.8% 58.6%,0.0% 50.0%,6.8% 41.4%,3.8% 30.9%,13.4% 25.6%,14.6% 14.6%,25.6% 13.4%,30.9% 3.8%,41.4% 6.8%);background:#b73a34}' +
       '#quran2View .q2-tag .n{margin:.35em auto 0;width:72%;aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:#c9473f;color:#fbe9d0;font-size:.85em;font-weight:700;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}' +
-      '#quran2View .q2-tag.sj .m{clip-path:none;border-radius:50% 50% 46% 46% / 62% 62% 38% 38%;font-size:.95em;background:#b73a34;box-shadow:0 0 0 .3em #f6e2b8}' +
+      '#quran2View .q2-tag.up{transform:translateY(-100%)}#quran2View .q2-tag.dn{transform:none}' +
+      '#quran2View .q2-tag.sj .m{clip-path:none;border-radius:50% 50% 46% 46% / 62% 62% 38% 38%;font-size:.8em;background:#b73a34;box-shadow:0 0 0 .3em #f6e2b8}' +
       '#quran2View .q2-tag.sj{width:6.2%;left:.9%}' +
       '#quran2View .q2-tag.hz0 .m{font-size:1.05em}' +
       '#quran2View .q2-ros{position:absolute;top:50%;transform:translateY(-52%);font-size:calc(1.15rem * var(--q2z,1));line-height:1;color:#a8742a}' +
@@ -237,6 +238,7 @@
       var pgNo = Math.floor(DOTS[i] / 1000), y = DOTS[i] % 1000, n = i + 1, hz = Math.floor(n / 8) + 1, k = n % 8;
       var box = pg.childNodes[pgNo - 1] && pg.childNodes[pgNo - 1].childNodes[3]; if (!box) continue;
       var tg = mk('div', k ? (k == 4 ? 'q2-tag nf' : (k == 2 || k == 6 ? 'q2-tag rb' : 'q2-tag')) : 'q2-tag hz0');
+      for (var q = 0; q < SAJDA.length; q++) if (Math.floor(SAJDA[q] / 1000) === pgNo && Math.abs(SAJDA[q] % 1000 - y) < 85) { tg.className += ' up'; break; }
       tg.style.top = (y / 10) + '%';
       tg.innerHTML = k ? '<div class="m">' + (es ? DOT_ES[k] : DOT_AR[k]) + '</div>' : '<div class="m">' + (es ? 'Hizb' : 'حزب') + '</div><div class="n">' + hz + '</div>';
       box.appendChild(tg);
@@ -244,10 +246,9 @@
     for (i = 0; i < SAJDA.length; i++) {
       var sp = Math.floor(SAJDA[i] / 1000), sy = SAJDA[i] % 1000;
       var sb = pg.childNodes[sp - 1] && pg.childNodes[sp - 1].childNodes[3]; if (!sb) continue;
-      var near = 0, j;
-      for (j = 0; j < DOTS.length; j++) if (Math.floor(DOTS[j] / 1000) === sp && Math.abs(DOTS[j] % 1000 - sy) < 85) { near = ((j + 1) % 8 === 0) ? 130 : 95; break; }
-      if (near) sy = sy + near > 940 ? sy - near : sy + near;
-      var st = mk('div', 'q2-tag sj'); st.style.top = (sy / 10) + '%';
+      var cls = 'q2-tag sj', j;
+      for (j = 0; j < DOTS.length; j++) if (Math.floor(DOTS[j] / 1000) === sp && Math.abs(DOTS[j] % 1000 - sy) < 85) { sy = DOTS[j] % 1000; cls += ' dn'; break; }
+      var st = mk('div', cls); st.style.top = (sy / 10) + '%';
       st.innerHTML = '<div class="m">' + (es ? 'Sajda' : 'سجدة') + '</div>';
       sb.appendChild(st);
     }
