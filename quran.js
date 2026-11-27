@@ -346,16 +346,141 @@ function getSurahInfoForPage(page) {
 }
 
 let currentQuranPage = 1;
-let touchStartX = 0;
-let touchStartY = 0;
-let touchEndX = 0;
-let touchEndY = 0;
+let quranScrollList = null;
+let quranScrollLang = '';
+let quranScrollTicking = false;
+let quranScrollSaveTimer = 0;
+const QURAN_PAGES = 638;
+const QURAN_KEEP_BEHIND = 3;
+const QURAN_KEEP_AHEAD = 4;
+
+function quranJuzForPage(page) {
+  return Math.min(30, Math.max(1, Math.ceil(getHizbForPage(page) / 2)));
+}
+
+function quranSurahForPage(page) {
+  let current = quranSurahs[0];
+  for (let i = 0; i < quranSurahs.length; i++) {
+    if (quranSurahs[i].page <= page) current = quranSurahs[i]; else break;
+  }
+  return current;
+}
+
+function quranPageHeadHtml(page) {
+  const isEs = currentLang === 'es';
+  const s = quranSurahForPage(page);
+  const juz = quranJuzForPage(page);
+  const hizb = getHizbForPage(page);
+  if (isEs) {
+    return '<span>Yuz ' + juz + '</span><span>Sura ' + s.nameEs + '</span><span>Hizb ' + hizb + '</span>';
+  }
+  return '<span>الجزء ' + juz + '</span><span>سورة ' + s.nameAr + '</span><span>الحزب ' + hizb + '</span>';
+}
+
+function refreshQuranHeads() {
+  if (!quranScrollList) return;
+  const heads = quranScrollList.querySelectorAll('.zad-qhead');
+  for (let i = 0; i < heads.length; i++) heads[i].innerHTML = quranPageHeadHtml(i + 1);
+  quranScrollLang = currentLang;
+}
+
+function buildQuranScroll() {
+  if (quranScrollList) return quranScrollList;
+  const view = document.getElementById('quranReaderView');
+  if (!view) return null;
+  const card = document.getElementById('singleQuranPageCard');
+  if (card) card.classList.add('hidden');
+  const list = document.createElement('div');
+  list.id = 'quranScrollList';
+  list.className = 'zad-qscroll';
+  let html = '';
+  for (let p = 1; p <= QURAN_PAGES; p++) {
+    html += '<section class="zad-qpage" data-page="' + p + '">' +
+      '<div class="zad-qhead" dir="rtl"></div>' +
+      '<div class="zad-qimgbox"><img alt="" decoding="async" data-src="quran_pages/page' + p + '.png"></div>' +
+      '<div class="zad-qnum">' + p + '</div></section>';
+  }
+  list.innerHTML = html;
+  view.appendChild(list);
+  quranScrollList = list;
+  refreshQuranHeads();
+  window.addEventListener('scroll', onQuranScroll, { passive: true });
+  window.addEventListener('resize', onQuranScroll);
+  return list;
+}
+
+function quranPageHeight() {
+  if (!quranScrollList || quranScrollList.children.length < 2) return 0;
+  return quranScrollList.children[1].offsetTop - quranScrollList.children[0].offsetTop;
+}
+
+function quranStickyOffset() {
+  const view = document.getElementById('quranReaderView');
+  const bar = view && view.firstElementChild;
+  return (bar ? bar.offsetHeight : 56) + 72;
+}
+
+function quranListTop() {
+  return quranScrollList.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop || 0);
+}
+
+function quranPageAtScroll() {
+  const ph = quranPageHeight();
+  if (!ph) return currentQuranPage;
+  const y = (window.pageYOffset || document.documentElement.scrollTop || 0) + quranStickyOffset() + (window.innerHeight - quranStickyOffset()) / 2 - quranListTop();
+  return Math.min(QURAN_PAGES, Math.max(1, Math.floor(y / ph) + 1));
+}
+
+function updateQuranWindow(page) {
+  if (!quranScrollList) return;
+  const from = Math.max(1, page - QURAN_KEEP_BEHIND);
+  const to = Math.min(QURAN_PAGES, page + QURAN_KEEP_AHEAD);
+  const sections = quranScrollList.children;
+  for (let p = Math.max(1, from - 6); p <= Math.min(QURAN_PAGES, to + 6); p++) {
+    const img = sections[p - 1].querySelector('img');
+    if (!img) continue;
+    if (p >= from && p <= to) {
+      if (!img.getAttribute('src')) img.setAttribute('src', img.getAttribute('data-src'));
+    } else if (img.getAttribute('src')) {
+      img.removeAttribute('src');
+    }
+  }
+}
+
+function setCurrentQuranPage(page) {
+  currentQuranPage = page;
+  const input = document.getElementById('jumpPageInput');
+  if (input && document.activeElement !== input) input.value = page;
+  clearTimeout(quranScrollSaveTimer);
+  quranScrollSaveTimer = setTimeout(function () { safeSetStorage('quran_last_page_v1', currentQuranPage); }, 400);
+}
+
+function onQuranScroll() {
+  if (quranScrollTicking) return;
+  quranScrollTicking = true;
+  const raf = window.requestAnimationFrame || function (f) { return setTimeout(f, 16); };
+  raf(function () {
+    quranScrollTicking = false;
+    const view = document.getElementById('quranReaderView');
+    if (!view || view.classList.contains('hidden') || !quranScrollList) return;
+    const page = quranPageAtScroll();
+    if (page !== currentQuranPage) setCurrentQuranPage(page);
+    updateQuranWindow(page);
+  });
+}
+
+function scrollToQuranPage(page) {
+  if (!quranScrollList) return;
+  const ph = quranPageHeight();
+  const top = quranListTop() + (page - 1) * ph - quranStickyOffset();
+  window.scrollTo(0, Math.max(0, top));
+}
 
 function openQuranPage(pageNumber, skipPushState = false) {
   hideAllViews();
   (function(e){if(e)e.classList.remove('hidden');})(document.getElementById('quranReaderView'));
 
-  const pageNum = Math.min(Math.max(1, parseInt(pageNumber) || 1), 638);
+  const pageNum = Math.min(Math.max(1, parseInt(pageNumber) || 1), QURAN_PAGES);
   displayQuranPage(pageNum);
 
   if (!skipPushState && window.history && window.history.pushState) {
@@ -365,72 +490,23 @@ function openQuranPage(pageNumber, skipPushState = false) {
   }
 }
 
-function displayQuranPage(pageNum, animDir = null) {
-  currentQuranPage = Math.min(Math.max(1, parseInt(pageNum) || 1), 638);
-  safeSetStorage('quran_last_page_v1', currentQuranPage);
-
-  const isEs = currentLang === 'es';
-  const t = uiTexts[currentLang];
-
-  const imgEl = document.getElementById('quranPageImg');
-  if (imgEl) {
-    imgEl.style.transition = 'none';
-    if (animDir === 'next') {
-      imgEl.style.transform = 'translateX(25px)';
-    } else if (animDir === 'prev') {
-      imgEl.style.transform = 'translateX(-25px)';
-    }
-    imgEl.style.opacity = '0.2';
-    imgEl.src = `quran_pages/page${currentQuranPage}.png`;
-
-    imgEl.onload = () => {
-      imgEl.style.transition = 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)';
-      imgEl.style.opacity = '1';
-      imgEl.style.transform = 'translateX(0)';
-    };
-    imgEl.onerror = () => {
-      imgEl.style.transition = 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)';
-      imgEl.style.opacity = '1';
-      imgEl.style.transform = 'translateX(0)';
-    };
-  }
-
-  const pageLabel = document.getElementById('pageLabelText');
-  if (pageLabel) pageLabel.innerText = t.pageLabelText || (isEs ? 'Página' : 'صفحة');
-
-  const pageOf = document.getElementById('pageOfText');
-  if (pageOf) pageOf.innerText = t.pageOfText || (isEs ? 'de 638' : 'من 638');
-
-  const numDisplay = document.getElementById('quranPageNumDisplay');
-  if (numDisplay) numDisplay.innerText = currentQuranPage;
-
-  const info = getSurahInfoForPage(currentQuranPage);
-
-  const hizbDisplay = document.getElementById('quranHizbDisplay');
-  if (hizbDisplay) hizbDisplay.innerText = isEs ? `Hizb ${info.hizb}` : `الحزب ${info.hizb}`;
-
-  const surahDisplay = document.getElementById('quranSurahDisplay');
-  if (surahDisplay) surahDisplay.innerText = info.title;
-
+function displayQuranPage(pageNum) {
+  const page = Math.min(Math.max(1, parseInt(pageNum) || 1), QURAN_PAGES);
+  if (!buildQuranScroll()) return;
+  if (quranScrollLang !== currentLang) refreshQuranHeads();
+  setCurrentQuranPage(page);
+  safeSetStorage('quran_last_page_v1', page);
+  updateQuranWindow(page);
+  scrollToQuranPage(page);
   const input = document.getElementById('jumpPageInput');
-  if (input) input.value = currentQuranPage;
-
-  const nextBtnText = document.getElementById('nextBtnText');
-  if (nextBtnText) nextBtnText.innerText = t.nextPageBtn || (isEs ? 'Página siguiente ➔' : 'الصفحة التالية ➔');
-
-  const prevBtnText = document.getElementById('prevBtnText');
-  if (prevBtnText) prevBtnText.innerText = t.prevPageBtn || (isEs ? '⬅ Página anterior' : '⬅ الصفحة السابقة');
-
-  const swipeHint = document.getElementById('swipeHint');
-  if (swipeHint) swipeHint.innerText = t.swipeHintText || (isEs ? 'Desliza a la derecha para página siguiente ➔' : 'اسحب لليمين للصفحة التالية ➔');
-
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-  setupQuranTouchSwipe();
+  if (input) input.value = page;
+  // Reajuste tras el primer pintado, por si cambia la altura de la cabecera
+  setTimeout(function () { scrollToQuranPage(page); updateQuranWindow(page); }, 80);
 }
 
 function nextQuranPage() {
-  if (currentQuranPage < 638) {
-    displayQuranPage(currentQuranPage + 1, 'next');
+  if (currentQuranPage < QURAN_PAGES) {
+    scrollToQuranPage(currentQuranPage + 1);
   } else {
     showToast(currentLang === 'es' ? 'Has llegado a la última página' : 'وصلت إلى نهاية المصحف الشريف');
   }
@@ -438,7 +514,7 @@ function nextQuranPage() {
 
 function prevQuranPage() {
   if (currentQuranPage > 1) {
-    displayQuranPage(currentQuranPage - 1, 'prev');
+    scrollToQuranPage(currentQuranPage - 1);
   } else {
     showToast(currentLang === 'es' ? 'Esta es la primera página' : 'هذه هي الصفحة الأولى');
   }
@@ -452,7 +528,7 @@ function jumpToInputPage() {
     return;
   }
   const page = Number(input.value);
-  if (!Number.isInteger(page) || page < 1 || page > 638) {
+  if (!Number.isInteger(page) || page < 1 || page > QURAN_PAGES) {
     showToast(currentLang === 'es' ? 'El número de página debe estar entre 1 y 638.' : 'يجب أن يكون رقم الصفحة بين 1 و638.');
     input.focus();
     input.select();
@@ -460,39 +536,5 @@ function jumpToInputPage() {
   }
   openQuranPage(page);
 }
-function setupQuranTouchSwipe() {
-  const wrapper = document.getElementById('quranImageWrapper');
-  if (!wrapper || wrapper.dataset.swipeSetup) return;
 
-  wrapper.dataset.swipeSetup = 'true';
-
-  wrapper.addEventListener('touchstart', (e) => {
-    if (e.touches && e.touches.length === 1) {
-      touchStartX = e.touches[0].clientX;
-      touchStartY = e.touches[0].clientY;
-    }
-  }, { passive: true });
-
-  wrapper.addEventListener('touchend', (e) => {
-    if (e.changedTouches && e.changedTouches.length === 1) {
-      touchEndX = e.changedTouches[0].clientX;
-      touchEndY = e.changedTouches[0].clientY;
-      handleQuranSwipeGesture();
-    }
-  }, { passive: true });
-}
-
-function handleQuranSwipeGesture() {
-  const deltaX = touchEndX - touchStartX;
-  const deltaY = touchEndY - touchStartY;
-
-  if (Math.abs(deltaX) > 35 && Math.abs(deltaY) < 80) {
-    if (deltaX > 0) {
-      // Arrastrar hacia la derecha (Swipe Right ➔) -> Ir a la Página Siguiente (Libro Árabe)
-      nextQuranPage();
-    } else {
-      // Arrastrar hacia la izquierda (Swipe Left ⬅) -> Ir a la Página Anterior
-      prevQuranPage();
-    }
-  }
-}
+function setupQuranTouchSwipe() {}
