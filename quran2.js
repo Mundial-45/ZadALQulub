@@ -80,9 +80,9 @@
       '@keyframes q2pulse{0%{transform:scale(1)}40%{transform:scale(1.25);box-shadow:0 0 0 3px #fff,0 0 18px 6px rgba(255,255,255,.95)}100%{transform:scale(1)}}' +
       '#quran2View .q2-hz.q2-pulse{animation:q2pulse 1.4s ease-in-out}' +
       '#quran2View .q2-gut{position:absolute;left:0;top:0;bottom:0;width:7%;background:#f6e2b8;border-right:3px double #a8742a}' +
-      '#quran2View .q2-gutr{position:absolute;right:0;top:0;bottom:0;width:7%;background:linear-gradient(90deg,transparent 34%,#d98a7f 34% 38%,#c9473f 38% 62%,#d98a7f 62% 66%,transparent 66%),#f6e2b8;border-left:3px double #a8742a;box-shadow:inset 0 0 0 2px #e9cd8f}' +
+      '#quran2View .q2-gutr{position:absolute;right:0;top:0;bottom:0;width:7%;background:#f6e2b8;border-left:3px double #a8742a;box-shadow:inset 0 0 0 2px #e9cd8f}' +
       '#quran2View .q2-gx{box-shadow:inset 0 0 0 2px #e9cd8f}' +
-      '#quran2View .q2-gut{background:linear-gradient(90deg,transparent 34%,#d98a7f 34% 38%,#c9473f 38% 62%,#d98a7f 62% 66%,transparent 66%),#f6e2b8}' +
+      '#quran2View .q2-gut{background:#f6e2b8}' +
       '#quran2View .q2-tag{position:absolute;z-index:2;left:.6%;width:7.6%;transform:translateY(-50%);text-align:center;pointer-events:none;font-size:calc(.6rem * var(--q2z,1));line-height:1}' +
       '#quran2View .q2-tag .m{aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:#c9473f;color:#fbe9d0;font-weight:700;clip-path:polygon(50.0% 0.0%,60.6% 10.4%,75.0% 6.7%,79.0% 21.0%,93.3% 25.0%,89.6% 39.4%,100.0% 50.0%,89.6% 60.6%,93.3% 75.0%,79.0% 79.0%,75.0% 93.3%,60.6% 89.6%,50.0% 100.0%,39.4% 89.6%,25.0% 93.3%,21.0% 79.0%,6.7% 75.0%,10.4% 60.6%,0.0% 50.0%,10.4% 39.4%,6.7% 25.0%,21.0% 21.0%,25.0% 6.7%,39.4% 10.4%);}' +
       '#quran2View .q2-tag.rb .m{clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);font-size:.9em}' +
@@ -318,7 +318,7 @@
       if (d.querySelector('img')) return;
       var img = document.createElement('img'); img.alt = ''; img.decoding = 'async';
       if (k < 2) img.fetchPriority = 'high';
-      img.src = 'quran_pages/page' + n + '.png'; d.appendChild(img);
+      img.src = 'quran_pages2/page' + n + '.png'; d.appendChild(img);
     });
     prefetch();
   }
@@ -332,7 +332,7 @@
       list.push(cur - KEEP_BEHIND - 1, cur - KEEP_BEHIND - 2);
       list.forEach(function (n) {
         if (n < 1 || n > TOTAL || pre[n]) return;
-        pre[n] = 1; var im = new Image(); im.decoding = 'async'; im.src = 'quran_pages/page' + n + '.png';
+        pre[n] = 1; var im = new Image(); im.decoding = 'async'; im.src = 'quran_pages2/page' + n + '.png';
       });
     }, 400);
   }
