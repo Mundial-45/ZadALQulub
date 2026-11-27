@@ -18,6 +18,10 @@
       es: 'Explicación de los versículos del Corán en español: según la explicación del Sheij Isa García.'
     },
     {
+      ar: 'ترجمة معاني القرآن الكريم إلى الإسبانية: ترجمة محمد عيسى غارسيا، من موسوعة القرآن الكريم (QuranEnc.com)، الإصدار 1.0.2.',
+      es: 'Traducción de los significados del Corán al español: Muhammad Isa García, publicada en la Enciclopedia del Noble Corán (QuranEnc.com), versión 1.0.2.'
+    },
+    {
       ar: 'المعجم (معاني المصطلحات الإسلامية): مبني على موقع إسلام ويب، وموقع الشيخ ابن باز، والدرر السنية، وموقع الإسلام سؤال وجواب.',
       es: 'Glosario (términos islámicos): basado en IslamWeb (islamweb.net), la web del Sheij Ibn Baz (binbaz.org.sa), Al-Durar al-Saniyya (dorar.net) e IslamQA (islamqa.info).'
     },
