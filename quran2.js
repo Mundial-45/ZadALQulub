@@ -211,7 +211,7 @@
   }
 
   // Lectura continua: 638 huecos de página y solo se cargan las imágenes cercanas a la página actual.
-  var KEEP_BEHIND = 3, KEEP_AHEAD = 4, programmatic = 0;
+  var KEEP_BEHIND = 3, KEEP_AHEAD = 6, PREFETCH = 10, programmatic = 0;
   function buildPages() {
     var pg = $('q2Pages'); if (!pg || pg.firstChild) return;
     var frag = document.createDocumentFragment();
@@ -277,13 +277,37 @@
   function listTop() { var pg = $('q2Pages'); return pg.getBoundingClientRect().top + window.pageYOffset; }
   function loadWindow() {
     var pg = $('q2Pages'); if (!pg) return;
-    var lo = clampPage(cur - KEEP_BEHIND), hi = clampPage(cur + KEEP_AHEAD);
-    for (var i = 1; i <= TOTAL; i++) {
-      var d = pg.childNodes[i - 1].childNodes[3], img = d.querySelector('img');
-      if (i >= lo && i <= hi) {
-        if (!img) { img = document.createElement('img'); img.alt = ''; img.decoding = 'async'; img.src = 'quran_pages/page' + i + '.png'; d.appendChild(img); }
-      } else if (img && (i < lo - 2 || i > hi + 2)) { d.removeChild(img); }
+    var lo = clampPage(cur - KEEP_BEHIND), hi = clampPage(cur + KEEP_AHEAD), i;
+    // Quitar las lejanas
+    for (i = 1; i <= TOTAL; i++) {
+      if (i < lo - 2 || i > hi + 2) { var f = pg.childNodes[i - 1].childNodes[3], im0 = f.querySelector('img'); if (im0) f.removeChild(im0); }
     }
+    // Cargar primero la página actual y después las más cercanas (así la red atiende antes lo que se ve)
+    var order = [];
+    for (i = lo; i <= hi; i++) order.push(i);
+    order.sort(function (a, b) { return Math.abs(a - cur) - Math.abs(b - cur) || a - b; });
+    order.forEach(function (n, k) {
+      var d = pg.childNodes[n - 1].childNodes[3];
+      if (d.querySelector('img')) return;
+      var img = document.createElement('img'); img.alt = ''; img.decoding = 'async';
+      if (k < 2) img.fetchPriority = 'high';
+      img.src = 'quran_pages/page' + n + '.png'; d.appendChild(img);
+    });
+    prefetch();
+  }
+  // Precarga en segundo plano de las páginas siguientes (y alguna anterior): quedan en la caché y aparecen al instante.
+  var pre = {}, preTimer = 0;
+  function prefetch() {
+    clearTimeout(preTimer);
+    preTimer = setTimeout(function () {
+      var list = [], k;
+      for (k = KEEP_AHEAD + 1; k <= KEEP_AHEAD + PREFETCH; k++) list.push(cur + k);
+      list.push(cur - KEEP_BEHIND - 1, cur - KEEP_BEHIND - 2);
+      list.forEach(function (n) {
+        if (n < 1 || n > TOTAL || pre[n]) return;
+        pre[n] = 1; var im = new Image(); im.decoding = 'async'; im.src = 'quran_pages/page' + n + '.png';
+      });
+    }, 400);
   }
   // Aviso al llegar leyendo a la mitad del hizb o al comienzo de un hizb nuevo
   // Solo mientras la página donde empieza un hizb está centrada, su «الحزب N» se pone en blanco y pulsa una vez.
