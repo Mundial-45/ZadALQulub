@@ -125,8 +125,8 @@ const qalbData = [
    {
     "text": "قَالَ ابْنُ الْقَيِّمِ: «الشُّكْرُ ظُهُورُ أَثَرِ نِعْمَةِ اللَّهِ عَلَى لِسَانِ عَبْدِهِ ثَنَاءً وَاعْتِرَافًا، وَعَلَى قَلْبِهِ شُهُودًا وَمَحَبَّةً، وَعَلَى جَوَارِحِهِ انْقِيَادًا وَطَاعَةً».",
     "explanationEs": "Ibn al-Qayyim dijo: «La gratitud es que aparezca el rastro de la bendición de Allah en la lengua de Su siervo, como alabanza y reconocimiento; en su corazón, como testimonio y amor; y en sus miembros, como sumisión y obediencia».",
-    "note": "مَدَارِجُ السَّالِكِينَ، مَنْزِلَةُ الشُّكْرِ",
-    "noteEs": "Madarij as-Salikin, estación de la gratitud",
+    "note": "مَدَارِجُ السَّالِكِينَ",
+    "noteEs": "Madarij as-Salikin",
     "itemNumber": 7,
     "subtitleAr": "تَأَمُّلَاتٌ",
     "subtitleEs": "Reflexiones"
@@ -257,8 +257,8 @@ const qalbData = [
    {
     "text": "ذَكَرَ ابْنُ الْقَيِّمِ أَنَّ الصَّبْرَ ثَلَاثَةُ أَنْوَاعٍ: صَبْرٌ عَلَى الطَّاعَةِ، وَصَبْرٌ عَنِ الْمَعْصِيَةِ، وَصَبْرٌ عَلَى الْأَقْدَارِ الْمُؤْلِمَةِ.",
     "explanationEs": "Ibn al-Qayyim menciona tres clases de paciencia: en la obediencia, para abandonar el pecado y ante los decretos dolorosos.",
-    "note": "عُدَّةُ الصَّابِرِينَ وَمَدَارِجُ السَّالِكِينَ (بِالْمَعْنَى)",
-    "noteEs": "ʿUddat as-Sābirīn y Madarij as-Salikin (resumen del sentido)",
+    "note": "عُدَّةُ الصَّابِرِينَ وَالْمَدَارِجُ (بِالْمَعْنَى)",
+    "noteEs": "ʿUddat as-Sābirīn y Madarij (sentido)",
     "itemNumber": 16,
     "subtitleAr": "تَأَمُّلَاتٌ",
     "subtitleEs": "Reflexiones"
@@ -388,8 +388,8 @@ const qalbData = [
    {
     "text": "ذَكَرَ النَّوَوِيُّ أَنَّ لِلتَّوْبَةِ شُرُوطًا: الْإِقْلَاعَ عَنِ الْمَعْصِيَةِ، وَالنَّدَمَ عَلَى فِعْلِهَا، وَالْعَزْمَ أَلَّا يَعُودَ إِلَيْهَا، وَإِنْ كَانَتْ تَتَعَلَّقُ بِحَقِّ آدَمِيٍّ فَرَدُّ الْحَقِّ إِلَى صَاحِبِهِ أَوِ اسْتِحْلَالُهُ.",
     "explanationEs": "An-Nawawi menciona las condiciones del arrepentimiento: abandonar el pecado, arrepentirse de haberlo cometido, resolver no volver a él y, si implica el derecho de una persona, devolvérselo o pedirle que te perdone.",
-    "note": "رِيَاضُ الصَّالِحِينَ، بَابُ التَّوْبَةِ (بِالْمَعْنَى)",
-    "noteEs": "Riyad as-Salihin, capítulo del arrepentimiento (resumen del sentido)",
+    "note": "رِيَاضُ الصَّالِحِينَ (بِالْمَعْنَى)",
+    "noteEs": "Riyad as-Salihin (sentido)",
     "itemNumber": 25,
     "subtitleAr": "تَأَمُّلَاتٌ",
     "subtitleEs": "Reflexiones"
@@ -485,7 +485,7 @@ const qalbData = [
     "text": "لَوْ أَنَّكُمْ كُنْتُمْ تَوَكَّلُونَ عَلَى اللَّهِ حَقَّ تَوَكُّلِهِ لَرُزِقْتُمْ كَمَا تُرْزَقُ الطَّيْرُ تَغْدُو خِمَاصًا وَتَرُوحُ بِطَانًا",
     "explanationEs": "Si confiaran en Allah como se debe confiar en Él, los sustentaría como sustenta a las aves: salen por la mañana con el buche vacío y regresan por la tarde repletas.",
     "note": "سنن الترمذي (2344) · صحيح (الألباني)",
-    "noteEs": "Sunan at-Tirmidhi 2344 · Sahih (al-Albani)",
+    "noteEs": "At-Tirmidhi 2344 · Sahih",
     "sharhAr": "يُبَيِّنُ الْحَدِيثُ أَنَّ التَّوَكُّلَ الصَّادِقَ لَا يَعْنِي تَرْكَ الْعَمَلِ، فَالطَّيْرُ تَخْرُجُ صَبَاحًا جَائِعَةً وَتَعُودُ مَسَاءً شَبْعَانَةً، فَهِيَ تَسْعَى وَتَطْلُبُ وَقَلْبُهَا مُتَوَكِّلٌ عَلَى رَبِّهَا. فَمَنْ تَوَكَّلَ عَلَى اللَّهِ حَقَّ التَّوَكُّلِ، بِأَنْ أَخَذَ بِالْأَسْبَابِ وَاعْتَمَدَ بِقَلْبِهِ عَلَى خَالِقِهَا، رَزَقَهُ اللَّهُ مِنْ حَيْثُ لَا يَحْتَسِبُ.",
     "sharhEs": "El hadiz aclara que la verdadera confianza en Allah no es dejar de obrar: las aves salen por la mañana hambrientas y regresan por la tarde satisfechas; se esfuerzan y buscan, con el corazón confiado en su Señor. Quien confía en Allah como se debe, tomando los medios y apoyando el corazón en su Creador, recibe sustento de donde no lo espera.",
     "sharhLabAr": "شَرْحُ الْحَدِيثِ",
@@ -519,8 +519,8 @@ const qalbData = [
    {
     "text": "قَالَ ﷺ لِلرَّجُلِ الَّذِي سَأَلَهُ عَنْ نَاقَتِهِ: «اعْقِلْهَا وَتَوَكَّلْ»؛ فَالتَّوَكُّلُ لَا يُنَافِي الْأَخْذَ بِالْأَسْبَابِ.",
     "explanationEs": "El Profeta ﷺ dijo al hombre que le preguntó por su camella: «Átala y confía en Allah». La confianza en Allah no se opone a tomar los medios.",
-    "note": "رَوَاهُ التِّرْمِذِيُّ (٢٥١٧) وَقَالَ: غَرِيبٌ، وَحَسَّنَهُ الْأَلْبَانِيُّ",
-    "noteEs": "Lo transmite at-Tirmidhi (2517), que lo considera garib; al-Albani lo declara hasan",
+    "note": "التِّرْمِذِيُّ ٢٥١٧ · حسن",
+    "noteEs": "At-Tirmidhi 2517 · Hasan",
     "itemNumber": 34,
     "subtitleAr": "تَأَمُّلَاتٌ",
     "subtitleEs": "Reflexiones"
@@ -634,8 +634,8 @@ const qalbData = [
    {
     "text": "قَالَ الْفُضَيْلُ بْنُ عِيَاضٍ: «تَرْكُ الْعَمَلِ مِنْ أَجْلِ النَّاسِ رِيَاءٌ، وَالْعَمَلُ مِنْ أَجْلِ النَّاسِ شِرْكٌ، وَالْإِخْلَاصُ أَنْ يُعَافِيَكَ اللَّهُ مِنْهُمَا».",
     "explanationEs": "Al-Fudayl ibn Iyad dijo: «Dejar una obra por la gente es ostentación, hacerla por la gente es asociación, y la sinceridad es que Allah te libre de ambas».",
-    "note": "سِيَرُ أَعْلَامِ النُّبَلَاءِ (تَرْجَمَةُ الْفُضَيْلِ)، وَقِيلَ: هُوَ لِلْقَاضِي عِيَاضٍ",
-    "noteEs": "Siyar Aʿlām an-Nubalāʾ (biografía de al-Fudayl); algunos lo atribuyen al juez Iyad",
+    "note": "سِيَرُ أَعْلَامِ النُّبَلَاءِ",
+    "noteEs": "Siyar Aʿlām an-Nubalāʾ",
     "itemNumber": 41,
     "subtitleAr": "تَأَمُّلَاتٌ",
     "subtitleEs": "Reflexiones"
@@ -767,8 +767,8 @@ const qalbData = [
    {
     "text": "وَصَفَ ابْنُ الْقَيِّمِ الْمَحَبَّةَ بِأَنَّهَا الْمَنْزِلَةُ الَّتِي فِيهَا تَنَافَسَ الْمُتَنَافِسُونَ، وَإِلَيْهَا شَخَصَ الْعَامِلُونَ.",
     "explanationEs": "Ibn al-Qayyim describe el amor como la estación en la que compiten los que compiten y hacia la que se dirigen los que obran.",
-    "note": "مَدَارِجُ السَّالِكِينَ، مَنْزِلَةُ الْمَحَبَّةِ (بِالْمَعْنَى)",
-    "noteEs": "Madarij as-Salikin, estación del amor (sentido)",
+    "note": "مَدَارِجُ السَّالِكِينَ (بِالْمَعْنَى)",
+    "noteEs": "Madarij as-Salikin (sentido)",
     "itemNumber": 50
    },
    {
@@ -1026,7 +1026,7 @@ const qalbData = [
     "text": "قَالَ ابْنُ الْقَيِّمِ: «الْقَلْبُ فِي سَيْرِهِ إِلَى اللَّهِ عَزَّ وَجَلَّ بِمَنْزِلَةِ الطَّائِرِ، فَالْمَحَبَّةُ رَأْسُهُ، وَالْخَوْفُ وَالرَّجَاءُ جَنَاحَاهُ».",
     "explanationEs": "Ibn al-Qayyim dijo: «El corazón, en su viaje hacia Allah, es como un ave: el amor es su cabeza, y el temor y la esperanza son sus dos alas».",
     "note": "مَدَارِجُ السَّالِكِينَ (بِالْمَعْنَى)",
-    "noteEs": "Madarij as-Salikin (sentido, imagen citada con ligera adaptación)",
+    "noteEs": "Madarij as-Salikin (sentido)",
     "itemNumber": 67,
     "subtitleAr": "تَأَمُّلَاتٌ",
     "subtitleEs": "Reflexiones"
@@ -1128,8 +1128,8 @@ const qalbData = [
    {
     "text": "إِنَّ عِظَمَ الْجَزَاءِ مَعَ عِظَمِ الْبَلَاءِ وَإِنَّ اللَّهَ إِذَا أَحَبَّ قَوْمًا ابْتَلَاهُمْ فَمَنْ رَضِيَ فَلَهُ الرِّضَا وَمَنْ سَخِطَ فَلَهُ السَّخَطُ",
     "explanationEs": "La gran recompensa viene con la gran prueba; y cuando Allah ama a un pueblo, lo pone a prueba. Quien se complace, obtiene la complacencia; y quien se disgusta, obtiene el disgusto.",
-    "note": "سنن الترمذي (2396) · حسن (الترمذي والألباني)",
-    "noteEs": "Sunan at-Tirmidhi 2396 · Hasan (at-Tirmidhi y al-Albani)",
+    "note": "الترمذي 2396 · حسن",
+    "noteEs": "At-Tirmidhi 2396 · Hasan",
     "sharhAr": "يُبَيِّنُ الْحَدِيثُ سُنَّةً إِلَهِيَّةً: كُلَّمَا عَظُمَ الْبَلَاءُ عَظُمَ الْجَزَاءُ لِمَنْ صَبَرَ وَرَضِيَ، وَالِابْتِلَاءُ قَدْ يَكُونُ عَلَامَةَ مَحَبَّةِ اللَّهِ لِعَبْدِهِ لِيُطَهِّرَهُ وَيَرْفَعَ دَرَجَتَهُ. فَمَنْ رَضِيَ بِقَضَاءِ اللَّهِ فَلَهُ الرِّضَا وَالثَّوَابُ، وَمَنْ سَخِطَ فَلَهُ السَّخَطُ، وَلَا يَرُدُّ سَخَطُهُ الْقَدَرَ بَلْ يَحْرِمُهُ الْأَجْرَ.",
     "sharhEs": "El hadiz muestra una norma divina: cuanto mayor es la prueba, mayor la recompensa para quien es paciente y se complace; la prueba puede ser señal del amor de Allah, que así purifica al siervo y eleva su rango. Quien se complace con el decreto obtiene complacencia y recompensa; quien se disgusta obtiene disgusto, y su enojo no cambia el decreto sino que le priva de la recompensa.",
     "sharhLabAr": "شَرْحُ الْحَدِيثِ",
@@ -1230,7 +1230,7 @@ const qalbData = [
     "text": "سَلُوا اللَّهَ الْعَفْوَ وَالْعَافِيَةَ فَإِنَّ أَحَدًا لَمْ يُعْطَ بَعْدَ الْيَقِينِ خَيْرًا مِنَ الْعَافِيَةِ",
     "explanationEs": "Pidan a Allah el perdón y el bienestar, pues a nadie se le ha dado, después de la certeza, nada mejor que el bienestar.",
     "note": "سنن الترمذي (3558) · حسن صحيح (الألباني)",
-    "noteEs": "Sunan at-Tirmidhi 3558 · Hasan sahih (al-Albani)",
+    "noteEs": "At-Tirmidhi 3558 · Hasan sahih",
     "sharhAr": "يُرْشِدُ النَّبِيُّ ﷺ إِلَى سُؤَالِ اللَّهِ الْعَفْوَ وَالْعَافِيَةَ، ثُمَّ يُبَيِّنُ أَنَّ أَفْضَلَ مَا يُعْطَاهُ الْعَبْدُ بَعْدَ الْيَقِينِ هُوَ الْعَافِيَةُ. وَالْيَقِينُ هُوَ الْإِيمَانُ الرَّاسِخُ الَّذِي لَا يَخَالِطُهُ شَكٌّ، وَهُوَ أَصْلُ كُلِّ خَيْرٍ فِي الْقَلْبِ، وَالْعَافِيَةُ تَشْمَلُ السَّلَامَةَ مِنَ الْأَسْقَامِ وَالْفِتَنِ فِي الدِّينِ وَالدُّنْيَا.",
     "sharhEs": "El Profeta ﷺ orienta a pedir a Allah perdón y bienestar, y explica que lo mejor que se concede al siervo después de la certeza es el bienestar. La certeza es la fe firme sin sombra de duda, raíz de todo bien en el corazón; el bienestar incluye la salud y la protección de las pruebas en la religión y en este mundo.",
     "sharhLabAr": "شَرْحُ الْحَدِيثِ",
@@ -1264,8 +1264,8 @@ const qalbData = [
    {
     "text": "قَالَ ابْنُ مَسْعُودٍ رَضِيَ اللَّهُ عَنْهُ: «الصَّبْرُ نِصْفُ الْإِيمَانِ، وَالْيَقِينُ الْإِيمَانُ كُلُّهُ».",
     "explanationEs": "Ibn Masud (que Allah esté complacido con él) dijo: «La paciencia es la mitad de la fe, y la certeza es la fe entera».",
-    "note": "أَثَرٌ مَوْقُوفٌ صَحِيحٌ: زُهْدُ وَكِيعٍ (٢٠٣)، وَعَلَّقَهُ الْبُخَارِيُّ",
-    "noteEs": "Dicho de Ibn Masud (mawquf), sahih: Zuhd de Waki (203); lo cita al-Bujari sin cadena completa",
+    "note": "أَثَرٌ عَنِ ابْنِ مَسْعُودٍ",
+    "noteEs": "Dicho de Ibn Masud",
     "itemNumber": 82,
     "subtitleAr": "تَأَمُّلَاتٌ",
     "subtitleEs": "Reflexiones"
@@ -1389,8 +1389,8 @@ const qalbData = [
    {
     "text": "قَالَ ابْنُ تَيْمِيَّةَ: «الذِّكْرُ لِلْقَلْبِ مِثْلُ الْمَاءِ لِلسَّمَكِ، فَكَيْفَ يَكُونُ حَالُ السَّمَكِ إِذَا فَارَقَ الْمَاءَ؟»",
     "explanationEs": "Ibn Taymiyya dijo: «El recuerdo de Allah es para el corazón como el agua para el pez; ¿cómo estará el pez si se aparta del agua?»",
-    "note": "نَقَلَهُ ابْنُ الْقَيِّمِ فِي الْوَابِلِ الصَّيِّبِ",
-    "noteEs": "Lo cita Ibn al-Qayyim en al-Wabil as-Sayyib",
+    "note": "الْوَابِلُ الصَّيِّبُ",
+    "noteEs": "Al-Wabil as-Sayyib",
     "itemNumber": 90,
     "subtitleAr": "تَأَمُّلَاتٌ",
     "subtitleEs": "Reflexiones"
@@ -1493,7 +1493,7 @@ const qalbData = [
     "text": "يَا غُلَامُ إِنِّي أُعَلِّمُكَ كَلِمَاتٍ احْفَظِ اللَّهَ يَحْفَظْكَ احْفَظِ اللَّهَ تَجِدْهُ تُجَاهَكَ إِذَا سَأَلْتَ فَاسْأَلِ اللَّهَ وَإِذَا اسْتَعَنْتَ فَاسْتَعِنْ بِاللَّهِ وَاعْلَمْ أَنَّ الأُمَّةَ لَوِ اجْتَمَعَتْ عَلَى أَنْ يَنْفَعُوكَ بِشَيْءٍ لَمْ يَنْفَعُوكَ إِلاَّ بِشَيْءٍ قَدْ كَتَبَهُ اللَّهُ لَكَ وَلَوِ اجْتَمَعُوا عَلَى أَنْ يَضُرُّوكَ بِشَيْءٍ لَمْ يَضُرُّوكَ إِلاَّ بِشَيْءٍ قَدْ كَتَبَهُ اللَّهُ عَلَيْكَ رُفِعَتِ الْأَقْلَامُ وَجَفَّتِ الصُّحُفُ",
     "explanationEs": "Muchacho, te enseñaré unas palabras: guarda a Allah y Él te guardará; guarda a Allah y Lo encontrarás ante ti. Si pides, pide a Allah; si buscas ayuda, busca la ayuda de Allah. Y sabe que si la comunidad entera se reuniera para beneficiarte con algo, solo te beneficiaría con lo que Allah ya escribió para ti; y si se reunieran para perjudicarte, solo te perjudicarían con lo que Allah ya escribió contra ti. Se levantaron las plumas y se secaron las páginas.",
     "note": "سنن الترمذي (2516) · صحيح (الألباني)",
-    "noteEs": "Sunan at-Tirmidhi 2516 · Sahih (al-Albani)",
+    "noteEs": "At-Tirmidhi 2516 · Sahih",
     "sharhAr": "هَذِهِ وَصِيَّةٌ جَامِعَةٌ أَوْصَى بِهَا النَّبِيُّ ﷺ ابْنَ عَبَّاسٍ وَكَانَ غُلَامًا: «احْفَظِ اللَّهَ يَحْفَظْكَ»، أَيْ احْفَظْ حُدُودَهُ وَأَوَامِرَهُ يَحْفَظْكَ فِي دِينِكَ وَدُنْيَاكَ. «احْفَظِ اللَّهَ تَجِدْهُ تُجَاهَكَ»، وَ«تَعَرَّفْ إِلَى اللَّهِ فِي الرَّخَاءِ يَعْرِفْكَ فِي الشِّدَّةِ»، وَإِذَا سَأَلْتَ فَاسْأَلِ اللَّهَ وَإِذَا اسْتَعَنْتَ فَاسْتَعِنْ بِاللَّهِ، وَاعْلَمْ أَنَّ مَا أَصَابَكَ لَمْ يَكُنْ لِيُخْطِئَكَ.",
     "sharhEs": "Es un consejo amplio que el Profeta ﷺ dio a Ibn Abbas siendo muchacho: «Guarda a Allah y Él te guardará», es decir, guarda Sus límites y órdenes y Él te guardará en tu religión y tu vida; «guarda a Allah y Lo encontrarás ante ti»; «conoce a Allah en la bonanza y Él te conocerá en la dificultad»; si pides, pide a Allah, y si buscas ayuda, búscala en Allah; y sabe que lo que te alcanzó no podía pasarte de largo.",
     "sharhLabAr": "شَرْحُ الْحَدِيثِ",
@@ -1639,8 +1639,8 @@ const qalbData = [
    {
     "text": "قَالَ ابْنُ تَيْمِيَّةَ: «الزُّهْدُ: تَرْكُ مَا لَا يَنْفَعُ فِي الْآخِرَةِ».",
     "explanationEs": "Ibn Taymiyya dijo: «El zuhd es abandonar lo que no beneficia en la otra vida».",
-    "note": "مَجْمُوعُ الْفَتَاوَى، وَنَقَلَهُ ابْنُ الْقَيِّمِ فِي الْمَدَارِجِ",
-    "noteEs": "Maymuʿ al-Fatāwā; lo cita Ibn al-Qayyim en Madarij",
+    "note": "مَجْمُوعُ الْفَتَاوَى",
+    "noteEs": "Maymuʿ al-Fatāwā",
     "itemNumber": 106,
     "subtitleAr": "تَأَمُّلَاتٌ",
     "subtitleEs": "Reflexiones"
@@ -1867,8 +1867,8 @@ const qalbData = [
    {
     "text": "قَالَ اللَّهُ يَا ابْنَ آدَمَ إِنَّكَ مَا دَعَوْتَنِي وَرَجَوْتَنِي غَفَرْتُ لَكَ عَلَى مَا كَانَ فِيكَ وَلَا أُبَالِي يَا ابْنَ آدَمَ لَوْ بَلَغَتْ ذُنُوبُكَ عَنَانَ السَّمَاءِ ثُمَّ اسْتَغْفَرْتَنِي غَفَرْتُ لَكَ وَلَا أُبَالِي يَا ابْنَ آدَمَ إِنَّكَ لَوْ أَتَيْتَنِي بِقُرَابِ الْأَرْضِ خَطَايَا ثُمَّ لَقِيتَنِي لَا تُشْرِكُ بِي شَيْئًا لِأَتَيْتُكَ بِقُرَابِهَا مَغْفِرَةً",
     "explanationEs": "Allah dijo: «¡Hijo de Adán! Mientras Me invoques y esperes en Mí, te perdonaré lo que haya en ti sin importarme. ¡Hijo de Adán! Aunque tus pecados alcanzaran las nubes del cielo y Me pidieras perdón, te perdonaría sin importarme. ¡Hijo de Adán! Si vinieras a Mí con pecados casi del tamaño de la tierra y Me encontraras sin asociarme nada, te traería un perdón casi del tamaño de ella.»",
-    "note": "سنن الترمذي (3540) · حسن (الترمذي)، صحيح (الألباني)",
-    "noteEs": "Sunan at-Tirmidhi 3540 · Hasan (at-Tirmidhi); sahih (al-Albani)",
+    "note": "الترمذي 3540 · حسن",
+    "noteEs": "At-Tirmidhi 3540 · Hasan",
     "sharhAr": "هَذَا حَدِيثٌ قُدُسِيٌّ يَرْوِيهِ النَّبِيُّ ﷺ عَنْ رَبِّهِ: «يَا ابْنَ آدَمَ، إِنَّكَ مَا دَعَوْتَنِي وَرَجَوْتَنِي غَفَرْتُ لَكَ عَلَى مَا كَانَ مِنْكَ وَلَا أُبَالِي». فَمَا دَامَ الْعَبْدُ يَدْعُو اللَّهَ وَيَرْجُوهُ غَفَرَ لَهُ عَلَى كَثْرَةِ ذُنُوبِهِ، وَلَوْ بَلَغَتْ عَنَانَ السَّمَاءِ، وَلَوْ لَقِيَهُ بِقُرَابِ الْأَرْضِ خَطَايَا ثُمَّ لَقِيَهُ لَا يُشْرِكُ بِهِ شَيْئًا لَقِيَهُ بِمِثْلِهَا مَغْفِرَةً. فَلَا يَقْنَطُ أَحَدٌ مِنْ رَحْمَةِ اللَّهِ.",
     "sharhEs": "Es un hadiz qudsi que el Profeta ﷺ transmite de su Señor: «Hijo de Adán, mientras Me invoques y esperes en Mí, te perdonaré lo que haya en ti sin importarme». Mientras el siervo invoque a Allah y espere en Él, le perdona por muchos que sean sus pecados, aunque llegaran a las nubes; y si Lo encuentra sin asociarle nada con una tierra llena de faltas, Allah lo recibe con una tierra llena de perdón. Nadie debe perder la esperanza en Su misericordia.",
     "sharhLabAr": "شَرْحُ الْحَدِيثِ",
@@ -1878,8 +1878,8 @@ const qalbData = [
    {
     "text": "رُوِيَ عَنِ الْحَسَنِ الْبَصْرِيِّ قَوْلُهُ: «إِنَّ الْمُؤْمِنَ أَحْسَنَ الظَّنَّ بِرَبِّهِ فَأَحْسَنَ الْعَمَلَ، وَإِنَّ الْمُنَافِقَ أَسَاءَ الظَّنَّ بِرَبِّهِ فَأَسَاءَ الْعَمَلَ».",
     "explanationEs": "Se transmite de al-Hasan al-Basri: «El creyente tuvo buena opinión de su Señor y obró bien; el hipócrita tuvo mala opinión de su Señor y obró mal».",
-    "note": "الزُّهْدُ لِابْنِ أَبِي شَيْبَةَ (أَثَرٌ عَنِ الْحَسَنِ)",
-    "noteEs": "Az-Zuhd / Musannaf de Ibn Abi Shayba (dicho de al-Hasan)",
+    "note": "أَثَرٌ عَنِ الْحَسَنِ",
+    "noteEs": "Dicho de al-Hasan",
     "itemNumber": 121,
     "subtitleAr": "تَأَمُّلَاتٌ",
     "subtitleEs": "Reflexiones"
