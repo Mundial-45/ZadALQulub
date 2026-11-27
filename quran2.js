@@ -60,9 +60,12 @@
       '<style>' +
       '#quran2View .q2-bar{position:sticky;top:4rem;z-index:40}' +
       '#quran2View .q2-night img{filter:invert(1) hue-rotate(180deg) brightness(.9)}' +
-      '#quran2View .q2-pg{position:relative;width:100%;padding-bottom:146.6%;border-bottom:2px solid rgba(124,74,30,.35)}' +
-      '#quran2View .q2-pg img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:contain}' +
-      '#quran2View .q2-pg span{position:absolute;left:0;right:0;bottom:.2rem;text-align:center;font-size:.75rem;font-weight:800;color:#7c4a1e}' +
+      '#quran2View .q2-box{position:relative;width:100%;padding-bottom:146.6%}' +
+      '#quran2View .q2-box img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:contain}' +
+      '#quran2View .q2-hd{display:flex;align-items:center;justify-content:space-between;direction:rtl;height:2.6rem;padding:0 .8rem;font-size:.85rem;color:#6b5a4a;border-top:4px double #8a7a68;border-bottom:4px double #8a7a68;background:#fdca9b}' +
+      '#quran2View .q2-hd b{font-weight:600}#quran2View .q2-hd i{font-style:normal;font-size:.7rem;color:#9a3412;margin-inline-start:.4rem}' +
+      '#quran2View .q2-hd .q2-dot{display:inline-block;width:.8rem;height:.8rem;border-radius:50%;background:#f5b98a;margin:0 .4rem}' +
+      '#quran2View .q2-num{height:2.2rem;line-height:2.2rem;text-align:center;font-size:1rem;color:#6b5a4a;background:#fdca9b}' +
       '#quran2View .q2-btn{padding:.4rem .7rem;border-radius:.75rem;font-weight:700;font-size:.8rem;cursor:pointer;background:#334155;color:#fff}' +
       '#quran2View .q2-bar{background:rgba(15,23,42,.95);color:#fff}' +
       '#quran2View .q2-ok{background:#059669}#quran2View .q2-am{background:#d97706}' +
@@ -78,26 +81,17 @@
         '<h2 class="text-lg font-bold text-slate-800 dark:text-slate-100" id="q2Title"></h2>' +
         '<span style="font-size:10px;font-weight:700;background:#f59e0b;color:#fff;padding:2px 8px;border-radius:6px">ADMIN</span>' +
       '</div>' +
-      '<div class="q2-bar bg-slate-900/90 text-white p-2.5 rounded-2xl backdrop-blur-md border border-slate-700/80 shadow-xl">' +
-        '<div class="flex flex-wrap items-center justify-between gap-2">' +
-          '<div class="flex items-center gap-1.5">' +
-            '<button type="button" id="q2ToggleGo" class="q2-btn q2-am">🔍</button>' +
-            '<button type="button" id="q2ToggleMarks" class="q2-btn">🔖</button>' +
-            '<button type="button" id="q2Star" aria-label="marcador">☆</button>' +
-          '</div>' +
-          '<div class="flex items-center gap-1.5">' +
-            '<button type="button" id="q2ZoomOut" class="q2-btn">A−</button>' +
-            '<button type="button" id="q2ZoomIn" class="q2-btn">A+</button>' +
-            '<button type="button" id="q2Night" class="q2-btn">🌙</button>' +
-          '</div>' +
+      '<div class="q2-bar flex items-center justify-between gap-2 bg-slate-900/90 text-white p-1.5 rounded-2xl backdrop-blur-md border border-slate-700/80 shadow-xl">' +
+        '<div class="flex items-center gap-1.5">' +
+          '<button type="button" id="q2ToggleGo" class="q2-btn q2-am">🔍</button>' +
+          '<button type="button" id="q2ToggleMarks" class="q2-btn">🔖</button>' +
+          '<button type="button" id="q2Star" aria-label="marcador">☆</button>' +
         '</div>' +
-        '<div class="flex items-center justify-between text-xs font-bold pt-2 gap-2">' +
-          '<span id="q2PageLbl"></span>' +
-          '<span id="q2Hizb" style="background:#fef3c7;color:#78350f;padding:1px 8px;border-radius:6px"></span>' +
-          '<span id="q2SurahLbl"></span>' +
+        '<div class="flex items-center gap-1.5">' +
+          '<button type="button" id="q2ZoomOut" class="q2-btn">A−</button>' +
+          '<button type="button" id="q2ZoomIn" class="q2-btn">A+</button>' +
+          '<button type="button" id="q2Night" class="q2-btn">🌙</button>' +
         '</div>' +
-        '<div id="q2Thumn" class="text-center text-xs font-bold pt-1" style="color:#fcd34d;min-height:1.1rem"></div>' +
-        '<input id="q2Range" type="range" min="1" max="' + TOTAL + '" value="1" dir="rtl" class="w-full" />' +
       '</div>' +
       '<div id="q2GoPanel" class="hidden bg-white dark:bg-slate-800 p-3 rounded-2xl border border-amber-200/80 dark:border-slate-700 space-y-3">' +
         '<div class="flex flex-wrap items-center gap-2">' +
@@ -109,6 +103,7 @@
           '<input id="q2PageIn" type="number" min="1" max="' + TOTAL + '" class="q2-field w-24 text-center" />' +
           '<button type="button" id="q2GoPage" class="q2-btn q2-ok"></button>' +
         '</div>' +
+        '<input id="q2Range" type="range" min="1" max="' + TOTAL + '" value="1" dir="rtl" class="w-full" />' +
         '<input id="q2Filter" type="text" class="q2-field w-full" />' +
         '<div id="q2Results" class="q2-list"></div>' +
       '</div>' +
@@ -203,10 +198,28 @@
     for (var i = 1; i <= TOTAL; i++) {
       var d = mk('div', 'q2-pg');
       d.setAttribute('data-p', i);
-      d.appendChild(mk('span', null, String(i)));
+      d.appendChild(mk('div', 'q2-hd'));
+      d.appendChild(mk('div', 'q2-box'));
+      d.appendChild(mk('div', 'q2-num', String(i)));
       frag.appendChild(d);
     }
     pg.appendChild(frag);
+    labelHeaders();
+  }
+  // Cabecera de cada página (como el lector de referencia): juz | sura | hizb + marca de ثمن
+  function labelHeaders() {
+    var pg = $('q2Pages'); if (!pg || !pg.firstChild) return;
+    var es = isEs();
+    for (var i = 1; i <= TOTAL; i++) {
+      var hd = pg.childNodes[i - 1].firstChild;
+      var hz = hizbOf(i), jz = Math.ceil(hz / 2), tm = parseInt(THUMN.charAt(i - 1), 10) || 0;
+      var sur = quranSurahs[0];
+      for (var k = 0; k < quranSurahs.length; k++) { if (quranSurahs[k].page <= i) sur = quranSurahs[k]; else break; }
+      var html = '<span><span class="q2-dot"></span>' + (es ? 'Yuz ' + jz : 'الجزء ' + JUZ_AR[jz - 1]) + '</span>' +
+        '<span>' + (es ? 'Sura ' + sur.nameEs : 'سورة ' + sur.nameAr) + '</span>' +
+        '<span>' + (es ? 'Hizb ' : 'الحزب ') + hz + (tm ? '<i>' + (es ? THUMN_ES[tm] : THUMN_AR[tm]) + '</i>' : '') + '<span class="q2-dot"></span></span>';
+      hd.innerHTML = html;
+    }
   }
   function pageH() { var f = $('q2Pages') && $('q2Pages').firstChild; return f ? f.offsetHeight || 1 : 1; }
   function barBottom() { var b = document.querySelector('#quran2View .q2-bar'); return b ? b.getBoundingClientRect().bottom : 0; }
@@ -215,7 +228,7 @@
     var pg = $('q2Pages'); if (!pg) return;
     var lo = clampPage(cur - KEEP_BEHIND), hi = clampPage(cur + KEEP_AHEAD);
     for (var i = 1; i <= TOTAL; i++) {
-      var d = pg.childNodes[i - 1], img = d.querySelector('img');
+      var d = pg.childNodes[i - 1].childNodes[1], img = d.querySelector('img');
       if (i >= lo && i <= hi) {
         if (!img) { img = document.createElement('img'); img.alt = ''; img.decoding = 'async'; img.src = 'quran_pages/page' + i + '.png'; d.appendChild(img); }
       } else if (img && (i < lo - 2 || i > hi + 2)) { d.removeChild(img); }
@@ -224,12 +237,6 @@
   function setCur(p) {
     cur = clampPage(p);
     set(K_LAST, String(cur));
-    var info = getSurahInfoForPage(cur), es = isEs();
-    $('q2PageLbl').textContent = (es ? 'Pág. ' : 'صفحة ') + cur + '/' + TOTAL;
-    var hz = hizbOf(cur), jz = Math.ceil(hz / 2), tm = parseInt(THUMN.charAt(cur - 1), 10) || 0;
-    $('q2Hizb').textContent = (es ? 'Yuz ' + jz + ' · Hizb ' : JUZ_AR[jz - 1] + ' · الحزب ') + hz;
-    $('q2Thumn').textContent = tm ? (es ? THUMN_ES[tm] : THUMN_AR[tm]) : '';
-    $('q2SurahLbl').textContent = info.title;
     $('q2PageIn').value = cur;
     $('q2Range').value = cur;
     updateStar();
@@ -389,7 +396,7 @@
   if (typeof origLang === 'function') {
     window.applyLanguageUI = function () {
       var r = origLang.apply(this, arguments);
-      try { ensureHomeCard(); applyLabels(); renderResults(); renderMarks(); var v = $('quran2View'); if (v && !v.classList.contains('hidden')) setCur(cur); } catch (e) {}
+      try { ensureHomeCard(); applyLabels(); labelHeaders(); renderResults(); renderMarks(); var v = $('quran2View'); if (v && !v.classList.contains('hidden')) setCur(cur); } catch (e) {}
       return r;
     };
   }
