@@ -124,6 +124,7 @@
           '<button type="button" class="q2-tab on" data-t="s"></button>' +
           '<button type="button" class="q2-tab" data-t="h"></button>' +
           '<button type="button" class="q2-tab" data-t="j"></button>' +
+          '<button type="button" class="q2-tab" data-t="a"></button>' +
           '<button type="button" class="q2-tab" data-t="m">🔖</button>' +
         '</div>' +
         '<input id="q2Filter" type="text" class="q2-field" />' +
@@ -336,7 +337,7 @@
     set_('q2GoPage', es ? 'Ir' : 'اذهب');
     set_('q2AddMark', es ? 'Marcar' : 'علّم');
     var tb = document.querySelectorAll('#q2Drawer .q2-tab');
-    var names = { s: es ? 'Suras' : 'السور', h: es ? 'Hizb' : 'الأحزاب', j: es ? 'Yuz' : 'الأجزاء' };
+    var names = { s: es ? 'Suras' : 'السور', h: es ? 'Hizb' : 'الأحزاب', j: es ? 'Yuz' : 'الأجزاء', a: es ? 'Aya' : 'آية' };
     for (var i = 0; i < tb.length; i++) { var k = tb[i].getAttribute('data-t'); if (names[k]) tb[i].textContent = names[k]; }
     var n = $('q2Note'); if (n) n.placeholder = es ? 'Nota (opcional)' : 'ملاحظة (اختياري)';
     var p = $('q2PageIn'); if (p) p.placeholder = '1…' + TOTAL;
@@ -356,7 +357,7 @@
     var q = norm($('q2Filter').value.trim());
     var tbs = document.querySelectorAll('#q2Drawer .q2-tab');
     for (var i = 0; i < tbs.length; i++) tbs[i].classList.toggle('on', tbs[i].getAttribute('data-t') === tab);
-    $('q2Filter').style.display = tab === 's' ? '' : 'none';
+    $('q2Filter').style.display = (tab === 's' || (tab === 'a' && !ayaSurah)) ? '' : 'none';
     $('q2Filter').placeholder = es ? 'Filtrar suras por nombre o número…' : 'ابحث عن سورة بالاسم أو الرقم…';
     $('q2MarkAdd').style.display = tab === 'm' ? 'flex' : 'none';
     box.innerHTML = '';
@@ -372,7 +373,57 @@
         var h = quranAhzab[2 * j - 2];
         addRow(box, es ? 'Yuz ' + j : 'الجزء ' + JUZ_AR[j - 1], (es ? surahAt(h.page).nameEs : surahAt(h.page).nameAr) + ' · ' + pageLbl + h.page, h.page, j === jz);
       }
-    } else { renderMarks(); }
+    } else if (tab === 'a') { renderAyas(box, q, es, pageLbl); }
+    else { renderMarks(); }
+  }
+
+  // Ir a una aya: primero se elige la sura y después el número de aya (posiciones en quran_ayas.js).
+  var ayaSurah = 0, ayasLoading = false;
+  function ayasReady() {
+    if (window.Q2_AYAS) return true;
+    if (!ayasLoading) {
+      ayasLoading = true;
+      var sc = document.createElement('script'); sc.src = 'quran_ayas.js';
+      sc.onload = function () { renderResults(); };
+      sc.onerror = function () { ayasLoading = false; };
+      document.head.appendChild(sc);
+    }
+    return false;
+  }
+  function renderAyas(box, q, es, pageLbl) {
+    if (!ayasReady()) { box.appendChild(mk('div', 'text-sm p-2', '…')); return; }
+    if (!ayaSurah) {
+      quranSurahs.filter(function (s) {
+        return !q || String(s.id) === q || norm(s.nameAr).indexOf(q) !== -1 || norm(s.nameEs).indexOf(q) !== -1;
+      }).forEach(function (s) {
+        var r = mk('div', 'q2-row'); r.appendChild(mk('span', 'font-bold', s.id + ' · ' + (es ? s.nameEs : s.nameAr)));
+        r.appendChild(mk('span', 'text-xs', (window.Q2_AYAS[s.id - 1] || []).length + (es ? ' ayas' : ' آية')));
+        r.onclick = function () { ayaSurah = s.id; $('q2Filter').value = ''; renderResults(); };
+        box.appendChild(r);
+      });
+      return;
+    }
+    var sr = quranSurahs[ayaSurah - 1], list = window.Q2_AYAS[ayaSurah - 1] || [];
+    var back = mk('div', 'q2-row cur'); back.appendChild(mk('span', 'font-bold', '← ' + sr.id + ' · ' + (es ? sr.nameEs : sr.nameAr)));
+    back.onclick = function () { ayaSurah = 0; renderResults(); };
+    box.appendChild(back);
+    var grid = mk('div', ''); grid.style.cssText = 'display:grid;grid-template-columns:repeat(5,1fr);gap:.35rem;margin-top:.5rem;direction:ltr';
+    list.forEach(function (pos, i) {
+      var b = mk('button', 'q2-btn', String(i + 1)); b.type = 'button'; b.style.padding = '.45rem 0';
+      b.onclick = function () { drawer(false); goToAya(pos); };
+      grid.appendChild(b);
+    });
+    box.appendChild(grid);
+  }
+  function goToAya(pos) {
+    var p = Math.floor(pos / 1000), y = pos % 1000;
+    goTo(p);
+    var pg = $('q2Pages'), el = pg && pg.childNodes[p - 1], bx = el && el.childNodes[3];
+    if (!bx) return;
+    var r = bx.getBoundingClientRect();
+    programmatic++;
+    window.scrollTo(0, Math.max(0, r.top + window.pageYOffset + r.height * y / 1000 - window.innerHeight / 2));
+    setTimeout(function () { programmatic = Math.max(0, programmatic - 1); }, 120);
   }
 
   function isMarked(p) { return marks().some(function (m) { return m.page === p; }); }
