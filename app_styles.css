@@ -991,3 +991,20 @@ h1, h2, h3, #headerTitle,
   transition: background 0.25s ease, transform 0.15s ease !important;
 }
 .dhikr-counter-btn.is-done, button[onclick*="decrementCounter"].is-done { background: #10b981 !important; }
+
+/* Desplegable de evidencia (Nombres de Allah) */
+.zad-proof { margin-top: .25rem; border: 1px solid rgba(180,140,60,.35); border-radius: 1rem; background: rgba(255,251,235,.6); overflow: hidden; }
+.dark .zad-proof { background: rgba(15,23,42,.55); border-color: rgba(100,116,139,.5); }
+.zad-proof > summary { cursor: pointer; list-style: none; padding: .6rem 1rem; text-align: center; font-weight: 800; font-size: .9rem; color: #065f46; user-select: none; }
+.zad-proof > summary::-webkit-details-marker { display: none; }
+.zad-proof > summary::after { content: ' ▾'; }
+.zad-proof[open] > summary::after { content: ' ▴'; }
+.dark .zad-proof > summary { color: #6ee7b7; }
+.zad-proof-body { padding: .25rem 1rem 1rem; display: flex; flex-direction: column; gap: .6rem; text-align: center; }
+.zad-proof-ar { font-size: 1.35rem; line-height: 2.1; font-weight: 700; color: #064e3b; }
+.dark .zad-proof-ar { color: #a7f3d0; }
+.zad-proof-es { font-size: .98rem; line-height: 1.6; color: #1e293b; }
+.dark .zad-proof-es { color: #e2e8f0; }
+.zad-proof-ref { font-size: .8rem; font-weight: 700; color: #92400e; }
+.dark .zad-proof-ref { color: #fcd34d; }
+.zad-proof-grade { font-size: .75rem; color: #64748b; }

@@ -2115,6 +2115,24 @@ async function publishPendingChanges(event) {
 }
 
 // Nota que sale antes o después del zikr dentro de su tarjeta (campos noteBefore/noteAfter y sus versiones en español).
+function renderProof(item, isEs) {
+  const p = item && item.proof;
+  if (!p || !p.ar) return '';
+  const esc = function (v) { return String(v == null ? '' : v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); };
+  const isQuran = p.type === 'quran';
+  const title = isEs ? (isQuran ? 'Evidencia en el Corán' : 'Evidencia en la Sunna') : (isQuran ? 'الدليل من القرآن' : 'الدليل من السنة');
+  const ref = isEs ? (p.refEs || p.refAr) : p.refAr;
+  const grade = isEs ? (p.gradeEs || p.gradeAr) : p.gradeAr;
+  return '<details data-no-share class="zad-proof">' +
+    '<summary>' + esc(title) + '</summary>' +
+    '<div class="zad-proof-body">' +
+      '<div class="zad-proof-ar" dir="rtl">' + esc(p.ar) + '</div>' +
+      (isEs && p.es ? '<div class="zad-proof-es">' + esc(p.es) + '</div>' : '') +
+      (ref ? '<div class="zad-proof-ref" dir="' + (isEs ? 'ltr' : 'rtl') + '">' + esc(ref) + '</div>' : '') +
+      (grade ? '<div class="zad-proof-grade" dir="' + (isEs ? 'ltr' : 'rtl') + '">' + esc(grade) + '</div>' : '') +
+    '</div></details>';
+}
+
 function renderZikrNote(arText, esText, isEs, kind) {
   const useEs = !!(isEs && esText);
   const txt = useEs ? esText : arText;
@@ -2236,6 +2254,7 @@ function renderGroupItems() {
         ${item.explanationAr ? `<div class="guide-ar-expl whitespace-pre-line" dir="rtl">${applyXrefs(applyXref(formatQuotedText(item.explanationAr), item), item, 'explanationAr')}</div>` : ''}
         ${renderItemTable(item, false)}
       `}
+      ${renderProof(item, isEs)}
       ${renderZikrNote(item.noteAfter, item.noteAfterEs, isEs, 'after')}
       ${renderTasbeehLinks(item, isEs)}
       ${item.sourceUrl && currentSection !== 'glosario' ? `<div class="glos-source text-xs text-center text-slate-500 dark:text-slate-400" dir="${isEs ? 'ltr' : 'rtl'}">${isEs ? 'Fuente' : 'المصدر'}: <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer" class="underline text-emerald-700 dark:text-emerald-400">${isEs ? (item.sourceNameEs || item.sourceName || item.sourceUrl) : (item.sourceName || item.sourceUrl)}</a></div>` : ''}
