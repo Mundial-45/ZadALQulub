@@ -64,8 +64,8 @@
     v.innerHTML =
       '<style>' +
       '#quran2View .q2-night img{filter:invert(1) hue-rotate(180deg) brightness(.9)}' +
-      '#quran2View .q2-box{position:relative;width:100%;padding-bottom:146.6%}' +
-      '#quran2View .q2-box img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:contain}' +
+      '#quran2View .q2-box{position:relative;width:100%;padding-bottom:133.4%}' +
+      '#quran2View .q2-box img{position:absolute;left:9%;top:0;width:91%;height:100%;object-fit:contain}' +
       '#quran2View .q2-cad{height:.55rem;background-size:100% 100%;background-repeat:no-repeat}' +
       '#quran2View .q2-cad1{background-image:url(quran_pages/q2_cadre1.jpg)}#quran2View .q2-cad2{background-image:url(quran_pages/q2_cadre2.jpg)}' +
       '#quran2View .q2-hd{display:flex;align-items:center;justify-content:space-between;direction:rtl;height:2.7rem;padding:0 1.6rem;gap:.35rem;font-size:calc(min(.78rem,2.75vw) * var(--q2z,1));white-space:nowrap;overflow:hidden;color:#5b3a12;background:#f6e2b8;position:relative}' +
@@ -73,7 +73,8 @@
       '#quran2View .q2-hz{padding:.12rem .65rem;border-radius:999px;transition:background .2s,color .2s,box-shadow .2s}#quran2View .q2-hz.q2-lit{color:#9f0f1d;font-weight:800;background:#fff;box-shadow:0 0 0 2px rgba(255,255,255,.55),0 1px 6px rgba(0,0,0,.25)}' +
       '@keyframes q2pulse{0%{transform:scale(1)}40%{transform:scale(1.25);box-shadow:0 0 0 3px #fff,0 0 18px 6px rgba(255,255,255,.95)}100%{transform:scale(1)}}' +
       '#quran2View .q2-hz.q2-pulse{animation:q2pulse 1.4s ease-in-out}' +
-      '#quran2View .q2-tag{position:absolute;z-index:2;left:0;transform:translateY(-50%);width:3.1em;padding:.3em .1em .35em;text-align:center;line-height:1.15;background:#e4f1f3;color:#1f3a40;border:1px solid #6f9299;border-radius:.9em .9em .25em .25em;font-size:calc(.5rem * var(--q2z,1));opacity:.93;pointer-events:none;box-shadow:0 1px 3px rgba(0,0,0,.25)}' +
+      '#quran2View .q2-gut{position:absolute;left:0;top:0;bottom:0;width:9%;background:#f6e2b8;border-right:3px double #a8742a;box-shadow:inset 0 0 0 2px #e9cd8f}' +
+      '#quran2View .q2-tag{position:absolute;z-index:2;left:.8%;transform:translateY(-50%);width:7.4%;box-sizing:border-box;padding:.3em 0 .35em;text-align:center;line-height:1.15;background:#e4f1f3;color:#1f3a40;border:1px solid #6f9299;border-radius:.9em .9em .25em .25em;font-size:calc(.46rem * var(--q2z,1));box-shadow:0 1px 3px rgba(0,0,0,.25)}' +
       '#quran2View .q2-tag b{display:block;font-weight:500}#quran2View .q2-tag .t1{font-size:.95em;color:#7a3b2a;min-height:1.1em}#quran2View .q2-tag .t3{font-size:1.25em;font-weight:700}' +
       '#quran2View .q2-ros{position:absolute;top:50%;transform:translateY(-52%);font-size:calc(1.15rem * var(--q2z,1));line-height:1;color:#a8742a}' +
       '#quran2View .q2-ros.r{right:.45rem}#quran2View .q2-ros.l{left:.45rem}' +
@@ -219,6 +220,7 @@
     var pg = $('q2Pages'); if (!pg || !pg.firstChild) return;
     var es = isEs(), i, old = pg.querySelectorAll('.q2-tag');
     for (i = 0; i < old.length; i++) old[i].parentNode.removeChild(old[i]);
+    for (i = 0; i < pg.childNodes.length; i++) { var bx0 = pg.childNodes[i].childNodes[3]; if (bx0 && !bx0.querySelector('.q2-gut')) bx0.insertBefore(mk('div', 'q2-gut'), bx0.firstChild); }
     for (i = 0; i < DOTS.length; i++) {
       var pgNo = Math.floor(DOTS[i] / 1000), y = DOTS[i] % 1000, n = i + 1, hz = Math.floor(n / 8) + 1, k = n % 8;
       var box = pg.childNodes[pgNo - 1] && pg.childNodes[pgNo - 1].childNodes[3]; if (!box) continue;
