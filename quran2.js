@@ -80,12 +80,13 @@
       '#quran2View .q2-gutr{position:absolute;right:0;top:0;bottom:0;width:7%;background:linear-gradient(90deg,transparent 34%,#d98a7f 34% 38%,#c9473f 38% 62%,#d98a7f 62% 66%,transparent 66%),#f6e2b8;border-left:3px double #a8742a;box-shadow:inset 0 0 0 2px #e9cd8f}' +
       '#quran2View .q2-gx{box-shadow:inset 0 0 0 2px #e9cd8f}' +
       '#quran2View .q2-gut{background:linear-gradient(90deg,transparent 34%,#d98a7f 34% 38%,#c9473f 38% 62%,#d98a7f 62% 66%,transparent 66%),#f6e2b8}' +
-      '#quran2View .q2-tag{position:absolute;z-index:2;left:.6%;width:7.6%;transform:translateY(-50%);text-align:center;pointer-events:none;font-size:calc(.7rem * var(--q2z,1));line-height:1}' +
+      '#quran2View .q2-tag{position:absolute;z-index:2;left:.6%;width:7.6%;transform:translateY(-50%);text-align:center;pointer-events:none;font-size:calc(.6rem * var(--q2z,1));line-height:1}' +
       '#quran2View .q2-tag .m{aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:#c9473f;color:#fbe9d0;font-weight:700;clip-path:polygon(50.0% 0.0%,60.6% 10.4%,75.0% 6.7%,79.0% 21.0%,93.3% 25.0%,89.6% 39.4%,100.0% 50.0%,89.6% 60.6%,93.3% 75.0%,79.0% 79.0%,75.0% 93.3%,60.6% 89.6%,50.0% 100.0%,39.4% 89.6%,25.0% 93.3%,21.0% 79.0%,6.7% 75.0%,10.4% 60.6%,0.0% 50.0%,10.4% 39.4%,6.7% 25.0%,21.0% 21.0%,25.0% 6.7%,39.4% 10.4%);box-shadow:0 0 0 .45em #f6e2b8}' +
       '#quran2View .q2-tag.rb .m{clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);font-size:.9em}' +
       '#quran2View .q2-tag.nf .m{clip-path:polygon(50.0% 0.0%,58.6% 6.8%,69.1% 3.8%,74.4% 13.4%,85.4% 14.6%,86.6% 25.6%,96.2% 30.9%,93.2% 41.4%,100.0% 50.0%,93.2% 58.6%,96.2% 69.1%,86.6% 74.4%,85.4% 85.4%,74.4% 86.6%,69.1% 96.2%,58.6% 93.2%,50.0% 100.0%,41.4% 93.2%,30.9% 96.2%,25.6% 86.6%,14.6% 85.4%,13.4% 74.4%,3.8% 69.1%,6.8% 58.6%,0.0% 50.0%,6.8% 41.4%,3.8% 30.9%,13.4% 25.6%,14.6% 14.6%,25.6% 13.4%,30.9% 3.8%,41.4% 6.8%);background:#b73a34}' +
       '#quran2View .q2-tag .n{margin:.35em auto 0;width:72%;aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:#c9473f;color:#fbe9d0;font-size:.85em;font-weight:700;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}' +
-      '#quran2View .q2-tag.sj .m{clip-path:none;border-radius:50% 50% 46% 46% / 62% 62% 38% 38%;font-size:.72em;background:#b73a34;box-shadow:0 0 0 .45em #f6e2b8,0 0 0 .55em #c9473f}' +
+      '#quran2View .q2-tag.sj .m{clip-path:none;border-radius:50% 50% 46% 46% / 62% 62% 38% 38%;font-size:.95em;background:#b73a34;box-shadow:0 0 0 .3em #f6e2b8}' +
+      '#quran2View .q2-tag.sj{width:6.2%;left:.9%}' +
       '#quran2View .q2-tag.hz0 .m{font-size:1.05em}' +
       '#quran2View .q2-ros{position:absolute;top:50%;transform:translateY(-52%);font-size:calc(1.15rem * var(--q2z,1));line-height:1;color:#a8742a}' +
       '#quran2View .q2-ros.r{right:.45rem}#quran2View .q2-ros.l{left:.45rem}' +
