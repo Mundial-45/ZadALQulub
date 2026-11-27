@@ -165,6 +165,7 @@
 
     buildPages();
     window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('scroll', onChromeScroll, { passive: true });
     document.addEventListener('keydown', function (e) {
       if (v.classList.contains('hidden')) return;
       var t = e.target && e.target.tagName;
@@ -229,7 +230,29 @@
     }
   }
   function pageH() { var f = $('q2Pages') && $('q2Pages').firstChild; return f ? f.offsetHeight || 1 : 1; }
-  function barBottom() { var b = document.querySelector('#quran2View .q2-bar'); return b ? b.getBoundingClientRect().bottom : 0; }
+  // Las barras (cabecera de la app y barra del lector) se ocultan al bajar leyendo y reaparecen al subir.
+  var chromeHidden = false, lastY = 0;
+  function setChrome(hide) {
+    if (hide === chromeHidden) return;
+    chromeHidden = hide;
+    var hd = document.querySelector('body > header, header'), bar = document.querySelector('#quran2View .q2-bar');
+    if (hd) { hd.style.transition = 'transform .25s'; hd.style.transform = hide ? 'translateY(-110%)' : ''; }
+    if (bar) { bar.style.transition = 'transform .25s'; bar.style.transform = hide ? 'translateY(calc(-100% - 5rem))' : ''; }
+  }
+  function onChromeScroll() {
+    var v = $('quran2View'); if (!v || v.classList.contains('hidden')) return;
+    var y = window.pageYOffset, dy = y - lastY;
+    lastY = y;
+    if (programmatic) return;
+    if (y < 60) setChrome(false);
+    else if (dy > 8) setChrome(true);
+    else if (dy < -8) setChrome(false);
+  }
+  function barBottom() {
+    var b = document.querySelector('#quran2View .q2-bar');
+    if (!b) return 0;
+    return (parseFloat(window.getComputedStyle(b).top) || 64) + b.offsetHeight; // no depende de la animación de ocultar
+  }
   function listTop() { var pg = $('q2Pages'); return pg.getBoundingClientRect().top + window.pageYOffset; }
   function loadWindow() {
     var pg = $('q2Pages'); if (!pg) return;
@@ -268,6 +291,7 @@
   }
   function goTo(p) {
     p = clampPage(p);
+    setChrome(false);
     setCur(p);
     programmatic++;
     window.scrollTo(0, Math.max(0, listTop() + (p - 1) * pageH() - barBottom() + 2));
@@ -380,6 +404,7 @@
   var origHide = window.hideAllViews;
   window.hideAllViews = function () {
     origHide.apply(this, arguments);
+    try { setChrome(false); } catch (e) {}
     var v = $('quran2View'); if (v) v.classList.add('hidden');
   };
   window.addEventListener('popstate', function (e) {
