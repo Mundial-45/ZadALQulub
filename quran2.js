@@ -66,6 +66,7 @@
     v.innerHTML =
       '<style>' +
       '#quran2View{width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}' +
+      '#q2Zoom{position:fixed;top:.55rem;right:3.4rem;z-index:55;display:flex;gap:.1rem;direction:ltr}#q2Zoom button{background:transparent;border:0;color:#5b3a12;font-weight:800;font-size:1.05rem;padding:.55rem .55rem;text-shadow:0 0 3px #f6e2b8,0 0 3px #f6e2b8,0 0 6px #f6e2b8;cursor:pointer}#q2Zoom.hid{display:none}' +
       '#q2Menu{position:fixed;top:.55rem;right:.55rem;z-index:55;width:2.5rem;height:2.5rem;display:flex;align-items:center;justify-content:center;border-radius:.8rem;border:1px solid rgba(91,58,18,.35);background:rgba(246,226,184,.92);color:#5b3a12;box-shadow:0 2px 8px rgba(0,0,0,.25);cursor:pointer}#q2Menu.hid{display:none}#q2Menu svg{width:22px;height:22px;fill:none;stroke:#5b3a12;stroke-width:2}#q2Menu svg *{fill:none;stroke:#5b3a12}' +
       '#quran2View .q2-night img{filter:invert(1) hue-rotate(180deg) brightness(.9)}' +
       '#quran2View .q2-box{position:relative;width:100%;padding-bottom:126%}' +
@@ -109,6 +110,7 @@
           '<div id="q2Pages" style="width:100%"></div>' +
         '</div>' +
       '</div>' +
+      '<div id="q2Zoom"><button type="button" id="q2ZMinus" aria-label="A-">A-</button><button type="button" id="q2ZPlus" aria-label="A+">A+</button></div>' +
       '<button type="button" id="q2Menu" aria-label="menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="3.5"/><path d="M9 4v16"/></svg></button>' +
       '<div id="q2Drawer" aria-hidden="true">' +
         '<div style="display:flex;align-items:center;justify-content:space-between;gap:.4rem">' +
@@ -154,6 +156,8 @@
     buildPages();
     // El panel lateral se abre con el botón de menú; pulsar sobre la página solo lo cierra si está abierto.
     $('q2Menu').onclick = function () { drawer(true); };
+    $('q2ZPlus').onclick = function () { setZoom(zoomLevel() + 0.25, true); };
+    $('q2ZMinus').onclick = function () { setZoom(zoomLevel() - 0.25, true); };
     $('q2Pages').addEventListener('click', function () {
       if (Date.now() - pinchAt < 450) return;
       if ($('q2Drawer').classList.contains('open')) drawer(false);
@@ -171,6 +175,7 @@
     d.classList.toggle('open', !!open);
     d.setAttribute('aria-hidden', open ? 'false' : 'true');
     var mb = $('q2Menu'); if (mb) mb.classList.toggle('hid', !!open);
+    var zb = $('q2Zoom'); if (zb) zb.classList.toggle('hid', !!open);
     if (open) renderResults();
   }
 
