@@ -58,7 +58,7 @@
     host.parentNode.insertBefore(v, host.nextSibling);
     v.innerHTML =
       '<style>' +
-      '#quran2View .q2-bar{position:sticky;top:4rem;z-index:40}' +
+      '#quran2View .q2-bar{position:sticky;top:.4rem;z-index:40}' +
       '#quran2View .q2-night img{filter:invert(1) hue-rotate(180deg) brightness(.9)}' +
       '#quran2View .q2-box{position:relative;width:100%;padding-bottom:146.6%}' +
       '#quran2View .q2-box img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:contain}' +
@@ -235,10 +235,10 @@
   function setChrome(hide) {
     if (hide === chromeHidden) return;
     chromeHidden = hide;
-    var hd = document.querySelector('body > header, header'), bar = document.querySelector('#quran2View .q2-bar');
-    if (hd) { hd.style.transition = 'transform .25s'; hd.style.transform = hide ? 'translateY(-110%)' : ''; }
-    if (bar) { bar.style.transition = 'transform .25s'; bar.style.transform = hide ? 'translateY(calc(-100% - 5rem))' : ''; }
+    var bar = document.querySelector('#quran2View .q2-bar');
+    if (bar) { bar.style.transition = 'transform .25s'; bar.style.transform = hide ? 'translateY(calc(-100% - 1rem))' : ''; }
   }
+  function appHeader(hide) { var hd = document.querySelector('header'); if (hd) hd.style.display = hide ? 'none' : ''; }
   function onChromeScroll() {
     var v = $('quran2View'); if (!v || v.classList.contains('hidden')) return;
     var y = window.pageYOffset, dy = y - lastY;
@@ -251,7 +251,7 @@
   function barBottom() {
     var b = document.querySelector('#quran2View .q2-bar');
     if (!b) return 0;
-    return (parseFloat(window.getComputedStyle(b).top) || 64) + b.offsetHeight; // no depende de la animación de ocultar
+    return (parseFloat(window.getComputedStyle(b).top) || 6) + b.offsetHeight; // no depende de la animación de ocultar
   }
   function listTop() { var pg = $('q2Pages'); return pg.getBoundingClientRect().top + window.pageYOffset; }
   function loadWindow() {
@@ -390,6 +390,7 @@
     if (!adminOk()) return;
     var v = ensureView(); if (!v) return;
     hideAllViews();
+    appHeader(true);
     v.classList.remove('hidden');
     applyLabels();
     applyView();
@@ -404,7 +405,7 @@
   var origHide = window.hideAllViews;
   window.hideAllViews = function () {
     origHide.apply(this, arguments);
-    try { setChrome(false); } catch (e) {}
+    try { setChrome(false); appHeader(false); } catch (e) {}
     var v = $('quran2View'); if (v) v.classList.add('hidden');
   };
   window.addEventListener('popstate', function (e) {
