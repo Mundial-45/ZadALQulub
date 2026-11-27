@@ -68,6 +68,7 @@
       '#quran2View{width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}' +
       '#q2Zoom{position:fixed;top:.55rem;right:3.4rem;z-index:55;display:flex;gap:.1rem;direction:ltr}#q2Zoom button{background:transparent;border:0;color:#5b3a12;font-weight:800;font-size:1.05rem;padding:.55rem .55rem;text-shadow:0 0 3px #f6e2b8,0 0 3px #f6e2b8,0 0 6px #f6e2b8;cursor:pointer}#q2Zoom.hid{display:none}' +
       '#q2Menu{position:fixed;top:.55rem;right:.55rem;z-index:55;width:2.5rem;height:2.5rem;display:flex;align-items:center;justify-content:center;border-radius:.8rem;border:1px solid rgba(91,58,18,.35);background:rgba(246,226,184,.92);color:#5b3a12;box-shadow:0 2px 8px rgba(0,0,0,.25);cursor:pointer}#q2Menu.hid{display:none}#q2Menu svg{width:22px;height:22px;fill:none;stroke:#5b3a12;stroke-width:2}#q2Menu svg *{fill:none;stroke:#5b3a12}' +
+      '#quran2View .q2-hl{position:absolute;left:7%;width:86%;z-index:1;pointer-events:none;border-radius:.5rem;background:rgba(255,214,90,.38);box-shadow:0 0 1.2rem .5rem rgba(255,214,90,.45);animation:q2glow 2.2s ease-in-out forwards}@keyframes q2glow{0%{opacity:0}18%{opacity:1}60%{opacity:1}100%{opacity:0}}' +
       '#quran2View .q2-night img{filter:invert(1) hue-rotate(180deg) brightness(.9)}' +
       '#quran2View .q2-box{position:relative;width:100%;padding-bottom:126%}' +
       '#quran2View .q2-box img{position:absolute;left:7%;top:0;width:86%;height:100%;object-fit:contain}' +
@@ -460,12 +461,12 @@
     var grid = mk('div', ''); grid.style.cssText = 'display:grid;grid-template-columns:repeat(5,1fr);gap:.35rem;margin-top:.5rem;direction:ltr';
     list.forEach(function (pos, i) {
       var b = mk('button', 'q2-btn', String(i + 1)); b.type = 'button'; b.style.padding = '.45rem 0';
-      b.onclick = function () { drawer(false); goToAya(pos); };
+      b.onclick = function () { drawer(false); goToAya(pos, i > 0 ? list[i - 1] : 0); };
       grid.appendChild(b);
     });
     box.appendChild(grid);
   }
-  function goToAya(pos) {
+  function goToAya(pos, prev) {
     var p = Math.floor(pos / 1000), y = pos % 1000;
     goTo(p);
     var pg = $('q2Pages'), el = pg && pg.childNodes[p - 1], bx = el && el.childNodes[3];
@@ -474,6 +475,18 @@
     programmatic++;
     window.scrollTo(0, Math.max(0, r.top + window.pageYOffset + r.height * y / 1000 - window.innerHeight / 2));
     setTimeout(function () { programmatic = Math.max(0, programmatic - 1); }, 120);
+    glow(bx, p, y, prev);
+  }
+  // Luz transparente un instante sobre las líneas del aya: desde la línea donde acaba el aya anterior (si es de la misma página) hasta la del final.
+  function glow(bx, p, y, prev) {
+    var old = document.querySelectorAll('#q2Pages .q2-hl'), i;
+    for (i = 0; i < old.length; i++) old[i].parentNode.removeChild(old[i]);
+    var top = (prev && Math.floor(prev / 1000) === p) ? Math.max(0, prev % 1000 - 29) : 0;
+    var bot = Math.min(1000, y + 29);
+    var h = mk('div', 'q2-hl');
+    h.style.top = (top / 10) + '%'; h.style.height = ((bot - top) / 10) + '%';
+    bx.appendChild(h);
+    setTimeout(function () { if (h.parentNode) h.parentNode.removeChild(h); }, 2300);
   }
 
   function isMarked(p) { return marks().some(function (m) { return m.page === p; }); }
