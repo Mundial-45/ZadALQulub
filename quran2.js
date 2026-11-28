@@ -8,7 +8,7 @@
   var K_LAST = 'quran2_last_page_v1';
   var K_MARKS = 'quran2_marks_v1';
   var K_ZOOM = 'quran2_zoom_v1';
-  var K_NIGHT = 'quran2_night_v1';
+  var K_NIGHT = 'quran2_night_v1', K_TR = 'quran2_trlang_v1';
   var cur = 1;
   // Marca de ثمن por página (0 = ninguna, 1..7 = الثمن الأول، ربع، الثالث، نصف، الخامس، ثلاثة أرباع، السابع). Datos del mushaf de Warsh; sirve a esta edición de 638 páginas.
   var THUMN = '00012345677012345567012234556701223456701124456770123345677012334566701223456701223345670012344567001233456700123445670012344556700122344567012345667001233456670012334566701223456701123345667012345677012334567701123445677012344567001233455670012234567001233456670112234556701223455670122344567700123445670012334556770112345567011234556701223456670112344566701123445677012334556700112345567001234456700123345670011234556670012344567012344567011223455677012334556700122344566701123456770112334567001234566701122344566700122344566700123456670112344567701122344567701223445567700123345670011233445667001223345667001122345567701122344556667777';
@@ -24,6 +24,7 @@
   var JUZ_AR = ['الأول', 'الثاني', 'الثالث', 'الرابع', 'الخامس', 'السادس', 'السابع', 'الثامن', 'التاسع', 'العاشر', 'الحادي عشر', 'الثاني عشر', 'الثالث عشر', 'الرابع عشر', 'الخامس عشر', 'السادس عشر', 'السابع عشر', 'الثامن عشر', 'التاسع عشر', 'العشرون', 'الحادي والعشرون', 'الثاني والعشرون', 'الثالث والعشرون', 'الرابع والعشرون', 'الخامس والعشرون', 'السادس والعشرون', 'السابع والعشرون', 'الثامن والعشرون', 'التاسع والعشرون', 'الثلاثون'];
   function hizbOf(p) { var h = 1; for (var i = 0; i < quranAhzab.length; i++) { if (quranAhzab[i].page <= p) h = quranAhzab[i].id; else break; } return h; }
 
+  function trEs() { var v = get(K_TR); return v ? v === 'es' : isEs(); }
   function isEs() { return typeof currentLang !== 'undefined' && currentLang === 'es'; }
   function adminOk() { return typeof isAdminMode === 'function' && isAdminMode(); }
   function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
@@ -140,6 +141,7 @@
         '<button type="button" data-rt="h"></button>' +
         '<button type="button" data-rt="j"></button>' +
         '<button type="button" data-rt="m"><span class="ic">🔖</span></button>' +
+        '<button type="button" id="q2RLang"></button>' +
         '<button type="button" id="q2RNight"><span class="ic">🌙</span></button>' +
         '<button type="button" id="q2RHome"><span class="ic">🏠</span></button>' +
       '</div>' +
@@ -180,6 +182,8 @@
         tab = t; panel(true);
       };
     }
+    $('q2RLang').onclick = function () { set(K_TR, trEs() ? 'ar' : 'es'); syncLang(); };
+    syncLang();
     $('q2RClose').onclick = function () { drawer(false); };
     $('q2RNight').onclick = function () { set(K_NIGHT, get(K_NIGHT) === '1' ? '0' : '1'); applyView(); };
     $('q2RHome').onclick = function () { drawer(false); goHome(); };
@@ -217,6 +221,7 @@
   var tab = 's', pinchAt = 0, lpAt = 0, flat = null;
 
   // Pulsación larga sobre un aya: muestra el shar7 (árabe) o la tarjama (español) de esa aya.
+  function syncLang() { var b = $('q2RLang'); if (b) b.textContent = trEs() ? 'ES' : 'AR'; }
   function sheet(open) { var e = $('q2Sheet'); if (e) e.classList.toggle('open', !!open); }
   function ayaAtPoint(page, y, x) {
     if (!flat) { flat = []; window.Q2_AYAS.forEach(function (su, si) { su.forEach(function (v, ai) { flat.push([Math.floor(v / 1000000), Math.floor(v / 1000) % 1000, v % 1000, si, ai]); }); }); }
@@ -228,7 +233,7 @@
     return flat.length - 1;
   }
   function loadTr(cb) {
-    var es = isEs(), name = es ? 'Q2_TR_ES' : 'Q2_TF_AR';
+    var es = trEs(), name = es ? 'Q2_TR_ES' : 'Q2_TF_AR';
     if (window[name]) { cb(window[name]); return; }
     var sc = document.createElement('script'); sc.src = es ? 'quran_tarjama_es.js' : 'quran_tafsir_ar.js';
     sc.onload = function () { cb(window[name] || null); };
@@ -236,7 +241,7 @@
     document.head.appendChild(sc);
   }
   function showAyaInfo(idx) {
-    var f = flat[idx], es = isEs(), sr = quranSurahs[f[3]];
+    var f = flat[idx], es = trEs(), sr = quranSurahs[f[3]];
     var title = (es ? sr.nameEs : sr.nameAr) + ' · ' + (es ? 'aya ' : 'آية ') + (f[4] + 1);
     var bx = $('q2Pages').childNodes[f[0] - 1].childNodes[3];
     var prev = idx > 0 ? window.Q2_AYAS[flat[idx - 1][3]][flat[idx - 1][4]] : 0;
