@@ -98,7 +98,14 @@
       '#quran2View .q2-ros.r{right:.45rem}#quran2View .q2-ros.l{left:.45rem}' +
       '#quran2View .q2-num{height:2.2rem;line-height:2.2rem;text-align:center;font-size:calc(min(.9rem,3.4vw) * var(--q2z,1));color:#5b3a12;background:#f6e2b8;border-bottom:2px solid rgba(91,58,18,.22)}' +
       '#q2Drawer{position:fixed;top:0;bottom:0;right:0;width:min(82vw,20rem);z-index:60;background:#0f172a;color:#f1f5f9;box-shadow:-6px 0 24px rgba(0,0,0,.45);transform:translateX(105%);transition:transform .22s;display:flex;flex-direction:column;padding:.7rem;gap:.55rem;direction:rtl}' +
-      '#q2Drawer.open{transform:none}' +
+      '#q2Drawer{visibility:hidden;pointer-events:none;transform:translateX(130%)}#q2Drawer.open{transform:none;visibility:visible;pointer-events:auto}' +
+      '#q2Drawer{right:4.4rem;width:min(68vw,17rem);top:.6rem;bottom:.6rem;border-radius:1rem;background:rgba(15,23,42,.94)}' +
+      '#q2Drawer .q2-tabs{display:none!important}' +
+      '#q2Rail{position:fixed;top:0;bottom:0;right:0;width:4.2rem;max-width:24vw;z-index:61;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.55rem;background:transparent;pointer-events:none;transform:translateX(110%);transition:transform .2s;direction:ltr}' +
+      '#q2Rail.open{transform:none}' +
+      '#q2Rail button{pointer-events:auto;width:3.1rem;height:3.1rem;max-width:18vw;max-height:18vw;border-radius:50%;border:2px solid rgba(255,255,255,.9);background:radial-gradient(circle at 35% 30%,#fff,#dfeaf5 70%,#b9cbe0);box-shadow:0 2px 8px rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.72rem;line-height:1;color:#7a1d1d;cursor:pointer;padding:0;font-family:inherit}' +
+      '#q2Rail button.on{border-color:#f59e0b;box-shadow:0 0 0 2px #f59e0b,0 2px 8px rgba(0,0,0,.4)}' +
+      '#q2Rail .ic{font-size:1.35rem}' +
       '#q2Drawer .q2-btn{padding:.4rem .7rem;border-radius:.7rem;font-weight:700;font-size:.8rem;cursor:pointer;background:#334155;color:#fff;border:0}' +
       '#q2Drawer .q2-ok{background:#059669}#q2Drawer .q2-am{background:#d97706}' +
       '#q2Drawer .q2-field{padding:.45rem .6rem;border-radius:.6rem;border:1px solid #475569;background:#1e293b;color:#f1f5f9;font-size:.85rem;min-width:0}' +
@@ -115,6 +122,16 @@
       '</div>' +
       '<div id="q2Zoom"><button type="button" id="q2ZMinus" aria-label="A-">A-</button><button type="button" id="q2ZPlus" aria-label="A+">A+</button></div>' +
       '<button type="button" id="q2Menu" aria-label="menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="3.5"/><path d="M9 4v16"/></svg></button>' +
+      '<div id="q2Rail">' +
+        '<button type="button" id="q2RClose" aria-label="close"><span class="ic">✕</span></button>' +
+        '<button type="button" data-rt="s"></button>' +
+        '<button type="button" data-rt="a"></button>' +
+        '<button type="button" data-rt="h"></button>' +
+        '<button type="button" data-rt="j"></button>' +
+        '<button type="button" data-rt="m"><span class="ic">🔖</span></button>' +
+        '<button type="button" id="q2RNight"><span class="ic">🌙</span></button>' +
+        '<button type="button" id="q2RHome"><span class="ic">🏠</span></button>' +
+      '</div>' +
       '<div id="q2Drawer" aria-hidden="true">' +
         '<div style="display:flex;align-items:center;justify-content:space-between;gap:.4rem">' +
           '<button type="button" id="q2Home" class="q2-btn" style="background:#ecfdf5;color:#047857"></button>' +
@@ -144,6 +161,17 @@
       tabs[ti].onclick = function () { tab = this.getAttribute('data-t'); renderResults(); };
     }
     $('q2Home').onclick = function () { goHome(); };
+    var rbs = v.querySelectorAll('#q2Rail [data-rt]');
+    for (var ri = 0; ri < rbs.length; ri++) {
+      rbs[ri].onclick = function () {
+        var t = this.getAttribute('data-rt'), dr = $('q2Drawer');
+        if (dr.classList.contains('open') && tab === t) { panel(false); return; }
+        tab = t; panel(true);
+      };
+    }
+    $('q2RClose').onclick = function () { drawer(false); };
+    $('q2RNight').onclick = function () { set(K_NIGHT, get(K_NIGHT) === '1' ? '0' : '1'); applyView(); };
+    $('q2RHome').onclick = function () { drawer(false); goHome(); };
     $('q2Close').onclick = function () { drawer(false); };
     $('q2GoPage').onclick = function () {
       var n = parseInt($('q2PageIn').value, 10);
@@ -163,7 +191,7 @@
     $('q2ZMinus').onclick = function () { setZoom(zoomLevel() - 0.25, true); };
     $('q2Pages').addEventListener('click', function () {
       if (Date.now() - pinchAt < 450) return;
-      if ($('q2Drawer').classList.contains('open')) drawer(false);
+      if ($('q2Rail').classList.contains('open')) drawer(false);
     });
     setupPinch();
     window.addEventListener('scroll', onScroll, { passive: true });
@@ -173,13 +201,20 @@
   }
 
   var tab = 's', pinchAt = 0;
-  function drawer(open) {
+  function panel(open) {
     var d = $('q2Drawer'); if (!d) return;
     d.classList.toggle('open', !!open);
     d.setAttribute('aria-hidden', open ? 'false' : 'true');
+    var rb = document.querySelectorAll('#q2Rail [data-rt]');
+    for (var i = 0; i < rb.length; i++) rb[i].classList.toggle('on', !!open && rb[i].getAttribute('data-rt') === tab);
+    if (open) renderResults();
+  }
+  function drawer(open) {
+    var r = $('q2Rail'); if (!r) return;
+    if (!open) panel(false);
+    r.classList.toggle('open', !!open);
     var mb = $('q2Menu'); if (mb) mb.classList.toggle('hid', !!open);
     var zb = $('q2Zoom'); if (zb) zb.classList.toggle('hid', !!open);
-    if (open) renderResults();
   }
 
   // Zoom con dos dedos (sin botones): la anchura de las páginas cambia y se mantiene el punto central.
@@ -392,6 +427,9 @@
     var tb = document.querySelectorAll('#q2Drawer .q2-tab');
     var names = { s: es ? 'Suras' : 'السور', h: es ? 'Hizb' : 'الأحزاب', j: es ? 'Yuz' : 'الأجزاء', a: es ? 'Aya' : 'آية' };
     for (var i = 0; i < tb.length; i++) { var k = tb[i].getAttribute('data-t'); if (names[k]) tb[i].textContent = names[k]; }
+    var rl = { s: es ? 'Ir' : 'بحث', a: es ? 'Aya' : 'آية', h: es ? 'Hizb' : 'الأحزاب', j: es ? 'Yuz' : 'الأجزاء' };
+    var rbl = document.querySelectorAll('#q2Rail [data-rt]');
+    for (var q = 0; q < rbl.length; q++) { var kk = rbl[q].getAttribute('data-rt'); if (rl[kk]) { rbl[q].textContent = rl[kk]; if (kk === 's') rbl[q].innerHTML = '<span class="ic">🔍</span>'; } }
     var n = $('q2Note'); if (n) n.placeholder = es ? 'Nota (opcional)' : 'ملاحظة (اختياري)';
     var p = $('q2PageIn'); if (p) p.placeholder = '1…' + TOTAL;
   }
