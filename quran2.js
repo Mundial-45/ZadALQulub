@@ -117,7 +117,7 @@
       '#q2Rail.open{transform:none}' +
       '#q2Rail button{pointer-events:auto;width:3.1rem;height:3.1rem;max-width:18vw;max-height:18vw;border-radius:50%;border:2px solid rgba(255,255,255,.9);background:radial-gradient(circle at 35% 30%,#fff,#dfeaf5 70%,#b9cbe0);box-shadow:0 2px 8px rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.72rem;line-height:1;color:#7a1d1d;cursor:pointer;padding:0;font-family:inherit}' +
       '#q2Rail button.on{border-color:#f59e0b;box-shadow:0 0 0 2px #f59e0b,0 2px 8px rgba(0,0,0,.4)}' +
-      '#q2Rail .ic{font-size:1.35rem}' +
+      '#q2Rail .ic{font-size:1.35rem}#q2Rail #q2RLang{font-size:1.2rem}#q2Rail #q2RInfo{font-size:1.7rem;font-family:Georgia,serif;font-style:italic;color:#1d4e89}' +
       '#q2Drawer .q2-btn{padding:.4rem .7rem;border-radius:.7rem;font-weight:700;font-size:.8rem;cursor:pointer;background:#334155;color:#fff;border:0}' +
       '#q2Drawer .q2-ok{background:#059669}#q2Drawer .q2-am{background:#d97706}' +
       '#q2Drawer .q2-field{padding:.45rem .6rem;border-radius:.6rem;border:1px solid #475569;background:#1e293b;color:#f1f5f9;font-size:.85rem;min-width:0}' +
@@ -142,6 +142,7 @@
         '<button type="button" data-rt="j"></button>' +
         '<button type="button" data-rt="m"><span class="ic">🔖</span></button>' +
         '<button type="button" id="q2RLang"></button>' +
+        '<button type="button" id="q2RInfo" aria-label="info">i</button>' +
         '<button type="button" id="q2RNight"><span class="ic">🌙</span></button>' +
         '<button type="button" id="q2RHome"><span class="ic">🏠</span></button>' +
       '</div>' +
@@ -184,6 +185,7 @@
     }
     $('q2RLang').onclick = function () { set(K_TR, trEs() ? 'ar' : 'es'); syncLang(); };
     syncLang();
+    $('q2RInfo').onclick = function () { showInfo(); };
     $('q2RClose').onclick = function () { drawer(false); };
     $('q2RNight').onclick = function () { set(K_NIGHT, get(K_NIGHT) === '1' ? '0' : '1'); applyView(); };
     $('q2RHome').onclick = function () { drawer(false); goHome(); };
@@ -221,6 +223,16 @@
   var tab = 's', pinchAt = 0, lpAt = 0, flat = null;
 
   // Pulsación larga sobre un aya: muestra el shar7 (árabe) o la tarjama (español) de esa aya.
+  function showInfo() {
+    var es = trEs(), B = $('q2ShB');
+    $('q2Sheet').style.direction = es ? 'ltr' : 'rtl';
+    $('q2ShT').textContent = es ? 'Información' : 'معلومات';
+    B.className = 'sh-b' + (es ? '' : ' ar'); B.scrollTop = 0;
+    B.textContent = es
+      ? 'Mantén pulsada una aya para ver su traducción (ES) o su tafsir (AR).\n\nLa traducción de Muhammad Isa García sigue la numeración de Hafs, mientras que este Mushaf es de Warsh. Por eso algunas ayas no coinciden en número: en esos casos se muestran juntas las ayas Hafs que corresponden a cada aya Warsh. El significado (ma\'na) sí coincide.\n\nEl tafsir en árabe es «al-Mujtasar fi Tafsir al-Qur\'an al-Karim», del Markaz Tafsir.'
+      : 'اضغط مطولًا على الآية لعرض ترجمتها (ES) أو تفسيرها (AR).\n\nترجمة محمد عيسى غارسيا مبنية على ترقيم حفص، بينما هذا المصحف برواية ورش، ولذلك قد لا تتطابق أرقام بعض الآيات؛ وفي هذه الحالة تُعرض آيات حفص المقابلة لكل آية في ورش معًا، والمعنى متطابق.\n\nالتفسير العربي هو «المختصر في تفسير القرآن الكريم» لمركز تفسير للدراسات القرآنية.';
+    $('q2ShC').textContent = 'QuranEnc.com'; sheet(true);
+  }
   function syncLang() { var b = $('q2RLang'); if (b) b.textContent = trEs() ? 'ES' : 'AR'; }
   function sheet(open) { var e = $('q2Sheet'); if (e) e.classList.toggle('open', !!open); }
   function ayaAtPoint(page, y, x) {
@@ -247,10 +259,10 @@
     var prev = idx > 0 ? window.Q2_AYAS[flat[idx - 1][3]][flat[idx - 1][4]] : 0;
     glow(bx, window.Q2_AYAS[f[3]][f[4]], prev);
     var T = $('q2ShT'), B = $('q2ShB'), C = $('q2ShC');
-    T.textContent = title; B.className = 'sh-b' + (es ? '' : ' ar'); $('q2Sheet').style.direction = es ? 'ltr' : 'rtl'; B.textContent = '…'; C.textContent = ''; sheet(true);
+    T.textContent = title; B.className = 'sh-b' + (es ? '' : ' ar'); $('q2Sheet').style.direction = es ? 'ltr' : 'rtl'; B.textContent = '…'; B.scrollTop = 0; C.textContent = ''; sheet(true);
     loadTr(function (data) {
       var rec = data && data[f[3]] && data[f[3]][f[4]];
-      B.textContent = '';
+      B.textContent = ''; B.scrollTop = 0;
       if (!rec) { B.textContent = es ? 'Traducción no disponible.' : 'التفسير غير متوفر بعد.'; return; }
       B.appendChild(document.createTextNode(rec[0]));
       if (rec[1]) { var ft = mk('div', 'sh-f'); ft.textContent = rec[1]; B.appendChild(ft); }
@@ -293,6 +305,7 @@
     var r = $('q2Rail'); if (!r) return;
     if (!open) panel(false);
     r.classList.toggle('open', !!open);
+    var sh = $('q2Sheet'); if (sh) sh.style.right = open ? '4.4rem' : '0';
     var mb = $('q2Menu'); if (mb) mb.classList.toggle('hid', !!open);
     var zb = $('q2Zoom'); if (zb) zb.classList.toggle('hid', !!open);
   }
