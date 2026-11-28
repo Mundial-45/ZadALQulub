@@ -397,7 +397,7 @@
       var tg = mk('div', k ? (k == 4 ? 'q3-tag nf' : (k == 2 || k == 6 ? 'q3-tag rb' : 'q3-tag')) : 'q3-tag hz0');
       for (var q = 0; q < SAJDA.length; q++) if (Math.floor(SAJDA[q] / 1000) === pgNo && Math.abs(SAJDA[q] % 1000 - y) < 85) { tg.className += ' up'; break; }
       tg.style.top = (y / 10) + '%';
-      tg.innerHTML = k ? '<div class="m">' + (es ? DOT_ES[k] : DOT_AR[k]) + '</div>' : '<div class="m">' + (es ? 'Hizb' : 'حزب') + '</div><div class="n">' + hz + '</div>';
+      tg.innerHTML = k ? '<div class="m">' + DOT_AR[k] + '</div>' : '<div class="m">' + 'حزب' + '</div><div class="n">' + hz + '</div>';
       box.appendChild(tg);
     }
     for (i = 0; i < SAJDA.length; i++) {
