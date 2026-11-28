@@ -14,14 +14,16 @@
   var cur = 1;
   // Marca de ثمن por página (0 = ninguna, 1..7 = الثمن الأول، ربع، الثالث، نصف، الخامس، ثلاثة أرباع، السابع). Datos del mushaf de Warsh; sirve a esta edición de 638 páginas.
   var THUMN = '', DOTS = [], SAJDA = [];
-  var DOT_AR = ['', 'ثمن', 'ربع', 'ثمن', 'نصف', 'ثمن', 'ربع', 'ثمن'];
+  var DOTS = [4096, 5215, 6329, 7156, 8156, 8802, 9919, 11098, 12274, 13450, 14391, 15397, 16452, 17573, 18689, 19806, 20859];
   var DOT_ES = ['', '1/8', '1/4', '1/8', '1/2', '1/8', '1/4', '1/8'];
+  var SAJDA = [];
+  var DOT_AR = ['', 'ثمن', 'ربع', 'ثمن', 'نصف', 'ثمن', 'ربع', 'ثمن'];
   // Sajda (punto azul en la imagen): página*1000 + posición vertical en por mil.
   var THUMN_AR = ['', 'الثمن الأول', 'ربع الحزب', 'الثمن الثالث', 'نصف الحزب', 'الثمن الخامس', 'ثلاثة أرباع الحزب', 'الثمن السابع'];
   var THUMN_ES = ['', 'Octavo 1 del hizb', 'Cuarto del hizb', 'Octavo 3 del hizb', 'Medio hizb', 'Octavo 5 del hizb', 'Tres cuartos del hizb', 'Octavo 7 del hizb'];
   var JUZ_AR = ['الأول', 'الثاني', 'الثالث', 'الرابع', 'الخامس', 'السادس', 'السابع', 'الثامن', 'التاسع', 'العاشر', 'الحادي عشر', 'الثاني عشر', 'الثالث عشر', 'الرابع عشر', 'الخامس عشر', 'السادس عشر', 'السابع عشر', 'الثامن عشر', 'التاسع عشر', 'العشرون', 'الحادي والعشرون', 'الثاني والعشرون', 'الثالث والعشرون', 'الرابع والعشرون', 'الخامس والعشرون', 'السادس والعشرون', 'السابع والعشرون', 'الثامن والعشرون', 'التاسع والعشرون', 'الثلاثون'];
   var Q3S = [{ id: 1, nameAr: 'الفاتحة', nameEs: 'Al-Fātiḥah', page: 1, ayahs: 7 }, { id: 2, nameAr: 'البقرة', nameEs: 'Al-Baqarah', page: 2, ayahs: 286 }];
-  var Q3H = [{ id: 1, page: 1 }, { id: 2, page: 11 }, { id: 3, page: 20 }];
+  var Q3H = [{ id: 1, page: 1 }, { id: 2, page: 11 }, { id: 3, page: 19 }];
   function hizbOf(p) { var h = 1; for (var i = 0; i < Q3H.length; i++) { if (Q3H[i].page <= p) h = Q3H[i].id; else break; } return h; }
 
   function trEs() { var v = get(K_TR); return v ? v === 'es' : appEs(); }
@@ -385,11 +387,10 @@
     labelMarks();
   }
   // Etiqueta pequeña al lado de la línea donde empieza cada marca (se superpone en el margen ornamental, no empuja la página).
-  function labelMarks() { return;
+  function labelMarks() {
     var pg = $('q3Pages'); if (!pg || !pg.firstChild) return;
     var es = isEs(), i, old = pg.querySelectorAll('.q3-tag');
     for (i = 0; i < old.length; i++) old[i].parentNode.removeChild(old[i]);
-    for (i = 0; i < pg.childNodes.length; i++) { var bx0 = pg.childNodes[i].childNodes[3]; if (bx0 && !bx0.querySelector('.q3-gut')) { bx0.insertBefore(mk('div', 'q3-gutr'), bx0.firstChild); bx0.insertBefore(mk('div', 'q3-gut'), bx0.firstChild); } }
     for (i = 0; i < DOTS.length; i++) {
       var pgNo = Math.floor(DOTS[i] / 1000), y = DOTS[i] % 1000, n = i + 1, hz = Math.floor(n / 8) + 1, k = n % 8;
       var box = pg.childNodes[pgNo - 1] && pg.childNodes[pgNo - 1].childNodes[3]; if (!box) continue;
