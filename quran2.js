@@ -228,7 +228,7 @@
     $('q2ShT').textContent = es ? 'Información' : 'معلومات';
     B.className = 'sh-b' + (es ? '' : ' ar'); B.scrollTop = 0;
     B.textContent = es
-      ? 'Mantén pulsada una aya para ver su traducción (ES) o su tafsir (AR).\n\nLa traducción de Muhammad Isa García sigue la numeración de Hafs, mientras que este Mushaf es de Warsh. Por eso algunas ayas no coinciden en número: en esos casos se muestran juntas las ayas Hafs que corresponden a cada aya Warsh. El significado (ma\'na) sí coincide.\n\nEl tafsir en árabe es «al-Mujtasar fi Tafsir al-Qur\'an al-Karim», del Markaz Tafsir.'
+      ? 'Mantén pulsada una ayah para ver su traducción (ES) o su tafsir (AR).\n\nLa traducción de Muhammad Isa García sigue la numeración de Hafs, mientras que este Mushaf es de Warsh. Por eso algunas ayahs no coinciden en número: en esos casos se muestran juntas las ayas Hafs que corresponden a cada aya Warsh. El significado (ma\'na) sí coincide.\n\nEl tafsir en árabe es «al-Mujtasar fi Tafsir al-Qur\'an al-Karim», del Markaz Tafsir.'
       : 'اضغط مطولًا على الآية لعرض ترجمتها (ES) أو تفسيرها (AR).\n\nترجمة محمد عيسى غارسيا مبنية على ترقيم حفص، بينما هذا المصحف برواية ورش، ولذلك قد لا تتطابق أرقام بعض الآيات؛ وفي هذه الحالة تُعرض آيات حفص المقابلة لكل آية في ورش معًا، والمعنى متطابق.\n\nالتفسير العربي هو «المختصر في تفسير القرآن الكريم» لمركز تفسير للدراسات القرآنية.';
     $('q2ShC').textContent = 'QuranEnc.com'; sheet(true);
   }
@@ -253,7 +253,7 @@
   }
   function showAyaInfo(idx) {
     var f = flat[idx], es = trEs(), sr = quranSurahs[f[3]];
-    var title = (es ? sr.nameEs : sr.nameAr) + ' · ' + (es ? 'aya ' : 'آية ') + (f[4] + 1);
+    var title = (es ? sr.nameEs : sr.nameAr) + ' · ' + (es ? 'Ayah ' : 'آية ') + (f[4] + 1);
     var bx = $('q2Pages').childNodes[f[0] - 1].childNodes[3];
     var prev = idx > 0 ? window.Q2_AYAS[flat[idx - 1][3]][flat[idx - 1][4]] : 0;
     glow(bx, window.Q2_AYAS[f[3]][f[4]], prev);
@@ -421,8 +421,8 @@
       var sur = quranSurahs[0];
       for (var k = 0; k < quranSurahs.length; k++) { if (quranSurahs[k].page <= i) sur = quranSurahs[k]; else break; }
       var html = '<span class="q2-ros r">۞</span><span class="q2-ros l">۞</span>' +
-        '<span>' + (es ? 'Yuz ' + jz : 'الجزء ' + JUZ_AR[jz - 1]) + '</span>' +
-        '<span>' + (es ? 'Sura ' + sur.nameEs : 'سورة ' + sur.nameAr) + '</span>' +
+        '<span>' + (es ? "Juz' " + jz : 'الجزء ' + JUZ_AR[jz - 1]) + '</span>' +
+        '<span>' + (es ? 'Surah ' + sur.nameEs : 'سورة ' + sur.nameAr) + '</span>' +
         '<span>' + '<b class="' + (i > 1 && hz !== hizbOf(i - 1) || i === 1 ? 'q2-hz' : '') + '" style="font-weight:inherit;display:inline-block">' + (es ? 'Hizb ' : 'الحزب ') + hz + '</b>' + (tm ? '<i>' + (es ? THUMN_ES[tm] : THUMN_AR[tm]) + '</i>' : '') + '</span>';
       hd.innerHTML = html;
     }
@@ -517,9 +517,9 @@
     set_('q2GoPage', es ? 'Ir' : 'اذهب');
     set_('q2AddMark', es ? 'Marcar' : 'علّم');
     var tb = document.querySelectorAll('#q2Drawer .q2-tab');
-    var names = { s: es ? 'Suras' : 'السور', h: es ? 'Hizb' : 'الأحزاب', j: es ? 'Yuz' : 'الأجزاء', a: es ? 'Aya' : 'آية' };
+    var names = { s: es ? 'Surah' : 'السور', h: es ? 'Hizb' : 'الأحزاب', j: es ? "Juz'" : 'الأجزاء', a: es ? 'Ayah' : 'آية' };
     for (var i = 0; i < tb.length; i++) { var k = tb[i].getAttribute('data-t'); if (names[k]) tb[i].textContent = names[k]; }
-    var rl = { s: es ? 'Sura' : 'سورة', a: es ? 'Aya' : 'آية', h: es ? 'Hizb' : 'الأحزاب', j: es ? 'Yuz' : 'الأجزاء', l: 'x' };
+    var rl = { s: es ? 'Surah' : 'سورة', a: es ? 'Ayah' : 'آية', h: es ? 'Hizb' : 'الأحزاب', j: es ? "Juz'" : 'الأجزاء', l: 'x' };
     var rbl = document.querySelectorAll('#q2Rail [data-rt]');
     for (var q = 0; q < rbl.length; q++) { var kk = rbl[q].getAttribute('data-rt'); if (rl[kk]) { rbl[q].textContent = rl[kk]; if (kk === 'l') rbl[q].innerHTML = '<span>Idioma</span><span>لغة</span>'; } }
     var n = $('q2Note'); if (n) n.placeholder = es ? 'Nota (opcional)' : 'ملاحظة (اختياري)';
@@ -555,7 +555,7 @@
     } else if (tab === 'j') {
       for (var j = 1; j <= 30; j++) {
         var h = quranAhzab[2 * j - 2];
-        addRow(box, (es ? 'Yuz ' : 'جزء ') + j, '', h.page, j === jz);
+        addRow(box, (es ? "Juz' " : 'جزء ') + j, '', h.page, j === jz);
       }
     } else if (tab === 'l') {
       [['ar', 'العربية'], ['es', 'Español']].forEach(function (L) {
@@ -588,7 +588,7 @@
         return !q || String(s.id) === q || norm(s.nameAr).indexOf(q) !== -1 || norm(s.nameEs).indexOf(q) !== -1;
       }).forEach(function (s) {
         var r = mk('div', 'q2-row'); r.appendChild(mk('span', 'font-bold', s.id + ' · ' + (es ? s.nameEs : s.nameAr)));
-        r.appendChild(mk('span', 'text-xs', (window.Q2_AYAS[s.id - 1] || []).length + (es ? ' ayas' : ' آية')));
+        r.appendChild(mk('span', 'text-xs', (window.Q2_AYAS[s.id - 1] || []).length + (es ? ' ayahs' : ' آية')));
         r.onclick = function () { ayaSurah = s.id; $('q2Filter').value = ''; renderResults(); };
         box.appendChild(r);
       });
