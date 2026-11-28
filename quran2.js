@@ -66,7 +66,7 @@
     v.innerHTML =
       '<style>' +
       '#quran2View{width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}' +
-      '#q2Zoom{position:fixed;top:.55rem;right:3.4rem;z-index:55;display:flex;gap:.1rem;direction:ltr}#q2Zoom button{background:transparent;border:0;color:#5b3a12;font-weight:800;font-size:1.05rem;padding:.55rem .55rem;text-shadow:0 0 3px #f6e2b8,0 0 3px #f6e2b8,0 0 6px #f6e2b8;cursor:pointer}#q2Zoom.hid{display:none}' +
+      '#q2Zoom{position:fixed;top:.55rem;right:.55rem;z-index:55;display:flex;gap:.1rem;direction:ltr}#q2Zoom button{background:transparent;border:0;color:#5b3a12;font-weight:800;font-size:1.05rem;padding:.55rem .55rem;text-shadow:0 0 3px #f6e2b8,0 0 3px #f6e2b8,0 0 6px #f6e2b8;cursor:pointer}#q2Zoom.hid{display:none}' +
       '#q2Menu{position:fixed;top:.55rem;right:.55rem;z-index:55;width:2.5rem;height:2.5rem;display:flex;align-items:center;justify-content:center;border-radius:.8rem;border:1px solid rgba(91,58,18,.35);background:rgba(246,226,184,.92);color:#5b3a12;box-shadow:0 2px 8px rgba(0,0,0,.25);cursor:pointer}#q2Menu.hid{display:none}#q2Menu svg{width:22px;height:22px;fill:none;stroke:#5b3a12;stroke-width:2}#q2Menu svg *{fill:none;stroke:#5b3a12}' +
       '#quran2View .q2-hl{position:absolute;left:7%;width:86%;top:0;height:100%;z-index:1;pointer-events:none;animation:q2glow 2.2s ease-in-out forwards}#quran2View .q2-hr{position:absolute;border-radius:.4rem;background:rgba(255,214,90,.40);box-shadow:0 0 .9rem .25rem rgba(255,214,90,.5)}@keyframes q2glow{0%{opacity:0}18%{opacity:1}60%{opacity:1}100%{opacity:0}}' +
       '#quran2View .q2-box{background:#f6e2b8}#quran2View .q2-box img{mix-blend-mode:multiply}' +
@@ -100,7 +100,12 @@
       '#q2Drawer{position:fixed;top:0;bottom:0;right:0;width:min(82vw,20rem);z-index:60;background:#0f172a;color:#f1f5f9;box-shadow:-6px 0 24px rgba(0,0,0,.45);transform:translateX(105%);transition:transform .22s;display:flex;flex-direction:column;padding:.7rem;gap:.55rem;direction:rtl}' +
       '#q2Drawer{visibility:hidden;pointer-events:none;transform:translateX(130%)}#q2Drawer.open{transform:none;visibility:visible;pointer-events:auto}' +
       '#q2Drawer{right:4.4rem;width:min(68vw,17rem);top:.6rem;bottom:.6rem;border-radius:1rem;background:rgba(15,23,42,.94)}' +
-      '#q2Drawer .q2-tabs{display:none!important}' +
+      '#q2Drawer .q2-tabs,#q2Drawer>div:nth-child(1),#q2Drawer>div:nth-child(2),#q2Range{display:none!important}' +
+      '#q2Drawer{background:rgba(253,243,221,.97);color:#3b2a10;border:2px solid #b8862b;box-shadow:-4px 0 18px rgba(91,58,18,.35)}' +
+      '#q2Drawer .q2-field{background:#fff;border:1px solid #c9a24a;color:#3b2a10}' +
+      '#q2Drawer .q2-row{border-bottom:1px solid rgba(184,134,43,.25)}' +
+      '#q2Drawer .q2-row:active,#q2Drawer .q2-row.cur{background:rgba(201,162,74,.35)}' +
+      '#q2Drawer .q2-am{background:#b8862b}' +
       '#q2Rail{position:fixed;top:0;bottom:0;right:0;width:4.2rem;max-width:24vw;z-index:61;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.55rem;background:transparent;pointer-events:none;transform:translateX(110%);transition:transform .2s;direction:ltr}' +
       '#q2Rail.open{transform:none}' +
       '#q2Rail button{pointer-events:auto;width:3.1rem;height:3.1rem;max-width:18vw;max-height:18vw;border-radius:50%;border:2px solid rgba(255,255,255,.9);background:radial-gradient(circle at 35% 30%,#fff,#dfeaf5 70%,#b9cbe0);box-shadow:0 2px 8px rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.72rem;line-height:1;color:#7a1d1d;cursor:pointer;padding:0;font-family:inherit}' +
@@ -121,7 +126,6 @@
         '</div>' +
       '</div>' +
       '<div id="q2Zoom"><button type="button" id="q2ZMinus" aria-label="A-">A-</button><button type="button" id="q2ZPlus" aria-label="A+">A+</button></div>' +
-      '<button type="button" id="q2Menu" aria-label="menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="3.5"/><path d="M9 4v16"/></svg></button>' +
       '<div id="q2Rail">' +
         '<button type="button" id="q2RClose" aria-label="close"><span class="ic">✕</span></button>' +
         '<button type="button" data-rt="s"></button>' +
@@ -186,12 +190,11 @@
 
     buildPages();
     // El panel lateral se abre con el botón de menú; pulsar sobre la página solo lo cierra si está abierto.
-    $('q2Menu').onclick = function () { drawer(true); };
     $('q2ZPlus').onclick = function () { setZoom(zoomLevel() + 0.25, true); };
     $('q2ZMinus').onclick = function () { setZoom(zoomLevel() - 0.25, true); };
     $('q2Pages').addEventListener('click', function () {
       if (Date.now() - pinchAt < 450) return;
-      if ($('q2Rail').classList.contains('open')) drawer(false);
+      drawer(!$('q2Rail').classList.contains('open'));
     });
     setupPinch();
     window.addEventListener('scroll', onScroll, { passive: true });
