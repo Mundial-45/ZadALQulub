@@ -101,7 +101,7 @@
       '#q2Drawer{position:fixed;top:0;bottom:0;right:0;width:min(82vw,20rem);z-index:60;background:#0f172a;color:#f1f5f9;box-shadow:-6px 0 24px rgba(0,0,0,.45);transform:translateX(105%);transition:transform .22s;display:flex;flex-direction:column;padding:.7rem;gap:.55rem;direction:rtl}' +
       '#q2Drawer{visibility:hidden;pointer-events:none;transform:translateX(130%)}#q2Drawer.open{transform:none;visibility:visible;pointer-events:auto}' +
       '#q2Drawer{right:4.4rem;width:min(68vw,17rem);top:.6rem;bottom:.6rem;border-radius:1rem;background:rgba(15,23,42,.94)}' +
-      '#q2Drawer{top:50%!important;bottom:auto!important;height:min(26rem,86vh);margin-top:calc(min(26rem,86vh)/-2)}#q2Drawer[data-tab=h],#q2Drawer[data-tab=j]{width:min(48vw,12rem)}' +
+      '#q2Drawer{top:50%!important;bottom:auto!important;height:min(26rem,86vh);margin-top:calc(min(26rem,86vh)/-2)}#q2Drawer[data-tab=h],#q2Drawer[data-tab=j],#q2Drawer[data-tab=l]{width:min(48vw,12rem)}#q2Drawer[data-tab=l]{height:auto!important;margin-top:-3.5rem!important}' +
       '#q2Drawer .q2-tabs,#q2Drawer>div:nth-child(1),#q2Drawer>div:nth-child(2),#q2Range{display:none!important}' +
       '#q2Drawer{background:rgba(253,243,221,.97);color:#3b2a10;border:2px solid #b8862b;box-shadow:-4px 0 18px rgba(91,58,18,.35)}' +
       '#q2Drawer .q2-field{background:#fff;border:1px solid #c9a24a;color:#3b2a10}' +
@@ -117,7 +117,7 @@
       '#q2Rail.open{transform:none}' +
       '#q2Rail button{pointer-events:auto;width:3.1rem;height:3.1rem;max-width:18vw;max-height:18vw;border-radius:50%;border:2px solid rgba(255,255,255,.9);background:radial-gradient(circle at 35% 30%,#fff,#dfeaf5 70%,#b9cbe0);box-shadow:0 2px 8px rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.72rem;line-height:1;color:#7a1d1d;cursor:pointer;padding:0;font-family:inherit}' +
       '#q2Rail button.on{border-color:#f59e0b;box-shadow:0 0 0 2px #f59e0b,0 2px 8px rgba(0,0,0,.4)}' +
-      '#q2Rail .ic{font-size:1.35rem}#q2Rail #q2RLang{font-size:1.2rem}#q2Rail #q2RInfo{font-size:1.7rem;font-family:Georgia,serif;font-style:italic;color:#1d4e89}' +
+      '#q2Rail .ic{font-size:1.35rem}#q2Rail [data-rt=l]{font-size:.7rem;line-height:1.25;flex-direction:column}#q2Rail #q2RInfo{font-size:1.7rem;font-family:Georgia,serif;font-style:italic;color:#1d4e89}' +
       '#q2Drawer .q2-btn{padding:.4rem .7rem;border-radius:.7rem;font-weight:700;font-size:.8rem;cursor:pointer;background:#334155;color:#fff;border:0}' +
       '#q2Drawer .q2-ok{background:#059669}#q2Drawer .q2-am{background:#d97706}' +
       '#q2Drawer .q2-field{padding:.45rem .6rem;border-radius:.6rem;border:1px solid #475569;background:#1e293b;color:#f1f5f9;font-size:.85rem;min-width:0}' +
@@ -141,7 +141,7 @@
         '<button type="button" data-rt="h"></button>' +
         '<button type="button" data-rt="j"></button>' +
         '<button type="button" data-rt="m"><span class="ic">🔖</span></button>' +
-        '<button type="button" id="q2RLang"></button>' +
+        '<button type="button" data-rt="l"></button>' +
         '<button type="button" id="q2RInfo" aria-label="info">i</button>' +
         '<button type="button" id="q2RNight"><span class="ic">🌙</span></button>' +
         '<button type="button" id="q2RHome"><span class="ic">🏠</span></button>' +
@@ -183,8 +183,6 @@
         tab = t; panel(true);
       };
     }
-    $('q2RLang').onclick = function () { set(K_TR, trEs() ? 'ar' : 'es'); syncLang(); };
-    syncLang();
     $('q2RInfo').onclick = function () { showInfo(); };
     $('q2RClose').onclick = function () { drawer(false); };
     $('q2RNight').onclick = function () { set(K_NIGHT, get(K_NIGHT) === '1' ? '0' : '1'); applyView(); };
@@ -520,9 +518,9 @@
     var tb = document.querySelectorAll('#q2Drawer .q2-tab');
     var names = { s: es ? 'Suras' : 'السور', h: es ? 'Hizb' : 'الأحزاب', j: es ? 'Yuz' : 'الأجزاء', a: es ? 'Aya' : 'آية' };
     for (var i = 0; i < tb.length; i++) { var k = tb[i].getAttribute('data-t'); if (names[k]) tb[i].textContent = names[k]; }
-    var rl = { s: es ? 'Ir' : 'بحث', a: es ? 'Aya' : 'آية', h: es ? 'Hizb' : 'الأحزاب', j: es ? 'Yuz' : 'الأجزاء' };
+    var rl = { s: es ? 'Ir' : 'بحث', a: es ? 'Aya' : 'آية', h: es ? 'Hizb' : 'الأحزاب', j: es ? 'Yuz' : 'الأجزاء', l: 'x' };
     var rbl = document.querySelectorAll('#q2Rail [data-rt]');
-    for (var q = 0; q < rbl.length; q++) { var kk = rbl[q].getAttribute('data-rt'); if (rl[kk]) { rbl[q].textContent = rl[kk]; if (kk === 's') rbl[q].innerHTML = '<span class="ic">🔍</span>'; } }
+    for (var q = 0; q < rbl.length; q++) { var kk = rbl[q].getAttribute('data-rt'); if (rl[kk]) { rbl[q].textContent = rl[kk]; if (kk === 's') rbl[q].innerHTML = '<span class="ic">🔍</span>'; if (kk === 'l') rbl[q].innerHTML = '<span>Idioma</span><span>لغة</span>'; } }
     var n = $('q2Note'); if (n) n.placeholder = es ? 'Nota (opcional)' : 'ملاحظة (اختياري)';
     var p = $('q2PageIn'); if (p) p.placeholder = '1…' + TOTAL;
   }
@@ -558,6 +556,13 @@
         var h = quranAhzab[2 * j - 2];
         addRow(box, (es ? 'Yuz ' : 'جزء ') + j, '', h.page, j === jz);
       }
+    } else if (tab === 'l') {
+      [['ar', 'العربية'], ['es', 'Español']].forEach(function (L) {
+        var r = mk('div', 'q2-row' + ((trEs() ? 'es' : 'ar') === L[0] ? ' cur' : ''));
+        r.appendChild(mk('span', 'font-bold', L[1]));
+        r.onclick = function () { set(K_TR, L[0]); sheet(false); panel(false); };
+        box.appendChild(r);
+      });
     } else if (tab === 'a') { renderAyas(box, q, es, pageLbl); }
     else { renderMarks(); }
   }
