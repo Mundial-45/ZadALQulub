@@ -73,7 +73,7 @@
       '#quran3View{width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}' +
       '#q3Zoom{position:fixed;top:.55rem;right:.55rem;z-index:55;display:flex;gap:.1rem;direction:ltr}#q3Zoom button{background:transparent;border:0;color:#5b3a12;font-weight:800;font-size:1.05rem;padding:.55rem .55rem;text-shadow:0 0 3px #f6e2b8,0 0 3px #f6e2b8,0 0 6px #f6e2b8;cursor:pointer}#q3Zoom.hid{display:none}' +
       '#q3Menu{position:fixed;top:.55rem;right:.55rem;z-index:55;width:2.5rem;height:2.5rem;display:flex;align-items:center;justify-content:center;border-radius:.8rem;border:1px solid rgba(91,58,18,.35);background:rgba(246,226,184,.92);color:#5b3a12;box-shadow:0 2px 8px rgba(0,0,0,.25);cursor:pointer}#q3Menu.hid{display:none}#q3Menu svg{width:22px;height:22px;fill:none;stroke:#5b3a12;stroke-width:2}#q3Menu svg *{fill:none;stroke:#5b3a12}' +
-      '#quran3View .q3-hl{position:absolute;left:0;width:100%;top:0;height:100%;z-index:1;pointer-events:none;animation:q3glow 2.2s ease-in-out forwards}#quran3View .q3-hr{position:absolute;border-radius:.4rem;background:rgba(255,214,90,.40);box-shadow:0 0 .9rem .25rem rgba(255,214,90,.5)}@keyframes q3glow{0%{opacity:0}18%{opacity:1}60%{opacity:1}100%{opacity:0}}' +
+      '#quran3View .q3-hl{position:absolute;left:0;width:100%;top:0;height:100%;z-index:1;pointer-events:none;animation:q3glow 2.2s ease-in-out forwards}#quran3View .q3-hr{position:absolute;border-radius:.4rem;background:rgba(255,214,90,.40);box-shadow:0 0 .45rem .08rem rgba(255,214,90,.45)}@keyframes q3glow{0%{opacity:0}18%{opacity:1}60%{opacity:1}100%{opacity:0}}' +
       '#quran3View .q3-box{background:#fff}#quran3View .q3-cad,#quran3View .q3-hd,#quran3View .q3-num{display:none!important}' +
       '#quran3View .q3-night .q3-box{background:transparent}#quran3View .q3-night .q3-box img{mix-blend-mode:normal}' +
       '#quran3View .q3-night img,#quran3View .q3-night .q3-box::before{filter:invert(1) hue-rotate(180deg) brightness(.9)}' +
@@ -244,7 +244,7 @@
     if (!flat) { flat = []; window.Q3_AYAS.forEach(function (su, si) { su.forEach(function (v, ai) { flat.push([Math.floor(v / 1000000), Math.floor(v / 1000) % 1000, v % 1000, si, ai]); }); }); }
     for (var i = 0; i < flat.length; i++) {
       var f = flat[i], c = pcfg(page), LH = c.LH, MK = c.MK; if (f[0] < page) continue; if (f[0] > page) return i;
-      if (y < f[1] - LH / 2 || (Math.abs(y - f[1]) <= LH / 2 && x >= f[2] - MK)) return i;
+      if (y < f[1] - LH / 2 || (Math.abs(y - f[1]) <= LH / 2 && x >= f[2] - MK * 0.55)) return i;
     }
     return flat.length - 1;
   }
@@ -647,7 +647,7 @@
       if (yEnd < ys) { ys = yEnd; xs = R; n = 1; }
       for (k = 0; k < n; k++) {
         var yc = n === 1 ? yEnd : ys + k * (yEnd - ys) / (n - 1);
-        var right = k === 0 ? xs : R, left = (k === n - 1 && xEnd !== null) ? xEnd - MK : L;
+        var right = k === 0 ? xs : R, left = (k === n - 1 && xEnd !== null) ? xEnd - MK * 0.65 : L;
         if (right > left) boxes.push([yc, left, right]);
       }
       var wrap = mk('div', 'q3-hl');
