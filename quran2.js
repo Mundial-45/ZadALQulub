@@ -318,7 +318,7 @@
       if (d.querySelector('img')) return;
       var img = document.createElement('img'); img.alt = ''; img.decoding = 'async';
       if (k < 2) img.fetchPriority = 'high';
-      img.src = 'quran_pages2/page' + n + '.png'; d.appendChild(img);
+      img.src = 'quran_pages/page' + n + '.png'; d.appendChild(img);
     });
     prefetch();
   }
@@ -332,7 +332,7 @@
       list.push(cur - KEEP_BEHIND - 1, cur - KEEP_BEHIND - 2);
       list.forEach(function (n) {
         if (n < 1 || n > TOTAL || pre[n]) return;
-        pre[n] = 1; var im = new Image(); im.decoding = 'async'; im.src = 'quran_pages2/page' + n + '.png';
+        pre[n] = 1; var im = new Image(); im.decoding = 'async'; im.src = 'quran_pages/page' + n + '.png';
       });
     }, 400);
   }
