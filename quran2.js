@@ -69,6 +69,8 @@
       '#q2Zoom{position:fixed;top:.55rem;right:3.4rem;z-index:55;display:flex;gap:.1rem;direction:ltr}#q2Zoom button{background:transparent;border:0;color:#5b3a12;font-weight:800;font-size:1.05rem;padding:.55rem .55rem;text-shadow:0 0 3px #f6e2b8,0 0 3px #f6e2b8,0 0 6px #f6e2b8;cursor:pointer}#q2Zoom.hid{display:none}' +
       '#q2Menu{position:fixed;top:.55rem;right:.55rem;z-index:55;width:2.5rem;height:2.5rem;display:flex;align-items:center;justify-content:center;border-radius:.8rem;border:1px solid rgba(91,58,18,.35);background:rgba(246,226,184,.92);color:#5b3a12;box-shadow:0 2px 8px rgba(0,0,0,.25);cursor:pointer}#q2Menu.hid{display:none}#q2Menu svg{width:22px;height:22px;fill:none;stroke:#5b3a12;stroke-width:2}#q2Menu svg *{fill:none;stroke:#5b3a12}' +
       '#quran2View .q2-hl{position:absolute;left:7%;width:86%;top:0;height:100%;z-index:1;pointer-events:none;animation:q2glow 2.2s ease-in-out forwards}#quran2View .q2-hr{position:absolute;border-radius:.4rem;background:rgba(255,214,90,.40);box-shadow:0 0 .9rem .25rem rgba(255,214,90,.5)}@keyframes q2glow{0%{opacity:0}18%{opacity:1}60%{opacity:1}100%{opacity:0}}' +
+      '#quran2View .q2-box{background:#f6e2b8}#quran2View .q2-box img{mix-blend-mode:multiply}' +
+      '#quran2View .q2-night .q2-box{background:transparent}#quran2View .q2-night .q2-box img{mix-blend-mode:normal}' +
       '#quran2View .q2-night img{filter:invert(1) hue-rotate(180deg) brightness(.9)}' +
       '#quran2View .q2-box{position:relative;width:100%;padding-bottom:126%}' +
       '#quran2View .q2-box img{position:absolute;left:7%;top:0;width:86%;height:100%;object-fit:contain}' +
