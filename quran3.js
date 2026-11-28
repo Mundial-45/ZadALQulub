@@ -75,7 +75,8 @@
       '#quran3View .q3-hl{position:absolute;left:0;width:100%;top:0;height:100%;z-index:1;pointer-events:none;animation:q3glow 2.2s ease-in-out forwards}#quran3View .q3-hr{position:absolute;border-radius:.4rem;background:rgba(255,214,90,.40);box-shadow:0 0 .9rem .25rem rgba(255,214,90,.5)}@keyframes q3glow{0%{opacity:0}18%{opacity:1}60%{opacity:1}100%{opacity:0}}' +
       '#quran3View .q3-box{background:#fff}#quran3View .q3-cad,#quran3View .q3-hd,#quran3View .q3-num{display:none!important}' +
       '#quran3View .q3-night .q3-box{background:transparent}#quran3View .q3-night .q3-box img{mix-blend-mode:normal}' +
-      '#quran3View .q3-night img{filter:invert(1) hue-rotate(180deg) brightness(.9)}' +
+      '#quran3View .q3-night img,#quran3View .q3-night .q3-box::before{filter:invert(1) hue-rotate(180deg) brightness(.9)}' +
+      '#quran3View .q3-box::before{content:"";position:absolute;left:0;top:0;width:100%;height:100%;background:var(--fr,none) 0 0/100% 100% no-repeat}' +
       '#quran3View .q3-box{position:relative;width:100%;padding-bottom:146.83%}' +
       '#quran3View .q3-box img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:contain}' +
       '#quran3View .q3-cad{height:.55rem;background-size:100% 100%;background-repeat:no-repeat}' +
@@ -449,12 +450,13 @@
       if (d.querySelector('img')) return;
       var img = document.createElement('img'); img.alt = ''; img.decoding = 'async';
       if (k < 2) img.fetchPriority = 'high';
-      img.src = 'quran_pages3/page' + n + '.jpg'; d.appendChild(img);
+      img.src = pageSrc(n); d.style.setProperty('--fr', n > 2 ? 'url(quran_pages3/frame' + (n % 2) + '.avif)' : 'none'); d.appendChild(img);
     });
     prefetch();
   }
   // Precarga en segundo plano de las páginas siguientes (y alguna anterior): quedan en la caché y aparecen al instante.
   var pre = {}, preTimer = 0;
+  function pageSrc(n) { return n <= 2 ? 'quran_pages3/page' + n + '.jpg' : 'quran_pages3/L' + n + '.avif'; }
   function prefetch() {
     clearTimeout(preTimer);
     preTimer = setTimeout(function () {
@@ -463,7 +465,7 @@
       list.push(cur - KEEP_BEHIND - 1, cur - KEEP_BEHIND - 2);
       list.forEach(function (n) {
         if (n < 1 || n > TOTAL || pre[n]) return;
-        pre[n] = 1; var im = new Image(); im.decoding = 'async'; im.src = 'quran_pages3/page' + n + '.jpg';
+        pre[n] = 1; var im = new Image(); im.decoding = 'async'; im.src = pageSrc(n); if (n > 2) { var fi = new Image(); fi.src = 'quran_pages3/frame' + (n % 2) + '.avif'; }
       });
     }, 400);
   }
