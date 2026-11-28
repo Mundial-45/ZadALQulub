@@ -256,7 +256,7 @@
     var title = (es ? sr.nameEs : sr.nameAr) + ' · ' + (es ? 'Ayah ' : 'آية ') + (f[4] + 1);
     var bx = $('q2Pages').childNodes[f[0] - 1].childNodes[3];
     var prev = idx > 0 ? window.Q2_AYAS[flat[idx - 1][3]][flat[idx - 1][4]] : 0;
-    glow(bx, window.Q2_AYAS[f[3]][f[4]], prev);
+    glow(bx, window.Q2_AYAS[f[3]][f[4]]);
     var T = $('q2ShT'), B = $('q2ShB'), C = $('q2ShC');
     T.textContent = title; B.className = 'sh-b' + (es ? '' : ' ar'); $('q2Sheet').style.direction = es ? 'ltr' : 'rtl'; B.textContent = '…'; B.scrollTop = 0; C.textContent = ''; sheet(true);
     loadTr(function (data) {
@@ -615,33 +615,58 @@
     programmatic++;
     window.scrollTo(0, Math.max(0, r.top + window.pageYOffset + r.height * y / 1000 - window.innerHeight / 2));
     setTimeout(function () { programmatic = Math.max(0, programmatic - 1); }, 120);
-    glow(bx, pos, prev);
+    glow(bx, pos);
   }
   // Luz transparente un instante sobre el aya: empieza justo después del número del aya anterior y acaba en su propio número.
   // Texto de derecha a izquierda: la primera línea va desde el número anterior hacia la izquierda, las intermedias enteras y la última desde la derecha hasta el número del aya.
-  function glow(bx, pos, prev) {
+  // Y (‰) de la primera línea de texto del aya 1 de cada sura (debajo del cuadro del nombre de la sura); -1 = arriba de la página.
+  var SURA_START = [391, 345, 366, -1, 478, 891, 351, -1, -1, 222, 443, 390, -1, 804, 537, 341, 283, -1, 480, 135, 576, 465, 447, 286, 869, 172, 439, 606, 666, 668, 538, 955, 791, 348, 136, 351, 478, 481, 665, 786, 599, -1, 730, 674, 727, 729, 804, 487, 303, -1, -1, 131, 865, 959, 151, 667, 628, 149, -1, -1, 668, 667, 451, -1, 139, 533, 731, 919, 602, -1, 280, 406, 730, 599, -1, 600, 923, 920, 906, 738, 216, 348, 219, 927, 142, 337, 139, -1, 144, 531, 473, 210, 143, 666, 129, 674, 502, -1, -1, 584, 193, 825, 367, 751, 350, 923, 178, 674, -1, 419, 783, 293, 473, 785];
+  var posIdx = null;
+  function glow(bx, pos) {
+    if (!window.Q2_AYAS) return;
     var old = document.querySelectorAll('#q2Pages .q2-hl'), i;
     for (i = 0; i < old.length; i++) old[i].parentNode.removeChild(old[i]);
+    if (!posIdx) { posIdx = {}; window.Q2_AYAS.forEach(function (su, si) { su.forEach(function (v, ai) { posIdx[v] = [si, ai]; }); }); }
+    var ix = posIdx[pos]; if (!ix) return;
+    var si = ix[0], ai = ix[1], prev = 0;
+    if (ai > 0) prev = window.Q2_AYAS[si][ai - 1]; else if (si > 0) prev = window.Q2_AYAS[si - 1][window.Q2_AYAS[si - 1].length - 1];
     var p = Math.floor(pos / 1000000), ye = Math.floor(pos / 1000) % 1000, xe = pos % 1000;
-    var L = 40, R = 975, LH = 64, MK = 34, ys, xs;      // límites del texto y alto de línea (‰ de la imagen); MK = medio ancho del número
-    if (prev && Math.floor(prev / 1000000) === p) { ys = Math.floor(prev / 1000) % 1000; xs = (prev % 1000) - MK; if (xs < L + 70) { ys += LH; xs = R; } }
-    else { ys = 38; xs = R; }
-    var n = Math.max(1, Math.round((ye - ys) / LH) + 1), k, boxes = [];
-    if (ye < ys) { ys = ye; xs = R; n = 1; }
-    for (k = 0; k < n; k++) {
-      var yc = n === 1 ? ye : ys + k * (ye - ys) / (n - 1);
-      var right = k === 0 ? xs : R, left = k === n - 1 ? xe - MK : L;
-      if (right > left) boxes.push([yc, left, right]);
+    var LH = 64, MK = 34, TOP = 38, BOT = 934;
+    function seg(pg, ys, xs, yEnd, xEnd) {       // xEnd null = hasta el final de la página
+      var el = $('q2Pages').childNodes[pg - 1], b = el && el.childNodes[3]; if (!b) return;
+      var L = pg <= 2 ? 200 : 40, R = pg <= 2 ? 805 : 975;
+      if (xs === null) xs = R;
+      var n = Math.max(1, Math.round((yEnd - ys) / LH) + 1), k, boxes = [];
+      if (yEnd < ys) { ys = yEnd; xs = R; n = 1; }
+      for (k = 0; k < n; k++) {
+        var yc = n === 1 ? yEnd : ys + k * (yEnd - ys) / (n - 1);
+        var right = k === 0 ? xs : R, left = (k === n - 1 && xEnd !== null) ? xEnd - MK : L;
+        if (right > left) boxes.push([yc, left, right]);
+      }
+      var wrap = mk('div', 'q2-hl');
+      boxes.forEach(function (bb) {
+        var d = mk('div', 'q2-hr');
+        d.style.top = ((bb[0] - LH / 2) / 10) + '%'; d.style.height = (LH / 10) + '%';
+        d.style.left = (bb[1] / 10) + '%'; d.style.width = ((bb[2] - bb[1]) / 10) + '%';
+        wrap.appendChild(d);
+      });
+      b.appendChild(wrap);
+      setTimeout(function () { if (wrap.parentNode) wrap.parentNode.removeChild(wrap); }, 2300);
     }
-    var wrap = mk('div', 'q2-hl');
-    boxes.forEach(function (b) {
-      var d = mk('div', 'q2-hr');
-      d.style.top = ((b[0] - LH / 2) / 10) + '%'; d.style.height = (LH / 10) + '%';
-      d.style.left = (b[1] / 10) + '%'; d.style.width = ((b[2] - b[1]) / 10) + '%';
-      wrap.appendChild(d);
-    });
-    bx.appendChild(wrap);
-    setTimeout(function () { if (wrap.parentNode) wrap.parentNode.removeChild(wrap); }, 2300);
+    if (ai === 0) {                                // primer aya de la sura: empieza debajo del cuadro con el nombre
+      var y0 = SURA_START[si]; if (y0 > ye + 32) y0 = ye; seg(p, y0 >= 0 ? y0 : TOP, null, ye, xe);
+      return;
+    }
+    var pp = Math.floor(prev / 1000000), py = Math.floor(prev / 1000) % 1000, px = prev % 1000;
+    var xs = px - MK, ys = py;
+    if (pp === p) {
+      if (xs < 40 + 70) { ys += LH; xs = null; }
+      seg(p, ys, xs, ye, xe);
+    } else {                                       // el aya empieza en una página anterior y acaba en esta
+      if (xs < 40 + 70) { ys += LH; xs = null; }
+      if (ys <= BOT + LH / 2) seg(pp, ys, xs, BOT, null);
+      seg(p, TOP, null, ye, xe);
+    }
   }
 
   function isMarked(p) { return marks().some(function (m) { return m.page === p; }); }
