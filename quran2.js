@@ -249,7 +249,7 @@
       if (!rec) { B.textContent = es ? 'Traducción no disponible.' : 'التفسير غير متوفر بعد.'; return; }
       B.appendChild(document.createTextNode(rec[0]));
       if (rec[1]) { var ft = mk('div', 'sh-f'); ft.textContent = rec[1]; B.appendChild(ft); }
-      C.textContent = es ? 'Traducción: Muhammad Isa García · QuranEnc.com · v1.0.2' : 'المختصر في تفسير القرآن الكريم · مركز تفسير · QuranEnc.com';
+      C.textContent = es ? 'Traducción: Muhammad Isa García · QuranEnc.com · v1.0.2' : 'المختصر في تفسير القرآن الكريم · مركز تفسير للدراسات القرآنية · QuranEnc.com';
     });
   }
   function setupLongPress() {
