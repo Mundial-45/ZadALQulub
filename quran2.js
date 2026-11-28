@@ -24,8 +24,9 @@
   var JUZ_AR = ['الأول', 'الثاني', 'الثالث', 'الرابع', 'الخامس', 'السادس', 'السابع', 'الثامن', 'التاسع', 'العاشر', 'الحادي عشر', 'الثاني عشر', 'الثالث عشر', 'الرابع عشر', 'الخامس عشر', 'السادس عشر', 'السابع عشر', 'الثامن عشر', 'التاسع عشر', 'العشرون', 'الحادي والعشرون', 'الثاني والعشرون', 'الثالث والعشرون', 'الرابع والعشرون', 'الخامس والعشرون', 'السادس والعشرون', 'السابع والعشرون', 'الثامن والعشرون', 'التاسع والعشرون', 'الثلاثون'];
   function hizbOf(p) { var h = 1; for (var i = 0; i < quranAhzab.length; i++) { if (quranAhzab[i].page <= p) h = quranAhzab[i].id; else break; } return h; }
 
-  function trEs() { var v = get(K_TR); return v ? v === 'es' : isEs(); }
-  function isEs() { return typeof currentLang !== 'undefined' && currentLang === 'es'; }
+  function trEs() { var v = get(K_TR); return v ? v === 'es' : appEs(); }
+  function appEs() { return typeof currentLang !== 'undefined' && currentLang === 'es'; }
+  function isEs() { return trEs(); }
   function adminOk() { return typeof isAdminMode === 'function' && isAdminMode(); }
   function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
   function set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
@@ -104,7 +105,7 @@
       '#q2Drawer{top:50%!important;bottom:auto!important;height:min(26rem,86vh);margin-top:calc(min(26rem,86vh)/-2)}#q2Drawer[data-tab=h],#q2Drawer[data-tab=j],#q2Drawer[data-tab=l]{width:min(48vw,12rem)}#q2Drawer[data-tab=l]{height:auto!important;margin-top:-3.5rem!important}' +
       '#q2Drawer .q2-tabs,#q2Drawer>div:nth-child(1),#q2Drawer>div:nth-child(2),#q2Range{display:none!important}' +
       '#q2Drawer{background:rgba(253,243,221,.97);color:#3b2a10;border:2px solid #b8862b;box-shadow:-4px 0 18px rgba(91,58,18,.35)}' +
-      '#q2Drawer .q2-field{background:#fff;border:1px solid #c9a24a;color:#3b2a10}' +
+      '#q2Drawer .q2-field{background:#fff!important;border:1px solid #c9a24a!important;color:#3b2a10!important}' +
       '#q2Drawer .q2-row{border-bottom:1px solid rgba(184,134,43,.25)}' +
       '#q2Drawer .q2-row:active,#q2Drawer .q2-row.cur{background:rgba(201,162,74,.35)}' +
       '#q2Drawer .q2-am{background:#b8862b}' +
@@ -518,9 +519,9 @@
     var tb = document.querySelectorAll('#q2Drawer .q2-tab');
     var names = { s: es ? 'Suras' : 'السور', h: es ? 'Hizb' : 'الأحزاب', j: es ? 'Yuz' : 'الأجزاء', a: es ? 'Aya' : 'آية' };
     for (var i = 0; i < tb.length; i++) { var k = tb[i].getAttribute('data-t'); if (names[k]) tb[i].textContent = names[k]; }
-    var rl = { s: es ? 'Ir' : 'بحث', a: es ? 'Aya' : 'آية', h: es ? 'Hizb' : 'الأحزاب', j: es ? 'Yuz' : 'الأجزاء', l: 'x' };
+    var rl = { s: es ? 'Sura' : 'سورة', a: es ? 'Aya' : 'آية', h: es ? 'Hizb' : 'الأحزاب', j: es ? 'Yuz' : 'الأجزاء', l: 'x' };
     var rbl = document.querySelectorAll('#q2Rail [data-rt]');
-    for (var q = 0; q < rbl.length; q++) { var kk = rbl[q].getAttribute('data-rt'); if (rl[kk]) { rbl[q].textContent = rl[kk]; if (kk === 's') rbl[q].innerHTML = '<span class="ic">🔍</span>'; if (kk === 'l') rbl[q].innerHTML = '<span>Idioma</span><span>لغة</span>'; } }
+    for (var q = 0; q < rbl.length; q++) { var kk = rbl[q].getAttribute('data-rt'); if (rl[kk]) { rbl[q].textContent = rl[kk]; if (kk === 'l') rbl[q].innerHTML = '<span>Idioma</span><span>لغة</span>'; } }
     var n = $('q2Note'); if (n) n.placeholder = es ? 'Nota (opcional)' : 'ملاحظة (اختياري)';
     var p = $('q2PageIn'); if (p) p.placeholder = '1…' + TOTAL;
   }
@@ -560,7 +561,7 @@
       [['ar', 'العربية'], ['es', 'Español']].forEach(function (L) {
         var r = mk('div', 'q2-row' + ((trEs() ? 'es' : 'ar') === L[0] ? ' cur' : ''));
         r.appendChild(mk('span', 'font-bold', L[1]));
-        r.onclick = function () { set(K_TR, L[0]); sheet(false); panel(false); };
+        r.onclick = function () { set(K_TR, L[0]); sheet(false); panel(false); applyLabels(); };
         box.appendChild(r);
       });
     } else if (tab === 'a') { renderAyas(box, q, es, pageLbl); }
