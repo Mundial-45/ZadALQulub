@@ -98,6 +98,8 @@
       '#quran3View .q3-tag.sj .m{clip-path:none;border-radius:50% 50% 46% 46% / 62% 62% 38% 38%;font-size:.8em;background:#b73a34;box-shadow:0 0 0 .3em #f6e2b8}' +
       '#quran3View .q3-tag.sj{width:6.2%;left:.9%}' +
       '#quran3View .q3-tag.hz0 .m{font-size:1.05em}' +
+      '#quran3View .q3-tag .m,#quran3View .q3-tag .n{background:#1f7a8c;color:#fff}#quran3View .q3-tag.nf .m{background:#17606f}' +
+      '#quran3View .q3-tag.hz0 .m,#quran3View .q3-tag.hz0 .n{background:#a8742a;color:#fff4d6}' +
       '#quran3View .q3-ros{position:absolute;top:50%;transform:translateY(-52%);font-size:calc(1.15rem * var(--q3z,1));line-height:1;color:#a8742a}' +
       '#quran3View .q3-ros.r{right:.45rem}#quran3View .q3-ros.l{left:.45rem}' +
       '#quran3View .q3-num{height:2.2rem;line-height:2.2rem;text-align:center;font-size:calc(min(.9rem,3.4vw) * var(--q3z,1));color:#5b3a12;background:#f6e2b8;border-bottom:2px solid rgba(91,58,18,.22)}' +
