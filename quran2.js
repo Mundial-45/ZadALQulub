@@ -100,6 +100,7 @@
       '#q2Drawer{position:fixed;top:0;bottom:0;right:0;width:min(82vw,20rem);z-index:60;background:#0f172a;color:#f1f5f9;box-shadow:-6px 0 24px rgba(0,0,0,.45);transform:translateX(105%);transition:transform .22s;display:flex;flex-direction:column;padding:.7rem;gap:.55rem;direction:rtl}' +
       '#q2Drawer{visibility:hidden;pointer-events:none;transform:translateX(130%)}#q2Drawer.open{transform:none;visibility:visible;pointer-events:auto}' +
       '#q2Drawer{right:4.4rem;width:min(68vw,17rem);top:.6rem;bottom:.6rem;border-radius:1rem;background:rgba(15,23,42,.94)}' +
+      '#q2Drawer{top:50%!important;bottom:auto!important;height:min(26rem,86vh);margin-top:calc(min(26rem,86vh)/-2)}#q2Drawer[data-tab=h],#q2Drawer[data-tab=j]{width:min(48vw,12rem)}' +
       '#q2Drawer .q2-tabs,#q2Drawer>div:nth-child(1),#q2Drawer>div:nth-child(2),#q2Range{display:none!important}' +
       '#q2Drawer{background:rgba(253,243,221,.97);color:#3b2a10;border:2px solid #b8862b;box-shadow:-4px 0 18px rgba(91,58,18,.35)}' +
       '#q2Drawer .q2-field{background:#fff;border:1px solid #c9a24a;color:#3b2a10}' +
@@ -441,7 +442,7 @@
   function addRow(box, title, sub, page, isCur) {
     var r = mk('div', 'q2-row' + (isCur ? ' cur' : ''));
     r.appendChild(mk('span', 'font-bold', title));
-    r.appendChild(mk('span', 'text-xs', sub));
+    if (sub) r.appendChild(mk('span', 'text-xs', sub));
     r.onclick = function () { drawer(false); show(page, true); };
     box.appendChild(r);
   }
@@ -454,6 +455,7 @@
     $('q2Filter').style.display = (tab === 's' || (tab === 'a' && !ayaSurah)) ? '' : 'none';
     $('q2Filter').placeholder = es ? 'Filtrar suras por nombre o número…' : 'ابحث عن سورة بالاسم أو الرقم…';
     $('q2MarkAdd').style.display = tab === 'm' ? 'flex' : 'none';
+    var dw = $('q2Drawer'); if (dw) dw.setAttribute('data-tab', tab);
     box.innerHTML = '';
     var hz = hizbOf(cur), jz = Math.ceil(hz / 2), cs = surahAt(cur);
     if (tab === 's') {
@@ -461,11 +463,11 @@
         return !q || String(s.id) === q || norm(s.nameAr).indexOf(q) !== -1 || norm(s.nameEs).indexOf(q) !== -1;
       }).forEach(function (s) { addRow(box, s.id + ' · ' + (es ? s.nameEs : s.nameAr), pageLbl + s.page, s.page, s.id === cs.id); });
     } else if (tab === 'h') {
-      quranAhzab.forEach(function (h) { addRow(box, (es ? 'Hizb ' : 'الحزب ') + h.id, (es ? surahAt(h.page).nameEs : surahAt(h.page).nameAr) + ' · ' + pageLbl + h.page, h.page, h.id === hz); });
+      quranAhzab.forEach(function (h) { addRow(box, (es ? 'Hizb ' : 'الحزب ') + h.id, '', h.page, h.id === hz); });
     } else if (tab === 'j') {
       for (var j = 1; j <= 30; j++) {
         var h = quranAhzab[2 * j - 2];
-        addRow(box, es ? 'Yuz ' + j : 'الجزء ' + JUZ_AR[j - 1], (es ? surahAt(h.page).nameEs : surahAt(h.page).nameAr) + ' · ' + pageLbl + h.page, h.page, j === jz);
+        addRow(box, (es ? 'Yuz ' : 'جزء ') + j, '', h.page, j === jz);
       }
     } else if (tab === 'a') { renderAyas(box, q, es, pageLbl); }
     else { renderMarks(); }
