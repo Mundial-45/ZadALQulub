@@ -74,7 +74,7 @@
       '#quran3View .q3-box{background:#fff}#quran3View .q3-cad,#quran3View .q3-hd,#quran3View .q3-num{display:none!important}' +
       '#quran3View .q3-night .q3-box{background:transparent}#quran3View .q3-night .q3-box img{mix-blend-mode:normal}' +
       '#quran3View .q3-night img{filter:invert(1) hue-rotate(180deg) brightness(.9)}' +
-      '#quran3View .q3-box{position:relative;width:100%;padding-bottom:142.93%}' +
+      '#quran3View .q3-box{position:relative;width:100%;padding-bottom:146.83%}' +
       '#quran3View .q3-box img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:contain}' +
       '#quran3View .q3-cad{height:.55rem;background-size:100% 100%;background-repeat:no-repeat}' +
       '#quran3View .q3-cad1{background-image:url(quran_pages/q3_cadre1.jpg)}#quran3View .q3-cad2{background-image:url(quran_pages/q3_cadre2.jpg)}' +
@@ -619,10 +619,10 @@
   // Luz transparente un instante sobre el aya: empieza justo después del número del aya anterior y acaba en su propio número.
   // Texto de derecha a izquierda: la primera línea va desde el número anterior hacia la izquierda, las intermedias enteras y la última desde la derecha hasta el número del aya.
   // Y (‰) de la primera línea de texto del aya 1 de cada sura (debajo del cuadro del nombre de la sura); -1 = arriba de la página.
-  var SURA_START = [483, 484];
+  var SURA_START = [469, 470];
   var posIdx = null;
   // Geometría (‰ de la imagen) de la zona de texto: las 2 primeras páginas llevan marco decorativo y letra más pequeña.
-  function pcfg(pg) { return pg <= 2 ? { L: 350, R: 690, TOP: 452, BOT: 656, LH: 34, MK: 27 } : { L: 165, R: 835, TOP: 160, BOT: 837, LH: 48.5, MK: 31 }; }
+  function pcfg(pg) { return pg <= 2 ? { L: 324, R: 723, TOP: 434, BOT: 667, LH: 39, MK: 32, W: 82 } : { L: 81, R: 919, TOP: 89, BOT: 913, LH: 59, MK: 39, W: 88 }; }
   function glow(bx, pos) {
     if (!window.Q3_AYAS) return;
     var old = document.querySelectorAll('#q3Pages .q3-hl'), i;
@@ -661,10 +661,10 @@
     var pp = Math.floor(prev / 1000000), py = Math.floor(prev / 1000) % 1000, px = prev % 1000;
     var xs = px - MK, ys = py;
     if (pp === p) {
-      if (xs < c0.L + 70) { ys += LH; xs = null; }
+      if (xs < c0.L + c0.W) { ys += LH; xs = null; }
       seg(p, ys, xs, ye, xe);
     } else {                                       // el aya empieza en una página anterior y acaba en esta
-      if (xs < c0.L + 70) { ys += LH; xs = null; }
+      if (xs < c0.L + c0.W) { ys += LH; xs = null; }
       if (ys <= BOT + LH / 2) seg(pp, ys, xs, BOT, null);
       seg(p, TOP, null, ye, xe);
     }
