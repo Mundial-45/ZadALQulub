@@ -107,6 +107,11 @@
       '#q2Drawer .q2-row{border-bottom:1px solid rgba(184,134,43,.25)}' +
       '#q2Drawer .q2-row:active,#q2Drawer .q2-row.cur{background:rgba(201,162,74,.35)}' +
       '#q2Drawer .q2-am{background:#b8862b}' +
+      '#q2Sheet{position:fixed;left:0;right:0;bottom:0;z-index:62;max-height:52vh;display:none;flex-direction:column;background:#fdf3dd;color:#3b2a10;border-top:2px solid #b8862b;border-radius:1rem 1rem 0 0;box-shadow:0 -6px 22px rgba(91,58,18,.4);padding:.6rem .8rem .5rem}#q2Sheet.open{display:flex}' +
+      '#q2Sheet .sh-h{display:flex;align-items:center;justify-content:space-between;gap:.5rem;font-weight:800;font-size:.95rem;padding-bottom:.4rem;border-bottom:1px solid rgba(184,134,43,.4)}#q2Sheet .sh-x{border:0;background:rgba(184,134,43,.18);color:#7a1d1d;border-radius:50%;width:2rem;height:2rem;font-size:1rem;cursor:pointer}' +
+      '#q2Sheet{direction:ltr}#q2Sheet .sh-b{text-align:left;overflow:auto;padding:.5rem .1rem;font-size:1.02rem;line-height:1.65;white-space:pre-wrap;-webkit-user-select:text;user-select:text}#q2Sheet .sh-b.ar{direction:rtl;font-size:1.15rem;text-align:right}' +
+      '#q2Sheet .sh-f{margin-top:.6rem;padding-top:.4rem;border-top:1px dashed rgba(184,134,43,.5);font-size:.82rem;line-height:1.5;opacity:.85}' +
+      '#q2Sheet .sh-c{font-size:.68rem;opacity:.65;padding-top:.3rem;text-align:center}' +
       '#q2Rail{position:fixed;top:0;bottom:0;right:0;width:4.2rem;max-width:24vw;z-index:61;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.55rem;background:transparent;pointer-events:none;transform:translateX(110%);transition:transform .2s;direction:ltr}' +
       '#q2Rail.open{transform:none}' +
       '#q2Rail button{pointer-events:auto;width:3.1rem;height:3.1rem;max-width:18vw;max-height:18vw;border-radius:50%;border:2px solid rgba(255,255,255,.9);background:radial-gradient(circle at 35% 30%,#fff,#dfeaf5 70%,#b9cbe0);box-shadow:0 2px 8px rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.72rem;line-height:1;color:#7a1d1d;cursor:pointer;padding:0;font-family:inherit}' +
@@ -127,6 +132,7 @@
         '</div>' +
       '</div>' +
       '<div id="q2Zoom"><button type="button" id="q2ZMinus" aria-label="A-">A-</button><button type="button" id="q2ZPlus" aria-label="A+">A+</button></div>' +
+      '<div id="q2Sheet"><div class="sh-h"><span id="q2ShT"></span><button type="button" class="sh-x" id="q2ShX">✕</button></div><div class="sh-b" id="q2ShB"></div><div class="sh-c" id="q2ShC"></div></div>' +
       '<div id="q2Rail">' +
         '<button type="button" id="q2RClose" aria-label="close"><span class="ic">✕</span></button>' +
         '<button type="button" data-rt="s"></button>' +
@@ -193,8 +199,12 @@
     // El panel lateral se abre con el botón de menú; pulsar sobre la página solo lo cierra si está abierto.
     $('q2ZPlus').onclick = function () { setZoom(zoomLevel() + 0.25, true); };
     $('q2ZMinus').onclick = function () { setZoom(zoomLevel() - 0.25, true); };
+    $('q2ShX').onclick = function () { sheet(false); };
+    setupLongPress(); setTimeout(ayasReady, 1500);
+    $('q2Pages').addEventListener('contextmenu', function (e) { e.preventDefault(); });
     $('q2Pages').addEventListener('click', function () {
-      if (Date.now() - pinchAt < 450) return;
+      if (Date.now() - pinchAt < 450 || Date.now() - lpAt < 700) return;
+      if ($('q2Sheet').classList.contains('open')) { sheet(false); return; }
       drawer(!$('q2Rail').classList.contains('open'));
     });
     setupPinch();
@@ -204,7 +214,68 @@
     return v;
   }
 
-  var tab = 's', pinchAt = 0;
+  var tab = 's', pinchAt = 0, lpAt = 0, flat = null;
+
+  // Pulsación larga sobre un aya: muestra el shar7 (árabe) o la tarjama (español) de esa aya.
+  function sheet(open) { var e = $('q2Sheet'); if (e) e.classList.toggle('open', !!open); }
+  function ayaAtPoint(page, y, x) {
+    if (!flat) { flat = []; window.Q2_AYAS.forEach(function (su, si) { su.forEach(function (v, ai) { flat.push([Math.floor(v / 1000000), Math.floor(v / 1000) % 1000, v % 1000, si, ai]); }); }); }
+    var LH = 64, MK = 34;
+    for (var i = 0; i < flat.length; i++) {
+      var f = flat[i]; if (f[0] < page) continue; if (f[0] > page) return i;
+      if (y < f[1] - LH / 2 || (Math.abs(y - f[1]) <= LH / 2 && x >= f[2] - MK)) return i;
+    }
+    return flat.length - 1;
+  }
+  function loadTr(cb) {
+    var es = isEs(), name = es ? 'Q2_TR_ES' : 'Q2_TF_AR';
+    if (window[name]) { cb(window[name]); return; }
+    var sc = document.createElement('script'); sc.src = es ? 'quran_tarjama_es.js' : 'quran_tafsir_ar.js';
+    sc.onload = function () { cb(window[name] || null); };
+    sc.onerror = function () { cb(null); };
+    document.head.appendChild(sc);
+  }
+  function showAyaInfo(idx) {
+    var f = flat[idx], es = isEs(), sr = quranSurahs[f[3]];
+    var title = (es ? sr.nameEs : sr.nameAr) + ' · ' + (es ? 'aya ' : 'آية ') + (f[4] + 1);
+    var bx = $('q2Pages').childNodes[f[0] - 1].childNodes[3];
+    var prev = idx > 0 ? window.Q2_AYAS[flat[idx - 1][3]][flat[idx - 1][4]] : 0;
+    glow(bx, window.Q2_AYAS[f[3]][f[4]], prev);
+    var T = $('q2ShT'), B = $('q2ShB'), C = $('q2ShC');
+    T.textContent = title; B.className = 'sh-b' + (es ? '' : ' ar'); $('q2Sheet').style.direction = es ? 'ltr' : 'rtl'; B.textContent = '…'; C.textContent = ''; sheet(true);
+    loadTr(function (data) {
+      var rec = data && data[f[3]] && data[f[3]][f[4]];
+      B.textContent = '';
+      if (!rec) { B.textContent = es ? 'Traducción no disponible.' : 'التفسير غير متوفر بعد.'; return; }
+      B.appendChild(document.createTextNode(rec[0]));
+      if (rec[1]) { var ft = mk('div', 'sh-f'); ft.textContent = rec[1]; B.appendChild(ft); }
+      C.textContent = es ? 'Traducción: Muhammad Isa García · QuranEnc.com · v1.0.2' : 'المختصر في تفسير القرآن الكريم · مركز تفسير · QuranEnc.com';
+    });
+  }
+  function setupLongPress() {
+    var pg = $('q2Pages'), tm = 0, sx = 0, sy = 0;
+    function clear() { if (tm) { clearTimeout(tm); tm = 0; } }
+    function start(cx, cy) {
+      clear(); sx = cx; sy = cy;
+      tm = setTimeout(function () {
+        tm = 0;
+        if (!ayasReady()) return;
+        var el = document.elementFromPoint(cx, cy); el = el && el.closest && el.closest('.q2-pg'); if (!el) return;
+        var page = Array.prototype.indexOf.call(pg.childNodes, el) + 1, bx = el.childNodes[3], r = bx.getBoundingClientRect();
+        var xx = ((cx - r.left) / r.width - 0.07) / 0.86 * 1000, yy = (cy - r.top) / r.height * 1000;
+        if (xx < 0 || xx > 1000 || yy < 0 || yy > 1000) return;
+        lpAt = Date.now();
+        if (navigator.vibrate) { try { navigator.vibrate(15); } catch (e) {} }
+        showAyaInfo(ayaAtPoint(page, yy, xx));
+      }, 480);
+    }
+    pg.addEventListener('touchstart', function (e) { if (e.touches.length === 1) start(e.touches[0].clientX, e.touches[0].clientY); else clear(); }, { passive: true });
+    pg.addEventListener('touchmove', function (e) { var t = e.touches[0]; if (t && (Math.abs(t.clientX - sx) > 10 || Math.abs(t.clientY - sy) > 10)) clear(); }, { passive: true });
+    pg.addEventListener('touchend', clear); pg.addEventListener('touchcancel', clear);
+    pg.addEventListener('mousedown', function (e) { if (e.button === 0) start(e.clientX, e.clientY); });
+    pg.addEventListener('mousemove', function (e) { if (tm && (Math.abs(e.clientX - sx) > 10 || Math.abs(e.clientY - sy) > 10)) clear(); });
+    pg.addEventListener('mouseup', clear);
+  }
   function panel(open) {
     var d = $('q2Drawer'); if (!d) return;
     d.classList.toggle('open', !!open);
