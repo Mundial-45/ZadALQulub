@@ -71,6 +71,9 @@
       '#quran2View .q2-hl{position:absolute;left:7%;width:86%;top:0;height:100%;z-index:1;pointer-events:none;animation:q2glow 2.2s ease-in-out forwards}#quran2View .q2-hr{position:absolute;border-radius:.4rem;background:rgba(255,214,90,.40);box-shadow:0 0 .9rem .25rem rgba(255,214,90,.5)}@keyframes q2glow{0%{opacity:0}18%{opacity:1}60%{opacity:1}100%{opacity:0}}' +
       '#quran2View .q2-box{background:#f6e2b8}#quran2View .q2-box img{mix-blend-mode:multiply}' +
       '#quran2View .q2-night .q2-box{background:transparent}#quran2View .q2-night .q2-box img{mix-blend-mode:normal}' +
+      '#quran2View .q2-ayl{position:absolute;left:7%;width:86%;top:0;height:100%;container-type:inline-size;pointer-events:none;z-index:1}' +
+      '#quran2View .q2-ay{position:absolute;transform:translate(-50%,-50%);width:5.6cqw;height:5.6cqw;margin-top:1.6cqw;margin-left:1.4cqw;border-radius:50%;-webkit-backdrop-filter:brightness(.86) contrast(1.5) saturate(1.3);backdrop-filter:brightness(.86) contrast(1.5) saturate(1.3)}' +
+      '#quran2View .q2-night .q2-ay{-webkit-backdrop-filter:none;backdrop-filter:none}' +
       '#quran2View .q2-night img{filter:invert(1) hue-rotate(180deg) brightness(.9)}' +
       '#quran2View .q2-box{position:relative;width:100%;padding-bottom:126%}' +
       '#quran2View .q2-box img{position:absolute;left:7%;top:0;width:86%;height:100%;object-fit:contain}' +
@@ -309,7 +312,7 @@
     var lo = clampPage(cur - KEEP_BEHIND), hi = clampPage(cur + KEEP_AHEAD), i;
     // Quitar las lejanas
     for (i = 1; i <= TOTAL; i++) {
-      if (i < lo - 2 || i > hi + 2) { var f = pg.childNodes[i - 1].childNodes[3], im0 = f.querySelector('img'); if (im0) f.removeChild(im0); }
+      if (i < lo - 2 || i > hi + 2) { var f = pg.childNodes[i - 1].childNodes[3], im0 = f.querySelector('img'); if (im0) f.removeChild(im0); var ly0 = f.querySelector('.q2-ayl'); if (ly0) f.removeChild(ly0); }
     }
     // Cargar primero la página actual y después las más cercanas (así la red atiende antes lo que se ve)
     var order = [];
@@ -320,9 +323,27 @@
       if (d.querySelector('img')) return;
       var img = document.createElement('img'); img.alt = ''; img.decoding = 'async';
       if (k < 2) img.fetchPriority = 'high';
-      img.src = 'quran_pages/page' + n + '.png'; d.appendChild(img);
+      img.src = 'quran_pages/page' + n + '.png'; d.appendChild(img); addAyas(d, n);
     });
     prefetch();
+  }
+  // Números de aya dibujados encima de la imagen (claros y legibles). Se crean solo para las páginas cargadas.
+  var ayaIdx = null;
+  function addAyas(d, n) {
+    if (n > 5 || d.querySelector('.q2-ayl')) return;
+    if (!window.Q2_AYAS) { ayasReady(); return; }
+    if (!ayaIdx) {
+      ayaIdx = {};
+      window.Q2_AYAS.forEach(function (sura) { sura.forEach(function (v, i) { var pn = Math.floor(v / 1000000); (ayaIdx[pn] = ayaIdx[pn] || []).push([Math.floor(v / 1000) % 1000, v % 1000, i + 1]); }); });
+    }
+    var list = ayaIdx[n]; if (!list) return;
+    var ly = mk('div', 'q2-ayl');
+    list.forEach(function (a) {
+      var b = mk('div', 'q2-ay');
+      b.style.top = (a[0] / 10) + '%'; b.style.left = (a[1] / 10) + '%';
+      ly.appendChild(b);
+    });
+    d.appendChild(ly);
   }
   // Precarga en segundo plano de las páginas siguientes (y alguna anterior): quedan en la caché y aparecen al instante.
   var pre = {}, preTimer = 0;
@@ -437,7 +458,7 @@
     if (!ayasLoading) {
       ayasLoading = true;
       var sc = document.createElement('script'); sc.src = 'quran_ayas.js';
-      sc.onload = function () { renderResults(); };
+      sc.onload = function () { renderResults(); var pg = $('q2Pages'); if (pg) for (var i = 0; i < pg.childNodes.length; i++) { var bx = pg.childNodes[i].childNodes[3]; if (bx && bx.querySelector('img')) addAyas(bx, i + 1); } };
       sc.onerror = function () { ayasLoading = false; };
       document.head.appendChild(sc);
     }
